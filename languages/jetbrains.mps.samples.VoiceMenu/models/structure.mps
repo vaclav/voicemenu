@@ -12,6 +12,8 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -40,6 +42,8 @@
     <property role="EcuMT" value="6220196697617514085" />
     <property role="TrG5h" value="Menu" />
     <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="menu" />
+    <property role="R4oN_" value="Menu" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5pi$Z32zkvX" role="1TKVEi">
       <property role="IQ2ns" value="6220196697617549309" />
@@ -62,8 +66,27 @@
   <node concept="1TIwiD" id="5pi$Z32zk9E">
     <property role="EcuMT" value="6220196697617547882" />
     <property role="TrG5h" value="Action" />
+    <property role="34LRSv" value="action" />
+    <property role="R4oN_" value="Reaction on Input Value" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5pi$Z32zka6" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="5pi$Z32zmeA" role="1TKVEi">
+      <property role="IQ2ns" value="6220196697617556390" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="trigger" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5pi$Z32zlHz" resolve="Input" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5pi$Z32zlHz">
+    <property role="EcuMT" value="6220196697617554275" />
+    <property role="TrG5h" value="Input" />
+    <property role="34LRSv" value="input" />
+    <property role="R4oN_" value="Some Input Value" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5pi$Z32zmP5" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>

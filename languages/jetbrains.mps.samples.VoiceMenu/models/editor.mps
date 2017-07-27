@@ -42,6 +42,7 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
@@ -107,7 +108,19 @@
       <node concept="3F0A7n" id="5pi$Z32zkvP" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
+      <node concept="3F0ifn" id="5pi$Z32zmeO" role="3EZMnx">
+        <property role="3F0ifm" value="on" />
+      </node>
+      <node concept="3F1sOY" id="5pi$Z32zmfc" role="3EZMnx">
+        <ref role="1NtTu8" to="xehl:5pi$Z32zmeA" resolve="trigger" />
+      </node>
       <node concept="l2Vlx" id="5pi$Z32zkvv" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5pi$Z32zlIb">
+    <ref role="1XX52x" to="xehl:5pi$Z32zlHz" resolve="Input" />
+    <node concept="3F0A7n" id="5pi$Z32zlIC" role="2wV5jI">
+      <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
     </node>
   </node>
 </model>
