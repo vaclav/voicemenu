@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.samples.VoiceMenu/jetbrains.mps.samples.VoiceMenu.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.samples.VoiceMenu/sandbox/jetbrains.mps.samples.VoiceMenu.sandbox.msd" folder="" />
+    </projectModules>
+  </component>
+</project>

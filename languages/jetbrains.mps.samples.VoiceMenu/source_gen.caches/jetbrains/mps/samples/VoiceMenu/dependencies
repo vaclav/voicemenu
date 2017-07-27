@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="jetbrains.mps.samples.VoiceMenu.Language" file="Language.java">
+    <classNode dependClassName="java.lang.Class" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateModule" />
+    <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateUtil" />
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.behavior.BehaviorAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.constraints.ConstraintsAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.EditorAspectDescriptorImpl" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.structure.ConceptPresentationAspectImpl" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.structure.StructureAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.typesystem.TypesystemDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.ConceptPresentationAspect" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SLanguage" />
+    <classNode extendsClassName="jetbrains.mps.smodel.language.LanguageRuntime" />
+  </dependency>
+</dependenciesRoot>
+
