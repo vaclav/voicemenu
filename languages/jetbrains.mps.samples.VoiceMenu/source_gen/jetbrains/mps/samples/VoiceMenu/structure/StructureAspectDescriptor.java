@@ -13,6 +13,8 @@ import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAction = createDescriptorForAction();
+  /*package*/ final ConceptDescriptor myConceptCommand = createDescriptorForCommand();
+  /*package*/ final ConceptDescriptor myConceptEmptyLine = createDescriptorForEmptyLine();
   /*package*/ final ConceptDescriptor myConceptInput = createDescriptorForInput();
   /*package*/ final ConceptDescriptor myConceptMenu = createDescriptorForMenu();
   private final LanguageConceptSwitch myConceptIndex;
@@ -23,7 +25,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptInput, myConceptMenu);
+    return Arrays.asList(myConceptAction, myConceptCommand, myConceptEmptyLine, myConceptInput, myConceptMenu);
   }
 
   @Override
@@ -32,6 +34,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     switch (myConceptIndex.index(id)) {
       case LanguageConceptSwitch.Action:
         return myConceptAction;
+      case LanguageConceptSwitch.Command:
+        return myConceptCommand;
+      case LanguageConceptSwitch.EmptyLine:
+        return myConceptEmptyLine;
       case LanguageConceptSwitch.Input:
         return myConceptInput;
       case LanguageConceptSwitch.Menu:
@@ -48,10 +54,24 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForAction() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.samples.VoiceMenu", "Action", 0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x565293f0c28d426aL);
     b.class_(false, false, false);
+    b.super_("jetbrains.mps.samples.VoiceMenu.structure.Command", 0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x7dfd355cac6aad58L);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)/6220196697617547882");
     b.aggregate("trigger", 0x565293f0c28d63a6L).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x565293f0c28d5b63L).optional(false).ordered(true).multiple(false).origin("6220196697617556390").done();
     b.alias("action");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForCommand() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.samples.VoiceMenu", "Command", 0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x7dfd355cac6aad58L);
+    b.class_(false, true, false);
+    b.origin("r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)/9078471095994723672");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForEmptyLine() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.samples.VoiceMenu", "EmptyLine", 0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x7dfd355cac6ad6c9L);
+    b.class_(false, false, false);
+    b.super_("jetbrains.mps.samples.VoiceMenu.structure.Command", 0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x7dfd355cac6aad58L);
+    b.origin("r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)/9078471095994734281");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForInput() {
@@ -59,6 +79,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)/6220196697617554275");
+    b.prop("inputValue", 0x2e1a259d9c0eda75L, "3322009033997474421");
     b.alias("input");
     return b.create();
   }
@@ -67,7 +88,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, true);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)/6220196697617514085");
-    b.aggregate("actions", 0x565293f0c28d47fdL).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x565293f0c28d426aL).optional(true).ordered(true).multiple(true).origin("6220196697617549309").done();
+    b.aggregate("actions", 0x565293f0c28d47fdL).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x7dfd355cac6aad58L).optional(true).ordered(true).multiple(true).origin("6220196697617549309").done();
     b.aggregate("menus", 0x565293f0c28d0ba8L).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x565293f0c28cbe65L).optional(true).ordered(true).multiple(true).origin("6220196697617533864").done();
     b.alias("menu");
     return b.create();

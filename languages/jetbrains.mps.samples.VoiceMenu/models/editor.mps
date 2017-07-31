@@ -25,9 +25,13 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
+        <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
+      </concept>
       <concept id="1236262245656" name="jetbrains.mps.lang.editor.structure.MatchingLabelStyleClassItem" flags="ln" index="3mYdg7">
         <property id="1238091709220" name="labelName" index="1413C4" />
       </concept>
+      <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -122,6 +126,13 @@
     <node concept="3F0A7n" id="5pi$Z32zlIC" role="2wV5jI">
       <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
     </node>
+  </node>
+  <node concept="24kQdi" id="7RXdlMGqHrH">
+    <ref role="1XX52x" to="xehl:7RXdlMGqHr9" resolve="EmptyLine" />
+    <node concept="3F0ifn" id="7RXdlMGqHsa" role="2wV5jI" />
+  </node>
+  <node concept="3p36aQ" id="7RXdlMGqHsE">
+    <ref role="aqKnT" to="xehl:7RXdlMGqHr9" resolve="EmptyLine" />
   </node>
 </model>
 
