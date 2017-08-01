@@ -10,14 +10,8 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1082978499127" name="jetbrains.mps.lang.structure.structure.ConstrainedDataTypeDeclaration" flags="ng" index="Az7Fb">
-        <property id="1083066089218" name="constraint" index="FLfZY" />
-      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
-        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
-        <property id="4628067390765956807" name="final" index="R5$K2" />
-        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -48,78 +42,81 @@
       </concept>
     </language>
   </registry>
-  <node concept="1TIwiD" id="5pi$Z32zbT_">
-    <property role="EcuMT" value="6220196697617514085" />
+  <node concept="1TIwiD" id="5HF1wNNZuc8">
+    <property role="EcuMT" value="6587365532662358792" />
     <property role="TrG5h" value="Menu" />
+    <property role="34LRSv" value="Menu" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="menu" />
-    <property role="R4oN_" value="Menu" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="5pi$Z32zkvX" role="1TKVEi">
-      <property role="IQ2ns" value="6220196697617549309" />
+    <node concept="PrWs8" id="5HF1wNNZucp" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="1TJgyj" id="5HF1wNNZuq8" role="1TKVEi">
+      <property role="IQ2ns" value="6587365532662359688" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="table" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5HF1wNNZuc9" resolve="Table" />
+    </node>
+    <node concept="1TJgyj" id="5HF1wNNZuqa" role="1TKVEi">
+      <property role="IQ2ns" value="6587365532662359690" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="actions" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7RXdlMGqEPo" resolve="Command" />
-    </node>
-    <node concept="PrWs8" id="5pi$Z32zbV1" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="5pi$Z32zgIC" role="1TKVEi">
-      <property role="IQ2ns" value="6220196697617533864" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="menus" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="5pi$Z32zbT_" resolve="Menu" />
+      <ref role="20lvS9" node="5HF1wNNZuqd" resolve="Action" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5pi$Z32zk9E">
-    <property role="EcuMT" value="6220196697617547882" />
+  <node concept="1TIwiD" id="5HF1wNNZuc9">
+    <property role="EcuMT" value="6587365532662358793" />
+    <property role="TrG5h" value="Table" />
+    <property role="34LRSv" value="table" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5HF1wNNZuca" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="5HF1wNNZuqg" role="1TKVEi">
+      <property role="IQ2ns" value="6587365532662359696" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="events" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5HF1wNNZucc" resolve="Event" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5HF1wNNZucc">
+    <property role="EcuMT" value="6587365532662358796" />
+    <property role="TrG5h" value="Event" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5HF1wNNZucg" role="1TKVEl">
+      <property role="IQ2nx" value="6587365532662358800" />
+      <property role="TrG5h" value="trigger" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="5HF1wNNZz54" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5HF1wNNZuqd">
+    <property role="EcuMT" value="6587365532662359693" />
     <property role="TrG5h" value="Action" />
     <property role="34LRSv" value="action" />
-    <property role="R4oN_" value="Reaction on Input Value" />
-    <ref role="1TJDcQ" node="7RXdlMGqEPo" resolve="Command" />
-    <node concept="PrWs8" id="5pi$Z32zka6" role="PzmwI">
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5HF1wNNZuqe" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyj" id="5pi$Z32zmeA" role="1TKVEi">
-      <property role="IQ2ns" value="6220196697617556390" />
+    <node concept="1TJgyj" id="5HF1wNNZwzi" role="1TKVEi">
+      <property role="IQ2ns" value="6587365532662368466" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="trigger" />
+      <property role="20kJfa" value="menu" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5pi$Z32zlHz" resolve="Input" />
+      <ref role="20lvS9" node="5HF1wNNZuc8" resolve="Menu" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="5pi$Z32zlHz">
-    <property role="EcuMT" value="6220196697617554275" />
-    <property role="TrG5h" value="Input" />
-    <property role="34LRSv" value="input" />
-    <property role="R4oN_" value="Some Input Value" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="5pi$Z32zmP5" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="1TJgyj" id="5HF1wNNZwzN" role="1TKVEi">
+      <property role="IQ2ns" value="6587365532662368499" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="action" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5HF1wNNZucc" resolve="Event" />
     </node>
-    <node concept="1TJgyi" id="2Sq9pQs3HDP" role="1TKVEl">
-      <property role="IQ2nx" value="3322009033997474421" />
-      <property role="TrG5h" value="inputValue" />
-      <ref role="AX2Wp" node="2Sq9pQs3HDO" resolve="PhoneButton" />
-    </node>
-  </node>
-  <node concept="Az7Fb" id="2Sq9pQs3HDO">
-    <property role="TrG5h" value="PhoneButton" />
-    <property role="FLfZY" value="1|2|3|4|5|6|7|8|9|0|+|#|*" />
-  </node>
-  <node concept="1TIwiD" id="7RXdlMGqEPo">
-    <property role="EcuMT" value="9078471095994723672" />
-    <property role="TrG5h" value="Command" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="7RXdlMGqHr9">
-    <property role="EcuMT" value="9078471095994734281" />
-    <property role="TrG5h" value="EmptyLine" />
-    <ref role="1TJDcQ" node="7RXdlMGqEPo" resolve="Command" />
   </node>
 </model>
 
