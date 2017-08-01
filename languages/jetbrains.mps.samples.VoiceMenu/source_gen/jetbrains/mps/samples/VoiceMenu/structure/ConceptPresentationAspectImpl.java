@@ -13,6 +13,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Event;
   private ConceptPresentation props_Menu;
   private ConceptPresentation props_Table;
+  private ConceptPresentation props_WorkSpace;
 
   @Override
   @Nullable
@@ -47,6 +48,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Table = cpb.create();
         }
         return props_Table;
+      case LanguageConceptSwitch.WorkSpace:
+        if (props_WorkSpace == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_WorkSpace = cpb.create();
+        }
+        return props_WorkSpace;
     }
     return null;
   }

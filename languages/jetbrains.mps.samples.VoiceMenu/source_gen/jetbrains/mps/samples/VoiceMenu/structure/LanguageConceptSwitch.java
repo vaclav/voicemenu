@@ -13,6 +13,7 @@ public final class LanguageConceptSwitch {
   public static final int Event = 1;
   public static final int Menu = 2;
   public static final int Table = 3;
+  public static final int WorkSpace = 4;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x4bc750d756884f52L, 0xb7d5b263a3393a24L);
@@ -20,6 +21,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x5b6b060cf3fde30cL, Event);
     builder.put(0x5b6b060cf3fde308L, Menu);
     builder.put(0x5b6b060cf3fde309L, Table);
+    builder.put(0x5b6b060cf40204c8L, WorkSpace);
     myIndex = builder.seal();
   }
 

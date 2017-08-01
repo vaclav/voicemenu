@@ -16,6 +16,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptEvent = createDescriptorForEvent();
   /*package*/ final ConceptDescriptor myConceptMenu = createDescriptorForMenu();
   /*package*/ final ConceptDescriptor myConceptTable = createDescriptorForTable();
+  /*package*/ final ConceptDescriptor myConceptWorkSpace = createDescriptorForWorkSpace();
   private final LanguageConceptSwitch myConceptIndex;
 
   public StructureAspectDescriptor() {
@@ -24,7 +25,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptEvent, myConceptMenu, myConceptTable);
+    return Arrays.asList(myConceptAction, myConceptEvent, myConceptMenu, myConceptTable, myConceptWorkSpace);
   }
 
   @Override
@@ -39,6 +40,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptMenu;
       case LanguageConceptSwitch.Table:
         return myConceptTable;
+      case LanguageConceptSwitch.WorkSpace:
+        return myConceptWorkSpace;
       default:
         return null;
     }
@@ -83,6 +86,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)/6587365532662358793");
     b.aggregate("events", 0x5b6b060cf3fde690L).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL).optional(true).ordered(true).multiple(true).origin("6587365532662359696").done();
     b.alias("table");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForWorkSpace() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.samples.VoiceMenu", "WorkSpace", 0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L);
+    b.class_(false, false, true);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)/6587365532662629576");
+    b.aggregate("body", 0x5b6b060cf40204ebL).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L).optional(false).ordered(true).multiple(false).origin("6587365532662629611").done();
+    b.alias("Work Space");
     return b.create();
   }
 }

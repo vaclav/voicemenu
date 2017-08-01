@@ -118,5 +118,22 @@
       <ref role="20lvS9" node="5HF1wNNZucc" resolve="Event" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5HF1wNO0wj8">
+    <property role="EcuMT" value="6587365532662629576" />
+    <property role="TrG5h" value="WorkSpace" />
+    <property role="34LRSv" value="Work Space" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5HF1wNO0wjF" role="1TKVEi">
+      <property role="IQ2ns" value="6587365532662629611" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5HF1wNNZuc8" resolve="Menu" />
+    </node>
+    <node concept="PrWs8" id="5HF1wNO0wky" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
 </model>
 

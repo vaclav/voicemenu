@@ -21,6 +21,9 @@
       <concept id="6587365532662358793" name="jetbrains.mps.samples.VoiceMenu.structure.Table" flags="ng" index="2C_Ik5">
         <child id="6587365532662359696" name="events" index="2C_I2s" />
       </concept>
+      <concept id="6587365532662629576" name="jetbrains.mps.samples.VoiceMenu.structure.WorkSpace" flags="ng" index="2Jqgb4">
+        <child id="6587365532662629611" name="body" index="2JqgbB" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -28,59 +31,63 @@
       </concept>
     </language>
   </registry>
-  <node concept="2C_Ik4" id="5HF1wNNZv1V">
-    <node concept="2C_I21" id="5HF1wNNZz4X" role="2C_I26">
-      <ref role="2C_gVZ" node="5HF1wNNZ$9w" resolve="Internet" />
-      <node concept="2C_Ik4" id="5HF1wNNZz4Y" role="2C_gVu">
-        <node concept="2C_Ik5" id="5HF1wNNZz4Z" role="2C_I24">
-          <node concept="2C_Ik0" id="5HF1wNNZ$WF" role="2C_I2s">
-            <property role="2C_Iks" value="1" />
-            <property role="TrG5h" value="News" />
-          </node>
-          <node concept="2C_Ik0" id="5HF1wNNZ$WH" role="2C_I2s">
-            <property role="2C_Iks" value="2" />
-            <property role="TrG5h" value="Adds" />
-          </node>
-          <node concept="2C_Ik0" id="5HF1wNNZ$WK" role="2C_I2s">
-            <property role="2C_Iks" value="3" />
-            <property role="TrG5h" value="Back" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2C_I21" id="5HF1wNNZ$WO" role="2C_I26">
-      <ref role="2C_gVZ" node="5HF1wNNZ$9y" resolve="Calls" />
-      <node concept="2C_Ik4" id="5HF1wNNZ$WP" role="2C_gVu">
-        <node concept="2C_Ik5" id="5HF1wNNZ$WQ" role="2C_I24">
-          <node concept="2C_Ik0" id="5HF1wNO03cl" role="2C_I2s">
-            <property role="2C_Iks" value="1" />
-            <property role="TrG5h" value="Call" />
-          </node>
-          <node concept="2C_Ik0" id="5HF1wNNZ_Sn" role="2C_I2s">
-            <property role="2C_Iks" value="3" />
-            <property role="TrG5h" value="Others" />
-          </node>
-          <node concept="2C_Ik0" id="5HF1wNNZEzm" role="2C_I2s">
-            <property role="2C_Iks" value="#" />
-            <property role="TrG5h" value="Back" />
-          </node>
-        </node>
-        <node concept="2C_I21" id="5HF1wNO0d1d" role="2C_I26">
-          <ref role="2C_gVZ" node="5HF1wNNZ_Sn" resolve="Others" />
-          <node concept="2C_Ik4" id="5HF1wNO0d1e" role="2C_gVu">
-            <node concept="2C_Ik5" id="5HF1wNO0d1f" role="2C_I24" />
+  <node concept="2Jqgb4" id="5HF1wNO0yqG">
+    <property role="TrG5h" value="Mobile_Center" />
+    <node concept="2C_Ik4" id="5HF1wNO0yqH" role="2JqgbB">
+      <node concept="2C_I21" id="5HF1wNO0THA" role="2C_I26">
+        <ref role="2C_gVZ" node="5HF1wNO0TGq" resolve="Internet" />
+        <node concept="2C_Ik4" id="5HF1wNO0THB" role="2C_gVu">
+          <node concept="2C_Ik5" id="5HF1wNO0THC" role="2C_I24">
+            <node concept="2C_Ik0" id="5HF1wNO0THJ" role="2C_I2s">
+              <property role="2C_Iks" value="1" />
+              <property role="TrG5h" value="Free Internet" />
+            </node>
+            <node concept="2C_Ik0" id="5HF1wNO0THM" role="2C_I2s">
+              <property role="2C_Iks" value="2" />
+              <property role="TrG5h" value="Adds" />
+            </node>
+            <node concept="2C_Ik0" id="5HF1wNO0TIj" role="2C_I2s">
+              <property role="2C_Iks" value="#" />
+              <property role="TrG5h" value="Back" />
+            </node>
           </node>
         </node>
       </node>
-    </node>
-    <node concept="2C_Ik5" id="5HF1wNNZv1W" role="2C_I24">
-      <node concept="2C_Ik0" id="5HF1wNNZ$9w" role="2C_I2s">
-        <property role="2C_Iks" value="1" />
-        <property role="TrG5h" value="Internet" />
+      <node concept="2C_I21" id="5HF1wNO0THR" role="2C_I26">
+        <ref role="2C_gVZ" node="5HF1wNO0TGt" resolve="Calls" />
+        <node concept="2C_Ik4" id="5HF1wNO0THS" role="2C_gVu">
+          <node concept="2C_Ik5" id="5HF1wNO0THT" role="2C_I24">
+            <node concept="2C_Ik0" id="5HF1wNO0TIq" role="2C_I2s">
+              <property role="2C_Iks" value="1" />
+              <property role="TrG5h" value="Exit" />
+            </node>
+          </node>
+          <node concept="2C_I21" id="5HF1wNO153u" role="2C_I26">
+            <ref role="2C_gVZ" node="5HF1wNO0TIq" resolve="Exit" />
+            <node concept="2C_Ik4" id="5HF1wNO153v" role="2C_gVu">
+              <node concept="2C_Ik5" id="5HF1wNO153w" role="2C_I24" />
+            </node>
+          </node>
+        </node>
       </node>
-      <node concept="2C_Ik0" id="5HF1wNNZ$9y" role="2C_I2s">
-        <property role="2C_Iks" value="2" />
-        <property role="TrG5h" value="Calls" />
+      <node concept="2C_Ik5" id="5HF1wNO0yqI" role="2C_I24">
+        <property role="TrG5h" value="3" />
+        <node concept="2C_Ik0" id="5HF1wNO0TGq" role="2C_I2s">
+          <property role="2C_Iks" value="1" />
+          <property role="TrG5h" value="Internet" />
+        </node>
+        <node concept="2C_Ik0" id="5HF1wNO0TGt" role="2C_I2s">
+          <property role="2C_Iks" value="2" />
+          <property role="TrG5h" value="Calls" />
+        </node>
+        <node concept="2C_Ik0" id="5HF1wNO0TGy" role="2C_I2s">
+          <property role="2C_Iks" value="3" />
+          <property role="TrG5h" value="Bonus" />
+        </node>
+        <node concept="2C_Ik0" id="5HF1wNO0TGS" role="2C_I2s">
+          <property role="2C_Iks" value="4" />
+          <property role="TrG5h" value="New" />
+        </node>
       </node>
     </node>
   </node>
