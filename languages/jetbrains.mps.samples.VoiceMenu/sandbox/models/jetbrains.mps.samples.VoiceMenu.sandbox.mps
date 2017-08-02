@@ -65,7 +65,27 @@
           <node concept="2C_I21" id="5HF1wNO153u" role="2C_I26">
             <ref role="2C_gVZ" node="5HF1wNO0TIq" resolve="Exit" />
             <node concept="2C_Ik4" id="5HF1wNO153v" role="2C_gVu">
-              <node concept="2C_Ik5" id="5HF1wNO153w" role="2C_I24" />
+              <node concept="2C_Ik5" id="5HF1wNO153w" role="2C_I24">
+                <node concept="2C_Ik0" id="5RYvhcT$ldz" role="2C_I2s">
+                  <property role="2C_Iks" value="1" />
+                  <property role="TrG5h" value="&quot;Nothing&quot;" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2C_I21" id="5RYvhcT$ldB" role="2C_I26">
+        <ref role="2C_gVZ" node="5HF1wNO0TGy" resolve="Bonus" />
+        <node concept="2C_Ik4" id="5RYvhcT$ldC" role="2C_gVu">
+          <node concept="2C_Ik5" id="5RYvhcT$ldD" role="2C_I24">
+            <node concept="2C_Ik0" id="5RYvhcT$let" role="2C_I2s">
+              <property role="2C_Iks" value="1" />
+              <property role="TrG5h" value="Free adds" />
+            </node>
+            <node concept="2C_Ik0" id="5RYvhcT$lgp" role="2C_I2s">
+              <property role="2C_Iks" value="2" />
+              <property role="TrG5h" value="Free candy" />
             </node>
           </node>
         </node>
