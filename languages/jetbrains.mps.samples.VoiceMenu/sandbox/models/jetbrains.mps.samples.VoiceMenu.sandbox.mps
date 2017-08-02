@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu" version="-1" />
-    <engage id="750ae49d-4f57-400c-b5dc-2b58c1e3f9a9" name="jetbrains.mps.samples.VoiceMenuToHTML" />
+    <engage id="958ea605-76c8-4653-8135-31dd9bfa2915" name="jetbrains.mps.samples.VoiceMenuToHTML" />
   </languages>
   <imports />
   <registry>

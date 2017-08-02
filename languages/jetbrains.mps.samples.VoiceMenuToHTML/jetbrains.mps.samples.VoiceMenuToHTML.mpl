@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="jetbrains.mps.samples.VoiceMenuToHTML" uuid="750ae49d-4f57-400c-b5dc-2b58c1e3f9a9" languageVersion="0" moduleVersion="0">
+<language namespace="jetbrains.mps.samples.VoiceMenuToHTML" uuid="958ea605-76c8-4653-8135-31dd9bfa2915" languageVersion="0" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="main" namespace="jetbrains.mps.samples.VoiceMenuToHTML#6772988411135600674" uuid="615b0415-b02b-4e4d-8616-8286eccbc991" reflective-queries="true">
+    <generator alias="main" namespace="jetbrains.mps.samples.VoiceMenuToHTML#6772988411135873050" uuid="30363413-03d4-4105-8896-5b67ce926d1b" reflective-queries="true">
       <models>
         <modelRoot contentPath="${module}/generator/template" type="default">
           <sourceRoot location="." />
@@ -17,7 +17,6 @@
       <dependencies>
         <dependency reexport="false">4bc750d7-5688-4f52-b7d5-b263a3393a24(jetbrains.mps.samples.VoiceMenu)</dependency>
         <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
-        <dependency reexport="false">57e28e8c-0546-413c-85d3-8bbf19aa8150(jetbrains.mps.samples.VoiceMenu#5606780960159195253)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="5" />
@@ -45,9 +44,8 @@
         <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
         <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
         <module reference="4bc750d7-5688-4f52-b7d5-b263a3393a24(jetbrains.mps.samples.VoiceMenu)" version="0" />
-        <module reference="57e28e8c-0546-413c-85d3-8bbf19aa8150(jetbrains.mps.samples.VoiceMenu#5606780960159195253)" version="0" />
-        <module reference="750ae49d-4f57-400c-b5dc-2b58c1e3f9a9(jetbrains.mps.samples.VoiceMenuToXML)" version="0" />
-        <module reference="615b0415-b02b-4e4d-8616-8286eccbc991(jetbrains.mps.samples.VoiceMenuToXML#6772988411135600674)" version="0" />
+        <module reference="958ea605-76c8-4653-8135-31dd9bfa2915(jetbrains.mps.samples.VoiceMenuToHTML)" version="0" />
+        <module reference="30363413-03d4-4105-8896-5b67ce926d1b(jetbrains.mps.samples.VoiceMenuToHTML#6772988411135873050)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
@@ -96,11 +94,8 @@
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
     <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
-    <module reference="4bc750d7-5688-4f52-b7d5-b263a3393a24(jetbrains.mps.samples.VoiceMenu)" version="0" />
-    <module reference="750ae49d-4f57-400c-b5dc-2b58c1e3f9a9(jetbrains.mps.samples.VoiceMenuToXML)" version="0" />
+    <module reference="958ea605-76c8-4653-8135-31dd9bfa2915(jetbrains.mps.samples.VoiceMenuToHTML)" version="0" />
   </dependencyVersions>
-  <extendedLanguages>
-    <extendedLanguage>4bc750d7-5688-4f52-b7d5-b263a3393a24(jetbrains.mps.samples.VoiceMenu)</extendedLanguage>
-  </extendedLanguages>
+  <extendedLanguages />
 </language>
 

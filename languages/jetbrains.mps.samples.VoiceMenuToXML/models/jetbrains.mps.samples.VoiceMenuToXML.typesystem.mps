@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:b6e5dd05-aac0-4ec5-8ca3-0eab824f2d81(jetbrains.mps.samples.VoiceMenuToHTML.behavior)">
+<model ref="r:9353952d-7cc9-405e-bb8f-43ae9c874707(jetbrains.mps.samples.VoiceMenuToXML.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports />
