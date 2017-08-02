@@ -22,6 +22,8 @@
       <concept id="6587365532662629576" name="jetbrains.mps.samples.VoiceMenu.structure.WorkSpace" flags="ng" index="2Jqgb4">
         <child id="6587365532662629611" name="body" index="2JqgbB" />
       </concept>
+      <concept id="6772988411135920842" name="jetbrains.mps.samples.VoiceMenu.structure.Back" flags="ng" index="1$pBvp" />
+      <concept id="6772988411135920841" name="jetbrains.mps.samples.VoiceMenu.structure.Other" flags="ng" index="1$pBvq" />
       <concept id="6772988411135920840" name="jetbrains.mps.samples.VoiceMenu.structure.DirectCall" flags="ng" index="1$pBvr" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -50,6 +52,10 @@
               <node concept="2C_I21" id="5lu2mvqLvGf" role="2C_I26">
                 <ref role="2C_gVZ" node="5lu2mvqLfeJ" resolve="Tarifs" />
                 <node concept="1$pBvr" id="5lu2mvqLvGl" role="2C_gVu" />
+              </node>
+              <node concept="2C_I21" id="5lu2mvqM3HY" role="2C_I26">
+                <ref role="2C_gVZ" node="5lu2mvqLfeM" resolve="Back" />
+                <node concept="1$pBvp" id="5lu2mvqM3I4" role="2C_gVu" />
               </node>
             </node>
           </node>
@@ -89,6 +95,10 @@
                 <property role="2C_Iks" value="4" />
                 <property role="TrG5h" value="ZZZ" />
               </node>
+              <node concept="2C_I21" id="5lu2mvqM1QD" role="2C_I26">
+                <ref role="2C_gVZ" node="5lu2mvqLHB8" resolve="XXX" />
+                <node concept="1$pBvp" id="5lu2mvqM1QH" role="2C_gVu" />
+              </node>
             </node>
           </node>
         </node>
@@ -99,6 +109,10 @@
           <node concept="2C_Ik0" id="5lu2mvqHZaJ" role="2C_I24">
             <property role="2C_Iks" value="1" />
             <property role="TrG5h" value="Free calls" />
+          </node>
+          <node concept="2C_I21" id="5lu2mvqM3HB" role="2C_I26">
+            <ref role="2C_gVZ" node="5lu2mvqHZaJ" resolve="Free calls" />
+            <node concept="1$pBvq" id="5lu2mvqM3HF" role="2C_gVu" />
           </node>
         </node>
       </node>

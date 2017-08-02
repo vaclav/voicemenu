@@ -2,7 +2,7 @@
 <debug-info version="2">
   <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/6587365532662638252">
     <file name="Call_Center.xml">
-      <unit id="6587365532662638252" at="1,0,146,7" name="jetbrains.mps.samples.VoiceMenu.sandbox.Call_Center" />
+      <unit id="6587365532662638252" at="1,0,164,7" name="jetbrains.mps.samples.VoiceMenu.sandbox.Call_Center" />
     </file>
   </root>
 </debug-info>

@@ -76,8 +76,14 @@
               <menu name=""></menu>
               
             </activity>
+            <activity>
+              <b style="margin-left: 40px;color:blue">Back</b>
+              <menu name=""></menu>
+              
+            </activity>
             
-            <DirectCall>important call</DirectCall>
+            <b style="margin-left: 80px;color:green">--> [ Direct Call ]</b>
+            <b style="margin-left: 80px;color:green">--> [ Back ]</b>
             
           </menu>
           
@@ -116,7 +122,13 @@
               </tr>
             </table>
             
+            <activity>
+              <b style="margin-left: 40px;color:blue">XXX</b>
+              <menu name=""></menu>
+              
+            </activity>
             
+            <b style="margin-left: 80px;color:green">--> [ Back ]</b>
             
           </menu>
           
@@ -133,7 +145,13 @@
             </tr>
           </table>
           
+          <activity>
+            <b style="margin-left: 40px;color:blue">Free calls</b>
+            <menu name=""></menu>
+            
+          </activity>
           
+          <b style="margin-left: 80px;color:green">--> [ Other ]</b>
           
         </menu>
         
