@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.samples.VoiceMenu/jetbrains.mps.samples.VoiceMenu.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.samples.VoiceMenu/sandbox/jetbrains.mps.samples.VoiceMenu.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.samples.VoiceMenuToXML/jetbrains.mps.samples.VoiceMenuToHTML.mpl" folder="" />
     </projectModules>
   </component>
 </project>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  
+  <style>
+      table, th, td{
+         border: 1px solid black;
+         border-collapse: collapse;
+      }
+      th, td {
+         padding: 5px;
+         text-align: left;
+      }
+      </style>
+  
+  <body>
+    
+    <table>
+      <b style="color:blue">Call_Center</b>
+      
+      <tr>
+        <th>Internet</th>
+        <td>1</td>
+      </tr>
+      <tr>
+        <th>Calls</th>
+        <td>2</td>
+      </tr>
+      <tr>
+        <th>Bonus</th>
+        <td>3</td>
+      </tr>
+      <tr>
+        <th>New</th>
+        <td>4</td>
+      </tr>
+    </table>
+    
+    <actions>
+      <menu name="">
+        
+        <b style="color:red">Internet</b>
+        
+        
+        <table>
+          
+          <tr>
+            <th>Free Internet</th>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>Adds</th>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>Back</th>
+            <td>#</td>
+          </tr>
+        </table>
+      </menu>
+      <menu name="">
+        
+        <b style="color:red">Calls</b>
+        
+        
+        <table>
+          
+          <tr>
+            <th>Exit</th>
+            <td>1</td>
+          </tr>
+        </table>
+        <menu name="">
+          
+          <b style="color:red">Exit</b>
+          
+          
+          <table>
+            
+            <tr>
+              <th>"Nothing"</th>
+              <td>1</td>
+            </tr>
+          </table>
+        </menu>
+      </menu>
+      <menu name="">
+        
+        <b style="color:red">Bonus</b>
+        
+        
+        <table>
+          
+          <tr>
+            <th>Free adds</th>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>Free candy</th>
+            <td>2</td>
+          </tr>
+        </table>
+      </menu>
+    </actions>
+    
+  </body>
+  
+</html>

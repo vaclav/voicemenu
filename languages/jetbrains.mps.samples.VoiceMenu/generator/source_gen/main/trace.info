@@ -1,47 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <root>
     <file name="QueriesGenerated.java">
-      <unit at="14,0,56,0" name="main.QueriesGenerated" />
-    </file>
-  </root>
-  <root nodeRef="r:fcbe328d-713d-4d59-808c-943d2b78f9f3(main@generator)/6587365532662799458">
-    <file name="QueriesGenerated.java">
-      <node id="6772988411135242093" at="16,112,17,175" concept="0" />
-      <node id="6587365532662811048" at="19,112,20,175" concept="0" />
-      <node id="6587365532662890815" at="22,112,23,188" concept="0" />
-      <node id="6587365532662799477" at="25,112,26,175" concept="0" />
-      <node id="6587365532662871531" at="43,120,44,509" concept="0" />
-      <node id="6772988411135365971" at="46,120,47,351" concept="0" />
-      <scope id="6772988411135242087" at="16,112,17,175" />
-      <scope id="6587365532662811042" at="19,112,20,175" />
-      <scope id="6587365532662890809" at="22,112,23,188" />
-      <scope id="6587365532662799471" at="25,112,26,175" />
-      <scope id="6587365532662870503" at="43,120,44,509" />
-      <scope id="6772988411135362380" at="46,120,47,351" />
-    </file>
-  </root>
-  <root nodeRef="r:fcbe328d-713d-4d59-808c-943d2b78f9f3(main@generator)/6772988411135372774">
-    <file name="QueriesGenerated.java">
-      <node id="6772988411135372897" at="28,112,29,175" concept="0" />
-      <node id="6772988411135398880" at="31,112,32,333" concept="0" />
-      <node id="6772988411135417025" at="40,108,41,347" concept="0" />
-      <node id="6772988411135376681" at="49,120,50,351" concept="0" />
-      <scope id="6772988411135372891" at="28,112,29,175" />
-      <scope id="6772988411135398879" at="31,112,32,333" />
-      <scope id="6772988411135417019" at="40,108,41,347" />
-      <scope id="6772988411135376359" at="49,120,50,351" />
-    </file>
-  </root>
-  <root nodeRef="r:fcbe328d-713d-4d59-808c-943d2b78f9f3(main@generator)/6772988411135394624">
-    <file name="QueriesGenerated.java">
-      <node id="6772988411135398891" at="34,112,35,175" concept="0" />
-      <node id="6772988411135398900" at="37,112,38,188" concept="0" />
-      <node id="6772988411135405372" at="52,120,53,192" concept="0" />
-      <scope id="6772988411135398890" at="34,112,35,175" />
-      <scope id="6772988411135398899" at="37,112,38,188" />
-      <scope id="6772988411135398906" at="52,120,53,192" />
+      <unit at="7,0,10,0" name="main.QueriesGenerated" />
     </file>
   </root>
 </debug-info>
