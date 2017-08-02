@@ -15,92 +15,131 @@
   <body>
     
     <table>
-      <b style="color:blue">Call_Center</b>
+      <b style="color:green">Call_Center</b>
       
       <tr>
         <th>Internet</th>
         <td>1</td>
       </tr>
       <tr>
-        <th>Calls</th>
+        <th>News</th>
         <td>2</td>
       </tr>
       <tr>
-        <th>Bonus</th>
+        <th>Calls</th>
         <td>3</td>
       </tr>
-      <tr>
-        <th>New</th>
-        <td>4</td>
-      </tr>
+      
     </table>
     
-    <actions>
-      <menu name="">
-        
-        <b style="color:red">Internet</b>
-        
-        
-        <table>
-          
-          <tr>
-            <th>Free Internet</th>
-            <td>1</td>
-          </tr>
-          <tr>
-            <th>Adds</th>
-            <td>2</td>
-          </tr>
-          <tr>
-            <th>Back</th>
-            <td>#</td>
-          </tr>
-        </table>
-      </menu>
-      <menu name="">
-        
-        <b style="color:red">Calls</b>
-        
-        
-        <table>
-          
-          <tr>
-            <th>Exit</th>
-            <td>1</td>
-          </tr>
-        </table>
-        <menu name="">
-          
-          <b style="color:red">Exit</b>
-          
-          
+    <activity>
+      
+      <!--just once instance of menu-->
+      <content>
+        <b style="margin-left: 40px;color:blue">Internet</b>
+        <menu>
           <table>
-            
             <tr>
-              <th>"Nothing"</th>
+              <th>Free Internet</th>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>Bonus</th>
+              <td>2</td>
+            </tr>
+            <tr>
+              <th>Back</th>
+              <td>#</td>
+            </tr>
+          </table>
+          
+          <activity>
+            <b style="margin-left: 40px;color:blue">Bonus</b>
+            <menu name=""></menu>
+            
+          </activity>
+          
+          <menu>
+            <table>
+              <tr>
+                <th>Tarifs</th>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th>Back</th>
+                <td>#</td>
+              </tr>
+            </table>
+            
+            <activity>
+              <b style="margin-left: 40px;color:blue">Tarifs</b>
+              <menu name=""></menu>
+              
+            </activity>
+            
+            <DirectCall>important call</DirectCall>
+            
+          </menu>
+          
+        </menu>
+        
+      </content>
+      <content>
+        <b style="margin-left: 40px;color:blue">News</b>
+        <menu>
+          <table>
+            <tr>
+              <th>Hot News</th>
               <td>1</td>
             </tr>
           </table>
-        </menu>
-      </menu>
-      <menu name="">
-        
-        <b style="color:red">Bonus</b>
-        
-        
-        <table>
           
-          <tr>
-            <th>Free adds</th>
-            <td>1</td>
-          </tr>
-          <tr>
-            <th>Free candy</th>
-            <td>2</td>
-          </tr>
-        </table>
-      </menu>
-    </actions>
+          <activity>
+            <b style="margin-left: 40px;color:blue">Hot News</b>
+            <menu name=""></menu>
+            
+          </activity>
+          
+          <menu>
+            <table>
+              <tr>
+                <th>Direct call</th>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th>XXX</th>
+                <td>2</td>
+              </tr>
+              <tr>
+                <th>ZZZ</th>
+                <td>4</td>
+              </tr>
+            </table>
+            
+            
+            
+          </menu>
+          
+        </menu>
+        
+      </content>
+      <content>
+        <b style="margin-left: 40px;color:blue">Calls</b>
+        <menu>
+          <table>
+            <tr>
+              <th>Free calls</th>
+              <td>1</td>
+            </tr>
+          </table>
+          
+          
+          
+        </menu>
+        
+      </content>
+      
+    </activity>
     
   </body>
   

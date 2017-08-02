@@ -12,6 +12,8 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -37,6 +39,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -45,9 +50,9 @@
   <node concept="1TIwiD" id="5HF1wNNZuc8">
     <property role="EcuMT" value="6587365532662358792" />
     <property role="TrG5h" value="Menu" />
-    <property role="34LRSv" value="Menu" />
+    <property role="34LRSv" value="menu" />
     <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="5lu2mvqIooX" resolve="Command" />
     <node concept="PrWs8" id="5HF1wNNZucp" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
@@ -55,31 +60,15 @@
       <property role="IQ2ns" value="6587365532662359688" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="table" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5HF1wNNZuc9" resolve="Table" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5HF1wNNZucc" resolve="Event" />
     </node>
     <node concept="1TJgyj" id="5HF1wNNZuqa" role="1TKVEi">
       <property role="IQ2ns" value="6587365532662359690" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="actions" />
+      <property role="20kJfa" value="activities" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="5HF1wNNZuqd" resolve="Action" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5HF1wNNZuc9">
-    <property role="EcuMT" value="6587365532662358793" />
-    <property role="TrG5h" value="Table" />
-    <property role="34LRSv" value="table" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="5HF1wNNZuca" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="5HF1wNNZuqg" role="1TKVEi">
-      <property role="IQ2ns" value="6587365532662359696" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="events" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="5HF1wNNZucc" resolve="Event" />
+      <ref role="20lvS9" node="5HF1wNNZuqd" resolve="Activity" />
     </node>
   </node>
   <node concept="1TIwiD" id="5HF1wNNZucc">
@@ -97,8 +86,8 @@
   </node>
   <node concept="1TIwiD" id="5HF1wNNZuqd">
     <property role="EcuMT" value="6587365532662359693" />
-    <property role="TrG5h" value="Action" />
-    <property role="34LRSv" value="action" />
+    <property role="TrG5h" value="Activity" />
+    <property role="34LRSv" value="activity" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5HF1wNNZuqe" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -106,14 +95,14 @@
     <node concept="1TJgyj" id="5HF1wNNZwzi" role="1TKVEi">
       <property role="IQ2ns" value="6587365532662368466" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="menu" />
+      <property role="20kJfa" value="commands" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5HF1wNNZuc8" resolve="Menu" />
+      <ref role="20lvS9" node="5lu2mvqIooX" resolve="Command" />
     </node>
     <node concept="1TJgyj" id="5HF1wNNZwzN" role="1TKVEi">
       <property role="IQ2ns" value="6587365532662368499" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="action" />
+      <property role="20kJfa" value="events" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5HF1wNNZucc" resolve="Event" />
     </node>
@@ -134,6 +123,56 @@
     <node concept="PrWs8" id="5HF1wNO0wky" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="5RYvhcT_ZR5">
+    <property role="EcuMT" value="6772988411135917509" />
+    <property role="TrG5h" value="Action" />
+    <property role="34LRSv" value="action" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="5lu2mvqIooX" resolve="Command" />
+  </node>
+  <node concept="1TIwiD" id="5RYvhcTA0F8">
+    <property role="EcuMT" value="6772988411135920840" />
+    <property role="TrG5h" value="DirectCall" />
+    <property role="3GE5qa" value="RealActions" />
+    <property role="34LRSv" value="direct call" />
+    <ref role="1TJDcQ" node="5RYvhcT_ZR5" resolve="Action" />
+  </node>
+  <node concept="1TIwiD" id="5RYvhcTA0F9">
+    <property role="EcuMT" value="6772988411135920841" />
+    <property role="TrG5h" value="Other" />
+    <property role="3GE5qa" value="RealActions" />
+    <property role="34LRSv" value="other" />
+    <ref role="1TJDcQ" node="5RYvhcT_ZR5" resolve="Action" />
+  </node>
+  <node concept="1TIwiD" id="5RYvhcTA0Fa">
+    <property role="EcuMT" value="6772988411135920842" />
+    <property role="TrG5h" value="Back" />
+    <property role="3GE5qa" value="RealActions" />
+    <property role="34LRSv" value="back" />
+    <ref role="1TJDcQ" node="5RYvhcT_ZR5" resolve="Action" />
+  </node>
+  <node concept="1TIwiD" id="5RYvhcTA0Fb">
+    <property role="EcuMT" value="6772988411135920843" />
+    <property role="TrG5h" value="GetInfo" />
+    <property role="3GE5qa" value="RealActions" />
+    <property role="34LRSv" value="get info" />
+    <ref role="1TJDcQ" node="5RYvhcT_ZR5" resolve="Action" />
+  </node>
+  <node concept="1TIwiD" id="5lu2mvqIooX">
+    <property role="EcuMT" value="6151364482690549309" />
+    <property role="TrG5h" value="Command" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="34LRSv" value="command" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="5lu2mvqIsn3">
+    <property role="EcuMT" value="6151364482690565571" />
+    <property role="TrG5h" value="Empty" />
+    <property role="34LRSv" value="&lt;empty&gt;" />
+    <ref role="1TJDcQ" node="5lu2mvqIooX" resolve="Command" />
   </node>
 </model>
 

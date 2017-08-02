@@ -10,17 +10,29 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
   public static final int Action = 0;
-  public static final int Event = 1;
-  public static final int Menu = 2;
-  public static final int Table = 3;
-  public static final int WorkSpace = 4;
+  public static final int Activity = 1;
+  public static final int Back = 2;
+  public static final int Command = 3;
+  public static final int DirectCall = 4;
+  public static final int Empty = 5;
+  public static final int Event = 6;
+  public static final int GetInfo = 7;
+  public static final int Menu = 8;
+  public static final int Other = 9;
+  public static final int WorkSpace = 10;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x4bc750d756884f52L, 0xb7d5b263a3393a24L);
-    builder.put(0x5b6b060cf3fde68dL, Action);
+    builder.put(0x5dfe7d133997fdc5L, Action);
+    builder.put(0x5b6b060cf3fde68dL, Activity);
+    builder.put(0x5dfe7d1339980acaL, Back);
+    builder.put(0x555e0967dab9863dL, Command);
+    builder.put(0x5dfe7d1339980ac8L, DirectCall);
+    builder.put(0x555e0967dab9c5c3L, Empty);
     builder.put(0x5b6b060cf3fde30cL, Event);
+    builder.put(0x5dfe7d1339980acbL, GetInfo);
     builder.put(0x5b6b060cf3fde308L, Menu);
-    builder.put(0x5b6b060cf3fde309L, Table);
+    builder.put(0x5dfe7d1339980ac9L, Other);
     builder.put(0x5b6b060cf40204c8L, WorkSpace);
     myIndex = builder.seal();
   }
