@@ -186,6 +186,12 @@
       <node concept="3o6iSG" id="5HF1wNO1ya_" role="3o6s8t">
         <property role="3o6i5n" value="   border-collapse: collapse;" />
       </node>
+      <node concept="3o6iSG" id="5lu2mvqM$kH" role="3o6s8t">
+        <property role="3o6i5n" value="padding: 0px;" />
+      </node>
+      <node concept="3o6iSG" id="5lu2mvqM$lw" role="3o6s8t">
+        <property role="3o6i5n" value="margin: 0px;" />
+      </node>
       <node concept="3o6iSG" id="5HF1wNO1y9f" role="3o6s8t">
         <property role="3o6i5n" value="}" />
       </node>

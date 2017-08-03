@@ -51,6 +51,7 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
+      <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
       </concept>
@@ -231,6 +232,9 @@
             <node concept="VPxyj" id="5lu2mvqID12" role="3F10Kt">
               <property role="VOm3f" value="false" />
             </node>
+            <node concept="VPM3Z" id="5lu2mvqMA_w" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
           </node>
         </node>
       </node>
@@ -250,6 +254,9 @@
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="xehl:5HF1wNNZucg" resolve="trigger" />
             <node concept="VPxyj" id="5lu2mvqIDau" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
+            <node concept="VPM3Z" id="5lu2mvqMDDr" role="3F10Kt">
               <property role="VOm3f" value="false" />
             </node>
           </node>

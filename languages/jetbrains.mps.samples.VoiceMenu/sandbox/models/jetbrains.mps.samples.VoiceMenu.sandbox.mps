@@ -3,11 +3,12 @@
   <persistence version="9" />
   <languages>
     <use id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu" version="-1" />
-    <engage id="958ea605-76c8-4653-8135-31dd9bfa2915" name="jetbrains.mps.samples.VoiceMenuToHTML" />
+    <engage id="750ae49d-4f57-400c-b5dc-2b58c1e3f9a9" name="jetbrains.mps.samples.VoiceMenuToXML" />
   </languages>
   <imports />
   <registry>
     <language id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu">
+      <concept id="6151364482690565571" name="jetbrains.mps.samples.VoiceMenu.structure.Empty" flags="ng" index="2fTWM$" />
       <concept id="6587365532662359693" name="jetbrains.mps.samples.VoiceMenu.structure.Activity" flags="ng" index="2C_I21">
         <reference id="6587365532662368499" name="events" index="2C_gVZ" />
         <child id="6587365532662368466" name="commands" index="2C_gVu" />
@@ -100,6 +101,10 @@
                 <node concept="1$pBvp" id="5lu2mvqM1QH" role="2C_gVu" />
               </node>
             </node>
+          </node>
+          <node concept="2C_I21" id="5lu2mvqMDvJ" role="2C_I26">
+            <ref role="2C_gVZ" node="5lu2mvqHZ78" resolve="Hot News" />
+            <node concept="2fTWM$" id="5lu2mvqMDvK" role="2C_gVu" />
           </node>
         </node>
       </node>
