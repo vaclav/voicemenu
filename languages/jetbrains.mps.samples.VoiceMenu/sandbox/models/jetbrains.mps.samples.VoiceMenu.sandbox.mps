@@ -3,12 +3,11 @@
   <persistence version="9" />
   <languages>
     <use id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu" version="-1" />
-    <engage id="750ae49d-4f57-400c-b5dc-2b58c1e3f9a9" name="jetbrains.mps.samples.VoiceMenuToXML" />
+    <engage id="0b30ef64-0c5e-4567-b992-9bf5bbc44c0a" name="jetbrains.mps.samples.VoiceMenuToHTML_2" />
   </languages>
   <imports />
   <registry>
     <language id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu">
-      <concept id="6151364482690565571" name="jetbrains.mps.samples.VoiceMenu.structure.Empty" flags="ng" index="2fTWM$" />
       <concept id="6587365532662359693" name="jetbrains.mps.samples.VoiceMenu.structure.Activity" flags="ng" index="2C_I21">
         <reference id="6587365532662368499" name="events" index="2C_gVZ" />
         <child id="6587365532662368466" name="commands" index="2C_gVu" />
@@ -23,6 +22,7 @@
       <concept id="6587365532662629576" name="jetbrains.mps.samples.VoiceMenu.structure.WorkSpace" flags="ng" index="2Jqgb4">
         <child id="6587365532662629611" name="body" index="2JqgbB" />
       </concept>
+      <concept id="6772988411135920843" name="jetbrains.mps.samples.VoiceMenu.structure.GetInfo" flags="ng" index="1$pBvo" />
       <concept id="6772988411135920842" name="jetbrains.mps.samples.VoiceMenu.structure.Back" flags="ng" index="1$pBvp" />
       <concept id="6772988411135920841" name="jetbrains.mps.samples.VoiceMenu.structure.Other" flags="ng" index="1$pBvq" />
       <concept id="6772988411135920840" name="jetbrains.mps.samples.VoiceMenu.structure.DirectCall" flags="ng" index="1$pBvr" />
@@ -84,27 +84,35 @@
           <node concept="2C_I21" id="5lu2mvqHZ8u" role="2C_I26">
             <ref role="2C_gVZ" node="5lu2mvqHZ78" resolve="Hot News" />
             <node concept="2C_Ik4" id="5lu2mvqHZ8v" role="2C_gVu">
+              <node concept="2C_I21" id="2m0r6rVSNUf" role="2C_I26">
+                <ref role="2C_gVZ" node="5lu2mvqHZ8$" resolve="Direct call" />
+                <node concept="1$pBvr" id="2m0r6rVSNUj" role="2C_gVu" />
+              </node>
+              <node concept="2C_I21" id="2m0r6rVSNUm" role="2C_I26">
+                <ref role="2C_gVZ" node="5lu2mvqLHB8" resolve="Daily bonus" />
+                <node concept="1$pBvo" id="2m0r6rVSNUs" role="2C_gVu" />
+              </node>
+              <node concept="2C_I21" id="2m0r6rVSNUv" role="2C_I26">
+                <ref role="2C_gVZ" node="5lu2mvqLHBd" resolve="Back" />
+                <node concept="1$pBvp" id="2m0r6rVSNUB" role="2C_gVu" />
+              </node>
               <node concept="2C_Ik0" id="5lu2mvqHZ8$" role="2C_I24">
                 <property role="2C_Iks" value="1" />
                 <property role="TrG5h" value="Direct call" />
               </node>
               <node concept="2C_Ik0" id="5lu2mvqLHB8" role="2C_I24">
                 <property role="2C_Iks" value="2" />
-                <property role="TrG5h" value="XXX" />
+                <property role="TrG5h" value="Daily bonus" />
               </node>
               <node concept="2C_Ik0" id="5lu2mvqLHBd" role="2C_I24">
                 <property role="2C_Iks" value="4" />
-                <property role="TrG5h" value="ZZZ" />
-              </node>
-              <node concept="2C_I21" id="5lu2mvqM1QD" role="2C_I26">
-                <ref role="2C_gVZ" node="5lu2mvqLHB8" resolve="XXX" />
-                <node concept="1$pBvp" id="5lu2mvqM1QH" role="2C_gVu" />
+                <property role="TrG5h" value="Back" />
               </node>
             </node>
           </node>
           <node concept="2C_I21" id="5lu2mvqMDvJ" role="2C_I26">
             <ref role="2C_gVZ" node="5lu2mvqHZ78" resolve="Hot News" />
-            <node concept="2fTWM$" id="5lu2mvqMDvK" role="2C_gVu" />
+            <node concept="1$pBvo" id="2m0r6rVSO13" role="2C_gVu" />
           </node>
         </node>
       </node>
