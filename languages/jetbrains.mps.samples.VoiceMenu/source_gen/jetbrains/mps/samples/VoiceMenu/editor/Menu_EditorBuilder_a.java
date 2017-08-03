@@ -49,6 +49,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     editorCell.setCellId("Collection_gd4rom_a");
     editorCell.setBig(true);
     editorCell.setCellContext(getCellFactory().getCellContext());
+    editorCell.setFoldable(true);
     editorCell.addEditorCell(createRefNodeList_gd4rom_a0());
     if (nodeCondition_gd4rom_a1a()) {
       editorCell.addEditorCell(createRefNodeList_gd4rom_b0());
