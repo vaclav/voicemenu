@@ -89,9 +89,6 @@
     <property role="TrG5h" value="Activity" />
     <property role="34LRSv" value="activity" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="5HF1wNNZuqe" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
     <node concept="1TJgyj" id="5HF1wNNZwzi" role="1TKVEi">
       <property role="IQ2ns" value="6587365532662368466" />
       <property role="20lmBu" value="aggregation" />
