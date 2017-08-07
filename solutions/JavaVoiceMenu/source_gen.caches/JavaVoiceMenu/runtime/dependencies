@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="JavaVoiceMenu.runtime.Behaviour" file="Behaviour.java">
+    <classNode dependClassName="JavaVoiceMenu.runtime.Event" />
+    <classNode dependClassName="JavaVoiceMenu.runtime.Main" />
+    <classNode dependClassName="JavaVoiceMenu.runtime.Voice" />
+    <classNode dependClassName="JavaVoiceMenu.runtime.VoiceManager" />
+    <classNode dependClassName="java.awt.event.ActionEvent" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="JavaVoiceMenu.runtime.Data" file="Data.java">
+    <classNode dependClassName="JavaVoiceMenu.runtime.Main" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Dimension" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="javax.swing.JButton" />
+    <classNode dependClassName="javax.swing.JPanel" />
+    <classNode dependClassName="javax.swing.border.Border" />
+    <classNode dependClassName="javax.swing.border.LineBorder" />
+  </dependency>
+  <dependency className="JavaVoiceMenu.runtime.Event" file="Event.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+  </dependency>
+  <dependency className="JavaVoiceMenu.runtime.Style" file="Style.java">
+    <classNode dependClassName="JavaVoiceMenu.runtime.Main" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Dimension" />
+    <classNode dependClassName="java.awt.Insets" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="javax.swing.JButton" />
+    <classNode dependClassName="javax.swing.JFrame" />
+    <classNode dependClassName="javax.swing.JPanel" />
+    <classNode dependClassName="javax.swing.JTextArea" />
+    <classNode dependClassName="javax.swing.JTextPane" />
+    <classNode dependClassName="javax.swing.border.Border" />
+  </dependency>
+</dependenciesRoot>
+

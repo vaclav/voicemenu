@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:d8d37b74-a8e1-4a57-a2ee-4a996f4ba158(JavaVoiceMenu.runtime)/4125776596820021367">
+    <file name="Event.java">
+      <node id="4125776596820021369" at="8,0,9,0" concept="3" trace="name" />
+      <node id="4125776596820021372" at="9,0,10,0" concept="3" trace="trigger" />
+      <node id="4125776596820021376" at="10,0,11,0" concept="3" trace="childs" />
+      <node id="4125776596820021380" at="11,0,12,0" concept="3" trace="action" />
+      <node id="4125776596820021383" at="12,0,13,0" concept="3" trace="toast" />
+      <unit id="4125776596820021367" at="7,0,14,0" name="JavaVoiceMenu.runtime.Event" />
+    </file>
+  </root>
+  <root nodeRef="r:d8d37b74-a8e1-4a57-a2ee-4a996f4ba158(JavaVoiceMenu.runtime)/4125776596820021574">
+    <file name="Behaviour.java">
+      <node id="4125776596820021724" at="8,48,9,37" concept="9" />
+      <node id="4125776596820021581" at="9,37,10,102" concept="7" />
+      <node id="4125776596820021585" at="10,102,11,100" concept="7" />
+      <node id="4125776596820021589" at="11,100,12,84" concept="2" />
+      <node id="4125776596820021726" at="12,84,13,53" concept="9" />
+      <node id="4125776596820021592" at="13,53,14,103" concept="7" />
+      <node id="4125776596820021728" at="14,103,15,74" concept="9" />
+      <node id="4125776596820021601" at="16,93,17,86" concept="2" />
+      <node id="4125776596820021608" at="18,12,19,180" concept="2" />
+      <node id="4125776596820021614" at="20,5,21,84" concept="2" />
+      <node id="4125776596820021730" at="21,84,22,72" concept="9" />
+      <node id="4125776596820021618" at="22,72,23,105" concept="7" />
+      <node id="4125776596820021732" at="23,105,24,76" concept="9" />
+      <node id="4125776596820021734" at="26,92,27,42" concept="9" />
+      <node id="4125776596820021632" at="27,42,28,88" concept="2" />
+      <node id="4125776596820021635" at="28,88,29,170" concept="2" />
+      <node id="4125776596820021736" at="29,170,30,34" concept="9" />
+      <node id="4125776596820021643" at="30,34,31,103" concept="2" />
+      <node id="4125776596820021648" at="33,5,34,84" concept="2" />
+      <node id="4125776596820021738" at="34,84,35,29" concept="9" />
+      <node id="4125776596820021651" at="35,29,36,84" concept="2" />
+      <node id="4125776596820021654" at="36,84,37,84" concept="2" />
+      <node id="4125776596820021740" at="37,84,38,48" concept="9" />
+      <node id="4125776596820021657" at="38,48,39,84" concept="2" />
+      <node id="4125776596820021742" at="39,84,40,60" concept="9" />
+      <node id="4125776596820021662" at="41,105,42,86" concept="2" />
+      <node id="4125776596820021671" at="42,86,43,86" concept="2" />
+      <node id="4125776596820021744" at="46,37,47,84" concept="9" />
+      <node id="4125776596820021682" at="47,84,48,84" concept="2" />
+      <node id="4125776596820021746" at="48,84,49,43" concept="9" />
+      <node id="4125776596820021748" at="49,43,50,53" concept="9" />
+      <node id="4125776596820021685" at="50,53,51,105" concept="7" />
+      <node id="4125776596820021692" at="52,44,53,86" concept="2" />
+      <node id="4125776596820021750" at="54,5,55,62" concept="9" />
+      <node id="4125776596820021700" at="55,62,56,96" concept="7" />
+      <node id="4125776596820021752" at="56,96,57,48" concept="9" />
+      <node id="4125776596820021703" at="57,48,58,84" concept="2" />
+      <node id="4125776596820021754" at="58,84,59,36" concept="9" />
+      <node id="4125776596820021707" at="59,36,60,102" concept="7" />
+      <node id="4125776596820021711" at="60,102,61,100" concept="7" />
+      <node id="4125776596820021715" at="61,100,62,84" concept="2" />
+      <node id="4125776596820021606" at="18,10,20,5" concept="0" />
+      <node id="4125776596820021689" at="51,105,54,5" concept="4" />
+      <node id="4125776596820021659" at="40,60,44,5" concept="4" />
+      <node id="4125776596820021595" at="15,74,20,5" concept="5" />
+      <node id="4125776596820021627" at="25,93,32,7" concept="5" />
+      <node id="4125776596820021622" at="24,76,33,5" concept="5" />
+      <node id="4125776596820021680" at="46,0,64,0" concept="11" trace="runInitSetup#()V" />
+      <node id="4125776596820021576" at="8,0,46,0" concept="11" trace="runLogic#(Ljava/awt/event/ActionEvent;)V" />
+      <scope id="4125776596820021600" at="16,93,17,86" />
+      <scope id="4125776596820021607" at="18,12,19,180" />
+      <scope id="4125776596820021691" at="52,44,53,86" />
+      <scope id="4125776596820021661" at="41,105,43,86" />
+      <scope id="4125776596820021689" at="51,105,54,5">
+        <var name="item" id="4125776596820021695" />
+      </scope>
+      <scope id="4125776596820021659" at="40,60,44,5">
+        <var name="child" id="4125776596820021674" />
+      </scope>
+      <scope id="4125776596820021631" at="26,92,31,103" />
+      <scope id="4125776596820021626" at="25,93,32,7" />
+      <scope id="4125776596820021681" at="46,37,62,84">
+        <var name="currentEvent" id="4125776596820021684" />
+        <var name="instance" id="4125776596820021699" />
+        <var name="myVoice" id="4125776596820021710" />
+        <var name="vm" id="4125776596820021706" />
+      </scope>
+      <scope id="4125776596820021680" at="46,0,64,0" />
+      <scope id="4125776596820021579" at="8,48,44,5">
+        <var name="character" id="4125776596820021591" />
+        <var name="currentEvent" id="4125776596820021617" />
+        <var name="myVoice" id="4125776596820021584" />
+        <var name="vm" id="4125776596820021580" />
+      </scope>
+      <scope id="4125776596820021576" at="8,0,46,0">
+        <var name="evt" id="4125776596820021577" />
+      </scope>
+      <unit id="4125776596820021574" at="7,0,65,0" name="JavaVoiceMenu.runtime.Behaviour" />
+    </file>
+  </root>
+  <root nodeRef="r:d8d37b74-a8e1-4a57-a2ee-4a996f4ba158(JavaVoiceMenu.runtime)/4125776596820028943">
+    <file name="Data.java">
+      <node id="4125776596820028983" at="27,0,28,0" concept="3" trace="code" />
+      <node id="4125776596820028992" at="28,33,29,23" concept="2" />
+      <node id="4125776596820029000" at="31,29,32,18" concept="8" />
+      <node id="4125776596820029006" at="34,29,35,20" concept="8" />
+      <node id="4125776596820135140" at="39,51,40,51" concept="7" />
+      <node id="4125776596820080561" at="40,51,41,46" concept="2" />
+      <node id="4125776596820096983" at="41,46,42,41" concept="2" />
+      <node id="4125776596820105618" at="42,41,43,53" concept="2" />
+      <node id="4125776596820029036" at="43,53,44,54" concept="7" />
+      <node id="4125776596820122309" at="44,54,45,31" concept="2" />
+      <node id="4125776596820029044" at="45,31,46,35" concept="2" />
+      <node id="4125776596820028987" at="28,0,31,0" concept="1" trace="Status#(Ljava/lang/String;)V" />
+      <node id="4125776596820028998" at="31,0,34,0" concept="6" trace="getCode#()Ljava/lang/String;" />
+      <node id="4125776596820029004" at="34,0,37,0" concept="6" trace="getName#()Ljava/lang/String;" />
+      <node id="4125776596820029016" at="38,73,47,5" concept="4" />
+      <node id="4125776596820029010" at="38,0,49,0" concept="11" trace="addButtons#(Ljavax/swing/JPanel;)V" />
+      <scope id="4125776596820028991" at="28,33,29,23" />
+      <scope id="4125776596820028999" at="31,29,32,18" />
+      <scope id="4125776596820029005" at="34,29,35,20" />
+      <scope id="4125776596820028987" at="28,0,31,0">
+        <var name="code" id="4125776596820028989" />
+      </scope>
+      <scope id="4125776596820028998" at="31,0,34,0" />
+      <scope id="4125776596820029004" at="34,0,37,0" />
+      <scope id="4125776596820029018" at="39,51,46,35">
+        <var name="border" id="4125776596820029035" />
+        <var name="button" id="4125776596820135141" />
+      </scope>
+      <scope id="4125776596820029015" at="38,73,47,5" />
+      <scope id="4125776596820029016" at="38,73,47,5">
+        <var name="item" id="4125776596820029047" />
+      </scope>
+      <scope id="4125776596820029010" at="38,0,49,0">
+        <var name="instance" id="4125776596820029011" />
+        <var name="myPanelOfButtons" id="4125776596820029013" />
+      </scope>
+      <unit id="4125776596820028945" at="13,0,38,0" name="JavaVoiceMenu.runtime.Data$Status" />
+      <unit id="4125776596820028943" at="12,0,50,0" name="JavaVoiceMenu.runtime.Data" />
+    </file>
+  </root>
+  <root nodeRef="r:d8d37b74-a8e1-4a57-a2ee-4a996f4ba158(JavaVoiceMenu.runtime)/4125776596820040762">
+    <file name="Style.java">
+      <node id="4125776596820040764" at="16,0,17,0" concept="10" trace="myScreen" />
+      <node id="4125776596820040781" at="17,98,18,84" concept="2" />
+      <node id="4125776596820040784" at="18,84,19,84" concept="2" />
+      <node id="4125776596820040787" at="19,84,20,84" concept="2" />
+      <node id="4125776596820040790" at="20,84,21,84" concept="2" />
+      <node id="4125776596820041130" at="23,63,24,18" concept="9" />
+      <node id="4125776596820041132" at="24,18,25,30" concept="9" />
+      <node id="4125776596820040801" at="25,30,26,84" concept="2" />
+      <node id="4125776596820041134" at="26,84,27,19" concept="9" />
+      <node id="4125776596820040803" at="27,19,28,84" concept="2" />
+      <node id="4125776596820040812" at="30,52,31,96" concept="7" />
+      <node id="4125776596820040818" at="31,96,32,101" concept="7" />
+      <node id="4125776596820040824" at="32,101,33,96" concept="7" />
+      <node id="4125776596820041136" at="33,96,34,26" concept="9" />
+      <node id="4125776596820040830" at="34,26,35,101" concept="7" />
+      <node id="4125776596820040835" at="35,101,36,96" concept="7" />
+      <node id="4125776596820040840" at="36,96,37,100" concept="7" />
+      <node id="4125776596820041138" at="37,100,38,30" concept="9" />
+      <node id="4125776596820040844" at="38,30,39,126" concept="2" />
+      <node id="4125776596820040850" at="39,126,40,126" concept="2" />
+      <node id="4125776596820040856" at="40,126,41,125" concept="2" />
+      <node id="4125776596820040862" at="41,125,42,40" concept="2" />
+      <node id="4125776596820041140" at="42,40,43,19" concept="9" />
+      <node id="4125776596820040866" at="43,19,44,84" concept="2" />
+      <node id="4125776596820040870" at="44,84,45,84" concept="2" />
+      <node id="4125776596820040874" at="45,84,46,84" concept="2" />
+      <node id="4125776596820040885" at="48,56,49,97" concept="7" />
+      <node id="4125776596820040888" at="49,97,50,84" concept="2" />
+      <node id="4125776596820040891" at="50,84,51,84" concept="2" />
+      <node id="4125776596820040896" at="51,84,52,84" concept="2" />
+      <node id="4125776596820040904" at="52,84,53,95" concept="7" />
+      <node id="4125776596820040912" at="53,95,54,26" concept="2" />
+      <node id="4125776596820040915" at="54,26,55,84" concept="2" />
+      <node id="4125776596820041142" at="55,84,56,54" concept="9" />
+      <node id="4125776596820040919" at="56,54,57,97" concept="7" />
+      <node id="4125776596820040922" at="57,97,58,84" concept="2" />
+      <node id="4125776596820040925" at="58,84,59,84" concept="2" />
+      <node id="4125776596820040930" at="59,84,60,84" concept="2" />
+      <node id="4125776596820040934" at="60,84,61,84" concept="2" />
+      <node id="4125776596820040938" at="61,84,62,84" concept="2" />
+      <node id="4125776596820040949" at="64,47,65,99" concept="7" />
+      <node id="4125776596820040953" at="65,99,66,95" concept="7" />
+      <node id="4125776596820040960" at="66,95,67,84" concept="2" />
+      <node id="4125776596820040965" at="67,84,68,84" concept="2" />
+      <node id="4125776596820040968" at="68,84,69,84" concept="2" />
+      <node id="4125776596820040971" at="69,84,70,84" concept="2" />
+      <node id="4125776596820040974" at="70,84,71,84" concept="2" />
+      <node id="4125776596820040977" at="71,84,72,84" concept="2" />
+      <node id="4125776596820040980" at="72,84,73,84" concept="2" />
+      <node id="4125776596820040989" at="75,51,76,84" concept="2" />
+      <node id="4125776596820040998" at="78,53,79,84" concept="2" />
+      <node id="4125776596820041011" at="81,52,82,98" concept="7" />
+      <node id="4125776596820041144" at="82,98,83,19" concept="9" />
+      <node id="4125776596820041017" at="83,19,84,24" concept="2" />
+      <node id="4125776596820041020" at="84,24,85,24" concept="2" />
+      <node id="4125776596820041146" at="85,24,86,32" concept="9" />
+      <node id="4125776596820041023" at="86,32,87,84" concept="2" />
+      <node id="4125776596820041027" at="87,84,88,84" concept="2" />
+      <node id="4125776596820041040" at="90,67,91,98" concept="7" />
+      <node id="4125776596820041047" at="91,98,92,96" concept="7" />
+      <node id="4125776596820041054" at="92,96,93,106" concept="7" />
+      <node id="4125776596820041148" at="93,106,94,30" concept="9" />
+      <node id="4125776596820041062" at="94,30,95,26" concept="2" />
+      <node id="4125776596820041150" at="95,26,96,28" concept="9" />
+      <node id="4125776596820041065" at="96,28,97,31" concept="2" />
+      <node id="4125776596820041152" at="97,31,98,26" concept="9" />
+      <node id="4125776596820041068" at="98,26,99,84" concept="2" />
+      <node id="4125776596820041154" at="99,84,100,39" concept="9" />
+      <node id="4125776596820041072" at="100,39,101,84" concept="2" />
+      <node id="4125776596820041076" at="101,84,102,84" concept="2" />
+      <node id="4125776596820041080" at="102,84,103,84" concept="2" />
+      <node id="4125776596820041091" at="105,48,106,95" concept="7" />
+      <node id="4125776596820041096" at="106,95,107,97" concept="7" />
+      <node id="4125776596820041156" at="107,97,108,27" concept="9" />
+      <node id="4125776596820041102" at="108,27,109,36" concept="2" />
+      <node id="4125776596820041158" at="109,36,110,17" concept="9" />
+      <node id="4125776596820041106" at="110,17,111,84" concept="2" />
+      <node id="4125776596820041109" at="111,84,112,84" concept="2" />
+      <node id="4125776596820041112" at="112,84,113,84" concept="2" />
+      <node id="4125776596820041114" at="113,84,114,84" concept="2" />
+      <node id="4125776596820040985" at="75,0,78,0" concept="11" trace="setTextToScreen#(Ljava/lang/String;)V" />
+      <node id="4125776596820040994" at="78,0,81,0" concept="11" trace="setScreen#(Ljavax/swing/JTextArea;)V" />
+      <node id="4125776596820040771" at="17,0,23,0" concept="11" trace="customizeButton#(Ljavax/swing/JButton;Ljavax/swing/border/Border;Ljava/awt/Dimension;Ljava/awt/Color;)V" />
+      <node id="4125776596820040795" at="23,0,30,0" concept="11" trace="addListeners#(Ljavax/swing/JButton;Ljavax/swing/JButton;)V" />
+      <node id="4125776596820041006" at="81,0,90,0" concept="11" trace="setTopPanel#(Ljavax/swing/JPanel;)V" />
+      <node id="4125776596820040944" at="64,0,75,0" concept="11" trace="setHeader#(Ljavax/swing/JPanel;)V" />
+      <node id="4125776596820041086" at="105,0,116,0" concept="11" trace="setContent#()V" />
+      <node id="4125776596820041033" at="90,0,105,0" concept="11" trace="setMainPanel#(Ljavax/swing/JPanel;)V" />
+      <node id="4125776596820040880" at="48,0,64,0" concept="11" trace="setDeliminatorLine#(Ljavax/swing/JPanel;)V" />
+      <node id="4125776596820040807" at="30,0,48,0" concept="11" trace="setCallButtons#(Ljavax/swing/JPanel;)V" />
+      <scope id="4125776596820040988" at="75,51,76,84" />
+      <scope id="4125776596820040997" at="78,53,79,84" />
+      <scope id="4125776596820040985" at="75,0,78,0">
+        <var name="text" id="4125776596820040986" />
+      </scope>
+      <scope id="4125776596820040994" at="78,0,81,0">
+        <var name="myScreen" id="4125776596820040995" />
+      </scope>
+      <scope id="4125776596820040780" at="17,98,21,84" />
+      <scope id="4125776596820040800" at="23,63,28,84" />
+      <scope id="4125776596820040771" at="17,0,23,0">
+        <var name="border" id="4125776596820040774" />
+        <var name="button" id="4125776596820040772" />
+        <var name="color" id="4125776596820040778" />
+        <var name="dim" id="4125776596820040776" />
+      </scope>
+      <scope id="4125776596820040795" at="23,0,30,0">
+        <var name="Call" id="4125776596820040796" />
+        <var name="End" id="4125776596820040798" />
+      </scope>
+      <scope id="4125776596820041009" at="81,52,88,84">
+        <var name="myHeader" id="4125776596820041010" />
+      </scope>
+      <scope id="4125776596820040947" at="64,47,73,84">
+        <var name="header" id="4125776596820040948" />
+        <var name="inset" id="4125776596820040952" />
+      </scope>
+      <scope id="4125776596820041006" at="81,0,90,0">
+        <var name="topPanel" id="4125776596820041007" />
+      </scope>
+      <scope id="4125776596820041089" at="105,48,114,84">
+        <var name="frame" id="4125776596820041090" />
+        <var name="myPhone" id="4125776596820041095" />
+      </scope>
+      <scope id="4125776596820040944" at="64,0,75,0">
+        <var name="panel" id="4125776596820040945" />
+      </scope>
+      <scope id="4125776596820041086" at="105,0,116,0">
+        <var name="instance" id="4125776596820041087" />
+      </scope>
+      <scope id="4125776596820041038" at="90,67,103,84">
+        <var name="myLine" id="4125776596820041046" />
+        <var name="myPanelOfButtons" id="4125776596820041053" />
+        <var name="topPanel" id="4125776596820041039" />
+      </scope>
+      <scope id="4125776596820040883" at="48,56,62,84">
+        <var name="botLine" id="4125776596820040918" />
+        <var name="line2" id="4125776596820040903" />
+        <var name="topLine" id="4125776596820040884" />
+      </scope>
+      <scope id="4125776596820041033" at="90,0,105,0">
+        <var name="instance" id="4125776596820041036" />
+        <var name="myPhone" id="4125776596820041034" />
+      </scope>
+      <scope id="4125776596820040810" at="30,52,46,84">
+        <var name="border" id="4125776596820040811" />
+        <var name="buttonCall" id="4125776596820040829" />
+        <var name="buttonEnd" id="4125776596820040839" />
+        <var name="dim" id="4125776596820040823" />
+        <var name="empty" id="4125776596820040834" />
+        <var name="emptyBorder" id="4125776596820040817" />
+      </scope>
+      <scope id="4125776596820040880" at="48,0,64,0">
+        <var name="panel" id="4125776596820040881" />
+      </scope>
+      <scope id="4125776596820040807" at="30,0,48,0">
+        <var name="panel" id="4125776596820040808" />
+      </scope>
+      <unit id="4125776596820040762" at="15,0,117,0" name="JavaVoiceMenu.runtime.Style" />
+    </file>
+  </root>
+</debug-info>
+
