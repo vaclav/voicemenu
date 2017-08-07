@@ -3407,7 +3407,7 @@
             <node concept="liA8E" id="iX" role="2OqNvi">
               <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.prop(java.lang.String,long,java.lang.String):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2" resolve="prop" />
               <node concept="Xl_RD" id="iY" role="37wK5m">
-                <property role="Xl_RC" value="toast" />
+                <property role="Xl_RC" value="greeting" />
               </node>
               <node concept="1adDum" id="iZ" role="37wK5m">
                 <property role="1adDun" value="0x25806c66fbe3905cL" />

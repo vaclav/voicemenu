@@ -127,7 +127,7 @@
     </node>
     <node concept="1TJgyi" id="2m0r6rVST1s" role="1TKVEl">
       <property role="IQ2nx" value="2702278965990756444" />
-      <property role="TrG5h" value="toast" />
+      <property role="TrG5h" value="greeting" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>

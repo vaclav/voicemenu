@@ -7,7 +7,7 @@ import jetbrains.mps.openapi.editor.descriptor.EditorHintsProvider;
 import java.util.Collection;
 import jetbrains.mps.openapi.editor.descriptor.ConceptEditorHint;
 import java.util.Arrays;
-import jetbrains.mps.editor.runtime.desctiptor.ConceptEditorHintImpl;
+import jetbrains.mps.editor.runtime.descriptor.ConceptEditorHintImpl;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.openapi.editor.descriptor.ConceptEditor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;

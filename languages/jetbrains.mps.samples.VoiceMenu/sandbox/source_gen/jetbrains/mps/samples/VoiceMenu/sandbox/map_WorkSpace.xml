@@ -18,319 +18,553 @@
           border-bottom: none;
       }
       </style>
-  
-  <b style="margin-left: 40px;color:blue">Call_Center</b>
-  
-  
-  <menu>
+  <body>
     
-    <table class="roundedCorners">
-      
-      <tr>
-        <th>Event</th>
-        <td>   </td>
-        <th>Trigger</th>
-      </tr>
-      <tr>
-        
-        <td>Internet</td>
-        <td>   </td>
-        <td>1</td>
-        
-      </tr>
-      <tr>
-        
-        <td>News</td>
-        <td>   </td>
-        <td>2</td>
-        
-      </tr>
-      <tr>
-        
-        <td>Calls</td>
-        <td>   </td>
-        <td>3</td>
-        
-      </tr>
-      
-    </table>
+    <b style="margin-left: 40px;color:blue">VoiceMenu</b>
+    <toast>
+      <b style="color: #616161">    -->    Toast:  </b>
+      <toast_text style="color: gray">[
+          
+          Welcome to the Home menu
+          ]</toast_text>
+    </toast>
     
     
-    <activity>
+    <menu>
       
-      <b style="margin-left: 40px;color:blue">Internet</b>
-      
-      
-      <p>
+      <table class="roundedCorners">
         
-        <menu>
+        <tr>
+          <th>Event</th>
+          <td>   </td>
+          <th>Trigger</th>
+        </tr>
+        <tr>
           
-          <table class="roundedCorners">
-            
-            <tr>
-              <th>Event</th>
-              <td>   </td>
-              <th>Trigger</th>
-            </tr>
-            <tr>
-              
-              <td>Free Internet</td>
-              <td>   </td>
-              <td>1</td>
-              
-            </tr>
-            <tr>
-              
-              <td>Bonus</td>
-              <td>   </td>
-              <td>2</td>
-              
-            </tr>
-            <tr>
-              
-              <td>Back</td>
-              <td>   </td>
-              <td>#</td>
-              
-            </tr>
-            
-          </table>
+          <td>Technical problem</td>
+          <td>   </td>
+          <td>1</td>
           
+        </tr>
+        <tr>
           
-          <activity>
-            
-            <b style="margin-left: 40px;color:blue">Bonus</b>
-            
-            
-            <p>
-              
-              <menu>
-                
-                <table class="roundedCorners">
-                  
-                  <tr>
-                    <th>Event</th>
-                    <td>   </td>
-                    <th>Trigger</th>
-                  </tr>
-                  <tr>
-                    
-                    <td>Tarifs</td>
-                    <td>   </td>
-                    <td>1</td>
-                    
-                  </tr>
-                  <tr>
-                    
-                    <td>Back</td>
-                    <td>   </td>
-                    <td>#</td>
-                    
-                  </tr>
-                  
-                </table>
-                
-                
-                <activity>
-                  
-                  <b style="margin-left: 40px;color:blue">Tarifs</b>
-                  
-                  
-                  <p>
-                    
-                    <action style="margin-left: 80px;color:red">--> [ Direct Call ]</action>
-                    
-                  </p>
-                </activity>
-                <activity>
-                  
-                  <b style="margin-left: 40px;color:blue">Back</b>
-                  
-                  
-                  <p>
-                    
-                    <action style="margin-left: 80px;color:red">--> [ Back ]</action>
-                    
-                  </p>
-                </activity>
-                
-              </menu>
-              
-            </p>
-          </activity>
+          <td>Car</td>
+          <td>   </td>
+          <td>2</td>
           
-        </menu>
+        </tr>
+        <tr>
+          
+          <td>Jdu zpet</td>
+          <td>   </td>
+          <td>#</td>
+          
+        </tr>
         
-      </p>
-    </activity>
-    <activity>
-      
-      <b style="margin-left: 40px;color:blue">News</b>
+      </table>
       
       
-      <p>
+      <activity>
         
-        <menu>
-          
-          <table class="roundedCorners">
-            
-            <tr>
-              <th>Event</th>
-              <td>   </td>
-              <th>Trigger</th>
-            </tr>
-            <tr>
+        <b style="margin-left: 40px;color:blue">Jdu zpet</b>
+        <toast>
+          <b style="color: #616161">    -->    Toast:  </b>
+          <toast_text style="color: gray">[
               
-              <td>Hot News</td>
-              <td>   </td>
-              <td>1</td>
-              
-            </tr>
-            
-          </table>
-          
-          
-          <activity>
-            
-            <b style="margin-left: 40px;color:blue">Hot News</b>
-            
-            
-            <p>
-              
-              <menu>
-                
-                <table class="roundedCorners">
-                  
-                  <tr>
-                    <th>Event</th>
-                    <td>   </td>
-                    <th>Trigger</th>
-                  </tr>
-                  <tr>
-                    
-                    <td>Direct call</td>
-                    <td>   </td>
-                    <td>1</td>
-                    
-                  </tr>
-                  <tr>
-                    
-                    <td>Daily bonus</td>
-                    <td>   </td>
-                    <td>2</td>
-                    
-                  </tr>
-                  <tr>
-                    
-                    <td>Back</td>
-                    <td>   </td>
-                    <td>4</td>
-                    
-                  </tr>
-                  
-                </table>
-                
-                
-                <activity>
-                  
-                  <b style="margin-left: 40px;color:blue">Direct call</b>
-                  
-                  
-                  <p>
-                    
-                    <action style="margin-left: 80px;color:red">--> [ Direct Call ]</action>
-                    
-                  </p>
-                </activity>
-                <activity>
-                  
-                  <b style="margin-left: 40px;color:blue">Daily bonus</b>
-                  
-                  
-                  <p>
-                    
-                    <action style="margin-left: 80px;color:red">--> [ Get Info ]</action>
-                    
-                  </p>
-                </activity>
-                <activity>
-                  
-                  <b style="margin-left: 40px;color:blue">Back</b>
-                  
-                  
-                  <p>
-                    
-                    <action style="margin-left: 80px;color:red">--> [ Back ]</action>
-                    
-                  </p>
-                </activity>
-                
-              </menu>
-              
-            </p>
-          </activity>
-          <activity>
-            
-            <b style="margin-left: 40px;color:blue">Hot News</b>
-            
-            
-            <p>
-              
-              <action style="margin-left: 80px;color:red">--> [ Get Info ]</action>
-              
-            </p>
-          </activity>
-          
-        </menu>
+              Going to the previous menu
+              ]</toast_text>
+        </toast>
         
-      </p>
-    </activity>
-    <activity>
-      
-      <b style="margin-left: 40px;color:blue">Calls</b>
-      
-      
-      <p>
         
-        <menu>
+        <p>
           
-          <table class="roundedCorners">
-            
-            <tr>
-              <th>Event</th>
-              <td>   </td>
-              <th>Trigger</th>
-            </tr>
-            <tr>
-              
-              <td>Free calls</td>
-              <td>   </td>
-              <td>1</td>
-              
-            </tr>
-            
-          </table>
+          <action style="margin-left: 80px;color:red">--> [ Back ]</action>
           
-          
-          <activity>
-            
-            <b style="margin-left: 40px;color:blue">Free calls</b>
-            
-            
-            <p>
-              
-              <action style="margin-left: 80px;color:red">--> [ Other ]</action>
-              
-            </p>
-          </activity>
-          
-        </menu>
+        </p>
+      </activity>
+      <activity>
         
-      </p>
-    </activity>
+        <b style="margin-left: 40px;color:blue">Car</b>
+        
+        
+        <p>
+          
+          <menu>
+            
+            <table class="roundedCorners">
+              
+              <tr>
+                <th>Event</th>
+                <td>   </td>
+                <th>Trigger</th>
+              </tr>
+              <tr>
+                
+                <td>Jdu zpet</td>
+                <td>   </td>
+                <td>#</td>
+                
+              </tr>
+              
+            </table>
+            
+            
+            <activity>
+              
+              <b style="margin-left: 40px;color:blue">Jdu zpet</b>
+              <toast>
+                <b style="color: #616161">    -->    Toast:  </b>
+                <toast_text style="color: gray">[
+                    
+                    Going to the previous menu
+                    ]</toast_text>
+              </toast>
+              
+              
+              <p>
+                
+                <action style="margin-left: 80px;color:red">--> [ Back ]</action>
+                
+              </p>
+            </activity>
+            
+          </menu>
+          
+        </p>
+      </activity>
+      <activity>
+        
+        <b style="margin-left: 40px;color:blue">Technical problem</b>
+        <toast>
+          <b style="color: #616161">    -->    Toast:  </b>
+          <toast_text style="color: gray">[
+              
+              What's up man?
+              ]</toast_text>
+        </toast>
+        
+        
+        <p>
+          
+          <menu>
+            
+            <table class="roundedCorners">
+              
+              <tr>
+                <th>Event</th>
+                <td>   </td>
+                <th>Trigger</th>
+              </tr>
+              <tr>
+                
+                <td>Internet</td>
+                <td>   </td>
+                <td>1</td>
+                
+              </tr>
+              <tr>
+                
+                <td>Television </td>
+                <td>   </td>
+                <td>2</td>
+                
+              </tr>
+              <tr>
+                
+                <td>Jdu zpet</td>
+                <td>   </td>
+                <td>#</td>
+                
+              </tr>
+              
+            </table>
+            
+            
+            <activity>
+              
+              <b style="margin-left: 40px;color:blue">Jdu zpet</b>
+              <toast>
+                <b style="color: #616161">    -->    Toast:  </b>
+                <toast_text style="color: gray">[
+                    
+                    Going to the previous menu
+                    ]</toast_text>
+              </toast>
+              
+              
+              <p>
+                
+                <action style="margin-left: 80px;color:red">--> [ Back ]</action>
+                
+              </p>
+            </activity>
+            <activity>
+              
+              <b style="margin-left: 40px;color:blue">Television </b>
+              <toast>
+                <b style="color: #616161">    -->    Toast:  </b>
+                <toast_text style="color: gray">[
+                    
+                    Welcome to the television part
+                    ]</toast_text>
+              </toast>
+              
+              
+              <p>
+                
+                <menu>
+                  
+                  <table class="roundedCorners">
+                    
+                    <tr>
+                      <th>Event</th>
+                      <td>   </td>
+                      <th>Trigger</th>
+                    </tr>
+                    <tr>
+                      
+                      <td>jdu zpet</td>
+                      <td>   </td>
+                      <td>#</td>
+                      
+                    </tr>
+                    
+                  </table>
+                  
+                  
+                  <activity>
+                    
+                    <b style="margin-left: 40px;color:blue">jdu zpet</b>
+                    
+                    
+                    <p>
+                      
+                      <action style="margin-left: 80px;color:red">--> [ Back ]</action>
+                      
+                    </p>
+                  </activity>
+                  
+                </menu>
+                
+              </p>
+            </activity>
+            <activity>
+              
+              <b style="margin-left: 40px;color:blue">Internet</b>
+              <toast>
+                <b style="color: #616161">    -->    Toast:  </b>
+                <toast_text style="color: gray">[
+                    
+                    Welcome to the Internet
+                    ]</toast_text>
+              </toast>
+              
+              
+              <p>
+                
+                <menu>
+                  
+                  <table class="roundedCorners">
+                    
+                    <tr>
+                      <th>Event</th>
+                      <td>   </td>
+                      <th>Trigger</th>
+                    </tr>
+                    <tr>
+                      
+                      <td>Increase the speed of internet</td>
+                      <td>   </td>
+                      <td>9</td>
+                      
+                    </tr>
+                    <tr>
+                      
+                      <td>Discount</td>
+                      <td>   </td>
+                      <td>4</td>
+                      
+                    </tr>
+                    <tr>
+                      
+                      <td>Jdu zpet</td>
+                      <td>   </td>
+                      <td>#</td>
+                      
+                    </tr>
+                    
+                  </table>
+                  
+                  
+                  <activity>
+                    
+                    <b style="margin-left: 40px;color:blue">Jdu zpet</b>
+                    <toast>
+                      <b style="color: #616161">    -->    Toast:  </b>
+                      <toast_text style="color: gray">[
+                          
+                          Going to the previous menu
+                          ]</toast_text>
+                    </toast>
+                    
+                    
+                    <p>
+                      
+                      <action style="margin-left: 80px;color:red">--> [ Back ]</action>
+                      
+                    </p>
+                  </activity>
+                  <activity>
+                    
+                    <b style="margin-left: 40px;color:blue">Increase the speed of internet</b>
+                    <toast>
+                      <b style="color: #616161">    -->    Toast:  </b>
+                      <toast_text style="color: gray">[
+                          
+                          Let's increase the speed of internet!
+                          ]</toast_text>
+                    </toast>
+                    
+                    
+                    <p>
+                      
+                      <menu>
+                        
+                        <table class="roundedCorners">
+                          
+                          <tr>
+                            <th>Event</th>
+                            <td>   </td>
+                            <th>Trigger</th>
+                          </tr>
+                          <tr>
+                            
+                            <td>Jdu zpet</td>
+                            <td>   </td>
+                            <td>#</td>
+                            
+                          </tr>
+                          
+                        </table>
+                        
+                        
+                        <activity>
+                          
+                          <b style="margin-left: 40px;color:blue">Jdu zpet</b>
+                          <toast>
+                            <b style="color: #616161">    -->    Toast:  </b>
+                            <toast_text style="color: gray">[
+                                
+                                Going to the previous menu
+                                ]</toast_text>
+                          </toast>
+                          
+                          
+                          <p>
+                            
+                            <action style="margin-left: 80px;color:red">--> [ Back ]</action>
+                            
+                          </p>
+                        </activity>
+                        
+                      </menu>
+                      
+                    </p>
+                  </activity>
+                  <activity>
+                    
+                    <b style="margin-left: 40px;color:blue">Discount</b>
+                    
+                    
+                    <p>
+                      
+                      <menu>
+                        
+                        <table class="roundedCorners">
+                          
+                          <tr>
+                            <th>Event</th>
+                            <td>   </td>
+                            <th>Trigger</th>
+                          </tr>
+                          <tr>
+                            
+                            <td>Big</td>
+                            <td>   </td>
+                            <td>7</td>
+                            
+                          </tr>
+                          <tr>
+                            
+                            <td>Small</td>
+                            <td>   </td>
+                            <td>8</td>
+                            
+                          </tr>
+                          <tr>
+                            
+                            <td>Jdeme zpet</td>
+                            <td>   </td>
+                            <td>#</td>
+                            
+                          </tr>
+                          
+                        </table>
+                        
+                        
+                        <activity>
+                          
+                          <b style="margin-left: 40px;color:blue">Big</b>
+                          <toast>
+                            <b style="color: #616161">    -->    Toast:  </b>
+                            <toast_text style="color: gray">[
+                                
+                                Good choice!
+                                ]</toast_text>
+                          </toast>
+                          
+                          
+                          <p>
+                            
+                            <menu>
+                              
+                              <table class="roundedCorners">
+                                
+                                <tr>
+                                  <th>Event</th>
+                                  <td>   </td>
+                                  <th>Trigger</th>
+                                </tr>
+                                <tr>
+                                  
+                                  <td>Jdu zpet</td>
+                                  <td>   </td>
+                                  <td>#</td>
+                                  
+                                </tr>
+                                
+                              </table>
+                              
+                              
+                              <activity>
+                                
+                                <b style="margin-left: 40px;color:blue">Jdu zpet</b>
+                                <toast>
+                                  <b style="color: #616161">    -->    Toast:  </b>
+                                  <toast_text style="color: gray">[
+                                      
+                                      Going to the previous menu
+                                      ]</toast_text>
+                                </toast>
+                                
+                                
+                                <p>
+                                  
+                                  <action style="margin-left: 80px;color:red">--> [ Back ]</action>
+                                  
+                                </p>
+                              </activity>
+                              
+                            </menu>
+                            
+                          </p>
+                        </activity>
+                        <activity>
+                          
+                          <b style="margin-left: 40px;color:blue">Small</b>
+                          <toast>
+                            <b style="color: #616161">    -->    Toast:  </b>
+                            <toast_text style="color: gray">[
+                                
+                                I guess you are well off.
+                                ]</toast_text>
+                          </toast>
+                          
+                          
+                          <p>
+                            
+                            <menu>
+                              
+                              <table class="roundedCorners">
+                                
+                                <tr>
+                                  <th>Event</th>
+                                  <td>   </td>
+                                  <th>Trigger</th>
+                                </tr>
+                                <tr>
+                                  
+                                  <td>Jdu zpet</td>
+                                  <td>   </td>
+                                  <td>#</td>
+                                  
+                                </tr>
+                                
+                              </table>
+                              
+                              
+                              <activity>
+                                
+                                <b style="margin-left: 40px;color:blue">Jdu zpet</b>
+                                <toast>
+                                  <b style="color: #616161">    -->    Toast:  </b>
+                                  <toast_text style="color: gray">[
+                                      
+                                      Going to the previous menu
+                                      ]</toast_text>
+                                </toast>
+                                
+                                
+                                <p>
+                                  
+                                  <action style="margin-left: 80px;color:red">--> [ Back ]</action>
+                                  
+                                </p>
+                              </activity>
+                              
+                            </menu>
+                            
+                          </p>
+                        </activity>
+                        <activity>
+                          
+                          <b style="margin-left: 40px;color:blue">Jdeme zpet</b>
+                          <toast>
+                            <b style="color: #616161">    -->    Toast:  </b>
+                            <toast_text style="color: gray">[
+                                
+                                Going to the previous menu
+                                ]</toast_text>
+                          </toast>
+                          
+                          
+                          <p>
+                            
+                            <action style="margin-left: 80px;color:red">--> [ Back ]</action>
+                            
+                          </p>
+                        </activity>
+                        
+                      </menu>
+                      
+                    </p>
+                  </activity>
+                  
+                </menu>
+                
+              </p>
+            </activity>
+            
+          </menu>
+          
+        </p>
+      </activity>
+      
+    </menu>
     
-  </menu>
-  
+    
+    
+  </body>
   
   
 </Call_Centrum>
