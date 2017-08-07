@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="VoiceImport" uuid="2db0d0d6-c712-494b-baff-045421164005" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
-    <modelRoot contentPath="${module}" type="default">
-      <sourceRoot location="models" />
-    </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="cmu_time_awb.jar" />
       <sourceRoot location="cmu_us_kal.jar" />
       <sourceRoot location="cmudict04.jar" />
       <sourceRoot location="cmulex.jar" />
@@ -13,8 +11,8 @@
       <sourceRoot location="freetts-jsapi10.jar" />
       <sourceRoot location="freetts.jar" />
       <sourceRoot location="mbrola.jar" />
-      <sourceRoot location="cmu_time_awb.jar" />
     </modelRoot>
+    <modelRoot contentPath="/Users/marek/MPSProjects/voicemenu" type="default" />
   </models>
   <stubModelEntries>
     <stubModelEntry path="${module}/lib/cmu_time_awb.jar" />
