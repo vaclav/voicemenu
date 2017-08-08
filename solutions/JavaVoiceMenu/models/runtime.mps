@@ -4,6 +4,7 @@
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <engage id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" />
   </languages>
   <imports>
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
@@ -13,8 +14,8 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="oici" ref="r:d8d37b74-a8e1-4a57-a2ee-4a996f4ba158(JavaVoiceMenu.runtime)" />
-    <import index="ezje" ref="2db0d0d6-c712-494b-baff-045421164005/java:com.sun.speech.freetts(VoiceImport/)" />
     <import index="r791" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.text(JDK/)" />
+    <import index="ezje" ref="b0a71c9c-dd09-45b2-9d6b-fed8033fadc2/java:com.sun.speech.freetts(Import/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -28,6 +29,7 @@
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -63,6 +65,8 @@
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
         <property id="8606350594693632173" name="isTransient" index="eg7rD" />
         <property id="1240249534625" name="isVolatile" index="34CwA1" />
@@ -238,6 +242,7 @@
     <property role="2bfB8j" value="true" />
     <property role="1sVAO0" value="false" />
     <property role="1EXbeo" value="false" />
+    <node concept="2tJIrI" id="2Bi0dpyLKqb" role="jymVt" />
     <node concept="3Tm1VV" id="3_1GZis4YSg" role="1B3o_S" />
     <node concept="Qs71p" id="3_1GZis4YSh" role="jymVt">
       <property role="TrG5h" value="Status" />
@@ -739,10 +744,10 @@
                         <node concept="3cpWs8" id="2Bi0dpyEi4t" role="3cqZAp">
                           <node concept="3cpWsn" id="2Bi0dpyEi4u" role="3cpWs9">
                             <property role="TrG5h" value="vm" />
-                            <node concept="3uibUv" id="2Bi0dpyEi4s" role="1tU5fm">
+                            <node concept="3uibUv" id="2Bi0dpyKYbP" role="1tU5fm">
                               <ref role="3uigEE" to="ezje:~VoiceManager" resolve="VoiceManager" />
                             </node>
-                            <node concept="2YIFZM" id="2Bi0dpyEi4v" role="33vP2m">
+                            <node concept="2YIFZM" id="2Bi0dpyKYuF" role="33vP2m">
                               <ref role="37wK5l" to="ezje:~VoiceManager.getInstance():com.sun.speech.freetts.VoiceManager" resolve="getInstance" />
                               <ref role="1Pybhc" to="ezje:~VoiceManager" resolve="VoiceManager" />
                             </node>
@@ -751,7 +756,7 @@
                         <node concept="3cpWs8" id="2Bi0dpyEkHZ" role="3cqZAp">
                           <node concept="3cpWsn" id="2Bi0dpyEkI0" role="3cpWs9">
                             <property role="TrG5h" value="myVoice" />
-                            <node concept="3uibUv" id="2Bi0dpyEkI1" role="1tU5fm">
+                            <node concept="3uibUv" id="2Bi0dpyKYD$" role="1tU5fm">
                               <ref role="3uigEE" to="ezje:~Voice" resolve="Voice" />
                             </node>
                             <node concept="2OqwBi" id="2Bi0dpyEn3K" role="33vP2m">
@@ -789,20 +794,19 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="3clFbF" id="2Bi0dpyEvTj" role="3cqZAp">
-                          <node concept="2OqwBi" id="2Bi0dpyEwuh" role="3clFbG">
-                            <node concept="37vLTw" id="2Bi0dpyEvTh" role="2Oq$k0">
+                        <node concept="3clFbF" id="2Bi0dpyKZvU" role="3cqZAp">
+                          <node concept="2OqwBi" id="2Bi0dpyKZNz" role="3clFbG">
+                            <node concept="37vLTw" id="2Bi0dpyKZvS" role="2Oq$k0">
                               <ref role="3cqZAo" node="2Bi0dpyEkI0" resolve="myVoice" />
                             </node>
-                            <node concept="liA8E" id="2Bi0dpyExpi" role="2OqNvi">
+                            <node concept="liA8E" id="2Bi0dpyKZWv" role="2OqNvi">
                               <ref role="37wK5l" to="ezje:~Voice.speak(java.lang.String):boolean" resolve="speak" />
-                              <node concept="37vLTw" id="2Bi0dpyEy6D" role="37wK5m">
+                              <node concept="37vLTw" id="2Bi0dpyL0qD" role="37wK5m">
                                 <ref role="3cqZAo" node="2Bi0dpyCPhr" resolve="main_Greeting" />
                               </node>
                             </node>
                           </node>
                         </node>
-                        <node concept="3clFbH" id="2Bi0dpyEflc" role="3cqZAp" />
                       </node>
                     </node>
                   </node>
@@ -949,6 +953,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="6JvGT3bxpis" role="3cqZAp" />
         <node concept="3SKdUt" id="2Bi0dpyCPmH" role="3cqZAp">
           <node concept="3SKdUq" id="2Bi0dpyCPmG" role="3SKWNk">
             <property role="3SKdUp" value="create new buttons" />
@@ -1002,6 +1007,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="6JvGT3bxp6T" role="3cqZAp" />
         <node concept="3SKdUt" id="2Bi0dpyCPmJ" role="3cqZAp">
           <node concept="3SKdUq" id="2Bi0dpyCPmI" role="3SKWNk">
             <property role="3SKdUp" value="customize buttons look" />
@@ -1072,6 +1078,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="6JvGT3bxoVn" role="3cqZAp" />
         <node concept="3SKdUt" id="2Bi0dpyCPmL" role="3cqZAp">
           <node concept="3SKdUq" id="2Bi0dpyCPmK" role="3SKWNk">
             <property role="3SKdUp" value="add to pane" />
@@ -1272,11 +1279,7 @@
             </node>
           </node>
         </node>
-        <node concept="3SKdUt" id="2Bi0dpyCPmN" role="3cqZAp">
-          <node concept="3SKdUq" id="2Bi0dpyCPmM" role="3SKWNk">
-            <property role="3SKdUp" value="line2.setPreferredSize(new Dimension(80, 50));" />
-          </node>
-        </node>
+        <node concept="3clFbH" id="6JvGT3bxokN" role="3cqZAp" />
         <node concept="3cpWs8" id="2Bi0dpyCPjM" role="3cqZAp">
           <node concept="3cpWsn" id="2Bi0dpyCPjL" role="3cpWs9">
             <property role="3TUv4t" value="false" />
@@ -1604,6 +1607,33 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="6JvGT3bx3P5" role="3cqZAp">
+          <node concept="2OqwBi" id="6JvGT3bx41_" role="3clFbG">
+            <node concept="37vLTw" id="6JvGT3bx3P3" role="2Oq$k0">
+              <ref role="3cqZAo" node="2Bi0dpyCPkY" resolve="myScreen" />
+            </node>
+            <node concept="liA8E" id="6JvGT3bx4MD" role="2OqNvi">
+              <ref role="37wK5l" to="r791:~JTextComponent.setMargin(java.awt.Insets):void" resolve="setMargin" />
+              <node concept="2ShNRf" id="6JvGT3bx6zt" role="37wK5m">
+                <node concept="1pGfFk" id="6JvGT3bx9Rn" role="2ShVmc">
+                  <ref role="37wK5l" to="z60i:~Insets.&lt;init&gt;(int,int,int,int)" resolve="Insets" />
+                  <node concept="3cmrfG" id="6JvGT3bx9VH" role="37wK5m">
+                    <property role="3cmrfH" value="5" />
+                  </node>
+                  <node concept="3cmrfG" id="6JvGT3bx9Zg" role="37wK5m">
+                    <property role="3cmrfH" value="5" />
+                  </node>
+                  <node concept="3cmrfG" id="6JvGT3bxa2P" role="37wK5m">
+                    <property role="3cmrfH" value="5" />
+                  </node>
+                  <node concept="3cmrfG" id="6JvGT3bxa7l" role="37wK5m">
+                    <property role="3cmrfH" value="5" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3Tm6S6" id="2Bi0dpyCPl7" role="1B3o_S" />
       <node concept="3cqZAl" id="2Bi0dpyCPl8" role="3clF45" />
@@ -1645,6 +1675,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="6JvGT3bxmI4" role="3cqZAp" />
         <node concept="3SKdUt" id="2Bi0dpyCPmP" role="3cqZAp">
           <node concept="3SKdUq" id="2Bi0dpyCPmO" role="3SKWNk">
             <property role="3SKdUp" value="set content" />
@@ -1666,6 +1697,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="6JvGT3bxmx7" role="3cqZAp" />
         <node concept="3SKdUt" id="2Bi0dpyCPmR" role="3cqZAp">
           <node concept="3SKdUq" id="2Bi0dpyCPmQ" role="3SKWNk">
             <property role="3SKdUp" value="add componenets to panel" />
@@ -1770,6 +1802,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="6JvGT3bxmV2" role="3cqZAp" />
         <node concept="3SKdUt" id="2Bi0dpyCPmT" role="3cqZAp">
           <node concept="3SKdUq" id="2Bi0dpyCPmS" role="3SKWNk">
             <property role="3SKdUp" value="set top panel + screen" />
@@ -1783,6 +1816,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="6JvGT3bxn2q" role="3cqZAp" />
         <node concept="3SKdUt" id="2Bi0dpyCPmV" role="3cqZAp">
           <node concept="3SKdUq" id="2Bi0dpyCPmU" role="3SKWNk">
             <property role="3SKdUp" value="set deliminator line" />
@@ -1796,6 +1830,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="6JvGT3bxn9N" role="3cqZAp" />
         <node concept="3SKdUt" id="2Bi0dpyCPmX" role="3cqZAp">
           <node concept="3SKdUq" id="2Bi0dpyCPmW" role="3SKWNk">
             <property role="3SKdUp" value="add components to myPhone panel" />
@@ -1844,6 +1879,101 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="2Bi0dpyCPm7" role="3clF47">
+        <node concept="3clFbH" id="6JvGT3bxads" role="3cqZAp" />
+        <node concept="3SKdUt" id="6JvGT3bxo5$" role="3cqZAp">
+          <node concept="3SKdUq" id="6JvGT3bxo5A" role="3SKWNk">
+            <property role="3SKdUp" value="set position constrains" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6JvGT3bxatf" role="3cqZAp">
+          <node concept="3cpWsn" id="6JvGT3bxatg" role="3cpWs9">
+            <property role="TrG5h" value="screenSize" />
+            <node concept="3uibUv" id="6JvGT3bxath" role="1tU5fm">
+              <ref role="3uigEE" to="z60i:~Dimension" resolve="Dimension" />
+            </node>
+            <node concept="2OqwBi" id="6JvGT3bxbse" role="33vP2m">
+              <node concept="2YIFZM" id="6JvGT3bxbqj" role="2Oq$k0">
+                <ref role="37wK5l" to="z60i:~Toolkit.getDefaultToolkit():java.awt.Toolkit" resolve="getDefaultToolkit" />
+                <ref role="1Pybhc" to="z60i:~Toolkit" resolve="Toolkit" />
+              </node>
+              <node concept="liA8E" id="6JvGT3bxbzv" role="2OqNvi">
+                <ref role="37wK5l" to="z60i:~Toolkit.getScreenSize():java.awt.Dimension" resolve="getScreenSize" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6JvGT3bxbHr" role="3cqZAp">
+          <node concept="3cpWsn" id="6JvGT3bxbHu" role="3cpWs9">
+            <property role="TrG5h" value="height" />
+            <node concept="10Oyi0" id="6JvGT3bxbHp" role="1tU5fm" />
+            <node concept="2OqwBi" id="6JvGT3bxc3Y" role="33vP2m">
+              <node concept="37vLTw" id="6JvGT3bxbTD" role="2Oq$k0">
+                <ref role="3cqZAo" node="6JvGT3bxatg" resolve="screenSize" />
+              </node>
+              <node concept="2OwXpG" id="6JvGT3bxcc7" role="2OqNvi">
+                <ref role="2Oxat5" to="z60i:~Dimension.height" resolve="height" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6JvGT3bxcrR" role="3cqZAp">
+          <node concept="3cpWsn" id="6JvGT3bxcrU" role="3cpWs9">
+            <property role="TrG5h" value="width" />
+            <node concept="10Oyi0" id="6JvGT3bxcrP" role="1tU5fm" />
+            <node concept="2OqwBi" id="6JvGT3bxcQz" role="33vP2m">
+              <node concept="37vLTw" id="6JvGT3bxcGd" role="2Oq$k0">
+                <ref role="3cqZAo" node="6JvGT3bxatg" resolve="screenSize" />
+              </node>
+              <node concept="2OwXpG" id="6JvGT3bxcYH" role="2OqNvi">
+                <ref role="2Oxat5" to="z60i:~Dimension.width" resolve="width" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6JvGT3bxdeM" role="3cqZAp">
+          <node concept="2OqwBi" id="6JvGT3bxdFB" role="3clFbG">
+            <node concept="37vLTw" id="6JvGT3bxdeK" role="2Oq$k0">
+              <ref role="3cqZAo" node="2Bi0dpyCVFb" resolve="frame" />
+            </node>
+            <node concept="liA8E" id="6JvGT3bxedb" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Window.setSize(int,int):void" resolve="setSize" />
+              <node concept="FJ1c_" id="6JvGT3bxeWT" role="37wK5m">
+                <node concept="3cmrfG" id="6JvGT3bxf0m" role="3uHU7w">
+                  <property role="3cmrfH" value="2" />
+                </node>
+                <node concept="37vLTw" id="6JvGT3bxept" role="3uHU7B">
+                  <ref role="3cqZAo" node="6JvGT3bxcrU" resolve="width" />
+                </node>
+              </node>
+              <node concept="FJ1c_" id="6JvGT3bxgob" role="37wK5m">
+                <node concept="37vLTw" id="6JvGT3bxfS2" role="3uHU7B">
+                  <ref role="3cqZAo" node="6JvGT3bxbHu" resolve="height" />
+                </node>
+                <node concept="3cmrfG" id="6JvGT3bxgBi" role="3uHU7w">
+                  <property role="3cmrfH" value="2" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6JvGT3bxgKG" role="3cqZAp" />
+        <node concept="3SKdUt" id="6JvGT3bxnzL" role="3cqZAp">
+          <node concept="3SKdUq" id="6JvGT3bxnzN" role="3SKWNk">
+            <property role="3SKdUp" value="set frame position" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6JvGT3bxh3I" role="3cqZAp">
+          <node concept="2OqwBi" id="6JvGT3bxhuJ" role="3clFbG">
+            <node concept="37vLTw" id="6JvGT3bxh3G" role="2Oq$k0">
+              <ref role="3cqZAo" node="2Bi0dpyCVFb" resolve="frame" />
+            </node>
+            <node concept="liA8E" id="6JvGT3bxivL" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Window.setLocationRelativeTo(java.awt.Component):void" resolve="setLocationRelativeTo" />
+              <node concept="10Nm6u" id="6JvGT3bxi$Y" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6JvGT3bxaeb" role="3cqZAp" />
         <node concept="3SKdUt" id="2Bi0dpyCPmZ" role="3cqZAp">
           <node concept="3SKdUq" id="2Bi0dpyCPmY" role="3SKWNk">
             <property role="3SKdUp" value="add frame" />
@@ -1908,6 +2038,7 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="2Bi0dpyCPmm" role="3clF47">
+        <node concept="3clFbH" id="6JvGT3bxpu0" role="3cqZAp" />
         <node concept="3SKdUt" id="2Bi0dpyCPn1" role="3cqZAp">
           <node concept="3SKdUq" id="2Bi0dpyCPn0" role="3SKWNk">
             <property role="3SKdUp" value="set visible content" />
@@ -1949,14 +2080,14 @@
             <property role="3SKdUp" value="Initilization of voice output" />
           </node>
         </node>
-        <node concept="3clFbH" id="2Bi0dpyJ9XZ" role="3cqZAp" />
+        <node concept="3clFbH" id="2Bi0dpyKSs6" role="3cqZAp" />
         <node concept="3cpWs8" id="2Bi0dpyF_La" role="3cqZAp">
           <node concept="3cpWsn" id="2Bi0dpyF_Lb" role="3cpWs9">
             <property role="TrG5h" value="vm" />
-            <node concept="3uibUv" id="2Bi0dpyF_Lc" role="1tU5fm">
+            <node concept="3uibUv" id="2Bi0dpyLadw" role="1tU5fm">
               <ref role="3uigEE" to="ezje:~VoiceManager" resolve="VoiceManager" />
             </node>
-            <node concept="2YIFZM" id="2Bi0dpyFAb1" role="33vP2m">
+            <node concept="2YIFZM" id="2Bi0dpyLbxj" role="33vP2m">
               <ref role="37wK5l" to="ezje:~VoiceManager.getInstance():com.sun.speech.freetts.VoiceManager" resolve="getInstance" />
               <ref role="1Pybhc" to="ezje:~VoiceManager" resolve="VoiceManager" />
             </node>
@@ -1965,7 +2096,7 @@
         <node concept="3cpWs8" id="2Bi0dpyFAE8" role="3cqZAp">
           <node concept="3cpWsn" id="2Bi0dpyFAE9" role="3cpWs9">
             <property role="TrG5h" value="myVoice" />
-            <node concept="3uibUv" id="2Bi0dpyFAEa" role="1tU5fm">
+            <node concept="3uibUv" id="2Bi0dpyLcPs" role="1tU5fm">
               <ref role="3uigEE" to="ezje:~Voice" resolve="Voice" />
             </node>
             <node concept="2OqwBi" id="2Bi0dpyFBjR" role="33vP2m">
@@ -2491,12 +2622,12 @@
           <node concept="3cpWsn" id="2Bi0dpyF$UN" role="3cpWs9">
             <property role="3TUv4t" value="false" />
             <property role="TrG5h" value="vm" />
-            <node concept="3uibUv" id="2Bi0dpyF$UP" role="1tU5fm">
+            <node concept="3uibUv" id="2Bi0dpyLg1R" role="1tU5fm">
               <ref role="3uigEE" to="ezje:~VoiceManager" resolve="VoiceManager" />
             </node>
-            <node concept="2YIFZM" id="2Bi0dpyF_JS" role="33vP2m">
-              <ref role="1Pybhc" to="ezje:~VoiceManager" resolve="VoiceManager" />
+            <node concept="2YIFZM" id="2Bi0dpyLg8n" role="33vP2m">
               <ref role="37wK5l" to="ezje:~VoiceManager.getInstance():com.sun.speech.freetts.VoiceManager" resolve="getInstance" />
+              <ref role="1Pybhc" to="ezje:~VoiceManager" resolve="VoiceManager" />
             </node>
           </node>
         </node>
@@ -2504,7 +2635,7 @@
           <node concept="3cpWsn" id="2Bi0dpyF$UR" role="3cpWs9">
             <property role="3TUv4t" value="false" />
             <property role="TrG5h" value="myVoice" />
-            <node concept="3uibUv" id="2Bi0dpyF$UT" role="1tU5fm">
+            <node concept="3uibUv" id="2Bi0dpyLgcx" role="1tU5fm">
               <ref role="3uigEE" to="ezje:~Voice" resolve="Voice" />
             </node>
             <node concept="2OqwBi" id="2Bi0dpyG67f" role="33vP2m">

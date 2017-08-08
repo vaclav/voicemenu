@@ -2,38 +2,53 @@
 <dependenciesRoot>
   <dependency className="JavaVoiceMenu.runtime.Behaviour" file="Behaviour.java">
     <classNode dependClassName="JavaVoiceMenu.runtime.Event" />
-    <classNode dependClassName="JavaVoiceMenu.runtime.Main" />
-    <classNode dependClassName="JavaVoiceMenu.runtime.Voice" />
-    <classNode dependClassName="JavaVoiceMenu.runtime.VoiceManager" />
+    <classNode dependClassName="JavaVoiceMenu.runtime.Style" />
+    <classNode dependClassName="JavaVoiceMenu.runtime.Variables" />
+    <classNode dependClassName="com.sun.speech.freetts.Voice" />
+    <classNode dependClassName="com.sun.speech.freetts.VoiceManager" />
     <classNode dependClassName="java.awt.event.ActionEvent" />
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
   </dependency>
   <dependency className="JavaVoiceMenu.runtime.Data" file="Data.java">
-    <classNode dependClassName="JavaVoiceMenu.runtime.Main" />
-    <classNode dependClassName="java.awt.Color" />
-    <classNode dependClassName="java.awt.Dimension" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="javax.swing.JButton" />
-    <classNode dependClassName="javax.swing.JPanel" />
-    <classNode dependClassName="javax.swing.border.Border" />
-    <classNode dependClassName="javax.swing.border.LineBorder" />
   </dependency>
   <dependency className="JavaVoiceMenu.runtime.Event" file="Event.java">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.List" />
   </dependency>
   <dependency className="JavaVoiceMenu.runtime.Style" file="Style.java">
-    <classNode dependClassName="JavaVoiceMenu.runtime.Main" />
+    <classNode dependClassName="JavaVoiceMenu.runtime.Variables" />
+    <classNode dependClassName="com.sun.speech.freetts.Voice" />
+    <classNode dependClassName="com.sun.speech.freetts.VoiceManager" />
+    <classNode dependClassName="java.awt.BorderLayout" />
     <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.ComponentOrientation" />
     <classNode dependClassName="java.awt.Dimension" />
+    <classNode dependClassName="java.awt.Font" />
+    <classNode dependClassName="java.awt.GridLayout" />
     <classNode dependClassName="java.awt.Insets" />
+    <classNode dependClassName="java.awt.Toolkit" />
+    <classNode dependClassName="java.awt.event.ActionEvent" />
+    <classNode dependClassName="java.awt.event.ActionListener" />
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="javax.swing.JButton" />
     <classNode dependClassName="javax.swing.JFrame" />
     <classNode dependClassName="javax.swing.JPanel" />
     <classNode dependClassName="javax.swing.JTextArea" />
     <classNode dependClassName="javax.swing.JTextPane" />
+    <classNode dependClassName="javax.swing.WindowConstants" />
     <classNode dependClassName="javax.swing.border.Border" />
+    <classNode dependClassName="javax.swing.border.EmptyBorder" />
+    <classNode dependClassName="javax.swing.border.LineBorder" />
+  </dependency>
+  <dependency className="JavaVoiceMenu.runtime.Variables" file="Variables.java">
+    <classNode dependClassName="JavaVoiceMenu.runtime.Event" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.HashMap" />
+    <classNode dependClassName="java.util.List" />
   </dependency>
 </dependenciesRoot>
 

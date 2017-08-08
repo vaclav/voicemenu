@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="Import" uuid="0a95a724-13d9-46cc-a5ac-71e5b1ecb24e" moduleVersion="0" compileInMPS="true">
+<solution name="Import" uuid="b0a71c9c-dd09-45b2-9d6b-fed8033fadc2" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -34,7 +34,7 @@
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
-    <module reference="0a95a724-13d9-46cc-a5ac-71e5b1ecb24e(Import)" version="0" />
+    <module reference="b0a71c9c-dd09-45b2-9d6b-fed8033fadc2(Import)" version="0" />
   </dependencyVersions>
 </solution>
 

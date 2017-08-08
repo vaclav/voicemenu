@@ -6,9 +6,9 @@
   </languages>
   <imports>
     <import index="nj1z" ref="r:c39f136e-d27d-4f0e-8600-c115b4799e42(jetbrains.mps.samples.VoiceMenuToJava.structure)" />
-    <import index="ezje" ref="2db0d0d6-c712-494b-baff-045421164005/java:com.sun.speech.freetts(VoiceImport/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
     <import index="oici" ref="r:d8d37b74-a8e1-4a57-a2ee-4a996f4ba158(JavaVoiceMenu.runtime)" />
+    <import index="ezje" ref="b0a71c9c-dd09-45b2-9d6b-fed8033fadc2/java:com.sun.speech.freetts(Import/)" />
     <import index="xehl" ref="r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -60,6 +60,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -113,14 +114,16 @@
     <property role="TrG5h" value="main" />
     <node concept="3lhOvk" id="7MebzGjpmyu" role="3lj3bC">
       <ref role="30HIoZ" to="xehl:5HF1wNO0wj8" resolve="WorkSpace" />
-      <ref role="3lhOvi" node="7MebzGjpmzw" resolve="Main" />
+      <ref role="3lhOvi" node="2Bi0dpyLnuE" resolve="map_WorkSpace" />
     </node>
   </node>
-  <node concept="312cEu" id="7MebzGjpmzw">
-    <property role="TrG5h" value="Main" />
-    <node concept="2tJIrI" id="2Bi0dpyKAeM" role="jymVt" />
-    <node concept="2tJIrI" id="2Bi0dpyKAfm" role="jymVt" />
-    <node concept="2tJIrI" id="2Bi0dpyKAfV" role="jymVt" />
+  <node concept="312cEu" id="2Bi0dpyLnuE">
+    <property role="TrG5h" value="map_WorkSpace" />
+    <node concept="3Tm1VV" id="2Bi0dpyLnuF" role="1B3o_S" />
+    <node concept="n94m4" id="2Bi0dpyLnuG" role="lGtFl">
+      <ref role="n9lRv" to="xehl:5HF1wNO0wj8" resolve="WorkSpace" />
+    </node>
+    <node concept="2tJIrI" id="2Bi0dpyLnuN" role="jymVt" />
     <node concept="2YIFZL" id="7MebzGjppzV" role="jymVt">
       <property role="TrG5h" value="main" />
       <node concept="37vLTG" id="7MebzGjppzW" role="3clF46">
@@ -162,13 +165,14 @@
           <node concept="3clFbS" id="2Bi0dpyKBiV" role="3clFbx">
             <node concept="3clFbF" id="2Bi0dpyKCcd" role="3cqZAp">
               <node concept="2YIFZM" id="2Bi0dpyKCds" role="3clFbG">
-                <ref role="37wK5l" to="oici:2Bi0dpyF$SU" resolve="runLogic" />
                 <ref role="1Pybhc" to="oici:2Bi0dpyF$SS" resolve="Behaviour" />
+                <ref role="37wK5l" to="oici:2Bi0dpyF$SU" resolve="runLogic" />
                 <node concept="37vLTw" id="2Bi0dpyKCeg" role="37wK5m">
                   <ref role="3cqZAo" node="2Bi0dpyKB8u" resolve="event" />
                 </node>
               </node>
             </node>
+            <node concept="3clFbH" id="2Bi0dpyKUSK" role="3cqZAp" />
           </node>
         </node>
       </node>
@@ -176,11 +180,8 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
-    <node concept="3Tm1VV" id="7MebzGjpmzx" role="1B3o_S" />
-    <node concept="n94m4" id="7MebzGjpmzy" role="lGtFl">
-      <ref role="n9lRv" to="xehl:5HF1wNO0wj8" resolve="WorkSpace" />
-    </node>
-    <node concept="3uibUv" id="2Bi0dpyKB6l" role="EKbjA">
+    <node concept="2tJIrI" id="2Bi0dpyLnuP" role="jymVt" />
+    <node concept="3uibUv" id="2Bi0dpyLnzx" role="EKbjA">
       <ref role="3uigEE" to="hyam:~ActionListener" resolve="ActionListener" />
     </node>
   </node>
