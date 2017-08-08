@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
+  <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/1178167073667695024">
+    <file name="map_WorkSpace.xml">
+      <unit id="1178167073667695024" at="1,0,61,15" name="jetbrains.mps.samples.VoiceMenu.sandbox.map_WorkSpace" />
+    </file>
+  </root>
   <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/3502202611123931505">
     <file name="map_WorkSpace.xml">
-      <unit id="3502202611123931505" at="1,0,570,15" name="jetbrains.mps.samples.VoiceMenu.sandbox.map_WorkSpace" />
+      <unit id="3502202611123931505" at="1,0,567,15" name="jetbrains.mps.samples.VoiceMenu.sandbox.map_WorkSpace" />
     </file>
   </root>
   <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/6587365532662638252">

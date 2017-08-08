@@ -8,6 +8,7 @@
   <imports />
   <registry>
     <language id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu">
+      <concept id="6151364482690565571" name="jetbrains.mps.samples.VoiceMenu.structure.Empty" flags="ng" index="2fTWM$" />
       <concept id="6587365532662359693" name="jetbrains.mps.samples.VoiceMenu.structure.Activity" flags="ng" index="2C_I21">
         <property id="2702278965990916343" name="toast" index="3upAMh" />
         <reference id="6587365532662368499" name="events" index="2C_gVZ" />
@@ -155,7 +156,7 @@
       <node concept="2C_I21" id="32qkFwBvH_p" role="2C_I26">
         <property role="3upAMh" value="Going to the previous menu" />
         <ref role="2C_gVZ" node="32qkFwBvHAb" resolve="Jdu zpet" />
-        <node concept="1$pBvp" id="32qkFwBvHAf" role="2C_gVu" />
+        <node concept="2fTWM$" id="11pGboo2qO1" role="2C_gVu" />
       </node>
       <node concept="2C_I21" id="32qkFwBvHx9" role="2C_I26">
         <ref role="2C_gVZ" node="32qkFwBvHnC" resolve="Car" />
@@ -163,7 +164,7 @@
           <node concept="2C_I21" id="32qkFwBvHyI" role="2C_I26">
             <property role="3upAMh" value="Going to the previous menu" />
             <ref role="2C_gVZ" node="32qkFwBvHyG" resolve="Jdu zpet" />
-            <node concept="1$pBvp" id="32qkFwBvHyM" role="2C_gVu" />
+            <node concept="1$pBvp" id="11pGboo2qOV" role="2C_gVu" />
           </node>
           <node concept="2C_Ik0" id="32qkFwBvHyG" role="2C_I24">
             <property role="2C_Iks" value="#" />
@@ -309,6 +310,19 @@
       <node concept="2C_Ik0" id="32qkFwBvHAb" role="2C_I24">
         <property role="2C_Iks" value="#" />
         <property role="TrG5h" value="Jdu zpet" />
+      </node>
+    </node>
+  </node>
+  <node concept="2Jqgb4" id="11pGboo1$6K">
+    <property role="TrG5h" value="MyCallCentre" />
+    <node concept="2C_Ik4" id="11pGboo1$6L" role="2JqgbB">
+      <node concept="2C_Ik0" id="11pGboo1$6M" role="2C_I24">
+        <property role="2C_Iks" value="2" />
+        <property role="TrG5h" value="Free call" />
+      </node>
+      <node concept="2C_Ik0" id="11pGboo1$6R" role="2C_I24">
+        <property role="TrG5h" value="Interent" />
+        <property role="2C_Iks" value="3" />
       </node>
     </node>
   </node>

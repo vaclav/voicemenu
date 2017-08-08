@@ -10,13 +10,14 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
-import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
-import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
-import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
+import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.HardCodedTextStyleClass;
+import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
+import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
+import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.DeclarationsStyleClass;
+import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.ArrowsStyleClass;
-import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.TitleStyleClass;
 
 /*package*/ class Event_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -49,8 +50,11 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.TitleStyleClass;
     return editorCell;
   }
   private EditorCell createConstant_ymj9mh_a0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "On");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "On button:");
     editorCell.setCellId("Constant_ymj9mh_a0");
+    Style style = new StyleImpl();
+    new HardCodedTextStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -61,6 +65,9 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.TitleStyleClass;
     EditorCell editorCell;
     editorCell = provider.createEditorCell(getEditorContext());
     editorCell.setCellId("property_trigger");
+    Style style = new StyleImpl();
+    new DeclarationsStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    editorCell.getStyle().putAll(style);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     if (attributeConcept != null) {
@@ -86,7 +93,7 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.TitleStyleClass;
     editorCell = provider.createEditorCell(getEditorContext());
     editorCell.setCellId("property_name");
     Style style = new StyleImpl();
-    new TitleStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    new DeclarationsStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
     editorCell.getStyle().putAll(style);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
