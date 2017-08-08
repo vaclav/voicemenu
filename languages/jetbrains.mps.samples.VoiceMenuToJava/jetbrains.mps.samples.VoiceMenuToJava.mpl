@@ -18,6 +18,7 @@
         <dependency reexport="false">2db0d0d6-c712-494b-baff-045421164005(VoiceImport)</dependency>
         <dependency reexport="false">4bc750d7-5688-4f52-b7d5-b263a3393a24(jetbrains.mps.samples.VoiceMenu)</dependency>
         <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+        <dependency reexport="false">dac7f2c0-79a3-42ca-a0f2-e2cf2736613e(JavaVoiceMenu)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="5" />
@@ -38,6 +39,7 @@
       <dependencyVersions>
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
+        <module reference="dac7f2c0-79a3-42ca-a0f2-e2cf2736613e(JavaVoiceMenu)" version="0" />
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="2db0d0d6-c712-494b-baff-045421164005(VoiceImport)" version="0" />
