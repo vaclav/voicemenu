@@ -63,6 +63,7 @@
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
       </concept>
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
+      <concept id="5266818545798688928" name="jetbrains.mps.lang.editor.structure.ShowBoundariesInStyleClassItem" flags="lg" index="1fO$WK" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
@@ -140,6 +141,7 @@
   <node concept="24kQdi" id="5HF1wNNZuqq">
     <ref role="1XX52x" to="xehl:5HF1wNNZucc" resolve="Event" />
     <node concept="3EZMnI" id="5HF1wNNZuqs" role="2wV5jI">
+      <ref role="1k5W1q" node="3yrvnjuhfbU" resolve="Brackets" />
       <node concept="3F0ifn" id="5HF1wNNZuqz" role="3EZMnx">
         <property role="3F0ifm" value="On button:" />
         <ref role="1k5W1q" node="11pGboo1Ya6" resolve="HardCodedText" />
@@ -167,6 +169,7 @@
       <property role="S$Qs1" value="true" />
       <node concept="3F2HdR" id="5lu2mvqHSYX" role="3EZMnx">
         <ref role="1NtTu8" to="xehl:5HF1wNNZuq8" resolve="table" />
+        <ref role="1k5W1q" node="3yrvnjuhfbU" resolve="Brackets" />
         <node concept="2iRkQZ" id="5lu2mvqHTtc" role="2czzBx" />
         <node concept="lj46D" id="5lu2mvqHT9l" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -210,20 +213,26 @@
   <node concept="24kQdi" id="5HF1wNNZwzs">
     <ref role="1XX52x" to="xehl:5HF1wNNZuqd" resolve="Activity" />
     <node concept="3EZMnI" id="5HF1wNNZwzu" role="2wV5jI">
+      <ref role="1k5W1q" node="3yrvnjuhfbU" resolve="Brackets" />
       <node concept="3F0ifn" id="5HF1wNNZ_SF" role="3EZMnx">
+        <ref role="1k5W1q" node="3yrvnjuhfbU" resolve="Brackets" />
         <node concept="pVoyu" id="5HF1wNNZ_SS" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
         <node concept="ljvvj" id="5HF1wNNZ_SU" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+        <node concept="1fO$WK" id="3yrvnjuhqSU" role="3F10Kt" />
       </node>
       <node concept="3F0ifn" id="5HF1wNNZI4l" role="3EZMnx">
         <property role="3F0ifm" value="Event:" />
         <ref role="1k5W1q" node="11pGboo1Ya6" resolve="HardCodedText" />
+        <node concept="1fO$WK" id="3yrvnjuhbBU" role="3F10Kt" />
       </node>
       <node concept="1iCGBv" id="5HF1wNNZI4R" role="3EZMnx">
         <ref role="1NtTu8" to="xehl:5HF1wNNZwzN" resolve="events" />
+        <ref role="1k5W1q" node="3yrvnjuhfbU" resolve="Brackets" />
+        <node concept="1fO$WK" id="3yrvnjuhrdY" role="3F10Kt" />
         <node concept="1sVBvm" id="5HF1wNNZI4T" role="1sWHZn">
           <node concept="3F0A7n" id="5HF1wNNZJcZ" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -357,24 +366,28 @@
       <node concept="Vb9p2" id="5HF1wNO0dt7" role="3F10Kt">
         <property role="Vbekb" value="ITALIC" />
       </node>
+      <node concept="1fO$WK" id="3yrvnjuhnkY" role="3F10Kt" />
     </node>
     <node concept="14StLt" id="5HF1wNO0rRA" role="V601i">
       <property role="TrG5h" value="Title" />
       <node concept="VechU" id="5HF1wNO0rS1" role="3F10Kt">
         <property role="Vb096" value="DARK_MAGENTA" />
       </node>
+      <node concept="1fO$WK" id="3yrvnjuhnkR" role="3F10Kt" />
     </node>
     <node concept="14StLt" id="5lu2mvqIGvq" role="V601i">
       <property role="TrG5h" value="Action" />
       <node concept="VechU" id="5lu2mvqIGvK" role="3F10Kt">
         <property role="Vb096" value="black" />
       </node>
+      <node concept="1fO$WK" id="3yrvnjuhnkL" role="3F10Kt" />
     </node>
     <node concept="14StLt" id="11pGboo1Ya6" role="V601i">
       <property role="TrG5h" value="HardCodedText" />
       <node concept="VechU" id="11pGboo1Yan" role="3F10Kt">
         <property role="Vb096" value="darkGray" />
       </node>
+      <node concept="1fO$WK" id="3yrvnjuhnkD" role="3F10Kt" />
       <node concept="Vb9p2" id="11pGboo21MJ" role="3F10Kt">
         <property role="Vbekb" value="ITALIC" />
       </node>
@@ -384,6 +397,7 @@
     </node>
     <node concept="14StLt" id="11pGboo254S" role="V601i">
       <property role="TrG5h" value="UserWrittenText" />
+      <node concept="1fO$WK" id="3yrvnjuhnkv" role="3F10Kt" />
       <node concept="VechU" id="11pGboo2559" role="3F10Kt">
         <property role="Vb096" value="black" />
       </node>
@@ -396,14 +410,23 @@
     </node>
     <node concept="14StLt" id="11pGboo2CX2" role="V601i">
       <property role="TrG5h" value="Declarations" />
+      <node concept="1fO$WK" id="3yrvnjuhnkm" role="3F10Kt" />
       <node concept="VechU" id="11pGboo2CXn" role="3F10Kt">
         <property role="Vb096" value="DARK_MAGENTA" />
       </node>
+      <node concept="VSNWy" id="3yrvnjugrKI" role="3F10Kt">
+        <property role="1lJzqX" value="13" />
+      </node>
+    </node>
+    <node concept="14StLt" id="3yrvnjuhfbU" role="V601i">
+      <property role="TrG5h" value="Brackets" />
+      <node concept="1fO$WK" id="3yrvnjuhfcf" role="3F10Kt" />
     </node>
   </node>
   <node concept="24kQdi" id="5HF1wNO0wjQ">
     <ref role="1XX52x" to="xehl:5HF1wNO0wj8" resolve="WorkSpace" />
     <node concept="3EZMnI" id="5HF1wNO0wkg" role="2wV5jI">
+      <ref role="1k5W1q" node="3yrvnjuhfbU" resolve="Brackets" />
       <node concept="3F0A7n" id="5HF1wNO0wkM" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         <node concept="VQ3r3" id="11pGboo2qP1" role="3F10Kt">
