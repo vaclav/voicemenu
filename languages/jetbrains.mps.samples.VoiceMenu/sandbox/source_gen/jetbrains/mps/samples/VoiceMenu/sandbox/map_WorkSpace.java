@@ -27,31 +27,69 @@ public class map_WorkSpace implements ActionListener {
     // Workspace -> Menu 
 
     {
-      Event Interent_a0 = new Event("Interent", "3");
+      Event Komunikace_a0 = new Event("Komunikace", "3");
+
+      Komunikace_a0.setGreeting("Vitejte v Komunikaci");
+
+      Komunikace_a0.setAction("back");
 
 
-      Interent_a0.setAction("back");
+      Komunikace_a0.childs = new ArrayList<Event>();
 
 
-      Interent_a0.childs = new ArrayList<Event>();
-
-
-      // test <!TextGen not found for 'jetbrains.mps.samples.VoiceMenu.structure.Back'!>
+      // VSICHNI POTOMCI VYTVORENI 
+      // ola olaola 
+      // ola ola ola 
 
 
     }
     {
-      Event Free_call_b0 = new Event("Free call", "2");
+      Event Vozovy_park_b0 = new Event("Vozovy_park", "2");
 
-      Free_call_b0.setGreeting("Sample toast");
+      Vozovy_park_b0.setGreeting("Vitejte ve Vozovem parku");
 
 
+      {
+        Event Auto_a0b0 = new Event("Auto", "3");
 
-      Free_call_b0.childs = new ArrayList<Event>();
 
-      System.out.println("menu");
+        Auto_a0b0.setAction("call");
 
-      // test 
+
+        Auto_a0b0.childs = new ArrayList<Event>();
+
+
+        // VSICHNI POTOMCI VYTVORENI 
+        // ola olaola 
+        // ola ola ola 
+
+
+      }
+      {
+        Event Kamion_b0b0 = new Event("Kamion", "4");
+
+
+        Kamion_b0b0.setAction("other");
+
+
+        Kamion_b0b0.childs = new ArrayList<Event>();
+
+
+        // VSICHNI POTOMCI VYTVORENI 
+        // ola olaola 
+        // ola ola ola 
+
+
+      }
+
+      Vozovy_park_b0.childs = new ArrayList<Event>();
+
+
+      // VSICHNI POTOMCI VYTVORENI 
+      // ola olaola 
+      Vozovy_park_b0.childs.add();
+      Vozovy_park_b0.childs.add();
+      // ola ola ola 
 
 
     }
