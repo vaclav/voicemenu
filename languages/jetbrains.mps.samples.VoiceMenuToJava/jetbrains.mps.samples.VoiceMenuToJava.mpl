@@ -105,7 +105,7 @@
     <module reference="b346e003-e240-4a78-ab18-9d3086938853(jetbrains.mps.samples.VoiceMenuToJava)" version="0" />
   </dependencyVersions>
   <runtime>
-    <dependency reexport="false">2db0d0d6-c712-494b-baff-045421164005(VoiceImport)</dependency>
+    <dependency reexport="false">b0a71c9c-dd09-45b2-9d6b-fed8033fadc2(Import)</dependency>
   </runtime>
   <extendedLanguages>
     <extendedLanguage>4bc750d7-5688-4f52-b7d5-b263a3393a24(jetbrains.mps.samples.VoiceMenu)</extendedLanguage>

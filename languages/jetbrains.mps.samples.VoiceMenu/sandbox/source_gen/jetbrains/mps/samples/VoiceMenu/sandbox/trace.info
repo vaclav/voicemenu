@@ -1,18 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/1178167073667695024">
-    <file name="map_WorkSpace.xml">
-      <unit id="1178167073667695024" at="1,0,61,15" name="jetbrains.mps.samples.VoiceMenu.sandbox.map_WorkSpace" />
+    <file name="map_WorkSpace.java">
+      <node id="1178167073667695024" at="18,69,19,32" concept="0" />
+      <node id="1178167073667695024" at="19,32,20,0" concept="3" />
+      <node id="1178167073667695024" at="12,0,14,0" concept="4" trace="main#([Ljava/lang/String;)V" />
+      <node id="1178167073667695024" at="17,50,21,5" concept="1" />
+      <node id="1178167073667695024" at="16,0,23,0" concept="2" trace="actionPerformed#(Ljava/awt/event/ActionEvent;)V" />
+      <scope id="1178167073667695024" at="12,42,12,42" />
+      <scope id="1178167073667695024" at="12,0,14,0">
+        <var name="args" id="1178167073667695024" />
+      </scope>
+      <scope id="1178167073667695024" at="18,69,20,0" />
+      <scope id="1178167073667695024" at="17,50,21,5" />
+      <scope id="1178167073667695024" at="16,0,23,0">
+        <var name="event" id="1178167073667695024" />
+      </scope>
+      <unit id="1178167073667695024" at="10,0,25,0" name="jetbrains.mps.samples.VoiceMenu.sandbox.map_WorkSpace" />
     </file>
   </root>
   <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/3502202611123931505">
-    <file name="map_WorkSpace.xml">
-      <unit id="3502202611123931505" at="1,0,567,15" name="jetbrains.mps.samples.VoiceMenu.sandbox.map_WorkSpace" />
+    <file name="map_WorkSpace.java">
+      <node id="3502202611123931505" at="18,69,19,32" concept="0" />
+      <node id="3502202611123931505" at="19,32,20,0" concept="3" />
+      <node id="3502202611123931505" at="12,0,14,0" concept="4" trace="main#([Ljava/lang/String;)V" />
+      <node id="3502202611123931505" at="17,50,21,5" concept="1" />
+      <node id="3502202611123931505" at="16,0,23,0" concept="2" trace="actionPerformed#(Ljava/awt/event/ActionEvent;)V" />
+      <scope id="3502202611123931505" at="12,42,12,42" />
+      <scope id="3502202611123931505" at="12,0,14,0">
+        <var name="args" id="3502202611123931505" />
+      </scope>
+      <scope id="3502202611123931505" at="18,69,20,0" />
+      <scope id="3502202611123931505" at="17,50,21,5" />
+      <scope id="3502202611123931505" at="16,0,23,0">
+        <var name="event" id="3502202611123931505" />
+      </scope>
+      <unit id="3502202611123931505" at="10,0,25,0" name="jetbrains.mps.samples.VoiceMenu.sandbox.map_WorkSpace" />
     </file>
   </root>
   <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/6587365532662638252">
-    <file name="map_WorkSpace.xml">
-      <unit id="6587365532662638252" at="1,0,361,15" name="jetbrains.mps.samples.VoiceMenu.sandbox.map_WorkSpace" />
+    <file name="map_WorkSpace.java">
+      <node id="6587365532662638252" at="18,69,19,32" concept="0" />
+      <node id="6587365532662638252" at="19,32,20,0" concept="3" />
+      <node id="6587365532662638252" at="12,0,14,0" concept="4" trace="main#([Ljava/lang/String;)V" />
+      <node id="6587365532662638252" at="17,50,21,5" concept="1" />
+      <node id="6587365532662638252" at="16,0,23,0" concept="2" trace="actionPerformed#(Ljava/awt/event/ActionEvent;)V" />
+      <scope id="6587365532662638252" at="12,42,12,42" />
+      <scope id="6587365532662638252" at="12,0,14,0">
+        <var name="args" id="6587365532662638252" />
+      </scope>
+      <scope id="6587365532662638252" at="18,69,20,0" />
+      <scope id="6587365532662638252" at="17,50,21,5" />
+      <scope id="6587365532662638252" at="16,0,23,0">
+        <var name="event" id="6587365532662638252" />
+      </scope>
+      <unit id="6587365532662638252" at="10,0,25,0" name="jetbrains.mps.samples.VoiceMenu.sandbox.map_WorkSpace" />
     </file>
   </root>
 </debug-info>

@@ -1,3 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependenciesRoot />
+<dependenciesRoot>
+  <dependency className="jetbrains.mps.samples.VoiceMenu.sandbox.map_WorkSpace" file="map_WorkSpace.java">
+    <classNode dependClassName="JavaVoiceMenu.runtime.Behaviour" />
+    <classNode dependClassName="JavaVoiceMenu.runtime.Variables" />
+    <classNode dependClassName="java.awt.event.ActionEvent" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="java.awt.event.ActionListener" />
+  </dependency>
+</dependenciesRoot>
 
