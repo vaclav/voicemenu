@@ -36,7 +36,7 @@ public class map_WorkSpace implements ActionListener {
       Interent_a0.childs = new ArrayList<Event>();
 
 
-      // test <!TextGen not found for 'jetbrains.mps.samples.VoiceMenu.structure.Back'!>
+
 
 
     }
@@ -51,7 +51,7 @@ public class map_WorkSpace implements ActionListener {
 
       System.out.println("menu");
 
-      // test 
+
 
 
     }
