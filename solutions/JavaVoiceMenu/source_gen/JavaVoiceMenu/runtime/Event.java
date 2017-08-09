@@ -10,4 +10,36 @@ public class Event {
   public List<Event> childs;
   public String action;
   public String toast;
+
+  public Event() {
+  }
+  public Event(String name, String trigger) {
+    this.name = name;
+    this.trigger = trigger;
+    this.action = "";
+  }
+  public Event setElements(String name, String trigger, List<Event> childs, String action, String toast) {
+    this.name = name;
+    this.trigger = trigger;
+    this.childs = childs;
+    this.action = action;
+    this.toast = toast;
+    return this;
+  }
+  public Event setAction(String action) {
+    this.action = action;
+    return this;
+  }
+  public Event setGreeting(String greeting) {
+    this.toast = greeting;
+    return this;
+  }
+  public Event setChilds(List<Event> childs) {
+    this.childs = childs;
+    return this;
+  }
+
+
+
+
 }
