@@ -48,7 +48,6 @@ public class Style {
         VoiceManager vm = VoiceManager.getInstance();
         Voice myVoice = vm.getVoice("kevin16");
         myVoice.allocate();
-
         Variables.path = "0";
         myVoice.speak(main_Greeting);
       }
@@ -56,7 +55,6 @@ public class Style {
     End.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent p0) {
         System.out.println("Terminating program");
-
         System.exit(0);
       }
     });

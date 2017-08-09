@@ -34,20 +34,24 @@ public class map_WorkSpace implements ActionListener {
 
 
       Interent_a0.childs = new ArrayList<Event>();
-<!TextGen not found for 'jetbrains.mps.samples.VoiceMenu.structure.Back'!>
+
+
+      // test <!TextGen not found for 'jetbrains.mps.samples.VoiceMenu.structure.Back'!>
 
 
     }
     {
-      Event Free call_b0 = new Event("Free call", "2");
+      Event Free_call_b0 = new Event("Free call", "2");
 
-      Free call_b0.setGreeting("Sample toast");
+      Free_call_b0.setGreeting("Sample toast");
 
 
 
-      Free call_b0.childs = new ArrayList<Event>();
+      Free_call_b0.childs = new ArrayList<Event>();
 
       System.out.println("menu");
+
+      // test 
 
 
     }
