@@ -4,6 +4,7 @@ package jetbrains.mps.samples.VoiceMenu.sandbox;
 
 import java.awt.event.ActionListener;
 import JavaVoiceMenu.runtime.Event;
+import JavaVoiceMenu.runtime.Variables;
 import java.util.ArrayList;
 import JavaVoiceMenu.runtime.Style;
 import JavaVoiceMenu.runtime.Behaviour;
@@ -16,7 +17,6 @@ import javax.swing.border.Border;
 import javax.swing.border.LineBorder;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
-import JavaVoiceMenu.runtime.Variables;
 
 public class map_WorkSpace implements ActionListener {
 
@@ -25,16 +25,18 @@ public class map_WorkSpace implements ActionListener {
 
   public static void initHashMap() {
     // Workspace -> Menu 
+    String myPath = "0";
 
     {
-      Event Komunikace_a0 = new Event("Komunikace", "3");
-
-      Komunikace_a0.setGreeting("Vitejte v Komunikaci");
-
-      Komunikace_a0.setAction("back");
+      Event Komunikace = new Event("Komunikace", "3");
+      Variables.myHashMap.put("" + Komunikace.trigger, Komunikace);
+      Komunikace.setGreeting("Vitejte v Komunikaci");
 
 
-      Komunikace_a0.childs = new ArrayList<Event>();
+      Komunikace.setAction("back");
+
+
+      Komunikace.childs = new ArrayList<Event>();
 
 
       // VSICHNI POTOMCI VYTVORENI 
@@ -44,19 +46,21 @@ public class map_WorkSpace implements ActionListener {
 
     }
     {
-      Event Vozovy_park_b0 = new Event("Vozovy_park", "2");
+      Event Vozovy_park = new Event("Vozovy_park", "2");
+      Variables.myHashMap.put("" + Vozovy_park.trigger, Vozovy_park);
+      Vozovy_park.setGreeting("Vitejte ve Vozovem parku");
 
-      Vozovy_park_b0.setGreeting("Vitejte ve Vozovem parku");
 
 
       {
-        Event Auto_a0b0 = new Event("Auto", "3");
+        Event Moje_Auto = new Event("Moje_Auto", "3");
+        Variables.myHashMap.put("" + Moje_Auto.trigger, Moje_Auto);
 
 
-        Auto_a0b0.setAction("call");
+        Moje_Auto.setAction("call");
 
 
-        Auto_a0b0.childs = new ArrayList<Event>();
+        Moje_Auto.childs = new ArrayList<Event>();
 
 
         // VSICHNI POTOMCI VYTVORENI 
@@ -66,13 +70,14 @@ public class map_WorkSpace implements ActionListener {
 
       }
       {
-        Event Kamion_b0b0 = new Event("Kamion", "4");
+        Event Nas_Kamion = new Event("Nas_Kamion", "4");
+        Variables.myHashMap.put("" + Nas_Kamion.trigger, Nas_Kamion);
 
 
-        Kamion_b0b0.setAction("other");
+        Nas_Kamion.setAction("other");
 
 
-        Kamion_b0b0.childs = new ArrayList<Event>();
+        Nas_Kamion.childs = new ArrayList<Event>();
 
 
         // VSICHNI POTOMCI VYTVORENI 
@@ -82,13 +87,13 @@ public class map_WorkSpace implements ActionListener {
 
       }
 
-      Vozovy_park_b0.childs = new ArrayList<Event>();
+      Vozovy_park.childs = new ArrayList<Event>();
 
 
       // VSICHNI POTOMCI VYTVORENI 
       // ola olaola 
-      Vozovy_park_b0.childs.add();
-      Vozovy_park_b0.childs.add();
+      Vozovy_park.childs.add();
+      Vozovy_park.childs.add();
       // ola ola ola 
 
 

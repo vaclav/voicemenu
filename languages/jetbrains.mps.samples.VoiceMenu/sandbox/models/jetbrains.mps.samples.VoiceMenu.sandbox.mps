@@ -315,11 +315,6 @@
   <node concept="2Jqgb4" id="11pGboo1$6K">
     <property role="TrG5h" value="MyCallCentre" />
     <node concept="2C_Ik4" id="11pGboo1$6L" role="2JqgbB">
-      <node concept="2C_I21" id="2aqfKAe$FX_" role="2C_I26">
-        <property role="3upAMh" value="Vitejte v Komunikaci" />
-        <ref role="2C_gVZ" node="11pGboo1$6R" resolve="Komunikace" />
-        <node concept="1$pBvp" id="2aqfKAe$FXD" role="2C_gVu" />
-      </node>
       <node concept="2C_I21" id="7sMfXwVVG8F" role="2C_I26">
         <property role="3upAMh" value="Vitejte ve Vozovem parku" />
         <ref role="2C_gVZ" node="11pGboo1$6M" resolve="Vozovy park" />
@@ -328,27 +323,15 @@
             <property role="2C_Iks" value="3" />
             <property role="TrG5h" value="Moje Auto" />
           </node>
-          <node concept="2C_Ik0" id="7sMfXwVWphi" role="2C_I24">
-            <property role="2C_Iks" value="4" />
-            <property role="TrG5h" value="Nas Kamion" />
-          </node>
           <node concept="2C_I21" id="7sMfXwVWIYj" role="2C_I26">
             <ref role="2C_gVZ" node="7sMfXwVWphg" resolve="Moje Auto" />
             <node concept="1$pBvr" id="7sMfXwVWIYn" role="2C_gVu" />
-          </node>
-          <node concept="2C_I21" id="7sMfXwVWIYI" role="2C_I26">
-            <ref role="2C_gVZ" node="7sMfXwVWphi" resolve="Nas Kamion" />
-            <node concept="1$pBvq" id="7sMfXwVWIYO" role="2C_gVu" />
           </node>
         </node>
       </node>
       <node concept="2C_Ik0" id="11pGboo1$6M" role="2C_I24">
         <property role="2C_Iks" value="2" />
         <property role="TrG5h" value="Vozovy park" />
-      </node>
-      <node concept="2C_Ik0" id="11pGboo1$6R" role="2C_I24">
-        <property role="TrG5h" value="Komunikace" />
-        <property role="2C_Iks" value="3" />
       </node>
     </node>
   </node>

@@ -33,12 +33,6 @@ public class QueriesGenerated {
   public static Object propertyMacro_GetPropertyValue_2493374653982403851(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "toast"));
   }
-  public static Object propertyMacro_GetPropertyValue_4078991828412462994(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"));
-  }
-  public static Object propertyMacro_GetPropertyValue_4078991828412402658(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
-  }
   public static Object referenceMacro_GetReferent_8588997637300282058(final ReferenceMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).replace(" ", "_");
   }
