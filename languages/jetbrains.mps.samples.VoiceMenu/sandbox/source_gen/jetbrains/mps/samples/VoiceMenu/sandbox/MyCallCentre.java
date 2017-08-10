@@ -18,83 +18,45 @@ import javax.swing.border.LineBorder;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 
-public class map_WorkSpace implements ActionListener {
+public class MyCallCentre implements ActionListener {
 
 
-  public static map_WorkSpace instance;
+  public static MyCallCentre instance;
 
   public static void initHashMap() {
     // Workspace -> Menu 
     String myPath = "0";
 
     {
-      Event Komunikace = new Event("Komunikace", "3");
-      Variables.myHashMap.put("" + Komunikace.trigger, Komunikace);
-      Komunikace.setGreeting("Vitejte v Komunikaci");
-
-
-      Komunikace.setAction("back");
-
-
-      Komunikace.childs = new ArrayList<Event>();
-
-
-      // VSICHNI POTOMCI VYTVORENI 
-      // ola olaola 
-      // ola ola ola 
-
-
-    }
-    {
       Event Vozovy_park = new Event("Vozovy_park", "2");
-      Variables.myHashMap.put("" + Vozovy_park.trigger, Vozovy_park);
+
       Vozovy_park.setGreeting("Vitejte ve Vozovem parku");
 
+      Variables.path = Variables.path + Vozovy_park.trigger;
+      Variables.myHashMap.put(Variables.path, Vozovy_park);
 
 
       {
         Event Moje_Auto = new Event("Moje_Auto", "3");
-        Variables.myHashMap.put("" + Moje_Auto.trigger, Moje_Auto);
 
+
+        Variables.path = Variables.path + Moje_Auto.trigger;
+        Variables.myHashMap.put(Variables.path, Moje_Auto);
 
         Moje_Auto.setAction("call");
 
+        Variables.path.substring(0, Variables.path.length() - 1);
 
         Moje_Auto.childs = new ArrayList<Event>();
 
 
-        // VSICHNI POTOMCI VYTVORENI 
-        // ola olaola 
-        // ola ola ola 
-
 
       }
-      {
-        Event Nas_Kamion = new Event("Nas_Kamion", "4");
-        Variables.myHashMap.put("" + Nas_Kamion.trigger, Nas_Kamion);
-
-
-        Nas_Kamion.setAction("other");
-
-
-        Nas_Kamion.childs = new ArrayList<Event>();
-
-
-        // VSICHNI POTOMCI VYTVORENI 
-        // ola olaola 
-        // ola ola ola 
-
-
-      }
+      Variables.path.substring(0, Variables.path.length() - 1);
 
       Vozovy_park.childs = new ArrayList<Event>();
 
-
-      // VSICHNI POTOMCI VYTVORENI 
-      // ola olaola 
       Vozovy_park.childs.add();
-      Vozovy_park.childs.add();
-      // ola ola ola 
 
 
     }
@@ -103,7 +65,7 @@ public class map_WorkSpace implements ActionListener {
   public static void main(String[] args) {
     initHashMap();
     Style.main_Greeting = "";
-    map_WorkSpace.initHashMap();
+    MyCallCentre.initHashMap();
     Behaviour.runInitSetup();
   }
 
