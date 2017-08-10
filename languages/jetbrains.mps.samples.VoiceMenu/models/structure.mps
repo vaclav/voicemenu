@@ -59,7 +59,7 @@
     <node concept="1TJgyj" id="5HF1wNNZuq8" role="1TKVEi">
       <property role="IQ2ns" value="6587365532662359688" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="table" />
+      <property role="20kJfa" value="eventsDeclTable" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="5HF1wNNZucc" resolve="Event" />
     </node>

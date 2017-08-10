@@ -17,17 +17,14 @@
         <property id="6587365532662358800" name="trigger" index="2C_Iks" />
       </concept>
       <concept id="6587365532662358792" name="jetbrains.mps.samples.VoiceMenu.structure.Menu" flags="ng" index="2C_Ik4">
-        <child id="6587365532662359688" name="table" index="2C_I24" />
+        <child id="6587365532662359688" name="eventsDeclTable" index="2C_I24" />
         <child id="6587365532662359690" name="activities" index="2C_I26" />
       </concept>
       <concept id="6587365532662629576" name="jetbrains.mps.samples.VoiceMenu.structure.WorkSpace" flags="ng" index="2Jqgb4">
         <property id="2702278965990756444" name="greeting" index="3uoZKU" />
         <child id="6587365532662629611" name="body" index="2JqgbB" />
       </concept>
-      <concept id="6772988411135920843" name="jetbrains.mps.samples.VoiceMenu.structure.GetInfo" flags="ng" index="1$pBvo" />
       <concept id="6772988411135920842" name="jetbrains.mps.samples.VoiceMenu.structure.Back" flags="ng" index="1$pBvp" />
-      <concept id="6772988411135920841" name="jetbrains.mps.samples.VoiceMenu.structure.Other" flags="ng" index="1$pBvq" />
-      <concept id="6772988411135920840" name="jetbrains.mps.samples.VoiceMenu.structure.DirectCall" flags="ng" index="1$pBvr" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -35,115 +32,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="2Jqgb4" id="5HF1wNO0yqG">
-    <property role="TrG5h" value="Call_Center" />
-    <property role="3uoZKU" value="Welcome to Call_Center" />
-    <node concept="2C_Ik4" id="5HF1wNO0yqH" role="2JqgbB">
-      <node concept="2C_I21" id="5lu2mvqHWmK" role="2C_I26">
-        <ref role="2C_gVZ" node="5lu2mvqHWmx" resolve="Internet" />
-        <node concept="2C_Ik4" id="5lu2mvqHWmL" role="2C_gVu">
-          <node concept="2C_I21" id="5lu2mvqIwvt" role="2C_I26">
-            <property role="3upAMh" value="Did you know that we have also bonuses?" />
-            <ref role="2C_gVZ" node="5lu2mvqHZ5T" resolve="Bonus" />
-            <node concept="2C_Ik4" id="5lu2mvqLfet" role="2C_gVu">
-              <node concept="2C_Ik0" id="5lu2mvqLfeJ" role="2C_I24">
-                <property role="2C_Iks" value="1" />
-                <property role="TrG5h" value="Tarifs" />
-              </node>
-              <node concept="2C_Ik0" id="5lu2mvqLfeM" role="2C_I24">
-                <property role="2C_Iks" value="#" />
-                <property role="TrG5h" value="Back" />
-              </node>
-              <node concept="2C_I21" id="5lu2mvqLvGf" role="2C_I26">
-                <ref role="2C_gVZ" node="5lu2mvqLfeJ" resolve="Tarifs" />
-                <node concept="1$pBvr" id="5lu2mvqLvGl" role="2C_gVu" />
-              </node>
-              <node concept="2C_I21" id="5lu2mvqM3HY" role="2C_I26">
-                <ref role="2C_gVZ" node="5lu2mvqLfeM" resolve="Back" />
-                <node concept="1$pBvp" id="5lu2mvqM3I4" role="2C_gVu" />
-              </node>
-            </node>
-          </node>
-          <node concept="2C_Ik0" id="5lu2mvqHZ5Q" role="2C_I24">
-            <property role="2C_Iks" value="1" />
-            <property role="TrG5h" value="Free Internet" />
-          </node>
-          <node concept="2C_Ik0" id="5lu2mvqHZ5T" role="2C_I24">
-            <property role="2C_Iks" value="2" />
-            <property role="TrG5h" value="Bonus" />
-          </node>
-          <node concept="2C_Ik0" id="5lu2mvqHZ5Y" role="2C_I24">
-            <property role="2C_Iks" value="#" />
-            <property role="TrG5h" value="Back" />
-          </node>
-        </node>
-      </node>
-      <node concept="2C_I21" id="5lu2mvqHZ6S" role="2C_I26">
-        <ref role="2C_gVZ" node="5lu2mvqHWm$" resolve="News" />
-        <node concept="2C_Ik4" id="5lu2mvqHZ6T" role="2C_gVu">
-          <node concept="2C_Ik0" id="5lu2mvqHZ78" role="2C_I24">
-            <property role="2C_Iks" value="1" />
-            <property role="TrG5h" value="Hot News" />
-          </node>
-          <node concept="2C_I21" id="5lu2mvqHZ8u" role="2C_I26">
-            <ref role="2C_gVZ" node="5lu2mvqHZ78" resolve="Hot News" />
-            <node concept="2C_Ik4" id="5lu2mvqHZ8v" role="2C_gVu">
-              <node concept="2C_I21" id="2m0r6rVSNUf" role="2C_I26">
-                <property role="3upAMh" value="Wait please and relax you will be connected soon!!" />
-                <ref role="2C_gVZ" node="5lu2mvqHZ8$" resolve="Direct call" />
-                <node concept="1$pBvr" id="2m0r6rVSNUj" role="2C_gVu" />
-              </node>
-              <node concept="2C_I21" id="2m0r6rVSNUm" role="2C_I26">
-                <ref role="2C_gVZ" node="5lu2mvqLHB8" resolve="Daily bonus" />
-                <node concept="1$pBvo" id="2m0r6rVSNUs" role="2C_gVu" />
-              </node>
-              <node concept="2C_I21" id="2m0r6rVSNUv" role="2C_I26">
-                <ref role="2C_gVZ" node="5lu2mvqLHBd" resolve="Back" />
-                <node concept="1$pBvp" id="2m0r6rVSNUB" role="2C_gVu" />
-              </node>
-              <node concept="2C_Ik0" id="5lu2mvqHZ8$" role="2C_I24">
-                <property role="2C_Iks" value="1" />
-                <property role="TrG5h" value="Direct call" />
-              </node>
-              <node concept="2C_Ik0" id="5lu2mvqLHB8" role="2C_I24">
-                <property role="2C_Iks" value="2" />
-                <property role="TrG5h" value="Daily bonus" />
-              </node>
-              <node concept="2C_Ik0" id="5lu2mvqLHBd" role="2C_I24">
-                <property role="2C_Iks" value="4" />
-                <property role="TrG5h" value="Back" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2C_I21" id="5lu2mvqHZ9p" role="2C_I26">
-        <ref role="2C_gVZ" node="5lu2mvqHWmD" resolve="Calls" />
-        <node concept="2C_Ik4" id="5lu2mvqHZ9q" role="2C_gVu">
-          <node concept="2C_Ik0" id="5lu2mvqHZaJ" role="2C_I24">
-            <property role="2C_Iks" value="1" />
-            <property role="TrG5h" value="Free calls" />
-          </node>
-          <node concept="2C_I21" id="5lu2mvqM3HB" role="2C_I26">
-            <ref role="2C_gVZ" node="5lu2mvqHZaJ" resolve="Free calls" />
-            <node concept="1$pBvq" id="5lu2mvqM3HF" role="2C_gVu" />
-          </node>
-        </node>
-      </node>
-      <node concept="2C_Ik0" id="5lu2mvqHWmx" role="2C_I24">
-        <property role="2C_Iks" value="1" />
-        <property role="TrG5h" value="Internet" />
-      </node>
-      <node concept="2C_Ik0" id="5lu2mvqHWm$" role="2C_I24">
-        <property role="2C_Iks" value="2" />
-        <property role="TrG5h" value="News" />
-      </node>
-      <node concept="2C_Ik0" id="5lu2mvqHWmD" role="2C_I24">
-        <property role="2C_Iks" value="3" />
-        <property role="TrG5h" value="Calls" />
-      </node>
-    </node>
-  </node>
   <node concept="2Jqgb4" id="32qkFwBvc_L">
     <property role="TrG5h" value="VoiceMenu" />
     <property role="3uoZKU" value="Welcome to the Home menu" />
@@ -309,7 +197,8 @@
     </node>
   </node>
   <node concept="2Jqgb4" id="11pGboo1$6K">
-    <property role="TrG5h" value="Auta" />
+    <property role="TrG5h" value="Main2" />
+    <property role="3uoZKU" value="Welcome to our voicemenu" />
     <node concept="2C_Ik4" id="11pGboo1$6L" role="2JqgbB">
       <node concept="2C_I21" id="7sMfXwVVG8F" role="2C_I26">
         <property role="3upAMh" value="Welcome to vehicle menu" />
@@ -329,6 +218,37 @@
       <node concept="2C_Ik0" id="11pGboo1$6M" role="2C_I24">
         <property role="2C_Iks" value="1" />
         <property role="TrG5h" value="Vozovy park" />
+      </node>
+    </node>
+  </node>
+  <node concept="2Jqgb4" id="6EKBnCR4$w4">
+    <property role="TrG5h" value="Main" />
+    <node concept="2C_Ik4" id="6EKBnCR4$w5" role="2JqgbB">
+      <node concept="2C_I21" id="6EKBnCR4$wc" role="2C_I26">
+        <ref role="2C_gVZ" node="6EKBnCR4$w6" resolve="Jedna" />
+        <node concept="2C_Ik4" id="6EKBnCR4$wg" role="2C_gVu">
+          <node concept="2C_Ik0" id="6EKBnCR4$wj" role="2C_I24">
+            <property role="2C_Iks" value="2" />
+            <property role="TrG5h" value="Dva" />
+          </node>
+          <node concept="2C_I21" id="6EKBnCR4$wH" role="2C_I26">
+            <ref role="2C_gVZ" node="6EKBnCR4$wj" resolve="Dva" />
+            <node concept="2C_Ik4" id="6EKBnCR4$wZ" role="2C_gVu">
+              <node concept="2C_Ik0" id="6EKBnCR4$xg" role="2C_I24">
+                <property role="2C_Iks" value="3" />
+                <property role="TrG5h" value="Tri" />
+              </node>
+              <node concept="2C_I21" id="6EKBnCR4$xi" role="2C_I26">
+                <ref role="2C_gVZ" node="6EKBnCR4$xg" resolve="Tri" />
+                <node concept="1$pBvp" id="6EKBnCR4$xm" role="2C_gVu" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2C_Ik0" id="6EKBnCR4$w6" role="2C_I24">
+        <property role="2C_Iks" value="1" />
+        <property role="TrG5h" value="Jedna" />
       </node>
     </node>
   </node>

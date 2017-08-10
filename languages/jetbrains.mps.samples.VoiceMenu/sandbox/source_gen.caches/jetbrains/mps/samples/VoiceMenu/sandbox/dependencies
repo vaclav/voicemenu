@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.sandbox.Auta" file="Auta.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.sandbox.Main" file="Main.java">
     <classNode dependClassName="JavaVoiceMenu.runtime.Behaviour" />
     <classNode dependClassName="JavaVoiceMenu.runtime.Data" />
     <classNode dependClassName="JavaVoiceMenu.runtime.Event" />
@@ -12,6 +12,7 @@
     <classNode dependClassName="java.awt.event.ActionEvent" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="javax.swing.JButton" />
     <classNode dependClassName="javax.swing.JPanel" />
@@ -19,7 +20,7 @@
     <classNode dependClassName="javax.swing.border.LineBorder" />
     <classNode extendsClassName="java.awt.event.ActionListener" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.sandbox.Call_Center" file="Call_Center.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.sandbox.Main2" file="Main2.java">
     <classNode dependClassName="JavaVoiceMenu.runtime.Behaviour" />
     <classNode dependClassName="JavaVoiceMenu.runtime.Data" />
     <classNode dependClassName="JavaVoiceMenu.runtime.Event" />
@@ -31,6 +32,7 @@
     <classNode dependClassName="java.awt.event.ActionEvent" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="javax.swing.JButton" />
     <classNode dependClassName="javax.swing.JPanel" />
@@ -50,6 +52,7 @@
     <classNode dependClassName="java.awt.event.ActionEvent" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="javax.swing.JButton" />
     <classNode dependClassName="javax.swing.JPanel" />

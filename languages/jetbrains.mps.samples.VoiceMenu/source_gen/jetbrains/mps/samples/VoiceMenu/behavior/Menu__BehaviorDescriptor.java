@@ -42,7 +42,7 @@ public final class Menu__BehaviorDescriptor extends BaseBHDescriptor {
 
     if (SConceptOperations.isExactly(SNodeOperations.asSConcept(kind), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event"))) {
 
-      List<SNode> events = SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "table"));
+      List<SNode> events = SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "eventsDeclTable"));
 
       return new ListScope(events) {
         public String getName(SNode child) {

@@ -31,7 +31,7 @@ public class Style {
   public static JPanel myPhone = new JPanel(new BorderLayout(5, 0));
   public static JPanel myPanelOfButtons = new JPanel(new GridLayout(4, 3, 2, 2));
 
-  public static String main_Greeting;
+  public static String main_Greeting = "";
   private static void customizeButton(JButton button, Border border, Dimension dim, Color color) {
     button.setBackground(color);
     button.setOpaque(true);

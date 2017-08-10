@@ -168,7 +168,7 @@
     <node concept="3EZMnI" id="5HF1wNNZurA" role="2wV5jI">
       <property role="S$Qs1" value="true" />
       <node concept="3F2HdR" id="5lu2mvqHSYX" role="3EZMnx">
-        <ref role="1NtTu8" to="xehl:5HF1wNNZuq8" resolve="table" />
+        <ref role="1NtTu8" to="xehl:5HF1wNNZuq8" resolve="eventsDeclTable" />
         <ref role="1k5W1q" node="3yrvnjuhfbU" resolve="Brackets" />
         <node concept="2iRkQZ" id="5lu2mvqHTtc" role="2czzBx" />
         <node concept="lj46D" id="5lu2mvqHT9l" role="3F10Kt">
@@ -198,7 +198,7 @@
                 <node concept="2OqwBi" id="5lu2mvqHLJ7" role="2Oq$k0">
                   <node concept="pncrf" id="5lu2mvqHLy9" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="5lu2mvqHMfS" role="2OqNvi">
-                    <ref role="3TtcxE" to="xehl:5HF1wNNZuq8" resolve="table" />
+                    <ref role="3TtcxE" to="xehl:5HF1wNNZuq8" resolve="eventsDeclTable" />
                   </node>
                 </node>
                 <node concept="3GX2aA" id="5lu2mvqHSpd" role="2OqNvi" />

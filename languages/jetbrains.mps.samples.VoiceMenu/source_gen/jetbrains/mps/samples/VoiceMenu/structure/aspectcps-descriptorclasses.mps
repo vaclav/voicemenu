@@ -3048,7 +3048,7 @@
                         <node concept="liA8E" id="h4" role="2OqNvi">
                           <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.aggregate(java.lang.String,long):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2$AggregationLinkBuilder" resolve="aggregate" />
                           <node concept="Xl_RD" id="h5" role="37wK5m">
-                            <property role="Xl_RC" value="table" />
+                            <property role="Xl_RC" value="eventsDeclTable" />
                           </node>
                           <node concept="1adDum" id="h6" role="37wK5m">
                             <property role="1adDun" value="0x5b6b060cf3fde688L" />
