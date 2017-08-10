@@ -34,33 +34,52 @@ public class Main implements ActionListener {
 
     Event Jedna_pm98_a0 = new Event("Jedna", "1");
     Jedna_pm98_a0.setAction("");
+    Jedna_pm98_a0.setGreeting("");
     Jedna_pm98_a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Jedna_pm98_a0.trigger;
-    Variables.myHashMap.put(Variables.path, Jedna_pm98_a0);
-    Event Dva_pm98_a0a0 = new Event("Dva", "2");
+    System.out.println(Variables.path);
+    Variables.myHashMap.put(Variables.path, Jedna_pm98_a0);<!TextGen not found for 'jetbrains.mps.samples.VoiceMenu.structure.Activity'!>
+    Event Dva_pm98_a0a0_0 = new Event("Dva", "2");
     Dva_pm98_a0a0.setAction("");
+    Dva_pm98_a0a0.setGreeting("");
     Dva_pm98_a0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Dva_pm98_a0a0.trigger;
-    Variables.myHashMap.put(Variables.path, Dva_pm98_a0a0);
-    Event Tri_pm98_a0a0a0 = new Event("Tri", "3");
-    Tri_pm98_a0a0a0.setAction("");
-    Tri_pm98_a0a0a0.childs = new ArrayList<Event>();
-    Variables.path = Variables.path + Tri_pm98_a0a0a0.trigger;
-    Variables.myHashMap.put(Variables.path, Tri_pm98_a0a0a0);
-    Tri_pm98_a0a0a0.setAction("back");
+    System.out.println(Variables.path);
+    Variables.myHashMap.put(Variables.path, Dva_pm98_a0a0);<!TextGen not found for 'jetbrains.mps.samples.VoiceMenu.structure.Activity'!>
+    Event Tri_pm98_b0a0a0_2 = new Event("Tri", "3");
+    Tri_pm98_b0a0a0.setAction("");
+    Tri_pm98_b0a0a0.setGreeting("");
+    Tri_pm98_b0a0a0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + Tri_pm98_b0a0a0.trigger;
+    System.out.println(Variables.path);
+    Variables.myHashMap.put(Variables.path, Tri_pm98_b0a0a0);<!TextGen not found for 'jetbrains.mps.samples.VoiceMenu.structure.Activity'!>
+    Tri_pm98_b0a0a0.setAction("back");
     Variables.path.substring(0, Variables.path.length() - 1);
     System.out.println("dohromady");
-    Tri_pm98_a0a0a0.childs = new ArrayList<Event>();
+    Tri_pm98_b0a0a0.childs = new ArrayList<Event>();
+    System.out.println("dohromady");
+    Event Ctyri_pm98_a0a0a0_2 = new Event("Ctyri", "4");
+    Ctyri_pm98_a0a0a0.setAction("");
+    Ctyri_pm98_a0a0a0.setGreeting("");
+    Ctyri_pm98_a0a0a0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + Ctyri_pm98_a0a0a0.trigger;
+    System.out.println(Variables.path);
+    Variables.myHashMap.put(Variables.path, Ctyri_pm98_a0a0a0);<!TextGen not found for 'jetbrains.mps.samples.VoiceMenu.structure.Activity'!>
+    Ctyri_pm98_a0a0a0.setAction("back");
+    Variables.path.substring(0, Variables.path.length() - 1);
+    System.out.println("dohromady");
+    Ctyri_pm98_a0a0a0.childs = new ArrayList<Event>();
     System.out.println("dohromady");
     Variables.path.substring(0, Variables.path.length() - 1);
     System.out.println("dohromady");
     Dva_pm98_a0a0.childs = new ArrayList<Event>();
-    Tri_pm98_a0a0a0.childs.add(Tri_pm98_a0a0a0);
+    Dva_pm98_a0a0.childs.add(Ctyri_pm98_a0a0a0);
+    Dva_pm98_a0a0.childs.add(Tri_pm98_b0a0a0);
     System.out.println("dohromady");
     Variables.path.substring(0, Variables.path.length() - 1);
     System.out.println("dohromady");
     Jedna_pm98_a0.childs = new ArrayList<Event>();
-    Dva_pm98_a0a0.childs.add(Dva_pm98_a0a0);
+    Jedna_pm98_a0.childs.add(Dva_pm98_a0a0);
     System.out.println("dohromady");
 
     Home.childs.add(Jedna_pm98_a0);

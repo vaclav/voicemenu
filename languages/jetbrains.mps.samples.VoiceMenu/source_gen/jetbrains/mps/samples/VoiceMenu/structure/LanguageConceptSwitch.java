@@ -12,8 +12,8 @@ public final class LanguageConceptSwitch {
   public static final int Action = 0;
   public static final int Activity = 1;
   public static final int Back = 2;
-  public static final int Command = 3;
-  public static final int DirectCall = 4;
+  public static final int Call = 3;
+  public static final int Command = 4;
   public static final int Empty = 5;
   public static final int Event = 6;
   public static final int GetInfo = 7;
@@ -26,8 +26,8 @@ public final class LanguageConceptSwitch {
     builder.put(0x5dfe7d133997fdc5L, Action);
     builder.put(0x5b6b060cf3fde68dL, Activity);
     builder.put(0x5dfe7d1339980acaL, Back);
+    builder.put(0x5dfe7d1339980ac8L, Call);
     builder.put(0x555e0967dab9863dL, Command);
-    builder.put(0x5dfe7d1339980ac8L, DirectCall);
     builder.put(0x555e0967dab9c5c3L, Empty);
     builder.put(0x5b6b060cf3fde30cL, Event);
     builder.put(0x5dfe7d1339980acbL, GetInfo);

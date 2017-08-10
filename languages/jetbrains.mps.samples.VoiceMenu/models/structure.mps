@@ -141,7 +141,7 @@
   </node>
   <node concept="1TIwiD" id="5RYvhcTA0F8">
     <property role="EcuMT" value="6772988411135920840" />
-    <property role="TrG5h" value="DirectCall" />
+    <property role="TrG5h" value="Call" />
     <property role="3GE5qa" value="RealActions" />
     <property role="34LRSv" value="direct call" />
     <ref role="1TJDcQ" node="5RYvhcT_ZR5" resolve="Action" />

@@ -109,14 +109,14 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.editor.DirectCall_Editor" file="DirectCall_Editor.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.editor.Call_Editor" file="Call_Editor.java">
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.DirectCall_EditorBuilder_a" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.Call_EditorBuilder_a" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.editor.DirectCall_EditorBuilder_a" file="DirectCall_EditorBuilder_a.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.editor.Call_EditorBuilder_a" file="Call_EditorBuilder_a.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
@@ -145,7 +145,7 @@
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.Activity_Editor" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.Activity_tabular_Editor" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.Back_Editor" />
-    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.DirectCall_Editor" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.Call_Editor" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.Empty_Editor" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.Empty_SubstituteMenu" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.Event_Editor" />

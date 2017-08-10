@@ -28,7 +28,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
       case 1:
         return Collections.<ConceptEditor>singletonList(new Back_Editor());
       case 2:
-        return Collections.<ConceptEditor>singletonList(new DirectCall_Editor());
+        return Collections.<ConceptEditor>singletonList(new Call_Editor());
       case 3:
         return Collections.<ConceptEditor>singletonList(new Empty_Editor());
       case 4:

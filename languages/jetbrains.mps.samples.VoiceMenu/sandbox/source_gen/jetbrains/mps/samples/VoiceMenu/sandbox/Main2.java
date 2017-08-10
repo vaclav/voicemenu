@@ -34,16 +34,20 @@ public class Main2 implements ActionListener {
 
     Event Vozovy_park_m25z0_a0 = new Event("Vozovy_park", "1");
     Vozovy_park_m25z0_a0.setAction("");
+    Vozovy_park_m25z0_a0.setGreeting("");
     Vozovy_park_m25z0_a0.setGreeting("Welcome to vehicle menu");
     Vozovy_park_m25z0_a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Vozovy_park_m25z0_a0.trigger;
-    Variables.myHashMap.put(Variables.path, Vozovy_park_m25z0_a0);
-    Event Moje_Auto_m25z0_a0a0 = new Event("Moje_Auto", "2");
+    System.out.println(Variables.path);
+    Variables.myHashMap.put(Variables.path, Vozovy_park_m25z0_a0);<!TextGen not found for 'jetbrains.mps.samples.VoiceMenu.structure.Activity'!>
+    Event Moje_Auto_m25z0_a0a0_0 = new Event("Moje_Auto", "2");
     Moje_Auto_m25z0_a0a0.setAction("");
+    Moje_Auto_m25z0_a0a0.setGreeting("");
     Moje_Auto_m25z0_a0a0.setGreeting("Welcome to car menu");
     Moje_Auto_m25z0_a0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Moje_Auto_m25z0_a0a0.trigger;
-    Variables.myHashMap.put(Variables.path, Moje_Auto_m25z0_a0a0);
+    System.out.println(Variables.path);
+    Variables.myHashMap.put(Variables.path, Moje_Auto_m25z0_a0a0);<!TextGen not found for 'jetbrains.mps.samples.VoiceMenu.structure.Activity'!>
     Moje_Auto_m25z0_a0a0.setAction("back");
     Variables.path.substring(0, Variables.path.length() - 1);
     System.out.println("dohromady");
@@ -52,7 +56,7 @@ public class Main2 implements ActionListener {
     Variables.path.substring(0, Variables.path.length() - 1);
     System.out.println("dohromady");
     Vozovy_park_m25z0_a0.childs = new ArrayList<Event>();
-    Moje_Auto_m25z0_a0a0.childs.add(Moje_Auto_m25z0_a0a0);
+    Vozovy_park_m25z0_a0.childs.add(Moje_Auto_m25z0_a0a0);
     System.out.println("dohromady");
 
     Home.childs.add(Vozovy_park_m25z0_a0);

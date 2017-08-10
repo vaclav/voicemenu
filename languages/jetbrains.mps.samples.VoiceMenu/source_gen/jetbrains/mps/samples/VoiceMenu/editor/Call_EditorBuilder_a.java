@@ -15,11 +15,11 @@ import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.ActionStyleClass;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 
-/*package*/ class DirectCall_EditorBuilder_a extends AbstractEditorBuilder {
+/*package*/ class Call_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
   private SNode myNode;
 
-  public DirectCall_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
+  public Call_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
     super(context);
     myNode = node;
   }
@@ -31,20 +31,20 @@ import jetbrains.mps.editor.runtime.style.StyleAttributes;
   }
 
   /*package*/ EditorCell createCell() {
-    return createCollection_stlc2q_a();
+    return createCollection_m420n_a();
   }
 
-  private EditorCell createCollection_stlc2q_a() {
+  private EditorCell createCollection_m420n_a() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
-    editorCell.setCellId("Collection_stlc2q_a");
+    editorCell.setCellId("Collection_m420n_a");
     editorCell.setBig(true);
     editorCell.setCellContext(getCellFactory().getCellContext());
-    editorCell.addEditorCell(createConstant_stlc2q_a0());
+    editorCell.addEditorCell(createConstant_m420n_a0());
     return editorCell;
   }
-  private EditorCell createConstant_stlc2q_a0() {
+  private EditorCell createConstant_m420n_a0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "direct call");
-    editorCell.setCellId("Constant_stlc2q_a0");
+    editorCell.setCellId("Constant_m420n_a0");
     Style style = new StyleImpl();
     new ActionStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);

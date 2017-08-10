@@ -637,7 +637,7 @@
   </node>
   <node concept="24kQdi" id="5lu2mvqIGwc">
     <property role="3GE5qa" value="RealActions" />
-    <ref role="1XX52x" to="xehl:5RYvhcTA0F8" resolve="DirectCall" />
+    <ref role="1XX52x" to="xehl:5RYvhcTA0F8" resolve="Call" />
     <node concept="3EZMnI" id="5lu2mvqIOPo" role="2wV5jI">
       <node concept="3F0ifn" id="5lu2mvqIOPy" role="3EZMnx">
         <property role="3F0ifm" value="direct call" />
