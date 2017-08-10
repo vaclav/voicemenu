@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.sandbox.Call_Center" file="Call_Center.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.sandbox.Auta" file="Auta.java">
     <classNode dependClassName="JavaVoiceMenu.runtime.Behaviour" />
     <classNode dependClassName="JavaVoiceMenu.runtime.Data" />
     <classNode dependClassName="JavaVoiceMenu.runtime.Event" />
@@ -19,7 +19,7 @@
     <classNode dependClassName="javax.swing.border.LineBorder" />
     <classNode extendsClassName="java.awt.event.ActionListener" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.sandbox.MyCallCentre" file="MyCallCentre.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.sandbox.Call_Center" file="Call_Center.java">
     <classNode dependClassName="JavaVoiceMenu.runtime.Behaviour" />
     <classNode dependClassName="JavaVoiceMenu.runtime.Data" />
     <classNode dependClassName="JavaVoiceMenu.runtime.Event" />

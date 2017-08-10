@@ -4,8 +4,8 @@ package jetbrains.mps.samples.VoiceMenu.sandbox;
 
 import java.awt.event.ActionListener;
 import JavaVoiceMenu.runtime.Event;
-import JavaVoiceMenu.runtime.Variables;
 import java.util.ArrayList;
+import JavaVoiceMenu.runtime.Variables;
 import JavaVoiceMenu.runtime.Style;
 import JavaVoiceMenu.runtime.Behaviour;
 import java.awt.BorderLayout;
@@ -27,202 +27,137 @@ public class Call_Center implements ActionListener {
     // Workspace -> Menu 
     String myPath = "0";
 
+    Event Home = new Event("Call_Center", "0");
+    Home.setAction("");
+    Home.setGreeting("Welcome to Call_Center");
+
+
     {
-      Event Internet = new Event("Internet", "1");
-
-
-      Variables.path = Variables.path + Internet.trigger;
-      Variables.myHashMap.put(Variables.path, Internet);
-
-
+      Event Internet_5dx9n_a0 = new Event("Internet", "1");
+      Internet_5dx9n_a0.childs = new ArrayList<Event>();
+      Variables.path = Variables.path + Internet_5dx9n_a0.trigger;
+      Variables.myHashMap.put(Variables.path, Internet_5dx9n_a0);
       {
-        Event Bonus = new Event("Bonus", "2");
-
-        Bonus.setGreeting("Did you know that we have also bonuses?");
-
-        Variables.path = Variables.path + Bonus.trigger;
-        Variables.myHashMap.put(Variables.path, Bonus);
-
-
+        Event Bonus_5dx9n_b0a0 = new Event("Bonus", "2");
+        Bonus_5dx9n_b0a0.setGreeting("Did you know that we have also bonuses?");
+        Bonus_5dx9n_b0a0.childs = new ArrayList<Event>();
+        Variables.path = Variables.path + Bonus_5dx9n_b0a0.trigger;
+        Variables.myHashMap.put(Variables.path, Bonus_5dx9n_b0a0);
         {
-          Event Tarifs = new Event("Tarifs", "1");
-
-
-          Variables.path = Variables.path + Tarifs.trigger;
-          Variables.myHashMap.put(Variables.path, Tarifs);
-
-          Tarifs.setAction("call");
-
+          Event Tarifs_5dx9n_a0a0a0 = new Event("Tarifs", "1");
+          Tarifs_5dx9n_a0a0a0.childs = new ArrayList<Event>();
+          Variables.path = Variables.path + Tarifs_5dx9n_a0a0a0.trigger;
+          Variables.myHashMap.put(Variables.path, Tarifs_5dx9n_a0a0a0);
+          Tarifs_5dx9n_a0a0a0.setAction("call");
           Variables.path.substring(0, Variables.path.length() - 1);
-
-          Tarifs.childs = new ArrayList<Event>();
-
+          Tarifs_5dx9n_a0a0a0.childs = new ArrayList<Event>();
 
 
         }
         {
-          Event Back = new Event("Back", "#");
-
-
-          Variables.path = Variables.path + Back.trigger;
-          Variables.myHashMap.put(Variables.path, Back);
-
-          Back.setAction("back");
-
+          Event Back_5dx9n_b0a0a0 = new Event("Back", "#");
+          Back_5dx9n_b0a0a0.childs = new ArrayList<Event>();
+          Variables.path = Variables.path + Back_5dx9n_b0a0a0.trigger;
+          Variables.myHashMap.put(Variables.path, Back_5dx9n_b0a0a0);
+          Back_5dx9n_b0a0a0.setAction("back");
           Variables.path.substring(0, Variables.path.length() - 1);
-
-          Back.childs = new ArrayList<Event>();
-
+          Back_5dx9n_b0a0a0.childs = new ArrayList<Event>();
 
 
         }
         Variables.path.substring(0, Variables.path.length() - 1);
-
-        Bonus.childs = new ArrayList<Event>();
-
-        Bonus.childs.add();
-        Bonus.childs.add();
+        Bonus_5dx9n_b0a0.childs = new ArrayList<Event>();
+        Tarifs_5dx9n_a0a0a0.childs.add(Tarifs_5dx9n_a0a0a0);
+        Back_5dx9n_b0a0a0.childs.add(Back_5dx9n_b0a0a0);
 
 
       }
       Variables.path.substring(0, Variables.path.length() - 1);
-
-      Internet.childs = new ArrayList<Event>();
-
-      Internet.childs.add();
-      Internet.childs.add();
-      Internet.childs.add();
+      Internet_5dx9n_a0.childs = new ArrayList<Event>();
+      Internet_5dx9n_a0.childs.add();
+      Bonus_5dx9n_b0a0.childs.add(Bonus_5dx9n_b0a0);
+      Internet_5dx9n_a0.childs.add();
 
 
     }
     {
-      Event News = new Event("News", "2");
-
-
-      Variables.path = Variables.path + News.trigger;
-      Variables.myHashMap.put(Variables.path, News);
-
-
+      Event News_5dx9n_b0 = new Event("News", "2");
+      News_5dx9n_b0.childs = new ArrayList<Event>();
+      Variables.path = Variables.path + News_5dx9n_b0.trigger;
+      Variables.myHashMap.put(Variables.path, News_5dx9n_b0);
       {
-        Event Hot_News = new Event("Hot_News", "1");
-
-
-        Variables.path = Variables.path + Hot_News.trigger;
-        Variables.myHashMap.put(Variables.path, Hot_News);
-
-
+        Event Hot_News_5dx9n_a0b0 = new Event("Hot_News", "1");
+        Hot_News_5dx9n_a0b0.childs = new ArrayList<Event>();
+        Variables.path = Variables.path + Hot_News_5dx9n_a0b0.trigger;
+        Variables.myHashMap.put(Variables.path, Hot_News_5dx9n_a0b0);
         {
-          Event Direct_call = new Event("Direct_call", "1");
-
-          Direct_call.setGreeting("Wait please and relax you will be connected soon!!");
-
-          Variables.path = Variables.path + Direct_call.trigger;
-          Variables.myHashMap.put(Variables.path, Direct_call);
-
-          Direct_call.setAction("call");
-
+          Event Direct_call_5dx9n_a0a0b0 = new Event("Direct_call", "1");
+          Direct_call_5dx9n_a0a0b0.setGreeting("Wait please and relax you will be connected soon!!");
+          Direct_call_5dx9n_a0a0b0.childs = new ArrayList<Event>();
+          Variables.path = Variables.path + Direct_call_5dx9n_a0a0b0.trigger;
+          Variables.myHashMap.put(Variables.path, Direct_call_5dx9n_a0a0b0);
+          Direct_call_5dx9n_a0a0b0.setAction("call");
           Variables.path.substring(0, Variables.path.length() - 1);
-
-          Direct_call.childs = new ArrayList<Event>();
-
+          Direct_call_5dx9n_a0a0b0.childs = new ArrayList<Event>();
 
 
         }
         {
-          Event Daily_bonus = new Event("Daily_bonus", "2");
-
-
-          Variables.path = Variables.path + Daily_bonus.trigger;
-          Variables.myHashMap.put(Variables.path, Daily_bonus);
-
-          Daily_bonus.setAction("get info");
-
+          Event Daily_bonus_5dx9n_b0a0b0 = new Event("Daily_bonus", "2");
+          Daily_bonus_5dx9n_b0a0b0.childs = new ArrayList<Event>();
+          Variables.path = Variables.path + Daily_bonus_5dx9n_b0a0b0.trigger;
+          Variables.myHashMap.put(Variables.path, Daily_bonus_5dx9n_b0a0b0);
+          Daily_bonus_5dx9n_b0a0b0.setAction("get info");
+          Daily_bonus_5dx9n_b0a0b0.setAction("get info");
           Variables.path.substring(0, Variables.path.length() - 1);
-
-          Daily_bonus.childs = new ArrayList<Event>();
-
+          Daily_bonus_5dx9n_b0a0b0.childs = new ArrayList<Event>();
 
 
         }
         {
-          Event Back = new Event("Back", "4");
-
-
-          Variables.path = Variables.path + Back.trigger;
-          Variables.myHashMap.put(Variables.path, Back);
-
-          Back.setAction("back");
-
+          Event Back_5dx9n_c0a0b0 = new Event("Back", "4");
+          Back_5dx9n_c0a0b0.childs = new ArrayList<Event>();
+          Variables.path = Variables.path + Back_5dx9n_c0a0b0.trigger;
+          Variables.myHashMap.put(Variables.path, Back_5dx9n_c0a0b0);
+          Back_5dx9n_c0a0b0.setAction("back");
           Variables.path.substring(0, Variables.path.length() - 1);
-
-          Back.childs = new ArrayList<Event>();
-
+          Back_5dx9n_c0a0b0.childs = new ArrayList<Event>();
 
 
         }
         Variables.path.substring(0, Variables.path.length() - 1);
-
-        Hot_News.childs = new ArrayList<Event>();
-
-        Hot_News.childs.add();
-        Hot_News.childs.add();
-        Hot_News.childs.add();
-
-
-      }
-      {
-        Event Hot_News = new Event("Hot_News", "1");
-
-
-        Variables.path = Variables.path + Hot_News.trigger;
-        Variables.myHashMap.put(Variables.path, Hot_News);
-
-        Hot_News.setAction("get info");
-
-        Variables.path.substring(0, Variables.path.length() - 1);
-
-        Hot_News.childs = new ArrayList<Event>();
-
+        Hot_News_5dx9n_a0b0.childs = new ArrayList<Event>();
+        Direct_call_5dx9n_a0a0b0.childs.add(Direct_call_5dx9n_a0a0b0);
+        Daily_bonus_5dx9n_b0a0b0.childs.add(Daily_bonus_5dx9n_b0a0b0);
+        Back_5dx9n_c0a0b0.childs.add(Back_5dx9n_c0a0b0);
 
 
       }
       Variables.path.substring(0, Variables.path.length() - 1);
-
-      News.childs = new ArrayList<Event>();
-
-      News.childs.add();
+      News_5dx9n_b0.childs = new ArrayList<Event>();
+      Hot_News_5dx9n_a0b0.childs.add(Hot_News_5dx9n_a0b0);
 
 
     }
     {
-      Event Calls = new Event("Calls", "3");
-
-
-      Variables.path = Variables.path + Calls.trigger;
-      Variables.myHashMap.put(Variables.path, Calls);
-
-
+      Event Calls_5dx9n_c0 = new Event("Calls", "3");
+      Calls_5dx9n_c0.childs = new ArrayList<Event>();
+      Variables.path = Variables.path + Calls_5dx9n_c0.trigger;
+      Variables.myHashMap.put(Variables.path, Calls_5dx9n_c0);
       {
-        Event Free_calls = new Event("Free_calls", "1");
-
-
-        Variables.path = Variables.path + Free_calls.trigger;
-        Variables.myHashMap.put(Variables.path, Free_calls);
-
-        Free_calls.setAction("other");
-
+        Event Free_calls_5dx9n_a0c0 = new Event("Free_calls", "1");
+        Free_calls_5dx9n_a0c0.childs = new ArrayList<Event>();
+        Variables.path = Variables.path + Free_calls_5dx9n_a0c0.trigger;
+        Variables.myHashMap.put(Variables.path, Free_calls_5dx9n_a0c0);
+        Free_calls_5dx9n_a0c0.setAction("other");
         Variables.path.substring(0, Variables.path.length() - 1);
-
-        Free_calls.childs = new ArrayList<Event>();
-
+        Free_calls_5dx9n_a0c0.childs = new ArrayList<Event>();
 
 
       }
       Variables.path.substring(0, Variables.path.length() - 1);
-
-      Calls.childs = new ArrayList<Event>();
-
-      Calls.childs.add();
+      Calls_5dx9n_c0.childs = new ArrayList<Event>();
+      Free_calls_5dx9n_a0c0.childs.add(Free_calls_5dx9n_a0c0);
 
 
     }
@@ -230,6 +165,7 @@ public class Call_Center implements ActionListener {
 
   public static void main(String[] args) {
     initHashMap();
+    instance = new Call_Center();
     Style.main_Greeting = "Welcome to Call_Center";
     Call_Center.initHashMap();
     Behaviour.runInitSetup();
@@ -237,6 +173,7 @@ public class Call_Center implements ActionListener {
 
   public static void initView() {
     Style.setContent();
+    addButtons(Style.myPanelOfButtons);
     Style.myPhone.add(Style.myPanelOfButtons, BorderLayout.SOUTH);
     Style.setFrame();
   }

@@ -4,8 +4,8 @@ package jetbrains.mps.samples.VoiceMenu.sandbox;
 
 import java.awt.event.ActionListener;
 import JavaVoiceMenu.runtime.Event;
-import JavaVoiceMenu.runtime.Variables;
 import java.util.ArrayList;
+import JavaVoiceMenu.runtime.Variables;
 import JavaVoiceMenu.runtime.Style;
 import JavaVoiceMenu.runtime.Behaviour;
 import java.awt.BorderLayout;
@@ -27,295 +27,215 @@ public class VoiceMenu implements ActionListener {
     // Workspace -> Menu 
     String myPath = "0";
 
+    Event Home = new Event("VoiceMenu", "0");
+    Home.setAction("");
+    Home.setGreeting("Welcome to the Home menu");
+
+
     {
-      Event Jdu_zpet = new Event("Jdu_zpet", "#");
-
-      Jdu_zpet.setGreeting("Going to the previous menu");
-
-      Variables.path = Variables.path + Jdu_zpet.trigger;
-      Variables.myHashMap.put(Variables.path, Jdu_zpet);
-
-      Jdu_zpet.setAction("back");
-
+      Event Jdu_zpet_854zbc_c0 = new Event("Jdu_zpet", "#");
+      Jdu_zpet_854zbc_c0.setGreeting("Going to the previous menu");
+      Jdu_zpet_854zbc_c0.childs = new ArrayList<Event>();
+      Variables.path = Variables.path + Jdu_zpet_854zbc_c0.trigger;
+      Variables.myHashMap.put(Variables.path, Jdu_zpet_854zbc_c0);
+      Jdu_zpet_854zbc_c0.setAction("back");
       Variables.path.substring(0, Variables.path.length() - 1);
-
-      Jdu_zpet.childs = new ArrayList<Event>();
-
+      Jdu_zpet_854zbc_c0.childs = new ArrayList<Event>();
 
 
     }
     {
-      Event Car = new Event("Car", "2");
-
-
-      Variables.path = Variables.path + Car.trigger;
-      Variables.myHashMap.put(Variables.path, Car);
-
-
+      Event Car_854zbc_b0 = new Event("Car", "2");
+      Car_854zbc_b0.childs = new ArrayList<Event>();
+      Variables.path = Variables.path + Car_854zbc_b0.trigger;
+      Variables.myHashMap.put(Variables.path, Car_854zbc_b0);
       {
-        Event Jdu_zpet = new Event("Jdu_zpet", "#");
-
-        Jdu_zpet.setGreeting("Going to the previous menu");
-
-        Variables.path = Variables.path + Jdu_zpet.trigger;
-        Variables.myHashMap.put(Variables.path, Jdu_zpet);
-
-        Jdu_zpet.setAction("back");
-
+        Event Jdu_zpet_854zbc_a0b0 = new Event("Jdu_zpet", "#");
+        Jdu_zpet_854zbc_a0b0.setGreeting("Going to the previous menu");
+        Jdu_zpet_854zbc_a0b0.childs = new ArrayList<Event>();
+        Variables.path = Variables.path + Jdu_zpet_854zbc_a0b0.trigger;
+        Variables.myHashMap.put(Variables.path, Jdu_zpet_854zbc_a0b0);
+        Jdu_zpet_854zbc_a0b0.setAction("back");
         Variables.path.substring(0, Variables.path.length() - 1);
-
-        Jdu_zpet.childs = new ArrayList<Event>();
-
+        Jdu_zpet_854zbc_a0b0.childs = new ArrayList<Event>();
 
 
       }
       Variables.path.substring(0, Variables.path.length() - 1);
-
-      Car.childs = new ArrayList<Event>();
-
-      Car.childs.add();
+      Car_854zbc_b0.childs = new ArrayList<Event>();
+      Jdu_zpet_854zbc_a0b0.childs.add(Jdu_zpet_854zbc_a0b0);
 
 
     }
     {
-      Event Technical_problem = new Event("Technical_problem", "1");
-
-      Technical_problem.setGreeting("What's up man?");
-
-      Variables.path = Variables.path + Technical_problem.trigger;
-      Variables.myHashMap.put(Variables.path, Technical_problem);
-
-
+      Event Technical_problem_854zbc_a0 = new Event("Technical_problem", "1");
+      Technical_problem_854zbc_a0.setGreeting("What's up man?");
+      Technical_problem_854zbc_a0.childs = new ArrayList<Event>();
+      Variables.path = Variables.path + Technical_problem_854zbc_a0.trigger;
+      Variables.myHashMap.put(Variables.path, Technical_problem_854zbc_a0);
       {
-        Event Jdu_zpet = new Event("Jdu_zpet", "#");
-
-        Jdu_zpet.setGreeting("Going to the previous menu");
-
-        Variables.path = Variables.path + Jdu_zpet.trigger;
-        Variables.myHashMap.put(Variables.path, Jdu_zpet);
-
-        Jdu_zpet.setAction("back");
-
+        Event Jdu_zpet_854zbc_c0c0 = new Event("Jdu_zpet", "#");
+        Jdu_zpet_854zbc_c0c0.setGreeting("Going to the previous menu");
+        Jdu_zpet_854zbc_c0c0.childs = new ArrayList<Event>();
+        Variables.path = Variables.path + Jdu_zpet_854zbc_c0c0.trigger;
+        Variables.myHashMap.put(Variables.path, Jdu_zpet_854zbc_c0c0);
+        Jdu_zpet_854zbc_c0c0.setAction("back");
         Variables.path.substring(0, Variables.path.length() - 1);
-
-        Jdu_zpet.childs = new ArrayList<Event>();
-
+        Jdu_zpet_854zbc_c0c0.childs = new ArrayList<Event>();
 
 
       }
       {
-        Event Television_ = new Event("Television_", "2");
-
-        Television_.setGreeting("Welcome to the television part");
-
-        Variables.path = Variables.path + Television_.trigger;
-        Variables.myHashMap.put(Variables.path, Television_);
-
-
+        Event Television_854zbc_b0c0 = new Event("Television_", "2");
+        Television_854zbc_b0c0.setGreeting("Welcome to the television part");
+        Television_854zbc_b0c0.childs = new ArrayList<Event>();
+        Variables.path = Variables.path + Television_854zbc_b0c0.trigger;
+        Variables.myHashMap.put(Variables.path, Television_854zbc_b0c0);
         {
-          Event jdu_zpet = new Event("jdu_zpet", "#");
-
-
-          Variables.path = Variables.path + jdu_zpet.trigger;
-          Variables.myHashMap.put(Variables.path, jdu_zpet);
-
-          jdu_zpet.setAction("back");
-
+          Event jdu_zpet_854zbc_a0b0c0 = new Event("jdu_zpet", "#");
+          jdu_zpet_854zbc_a0b0c0.childs = new ArrayList<Event>();
+          Variables.path = Variables.path + jdu_zpet_854zbc_a0b0c0.trigger;
+          Variables.myHashMap.put(Variables.path, jdu_zpet_854zbc_a0b0c0);
+          jdu_zpet_854zbc_a0b0c0.setAction("back");
           Variables.path.substring(0, Variables.path.length() - 1);
-
-          jdu_zpet.childs = new ArrayList<Event>();
-
+          jdu_zpet_854zbc_a0b0c0.childs = new ArrayList<Event>();
 
 
         }
         Variables.path.substring(0, Variables.path.length() - 1);
-
-        Television_.childs = new ArrayList<Event>();
-
-        Television_.childs.add();
+        Television_854zbc_b0c0.childs = new ArrayList<Event>();
+        jdu_zpet_854zbc_a0b0c0.childs.add(jdu_zpet_854zbc_a0b0c0);
 
 
       }
       {
-        Event Internet = new Event("Internet", "1");
-
-        Internet.setGreeting("Welcome to the Internet");
-
-        Variables.path = Variables.path + Internet.trigger;
-        Variables.myHashMap.put(Variables.path, Internet);
-
-
+        Event Internet_854zbc_a0c0 = new Event("Internet", "1");
+        Internet_854zbc_a0c0.setGreeting("Welcome to the Internet");
+        Internet_854zbc_a0c0.childs = new ArrayList<Event>();
+        Variables.path = Variables.path + Internet_854zbc_a0c0.trigger;
+        Variables.myHashMap.put(Variables.path, Internet_854zbc_a0c0);
         {
-          Event Jdu_zpet = new Event("Jdu_zpet", "#");
-
-          Jdu_zpet.setGreeting("Going to the previous menu");
-
-          Variables.path = Variables.path + Jdu_zpet.trigger;
-          Variables.myHashMap.put(Variables.path, Jdu_zpet);
-
-          Jdu_zpet.setAction("back");
-
+          Event Jdu_zpet_854zbc_c0c0c0 = new Event("Jdu_zpet", "#");
+          Jdu_zpet_854zbc_c0c0c0.setGreeting("Going to the previous menu");
+          Jdu_zpet_854zbc_c0c0c0.childs = new ArrayList<Event>();
+          Variables.path = Variables.path + Jdu_zpet_854zbc_c0c0c0.trigger;
+          Variables.myHashMap.put(Variables.path, Jdu_zpet_854zbc_c0c0c0);
+          Jdu_zpet_854zbc_c0c0c0.setAction("back");
           Variables.path.substring(0, Variables.path.length() - 1);
-
-          Jdu_zpet.childs = new ArrayList<Event>();
-
+          Jdu_zpet_854zbc_c0c0c0.childs = new ArrayList<Event>();
 
 
         }
         {
-          Event Increase_the_speed_of_internet = new Event("Increase_the_speed_of_internet", "9");
-
-          Increase_the_speed_of_internet.setGreeting("Let's increase the speed of internet!");
-
-          Variables.path = Variables.path + Increase_the_speed_of_internet.trigger;
-          Variables.myHashMap.put(Variables.path, Increase_the_speed_of_internet);
-
-
+          Event Increase_the_speed_of_internet_854zbc_a0c0c0 = new Event("Increase_the_speed_of_internet", "9");
+          Increase_the_speed_of_internet_854zbc_a0c0c0.setGreeting("Let's increase the speed of internet!");
+          Increase_the_speed_of_internet_854zbc_a0c0c0.childs = new ArrayList<Event>();
+          Variables.path = Variables.path + Increase_the_speed_of_internet_854zbc_a0c0c0.trigger;
+          Variables.myHashMap.put(Variables.path, Increase_the_speed_of_internet_854zbc_a0c0c0);
           {
-            Event Jdu_zpet = new Event("Jdu_zpet", "#");
-
-            Jdu_zpet.setGreeting("Going to the previous menu");
-
-            Variables.path = Variables.path + Jdu_zpet.trigger;
-            Variables.myHashMap.put(Variables.path, Jdu_zpet);
-
-            Jdu_zpet.setAction("back");
-
+            Event Jdu_zpet_854zbc_a0b0c0c0 = new Event("Jdu_zpet", "#");
+            Jdu_zpet_854zbc_a0b0c0c0.setGreeting("Going to the previous menu");
+            Jdu_zpet_854zbc_a0b0c0c0.childs = new ArrayList<Event>();
+            Variables.path = Variables.path + Jdu_zpet_854zbc_a0b0c0c0.trigger;
+            Variables.myHashMap.put(Variables.path, Jdu_zpet_854zbc_a0b0c0c0);
+            Jdu_zpet_854zbc_a0b0c0c0.setAction("back");
             Variables.path.substring(0, Variables.path.length() - 1);
-
-            Jdu_zpet.childs = new ArrayList<Event>();
-
+            Jdu_zpet_854zbc_a0b0c0c0.childs = new ArrayList<Event>();
 
 
           }
           Variables.path.substring(0, Variables.path.length() - 1);
-
-          Increase_the_speed_of_internet.childs = new ArrayList<Event>();
-
-          Increase_the_speed_of_internet.childs.add();
+          Increase_the_speed_of_internet_854zbc_a0c0c0.childs = new ArrayList<Event>();
+          Jdu_zpet_854zbc_a0b0c0c0.childs.add(Jdu_zpet_854zbc_a0b0c0c0);
 
 
         }
         {
-          Event Discount = new Event("Discount", "4");
-
-
-          Variables.path = Variables.path + Discount.trigger;
-          Variables.myHashMap.put(Variables.path, Discount);
-
-
+          Event Discount_854zbc_b0c0c0 = new Event("Discount", "4");
+          Discount_854zbc_b0c0c0.childs = new ArrayList<Event>();
+          Variables.path = Variables.path + Discount_854zbc_b0c0c0.trigger;
+          Variables.myHashMap.put(Variables.path, Discount_854zbc_b0c0c0);
           {
-            Event Big = new Event("Big", "7");
-
-            Big.setGreeting("Good choice!");
-
-            Variables.path = Variables.path + Big.trigger;
-            Variables.myHashMap.put(Variables.path, Big);
-
-
+            Event Big_854zbc_a0c0c0c0 = new Event("Big", "7");
+            Big_854zbc_a0c0c0c0.setGreeting("Good choice!");
+            Big_854zbc_a0c0c0c0.childs = new ArrayList<Event>();
+            Variables.path = Variables.path + Big_854zbc_a0c0c0c0.trigger;
+            Variables.myHashMap.put(Variables.path, Big_854zbc_a0c0c0c0);
             {
-              Event Jdu_zpet = new Event("Jdu_zpet", "#");
-
-              Jdu_zpet.setGreeting("Going to the previous menu");
-
-              Variables.path = Variables.path + Jdu_zpet.trigger;
-              Variables.myHashMap.put(Variables.path, Jdu_zpet);
-
-              Jdu_zpet.setAction("back");
-
+              Event Jdu_zpet_854zbc_a0a0c0c0c0 = new Event("Jdu_zpet", "#");
+              Jdu_zpet_854zbc_a0a0c0c0c0.setGreeting("Going to the previous menu");
+              Jdu_zpet_854zbc_a0a0c0c0c0.childs = new ArrayList<Event>();
+              Variables.path = Variables.path + Jdu_zpet_854zbc_a0a0c0c0c0.trigger;
+              Variables.myHashMap.put(Variables.path, Jdu_zpet_854zbc_a0a0c0c0c0);
+              Jdu_zpet_854zbc_a0a0c0c0c0.setAction("back");
               Variables.path.substring(0, Variables.path.length() - 1);
-
-              Jdu_zpet.childs = new ArrayList<Event>();
-
+              Jdu_zpet_854zbc_a0a0c0c0c0.childs = new ArrayList<Event>();
 
 
             }
             Variables.path.substring(0, Variables.path.length() - 1);
-
-            Big.childs = new ArrayList<Event>();
-
-            Big.childs.add();
+            Big_854zbc_a0c0c0c0.childs = new ArrayList<Event>();
+            Jdu_zpet_854zbc_a0a0c0c0c0.childs.add(Jdu_zpet_854zbc_a0a0c0c0c0);
 
 
           }
           {
-            Event Small = new Event("Small", "8");
-
-            Small.setGreeting("I guess you are well off.");
-
-            Variables.path = Variables.path + Small.trigger;
-            Variables.myHashMap.put(Variables.path, Small);
-
-
+            Event Small_854zbc_b0c0c0c0 = new Event("Small", "8");
+            Small_854zbc_b0c0c0c0.setGreeting("I guess you are well off.");
+            Small_854zbc_b0c0c0c0.childs = new ArrayList<Event>();
+            Variables.path = Variables.path + Small_854zbc_b0c0c0c0.trigger;
+            Variables.myHashMap.put(Variables.path, Small_854zbc_b0c0c0c0);
             {
-              Event Jdu_zpet = new Event("Jdu_zpet", "#");
-
-              Jdu_zpet.setGreeting("Going to the previous menu");
-
-              Variables.path = Variables.path + Jdu_zpet.trigger;
-              Variables.myHashMap.put(Variables.path, Jdu_zpet);
-
-              Jdu_zpet.setAction("back");
-
+              Event Jdu_zpet_854zbc_a0b0c0c0c0 = new Event("Jdu_zpet", "#");
+              Jdu_zpet_854zbc_a0b0c0c0c0.setGreeting("Going to the previous menu");
+              Jdu_zpet_854zbc_a0b0c0c0c0.childs = new ArrayList<Event>();
+              Variables.path = Variables.path + Jdu_zpet_854zbc_a0b0c0c0c0.trigger;
+              Variables.myHashMap.put(Variables.path, Jdu_zpet_854zbc_a0b0c0c0c0);
+              Jdu_zpet_854zbc_a0b0c0c0c0.setAction("back");
               Variables.path.substring(0, Variables.path.length() - 1);
-
-              Jdu_zpet.childs = new ArrayList<Event>();
-
+              Jdu_zpet_854zbc_a0b0c0c0c0.childs = new ArrayList<Event>();
 
 
             }
             Variables.path.substring(0, Variables.path.length() - 1);
-
-            Small.childs = new ArrayList<Event>();
-
-            Small.childs.add();
+            Small_854zbc_b0c0c0c0.childs = new ArrayList<Event>();
+            Jdu_zpet_854zbc_a0b0c0c0c0.childs.add(Jdu_zpet_854zbc_a0b0c0c0c0);
 
 
           }
           {
-            Event Jdeme_zpet = new Event("Jdeme_zpet", "#");
-
-            Jdeme_zpet.setGreeting("Going to the previous menu");
-
-            Variables.path = Variables.path + Jdeme_zpet.trigger;
-            Variables.myHashMap.put(Variables.path, Jdeme_zpet);
-
-            Jdeme_zpet.setAction("back");
-
+            Event Jdeme_zpet_854zbc_c0c0c0c0 = new Event("Jdeme_zpet", "#");
+            Jdeme_zpet_854zbc_c0c0c0c0.setGreeting("Going to the previous menu");
+            Jdeme_zpet_854zbc_c0c0c0c0.childs = new ArrayList<Event>();
+            Variables.path = Variables.path + Jdeme_zpet_854zbc_c0c0c0c0.trigger;
+            Variables.myHashMap.put(Variables.path, Jdeme_zpet_854zbc_c0c0c0c0);
+            Jdeme_zpet_854zbc_c0c0c0c0.setAction("back");
             Variables.path.substring(0, Variables.path.length() - 1);
-
-            Jdeme_zpet.childs = new ArrayList<Event>();
-
+            Jdeme_zpet_854zbc_c0c0c0c0.childs = new ArrayList<Event>();
 
 
           }
           Variables.path.substring(0, Variables.path.length() - 1);
-
-          Discount.childs = new ArrayList<Event>();
-
-          Discount.childs.add();
-          Discount.childs.add();
-          Discount.childs.add();
+          Discount_854zbc_b0c0c0.childs = new ArrayList<Event>();
+          Big_854zbc_a0c0c0c0.childs.add(Big_854zbc_a0c0c0c0);
+          Small_854zbc_b0c0c0c0.childs.add(Small_854zbc_b0c0c0c0);
+          Jdeme_zpet_854zbc_c0c0c0c0.childs.add(Jdeme_zpet_854zbc_c0c0c0c0);
 
 
         }
         Variables.path.substring(0, Variables.path.length() - 1);
-
-        Internet.childs = new ArrayList<Event>();
-
-        Internet.childs.add();
-        Internet.childs.add();
-        Internet.childs.add();
+        Internet_854zbc_a0c0.childs = new ArrayList<Event>();
+        Increase_the_speed_of_internet_854zbc_a0c0c0.childs.add(Increase_the_speed_of_internet_854zbc_a0c0c0);
+        Discount_854zbc_b0c0c0.childs.add(Discount_854zbc_b0c0c0);
+        Jdu_zpet_854zbc_c0c0c0.childs.add(Jdu_zpet_854zbc_c0c0c0);
 
 
       }
       Variables.path.substring(0, Variables.path.length() - 1);
-
-      Technical_problem.childs = new ArrayList<Event>();
-
-      Technical_problem.childs.add();
-      Technical_problem.childs.add();
-      Technical_problem.childs.add();
+      Technical_problem_854zbc_a0.childs = new ArrayList<Event>();
+      Internet_854zbc_a0c0.childs.add(Internet_854zbc_a0c0);
+      Television_854zbc_b0c0.childs.add(Television_854zbc_b0c0);
+      Jdu_zpet_854zbc_c0c0.childs.add(Jdu_zpet_854zbc_c0c0);
 
 
     }
@@ -323,6 +243,7 @@ public class VoiceMenu implements ActionListener {
 
   public static void main(String[] args) {
     initHashMap();
+    instance = new VoiceMenu();
     Style.main_Greeting = "Welcome to the Home menu";
     VoiceMenu.initHashMap();
     Behaviour.runInitSetup();
@@ -330,6 +251,7 @@ public class VoiceMenu implements ActionListener {
 
   public static void initView() {
     Style.setContent();
+    addButtons(Style.myPanelOfButtons);
     Style.myPhone.add(Style.myPanelOfButtons, BorderLayout.SOUTH);
     Style.setFrame();
   }

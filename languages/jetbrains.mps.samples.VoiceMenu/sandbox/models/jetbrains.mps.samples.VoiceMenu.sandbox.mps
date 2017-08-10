@@ -115,10 +115,6 @@
               </node>
             </node>
           </node>
-          <node concept="2C_I21" id="5lu2mvqMDvJ" role="2C_I26">
-            <ref role="2C_gVZ" node="5lu2mvqHZ78" resolve="Hot News" />
-            <node concept="1$pBvo" id="2m0r6rVSO13" role="2C_gVu" />
-          </node>
         </node>
       </node>
       <node concept="2C_I21" id="5lu2mvqHZ9p" role="2C_I26">
@@ -313,24 +309,25 @@
     </node>
   </node>
   <node concept="2Jqgb4" id="11pGboo1$6K">
-    <property role="TrG5h" value="MyCallCentre" />
+    <property role="TrG5h" value="Auta" />
     <node concept="2C_Ik4" id="11pGboo1$6L" role="2JqgbB">
       <node concept="2C_I21" id="7sMfXwVVG8F" role="2C_I26">
-        <property role="3upAMh" value="Vitejte ve Vozovem parku" />
+        <property role="3upAMh" value="Welcome to vehicle menu" />
         <ref role="2C_gVZ" node="11pGboo1$6M" resolve="Vozovy park" />
         <node concept="2C_Ik4" id="7sMfXwVWphd" role="2C_gVu">
           <node concept="2C_Ik0" id="7sMfXwVWphg" role="2C_I24">
-            <property role="2C_Iks" value="3" />
+            <property role="2C_Iks" value="2" />
             <property role="TrG5h" value="Moje Auto" />
           </node>
           <node concept="2C_I21" id="7sMfXwVWIYj" role="2C_I26">
+            <property role="3upAMh" value="Welcome to car menu" />
             <ref role="2C_gVZ" node="7sMfXwVWphg" resolve="Moje Auto" />
-            <node concept="1$pBvr" id="7sMfXwVWIYn" role="2C_gVu" />
+            <node concept="1$pBvp" id="7sMfXwW4crN" role="2C_gVu" />
           </node>
         </node>
       </node>
       <node concept="2C_Ik0" id="11pGboo1$6M" role="2C_I24">
-        <property role="2C_Iks" value="2" />
+        <property role="2C_Iks" value="1" />
         <property role="TrG5h" value="Vozovy park" />
       </node>
     </node>

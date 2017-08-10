@@ -4,8 +4,8 @@ package jetbrains.mps.samples.VoiceMenu.sandbox;
 
 import java.awt.event.ActionListener;
 import JavaVoiceMenu.runtime.Event;
-import JavaVoiceMenu.runtime.Variables;
 import java.util.ArrayList;
+import JavaVoiceMenu.runtime.Variables;
 import JavaVoiceMenu.runtime.Style;
 import JavaVoiceMenu.runtime.Behaviour;
 import java.awt.BorderLayout;
@@ -18,45 +18,41 @@ import javax.swing.border.LineBorder;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 
-public class MyCallCentre implements ActionListener {
+public class Auta implements ActionListener {
 
 
-  public static MyCallCentre instance;
+  public static Auta instance;
 
   public static void initHashMap() {
     // Workspace -> Menu 
     String myPath = "0";
 
+    Event Home = new Event("Auta", "0");
+    Home.setAction("");
+    Home.setGreeting("");
+
+
     {
-      Event Vozovy_park = new Event("Vozovy_park", "2");
-
-      Vozovy_park.setGreeting("Vitejte ve Vozovem parku");
-
-      Variables.path = Variables.path + Vozovy_park.trigger;
-      Variables.myHashMap.put(Variables.path, Vozovy_park);
-
-
+      Event Vozovy_park_lzvk_a0 = new Event("Vozovy_park", "1");
+      Vozovy_park_lzvk_a0.setGreeting("Welcome to vehicle menu");
+      Vozovy_park_lzvk_a0.childs = new ArrayList<Event>();
+      Variables.path = Variables.path + Vozovy_park_lzvk_a0.trigger;
+      Variables.myHashMap.put(Variables.path, Vozovy_park_lzvk_a0);
       {
-        Event Moje_Auto = new Event("Moje_Auto", "3");
-
-
-        Variables.path = Variables.path + Moje_Auto.trigger;
-        Variables.myHashMap.put(Variables.path, Moje_Auto);
-
-        Moje_Auto.setAction("call");
-
+        Event Moje_Auto_lzvk_a0a0 = new Event("Moje_Auto", "2");
+        Moje_Auto_lzvk_a0a0.setGreeting("Welcome to car menu");
+        Moje_Auto_lzvk_a0a0.childs = new ArrayList<Event>();
+        Variables.path = Variables.path + Moje_Auto_lzvk_a0a0.trigger;
+        Variables.myHashMap.put(Variables.path, Moje_Auto_lzvk_a0a0);
+        Moje_Auto_lzvk_a0a0.setAction("back");
         Variables.path.substring(0, Variables.path.length() - 1);
-
-        Moje_Auto.childs = new ArrayList<Event>();
-
+        Moje_Auto_lzvk_a0a0.childs = new ArrayList<Event>();
 
 
       }
       Variables.path.substring(0, Variables.path.length() - 1);
-
-      Vozovy_park.childs = new ArrayList<Event>();
-
-      Vozovy_park.childs.add();
+      Vozovy_park_lzvk_a0.childs = new ArrayList<Event>();
+      Moje_Auto_lzvk_a0a0.childs.add(Moje_Auto_lzvk_a0a0);
 
 
     }
@@ -64,13 +60,15 @@ public class MyCallCentre implements ActionListener {
 
   public static void main(String[] args) {
     initHashMap();
+    instance = new Auta();
     Style.main_Greeting = "";
-    MyCallCentre.initHashMap();
+    Auta.initHashMap();
     Behaviour.runInitSetup();
   }
 
   public static void initView() {
     Style.setContent();
+    addButtons(Style.myPanelOfButtons);
     Style.myPhone.add(Style.myPanelOfButtons, BorderLayout.SOUTH);
     Style.setFrame();
   }
