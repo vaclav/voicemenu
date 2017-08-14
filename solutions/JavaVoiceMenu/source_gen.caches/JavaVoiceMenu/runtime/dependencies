@@ -18,6 +18,7 @@
     <classNode dependClassName="java.util.List" />
   </dependency>
   <dependency className="JavaVoiceMenu.runtime.Style" file="Style.java">
+    <classNode dependClassName="JavaVoiceMenu.runtime.Event" />
     <classNode dependClassName="JavaVoiceMenu.runtime.Variables" />
     <classNode dependClassName="com.sun.speech.freetts.Voice" />
     <classNode dependClassName="com.sun.speech.freetts.VoiceManager" />

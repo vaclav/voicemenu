@@ -968,6 +968,175 @@
       <node concept="3Tm6S6" id="2Bi0dpyCPhO" role="1B3o_S" />
       <node concept="3cqZAl" id="2Bi0dpyCPhP" role="3clF45" />
     </node>
+    <node concept="2tJIrI" id="1CIbeTAhtDU" role="jymVt" />
+    <node concept="2YIFZL" id="1CIbeTAhuwa" role="jymVt">
+      <property role="TrG5h" value="readChildren" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="1CIbeTAhuwd" role="3clF47">
+        <node concept="3cpWs8" id="1CIbeTAhuSv" role="3cqZAp">
+          <node concept="3cpWsn" id="1CIbeTAhuSw" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <node concept="3uibUv" id="1CIbeTAhuSx" role="1tU5fm">
+              <ref role="3uigEE" node="3_1GZis4X1R" resolve="Event" />
+            </node>
+            <node concept="2OqwBi" id="1CIbeTAhvg3" role="33vP2m">
+              <node concept="10M0yZ" id="1CIbeTAhv4S" role="2Oq$k0">
+                <ref role="3cqZAo" node="2Bi0dpyCLQo" resolve="myHashMap" />
+                <ref role="1PxDUh" node="2Bi0dpyCD0T" resolve="Variables" />
+              </node>
+              <node concept="liA8E" id="1CIbeTAhv_R" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
+                <node concept="Xl_RD" id="1CIbeTAhvTc" role="37wK5m">
+                  <property role="Xl_RC" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1CIbeTAhwlN" role="3cqZAp">
+          <node concept="3cpWsn" id="1CIbeTAhwlO" role="3cpWs9">
+            <property role="TrG5h" value="vm" />
+            <node concept="3uibUv" id="1CIbeTAhwlP" role="1tU5fm">
+              <ref role="3uigEE" to="ezje:~VoiceManager" resolve="VoiceManager" />
+            </node>
+            <node concept="2YIFZM" id="1CIbeTAhwlQ" role="33vP2m">
+              <ref role="1Pybhc" to="ezje:~VoiceManager" resolve="VoiceManager" />
+              <ref role="37wK5l" to="ezje:~VoiceManager.getInstance():com.sun.speech.freetts.VoiceManager" resolve="getInstance" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1CIbeTAhwp3" role="3cqZAp">
+          <node concept="3cpWsn" id="1CIbeTAhwp4" role="3cpWs9">
+            <property role="TrG5h" value="myVoice" />
+            <node concept="3uibUv" id="1CIbeTAhwp5" role="1tU5fm">
+              <ref role="3uigEE" to="ezje:~Voice" resolve="Voice" />
+            </node>
+            <node concept="2OqwBi" id="1CIbeTAhwp6" role="33vP2m">
+              <node concept="37vLTw" id="1CIbeTAhwp7" role="2Oq$k0">
+                <ref role="3cqZAo" node="1CIbeTAhwlO" resolve="vm" />
+              </node>
+              <node concept="liA8E" id="1CIbeTAhwp8" role="2OqNvi">
+                <ref role="37wK5l" to="ezje:~VoiceManager.getVoice(java.lang.String):com.sun.speech.freetts.Voice" resolve="getVoice" />
+                <node concept="Xl_RD" id="1CIbeTAhwp9" role="37wK5m">
+                  <property role="Xl_RC" value="kevin16" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1CIbeTAhwuP" role="3cqZAp">
+          <node concept="2OqwBi" id="1CIbeTAhwuQ" role="3clFbG">
+            <node concept="37vLTw" id="1CIbeTAhwuR" role="2Oq$k0">
+              <ref role="3cqZAo" node="1CIbeTAhwp4" resolve="myVoice" />
+            </node>
+            <node concept="liA8E" id="1CIbeTAhwuS" role="2OqNvi">
+              <ref role="37wK5l" to="ezje:~Voice.allocate():void" resolve="allocate" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1CIbeTAhS75" role="3cqZAp" />
+        <node concept="3clFbF" id="1CIbeTAhTDS" role="3cqZAp">
+          <node concept="2OqwBi" id="1CIbeTAhUwS" role="3clFbG">
+            <node concept="37vLTw" id="1CIbeTAhTDQ" role="2Oq$k0">
+              <ref role="3cqZAo" node="1CIbeTAhwp4" resolve="myVoice" />
+            </node>
+            <node concept="liA8E" id="1CIbeTAhUQS" role="2OqNvi">
+              <ref role="37wK5l" to="ezje:~Voice.speak(java.lang.String):boolean" resolve="speak" />
+              <node concept="2OqwBi" id="1CIbeTAhV_Y" role="37wK5m">
+                <node concept="37vLTw" id="1CIbeTAhVtJ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1CIbeTAhuSw" resolve="tmp" />
+                </node>
+                <node concept="2OwXpG" id="1CIbeTAhVIA" role="2OqNvi">
+                  <ref role="2Oxat5" node="3_1GZis4X27" resolve="toast" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DcWWT" id="1CIbeTAh$PY" role="3cqZAp">
+          <node concept="2OqwBi" id="1CIbeTAh$PZ" role="1DdaDG">
+            <node concept="2OwXpG" id="1CIbeTAh$Q1" role="2OqNvi">
+              <ref role="2Oxat5" node="3_1GZis4X20" resolve="childs" />
+            </node>
+            <node concept="37vLTw" id="1CIbeTAhA4H" role="2Oq$k0">
+              <ref role="3cqZAo" node="1CIbeTAhuSw" resolve="tmp" />
+            </node>
+          </node>
+          <node concept="3cpWsn" id="1CIbeTAh$Q2" role="1Duv9x">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="child" />
+            <node concept="3uibUv" id="1CIbeTAh$Q3" role="1tU5fm">
+              <ref role="3uigEE" node="3_1GZis4X1R" resolve="Event" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="1CIbeTAh$Q4" role="2LFqv$">
+            <node concept="3clFbF" id="1CIbeTAh$Q5" role="3cqZAp">
+              <node concept="2OqwBi" id="1CIbeTAh$Q6" role="3clFbG">
+                <node concept="37vLTw" id="1CIbeTAh$Q7" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1CIbeTAhwp4" resolve="myVoice" />
+                </node>
+                <node concept="liA8E" id="1CIbeTAh$Q8" role="2OqNvi">
+                  <ref role="37wK5l" to="ezje:~Voice.speak(java.lang.String):boolean" resolve="speak" />
+                  <node concept="3cpWs3" id="1CIbeTAh$Q9" role="37wK5m">
+                    <node concept="3cpWs3" id="1CIbeTAh$Qa" role="3uHU7B">
+                      <node concept="3cpWs3" id="1CIbeTAh$Qb" role="3uHU7B">
+                        <node concept="Xl_RD" id="1CIbeTAh$Qc" role="3uHU7B">
+                          <property role="Xl_RC" value="For" />
+                        </node>
+                        <node concept="2OqwBi" id="1CIbeTAh$Qd" role="3uHU7w">
+                          <node concept="37vLTw" id="1CIbeTAh$Qe" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1CIbeTAh$Q2" resolve="child" />
+                          </node>
+                          <node concept="2OwXpG" id="1CIbeTAh$Qf" role="2OqNvi">
+                            <ref role="2Oxat5" node="3_1GZis4X1T" resolve="name" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="Xl_RD" id="1CIbeTAh$Qg" role="3uHU7w">
+                        <property role="Xl_RC" value="press" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="1CIbeTAh$Qh" role="3uHU7w">
+                      <node concept="37vLTw" id="1CIbeTAh$Qi" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1CIbeTAh$Q2" resolve="child" />
+                      </node>
+                      <node concept="2OwXpG" id="1CIbeTAh$Qj" role="2OqNvi">
+                        <ref role="2Oxat5" node="3_1GZis4X1W" resolve="trigger" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="1CIbeTAh$Qk" role="3cqZAp">
+              <node concept="2OqwBi" id="1CIbeTAh$Ql" role="3clFbG">
+                <node concept="10M0yZ" id="1CIbeTAh$Qm" role="2Oq$k0">
+                  <ref role="1PxDUh" node="2Bi0dpyCD0T" resolve="Variables" />
+                  <ref role="3cqZAo" node="2Bi0dpyCDGn" resolve="possibleOptList" />
+                </node>
+                <node concept="liA8E" id="1CIbeTAh$Qn" role="2OqNvi">
+                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                  <node concept="2OqwBi" id="1CIbeTAh$Qo" role="37wK5m">
+                    <node concept="37vLTw" id="1CIbeTAh$Qp" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1CIbeTAh$Q2" resolve="child" />
+                    </node>
+                    <node concept="2OwXpG" id="1CIbeTAh$Qq" role="2OqNvi">
+                      <ref role="2Oxat5" node="3_1GZis4X1W" resolve="trigger" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1CIbeTAh$Mn" role="3cqZAp" />
+      </node>
+      <node concept="3Tm6S6" id="1CIbeTAhu45" role="1B3o_S" />
+      <node concept="3cqZAl" id="1CIbeTAhuw3" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="1CIbeTAhudq" role="jymVt" />
     <node concept="2YIFZL" id="2Bi0dpyCPhQ" role="jymVt">
       <property role="TrG5h" value="addListeners" />
       <property role="DiZV1" value="false" />
@@ -1097,6 +1266,11 @@
                                 <ref role="3cqZAo" node="2Bi0dpyCPhr" resolve="main_Greeting" />
                               </node>
                             </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="1CIbeTAhHuB" role="3cqZAp">
+                          <node concept="1rXfSq" id="1CIbeTAhHu_" role="3clFbG">
+                            <ref role="37wK5l" node="1CIbeTAhuwa" resolve="readChildren" />
                           </node>
                         </node>
                       </node>

@@ -11,10 +11,10 @@ import javax.swing.JButton;
 import javax.swing.border.Border;
 import java.awt.Dimension;
 import java.awt.Color;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 import com.sun.speech.freetts.VoiceManager;
 import com.sun.speech.freetts.Voice;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 import javax.swing.border.LineBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JTextPane;
@@ -38,6 +38,20 @@ public class Style {
     button.setPreferredSize(dim);
     button.setBorder(border);
   }
+
+  private static void readChildren() {
+    Event tmp = Variables.myHashMap.get("0");
+    VoiceManager vm = VoiceManager.getInstance();
+    Voice myVoice = vm.getVoice("kevin16");
+    myVoice.allocate();
+
+    for (Event child : tmp.childs) {
+      myVoice.speak("For" + child.name + "press" + child.trigger);
+      Variables.possibleOptList.add(child.trigger);
+    }
+
+  }
+
   private static void addListeners(JButton Call, JButton End) {
     // voice init 
     // Greetings of Home menu 
@@ -50,6 +64,7 @@ public class Style {
         myVoice.allocate();
         Variables.path = "0";
         myVoice.speak(main_Greeting);
+        readChildren();
       }
     });
     End.addActionListener(new ActionListener() {
