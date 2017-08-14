@@ -45,6 +45,7 @@ public class Style {
     Voice myVoice = vm.getVoice("kevin16");
     myVoice.allocate();
 
+    myVoice.speak(tmp.toast);
     for (Event child : tmp.childs) {
       myVoice.speak("For" + child.name + "press" + child.trigger);
       Variables.possibleOptList.add(child.trigger);

@@ -118,7 +118,7 @@
     <node concept="1TJgyj" id="5HF1wNO0wjF" role="1TKVEi">
       <property role="IQ2ns" value="6587365532662629611" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="body" />
+      <property role="20kJfa" value="bodyMenu" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5HF1wNNZuc8" resolve="Menu" />
     </node>

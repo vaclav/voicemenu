@@ -42,7 +42,7 @@ public class Main2 implements ActionListener {
     Event Moje_Auto_m25z0_a0a0 = new Event("Moje Auto", "2");
     Moje_Auto_m25z0_a0a0.setAction("");
     Moje_Auto_m25z0_a0a0.setGreeting("");
-    Moje_Auto_m25z0_a0a0.setGreeting("Welcome to car menu");
+    Moje_Auto_m25z0_a0a0.setGreeting("Going back to theprevious menu");
     Moje_Auto_m25z0_a0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Moje_Auto_m25z0_a0a0.trigger;
     Variables.myHashMap.put(Variables.path, Moje_Auto_m25z0_a0a0);

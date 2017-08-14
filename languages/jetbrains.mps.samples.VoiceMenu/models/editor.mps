@@ -501,7 +501,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="5HF1wNO0wkV" role="3EZMnx">
-        <ref role="1NtTu8" to="xehl:5HF1wNO0wjF" resolve="body" />
+        <ref role="1NtTu8" to="xehl:5HF1wNO0wjF" resolve="bodyMenu" />
         <node concept="pVoyu" id="5HF1wNO0wl1" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
