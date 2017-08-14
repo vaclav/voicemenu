@@ -26,6 +26,7 @@
       </concept>
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -58,13 +59,13 @@
     </language>
   </registry>
   <node concept="2S6QgY" id="2m0r6rVT2r6">
-    <property role="TrG5h" value="Add_Main_Toast" />
+    <property role="TrG5h" value="Add_Main_Greeting" />
     <ref role="2ZfgGC" to="xehl:5HF1wNO0wj8" resolve="WorkSpace" />
     <node concept="2S6ZIM" id="2m0r6rVT2r7" role="2ZfVej">
       <node concept="3clFbS" id="2m0r6rVT2r8" role="2VODD2">
         <node concept="3clFbF" id="2m0r6rVT2_3" role="3cqZAp">
           <node concept="Xl_RD" id="2m0r6rVT2_2" role="3clFbG">
-            <property role="Xl_RC" value="Add Welcome Toast for Main Menu" />
+            <property role="Xl_RC" value="Add Welcome Greeting for Main Menu" />
           </node>
         </node>
       </node>
@@ -103,13 +104,13 @@
     </node>
   </node>
   <node concept="2S6QgY" id="2m0r6rVTBlH">
-    <property role="TrG5h" value="Add_Toast" />
+    <property role="TrG5h" value="Add_Greeting" />
     <ref role="2ZfgGC" to="xehl:5HF1wNNZuqd" resolve="Activity" />
     <node concept="2S6ZIM" id="2m0r6rVTBlI" role="2ZfVej">
       <node concept="3clFbS" id="2m0r6rVTBlJ" role="2VODD2">
         <node concept="3clFbF" id="2m0r6rVTE0b" role="3cqZAp">
           <node concept="Xl_RD" id="2m0r6rVTE0a" role="3clFbG">
-            <property role="Xl_RC" value="Add Toast" />
+            <property role="Xl_RC" value="Add Greeting" />
           </node>
         </node>
       </node>
@@ -142,6 +143,94 @@
               </node>
             </node>
             <node concept="17RlXB" id="2m0r6rVTDQN" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="5$QY1LNy0Kb">
+    <property role="TrG5h" value="Delete_Intention" />
+    <ref role="2ZfgGC" to="xehl:5HF1wNNZuqd" resolve="Activity" />
+    <node concept="2S6ZIM" id="5$QY1LNy0Kc" role="2ZfVej">
+      <node concept="3clFbS" id="5$QY1LNy0Kd" role="2VODD2">
+        <node concept="3clFbF" id="5$QY1LNy1Ps" role="3cqZAp">
+          <node concept="Xl_RD" id="5$QY1LNy1Pr" role="3clFbG">
+            <property role="Xl_RC" value="Remove Greeting" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="5$QY1LNy0Ke" role="2ZfgGD">
+      <node concept="3clFbS" id="5$QY1LNy0Kf" role="2VODD2">
+        <node concept="3clFbF" id="5$QY1LNy89x" role="3cqZAp">
+          <node concept="37vLTI" id="5$QY1LNyboe" role="3clFbG">
+            <node concept="Xl_RD" id="5$QY1LNyboz" role="37vLTx" />
+            <node concept="2OqwBi" id="5$QY1LNy8gx" role="37vLTJ">
+              <node concept="2Sf5sV" id="5$QY1LNy89w" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5$QY1LNy8zM" role="2OqNvi">
+                <ref role="3TsBF5" to="xehl:2m0r6rVTw3R" resolve="toast" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="5$QY1LNy5CJ" role="2ZfVeh">
+      <node concept="3clFbS" id="5$QY1LNy5CK" role="2VODD2">
+        <node concept="3clFbF" id="5$QY1LNy5Mh" role="3cqZAp">
+          <node concept="2OqwBi" id="5$QY1LNy73T" role="3clFbG">
+            <node concept="2OqwBi" id="5$QY1LNy5Ys" role="2Oq$k0">
+              <node concept="2Sf5sV" id="5$QY1LNy5Mg" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5$QY1LNy6oA" role="2OqNvi">
+                <ref role="3TsBF5" to="xehl:2m0r6rVTw3R" resolve="toast" />
+              </node>
+            </node>
+            <node concept="17RvpY" id="5$QY1LNy7Ta" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="5$QY1LNydKG">
+    <property role="TrG5h" value="Delete_Main_Greeting" />
+    <ref role="2ZfgGC" to="xehl:5HF1wNO0wj8" resolve="WorkSpace" />
+    <node concept="2S6ZIM" id="5$QY1LNydKH" role="2ZfVej">
+      <node concept="3clFbS" id="5$QY1LNydKI" role="2VODD2">
+        <node concept="3clFbF" id="5$QY1LNydTT" role="3cqZAp">
+          <node concept="Xl_RD" id="5$QY1LNydTS" role="3clFbG">
+            <property role="Xl_RC" value="Delete Main Greeting" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="5$QY1LNydKJ" role="2ZfgGD">
+      <node concept="3clFbS" id="5$QY1LNydKK" role="2VODD2">
+        <node concept="3clFbF" id="5$QY1LNyhN6" role="3cqZAp">
+          <node concept="37vLTI" id="5$QY1LNyjXU" role="3clFbG">
+            <node concept="Xl_RD" id="5$QY1LNyjYf" role="37vLTx">
+              <property role="Xl_RC" value="" />
+            </node>
+            <node concept="2OqwBi" id="5$QY1LNyhUK" role="37vLTJ">
+              <node concept="2Sf5sV" id="5$QY1LNyhN5" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5$QY1LNyihd" role="2OqNvi">
+                <ref role="3TsBF5" to="xehl:2m0r6rVST1s" resolve="greeting" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="5$QY1LNyePp" role="2ZfVeh">
+      <node concept="3clFbS" id="5$QY1LNyePq" role="2VODD2">
+        <node concept="3clFbF" id="5$QY1LNyeWG" role="3cqZAp">
+          <node concept="2OqwBi" id="5$QY1LNyg4Z" role="3clFbG">
+            <node concept="2OqwBi" id="5$QY1LNyf9D" role="2Oq$k0">
+              <node concept="2Sf5sV" id="5$QY1LNyeWF" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5$QY1LNyfs3" role="2OqNvi">
+                <ref role="3TsBF5" to="xehl:2m0r6rVST1s" resolve="greeting" />
+              </node>
+            </node>
+            <node concept="17RvpY" id="5$QY1LNyhAm" role="2OqNvi" />
           </node>
         </node>
       </node>

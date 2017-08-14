@@ -16,14 +16,14 @@ import java.util.Collections;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 
-public final class Add_Toast_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
+public final class Delete_Intention_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
-  public Add_Toast_Intention() {
-    super(Kind.NORMAL, false, new SNodePointer("r:d92c1500-00d3-4072-866a-5077893293b8(jetbrains.mps.samples.VoiceMenu.intentions)", "2702278965990946157"));
+  public Delete_Intention_Intention() {
+    super(Kind.NORMAL, false, new SNodePointer("r:d92c1500-00d3-4072-866a-5077893293b8(jetbrains.mps.samples.VoiceMenu.intentions)", "6428598319199030283"));
   }
   @Override
   public String getPresentation() {
-    return "Add_Toast";
+    return "Delete_Intention";
   }
   @Override
   public boolean isApplicable(final SNode node, final EditorContext editorContext) {
@@ -33,7 +33,7 @@ public final class Add_Toast_Intention extends AbstractIntentionDescriptor imple
     return true;
   }
   private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-    return isEmptyString(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "toast")));
+    return isNotEmptyString(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "toast")));
   }
   @Override
   public boolean isSurroundWith() {
@@ -41,7 +41,7 @@ public final class Add_Toast_Intention extends AbstractIntentionDescriptor imple
   }
   public Collection<IntentionExecutable> instances(final SNode node, final EditorContext context) {
     if (myCachedExecutable == null) {
-      myCachedExecutable = Collections.<IntentionExecutable>singletonList(new Add_Toast_Intention.IntentionImplementation());
+      myCachedExecutable = Collections.<IntentionExecutable>singletonList(new Delete_Intention_Intention.IntentionImplementation());
     }
     return myCachedExecutable;
   }
@@ -50,18 +50,18 @@ public final class Add_Toast_Intention extends AbstractIntentionDescriptor imple
     }
     @Override
     public String getDescription(final SNode node, final EditorContext editorContext) {
-      return "Add Toast";
+      return "Remove Greeting";
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "toast"), "Sample toast");
+      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "toast"), "");
     }
     @Override
     public IntentionDescriptor getDescriptor() {
-      return Add_Toast_Intention.this;
+      return Delete_Intention_Intention.this;
     }
   }
-  private static boolean isEmptyString(String str) {
-    return str == null || str.length() == 0;
+  private static boolean isNotEmptyString(String str) {
+    return str != null && str.length() > 0;
   }
 }
