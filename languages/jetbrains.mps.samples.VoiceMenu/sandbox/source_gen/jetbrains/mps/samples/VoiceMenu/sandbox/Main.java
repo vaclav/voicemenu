@@ -32,57 +32,53 @@ public class Main implements ActionListener {
     Variables.myHashMap.put("0", Home);
 
 
-    Event Jedna_pm98_a0 = new Event("Jedna", "1");
-    Jedna_pm98_a0.setAction("");
-    Jedna_pm98_a0.setGreeting("");
-    Jedna_pm98_a0.childs = new ArrayList<Event>();
-    Variables.path = Variables.path + Jedna_pm98_a0.trigger;
+    Event One_pm98_a0 = new Event("One", "1");
+    One_pm98_a0.setAction("");
+    One_pm98_a0.setGreeting("");
+    One_pm98_a0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + One_pm98_a0.trigger;
     System.out.println(Variables.path);
-    Variables.myHashMap.put(Variables.path, Jedna_pm98_a0);<!TextGen not found for 'jetbrains.mps.samples.VoiceMenu.structure.Activity'!>
-    Event Dva_pm98_a0a0_0 = new Event("Dva", "2");
-    Dva_pm98_a0a0.setAction("");
-    Dva_pm98_a0a0.setGreeting("");
-    Dva_pm98_a0a0.childs = new ArrayList<Event>();
-    Variables.path = Variables.path + Dva_pm98_a0a0.trigger;
+    Variables.myHashMap.put(Variables.path, One_pm98_a0);
+    Event Two_pm98_a0a0 = new Event("Two", "2");
+    Two_pm98_a0a0.setAction("");
+    Two_pm98_a0a0.setGreeting("");
+    Two_pm98_a0a0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + Two_pm98_a0a0.trigger;
     System.out.println(Variables.path);
-    Variables.myHashMap.put(Variables.path, Dva_pm98_a0a0);<!TextGen not found for 'jetbrains.mps.samples.VoiceMenu.structure.Activity'!>
-    Event Tri_pm98_b0a0a0_2 = new Event("Tri", "3");
-    Tri_pm98_b0a0a0.setAction("");
-    Tri_pm98_b0a0a0.setGreeting("");
-    Tri_pm98_b0a0a0.childs = new ArrayList<Event>();
-    Variables.path = Variables.path + Tri_pm98_b0a0a0.trigger;
+    Variables.myHashMap.put(Variables.path, Two_pm98_a0a0);
+    Event Three_pm98_b0a0a0 = new Event("Three", "3");
+    Three_pm98_b0a0a0.setAction("");
+    Three_pm98_b0a0a0.setGreeting("");
+    Three_pm98_b0a0a0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + Three_pm98_b0a0a0.trigger;
     System.out.println(Variables.path);
-    Variables.myHashMap.put(Variables.path, Tri_pm98_b0a0a0);<!TextGen not found for 'jetbrains.mps.samples.VoiceMenu.structure.Activity'!>
-    Tri_pm98_b0a0a0.setAction("back");
-    Variables.path.substring(0, Variables.path.length() - 1);
-    System.out.println("dohromady");
-    Tri_pm98_b0a0a0.childs = new ArrayList<Event>();
-    System.out.println("dohromady");
-    Event Ctyri_pm98_a0a0a0_2 = new Event("Ctyri", "4");
-    Ctyri_pm98_a0a0a0.setAction("");
-    Ctyri_pm98_a0a0a0.setGreeting("");
-    Ctyri_pm98_a0a0a0.childs = new ArrayList<Event>();
-    Variables.path = Variables.path + Ctyri_pm98_a0a0a0.trigger;
+    Variables.myHashMap.put(Variables.path, Three_pm98_b0a0a0);
+    Three_pm98_b0a0a0.setAction("back");
+    Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
+    System.out.println("pokus pokus");
+    Three_pm98_b0a0a0.childs = new ArrayList<Event>();
+    Event Four_pm98_a0a0a0 = new Event("Four", "4");
+    Four_pm98_a0a0a0.setAction("");
+    Four_pm98_a0a0a0.setGreeting("");
+    Four_pm98_a0a0a0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + Four_pm98_a0a0a0.trigger;
     System.out.println(Variables.path);
-    Variables.myHashMap.put(Variables.path, Ctyri_pm98_a0a0a0);<!TextGen not found for 'jetbrains.mps.samples.VoiceMenu.structure.Activity'!>
-    Ctyri_pm98_a0a0a0.setAction("back");
-    Variables.path.substring(0, Variables.path.length() - 1);
-    System.out.println("dohromady");
-    Ctyri_pm98_a0a0a0.childs = new ArrayList<Event>();
-    System.out.println("dohromady");
-    Variables.path.substring(0, Variables.path.length() - 1);
-    System.out.println("dohromady");
-    Dva_pm98_a0a0.childs = new ArrayList<Event>();
-    Dva_pm98_a0a0.childs.add(Ctyri_pm98_a0a0a0);
-    Dva_pm98_a0a0.childs.add(Tri_pm98_b0a0a0);
-    System.out.println("dohromady");
-    Variables.path.substring(0, Variables.path.length() - 1);
-    System.out.println("dohromady");
-    Jedna_pm98_a0.childs = new ArrayList<Event>();
-    Jedna_pm98_a0.childs.add(Dva_pm98_a0a0);
-    System.out.println("dohromady");
+    Variables.myHashMap.put(Variables.path, Four_pm98_a0a0a0);
+    Four_pm98_a0a0a0.setAction("back");
+    Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
+    System.out.println("pokus pokus");
+    Four_pm98_a0a0a0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
+    System.out.println("pokus pokus");
+    Two_pm98_a0a0.childs = new ArrayList<Event>();
+    Two_pm98_a0a0.childs.add(Four_pm98_a0a0a0);
+    Two_pm98_a0a0.childs.add(Three_pm98_b0a0a0);
+    Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
+    System.out.println("pokus pokus");
+    One_pm98_a0.childs = new ArrayList<Event>();
+    One_pm98_a0.childs.add(Two_pm98_a0a0);
 
-    Home.childs.add(Jedna_pm98_a0);
+    Home.childs.add(One_pm98_a0);
   }
 
   public static void main(String[] args) {

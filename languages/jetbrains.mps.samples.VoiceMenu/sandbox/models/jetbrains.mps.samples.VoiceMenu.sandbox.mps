@@ -225,29 +225,29 @@
     <property role="TrG5h" value="Main" />
     <node concept="2C_Ik4" id="6EKBnCR4$w5" role="2JqgbB">
       <node concept="2C_I21" id="6EKBnCR4$wc" role="2C_I26">
-        <ref role="2C_gVZ" node="6EKBnCR4$w6" resolve="Jedna" />
+        <ref role="2C_gVZ" node="6EKBnCR4$w6" resolve="One" />
         <node concept="2C_Ik4" id="6EKBnCR4$wg" role="2C_gVu">
           <node concept="2C_Ik0" id="6EKBnCR4$wj" role="2C_I24">
             <property role="2C_Iks" value="2" />
-            <property role="TrG5h" value="Dva" />
+            <property role="TrG5h" value="Two" />
           </node>
           <node concept="2C_I21" id="6EKBnCR4$wH" role="2C_I26">
-            <ref role="2C_gVZ" node="6EKBnCR4$wj" resolve="Dva" />
+            <ref role="2C_gVZ" node="6EKBnCR4$wj" resolve="Two" />
             <node concept="2C_Ik4" id="6EKBnCR4$wZ" role="2C_gVu">
               <node concept="2C_Ik0" id="1P3iGaPpYwj" role="2C_I24">
                 <property role="2C_Iks" value="4" />
-                <property role="TrG5h" value="Ctyri" />
+                <property role="TrG5h" value="Four" />
               </node>
               <node concept="2C_Ik0" id="6EKBnCR4$xg" role="2C_I24">
                 <property role="2C_Iks" value="3" />
-                <property role="TrG5h" value="Tri" />
+                <property role="TrG5h" value="Three" />
               </node>
               <node concept="2C_I21" id="6EKBnCR4$xi" role="2C_I26">
-                <ref role="2C_gVZ" node="6EKBnCR4$xg" resolve="Tri" />
+                <ref role="2C_gVZ" node="6EKBnCR4$xg" resolve="Three" />
                 <node concept="1$pBvp" id="6EKBnCR4$xm" role="2C_gVu" />
               </node>
               <node concept="2C_I21" id="1P3iGaPpYws" role="2C_I26">
-                <ref role="2C_gVZ" node="1P3iGaPpYwj" resolve="Ctyri" />
+                <ref role="2C_gVZ" node="1P3iGaPpYwj" resolve="Four" />
                 <node concept="1$pBvp" id="1P3iGaPpYwy" role="2C_gVu" />
               </node>
             </node>
@@ -256,7 +256,7 @@
       </node>
       <node concept="2C_Ik0" id="6EKBnCR4$w6" role="2C_I24">
         <property role="2C_Iks" value="1" />
-        <property role="TrG5h" value="Jedna" />
+        <property role="TrG5h" value="One" />
       </node>
     </node>
   </node>
