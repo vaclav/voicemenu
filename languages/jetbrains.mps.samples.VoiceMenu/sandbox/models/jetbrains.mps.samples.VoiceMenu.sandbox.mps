@@ -25,6 +25,7 @@
         <child id="6587365532662629611" name="body" index="2JqgbB" />
       </concept>
       <concept id="6772988411135920842" name="jetbrains.mps.samples.VoiceMenu.structure.Back" flags="ng" index="1$pBvp" />
+      <concept id="6772988411135920841" name="jetbrains.mps.samples.VoiceMenu.structure.Other" flags="ng" index="1$pBvq" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -223,12 +224,30 @@
   </node>
   <node concept="2Jqgb4" id="6EKBnCR4$w4">
     <property role="TrG5h" value="Main" />
-    <property role="3uoZKU" value="Sample Toast" />
+    <property role="3uoZKU" value="" />
     <node concept="2C_Ik4" id="6EKBnCR4$w5" role="2JqgbB">
       <node concept="2C_I21" id="6EKBnCR4$wc" role="2C_I26">
         <property role="3upAMh" value="" />
         <ref role="2C_gVZ" node="6EKBnCR4$w6" resolve="One" />
-        <node concept="2C_Ik4" id="6EKBnCR4$wg" role="2C_gVu" />
+        <node concept="2C_Ik4" id="6EKBnCR4$wg" role="2C_gVu">
+          <node concept="2C_Ik0" id="kM4taiix7i" role="2C_I24">
+            <property role="2C_Iks" value="1" />
+            <property role="TrG5h" value="Level 1" />
+          </node>
+          <node concept="2C_I21" id="kM4taiix7o" role="2C_I26">
+            <ref role="2C_gVZ" node="kM4taiix7i" resolve="Level 1" />
+            <node concept="2C_Ik4" id="kM4taiix7s" role="2C_gVu">
+              <node concept="2C_Ik0" id="kM4taiix7v" role="2C_I24">
+                <property role="2C_Iks" value="1" />
+                <property role="TrG5h" value="Level 2" />
+              </node>
+              <node concept="2C_I21" id="kM4taiix7_" role="2C_I26">
+                <ref role="2C_gVZ" node="kM4taiix7v" resolve="Level 2" />
+                <node concept="1$pBvq" id="kM4taiiV$K" role="2C_gVu" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="2C_Ik0" id="6EKBnCR4$w6" role="2C_I24">
         <property role="2C_Iks" value="1" />
