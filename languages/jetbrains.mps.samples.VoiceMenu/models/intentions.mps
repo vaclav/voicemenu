@@ -30,6 +30,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -149,7 +150,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="5$QY1LNy0Kb">
-    <property role="TrG5h" value="Delete_Intention" />
+    <property role="TrG5h" value="Remove_Greeting" />
     <ref role="2ZfgGC" to="xehl:5HF1wNNZuqd" resolve="Activity" />
     <node concept="2S6ZIM" id="5$QY1LNy0Kc" role="2ZfVej">
       <node concept="3clFbS" id="5$QY1LNy0Kd" role="2VODD2">
@@ -188,17 +189,18 @@
             <node concept="17RvpY" id="5$QY1LNy7Ta" role="2OqNvi" />
           </node>
         </node>
+        <node concept="3clFbH" id="3QwtLquzQ7x" role="3cqZAp" />
       </node>
     </node>
   </node>
   <node concept="2S6QgY" id="5$QY1LNydKG">
-    <property role="TrG5h" value="Delete_Main_Greeting" />
+    <property role="TrG5h" value="Remove_Main_Greeting" />
     <ref role="2ZfgGC" to="xehl:5HF1wNO0wj8" resolve="WorkSpace" />
     <node concept="2S6ZIM" id="5$QY1LNydKH" role="2ZfVej">
       <node concept="3clFbS" id="5$QY1LNydKI" role="2VODD2">
         <node concept="3clFbF" id="5$QY1LNydTT" role="3cqZAp">
           <node concept="Xl_RD" id="5$QY1LNydTS" role="3clFbG">
-            <property role="Xl_RC" value="Delete Main Greeting" />
+            <property role="Xl_RC" value="Remove Main Greeting" />
           </node>
         </node>
       </node>

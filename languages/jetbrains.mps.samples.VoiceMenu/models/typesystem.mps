@@ -22,6 +22,9 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
+        <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -72,12 +75,23 @@
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
       <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
+        <child id="1227096802791" name="helginsIntention" index="2OEOjU" />
         <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
       </concept>
+      <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
+        <child id="1216383424566" name="executeBlock" index="Q6x$H" />
+        <child id="1216391046856" name="descriptionBlock" index="QzAvj" />
+      </concept>
+      <concept id="1216383287005" name="jetbrains.mps.lang.typesystem.structure.QuickFixExecuteBlock" flags="in" index="Q5ZZ6" />
+      <concept id="1216383337216" name="jetbrains.mps.lang.typesystem.structure.ConceptFunctionParameter_node" flags="nn" index="Q6c8r" />
+      <concept id="1216390987552" name="jetbrains.mps.lang.typesystem.structure.QuickFixDescriptionBlock" flags="in" index="QznSV" />
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
+        <reference id="1216388525179" name="quickFix" index="QpYPw" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -101,6 +115,7 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -352,7 +367,7 @@
     </node>
   </node>
   <node concept="18kY7G" id="5$QY1LNx3II">
-    <property role="TrG5h" value="multipleActivituesToOneEvent" />
+    <property role="TrG5h" value="restrict_MultipleActivituesForOneEvent" />
     <node concept="3clFbS" id="5$QY1LNx3IJ" role="18ibNy">
       <node concept="3cpWs8" id="5$QY1LNxdaj" role="3cqZAp">
         <node concept="3cpWsn" id="5$QY1LNxdam" role="3cpWs9">
@@ -362,11 +377,11 @@
               <ref role="ehGHo" to="xehl:5HF1wNNZuqd" resolve="Activity" />
             </node>
           </node>
-          <node concept="2OqwBi" id="5$QY1LNxJMa" role="33vP2m">
-            <node concept="1YBJjd" id="5$QY1LNxJzb" role="2Oq$k0">
+          <node concept="2OqwBi" id="3QwtLqu$aXn" role="33vP2m">
+            <node concept="1YBJjd" id="3QwtLqu$aId" role="2Oq$k0">
               <ref role="1YBMHb" node="5$QY1LNx3IL" resolve="menu" />
             </node>
-            <node concept="3Tsc0h" id="5$QY1LNxK00" role="2OqNvi">
+            <node concept="3Tsc0h" id="3QwtLqu$bjR" role="2OqNvi">
               <ref role="3TtcxE" to="xehl:5HF1wNNZuqa" resolve="activities" />
             </node>
           </node>
@@ -383,6 +398,9 @@
           <node concept="3clFbJ" id="5$QY1LNxdcC" role="3cqZAp">
             <node concept="3clFbS" id="5$QY1LNxdcE" role="3clFbx">
               <node concept="2MkqsV" id="5$QY1LNxlh_" role="3cqZAp">
+                <node concept="3Cnw8n" id="3QwtLquzNZP" role="2OEOjU">
+                  <ref role="QpYPw" node="3QwtLquzL$B" resolve="RemoveActivity" />
+                </node>
                 <node concept="Xl_RD" id="5$QY1LNxlhO" role="2MkJ7o">
                   <property role="Xl_RC" value="Duplicate reference to Event" />
                 </node>
@@ -443,6 +461,28 @@
     <node concept="1YaCAy" id="5$QY1LNx3IL" role="1YuTPh">
       <property role="TrG5h" value="menu" />
       <ref role="1YaFvo" to="xehl:5HF1wNNZuc8" resolve="Menu" />
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="3QwtLquzL$B">
+    <property role="TrG5h" value="RemoveActivity" />
+    <node concept="Q5ZZ6" id="3QwtLquzL$C" role="Q6x$H">
+      <node concept="3clFbS" id="3QwtLquzL$D" role="2VODD2">
+        <node concept="3clFbF" id="3QwtLquzNaN" role="3cqZAp">
+          <node concept="2OqwBi" id="3QwtLquzNhq" role="3clFbG">
+            <node concept="Q6c8r" id="3QwtLquzNaM" role="2Oq$k0" />
+            <node concept="3YRAZt" id="3QwtLquzNAn" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="QznSV" id="3QwtLquzL$W" role="QzAvj">
+      <node concept="3clFbS" id="3QwtLquzL$X" role="2VODD2">
+        <node concept="3clFbF" id="3QwtLquzLHm" role="3cqZAp">
+          <node concept="Xl_RD" id="3QwtLquzLHl" role="3clFbG">
+            <property role="Xl_RC" value="Remove Duplicate Activity" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

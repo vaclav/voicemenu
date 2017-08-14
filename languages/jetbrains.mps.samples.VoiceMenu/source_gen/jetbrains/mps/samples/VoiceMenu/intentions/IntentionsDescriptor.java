@@ -36,7 +36,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
           // Concept: Activity 
           intentions = new IntentionFactory[2];
           intentions[0] = new Add_Greeting_Intention();
-          intentions[1] = new Delete_Intention_Intention();
+          intentions[1] = new Remove_Greeting_Intention();
         }
         break;
       case 1:
@@ -44,7 +44,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
           // Concept: WorkSpace 
           intentions = new IntentionFactory[2];
           intentions[0] = new Add_Main_Greeting_Intention();
-          intentions[1] = new Delete_Main_Greeting_Intention();
+          intentions[1] = new Remove_Main_Greeting_Intention();
         }
         break;
       default:
@@ -59,8 +59,8 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
     IntentionFactory[] rv = new IntentionFactory[4];
     rv[0] = new Add_Main_Greeting_Intention();
     rv[1] = new Add_Greeting_Intention();
-    rv[2] = new Delete_Intention_Intention();
-    rv[3] = new Delete_Main_Greeting_Intention();
+    rv[2] = new Remove_Greeting_Intention();
+    rv[3] = new Remove_Main_Greeting_Intention();
     return Arrays.asList(rv);
   }
   private static final ConceptSwitchIndex index_hphjzv_d0f = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L)).seal();

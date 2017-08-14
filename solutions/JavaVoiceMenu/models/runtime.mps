@@ -84,7 +84,6 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
-      <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -2847,7 +2846,9 @@
                   <ref role="2Oxat5" node="3_1GZis4X24" resolve="action" />
                 </node>
               </node>
-              <node concept="17RlXB" id="2Bi0dpyGO2e" role="2OqNvi" />
+              <node concept="liA8E" id="3QwtLquzqiw" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.isEmpty():boolean" resolve="isEmpty" />
+              </node>
             </node>
           </node>
         </node>

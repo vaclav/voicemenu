@@ -214,16 +214,6 @@
     <ref role="1XX52x" to="xehl:5HF1wNNZuqd" resolve="Activity" />
     <node concept="3EZMnI" id="5HF1wNNZwzu" role="2wV5jI">
       <ref role="1k5W1q" node="3yrvnjuhfbU" resolve="Brackets" />
-      <node concept="3F0ifn" id="5HF1wNNZ_SF" role="3EZMnx">
-        <ref role="1k5W1q" node="3yrvnjuhfbU" resolve="Brackets" />
-        <node concept="pVoyu" id="5HF1wNNZ_SS" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="ljvvj" id="5HF1wNNZ_SU" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="1fO$WK" id="3yrvnjuhqSU" role="3F10Kt" />
-      </node>
       <node concept="3F0ifn" id="5HF1wNNZI4l" role="3EZMnx">
         <property role="3F0ifm" value="Event:" />
         <ref role="1k5W1q" node="11pGboo1Ya6" resolve="HardCodedText" />
@@ -258,7 +248,7 @@
               <property role="VOm3f" value="false" />
             </node>
             <node concept="VPM3Z" id="5lu2mvqMA_w" role="3F10Kt">
-              <property role="VOm3f" value="false" />
+              <property role="VOm3f" value="true" />
             </node>
           </node>
         </node>

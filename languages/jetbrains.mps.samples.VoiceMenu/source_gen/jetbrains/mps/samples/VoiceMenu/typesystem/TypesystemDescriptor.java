@@ -12,7 +12,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       this.myNonTypesystemRules.add(nonTypesystemRule);
     }
     {
-      NonTypesystemRule_Runtime nonTypesystemRule = new multipleActivituesToOneEvent_NonTypesystemRule();
+      NonTypesystemRule_Runtime nonTypesystemRule = new restrict_MultipleActivituesForOneEvent_NonTypesystemRule();
       this.myNonTypesystemRules.add(nonTypesystemRule);
     }
   }
