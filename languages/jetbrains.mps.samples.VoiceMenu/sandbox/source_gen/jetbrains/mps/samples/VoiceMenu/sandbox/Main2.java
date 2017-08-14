@@ -32,28 +32,24 @@ public class Main2 implements ActionListener {
     Variables.myHashMap.put("0", Home);
 
 
-    Event Vozovy_park_m25z0_a0 = new Event("Vozovy_park", "1");
+    Event Vozovy_park_m25z0_a0 = new Event("Vozovy park", "1");
     Vozovy_park_m25z0_a0.setAction("");
     Vozovy_park_m25z0_a0.setGreeting("");
     Vozovy_park_m25z0_a0.setGreeting("Welcome to vehicle menu");
     Vozovy_park_m25z0_a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Vozovy_park_m25z0_a0.trigger;
-    System.out.println(Variables.path);
     Variables.myHashMap.put(Variables.path, Vozovy_park_m25z0_a0);
-    Event Moje_Auto_m25z0_a0a0 = new Event("Moje_Auto", "2");
+    Event Moje_Auto_m25z0_a0a0 = new Event("Moje Auto", "2");
     Moje_Auto_m25z0_a0a0.setAction("");
     Moje_Auto_m25z0_a0a0.setGreeting("");
     Moje_Auto_m25z0_a0a0.setGreeting("Welcome to car menu");
     Moje_Auto_m25z0_a0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Moje_Auto_m25z0_a0a0.trigger;
-    System.out.println(Variables.path);
     Variables.myHashMap.put(Variables.path, Moje_Auto_m25z0_a0a0);
     Moje_Auto_m25z0_a0a0.setAction("back");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
-    System.out.println("pokus pokus");
     Moje_Auto_m25z0_a0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
-    System.out.println("pokus pokus");
     Vozovy_park_m25z0_a0.childs = new ArrayList<Event>();
     Vozovy_park_m25z0_a0.childs.add(Moje_Auto_m25z0_a0a0);
 

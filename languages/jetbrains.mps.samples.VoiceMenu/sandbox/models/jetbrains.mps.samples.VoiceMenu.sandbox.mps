@@ -2,7 +2,7 @@
 <model ref="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu" version="-1" />
+    <use id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu" version="0" />
     <engage id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" />
   </languages>
   <imports />
@@ -224,26 +224,32 @@
   </node>
   <node concept="2Jqgb4" id="6EKBnCR4$w4">
     <property role="TrG5h" value="Main" />
-    <property role="3uoZKU" value="" />
     <node concept="2C_Ik4" id="6EKBnCR4$w5" role="2JqgbB">
       <node concept="2C_I21" id="6EKBnCR4$wc" role="2C_I26">
-        <property role="3upAMh" value="" />
         <ref role="2C_gVZ" node="6EKBnCR4$w6" resolve="One" />
         <node concept="2C_Ik4" id="6EKBnCR4$wg" role="2C_gVu">
-          <node concept="2C_Ik0" id="kM4taiix7i" role="2C_I24">
-            <property role="2C_Iks" value="1" />
-            <property role="TrG5h" value="Level 1" />
+          <node concept="2C_Ik0" id="6EKBnCR4$wj" role="2C_I24">
+            <property role="2C_Iks" value="2" />
+            <property role="TrG5h" value="Two" />
           </node>
-          <node concept="2C_I21" id="kM4taiix7o" role="2C_I26">
-            <ref role="2C_gVZ" node="kM4taiix7i" resolve="Level 1" />
-            <node concept="2C_Ik4" id="kM4taiix7s" role="2C_gVu">
-              <node concept="2C_Ik0" id="kM4taiix7v" role="2C_I24">
-                <property role="2C_Iks" value="1" />
-                <property role="TrG5h" value="Level 2" />
+          <node concept="2C_I21" id="6EKBnCR4$wH" role="2C_I26">
+            <ref role="2C_gVZ" node="6EKBnCR4$wj" resolve="Two" />
+            <node concept="2C_Ik4" id="6EKBnCR4$wZ" role="2C_gVu">
+              <node concept="2C_Ik0" id="1P3iGaPpYwj" role="2C_I24">
+                <property role="2C_Iks" value="4" />
+                <property role="TrG5h" value="Four" />
               </node>
-              <node concept="2C_I21" id="kM4taiix7_" role="2C_I26">
-                <ref role="2C_gVZ" node="kM4taiix7v" resolve="Level 2" />
-                <node concept="1$pBvq" id="kM4taiiV$K" role="2C_gVu" />
+              <node concept="2C_Ik0" id="6EKBnCR4$xg" role="2C_I24">
+                <property role="2C_Iks" value="3" />
+                <property role="TrG5h" value="Three" />
+              </node>
+              <node concept="2C_I21" id="6EKBnCR4$xi" role="2C_I26">
+                <ref role="2C_gVZ" node="6EKBnCR4$xg" resolve="Three" />
+                <node concept="1$pBvp" id="6EKBnCR4$xm" role="2C_gVu" />
+              </node>
+              <node concept="2C_I21" id="1P3iGaPpYws" role="2C_I26">
+                <ref role="2C_gVZ" node="1P3iGaPpYwj" resolve="Four" />
+                <node concept="1$pBvq" id="1CIbeTAopwI" role="2C_gVu" />
               </node>
             </node>
           </node>
