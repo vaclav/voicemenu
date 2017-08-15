@@ -30,6 +30,7 @@
         <property id="2702278965990756444" name="greeting" index="3uoZKU" />
         <child id="6587365532662629611" name="bodyMenu" index="2JqgbB" />
       </concept>
+      <concept id="6772988411135920843" name="jetbrains.mps.samples.VoiceMenu.structure.GetInfo" flags="ng" index="1$pBvo" />
       <concept id="6772988411135920842" name="jetbrains.mps.samples.VoiceMenu.structure.Back" flags="ng" index="1$pBvp" />
       <concept id="6772988411135920840" name="jetbrains.mps.samples.VoiceMenu.structure.Call" flags="ng" index="1$pBvr" />
     </language>
@@ -268,7 +269,7 @@
               <node concept="2C_I21" id="5$QY1LNyKmO" role="2C_I26">
                 <property role="3upAMh" value="" />
                 <ref role="2C_gVZ" node="1P3iGaPpYwj" resolve="Four" />
-                <node concept="1$pBvp" id="6nPYyO4qPIb" role="2C_gVu" />
+                <node concept="1$pBvo" id="6nPYyO4redL" role="2C_gVu" />
               </node>
             </node>
           </node>
