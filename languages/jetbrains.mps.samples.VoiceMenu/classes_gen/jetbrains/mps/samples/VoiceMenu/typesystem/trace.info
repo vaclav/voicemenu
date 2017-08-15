@@ -39,75 +39,75 @@
   </root>
   <root nodeRef="r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)/6428598319198780334">
     <file name="restrict_MultipleActivituesForOneEvent_NonTypesystemRule.java">
-      <node id="6428598319198818963" at="24,121,25,401" concept="6" />
-      <node id="6428598319198827305" at="28,41,29,433" concept="7" />
-      <node id="6428598319198852197" at="32,9,33,62" concept="6" />
-      <node id="6428598319198852197" at="33,62,34,261" concept="6" />
-      <node id="6428598319198852197" at="35,11,36,155" concept="6" />
-      <node id="6428598319198852197" at="36,155,37,73" concept="2" />
-      <node id="6428598319198780334" at="43,50,44,158" concept="7" />
-      <node id="6428598319198780334" at="46,68,47,102" concept="7" />
-      <node id="6428598319198780334" at="49,30,50,17" concept="7" />
-      <node id="6428598319198843829" at="52,73,53,46" concept="7" />
-      <node id="6428598319198828581" at="55,74,56,51" concept="7" />
-      <node id="6428598319198780334" at="22,0,24,0" concept="1" trace="restrict_MultipleActivituesForOneEvent_NonTypesystemRule#()V" />
-      <node id="6428598319198820448" at="28,0,31,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="6428598319198780334" at="43,0,46,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="6428598319198780334" at="46,0,49,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
-      <node id="6428598319198780334" at="49,0,52,0" concept="5" trace="overrides#()Z" />
-      <node id="6428598319198843829" at="52,0,55,0" concept="9" trace="eq_bh4yle_a0a0a0a0a0a0a1a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="6428598319198828581" at="55,0,58,0" concept="9" trace="neq_bh4yle_a0a0a0a0a0a0a1a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="6428598319198852197" at="34,261,38,11" concept="0" />
-      <node id="6428598319198852197" at="31,11,39,9" concept="0" />
-      <node id="6428598319198819112" at="26,75,40,7" concept="4" />
-      <node id="6428598319198819016" at="25,401,41,5" concept="3" />
-      <node id="6428598319198780334" at="24,0,43,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
-      <scope id="6428598319198780334" at="22,69,22,69" />
-      <scope id="6428598319198820449" at="28,41,29,433" />
-      <scope id="6428598319198780334" at="43,50,44,158" />
-      <scope id="6428598319198780334" at="46,68,47,102" />
-      <scope id="6428598319198780334" at="49,30,50,17" />
-      <scope id="6428598319198843829" at="52,73,53,46" />
-      <scope id="6428598319198828581" at="55,74,56,51" />
-      <scope id="6428598319198780334" at="22,0,24,0" />
-      <scope id="6428598319198852197" at="35,11,37,73">
+      <node id="6428598319198818963" at="23,117,24,204" concept="6" />
+      <node id="6428598319198827305" at="27,41,28,433" concept="7" />
+      <node id="6428598319198852197" at="31,9,32,62" concept="6" />
+      <node id="6428598319198852197" at="32,62,33,261" concept="6" />
+      <node id="6428598319198852197" at="34,11,35,155" concept="6" />
+      <node id="6428598319198852197" at="35,155,36,73" concept="2" />
+      <node id="6428598319198780334" at="42,50,43,154" concept="7" />
+      <node id="6428598319198780334" at="45,68,46,102" concept="7" />
+      <node id="6428598319198780334" at="48,30,49,17" concept="7" />
+      <node id="6428598319198843829" at="51,73,52,46" concept="7" />
+      <node id="6428598319198828581" at="54,74,55,51" concept="7" />
+      <node id="6428598319198780334" at="21,0,23,0" concept="1" trace="restrict_MultipleActivituesForOneEvent_NonTypesystemRule#()V" />
+      <node id="6428598319198820448" at="27,0,30,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="6428598319198780334" at="42,0,45,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="6428598319198780334" at="45,0,48,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="6428598319198780334" at="48,0,51,0" concept="5" trace="overrides#()Z" />
+      <node id="6428598319198843829" at="51,0,54,0" concept="9" trace="eq_bh4yle_a0a0a0a0a0a0a1a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="6428598319198828581" at="54,0,57,0" concept="9" trace="neq_bh4yle_a0a0a0a0a0a0a1a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="6428598319198852197" at="33,261,37,11" concept="0" />
+      <node id="6428598319198852197" at="30,11,38,9" concept="0" />
+      <node id="6428598319198819112" at="25,75,39,7" concept="4" />
+      <node id="6428598319198819016" at="24,204,40,5" concept="3" />
+      <node id="6428598319198780334" at="23,0,42,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="6428598319198780334" at="21,69,21,69" />
+      <scope id="6428598319198820449" at="27,41,28,433" />
+      <scope id="6428598319198780334" at="42,50,43,154" />
+      <scope id="6428598319198780334" at="45,68,46,102" />
+      <scope id="6428598319198780334" at="48,30,49,17" />
+      <scope id="6428598319198843829" at="51,73,52,46" />
+      <scope id="6428598319198828581" at="54,74,55,51" />
+      <scope id="6428598319198780334" at="21,0,23,0" />
+      <scope id="6428598319198852197" at="34,11,36,73">
         <var name="intentionProvider" id="6428598319198852197" />
       </scope>
-      <scope id="6428598319198820448" at="28,0,31,0">
+      <scope id="6428598319198820448" at="27,0,30,0">
         <var name="it" id="6428598319198820448" />
       </scope>
-      <scope id="6428598319198780334" at="43,0,46,0" />
-      <scope id="6428598319198780334" at="46,0,49,0">
+      <scope id="6428598319198780334" at="42,0,45,0" />
+      <scope id="6428598319198780334" at="45,0,48,0">
         <var name="argument" id="6428598319198780334" />
       </scope>
-      <scope id="6428598319198780334" at="49,0,52,0" />
-      <scope id="6428598319198843829" at="52,0,55,0">
+      <scope id="6428598319198780334" at="48,0,51,0" />
+      <scope id="6428598319198843829" at="51,0,54,0">
         <var name="a" id="6428598319198843829" />
         <var name="b" id="6428598319198843829" />
       </scope>
-      <scope id="6428598319198828581" at="55,0,58,0">
+      <scope id="6428598319198828581" at="54,0,57,0">
         <var name="a" id="6428598319198828581" />
         <var name="b" id="6428598319198828581" />
       </scope>
-      <scope id="6428598319198852197" at="32,9,38,11">
+      <scope id="6428598319198852197" at="31,9,37,11">
         <var name="_reporter_2309309498" id="6428598319198852197" />
         <var name="errorTarget" id="6428598319198852197" />
       </scope>
-      <scope id="6428598319198819114" at="31,11,39,9" />
-      <scope id="6428598319198819022" at="26,75,40,7" />
-      <scope id="6428598319198819016" at="25,401,41,5">
+      <scope id="6428598319198819114" at="30,11,38,9" />
+      <scope id="6428598319198819022" at="25,75,39,7" />
+      <scope id="6428598319198819016" at="24,204,40,5">
         <var name="currentActivity" id="6428598319198819018" />
       </scope>
-      <scope id="6428598319198780335" at="24,121,41,5">
+      <scope id="6428598319198780335" at="23,117,40,5">
         <var name="activities" id="6428598319198818966" />
       </scope>
-      <scope id="6428598319198780334" at="24,0,43,0">
-        <var name="activity" id="6428598319198780334" />
+      <scope id="6428598319198780334" at="23,0,42,0">
+        <var name="menu" id="6428598319198780334" />
         <var name="status" id="6428598319198780334" />
         <var name="typeCheckingContext" id="6428598319198780334" />
       </scope>
-      <unit id="6428598319198820448" at="27,52,31,7" name="jetbrains.mps.samples.VoiceMenu.typesystem.restrict_MultipleActivituesForOneEvent_NonTypesystemRule$1" />
-      <unit id="6428598319198780334" at="21,0,59,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.restrict_MultipleActivituesForOneEvent_NonTypesystemRule" />
+      <unit id="6428598319198820448" at="26,52,30,7" name="jetbrains.mps.samples.VoiceMenu.typesystem.restrict_MultipleActivituesForOneEvent_NonTypesystemRule$1" />
+      <unit id="6428598319198780334" at="20,0,58,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.restrict_MultipleActivituesForOneEvent_NonTypesystemRule" />
     </file>
   </root>
   <root nodeRef="r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)/6587365532662446244">

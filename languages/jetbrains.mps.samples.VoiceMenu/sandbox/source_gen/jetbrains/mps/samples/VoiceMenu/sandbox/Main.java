@@ -50,7 +50,7 @@ public class Main implements ActionListener {
     Three_pm98_b0a0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Three_pm98_b0a0a0.trigger;
     Variables.myHashMap.put(Variables.path, Three_pm98_b0a0a0);
-    Three_pm98_b0a0a0.setAction("back");
+    Three_pm98_b0a0a0.setAction("call");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     Three_pm98_b0a0a0.childs = new ArrayList<Event>();
     Event Four_pm98_a0a0a0 = new Event("Four", "4");
@@ -59,7 +59,7 @@ public class Main implements ActionListener {
     Four_pm98_a0a0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Four_pm98_a0a0a0.trigger;
     Variables.myHashMap.put(Variables.path, Four_pm98_a0a0a0);
-    Four_pm98_a0a0a0.setAction("back");
+    Four_pm98_a0a0a0.setAction("other");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     Four_pm98_a0a0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
