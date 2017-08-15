@@ -97,16 +97,6 @@
       <unit id="1178167073667695024" at="21,0,94,0" name="jetbrains.mps.samples.VoiceMenu.sandbox.Main2" />
     </file>
   </root>
-  <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/1886494696346699220">
-    <file name="Foo.java">
-      <node id="1886494696346699249" at="9,0,11,0" concept="7" trace="main#([Ljava/lang/String;)V" />
-      <scope id="1886494696346699255" at="9,42,9,42" />
-      <scope id="1886494696346699249" at="9,0,11,0">
-        <var name="args" id="1886494696346699250" />
-      </scope>
-      <unit id="1886494696346699220" at="6,0,12,0" name="jetbrains.mps.samples.VoiceMenu.sandbox.Foo" />
-    </file>
-  </root>
   <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/3502202611123931505">
     <file name="VoiceMenu.java">
       <node id="3502202611123931505" at="24,0,25,0" concept="6" trace="instance" />
@@ -404,8 +394,8 @@
       <node id="7687817712156952580" at="58,37,59,53" concept="0" />
       <node id="7687817712156952580" at="59,53,60,63" concept="0" />
       <node id="7687817712156952580" at="60,63,61,62" concept="0" />
-      <node id="4440680171620360895" at="61,62,62,40" concept="0" />
-      <node id="7687817712156952580" at="62,40,63,78" concept="0" />
+      <node id="7983725069968077062" at="61,62,62,39" concept="0" />
+      <node id="7687817712156952580" at="62,39,63,78" concept="0" />
       <node id="7687817712156952580" at="63,78,64,53" concept="0" />
       <node id="7687817712156952580" at="64,53,65,78" concept="0" />
       <node id="7687817712156952580" at="65,78,66,50" concept="0" />

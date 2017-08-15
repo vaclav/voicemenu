@@ -35,7 +35,6 @@ public class Main implements ActionListener {
     Event One_pm98_a0 = new Event("One", "1");
     One_pm98_a0.setAction("");
     One_pm98_a0.setGreeting("");
-    One_pm98_a0.setGreeting("Sample toast");
     One_pm98_a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + One_pm98_a0.trigger;
     Variables.myHashMap.put(Variables.path, One_pm98_a0);
@@ -59,7 +58,8 @@ public class Main implements ActionListener {
     Four_pm98_a0a0a0.setGreeting("");
     Four_pm98_a0a0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Four_pm98_a0a0a0.trigger;
-    Variables.myHashMap.put(Variables.path, Four_pm98_a0a0a0);<!TextGen not found for 'jetbrains.mps.samples.VoiceMenu.structure.Empty'!>
+    Variables.myHashMap.put(Variables.path, Four_pm98_a0a0a0);
+    Four_pm98_a0a0a0.setAction("other");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     Four_pm98_a0a0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
