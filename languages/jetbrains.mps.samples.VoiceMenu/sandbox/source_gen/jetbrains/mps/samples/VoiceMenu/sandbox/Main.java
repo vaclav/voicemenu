@@ -36,13 +36,13 @@ public class Main implements ActionListener {
     Event One_pm98_a0 = new Event("One", "1");
     One_pm98_a0.setAction("");
     One_pm98_a0.setGreeting("");
-    One_pm98_a0.setGreeting("Sample toast");
     One_pm98_a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + One_pm98_a0.trigger;
     Variables.myHashMap.put(Variables.path, One_pm98_a0);
     Event Two_pm98_a0a0 = new Event("Two", "2");
     Two_pm98_a0a0.setAction("");
     Two_pm98_a0a0.setGreeting("");
+    Two_pm98_a0a0.setGreeting("Sample toast");
     Two_pm98_a0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Two_pm98_a0a0.trigger;
     Variables.myHashMap.put(Variables.path, Two_pm98_a0a0);
@@ -61,6 +61,7 @@ public class Main implements ActionListener {
     Four_pm98_a0a0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Four_pm98_a0a0a0.trigger;
     Variables.myHashMap.put(Variables.path, Four_pm98_a0a0a0);
+    Four_pm98_a0a0a0.setAction("getInfo");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     Four_pm98_a0a0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);

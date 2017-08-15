@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="main" namespace="jetbrains.mps.samples.VoiceMenuToJava#6772988411135912590" uuid="c91f7530-ac93-4e45-8f41-152f1cfc9c55" reflective-queries="true">
+    <generator alias="main" namespace="jetbrains.mps.samples.VoiceMenuToJava#6772988411135912590" uuid="c91f7530-ac93-4e45-8f41-152f1cfc9c55">
       <models>
         <modelRoot contentPath="${module}/generator/template" type="default">
           <sourceRoot location="." />
@@ -126,6 +126,7 @@
   </dependencyVersions>
   <runtime>
     <dependency reexport="false">b0a71c9c-dd09-45b2-9d6b-fed8033fadc2(Import)</dependency>
+    <dependency reexport="false">dac7f2c0-79a3-42ca-a0f2-e2cf2736613e(JavaVoiceMenu)</dependency>
   </runtime>
   <extendedLanguages>
     <extendedLanguage>4bc750d7-5688-4f52-b7d5-b263a3393a24(jetbrains.mps.samples.VoiceMenu)</extendedLanguage>

@@ -36,7 +36,7 @@ public class Main2 implements ActionListener {
     Event Vozovy_park_m25z0_a0 = new Event("Vozovy park", "1");
     Vozovy_park_m25z0_a0.setAction("");
     Vozovy_park_m25z0_a0.setGreeting("");
-    Vozovy_park_m25z0_a0.setGreeting("Welcome to vehic");
+    Vozovy_park_m25z0_a0.setGreeting("Welcome to vhicle menu");
     Vozovy_park_m25z0_a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Vozovy_park_m25z0_a0.trigger;
     Variables.myHashMap.put(Variables.path, Vozovy_park_m25z0_a0);

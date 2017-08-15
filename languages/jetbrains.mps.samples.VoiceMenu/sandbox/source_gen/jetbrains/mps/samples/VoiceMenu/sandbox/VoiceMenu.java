@@ -36,7 +36,6 @@ public class VoiceMenu implements ActionListener {
     Event Jdu_zpet_854zbc_c0 = new Event("Jdu zpet", "#");
     Jdu_zpet_854zbc_c0.setAction("");
     Jdu_zpet_854zbc_c0.setGreeting("");
-    Jdu_zpet_854zbc_c0.setGreeting("Going to the previous menu");
     Jdu_zpet_854zbc_c0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Jdu_zpet_854zbc_c0.trigger;
     Variables.myHashMap.put(Variables.path, Jdu_zpet_854zbc_c0);

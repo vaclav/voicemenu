@@ -6,6 +6,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" version="0" />
     <engage id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" />
   </languages>
   <imports>
@@ -45,7 +46,7 @@
     <property role="3uoZKU" value="Welcome to the Home menu" />
     <node concept="2C_Ik4" id="32qkFwBvc_M" role="2JqgbB">
       <node concept="2C_I21" id="32qkFwBvH_p" role="2C_I26">
-        <property role="3upAMh" value="Going to the previous menu" />
+        <property role="3upAMh" value="" />
         <ref role="2C_gVZ" node="32qkFwBvHAb" resolve="Jdu zpet" />
         <node concept="1$pBvp" id="3yrvnjuh7Kz" role="2C_gVu" />
       </node>
