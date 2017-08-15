@@ -21,9 +21,9 @@
     <import index="dmyu" ref="r:c6eeedda-084d-4659-9c4d-80b7768f2bb2(jetbrains.mps.baseLanguage.textGen)" />
     <import index="dt3s" ref="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
     <import index="xehl" ref="r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -58,8 +58,16 @@
       <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
         <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
       </concept>
+      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
+        <child id="1164879758292" name="body" index="SfCbr" />
+        <child id="1164903496223" name="catchClause" index="TEbGg" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
+        <child id="1164903359218" name="catchBody" index="TDEfX" />
+        <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
@@ -507,7 +515,7 @@
                 <node concept="3clFbF" id="2aqfKAez45a" role="3cqZAp">
                   <node concept="2OqwBi" id="2aqfKAez455" role="3clFbG">
                     <node concept="3TrEf2" id="2aqfKAez458" role="2OqNvi">
-                      <ref role="3Tt5mk" to="xehl:5HF1wNO0wjF" resolve="body" />
+                      <ref role="3Tt5mk" to="xehl:5HF1wNO0wjF" resolve="bodyMenu" />
                     </node>
                     <node concept="30H73N" id="2aqfKAez459" role="2Oq$k0" />
                   </node>
@@ -560,7 +568,7 @@
                     <node concept="2OqwBi" id="6EKBnCR2hmZ" role="2Oq$k0">
                       <node concept="30H73N" id="6EKBnCR2hb3" role="2Oq$k0" />
                       <node concept="3TrEf2" id="6EKBnCR2hLl" role="2OqNvi">
-                        <ref role="3Tt5mk" to="xehl:5HF1wNO0wjF" resolve="body" />
+                        <ref role="3Tt5mk" to="xehl:5HF1wNO0wjF" resolve="bodyMenu" />
                       </node>
                     </node>
                     <node concept="3Tsc0h" id="6EKBnCR2vGZ" role="2OqNvi">
@@ -626,9 +634,9 @@
                 </node>
               </node>
             </node>
-            <node concept="10M0yZ" id="2aqfKAez4TJ" role="37vLTJ">
-              <ref role="3cqZAo" to="oici:2Bi0dpyCPhr" resolve="main_Greeting" />
-              <ref role="1PxDUh" to="oici:2Bi0dpyCPgX" resolve="Style" />
+            <node concept="10M0yZ" id="5mb0yBfIcx7" role="37vLTJ">
+              <ref role="3cqZAo" to="oici:6VbSUrc4VuG" resolve="main_Greeting" />
+              <ref role="1PxDUh" to="oici:6VbSUrc4Vua" resolve="Style" />
             </node>
           </node>
         </node>
@@ -644,9 +652,9 @@
           </node>
         </node>
         <node concept="3clFbF" id="2aqfKAez6fq" role="3cqZAp">
-          <node concept="2YIFZM" id="2aqfKAez6rI" role="3clFbG">
-            <ref role="37wK5l" to="oici:2Bi0dpyF$Uy" resolve="runInitSetup" />
-            <ref role="1Pybhc" to="oici:2Bi0dpyF$SS" resolve="Behaviour" />
+          <node concept="2YIFZM" id="5mb0yBfLrZ2" role="3clFbG">
+            <ref role="37wK5l" to="oici:5mb0yBfIcIR" resolve="runInitSetup" />
+            <ref role="1Pybhc" to="oici:5mb0yBfIcGp" resolve="Behaviour" />
           </node>
         </node>
       </node>
@@ -659,31 +667,31 @@
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="2aqfKAez7lU" role="3clF47">
         <node concept="3clFbF" id="2aqfKAez7CN" role="3cqZAp">
-          <node concept="2YIFZM" id="2aqfKAez7E2" role="3clFbG">
-            <ref role="37wK5l" to="oici:2Bi0dpyCPml" resolve="setContent" />
-            <ref role="1Pybhc" to="oici:2Bi0dpyCPgX" resolve="Style" />
+          <node concept="2YIFZM" id="5mb0yBfLs3A" role="3clFbG">
+            <ref role="37wK5l" to="oici:6VbSUrc4VAf" resolve="setContent" />
+            <ref role="1Pybhc" to="oici:6VbSUrc4Vua" resolve="Style" />
           </node>
         </node>
         <node concept="3clFbF" id="7sMfXwW3EH3" role="3cqZAp">
           <node concept="1rXfSq" id="7sMfXwW3EH1" role="3clFbG">
             <ref role="37wK5l" node="2aqfKAezfu3" resolve="addButtons" />
-            <node concept="10M0yZ" id="7sMfXwW3FjK" role="37wK5m">
-              <ref role="3cqZAo" to="oici:2Bi0dpyDlLR" resolve="myPanelOfButtons" />
-              <ref role="1PxDUh" to="oici:2Bi0dpyCPgX" resolve="Style" />
+            <node concept="10M0yZ" id="5mb0yBfLs83" role="37wK5m">
+              <ref role="3cqZAo" to="oici:6VbSUrc5rOj" resolve="myPanelOfButtons" />
+              <ref role="1PxDUh" to="oici:6VbSUrc4Vua" resolve="Style" />
             </node>
           </node>
         </node>
         <node concept="3clFbF" id="2aqfKAez7F9" role="3cqZAp">
           <node concept="2OqwBi" id="2aqfKAez8bn" role="3clFbG">
-            <node concept="10M0yZ" id="2aqfKAez7G$" role="2Oq$k0">
-              <ref role="3cqZAo" to="oici:2Bi0dpyD10o" resolve="myPhone" />
-              <ref role="1PxDUh" to="oici:2Bi0dpyCPgX" resolve="Style" />
+            <node concept="10M0yZ" id="5mb0yBfLsnS" role="2Oq$k0">
+              <ref role="3cqZAo" to="oici:6VbSUrc4Vuj" resolve="frame" />
+              <ref role="1PxDUh" to="oici:6VbSUrc4Vua" resolve="Style" />
             </node>
             <node concept="liA8E" id="2aqfKAez9r4" role="2OqNvi">
               <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
-              <node concept="10M0yZ" id="2aqfKAez9SH" role="37wK5m">
-                <ref role="3cqZAo" to="oici:2Bi0dpyDlLR" resolve="myPanelOfButtons" />
-                <ref role="1PxDUh" to="oici:2Bi0dpyCPgX" resolve="Style" />
+              <node concept="10M0yZ" id="5mb0yBfLsef" role="37wK5m">
+                <ref role="3cqZAo" to="oici:6VbSUrc5rOj" resolve="myPanelOfButtons" />
+                <ref role="1PxDUh" to="oici:6VbSUrc4Vua" resolve="Style" />
               </node>
               <node concept="10M0yZ" id="2aqfKAezdNa" role="37wK5m">
                 <ref role="3cqZAo" to="z60i:~BorderLayout.SOUTH" resolve="SOUTH" />
@@ -694,8 +702,8 @@
         </node>
         <node concept="3clFbF" id="2aqfKAezeqS" role="3cqZAp">
           <node concept="2YIFZM" id="2aqfKAezeEB" role="3clFbG">
-            <ref role="37wK5l" to="oici:2Bi0dpyCPm6" resolve="setFrame" />
-            <ref role="1Pybhc" to="oici:2Bi0dpyCPgX" resolve="Style" />
+            <ref role="1Pybhc" to="oici:6VbSUrc4Vua" resolve="Style" />
+            <ref role="37wK5l" to="oici:6VbSUrc4V_B" resolve="setFrame" />
           </node>
         </node>
       </node>
@@ -873,12 +881,36 @@
             </node>
           </node>
           <node concept="3clFbS" id="2Bi0dpyKBiV" role="3clFbx">
-            <node concept="3clFbF" id="2Bi0dpyKCcd" role="3cqZAp">
-              <node concept="2YIFZM" id="2Bi0dpyKCds" role="3clFbG">
-                <ref role="1Pybhc" to="oici:2Bi0dpyF$SS" resolve="Behaviour" />
-                <ref role="37wK5l" to="oici:2Bi0dpyF$SU" resolve="runLogic" />
-                <node concept="37vLTw" id="2Bi0dpyKCeg" role="37wK5m">
-                  <ref role="3cqZAo" node="2Bi0dpyKB8u" resolve="event" />
+            <node concept="SfApY" id="5mb0yBfLujT" role="3cqZAp">
+              <node concept="3clFbS" id="5mb0yBfLujU" role="SfCbr">
+                <node concept="3clFbF" id="2Bi0dpyKCcd" role="3cqZAp">
+                  <node concept="2YIFZM" id="5mb0yBfLtjc" role="3clFbG">
+                    <ref role="37wK5l" to="oici:5mb0yBfIcGr" resolve="runLogic" />
+                    <ref role="1Pybhc" to="oici:5mb0yBfIcGp" resolve="Behaviour" />
+                    <node concept="37vLTw" id="5mb0yBfLtjd" role="37wK5m">
+                      <ref role="3cqZAo" node="2Bi0dpyKB8u" resolve="event" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="TDmWw" id="5mb0yBfLujP" role="TEbGg">
+                <node concept="3clFbS" id="5mb0yBfLujQ" role="TDEfX">
+                  <node concept="3clFbF" id="5mb0yBfLu_B" role="3cqZAp">
+                    <node concept="2OqwBi" id="5mb0yBfLuPZ" role="3clFbG">
+                      <node concept="37vLTw" id="5mb0yBfLu_A" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5mb0yBfLujR" resolve="e" />
+                      </node>
+                      <node concept="liA8E" id="5mb0yBfLvEe" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWsn" id="5mb0yBfLujR" role="TDEfY">
+                  <property role="TrG5h" value="e" />
+                  <node concept="3uibUv" id="5mb0yBfLyza" role="1tU5fm">
+                    <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+                  </node>
                 </node>
               </node>
             </node>

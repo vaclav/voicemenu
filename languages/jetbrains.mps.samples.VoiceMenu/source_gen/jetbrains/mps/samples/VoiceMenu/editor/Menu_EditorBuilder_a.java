@@ -26,6 +26,7 @@ import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
 import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.DeclarationsStyleClass;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 
 /*package*/ class Menu_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -56,6 +57,7 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.DeclarationsStyl
     if (nodeCondition_gd4rom_a1a()) {
       editorCell.addEditorCell(createRefNodeList_gd4rom_b0());
     }
+    editorCell.addEditorCell(createConstant_gd4rom_c0());
     return editorCell;
   }
   private boolean nodeCondition_gd4rom_a1a() {
@@ -131,6 +133,8 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.DeclarationsStyl
     style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, true);
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
     style.set(StyleAttributes.BASE_LINE_CELL, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
     editorCell.getStyle().putAll(style);
     editorCell.setRole(handler.getElementRole());
     return editorCell;
@@ -183,5 +187,14 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.DeclarationsStyl
         }
       }
     }
+  }
+  private EditorCell createConstant_gd4rom_c0() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "---------------------------------");
+    editorCell.setCellId("Constant_gd4rom_c0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
   }
 }

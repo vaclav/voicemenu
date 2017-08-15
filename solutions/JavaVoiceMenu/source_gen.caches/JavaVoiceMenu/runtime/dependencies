@@ -4,9 +4,8 @@
     <classNode dependClassName="JavaVoiceMenu.runtime.Event" />
     <classNode dependClassName="JavaVoiceMenu.runtime.Style" />
     <classNode dependClassName="JavaVoiceMenu.runtime.Variables" />
-    <classNode dependClassName="com.sun.speech.freetts.Voice" />
-    <classNode dependClassName="com.sun.speech.freetts.VoiceManager" />
     <classNode dependClassName="java.awt.event.ActionEvent" />
+    <classNode dependClassName="java.io.IOException" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.lang.System" />
   </dependency>
@@ -20,8 +19,6 @@
   <dependency className="JavaVoiceMenu.runtime.Style" file="Style.java">
     <classNode dependClassName="JavaVoiceMenu.runtime.Event" />
     <classNode dependClassName="JavaVoiceMenu.runtime.Variables" />
-    <classNode dependClassName="com.sun.speech.freetts.Voice" />
-    <classNode dependClassName="com.sun.speech.freetts.VoiceManager" />
     <classNode dependClassName="java.awt.BorderLayout" />
     <classNode dependClassName="java.awt.Color" />
     <classNode dependClassName="java.awt.ComponentOrientation" />
@@ -32,6 +29,8 @@
     <classNode dependClassName="java.awt.Toolkit" />
     <classNode dependClassName="java.awt.event.ActionEvent" />
     <classNode dependClassName="java.awt.event.ActionListener" />
+    <classNode dependClassName="java.io.IOException" />
+    <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="javax.swing.JButton" />
@@ -46,10 +45,19 @@
   </dependency>
   <dependency className="JavaVoiceMenu.runtime.Variables" file="Variables.java">
     <classNode dependClassName="JavaVoiceMenu.runtime.Event" />
+    <classNode dependClassName="JavaVoiceMenu.runtime.myVoice" />
+    <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="java.util.HashMap" />
     <classNode dependClassName="java.util.List" />
+  </dependency>
+  <dependency className="JavaVoiceMenu.runtime.myVoice" file="myVoice.java">
+    <classNode dependClassName="java.io.IOException" />
+    <classNode dependClassName="java.lang.Boolean" />
+    <classNode dependClassName="java.lang.Runtime" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
   </dependency>
 </dependenciesRoot>
 
