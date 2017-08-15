@@ -35,6 +35,10 @@ public class restrict_MultipleActivituesForOneEvent_NonTypesystemRule extends Ab
             BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("jetbrains.mps.samples.VoiceMenu.typesystem.RemoveActivity_QuickFix", false);
             _reporter_2309309498.addIntentionProvider(intentionProvider);
           }
+          {
+            BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("jetbrains.mps.samples.VoiceMenu.typesystem.RenameActivity_QuickFix", false);
+            _reporter_2309309498.addIntentionProvider(intentionProvider);
+          }
         }
       }
     }
