@@ -19,57 +19,55 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
 
-public class Main2 implements ActionListener {
+public class Tmobile implements ActionListener {
 
 
-  public static Main2 instance;
+  public static Tmobile instance;
 
   public static void initHashMap() {
 
-    Event Home = new Event("Main2", "0");
+    Event Home = new Event("Tmobile", "0");
     Home.setAction("");
-    Home.setGreeting("Welcome to our voicemenu");
+    Home.setGreeting("Welcome to T mobile");
     Home.childs = new ArrayList<Event>();
     Variables.myHashMap.put("0", Home);
 
 
-    Event Vozovy_park_m25z0_a0 = new Event("Vozovy park", "1");
-    Vozovy_park_m25z0_a0.setAction("");
-    Vozovy_park_m25z0_a0.setGreeting("");
-    Vozovy_park_m25z0_a0.setGreeting("Welcome to vehic");
-    Vozovy_park_m25z0_a0.childs = new ArrayList<Event>();
-    Variables.path = Variables.path + Vozovy_park_m25z0_a0.trigger;
-    Variables.myHashMap.put(Variables.path, Vozovy_park_m25z0_a0);
-    Event Moje_Auto_m25z0_a0a0 = new Event("Moje Auto", "2");
-    Moje_Auto_m25z0_a0a0.setAction("");
-    Moje_Auto_m25z0_a0a0.setGreeting("");
-    Moje_Auto_m25z0_a0a0.setGreeting("Going back to theprevious menu");
-    Moje_Auto_m25z0_a0a0.childs = new ArrayList<Event>();
-    Variables.path = Variables.path + Moje_Auto_m25z0_a0a0.trigger;
-    Variables.myHashMap.put(Variables.path, Moje_Auto_m25z0_a0a0);
+    Event Television_3v0tmj_a0 = new Event("Television", "1");
+    Television_3v0tmj_a0.setAction("");
+    Television_3v0tmj_a0.setGreeting("");
+    Television_3v0tmj_a0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + Television_3v0tmj_a0.trigger;
+    Variables.myHashMap.put(Variables.path, Television_3v0tmj_a0);
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
-    Moje_Auto_m25z0_a0a0.childs = new ArrayList<Event>();
-    Event menu_m25z0_b0a0 = new Event("menu", "4");
-    menu_m25z0_b0a0.setAction("");
-    menu_m25z0_b0a0.setGreeting("");
-    menu_m25z0_b0a0.childs = new ArrayList<Event>();
-    Variables.path = Variables.path + menu_m25z0_b0a0.trigger;
-    Variables.myHashMap.put(Variables.path, menu_m25z0_b0a0);
+    Television_3v0tmj_a0.childs = new ArrayList<Event>();
+    Event New_device_3v0tmj_b0 = new Event("New device", "2");
+    New_device_3v0tmj_b0.setAction("");
+    New_device_3v0tmj_b0.setGreeting("");
+    New_device_3v0tmj_b0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + New_device_3v0tmj_b0.trigger;
+    Variables.myHashMap.put(Variables.path, New_device_3v0tmj_b0);
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
-    menu_m25z0_b0a0.childs = new ArrayList<Event>();
+    New_device_3v0tmj_b0.childs = new ArrayList<Event>();
+    Event Real_person_3v0tmj_c0 = new Event("Real person", "3");
+    Real_person_3v0tmj_c0.setAction("");
+    Real_person_3v0tmj_c0.setGreeting("");
+    Real_person_3v0tmj_c0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + Real_person_3v0tmj_c0.trigger;
+    Variables.myHashMap.put(Variables.path, Real_person_3v0tmj_c0);
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
-    Vozovy_park_m25z0_a0.childs = new ArrayList<Event>();
-    Vozovy_park_m25z0_a0.childs.add(Moje_Auto_m25z0_a0a0);
-    Vozovy_park_m25z0_a0.childs.add(menu_m25z0_b0a0);
+    Real_person_3v0tmj_c0.childs = new ArrayList<Event>();
 
-    Home.childs.add(Vozovy_park_m25z0_a0);
+    Home.childs.add(Television_3v0tmj_a0);
+    Home.childs.add(New_device_3v0tmj_b0);
+    Home.childs.add(Real_person_3v0tmj_c0);
   }
 
   public static void main(String[] args) {
     initHashMap();
-    instance = new Main2();
-    Style.main_Greeting = "Welcome to our voicemenu";
-    Main2.initHashMap();
+    instance = new Tmobile();
+    Style.main_Greeting = "Welcome to T mobile";
+    Tmobile.initHashMap();
     initView();
     Behaviour.runInitSetup();
   }

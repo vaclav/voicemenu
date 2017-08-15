@@ -33,7 +33,7 @@ public final class Add_Greeting_Intention extends AbstractIntentionDescriptor im
     return true;
   }
   private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-    return isEmptyString(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "toast")));
+    return isEmptyString(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "greeting")));
   }
   @Override
   public boolean isSurroundWith() {
@@ -54,7 +54,7 @@ public final class Add_Greeting_Intention extends AbstractIntentionDescriptor im
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "toast"), "Sample toast");
+      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "greeting"), "Sample toast");
     }
     @Override
     public IntentionDescriptor getDescriptor() {

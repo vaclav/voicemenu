@@ -15,7 +15,7 @@
     <language id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu">
       <concept id="6151364482690565571" name="jetbrains.mps.samples.VoiceMenu.structure.Empty" flags="ng" index="2fTWM$" />
       <concept id="6587365532662359693" name="jetbrains.mps.samples.VoiceMenu.structure.Activity" flags="ng" index="2C_I21">
-        <property id="2702278965990916343" name="toast" index="3upAMh" />
+        <property id="2702278965990916343" name="greeting" index="3upAMh" />
         <reference id="6587365532662368499" name="events" index="2C_gVZ" />
         <child id="6587365532662368466" name="commands" index="2C_gVu" />
       </concept>
@@ -30,6 +30,7 @@
         <property id="2702278965990756444" name="greeting" index="3uoZKU" />
         <child id="6587365532662629611" name="bodyMenu" index="2JqgbB" />
       </concept>
+      <concept id="6772988411135920843" name="jetbrains.mps.samples.VoiceMenu.structure.GetInfo" flags="ng" index="1$pBvo" />
       <concept id="6772988411135920842" name="jetbrains.mps.samples.VoiceMenu.structure.Back" flags="ng" index="1$pBvp" />
       <concept id="6772988411135920840" name="jetbrains.mps.samples.VoiceMenu.structure.Call" flags="ng" index="1$pBvr" />
     </language>
@@ -208,7 +209,7 @@
     <property role="3uoZKU" value="Welcome to our voicemenu" />
     <node concept="2C_Ik4" id="11pGboo1$6L" role="2JqgbB">
       <node concept="2C_I21" id="7sMfXwVVG8F" role="2C_I26">
-        <property role="3upAMh" value="Welcome to vehicle menu" />
+        <property role="3upAMh" value="Welcome to vhicle menu" />
         <ref role="2C_gVZ" node="11pGboo1$6M" resolve="Vozovy park" />
         <node concept="2C_Ik4" id="7sMfXwVWphd" role="2C_gVu">
           <node concept="2C_Ik0" id="7sMfXwVWphg" role="2C_I24">
@@ -226,7 +227,7 @@
           </node>
           <node concept="2C_I21" id="6nPYyO4p_Vq" role="2C_I26">
             <ref role="2C_gVZ" node="6nPYyO4p_Vb" resolve="menu" />
-            <node concept="1$pBvp" id="6nPYyO4qHNb" role="2C_gVu" />
+            <node concept="2fTWM$" id="6Dh11itPEpy" role="2C_gVu" />
           </node>
         </node>
       </node>
@@ -241,15 +242,15 @@
     <property role="3uoZKU" value="" />
     <node concept="2C_Ik4" id="6EKBnCR4$w5" role="2JqgbB">
       <node concept="2C_I21" id="6EKBnCR4$wc" role="2C_I26">
-        <property role="3upAMh" value="Sample toast" />
+        <property role="3upAMh" value="" />
         <ref role="2C_gVZ" node="6EKBnCR4$w6" resolve="One" />
         <node concept="2C_Ik4" id="6EKBnCR4$wg" role="2C_gVu">
           <node concept="2C_Ik0" id="6EKBnCR4$wj" role="2C_I24">
-            <property role="2C_Iks" value="2" />
             <property role="TrG5h" value="Two" />
+            <property role="2C_Iks" value="2" />
           </node>
           <node concept="2C_I21" id="6EKBnCR4$wH" role="2C_I26">
-            <property role="3upAMh" value="" />
+            <property role="3upAMh" value="Sample toast" />
             <ref role="2C_gVZ" node="6EKBnCR4$wj" resolve="Two" />
             <node concept="2C_Ik4" id="6EKBnCR4$wZ" role="2C_gVu">
               <node concept="2C_Ik0" id="1P3iGaPpYwj" role="2C_I24">
@@ -268,7 +269,7 @@
               <node concept="2C_I21" id="5$QY1LNyKmO" role="2C_I26">
                 <property role="3upAMh" value="" />
                 <ref role="2C_gVZ" node="1P3iGaPpYwj" resolve="Four" />
-                <node concept="1$pBvr" id="5mb0yBfMjwR" role="2C_gVu" />
+                <node concept="1$pBvo" id="6Dh11itQ8_w" role="2C_gVu" />
               </node>
             </node>
           </node>
@@ -286,11 +287,11 @@
     <node concept="2C_Ik4" id="6Dh11itORNp" role="2JqgbB">
       <node concept="2C_I21" id="6Dh11itORNN" role="2C_I26">
         <ref role="2C_gVZ" node="6Dh11itORNq" resolve="Television" />
-        <node concept="1$pBvp" id="5mb0yBfMqlu" role="2C_gVu" />
+        <node concept="2C_Ik4" id="6Dh11itQSwj" role="2C_gVu" />
       </node>
       <node concept="2C_I21" id="6Dh11itORNR" role="2C_I26">
         <ref role="2C_gVZ" node="6Dh11itORNs" resolve="New device" />
-        <node concept="1$pBvr" id="5mb0yBfMqlx" role="2C_gVu" />
+        <node concept="2fTWM$" id="6Dh11itORNS" role="2C_gVu" />
       </node>
       <node concept="2C_Ik0" id="6Dh11itORNq" role="2C_I24">
         <property role="2C_Iks" value="1" />
@@ -306,7 +307,7 @@
       </node>
       <node concept="2C_I21" id="6Dh11itORNX" role="2C_I26">
         <ref role="2C_gVZ" node="6Dh11itORNv" resolve="Real person" />
-        <node concept="2fTWM$" id="5mb0yBfMqlB" role="2C_gVu" />
+        <node concept="2fTWM$" id="6Dh11itORNY" role="2C_gVu" />
       </node>
     </node>
   </node>

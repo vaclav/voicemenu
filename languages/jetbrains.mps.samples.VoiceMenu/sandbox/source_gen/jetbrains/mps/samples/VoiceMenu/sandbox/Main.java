@@ -17,6 +17,7 @@ import javax.swing.border.Border;
 import javax.swing.border.LineBorder;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
+import java.io.IOException;
 
 public class Main implements ActionListener {
 
@@ -60,7 +61,6 @@ public class Main implements ActionListener {
     Four_pm98_a0a0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Four_pm98_a0a0a0.trigger;
     Variables.myHashMap.put(Variables.path, Four_pm98_a0a0a0);
-    Four_pm98_a0a0a0.setAction("other");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     Four_pm98_a0a0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
@@ -86,7 +86,7 @@ public class Main implements ActionListener {
   public static void initView() {
     Style.setContent();
     addButtons(Style.myPanelOfButtons);
-    Style.myPhone.add(Style.myPanelOfButtons, BorderLayout.SOUTH);
+    Style.frame.add(Style.myPanelOfButtons, BorderLayout.SOUTH);
     Style.setFrame();
   }
 
@@ -104,7 +104,11 @@ public class Main implements ActionListener {
   @Override
   public void actionPerformed(ActionEvent event) {
     if (!((Variables.path == null || Variables.path.length() == 0))) {
-      Behaviour.runLogic(event);
+      try {
+        Behaviour.runLogic(event);
+      } catch (IOException e) {
+        e.printStackTrace();
+      }
     }
   }
 

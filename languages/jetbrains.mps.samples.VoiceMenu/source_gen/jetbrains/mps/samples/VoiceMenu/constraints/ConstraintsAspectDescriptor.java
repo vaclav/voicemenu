@@ -22,11 +22,9 @@ public class ConstraintsAspectDescriptor extends BaseConstraintsAspectDescriptor
         return new Activity_Constraints();
       case 1:
         return new Command_Constraints();
-      case 2:
-        return new Event_Constraints();
       default:
     }
     return new BaseConstraintsDescriptor(concept);
   }
-  private static final ConceptSwitchIndex index_2qnle6_a0c = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9863dL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL)).seal();
+  private static final ConceptSwitchIndex index_2qnle6_a0c = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9863dL)).seal();
 }

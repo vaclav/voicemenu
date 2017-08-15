@@ -79,13 +79,13 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     return editorCell;
   }
   private boolean nodeCondition_luypn2_a4a() {
-    return isNotEmptyString(SPropertyOperations.getString(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "toast")));
+    return isNotEmptyString(SPropertyOperations.getString(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "greeting")));
   }
   private boolean nodeCondition_luypn2_a5a() {
-    return isNotEmptyString(SPropertyOperations.getString(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "toast")));
+    return isNotEmptyString(SPropertyOperations.getString(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "greeting")));
   }
   private boolean nodeCondition_luypn2_a6a() {
-    return isNotEmptyString(SPropertyOperations.getString(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "toast")));
+    return isNotEmptyString(SPropertyOperations.getString(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "greeting")));
   }
   private EditorCell createConstant_luypn2_a0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Event:");
@@ -294,14 +294,16 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
   }
   private EditorCell createProperty_luypn2_g0() {
     CellProviderWithRole provider = new PropertyCellProvider(myNode, getEditorContext());
-    provider.setRole("toast");
-    provider.setNoTargetText("<no toast>");
+    provider.setRole("greeting");
+    provider.setNoTargetText("<no greeting>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(getEditorContext());
-    editorCell.setCellId("property_toast");
+    editorCell.setCellId("property_greeting");
     Style style = new StyleImpl();
     new UserWrittenTextStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
     editorCell.getStyle().putAll(style);
+    RemoveGreeting.setCellActions(editorCell, myNode, getEditorContext());
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     if (attributeConcept != null) {
@@ -347,7 +349,6 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
         editorCell.setRole("commands");
       }
       Style style = new StyleImpl();
-      style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
       style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
       style.set(StyleAttributes.EDITABLE, true);
       style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);

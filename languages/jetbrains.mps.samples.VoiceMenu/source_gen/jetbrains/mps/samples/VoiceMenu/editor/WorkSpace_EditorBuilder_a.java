@@ -121,6 +121,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     new UserWrittenTextStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
     style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.gray));
     editorCell.getStyle().putAll(style);
+    RemoveMainGreeting.setCellActions(editorCell, myNode, getEditorContext());
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     if (attributeConcept != null) {

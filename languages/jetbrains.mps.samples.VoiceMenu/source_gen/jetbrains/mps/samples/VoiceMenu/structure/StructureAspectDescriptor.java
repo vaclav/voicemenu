@@ -81,7 +81,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.samples.VoiceMenu", "Activity", 0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL);
     b.class_(false, false, false);
     b.origin("r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)/6587365532662359693");
-    b.prop("toast", 0x25806c66fbe600f7L, "2702278965990916343");
+    b.prop("greeting", 0x25806c66fbe600f7L, "2702278965990916343");
     b.associate("events", 0x5b6b060cf3fe08f3L).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL).optional(false).origin("6587365532662368499").done();
     b.aggregate("commands", 0x5b6b060cf3fe08d2L).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9863dL).optional(false).ordered(true).multiple(false).origin("6587365532662368466").done();
     b.alias("activity");

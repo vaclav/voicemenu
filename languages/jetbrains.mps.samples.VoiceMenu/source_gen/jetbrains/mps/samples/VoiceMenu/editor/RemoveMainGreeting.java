@@ -22,12 +22,14 @@ public class RemoveMainGreeting {
     public RemoveMainGreeting_DELETE(SNode node) {
       this.myNode = node;
     }
+    public String getDescriptionText() {
+      return "\"delete greeting\"";
+    }
     public void execute(EditorContext editorContext) {
       this.execute_internal(editorContext, this.myNode);
     }
     public void execute_internal(EditorContext editorContext, SNode node) {
       SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "greeting"), "");
-
       SelectionUtil.selectCell(editorContext, node, SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
     }
     @Override
@@ -46,12 +48,14 @@ public class RemoveMainGreeting {
     public RemoveMainGreeting_BACKSPACE(SNode node) {
       this.myNode = node;
     }
+    public String getDescriptionText() {
+      return "\"delete greeting\"";
+    }
     public void execute(EditorContext editorContext) {
       this.execute_internal(editorContext, this.myNode);
     }
     public void execute_internal(EditorContext editorContext, SNode node) {
       SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "greeting"), "");
-
       SelectionUtil.selectCell(editorContext, node, SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
     }
     @Override

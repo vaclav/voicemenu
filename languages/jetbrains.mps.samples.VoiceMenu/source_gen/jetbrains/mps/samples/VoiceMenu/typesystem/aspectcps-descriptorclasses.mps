@@ -462,7 +462,7 @@
   </node>
   <node concept="312cEu" id="1D">
     <property role="3GE5qa" value="definition.rule" />
-    <property role="TrG5h" value="Check_Phone_Buttons_NonTypesystemRule" />
+    <property role="TrG5h" value="CheckPhoneButtons_NonTypesystemRule" />
     <node concept="3clFbW" id="1E" role="jymVt">
       <node concept="3clFbS" id="1M" role="3clF47" />
       <node concept="3Tm1VV" id="1N" role="1B3o_S" />
@@ -1226,7 +1226,7 @@
                 </node>
                 <node concept="2ShNRf" id="6S" role="33vP2m">
                   <node concept="1pGfFk" id="6T" role="2ShVmc">
-                    <ref role="37wK5l" node="1E" resolve="Check_Phone_Buttons_NonTypesystemRule" />
+                    <ref role="37wK5l" node="1E" resolve="CheckPhoneButtons_NonTypesystemRule" />
                   </node>
                 </node>
               </node>

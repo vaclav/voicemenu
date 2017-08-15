@@ -12,7 +12,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       this.myNonTypesystemRules.add(nonTypesystemRule);
     }
     {
-      NonTypesystemRule_Runtime nonTypesystemRule = new Check_Phone_Buttons_NonTypesystemRule();
+      NonTypesystemRule_Runtime nonTypesystemRule = new CheckPhoneButtons_NonTypesystemRule();
       this.myNonTypesystemRules.add(nonTypesystemRule);
     }
     {
