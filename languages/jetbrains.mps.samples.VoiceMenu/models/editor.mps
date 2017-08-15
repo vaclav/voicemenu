@@ -379,6 +379,7 @@
   </node>
   <node concept="V5hpn" id="5HF1wNO0dsx">
     <property role="TrG5h" value="Styles" />
+    <property role="3GE5qa" value="Styles" />
     <node concept="14StLt" id="5HF1wNO0dsR" role="V601i">
       <property role="TrG5h" value="Arrows" />
       <node concept="VechU" id="5HF1wNO0dsY" role="3F10Kt">
@@ -700,6 +701,7 @@
   </node>
   <node concept="1h_SRR" id="6VbSUrbOori">
     <property role="TrG5h" value="RemoveGreeting" />
+    <property role="3GE5qa" value="ActionMaps" />
     <ref role="1h_SK9" to="xehl:5HF1wNNZuqd" resolve="Activity" />
     <node concept="1hA7zw" id="6VbSUrbOorI" role="1h_SK8">
       <property role="1hAc7j" value="delete_action_id" />
@@ -750,7 +752,7 @@
     </node>
   </node>
   <node concept="1h_SRR" id="6VbSUrbOFEG">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="ActionMaps" />
     <property role="TrG5h" value="RemoveMainGreeting" />
     <ref role="1h_SK9" to="xehl:5HF1wNO0wj8" resolve="WorkSpace" />
     <node concept="1hA7zw" id="6VbSUrbOFF8" role="1h_SK8">

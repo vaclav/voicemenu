@@ -295,32 +295,26 @@
       <node id="3013472021442875060" at="66,36,67,49" concept="7" />
       <node id="3013472021442875064" at="67,49,68,43" concept="7" />
       <node id="3013472021442875068" at="68,43,69,23" concept="2" />
-      <node id="3013472021443199118" at="71,52,72,44" concept="8" />
       <node id="3013472021442940987" at="23,10,25,5" concept="0" />
       <node id="3013472021442875049" at="62,54,65,5" concept="4" />
-      <node id="3013472021443199118" at="71,0,74,0" concept="12" trace="isEmptyString#(Ljava/lang/String;)Z" />
       <node id="3013472021442875021" at="53,60,57,5" concept="4" />
       <node id="3013472021442906714" at="20,79,25,5" concept="5" />
-      <node id="3013472021443192175" at="35,48,42,7" concept="5" />
+      <node id="3013472021443192175" at="35,43,42,7" concept="5" />
       <node id="3013472021443159872" at="34,0,44,5" concept="5" />
       <node id="3013472021442875042" at="59,0,71,0" concept="12" trace="runInitSetup#()V" />
       <node id="3013472021442874938" at="10,0,59,0" concept="12" trace="runLogic#(Ljava/awt/event/ActionEvent;)V" />
       <scope id="3013472021442906716" at="21,59,22,69" />
       <scope id="3013472021442940988" at="23,12,24,50" />
       <scope id="3013472021442875051" at="63,44,64,50" />
-      <scope id="3013472021443199118" at="71,52,72,44" />
       <scope id="3013472021442875023" at="54,45,56,51" />
       <scope id="3013472021442875049" at="62,54,65,5">
         <var name="item" id="3013472021442875055" />
-      </scope>
-      <scope id="3013472021443199118" at="71,0,74,0">
-        <var name="str" id="3013472021443199118" />
       </scope>
       <scope id="3013472021442875021" at="53,60,57,5">
         <var name="child" id="3013472021442875036" />
       </scope>
       <scope id="3013472021443192177" at="36,47,41,63" />
-      <scope id="3013472021443159874" at="35,48,43,49" />
+      <scope id="3013472021443159874" at="35,43,43,49" />
       <scope id="3013472021442875043" at="59,37,69,23">
         <var name="currentEvent" id="3013472021442875044" />
         <var name="myVoice" id="3013472021442875063" />
@@ -336,7 +330,7 @@
       <scope id="3013472021442874938" at="10,0,59,0">
         <var name="evt" id="3013472021442874939" />
       </scope>
-      <unit id="3013472021442874936" at="9,0,75,0" name="JavaVoiceMenu.runtime.Behaviour" />
+      <unit id="3013472021442874936" at="9,0,72,0" name="JavaVoiceMenu.runtime.Behaviour" />
     </file>
   </root>
   <root nodeRef="r:d8d37b74-a8e1-4a57-a2ee-4a996f4ba158(JavaVoiceMenu.runtime)/4125776596820021367">

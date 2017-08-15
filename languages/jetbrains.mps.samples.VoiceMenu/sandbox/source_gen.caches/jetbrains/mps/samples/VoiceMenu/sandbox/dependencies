@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.sandbox.Foo" file="Foo.java">
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
   <dependency className="jetbrains.mps.samples.VoiceMenu.sandbox.Main" file="Main.java">
     <classNode dependClassName="JavaVoiceMenu.runtime.Behaviour" />
     <classNode dependClassName="JavaVoiceMenu.runtime.Data" />

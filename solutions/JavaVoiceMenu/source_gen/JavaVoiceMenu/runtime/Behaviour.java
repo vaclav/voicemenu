@@ -32,7 +32,7 @@ public class Behaviour {
 
     // Checking if "back" option was selected via name of the current event 
 
-    if (!(isEmptyString(currentEvent.action))) {
+    if (!(currentEvent.action.isEmpty())) {
       if (currentEvent.action.equals("back")) {
         // updating Variables.path to get back 
         myVoice.speak("Going to the previous menu");
@@ -67,8 +67,5 @@ public class Behaviour {
     VoiceManager vm = VoiceManager.getInstance();
     Voice myVoice = vm.getVoice("kevin16");
     myVoice.allocate();
-  }
-  private static boolean isEmptyString(String str) {
-    return str == null || str.length() == 0;
   }
 }
