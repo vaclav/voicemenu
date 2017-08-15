@@ -35,6 +35,7 @@ public class Main implements ActionListener {
     Event One_pm98_a0 = new Event("One", "1");
     One_pm98_a0.setAction("");
     One_pm98_a0.setGreeting("");
+    One_pm98_a0.setGreeting("Sample toast");
     One_pm98_a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + One_pm98_a0.trigger;
     Variables.myHashMap.put(Variables.path, One_pm98_a0);
