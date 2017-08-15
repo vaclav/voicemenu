@@ -30,6 +30,7 @@ public class Style {
   public static JFrame frame = new JFrame("JetPhone");
   public static JPanel myPhone = new JPanel(new BorderLayout(5, 0));
   public static JPanel myPanelOfButtons = new JPanel(new GridLayout(4, 3, 2, 2));
+  public static Boolean onRun = false;
 
   public static String main_Greeting = "";
   private static void customizeButton(JButton button, Border border, Dimension dim, Color color) {
@@ -58,14 +59,19 @@ public class Style {
     // Greetings of Home menu 
     Call.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent p0) {
-        setTextToScreen("Home Menu");
 
-        VoiceManager vm = VoiceManager.getInstance();
-        Voice myVoice = vm.getVoice("kevin16");
-        myVoice.allocate();
-        Variables.path = "0";
-        myVoice.speak(main_Greeting);
-        readChildren();
+        if (onRun == false) {
+          setTextToScreen("Home Menu");
+
+          VoiceManager vm = VoiceManager.getInstance();
+          Voice myVoice = vm.getVoice("kevin16");
+          myVoice.allocate();
+          Variables.path = "0";
+          myVoice.speak(main_Greeting);
+          readChildren();
+          onRun = true;
+
+        }
       }
     });
     End.addActionListener(new ActionListener() {

@@ -90,8 +90,7 @@ public class VoiceMenu implements ActionListener {
     jdu_zpet_854zbc_a0b0c0.setGreeting("");
     jdu_zpet_854zbc_a0b0c0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + jdu_zpet_854zbc_a0b0c0.trigger;
-    Variables.myHashMap.put(Variables.path, jdu_zpet_854zbc_a0b0c0);
-    jdu_zpet_854zbc_a0b0c0.setAction("back");
+    Variables.myHashMap.put(Variables.path, jdu_zpet_854zbc_a0b0c0);<!TextGen not found for 'jetbrains.mps.samples.VoiceMenu.structure.Empty'!>
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     jdu_zpet_854zbc_a0b0c0.childs = new ArrayList<Event>();
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);

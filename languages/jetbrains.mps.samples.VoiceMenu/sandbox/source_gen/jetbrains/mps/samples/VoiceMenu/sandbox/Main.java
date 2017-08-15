@@ -60,13 +60,14 @@ public class Main implements ActionListener {
     Four_pm98_a0a0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Four_pm98_a0a0a0.trigger;
     Variables.myHashMap.put(Variables.path, Four_pm98_a0a0a0);
-    Four_pm98_a0a0a0.setAction("back");
+    Four_pm98_a0a0a0.setAction("getInfo");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     Four_pm98_a0a0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     Two_pm98_a0a0.childs = new ArrayList<Event>();
     Two_pm98_a0a0.childs.add(Four_pm98_a0a0a0);
     Two_pm98_a0a0.childs.add(Three_pm98_b0a0a0);
+    Two_pm98_a0a0.childs.add();
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     One_pm98_a0.childs = new ArrayList<Event>();
     One_pm98_a0.childs.add(Two_pm98_a0a0);

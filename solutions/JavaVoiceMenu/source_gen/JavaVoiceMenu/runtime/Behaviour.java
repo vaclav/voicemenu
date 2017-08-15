@@ -39,7 +39,18 @@ public class Behaviour {
         Variables.path = Variables.path.substring(0, Variables.path.length() - 2);
         // loading previous event 
         currentEvent = Variables.myHashMap.get(Variables.path);
+      } else if (currentEvent.action.equals("call")) {
+        Style.setTextToScreen("Direct Call");
+        return;
+      } else if (currentEvent.action.equals("getInfo")) {
+        Style.setTextToScreen("Getting Informations");
+        return;
+      } else if (currentEvent.action.equals("other")) {
+        Style.setTextToScreen("Other Services");
+        return;
       }
+
+
       Style.setTextToScreen(currentEvent.action);
     }
 

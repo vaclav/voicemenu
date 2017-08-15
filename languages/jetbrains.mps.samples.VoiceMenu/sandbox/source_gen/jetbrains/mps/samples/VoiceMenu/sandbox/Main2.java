@@ -46,12 +46,21 @@ public class Main2 implements ActionListener {
     Moje_Auto_m25z0_a0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Moje_Auto_m25z0_a0a0.trigger;
     Variables.myHashMap.put(Variables.path, Moje_Auto_m25z0_a0a0);
-    Moje_Auto_m25z0_a0a0.setAction("back");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     Moje_Auto_m25z0_a0a0.childs = new ArrayList<Event>();
+    Event menu_m25z0_b0a0 = new Event("menu", "4");
+    menu_m25z0_b0a0.setAction("");
+    menu_m25z0_b0a0.setGreeting("");
+    menu_m25z0_b0a0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + menu_m25z0_b0a0.trigger;
+    Variables.myHashMap.put(Variables.path, menu_m25z0_b0a0);
+    menu_m25z0_b0a0.setAction("back");
+    Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
+    menu_m25z0_b0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     Vozovy_park_m25z0_a0.childs = new ArrayList<Event>();
     Vozovy_park_m25z0_a0.childs.add(Moje_Auto_m25z0_a0a0);
+    Vozovy_park_m25z0_a0.childs.add(menu_m25z0_b0a0);
 
     Home.childs.add(Vozovy_park_m25z0_a0);
   }
