@@ -30,7 +30,6 @@
         <child id="6587365532662629611" name="bodyMenu" index="2JqgbB" />
       </concept>
       <concept id="6772988411135920842" name="jetbrains.mps.samples.VoiceMenu.structure.Back" flags="ng" index="1$pBvp" />
-      <concept id="6772988411135920841" name="jetbrains.mps.samples.VoiceMenu.structure.Other" flags="ng" index="1$pBvq" />
       <concept id="6772988411135920840" name="jetbrains.mps.samples.VoiceMenu.structure.Call" flags="ng" index="1$pBvr" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -260,6 +259,7 @@
     <property role="3uoZKU" value="" />
     <node concept="2C_Ik4" id="6EKBnCR4$w5" role="2JqgbB">
       <node concept="2C_I21" id="6EKBnCR4$wc" role="2C_I26">
+        <property role="3upAMh" value="Sample toast" />
         <ref role="2C_gVZ" node="6EKBnCR4$w6" resolve="One" />
         <node concept="2C_Ik4" id="6EKBnCR4$wg" role="2C_gVu">
           <node concept="2C_Ik0" id="6EKBnCR4$wj" role="2C_I24">
@@ -281,12 +281,12 @@
               <node concept="2C_I21" id="3QwtLqu$22Z" role="2C_I26">
                 <property role="3upAMh" value="" />
                 <ref role="2C_gVZ" node="6EKBnCR4$xg" resolve="Three" />
-                <node concept="1$pBvr" id="3QwtLqu$23a" role="2C_gVu" />
+                <node concept="1$pBvr" id="6nPYyO4oHqb" role="2C_gVu" />
               </node>
               <node concept="2C_I21" id="5$QY1LNyKmO" role="2C_I26">
                 <property role="3upAMh" value="" />
                 <ref role="2C_gVZ" node="1P3iGaPpYwj" resolve="Four" />
-                <node concept="1$pBvq" id="3QwtLquzmaZ" role="2C_gVu" />
+                <node concept="1$pBvr" id="6nPYyO4oQSU" role="2C_gVu" />
               </node>
             </node>
           </node>

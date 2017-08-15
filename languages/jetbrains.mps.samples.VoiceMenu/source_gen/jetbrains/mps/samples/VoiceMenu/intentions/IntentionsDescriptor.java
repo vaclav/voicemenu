@@ -33,13 +33,30 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
     switch (index_hphjzv_d0f.index(cncpt_d0f)) {
       case 0:
         if (true) {
-          // Concept: Activity 
-          intentions = new IntentionFactory[2];
-          intentions[0] = new Add_Greeting_Intention();
-          intentions[1] = new Remove_Greeting_Intention();
+          // Concept: Action 
+          intentions = new IntentionFactory[3];
+          intentions[0] = new changeToDirectCall_Intention();
+          intentions[1] = new changeToOther_Intention();
+          intentions[2] = new changeToBack_Intention();
         }
         break;
       case 1:
+        if (true) {
+          // Concept: Activity 
+          intentions = new IntentionFactory[3];
+          intentions[0] = new Add_Greeting_Intention();
+          intentions[1] = new Remove_Greeting_Intention();
+          intentions[2] = new InitializeNewEvent_Intention();
+        }
+        break;
+      case 2:
+        if (true) {
+          // Concept: Event 
+          intentions = new IntentionFactory[1];
+          intentions[0] = new AddEventDeclaration_Intention();
+        }
+        break;
+      case 3:
         if (true) {
           // Concept: WorkSpace 
           intentions = new IntentionFactory[2];
@@ -56,12 +73,17 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
   @NotNull
   @Override
   public Collection<IntentionFactory> getAllIntentions() {
-    IntentionFactory[] rv = new IntentionFactory[4];
+    IntentionFactory[] rv = new IntentionFactory[9];
     rv[0] = new Add_Main_Greeting_Intention();
     rv[1] = new Add_Greeting_Intention();
     rv[2] = new Remove_Greeting_Intention();
     rv[3] = new Remove_Main_Greeting_Intention();
+    rv[4] = new InitializeNewEvent_Intention();
+    rv[5] = new AddEventDeclaration_Intention();
+    rv[6] = new changeToDirectCall_Intention();
+    rv[7] = new changeToOther_Intention();
+    rv[8] = new changeToBack_Intention();
     return Arrays.asList(rv);
   }
-  private static final ConceptSwitchIndex index_hphjzv_d0f = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L)).seal();
+  private static final ConceptSwitchIndex index_hphjzv_d0f = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d133997fdc5L), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L)).seal();
 }
