@@ -30,8 +30,8 @@
         <property id="2702278965990756444" name="greeting" index="3uoZKU" />
         <child id="6587365532662629611" name="bodyMenu" index="2JqgbB" />
       </concept>
-      <concept id="6772988411135920843" name="jetbrains.mps.samples.VoiceMenu.structure.GetInfo" flags="ng" index="1$pBvo" />
       <concept id="6772988411135920842" name="jetbrains.mps.samples.VoiceMenu.structure.Back" flags="ng" index="1$pBvp" />
+      <concept id="6772988411135920841" name="jetbrains.mps.samples.VoiceMenu.structure.Other" flags="ng" index="1$pBvq" />
       <concept id="6772988411135920840" name="jetbrains.mps.samples.VoiceMenu.structure.Call" flags="ng" index="1$pBvr" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -261,10 +261,6 @@
                 <property role="2C_Iks" value="3" />
                 <property role="TrG5h" value="Three" />
               </node>
-              <node concept="2C_Ik0" id="6Dh11itMJP_" role="2C_I24">
-                <property role="2C_Iks" value="2" />
-                <property role="TrG5h" value="Two" />
-              </node>
               <node concept="2C_I21" id="3QwtLqu$22Z" role="2C_I26">
                 <property role="3upAMh" value="" />
                 <ref role="2C_gVZ" node="6EKBnCR4$xg" resolve="Three" />
@@ -273,7 +269,7 @@
               <node concept="2C_I21" id="5$QY1LNyKmO" role="2C_I26">
                 <property role="3upAMh" value="" />
                 <ref role="2C_gVZ" node="1P3iGaPpYwj" resolve="Four" />
-                <node concept="1$pBvo" id="6nPYyO4redL" role="2C_gVu" />
+                <node concept="1$pBvq" id="6Dh11itOCaX" role="2C_gVu" />
               </node>
             </node>
           </node>
@@ -282,6 +278,36 @@
       <node concept="2C_Ik0" id="6EKBnCR4$w6" role="2C_I24">
         <property role="2C_Iks" value="1" />
         <property role="TrG5h" value="One" />
+      </node>
+    </node>
+  </node>
+  <node concept="2Jqgb4" id="6Dh11itORNo">
+    <property role="TrG5h" value="Tmobile" />
+    <property role="3uoZKU" value="Welcome to T mobile" />
+    <node concept="2C_Ik4" id="6Dh11itORNp" role="2JqgbB">
+      <node concept="2C_I21" id="6Dh11itORNN" role="2C_I26">
+        <ref role="2C_gVZ" node="6Dh11itORNq" resolve="Television" />
+        <node concept="2fTWM$" id="6Dh11itORNO" role="2C_gVu" />
+      </node>
+      <node concept="2C_I21" id="6Dh11itORNR" role="2C_I26">
+        <ref role="2C_gVZ" node="6Dh11itORNs" resolve="New device" />
+        <node concept="2fTWM$" id="6Dh11itORNS" role="2C_gVu" />
+      </node>
+      <node concept="2C_Ik0" id="6Dh11itORNq" role="2C_I24">
+        <property role="2C_Iks" value="1" />
+        <property role="TrG5h" value="Television" />
+      </node>
+      <node concept="2C_Ik0" id="6Dh11itORNs" role="2C_I24">
+        <property role="2C_Iks" value="2" />
+        <property role="TrG5h" value="New device" />
+      </node>
+      <node concept="2C_Ik0" id="6Dh11itORNv" role="2C_I24">
+        <property role="2C_Iks" value="3" />
+        <property role="TrG5h" value="Real person" />
+      </node>
+      <node concept="2C_I21" id="6Dh11itORNX" role="2C_I26">
+        <ref role="2C_gVZ" node="6Dh11itORNv" resolve="Real person" />
+        <node concept="2fTWM$" id="6Dh11itORNY" role="2C_gVu" />
       </node>
     </node>
   </node>

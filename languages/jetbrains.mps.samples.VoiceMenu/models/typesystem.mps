@@ -14,6 +14,10 @@
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
+      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
+        <child id="1068498886297" name="rValue" index="37vLTx" />
+        <child id="1068498886295" name="lValue" index="37vLTJ" />
+      </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -34,7 +38,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
-      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271221393" name="jetbrains.mps.baseLanguage.structure.NPENotEqualsExpression" flags="nn" index="17QLQc" />
       <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
@@ -110,10 +114,14 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
+        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
+      </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="1145573345940" name="jetbrains.mps.lang.smodel.structure.Node_GetAllSiblingsOperation" flags="nn" index="2TvwIu" />
       <concept id="1139867745658" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithNewOperation" flags="nn" index="1_qnLN">
         <reference id="1139867957129" name="concept" index="1_rbq0" />
       </concept>
@@ -133,6 +141,9 @@
       <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -157,7 +168,7 @@
     </language>
   </registry>
   <node concept="18kY7G" id="5HF1wNNZNy$">
-    <property role="TrG5h" value="Check_Phone_Buttons" />
+    <property role="TrG5h" value="CheckPhoneButtons" />
     <node concept="3clFbS" id="5HF1wNNZNy_" role="18ibNy">
       <node concept="3clFbJ" id="5HF1wNNZNyL" role="3cqZAp">
         <node concept="22lmx$" id="6VbSUrbPnmv" role="3clFbw">
@@ -379,6 +390,9 @@
         <node concept="9aQIb" id="5HF1wNNZUWJ" role="9aQIa">
           <node concept="3clFbS" id="5HF1wNNZUWK" role="9aQI4">
             <node concept="2MkqsV" id="5HF1wNNZPwk" role="3cqZAp">
+              <node concept="3Cnw8n" id="6Dh11itNJgd" role="2OEOjU">
+                <ref role="QpYPw" node="6Dh11itNu0H" resolve="SetToOne" />
+              </node>
               <node concept="1YBJjd" id="5HF1wNNZPCm" role="2OEOjV">
                 <ref role="1YBMHb" node="5HF1wNNZNyB" resolve="event" />
               </node>
@@ -498,6 +512,7 @@
   </node>
   <node concept="Q5z_Y" id="3QwtLquzL$B">
     <property role="TrG5h" value="RemoveActivity" />
+    <property role="3GE5qa" value="QuickFixes" />
     <node concept="Q5ZZ6" id="3QwtLquzL$C" role="Q6x$H">
       <node concept="3clFbS" id="3QwtLquzL$D" role="2VODD2">
         <node concept="3clFbF" id="3QwtLquzNaN" role="3cqZAp">
@@ -520,6 +535,7 @@
   </node>
   <node concept="Q5z_Y" id="6Dh11itMJPD">
     <property role="TrG5h" value="RenameActivity" />
+    <property role="3GE5qa" value="QuickFixes" />
     <node concept="Q5ZZ6" id="6Dh11itMJPE" role="Q6x$H">
       <node concept="3clFbS" id="6Dh11itMJPF" role="2VODD2">
         <node concept="3clFbF" id="6Dh11itN6xp" role="3cqZAp">
@@ -548,36 +564,131 @@
     </node>
   </node>
   <node concept="Q5z_Y" id="6Dh11itNu0H">
-    <property role="TrG5h" value="SuggestCorrectInput" />
+    <property role="TrG5h" value="SetToOne" />
+    <property role="3GE5qa" value="QuickFixes" />
     <node concept="Q5ZZ6" id="6Dh11itNu0I" role="Q6x$H">
       <node concept="3clFbS" id="6Dh11itNu0J" role="2VODD2">
-        <node concept="3cpWs8" id="6Dh11itNAOB" role="3cqZAp">
-          <node concept="3cpWsn" id="6Dh11itNAOC" role="3cpWs9">
-            <property role="TrG5h" value="trigger" />
-            <node concept="17QB3L" id="6Dh11itNAO$" role="1tU5fm" />
-            <node concept="2OqwBi" id="6Dh11itNAOD" role="33vP2m">
-              <node concept="1PxgMI" id="6Dh11itNAOE" role="2Oq$k0">
-                <node concept="chp4Y" id="6Dh11itNAOF" role="3oSUPX">
+        <node concept="3clFbF" id="6Dh11itNFlx" role="3cqZAp">
+          <node concept="37vLTI" id="6Dh11itNH6h" role="3clFbG">
+            <node concept="2OqwBi" id="6Dh11itNFYX" role="37vLTJ">
+              <node concept="1PxgMI" id="6Dh11itNFPI" role="2Oq$k0">
+                <node concept="chp4Y" id="6Dh11itNFQp" role="3oSUPX">
                   <ref role="cht4Q" to="xehl:5HF1wNNZucc" resolve="Event" />
                 </node>
-                <node concept="Q6c8r" id="6Dh11itNAOG" role="1m5AlR" />
+                <node concept="Q6c8r" id="6Dh11itNFlw" role="1m5AlR" />
               </node>
-              <node concept="3TrcHB" id="6Dh11itNAOH" role="2OqNvi">
+              <node concept="3TrcHB" id="6Dh11itNGfE" role="2OqNvi">
                 <ref role="3TsBF5" to="xehl:5HF1wNNZucg" resolve="trigger" />
               </node>
             </node>
+            <node concept="Xl_RD" id="6Dh11itNNVa" role="37vLTx">
+              <property role="Xl_RC" value="1" />
+            </node>
           </node>
         </node>
+        <node concept="3clFbH" id="6Dh11itO2ew" role="3cqZAp" />
       </node>
     </node>
     <node concept="QznSV" id="6Dh11itNu12" role="QzAvj">
       <node concept="3clFbS" id="6Dh11itNu13" role="2VODD2">
         <node concept="3clFbF" id="6Dh11itNu9s" role="3cqZAp">
           <node concept="Xl_RD" id="6Dh11itNu9r" role="3clFbG">
-            <property role="Xl_RC" value="Suggest correct input" />
+            <property role="Xl_RC" value="Replace with correct input" />
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="6Dh11itORXn">
+    <property role="TrG5h" value="RemoveNumber" />
+    <property role="3GE5qa" value="QuickFixes" />
+    <node concept="Q5ZZ6" id="6Dh11itORXo" role="Q6x$H">
+      <node concept="3clFbS" id="6Dh11itORXp" role="2VODD2">
+        <node concept="3clFbF" id="6Dh11itP9xv" role="3cqZAp">
+          <node concept="2OqwBi" id="6Dh11itP9BP" role="3clFbG">
+            <node concept="Q6c8r" id="6Dh11itP9xt" role="2Oq$k0" />
+            <node concept="3YRAZt" id="6Dh11itP9LO" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="QznSV" id="6Dh11itPk53" role="QzAvj">
+      <node concept="3clFbS" id="6Dh11itPk54" role="2VODD2">
+        <node concept="3clFbF" id="6Dh11itPkdt" role="3cqZAp">
+          <node concept="Xl_RD" id="6Dh11itPkds" role="3clFbG">
+            <property role="Xl_RC" value="Remove Duplicate Number" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="6Dh11itPon1">
+    <property role="TrG5h" value="CheckDuplicateNumber" />
+    <node concept="3clFbS" id="6Dh11itPon2" role="18ibNy">
+      <node concept="3clFbJ" id="6Dh11itPond" role="3cqZAp">
+        <node concept="2OqwBi" id="6Dh11itPone" role="3clFbw">
+          <node concept="2OqwBi" id="6Dh11itPonf" role="2Oq$k0">
+            <node concept="2OqwBi" id="6Dh11itPong" role="2Oq$k0">
+              <node concept="1YBJjd" id="6Dh11itPonh" role="2Oq$k0">
+                <ref role="1YBMHb" node="6Dh11itPon4" resolve="event" />
+              </node>
+              <node concept="2TvwIu" id="6Dh11itPoni" role="2OqNvi" />
+            </node>
+            <node concept="v3k3i" id="6Dh11itPonj" role="2OqNvi">
+              <node concept="chp4Y" id="6Dh11itPonk" role="v3oSu">
+                <ref role="cht4Q" to="xehl:5HF1wNNZucc" resolve="Event" />
+              </node>
+            </node>
+          </node>
+          <node concept="2HwmR7" id="6Dh11itPonl" role="2OqNvi">
+            <node concept="1bVj0M" id="6Dh11itPonm" role="23t8la">
+              <node concept="3clFbS" id="6Dh11itPonn" role="1bW5cS">
+                <node concept="3clFbF" id="6Dh11itPono" role="3cqZAp">
+                  <node concept="17R0WA" id="6Dh11itPonp" role="3clFbG">
+                    <node concept="2OqwBi" id="6Dh11itPonq" role="3uHU7w">
+                      <node concept="1YBJjd" id="6Dh11itPonr" role="2Oq$k0">
+                        <ref role="1YBMHb" node="6Dh11itPon4" resolve="event" />
+                      </node>
+                      <node concept="3TrcHB" id="6Dh11itPons" role="2OqNvi">
+                        <ref role="3TsBF5" to="xehl:5HF1wNNZucg" resolve="trigger" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="6Dh11itPont" role="3uHU7B">
+                      <node concept="37vLTw" id="6Dh11itPonu" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6Dh11itPonw" resolve="it" />
+                      </node>
+                      <node concept="3TrcHB" id="6Dh11itPonv" role="2OqNvi">
+                        <ref role="3TsBF5" to="xehl:5HF1wNNZucg" resolve="trigger" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="Rh6nW" id="6Dh11itPonw" role="1bW2Oz">
+                <property role="TrG5h" value="it" />
+                <node concept="2jxLKc" id="6Dh11itPonx" role="1tU5fm" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="6Dh11itPony" role="3clFbx">
+          <node concept="2MkqsV" id="6Dh11itPonz" role="3cqZAp">
+            <node concept="Xl_RD" id="6Dh11itPon$" role="2MkJ7o">
+              <property role="Xl_RC" value="Duplicate number" />
+            </node>
+            <node concept="1YBJjd" id="6Dh11itPon_" role="2OEOjV">
+              <ref role="1YBMHb" node="6Dh11itPon4" resolve="event" />
+            </node>
+            <node concept="3Cnw8n" id="6Dh11itPonA" role="2OEOjU">
+              <ref role="QpYPw" node="6Dh11itORXn" resolve="RemoveNumber" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6Dh11itPon4" role="1YuTPh">
+      <property role="TrG5h" value="event" />
+      <ref role="1YaFvo" to="xehl:5HF1wNNZucc" resolve="Event" />
     </node>
   </node>
 </model>
