@@ -17,6 +17,7 @@ import javax.swing.border.Border;
 import javax.swing.border.LineBorder;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
+import java.io.IOException;
 
 public class VoiceMenu implements ActionListener {
 
@@ -222,7 +223,7 @@ public class VoiceMenu implements ActionListener {
   public static void initView() {
     Style.setContent();
     addButtons(Style.myPanelOfButtons);
-    Style.myPhone.add(Style.myPanelOfButtons, BorderLayout.SOUTH);
+    Style.frame.add(Style.myPanelOfButtons, BorderLayout.SOUTH);
     Style.setFrame();
   }
 
@@ -240,7 +241,11 @@ public class VoiceMenu implements ActionListener {
   @Override
   public void actionPerformed(ActionEvent event) {
     if (!((Variables.path == null || Variables.path.length() == 0))) {
-      Behaviour.runLogic(event);
+      try {
+        Behaviour.runLogic(event);
+      } catch (IOException e) {
+        e.printStackTrace();
+      }
     }
   }
 
