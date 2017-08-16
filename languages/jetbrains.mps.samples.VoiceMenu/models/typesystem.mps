@@ -87,10 +87,17 @@
       </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
+        <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
         <child id="1216391046856" name="descriptionBlock" index="QzAvj" />
       </concept>
       <concept id="1216383287005" name="jetbrains.mps.lang.typesystem.structure.QuickFixExecuteBlock" flags="in" index="Q5ZZ6" />
       <concept id="1216383337216" name="jetbrains.mps.lang.typesystem.structure.ConceptFunctionParameter_node" flags="nn" index="Q6c8r" />
+      <concept id="1216383482742" name="jetbrains.mps.lang.typesystem.structure.QuickFixArgument" flags="ng" index="Q6JDH">
+        <child id="1216383511839" name="argumentType" index="Q6QK4" />
+      </concept>
+      <concept id="1216390348809" name="jetbrains.mps.lang.typesystem.structure.QuickFixArgumentReference" flags="nn" index="QwW4i">
+        <reference id="1216390348810" name="quickFixArgument" index="QwW4h" />
+      </concept>
       <concept id="1216390987552" name="jetbrains.mps.lang.typesystem.structure.QuickFixDescriptionBlock" flags="in" index="QznSV" />
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
@@ -98,6 +105,11 @@
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
       <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
         <reference id="1216388525179" name="quickFix" index="QpYPw" />
+        <child id="1210784493590" name="actualArgument" index="3Coj4f" />
+      </concept>
+      <concept id="1210784384552" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntentionArgument" flags="ng" index="3CnSsL">
+        <reference id="1216386999476" name="quickFixArgument" index="QkamJ" />
+        <child id="1210784642750" name="value" index="3CoRuB" />
       </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
@@ -111,6 +123,7 @@
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
       <concept id="767145758118872828" name="jetbrains.mps.lang.actions.structure.NF_Node_ReplaceWithNewOperation" flags="nn" index="2DeJnW" />
+      <concept id="767145758118872830" name="jetbrains.mps.lang.actions.structure.NF_Link_SetNewChildOperation" flags="nn" index="2DeJnY" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -119,11 +132,17 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
+      <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC">
+        <reference id="1139880128956" name="concept" index="1A9B2P" />
+      </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1145573345940" name="jetbrains.mps.lang.smodel.structure.Node_GetAllSiblingsOperation" flags="nn" index="2TvwIu" />
+      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
+        <reference id="1139877738879" name="concept" index="1A0vxQ" />
+      </concept>
       <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139867745658" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithNewOperation" flags="nn" index="1_qnLN">
@@ -156,6 +175,9 @@
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
       </concept>
+      <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
+        <child id="540871147943773366" name="argument" index="25WWJ7" />
+      </concept>
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
@@ -168,6 +190,7 @@
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
       <concept id="1235566554328" name="jetbrains.mps.baseLanguage.collections.structure.AnyOperation" flags="nn" index="2HwmR7" />
+      <concept id="1227022179634" name="jetbrains.mps.baseLanguage.collections.structure.AddLastElementOperation" flags="nn" index="2Ke9KJ" />
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
     </language>
   </registry>
@@ -801,8 +824,31 @@
         <node concept="9aQIb" id="6dQXHUGnIHo" role="9aQIa">
           <node concept="3clFbS" id="6dQXHUGnIHp" role="9aQI4">
             <node concept="2MkqsV" id="6dQXHUGnIWR" role="3cqZAp">
+              <node concept="3Cnw8n" id="3JYttAALSWJ" role="2OEOjU">
+                <ref role="QpYPw" node="3JYttAAKz9C" resolve="InitilizeEvent" />
+                <node concept="3CnSsL" id="3JYttAAMjBq" role="3Coj4f">
+                  <ref role="QkamJ" node="3JYttAALS4q" resolve="srcMenu" />
+                  <node concept="1PxgMI" id="3JYttAANuSg" role="3CoRuB">
+                    <node concept="chp4Y" id="3JYttAANv8O" role="3oSUPX">
+                      <ref role="cht4Q" to="xehl:5HF1wNNZuc8" resolve="Menu" />
+                    </node>
+                    <node concept="2OqwBi" id="3JYttAANtUU" role="1m5AlR">
+                      <node concept="1YBJjd" id="3JYttAAMjBE" role="2Oq$k0">
+                        <ref role="1YBMHb" node="6dQXHUGn_Cn" resolve="event" />
+                      </node>
+                      <node concept="1mfA1w" id="3JYttAANupr" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3CnSsL" id="3JYttAANtN9" role="3Coj4f">
+                  <ref role="QkamJ" node="3JYttAANqBS" resolve="srcEvent" />
+                  <node concept="1YBJjd" id="3JYttAANvpd" role="3CoRuB">
+                    <ref role="1YBMHb" node="6dQXHUGn_Cn" resolve="event" />
+                  </node>
+                </node>
+              </node>
               <node concept="Xl_RD" id="6dQXHUGnIX3" role="2MkJ7o">
-                <property role="Xl_RC" value="this is so bad" />
+                <property role="Xl_RC" value="Event Not Initialized" />
               </node>
               <node concept="1YBJjd" id="6dQXHUGnIXZ" role="2OEOjV">
                 <ref role="1YBMHb" node="6dQXHUGn_Cn" resolve="event" />
@@ -815,6 +861,105 @@
     <node concept="1YaCAy" id="6dQXHUGn_Cn" role="1YuTPh">
       <property role="TrG5h" value="event" />
       <ref role="1YaFvo" to="xehl:5HF1wNNZucc" resolve="Event" />
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="3JYttAAKz9C">
+    <property role="3GE5qa" value="QuickFixes" />
+    <property role="TrG5h" value="InitilizeEvent" />
+    <node concept="Q6JDH" id="3JYttAALS4q" role="Q6Id_">
+      <property role="TrG5h" value="srcMenu" />
+      <node concept="3Tqbb2" id="3JYttAALS4w" role="Q6QK4">
+        <ref role="ehGHo" to="xehl:5HF1wNNZuc8" resolve="Menu" />
+      </node>
+    </node>
+    <node concept="Q6JDH" id="3JYttAANqBS" role="Q6Id_">
+      <property role="TrG5h" value="srcEvent" />
+      <node concept="3Tqbb2" id="3JYttAANqC0" role="Q6QK4">
+        <ref role="ehGHo" to="xehl:5HF1wNNZucc" resolve="Event" />
+      </node>
+    </node>
+    <node concept="Q5ZZ6" id="3JYttAAKz9D" role="Q6x$H">
+      <node concept="3clFbS" id="3JYttAAKz9E" role="2VODD2">
+        <node concept="3clFbH" id="3JYttAAME_w" role="3cqZAp" />
+        <node concept="3cpWs8" id="3JYttAAN$oi" role="3cqZAp">
+          <node concept="3cpWsn" id="3JYttAAN$oj" role="3cpWs9">
+            <property role="TrG5h" value="myActivity" />
+            <node concept="3Tqbb2" id="3JYttAAN$od" role="1tU5fm">
+              <ref role="ehGHo" to="xehl:5HF1wNNZuqd" resolve="Activity" />
+            </node>
+            <node concept="2OqwBi" id="3JYttAAN$ol" role="33vP2m">
+              <node concept="2OqwBi" id="3JYttAAN$om" role="2Oq$k0">
+                <node concept="QwW4i" id="3JYttAAN$on" role="2Oq$k0">
+                  <ref role="QwW4h" node="3JYttAALS4q" resolve="srcMenu" />
+                </node>
+                <node concept="3Tsc0h" id="3JYttAAN$oo" role="2OqNvi">
+                  <ref role="3TtcxE" to="xehl:5HF1wNNZuqa" resolve="activities" />
+                </node>
+              </node>
+              <node concept="WFELt" id="3JYttAAN$op" role="2OqNvi">
+                <ref role="1A0vxQ" to="xehl:5HF1wNNZuqd" resolve="Activity" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3JYttAANzw6" role="3cqZAp">
+          <node concept="2OqwBi" id="3JYttAANAlU" role="3clFbG">
+            <node concept="2OqwBi" id="3JYttAAN_YN" role="2Oq$k0">
+              <node concept="37vLTw" id="3JYttAAN$or" role="2Oq$k0">
+                <ref role="3cqZAo" node="3JYttAAN$oj" resolve="myActivity" />
+              </node>
+              <node concept="3TrEf2" id="3JYttAANA5m" role="2OqNvi">
+                <ref role="3Tt5mk" to="xehl:5HF1wNNZwzi" resolve="commands" />
+              </node>
+            </node>
+            <node concept="2DeJnY" id="3JYttAANAB8" role="2OqNvi">
+              <ref role="1A9B2P" to="xehl:5lu2mvqIooX" resolve="Command" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3JYttAANAI9" role="3cqZAp">
+          <node concept="37vLTI" id="3JYttAANH$$" role="3clFbG">
+            <node concept="QwW4i" id="3JYttAANHCR" role="37vLTx">
+              <ref role="QwW4h" node="3JYttAANqBS" resolve="srcEvent" />
+            </node>
+            <node concept="2OqwBi" id="3JYttAANARz" role="37vLTJ">
+              <node concept="37vLTw" id="3JYttAANAI7" role="2Oq$k0">
+                <ref role="3cqZAo" node="3JYttAAN$oj" resolve="myActivity" />
+              </node>
+              <node concept="3TrEf2" id="3JYttAANAY6" role="2OqNvi">
+                <ref role="3Tt5mk" to="xehl:5HF1wNNZwzN" resolve="events" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3JYttAANI4W" role="3cqZAp">
+          <node concept="2OqwBi" id="3JYttAANKh_" role="3clFbG">
+            <node concept="2OqwBi" id="3JYttAANIdX" role="2Oq$k0">
+              <node concept="QwW4i" id="3JYttAANI4U" role="2Oq$k0">
+                <ref role="QwW4h" node="3JYttAALS4q" resolve="srcMenu" />
+              </node>
+              <node concept="3Tsc0h" id="3JYttAANIOs" role="2OqNvi">
+                <ref role="3TtcxE" to="xehl:5HF1wNNZuqa" resolve="activities" />
+              </node>
+            </node>
+            <node concept="2Ke9KJ" id="3JYttAAO0X7" role="2OqNvi">
+              <node concept="37vLTw" id="3JYttAAO223" role="25WWJ7">
+                <ref role="3cqZAo" node="3JYttAAN$oj" resolve="myActivity" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3JYttAANztc" role="3cqZAp" />
+      </node>
+    </node>
+    <node concept="QznSV" id="3JYttAAKH2G" role="QzAvj">
+      <node concept="3clFbS" id="3JYttAAKH2H" role="2VODD2">
+        <node concept="3clFbF" id="3JYttAAKHb6" role="3cqZAp">
+          <node concept="Xl_RD" id="3JYttAAKHb5" role="3clFbG">
+            <property role="Xl_RC" value="Initilize Event" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
