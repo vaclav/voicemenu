@@ -48,6 +48,7 @@ public class Main2 implements ActionListener {
     Two_m25z0_b0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Two_m25z0_b0.trigger;
     Variables.myHashMap.put(Variables.path, Two_m25z0_b0);
+    Two_m25z0_b0.setAction("back");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     Two_m25z0_b0.childs = new ArrayList<Event>();
 

@@ -210,11 +210,15 @@
     <node concept="2C_Ik4" id="6EKBnCR4$w5" role="2JqgbB">
       <node concept="2C_I21" id="6EKBnCR4$wc" role="2C_I26">
         <property role="3upAMh" value="" />
-        <ref role="2C_gVZ" node="6EKBnCR4$w6" resolve="One" />
+        <ref role="2C_gVZ" node="6EKBnCR4$w6" resolve="Ahoj" />
         <node concept="2C_Ik4" id="6EKBnCR4$wg" role="2C_gVu">
           <node concept="2C_Ik0" id="6EKBnCR4$wj" role="2C_I24">
             <property role="TrG5h" value="Two" />
             <property role="2C_Iks" value="2" />
+          </node>
+          <node concept="2C_Ik0" id="6dQXHUGzB$a" role="2C_I24">
+            <property role="2C_Iks" value="3" />
+            <property role="TrG5h" value="Three" />
           </node>
           <node concept="2C_I21" id="6EKBnCR4$wH" role="2C_I26">
             <property role="3upAMh" value="Sample toast" />
@@ -238,11 +242,15 @@
               </node>
             </node>
           </node>
+          <node concept="2C_I21" id="6dQXHUGzB$k" role="2C_I26">
+            <ref role="2C_gVZ" node="6dQXHUGzB$a" resolve="Three" />
+            <node concept="2fTWM$" id="6dQXHUGzB$l" role="2C_gVu" />
+          </node>
         </node>
       </node>
       <node concept="2C_Ik0" id="6EKBnCR4$w6" role="2C_I24">
         <property role="2C_Iks" value="1" />
-        <property role="TrG5h" value="One" />
+        <property role="TrG5h" value="Ahoj" />
       </node>
     </node>
   </node>
