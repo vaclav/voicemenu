@@ -49,13 +49,23 @@ public class Main implements ActionListener {
     Event Three_pm98_b0a0a0 = new Event("Three", "3");
     Three_pm98_b0a0a0.setAction("");
     Three_pm98_b0a0a0.setGreeting("");
+    Three_pm98_b0a0a0.setGreeting("Sample toast");
     Three_pm98_b0a0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Three_pm98_b0a0a0.trigger;
     Variables.myHashMap.put(Variables.path, Three_pm98_b0a0a0);
     Three_pm98_b0a0a0.setAction("call");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     Three_pm98_b0a0a0.childs = new ArrayList<Event>();
-    Event Four_pm98_a0a0a0 = new Event("Four", "4");
+    Event dfgfg_pm98_c0a0a0 = new Event("dfgfg", "4");
+    dfgfg_pm98_c0a0a0.setAction("");
+    dfgfg_pm98_c0a0a0.setGreeting("");
+    dfgfg_pm98_c0a0a0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + dfgfg_pm98_c0a0a0.trigger;
+    Variables.myHashMap.put(Variables.path, dfgfg_pm98_c0a0a0);
+    dfgfg_pm98_c0a0a0.setAction("call");
+    Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
+    dfgfg_pm98_c0a0a0.childs = new ArrayList<Event>();
+    Event Four_pm98_a0a0a0 = new Event("Four", "1");
     Four_pm98_a0a0a0.setAction("");
     Four_pm98_a0a0a0.setGreeting("");
     Four_pm98_a0a0a0.childs = new ArrayList<Event>();
@@ -68,17 +78,10 @@ public class Main implements ActionListener {
     Two_pm98_a0a0.childs = new ArrayList<Event>();
     Two_pm98_a0a0.childs.add(Four_pm98_a0a0a0);
     Two_pm98_a0a0.childs.add(Three_pm98_b0a0a0);
+    Two_pm98_a0a0.childs.add(dfgfg_pm98_c0a0a0);
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     One_pm98_a0.childs = new ArrayList<Event>();
     One_pm98_a0.childs.add(Two_pm98_a0a0);
-    ???;
-    .setAction("");
-    .setGreeting("");
-    .childs = new ArrayList<Event>();
-    Variables.path = Variables.path + .trigger;
-    Variables.myHashMap.put(Variables.path, );
-    Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
-    .childs = new ArrayList<Event>();
 
     Home.childs.add(One_pm98_a0);
   }
