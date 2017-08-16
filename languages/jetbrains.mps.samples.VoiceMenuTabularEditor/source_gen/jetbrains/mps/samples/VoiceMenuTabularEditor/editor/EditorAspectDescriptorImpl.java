@@ -23,9 +23,9 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
     SAbstractConcept cncpt_a0b = ((SAbstractConcept) concept);
     switch (index_xbvbvu_a0b.index(cncpt_a0b)) {
       case 0:
-        return Collections.<ConceptEditor>singletonList(new Activity_tabular_Editor());
-      case 1:
         return Collections.<ConceptEditor>singletonList(new Event_tabular_Editor());
+      case 1:
+        return Collections.<ConceptEditor>singletonList(new Menu_tabular_Editor());
       default:
     }
     return Collections.<ConceptEditor>emptyList();
@@ -36,5 +36,5 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
   }
 
 
-  private static final ConceptSwitchIndex index_xbvbvu_a0b = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL)).seal();
+  private static final ConceptSwitchIndex index_xbvbvu_a0b = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L)).seal();
 }

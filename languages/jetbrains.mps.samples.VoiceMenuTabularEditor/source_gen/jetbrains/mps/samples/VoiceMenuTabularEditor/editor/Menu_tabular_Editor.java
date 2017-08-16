@@ -10,7 +10,7 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class Activity_tabular_Editor extends DefaultNodeEditor {
+public class Menu_tabular_Editor extends DefaultNodeEditor {
   private Collection<String> myContextHints = Arrays.asList(new String[]{"jetbrains.mps.samples.VoiceMenu.editor.MyHints.tabular"});
   @Override
   @NotNull
@@ -18,6 +18,6 @@ public class Activity_tabular_Editor extends DefaultNodeEditor {
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new Activity_tabular_EditorBuilder_a(editorContext, node).createCell();
+    return new Menu_tabular_EditorBuilder_a(editorContext, node).createCell();
   }
 }

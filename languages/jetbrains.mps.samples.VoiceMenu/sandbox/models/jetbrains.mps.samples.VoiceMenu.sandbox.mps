@@ -31,6 +31,7 @@
         <property id="2702278965990756444" name="greeting" index="3uoZKU" />
         <child id="6587365532662629611" name="bodyMenu" index="2JqgbB" />
       </concept>
+      <concept id="6772988411135920843" name="jetbrains.mps.samples.VoiceMenu.structure.GetInfo" flags="ng" index="1$pBvo" />
       <concept id="6772988411135920842" name="jetbrains.mps.samples.VoiceMenu.structure.Back" flags="ng" index="1$pBvp" />
       <concept id="6772988411135920840" name="jetbrains.mps.samples.VoiceMenu.structure.Call" flags="ng" index="1$pBvr" />
     </language>
@@ -234,17 +235,26 @@
               </node>
               <node concept="2C_I21" id="3JYttAAO8zE" role="2C_I26">
                 <ref role="2C_gVZ" node="6EKBnCR4$xg" resolve="Three" />
-                <node concept="2fTWM$" id="3JYttAAO8zF" role="2C_gVu" />
+                <node concept="1$pBvp" id="3p$ip5sKToc" role="2C_gVu" />
               </node>
-              <node concept="2C_I21" id="3JYttAAR5Du" role="2C_I26">
+              <node concept="2C_I21" id="3p$ip5sMjNc" role="2C_I26">
                 <ref role="2C_gVZ" node="3JYttAAOfXS" resolve="Four" />
-                <node concept="2fTWM$" id="3JYttAARVdk" role="2C_gVu" />
+                <node concept="2C_Ik4" id="3p$ip5sMjNo" role="2C_gVu">
+                  <node concept="2C_Ik0" id="3p$ip5sMjNu" role="2C_I24">
+                    <property role="2C_Iks" value="1" />
+                    <property role="TrG5h" value="Cool activity" />
+                  </node>
+                  <node concept="2C_I21" id="3p$ip5sMjN_" role="2C_I26">
+                    <ref role="2C_gVZ" node="3p$ip5sMjNu" resolve="Cool activity" />
+                    <node concept="2fTWM$" id="3p$ip5sMjNA" role="2C_gVu" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
           <node concept="2C_I21" id="6dQXHUGzB$k" role="2C_I26">
             <ref role="2C_gVZ" node="6dQXHUGzB$a" resolve="Three" />
-            <node concept="2fTWM$" id="6dQXHUGzB$l" role="2C_gVu" />
+            <node concept="1$pBvo" id="3p$ip5sKToi" role="2C_gVu" />
           </node>
         </node>
       </node>
@@ -266,15 +276,15 @@
       </node>
       <node concept="2C_I21" id="1dkJyTcyzlM" role="2C_I26">
         <ref role="2C_gVZ" node="1dkJyTcyzl1" resolve="cvbn" />
-        <node concept="2fTWM$" id="1dkJyTcyzlN" role="2C_gVu" />
+        <node concept="1$pBvr" id="3p$ip5sKToo" role="2C_gVu" />
       </node>
       <node concept="2C_I21" id="1dkJyTcyzm7" role="2C_I26">
         <ref role="2C_gVZ" node="1dkJyTcyzl4" resolve="dfgh" />
-        <node concept="2fTWM$" id="1dkJyTcyzm8" role="2C_gVu" />
+        <node concept="1$pBvo" id="3p$ip5sKTp7" role="2C_gVu" />
       </node>
       <node concept="2C_I21" id="1dkJyTcyzmu" role="2C_I26">
         <ref role="2C_gVZ" node="1dkJyTcyzld" resolve="fghj" />
-        <node concept="2fTWM$" id="1dkJyTc_aMN" role="2C_gVu" />
+        <node concept="1$pBvp" id="3p$ip5sKTpa" role="2C_gVu" />
       </node>
     </node>
   </node>

@@ -21,6 +21,13 @@
       <concept id="4820515453818318288" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReferenceExpression" flags="ng" index="2pYGij">
         <reference id="4820515453818318891" name="hint" index="2pYH_C" />
       </concept>
+      <concept id="3547227755871693971" name="jetbrains.mps.lang.editor.structure.PredefinedSelector" flags="ng" index="2B6iha">
+        <property id="2162403111523065396" name="cellId" index="1lyBwo" />
+      </concept>
+      <concept id="3647146066980922272" name="jetbrains.mps.lang.editor.structure.SelectInEditorOperation" flags="nn" index="1OKiuA">
+        <child id="1948540814633499358" name="editorContext" index="lBI5i" />
+        <child id="1948540814635895774" name="cellSelector" index="lGT1i" />
+      </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
@@ -913,6 +920,18 @@
             </node>
             <node concept="liA8E" id="6dQXHUGuixM" role="2OqNvi">
               <ref role="37wK5l" to="22ra:~Updater.update():void" resolve="update" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3p$ip5sL8sj" role="3cqZAp" />
+        <node concept="3clFbF" id="3p$ip5sL9RD" role="3cqZAp">
+          <node concept="2OqwBi" id="3p$ip5sLa38" role="3clFbG">
+            <node concept="2Sf5sV" id="3p$ip5sL9RB" role="2Oq$k0" />
+            <node concept="1OKiuA" id="3p$ip5sLaK1" role="2OqNvi">
+              <node concept="1XNTG" id="3p$ip5sLaOQ" role="lBI5i" />
+              <node concept="2B6iha" id="3p$ip5sLb18" role="lGT1i">
+                <property role="1lyBwo" value="mostRelevant" />
+              </node>
             </node>
           </node>
         </node>

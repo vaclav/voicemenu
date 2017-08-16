@@ -12,6 +12,8 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
 import java.util.Collections;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
+import jetbrains.mps.editor.runtime.selection.SelectionUtil;
+import jetbrains.mps.openapi.editor.selection.SelectionManager;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 
 public final class ViewAsTabular_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
@@ -59,6 +61,8 @@ public final class ViewAsTabular_Intention extends AbstractIntentionDescriptor i
       }
 
       editorContext.getEditorComponent().getUpdater().update();
+
+      SelectionUtil.selectCell(editorContext, node, SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
     }
     @Override
     public IntentionDescriptor getDescriptor() {

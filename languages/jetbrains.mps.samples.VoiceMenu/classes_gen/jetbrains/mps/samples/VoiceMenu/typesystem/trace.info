@@ -58,7 +58,7 @@
       <node id="4323022269989322689" at="39,0,42,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="4323022269989322689" at="42,0,45,0" concept="5" trace="overrides#()Z" />
       <node id="4323022269989364581" at="28,230,32,9" concept="0" />
-      <node id="4323022269989364581" at="25,923,33,7" concept="0" />
+      <node id="4323022269989364581" at="25,925,33,7" concept="0" />
       <node id="4323022269989322701" at="24,117,34,5" concept="4" />
       <node id="4323022269989322689" at="24,0,36,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
       <scope id="4323022269989322689" at="22,45,22,45" />
@@ -78,7 +78,7 @@
         <var name="_reporter_2309309498" id="4323022269989364581" />
         <var name="errorTarget" id="4323022269989364581" />
       </scope>
-      <scope id="4323022269989322703" at="25,923,33,7" />
+      <scope id="4323022269989322703" at="25,925,33,7" />
       <scope id="4323022269989322690" at="24,117,34,5" />
       <scope id="4323022269989322689" at="24,0,36,0">
         <var name="menu" id="4323022269989322689" />
