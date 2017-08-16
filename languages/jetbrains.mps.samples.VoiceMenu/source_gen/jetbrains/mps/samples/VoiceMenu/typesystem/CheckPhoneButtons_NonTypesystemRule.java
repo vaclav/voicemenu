@@ -25,7 +25,7 @@ public class CheckPhoneButtons_NonTypesystemRule extends AbstractNonTypesystemRu
         MessageTarget errorTarget = new NodeMessageTarget();
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(event, "This button cannot be found on the phone", "r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)", "6587365532662454292", null, errorTarget);
         {
-          BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("jetbrains.mps.samples.VoiceMenu.typesystem.SetToOne_QuickFix", false);
+          BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("jetbrains.mps.samples.VoiceMenu.typesystem.SuggestNumber_QuickFix", false);
           _reporter_2309309498.addIntentionProvider(intentionProvider);
         }
       }

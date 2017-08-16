@@ -68,6 +68,7 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.DeclarationsStyl
     Style style = new StyleImpl();
     new BracketsStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
     editorCell.getStyle().putAll(style);
     editorCell.setRole(handler.getElementRole());
     return editorCell;

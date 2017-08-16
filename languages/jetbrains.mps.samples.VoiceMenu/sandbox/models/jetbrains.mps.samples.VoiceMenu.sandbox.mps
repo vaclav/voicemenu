@@ -210,7 +210,7 @@
     <property role="3uoZKU" value="Welcome to our voicemenu" />
     <node concept="2C_Ik4" id="11pGboo1$6L" role="2JqgbB">
       <node concept="2C_I21" id="7sMfXwVVG8F" role="2C_I26">
-        <property role="3upAMh" value="Welcome to vhicle menu" />
+        <property role="3upAMh" value="Welcome to vehicle menu" />
         <ref role="2C_gVZ" node="11pGboo1$6M" resolve="Vozovy park" />
         <node concept="2C_Ik4" id="7sMfXwVWphd" role="2C_gVu">
           <node concept="2C_Ik0" id="7sMfXwVWphg" role="2C_I24">
@@ -222,7 +222,7 @@
             <property role="TrG5h" value="menu" />
           </node>
           <node concept="2C_I21" id="7sMfXwVWIYj" role="2C_I26">
-            <property role="3upAMh" value="Going back to theprevious menu" />
+            <property role="3upAMh" value="Going back to the previous menu" />
             <ref role="2C_gVZ" node="7sMfXwVWphg" resolve="Moje Auto" />
             <node concept="2C_Ik4" id="6nPYyO4p_V8" role="2C_gVu" />
           </node>
@@ -254,8 +254,12 @@
             <property role="3upAMh" value="Sample toast" />
             <ref role="2C_gVZ" node="6EKBnCR4$wj" resolve="Two" />
             <node concept="2C_Ik4" id="6EKBnCR4$wZ" role="2C_gVu">
+              <node concept="2C_Ik0" id="3JYttAAJgCB" role="2C_I24">
+                <property role="2C_Iks" value="2" />
+                <property role="TrG5h" value="fdg" />
+              </node>
               <node concept="2C_Ik0" id="1P3iGaPpYwj" role="2C_I24">
-                <property role="2C_Iks" value="4" />
+                <property role="2C_Iks" value="1" />
                 <property role="TrG5h" value="Four" />
               </node>
               <node concept="2C_Ik0" id="6EKBnCR4$xg" role="2C_I24">
@@ -288,11 +292,33 @@
     <node concept="2C_Ik4" id="6Dh11itORNp" role="2JqgbB">
       <node concept="2C_I21" id="6Dh11itORNN" role="2C_I26">
         <ref role="2C_gVZ" node="6Dh11itORNq" resolve="Television" />
-        <node concept="2C_Ik4" id="6Dh11itQSwj" role="2C_gVu" />
+        <node concept="2C_Ik4" id="6Dh11itQSwj" role="2C_gVu">
+          <node concept="2C_I21" id="3JYttAAJ7gE" role="2C_I26">
+            <ref role="2C_gVZ" node="3JYttAAJ6wL" resolve="Ola" />
+            <node concept="1$pBvp" id="3JYttAAJ7hO" role="2C_gVu" />
+          </node>
+          <node concept="2C_I21" id="3JYttAAJ7gI" role="2C_I26">
+            <ref role="2C_gVZ" node="3JYttAAJ6wN" resolve="Vybuch" />
+            <node concept="1$pBvp" id="3JYttAAJl5t" role="2C_gVu" />
+          </node>
+          <node concept="2C_Ik0" id="3JYttAAJ6wL" role="2C_I24">
+            <property role="2C_Iks" value="4" />
+            <property role="TrG5h" value="Ola" />
+          </node>
+          <node concept="2C_Ik0" id="3JYttAAJ6wN" role="2C_I24">
+            <property role="2C_Iks" value="5" />
+            <property role="TrG5h" value="Vybuch" />
+          </node>
+        </node>
       </node>
       <node concept="2C_I21" id="6Dh11itORNR" role="2C_I26">
         <ref role="2C_gVZ" node="6Dh11itORNs" resolve="New device" />
-        <node concept="2fTWM$" id="6Dh11itORNS" role="2C_gVu" />
+        <node concept="2C_Ik4" id="3JYttAAJl5w" role="2C_gVu">
+          <node concept="2C_Ik0" id="3JYttAAJl5_" role="2C_I24">
+            <property role="2C_Iks" value="2" />
+            <property role="TrG5h" value="ewrgedf" />
+          </node>
+        </node>
       </node>
       <node concept="2C_Ik0" id="6Dh11itORNq" role="2C_I24">
         <property role="2C_Iks" value="1" />

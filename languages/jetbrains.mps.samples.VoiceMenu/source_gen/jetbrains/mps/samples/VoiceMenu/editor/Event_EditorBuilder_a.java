@@ -92,7 +92,7 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.ArrowsStyleClass
   private EditorCell createProperty_ymj9mh_d0() {
     CellProviderWithRole provider = new PropertyCellProvider(myNode, getEditorContext());
     provider.setRole("name");
-    provider.setNoTargetText("action");
+    provider.setNoTargetText("activity");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(getEditorContext());
     editorCell.setCellId("property_name");

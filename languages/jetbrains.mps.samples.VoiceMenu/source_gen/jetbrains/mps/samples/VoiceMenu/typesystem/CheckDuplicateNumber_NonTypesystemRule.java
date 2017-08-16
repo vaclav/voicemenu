@@ -34,6 +34,10 @@ public class CheckDuplicateNumber_NonTypesystemRule extends AbstractNonTypesyste
           BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("jetbrains.mps.samples.VoiceMenu.typesystem.RemoveNumber_QuickFix", false);
           _reporter_2309309498.addIntentionProvider(intentionProvider);
         }
+        {
+          BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("jetbrains.mps.samples.VoiceMenu.typesystem.SuggestNumber_QuickFix", false);
+          _reporter_2309309498.addIntentionProvider(intentionProvider);
+        }
       }
     }
   }

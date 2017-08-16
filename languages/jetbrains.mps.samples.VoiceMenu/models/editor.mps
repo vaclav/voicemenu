@@ -187,7 +187,7 @@
         <ref role="1k5W1q" node="5HF1wNO0dsR" resolve="Arrows" />
       </node>
       <node concept="3F0A7n" id="5HF1wNNZur3" role="3EZMnx">
-        <property role="1$x2rV" value="action" />
+        <property role="1$x2rV" value="activity" />
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         <ref role="1k5W1q" node="11pGboo2CX2" resolve="Declarations" />
       </node>
@@ -203,6 +203,9 @@
         <ref role="1k5W1q" node="3yrvnjuhfbU" resolve="Brackets" />
         <node concept="2iRkQZ" id="5lu2mvqHTtc" role="2czzBx" />
         <node concept="lj46D" id="5lu2mvqHT9l" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pVoyu" id="3JYttAAJ2xk" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
