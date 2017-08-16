@@ -28,7 +28,7 @@ public class Main implements ActionListener {
 
     Event Home = new Event("Main", "0");
     Home.setAction("");
-    Home.setGreeting("");
+    Home.setGreeting("Sample Toast");
     Home.childs = new ArrayList<Event>();
     Variables.myHashMap.put("0", Home);
 
@@ -36,6 +36,7 @@ public class Main implements ActionListener {
     Event Ahoj_pm98_a0 = new Event("Ahoj", "0");
     Ahoj_pm98_a0.setAction("");
     Ahoj_pm98_a0.setGreeting("");
+    Ahoj_pm98_a0.setGreeting("Sample toast");
     Ahoj_pm98_a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Ahoj_pm98_a0.trigger;
     Variables.myHashMap.put(Variables.path, Ahoj_pm98_a0);
@@ -52,6 +53,7 @@ public class Main implements ActionListener {
     Three_pm98_a0a0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Three_pm98_a0a0a0.trigger;
     Variables.myHashMap.put(Variables.path, Three_pm98_a0a0a0);
+    Three_pm98_a0a0a0.setAction("back");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     Three_pm98_a0a0a0.childs = new ArrayList<Event>();
     Event Four_pm98_b0a0a0 = new Event("Four", "4");
@@ -60,8 +62,26 @@ public class Main implements ActionListener {
     Four_pm98_b0a0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Four_pm98_b0a0a0.trigger;
     Variables.myHashMap.put(Variables.path, Four_pm98_b0a0a0);
+    Event Cool_activity_pm98_a0b0a0a0 = new Event("Cool activity", "1");
+    Cool_activity_pm98_a0b0a0a0.setAction("");
+    Cool_activity_pm98_a0b0a0a0.setGreeting("");
+    Cool_activity_pm98_a0b0a0a0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + Cool_activity_pm98_a0b0a0a0.trigger;
+    Variables.myHashMap.put(Variables.path, Cool_activity_pm98_a0b0a0a0);
+    Event menu_pm98_a0a0b0a0a0 = new Event("menu", "2");
+    menu_pm98_a0a0b0a0a0.setAction("");
+    menu_pm98_a0a0b0a0a0.setGreeting("");
+    menu_pm98_a0a0b0a0a0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + menu_pm98_a0a0b0a0a0.trigger;
+    Variables.myHashMap.put(Variables.path, menu_pm98_a0a0b0a0a0);
+    Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
+    menu_pm98_a0a0b0a0a0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
+    Cool_activity_pm98_a0b0a0a0.childs = new ArrayList<Event>();
+    Cool_activity_pm98_a0b0a0a0.childs.add(menu_pm98_a0a0b0a0a0);
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     Four_pm98_b0a0a0.childs = new ArrayList<Event>();
+    Four_pm98_b0a0a0.childs.add(Cool_activity_pm98_a0b0a0a0);
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     Two_pm98_a0a0.childs = new ArrayList<Event>();
     Two_pm98_a0a0.childs.add(Three_pm98_a0a0a0);
@@ -72,6 +92,7 @@ public class Main implements ActionListener {
     Three_pm98_b0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Three_pm98_b0a0.trigger;
     Variables.myHashMap.put(Variables.path, Three_pm98_b0a0);
+    Three_pm98_b0a0.setAction("getInfo");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     Three_pm98_b0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
@@ -84,6 +105,7 @@ public class Main implements ActionListener {
     cvbn_pm98_b0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + cvbn_pm98_b0.trigger;
     Variables.myHashMap.put(Variables.path, cvbn_pm98_b0);
+    cvbn_pm98_b0.setAction("call");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     cvbn_pm98_b0.childs = new ArrayList<Event>();
     Event dfgh_pm98_c0 = new Event("dfgh", "2");
@@ -92,6 +114,7 @@ public class Main implements ActionListener {
     dfgh_pm98_c0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + dfgh_pm98_c0.trigger;
     Variables.myHashMap.put(Variables.path, dfgh_pm98_c0);
+    dfgh_pm98_c0.setAction("getInfo");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     dfgh_pm98_c0.childs = new ArrayList<Event>();
     Event fghj_pm98_d0 = new Event("fghj", "4");
@@ -100,6 +123,7 @@ public class Main implements ActionListener {
     fghj_pm98_d0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + fghj_pm98_d0.trigger;
     Variables.myHashMap.put(Variables.path, fghj_pm98_d0);
+    fghj_pm98_d0.setAction("back");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     fghj_pm98_d0.childs = new ArrayList<Event>();
 
@@ -112,7 +136,7 @@ public class Main implements ActionListener {
   public static void main(String[] args) {
     initHashMap();
     instance = new Main();
-    Style.main_Greeting = "";
+    Style.main_Greeting = "Sample Toast";
     Main.initHashMap();
     initView();
     Behaviour.runInitSetup();

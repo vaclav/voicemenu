@@ -51,6 +51,8 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
+      <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
@@ -135,7 +137,6 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -269,6 +270,12 @@
         </node>
       </node>
       <node concept="3F0ifn" id="6dQXHUGDF2y" role="3EZMnx">
+        <node concept="VPxyj" id="3p$ip5sMpgS" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="VPM3Z" id="3p$ip5sMsyR" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
         <node concept="pVoyu" id="3p$ip5sKVpS" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -475,7 +482,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="6dQXHUGC7IV" role="3cqZAp" />
         <node concept="3cpWs6" id="6dQXHUGC8ns" role="3cqZAp">
           <node concept="10Nm6u" id="6dQXHUGC8Da" role="3cqZAk" />
         </node>

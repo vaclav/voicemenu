@@ -29,6 +29,7 @@
       </concept>
       <concept id="6587365532662629576" name="jetbrains.mps.samples.VoiceMenu.structure.WorkSpace" flags="ng" index="2Jqgb4">
         <property id="2702278965990756444" name="greeting" index="3uoZKU" />
+        <property id="3919338464396137862" name="toolbar" index="1EJLKn" />
         <child id="6587365532662629611" name="bodyMenu" index="2JqgbB" />
       </concept>
       <concept id="6772988411135920843" name="jetbrains.mps.samples.VoiceMenu.structure.GetInfo" flags="ng" index="1$pBvo" />
@@ -205,9 +206,31 @@
       </node>
     </node>
   </node>
+  <node concept="2Jqgb4" id="6dQXHUGtK6w">
+    <property role="TrG5h" value="Main2" />
+    <node concept="2C_Ik4" id="6dQXHUGtK6x" role="2JqgbB">
+      <node concept="2C_I21" id="6dQXHUGtK6y" role="2C_I26">
+        <ref role="2C_gVZ" node="6dQXHUGtK6$" resolve="One" />
+        <node concept="1$pBvr" id="6dQXHUGtK6M" role="2C_gVu" />
+      </node>
+      <node concept="2C_Ik0" id="6dQXHUGtK6$" role="2C_I24">
+        <property role="2C_Iks" value="1" />
+        <property role="TrG5h" value="One" />
+      </node>
+      <node concept="2C_Ik0" id="6dQXHUGtK7d" role="2C_I24">
+        <property role="2C_Iks" value="2" />
+        <property role="TrG5h" value="Two" />
+      </node>
+      <node concept="2C_I21" id="6dQXHUGtK7i" role="2C_I26">
+        <ref role="2C_gVZ" node="6dQXHUGtK7d" resolve="Two" />
+        <node concept="1$pBvp" id="6dQXHUGvU3O" role="2C_gVu" />
+      </node>
+    </node>
+  </node>
   <node concept="2Jqgb4" id="6EKBnCR4$w4">
     <property role="TrG5h" value="Main" />
-    <property role="3uoZKU" value="" />
+    <property role="3uoZKU" value="Sample Toast" />
+    <property role="1EJLKn" value="false" />
     <node concept="2C_Ik4" id="6EKBnCR4$w5" role="2JqgbB">
       <node concept="2C_I21" id="6EKBnCR4$wc" role="2C_I26">
         <property role="3upAMh" value="Sample toast" />
@@ -246,7 +269,16 @@
                   </node>
                   <node concept="2C_I21" id="3p$ip5sMjN_" role="2C_I26">
                     <ref role="2C_gVZ" node="3p$ip5sMjNu" resolve="Cool activity" />
-                    <node concept="2fTWM$" id="3p$ip5sMjNA" role="2C_gVu" />
+                    <node concept="2C_Ik4" id="3p$ip5sMwMo" role="2C_gVu">
+                      <node concept="2C_Ik0" id="3p$ip5sMwMs" role="2C_I24">
+                        <property role="2C_Iks" value="2" />
+                        <property role="TrG5h" value="menu" />
+                      </node>
+                      <node concept="2C_I21" id="3p$ip5sMwMv" role="2C_I26">
+                        <ref role="2C_gVZ" node="3p$ip5sMwMs" resolve="menu" />
+                        <node concept="2fTWM$" id="3p$ip5sMwMw" role="2C_gVu" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -285,27 +317,6 @@
       <node concept="2C_I21" id="1dkJyTcyzmu" role="2C_I26">
         <ref role="2C_gVZ" node="1dkJyTcyzld" resolve="fghj" />
         <node concept="1$pBvp" id="3p$ip5sKTpa" role="2C_gVu" />
-      </node>
-    </node>
-  </node>
-  <node concept="2Jqgb4" id="6dQXHUGtK6w">
-    <property role="TrG5h" value="Main2" />
-    <node concept="2C_Ik4" id="6dQXHUGtK6x" role="2JqgbB">
-      <node concept="2C_I21" id="6dQXHUGtK6y" role="2C_I26">
-        <ref role="2C_gVZ" node="6dQXHUGtK6$" resolve="One" />
-        <node concept="1$pBvr" id="6dQXHUGtK6M" role="2C_gVu" />
-      </node>
-      <node concept="2C_Ik0" id="6dQXHUGtK6$" role="2C_I24">
-        <property role="2C_Iks" value="1" />
-        <property role="TrG5h" value="One" />
-      </node>
-      <node concept="2C_Ik0" id="6dQXHUGtK7d" role="2C_I24">
-        <property role="2C_Iks" value="2" />
-        <property role="TrG5h" value="Two" />
-      </node>
-      <node concept="2C_I21" id="6dQXHUGtK7i" role="2C_I26">
-        <ref role="2C_gVZ" node="6dQXHUGtK7d" resolve="Two" />
-        <node concept="1$pBvp" id="6dQXHUGvU3O" role="2C_gVu" />
       </node>
     </node>
   </node>
