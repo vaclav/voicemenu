@@ -552,7 +552,7 @@
     </node>
     <node concept="2BsEeg" id="5RYvhcTA0Ht" role="2ABdcP">
       <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="graphical" />
+      <property role="TrG5h" value="structural" />
     </node>
   </node>
   <node concept="24kQdi" id="5lu2mvqIsnc">
