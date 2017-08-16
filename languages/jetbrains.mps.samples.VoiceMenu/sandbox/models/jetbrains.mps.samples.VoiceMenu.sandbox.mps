@@ -209,7 +209,7 @@
     <property role="3uoZKU" value="" />
     <node concept="2C_Ik4" id="6EKBnCR4$w5" role="2JqgbB">
       <node concept="2C_I21" id="6EKBnCR4$wc" role="2C_I26">
-        <property role="3upAMh" value="" />
+        <property role="3upAMh" value="Sample toast" />
         <ref role="2C_gVZ" node="6EKBnCR4$w6" resolve="Ahoj" />
         <node concept="2C_Ik4" id="6EKBnCR4$wg" role="2C_gVu">
           <node concept="2C_Ik0" id="6EKBnCR4$wj" role="2C_I24">
