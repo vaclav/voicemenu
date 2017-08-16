@@ -33,7 +33,7 @@ public class Main implements ActionListener {
     Variables.myHashMap.put("0", Home);
 
 
-    Event Ahoj_pm98_a0 = new Event("Ahoj", "1");
+    Event Ahoj_pm98_a0 = new Event("Ahoj", "0");
     Ahoj_pm98_a0.setAction("");
     Ahoj_pm98_a0.setGreeting("");
     Ahoj_pm98_a0.childs = new ArrayList<Event>();
@@ -78,8 +78,35 @@ public class Main implements ActionListener {
     Ahoj_pm98_a0.childs = new ArrayList<Event>();
     Ahoj_pm98_a0.childs.add(Two_pm98_a0a0);
     Ahoj_pm98_a0.childs.add(Three_pm98_b0a0);
+    Event cvbn_pm98_b0 = new Event("cvbn", "1");
+    cvbn_pm98_b0.setAction("");
+    cvbn_pm98_b0.setGreeting("");
+    cvbn_pm98_b0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + cvbn_pm98_b0.trigger;
+    Variables.myHashMap.put(Variables.path, cvbn_pm98_b0);
+    Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
+    cvbn_pm98_b0.childs = new ArrayList<Event>();
+    Event dfgh_pm98_c0 = new Event("dfgh", "2");
+    dfgh_pm98_c0.setAction("");
+    dfgh_pm98_c0.setGreeting("");
+    dfgh_pm98_c0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + dfgh_pm98_c0.trigger;
+    Variables.myHashMap.put(Variables.path, dfgh_pm98_c0);
+    Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
+    dfgh_pm98_c0.childs = new ArrayList<Event>();
+    Event fghj_pm98_d0 = new Event("fghj", "4");
+    fghj_pm98_d0.setAction("");
+    fghj_pm98_d0.setGreeting("");
+    fghj_pm98_d0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + fghj_pm98_d0.trigger;
+    Variables.myHashMap.put(Variables.path, fghj_pm98_d0);
+    Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
+    fghj_pm98_d0.childs = new ArrayList<Event>();
 
     Home.childs.add(Ahoj_pm98_a0);
+    Home.childs.add(cvbn_pm98_b0);
+    Home.childs.add(dfgh_pm98_c0);
+    Home.childs.add(fghj_pm98_d0);
   }
 
   public static void main(String[] args) {
