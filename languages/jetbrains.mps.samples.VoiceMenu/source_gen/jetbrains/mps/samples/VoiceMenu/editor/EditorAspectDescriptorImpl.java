@@ -24,7 +24,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
     SAbstractConcept cncpt_a0b = ((SAbstractConcept) concept);
     switch (index_xbvbvu_a0b.index(cncpt_a0b)) {
       case 0:
-        return Arrays.asList(new ConceptEditor[]{new Activity_Editor(), new Activity_tabular_Editor()});
+        return Collections.<ConceptEditor>singletonList(new Activity_Editor());
       case 1:
         return Collections.<ConceptEditor>singletonList(new Back_Editor());
       case 2:

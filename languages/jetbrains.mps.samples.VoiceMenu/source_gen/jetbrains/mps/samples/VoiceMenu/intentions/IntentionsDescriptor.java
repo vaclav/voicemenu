@@ -71,9 +71,10 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
       case 4:
         if (true) {
           // Concept: WorkSpace 
-          intentions = new IntentionFactory[2];
+          intentions = new IntentionFactory[3];
           intentions[0] = new Add_Main_Greeting_Intention();
           intentions[1] = new Remove_Main_Greeting_Intention();
+          intentions[2] = new ViewAsTabular_Intention();
         }
         break;
       default:
@@ -85,7 +86,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
   @NotNull
   @Override
   public Collection<IntentionFactory> getAllIntentions() {
-    IntentionFactory[] rv = new IntentionFactory[15];
+    IntentionFactory[] rv = new IntentionFactory[16];
     rv[0] = new Add_Main_Greeting_Intention();
     rv[1] = new Add_Greeting_Intention();
     rv[2] = new Remove_Greeting_Intention();
@@ -101,6 +102,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
     rv[12] = new changeMenuToGetInfo_Intention();
     rv[13] = new changeMenuToDirectCall_Intention();
     rv[14] = new changeToMenu_Intention();
+    rv[15] = new ViewAsTabular_Intention();
     return Arrays.asList(rv);
   }
   private static final ConceptSwitchIndex index_hphjzv_d0f = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d133997fdc5L), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L)).seal();
