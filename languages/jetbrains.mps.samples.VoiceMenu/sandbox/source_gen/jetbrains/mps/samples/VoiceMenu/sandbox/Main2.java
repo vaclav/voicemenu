@@ -28,48 +28,37 @@ public class Main2 implements ActionListener {
 
     Event Home = new Event("Main2", "0");
     Home.setAction("");
-    Home.setGreeting("Welcome to our voicemenu");
+    Home.setGreeting("");
     Home.childs = new ArrayList<Event>();
     Variables.myHashMap.put("0", Home);
 
 
-    Event Vozovy_park_m25z0_a0 = new Event("Vozovy park", "1");
-    Vozovy_park_m25z0_a0.setAction("");
-    Vozovy_park_m25z0_a0.setGreeting("");
-    Vozovy_park_m25z0_a0.setGreeting("Welcome to vehicle menu");
-    Vozovy_park_m25z0_a0.childs = new ArrayList<Event>();
-    Variables.path = Variables.path + Vozovy_park_m25z0_a0.trigger;
-    Variables.myHashMap.put(Variables.path, Vozovy_park_m25z0_a0);
-    Event Moje_Auto_m25z0_a0a0 = new Event("Moje Auto", "2");
-    Moje_Auto_m25z0_a0a0.setAction("");
-    Moje_Auto_m25z0_a0a0.setGreeting("");
-    Moje_Auto_m25z0_a0a0.setGreeting("Going back to the previous menu");
-    Moje_Auto_m25z0_a0a0.childs = new ArrayList<Event>();
-    Variables.path = Variables.path + Moje_Auto_m25z0_a0a0.trigger;
-    Variables.myHashMap.put(Variables.path, Moje_Auto_m25z0_a0a0);
+    Event One_m25z0_a0 = new Event("One", "1");
+    One_m25z0_a0.setAction("");
+    One_m25z0_a0.setGreeting("");
+    One_m25z0_a0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + One_m25z0_a0.trigger;
+    Variables.myHashMap.put(Variables.path, One_m25z0_a0);
+    One_m25z0_a0.setAction("call");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
-    Moje_Auto_m25z0_a0a0.childs = new ArrayList<Event>();
-    Event menu_m25z0_b0a0 = new Event("menu", "4");
-    menu_m25z0_b0a0.setAction("");
-    menu_m25z0_b0a0.setGreeting("");
-    menu_m25z0_b0a0.childs = new ArrayList<Event>();
-    Variables.path = Variables.path + menu_m25z0_b0a0.trigger;
-    Variables.myHashMap.put(Variables.path, menu_m25z0_b0a0);
-    menu_m25z0_b0a0.setAction("back");
+    One_m25z0_a0.childs = new ArrayList<Event>();
+    Event Two_m25z0_b0 = new Event("Two", "2");
+    Two_m25z0_b0.setAction("");
+    Two_m25z0_b0.setGreeting("");
+    Two_m25z0_b0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + Two_m25z0_b0.trigger;
+    Variables.myHashMap.put(Variables.path, Two_m25z0_b0);
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
-    menu_m25z0_b0a0.childs = new ArrayList<Event>();
-    Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
-    Vozovy_park_m25z0_a0.childs = new ArrayList<Event>();
-    Vozovy_park_m25z0_a0.childs.add(Moje_Auto_m25z0_a0a0);
-    Vozovy_park_m25z0_a0.childs.add(menu_m25z0_b0a0);
+    Two_m25z0_b0.childs = new ArrayList<Event>();
 
-    Home.childs.add(Vozovy_park_m25z0_a0);
+    Home.childs.add(One_m25z0_a0);
+    Home.childs.add(Two_m25z0_b0);
   }
 
   public static void main(String[] args) {
     initHashMap();
     instance = new Main2();
-    Style.main_Greeting = "Welcome to our voicemenu";
+    Style.main_Greeting = "";
     Main2.initHashMap();
     initView();
     Behaviour.runInitSetup();
