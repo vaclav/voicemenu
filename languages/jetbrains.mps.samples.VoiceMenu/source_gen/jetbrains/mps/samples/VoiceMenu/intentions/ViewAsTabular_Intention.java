@@ -17,7 +17,7 @@ import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 public final class ViewAsTabular_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
   public ViewAsTabular_Intention() {
-    super(Kind.NORMAL, false, new SNodePointer("r:d92c1500-00d3-4072-866a-5077893293b8(jetbrains.mps.samples.VoiceMenu.intentions)", "7167187293243153753"));
+    super(Kind.NORMAL, true, new SNodePointer("r:d92c1500-00d3-4072-866a-5077893293b8(jetbrains.mps.samples.VoiceMenu.intentions)", "7167187293243153753"));
   }
   @Override
   public String getPresentation() {
@@ -42,10 +42,23 @@ public final class ViewAsTabular_Intention extends AbstractIntentionDescriptor i
     }
     @Override
     public String getDescription(final SNode node, final EditorContext editorContext) {
-      return "View as Tabular";
+      String[] initialEditorHints = editorContext.getEditorComponent().getUpdater().getInitialEditorHints();
+      if (initialEditorHints == null || initialEditorHints.length == 0) {
+        return "Show as Tabular";
+      } else {
+        return "Show as Structural";
+      }
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
+      String[] initialEditorHints = editorContext.getEditorComponent().getUpdater().getInitialEditorHints();
+      if (initialEditorHints == null || initialEditorHints.length == 0) {
+        editorContext.getEditorComponent().getUpdater().setInitialEditorHints(new String[]{"jetbrains.mps.samples.VoiceMenu.editor.MyHints.tabular"});
+      } else {
+        editorContext.getEditorComponent().getUpdater().setInitialEditorHints(new String[]{});
+      }
+
+      editorContext.getEditorComponent().getUpdater().update();
     }
     @Override
     public IntentionDescriptor getDescriptor() {
