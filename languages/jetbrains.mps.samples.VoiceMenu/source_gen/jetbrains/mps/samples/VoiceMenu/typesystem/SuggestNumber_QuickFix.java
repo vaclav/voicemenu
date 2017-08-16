@@ -5,9 +5,14 @@ package jetbrains.mps.samples.VoiceMenu.typesystem;
 import jetbrains.mps.errors.QuickFix_Runtime;
 import jetbrains.mps.smodel.SNodePointer;
 import org.jetbrains.mps.openapi.model.SNode;
+import java.util.List;
+import java.util.ArrayList;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.internal.collections.runtime.Sequence;
 
 public class SuggestNumber_QuickFix extends QuickFix_Runtime {
   public SuggestNumber_QuickFix() {
@@ -17,14 +22,41 @@ public class SuggestNumber_QuickFix extends QuickFix_Runtime {
     return "Replace with correct input";
   }
   public void execute(SNode node) {
-    if (eq_q5it99_a0a0c(SPropertyOperations.getString(SNodeOperations.cast(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "1")) {
-      SPropertyOperations.set(SNodeOperations.cast(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"), "2");
-    } else {
-      SPropertyOperations.set(SNodeOperations.cast(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"), "1");
-    }
 
-  }
-  private static boolean eq_q5it99_a0a0c(Object a, Object b) {
-    return (a != null ? a.equals(b) : a == b);
+    String[] kbButtons = new String[12];
+
+    kbButtons[0] = "0";
+    kbButtons[1] = "1";
+    kbButtons[2] = "2";
+    kbButtons[3] = "3";
+    kbButtons[4] = "4";
+    kbButtons[5] = "5";
+    kbButtons[6] = "6";
+    kbButtons[7] = "7";
+    kbButtons[8] = "8";
+    kbButtons[9] = "9";
+    kbButtons[10] = "#";
+    kbButtons[11] = "*";
+
+
+    List<String> usedButtons = new ArrayList<String>();
+
+    List<SNode> eventsDeclTable = SLinkOperations.getChildren(((SNode) SuggestNumber_QuickFix.this.getField("srcMenu")[0]), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "eventsDeclTable"));
+
+    for (SNode event : ListSequence.fromList(eventsDeclTable)) {
+      ListSequence.fromList(usedButtons).addElement(SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
+    }
+    SPropertyOperations.set(SNodeOperations.cast(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"), Sequence.fromIterable(Sequence.fromArray(kbButtons)).subtract(ListSequence.fromList(usedButtons)).first());
+
+
+
+
+
+
+
+
+
+
+
   }
 }

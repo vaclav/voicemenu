@@ -36,6 +36,7 @@ public class CheckDuplicateNumber_NonTypesystemRule extends AbstractNonTypesyste
         }
         {
           BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("jetbrains.mps.samples.VoiceMenu.typesystem.SuggestNumber_QuickFix", false);
+          intentionProvider.putArgument("srcMenu", SNodeOperations.cast(SNodeOperations.getParent(event), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")));
           _reporter_2309309498.addIntentionProvider(intentionProvider);
         }
       }
