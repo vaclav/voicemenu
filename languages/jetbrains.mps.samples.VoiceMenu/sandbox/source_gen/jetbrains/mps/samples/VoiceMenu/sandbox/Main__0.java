@@ -19,10 +19,10 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
 
-public class Main implements ActionListener {
+public class Main__0 implements ActionListener {
 
 
-  public static Main instance;
+  public static Main__0 instance;
 
   public static void initHashMap() {
 
@@ -74,6 +74,7 @@ public class Main implements ActionListener {
     menu_pm98_a0a0b0a0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + menu_pm98_a0a0b0a0a0.trigger;
     Variables.myHashMap.put(Variables.path, menu_pm98_a0a0b0a0a0);
+    menu_pm98_a0a0b0a0a0.setAction("call");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     menu_pm98_a0a0b0a0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
@@ -135,9 +136,9 @@ public class Main implements ActionListener {
 
   public static void main(String[] args) {
     initHashMap();
-    instance = new Main();
+    instance = new Main__0();
     Style.main_Greeting = "Sample Toast";
-    Main.initHashMap();
+    Main__0.initHashMap();
     initView();
     Behaviour.runInitSetup();
   }

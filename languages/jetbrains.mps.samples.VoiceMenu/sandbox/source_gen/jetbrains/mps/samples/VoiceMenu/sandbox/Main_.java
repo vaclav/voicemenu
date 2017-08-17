@@ -19,10 +19,10 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
 
-public class VoiceMenu implements ActionListener {
+public class Main_ implements ActionListener {
 
 
-  public static VoiceMenu instance;
+  public static Main_ instance;
 
   public static void initHashMap() {
 
@@ -212,9 +212,9 @@ public class VoiceMenu implements ActionListener {
 
   public static void main(String[] args) {
     initHashMap();
-    instance = new VoiceMenu();
+    instance = new Main_();
     Style.main_Greeting = "Welcome to the Home menu";
-    VoiceMenu.initHashMap();
+    Main_.initHashMap();
     initView();
     Behaviour.runInitSetup();
   }

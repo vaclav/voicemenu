@@ -319,6 +319,11 @@
         </node>
       </node>
       <node concept="l2Vlx" id="5HF1wNNZurD" role="2iSdaV" />
+      <node concept="3F0ifn" id="2w$I9I9VDzN" role="3EZMnx">
+        <node concept="ljvvj" id="2w$I9I9VDNK" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="6dQXHUGBQ5O">
@@ -639,8 +644,8 @@
       </node>
       <node concept="3F0ifn" id="2m0r6rVTw_X" role="3EZMnx">
         <property role="3F0ifm" value="Greeting: " />
-        <ref role="1k5W1q" to="ei2q:11pGboo1Ya6" resolve="HardCodedText" />
         <ref role="1ERwB7" to="ei2q:6VbSUrbOori" resolve="RemoveGreeting" />
+        <ref role="1k5W1q" to="ei2q:2w$I9I9VHjr" resolve="Greeting" />
         <node concept="pkWqt" id="2m0r6rVTzvu" role="pqm2j">
           <node concept="3clFbS" id="2m0r6rVTzvv" role="2VODD2">
             <node concept="3clFbF" id="2m0r6rVTzCF" role="3cqZAp">

@@ -84,6 +84,16 @@ public class Styles_StyleSheet {
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
     new Styles_StyleSheet.BracketsStyleClass(editorContext, node).apply(style, editorCell);
   }
+  /**
+   * 
+   * @deprecated Since MPS 3.5 use generated StyleClass
+   */
+  @Deprecated
+  public static void apply_Greeting(Style style, EditorCell editorCell) {
+    SNode node = (editorCell == null ? null : editorCell.getSNode());
+    EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
+    new Styles_StyleSheet.GreetingStyleClass(editorContext, node).apply(style, editorCell);
+  }
 
   public static class ArrowsStyleClass extends AbstractStyleClass {
     public ArrowsStyleClass(EditorContext editorContext, SNode node) {
@@ -171,6 +181,20 @@ public class Styles_StyleSheet {
     @Override
     public void apply(Style style, EditorCell editorCell) {
       style.set(StyleAttributes.SHOW_BOUNDARIES_IN, ShowBoundariesArea.GUTTER);
+    }
+
+  }
+  public static class GreetingStyleClass extends AbstractStyleClass {
+    public GreetingStyleClass(EditorContext editorContext, SNode node) {
+      super(editorContext, node);
+    }
+
+    @Override
+    public void apply(Style style, EditorCell editorCell) {
+      style.set(StyleAttributes.SHOW_BOUNDARIES_IN, ShowBoundariesArea.GUTTER);
+      style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
+      style.set(StyleAttributes.FONT_SIZE, 11);
+      style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.gray));
     }
 
   }

@@ -59,6 +59,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     if (nodeCondition_tmw21j_a2a()) {
       editorCell.addEditorCell(createRefNodeList_tmw21j_c0());
     }
+    editorCell.addEditorCell(createConstant_tmw21j_d0());
     return editorCell;
   }
   private boolean nodeCondition_tmw21j_a2a() {
@@ -152,5 +153,14 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
         }
       }
     }
+  }
+  private EditorCell createConstant_tmw21j_d0() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
+    editorCell.setCellId("Constant_tmw21j_d0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
   }
 }
