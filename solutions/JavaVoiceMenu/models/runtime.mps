@@ -277,6 +277,19 @@
         </node>
       </node>
     </node>
+    <node concept="Wx3nA" id="2w$I9Ial3De" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="started" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm1VV" id="2w$I9Ial3yY" role="1B3o_S" />
+      <node concept="3uibUv" id="2w$I9Ial3D5" role="1tU5fm">
+        <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+      </node>
+      <node concept="3clFbT" id="2w$I9Ial3HB" role="33vP2m">
+        <property role="3clFbU" value="false" />
+      </node>
+    </node>
     <node concept="Wx3nA" id="6VbSUrc4RdI" role="jymVt">
       <property role="2dlcS1" value="false" />
       <property role="2dld4O" value="false" />
@@ -1140,17 +1153,6 @@
         </node>
       </node>
     </node>
-    <node concept="Wx3nA" id="6VbSUrc4VuC" role="jymVt">
-      <property role="TrG5h" value="onRun" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3uibUv" id="6VbSUrc4VuD" role="1tU5fm">
-        <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
-      </node>
-      <node concept="3clFbT" id="6VbSUrc4VuE" role="33vP2m">
-        <property role="3clFbU" value="false" />
-      </node>
-      <node concept="3Tm1VV" id="6VbSUrc4VuF" role="1B3o_S" />
-    </node>
     <node concept="Wx3nA" id="6VbSUrc4VuG" role="jymVt">
       <property role="TrG5h" value="main_Greeting" />
       <property role="3TUv4t" value="false" />
@@ -1466,12 +1468,11 @@
                       <node concept="3clFbS" id="6VbSUrc7t5v" role="3clF47">
                         <node concept="3clFbJ" id="6VbSUrc7xJ1" role="3cqZAp">
                           <node concept="3clFbC" id="6VbSUrc7xJ2" role="3clFbw">
-                            <node concept="37vLTw" id="6VbSUrc7xJC" role="3uHU7B">
-                              <ref role="3cqZAo" node="6VbSUrc4VuC" resolve="onRun" />
+                            <node concept="10M0yZ" id="2w$I9IalaNN" role="3uHU7B">
+                              <ref role="3cqZAo" node="2w$I9Ial3De" resolve="started" />
+                              <ref role="1PxDUh" node="2Bi0dpyCD0T" resolve="Variables" />
                             </node>
-                            <node concept="3clFbT" id="6VbSUrc7xJ4" role="3uHU7w">
-                              <property role="3clFbU" value="false" />
-                            </node>
+                            <node concept="3clFbT" id="6VbSUrc7xJ4" role="3uHU7w" />
                           </node>
                           <node concept="3clFbS" id="6VbSUrc7xJ5" role="3clFbx">
                             <node concept="3clFbF" id="6VbSUrc7xJ6" role="3cqZAp">
@@ -1540,8 +1541,9 @@
                             </node>
                             <node concept="3clFbF" id="6VbSUrc7xJv" role="3cqZAp">
                               <node concept="37vLTI" id="6VbSUrc7xJw" role="3clFbG">
-                                <node concept="37vLTw" id="6VbSUrc7xK7" role="37vLTJ">
-                                  <ref role="3cqZAo" node="6VbSUrc4VuC" resolve="onRun" />
+                                <node concept="10M0yZ" id="2w$I9Ialb_C" role="37vLTJ">
+                                  <ref role="3cqZAo" node="2w$I9Ial3De" resolve="started" />
+                                  <ref role="1PxDUh" node="2Bi0dpyCD0T" resolve="Variables" />
                                 </node>
                                 <node concept="3clFbT" id="6VbSUrc7xJy" role="37vLTx">
                                   <property role="3clFbU" value="true" />
@@ -2878,6 +2880,17 @@
             <property role="3SKdUp" value="Initilization of voice output" />
           </node>
         </node>
+        <node concept="3cpWs8" id="2w$I9Iamk5a" role="3cqZAp">
+          <node concept="3cpWsn" id="2w$I9Iamk5b" role="3cpWs9">
+            <property role="TrG5h" value="wrongButtonPressed" />
+            <node concept="3uibUv" id="2w$I9Iamk5c" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+            </node>
+            <node concept="3clFbT" id="2w$I9IamlOn" role="33vP2m">
+              <property role="3clFbU" value="false" />
+            </node>
+          </node>
+        </node>
         <node concept="3SKdUt" id="5mb0yBfIcJj" role="3cqZAp">
           <node concept="3SKdUq" id="5mb0yBfIcJi" role="3SKWNk">
             <property role="3SKdUp" value="Variable to store which character was pressed" />
@@ -2957,6 +2970,16 @@
                       <property role="Xl_RC" value="is a bad option. please try again" />
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="2w$I9Iamm3D" role="3cqZAp">
+              <node concept="37vLTI" id="2w$I9IammsN" role="3clFbG">
+                <node concept="3clFbT" id="2w$I9IammxL" role="37vLTx">
+                  <property role="3clFbU" value="true" />
+                </node>
+                <node concept="37vLTw" id="2w$I9Iamm3B" role="37vLTJ">
+                  <ref role="3cqZAo" node="2w$I9Iamk5b" resolve="wrongButtonPressed" />
                 </node>
               </node>
             </node>
@@ -3356,22 +3379,34 @@
             <property role="3SKdUp" value="Handling voice output" />
           </node>
         </node>
-        <node concept="3clFbF" id="5mb0yBfIcIo" role="3cqZAp">
-          <node concept="2OqwBi" id="5mb0yBfJPhi" role="3clFbG">
-            <node concept="10M0yZ" id="5mb0yBfJPhh" role="2Oq$k0">
-              <ref role="1PxDUh" node="2Bi0dpyCD0T" resolve="Variables" />
-              <ref role="3cqZAo" node="6VbSUrc4QmS" resolve="voice" />
-            </node>
-            <node concept="liA8E" id="5mb0yBfJPhj" role="2OqNvi">
-              <ref role="37wK5l" node="6VbSUrc4N9U" resolve="addText" />
-              <node concept="2OqwBi" id="5mb0yBfJPhk" role="37wK5m">
-                <node concept="37vLTw" id="5mb0yBfJPhl" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5mb0yBfID1E" resolve="currentEvent" />
+        <node concept="3clFbJ" id="2w$I9Iamo6y" role="3cqZAp">
+          <node concept="3clFbS" id="2w$I9Iamo6$" role="3clFbx">
+            <node concept="3clFbF" id="5mb0yBfIcIo" role="3cqZAp">
+              <node concept="2OqwBi" id="5mb0yBfJPhi" role="3clFbG">
+                <node concept="10M0yZ" id="5mb0yBfJPhh" role="2Oq$k0">
+                  <ref role="1PxDUh" node="2Bi0dpyCD0T" resolve="Variables" />
+                  <ref role="3cqZAo" node="6VbSUrc4QmS" resolve="voice" />
                 </node>
-                <node concept="2OwXpG" id="5mb0yBfJPhm" role="2OqNvi">
-                  <ref role="2Oxat5" node="3_1GZis4X27" resolve="toast" />
+                <node concept="liA8E" id="5mb0yBfJPhj" role="2OqNvi">
+                  <ref role="37wK5l" node="6VbSUrc4N9U" resolve="addText" />
+                  <node concept="2OqwBi" id="5mb0yBfJPhk" role="37wK5m">
+                    <node concept="37vLTw" id="5mb0yBfJPhl" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5mb0yBfID1E" resolve="currentEvent" />
+                    </node>
+                    <node concept="2OwXpG" id="5mb0yBfJPhm" role="2OqNvi">
+                      <ref role="2Oxat5" node="3_1GZis4X27" resolve="toast" />
+                    </node>
+                  </node>
                 </node>
               </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="2w$I9IamqeN" role="3clFbw">
+            <node concept="3clFbT" id="2w$I9IamqIy" role="3uHU7w">
+              <property role="3clFbU" value="false" />
+            </node>
+            <node concept="37vLTw" id="2w$I9IampCh" role="3uHU7B">
+              <ref role="3cqZAo" node="2w$I9Iamk5b" resolve="wrongButtonPressed" />
             </node>
           </node>
         </node>

@@ -12,6 +12,7 @@ public class Variables {
   public static HashMap<String, Event> myHashMap = new HashMap<String, Event>();
   public static List<String> possibleOptList = new ArrayList<String>();
   public static myVoice voice = new myVoice();
+  public static Boolean started = false;
   public static Boolean finished = false;
   public static String main_Text;
 

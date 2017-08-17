@@ -8,11 +8,13 @@ import java.io.IOException;
 public class Behaviour {
   public static void runLogic(ActionEvent evt) throws IOException {
     // Initilization of voice output 
+    Boolean wrongButtonPressed = false;
     // Variable to store which character was pressed 
     String character = evt.getActionCommand();
     // Checking if correct option was pressed. If so Variables.path is updated 
     if (!(Variables.possibleOptList.contains(character))) {
       Variables.voice.addText(character + "is a bad option. please try again");
+      wrongButtonPressed = true;
     } else {
       Variables.path = Variables.path + character;
     }
@@ -52,7 +54,9 @@ public class Behaviour {
     }
     Style.setTextToScreen(currentEvent.name);
     // Handling voice output 
-    Variables.voice.addText(currentEvent.toast);
+    if (wrongButtonPressed == false) {
+      Variables.voice.addText(currentEvent.toast);
+    }
     Variables.voice.addText("Choose from this menu");
     // Delete all the previous possible options 
     Variables.possibleOptList.clear();
