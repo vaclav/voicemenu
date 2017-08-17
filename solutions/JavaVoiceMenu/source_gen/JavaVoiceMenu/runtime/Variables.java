@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class Variables {
 
-  public static String path;
+  public static String path = "0";
   public static HashMap<String, Event> myHashMap = new HashMap<String, Event>();
   public static List<String> possibleOptList = new ArrayList<String>();
   public static myVoice voice = new myVoice();
