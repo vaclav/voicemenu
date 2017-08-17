@@ -155,7 +155,7 @@
                 <node concept="2OqwBi" id="5HF1wNO07uH" role="33vP2m">
                   <node concept="13iPFW" id="5HF1wNO07uI" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="5lu2mvqHYg6" role="2OqNvi">
-                    <ref role="3TtcxE" to="xehl:5HF1wNNZuq8" resolve="eventsDeclTable" />
+                    <ref role="3TtcxE" to="xehl:5HF1wNNZuq8" resolve="events" />
                   </node>
                 </node>
               </node>

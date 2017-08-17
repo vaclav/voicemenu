@@ -50,6 +50,7 @@
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
+        <child id="1186403803051" name="query" index="VblUZ" />
       </concept>
       <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
         <property id="1186403771423" name="style" index="Vbekb" />
@@ -82,6 +83,9 @@
       <concept id="1139535439104" name="jetbrains.mps.lang.editor.structure.CellActionMap_ExecuteFunction" flags="in" index="1hAIg9" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
+      <concept id="1225456267680" name="jetbrains.mps.lang.editor.structure.RGBColor" flags="ng" index="1iSF2X">
+        <property id="1225456424731" name="value" index="1iTho6" />
       </concept>
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
@@ -257,7 +261,7 @@
     <node concept="3EZMnI" id="5HF1wNNZurA" role="2wV5jI">
       <property role="S$Qs1" value="true" />
       <node concept="3F2HdR" id="5lu2mvqHSYX" role="3EZMnx">
-        <ref role="1NtTu8" to="xehl:5HF1wNNZuq8" resolve="eventsDeclTable" />
+        <ref role="1NtTu8" to="xehl:5HF1wNNZuq8" resolve="events" />
         <ref role="1k5W1q" node="3yrvnjuhfbU" resolve="Brackets" />
         <node concept="2iRkQZ" id="5lu2mvqHTtc" role="2czzBx" />
         <node concept="lj46D" id="5lu2mvqHT9l" role="3F10Kt">
@@ -290,7 +294,7 @@
                 <node concept="2OqwBi" id="5lu2mvqHLJ7" role="2Oq$k0">
                   <node concept="pncrf" id="5lu2mvqHLy9" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="5lu2mvqHMfS" role="2OqNvi">
-                    <ref role="3TtcxE" to="xehl:5HF1wNNZuq8" resolve="eventsDeclTable" />
+                    <ref role="3TtcxE" to="xehl:5HF1wNNZuq8" resolve="events" />
                   </node>
                 </node>
                 <node concept="3GX2aA" id="5lu2mvqHSpd" role="2OqNvi" />
@@ -395,7 +399,7 @@
       <node concept="3F0ifn" id="2m0r6rVTw_X" role="3EZMnx">
         <property role="3F0ifm" value="Greeting: " />
         <ref role="1ERwB7" node="6VbSUrbOori" resolve="RemoveGreeting" />
-        <ref role="1k5W1q" node="2w$I9I9VHjr" resolve="Greeting" />
+        <ref role="1k5W1q" node="11pGboo1Ya6" resolve="HardCodedText" />
         <node concept="pkWqt" id="2m0r6rVTzvu" role="pqm2j">
           <node concept="3clFbS" id="2m0r6rVTzvv" role="2VODD2">
             <node concept="3clFbF" id="2m0r6rVTzCF" role="3cqZAp">
@@ -414,8 +418,8 @@
       </node>
       <node concept="3F0A7n" id="2m0r6rVTwB1" role="3EZMnx">
         <ref role="1NtTu8" to="xehl:2m0r6rVTw3R" resolve="greeting" />
-        <ref role="1k5W1q" node="11pGboo254S" resolve="UserWrittenText" />
         <ref role="1ERwB7" node="6VbSUrbOori" resolve="RemoveGreeting" />
+        <ref role="1k5W1q" node="2w$I9I9VHjr" resolve="Greeting" />
         <node concept="pkWqt" id="2m0r6rVTzTu" role="pqm2j">
           <node concept="3clFbS" id="2m0r6rVTzTv" role="2VODD2">
             <node concept="3clFbF" id="2m0r6rVTzT_" role="3cqZAp">
@@ -539,7 +543,10 @@
         <property role="1lJzqX" value="11" />
       </node>
       <node concept="VechU" id="2m0r6rVTky0" role="3F10Kt">
-        <property role="Vb096" value="gray" />
+        <property role="Vb096" value="green" />
+        <node concept="1iSF2X" id="2w$I9Ia1ZMm" role="VblUZ">
+          <property role="1iTho6" value="558B2F" />
+        </node>
       </node>
     </node>
   </node>
@@ -709,10 +716,6 @@
     <node concept="2BsEeg" id="5RYvhcTA0Hr" role="2ABdcP">
       <property role="2gpH_U" value="true" />
       <property role="TrG5h" value="tabular" />
-    </node>
-    <node concept="2BsEeg" id="5RYvhcTA0Ht" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="structural" />
     </node>
   </node>
   <node concept="24kQdi" id="5lu2mvqIsnc">

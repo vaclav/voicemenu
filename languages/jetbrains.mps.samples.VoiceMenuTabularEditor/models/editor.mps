@@ -645,7 +645,7 @@
       <node concept="3F0ifn" id="2m0r6rVTw_X" role="3EZMnx">
         <property role="3F0ifm" value="Greeting: " />
         <ref role="1ERwB7" to="ei2q:6VbSUrbOori" resolve="RemoveGreeting" />
-        <ref role="1k5W1q" to="ei2q:2w$I9I9VHjr" resolve="Greeting" />
+        <ref role="1k5W1q" to="ei2q:11pGboo1Ya6" resolve="HardCodedText" />
         <node concept="pkWqt" id="2m0r6rVTzvu" role="pqm2j">
           <node concept="3clFbS" id="2m0r6rVTzvv" role="2VODD2">
             <node concept="3clFbF" id="2m0r6rVTzCF" role="3cqZAp">
@@ -663,9 +663,9 @@
         </node>
       </node>
       <node concept="3F0A7n" id="2m0r6rVTwB1" role="3EZMnx">
-        <ref role="1k5W1q" to="ei2q:11pGboo254S" resolve="UserWrittenText" />
         <ref role="1NtTu8" to="xehl:2m0r6rVTw3R" resolve="greeting" />
         <ref role="1ERwB7" to="ei2q:6VbSUrbOori" resolve="RemoveGreeting" />
+        <ref role="1k5W1q" to="ei2q:2w$I9I9VHjr" resolve="Greeting" />
         <node concept="pkWqt" id="2m0r6rVTzTu" role="pqm2j">
           <node concept="3clFbS" id="2m0r6rVTzTv" role="2VODD2">
             <node concept="3clFbF" id="2m0r6rVTzT_" role="3cqZAp">

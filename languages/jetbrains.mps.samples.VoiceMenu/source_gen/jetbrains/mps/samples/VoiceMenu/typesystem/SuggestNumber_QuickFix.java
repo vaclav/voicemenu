@@ -41,7 +41,7 @@ public class SuggestNumber_QuickFix extends QuickFix_Runtime {
 
     List<String> usedButtons = new ArrayList<String>();
 
-    List<SNode> eventsDeclTable = SLinkOperations.getChildren(((SNode) SuggestNumber_QuickFix.this.getField("srcMenu")[0]), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "eventsDeclTable"));
+    List<SNode> eventsDeclTable = SLinkOperations.getChildren(((SNode) SuggestNumber_QuickFix.this.getField("srcMenu")[0]), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"));
 
     for (SNode event : ListSequence.fromList(eventsDeclTable)) {
       ListSequence.fromList(usedButtons).addElement(SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));

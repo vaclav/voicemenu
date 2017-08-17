@@ -24,7 +24,7 @@
         <property id="6587365532662358800" name="trigger" index="2C_Iks" />
       </concept>
       <concept id="6587365532662358792" name="jetbrains.mps.samples.VoiceMenu.structure.Menu" flags="ng" index="2C_Ik4">
-        <child id="6587365532662359688" name="eventsDeclTable" index="2C_I24" />
+        <child id="6587365532662359688" name="events" index="2C_I24" />
         <child id="6587365532662359690" name="activities" index="2C_I26" />
       </concept>
       <concept id="6587365532662629576" name="jetbrains.mps.samples.VoiceMenu.structure.WorkSpace" flags="ng" index="2Jqgb4">
@@ -303,7 +303,7 @@
   <node concept="2Jqgb4" id="2w$I9I9UGbg">
     <property role="TrG5h" value="Jet-Mobile" />
     <property role="3uoZKU" value="Hello, welcome in Jet-Mobile" />
-    <property role="1EJLKn" value="true" />
+    <property role="1EJLKn" value="false" />
     <node concept="2C_Ik4" id="2w$I9I9UGbh" role="2JqgbB">
       <node concept="2C_Ik0" id="2w$I9I9UGbk" role="2C_I24">
         <property role="2C_Iks" value="1" />
@@ -342,6 +342,7 @@
                 <property role="TrG5h" value="Summer discount" />
               </node>
               <node concept="2C_I21" id="2w$I9I9VzAc" role="2C_I26">
+                <property role="3upAMh" value="Don't worry, while waiting you will listen your calm music." />
                 <ref role="2C_gVZ" node="2w$I9I9VzA8" resolve="Summer discount" />
                 <node concept="1$pBvr" id="2w$I9I9VzAv" role="2C_gVu" />
               </node>
@@ -358,6 +359,7 @@
                 <property role="TrG5h" value="Step back" />
               </node>
               <node concept="2C_I21" id="2w$I9I9VzAD" role="2C_I26">
+                <property role="3upAMh" value="Going back to the previous menu." />
                 <ref role="2C_gVZ" node="2w$I9I9VzA_" resolve="Step back" />
                 <node concept="1$pBvp" id="2w$I9I9VzAM" role="2C_gVu" />
               </node>
@@ -368,6 +370,7 @@
             <property role="TrG5h" value="Data limit" />
           </node>
           <node concept="2C_I21" id="2w$I9I9Vz_O" role="2C_I26">
+            <property role="3upAMh" value="Take care this call will be monitored." />
             <ref role="2C_gVZ" node="2w$I9I9Vz_L" resolve="Data limit" />
             <node concept="1$pBvr" id="2w$I9I9Vz_Y" role="2C_gVu" />
           </node>
@@ -376,12 +379,14 @@
             <property role="TrG5h" value="Return to main menu" />
           </node>
           <node concept="2C_I21" id="2w$I9I9VH5u" role="2C_I26">
+            <property role="3upAMh" value="Going back to the previous menu." />
             <ref role="2C_gVZ" node="2w$I9I9VH5q" resolve="Return to main menu" />
             <node concept="1$pBvp" id="2w$I9I9VH5K" role="2C_gVu" />
           </node>
         </node>
       </node>
       <node concept="2C_I21" id="2w$I9I9URiO" role="2C_I26">
+        <property role="3upAMh" value="Since now we offer you easiest way of payment." />
         <ref role="2C_gVZ" node="2w$I9I9URir" resolve="Payment" />
         <node concept="2C_Ik4" id="2w$I9I9URjW" role="2C_gVu">
           <node concept="2C_Ik0" id="2w$I9I9URk1" role="2C_I24">
@@ -397,6 +402,7 @@
             <node concept="1$pBvq" id="2w$I9I9URkU" role="2C_gVu" />
           </node>
           <node concept="2C_I21" id="2w$I9I9URkg" role="2C_I26">
+            <property role="3upAMh" value="Now we are sending you super secret informations." />
             <ref role="2C_gVZ" node="2w$I9I9URk5" resolve="Recharging" />
             <node concept="1$pBvo" id="2w$I9I9URkR" role="2C_gVu" />
           </node>
@@ -405,6 +411,7 @@
             <property role="TrG5h" value="Payments" />
           </node>
           <node concept="2C_I21" id="2w$I9I9URkr" role="2C_I26">
+            <property role="3upAMh" value="Connecting you with a human." />
             <ref role="2C_gVZ" node="2w$I9I9URkn" resolve="Payments" />
             <node concept="1$pBvr" id="2w$I9I9URl0" role="2C_gVu" />
           </node>
@@ -413,6 +420,7 @@
             <property role="TrG5h" value="Step back" />
           </node>
           <node concept="2C_I21" id="2w$I9I9URkD" role="2C_I26">
+            <property role="3upAMh" value="Going back to the previous menu." />
             <ref role="2C_gVZ" node="2w$I9I9URk$" resolve="Step back" />
             <node concept="1$pBvp" id="2w$I9I9URkO" role="2C_gVu" />
           </node>
@@ -420,15 +428,41 @@
       </node>
       <node concept="2C_I21" id="2w$I9I9URj3" role="2C_I26">
         <ref role="2C_gVZ" node="2w$I9I9URiu" resolve="Roaming" />
-        <node concept="2fTWM$" id="2w$I9I9URj4" role="2C_gVu" />
+        <node concept="1$pBvo" id="2w$I9Ia1nTs" role="2C_gVu" />
       </node>
       <node concept="2C_I21" id="2w$I9I9URjc" role="2C_I26">
         <ref role="2C_gVZ" node="2w$I9I9URiy" resolve="News" />
-        <node concept="2fTWM$" id="2w$I9I9URjd" role="2C_gVu" />
+        <node concept="2C_Ik4" id="2w$I9Ia1nSE" role="2C_gVu">
+          <node concept="2C_Ik0" id="2w$I9Ia1nSJ" role="2C_I24">
+            <property role="2C_Iks" value="1" />
+            <property role="TrG5h" value="Summer News" />
+          </node>
+          <node concept="2C_I21" id="2w$I9Ia1nSN" role="2C_I26">
+            <ref role="2C_gVZ" node="2w$I9Ia1nSJ" resolve="Summer News" />
+            <node concept="1$pBvr" id="2w$I9Ia1nTj" role="2C_gVu" />
+          </node>
+          <node concept="2C_Ik0" id="2w$I9Ia1nSW" role="2C_I24">
+            <property role="2C_Iks" value="2" />
+            <property role="TrG5h" value="Cold News" />
+          </node>
+          <node concept="2C_I21" id="2w$I9Ia1nSZ" role="2C_I26">
+            <ref role="2C_gVZ" node="2w$I9Ia1nSW" resolve="Cold News" />
+            <node concept="1$pBvo" id="2w$I9Ia1nTm" role="2C_gVu" />
+          </node>
+          <node concept="2C_Ik0" id="2w$I9Ia1nT6" role="2C_I24">
+            <property role="2C_Iks" value="3" />
+            <property role="TrG5h" value="Step Back" />
+          </node>
+          <node concept="2C_I21" id="2w$I9Ia1nTa" role="2C_I26">
+            <property role="3upAMh" value="Going back to the previous menu." />
+            <ref role="2C_gVZ" node="2w$I9Ia1nT6" resolve="Step Back" />
+            <node concept="1$pBvp" id="2w$I9Ia1nTp" role="2C_gVu" />
+          </node>
+        </node>
       </node>
       <node concept="2C_I21" id="2w$I9I9URjn" role="2C_I26">
         <ref role="2C_gVZ" node="2w$I9I9URiB" resolve="Other requirements" />
-        <node concept="2fTWM$" id="2w$I9I9URjo" role="2C_gVu" />
+        <node concept="1$pBvq" id="2w$I9Ia1nSB" role="2C_gVu" />
       </node>
     </node>
   </node>
