@@ -20,4 +20,6 @@ Samples can be found in the Sandbox module.
 System requirements
 -------------------
 
-To build VoiceMenu from sources you need installed JetBrains MPS.
+To build Voice Menu project from sources you need installed JetBrains MPS.
+
+[![Icon_MPS](extras/mps_icon.png)](https://www.jetbrains.com/mps/)
