@@ -13,5 +13,6 @@ public class Variables {
   public static List<String> possibleOptList = new ArrayList<String>();
   public static myVoice voice = new myVoice();
   public static Boolean finished = false;
+  public static String main_Text;
 
 }

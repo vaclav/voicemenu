@@ -54,8 +54,9 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
       case 2:
         if (true) {
           // Concept: Event 
-          intentions = new IntentionFactory[1];
+          intentions = new IntentionFactory[2];
           intentions[0] = new AddEventDeclaration_Intention();
+          intentions[1] = new RemoveEvent_Intention();
         }
         break;
       case 3:
@@ -87,7 +88,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
   @NotNull
   @Override
   public Collection<IntentionFactory> getAllIntentions() {
-    IntentionFactory[] rv = new IntentionFactory[17];
+    IntentionFactory[] rv = new IntentionFactory[18];
     rv[0] = new Add_Main_Greeting_Intention();
     rv[1] = new Add_Greeting_Intention();
     rv[2] = new Remove_Greeting_Intention();
@@ -105,6 +106,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
     rv[14] = new changeToMenu_Intention();
     rv[15] = new ViewAsTabular_Intention();
     rv[16] = new ShowToolbar_Intention();
+    rv[17] = new RemoveEvent_Intention();
     return Arrays.asList(rv);
   }
   private static final ConceptSwitchIndex index_hphjzv_d0f = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d133997fdc5L), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L)).seal();

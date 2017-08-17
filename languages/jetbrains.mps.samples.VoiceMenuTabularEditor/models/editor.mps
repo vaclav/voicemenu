@@ -226,6 +226,7 @@
       <node concept="3F0ifn" id="5HF1wNNZuqz" role="3EZMnx">
         <property role="3F0ifm" value="On button:" />
         <ref role="1k5W1q" to="ei2q:11pGboo1Ya6" resolve="HardCodedText" />
+        <ref role="1ERwB7" to="ei2q:2w$I9IaaQma" resolve="RemoveEventAndActivity" />
       </node>
       <node concept="3F0A7n" id="5HF1wNNZuqD" role="3EZMnx">
         <property role="1$x2rV" value="button" />
@@ -235,6 +236,7 @@
       <node concept="3F0ifn" id="5HF1wNNZuqT" role="3EZMnx">
         <property role="3F0ifm" value=" --&gt; " />
         <ref role="1k5W1q" to="ei2q:5HF1wNO0dsR" resolve="Arrows" />
+        <ref role="1ERwB7" to="ei2q:2w$I9IaaQma" resolve="RemoveEventAndActivity" />
       </node>
       <node concept="3F0A7n" id="5HF1wNNZur3" role="3EZMnx">
         <property role="1$x2rV" value="activity" />
@@ -303,7 +305,7 @@
                 <node concept="2OqwBi" id="5lu2mvqHLJ7" role="2Oq$k0">
                   <node concept="pncrf" id="5lu2mvqHLy9" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="5lu2mvqHMfS" role="2OqNvi">
-                    <ref role="3TtcxE" to="xehl:5HF1wNNZuq8" resolve="eventsDeclTable" />
+                    <ref role="3TtcxE" to="xehl:5HF1wNNZuq8" resolve="events" />
                   </node>
                 </node>
                 <node concept="3GX2aA" id="5lu2mvqHSpd" role="2OqNvi" />
@@ -421,7 +423,7 @@
                 <ref role="3cqZAo" node="6dQXHUGBSf6" resolve="myNode" />
               </node>
               <node concept="3Tsc0h" id="6dQXHUGBXTg" role="2OqNvi">
-                <ref role="3TtcxE" to="xehl:5HF1wNNZuq8" resolve="eventsDeclTable" />
+                <ref role="3TtcxE" to="xehl:5HF1wNNZuq8" resolve="events" />
               </node>
             </node>
             <node concept="liA8E" id="6dQXHUGC43_" role="2OqNvi">
@@ -460,7 +462,7 @@
                     <ref role="3cqZAo" node="6dQXHUGBSf6" resolve="myNode" />
                   </node>
                   <node concept="3Tsc0h" id="6dQXHUGC7s8" role="2OqNvi">
-                    <ref role="3TtcxE" to="xehl:5HF1wNNZuq8" resolve="eventsDeclTable" />
+                    <ref role="3TtcxE" to="xehl:5HF1wNNZuq8" resolve="events" />
                   </node>
                 </node>
               </node>
@@ -515,7 +517,7 @@
                 <ref role="3cqZAo" node="6dQXHUGBSf6" resolve="myNode" />
               </node>
               <node concept="3Tsc0h" id="3p$ip5sLQXS" role="2OqNvi">
-                <ref role="3TtcxE" to="xehl:5HF1wNNZuq8" resolve="eventsDeclTable" />
+                <ref role="3TtcxE" to="xehl:5HF1wNNZuq8" resolve="events" />
               </node>
             </node>
             <node concept="2DeJg1" id="3p$ip5sLWI3" role="2OqNvi" />
@@ -548,7 +550,7 @@
                   <ref role="3cqZAo" node="6dQXHUGBSf6" resolve="myNode" />
                 </node>
                 <node concept="3Tsc0h" id="3p$ip5sM76_" role="2OqNvi">
-                  <ref role="3TtcxE" to="xehl:5HF1wNNZuq8" resolve="eventsDeclTable" />
+                  <ref role="3TtcxE" to="xehl:5HF1wNNZuq8" resolve="events" />
                 </node>
               </node>
             </node>

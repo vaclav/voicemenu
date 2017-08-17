@@ -287,6 +287,16 @@
         <property role="3clFbU" value="false" />
       </node>
     </node>
+    <node concept="Wx3nA" id="2w$I9Iaa2yO" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="main_Text" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm1VV" id="2w$I9Iaa2u8" role="1B3o_S" />
+      <node concept="3uibUv" id="2w$I9Iaa2ys" role="1tU5fm">
+        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="6VbSUrc4Q6f" role="jymVt" />
   </node>
   <node concept="312cEu" id="3_1GZis4X1R">
@@ -1464,8 +1474,9 @@
                             <node concept="3clFbF" id="6VbSUrc7xJ6" role="3cqZAp">
                               <node concept="1rXfSq" id="6VbSUrc7xJ7" role="3clFbG">
                                 <ref role="37wK5l" node="6VbSUrc4V$e" resolve="setTextToScreen" />
-                                <node concept="Xl_RD" id="6VbSUrc7xJ8" role="37wK5m">
-                                  <property role="Xl_RC" value="Home Menu" />
+                                <node concept="10M0yZ" id="2w$I9Iaa5Qg" role="37wK5m">
+                                  <ref role="3cqZAo" node="2w$I9Iaa2yO" resolve="main_Text" />
+                                  <ref role="1PxDUh" node="2Bi0dpyCD0T" resolve="Variables" />
                                 </node>
                               </node>
                             </node>

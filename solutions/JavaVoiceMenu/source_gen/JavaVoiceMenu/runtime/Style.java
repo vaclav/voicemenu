@@ -54,7 +54,7 @@ public class Style {
     Call.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent p0) {
         if (onRun == false) {
-          setTextToScreen("Home Menu");
+          setTextToScreen(Variables.main_Text);
           Variables.path = "0";
           Variables.voice.addText(main_Greeting);
           try {
