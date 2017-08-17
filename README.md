@@ -14,6 +14,10 @@ Modules
 
 Sample
 ------
+Samples can be found in the Sandbox module.
 
-[![MPS logo](extras/msample_code.png)]
 
+System requirements
+-------------------
+
+To build VoiceMenu from sources you need installed JetBrains MPS.
