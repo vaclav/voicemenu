@@ -1164,13 +1164,6 @@
       <property role="1hAc7j" value="delete_action_id" />
       <node concept="1hAIg9" id="2w$I9IaaQmc" role="1hA7z_">
         <node concept="3clFbS" id="2w$I9IaaQmd" role="2VODD2">
-          <node concept="3clFbH" id="2w$I9IaaQmp" role="3cqZAp" />
-          <node concept="3clFbF" id="2w$I9IaaYC4" role="3cqZAp">
-            <node concept="2OqwBi" id="2w$I9IaaYQR" role="3clFbG">
-              <node concept="0IXxy" id="2w$I9IaaYC2" role="2Oq$k0" />
-              <node concept="3YRAZt" id="2w$I9IaaZd3" role="2OqNvi" />
-            </node>
-          </node>
           <node concept="3clFbH" id="2w$I9IaaYlR" role="3cqZAp" />
           <node concept="1DcWWT" id="2w$I9Iaa_Bd" role="3cqZAp">
             <node concept="3clFbS" id="2w$I9Iaa_Bf" role="2LFqv$">
