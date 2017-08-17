@@ -6,4 +6,4 @@ This is a second editor that makes code even more readable and it is possible sw
 Sample
 ------
 
-[![Table](../extras/sample_table.png)](https://www.jetbrains.com/mps/)
+[![Table](../../extras/sample_table.png)](https://www.jetbrains.com/mps/)
