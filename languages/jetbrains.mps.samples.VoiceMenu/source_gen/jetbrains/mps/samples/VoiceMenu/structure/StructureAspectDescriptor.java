@@ -157,6 +157,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.samples.VoiceMenu", "WorkSpace", 0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L);
     b.class_(false, false, true);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.parent(0x4caf0310491e41f5L, 0x8a9b2006b3a94898L, 0x40c1a7cb987d20d5L);
     b.origin("r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)/6587365532662629576");
     b.prop("greeting", 0x25806c66fbe3905cL, "2702278965990756444");
     b.prop("toolbar", 0x366449915cdb5586L, "3919338464396137862");

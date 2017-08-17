@@ -58,7 +58,17 @@ public class Behaviour {
     Variables.possibleOptList.clear();
     // Proposing possible options consisting of next events 
     for (Event child : currentEvent.childs) {
-      Variables.voice.addText("For" + child.name + "press" + child.trigger);
+
+      String trigger;
+      if (child.trigger == "*") {
+        trigger = " star";
+      } else if (child.trigger == "#") {
+        trigger = " hash";
+      } else {
+        trigger = child.trigger;
+      }
+
+      Variables.voice.addText("For" + child.name + "press" + trigger);
       Variables.possibleOptList.add(child.trigger);
     }
     Variables.voice.speak();

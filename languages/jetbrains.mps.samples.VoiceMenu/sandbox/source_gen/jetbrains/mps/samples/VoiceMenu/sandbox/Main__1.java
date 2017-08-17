@@ -6,8 +6,8 @@ import java.awt.event.ActionListener;
 import JavaVoiceMenu.runtime.Event;
 import java.util.ArrayList;
 import JavaVoiceMenu.runtime.Variables;
-import JavaVoiceMenu.runtime.Style;
 import JavaVoiceMenu.runtime.Behaviour;
+import JavaVoiceMenu.runtime.Style;
 import java.awt.BorderLayout;
 import javax.swing.JPanel;
 import JavaVoiceMenu.runtime.Data;
@@ -50,6 +50,7 @@ public class Main__1 implements ActionListener {
     Event Summer_discount_m25aj_a0a0a0 = new Event("Summer discount", "1");
     Summer_discount_m25aj_a0a0a0.setAction("");
     Summer_discount_m25aj_a0a0a0.setGreeting("");
+    Summer_discount_m25aj_a0a0a0.setGreeting("Don't worry, while waiting you will listen your calm music.");
     Summer_discount_m25aj_a0a0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Summer_discount_m25aj_a0a0a0.trigger;
     Variables.myHashMap.put(Variables.path, Summer_discount_m25aj_a0a0a0);
@@ -68,6 +69,7 @@ public class Main__1 implements ActionListener {
     Event Step_back_m25aj_c0a0a0 = new Event("Step back", "*");
     Step_back_m25aj_c0a0a0.setAction("");
     Step_back_m25aj_c0a0a0.setGreeting("");
+    Step_back_m25aj_c0a0a0.setGreeting("Going back to the previous menu.");
     Step_back_m25aj_c0a0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Step_back_m25aj_c0a0a0.trigger;
     Variables.myHashMap.put(Variables.path, Step_back_m25aj_c0a0a0);
@@ -82,6 +84,7 @@ public class Main__1 implements ActionListener {
     Event Data_limit_m25aj_b0a0 = new Event("Data limit", "2");
     Data_limit_m25aj_b0a0.setAction("");
     Data_limit_m25aj_b0a0.setGreeting("");
+    Data_limit_m25aj_b0a0.setGreeting("Take care this call will be monitored.");
     Data_limit_m25aj_b0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Data_limit_m25aj_b0a0.trigger;
     Variables.myHashMap.put(Variables.path, Data_limit_m25aj_b0a0);
@@ -91,6 +94,7 @@ public class Main__1 implements ActionListener {
     Event Return_to_main_menu_m25aj_c0a0 = new Event("Return to main menu", "*");
     Return_to_main_menu_m25aj_c0a0.setAction("");
     Return_to_main_menu_m25aj_c0a0.setGreeting("");
+    Return_to_main_menu_m25aj_c0a0.setGreeting("Going back to the previous menu.");
     Return_to_main_menu_m25aj_c0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Return_to_main_menu_m25aj_c0a0.trigger;
     Variables.myHashMap.put(Variables.path, Return_to_main_menu_m25aj_c0a0);
@@ -105,6 +109,7 @@ public class Main__1 implements ActionListener {
     Event Payment_m25aj_b0 = new Event("Payment", "2");
     Payment_m25aj_b0.setAction("");
     Payment_m25aj_b0.setGreeting("");
+    Payment_m25aj_b0.setGreeting("Since now we offer you easiest way of payment.");
     Payment_m25aj_b0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Payment_m25aj_b0.trigger;
     Variables.myHashMap.put(Variables.path, Payment_m25aj_b0);
@@ -120,6 +125,7 @@ public class Main__1 implements ActionListener {
     Event Recharging_m25aj_b0b0 = new Event("Recharging", "2");
     Recharging_m25aj_b0b0.setAction("");
     Recharging_m25aj_b0b0.setGreeting("");
+    Recharging_m25aj_b0b0.setGreeting("Now we are sending you super secret informations.");
     Recharging_m25aj_b0b0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Recharging_m25aj_b0b0.trigger;
     Variables.myHashMap.put(Variables.path, Recharging_m25aj_b0b0);
@@ -129,6 +135,7 @@ public class Main__1 implements ActionListener {
     Event Payments_m25aj_c0b0 = new Event("Payments", "3");
     Payments_m25aj_c0b0.setAction("");
     Payments_m25aj_c0b0.setGreeting("");
+    Payments_m25aj_c0b0.setGreeting("Connecting you with a human.");
     Payments_m25aj_c0b0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Payments_m25aj_c0b0.trigger;
     Variables.myHashMap.put(Variables.path, Payments_m25aj_c0b0);
@@ -138,6 +145,7 @@ public class Main__1 implements ActionListener {
     Event Step_back_m25aj_d0b0 = new Event("Step back", "*");
     Step_back_m25aj_d0b0.setAction("");
     Step_back_m25aj_d0b0.setGreeting("");
+    Step_back_m25aj_d0b0.setGreeting("Going back to the previous menu.");
     Step_back_m25aj_d0b0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Step_back_m25aj_d0b0.trigger;
     Variables.myHashMap.put(Variables.path, Step_back_m25aj_d0b0);
@@ -186,6 +194,7 @@ public class Main__1 implements ActionListener {
     Event Step_Back_m25aj_c0d0 = new Event("Step Back", "3");
     Step_Back_m25aj_c0d0.setAction("");
     Step_Back_m25aj_c0d0.setGreeting("");
+    Step_Back_m25aj_c0d0.setGreeting("Going back to the previous menu.");
     Step_Back_m25aj_c0d0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Step_Back_m25aj_c0d0.trigger;
     Variables.myHashMap.put(Variables.path, Step_Back_m25aj_c0d0);
@@ -217,7 +226,6 @@ public class Main__1 implements ActionListener {
   public static void main(String[] args) {
     initHashMap();
     instance = new Main__1();
-    Style.main_Greeting = "Hello, welcome in Jet-Mobile";
     Main__1.initHashMap();
     initView();
     Behaviour.runInitSetup();
@@ -226,7 +234,7 @@ public class Main__1 implements ActionListener {
   public static void initView() {
     Style.setContent();
     addButtons(Style.myPanelOfButtons);
-    Style.frame.add(Style.myPanelOfButtons, BorderLayout.SOUTH);
+    Style.myPhone.add(Style.myPanelOfButtons, BorderLayout.SOUTH);
     Style.setFrame();
   }
 
@@ -243,7 +251,7 @@ public class Main__1 implements ActionListener {
   }
   @Override
   public void actionPerformed(ActionEvent event) {
-    if (!((Variables.path == null || Variables.path.length() == 0))) {
+    if (!((Variables.path == null || Variables.path.length() == 0)) || Variables.finished == true) {
       try {
         Behaviour.runLogic(event);
       } catch (IOException e) {

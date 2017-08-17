@@ -6,8 +6,8 @@ import java.awt.event.ActionListener;
 import JavaVoiceMenu.runtime.Event;
 import java.util.ArrayList;
 import JavaVoiceMenu.runtime.Variables;
-import JavaVoiceMenu.runtime.Style;
 import JavaVoiceMenu.runtime.Behaviour;
+import JavaVoiceMenu.runtime.Style;
 import java.awt.BorderLayout;
 import javax.swing.JPanel;
 import JavaVoiceMenu.runtime.Data;
@@ -137,7 +137,6 @@ public class Main__0 implements ActionListener {
   public static void main(String[] args) {
     initHashMap();
     instance = new Main__0();
-    Style.main_Greeting = "Sample Toast";
     Main__0.initHashMap();
     initView();
     Behaviour.runInitSetup();
@@ -146,7 +145,7 @@ public class Main__0 implements ActionListener {
   public static void initView() {
     Style.setContent();
     addButtons(Style.myPanelOfButtons);
-    Style.frame.add(Style.myPanelOfButtons, BorderLayout.SOUTH);
+    Style.myPhone.add(Style.myPanelOfButtons, BorderLayout.SOUTH);
     Style.setFrame();
   }
 
@@ -163,7 +162,7 @@ public class Main__0 implements ActionListener {
   }
   @Override
   public void actionPerformed(ActionEvent event) {
-    if (!((Variables.path == null || Variables.path.length() == 0))) {
+    if (!((Variables.path == null || Variables.path.length() == 0)) || Variables.finished == true) {
       try {
         Behaviour.runLogic(event);
       } catch (IOException e) {

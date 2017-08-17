@@ -303,7 +303,7 @@
   <node concept="2Jqgb4" id="2w$I9I9UGbg">
     <property role="TrG5h" value="Jet-Mobile" />
     <property role="3uoZKU" value="Hello, welcome in Jet-Mobile" />
-    <property role="1EJLKn" value="false" />
+    <property role="1EJLKn" value="true" />
     <node concept="2C_Ik4" id="2w$I9I9UGbh" role="2JqgbB">
       <node concept="2C_Ik0" id="2w$I9I9UGbk" role="2C_I24">
         <property role="2C_Iks" value="1" />
