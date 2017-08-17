@@ -1,10 +1,10 @@
 Voice Menu - Java Generator
 ==========================
 
+Generation of Java code from domain specific language
+
 Sample
 ------
-
-Sample of generated Java code from domain specific language
 
 ```java
 
