@@ -30,6 +30,7 @@ public class Main__1 implements ActionListener {
     Home.setAction("");
     Home.setGreeting("Hello, welcome in Jet-Mobile");
     Home.childs = new ArrayList<Event>();
+    Variables.main_Text = "Jet-Mobile";
     Variables.myHashMap.put("0", Home);
 
 
