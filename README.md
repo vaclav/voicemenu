@@ -15,4 +15,5 @@ Modules
 Sample
 ------
 
+[![MPS logo](extras/mps_icon.png)]
 
