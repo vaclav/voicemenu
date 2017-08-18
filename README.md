@@ -22,4 +22,6 @@ System requirements
 
 To build Voice Menu project from sources you need installed JetBrains MPS. Voices in java example are available on Mac.
 
-[![Icon_MPS](extras/mps_icon.png)](https://www.jetbrains.com/mps/)
+----------
+
+[![Icon_MPS](extras/logo_MPS.png)](https://www.jetbrains.com/mps/)
