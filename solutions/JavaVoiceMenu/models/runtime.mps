@@ -190,7 +190,23 @@
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
     </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -202,7 +218,6 @@
     <property role="1sVAO0" value="false" />
     <property role="1EXbeo" value="false" />
     <node concept="3Tm1VV" id="2Bi0dpyCD0U" role="1B3o_S" />
-    <node concept="2tJIrI" id="2Bi0dpyJ7vJ" role="jymVt" />
     <node concept="Wx3nA" id="2Bi0dpyCD0V" role="jymVt">
       <property role="TrG5h" value="path" />
       <property role="3TUv4t" value="false" />
@@ -212,6 +227,13 @@
       <node concept="3Tm1VV" id="2Bi0dpyCD0X" role="1B3o_S" />
       <node concept="Xl_RD" id="2w$I9Iaib90" role="33vP2m">
         <property role="Xl_RC" value="0" />
+      </node>
+      <node concept="z59LJ" id="5Toe17L891$" role="lGtFl">
+        <node concept="TZ5HA" id="5Toe17L891_" role="TZ5H$">
+          <node concept="1dT_AC" id="5Toe17L891A" role="1dT_Ay">
+            <property role="1dT_AB" value="shared variables" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="Wx3nA" id="2Bi0dpyCLQo" role="jymVt">
@@ -330,6 +352,13 @@
         <ref role="3uigEE" to="wyt6:~String" resolve="String" />
       </node>
       <node concept="3Tm1VV" id="3_1GZis4X4g" role="1B3o_S" />
+      <node concept="z59LJ" id="5Toe17L8baD" role="lGtFl">
+        <node concept="TZ5HA" id="5Toe17L8baE" role="TZ5H$">
+          <node concept="1dT_AC" id="5Toe17L8baF" role="1dT_Ay">
+            <property role="1dT_AB" value="Event class holds all informations of current state" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="312cEg" id="3_1GZis4X1W" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -377,7 +406,13 @@
     <node concept="2tJIrI" id="2aqfKAeyzrL" role="jymVt" />
     <node concept="3clFbW" id="2aqfKAeyz_o" role="jymVt">
       <node concept="3cqZAl" id="2aqfKAeyz_p" role="3clF45" />
-      <node concept="3clFbS" id="2aqfKAeyz_r" role="3clF47" />
+      <node concept="3clFbS" id="2aqfKAeyz_r" role="3clF47">
+        <node concept="3SKdUt" id="5Toe17L8ckQ" role="3cqZAp">
+          <node concept="3SKdUq" id="5Toe17L8ckR" role="3SKWNk">
+            <property role="3SKdUp" value="empty" />
+          </node>
+        </node>
+      </node>
       <node concept="3Tm1VV" id="2aqfKAeyzuT" role="1B3o_S" />
     </node>
     <node concept="3clFbW" id="2aqfKAeyzCe" role="jymVt">
@@ -550,6 +585,13 @@
           <ref role="3uigEE" to="wyt6:~String" resolve="String" />
         </node>
       </node>
+      <node concept="P$JXv" id="5Toe17L8es6" role="lGtFl">
+        <node concept="TZ5HA" id="5Toe17L8es7" role="TZ5H$">
+          <node concept="1dT_AC" id="5Toe17L8es8" role="1dT_Ay">
+            <property role="1dT_AB" value="set full informations about state" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3clFb_" id="2aqfKAeyGS9" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -585,6 +627,13 @@
           <ref role="3uigEE" to="wyt6:~String" resolve="String" />
         </node>
       </node>
+      <node concept="P$JXv" id="5Toe17L8f52" role="lGtFl">
+        <node concept="TZ5HA" id="5Toe17L8f53" role="TZ5H$">
+          <node concept="1dT_AC" id="5Toe17L8f54" role="1dT_Ay">
+            <property role="1dT_AB" value="set specific informations for Action" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3clFb_" id="2aqfKAeyJTf" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -618,6 +667,13 @@
         <property role="TrG5h" value="greeting" />
         <node concept="3uibUv" id="2aqfKAeyK7w" role="1tU5fm">
           <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="5Toe17L8fI4" role="lGtFl">
+        <node concept="TZ5HA" id="5Toe17L8fI5" role="TZ5H$">
+          <node concept="1dT_AC" id="5Toe17L8fI6" role="1dT_Ay">
+            <property role="1dT_AB" value="set greeting for action" />
+          </node>
         </node>
       </node>
     </node>
@@ -658,6 +714,13 @@
           </node>
         </node>
       </node>
+      <node concept="P$JXv" id="5Toe17L8gnc" role="lGtFl">
+        <node concept="TZ5HA" id="5Toe17L8gnd" role="TZ5H$">
+          <node concept="1dT_AC" id="5Toe17L8gne" role="1dT_Ay">
+            <property role="1dT_AB" value="set specific informations for Menu" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="2aqfKAeyPfq" role="jymVt" />
     <node concept="2tJIrI" id="2aqfKAey$Jk" role="jymVt" />
@@ -669,7 +732,7 @@
     <property role="2bfB8j" value="true" />
     <property role="1sVAO0" value="false" />
     <property role="1EXbeo" value="false" />
-    <node concept="2tJIrI" id="2Bi0dpyLKqb" role="jymVt" />
+    <node concept="2tJIrI" id="5Toe17L8juK" role="jymVt" />
     <node concept="3Tm1VV" id="3_1GZis4YSg" role="1B3o_S" />
     <node concept="Qs71p" id="3_1GZis4YSh" role="jymVt">
       <property role="TrG5h" value="Status" />
@@ -761,6 +824,7 @@
           <property role="Xl_RC" value="#" />
         </node>
       </node>
+      <node concept="2tJIrI" id="5Toe17L8jqr" role="jymVt" />
       <node concept="312cEg" id="3_1GZis4YSR" role="jymVt">
         <property role="34CwA1" value="false" />
         <property role="eg7rD" value="false" />
@@ -798,6 +862,11 @@
           </node>
         </node>
         <node concept="3Tm6S6" id="3_1GZis5xjH" role="1B3o_S" />
+        <node concept="P$JXv" id="5Toe17L8jjw" role="lGtFl">
+          <node concept="TZ5HA" id="5Toe17L8jjx" role="TZ5H$">
+            <node concept="1dT_AC" id="5Toe17L8jjy" role="1dT_Ay" />
+          </node>
+        </node>
       </node>
       <node concept="3clFb_" id="3_1GZis4YT6" role="jymVt">
         <property role="TrG5h" value="getCode" />
@@ -888,6 +957,7 @@
       </node>
       <node concept="3Tm1VV" id="6VbSUrc4N9M" role="1B3o_S" />
     </node>
+    <node concept="2tJIrI" id="5Toe17L82VC" role="jymVt" />
     <node concept="3clFbW" id="6VbSUrc4N9N" role="jymVt">
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
@@ -901,6 +971,14 @@
             <node concept="1rXfSq" id="6VbSUrc4N9T" role="37vLTx">
               <ref role="37wK5l" node="6VbSUrc4Na$" resolve="getVoice" />
             </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5Toe17L82Uo" role="1B3o_S" />
+      <node concept="P$JXv" id="5Toe17L83_s" role="lGtFl">
+        <node concept="TZ5HA" id="5Toe17L83_t" role="TZ5H$">
+          <node concept="1dT_AC" id="5Toe17L83_u" role="1dT_Ay">
+            <property role="1dT_AB" value="default constuctor" />
           </node>
         </node>
       </node>
@@ -943,6 +1021,13 @@
       <node concept="3uibUv" id="6VbSUrc4Na9" role="3clF45">
         <ref role="3uigEE" node="6VbSUrc4N9u" resolve="myVoice" />
       </node>
+      <node concept="P$JXv" id="5Toe17L83VP" role="lGtFl">
+        <node concept="TZ5HA" id="5Toe17L83VQ" role="TZ5H$">
+          <node concept="1dT_AC" id="5Toe17L83VR" role="1dT_Ay">
+            <property role="1dT_AB" value="set text to speak" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3clFb_" id="6VbSUrc4Naa" role="jymVt">
       <property role="TrG5h" value="speak" />
@@ -979,6 +1064,13 @@
       </node>
       <node concept="3Tm1VV" id="6VbSUrc4Nam" role="1B3o_S" />
       <node concept="3cqZAl" id="6VbSUrc4Nan" role="3clF45" />
+      <node concept="P$JXv" id="5Toe17L85Q7" role="lGtFl">
+        <node concept="TZ5HA" id="5Toe17L85Q8" role="TZ5H$">
+          <node concept="1dT_AC" id="5Toe17L85Q9" role="1dT_Ay">
+            <property role="1dT_AB" value="run speak" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3clFb_" id="6VbSUrc4Nao" role="jymVt">
       <property role="TrG5h" value="changeVoice" />
@@ -1014,6 +1106,13 @@
       </node>
       <node concept="3Tm1VV" id="6VbSUrc4Nay" role="1B3o_S" />
       <node concept="3cqZAl" id="6VbSUrc4Naz" role="3clF45" />
+      <node concept="P$JXv" id="5Toe17L86tq" role="lGtFl">
+        <node concept="TZ5HA" id="5Toe17L86tr" role="TZ5H$">
+          <node concept="1dT_AC" id="5Toe17L86ts" role="1dT_Ay">
+            <property role="1dT_AB" value="switch voices" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3clFb_" id="6VbSUrc4Na$" role="jymVt">
       <property role="TrG5h" value="getVoice" />
@@ -1048,6 +1147,13 @@
       <node concept="3uibUv" id="6VbSUrc4NaM" role="3clF45">
         <ref role="3uigEE" to="wyt6:~String" resolve="String" />
       </node>
+      <node concept="P$JXv" id="5Toe17L874L" role="lGtFl">
+        <node concept="TZ5HA" id="5Toe17L874M" role="TZ5H$">
+          <node concept="1dT_AC" id="5Toe17L874N" role="1dT_Ay">
+            <property role="1dT_AB" value="func to decide what language use next" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="6VbSUrc4Vua">
@@ -1076,6 +1182,13 @@
           </node>
           <node concept="3cmrfG" id="6VbSUrc55j$" role="37wK5m">
             <property role="3cmrfH" value="8" />
+          </node>
+        </node>
+      </node>
+      <node concept="z59LJ" id="5Toe17L8a2Z" role="lGtFl">
+        <node concept="TZ5HA" id="5Toe17L8a30" role="TZ5H$">
+          <node concept="1dT_AC" id="5Toe17L8a31" role="1dT_Ay">
+            <property role="1dT_AB" value="program UI" />
           </node>
         </node>
       </node>
@@ -1428,14 +1541,9 @@
         </node>
       </node>
       <node concept="3clFbS" id="6VbSUrc4VvW" role="3clF47">
-        <node concept="3SKdUt" id="6VbSUrc4VAA" role="3cqZAp">
-          <node concept="3SKdUq" id="6VbSUrc4VA_" role="3SKWNk">
-            <property role="3SKdUp" value="voice init" />
-          </node>
-        </node>
-        <node concept="3SKdUt" id="6VbSUrc4VAC" role="3cqZAp">
-          <node concept="3SKdUq" id="6VbSUrc4VAB" role="3SKWNk">
-            <property role="3SKdUp" value="Greetings of Home menu" />
+        <node concept="3SKdUt" id="5Toe17L81$C" role="3cqZAp">
+          <node concept="3SKdUq" id="5Toe17L81$D" role="3SKWNk">
+            <property role="3SKdUp" value="set Call button onClick actions" />
           </node>
         </node>
         <node concept="3clFbF" id="6VbSUrc7o87" role="3cqZAp">
@@ -1560,6 +1668,11 @@
             </node>
           </node>
         </node>
+        <node concept="3SKdUt" id="5Toe17L80Ip" role="3cqZAp">
+          <node concept="3SKdUq" id="5Toe17L80Ir" role="3SKWNk">
+            <property role="3SKdUp" value="set End button onClick actions" />
+          </node>
+        </node>
         <node concept="3clFbF" id="6VbSUrc7LU6" role="3cqZAp">
           <node concept="2OqwBi" id="6VbSUrc7P39" role="3clFbG">
             <node concept="37vLTw" id="6VbSUrc7LU4" role="2Oq$k0">
@@ -1617,6 +1730,11 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="5Toe17L8144" role="3cqZAp">
+          <node concept="3SKdUq" id="5Toe17L8145" role="3SKWNk">
+            <property role="3SKdUp" value="set Home button onClick actions" />
           </node>
         </node>
         <node concept="3clFbF" id="6VbSUrc8sBK" role="3cqZAp">

@@ -152,28 +152,28 @@
     <property role="EcuMT" value="6772988411135920840" />
     <property role="TrG5h" value="Call" />
     <property role="3GE5qa" value="RealActions" />
-    <property role="34LRSv" value="direct call" />
+    <property role="34LRSv" value="Direct call" />
     <ref role="1TJDcQ" node="5RYvhcT_ZR5" resolve="Action" />
   </node>
   <node concept="1TIwiD" id="5RYvhcTA0F9">
     <property role="EcuMT" value="6772988411135920841" />
     <property role="TrG5h" value="Other" />
     <property role="3GE5qa" value="RealActions" />
-    <property role="34LRSv" value="other" />
+    <property role="34LRSv" value="Other" />
     <ref role="1TJDcQ" node="5RYvhcT_ZR5" resolve="Action" />
   </node>
   <node concept="1TIwiD" id="5RYvhcTA0Fa">
     <property role="EcuMT" value="6772988411135920842" />
     <property role="TrG5h" value="Back" />
     <property role="3GE5qa" value="RealActions" />
-    <property role="34LRSv" value="back" />
+    <property role="34LRSv" value="Back" />
     <ref role="1TJDcQ" node="5RYvhcT_ZR5" resolve="Action" />
   </node>
   <node concept="1TIwiD" id="5RYvhcTA0Fb">
     <property role="EcuMT" value="6772988411135920843" />
     <property role="TrG5h" value="GetInfo" />
     <property role="3GE5qa" value="RealActions" />
-    <property role="34LRSv" value="get info" />
+    <property role="34LRSv" value="Det informations" />
     <ref role="1TJDcQ" node="5RYvhcT_ZR5" resolve="Action" />
   </node>
   <node concept="1TIwiD" id="5lu2mvqIooX">

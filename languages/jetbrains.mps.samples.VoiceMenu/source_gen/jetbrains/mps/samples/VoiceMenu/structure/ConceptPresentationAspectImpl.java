@@ -42,14 +42,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Back:
         if (props_Back == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("back");
+          cpb.rawPresentation("Back");
           props_Back = cpb.create();
         }
         return props_Back;
       case LanguageConceptSwitch.Call:
         if (props_Call == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("direct call");
+          cpb.rawPresentation("Direct call");
           props_Call = cpb.create();
         }
         return props_Call;
@@ -76,7 +76,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.GetInfo:
         if (props_GetInfo == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("get info");
+          cpb.rawPresentation("Det informations");
           props_GetInfo = cpb.create();
         }
         return props_GetInfo;
@@ -90,7 +90,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Other:
         if (props_Other == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("other");
+          cpb.rawPresentation("Other");
           props_Other = cpb.create();
         }
         return props_Other;
