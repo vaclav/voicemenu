@@ -26,3 +26,24 @@ Event Home = new Event("Sample", "0");
 
     Home.childs.add(Sample_Activity_kf1bs5_a0);
 ```
+
+Select Generator
+---------
+
+Choose the generator which suits your needs:
+
+* Right click on Solution model (sandbox) and choose Model Properties
+* Select target language in Model Properties --> Advanced --> Languages engaged on generation 
+
+
+   [![sandbox_menu](../../extras/sandbox_menu.png)](https://www.jetbrains.com/mps/)
+   
+   
+* Possible target languages:      
+```
+    jetbrains.mps.samples.VoiceMenuToJava
+    jetbrains.mps.samples.VoiceMenuToXML
+    jetbrains.mps.samples.VoiceMenuToHTML
+```
+* Click on blue button OK
+* Rebuild the Solution Model
