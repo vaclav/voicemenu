@@ -1,6 +1,8 @@
 # Voice Menu
 
-A voice menu language and simulator using JetBrains MPS
+A voice menu language and simulator using JetBrains MPS.
+
+This project is generated into 3 different languages. First of them is HTML which is simply readable and represents visualised structured of the project. Second is XML which serves as prepared code for further machine processing. And the last one is Java to provide executable .jar file to demonstrate real behaviour of voice menu
 
 
 Modules
