@@ -10,12 +10,16 @@ Modules
 * [Tabular Editor](https://github.com/vaclav/voicemenu/tree/master/languages/jetbrains.mps.samples.VoiceMenuTabularEditor) - Extension for basic editor
 * [XML Generator](https://github.com/vaclav/voicemenu/tree/master/languages/jetbrains.mps.samples.VoiceMenuToXML) - Generation of XML file
 * [HTML Generator](https://github.com/vaclav/voicemenu/tree/master/languages/jetbrains.mps.samples.VoiceMenuToHTML_2) - Generation of HTML usable as visual documentation of the structure
-* [JAVA Generator](https://github.com/vaclav/voicemenu/tree/master/languages/jetbrains.mps.samples.VoiceMenuToJava) - Generation of runable application as Demonstration Example
+* [Java Generator](https://github.com/vaclav/voicemenu/tree/master/languages/jetbrains.mps.samples.VoiceMenuToJava) - Generation of runable application as Demonstration Example
 
 Sample
 ------
 Samples can be found in the Sandbox module.
 
+Licence
+-------
+
+MPS is licensed under the Apache 2 open-source license. See the [Licence](https://github.com/vaclav/voicemenu/blob/master/LICENSE) for full details.
 
 System requirements
 -------------------
