@@ -9,21 +9,37 @@ public class myVoice {
   public String Alex = "Say ";
   public String text;
   public Boolean voice = false;
-  /*package*/ myVoice() {
+
+  /**
+   * default constuctor
+   */
+  public myVoice() {
     text = getVoice();
   }
+  /**
+   * set text to speak
+   */
   public myVoice addText(String text) {
     this.text += text + ", ";
     return this;
   }
+  /**
+   * run speak
+   */
   public void speak() throws IOException {
     Runtime.getRuntime().exec(text);
     text = getVoice();
   }
+  /**
+   * switch voices
+   */
   public void changeVoice() {
     voice = !(voice);
     System.out.println(getVoice());
   }
+  /**
+   * func to decide what language use next
+   */
   private String getVoice() {
     if (!(voice)) {
       return Samantha;

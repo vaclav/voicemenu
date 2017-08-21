@@ -81,7 +81,7 @@
             <node concept="2C_Ik4" id="32qkFwBvH$o" role="2C_gVu">
               <node concept="2C_I21" id="32qkFwBvH$x" role="2C_I26">
                 <ref role="2C_gVZ" node="32qkFwBvH$r" resolve="jdu zpet" />
-                <node concept="2fTWM$" id="6nPYyO4pP7l" role="2C_gVu" />
+                <node concept="1$pBvp" id="1dkJyTcGzmz" role="2C_gVu" />
               </node>
               <node concept="2C_Ik0" id="32qkFwBvH$r" role="2C_I24">
                 <property role="2C_Iks" value="#" />
@@ -283,7 +283,7 @@
               <node concept="2C_I21" id="2w$I9I9VzAD" role="2C_I26">
                 <property role="3upAMh" value="Going back to the previous menu." />
                 <ref role="2C_gVZ" node="2w$I9I9VzA_" resolve="Step back" />
-                <node concept="2fTWM$" id="5Toe17LagRv" role="2C_gVu" />
+                <node concept="2fTWM$" id="1dkJyTcIcla" role="2C_gVu" />
               </node>
             </node>
           </node>

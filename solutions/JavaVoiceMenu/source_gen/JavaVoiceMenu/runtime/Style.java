@@ -24,6 +24,9 @@ import java.awt.Toolkit;
 import javax.swing.WindowConstants;
 
 public class Style {
+  /**
+   * program UI
+   */
   public static JTextArea myScreen = new JTextArea("", 3, 8);
   public static JFrame frame = new JFrame("JetPhone");
 
@@ -48,8 +51,7 @@ public class Style {
     Variables.voice.speak();
   }
   private static void addListeners(JButton Call, JButton End, JButton ChangeVoice) {
-    // voice init 
-    // Greetings of Home menu 
+    // set Call button onClick actions 
     Call.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent p0) {
         if (Variables.started == false) {
@@ -65,12 +67,14 @@ public class Style {
         }
       }
     });
+    // set End button onClick actions 
     End.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent p0) {
         System.out.println("Terminating program");
         System.exit(0);
       }
     });
+    // set Home button onClick actions 
     ChangeVoice.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent p0) {
         Variables.voice.changeVoice();

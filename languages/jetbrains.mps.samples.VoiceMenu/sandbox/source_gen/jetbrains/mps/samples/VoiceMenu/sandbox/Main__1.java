@@ -74,7 +74,6 @@ public class Main__1 implements ActionListener {
     Step_back_m25aj_c0a0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + Step_back_m25aj_c0a0a0.trigger;
     Variables.myHashMap.put(Variables.path, Step_back_m25aj_c0a0a0);
-    Step_back_m25aj_c0a0a0.setAction("back");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     Step_back_m25aj_c0a0a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
