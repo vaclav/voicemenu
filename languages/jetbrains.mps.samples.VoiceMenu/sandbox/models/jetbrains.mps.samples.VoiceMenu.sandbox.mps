@@ -253,11 +253,11 @@
         <node concept="2C_Ik4" id="2w$I9I9URl3" role="2C_gVu">
           <node concept="2C_Ik0" id="2w$I9I9URl8" role="2C_I24">
             <property role="2C_Iks" value="1" />
-            <property role="TrG5h" value="Discont" />
+            <property role="TrG5h" value="Discount" />
           </node>
           <node concept="2C_I21" id="2w$I9I9URlc" role="2C_I26">
             <property role="3upAMh" value="Welcome in section of discounts, here is everything cheaper." />
-            <ref role="2C_gVZ" node="2w$I9I9URl8" resolve="Discont" />
+            <ref role="2C_gVZ" node="2w$I9I9URl8" resolve="Discount" />
             <node concept="2C_Ik4" id="2w$I9I9VzA3" role="2C_gVu">
               <node concept="2C_Ik0" id="2w$I9I9VzA8" role="2C_I24">
                 <property role="2C_Iks" value="1" />
@@ -266,7 +266,7 @@
               <node concept="2C_I21" id="2w$I9I9VzAc" role="2C_I26">
                 <property role="3upAMh" value="Don't worry, while waiting you will listen your calm music." />
                 <ref role="2C_gVZ" node="2w$I9I9VzA8" resolve="Summer discount" />
-                <node concept="1$pBvr" id="2w$I9I9VzAv" role="2C_gVu" />
+                <node concept="1$pBvr" id="8wgnLrcQ0R" role="2C_gVu" />
               </node>
               <node concept="2C_Ik0" id="2w$I9I9VzAl" role="2C_I24">
                 <property role="2C_Iks" value="2" />
@@ -283,7 +283,7 @@
               <node concept="2C_I21" id="2w$I9I9VzAD" role="2C_I26">
                 <property role="3upAMh" value="Going back to the previous menu." />
                 <ref role="2C_gVZ" node="2w$I9I9VzA_" resolve="Step back" />
-                <node concept="2fTWM$" id="5Toe17LagRv" role="2C_gVu" />
+                <node concept="1$pBvp" id="8wgnLrdSuJ" role="2C_gVu" />
               </node>
             </node>
           </node>

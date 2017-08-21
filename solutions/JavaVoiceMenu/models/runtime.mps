@@ -3072,6 +3072,73 @@
             </node>
           </node>
           <node concept="3clFbS" id="5mb0yBfIcGD" role="3clFbx">
+            <node concept="3cpWs8" id="8wgnLrdfvi" role="3cqZAp">
+              <node concept="3cpWsn" id="8wgnLrdfvj" role="3cpWs9">
+                <property role="TrG5h" value="charToRead" />
+                <node concept="3uibUv" id="8wgnLrdfvk" role="1tU5fm">
+                  <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="8wgnLrdbhh" role="3cqZAp">
+              <node concept="3clFbS" id="8wgnLrdbhj" role="3clFbx">
+                <node concept="3clFbF" id="8wgnLrdcH$" role="3cqZAp">
+                  <node concept="37vLTI" id="8wgnLrddEF" role="3clFbG">
+                    <node concept="37vLTw" id="8wgnLrdhYu" role="37vLTJ">
+                      <ref role="3cqZAo" node="8wgnLrdfvj" resolve="charToRead" />
+                    </node>
+                    <node concept="Xl_RD" id="8wgnLrdd1Z" role="37vLTx">
+                      <property role="Xl_RC" value="star " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbC" id="8wgnLrdcmj" role="3clFbw">
+                <node concept="Xl_RD" id="8wgnLrdcru" role="3uHU7w">
+                  <property role="Xl_RC" value="*" />
+                </node>
+                <node concept="37vLTw" id="8wgnLrdbJE" role="3uHU7B">
+                  <ref role="3cqZAo" node="5mb0yBfIeBx" resolve="character" />
+                </node>
+              </node>
+              <node concept="3eNFk2" id="8wgnLrdhaD" role="3eNLev">
+                <node concept="3clFbC" id="8wgnLrdhBe" role="3eO9$A">
+                  <node concept="Xl_RD" id="8wgnLrdhGq" role="3uHU7w">
+                    <property role="Xl_RC" value="#" />
+                  </node>
+                  <node concept="37vLTw" id="8wgnLrdhni" role="3uHU7B">
+                    <ref role="3cqZAo" node="5mb0yBfIeBx" resolve="character" />
+                  </node>
+                </node>
+                <node concept="3clFbS" id="8wgnLrdhaF" role="3eOfB_">
+                  <node concept="3clFbF" id="8wgnLrdi73" role="3cqZAp">
+                    <node concept="37vLTI" id="8wgnLrdih7" role="3clFbG">
+                      <node concept="Xl_RD" id="8wgnLrdimf" role="37vLTx">
+                        <property role="Xl_RC" value="hash" />
+                      </node>
+                      <node concept="37vLTw" id="8wgnLrdi72" role="37vLTJ">
+                        <ref role="3cqZAo" node="8wgnLrdfvj" resolve="charToRead" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="9aQIb" id="8wgnLrdi$e" role="9aQIa">
+                <node concept="3clFbS" id="8wgnLrdi$f" role="9aQI4">
+                  <node concept="3clFbF" id="8wgnLrdiKK" role="3cqZAp">
+                    <node concept="37vLTI" id="8wgnLrdiUO" role="3clFbG">
+                      <node concept="37vLTw" id="8wgnLrdj7q" role="37vLTx">
+                        <ref role="3cqZAo" node="5mb0yBfIeBx" resolve="character" />
+                      </node>
+                      <node concept="37vLTw" id="8wgnLrdiKJ" role="37vLTJ">
+                        <ref role="3cqZAo" node="8wgnLrdfvj" resolve="charToRead" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="8wgnLrdgTo" role="3cqZAp" />
             <node concept="3clFbF" id="5mb0yBfIlUJ" role="3cqZAp">
               <node concept="2OqwBi" id="5mb0yBfIncf" role="3clFbG">
                 <node concept="10M0yZ" id="5mb0yBfImLw" role="2Oq$k0">
@@ -3081,8 +3148,8 @@
                 <node concept="liA8E" id="5mb0yBfInDb" role="2OqNvi">
                   <ref role="37wK5l" node="6VbSUrc4N9U" resolve="addText" />
                   <node concept="3cpWs3" id="5mb0yBfInTt" role="37wK5m">
-                    <node concept="37vLTw" id="5mb0yBfInTu" role="3uHU7B">
-                      <ref role="3cqZAo" node="5mb0yBfIeBx" resolve="character" />
+                    <node concept="37vLTw" id="8wgnLrdjrM" role="3uHU7B">
+                      <ref role="3cqZAo" node="8wgnLrdfvj" resolve="charToRead" />
                     </node>
                     <node concept="Xl_RD" id="5mb0yBfInTv" role="3uHU7w">
                       <property role="Xl_RC" value="is a bad option. please try again" />
@@ -3147,6 +3214,25 @@
         <node concept="3SKdUt" id="5mb0yBfIcJp" role="3cqZAp">
           <node concept="3SKdUq" id="5mb0yBfIcJo" role="3SKWNk">
             <property role="3SKdUp" value="Checking if &quot;back&quot; option was selected via name of the current event" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="8wgnLrd0Z_" role="3cqZAp">
+          <node concept="2OqwBi" id="8wgnLrd0Zy" role="3clFbG">
+            <node concept="10M0yZ" id="8wgnLrd0Zz" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="8wgnLrd0Z$" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="2OqwBi" id="8wgnLrd2RC" role="37wK5m">
+                <node concept="37vLTw" id="8wgnLrd2Ez" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5mb0yBfID1E" resolve="currentEvent" />
+                </node>
+                <node concept="2OwXpG" id="8wgnLrd323" role="2OqNvi">
+                  <ref role="2Oxat5" node="3_1GZis4X24" resolve="action" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3clFbJ" id="5mb0yBfIcGZ" role="3cqZAp">

@@ -789,7 +789,7 @@
                       <node concept="liA8E" id="3U" role="2OqNvi">
                         <ref role="37wK5l" to="ze1i:~ConceptPresentationBuilder.rawPresentation(java.lang.String):jetbrains.mps.smodel.runtime.ConceptPresentationBuilder" resolve="rawPresentation" />
                         <node concept="Xl_RD" id="3V" role="37wK5m">
-                          <property role="Xl_RC" value="Det informations" />
+                          <property role="Xl_RC" value="Get informations" />
                         </node>
                       </node>
                     </node>
@@ -2906,7 +2906,7 @@
             <node concept="liA8E" id="g5" role="2OqNvi">
               <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.alias(java.lang.String):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2" resolve="alias" />
               <node concept="Xl_RD" id="g6" role="37wK5m">
-                <property role="Xl_RC" value="Det informations" />
+                <property role="Xl_RC" value="Get informations" />
               </node>
             </node>
           </node>

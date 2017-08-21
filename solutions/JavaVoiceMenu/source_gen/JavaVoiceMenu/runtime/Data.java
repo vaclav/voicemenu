@@ -19,7 +19,11 @@ public class Data {
     BUTTON_0("0"),
     HASH("#");
 
+
     private String code;
+    /**
+     * 
+     */
     private Status(String code) {
       this.code = code;
     }

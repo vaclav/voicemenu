@@ -7,7 +7,9 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class Variables {
-
+  /**
+   * shared variables
+   */
   public static String path = "0";
   public static HashMap<String, Event> myHashMap = new HashMap<String, Event>();
   public static List<String> possibleOptList = new ArrayList<String>();

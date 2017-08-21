@@ -5,6 +5,9 @@ package JavaVoiceMenu.runtime;
 import java.util.List;
 
 public class Event {
+  /**
+   * Event class holds all informations of current state
+   */
   public String name;
   public String trigger;
   public List<Event> childs;
@@ -12,12 +15,16 @@ public class Event {
   public String toast;
 
   public Event() {
+    // empty 
   }
   public Event(String name, String trigger) {
     this.name = name;
     this.trigger = trigger;
     this.action = "";
   }
+  /**
+   * set full informations about state
+   */
   public Event setElements(String name, String trigger, List<Event> childs, String action, String toast) {
     this.name = name;
     this.trigger = trigger;
@@ -26,14 +33,23 @@ public class Event {
     this.toast = toast;
     return this;
   }
+  /**
+   * set specific informations for Action
+   */
   public Event setAction(String action) {
     this.action = action;
     return this;
   }
+  /**
+   * set greeting for action
+   */
   public Event setGreeting(String greeting) {
     this.toast = greeting;
     return this;
   }
+  /**
+   * set specific informations for Menu
+   */
   public Event setChilds(List<Event> childs) {
     this.childs = childs;
     return this;
