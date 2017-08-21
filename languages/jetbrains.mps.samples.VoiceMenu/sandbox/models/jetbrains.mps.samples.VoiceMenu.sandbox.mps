@@ -222,5 +222,51 @@
       </node>
     </node>
   </node>
+  <node concept="2Jqgb4" id="1dkJyTcULCU">
+    <property role="TrG5h" value="myVoiceMenu" />
+    <node concept="2C_Ik4" id="1dkJyTcULCV" role="2JqgbB">
+      <node concept="2C_Ik0" id="1dkJyTcULDl" role="2C_I24">
+        <property role="2C_Iks" value="1" />
+        <property role="TrG5h" value="Technical department" />
+      </node>
+      <node concept="2C_Ik0" id="1dkJyTcULDS" role="2C_I24">
+        <property role="2C_Iks" value="2" />
+        <property role="TrG5h" value="Marketing department" />
+      </node>
+      <node concept="2C_Ik0" id="1dkJyTcULDV" role="2C_I24">
+        <property role="2C_Iks" value="3" />
+        <property role="TrG5h" value="Others" />
+      </node>
+      <node concept="2C_I21" id="1dkJyTcULDZ" role="2C_I26">
+        <ref role="2C_gVZ" node="1dkJyTcULDl" resolve="Technical department" />
+        <node concept="2C_Ik4" id="1dkJyTcULEe" role="2C_gVu">
+          <node concept="2C_Ik0" id="1dkJyTcULEj" role="2C_I24">
+            <property role="2C_Iks" value="1" />
+            <property role="TrG5h" value="Hardware" />
+          </node>
+          <node concept="2C_Ik0" id="1dkJyTcULE_" role="2C_I24">
+            <property role="2C_Iks" value="*" />
+            <property role="TrG5h" value="Step back" />
+          </node>
+          <node concept="2C_I21" id="1dkJyTcULEn" role="2C_I26">
+            <ref role="2C_gVZ" node="1dkJyTcULEj" resolve="Hardware" />
+            <node concept="1$pBvo" id="1dkJyTcULEy" role="2C_gVu" />
+          </node>
+          <node concept="2C_I21" id="1dkJyTcULEI" role="2C_I26">
+            <ref role="2C_gVZ" node="1dkJyTcULE_" resolve="Step back" />
+            <node concept="1$pBvp" id="1dkJyTcULEP" role="2C_gVu" />
+          </node>
+        </node>
+      </node>
+      <node concept="2C_I21" id="1dkJyTcULE7" role="2C_I26">
+        <ref role="2C_gVZ" node="1dkJyTcULDS" resolve="Marketing department" />
+        <node concept="1$pBvr" id="1dkJyTcULHC" role="2C_gVu" />
+      </node>
+      <node concept="2C_I21" id="1dkJyTcULHF" role="2C_I26">
+        <ref role="2C_gVZ" node="1dkJyTcULDV" resolve="Others" />
+        <node concept="1$pBvq" id="1dkJyTcULHT" role="2C_gVu" />
+      </node>
+    </node>
+  </node>
 </model>
 
