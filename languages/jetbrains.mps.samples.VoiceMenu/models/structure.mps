@@ -173,7 +173,7 @@
     <property role="EcuMT" value="6772988411135920843" />
     <property role="TrG5h" value="GetInfo" />
     <property role="3GE5qa" value="RealActions" />
-    <property role="34LRSv" value="Det informations" />
+    <property role="34LRSv" value="Get informations" />
     <ref role="1TJDcQ" node="5RYvhcT_ZR5" resolve="Action" />
   </node>
   <node concept="1TIwiD" id="5lu2mvqIooX">

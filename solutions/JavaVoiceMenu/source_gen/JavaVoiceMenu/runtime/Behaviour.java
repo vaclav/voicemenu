@@ -13,7 +13,16 @@ public class Behaviour {
     String character = evt.getActionCommand();
     // Checking if correct option was pressed. If so Variables.path is updated 
     if (!(Variables.possibleOptList.contains(character))) {
-      Variables.voice.addText(character + "is a bad option. please try again");
+      String charToRead;
+      if (character == "*") {
+        charToRead = "star ";
+      } else if (character == "#") {
+        charToRead = "hash";
+      } else {
+        charToRead = character;
+      }
+
+      Variables.voice.addText(charToRead + "is a bad option. please try again");
       wrongButtonPressed = true;
     } else {
       Variables.path = Variables.path + character;
@@ -22,6 +31,7 @@ public class Behaviour {
     // Loading next Event according to what is specified in "Variables.path" 
     Event currentEvent = Variables.myHashMap.get(Variables.path);
     // Checking if "back" option was selected via name of the current event 
+    System.out.println(currentEvent.action);
     if (!(isEmptyString(currentEvent.action))) {
       System.out.println(currentEvent.action);
       if (currentEvent.action.equals("back")) {
