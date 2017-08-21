@@ -52,7 +52,6 @@
     <property role="EcuMT" value="6587365532662358792" />
     <property role="TrG5h" value="Menu" />
     <property role="34LRSv" value="menu" />
-    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" node="5lu2mvqIooX" resolve="Command" />
     <node concept="PrWs8" id="5HF1wNNZucp" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
