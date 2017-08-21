@@ -43,7 +43,7 @@
   </registry>
   <node concept="2Jqgb4" id="6EKBnCR4$w4">
     <property role="3uoZKU" value="Welcome to the Sample Menu" />
-    <property role="1EJLKn" value="true" />
+    <property role="1EJLKn" value="false" />
     <property role="TrG5h" value="Sample" />
     <node concept="2C_Ik4" id="2w$I9Iac1bh" role="2JqgbB">
       <node concept="2C_I21" id="2w$I9Iac1bj" role="2C_I26">
@@ -224,6 +224,7 @@
   </node>
   <node concept="2Jqgb4" id="1dkJyTcULCU">
     <property role="TrG5h" value="myVoiceMenu" />
+    <property role="1EJLKn" value="false" />
     <node concept="2C_Ik4" id="1dkJyTcULCV" role="2JqgbB">
       <node concept="2C_Ik0" id="1dkJyTcULDl" role="2C_I24">
         <property role="2C_Iks" value="1" />
@@ -264,7 +265,7 @@
       </node>
       <node concept="2C_I21" id="1dkJyTcULHF" role="2C_I26">
         <ref role="2C_gVZ" node="1dkJyTcULDV" resolve="Others" />
-        <node concept="1$pBvq" id="1dkJyTcULHT" role="2C_gVu" />
+        <node concept="1$pBvq" id="1dkJyTcVrsP" role="2C_gVu" />
       </node>
     </node>
   </node>
