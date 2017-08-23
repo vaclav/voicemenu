@@ -117,7 +117,7 @@
               <node concept="2C_I21" id="2w$I9I9VzAD" role="2C_I26">
                 <property role="3upAMh" value="Going back to the previous menu." />
                 <ref role="2C_gVZ" node="2w$I9I9VzA_" resolve="Step back" />
-                <node concept="1$pBvp" id="1dkJyTcLjKD" role="2C_gVu" />
+                <node concept="1$pBvp" id="2LL6X0rfcYq" role="2C_gVu" />
               </node>
             </node>
           </node>
