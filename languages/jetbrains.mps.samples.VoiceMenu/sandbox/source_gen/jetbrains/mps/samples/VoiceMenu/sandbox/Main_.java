@@ -43,8 +43,19 @@ public class Main_ implements ActionListener {
     Sample_Activity_kf1bs5_a0.setAction("getInfo");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     Sample_Activity_kf1bs5_a0.childs = new ArrayList<Event>();
+    Event Lukas_kf1bs5_b0 = new Event("Lukas", "4");
+    Lukas_kf1bs5_b0.setAction("");
+    Lukas_kf1bs5_b0.setGreeting("");
+    Lukas_kf1bs5_b0.setGreeting("olal");
+    Lukas_kf1bs5_b0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + Lukas_kf1bs5_b0.trigger;
+    Variables.myHashMap.put(Variables.path, Lukas_kf1bs5_b0);
+    Lukas_kf1bs5_b0.setAction("back");
+    Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
+    Lukas_kf1bs5_b0.childs = new ArrayList<Event>();
 
     Home.childs.add(Sample_Activity_kf1bs5_a0);
+    Home.childs.add(Lukas_kf1bs5_b0);
   }
 
   public static void main(String[] args) {
