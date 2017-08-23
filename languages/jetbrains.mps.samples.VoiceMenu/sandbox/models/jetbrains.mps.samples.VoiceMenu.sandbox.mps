@@ -43,7 +43,7 @@
   </registry>
   <node concept="2Jqgb4" id="6EKBnCR4$w4">
     <property role="3uoZKU" value="Welcome to the Sample Menu" />
-    <property role="1EJLKn" value="false" />
+    <property role="1EJLKn" value="true" />
     <property role="TrG5h" value="Sample" />
     <node concept="2C_Ik4" id="2w$I9Iac1bh" role="2JqgbB">
       <node concept="2C_I21" id="2w$I9Iac1bj" role="2C_I26">
@@ -226,22 +226,22 @@
     <property role="TrG5h" value="myVoiceMenu" />
     <property role="1EJLKn" value="false" />
     <node concept="2C_Ik4" id="1dkJyTcULCV" role="2JqgbB">
-      <node concept="2C_Ik0" id="7pupFtv$Jor" role="2C_I24">
-        <property role="2C_Iks" value="2" />
-        <property role="TrG5h" value="Internet" />
-      </node>
       <node concept="2C_I21" id="7pupFtv$Jp5" role="2C_I26">
         <property role="3upAMh" value="jedna" />
         <ref role="2C_gVZ" node="7pupFtv$Jor" resolve="Internet" />
         <node concept="1$pBvr" id="7pupFtvAPG6" role="2C_gVu" />
       </node>
-      <node concept="2C_Ik0" id="7pupFtv$Jpk" role="2C_I24">
-        <property role="TrG5h" value="Television" />
-        <property role="2C_Iks" value="3" />
-      </node>
       <node concept="2C_I21" id="7pupFtvAPFZ" role="2C_I26">
         <ref role="2C_gVZ" node="7pupFtv$Jpk" resolve="Television" />
         <node concept="1$pBvr" id="7pupFtvAPG9" role="2C_gVu" />
+      </node>
+      <node concept="2C_Ik0" id="7pupFtv$Jor" role="2C_I24">
+        <property role="2C_Iks" value="2" />
+        <property role="TrG5h" value="Internet" />
+      </node>
+      <node concept="2C_Ik0" id="7pupFtv$Jpk" role="2C_I24">
+        <property role="TrG5h" value="Television" />
+        <property role="2C_Iks" value="3" />
       </node>
     </node>
   </node>
