@@ -62,10 +62,32 @@ public class Main_ implements ActionListener {
     Lukajda_kf1bs5_c0.setAction("getInfo");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     Lukajda_kf1bs5_c0.childs = new ArrayList<Event>();
+    Event pokus_kf1bs5_d0 = new Event("pokus", "2");
+    pokus_kf1bs5_d0.setAction("");
+    pokus_kf1bs5_d0.setGreeting("");
+    pokus_kf1bs5_d0.setGreeting("rt4323");
+    pokus_kf1bs5_d0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + pokus_kf1bs5_d0.trigger;
+    Variables.myHashMap.put(Variables.path, pokus_kf1bs5_d0);
+    pokus_kf1bs5_d0.setAction("back");
+    Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
+    pokus_kf1bs5_d0.childs = new ArrayList<Event>();
+    Event Bomba_kf1bs5_e0 = new Event("Bomba", "3");
+    Bomba_kf1bs5_e0.setAction("");
+    Bomba_kf1bs5_e0.setGreeting("");
+    Bomba_kf1bs5_e0.setGreeting("pokus");
+    Bomba_kf1bs5_e0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + Bomba_kf1bs5_e0.trigger;
+    Variables.myHashMap.put(Variables.path, Bomba_kf1bs5_e0);
+    Bomba_kf1bs5_e0.setAction("call");
+    Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
+    Bomba_kf1bs5_e0.childs = new ArrayList<Event>();
 
     Home.childs.add(Sample_Activity_kf1bs5_a0);
     Home.childs.add(Luka_kf1bs5_b0);
     Home.childs.add(Lukajda_kf1bs5_c0);
+    Home.childs.add(pokus_kf1bs5_d0);
+    Home.childs.add(Bomba_kf1bs5_e0);
   }
 
   public static void main(String[] args) {

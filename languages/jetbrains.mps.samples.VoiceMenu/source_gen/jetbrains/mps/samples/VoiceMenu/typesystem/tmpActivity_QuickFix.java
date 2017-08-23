@@ -31,7 +31,6 @@ public class tmpActivity_QuickFix extends QuickFix_Runtime {
     if (isNotEmptyString(SPropertyOperations.getString(SNodeOperations.cast(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x765e66b75f7f00b8L, "jetbrains.mps.samples.VoiceMenu.structure.tmpActivity")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x765e66b75f7f00b8L, 0x25806c66fbe600f7L, "greeting")))) {
       SPropertyOperations.set(myActivity, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "greeting"), SPropertyOperations.getString(SNodeOperations.cast(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x765e66b75f7f00b8L, "jetbrains.mps.samples.VoiceMenu.structure.tmpActivity")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x765e66b75f7f00b8L, 0x25806c66fbe600f7L, "greeting")));
     }
-    ListSequence.fromList(SLinkOperations.getChildren(((SNode) tmpActivity_QuickFix.this.getField("srcMenu")[0]), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities"))).addElement(myActivity);
 
 
     SNodeOperations.deleteNode(node);

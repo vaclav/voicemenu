@@ -138,6 +138,10 @@
         <ref role="v9R2y" node="2m0r6rVPI17" resolve="reduce_Menu" />
       </node>
     </node>
+    <node concept="3aamgX" id="6mBXuuK8_uX" role="3acgRq">
+      <ref role="30HIoZ" to="xehl:7pupFtvvK2S" resolve="tmpActivity" />
+      <node concept="b5Tf3" id="6mBXuuK8_vf" role="1lVwrX" />
+    </node>
     <node concept="3aamgX" id="2m0r6rVPQjk" role="3acgRq">
       <ref role="30HIoZ" to="xehl:5HF1wNNZuqd" resolve="Activity" />
       <node concept="j$656" id="2m0r6rVPQjs" role="1lVwrX">
@@ -350,7 +354,7 @@
                     <node concept="2OqwBi" id="2m0r6rVRdai" role="2Oq$k0">
                       <node concept="30H73N" id="2m0r6rVRcWG" role="2Oq$k0" />
                       <node concept="3TrEf2" id="2m0r6rVRdxh" role="2OqNvi">
-                        <ref role="3Tt5mk" to="xehl:5HF1wNNZwzN" resolve="events" />
+                        <ref role="3Tt5mk" to="xehl:5HF1wNNZwzN" resolve="event" />
                       </node>
                     </node>
                     <node concept="3TrcHB" id="2m0r6rVRenZ" role="2OqNvi">
@@ -377,7 +381,7 @@
                     <node concept="2OqwBi" id="2m0r6rVRf9Y" role="2Oq$k0">
                       <node concept="30H73N" id="2m0r6rVReWo" role="2Oq$k0" />
                       <node concept="3TrEf2" id="2m0r6rVRfwX" role="2OqNvi">
-                        <ref role="3Tt5mk" to="xehl:5HF1wNNZwzN" resolve="events" />
+                        <ref role="3Tt5mk" to="xehl:5HF1wNNZwzN" resolve="event" />
                       </node>
                     </node>
                     <node concept="3TrcHB" id="2m0r6rVRgf9" role="2OqNvi">
@@ -462,7 +466,7 @@
                       <node concept="2OqwBi" id="2m0r6rVQ_$l" role="2Oq$k0">
                         <node concept="30H73N" id="2m0r6rVQ_mJ" role="2Oq$k0" />
                         <node concept="3TrEf2" id="2m0r6rVQCmp" role="2OqNvi">
-                          <ref role="3Tt5mk" to="xehl:5HF1wNNZwzN" resolve="events" />
+                          <ref role="3Tt5mk" to="xehl:5HF1wNNZwzN" resolve="event" />
                         </node>
                       </node>
                       <node concept="3TrcHB" id="2m0r6rVQD4r" role="2OqNvi">
