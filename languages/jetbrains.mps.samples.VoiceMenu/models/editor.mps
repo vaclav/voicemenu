@@ -1468,9 +1468,7 @@
         <node concept="VPxyj" id="7pupFtvz4L_" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="3F0ifn" id="7pupFtvz4LA" role="2ruayu">
-          <property role="3F0ifm" value="menu" />
-        </node>
+        <node concept="3F0ifn" id="7pupFtvz4LA" role="2ruayu" />
         <node concept="ljvvj" id="7pupFtvz4LB" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
