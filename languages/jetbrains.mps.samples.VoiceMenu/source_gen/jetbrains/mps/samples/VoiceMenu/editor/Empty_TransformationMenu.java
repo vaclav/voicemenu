@@ -6,7 +6,7 @@ import jetbrains.mps.nodeEditor.menus.transformation.TransformationMenuBase;
 import java.util.Set;
 import jetbrains.mps.internal.collections.runtime.SetSequence;
 import java.util.HashSet;
-import jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.MenuLocations;
+import jetbrains.mps.lang.editor.menus.transformation.MenuLocations;
 import org.jetbrains.annotations.NotNull;
 import java.util.List;
 import jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuItem;
@@ -24,15 +24,15 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.lang.editor.menus.SingleItemMenuPart;
 import jetbrains.mps.openapi.editor.menus.transformation.ActionItemBase;
-import jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.SidebarActionItem;
 import jetbrains.mps.openapi.editor.menus.EditorMenuTraceInfo;
-import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.smodel.action.SNodeFactoryOperations;
+import jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.SidebarActionItem;
+import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.smodel.runtime.IconResource;
 
 public class Empty_TransformationMenu extends TransformationMenuBase {
-  private final Set<String> myLocations = SetSequence.fromSetAndArray(new HashSet<String>(), MenuLocations.CONTEXT_ACTIONS_TOOL);
+  private final Set<String> myLocations = SetSequence.fromSetAndArray(new HashSet<String>(), MenuLocations.CONTEXT_ASSISTANT, jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.MenuLocations.CONTEXT_ACTIONS_TOOL);
   @Override
   public boolean isApplicableToLocation(@NotNull String location) {
     return SetSequence.fromSet(myLocations).contains(location);
@@ -54,8 +54,11 @@ public class Empty_TransformationMenu extends TransformationMenuBase {
   @NotNull
   protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts(TransformationMenuContext _context) {
     List<MenuPart<TransformationMenuItem, TransformationMenuContext>> result = new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>();
-    if (ListSequence.fromListAndArray(new ArrayList<String>(), MenuLocations.CONTEXT_ACTIONS_TOOL).contains(_context.getMenuLocation())) {
+    if (ListSequence.fromListAndArray(new ArrayList<String>(), MenuLocations.CONTEXT_ASSISTANT).contains(_context.getMenuLocation())) {
       result.add(new Empty_TransformationMenu.TMP_Param_8h8mrh_a0());
+    }
+    if (ListSequence.fromListAndArray(new ArrayList<String>(), jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.MenuLocations.CONTEXT_ACTIONS_TOOL).contains(_context.getMenuLocation())) {
+      result.add(new Empty_TransformationMenu.TMP_Param_8h8mrh_a1());
     }
     return result;
   }
@@ -82,7 +85,7 @@ public class Empty_TransformationMenu extends TransformationMenuBase {
     @Override
     public List<TransformationMenuItem> createItems(@NotNull TransformationMenuContext context) {
       context.getEditorMenuTrace().pushTraceInfo();
-      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("parameterized transformation menu part", new SNodePointer("r:7c1e5bbb-2d18-4cf3-a11d-502be6b13261(jetbrains.mps.samples.VoiceMenu.editor)", "6798245287227172120")));
+      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("parameterized transformation menu part", new SNodePointer("r:7c1e5bbb-2d18-4cf3-a11d-502be6b13261(jetbrains.mps.samples.VoiceMenu.editor)", "3202371390661146307")));
       try {
         return super.createItems(context);
       } finally {
@@ -98,6 +101,79 @@ public class Empty_TransformationMenu extends TransformationMenuBase {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
         return new Empty_TransformationMenu.TMP_Param_8h8mrh_a0.TMP_Action_8h8mrh_a0a.Item(context);
+      }
+
+      private class Item extends ActionItemBase {
+        private final TransformationMenuContext _context;
+        private final EditorMenuTraceInfo myEditorMenuTraceInfo;
+        private Item(TransformationMenuContext context) {
+          _context = context;
+          _context.getEditorMenuTrace().pushTraceInfo();
+          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("single item: " + getLabelText(""), new SNodePointer("r:7c1e5bbb-2d18-4cf3-a11d-502be6b13261(jetbrains.mps.samples.VoiceMenu.editor)", "3202371390661149450")));
+          myEditorMenuTraceInfo = _context.getEditorMenuTrace().getTraceInfo();
+          context.getEditorMenuTrace().popTraceInfo();
+        }
+
+        @Nullable
+        @Override
+        public String getLabelText(String pattern) {
+          return SConceptOperations.conceptAlias(myParameterObject);
+        }
+
+        @Override
+        public void execute(@NotNull String pattern) {
+          SNodeOperations.replaceWithAnother(_context.getNode(), SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(myParameterObject), _context.getNode()));
+        }
+
+
+
+
+        @Override
+        public EditorMenuTraceInfo getTraceInfo() {
+          return myEditorMenuTraceInfo;
+        }
+      }
+
+    }
+  }
+  private class TMP_Param_8h8mrh_a1 extends ParameterizedMenuPart<SConcept, TransformationMenuItem, TransformationMenuContext> {
+
+    @NotNull
+    @Override
+    protected List<TransformationMenuItem> createItems(SConcept parameter, TransformationMenuContext context) {
+      return new Empty_TransformationMenu.TMP_Param_8h8mrh_a1.TMP_Action_8h8mrh_a0b(parameter).createItems(context);
+    }
+
+    @Nullable
+    @Override
+    protected Iterable<? extends SConcept> getParameters(TransformationMenuContext _context) {
+      Iterable<SConcept> seq = ListSequence.fromList(SConceptOperations.getAllSubConcepts2(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9863dL, "jetbrains.mps.samples.VoiceMenu.structure.Command"), _context.getModel())).where(new IWhereFilter<SConcept>() {
+        public boolean accept(SConcept it) {
+          return !(it.isAbstract());
+        }
+      });
+      return seq;
+    }
+    @NotNull
+    @Override
+    public List<TransformationMenuItem> createItems(@NotNull TransformationMenuContext context) {
+      context.getEditorMenuTrace().pushTraceInfo();
+      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("parameterized transformation menu part", new SNodePointer("r:7c1e5bbb-2d18-4cf3-a11d-502be6b13261(jetbrains.mps.samples.VoiceMenu.editor)", "6798245287227172120")));
+      try {
+        return super.createItems(context);
+      } finally {
+        context.getEditorMenuTrace().popTraceInfo();
+      }
+    }
+
+    private class TMP_Action_8h8mrh_a0b extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+      private final SConcept myParameterObject;
+      public TMP_Action_8h8mrh_a0b(SConcept parameterObject) {
+        myParameterObject = parameterObject;
+      }
+      @Nullable
+      protected TransformationMenuItem createItem(TransformationMenuContext context) {
+        return new Empty_TransformationMenu.TMP_Param_8h8mrh_a1.TMP_Action_8h8mrh_a0b.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {

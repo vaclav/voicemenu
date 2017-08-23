@@ -50,6 +50,11 @@
         <ref role="2C_gVZ" node="2w$I9Iac1bl" resolve="Sample Activity" />
         <node concept="1$pBvo" id="2w$I9Iac1bp" role="2C_gVu" />
       </node>
+      <node concept="2C_I21" id="7pupFtvEuPG" role="2C_I26">
+        <property role="3upAMh" value="" />
+        <ref role="2C_gVZ" node="7pupFtvEuPF" resolve="Luka" />
+        <node concept="1$pBvp" id="7pupFtvF_7V" role="2C_gVu" />
+      </node>
       <node concept="2C_Ik0" id="2w$I9Iac1bl" role="2C_I24">
         <property role="2C_Iks" value="1" />
         <property role="TrG5h" value="Sample Activity" />
@@ -57,11 +62,6 @@
       <node concept="2C_Ik0" id="7pupFtvEuPF" role="2C_I24">
         <property role="TrG5h" value="Luka" />
         <property role="2C_Iks" value="0" />
-      </node>
-      <node concept="2C_I21" id="7pupFtvEuPG" role="2C_I26">
-        <property role="3upAMh" value="" />
-        <ref role="2C_gVZ" node="7pupFtvEuPF" resolve="Luka" />
-        <node concept="1$pBvp" id="7pupFtvF_7V" role="2C_gVu" />
       </node>
     </node>
   </node>
@@ -126,7 +126,7 @@
               <node concept="2C_I21" id="2w$I9I9VzAD" role="2C_I26">
                 <property role="3upAMh" value="Going back to the previous menu." />
                 <ref role="2C_gVZ" node="2w$I9I9VzA_" resolve="Step back" />
-                <node concept="1$pBvp" id="1dkJyTcLjKD" role="2C_gVu" />
+                <node concept="1$pBvp" id="2LL6X0rfcYq" role="2C_gVu" />
               </node>
             </node>
           </node>
