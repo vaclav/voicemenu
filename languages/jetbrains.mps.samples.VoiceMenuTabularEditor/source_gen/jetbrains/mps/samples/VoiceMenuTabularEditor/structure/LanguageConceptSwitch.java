@@ -9,9 +9,11 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
+  public static final int Name = 0;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x250921d21a8746e5L, 0x90a9a2c74442cfa1L);
+    builder.put(0x2c711bd01b0d4082L, Name);
     myIndex = builder.seal();
   }
 

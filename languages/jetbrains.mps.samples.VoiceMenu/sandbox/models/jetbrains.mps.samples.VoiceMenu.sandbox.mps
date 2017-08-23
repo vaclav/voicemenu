@@ -43,7 +43,7 @@
   </registry>
   <node concept="2Jqgb4" id="6EKBnCR4$w4">
     <property role="3uoZKU" value="Welcome to the Sample Menu" />
-    <property role="1EJLKn" value="false" />
+    <property role="1EJLKn" value="true" />
     <property role="TrG5h" value="Sample" />
     <node concept="2C_Ik4" id="2w$I9Iac1bh" role="2JqgbB">
       <node concept="2C_I21" id="2w$I9Iac1bj" role="2C_I26">
