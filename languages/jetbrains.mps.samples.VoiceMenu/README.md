@@ -24,8 +24,10 @@ Toolbar with action buttons for more pleasant usage
 [![Hide](../../extras/Close.png)](https://www.jetbrains.com/mps/)    Hide Toolbar
 
 
+
+
 How to use
-==========
+----------
 
 To start with your first voice menu create new model in sandbox solution with `WorkSpace` as the root. It's highly recommended to use either autocomplete `Ctrl + Space` or intentions `Alt + Enter` for easier usage.
 
