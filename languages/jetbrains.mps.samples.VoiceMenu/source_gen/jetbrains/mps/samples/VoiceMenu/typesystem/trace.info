@@ -608,21 +608,21 @@
       <node id="8529367682053740224" at="36,50,37,161" concept="7" />
       <node id="8529367682053740224" at="39,68,40,102" concept="7" />
       <node id="8529367682053740224" at="42,30,43,17" concept="7" />
-      <node id="8529367682053771120" at="45,55,46,43" concept="7" />
+      <node id="8529367682055282126" at="45,55,46,43" concept="7" />
       <node id="8529367682053740224" at="20,0,22,0" concept="1" trace="filledTmpActivity_NonTypesystemRule#()V" />
       <node id="8529367682053740224" at="36,0,39,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="8529367682053740224" at="39,0,42,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="8529367682053740224" at="42,0,45,0" concept="5" trace="overrides#()Z" />
-      <node id="8529367682053771120" at="45,0,48,0" concept="9" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
+      <node id="8529367682055282126" at="45,0,48,0" concept="9" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
       <node id="8529367682053801512" at="26,248,31,9" concept="0" />
-      <node id="8529367682053801512" at="23,185,32,7" concept="0" />
+      <node id="8529367682053801512" at="23,568,32,7" concept="0" />
       <node id="8529367682053740236" at="22,124,33,5" concept="4" />
       <node id="8529367682053740224" at="22,0,36,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
       <scope id="8529367682053740224" at="20,48,20,48" />
       <scope id="8529367682053740224" at="36,50,37,161" />
       <scope id="8529367682053740224" at="39,68,40,102" />
       <scope id="8529367682053740224" at="42,30,43,17" />
-      <scope id="8529367682053771120" at="45,55,46,43" />
+      <scope id="8529367682055282126" at="45,55,46,43" />
       <scope id="8529367682053740224" at="20,0,22,0" />
       <scope id="8529367682053801512" at="27,9,30,71">
         <var name="intentionProvider" id="8529367682053801512" />
@@ -632,14 +632,14 @@
         <var name="argument" id="8529367682053740224" />
       </scope>
       <scope id="8529367682053740224" at="42,0,45,0" />
-      <scope id="8529367682053771120" at="45,0,48,0">
-        <var name="str" id="8529367682053771120" />
+      <scope id="8529367682055282126" at="45,0,48,0">
+        <var name="str" id="8529367682055282126" />
       </scope>
       <scope id="8529367682053801512" at="24,7,31,9">
         <var name="_reporter_2309309498" id="8529367682053801512" />
         <var name="errorTarget" id="8529367682053801512" />
       </scope>
-      <scope id="8529367682053740238" at="23,185,32,7" />
+      <scope id="8529367682053740238" at="23,568,32,7" />
       <scope id="8529367682053740225" at="22,124,34,0" />
       <scope id="8529367682053740224" at="22,0,36,0">
         <var name="status" id="8529367682053740224" />

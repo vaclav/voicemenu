@@ -149,7 +149,9 @@
         <property id="16410578721444372" name="customizeEmptyCell" index="2ru_X1" />
         <child id="16410578721629643" name="emptyCellModel" index="2ruayu" />
       </concept>
-      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
+      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR">
+        <reference id="1173177718857" name="elementActionMap" index="APP_o" />
+      </concept>
       <concept id="4233361609415247331" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_Parameter" flags="ig" index="1GhMSn" />
       <concept id="4233361609415240997" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_Parameterized" flags="ng" index="1GhOrh">
         <child id="4233361609415240998" name="part" index="1GhOri" />
@@ -280,6 +282,7 @@
       <concept id="7776141288922801652" name="jetbrains.mps.lang.actions.structure.NF_Concept_NewInstance" flags="nn" index="q_SaT">
         <child id="3757480014665178932" name="prototype" index="1wAxWu" />
       </concept>
+      <concept id="767145758118872824" name="jetbrains.mps.lang.actions.structure.NF_Node_InsertNewNextSiblingOperation" flags="nn" index="2DeJnS" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -300,6 +303,9 @@
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
+      <concept id="1139858892567" name="jetbrains.mps.lang.smodel.structure.Node_InsertNewNextSiblingOperation" flags="nn" index="1$SAou">
+        <reference id="1139858951584" name="concept" index="1$SOMD" />
+      </concept>
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
@@ -382,6 +388,8 @@
       <node concept="3F2HdR" id="5HF1wNNZurU" role="3EZMnx">
         <ref role="1NtTu8" to="xehl:5HF1wNNZuqa" resolve="activities" />
         <ref role="1k5W1q" node="11pGboo2CX2" resolve="Declarations" />
+        <ref role="1ERwB7" node="7pupFtv$iDM" resolve="newEvent" />
+        <ref role="APP_o" node="7pupFtv$iDM" resolve="newEvent" />
         <node concept="l2Vlx" id="5HF1wNNZurW" role="2czzBx" />
         <node concept="pVoyu" id="5HF1wNNZus0" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -416,19 +424,14 @@
         <node concept="ljvvj" id="6nPYyO4pdL4" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+        <node concept="VPxyj" id="7pupFtv_hHv" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
       </node>
-      <node concept="3F1sOY" id="7pupFtvvMwP" role="3EZMnx">
+      <node concept="3F2HdR" id="7pupFtv_ano" role="3EZMnx">
         <ref role="1NtTu8" to="xehl:7pupFtvvMms" resolve="tmpActivity" />
-        <node concept="pVoyu" id="7pupFtvwxiX" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="lj46D" id="7pupFtvwxiZ" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="2R9Tw8" id="7pupFtvwxj0" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="ljvvj" id="7pupFtvwxj2" role="3F10Kt">
+        <node concept="l2Vlx" id="7pupFtv_anq" role="2czzBx" />
+        <node concept="lj46D" id="7pupFtv_axD" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -443,6 +446,7 @@
       <node concept="3F0ifn" id="5HF1wNNZI4l" role="3EZMnx">
         <property role="3F0ifm" value="Event:" />
         <ref role="1k5W1q" node="11pGboo1Ya6" resolve="HardCodedText" />
+        <ref role="1ERwB7" node="7pupFtv$iDM" resolve="newEvent" />
         <node concept="1fO$WK" id="3yrvnjuhbBU" role="3F10Kt" />
       </node>
       <node concept="1iCGBv" id="5HF1wNNZI4R" role="3EZMnx">
@@ -553,17 +557,6 @@
               </node>
             </node>
           </node>
-        </node>
-      </node>
-      <node concept="3F0ifn" id="6dQXHUGD0wh" role="3EZMnx">
-        <node concept="VPxyj" id="3p$ip5sMsF8" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="VPM3Z" id="3p$ip5sMsFg" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="ljvvj" id="7y7_vhBdpcI" role="3F10Kt">
-          <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F1sOY" id="5lu2mvqIp_D" role="3EZMnx">
@@ -1483,6 +1476,26 @@
         </node>
       </node>
       <node concept="l2Vlx" id="7pupFtvvK42" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="1h_SRR" id="7pupFtv$iDM">
+    <property role="3GE5qa" value="ActionMaps" />
+    <property role="TrG5h" value="newEvent" />
+    <ref role="1h_SK9" to="xehl:5HF1wNNZuqd" resolve="Activity" />
+    <node concept="1hA7zw" id="7pupFtv$iDN" role="1h_SK8">
+      <property role="1hAc7j" value="comment_out_action_id" />
+      <node concept="1hAIg9" id="7pupFtv$iDO" role="1hA7z_">
+        <node concept="3clFbS" id="7pupFtv$iDP" role="2VODD2">
+          <node concept="3clFbF" id="7pupFtv$iEi" role="3cqZAp">
+            <node concept="2OqwBi" id="7pupFtv$iVS" role="3clFbG">
+              <node concept="0IXxy" id="7pupFtv$iOY" role="2Oq$k0" />
+              <node concept="2DeJnS" id="7pupFtv$j5C" role="2OqNvi">
+                <ref role="1$SOMD" to="xehl:7pupFtvvK2S" resolve="tmpActivity" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

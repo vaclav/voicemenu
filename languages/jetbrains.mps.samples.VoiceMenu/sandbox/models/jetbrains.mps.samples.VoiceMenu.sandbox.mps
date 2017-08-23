@@ -226,30 +226,22 @@
     <property role="TrG5h" value="myVoiceMenu" />
     <property role="1EJLKn" value="false" />
     <node concept="2C_Ik4" id="1dkJyTcULCV" role="2JqgbB">
-      <node concept="2C_Ik0" id="7pupFtvvHN1" role="2C_I24">
-        <property role="2C_Iks" value="3" />
+      <node concept="2C_Ik0" id="7pupFtv$Jor" role="2C_I24">
+        <property role="2C_Iks" value="2" />
         <property role="TrG5h" value="Internet" />
       </node>
-      <node concept="2C_Ik0" id="7pupFtvvJ8Q" role="2C_I24">
-        <property role="2C_Iks" value="4" />
-        <property role="TrG5h" value="Vehicle" />
+      <node concept="2C_I21" id="7pupFtv$Jp5" role="2C_I26">
+        <property role="3upAMh" value="jedna" />
+        <ref role="2C_gVZ" node="7pupFtv$Jor" resolve="Internet" />
+        <node concept="1$pBvr" id="7pupFtvAPG6" role="2C_gVu" />
       </node>
-      <node concept="2C_I21" id="7pupFtvvHNb" role="2C_I26">
-        <ref role="2C_gVZ" node="7pupFtvvHN1" resolve="Internet" />
-        <node concept="1$pBvp" id="7pupFtvvHNg" role="2C_gVu" />
+      <node concept="2C_Ik0" id="7pupFtv$Jpk" role="2C_I24">
+        <property role="TrG5h" value="Television" />
+        <property role="2C_Iks" value="3" />
       </node>
-      <node concept="2C_I21" id="7pupFtvvIVH" role="2C_I26">
-        <ref role="2C_gVZ" node="7pupFtvvJ8Q" resolve="Vehicle" />
-        <node concept="1$pBvq" id="7pupFtvvJ8T" role="2C_gVu" />
-      </node>
-      <node concept="2C_Ik0" id="7pupFtvzCec" role="2C_I24">
-        <property role="TrG5h" value="pokus" />
-        <property role="2C_Iks" value="9" />
-      </node>
-      <node concept="2C_I21" id="7pupFtvzCed" role="2C_I26">
-        <property role="3upAMh" value="bablbam" />
-        <ref role="2C_gVZ" node="7pupFtvzCec" resolve="pokus" />
-        <node concept="1$pBvr" id="7pupFtvzCeo" role="2C_gVu" />
+      <node concept="2C_I21" id="7pupFtvAPFZ" role="2C_I26">
+        <ref role="2C_gVZ" node="7pupFtv$Jpk" resolve="Television" />
+        <node concept="1$pBvr" id="7pupFtvAPG9" role="2C_gVu" />
       </node>
     </node>
   </node>
