@@ -43,25 +43,16 @@
   </registry>
   <node concept="2Jqgb4" id="6EKBnCR4$w4">
     <property role="3uoZKU" value="Welcome to the Sample Menu" />
-    <property role="1EJLKn" value="false" />
+    <property role="1EJLKn" value="true" />
     <property role="TrG5h" value="Sample" />
     <node concept="2C_Ik4" id="2w$I9Iac1bh" role="2JqgbB">
       <node concept="2C_I21" id="2w$I9Iac1bj" role="2C_I26">
         <ref role="2C_gVZ" node="2w$I9Iac1bl" resolve="Sample Activity" />
         <node concept="1$pBvo" id="2w$I9Iac1bp" role="2C_gVu" />
       </node>
-      <node concept="2C_I21" id="7pupFtvEuPG" role="2C_I26">
-        <property role="3upAMh" value="" />
-        <ref role="2C_gVZ" node="7pupFtvEuPF" resolve="Luka" />
-        <node concept="1$pBvp" id="7pupFtvF_7V" role="2C_gVu" />
-      </node>
       <node concept="2C_Ik0" id="2w$I9Iac1bl" role="2C_I24">
         <property role="2C_Iks" value="1" />
         <property role="TrG5h" value="Sample Activity" />
-      </node>
-      <node concept="2C_Ik0" id="7pupFtvEuPF" role="2C_I24">
-        <property role="TrG5h" value="Luka" />
-        <property role="2C_Iks" value="0" />
       </node>
     </node>
   </node>
@@ -187,7 +178,7 @@
           <node concept="2C_I21" id="2w$I9I9URkD" role="2C_I26">
             <property role="3upAMh" value="Going back to the previous menu." />
             <ref role="2C_gVZ" node="2w$I9I9URk$" resolve="Step back" />
-            <node concept="1$pBvp" id="2w$I9I9URkO" role="2C_gVu" />
+            <node concept="1$pBvo" id="2LL6X0rjmZ5" role="2C_gVu" />
           </node>
         </node>
       </node>
