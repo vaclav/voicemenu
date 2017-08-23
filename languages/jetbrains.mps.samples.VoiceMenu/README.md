@@ -8,7 +8,7 @@ Sample
 
 A little demonstration of what an editor looks like
 
-[![Sample_code](../../extras/sample.png)](https://www.jetbrains.com/mps/)
+[![Sample_code](../../extras/Sample_table_2.png)](https://www.jetbrains.com/mps/)
 
 Toolbar
 -------
