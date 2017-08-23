@@ -117,7 +117,7 @@
               <node concept="2C_I21" id="2w$I9I9VzAD" role="2C_I26">
                 <property role="3upAMh" value="Going back to the previous menu." />
                 <ref role="2C_gVZ" node="2w$I9I9VzA_" resolve="Step back" />
-                <node concept="1$pBvp" id="2LL6X0rfcYq" role="2C_gVu" />
+                <node concept="1$pBvp" id="2LL6X0rivt9" role="2C_gVu" />
               </node>
             </node>
           </node>
@@ -237,7 +237,7 @@
       <node concept="2C_I21" id="7pupFtv$Jp5" role="2C_I26">
         <property role="3upAMh" value="jedna" />
         <ref role="2C_gVZ" node="7pupFtv$Jor" resolve="Internet" />
-        <node concept="1$pBvr" id="7pupFtvAPG6" role="2C_gVu" />
+        <node concept="1$pBvo" id="2LL6X0rffmL" role="2C_gVu" />
       </node>
       <node concept="2C_I21" id="7pupFtvAPFZ" role="2C_I26">
         <ref role="2C_gVZ" node="7pupFtv$Jpk" resolve="Television" />
