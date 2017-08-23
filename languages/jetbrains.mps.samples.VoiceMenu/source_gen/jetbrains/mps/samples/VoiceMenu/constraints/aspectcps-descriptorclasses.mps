@@ -271,7 +271,7 @@
                   <property role="1adDun" value="0x5b6b060cf3fe08f3L" />
                 </node>
                 <node concept="Xl_RD" id="D" role="37wK5m">
-                  <property role="Xl_RC" value="events" />
+                  <property role="Xl_RC" value="event" />
                 </node>
               </node>
               <node concept="2ShNRf" id="$" role="37wK5m">

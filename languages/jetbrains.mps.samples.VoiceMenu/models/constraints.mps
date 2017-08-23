@@ -27,7 +27,7 @@
   <node concept="1M2fIO" id="5HF1wNO03bZ">
     <ref role="1M2myG" to="xehl:5HF1wNNZuqd" resolve="Activity" />
     <node concept="1N5Pfh" id="5HF1wNO03c0" role="1Mr941">
-      <ref role="1N5Vy1" to="xehl:5HF1wNNZwzN" resolve="events" />
+      <ref role="1N5Vy1" to="xehl:5HF1wNNZwzN" resolve="event" />
       <node concept="1dDu$B" id="5HF1wNO03c6" role="1N6uqs">
         <ref role="1dDu$A" to="xehl:5HF1wNNZucc" resolve="Event" />
       </node>

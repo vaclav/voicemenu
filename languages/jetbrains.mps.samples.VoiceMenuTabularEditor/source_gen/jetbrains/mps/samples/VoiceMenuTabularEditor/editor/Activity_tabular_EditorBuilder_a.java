@@ -108,20 +108,20 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
           public EditorCell compute() {
             return new Activity_tabular_EditorBuilder_a.Inline_Builder_tm0j27_a1a(getEditorContext(), myNode, effectiveNode).createCell();
           }
-        }, effectiveNode, "events");
+        }, effectiveNode, "event");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_notnull(cell);
+        installDeleteActions_nullable_reference(cell);
         return cell;
       }
     };
-    provider.setRole("events");
-    provider.setNoTargetText("<no events>");
+    provider.setRole("event");
+    provider.setNoTargetText("<no event>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(getEditorContext());
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setRole("events");
+      editorCell.setRole("event");
     }
     Style style = new StyleImpl();
     new BracketsStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
@@ -213,20 +213,20 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
           public EditorCell compute() {
             return new Activity_tabular_EditorBuilder_a.Inline_Builder_tm0j27_a3a(getEditorContext(), myNode, effectiveNode).createCell();
           }
-        }, effectiveNode, "events");
+        }, effectiveNode, "event");
         CellUtil.setupIDeprecatableStyles(effectiveNode, cell);
         setSemanticNodeToCells(cell, myNode);
-        installDeleteActions_notnull(cell);
+        installDeleteActions_nullable_reference(cell);
         return cell;
       }
     };
-    provider.setRole("events");
-    provider.setNoTargetText("<no events>");
+    provider.setRole("event");
+    provider.setNoTargetText("<no event>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(getEditorContext());
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setRole("events");
+      editorCell.setRole("event");
     }
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();

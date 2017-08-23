@@ -1083,7 +1083,7 @@
                       <ref role="3cqZAo" node="2w$I9Iaa_Bg" resolve="item" />
                     </node>
                     <node concept="3TrEf2" id="2w$I9IaaGYr" role="2OqNvi">
-                      <ref role="3Tt5mk" to="xehl:5HF1wNNZwzN" resolve="events" />
+                      <ref role="3Tt5mk" to="xehl:5HF1wNNZwzN" resolve="event" />
                     </node>
                   </node>
                   <node concept="3TrcHB" id="2w$I9IaaHy8" role="2OqNvi">
