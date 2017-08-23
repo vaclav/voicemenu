@@ -15,7 +15,7 @@
     <language id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu">
       <concept id="6587365532662359693" name="jetbrains.mps.samples.VoiceMenu.structure.Activity" flags="ng" index="2C_I21">
         <property id="2702278965990916343" name="greeting" index="3upAMh" />
-        <reference id="6587365532662368499" name="events" index="2C_gVZ" />
+        <reference id="6587365532662368499" name="event" index="2C_gVZ" />
         <child id="6587365532662368466" name="commands" index="2C_gVu" />
       </concept>
       <concept id="6587365532662358796" name="jetbrains.mps.samples.VoiceMenu.structure.Event" flags="ng" index="2C_Ik0">

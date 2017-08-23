@@ -12,6 +12,8 @@ import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.BracketsStyleClass;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.HardCodedTextStyleClass;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
@@ -19,6 +21,8 @@ import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.DeclarationsStyleClass;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.ArrowsStyleClass;
+import jetbrains.mps.nodeEditor.cells.EditorCell_ContextAssistantComponent;
+import jetbrains.mps.editor.runtime.style.StyleAttributes;
 
 /*package*/ class Event_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -51,7 +55,13 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.ArrowsStyleClass
     editorCell.addEditorCell(createProperty_ymj9mh_b0());
     editorCell.addEditorCell(createConstant_ymj9mh_c0());
     editorCell.addEditorCell(createProperty_ymj9mh_d0());
+    if (nodeCondition_ymj9mh_a4a()) {
+      editorCell.addEditorCell(createContextAssistant_ymj9mh_e0());
+    }
     return editorCell;
+  }
+  private boolean nodeCondition_ymj9mh_a4a() {
+    return isEmptyString(SPropertyOperations.getString(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
   }
   private EditorCell createConstant_ymj9mh_a0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "On button:");
@@ -108,5 +118,17 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.ArrowsStyleClass
       return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
     } else
     return editorCell;
+  }
+  private EditorCell createContextAssistant_ymj9mh_e0() {
+    EditorCell editorCell = new EditorCell_ContextAssistantComponent(getEditorContext(), myNode);
+    editorCell.setCellId("ContextAssistant_ymj9mh_e0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, false);
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
+    editorCell.getStyle().putAll(style);
+    return editorCell;
+  }
+  private static boolean isEmptyString(String str) {
+    return str == null || str.length() == 0;
   }
 }

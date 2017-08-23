@@ -12,6 +12,8 @@ import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.BracketsStyleClass;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
@@ -21,6 +23,7 @@ import jetbrains.mps.editor.runtime.style.FocusPolicy;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.ArrowsStyleClass;
 import jetbrains.mps.samples.VoiceMenu.editor.RemoveEventAndActivity;
+import jetbrains.mps.nodeEditor.cells.EditorCell_ContextAssistantComponent;
 
 /*package*/ class Event_tabular_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -54,7 +57,13 @@ import jetbrains.mps.samples.VoiceMenu.editor.RemoveEventAndActivity;
     editorCell.addEditorCell(createConstant_bibga2_c0());
     editorCell.addEditorCell(createConstant_bibga2_d0());
     editorCell.addEditorCell(createProperty_bibga2_e0());
+    if (nodeCondition_bibga2_a5a()) {
+      editorCell.addEditorCell(createContextAssistant_bibga2_f0());
+    }
     return editorCell;
+  }
+  private boolean nodeCondition_bibga2_a5a() {
+    return isEmptyString(SPropertyOperations.getString(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
   }
   private EditorCell createConstant_bibga2_a0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "    ");
@@ -124,5 +133,17 @@ import jetbrains.mps.samples.VoiceMenu.editor.RemoveEventAndActivity;
       return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
     } else
     return editorCell;
+  }
+  private EditorCell createContextAssistant_bibga2_f0() {
+    EditorCell editorCell = new EditorCell_ContextAssistantComponent(getEditorContext(), myNode);
+    editorCell.setCellId("ContextAssistant_bibga2_f0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, false);
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
+    editorCell.getStyle().putAll(style);
+    return editorCell;
+  }
+  private static boolean isEmptyString(String str) {
+    return str == null || str.length() == 0;
   }
 }
