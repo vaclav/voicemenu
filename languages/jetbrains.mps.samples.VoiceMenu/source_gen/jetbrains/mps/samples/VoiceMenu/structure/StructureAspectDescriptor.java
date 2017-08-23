@@ -23,6 +23,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptMenu = createDescriptorForMenu();
   /*package*/ final ConceptDescriptor myConceptOther = createDescriptorForOther();
   /*package*/ final ConceptDescriptor myConceptWorkSpace = createDescriptorForWorkSpace();
+  /*package*/ final ConceptDescriptor myConcepttmpActivity = createDescriptorFortmpActivity();
   private final LanguageConceptSwitch myConceptIndex;
 
   public StructureAspectDescriptor() {
@@ -31,7 +32,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptActivity, myConceptBack, myConceptCall, myConceptCommand, myConceptEmpty, myConceptEvent, myConceptGetInfo, myConceptMenu, myConceptOther, myConceptWorkSpace);
+    return Arrays.asList(myConceptAction, myConceptActivity, myConceptBack, myConceptCall, myConceptCommand, myConceptEmpty, myConceptEvent, myConceptGetInfo, myConceptMenu, myConceptOther, myConceptWorkSpace, myConcepttmpActivity);
   }
 
   @Override
@@ -60,6 +61,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptOther;
       case LanguageConceptSwitch.WorkSpace:
         return myConceptWorkSpace;
+      case LanguageConceptSwitch.tmpActivity:
+        return myConcepttmpActivity;
       default:
         return null;
     }
@@ -82,7 +85,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)/6587365532662359693");
     b.prop("greeting", 0x25806c66fbe600f7L, "2702278965990916343");
-    b.associate("events", 0x5b6b060cf3fe08f3L).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL).optional(false).origin("6587365532662368499").done();
+    b.associate("event", 0x5b6b060cf3fe08f3L).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL).optional(true).origin("6587365532662368499").done();
     b.aggregate("commands", 0x5b6b060cf3fe08d2L).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9863dL).optional(false).ordered(true).multiple(false).origin("6587365532662368466").done();
     b.alias("activity");
     return b.create();
@@ -124,6 +127,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)/6587365532662358796");
     b.prop("trigger", 0x5b6b060cf3fde310L, "6587365532662358800");
+    b.associate("Activity", 0x765e66b75f7bfee4L).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL).optional(true).origin("8529367682053308132").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForGetInfo() {
@@ -142,6 +146,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)/6587365532662358792");
     b.aggregate("events", 0x5b6b060cf3fde688L).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL).optional(true).ordered(true).multiple(true).origin("6587365532662359688").done();
     b.aggregate("activities", 0x5b6b060cf3fde68aL).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL).optional(true).ordered(true).multiple(true).origin("6587365532662359690").done();
+    b.aggregate("tmpActivity", 0x765e66b75f7f259cL).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x765e66b75f7f00b8L).optional(true).ordered(true).multiple(false).origin("8529367682053514652").done();
     b.alias("menu");
     return b.create();
   }
@@ -163,6 +168,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.prop("toolbar", 0x366449915cdb5586L, "3919338464396137862");
     b.aggregate("bodyMenu", 0x5b6b060cf40204ebL).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L).optional(false).ordered(true).multiple(false).origin("6587365532662629611").done();
     b.alias("Work Space");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorFortmpActivity() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.samples.VoiceMenu", "tmpActivity", 0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x765e66b75f7f00b8L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)/8529367682053505208");
+    b.prop("greeting", 0x25806c66fbe600f7L, "8529367682053505211");
+    b.prop("trigger", 0x765e66b75f7f00c3L, "8529367682053505219");
+    b.aggregate("commands", 0x765e66b75f8c490eL).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9863dL).optional(false).ordered(true).multiple(false).origin("8529367682054375694").done();
+    b.alias("activity");
     return b.create();
   }
 }

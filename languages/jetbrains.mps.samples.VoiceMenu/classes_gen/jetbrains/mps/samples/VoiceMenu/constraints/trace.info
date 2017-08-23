@@ -66,7 +66,7 @@
       </scope>
       <scope id="6587365532662510335" at="28,0,56,0" />
       <unit id="6587365532662510335" at="39,19,51,9" name="jetbrains.mps.samples.VoiceMenu.constraints.Activity_Constraints$1$1" />
-      <unit id="6587365532662510335" at="31,154,53,5" name="jetbrains.mps.samples.VoiceMenu.constraints.Activity_Constraints$1" />
+      <unit id="6587365532662510335" at="31,153,53,5" name="jetbrains.mps.samples.VoiceMenu.constraints.Activity_Constraints$1" />
       <unit id="6587365532662510335" at="23,0,58,0" name="jetbrains.mps.samples.VoiceMenu.constraints.Activity_Constraints" />
     </file>
   </root>

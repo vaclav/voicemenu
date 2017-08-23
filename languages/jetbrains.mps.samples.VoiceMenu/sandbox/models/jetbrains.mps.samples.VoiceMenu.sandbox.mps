@@ -226,46 +226,106 @@
     <property role="TrG5h" value="myVoiceMenu" />
     <property role="1EJLKn" value="false" />
     <node concept="2C_Ik4" id="1dkJyTcULCV" role="2JqgbB">
-      <node concept="2C_Ik0" id="1dkJyTcULDl" role="2C_I24">
-        <property role="2C_Iks" value="1" />
-        <property role="TrG5h" value="Technical department" />
+      <node concept="2C_I21" id="7pupFtvvHNb" role="2C_I26">
+        <ref role="2C_gVZ" node="7pupFtvvHN1" resolve="Internet" />
+        <node concept="1$pBvp" id="7pupFtvvHNg" role="2C_gVu" />
       </node>
-      <node concept="2C_Ik0" id="1dkJyTcULDS" role="2C_I24">
-        <property role="2C_Iks" value="2" />
-        <property role="TrG5h" value="Marketing department" />
+      <node concept="2C_I21" id="7pupFtvvIVH" role="2C_I26">
+        <ref role="2C_gVZ" node="7pupFtvvJ8Q" resolve="Vehicle" />
+        <node concept="1$pBvq" id="7pupFtvvJ8T" role="2C_gVu" />
       </node>
-      <node concept="2C_Ik0" id="1dkJyTcULDV" role="2C_I24">
+      <node concept="2C_I21" id="7pupFtvzCed" role="2C_I26">
+        <property role="3upAMh" value="bablbam" />
+        <ref role="2C_gVZ" node="7pupFtvzCec" resolve="pokus" />
+        <node concept="1$pBvr" id="7pupFtvzCeo" role="2C_gVu" />
+      </node>
+      <node concept="2C_Ik0" id="7pupFtvvHN1" role="2C_I24">
         <property role="2C_Iks" value="3" />
-        <property role="TrG5h" value="Others" />
+        <property role="TrG5h" value="Internet" />
       </node>
-      <node concept="2C_I21" id="1dkJyTcULDZ" role="2C_I26">
-        <ref role="2C_gVZ" node="1dkJyTcULDl" resolve="Technical department" />
-        <node concept="2C_Ik4" id="1dkJyTcULEe" role="2C_gVu">
-          <node concept="2C_Ik0" id="1dkJyTcULEj" role="2C_I24">
+      <node concept="2C_Ik0" id="7pupFtvvJ8Q" role="2C_I24">
+        <property role="2C_Iks" value="4" />
+        <property role="TrG5h" value="Vehicle" />
+      </node>
+      <node concept="2C_Ik0" id="7pupFtvzCec" role="2C_I24">
+        <property role="TrG5h" value="pokus" />
+        <property role="2C_Iks" value="9" />
+      </node>
+    </node>
+  </node>
+  <node concept="2Jqgb4" id="6nemK62JSIo">
+    <property role="TrG5h" value="myVoiceMenu" />
+    <property role="1EJLKn" value="false" />
+    <property role="3uoZKU" value="Welcome to our voicemenu" />
+    <node concept="2C_Ik4" id="6nemK62JSIp" role="2JqgbB">
+      <node concept="2C_Ik0" id="6nemK62JSIs" role="2C_I24">
+        <property role="2C_Iks" value="1" />
+        <property role="TrG5h" value="Internetu" />
+      </node>
+      <node concept="2C_Ik0" id="6nemK62JSKr" role="2C_I24">
+        <property role="2C_Iks" value="2" />
+        <property role="TrG5h" value="Television" />
+      </node>
+      <node concept="2C_I21" id="6nemK62JSIz" role="2C_I26">
+        <property role="3upAMh" value="Welcome to the Internet" />
+        <ref role="2C_gVZ" node="6nemK62JSIs" resolve="Internetu" />
+        <node concept="2C_Ik4" id="6nemK62JSIE" role="2C_gVu">
+          <node concept="2C_Ik0" id="6nemK62JSIJ" role="2C_I24">
             <property role="2C_Iks" value="1" />
-            <property role="TrG5h" value="Hardware" />
+            <property role="TrG5h" value="Speed up" />
           </node>
-          <node concept="2C_Ik0" id="1dkJyTcULE_" role="2C_I24">
-            <property role="2C_Iks" value="*" />
-            <property role="TrG5h" value="Step back" />
+          <node concept="2C_Ik0" id="6nemK62JSIX" role="2C_I24">
+            <property role="2C_Iks" value="2" />
+            <property role="TrG5h" value="Discount" />
           </node>
-          <node concept="2C_I21" id="1dkJyTcULEn" role="2C_I26">
-            <ref role="2C_gVZ" node="1dkJyTcULEj" resolve="Hardware" />
-            <node concept="1$pBvo" id="1dkJyTcULEy" role="2C_gVu" />
+          <node concept="2C_I21" id="6nemK62JSIN" role="2C_I26">
+            <property role="3upAMh" value="Increasing speed was chosen" />
+            <ref role="2C_gVZ" node="6nemK62JSIJ" resolve="Speed up" />
+            <node concept="1$pBvo" id="6nemK62JSIU" role="2C_gVu" />
           </node>
-          <node concept="2C_I21" id="1dkJyTcULEI" role="2C_I26">
-            <ref role="2C_gVZ" node="1dkJyTcULE_" resolve="Step back" />
-            <node concept="1$pBvp" id="1dkJyTcULEP" role="2C_gVu" />
+          <node concept="2C_I21" id="6nemK62JSJ0" role="2C_I26">
+            <property role="3upAMh" value="Great choice!" />
+            <ref role="2C_gVZ" node="6nemK62JSIX" resolve="Discount" />
+            <node concept="2C_Ik4" id="6nemK62JSJ9" role="2C_gVu">
+              <node concept="2C_Ik0" id="6nemK62JSJc" role="2C_I24">
+                <property role="2C_Iks" value="1" />
+                <property role="TrG5h" value="Big Discount" />
+              </node>
+              <node concept="2C_Ik0" id="6nemK62JSJj" role="2C_I24">
+                <property role="2C_Iks" value="2" />
+                <property role="TrG5h" value="Small Discount" />
+              </node>
+              <node concept="2C_Ik0" id="6nemK62JSJS" role="2C_I24">
+                <property role="2C_Iks" value="#" />
+                <property role="TrG5h" value="Going Back" />
+              </node>
+              <node concept="2C_Ik0" id="6nemK62JSLc" role="2C_I24">
+                <property role="2C_Iks" value="*" />
+                <property role="TrG5h" value="Going Back" />
+              </node>
+              <node concept="2C_I21" id="6nemK62JSJe" role="2C_I26">
+                <ref role="2C_gVZ" node="6nemK62JSJc" resolve="Big Discount" />
+                <node concept="1$pBvr" id="6nemK62JSL9" role="2C_gVu" />
+              </node>
+              <node concept="2C_I21" id="6nemK62JSJm" role="2C_I26">
+                <ref role="2C_gVZ" node="6nemK62JSJj" resolve="Small Discount" />
+                <node concept="1$pBvr" id="6nemK62JSJw" role="2C_gVu" />
+              </node>
+              <node concept="2C_I21" id="6nemK62JSJW" role="2C_I26">
+                <ref role="2C_gVZ" node="6nemK62JSJS" resolve="Going Back" />
+                <node concept="1$pBvp" id="6nemK62JSK5" role="2C_gVu" />
+              </node>
+              <node concept="2C_I21" id="6nemK62JSLh" role="2C_I26">
+                <ref role="2C_gVZ" node="6nemK62JSLc" resolve="Going Back" />
+                <node concept="1$pBvp" id="6nemK62JSLs" role="2C_gVu" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
-      <node concept="2C_I21" id="1dkJyTcULE7" role="2C_I26">
-        <ref role="2C_gVZ" node="1dkJyTcULDS" resolve="Marketing department" />
-        <node concept="1$pBvr" id="1dkJyTcULHC" role="2C_gVu" />
-      </node>
-      <node concept="2C_I21" id="1dkJyTcULHF" role="2C_I26">
-        <ref role="2C_gVZ" node="1dkJyTcULDV" resolve="Others" />
-        <node concept="1$pBvq" id="1dkJyTcVrsP" role="2C_gVu" />
+      <node concept="2C_I21" id="6nemK62JSKu" role="2C_I26">
+        <ref role="2C_gVZ" node="6nemK62JSKr" resolve="Television" />
+        <node concept="1$pBvo" id="6nemK62KXYn" role="2C_gVu" />
       </node>
     </node>
   </node>
