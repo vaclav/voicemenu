@@ -206,7 +206,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
       }
     }
     private EditorCell createConstant_pi1pw3_a7a() {
-      EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "menu");
+      EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
       editorCell.setCellId("Constant_pi1pw3_a7a");
       editorCell.setDefaultText("");
       return editorCell;

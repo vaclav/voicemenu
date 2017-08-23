@@ -43,19 +43,29 @@ public class Main_ implements ActionListener {
     Sample_Activity_kf1bs5_a0.setAction("getInfo");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     Sample_Activity_kf1bs5_a0.childs = new ArrayList<Event>();
-    Event Lukas_kf1bs5_b0 = new Event("Lukas", "4");
-    Lukas_kf1bs5_b0.setAction("");
-    Lukas_kf1bs5_b0.setGreeting("");
-    Lukas_kf1bs5_b0.setGreeting("olal");
-    Lukas_kf1bs5_b0.childs = new ArrayList<Event>();
-    Variables.path = Variables.path + Lukas_kf1bs5_b0.trigger;
-    Variables.myHashMap.put(Variables.path, Lukas_kf1bs5_b0);
-    Lukas_kf1bs5_b0.setAction("back");
+    Event Luka_kf1bs5_b0 = new Event("Luka", "0");
+    Luka_kf1bs5_b0.setAction("");
+    Luka_kf1bs5_b0.setGreeting("");
+    Luka_kf1bs5_b0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + Luka_kf1bs5_b0.trigger;
+    Variables.myHashMap.put(Variables.path, Luka_kf1bs5_b0);
+    Luka_kf1bs5_b0.setAction("back");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
-    Lukas_kf1bs5_b0.childs = new ArrayList<Event>();
+    Luka_kf1bs5_b0.childs = new ArrayList<Event>();
+    Event Lukajda_kf1bs5_c0 = new Event("Lukajda", "4");
+    Lukajda_kf1bs5_c0.setAction("");
+    Lukajda_kf1bs5_c0.setGreeting("");
+    Lukajda_kf1bs5_c0.setGreeting("ahoja");
+    Lukajda_kf1bs5_c0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + Lukajda_kf1bs5_c0.trigger;
+    Variables.myHashMap.put(Variables.path, Lukajda_kf1bs5_c0);
+    Lukajda_kf1bs5_c0.setAction("getInfo");
+    Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
+    Lukajda_kf1bs5_c0.childs = new ArrayList<Event>();
 
     Home.childs.add(Sample_Activity_kf1bs5_a0);
-    Home.childs.add(Lukas_kf1bs5_b0);
+    Home.childs.add(Luka_kf1bs5_b0);
+    Home.childs.add(Lukajda_kf1bs5_c0);
   }
 
   public static void main(String[] args) {

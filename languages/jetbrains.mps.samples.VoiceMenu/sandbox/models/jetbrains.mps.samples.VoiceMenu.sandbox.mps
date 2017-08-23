@@ -63,6 +63,33 @@
         <property role="TrG5h" value="Luka" />
         <property role="2C_Iks" value="0" />
       </node>
+      <node concept="2C_Ik0" id="6mBXuuK2yki" role="2C_I24">
+        <property role="TrG5h" value="Lukajda" />
+        <property role="2C_Iks" value="4" />
+      </node>
+      <node concept="2C_I21" id="6mBXuuK2ykj" role="2C_I26">
+        <property role="3upAMh" value="ahoja" />
+        <ref role="2C_gVZ" node="6mBXuuK2yki" resolve="Lukajda" />
+        <node concept="1$pBvo" id="6mBXuuK2QRz" role="2C_gVu" />
+      </node>
+      <node concept="2C_Ik0" id="6mBXuuK5gkX" role="2C_I24">
+        <property role="TrG5h" value="pokus" />
+        <property role="2C_Iks" value="2" />
+      </node>
+      <node concept="2C_I21" id="6mBXuuK5gkY" role="2C_I26">
+        <property role="3upAMh" value="rt4323" />
+        <ref role="2C_gVZ" node="6mBXuuK5gkX" resolve="pokus" />
+        <node concept="1$pBvp" id="6mBXuuK4iA9" role="2C_gVu" />
+      </node>
+      <node concept="2C_Ik0" id="6mBXuuK5glh" role="2C_I24">
+        <property role="TrG5h" value="Bomba" />
+        <property role="2C_Iks" value="3" />
+      </node>
+      <node concept="2C_I21" id="6mBXuuK5gli" role="2C_I26">
+        <property role="3upAMh" value="pokus" />
+        <ref role="2C_gVZ" node="6mBXuuK5glh" resolve="Bomba" />
+        <node concept="1$pBvr" id="6mBXuuK5pkJ" role="2C_gVu" />
+      </node>
     </node>
   </node>
   <node concept="2Jqgb4" id="2w$I9I9UGbg">

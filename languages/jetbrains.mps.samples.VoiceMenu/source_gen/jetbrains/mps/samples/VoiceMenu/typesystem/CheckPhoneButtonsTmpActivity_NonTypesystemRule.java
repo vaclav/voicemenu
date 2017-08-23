@@ -13,6 +13,7 @@ import jetbrains.mps.errors.messageTargets.MessageTarget;
 import jetbrains.mps.errors.messageTargets.NodeMessageTarget;
 import jetbrains.mps.errors.IErrorReporter;
 import jetbrains.mps.errors.BaseQuickFixProvider;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public class CheckPhoneButtonsTmpActivity_NonTypesystemRule extends AbstractNonTypesystemRule_Runtime implements NonTypesystemRule_Runtime {
@@ -26,6 +27,8 @@ public class CheckPhoneButtonsTmpActivity_NonTypesystemRule extends AbstractNonT
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(tmpActivity, "This button cannot be found on the phone", "r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)", "8529367682056785195", null, errorTarget);
         {
           BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("jetbrains.mps.samples.VoiceMenu.typesystem.SuggestNumberTmpActivity_QuickFix", false);
+          intentionProvider.putArgument("duplicateNumber", SPropertyOperations.getString(tmpActivity, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x765e66b75f7f00b8L, 0x765e66b75f7f00c3L, "trigger")));
+          intentionProvider.putArgument("srcMenu", SNodeOperations.cast(SNodeOperations.getParent(tmpActivity), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")));
           _reporter_2309309498.addIntentionProvider(intentionProvider);
         }
       }
