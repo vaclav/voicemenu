@@ -146,7 +146,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)/6587365532662358792");
     b.aggregate("events", 0x5b6b060cf3fde688L).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL).optional(true).ordered(true).multiple(true).origin("6587365532662359688").done();
     b.aggregate("activities", 0x5b6b060cf3fde68aL).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL).optional(true).ordered(true).multiple(true).origin("6587365532662359690").done();
-    b.aggregate("tmpActivity", 0x765e66b75f7f259cL).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x765e66b75f7f00b8L).optional(true).ordered(true).multiple(false).origin("8529367682053514652").done();
+    b.aggregate("tmpActivity", 0x765e66b75f7f259cL).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x765e66b75f7f00b8L).optional(true).ordered(true).multiple(true).origin("8529367682053514652").done();
     b.alias("menu");
     return b.create();
   }

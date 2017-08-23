@@ -74,7 +74,7 @@
       <property role="IQ2ns" value="8529367682053514652" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="tmpActivity" />
-      <property role="20lbJX" value="0..1" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="7pupFtvvK2S" resolve="tmpActivity" />
     </node>
   </node>
