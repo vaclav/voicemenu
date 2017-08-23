@@ -17,7 +17,7 @@ public class tmpActivity_QuickFix extends QuickFix_Runtime {
     super(new SNodePointer("r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)", "8529367682053882342"));
   }
   public String getDescription(SNode node) {
-    return "fsghgsda";
+    return "make declaration and initiliazation";
   }
   public void execute(SNode node) {
     SNode myEvent = SNodeFactoryOperations.addNewChild(((SNode) tmpActivity_QuickFix.this.getField("srcMenu")[0]), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event")));
