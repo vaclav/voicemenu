@@ -70,7 +70,7 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.ActionStyleClass
     return editorCell;
   }
   private EditorCell createConstant_vdzkpg_c0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "get info");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Get info");
     editorCell.setCellId("Constant_vdzkpg_c0");
     Style style = new StyleImpl();
     new ActionStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
