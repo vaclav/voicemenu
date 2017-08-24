@@ -150,6 +150,10 @@ public class Event_TransformationMenu extends TransformationMenuBase {
           SPropertyOperations.set(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"), myParameterObject);
         }
 
+        @Override
+        public boolean canExecute(@NotNull String pattern) {
+          return isEmptyString(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
+        }
 
 
 
@@ -335,6 +339,9 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
       }
     }
+  }
+  private static boolean isEmptyString(String str) {
+    return str == null || str.length() == 0;
   }
   private static boolean isNotEmptyString(String str) {
     return str != null && str.length() > 0;

@@ -43,18 +43,18 @@ public class Main__0 implements ActionListener {
     _456_35s59u_a0.setAction("back");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     _456_35s59u_a0.childs = new ArrayList<Event>();
-    Event _dsa_35s59u_b0 = new Event("dsa", "4");
-    _dsa_35s59u_b0.setAction("");
-    _dsa_35s59u_b0.setGreeting("");
-    _dsa_35s59u_b0.childs = new ArrayList<Event>();
-    Variables.path = Variables.path + _dsa_35s59u_b0.trigger;
-    Variables.myHashMap.put(Variables.path, _dsa_35s59u_b0);
-    _dsa_35s59u_b0.setAction("call");
+    Event _name_35s59u_b0 = new Event("name", "8");
+    _name_35s59u_b0.setAction("");
+    _name_35s59u_b0.setGreeting("");
+    _name_35s59u_b0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + _name_35s59u_b0.trigger;
+    Variables.myHashMap.put(Variables.path, _name_35s59u_b0);
+    _name_35s59u_b0.setAction("call");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
-    _dsa_35s59u_b0.childs = new ArrayList<Event>();
+    _name_35s59u_b0.childs = new ArrayList<Event>();
 
     Home.childs.add(_456_35s59u_a0);
-    Home.childs.add(_dsa_35s59u_b0);
+    Home.childs.add(_name_35s59u_b0);
   }
 
   public static void main(String[] args) {
