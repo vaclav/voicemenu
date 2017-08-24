@@ -84,7 +84,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Menu:
         if (props_Menu == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("menu");
+          cpb.rawPresentation("Menu");
           props_Menu = cpb.create();
         }
         return props_Menu;

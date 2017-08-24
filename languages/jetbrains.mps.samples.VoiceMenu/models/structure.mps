@@ -51,7 +51,7 @@
   <node concept="1TIwiD" id="5HF1wNNZuc8">
     <property role="EcuMT" value="6587365532662358792" />
     <property role="TrG5h" value="Menu" />
-    <property role="34LRSv" value="menu" />
+    <property role="34LRSv" value="Menu" />
     <ref role="1TJDcQ" node="5lu2mvqIooX" resolve="Command" />
     <node concept="PrWs8" id="5HF1wNNZucp" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
@@ -216,7 +216,7 @@
       <ref role="20lvS9" node="5lu2mvqIooX" resolve="Command" />
     </node>
     <node concept="1TJgyi" id="7pupFtvvK2V" role="1TKVEl">
-      <property role="IQ2nx" value="2702278965990916343" />
+      <property role="IQ2nx" value="8529367682053505211" />
       <property role="TrG5h" value="greeting" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>

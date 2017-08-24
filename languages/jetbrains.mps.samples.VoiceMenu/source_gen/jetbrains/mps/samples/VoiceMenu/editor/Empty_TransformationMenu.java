@@ -22,10 +22,11 @@ import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.editor.menus.SingleItemMenuPart;
 import jetbrains.mps.openapi.editor.menus.transformation.ActionItemBase;
 import jetbrains.mps.openapi.editor.menus.EditorMenuTraceInfo;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 import jetbrains.mps.lang.editor.menus.transformation.SubMenuMenuTransformationMenuPart;
 import java.util.Arrays;
@@ -80,7 +81,12 @@ public class Empty_TransformationMenu extends TransformationMenuBase {
           return !(it.isAbstract());
         }
       });
-      return seq;
+
+      return Sequence.fromIterable(seq).subtract(ListSequence.fromList(SConceptOperations.getAllSubConcepts2(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9863dL, "jetbrains.mps.samples.VoiceMenu.structure.Command"), _context.getModel())).where(new IWhereFilter<SConcept>() {
+        public boolean accept(SConcept it) {
+          return SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(it), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9c5c3L, "jetbrains.mps.samples.VoiceMenu.structure.Empty"));
+        }
+      }));
     }
     @NotNull
     @Override
@@ -119,6 +125,7 @@ public class Empty_TransformationMenu extends TransformationMenuBase {
         @Override
         public String getLabelText(String pattern) {
           return SConceptOperations.conceptAlias(myParameterObject);
+
         }
 
         @Override
