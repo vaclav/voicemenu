@@ -244,7 +244,7 @@
       </node>
       <node concept="2C_Ik0" id="7pupFtv$Jpk" role="2C_I24">
         <property role="TrG5h" value="Television" />
-        <property role="2C_Iks" value="3" />
+        <property role="2C_Iks" value="5" />
       </node>
     </node>
   </node>
