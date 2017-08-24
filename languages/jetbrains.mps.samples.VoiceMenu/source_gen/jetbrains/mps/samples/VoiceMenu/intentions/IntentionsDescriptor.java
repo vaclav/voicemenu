@@ -45,18 +45,18 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
       case 1:
         if (true) {
           // Concept: Activity 
-          intentions = new IntentionFactory[3];
+          intentions = new IntentionFactory[4];
           intentions[0] = new Remove_Greeting_Intention();
           intentions[1] = new InitializeNewEvent_Intention();
           intentions[2] = new Add_Greeting_tmpActivity_Intention();
+          intentions[3] = new DeclareActivity_Intention();
         }
         break;
       case 2:
         if (true) {
           // Concept: Event 
-          intentions = new IntentionFactory[2];
-          intentions[0] = new AddEventDeclaration_Intention();
-          intentions[1] = new RemoveEvent_Intention();
+          intentions = new IntentionFactory[1];
+          intentions[0] = new RemoveEvent_Intention();
         }
         break;
       case 3:
@@ -93,20 +93,20 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
     rv[1] = new Remove_Greeting_Intention();
     rv[2] = new Remove_Main_Greeting_Intention();
     rv[3] = new InitializeNewEvent_Intention();
-    rv[4] = new AddEventDeclaration_Intention();
-    rv[5] = new changeToDirectCall_Intention();
-    rv[6] = new changeToOther_Intention();
-    rv[7] = new changeToBack_Intention();
-    rv[8] = new changeToGetInfo_Intention();
-    rv[9] = new changeMenuToBack_Intention();
-    rv[10] = new changeMenuToOther_Intention();
-    rv[11] = new changeMenuToGetInfo_Intention();
-    rv[12] = new changeMenuToDirectCall_Intention();
-    rv[13] = new changeToMenu_Intention();
-    rv[14] = new ViewAsTabular_Intention();
-    rv[15] = new ShowToolbar_Intention();
-    rv[16] = new RemoveEvent_Intention();
-    rv[17] = new Add_Greeting_tmpActivity_Intention();
+    rv[4] = new changeToDirectCall_Intention();
+    rv[5] = new changeToOther_Intention();
+    rv[6] = new changeToBack_Intention();
+    rv[7] = new changeToGetInfo_Intention();
+    rv[8] = new changeMenuToBack_Intention();
+    rv[9] = new changeMenuToOther_Intention();
+    rv[10] = new changeMenuToGetInfo_Intention();
+    rv[11] = new changeMenuToDirectCall_Intention();
+    rv[12] = new changeToMenu_Intention();
+    rv[13] = new ViewAsTabular_Intention();
+    rv[14] = new ShowToolbar_Intention();
+    rv[15] = new RemoveEvent_Intention();
+    rv[16] = new Add_Greeting_tmpActivity_Intention();
+    rv[17] = new DeclareActivity_Intention();
     return Arrays.asList(rv);
   }
   private static final ConceptSwitchIndex index_hphjzv_d0f = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d133997fdc5L), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L)).seal();
