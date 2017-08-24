@@ -205,24 +205,6 @@
         <ref role="2C_gVZ" node="2w$I9I9URiB" resolve="Other requirements" />
         <node concept="1$pBvq" id="2w$I9Ia1nSB" role="2C_gVu" />
       </node>
-      <node concept="2C_Ik0" id="6mBXuuK5yjR" role="2C_I24">
-        <property role="TrG5h" value="Pokus" />
-        <property role="2C_Iks" value="0" />
-      </node>
-      <node concept="2C_I21" id="6mBXuuK5yjS" role="2C_I26">
-        <property role="3upAMh" value="olala" />
-        <ref role="2C_gVZ" node="6mBXuuK5yjR" resolve="Pokus" />
-        <node concept="1$pBvo" id="6mBXuuK5ynw" role="2C_gVu" />
-      </node>
-      <node concept="2C_Ik0" id="6mBXuuK5ymx" role="2C_I24">
-        <property role="TrG5h" value="pokus2" />
-        <property role="2C_Iks" value="6" />
-      </node>
-      <node concept="2C_I21" id="6mBXuuK5ymy" role="2C_I26">
-        <property role="3upAMh" value="olala" />
-        <ref role="2C_gVZ" node="6mBXuuK5ymx" resolve="pokus2" />
-        <node concept="1$pBvr" id="6mBXuuK5ynA" role="2C_gVu" />
-      </node>
     </node>
   </node>
   <node concept="2Jqgb4" id="1dkJyTcULCU">
