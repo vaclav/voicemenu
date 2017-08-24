@@ -34,17 +34,17 @@ public class Main__0 implements ActionListener {
     Variables.myHashMap.put("0", Home);
 
 
-    Event poajfs_35s59u_a0 = new Event("poajfs", "5");
-    poajfs_35s59u_a0.setAction("");
-    poajfs_35s59u_a0.setGreeting("");
-    poajfs_35s59u_a0.childs = new ArrayList<Event>();
-    Variables.path = Variables.path + poajfs_35s59u_a0.trigger;
-    Variables.myHashMap.put(Variables.path, poajfs_35s59u_a0);
-    poajfs_35s59u_a0.setAction("call");
+    Event _456_35s59u_a0 = new Event("456", "7");
+    _456_35s59u_a0.setAction("");
+    _456_35s59u_a0.setGreeting("");
+    _456_35s59u_a0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + _456_35s59u_a0.trigger;
+    Variables.myHashMap.put(Variables.path, _456_35s59u_a0);
+    _456_35s59u_a0.setAction("back");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
-    poajfs_35s59u_a0.childs = new ArrayList<Event>();
+    _456_35s59u_a0.childs = new ArrayList<Event>();
 
-    Home.childs.add(poajfs_35s59u_a0);
+    Home.childs.add(_456_35s59u_a0);
   }
 
   public static void main(String[] args) {
