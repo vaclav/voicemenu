@@ -587,7 +587,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
   public class TMP_SubMenu_8shh52_a1 extends SubMenuMenuTransformationMenuPart {
     @Override
     protected String getText(TransformationMenuContext _context) {
-      return "Buttons";
+      return "Available Buttons";
     }
 
     @NotNull
