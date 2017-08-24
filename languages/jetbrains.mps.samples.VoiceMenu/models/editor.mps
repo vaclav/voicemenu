@@ -1752,6 +1752,43 @@
             </node>
           </node>
         </node>
+        <node concept="IWgqT" id="54keEMKfie_" role="1vlqcB">
+          <node concept="2jZ$Xq" id="54keEMKfieA" role="2jZA2a">
+            <node concept="2jZ$Xn" id="54keEMKfieB" role="2jZ$wY">
+              <node concept="3clFbS" id="54keEMKfieC" role="2VODD2">
+                <node concept="3clFbF" id="54keEMKfieD" role="3cqZAp">
+                  <node concept="2SwGe0" id="54keEMKfieE" role="3clFbG">
+                    <node concept="1QGGSu" id="54keEMKfieF" role="2SwzYu">
+                      <property role="1iqoE4" value="${module}/src/menu.png" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2jZ$wS" id="54keEMKfieG" role="2jZA2a" />
+          <node concept="1hCUdq" id="54keEMKfieH" role="1hCUd6">
+            <node concept="3clFbS" id="54keEMKfieI" role="2VODD2">
+              <node concept="3clFbF" id="54keEMKfieJ" role="3cqZAp">
+                <node concept="Xl_RD" id="54keEMKfieK" role="3clFbG">
+                  <property role="Xl_RC" value="Menu" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="IWg2L" id="54keEMKfieL" role="IWgqQ">
+            <node concept="3clFbS" id="54keEMKfieM" role="2VODD2">
+              <node concept="3clFbF" id="54keEMKfieN" role="3cqZAp">
+                <node concept="2OqwBi" id="54keEMKfieO" role="3clFbG">
+                  <node concept="7Obwk" id="54keEMKfieP" role="2Oq$k0" />
+                  <node concept="2DeJnW" id="54keEMKfieQ" role="2OqNvi">
+                    <ref role="1_rbq0" to="xehl:5HF1wNNZuc8" resolve="Menu" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="IWgqT" id="54keEMKeYya" role="1vlqcB">
           <node concept="2jZ$Xq" id="54keEMKeYyb" role="2jZA2a">
             <node concept="2jZ$Xn" id="54keEMKeYyc" role="2jZ$wY">
@@ -2384,7 +2421,7 @@
           <node concept="3clFbS" id="54keEMK9lbh" role="2VODD2">
             <node concept="3clFbF" id="54keEMK9lAN" role="3cqZAp">
               <node concept="Xl_RD" id="54keEMK9lAM" role="3clFbG">
-                <property role="Xl_RC" value="Buttons" />
+                <property role="Xl_RC" value="Available Buttons" />
               </node>
             </node>
           </node>

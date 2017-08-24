@@ -7,7 +7,8 @@ import jetbrains.mps.smodel.runtime.IconResource;
 public class IconContainer {
   protected static IconResource RESOURCE_a0a9c6j = new IconResource("phone.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c7j = new IconResource("arrow.png", IconContainer.class);
-  protected static IconResource RESOURCE_a0a9c8j = new IconResource("info.png", IconContainer.class);
-  protected static IconResource RESOURCE_a0a9c9j = new IconResource("donkey.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a9c8j = new IconResource("menu.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a9c9j = new IconResource("info.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a9c01j = new IconResource("donkey.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9e6g02 = new IconResource("buttons.png", IconContainer.class);
 }
