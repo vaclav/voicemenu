@@ -863,7 +863,7 @@
                       <node concept="liA8E" id="4n" role="2OqNvi">
                         <ref role="37wK5l" to="ze1i:~ConceptPresentationBuilder.rawPresentation(java.lang.String):jetbrains.mps.smodel.runtime.ConceptPresentationBuilder" resolve="rawPresentation" />
                         <node concept="Xl_RD" id="4o" role="37wK5m">
-                          <property role="Xl_RC" value="menu" />
+                          <property role="Xl_RC" value="Menu" />
                         </node>
                       </node>
                     </node>
@@ -3420,7 +3420,7 @@
             <node concept="liA8E" id="j4" role="2OqNvi">
               <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.alias(java.lang.String):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2" resolve="alias" />
               <node concept="Xl_RD" id="j5" role="37wK5m">
-                <property role="Xl_RC" value="menu" />
+                <property role="Xl_RC" value="Menu" />
               </node>
             </node>
           </node>
@@ -3892,7 +3892,7 @@
                 <property role="Xl_RC" value="greeting" />
               </node>
               <node concept="1adDum" id="lN" role="37wK5m">
-                <property role="1adDun" value="0x25806c66fbe600f7L" />
+                <property role="1adDun" value="0x765e66b75f7f00bbL" />
               </node>
               <node concept="Xl_RD" id="lO" role="37wK5m">
                 <property role="Xl_RC" value="8529367682053505211" />
