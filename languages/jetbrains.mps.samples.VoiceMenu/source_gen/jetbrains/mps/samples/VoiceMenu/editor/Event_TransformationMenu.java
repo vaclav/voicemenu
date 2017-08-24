@@ -22,9 +22,15 @@ import jetbrains.mps.openapi.editor.menus.transformation.ActionItemBase;
 import jetbrains.mps.openapi.editor.menus.EditorMenuTraceInfo;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.lang.editor.menus.ParameterizedMenuPart;
+import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.SidebarActionItem;
+import jetbrains.mps.smodel.runtime.IconResource;
 
 public class Event_TransformationMenu extends TransformationMenuBase {
-  private final Set<String> myLocations = SetSequence.fromSetAndArray(new HashSet<String>(), MenuLocations.CONTEXT_ASSISTANT);
+  private final Set<String> myLocations = SetSequence.fromSetAndArray(new HashSet<String>(), MenuLocations.CONTEXT_ASSISTANT, jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.MenuLocations.CONTEXT_ACTIONS_TOOL);
   @Override
   public boolean isApplicableToLocation(@NotNull String location) {
     return SetSequence.fromSet(myLocations).contains(location);
@@ -59,6 +65,9 @@ public class Event_TransformationMenu extends TransformationMenuBase {
       result.add(new Event_TransformationMenu.TMP_Action_8shh52_j0());
       result.add(new Event_TransformationMenu.TMP_Action_8shh52_k0());
       result.add(new Event_TransformationMenu.TMP_Action_8shh52_l0());
+    }
+    if (ListSequence.fromListAndArray(new ArrayList<String>(), jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.MenuLocations.CONTEXT_ACTIONS_TOOL).contains(_context.getMenuLocation())) {
+      result.add(new Event_TransformationMenu.TMP_Param_8shh52_a1());
     }
     return result;
   }
@@ -518,5 +527,106 @@ public class Event_TransformationMenu extends TransformationMenuBase {
       }
     }
 
+  }
+  private class TMP_Param_8shh52_a1 extends ParameterizedMenuPart<String, TransformationMenuItem, TransformationMenuContext> {
+
+    @NotNull
+    @Override
+    protected List<TransformationMenuItem> createItems(String parameter, TransformationMenuContext context) {
+      return new Event_TransformationMenu.TMP_Param_8shh52_a1.TMP_Action_8shh52_a0b(parameter).createItems(context);
+    }
+
+    @Nullable
+    @Override
+    protected Iterable<? extends String> getParameters(TransformationMenuContext _context) {
+
+      SNode[] array = Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getAllSiblings(_context.getNode(), false), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event"))).toGenericArray(SNode.class);
+
+      List<String> list = ListSequence.fromList(new ArrayList<String>());
+
+      ListSequence.fromList(list).addElement("1");
+      ListSequence.fromList(list).addElement("2");
+      ListSequence.fromList(list).addElement("3");
+      ListSequence.fromList(list).addElement("4");
+      ListSequence.fromList(list).addElement("5");
+      ListSequence.fromList(list).addElement("6");
+      ListSequence.fromList(list).addElement("7");
+      ListSequence.fromList(list).addElement("8");
+      ListSequence.fromList(list).addElement("9");
+      ListSequence.fromList(list).addElement("0");
+      ListSequence.fromList(list).addElement("*");
+      ListSequence.fromList(list).addElement("#");
+
+      for (SNode event : array) {
+
+        if (ListSequence.fromList(list).contains(SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")))) {
+          ListSequence.fromList(list).removeElement(SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
+        }
+      }
+
+      return Sequence.fromArray(ListSequence.fromList(list).toGenericArray(String.class));
+
+    }
+    @NotNull
+    @Override
+    public List<TransformationMenuItem> createItems(@NotNull TransformationMenuContext context) {
+      context.getEditorMenuTrace().pushTraceInfo();
+      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("parameterized transformation menu part", new SNodePointer("r:7c1e5bbb-2d18-4cf3-a11d-502be6b13261(jetbrains.mps.samples.VoiceMenu.editor)", "5842359129968712259")));
+      try {
+        return super.createItems(context);
+      } finally {
+        context.getEditorMenuTrace().popTraceInfo();
+      }
+    }
+
+    private class TMP_Action_8shh52_a0b extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+      private final String myParameterObject;
+      public TMP_Action_8shh52_a0b(String parameterObject) {
+        myParameterObject = parameterObject;
+      }
+      @Nullable
+      protected TransformationMenuItem createItem(TransformationMenuContext context) {
+        return new Event_TransformationMenu.TMP_Param_8shh52_a1.TMP_Action_8shh52_a0b.Item(context);
+      }
+
+      private class Item extends ActionItemBase implements SidebarActionItem {
+        private final TransformationMenuContext _context;
+        private final EditorMenuTraceInfo myEditorMenuTraceInfo;
+        private Item(TransformationMenuContext context) {
+          _context = context;
+          _context.getEditorMenuTrace().pushTraceInfo();
+          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("single item: " + getLabelText(""), new SNodePointer("r:7c1e5bbb-2d18-4cf3-a11d-502be6b13261(jetbrains.mps.samples.VoiceMenu.editor)", "5842359129968935186")));
+          myEditorMenuTraceInfo = _context.getEditorMenuTrace().getTraceInfo();
+          context.getEditorMenuTrace().popTraceInfo();
+        }
+
+        @Nullable
+        @Override
+        public String getLabelText(String pattern) {
+          return myParameterObject;
+        }
+
+        @Override
+        public void execute(@NotNull String pattern) {
+        }
+
+
+        @Override
+        public IconResource getIcon() {
+          return null;
+        }
+        @Override
+        public String getTooltipText() {
+          return null;
+        }
+
+
+        @Override
+        public EditorMenuTraceInfo getTraceInfo() {
+          return myEditorMenuTraceInfo;
+        }
+      }
+
+    }
   }
 }
