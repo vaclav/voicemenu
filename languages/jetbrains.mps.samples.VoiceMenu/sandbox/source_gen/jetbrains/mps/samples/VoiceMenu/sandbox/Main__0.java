@@ -34,28 +34,17 @@ public class Main__0 implements ActionListener {
     Variables.myHashMap.put("0", Home);
 
 
-    Event Internet_35s59u_a0 = new Event("Internet", "2");
-    Internet_35s59u_a0.setAction("");
-    Internet_35s59u_a0.setGreeting("");
-    Internet_35s59u_a0.setGreeting("jedna");
-    Internet_35s59u_a0.childs = new ArrayList<Event>();
-    Variables.path = Variables.path + Internet_35s59u_a0.trigger;
-    Variables.myHashMap.put(Variables.path, Internet_35s59u_a0);
-    Internet_35s59u_a0.setAction("getInfo");
+    Event poajfs_35s59u_a0 = new Event("poajfs", "5");
+    poajfs_35s59u_a0.setAction("");
+    poajfs_35s59u_a0.setGreeting("");
+    poajfs_35s59u_a0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + poajfs_35s59u_a0.trigger;
+    Variables.myHashMap.put(Variables.path, poajfs_35s59u_a0);
+    poajfs_35s59u_a0.setAction("call");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
-    Internet_35s59u_a0.childs = new ArrayList<Event>();
-    Event Television_35s59u_b0 = new Event("Television", "3");
-    Television_35s59u_b0.setAction("");
-    Television_35s59u_b0.setGreeting("");
-    Television_35s59u_b0.childs = new ArrayList<Event>();
-    Variables.path = Variables.path + Television_35s59u_b0.trigger;
-    Variables.myHashMap.put(Variables.path, Television_35s59u_b0);
-    Television_35s59u_b0.setAction("call");
-    Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
-    Television_35s59u_b0.childs = new ArrayList<Event>();
+    poajfs_35s59u_a0.childs = new ArrayList<Event>();
 
-    Home.childs.add(Internet_35s59u_a0);
-    Home.childs.add(Television_35s59u_b0);
+    Home.childs.add(poajfs_35s59u_a0);
   }
 
   public static void main(String[] args) {

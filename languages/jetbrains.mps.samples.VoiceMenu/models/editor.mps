@@ -26,6 +26,7 @@
       <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1597643335227097138" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_TransformationMenu_node" flags="ng" index="7Obwk" />
+      <concept id="6516520003787916624" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_Condition" flags="ig" index="27VH4U" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
@@ -57,6 +58,7 @@
       <concept id="1638911550608571617" name="jetbrains.mps.lang.editor.structure.TransformationMenu_Default" flags="ng" index="IW6AY" />
       <concept id="1638911550608610798" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_Execute" flags="ig" index="IWg2L" />
       <concept id="1638911550608610278" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_Action" flags="ng" index="IWgqT">
+        <child id="6202297022026447496" name="canExecuteFunction" index="2jiSrf" />
         <child id="1638911550608610281" name="executeFunction" index="IWgqQ" />
         <child id="5692353713941573325" name="textFunction" index="1hCUd6" />
       </concept>
@@ -2166,6 +2168,32 @@
             <node concept="3clFbH" id="6mBXuuKh5G2" role="3cqZAp" />
           </node>
         </node>
+        <node concept="27VH4U" id="6mBXuuKkxnp" role="2jiSrf">
+          <node concept="3clFbS" id="6mBXuuKkxnq" role="2VODD2">
+            <node concept="3clFbF" id="6mBXuuKkNsL" role="3cqZAp">
+              <node concept="2OqwBi" id="6mBXuuKkSvH" role="3clFbG">
+                <node concept="2OqwBi" id="6mBXuuKkNHU" role="2Oq$k0">
+                  <node concept="7Obwk" id="6mBXuuKkNsJ" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="6mBXuuKkRCy" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+                <node concept="17RvpY" id="6mBXuuKkTl_" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="6mBXuuKkxxF" role="3cqZAp">
+              <node concept="2OqwBi" id="6mBXuuKkyLI" role="3clFbG">
+                <node concept="2OqwBi" id="6mBXuuKkxMh" role="2Oq$k0">
+                  <node concept="7Obwk" id="6mBXuuKkxxE" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="6mBXuuKky4B" role="2OqNvi">
+                    <ref role="3TsBF5" to="xehl:5HF1wNNZucg" resolve="trigger" />
+                  </node>
+                </node>
+                <node concept="17RvpY" id="6mBXuuKkzBg" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1Qtc8_" id="54keEMK2TrD" role="IW6Ez">
@@ -2461,6 +2489,47 @@
               <node concept="2DeJnS" id="7pupFtv$j5C" role="2OqNvi">
                 <ref role="1$SOMD" to="xehl:7pupFtvvK2S" resolve="tmpActivity" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1h_SRR" id="6mBXuuKjNVu">
+    <property role="3GE5qa" value="ActionMaps" />
+    <property role="TrG5h" value="DeleteEvtAndActv" />
+    <ref role="1h_SK9" to="xehl:5HF1wNNZucc" resolve="Event" />
+    <node concept="1hA7zw" id="6mBXuuKjNVv" role="1h_SK8">
+      <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hHO97" value="&quot;delete Both Event and linked Activity" />
+      <node concept="1hAIg9" id="6mBXuuKjNVw" role="1hA7z_">
+        <node concept="3clFbS" id="6mBXuuKjNVx" role="2VODD2">
+          <node concept="3cpWs8" id="6mBXuuKjPfM" role="3cqZAp">
+            <node concept="3cpWsn" id="6mBXuuKjPfN" role="3cpWs9">
+              <property role="TrG5h" value="activity" />
+              <node concept="3Tqbb2" id="6mBXuuKjPfJ" role="1tU5fm">
+                <ref role="ehGHo" to="xehl:5HF1wNNZuqd" resolve="Activity" />
+              </node>
+              <node concept="2OqwBi" id="6mBXuuKjPfO" role="33vP2m">
+                <node concept="0IXxy" id="6mBXuuKjPfP" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6mBXuuKjPfQ" role="2OqNvi">
+                  <ref role="3Tt5mk" to="xehl:7pupFtvuZV$" resolve="Activity" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="6mBXuuKjNVV" role="3cqZAp">
+            <node concept="2OqwBi" id="6mBXuuKjPpa" role="3clFbG">
+              <node concept="37vLTw" id="6mBXuuKjPfR" role="2Oq$k0">
+                <ref role="3cqZAo" node="6mBXuuKjPfN" resolve="activity" />
+              </node>
+              <node concept="3YRAZt" id="6mBXuuKjPGg" role="2OqNvi" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="6mBXuuKjPMM" role="3cqZAp">
+            <node concept="2OqwBi" id="6mBXuuKjPX6" role="3clFbG">
+              <node concept="0IXxy" id="6mBXuuKjPMK" role="2Oq$k0" />
+              <node concept="3YRAZt" id="6mBXuuKjQjl" role="2OqNvi" />
             </node>
           </node>
         </node>

@@ -216,34 +216,12 @@ public class Main_ implements ActionListener {
     Other_requirements_m25aj_e0.setAction("other");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     Other_requirements_m25aj_e0.childs = new ArrayList<Event>();
-    Event Pokus_m25aj_f0 = new Event("Pokus", "0");
-    Pokus_m25aj_f0.setAction("");
-    Pokus_m25aj_f0.setGreeting("");
-    Pokus_m25aj_f0.setGreeting("olala");
-    Pokus_m25aj_f0.childs = new ArrayList<Event>();
-    Variables.path = Variables.path + Pokus_m25aj_f0.trigger;
-    Variables.myHashMap.put(Variables.path, Pokus_m25aj_f0);
-    Pokus_m25aj_f0.setAction("getInfo");
-    Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
-    Pokus_m25aj_f0.childs = new ArrayList<Event>();
-    Event pokus2_m25aj_g0 = new Event("pokus2", "6");
-    pokus2_m25aj_g0.setAction("");
-    pokus2_m25aj_g0.setGreeting("");
-    pokus2_m25aj_g0.setGreeting("olala");
-    pokus2_m25aj_g0.childs = new ArrayList<Event>();
-    Variables.path = Variables.path + pokus2_m25aj_g0.trigger;
-    Variables.myHashMap.put(Variables.path, pokus2_m25aj_g0);
-    pokus2_m25aj_g0.setAction("call");
-    Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
-    pokus2_m25aj_g0.childs = new ArrayList<Event>();
 
     Home.childs.add(Internet_m25aj_a0);
     Home.childs.add(Payment_m25aj_b0);
     Home.childs.add(Roaming_m25aj_c0);
     Home.childs.add(News_m25aj_d0);
     Home.childs.add(Other_requirements_m25aj_e0);
-    Home.childs.add(Pokus_m25aj_f0);
-    Home.childs.add(pokus2_m25aj_g0);
   }
 
   public static void main(String[] args) {
