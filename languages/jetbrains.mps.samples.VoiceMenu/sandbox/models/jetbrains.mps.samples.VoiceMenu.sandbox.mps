@@ -221,12 +221,12 @@
         <node concept="1$pBvr" id="7pupFtvAPG9" role="2C_gVu" />
       </node>
       <node concept="2C_Ik0" id="7pupFtv$Jor" role="2C_I24">
-        <property role="2C_Iks" value="2" />
+        <property role="2C_Iks" value="0" />
         <property role="TrG5h" value="Internet" />
       </node>
       <node concept="2C_Ik0" id="7pupFtv$Jpk" role="2C_I24">
         <property role="TrG5h" value="Television" />
-        <property role="2C_Iks" value="5" />
+        <property role="2C_Iks" value="1" />
       </node>
     </node>
   </node>
