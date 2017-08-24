@@ -17,13 +17,13 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.HardCodedTextStyleClass;
+import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.DeclarationsStyleClass;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.ArrowsStyleClass;
 import jetbrains.mps.nodeEditor.cells.EditorCell_ContextAssistantComponent;
-import jetbrains.mps.editor.runtime.style.StyleAttributes;
 
 /*package*/ class Event_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -69,6 +69,7 @@ import jetbrains.mps.editor.runtime.style.StyleAttributes;
     editorCell.setCellId("Constant_ymj9mh_a0");
     Style style = new StyleImpl();
     new HardCodedTextStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
     RemoveEventAndActivity.setCellActions(editorCell, myNode, getEditorContext());
     editorCell.setDefaultText("");

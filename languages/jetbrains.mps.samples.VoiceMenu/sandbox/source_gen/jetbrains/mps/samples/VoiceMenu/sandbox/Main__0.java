@@ -40,7 +40,7 @@ public class Main__0 implements ActionListener {
     _456_35s59u_a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + _456_35s59u_a0.trigger;
     Variables.myHashMap.put(Variables.path, _456_35s59u_a0);
-    _456_35s59u_a0.setAction("getInfo");
+    _456_35s59u_a0.setAction("back");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     _456_35s59u_a0.childs = new ArrayList<Event>();
 
