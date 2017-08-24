@@ -670,19 +670,10 @@
       <node id="7325093694380763704" at="48,5,49,435" concept="2" />
       <node id="7325093694380788767" at="49,435,50,0" concept="8" />
       <node id="1392947290826044398" at="50,0,51,0" concept="8" />
-      <node id="1392947290825699119" at="51,0,52,0" concept="8" />
-      <node id="1392947290825505753" at="52,0,53,0" concept="8" />
-      <node id="1392947290825698650" at="53,0,54,0" concept="8" />
-      <node id="1392947290825698794" at="54,0,55,0" concept="8" />
-      <node id="1392947290825419882" at="55,0,56,0" concept="8" />
-      <node id="1392947290825354794" at="56,0,57,0" concept="8" />
-      <node id="1392947290825066242" at="57,0,58,0" concept="8" />
-      <node id="1392947290825066361" at="58,0,59,0" concept="8" />
-      <node id="7660908927727444896" at="59,0,60,0" concept="8" />
       <node id="7660908927727296557" at="18,0,21,0" concept="1" trace="SuggestNumber_QuickFix#()V" />
       <node id="7660908927727296557" at="21,0,24,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <node id="1392947290826031939" at="45,0,48,5" concept="3" />
-      <node id="7660908927727296557" at="24,0,62,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="7660908927727296557" at="24,0,53,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="7660908927727296557" at="18,35,19,137" />
       <scope id="7660908927727296579" at="21,44,22,40" />
       <scope id="1392947290826031945" at="46,64,47,217" />
@@ -693,15 +684,15 @@
       <scope id="1392947290826031939" at="45,0,48,5">
         <var name="event" id="1392947290826031941" />
       </scope>
-      <scope id="7660908927727296559" at="24,35,60,0">
+      <scope id="7660908927727296559" at="24,35,51,0">
         <var name="eventsDeclTable" id="1392947290825268761" />
         <var name="kbButtons" id="1392947290825028228" />
         <var name="usedButtons" id="1392947290826033064" />
       </scope>
-      <scope id="7660908927727296557" at="24,0,62,0">
+      <scope id="7660908927727296557" at="24,0,53,0">
         <var name="node" id="7660908927727296557" />
       </scope>
-      <unit id="7660908927727296557" at="17,0,63,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.SuggestNumber_QuickFix" />
+      <unit id="7660908927727296557" at="17,0,54,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.SuggestNumber_QuickFix" />
     </file>
   </root>
   <root nodeRef="r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)/7660908927727664983">
