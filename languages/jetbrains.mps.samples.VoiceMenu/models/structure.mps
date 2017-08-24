@@ -70,13 +70,6 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="5HF1wNNZuqd" resolve="Activity" />
     </node>
-    <node concept="1TJgyj" id="7pupFtvvMms" role="1TKVEi">
-      <property role="IQ2ns" value="8529367682053514652" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="tmpActivity" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7pupFtvvK2S" resolve="tmpActivity" />
-    </node>
   </node>
   <node concept="1TIwiD" id="5HF1wNNZucc">
     <property role="EcuMT" value="6587365532662358796" />
@@ -202,32 +195,6 @@
     <property role="TrG5h" value="Empty" />
     <property role="34LRSv" value="&lt;empty&gt;" />
     <ref role="1TJDcQ" node="5lu2mvqIooX" resolve="Command" />
-  </node>
-  <node concept="1TIwiD" id="7pupFtvvK2S">
-    <property role="EcuMT" value="8529367682053505208" />
-    <property role="TrG5h" value="tmpActivity" />
-    <property role="34LRSv" value="activity" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="7pupFtvz4$e" role="1TKVEi">
-      <property role="IQ2ns" value="8529367682054375694" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="commands" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5lu2mvqIooX" resolve="Command" />
-    </node>
-    <node concept="1TJgyi" id="7pupFtvvK2V" role="1TKVEl">
-      <property role="IQ2nx" value="8529367682053505211" />
-      <property role="TrG5h" value="greeting" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="7pupFtvvK33" role="1TKVEl">
-      <property role="IQ2nx" value="8529367682053505219" />
-      <property role="TrG5h" value="trigger" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="PrWs8" id="7pupFtvvK30" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
   </node>
 </model>
 

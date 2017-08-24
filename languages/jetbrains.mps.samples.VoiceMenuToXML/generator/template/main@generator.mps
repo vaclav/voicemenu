@@ -138,10 +138,6 @@
         <ref role="v9R2y" node="2m0r6rVPI17" resolve="reduce_Menu" />
       </node>
     </node>
-    <node concept="3aamgX" id="6mBXuuK8_uX" role="3acgRq">
-      <ref role="30HIoZ" to="xehl:7pupFtvvK2S" resolve="tmpActivity" />
-      <node concept="b5Tf3" id="6mBXuuK8_vf" role="1lVwrX" />
-    </node>
     <node concept="3aamgX" id="2m0r6rVPQjk" role="3acgRq">
       <ref role="30HIoZ" to="xehl:5HF1wNNZuqd" resolve="Activity" />
       <node concept="j$656" id="2m0r6rVPQjs" role="1lVwrX">

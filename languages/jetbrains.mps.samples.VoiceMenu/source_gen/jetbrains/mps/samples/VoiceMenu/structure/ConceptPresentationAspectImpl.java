@@ -20,7 +20,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Menu;
   private ConceptPresentation props_Other;
   private ConceptPresentation props_WorkSpace;
-  private ConceptPresentation props_tmpActivity;
 
   @Override
   @Nullable
@@ -102,13 +101,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_WorkSpace = cpb.create();
         }
         return props_WorkSpace;
-      case LanguageConceptSwitch.tmpActivity:
-        if (props_tmpActivity == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_tmpActivity = cpb.create();
-        }
-        return props_tmpActivity;
     }
     return null;
   }

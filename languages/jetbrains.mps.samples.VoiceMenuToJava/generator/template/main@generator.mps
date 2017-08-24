@@ -327,10 +327,6 @@
         <ref role="v9R2y" node="2aqfKAezX4W" resolve="reduce_Menu" />
       </node>
     </node>
-    <node concept="3aamgX" id="6mBXuuK8_uC" role="3acgRq">
-      <ref role="30HIoZ" to="xehl:7pupFtvvK2S" resolve="tmpActivity" />
-      <node concept="b5Tf3" id="6mBXuuK8_uU" role="1lVwrX" />
-    </node>
     <node concept="3aamgX" id="2aqfKAezZJZ" role="3acgRq">
       <ref role="30HIoZ" to="xehl:5HF1wNNZuqd" resolve="Activity" />
       <node concept="j$656" id="2aqfKAezZKX" role="1lVwrX">
