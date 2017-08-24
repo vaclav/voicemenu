@@ -17,8 +17,8 @@
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="nlek" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#25811379-ae76-45d3-b18c-739c1ab28a1a(jetbrains.mps.lang.project.modules/module.jetbrains.mps.editor.contextActionsTool.lang.menus.runtime@project_stub)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -1643,9 +1643,39 @@
         <property role="3F0ifm" value="Greeting: " />
         <ref role="1ERwB7" node="6VbSUrbOori" resolve="RemoveGreeting" />
         <ref role="1k5W1q" node="11pGboo1Ya6" resolve="HardCodedText" />
+        <node concept="pkWqt" id="6mBXuuK9B7O" role="pqm2j">
+          <node concept="3clFbS" id="6mBXuuK9B7P" role="2VODD2">
+            <node concept="3clFbF" id="6mBXuuK9C2v" role="3cqZAp">
+              <node concept="2OqwBi" id="6mBXuuK9Dpo" role="3clFbG">
+                <node concept="2OqwBi" id="6mBXuuK9Cfs" role="2Oq$k0">
+                  <node concept="pncrf" id="6mBXuuK9C2u" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="6mBXuuK9CKk" role="2OqNvi">
+                    <ref role="3TsBF5" to="xehl:7pupFtvvK2V" resolve="greeting" />
+                  </node>
+                </node>
+                <node concept="17RvpY" id="6mBXuuK9F6d" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F0A7n" id="7pupFtvvPzk" role="3EZMnx">
         <ref role="1NtTu8" to="xehl:7pupFtvvK2V" resolve="greeting" />
+        <node concept="pkWqt" id="6mBXuuK9FmQ" role="pqm2j">
+          <node concept="3clFbS" id="6mBXuuK9FmR" role="2VODD2">
+            <node concept="3clFbF" id="6mBXuuK9Fwd" role="3cqZAp">
+              <node concept="2OqwBi" id="6mBXuuK9GR6" role="3clFbG">
+                <node concept="2OqwBi" id="6mBXuuK9FHa" role="2Oq$k0">
+                  <node concept="pncrf" id="6mBXuuK9Fwc" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="6mBXuuK9Ge2" role="2OqNvi">
+                    <ref role="3TsBF5" to="xehl:7pupFtvvK2V" resolve="greeting" />
+                  </node>
+                </node>
+                <node concept="17RvpY" id="6mBXuuK9HKl" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="7pupFtvvK3T" role="3EZMnx">
         <node concept="VPxyj" id="7pupFtvvK3U" role="3F10Kt">
