@@ -29,6 +29,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.runtime.IconResource;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 
 public class Other_TransformationMenu extends TransformationMenuBase {
@@ -84,7 +85,7 @@ public class Other_TransformationMenu extends TransformationMenuBase {
 
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Other_TransformationMenu.TMP_SubMenu_tomnzf_a0.TMP_Action_tomnzf_a0a(), new Other_TransformationMenu.TMP_SubMenu_tomnzf_a0.TMP_Action_tomnzf_b0a());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Other_TransformationMenu.TMP_SubMenu_tomnzf_a0.TMP_Action_tomnzf_a0a(), new Other_TransformationMenu.TMP_SubMenu_tomnzf_a0.TMP_Action_tomnzf_b0a(), new Other_TransformationMenu.TMP_SubMenu_tomnzf_a0.TMP_Action_tomnzf_c0a());
     }
     private class TMP_Action_tomnzf_a0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
@@ -119,7 +120,7 @@ public class Other_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c6h;
+          return IconContainer.RESOURCE_a0a9c6h_0;
         }
         @Override
         public String getTooltipText() {
@@ -167,7 +168,61 @@ public class Other_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c7h;
+          return IconContainer.RESOURCE_a0a9c7h_0;
+        }
+        @Override
+        public String getTooltipText() {
+          return null;
+        }
+
+
+        @Override
+        public EditorMenuTraceInfo getTraceInfo() {
+          return myEditorMenuTraceInfo;
+        }
+      }
+
+    }
+    private class TMP_Action_tomnzf_c0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+      @Nullable
+      protected TransformationMenuItem createItem(TransformationMenuContext context) {
+        return new Other_TransformationMenu.TMP_SubMenu_tomnzf_a0.TMP_Action_tomnzf_c0a.Item(context);
+      }
+
+      private class Item extends ActionItemBase implements SidebarActionItem {
+        private final TransformationMenuContext _context;
+        private final EditorMenuTraceInfo myEditorMenuTraceInfo;
+        private Item(TransformationMenuContext context) {
+          _context = context;
+          _context.getEditorMenuTrace().pushTraceInfo();
+          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("single item: " + getLabelText(""), new SNodePointer("r:7c1e5bbb-2d18-4cf3-a11d-502be6b13261(jetbrains.mps.samples.VoiceMenu.editor)", "3712338390307583199")));
+          myEditorMenuTraceInfo = _context.getEditorMenuTrace().getTraceInfo();
+          context.getEditorMenuTrace().popTraceInfo();
+        }
+
+        @Nullable
+        @Override
+        public String getLabelText(String pattern) {
+          return "Remove event";
+        }
+
+        @Override
+        public void execute(@NotNull String pattern) {
+
+          SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"))), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"))).findFirst(new IWhereFilter<SNode>() {
+            public boolean accept(SNode it) {
+              return it == SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity")), MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event"));
+            }
+          }));
+
+          SNodeOperations.deleteNode(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity")));
+
+        }
+
+
+        @Override
+        public IconResource getIcon() {
+          return IconContainer.RESOURCE_a0a9c8h_0;
         }
         @Override
         public String getTooltipText() {
@@ -237,7 +292,7 @@ public class Other_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c6i_0;
+          return IconContainer.RESOURCE_a0a9c6i;
         }
         @Override
         public String getTooltipText() {
@@ -283,7 +338,7 @@ public class Other_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c7i_0;
+          return IconContainer.RESOURCE_a0a9c7i;
         }
         @Override
         public String getTooltipText() {
@@ -329,7 +384,7 @@ public class Other_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c8i_0;
+          return IconContainer.RESOURCE_a0a9c8i;
         }
         @Override
         public String getTooltipText() {
@@ -375,7 +430,7 @@ public class Other_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c9i_0;
+          return IconContainer.RESOURCE_a0a9c9i;
         }
         @Override
         public String getTooltipText() {

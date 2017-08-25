@@ -36,6 +36,7 @@ import jetbrains.mps.editor.runtime.selection.SelectionUtil;
 import jetbrains.mps.editor.runtime.cells.CellIdManager;
 import jetbrains.mps.smodel.runtime.IconResource;
 import java.util.Random;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 
 public class Event_TransformationMenu extends TransformationMenuBase {
   private final Set<String> myLocations = SetSequence.fromSetAndArray(new HashSet<String>(), MenuLocations.CONTEXT_ASSISTANT, MenuLocations.CONTEXT_ASSISTANT, jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.MenuLocations.CONTEXT_ACTIONS_TOOL, jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.MenuLocations.CONTEXT_ACTIONS_TOOL, jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.MenuLocations.CONTEXT_ACTIONS_TOOL);
@@ -475,7 +476,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Event_TransformationMenu.TMP_SubMenu_8shh52_a4.TMP_Action_8shh52_a0e(), new Event_TransformationMenu.TMP_SubMenu_8shh52_a4.TMP_Action_8shh52_b0e(), new Event_TransformationMenu.TMP_SubMenu_8shh52_a4.TMP_Action_8shh52_c0e());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Event_TransformationMenu.TMP_SubMenu_8shh52_a4.TMP_Action_8shh52_a0e(), new Event_TransformationMenu.TMP_SubMenu_8shh52_a4.TMP_Action_8shh52_b0e(), new Event_TransformationMenu.TMP_SubMenu_8shh52_a4.TMP_Action_8shh52_c0e(), new Event_TransformationMenu.TMP_SubMenu_8shh52_a4.TMP_Action_8shh52_d0e());
     }
     private class TMP_Action_8shh52_a0e extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
@@ -584,6 +585,60 @@ public class Event_TransformationMenu extends TransformationMenuBase {
         private Item(TransformationMenuContext context) {
           _context = context;
           _context.getEditorMenuTrace().pushTraceInfo();
+          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("single item: " + getLabelText(""), new SNodePointer("r:7c1e5bbb-2d18-4cf3-a11d-502be6b13261(jetbrains.mps.samples.VoiceMenu.editor)", "3712338390306890962")));
+          myEditorMenuTraceInfo = _context.getEditorMenuTrace().getTraceInfo();
+          context.getEditorMenuTrace().popTraceInfo();
+        }
+
+        @Nullable
+        @Override
+        public String getLabelText(String pattern) {
+          return "Remove event";
+        }
+
+        @Override
+        public void execute(@NotNull String pattern) {
+
+          SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities"))).findFirst(new IWhereFilter<SNode>() {
+            public boolean accept(SNode it) {
+              return SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")) == _context.getNode();
+            }
+          }));
+
+          SNodeOperations.deleteNode(_context.getNode());
+
+        }
+
+
+        @Override
+        public IconResource getIcon() {
+          return IconContainer.RESOURCE_a0a9c8l;
+        }
+        @Override
+        public String getTooltipText() {
+          return null;
+        }
+
+
+        @Override
+        public EditorMenuTraceInfo getTraceInfo() {
+          return myEditorMenuTraceInfo;
+        }
+      }
+
+    }
+    private class TMP_Action_8shh52_d0e extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+      @Nullable
+      protected TransformationMenuItem createItem(TransformationMenuContext context) {
+        return new Event_TransformationMenu.TMP_SubMenu_8shh52_a4.TMP_Action_8shh52_d0e.Item(context);
+      }
+
+      private class Item extends ActionItemBase implements SidebarActionItem {
+        private final TransformationMenuContext _context;
+        private final EditorMenuTraceInfo myEditorMenuTraceInfo;
+        private Item(TransformationMenuContext context) {
+          _context = context;
+          _context.getEditorMenuTrace().pushTraceInfo();
           _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("single item: " + getLabelText(""), new SNodePointer("r:7c1e5bbb-2d18-4cf3-a11d-502be6b13261(jetbrains.mps.samples.VoiceMenu.editor)", "6198827212362263672")));
           myEditorMenuTraceInfo = _context.getEditorMenuTrace().getTraceInfo();
           context.getEditorMenuTrace().popTraceInfo();
@@ -612,7 +667,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a01c8l;
+          return IconContainer.RESOURCE_a0a01c9l;
         }
         @Override
         public String getTooltipText() {
