@@ -217,16 +217,7 @@
       </node>
       <node concept="2C_I21" id="4matEwaOelJ" role="2C_I26">
         <ref role="2C_gVZ" node="4matEwaD43l" resolve="One" />
-        <node concept="2C_Ik4" id="5o6E870PPzy" role="2C_gVu">
-          <node concept="2C_Ik0" id="5o6E870RITE" role="2C_I24">
-            <property role="2C_Iks" value="1" />
-            <property role="TrG5h" value="Action_49" />
-          </node>
-          <node concept="2C_I21" id="5o6E870Tel$" role="2C_I26">
-            <ref role="2C_gVZ" node="5o6E870RITE" resolve="Action_49" />
-            <node concept="1$pBvr" id="5o6E870Tf5Q" role="2C_gVu" />
-          </node>
-        </node>
+        <node concept="1$pBvq" id="5o6E870Wm3K" role="2C_gVu" />
       </node>
       <node concept="2C_I21" id="4matEwaOelQ" role="2C_I26">
         <ref role="2C_gVZ" node="4matEwaMLmN" resolve="Four" />

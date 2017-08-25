@@ -421,6 +421,8 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
           SPropertyOperations.set(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "Action_" + String.valueOf(randomNumber));
 
+          SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), "*" + CellIdManager.createPropertyId("trigger"));
+
         }
 
         @Override
