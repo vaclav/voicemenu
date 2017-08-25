@@ -185,6 +185,10 @@
         <reference id="3562215692195600259" name="link" index="13MTZf" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
+      <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
+        <child id="1180636770616" name="createdType" index="3zrR0E" />
+      </concept>
       <concept id="1139867745658" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithNewOperation" flags="nn" index="1_qnLN">
         <reference id="1139867957129" name="concept" index="1_rbq0" />
       </concept>
@@ -1475,6 +1479,72 @@
         <node concept="3clFbF" id="3JYttAAO_t$" role="3cqZAp">
           <node concept="Xl_RD" id="3JYttAAO_tz" role="3clFbG">
             <property role="Xl_RC" value="initiliaze Menu" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="5o6E87148P5">
+    <property role="TrG5h" value="EmptyWorkspace" />
+    <node concept="3clFbS" id="5o6E87148P6" role="18ibNy">
+      <node concept="3clFbJ" id="5o6E87148Ph" role="3cqZAp">
+        <node concept="2OqwBi" id="5o6E87149W5" role="3clFbw">
+          <node concept="2OqwBi" id="5o6E87148ZS" role="2Oq$k0">
+            <node concept="1YBJjd" id="5o6E87148PD" role="2Oq$k0">
+              <ref role="1YBMHb" node="5o6E87148P8" resolve="workSpace" />
+            </node>
+            <node concept="3TrEf2" id="5o6E871498K" role="2OqNvi">
+              <ref role="3Tt5mk" to="xehl:5HF1wNO0wjF" resolve="bodyMenu" />
+            </node>
+          </node>
+          <node concept="3w_OXm" id="5o6E8714aiO" role="2OqNvi" />
+        </node>
+        <node concept="3clFbS" id="5o6E87148Pj" role="3clFbx">
+          <node concept="2MkqsV" id="5o6E8714ala" role="3cqZAp">
+            <node concept="3Cnw8n" id="5o6E8714mVY" role="2OEOjU">
+              <property role="ARO6o" value="true" />
+              <ref role="QpYPw" node="5o6E8714jrJ" resolve="InitWorkspace" />
+            </node>
+            <node concept="Xl_RD" id="5o6E8714alm" role="2MkJ7o">
+              <property role="Xl_RC" value="Menu is null" />
+            </node>
+            <node concept="1YBJjd" id="5o6E8714amb" role="2OEOjV">
+              <ref role="1YBMHb" node="5o6E87148P8" resolve="workSpace" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5o6E87148P8" role="1YuTPh">
+      <property role="TrG5h" value="workSpace" />
+      <ref role="1YaFvo" to="xehl:5HF1wNO0wj8" resolve="WorkSpace" />
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="5o6E8714jrJ">
+    <property role="3GE5qa" value="QuickFixes" />
+    <property role="TrG5h" value="InitWorkspace" />
+    <node concept="Q5ZZ6" id="5o6E8714jrK" role="Q6x$H">
+      <node concept="3clFbS" id="5o6E8714jrL" role="2VODD2">
+        <node concept="3clFbF" id="5o6E8714js5" role="3cqZAp">
+          <node concept="37vLTI" id="5o6E8714mBb" role="3clFbG">
+            <node concept="2ShNRf" id="5o6E8714mGP" role="37vLTx">
+              <node concept="3zrR0B" id="5o6E8714mEU" role="2ShVmc">
+                <node concept="3Tqbb2" id="5o6E8714mEV" role="3zrR0E">
+                  <ref role="ehGHo" to="xehl:5HF1wNNZuc8" resolve="Menu" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5o6E8714kDk" role="37vLTJ">
+              <node concept="1PxgMI" id="5o6E8714kvM" role="2Oq$k0">
+                <node concept="chp4Y" id="5o6E8714kvY" role="3oSUPX">
+                  <ref role="cht4Q" to="xehl:5HF1wNO0wj8" resolve="WorkSpace" />
+                </node>
+                <node concept="Q6c8r" id="5o6E8714js4" role="1m5AlR" />
+              </node>
+              <node concept="3TrEf2" id="5o6E8714lYB" role="2OqNvi">
+                <ref role="3Tt5mk" to="xehl:5HF1wNO0wjF" resolve="bodyMenu" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
