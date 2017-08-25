@@ -14,7 +14,8 @@ public class IconContainer {
   protected static IconResource RESOURCE_a0a01c6k = new IconResource("random.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c6l = new IconResource("add_to_list.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c7l = new IconResource("add_to_list.png", IconContainer.class);
-  protected static IconResource RESOURCE_a0a01c8l = new IconResource("plus.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a9c8l = new IconResource("remove.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a01c9l = new IconResource("plus.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c6h = new IconResource("add_to_list.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c7h = new IconResource("add_to_list.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c6i_0 = new IconResource("phone.png", IconContainer.class);
@@ -47,4 +48,5 @@ public class IconContainer {
   protected static IconResource RESOURCE_a0a9c9i_4 = new IconResource("donkey.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c6h_4 = new IconResource("add_to_list.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c7h_4 = new IconResource("add_to_list.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a9c8h = new IconResource("remove.png", IconContainer.class);
 }
