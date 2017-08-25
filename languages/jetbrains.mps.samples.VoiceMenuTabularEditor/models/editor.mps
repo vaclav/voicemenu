@@ -669,7 +669,7 @@
     <node concept="3EZMnI" id="5HF1wNNZwzu" role="2wV5jI">
       <ref role="1k5W1q" to="ei2q:3yrvnjuhfbU" resolve="Brackets" />
       <node concept="3F0ifn" id="5HF1wNNZI4l" role="3EZMnx">
-        <property role="3F0ifm" value="Event:" />
+        <property role="3F0ifm" value="Activity:" />
         <ref role="1k5W1q" to="ei2q:11pGboo1Ya6" resolve="HardCodedText" />
         <node concept="1fO$WK" id="3yrvnjuhbBU" role="3F10Kt" />
       </node>
@@ -716,6 +716,7 @@
         <node concept="1sVBvm" id="5HF1wNO0qp_" role="1sWHZn">
           <node concept="3F0A7n" id="5HF1wNO0qqr" role="2wV5jI">
             <property role="1Intyy" value="true" />
+            <property role="1$x2rV" value="button" />
             <ref role="1NtTu8" to="xehl:5HF1wNNZucg" resolve="trigger" />
             <node concept="VPxyj" id="5lu2mvqIDau" role="3F10Kt">
               <property role="VOm3f" value="false" />

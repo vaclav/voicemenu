@@ -144,6 +144,7 @@
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
+        <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
@@ -630,7 +631,7 @@
     <node concept="3EZMnI" id="5HF1wNNZwzu" role="2wV5jI">
       <ref role="1k5W1q" node="3yrvnjuhfbU" resolve="Brackets" />
       <node concept="3F0ifn" id="5HF1wNNZI4l" role="3EZMnx">
-        <property role="3F0ifm" value="Event:" />
+        <property role="3F0ifm" value="Activity:" />
         <ref role="1k5W1q" node="11pGboo1Ya6" resolve="HardCodedText" />
         <node concept="1fO$WK" id="3yrvnjuhbBU" role="3F10Kt" />
       </node>
@@ -642,6 +643,7 @@
           <node concept="3F0A7n" id="5HF1wNNZJcZ" role="2wV5jI">
             <property role="1Intyy" value="true" />
             <property role="1$x2rV" value="name" />
+            <property role="1O74Pk" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
             <ref role="1k5W1q" node="11pGboo2CX2" resolve="Declarations" />
             <node concept="VPxyj" id="5lu2mvqID12" role="3F10Kt">
@@ -662,12 +664,13 @@
         <node concept="1sVBvm" id="5HF1wNO0qp_" role="1sWHZn">
           <node concept="3F0A7n" id="5HF1wNO0qqr" role="2wV5jI">
             <property role="1Intyy" value="true" />
+            <property role="1$x2rV" value="button" />
             <ref role="1NtTu8" to="xehl:5HF1wNNZucg" resolve="trigger" />
             <node concept="VPxyj" id="5lu2mvqIDau" role="3F10Kt">
-              <property role="VOm3f" value="false" />
+              <property role="VOm3f" value="true" />
             </node>
             <node concept="VPM3Z" id="5lu2mvqMDDr" role="3F10Kt">
-              <property role="VOm3f" value="false" />
+              <property role="VOm3f" value="true" />
             </node>
           </node>
         </node>

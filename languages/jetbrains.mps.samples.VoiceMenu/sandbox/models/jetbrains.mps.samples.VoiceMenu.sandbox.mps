@@ -216,7 +216,7 @@
         <property role="TrG5h" value="Television" />
       </node>
       <node concept="2C_Ik0" id="4matEwaD43l" role="2C_I24">
-        <property role="2C_Iks" value="4" />
+        <property role="2C_Iks" value="1" />
         <property role="TrG5h" value="Internet" />
       </node>
       <node concept="2C_I21" id="54keEMKp0NA" role="2C_I26">
@@ -227,8 +227,8 @@
         <ref role="2C_gVZ" node="4matEwaD43l" resolve="Internet" />
         <node concept="1$pBvo" id="4matEwaD43F" role="2C_gVu" />
       </node>
-      <node concept="2C_I21" id="4matEwaHbhq" role="2C_I26">
-        <node concept="1$pBvr" id="4matEwaHlMB" role="2C_gVu" />
+      <node concept="2C_I21" id="4matEwaJ0Dv" role="2C_I26">
+        <node concept="1$pBvr" id="4matEwaK2j_" role="2C_gVu" />
       </node>
     </node>
   </node>

@@ -88,7 +88,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     return isNotEmptyString(SPropertyOperations.getString(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "greeting")));
   }
   private EditorCell createConstant_luypn2_a0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Event:");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Activity:");
     editorCell.setCellId("Constant_luypn2_a0");
     Style style = new StyleImpl();
     new HardCodedTextStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
@@ -159,6 +159,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
       provider.setRole("name");
       provider.setNoTargetText("name");
       provider.setReadOnly(true);
+      provider.setAllowsEmptyTarget(true);
       EditorCell editorCell;
       editorCell = provider.createEditorCell(getEditorContext());
       editorCell.setCellId("property_name");
@@ -241,14 +242,14 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     private EditorCell createProperty_luypn2_a0d0() {
       CellProviderWithRole provider = new PropertyCellProvider(myNode, getEditorContext());
       provider.setRole("trigger");
-      provider.setNoTargetText("<no trigger>");
+      provider.setNoTargetText("button");
       provider.setReadOnly(true);
       EditorCell editorCell;
       editorCell = provider.createEditorCell(getEditorContext());
       editorCell.setCellId("property_trigger");
       Style style = new StyleImpl();
-      style.set(StyleAttributes.EDITABLE, false);
-      style.set(StyleAttributes.SELECTABLE, false);
+      style.set(StyleAttributes.EDITABLE, true);
+      style.set(StyleAttributes.SELECTABLE, true);
       editorCell.getStyle().putAll(style);
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
       SNode attributeConcept = provider.getRoleAttribute();
