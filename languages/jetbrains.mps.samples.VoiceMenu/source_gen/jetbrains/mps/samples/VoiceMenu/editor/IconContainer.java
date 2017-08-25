@@ -27,4 +27,8 @@ public class IconContainer {
   protected static IconResource RESOURCE_a0a9c7h_2 = new IconResource("arrow.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c8h_2 = new IconResource("menu.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c9h_2 = new IconResource("donkey.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a9c6h_3 = new IconResource("phone.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a9c7h_3 = new IconResource("arrow.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a9c8h_3 = new IconResource("info.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a9c9h_3 = new IconResource("donkey.png", IconContainer.class);
 }
