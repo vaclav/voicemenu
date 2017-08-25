@@ -70,11 +70,21 @@ public class Main__0 implements ActionListener {
     _Nine_qy4hiv_d0.setAction("call");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     _Nine_qy4hiv_d0.childs = new ArrayList<Event>();
+    Event _qereeer_qy4hiv_e0 = new Event("qereeer", "0");
+    _qereeer_qy4hiv_e0.setAction("");
+    _qereeer_qy4hiv_e0.setGreeting("");
+    _qereeer_qy4hiv_e0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + _qereeer_qy4hiv_e0.trigger;
+    Variables.myHashMap.put(Variables.path, _qereeer_qy4hiv_e0);
+    _qereeer_qy4hiv_e0.setAction("call");
+    Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
+    _qereeer_qy4hiv_e0.childs = new ArrayList<Event>();
 
     Home.childs.add(_Eight_qy4hiv_a0);
     Home.childs.add(_One_qy4hiv_b0);
     Home.childs.add(_Five_qy4hiv_c0);
     Home.childs.add(_Nine_qy4hiv_d0);
+    Home.childs.add(_qereeer_qy4hiv_e0);
   }
 
   public static void main(String[] args) {
