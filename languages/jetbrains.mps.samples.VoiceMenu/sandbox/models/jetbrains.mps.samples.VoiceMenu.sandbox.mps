@@ -74,11 +74,11 @@
         <node concept="2C_Ik4" id="2w$I9I9URl3" role="2C_gVu">
           <node concept="2C_Ik0" id="2w$I9I9URl8" role="2C_I24">
             <property role="2C_Iks" value="1" />
-            <property role="TrG5h" value="Discont" />
+            <property role="TrG5h" value="Discount" />
           </node>
           <node concept="2C_I21" id="2w$I9I9URlc" role="2C_I26">
             <property role="3upAMh" value="Welcome in section of discounts, here is everything cheaper." />
-            <ref role="2C_gVZ" node="2w$I9I9URl8" resolve="Discont" />
+            <ref role="2C_gVZ" node="2w$I9I9URl8" resolve="Discount" />
             <node concept="2C_Ik4" id="2w$I9I9VzA3" role="2C_gVu">
               <node concept="2C_Ik0" id="2w$I9I9VzA8" role="2C_I24">
                 <property role="2C_Iks" value="1" />
@@ -218,6 +218,7 @@
         <property role="TrG5h" value="Eight" />
       </node>
       <node concept="2C_I21" id="4matEwaOelE" role="2C_I26">
+        <property role="3upAMh" value="very happy Christmas" />
         <ref role="2C_gVZ" node="54keEMKoACO" resolve="Eight" />
         <node concept="1$pBvq" id="5o6E870NcHa" role="2C_gVu" />
       </node>
