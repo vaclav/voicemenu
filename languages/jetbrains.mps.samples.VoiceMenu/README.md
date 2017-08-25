@@ -60,8 +60,6 @@ Right click the myVoicemenu sandbox solution in the left panel and choose `Run` 
 Intentions 
 -----------------
 
-Mostly different intentions are specified for each of nodes.
-All intentions are invoked by pressing `Alt + Enter` shortcut.
 
 * **Global** - Switching Editors (Regular or Tabular) 
 * **Global** - Toolbar 
@@ -88,6 +86,22 @@ Different errors invoke different quickfixes.
 * **Event Initilization** - Reset name
 * **Event Initilization** - Initiliaze Event
 * (**Event Initilization** - Initiliaze Menu - autoFix, cannot be invoked)
+
+
+Intentions
+----------
+
+
+Mostly different intentions are specified for each of nodes.
+All intentions are invoked by pressing `Alt + Enter` shortcut.
+
+|Event Declaration|Activity|Action|Global|
+|-----------------|--------|------|------|
+|Sort Ascendind|Initiliaze New Event|Change Action to Back|Hide Toolbar|
+|Sort Descending|Make Declaration|Change Action to Other|Show Toolbar|
+|Move Up|Remove Greeting|Change Action to Direct Call|Show as Structural|
+|Move Down|Add Greeting|Change Action to Get Info|Show as Tabular|
+|Remove Evnt. + its Actvt.|Remove Actvt. + its Evnt.|Change Action to Menu|||
 
 
 
