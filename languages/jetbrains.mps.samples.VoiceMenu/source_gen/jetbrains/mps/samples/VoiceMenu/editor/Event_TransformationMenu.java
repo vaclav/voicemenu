@@ -32,6 +32,8 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.editor.menus.transformation.SubMenuMenuTransformationMenuPart;
 import java.util.Arrays;
 import jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.SidebarActionItem;
+import jetbrains.mps.editor.runtime.selection.SelectionUtil;
+import jetbrains.mps.editor.runtime.cells.CellIdManager;
 import jetbrains.mps.smodel.runtime.IconResource;
 
 public class Event_TransformationMenu extends TransformationMenuBase {
@@ -143,6 +145,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
         @Override
         public String getLabelText(String pattern) {
           return myParameterObject;
+
         }
 
         @Override
@@ -318,6 +321,8 @@ public class Event_TransformationMenu extends TransformationMenuBase {
           @Override
           public void execute(@NotNull String pattern) {
             SPropertyOperations.set(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"), myParameterObject);
+            SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), "*" + CellIdManager.createPropertyId("name"));
+
           }
 
 

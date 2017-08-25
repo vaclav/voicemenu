@@ -34,8 +34,6 @@ import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart;
 import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
-import jetbrains.mps.editor.runtime.style.Padding;
-import jetbrains.mps.editor.runtime.style.Measure;
 
 /*package*/ class WorkSpace_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -91,7 +89,6 @@ import jetbrains.mps.editor.runtime.style.Measure;
       editorCell.addEditorCell(createProperty_ikqrmj_j0());
     }
     editorCell.addEditorCell(createRefNode_ikqrmj_k0());
-    editorCell.addEditorCell(createConstant_ikqrmj_l0());
     return editorCell;
   }
   private boolean nodeCondition_ikqrmj_a0a() {
@@ -298,16 +295,6 @@ import jetbrains.mps.editor.runtime.style.Measure;
     protected String getNoTargetText() {
       return "<no bodyMenu>";
     }
-  }
-  private EditorCell createConstant_ikqrmj_l0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
-    editorCell.setCellId("Constant_ikqrmj_l0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
-    style.set(StyleAttributes.PADDING_LEFT, new Padding(40, Measure.SPACES));
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
   }
   private static boolean isNotEmptyString(String str) {
     return str != null && str.length() > 0;

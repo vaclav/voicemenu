@@ -63,9 +63,9 @@ public final class MoveUp_Intention extends AbstractIntentionDescriptor implemen
       List<SNode> events = SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(node), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"));
       SNode swap;
 
-      swap = ListSequence.fromList(events).getElement(index - 1);
-      ListSequence.fromList(events).setElement(index - 1, ListSequence.fromList(events).getElement(index));
-      ListSequence.fromList(events).setElement(index, swap);
+      swap = ListSequence.fromList(events).getElement(index);
+      ListSequence.fromList(events).setElement(index, ListSequence.fromList(events).getElement(index - 1));
+      ListSequence.fromList(events).setElement(index - 1, swap);
 
 
       for (SNode item : ListSequence.fromList(events)) {

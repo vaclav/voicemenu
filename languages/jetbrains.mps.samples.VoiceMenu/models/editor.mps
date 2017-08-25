@@ -39,6 +39,9 @@
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
+      <concept id="4510086454722552739" name="jetbrains.mps.lang.editor.structure.PropertyDeclarationCellSelector" flags="ng" index="eBIwv">
+        <reference id="4510086454740628767" name="propertyDeclaration" index="fyFUz" />
+      </concept>
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="8954657570917870539" name="jetbrains.mps.lang.editor.structure.TransformationLocation_ContextAssistant" flags="ng" index="2j_NTm" />
       <concept id="3459162043708467089" name="jetbrains.mps.lang.editor.structure.CellActionMap_CanExecuteFunction" flags="in" index="jK8Ss" />
@@ -137,10 +140,6 @@
         <child id="5692353713941631155" name="textFunction" index="1hCDOS" />
         <child id="4056398722183895554" name="items" index="1vlqcB" />
       </concept>
-      <concept id="1215007762405" name="jetbrains.mps.lang.editor.structure.FloatStyleClassItem" flags="ln" index="3$6MrZ">
-        <property id="1215007802031" name="value" index="3$6WeP" />
-      </concept>
-      <concept id="1215007883204" name="jetbrains.mps.lang.editor.structure.PaddingLeftStyleClassItem" flags="ln" index="3$7fVu" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
@@ -1029,14 +1028,6 @@
         </node>
         <node concept="lj46D" id="5HF1wNO0wl4" role="3F10Kt">
           <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="3p$ip5sO12Z" role="3EZMnx">
-        <node concept="pVoyu" id="3p$ip5sO1dw" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="3$7fVu" id="3p$ip5sO1dB" role="3F10Kt">
-          <property role="3$6WeP" value="40" />
         </node>
       </node>
       <node concept="l2Vlx" id="5HF1wNO0wkj" role="2iSdaV" />
@@ -2149,6 +2140,7 @@
               <node concept="3clFbF" id="54keEMKh06$" role="3cqZAp">
                 <node concept="2ZBlsa" id="54keEMKh06z" role="3clFbG" />
               </node>
+              <node concept="3clFbH" id="5o6E870KUHG" role="3cqZAp" />
             </node>
           </node>
           <node concept="IWg2L" id="54keEMKgZGS" role="IWgqQ">
@@ -2614,6 +2606,18 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbF" id="5o6E870Mqf6" role="3cqZAp">
+                  <node concept="2OqwBi" id="5o6E870Mqf7" role="3clFbG">
+                    <node concept="7Obwk" id="5o6E870Mqls" role="2Oq$k0" />
+                    <node concept="1OKiuA" id="5o6E870Mqf9" role="2OqNvi">
+                      <node concept="1Q80Hx" id="5o6E870Mqfa" role="lBI5i" />
+                      <node concept="eBIwv" id="5o6E870MWpR" role="lGT1i">
+                        <ref role="fyFUz" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbH" id="5o6E870MqbO" role="3cqZAp" />
               </node>
             </node>
           </node>
