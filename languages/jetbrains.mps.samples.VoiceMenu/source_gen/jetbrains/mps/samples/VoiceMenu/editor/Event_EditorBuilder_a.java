@@ -65,6 +65,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_ContextAssistantComponent;
     return editorCell;
   }
   private boolean nodeCondition_ymj9mh_a4a() {
+
     if (isEmptyString(SPropertyOperations.getString(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")))) {
       return true;
     }

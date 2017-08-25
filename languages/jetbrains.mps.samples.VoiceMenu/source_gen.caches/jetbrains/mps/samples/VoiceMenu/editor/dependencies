@@ -315,6 +315,7 @@
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.HashSet" />
     <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="java.util.Random" />
     <classNode dependClassName="java.util.Set" />
     <classNode dependClassName="jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.MenuLocations" />
     <classNode dependClassName="jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.SidebarActionItem" />
