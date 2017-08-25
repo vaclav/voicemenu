@@ -34,45 +34,37 @@ public class Main__0 implements ActionListener {
     Variables.myHashMap.put("0", Home);
 
 
-    Event _Television_qy4hiv_a0 = new Event("Television", "8");
-    _Television_qy4hiv_a0.setAction("");
-    _Television_qy4hiv_a0.setGreeting("");
-    _Television_qy4hiv_a0.childs = new ArrayList<Event>();
-    Variables.path = Variables.path + _Television_qy4hiv_a0.trigger;
-    Variables.myHashMap.put(Variables.path, _Television_qy4hiv_a0);
-    _Television_qy4hiv_a0.setAction("call");
+    Event _Eight_qy4hiv_a0 = new Event("Eight", "8");
+    _Eight_qy4hiv_a0.setAction("");
+    _Eight_qy4hiv_a0.setGreeting("");
+    _Eight_qy4hiv_a0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + _Eight_qy4hiv_a0.trigger;
+    Variables.myHashMap.put(Variables.path, _Eight_qy4hiv_a0);
+    _Eight_qy4hiv_a0.setAction("back");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
-    _Television_qy4hiv_a0.childs = new ArrayList<Event>();
-    Event _Internet_qy4hiv_b0 = new Event("Internet", "4");
-    _Internet_qy4hiv_b0.setAction("");
-    _Internet_qy4hiv_b0.setGreeting("");
-    _Internet_qy4hiv_b0.childs = new ArrayList<Event>();
-    Variables.path = Variables.path + _Internet_qy4hiv_b0.trigger;
-    Variables.myHashMap.put(Variables.path, _Internet_qy4hiv_b0);
-    _Internet_qy4hiv_b0.setAction("getInfo");
+    _Eight_qy4hiv_a0.childs = new ArrayList<Event>();
+    Event _One_qy4hiv_c0 = new Event("One", "1");
+    _One_qy4hiv_c0.setAction("");
+    _One_qy4hiv_c0.setGreeting("");
+    _One_qy4hiv_c0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + _One_qy4hiv_c0.trigger;
+    Variables.myHashMap.put(Variables.path, _One_qy4hiv_c0);
+    _One_qy4hiv_c0.setAction("call");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
-    _Internet_qy4hiv_b0.childs = new ArrayList<Event>();
-    Event _xx_qy4hiv_c0 = new Event("xx", "0");
-    _xx_qy4hiv_c0.setAction("");
-    _xx_qy4hiv_c0.setGreeting("");
-    _xx_qy4hiv_c0.childs = new ArrayList<Event>();
-    Variables.path = Variables.path + _xx_qy4hiv_c0.trigger;
-    Variables.myHashMap.put(Variables.path, _xx_qy4hiv_c0);
-    _xx_qy4hiv_c0.setAction("call");
+    _One_qy4hiv_c0.childs = new ArrayList<Event>();
+    Event _Four_qy4hiv_b0 = new Event("Four", "4");
+    _Four_qy4hiv_b0.setAction("");
+    _Four_qy4hiv_b0.setGreeting("");
+    _Four_qy4hiv_b0.childs = new ArrayList<Event>();
+    Variables.path = Variables.path + _Four_qy4hiv_b0.trigger;
+    Variables.myHashMap.put(Variables.path, _Four_qy4hiv_b0);
+    _Four_qy4hiv_b0.setAction("getInfo");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
-    _xx_qy4hiv_c0.childs = new ArrayList<Event>();
-    ???;
-    .setAction("");
-    .setGreeting("");
-    .childs = new ArrayList<Event>();
-    Variables.path = Variables.path + .trigger;
-    Variables.myHashMap.put(Variables.path, );
-    Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
-    .childs = new ArrayList<Event>();
+    _Four_qy4hiv_b0.childs = new ArrayList<Event>();
 
-    Home.childs.add(_Television_qy4hiv_a0);
-    Home.childs.add(_Internet_qy4hiv_b0);
-    Home.childs.add(_xx_qy4hiv_c0);
+    Home.childs.add(_Eight_qy4hiv_a0);
+    Home.childs.add(_Four_qy4hiv_b0);
+    Home.childs.add(_One_qy4hiv_c0);
   }
 
   public static void main(String[] args) {
