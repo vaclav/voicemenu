@@ -483,141 +483,62 @@
     </node>
   </node>
   <node concept="312cEu" id="1M">
+    <property role="TrG5h" value="ConstraintsAspectDescriptor" />
     <property role="3GE5qa" value="Constraints" />
-    <property role="TrG5h" value="Command_Constraints" />
-    <node concept="3Tm1VV" id="1N" role="1B3o_S" />
-    <node concept="3uibUv" id="1O" role="1zkMxy">
-      <ref role="3uigEE" to="79pl:~BaseConstraintsDescriptor" resolve="BaseConstraintsDescriptor" />
+    <node concept="3uibUv" id="1N" role="1zkMxy">
+      <ref role="3uigEE" to="ze1i:~BaseConstraintsAspectDescriptor" resolve="BaseConstraintsAspectDescriptor" />
     </node>
+    <node concept="3Tm1VV" id="1O" role="1B3o_S" />
     <node concept="3clFbW" id="1P" role="jymVt">
       <node concept="3cqZAl" id="1S" role="3clF45" />
-      <node concept="3clFbS" id="1T" role="3clF47">
-        <node concept="XkiVB" id="1V" role="3cqZAp">
-          <ref role="37wK5l" to="79pl:~BaseConstraintsDescriptor.&lt;init&gt;(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="BaseConstraintsDescriptor" />
-          <node concept="2YIFZM" id="1W" role="37wK5m">
-            <ref role="1Pybhc" to="2k9e:~MetaAdapterFactory" resolve="MetaAdapterFactory" />
-            <ref role="37wK5l" to="2k9e:~MetaAdapterFactory.getConcept(long,long,long,java.lang.String):org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
-            <node concept="1adDum" id="1X" role="37wK5m">
-              <property role="1adDun" value="0x4bc750d756884f52L" />
-            </node>
-            <node concept="1adDum" id="1Y" role="37wK5m">
-              <property role="1adDun" value="0xb7d5b263a3393a24L" />
-            </node>
-            <node concept="1adDum" id="1Z" role="37wK5m">
-              <property role="1adDun" value="0x555e0967dab9863dL" />
-            </node>
-            <node concept="Xl_RD" id="20" role="37wK5m">
-              <property role="Xl_RC" value="jetbrains.mps.samples.VoiceMenu.structure.Command" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="1U" role="1B3o_S" />
+      <node concept="3Tm1VV" id="1T" role="1B3o_S" />
+      <node concept="3clFbS" id="1U" role="3clF47" />
     </node>
     <node concept="2tJIrI" id="1Q" role="jymVt" />
     <node concept="3clFb_" id="1R" role="jymVt">
       <property role="IEkAT" value="false" />
       <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="getDefaultConcreteConcept" />
-      <property role="DiZV1" value="false" />
-      <node concept="3Tm1VV" id="21" role="1B3o_S" />
-      <node concept="3uibUv" id="22" role="3clF45">
-        <ref role="3uigEE" to="c17a:~SAbstractConcept" resolve="SAbstractConcept" />
-      </node>
-      <node concept="3clFbS" id="23" role="3clF47">
-        <node concept="3clFbF" id="24" role="3cqZAp">
-          <node concept="2YIFZM" id="25" role="3clFbG">
-            <ref role="1Pybhc" to="2k9e:~MetaAdapterFactory" resolve="MetaAdapterFactory" />
-            <ref role="37wK5l" to="2k9e:~MetaAdapterFactory.getConcept(long,long,long,java.lang.String):org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
-            <node concept="1adDum" id="26" role="37wK5m">
-              <property role="1adDun" value="0x4bc750d756884f52L" />
-            </node>
-            <node concept="1adDum" id="27" role="37wK5m">
-              <property role="1adDun" value="0xb7d5b263a3393a24L" />
-            </node>
-            <node concept="1adDum" id="28" role="37wK5m">
-              <property role="1adDun" value="0x555e0967dab9c5c3L" />
-            </node>
-            <node concept="Xl_RD" id="29" role="37wK5m">
-              <property role="Xl_RC" value="jetbrains.mps.samples.VoiceMenu.structure.Empty" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="312cEu" id="2a">
-    <property role="TrG5h" value="ConstraintsAspectDescriptor" />
-    <property role="3GE5qa" value="Constraints" />
-    <node concept="3uibUv" id="2b" role="1zkMxy">
-      <ref role="3uigEE" to="ze1i:~BaseConstraintsAspectDescriptor" resolve="BaseConstraintsAspectDescriptor" />
-    </node>
-    <node concept="3Tm1VV" id="2c" role="1B3o_S" />
-    <node concept="3clFbW" id="2d" role="jymVt">
-      <node concept="3cqZAl" id="2g" role="3clF45" />
-      <node concept="3Tm1VV" id="2h" role="1B3o_S" />
-      <node concept="3clFbS" id="2i" role="3clF47" />
-    </node>
-    <node concept="2tJIrI" id="2e" role="jymVt" />
-    <node concept="3clFb_" id="2f" role="jymVt">
-      <property role="IEkAT" value="false" />
-      <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getConstraints" />
       <property role="DiZV1" value="false" />
-      <node concept="2AHcQZ" id="2j" role="2AJF6D">
+      <node concept="2AHcQZ" id="1V" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="3Tm1VV" id="2k" role="1B3o_S" />
-      <node concept="3uibUv" id="2l" role="3clF45">
+      <node concept="3Tm1VV" id="1W" role="1B3o_S" />
+      <node concept="3uibUv" id="1X" role="3clF45">
         <ref role="3uigEE" to="ze1i:~ConstraintsDescriptor" resolve="ConstraintsDescriptor" />
       </node>
-      <node concept="37vLTG" id="2m" role="3clF46">
+      <node concept="37vLTG" id="1Y" role="3clF46">
         <property role="TrG5h" value="concept" />
-        <node concept="3bZ5Sz" id="2o" role="1tU5fm" />
+        <node concept="3bZ5Sz" id="20" role="1tU5fm" />
       </node>
-      <node concept="3clFbS" id="2n" role="3clF47">
-        <node concept="1_3QMa" id="2p" role="3cqZAp">
-          <node concept="37vLTw" id="2r" role="1_3QMn">
-            <ref role="3cqZAo" node="2m" resolve="concept" />
+      <node concept="3clFbS" id="1Z" role="3clF47">
+        <node concept="1_3QMa" id="21" role="3cqZAp">
+          <node concept="37vLTw" id="23" role="1_3QMn">
+            <ref role="3cqZAo" node="1Y" resolve="concept" />
           </node>
-          <node concept="1pnPoh" id="2s" role="1_3QMm">
-            <node concept="3clFbS" id="2v" role="1pnPq1">
-              <node concept="3cpWs6" id="2x" role="3cqZAp">
-                <node concept="1nCR9W" id="2y" role="3cqZAk">
+          <node concept="1pnPoh" id="24" role="1_3QMm">
+            <node concept="3clFbS" id="26" role="1pnPq1">
+              <node concept="3cpWs6" id="28" role="3cqZAp">
+                <node concept="1nCR9W" id="29" role="3cqZAk">
                   <property role="1nD$Q0" value="jetbrains.mps.samples.VoiceMenu.constraints.Activity_Constraints" />
-                  <node concept="3uibUv" id="2z" role="2lIhxL">
+                  <node concept="3uibUv" id="2a" role="2lIhxL">
                     <ref role="3uigEE" to="ze1i:~ConstraintsDescriptor" resolve="ConstraintsDescriptor" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3gn64h" id="2w" role="1pnPq6">
+            <node concept="3gn64h" id="27" role="1pnPq6">
               <ref role="3gnhBz" to="xehl:5HF1wNNZuqd" resolve="Activity" />
             </node>
           </node>
-          <node concept="1pnPoh" id="2t" role="1_3QMm">
-            <node concept="3clFbS" id="2$" role="1pnPq1">
-              <node concept="3cpWs6" id="2A" role="3cqZAp">
-                <node concept="1nCR9W" id="2B" role="3cqZAk">
-                  <property role="1nD$Q0" value="jetbrains.mps.samples.VoiceMenu.constraints.Command_Constraints" />
-                  <node concept="3uibUv" id="2C" role="2lIhxL">
-                    <ref role="3uigEE" to="ze1i:~ConstraintsDescriptor" resolve="ConstraintsDescriptor" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3gn64h" id="2_" role="1pnPq6">
-              <ref role="3gnhBz" to="xehl:5lu2mvqIooX" resolve="Command" />
-            </node>
-          </node>
-          <node concept="3clFbS" id="2u" role="1prKM_" />
+          <node concept="3clFbS" id="25" role="1prKM_" />
         </node>
-        <node concept="3cpWs6" id="2q" role="3cqZAp">
-          <node concept="2ShNRf" id="2D" role="3cqZAk">
-            <node concept="1pGfFk" id="2E" role="2ShVmc">
+        <node concept="3cpWs6" id="22" role="3cqZAp">
+          <node concept="2ShNRf" id="2b" role="3cqZAk">
+            <node concept="1pGfFk" id="2c" role="2ShVmc">
               <ref role="37wK5l" to="79pl:~BaseConstraintsDescriptor.&lt;init&gt;(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="BaseConstraintsDescriptor" />
-              <node concept="37vLTw" id="2F" role="37wK5m">
-                <ref role="3cqZAo" node="2m" resolve="concept" />
+              <node concept="37vLTw" id="2d" role="37wK5m">
+                <ref role="3cqZAo" node="1Y" resolve="concept" />
               </node>
             </node>
           </node>
@@ -625,6 +546,6 @@
       </node>
     </node>
   </node>
-  <node concept="39dXUE" id="2G" />
+  <node concept="39dXUE" id="2e" />
 </model>
 

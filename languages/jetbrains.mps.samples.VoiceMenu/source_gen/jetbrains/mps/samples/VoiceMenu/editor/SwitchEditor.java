@@ -8,13 +8,13 @@ import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.editor.runtime.cells.AbstractCellAction;
 
-public class SwitchTabular {
+public class SwitchEditor {
   public static void setCellActions(EditorCell editorCell, SNode node, EditorContext context) {
-    editorCell.setAction(CellActionType.CLICK, new SwitchTabular.SwitchTabular_CLICK(node));
+    editorCell.setAction(CellActionType.CLICK, new SwitchEditor.SwitchEditor_CLICK(node));
   }
-  public static class SwitchTabular_CLICK extends AbstractCellAction {
+  public static class SwitchEditor_CLICK extends AbstractCellAction {
     /*package*/ SNode myNode;
-    public SwitchTabular_CLICK(SNode node) {
+    public SwitchEditor_CLICK(SNode node) {
       this.myNode = node;
     }
     public String getDescriptionText() {

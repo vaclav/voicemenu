@@ -122,7 +122,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     imagePath = "${module}/src/Pencil.png";
     EditorCell_Image editorCell = EditorCell_Image.createImageCell(getEditorContext(), myNode, imageModule, imagePath);
     editorCell.setCellId("Image_ikqrmj_a0");
-    SwitchTabular.setCellActions(editorCell, myNode, getEditorContext());
+    SwitchEditor.setCellActions(editorCell, myNode, getEditorContext());
     editorCell.setDescent(0);
     return editorCell;
   }
