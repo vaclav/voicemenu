@@ -143,6 +143,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
         @Override
         public String getLabelText(String pattern) {
           return myParameterObject;
+
         }
 
         @Override
