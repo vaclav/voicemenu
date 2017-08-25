@@ -21,6 +21,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="mc5n" ref="r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)" />
+    <import index="ekwn" ref="r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor.actions)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -863,7 +864,7 @@
       <node concept="1u4HXA" id="3p$ip5sPr2Z" role="3EZMnx">
         <property role="1ubRXE" value="${module}/src/Pencil.png" />
         <property role="1$Qi42" value="0" />
-        <ref role="1ERwB7" node="3p$ip5sOarE" resolve="SwitchTabular" />
+        <ref role="1ERwB7" node="3p$ip5sOarE" resolve="SwitchEditor" />
         <node concept="pkWqt" id="3p$ip5sQPmc" role="pqm2j">
           <node concept="3clFbS" id="3p$ip5sQPmd" role="2VODD2">
             <node concept="3clFbF" id="3p$ip5sQPwG" role="3cqZAp">
@@ -1295,7 +1296,7 @@
   </node>
   <node concept="1h_SRR" id="3p$ip5sOarE">
     <property role="3GE5qa" value="ActionMaps" />
-    <property role="TrG5h" value="SwitchTabular" />
+    <property role="TrG5h" value="SwitchEditor" />
     <ref role="1h_SK9" to="xehl:5HF1wNO0wj8" resolve="WorkSpace" />
     <node concept="1hA7zw" id="3p$ip5sOarF" role="1h_SK8">
       <property role="1hAc7j" value="click_action_id" />
@@ -3087,47 +3088,6 @@
                   </node>
                 </node>
               </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1h_SRR" id="6mBXuuKjNVu">
-    <property role="3GE5qa" value="ActionMaps" />
-    <property role="TrG5h" value="DeleteEvtAndActv" />
-    <ref role="1h_SK9" to="xehl:5HF1wNNZucc" resolve="Event" />
-    <node concept="1hA7zw" id="6mBXuuKjNVv" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
-      <property role="1hHO97" value="&quot;delete Both Event and linked Activity" />
-      <node concept="1hAIg9" id="6mBXuuKjNVw" role="1hA7z_">
-        <node concept="3clFbS" id="6mBXuuKjNVx" role="2VODD2">
-          <node concept="3cpWs8" id="6mBXuuKjPfM" role="3cqZAp">
-            <node concept="3cpWsn" id="6mBXuuKjPfN" role="3cpWs9">
-              <property role="TrG5h" value="activity" />
-              <node concept="3Tqbb2" id="6mBXuuKjPfJ" role="1tU5fm">
-                <ref role="ehGHo" to="xehl:5HF1wNNZuqd" resolve="Activity" />
-              </node>
-              <node concept="2OqwBi" id="6mBXuuKjPfO" role="33vP2m">
-                <node concept="0IXxy" id="6mBXuuKjPfP" role="2Oq$k0" />
-                <node concept="3TrEf2" id="6mBXuuKjPfQ" role="2OqNvi">
-                  <ref role="3Tt5mk" to="xehl:7pupFtvuZV$" resolve="Activity" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="6mBXuuKjNVV" role="3cqZAp">
-            <node concept="2OqwBi" id="6mBXuuKjPpa" role="3clFbG">
-              <node concept="37vLTw" id="6mBXuuKjPfR" role="2Oq$k0">
-                <ref role="3cqZAo" node="6mBXuuKjPfN" resolve="activity" />
-              </node>
-              <node concept="3YRAZt" id="6mBXuuKjPGg" role="2OqNvi" />
-            </node>
-          </node>
-          <node concept="3clFbF" id="6mBXuuKjPMM" role="3cqZAp">
-            <node concept="2OqwBi" id="6mBXuuKjPX6" role="3clFbG">
-              <node concept="0IXxy" id="6mBXuuKjPMK" role="2Oq$k0" />
-              <node concept="3YRAZt" id="6mBXuuKjQjl" role="2OqNvi" />
             </node>
           </node>
         </node>

@@ -15,8 +15,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAction = createDescriptorForAction();
   /*package*/ final ConceptDescriptor myConceptActivity = createDescriptorForActivity();
   /*package*/ final ConceptDescriptor myConceptBack = createDescriptorForBack();
-  /*package*/ final ConceptDescriptor myConceptCall = createDescriptorForCall();
   /*package*/ final ConceptDescriptor myConceptCommand = createDescriptorForCommand();
+  /*package*/ final ConceptDescriptor myConceptDirectCall = createDescriptorForDirectCall();
   /*package*/ final ConceptDescriptor myConceptEmpty = createDescriptorForEmpty();
   /*package*/ final ConceptDescriptor myConceptEvent = createDescriptorForEvent();
   /*package*/ final ConceptDescriptor myConceptGetInfo = createDescriptorForGetInfo();
@@ -31,7 +31,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptActivity, myConceptBack, myConceptCall, myConceptCommand, myConceptEmpty, myConceptEvent, myConceptGetInfo, myConceptMenu, myConceptOther, myConceptWorkSpace);
+    return Arrays.asList(myConceptAction, myConceptActivity, myConceptBack, myConceptCommand, myConceptDirectCall, myConceptEmpty, myConceptEvent, myConceptGetInfo, myConceptMenu, myConceptOther, myConceptWorkSpace);
   }
 
   @Override
@@ -44,10 +44,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptActivity;
       case LanguageConceptSwitch.Back:
         return myConceptBack;
-      case LanguageConceptSwitch.Call:
-        return myConceptCall;
       case LanguageConceptSwitch.Command:
         return myConceptCommand;
+      case LanguageConceptSwitch.DirectCall:
+        return myConceptDirectCall;
       case LanguageConceptSwitch.Empty:
         return myConceptEmpty;
       case LanguageConceptSwitch.Event:
@@ -95,19 +95,19 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("Back");
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForCall() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.samples.VoiceMenu", "Call", 0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L);
-    b.class_(false, false, false);
-    b.super_("jetbrains.mps.samples.VoiceMenu.structure.Action", 0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d133997fdc5L);
-    b.origin("r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)/6772988411135920840");
-    b.alias("Direct call");
-    return b.create();
-  }
   private static ConceptDescriptor createDescriptorForCommand() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.samples.VoiceMenu", "Command", 0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9863dL);
     b.class_(false, true, false);
     b.origin("r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)/6151364482690549309");
     b.alias("command");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForDirectCall() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.samples.VoiceMenu", "DirectCall", 0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L);
+    b.class_(false, false, false);
+    b.super_("jetbrains.mps.samples.VoiceMenu.structure.Action", 0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d133997fdc5L);
+    b.origin("r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)/6772988411135920840");
+    b.alias("Direct call");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForEmpty() {

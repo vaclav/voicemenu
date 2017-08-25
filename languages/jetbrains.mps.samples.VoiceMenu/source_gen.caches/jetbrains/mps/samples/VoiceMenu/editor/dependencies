@@ -134,14 +134,25 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.transformation.TransformationMenuBase" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.editor.Call_Editor" file="Call_Editor.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.editor.DeleteEvtAndActv" file="DeleteEvtAndActv.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.cells.AbstractCellAction" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.CellActionType" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
+  <dependency className="jetbrains.mps.samples.VoiceMenu.editor.DirectCall_Editor" file="DirectCall_Editor.java">
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.Call_EditorBuilder_a" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.DirectCall_EditorBuilder_a" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.editor.Call_EditorBuilder_a" file="Call_EditorBuilder_a.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.editor.DirectCall_EditorBuilder_a" file="DirectCall_EditorBuilder_a.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
@@ -160,7 +171,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.module.SModule" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.editor.Call_TransformationMenu" file="Call_TransformationMenu.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.editor.DirectCall_TransformationMenu" file="DirectCall_TransformationMenu.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.ArrayList" />
@@ -193,17 +204,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.transformation.TransformationMenuBase" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.editor.DeleteEvtAndActv" file="DeleteEvtAndActv.java">
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.editor.runtime.cells.AbstractCellAction" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.CellActionType" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-  </dependency>
   <dependency className="jetbrains.mps.samples.VoiceMenu.editor.EditorAspectDescriptorImpl" file="EditorAspectDescriptorImpl.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.Arrays" />
@@ -220,8 +220,8 @@
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.Activity_TransformationMenu" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.Back_Editor" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.Back_TransformationMenu" />
-    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.Call_Editor" />
-    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.Call_TransformationMenu" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.DirectCall_Editor" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.DirectCall_TransformationMenu" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.Empty_Editor" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.Empty_SubstituteMenu" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.Empty_TransformationMenu" />

@@ -12,8 +12,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Action;
   private ConceptPresentation props_Activity;
   private ConceptPresentation props_Back;
-  private ConceptPresentation props_Call;
   private ConceptPresentation props_Command;
+  private ConceptPresentation props_DirectCall;
   private ConceptPresentation props_Empty;
   private ConceptPresentation props_Event;
   private ConceptPresentation props_GetInfo;
@@ -46,19 +46,19 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Back = cpb.create();
         }
         return props_Back;
-      case LanguageConceptSwitch.Call:
-        if (props_Call == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Direct call");
-          props_Call = cpb.create();
-        }
-        return props_Call;
       case LanguageConceptSwitch.Command:
         if (props_Command == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           props_Command = cpb.create();
         }
         return props_Command;
+      case LanguageConceptSwitch.DirectCall:
+        if (props_DirectCall == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Direct call");
+          props_DirectCall = cpb.create();
+        }
+        return props_DirectCall;
       case LanguageConceptSwitch.Empty:
         if (props_Empty == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
