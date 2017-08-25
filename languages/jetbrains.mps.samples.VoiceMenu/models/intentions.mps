@@ -1227,6 +1227,7 @@
           </node>
         </node>
         <node concept="3clFbH" id="4matEwaCHj6" role="3cqZAp" />
+        <node concept="3clFbH" id="dcxjWHTkiT" role="3cqZAp" />
       </node>
     </node>
     <node concept="2SaL7w" id="4matEwaGMZc" role="2ZfVeh">
@@ -1684,6 +1685,14 @@
     </node>
     <node concept="2Sbjvc" id="4matEwaQ8Qy" role="2ZfgGD">
       <node concept="3clFbS" id="4matEwaQ8Qz" role="2VODD2">
+        <node concept="3clFbF" id="dcxjWHRyzf" role="3cqZAp">
+          <node concept="2OqwBi" id="dcxjWHRz5N" role="3clFbG">
+            <node concept="1XNTG" id="dcxjWHRyzd" role="2Oq$k0" />
+            <node concept="liA8E" id="dcxjWHRLt$" role="2OqNvi">
+              <ref role="37wK5l" to="cj4x:~EditorContext.getSelectionManager():jetbrains.mps.openapi.editor.selection.SelectionManager" resolve="getSelectionManager" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="4matEwaQAzN" role="3cqZAp">
           <node concept="3cpWsn" id="4matEwaQAzO" role="3cpWs9">
             <property role="TrG5h" value="index" />

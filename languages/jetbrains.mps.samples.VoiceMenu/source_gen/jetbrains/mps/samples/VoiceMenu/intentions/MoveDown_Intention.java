@@ -59,6 +59,7 @@ public final class MoveDown_Intention extends AbstractIntentionDescriptor implem
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
+      editorContext.getSelectionManager();
       int index = SNodeOperations.getIndexInParent(node);
       List<SNode> events = SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(node), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"));
       SNode swap;
