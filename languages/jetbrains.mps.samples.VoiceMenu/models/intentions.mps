@@ -1064,7 +1064,7 @@
       <node concept="3clFbS" id="4matEwaBMcB" role="2VODD2">
         <node concept="3clFbF" id="4matEwaBN94" role="3cqZAp">
           <node concept="Xl_RD" id="4matEwaBN93" role="3clFbG">
-            <property role="Xl_RC" value="Make Declaration" />
+            <property role="Xl_RC" value="Declare Activity" />
           </node>
         </node>
         <node concept="3clFbH" id="4matEwaBN9b" role="3cqZAp" />
