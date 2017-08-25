@@ -20,6 +20,7 @@
       </concept>
       <concept id="6587365532662358796" name="jetbrains.mps.samples.VoiceMenu.structure.Event" flags="ng" index="2C_Ik0">
         <property id="6587365532662358800" name="trigger" index="2C_Iks" />
+        <reference id="8529367682053308132" name="Activity" index="D9pxj" />
       </concept>
       <concept id="6587365532662358792" name="jetbrains.mps.samples.VoiceMenu.structure.Menu" flags="ng" index="2C_Ik4">
         <child id="6587365532662359688" name="events" index="2C_I24" />
@@ -220,20 +221,38 @@
         <node concept="1$pBvr" id="4matEwaOnPx" role="2C_gVu" />
       </node>
       <node concept="2C_I21" id="4matEwaOelQ" role="2C_I26">
-        <ref role="2C_gVZ" node="4matEwaMLmN" resolve="Four" />
+        <ref role="2C_gVZ" node="4matEwaMLmN" resolve="Five" />
         <node concept="1$pBvo" id="5o6E870KJSA" role="2C_gVu" />
+      </node>
+      <node concept="2C_I21" id="dcxjWHJGeL" role="2C_I26">
+        <ref role="2C_gVZ" node="dcxjWHJGeY" resolve="xx" />
+        <node concept="1$pBvp" id="dcxjWHJGeV" role="2C_gVu" />
+      </node>
+      <node concept="2C_Ik0" id="54keEMKoACO" role="2C_I24">
+        <property role="2C_Iks" value="8" />
+        <property role="TrG5h" value="Eight" />
       </node>
       <node concept="2C_Ik0" id="4matEwaD43l" role="2C_I24">
         <property role="2C_Iks" value="1" />
         <property role="TrG5h" value="One" />
       </node>
       <node concept="2C_Ik0" id="4matEwaMLmN" role="2C_I24">
-        <property role="2C_Iks" value="4" />
-        <property role="TrG5h" value="Four" />
+        <property role="2C_Iks" value="5" />
+        <property role="TrG5h" value="Five" />
       </node>
-      <node concept="2C_Ik0" id="54keEMKoACO" role="2C_I24">
-        <property role="2C_Iks" value="8" />
-        <property role="TrG5h" value="Eight" />
+      <node concept="2C_Ik0" id="dcxjWHJGeY" role="2C_I24">
+        <property role="TrG5h" value="xx" />
+        <property role="2C_Iks" value="4" />
+        <ref role="D9pxj" node="dcxjWHJGeL" />
+      </node>
+      <node concept="2C_Ik0" id="dcxjWHKLr3" role="2C_I24">
+        <property role="2C_Iks" value="9" />
+        <property role="TrG5h" value="Nine" />
+        <ref role="D9pxj" node="dcxjWHKLr9" />
+      </node>
+      <node concept="2C_I21" id="dcxjWHKLr9" role="2C_I26">
+        <ref role="2C_gVZ" node="dcxjWHKLr3" resolve="Nine" />
+        <node concept="1$pBvr" id="dcxjWHKLrm" role="2C_gVu" />
       </node>
     </node>
   </node>
