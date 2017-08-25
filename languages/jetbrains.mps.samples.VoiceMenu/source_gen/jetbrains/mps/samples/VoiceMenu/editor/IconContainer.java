@@ -13,7 +13,8 @@ public class IconContainer {
   protected static IconResource RESOURCE_a0a01e6g9 = new IconResource("button_click.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a01c6k = new IconResource("random.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c6l = new IconResource("add_to_list.png", IconContainer.class);
-  protected static IconResource RESOURCE_a0a01c7l = new IconResource("plus.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a9c7l = new IconResource("add_to_list.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a01c8l = new IconResource("plus.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c6h = new IconResource("add_to_list.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c7h = new IconResource("add_to_list.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c6i_0 = new IconResource("phone.png", IconContainer.class);
@@ -38,10 +39,12 @@ public class IconContainer {
   protected static IconResource RESOURCE_a0a9c7i_3 = new IconResource("arrow.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c8i_3 = new IconResource("menu.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c9i_3 = new IconResource("donkey.png", IconContainer.class);
-  protected static IconResource RESOURCE_a0a9c6h_3 = new IconResource("phone.png", IconContainer.class);
-  protected static IconResource RESOURCE_a0a9c7h_3 = new IconResource("arrow.png", IconContainer.class);
-  protected static IconResource RESOURCE_a0a9c8h = new IconResource("info.png", IconContainer.class);
-  protected static IconResource RESOURCE_a0a9c9h = new IconResource("donkey.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a9c6h_3 = new IconResource("add_to_list.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a9c7h_3 = new IconResource("add_to_list.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a9c6i_4 = new IconResource("phone.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a9c7i_4 = new IconResource("arrow.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a9c8i_4 = new IconResource("info.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a9c9i_4 = new IconResource("donkey.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c6h_4 = new IconResource("add_to_list.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c7h_4 = new IconResource("add_to_list.png", IconContainer.class);
 }
