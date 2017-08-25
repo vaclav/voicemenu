@@ -110,7 +110,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_ContextAssistantComponent;
     Style style = new StyleImpl();
     new ArrowsStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
     style.set(StyleAttributes.DRAW_BORDER, true);
-    style.set(StyleAttributes.SELECTABLE, false);
+    style.set(StyleAttributes.EDITABLE, false);
     editorCell.getStyle().putAll(style);
     RemoveEventAndActivity.setCellActions(editorCell, myNode, getEditorContext());
     editorCell.setDefaultText("");
