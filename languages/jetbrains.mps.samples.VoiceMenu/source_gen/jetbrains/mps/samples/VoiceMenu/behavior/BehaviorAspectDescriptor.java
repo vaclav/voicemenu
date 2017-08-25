@@ -13,19 +13,22 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor {
   private final BHDescriptor myMenu__BehaviorDescriptor = new Menu__BehaviorDescriptor();
+  private final BHDescriptor myActivity__BehaviorDescriptor = new Activity__BehaviorDescriptor();
 
   public BehaviorAspectDescriptor() {
   }
 
   @Nullable
   public BHDescriptor getDescriptor(@NotNull SAbstractConcept concept) {
-    SAbstractConcept cncpt_a0e = concept;
-    switch (index_846f5o_a0e.index(cncpt_a0e)) {
+    SAbstractConcept cncpt_a0f = concept;
+    switch (index_846f5o_a0f.index(cncpt_a0f)) {
       case 0:
+        return myActivity__BehaviorDescriptor;
+      case 1:
         return myMenu__BehaviorDescriptor;
       default:
     }
     return null;
   }
-  private static final ConceptSwitchIndex index_846f5o_a0e = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L)).seal();
+  private static final ConceptSwitchIndex index_846f5o_a0f = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L)).seal();
 }
