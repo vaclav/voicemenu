@@ -34,7 +34,7 @@
       <concept id="6772988411135920843" name="jetbrains.mps.samples.VoiceMenu.structure.GetInfo" flags="ng" index="1$pBvo" />
       <concept id="6772988411135920842" name="jetbrains.mps.samples.VoiceMenu.structure.Back" flags="ng" index="1$pBvp" />
       <concept id="6772988411135920841" name="jetbrains.mps.samples.VoiceMenu.structure.Other" flags="ng" index="1$pBvq" />
-      <concept id="6772988411135920840" name="jetbrains.mps.samples.VoiceMenu.structure.Call" flags="ng" index="1$pBvr" />
+      <concept id="6772988411135920840" name="jetbrains.mps.samples.VoiceMenu.structure.DirectCall" flags="ng" index="1$pBvr" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -228,10 +228,6 @@
         <ref role="2C_gVZ" node="4matEwaMLmN" resolve="Five" />
         <node concept="1$pBvp" id="5o6E8710hXH" role="2C_gVu" />
       </node>
-      <node concept="2C_I21" id="dcxjWHJGeL" role="2C_I26">
-        <ref role="2C_gVZ" node="dcxjWHJGeY" resolve="xx" />
-        <node concept="1$pBvp" id="dcxjWHJGeV" role="2C_gVu" />
-      </node>
       <node concept="2C_I21" id="dcxjWHKLr9" role="2C_I26">
         <ref role="2C_gVZ" node="dcxjWHKLr3" resolve="Nine" />
         <node concept="1$pBvr" id="dcxjWHKLrm" role="2C_gVu" />
@@ -243,11 +239,6 @@
       <node concept="2C_Ik0" id="4matEwaMLmN" role="2C_I24">
         <property role="2C_Iks" value="5" />
         <property role="TrG5h" value="Five" />
-      </node>
-      <node concept="2C_Ik0" id="dcxjWHJGeY" role="2C_I24">
-        <property role="TrG5h" value="xx" />
-        <property role="2C_Iks" value="4" />
-        <ref role="D9pxj" node="dcxjWHJGeL" />
       </node>
       <node concept="2C_Ik0" id="dcxjWHKLr3" role="2C_I24">
         <property role="2C_Iks" value="9" />

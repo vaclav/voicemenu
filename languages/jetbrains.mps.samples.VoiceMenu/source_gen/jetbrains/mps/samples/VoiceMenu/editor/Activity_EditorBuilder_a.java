@@ -248,6 +248,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
       editorCell = provider.createEditorCell(getEditorContext());
       editorCell.setCellId("property_trigger");
       Style style = new StyleImpl();
+      new DeclarationsStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
       style.set(StyleAttributes.EDITABLE, true);
       style.set(StyleAttributes.SELECTABLE, true);
       editorCell.getStyle().putAll(style);

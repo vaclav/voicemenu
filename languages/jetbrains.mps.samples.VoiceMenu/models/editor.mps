@@ -679,6 +679,7 @@
             <property role="1Intyy" value="true" />
             <property role="1$x2rV" value="button" />
             <ref role="1NtTu8" to="xehl:5HF1wNNZucg" resolve="trigger" />
+            <ref role="1k5W1q" node="11pGboo2CX2" resolve="Declarations" />
             <node concept="VPxyj" id="5lu2mvqIDau" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>

@@ -31,7 +31,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.runtime.IconResource;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 
-public class Call_TransformationMenu extends TransformationMenuBase {
+public class DirectCall_TransformationMenu extends TransformationMenuBase {
   private final Set<String> myLocations = SetSequence.fromSetAndArray(new HashSet<String>(), MenuLocations.CONTEXT_ACTIONS_TOOL, MenuLocations.CONTEXT_ACTIONS_TOOL);
   @Override
   public boolean isApplicableToLocation(@NotNull String location) {
@@ -42,7 +42,7 @@ public class Call_TransformationMenu extends TransformationMenuBase {
   @Override
   public List<TransformationMenuItem> createMenuItems(@NotNull TransformationMenuContext context) {
     context.getEditorMenuTrace().pushTraceInfo();
-    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default transformation menu for " + "Call", new SNodePointer("r:7c1e5bbb-2d18-4cf3-a11d-502be6b13261(jetbrains.mps.samples.VoiceMenu.editor)", "5842359129972221990")));
+    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default transformation menu for " + "DirectCall", new SNodePointer("r:7c1e5bbb-2d18-4cf3-a11d-502be6b13261(jetbrains.mps.samples.VoiceMenu.editor)", "5842359129972221990")));
     try {
       return super.createMenuItems(context);
     } finally {
@@ -55,15 +55,15 @@ public class Call_TransformationMenu extends TransformationMenuBase {
   protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts(TransformationMenuContext _context) {
     List<MenuPart<TransformationMenuItem, TransformationMenuContext>> result = new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>();
     if (ListSequence.fromListAndArray(new ArrayList<String>(), MenuLocations.CONTEXT_ACTIONS_TOOL).contains(_context.getMenuLocation())) {
-      result.add(new Call_TransformationMenu.TMP_SubMenu_3ph77o_a0());
+      result.add(new DirectCall_TransformationMenu.TMP_SubMenu_eoxtbk_a0());
     }
     if (ListSequence.fromListAndArray(new ArrayList<String>(), MenuLocations.CONTEXT_ACTIONS_TOOL).contains(_context.getMenuLocation())) {
-      result.add(new Call_TransformationMenu.TMP_SubMenu_3ph77o_a1());
+      result.add(new DirectCall_TransformationMenu.TMP_SubMenu_eoxtbk_a1());
     }
     return result;
   }
 
-  public class TMP_SubMenu_3ph77o_a0 extends SubMenuMenuTransformationMenuPart {
+  public class TMP_SubMenu_eoxtbk_a0 extends SubMenuMenuTransformationMenuPart {
     @Override
     protected String getText(TransformationMenuContext _context) {
       return "Options";
@@ -84,12 +84,12 @@ public class Call_TransformationMenu extends TransformationMenuBase {
 
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Call_TransformationMenu.TMP_SubMenu_3ph77o_a0.TMP_Action_3ph77o_a0a(), new Call_TransformationMenu.TMP_SubMenu_3ph77o_a0.TMP_Action_3ph77o_b0a());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new DirectCall_TransformationMenu.TMP_SubMenu_eoxtbk_a0.TMP_Action_eoxtbk_a0a(), new DirectCall_TransformationMenu.TMP_SubMenu_eoxtbk_a0.TMP_Action_eoxtbk_b0a());
     }
-    private class TMP_Action_3ph77o_a0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_eoxtbk_a0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new Call_TransformationMenu.TMP_SubMenu_3ph77o_a0.TMP_Action_3ph77o_a0a.Item(context);
+        return new DirectCall_TransformationMenu.TMP_SubMenu_eoxtbk_a0.TMP_Action_eoxtbk_a0a.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {
@@ -134,10 +134,10 @@ public class Call_TransformationMenu extends TransformationMenuBase {
       }
 
     }
-    private class TMP_Action_3ph77o_b0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_eoxtbk_b0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new Call_TransformationMenu.TMP_SubMenu_3ph77o_a0.TMP_Action_3ph77o_b0a.Item(context);
+        return new DirectCall_TransformationMenu.TMP_SubMenu_eoxtbk_a0.TMP_Action_eoxtbk_b0a.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {
@@ -183,7 +183,7 @@ public class Call_TransformationMenu extends TransformationMenuBase {
 
     }
   }
-  public class TMP_SubMenu_3ph77o_a1 extends SubMenuMenuTransformationMenuPart {
+  public class TMP_SubMenu_eoxtbk_a1 extends SubMenuMenuTransformationMenuPart {
     @Override
     protected String getText(TransformationMenuContext _context) {
       return "Actions";
@@ -204,12 +204,12 @@ public class Call_TransformationMenu extends TransformationMenuBase {
 
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Call_TransformationMenu.TMP_SubMenu_3ph77o_a1.TMP_Action_3ph77o_a0b(), new Call_TransformationMenu.TMP_SubMenu_3ph77o_a1.TMP_Action_3ph77o_b0b(), new Call_TransformationMenu.TMP_SubMenu_3ph77o_a1.TMP_Action_3ph77o_c0b(), new Call_TransformationMenu.TMP_SubMenu_3ph77o_a1.TMP_Action_3ph77o_d0b());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new DirectCall_TransformationMenu.TMP_SubMenu_eoxtbk_a1.TMP_Action_eoxtbk_a0b(), new DirectCall_TransformationMenu.TMP_SubMenu_eoxtbk_a1.TMP_Action_eoxtbk_b0b(), new DirectCall_TransformationMenu.TMP_SubMenu_eoxtbk_a1.TMP_Action_eoxtbk_c0b(), new DirectCall_TransformationMenu.TMP_SubMenu_eoxtbk_a1.TMP_Action_eoxtbk_d0b());
     }
-    private class TMP_Action_3ph77o_a0b extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_eoxtbk_a0b extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new Call_TransformationMenu.TMP_SubMenu_3ph77o_a1.TMP_Action_3ph77o_a0b.Item(context);
+        return new DirectCall_TransformationMenu.TMP_SubMenu_eoxtbk_a1.TMP_Action_eoxtbk_a0b.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {
@@ -252,10 +252,10 @@ public class Call_TransformationMenu extends TransformationMenuBase {
       }
 
     }
-    private class TMP_Action_3ph77o_b0b extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_eoxtbk_b0b extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new Call_TransformationMenu.TMP_SubMenu_3ph77o_a1.TMP_Action_3ph77o_b0b.Item(context);
+        return new DirectCall_TransformationMenu.TMP_SubMenu_eoxtbk_a1.TMP_Action_eoxtbk_b0b.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {
@@ -298,10 +298,10 @@ public class Call_TransformationMenu extends TransformationMenuBase {
       }
 
     }
-    private class TMP_Action_3ph77o_c0b extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_eoxtbk_c0b extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new Call_TransformationMenu.TMP_SubMenu_3ph77o_a1.TMP_Action_3ph77o_c0b.Item(context);
+        return new DirectCall_TransformationMenu.TMP_SubMenu_eoxtbk_a1.TMP_Action_eoxtbk_c0b.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {
@@ -344,10 +344,10 @@ public class Call_TransformationMenu extends TransformationMenuBase {
       }
 
     }
-    private class TMP_Action_3ph77o_d0b extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_eoxtbk_d0b extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new Call_TransformationMenu.TMP_SubMenu_3ph77o_a1.TMP_Action_3ph77o_d0b.Item(context);
+        return new DirectCall_TransformationMenu.TMP_SubMenu_eoxtbk_a1.TMP_Action_eoxtbk_d0b.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {

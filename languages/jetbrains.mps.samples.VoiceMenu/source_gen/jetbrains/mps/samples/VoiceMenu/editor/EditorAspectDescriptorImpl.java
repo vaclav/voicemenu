@@ -29,7 +29,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
       case 1:
         return Collections.<ConceptEditor>singletonList(new Back_Editor());
       case 2:
-        return Collections.<ConceptEditor>singletonList(new Call_Editor());
+        return Collections.<ConceptEditor>singletonList(new DirectCall_Editor());
       case 3:
         return Collections.<ConceptEditor>singletonList(new Empty_Editor());
       case 4:
@@ -61,7 +61,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
       case 1:
         return Collections.<TransformationMenu>singletonList(new Back_TransformationMenu());
       case 2:
-        return Collections.<TransformationMenu>singletonList(new Call_TransformationMenu());
+        return Collections.<TransformationMenu>singletonList(new DirectCall_TransformationMenu());
       case 3:
         return Collections.<TransformationMenu>singletonList(new Empty_TransformationMenu());
       case 4:
