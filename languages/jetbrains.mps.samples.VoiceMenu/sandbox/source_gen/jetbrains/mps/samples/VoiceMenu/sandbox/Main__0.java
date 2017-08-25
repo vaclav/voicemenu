@@ -49,7 +49,7 @@ public class Main__0 implements ActionListener {
     _One_qy4hiv_a0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + _One_qy4hiv_a0.trigger;
     Variables.myHashMap.put(Variables.path, _One_qy4hiv_a0);
-    _One_qy4hiv_a0.setAction("other");
+    _One_qy4hiv_a0.setAction("getInfo");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     _One_qy4hiv_a0.childs = new ArrayList<Event>();
     Event _Four_qy4hiv_b0 = new Event("Four", "4");
@@ -58,7 +58,7 @@ public class Main__0 implements ActionListener {
     _Four_qy4hiv_b0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + _Four_qy4hiv_b0.trigger;
     Variables.myHashMap.put(Variables.path, _Four_qy4hiv_b0);
-    _Four_qy4hiv_b0.setAction("getInfo");
+    _Four_qy4hiv_b0.setAction("back");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     _Four_qy4hiv_b0.childs = new ArrayList<Event>();
 

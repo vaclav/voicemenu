@@ -404,8 +404,8 @@
     <ref role="2ZfgGC" to="xehl:5HF1wNNZuqd" resolve="Activity" />
     <node concept="2S6ZIM" id="6nPYyO4nYQ0" role="2ZfVej">
       <node concept="3clFbS" id="6nPYyO4nYQ1" role="2VODD2">
-        <node concept="3clFbF" id="6nPYyO4nYZg" role="3cqZAp">
-          <node concept="Xl_RD" id="6nPYyO4nYZf" role="3clFbG">
+        <node concept="3cpWs6" id="5o6E870Y3ee" role="3cqZAp">
+          <node concept="Xl_RD" id="6nPYyO4nYZf" role="3cqZAk">
             <property role="Xl_RC" value="Initialize New Event" />
           </node>
         </node>
