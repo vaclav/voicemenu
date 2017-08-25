@@ -13,19 +13,20 @@ import jetbrains.mps.openapi.editor.EditorContext;
 import java.util.Collections;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 
-public final class RemoveEvent_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
+public final class RemoveEventWithActivity_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
-  public RemoveEvent_Intention() {
+  public RemoveEventWithActivity_Intention() {
     super(Kind.NORMAL, false, new SNodePointer("r:d92c1500-00d3-4072-866a-5077893293b8(jetbrains.mps.samples.VoiceMenu.intentions)", "2892639838856113778"));
   }
   @Override
   public String getPresentation() {
-    return "RemoveEvent";
+    return "RemoveEventWithActivity";
   }
   @Override
   public boolean isApplicable(final SNode node, final EditorContext editorContext) {
@@ -37,7 +38,7 @@ public final class RemoveEvent_Intention extends AbstractIntentionDescriptor imp
   }
   public Collection<IntentionExecutable> instances(final SNode node, final EditorContext context) {
     if (myCachedExecutable == null) {
-      myCachedExecutable = Collections.<IntentionExecutable>singletonList(new RemoveEvent_Intention.IntentionImplementation());
+      myCachedExecutable = Collections.<IntentionExecutable>singletonList(new RemoveEventWithActivity_Intention.IntentionImplementation());
     }
     return myCachedExecutable;
   }
@@ -51,16 +52,21 @@ public final class RemoveEvent_Intention extends AbstractIntentionDescriptor imp
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
 
-      for (SNode item : SNodeOperations.ofConcept(SNodeOperations.getChildren(SNodeOperations.getParent(node)), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"))) {
-        if (SPropertyOperations.getString(SLinkOperations.getTarget(item, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) == SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"))) {
-          SNodeOperations.deleteNode(item);
+
+      SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(SNodeOperations.cast(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event"))), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities"))).findFirst(new IWhereFilter<SNode>() {
+        public boolean accept(SNode it) {
+          return eq_8mr0u4_a0a0a0a0a0a2a2g(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), node);
         }
-      }
+      }));
+
       SNodeOperations.deleteNode(node);
     }
     @Override
     public IntentionDescriptor getDescriptor() {
-      return RemoveEvent_Intention.this;
+      return RemoveEventWithActivity_Intention.this;
     }
+  }
+  private static boolean eq_8mr0u4_a0a0a0a0a0a2a2g(Object a, Object b) {
+    return (a != null ? a.equals(b) : a == b);
   }
 }
