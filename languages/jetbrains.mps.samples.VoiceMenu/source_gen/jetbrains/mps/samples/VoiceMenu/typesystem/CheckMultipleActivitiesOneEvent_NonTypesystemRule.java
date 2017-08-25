@@ -18,15 +18,15 @@ import jetbrains.mps.errors.IErrorReporter;
 import jetbrains.mps.errors.BaseQuickFixProvider;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
-public class restrict_MultipleActivituesForOneEvent_NonTypesystemRule extends AbstractNonTypesystemRule_Runtime implements NonTypesystemRule_Runtime {
-  public restrict_MultipleActivituesForOneEvent_NonTypesystemRule() {
+public class CheckMultipleActivitiesOneEvent_NonTypesystemRule extends AbstractNonTypesystemRule_Runtime implements NonTypesystemRule_Runtime {
+  public CheckMultipleActivitiesOneEvent_NonTypesystemRule() {
   }
   public void applyRule(final SNode menu, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
     Iterable<SNode> activities = SLinkOperations.getChildren(menu, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities"));
     for (final SNode currentActivity : Sequence.fromIterable(activities)) {
       if (Sequence.fromIterable(activities).any(new IWhereFilter<SNode>() {
         public boolean accept(SNode it) {
-          return neq_bh4yle_a0a0a0a0a0a0a1a1(it, currentActivity) && eq_bh4yle_a0a0a0a0a0a0a1a1(SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), SPropertyOperations.getString(SLinkOperations.getTarget(currentActivity, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
+          return neq_a119ti_a0a0a0a0a0a0a1a1(it, currentActivity) && eq_a119ti_a0a0a0a0a0a0a1a1(SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), SPropertyOperations.getString(SLinkOperations.getTarget(currentActivity, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
         }
       })) {
         {
@@ -53,10 +53,10 @@ public class restrict_MultipleActivituesForOneEvent_NonTypesystemRule extends Ab
   public boolean overrides() {
     return false;
   }
-  private static boolean eq_bh4yle_a0a0a0a0a0a0a1a1(Object a, Object b) {
+  private static boolean eq_a119ti_a0a0a0a0a0a0a1a1(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
-  private static boolean neq_bh4yle_a0a0a0a0a0a0a1a1(Object a, Object b) {
+  private static boolean neq_a119ti_a0a0a0a0a0a0a1a1(Object a, Object b) {
     return !(((a != null ? a.equals(b) : a == b)));
   }
 }

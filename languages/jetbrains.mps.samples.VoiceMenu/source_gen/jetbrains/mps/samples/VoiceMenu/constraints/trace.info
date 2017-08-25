@@ -10,20 +10,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="13,0,31,0" name="jetbrains.mps.samples.VoiceMenu.constraints.ConstraintsAspectDescriptor" />
-    </file>
-  </root>
-  <root nodeRef="r:4829ddc0-5bf9-4926-b085-71e87b032f73(jetbrains.mps.samples.VoiceMenu.constraints)/6151364482690565612">
-    <file name="Command_Constraints.java">
-      <node id="6151364482690565612" at="10,32,11,157" concept="7" />
-      <node id="6151364482690565612" at="14,55,15,155" concept="5" />
-      <node id="6151364482690565612" at="10,0,13,0" concept="1" trace="Command_Constraints#()V" />
-      <node id="6151364482690565612" at="14,0,17,0" concept="3" trace="getDefaultConcreteConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <scope id="6151364482690565612" at="10,32,11,157" />
-      <scope id="6151364482690565612" at="14,55,15,155" />
-      <scope id="6151364482690565612" at="10,0,13,0" />
-      <scope id="6151364482690565612" at="14,0,17,0" />
-      <unit id="6151364482690565612" at="9,0,18,0" name="jetbrains.mps.samples.VoiceMenu.constraints.Command_Constraints" />
+      <unit at="13,0,29,0" name="jetbrains.mps.samples.VoiceMenu.constraints.ConstraintsAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:4829ddc0-5bf9-4926-b085-71e87b032f73(jetbrains.mps.samples.VoiceMenu.constraints)/6587365532662510335">
