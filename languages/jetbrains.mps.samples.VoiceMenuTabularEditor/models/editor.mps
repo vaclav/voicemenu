@@ -890,6 +890,7 @@
       <node concept="3F0ifn" id="5HF1wNNZI4l" role="3EZMnx">
         <property role="3F0ifm" value="Activity:" />
         <ref role="1k5W1q" to="ei2q:11pGboo1Ya6" resolve="HardCodedText" />
+        <ref role="1ERwB7" to="ei2q:2ABtujyUNPP" resolve="RemoveActivityandEvent" />
         <node concept="1fO$WK" id="3yrvnjuhbBU" role="3F10Kt" />
         <node concept="VPxyj" id="7$6jWp$PRQg" role="3F10Kt">
           <property role="VOm3f" value="false" />
@@ -898,6 +899,7 @@
       <node concept="1iCGBv" id="5HF1wNNZI4R" role="3EZMnx">
         <ref role="1NtTu8" to="xehl:5HF1wNNZwzN" resolve="event" />
         <ref role="1k5W1q" to="ei2q:3yrvnjuhfbU" resolve="Brackets" />
+        <ref role="1ERwB7" to="ei2q:2ABtujyUNPP" resolve="RemoveActivityandEvent" />
         <node concept="1fO$WK" id="3yrvnjuhrdY" role="3F10Kt" />
         <node concept="3k4GqR" id="2ABtujz66nN" role="3F10Kt">
           <node concept="3k4GqP" id="2ABtujz66nO" role="3k4GqO">
@@ -949,15 +951,14 @@
       <node concept="3F0ifn" id="5HF1wNO0qo6" role="3EZMnx">
         <property role="3F0ifm" value="on button:" />
         <ref role="1k5W1q" to="ei2q:11pGboo1Ya6" resolve="HardCodedText" />
+        <ref role="1ERwB7" to="ei2q:2ABtujyUNPP" resolve="RemoveActivityandEvent" />
         <node concept="VPxyj" id="7$6jWp$PRQd" role="3F10Kt">
           <property role="VOm3f" value="false" />
-        </node>
-        <node concept="2SqB2G" id="7$6jWp$SC6q" role="2SqHTX">
-          <property role="TrG5h" value="XXX_button" />
         </node>
       </node>
       <node concept="1iCGBv" id="5HF1wNO0qpz" role="3EZMnx">
         <ref role="1NtTu8" to="xehl:5HF1wNNZwzN" resolve="event" />
+        <ref role="1ERwB7" to="ei2q:2ABtujyUNPP" resolve="RemoveActivityandEvent" />
         <node concept="1sVBvm" id="5HF1wNO0qp_" role="1sWHZn">
           <node concept="3F0A7n" id="5HF1wNO0qqr" role="2wV5jI">
             <property role="1Intyy" value="true" />

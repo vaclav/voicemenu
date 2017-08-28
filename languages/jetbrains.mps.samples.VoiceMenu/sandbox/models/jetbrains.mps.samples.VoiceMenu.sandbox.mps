@@ -13,7 +13,6 @@
   </imports>
   <registry>
     <language id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu">
-      <concept id="6151364482690565571" name="jetbrains.mps.samples.VoiceMenu.structure.Empty" flags="ng" index="2fTWM$" />
       <concept id="6587365532662359693" name="jetbrains.mps.samples.VoiceMenu.structure.Activity" flags="ng" index="2C_I21">
         <property id="2702278965990916343" name="greeting" index="3upAMh" />
         <reference id="6587365532662368499" name="event" index="2C_gVZ" />
@@ -226,18 +225,9 @@
         <property role="TrG5h" value="Nine" />
         <ref role="D9pxj" node="2ABtujyXXex" />
       </node>
-      <node concept="2C_Ik0" id="1L4ryxdqJUU" role="2C_I24">
-        <property role="2C_Iks" value="6" />
-        <property role="TrG5h" value="Action_263" />
-        <ref role="D9pxj" node="1L4ryxdqJVg" />
-      </node>
       <node concept="2C_Ik0" id="4matEwaMLmN" role="2C_I24">
         <property role="TrG5h" value="Five" />
         <property role="2C_Iks" value="5" />
-      </node>
-      <node concept="2C_I21" id="1L4ryxdqJVg" role="2C_I26">
-        <ref role="2C_gVZ" node="1L4ryxdqJUU" resolve="Action_263" />
-        <node concept="2fTWM$" id="1L4ryxdqJVi" role="2C_gVu" />
       </node>
     </node>
   </node>
