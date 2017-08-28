@@ -13,7 +13,6 @@
   </imports>
   <registry>
     <language id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu">
-      <concept id="6151364482690565571" name="jetbrains.mps.samples.VoiceMenu.structure.Empty" flags="ng" index="2fTWM$" />
       <concept id="6587365532662359693" name="jetbrains.mps.samples.VoiceMenu.structure.Activity" flags="ng" index="2C_I21">
         <property id="2702278965990916343" name="greeting" index="3upAMh" />
         <reference id="6587365532662368499" name="event" index="2C_gVZ" />
@@ -214,21 +213,19 @@
     <property role="1EJLKn" value="true" />
     <node concept="2C_Ik4" id="1dkJyTcULCV" role="2JqgbB">
       <node concept="2C_I21" id="4matEwaOelE" role="2C_I26">
-        <property role="3upAMh" value="very happy Christmas" />
+        <property role="3upAMh" value="" />
         <ref role="2C_gVZ" node="54keEMKoACO" resolve="Eight" />
         <node concept="1$pBvq" id="5o6E870NcHa" role="2C_gVu" />
       </node>
       <node concept="2C_I21" id="4matEwaOelQ" role="2C_I26">
+        <property role="3upAMh" value="" />
         <ref role="2C_gVZ" node="4matEwaMLmN" resolve="Five" />
         <node concept="1$pBvq" id="7$6jWp$Hmsk" role="2C_gVu" />
       </node>
       <node concept="2C_I21" id="2ABtujyXXex" role="2C_I26">
+        <property role="3upAMh" value="" />
         <ref role="2C_gVZ" node="2ABtujyXXeq" resolve="Nine" />
         <node concept="1$pBvq" id="7$6jWp$AOSv" role="2C_gVu" />
-      </node>
-      <node concept="2C_I21" id="7$6jWp$Rw_$" role="2C_I26">
-        <property role="3upAMh" value="Sample Greeting" />
-        <node concept="2fTWM$" id="7$6jWp$Rw__" role="2C_gVu" />
       </node>
       <node concept="2C_Ik0" id="54keEMKoACO" role="2C_I24">
         <property role="2C_Iks" value="2" />

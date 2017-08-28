@@ -17,22 +17,23 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import java.util.Collections;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
-import jetbrains.mps.baseLanguage.logging.runtime.model.LoggingRuntime;
-import org.apache.log4j.Level;
 import java.util.List;
 import java.util.ArrayList;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.baseLanguage.logging.runtime.model.LoggingRuntime;
+import org.apache.log4j.Level;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 
 public final class InitActivity_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private static final Logger LOG = LogManager.getLogger(InitActivity_Intention.class);
   private Collection<IntentionExecutable> myCachedExecutable;
   public InitActivity_Intention() {
-    super(Kind.NORMAL, false, new SNodePointer("r:d92c1500-00d3-4072-866a-5077893293b8(jetbrains.mps.samples.VoiceMenu.intentions)", "8720745441962344153"));
+    super(Kind.NORMAL, false, new SNodePointer("r:d92c1500-00d3-4072-866a-5077893293b8(jetbrains.mps.samples.VoiceMenu.intentions)", "2036874050847798463"));
   }
   @Override
   public String getPresentation() {
@@ -46,6 +47,8 @@ public final class InitActivity_Intention extends AbstractIntentionDescriptor im
     return true;
   }
   private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
+
+
     if ((SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")) != null)) {
       return false;
     }
@@ -66,32 +69,17 @@ public final class InitActivity_Intention extends AbstractIntentionDescriptor im
     }
     @Override
     public String getDescription(final SNode node, final EditorContext editorContext) {
-      return "Init Activity";
+      return "Declare Activity4";
+
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
+
+
       SNode myNode = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event"));
       SLinkOperations.setTarget(node, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event"), myNode);
       SLinkOperations.setTarget(myNode, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x765e66b75f7bfee4L, "Activity"), node);
-
-      // ........ 
-
-
-
-
-
-      String text = ((EditorCell_Constant) editorContext.getSelectedCell()).getCellId();
-
-      if (LOG.isInfoEnabled()) {
-        LoggingRuntime.legacyLog(Level.INFO, text, InitActivity_Intention.class, null);
-      }
-
-
-
-
-      // ......... 
       String[] kbButtons = new String[12];
-
       kbButtons[0] = "0";
       kbButtons[1] = "1";
       kbButtons[2] = "2";
@@ -105,17 +93,42 @@ public final class InitActivity_Intention extends AbstractIntentionDescriptor im
       kbButtons[10] = "#";
       kbButtons[11] = "*";
 
-
       List<String> usedButtons = new ArrayList<String>();
-
       List<SNode> eventsDeclTable = SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(node), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"));
-
       for (SNode event : ListSequence.fromList(eventsDeclTable)) {
         ListSequence.fromList(usedButtons).addElement(SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
       }
-      SPropertyOperations.set(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"), Sequence.fromIterable(Sequence.fromArray(kbButtons)).subtract(ListSequence.fromList(usedButtons)).first());
 
-      SPropertyOperations.set(myNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), ((EditorCell_Constant) editorContext.getSelectedCell()).getText());
+
+      Iterable<EditorCell> contentCells = editorContext.getSelectedCell().getParent().getContentCells();
+
+      int counter = 0;
+      String name;
+      String trigger;
+      try {
+        for (EditorCell cell : Sequence.fromIterable(contentCells)) {
+          if (LOG.isInfoEnabled()) {
+            LoggingRuntime.legacyLog(Level.INFO, ((EditorCell_Constant) cell).getText(), InitActivity_Intention.class, null);
+          }
+          counter++;
+          if (counter == 2) {
+            name = ((EditorCell_Constant) cell).getText().toString();
+            if (LOG.isInfoEnabled()) {
+              LoggingRuntime.legacyLog(Level.INFO, "Jmeno: " + name, InitActivity_Intention.class, null);
+            }
+            SPropertyOperations.set(myNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), name);
+          }
+          if (counter == 4) {
+            trigger = ((EditorCell_Constant) cell).getText().toString();
+            if (LOG.isInfoEnabled()) {
+              LoggingRuntime.legacyLog(Level.INFO, "Trigger: " + trigger, InitActivity_Intention.class, null);
+            }
+            SPropertyOperations.set(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"), trigger);
+          }
+        }
+      } catch (Exception exception) {
+      }
+
 
       ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(node), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"))).addElement(myNode);
 

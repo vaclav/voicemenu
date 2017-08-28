@@ -50,7 +50,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
           intentions[1] = new InitializeNewEvent_Intention();
           intentions[2] = new Add_Greeting_tmpActivity_Intention();
           intentions[3] = new RemoveActivityWithEvent_Intention();
-          intentions[4] = new DeclareActivity4_Intention();
+          intentions[4] = new InitActivity_Intention();
         }
         break;
       case 2:
@@ -102,7 +102,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
     rv[15] = new MoveUp_Intention();
     rv[16] = new MoveDown_Intention();
     rv[17] = new RemoveActivityWithEvent_Intention();
-    rv[18] = new DeclareActivity4_Intention();
+    rv[18] = new InitActivity_Intention();
     return Arrays.asList(rv);
   }
   private static final ConceptSwitchIndex index_hphjzv_d0f = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d133997fdc5L), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L)).seal();
