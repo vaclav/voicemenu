@@ -62,6 +62,15 @@ public class Main__0 implements ActionListener {
     _Nine_qy4hiv_b0.setAction("other");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     _Nine_qy4hiv_b0.childs = new ArrayList<Event>();
+    ???;
+    .setAction("");
+    .setGreeting("");
+    .setGreeting("Sample Greeting");
+    .childs = new ArrayList<Event>();
+    Variables.path = Variables.path + .trigger;
+    Variables.myHashMap.put(Variables.path, );
+    Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
+    .childs = new ArrayList<Event>();
 
     Home.childs.add(_Eight_qy4hiv_a0);
     Home.childs.add(_Nine_qy4hiv_b0);

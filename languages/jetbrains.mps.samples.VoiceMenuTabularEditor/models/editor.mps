@@ -42,6 +42,7 @@
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
       <concept id="1235728439575" name="jetbrains.mps.lang.editor.structure.BaseLineCell" flags="ln" index="2R9Tw8" />
+      <concept id="4323500428121233431" name="jetbrains.mps.lang.editor.structure.EditorCellId" flags="ng" index="2SqB2G" />
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
@@ -74,6 +75,7 @@
         <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
         <reference id="1139959269582" name="actionMap" index="1ERwB7" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
+        <child id="4323500428121274054" name="id" index="2SqHTX" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <property id="1160590353935" name="usesFolding" index="S$Qs1" />
@@ -889,7 +891,7 @@
         <property role="3F0ifm" value="Activity:" />
         <ref role="1k5W1q" to="ei2q:11pGboo1Ya6" resolve="HardCodedText" />
         <node concept="1fO$WK" id="3yrvnjuhbBU" role="3F10Kt" />
-        <node concept="VPM3Z" id="dcxjWI9tIB" role="3F10Kt">
+        <node concept="VPxyj" id="7$6jWp$PRQg" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
       </node>
@@ -938,14 +940,20 @@
             <node concept="VPM3Z" id="5lu2mvqMA_w" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
+            <node concept="2SqB2G" id="7$6jWp$QmrN" role="2SqHTX">
+              <property role="TrG5h" value="xxx" />
+            </node>
           </node>
         </node>
       </node>
       <node concept="3F0ifn" id="5HF1wNO0qo6" role="3EZMnx">
         <property role="3F0ifm" value="on button:" />
         <ref role="1k5W1q" to="ei2q:11pGboo1Ya6" resolve="HardCodedText" />
-        <node concept="VPM3Z" id="dcxjWI9ucV" role="3F10Kt">
+        <node concept="VPxyj" id="7$6jWp$PRQd" role="3F10Kt">
           <property role="VOm3f" value="false" />
+        </node>
+        <node concept="2SqB2G" id="7$6jWp$SC6q" role="2SqHTX">
+          <property role="TrG5h" value="XXX_button" />
         </node>
       </node>
       <node concept="1iCGBv" id="5HF1wNO0qpz" role="3EZMnx">
@@ -983,6 +991,9 @@
             </node>
           </node>
         </node>
+        <node concept="VPxyj" id="7$6jWp$PRQn" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
       </node>
       <node concept="3F0ifn" id="2m0r6rVTw_X" role="3EZMnx">
         <property role="3F0ifm" value="Greeting: " />
@@ -1003,7 +1014,7 @@
             </node>
           </node>
         </node>
-        <node concept="VPM3Z" id="dcxjWI9ud2" role="3F10Kt">
+        <node concept="VPxyj" id="7$6jWp$PRZC" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
         <node concept="3k4GqR" id="2ABtujz66KM" role="3F10Kt">

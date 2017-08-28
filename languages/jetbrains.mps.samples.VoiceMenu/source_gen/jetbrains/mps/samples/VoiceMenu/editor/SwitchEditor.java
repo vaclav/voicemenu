@@ -35,7 +35,6 @@ public class SwitchEditor {
       }
 
       editorContext.getEditorComponent().getUpdater().update();
-
     }
   }
 }

@@ -4,18 +4,22 @@ package jetbrains.mps.samples.VoiceMenu.intentions;
 
 import jetbrains.mps.intentions.AbstractIntentionDescriptor;
 import jetbrains.mps.openapi.intentions.IntentionFactory;
+import org.apache.log4j.Logger;
+import org.apache.log4j.LogManager;
 import java.util.Collection;
 import jetbrains.mps.openapi.intentions.IntentionExecutable;
 import jetbrains.mps.openapi.intentions.Kind;
 import jetbrains.mps.smodel.SNodePointer;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import java.util.Collections;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
+import jetbrains.mps.baseLanguage.logging.runtime.model.LoggingRuntime;
+import org.apache.log4j.Level;
 import java.util.List;
 import java.util.ArrayList;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
@@ -24,14 +28,15 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 
-public final class DeclareActivity_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
+public final class InitActivity_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
+  private static final Logger LOG = LogManager.getLogger(InitActivity_Intention.class);
   private Collection<IntentionExecutable> myCachedExecutable;
-  public DeclareActivity_Intention() {
-    super(Kind.NORMAL, false, new SNodePointer("r:d92c1500-00d3-4072-866a-5077893293b8(jetbrains.mps.samples.VoiceMenu.intentions)", "5010947999507882789"));
+  public InitActivity_Intention() {
+    super(Kind.NORMAL, false, new SNodePointer("r:d92c1500-00d3-4072-866a-5077893293b8(jetbrains.mps.samples.VoiceMenu.intentions)", "8720745441962344153"));
   }
   @Override
   public String getPresentation() {
-    return "DeclareActivity";
+    return "InitActivity";
   }
   @Override
   public boolean isApplicable(final SNode node, final EditorContext editorContext) {
@@ -41,20 +46,9 @@ public final class DeclareActivity_Intention extends AbstractIntentionDescriptor
     return true;
   }
   private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-    String cellID = "";
-    try {
-
-
-
-      cellID = ((EditorCell_Constant) editorContext.getSelectedCell()).getText();
-    } catch (Exception myError) {
+    if ((SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")) != null)) {
       return false;
     }
-
-    if ((SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")) != null) || cellID == "") {
-      return false;
-    }
-
     return true;
   }
   @Override
@@ -63,7 +57,7 @@ public final class DeclareActivity_Intention extends AbstractIntentionDescriptor
   }
   public Collection<IntentionExecutable> instances(final SNode node, final EditorContext context) {
     if (myCachedExecutable == null) {
-      myCachedExecutable = Collections.<IntentionExecutable>singletonList(new DeclareActivity_Intention.IntentionImplementation());
+      myCachedExecutable = Collections.<IntentionExecutable>singletonList(new InitActivity_Intention.IntentionImplementation());
     }
     return myCachedExecutable;
   }
@@ -72,19 +66,30 @@ public final class DeclareActivity_Intention extends AbstractIntentionDescriptor
     }
     @Override
     public String getDescription(final SNode node, final EditorContext editorContext) {
-      return "Declare Activity";
-
+      return "Init Activity";
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-
-
-
-
       SNode myNode = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event"));
       SLinkOperations.setTarget(node, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event"), myNode);
       SLinkOperations.setTarget(myNode, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x765e66b75f7bfee4L, "Activity"), node);
 
+      // ........ 
+
+
+
+
+
+      String text = ((EditorCell_Constant) editorContext.getSelectedCell()).getCellId();
+
+      if (LOG.isInfoEnabled()) {
+        LoggingRuntime.legacyLog(Level.INFO, text, InitActivity_Intention.class, null);
+      }
+
+
+
+
+      // ......... 
       String[] kbButtons = new String[12];
 
       kbButtons[0] = "0";
@@ -110,21 +115,14 @@ public final class DeclareActivity_Intention extends AbstractIntentionDescriptor
       }
       SPropertyOperations.set(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"), Sequence.fromIterable(Sequence.fromArray(kbButtons)).subtract(ListSequence.fromList(usedButtons)).first());
 
-
-
       SPropertyOperations.set(myNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), ((EditorCell_Constant) editorContext.getSelectedCell()).getText());
 
-
-
-
-
       ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(node), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"))).addElement(myNode);
-
 
     }
     @Override
     public IntentionDescriptor getDescriptor() {
-      return DeclareActivity_Intention.this;
+      return InitActivity_Intention.this;
     }
   }
 }
