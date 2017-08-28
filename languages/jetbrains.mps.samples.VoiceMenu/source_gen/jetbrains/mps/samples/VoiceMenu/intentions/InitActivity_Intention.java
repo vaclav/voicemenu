@@ -4,8 +4,6 @@ package jetbrains.mps.samples.VoiceMenu.intentions;
 
 import jetbrains.mps.intentions.AbstractIntentionDescriptor;
 import jetbrains.mps.openapi.intentions.IntentionFactory;
-import org.apache.log4j.Logger;
-import org.apache.log4j.LogManager;
 import java.util.Collection;
 import jetbrains.mps.openapi.intentions.IntentionExecutable;
 import jetbrains.mps.openapi.intentions.Kind;
@@ -19,8 +17,6 @@ import jetbrains.mps.intentions.AbstractIntentionExecutable;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.baseLanguage.logging.runtime.model.LoggingRuntime;
-import org.apache.log4j.Level;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
@@ -28,7 +24,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 
 public final class InitActivity_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
-  private static final Logger LOG = LogManager.getLogger(InitActivity_Intention.class);
   private Collection<IntentionExecutable> myCachedExecutable;
   public InitActivity_Intention() {
     super(Kind.NORMAL, false, new SNodePointer("r:d92c1500-00d3-4072-866a-5077893293b8(jetbrains.mps.samples.VoiceMenu.intentions)", "2036874050847798463"));
@@ -80,22 +75,13 @@ public final class InitActivity_Intention extends AbstractIntentionDescriptor im
       String trigger;
       try {
         for (EditorCell cell : Sequence.fromIterable(contentCells)) {
-          if (LOG.isInfoEnabled()) {
-            LoggingRuntime.legacyLog(Level.INFO, ((EditorCell_Constant) cell).getText(), InitActivity_Intention.class, null);
-          }
           counter++;
           if (counter == 2) {
             name = ((EditorCell_Constant) cell).getText().toString();
-            if (LOG.isInfoEnabled()) {
-              LoggingRuntime.legacyLog(Level.INFO, "Jmeno: " + name, InitActivity_Intention.class, null);
-            }
             SPropertyOperations.set(myNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), name);
           }
           if (counter == 4) {
             trigger = ((EditorCell_Constant) cell).getText().toString();
-            if (LOG.isInfoEnabled()) {
-              LoggingRuntime.legacyLog(Level.INFO, "Trigger: " + trigger, InitActivity_Intention.class, null);
-            }
             SPropertyOperations.set(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"), trigger);
           }
         }
