@@ -160,6 +160,7 @@
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
         <reference id="1139959269582" name="actionMap" index="1ERwB7" />
+        <child id="1198512004906" name="focusPolicyApplicable" index="cStSX" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
         <child id="4323500428121274054" name="id" index="2SqHTX" />
       </concept>
@@ -973,7 +974,6 @@
             <property role="1O74Pk" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
             <ref role="1k5W1q" node="11pGboo2CX2" resolve="Declarations" />
-            <ref role="1ERwB7" node="2ABtujyUNPP" resolve="RemoveActivityandEvent" />
             <node concept="VPxyj" id="5lu2mvqID12" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
@@ -1005,12 +1005,26 @@
             <property role="1O74Pk" value="true" />
             <ref role="1NtTu8" to="xehl:5HF1wNNZucg" resolve="trigger" />
             <ref role="1k5W1q" node="11pGboo2CX2" resolve="Declarations" />
-            <ref role="1ERwB7" node="2ABtujyUNPP" resolve="RemoveActivityandEvent" />
             <node concept="VPxyj" id="5lu2mvqIDau" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
             <node concept="VPM3Z" id="5lu2mvqMDDr" role="3F10Kt">
               <property role="VOm3f" value="true" />
+            </node>
+            <node concept="pkWqt" id="1L4ryxd$iXH" role="cStSX">
+              <node concept="3clFbS" id="1L4ryxd$iXI" role="2VODD2">
+                <node concept="3clFbF" id="1L4ryxd$j6Z" role="3cqZAp">
+                  <node concept="2OqwBi" id="1L4ryxd$k_1" role="3clFbG">
+                    <node concept="2OqwBi" id="1L4ryxd$jn_" role="2Oq$k0">
+                      <node concept="pncrf" id="1L4ryxd$j6Y" role="2Oq$k0" />
+                      <node concept="3TrcHB" id="1L4ryxd$jVX" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                    <node concept="17RvpY" id="1L4ryxd$lud" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
