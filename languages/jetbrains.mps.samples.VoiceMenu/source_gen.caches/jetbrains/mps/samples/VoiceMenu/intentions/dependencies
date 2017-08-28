@@ -34,8 +34,9 @@
     <classNode extendsClassName="jetbrains.mps.intentions.AbstractIntentionDescriptor" />
     <classNode extendsClassName="jetbrains.mps.openapi.intentions.IntentionFactory" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.intentions.DeclareActivity_Intention" file="DeclareActivity_Intention.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.intentions.DeclareActivity4_Intention" file="DeclareActivity4_Intention.java">
     <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.ArrayList" />
@@ -52,6 +53,7 @@
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="jetbrains.mps.openapi.intentions.IntentionDescriptor" />
     <classNode dependClassName="jetbrains.mps.openapi.intentions.IntentionExecutable" />
     <classNode dependClassName="jetbrains.mps.openapi.intentions.Kind" />
@@ -93,7 +95,7 @@
     <classNode dependClassName="jetbrains.mps.openapi.intentions.IntentionFactory" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.intentions.Add_Greeting_tmpActivity_Intention" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.intentions.Add_Main_Greeting_Intention" />
-    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.intentions.DeclareActivity_Intention" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.intentions.DeclareActivity4_Intention" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.intentions.InitializeNewEvent_Intention" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.intentions.MoveDown_Intention" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.intentions.MoveUp_Intention" />

@@ -151,7 +151,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_ContextAssistantComponent;
     provider.setNoTargetText("activity");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(getEditorContext());
-    editorCell.setCellId("property_name");
+    editorCell.setCellId("NAME");
     Style style = new StyleImpl();
     new DeclarationsStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
     style.set(StyleAttributes.NAVIGATABLE_NODE, _StyleParameter_QueryFunction_ymj9mh_a0d0());

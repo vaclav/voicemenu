@@ -78,6 +78,7 @@
         <child id="5692353713941573325" name="textFunction" index="1hCUd6" />
       </concept>
       <concept id="1235728439575" name="jetbrains.mps.lang.editor.structure.BaseLineCell" flags="ln" index="2R9Tw8" />
+      <concept id="4323500428121233431" name="jetbrains.mps.lang.editor.structure.EditorCellId" flags="ng" index="2SqB2G" />
       <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
         <child id="1186402402630" name="styleClass" index="V601i" />
       </concept>
@@ -159,6 +160,7 @@
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
         <reference id="1139959269582" name="actionMap" index="1ERwB7" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
+        <child id="4323500428121274054" name="id" index="2SqHTX" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <property id="1160590353935" name="usesFolding" index="S$Qs1" />
@@ -662,6 +664,9 @@
             </node>
           </node>
         </node>
+        <node concept="2SqB2G" id="1L4ryxd6gxY" role="2SqHTX">
+          <property role="TrG5h" value="NAME" />
+        </node>
       </node>
       <node concept="18a60v" id="2LL6X0rd9IL" role="3EZMnx">
         <node concept="VPM3Z" id="2LL6X0rd9IN" role="3F10Kt">
@@ -935,23 +940,28 @@
         <ref role="1k5W1q" node="11pGboo1Ya6" resolve="HardCodedText" />
         <node concept="1fO$WK" id="3yrvnjuhbBU" role="3F10Kt" />
         <node concept="VPM3Z" id="dcxjWI5nLc" role="3F10Kt">
-          <property role="VOm3f" value="false" />
+          <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="1iCGBv" id="5HF1wNNZI4R" role="3EZMnx">
+        <property role="1$x2rV" value="pokus" />
         <ref role="1NtTu8" to="xehl:5HF1wNNZwzN" resolve="event" />
         <ref role="1k5W1q" node="3yrvnjuhfbU" resolve="Brackets" />
         <node concept="1fO$WK" id="3yrvnjuhrdY" role="3F10Kt" />
         <node concept="1sVBvm" id="5HF1wNNZI4T" role="1sWHZn">
           <node concept="3F0A7n" id="5HF1wNNZJcZ" role="2wV5jI">
-            <property role="1Intyy" value="true" />
             <property role="1$x2rV" value="name" />
             <property role="1O74Pk" value="true" />
+            <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
             <ref role="1k5W1q" node="11pGboo2CX2" resolve="Declarations" />
             <ref role="1ERwB7" node="2w$I9IaaQma" resolve="RemoveEventAndActivity" />
-            <node concept="VPxyj" id="5lu2mvqID12" role="3F10Kt">
-              <property role="VOm3f" value="true" />
+            <node concept="1X3_iC" id="1L4ryxdjKor" role="lGtFl">
+              <property role="3V$3am" value="styleItem" />
+              <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1219418625346/1219418656006" />
+              <node concept="VPxyj" id="5lu2mvqID12" role="8Wnug">
+                <property role="VOm3f" value="true" />
+              </node>
             </node>
             <node concept="VPM3Z" id="5lu2mvqMA_w" role="3F10Kt">
               <property role="VOm3f" value="true" />
@@ -963,22 +973,28 @@
         <property role="3F0ifm" value="on button:" />
         <ref role="1k5W1q" node="11pGboo1Ya6" resolve="HardCodedText" />
         <node concept="VPM3Z" id="dcxjWI5nLg" role="3F10Kt">
-          <property role="VOm3f" value="false" />
+          <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="1iCGBv" id="5HF1wNO0qpz" role="3EZMnx">
         <ref role="1NtTu8" to="xehl:5HF1wNNZwzN" resolve="event" />
         <node concept="VPM3Z" id="dcxjWI5nL7" role="3F10Kt">
-          <property role="VOm3f" value="false" />
+          <property role="VOm3f" value="true" />
         </node>
         <node concept="1sVBvm" id="5HF1wNO0qp_" role="1sWHZn">
           <node concept="3F0A7n" id="5HF1wNO0qqr" role="2wV5jI">
-            <property role="1Intyy" value="true" />
             <property role="1$x2rV" value="button" />
+            <property role="1O74Pk" value="true" />
+            <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="xehl:5HF1wNNZucg" resolve="trigger" />
             <ref role="1k5W1q" node="11pGboo2CX2" resolve="Declarations" />
-            <node concept="VPxyj" id="5lu2mvqIDau" role="3F10Kt">
-              <property role="VOm3f" value="true" />
+            <ref role="1ERwB7" node="2w$I9IaaQma" resolve="RemoveEventAndActivity" />
+            <node concept="1X3_iC" id="1L4ryxdjKow" role="lGtFl">
+              <property role="3V$3am" value="styleItem" />
+              <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1219418625346/1219418656006" />
+              <node concept="VPxyj" id="5lu2mvqIDau" role="8Wnug">
+                <property role="VOm3f" value="true" />
+              </node>
             </node>
             <node concept="VPM3Z" id="5lu2mvqMDDr" role="3F10Kt">
               <property role="VOm3f" value="true" />
@@ -1023,7 +1039,7 @@
           </node>
         </node>
         <node concept="VPM3Z" id="dcxjWI7i_W" role="3F10Kt">
-          <property role="VOm3f" value="false" />
+          <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F0A7n" id="2m0r6rVTwB1" role="3EZMnx">
