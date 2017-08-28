@@ -199,7 +199,7 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
         @Nullable
         @Override
         public String getLabelText(String pattern) {
-          return "Remove event";
+          return "Remove Event";
         }
 
         @Override
