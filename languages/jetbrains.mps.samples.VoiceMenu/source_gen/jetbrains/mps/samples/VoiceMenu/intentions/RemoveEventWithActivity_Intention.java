@@ -51,14 +51,11 @@ public final class RemoveEventWithActivity_Intention extends AbstractIntentionDe
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-
-
       SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(SNodeOperations.cast(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event"))), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities"))).findFirst(new IWhereFilter<SNode>() {
         public boolean accept(SNode it) {
-          return eq_8mr0u4_a0a0a0a0a0a2a2g(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), node);
+          return eq_8mr0u4_a0a0a0a0a0a0a2g(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), node);
         }
       }));
-
       SNodeOperations.deleteNode(node);
     }
     @Override
@@ -66,7 +63,7 @@ public final class RemoveEventWithActivity_Intention extends AbstractIntentionDe
       return RemoveEventWithActivity_Intention.this;
     }
   }
-  private static boolean eq_8mr0u4_a0a0a0a0a0a2a2g(Object a, Object b) {
+  private static boolean eq_8mr0u4_a0a0a0a0a0a0a2g(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
 }

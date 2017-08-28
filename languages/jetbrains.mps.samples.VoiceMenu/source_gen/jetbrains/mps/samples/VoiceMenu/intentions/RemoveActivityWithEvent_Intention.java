@@ -56,7 +56,6 @@ public final class RemoveActivityWithEvent_Intention extends AbstractIntentionDe
           return eq_inxdkn_a0a0a0a0a0a0a2g(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x765e66b75f7bfee4L, "Activity")), node);
         }
       }));
-
       SNodeOperations.deleteNode(node);
     }
     @Override

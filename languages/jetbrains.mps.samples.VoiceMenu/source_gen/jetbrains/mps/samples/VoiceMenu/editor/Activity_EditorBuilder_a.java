@@ -170,6 +170,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
       style.set(StyleAttributes.EDITABLE, true);
       style.set(StyleAttributes.SELECTABLE, true);
       editorCell.getStyle().putAll(style);
+      RemoveEventAndActivity.setCellActions(editorCell, myNode, getEditorContext());
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
       SNode attributeConcept = provider.getRoleAttribute();
       if (attributeConcept != null) {
