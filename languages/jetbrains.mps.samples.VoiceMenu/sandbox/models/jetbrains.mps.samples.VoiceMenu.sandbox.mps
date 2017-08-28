@@ -211,6 +211,7 @@
   <node concept="2Jqgb4" id="1dkJyTcULCU">
     <property role="TrG5h" value="myVoiceMenu3" />
     <property role="1EJLKn" value="true" />
+    <property role="3uoZKU" value="Sample Greeting" />
     <node concept="2C_Ik4" id="1dkJyTcULCV" role="2JqgbB">
       <node concept="2C_I21" id="4matEwaOelE" role="2C_I26">
         <property role="3upAMh" value="" />
