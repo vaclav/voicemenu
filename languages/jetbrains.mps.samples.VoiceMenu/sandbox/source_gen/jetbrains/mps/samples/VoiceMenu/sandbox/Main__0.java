@@ -62,18 +62,10 @@ public class Main__0 implements ActionListener {
     _Nine_qy4hiv_b0.setAction("other");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     _Nine_qy4hiv_b0.childs = new ArrayList<Event>();
-    Event _neco2_qy4hiv_d0 = new Event("neco2", "7");
-    _neco2_qy4hiv_d0.setAction("");
-    _neco2_qy4hiv_d0.setGreeting("");
-    _neco2_qy4hiv_d0.setGreeting("Sampewfwefle Greeting");
-    _neco2_qy4hiv_d0.childs = new ArrayList<Event>();
-    Variables.path = Variables.path + _neco2_qy4hiv_d0.trigger;
-    Variables.myHashMap.put(Variables.path, _neco2_qy4hiv_d0);
-    Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
-    _neco2_qy4hiv_d0.childs = new ArrayList<Event>();
     ???;
     .setAction("");
     .setGreeting("");
+    .setGreeting("Sample Greeting");
     .childs = new ArrayList<Event>();
     Variables.path = Variables.path + .trigger;
     Variables.myHashMap.put(Variables.path, );
@@ -83,7 +75,6 @@ public class Main__0 implements ActionListener {
     Home.childs.add(_Eight_qy4hiv_a0);
     Home.childs.add(_Nine_qy4hiv_b0);
     Home.childs.add(_Five_qy4hiv_c0);
-    Home.childs.add(_neco2_qy4hiv_d0);
   }
 
   public static void main(String[] args) {
