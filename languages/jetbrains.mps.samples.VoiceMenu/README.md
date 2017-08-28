@@ -29,7 +29,7 @@ Toolbar with action buttons for more pleasant usage
 How to use
 ----------
 
-To start with your first voice menu create new model in sandbox solution with `WorkSpace` as the root. It's highly recommended to use either autocomplete `Ctrl + Space` or intentions `Alt + Enter` for easier usage.
+To start with your first voice menu create a new model in the sandbox solution with `WorkSpace` as the root. It's highly recommended to use either autocomplete `Ctrl + Space` or intentions `Alt + Enter` for easier usage.
 
 Simply fill in in each gap one by another. 
 Add upto 12 buttons.
@@ -37,13 +37,13 @@ Add upto 12 buttons.
 [![MPS_VoiceMenu_Sample](../../extras/VM30.43.png)](https://www.jetbrains.com/mps/)
 [![MPS_VoiceMenu_Sample](../../extras/VM32.51.png)](https://www.jetbrains.com/mps/)
 
-Click on the button you would like to specify an Event to and press `Alt Enter` for Intentions/Quickfixes.
+Click on a button you would like to specify an Event to and press `Alt Enter` for Intentions/Quickfixes.
 Choose "Initiliaze Event". (It might be done manually without quickfix)
 
 [![MPS_VoiceMenu_Sample](../../extras/VM33.10.png)](https://www.jetbrains.com/mps/)
 [![MPS_VoiceMenu_Sample](../../extras/VM38.12.png)](https://www.jetbrains.com/mps/)
 
-Both the name and the trigger of the event was completed automatically. Choose if the Event is an Action (if so choose which concrete action) or a Menu.
+Both the name and the trigger of the event were completed automatically. Choose if the Event is an Action (if so choose which concrete action) or a Menu.
 
 [![MPS_VoiceMenu_Sample](../../extras/VM37.46.png)](https://www.jetbrains.com/mps/)
 
@@ -57,35 +57,6 @@ Rebuild the whole project. At the very top of the screen click on `Build` and ch
 Right click the myVoicemenu sandbox solution in the left panel and choose `Run` .
 [![MPS_VoiceMenu_Sample](../../extras/VM11.12.png)](https://www.jetbrains.com/mps/)
 
-Intentions 
------------------
-
-
-* **Global** - Switching Editors (Regular or Tabular) 
-* **Global** - Toolbar 
-
-* **WorkSpace** - Add/Remove Greeting
-
-* **Event Declaration** - Add (another) event declaration
-* **Event Declaration** - Remove event and it's activity
-
-* **Event Initialization** - Add/Remove Greeting
-* **Event Initilization** - Initiliaze (another) new event
-
-* **Action** - Change to different action/menu
-
-Quickfixes
-----------
-Different errors invoke different quickfixes.
-
-* **Event Declaration** - Replace with correct input number
-* **Event Declaration** - Remove duplicate number
-* **Event Declaration** - Initiliaze Event
-
-* **Event Initilization** - Remove duplicate activity
-* **Event Initilization** - Reset name
-* **Event Initilization** - Initiliaze Event
-* (**Event Initilization** - Initiliaze Menu - autoFix, cannot be invoked)
 
 
 Intentions
