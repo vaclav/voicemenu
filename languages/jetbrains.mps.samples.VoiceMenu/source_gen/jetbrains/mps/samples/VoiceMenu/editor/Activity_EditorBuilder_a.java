@@ -132,7 +132,6 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     new BracketsStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
     style.set(StyleAttributes.SHOW_BOUNDARIES_IN, ShowBoundariesArea.GUTTER);
     editorCell.getStyle().putAll(style);
-    RemoveActivityandEvent.setCellActions(editorCell, myNode, getEditorContext());
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     if (attributeConcept != null) {

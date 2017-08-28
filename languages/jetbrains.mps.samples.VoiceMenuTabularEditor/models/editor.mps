@@ -899,7 +899,6 @@
       <node concept="1iCGBv" id="5HF1wNNZI4R" role="3EZMnx">
         <ref role="1NtTu8" to="xehl:5HF1wNNZwzN" resolve="event" />
         <ref role="1k5W1q" to="ei2q:3yrvnjuhfbU" resolve="Brackets" />
-        <ref role="1ERwB7" to="ei2q:2ABtujyUNPP" resolve="RemoveActivityandEvent" />
         <node concept="1fO$WK" id="3yrvnjuhrdY" role="3F10Kt" />
         <node concept="3k4GqR" id="2ABtujz66nN" role="3F10Kt">
           <node concept="3k4GqP" id="2ABtujz66nO" role="3k4GqO">
@@ -958,7 +957,6 @@
       </node>
       <node concept="1iCGBv" id="5HF1wNO0qpz" role="3EZMnx">
         <ref role="1NtTu8" to="xehl:5HF1wNNZwzN" resolve="event" />
-        <ref role="1ERwB7" to="ei2q:2ABtujyUNPP" resolve="RemoveActivityandEvent" />
         <node concept="1sVBvm" id="5HF1wNO0qp_" role="1sWHZn">
           <node concept="3F0A7n" id="5HF1wNO0qqr" role="2wV5jI">
             <property role="1Intyy" value="true" />

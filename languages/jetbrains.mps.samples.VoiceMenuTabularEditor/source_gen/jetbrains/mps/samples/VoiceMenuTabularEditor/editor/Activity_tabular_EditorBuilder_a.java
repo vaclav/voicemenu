@@ -136,7 +136,6 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     style.set(StyleAttributes.SHOW_BOUNDARIES_IN, ShowBoundariesArea.GUTTER);
     style.set(StyleAttributes.NAVIGATABLE_NODE, _StyleParameter_QueryFunction_tm0j27_a1b0());
     editorCell.getStyle().putAll(style);
-    RemoveActivityandEvent.setCellActions(editorCell, myNode, getEditorContext());
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     if (attributeConcept != null) {
@@ -246,7 +245,6 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
-    RemoveActivityandEvent.setCellActions(editorCell, myNode, getEditorContext());
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     if (attributeConcept != null) {

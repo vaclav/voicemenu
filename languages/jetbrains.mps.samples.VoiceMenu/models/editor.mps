@@ -965,7 +965,6 @@
       <node concept="1iCGBv" id="5HF1wNNZI4R" role="3EZMnx">
         <ref role="1NtTu8" to="xehl:5HF1wNNZwzN" resolve="event" />
         <ref role="1k5W1q" node="3yrvnjuhfbU" resolve="Brackets" />
-        <ref role="1ERwB7" node="2ABtujyUNPP" resolve="RemoveActivityandEvent" />
         <node concept="1fO$WK" id="3yrvnjuhrdY" role="3F10Kt" />
         <node concept="1sVBvm" id="5HF1wNNZI4T" role="1sWHZn">
           <node concept="3F0A7n" id="5HF1wNNZJcZ" role="2wV5jI">
@@ -8825,7 +8824,7 @@
     <property role="TrG5h" value="RemoveActivityandEvent" />
     <ref role="1h_SK9" to="xehl:5HF1wNNZuqd" resolve="Activity" />
     <node concept="1hA7zw" id="2ABtujyUNPQ" role="1h_SK8">
-      <property role="1hAc7j" value="click_action_id" />
+      <property role="1hAc7j" value="delete_action_id" />
       <node concept="1hAIg9" id="2ABtujyUNPR" role="1hA7z_">
         <node concept="3clFbS" id="2ABtujyUNPS" role="2VODD2">
           <node concept="3clFbF" id="1L4ryxdpBkI" role="3cqZAp">
