@@ -956,6 +956,7 @@
       <node concept="3F0ifn" id="5HF1wNNZI4l" role="3EZMnx">
         <property role="3F0ifm" value="Activity:" />
         <ref role="1k5W1q" node="11pGboo1Ya6" resolve="HardCodedText" />
+        <ref role="1ERwB7" node="2ABtujyUNPP" resolve="RemoveActivityandEvent" />
         <node concept="1fO$WK" id="3yrvnjuhbBU" role="3F10Kt" />
         <node concept="VPxyj" id="7$6jWp$LPmT" role="3F10Kt">
           <property role="VOm3f" value="false" />
@@ -972,15 +973,12 @@
             <property role="1O74Pk" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
             <ref role="1k5W1q" node="11pGboo2CX2" resolve="Declarations" />
-            <ref role="1ERwB7" node="2w$I9IaaQma" resolve="RemoveEventAndActivity" />
+            <ref role="1ERwB7" node="2ABtujyUNPP" resolve="RemoveActivityandEvent" />
             <node concept="VPxyj" id="5lu2mvqID12" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
             <node concept="VPM3Z" id="5lu2mvqMA_w" role="3F10Kt">
               <property role="VOm3f" value="true" />
-            </node>
-            <node concept="2SqB2G" id="7$6jWp$SCkX" role="2SqHTX">
-              <property role="TrG5h" value="yyy" />
             </node>
           </node>
         </node>
@@ -988,6 +986,7 @@
       <node concept="3F0ifn" id="5HF1wNO0qo6" role="3EZMnx">
         <property role="3F0ifm" value="on button:" />
         <ref role="1k5W1q" node="11pGboo1Ya6" resolve="HardCodedText" />
+        <ref role="1ERwB7" node="2ABtujyUNPP" resolve="RemoveActivityandEvent" />
         <node concept="VPxyj" id="7$6jWp$LPmN" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
@@ -1002,10 +1001,11 @@
         </node>
         <node concept="1sVBvm" id="5HF1wNO0qp_" role="1sWHZn">
           <node concept="3F0A7n" id="5HF1wNO0qqr" role="2wV5jI">
-            <property role="1Intyy" value="true" />
             <property role="1$x2rV" value="button" />
+            <property role="1O74Pk" value="true" />
             <ref role="1NtTu8" to="xehl:5HF1wNNZucg" resolve="trigger" />
             <ref role="1k5W1q" node="11pGboo2CX2" resolve="Declarations" />
+            <ref role="1ERwB7" node="2ABtujyUNPP" resolve="RemoveActivityandEvent" />
             <node concept="VPxyj" id="5lu2mvqIDau" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
@@ -8947,9 +8947,58 @@
     <property role="TrG5h" value="RemoveActivityandEvent" />
     <ref role="1h_SK9" to="xehl:5HF1wNNZuqd" resolve="Activity" />
     <node concept="1hA7zw" id="2ABtujyUNPQ" role="1h_SK8">
-      <property role="1hAc7j" value="click_action_id" />
+      <property role="1hAc7j" value="delete_action_id" />
       <node concept="1hAIg9" id="2ABtujyUNPR" role="1hA7z_">
         <node concept="3clFbS" id="2ABtujyUNPS" role="2VODD2">
+          <node concept="3clFbF" id="1L4ryxdpBkI" role="3cqZAp">
+            <node concept="2OqwBi" id="1L4ryxdpKle" role="3clFbG">
+              <node concept="2OqwBi" id="1L4ryxdpH3L" role="2Oq$k0">
+                <node concept="2OqwBi" id="1L4ryxdpEyp" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1L4ryxdpD2M" role="2Oq$k0">
+                    <node concept="1PxgMI" id="1L4ryxdpCSD" role="2Oq$k0">
+                      <node concept="chp4Y" id="1L4ryxdpCTx" role="3oSUPX">
+                        <ref role="cht4Q" to="xehl:5HF1wNNZuc8" resolve="Menu" />
+                      </node>
+                      <node concept="2OqwBi" id="1L4ryxdpBtO" role="1m5AlR">
+                        <node concept="0IXxy" id="1L4ryxdpBkG" role="2Oq$k0" />
+                        <node concept="1mfA1w" id="1L4ryxdpCCH" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="32TBzR" id="1L4ryxdpDun" role="2OqNvi" />
+                  </node>
+                  <node concept="v3k3i" id="1L4ryxdpGNA" role="2OqNvi">
+                    <node concept="chp4Y" id="1L4ryxdpGPT" role="v3oSu">
+                      <ref role="cht4Q" to="xehl:5HF1wNNZucc" resolve="Event" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1z4cxt" id="1L4ryxdpHv8" role="2OqNvi">
+                  <node concept="1bVj0M" id="1L4ryxdpHva" role="23t8la">
+                    <node concept="3clFbS" id="1L4ryxdpHvb" role="1bW5cS">
+                      <node concept="3clFbF" id="1L4ryxdpHBW" role="3cqZAp">
+                        <node concept="17R0WA" id="1L4ryxdpJT7" role="3clFbG">
+                          <node concept="0IXxy" id="1L4ryxdpK3v" role="3uHU7w" />
+                          <node concept="2OqwBi" id="1L4ryxdpHQl" role="3uHU7B">
+                            <node concept="37vLTw" id="1L4ryxdpHBV" role="2Oq$k0">
+                              <ref role="3cqZAo" node="1L4ryxdpHvc" resolve="it" />
+                            </node>
+                            <node concept="3TrEf2" id="1L4ryxdpIk8" role="2OqNvi">
+                              <ref role="3Tt5mk" to="xehl:7pupFtvuZV$" resolve="Activity" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Rh6nW" id="1L4ryxdpHvc" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="1L4ryxdpHvd" role="1tU5fm" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3YRAZt" id="1L4ryxdpKR6" role="2OqNvi" />
+            </node>
+          </node>
           <node concept="3clFbF" id="2ABtujyUNR9" role="3cqZAp">
             <node concept="2OqwBi" id="2ABtujyUNY3" role="3clFbG">
               <node concept="0IXxy" id="2ABtujyUNR8" role="2Oq$k0" />

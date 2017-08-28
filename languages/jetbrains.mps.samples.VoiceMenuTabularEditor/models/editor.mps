@@ -890,6 +890,7 @@
       <node concept="3F0ifn" id="5HF1wNNZI4l" role="3EZMnx">
         <property role="3F0ifm" value="Activity:" />
         <ref role="1k5W1q" to="ei2q:11pGboo1Ya6" resolve="HardCodedText" />
+        <ref role="1ERwB7" to="ei2q:2ABtujyUNPP" resolve="RemoveActivityandEvent" />
         <node concept="1fO$WK" id="3yrvnjuhbBU" role="3F10Kt" />
         <node concept="VPxyj" id="7$6jWp$PRQg" role="3F10Kt">
           <property role="VOm3f" value="false" />
@@ -949,11 +950,9 @@
       <node concept="3F0ifn" id="5HF1wNO0qo6" role="3EZMnx">
         <property role="3F0ifm" value="on button:" />
         <ref role="1k5W1q" to="ei2q:11pGboo1Ya6" resolve="HardCodedText" />
+        <ref role="1ERwB7" to="ei2q:2ABtujyUNPP" resolve="RemoveActivityandEvent" />
         <node concept="VPxyj" id="7$6jWp$PRQd" role="3F10Kt">
           <property role="VOm3f" value="false" />
-        </node>
-        <node concept="2SqB2G" id="7$6jWp$SC6q" role="2SqHTX">
-          <property role="TrG5h" value="XXX_button" />
         </node>
       </node>
       <node concept="1iCGBv" id="5HF1wNO0qpz" role="3EZMnx">

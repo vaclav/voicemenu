@@ -100,6 +100,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     style.set(StyleAttributes.SHOW_BOUNDARIES_IN, ShowBoundariesArea.GUTTER);
     style.set(StyleAttributes.EDITABLE, false);
     editorCell.getStyle().putAll(style);
+    RemoveActivityandEvent.setCellActions(editorCell, myNode, getEditorContext());
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -168,13 +169,13 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
       provider.setAllowsEmptyTarget(true);
       EditorCell editorCell;
       editorCell = provider.createEditorCell(getEditorContext());
-      editorCell.setCellId("yyy");
+      editorCell.setCellId("property_name");
       Style style = new StyleImpl();
       new DeclarationsStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
       style.set(StyleAttributes.EDITABLE, true);
       style.set(StyleAttributes.SELECTABLE, true);
       editorCell.getStyle().putAll(style);
-      RemoveEventAndActivity.setCellActions(editorCell, myNode, getEditorContext());
+      RemoveActivityandEvent.setCellActions(editorCell, myNode, getEditorContext());
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
       SNode attributeConcept = provider.getRoleAttribute();
       if (attributeConcept != null) {
@@ -191,6 +192,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     new HardCodedTextStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
     style.set(StyleAttributes.EDITABLE, false);
     editorCell.getStyle().putAll(style);
+    RemoveActivityandEvent.setCellActions(editorCell, myNode, getEditorContext());
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -254,7 +256,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
       CellProviderWithRole provider = new PropertyCellProvider(myNode, getEditorContext());
       provider.setRole("trigger");
       provider.setNoTargetText("button");
-      provider.setReadOnly(true);
+      provider.setAllowsEmptyTarget(true);
       EditorCell editorCell;
       editorCell = provider.createEditorCell(getEditorContext());
       editorCell.setCellId("property_trigger");
@@ -263,6 +265,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
       style.set(StyleAttributes.EDITABLE, true);
       style.set(StyleAttributes.SELECTABLE, true);
       editorCell.getStyle().putAll(style);
+      RemoveActivityandEvent.setCellActions(editorCell, myNode, getEditorContext());
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
       SNode attributeConcept = provider.getRoleAttribute();
       if (attributeConcept != null) {
