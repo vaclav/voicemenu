@@ -942,7 +942,7 @@
               <property role="VOm3f" value="true" />
             </node>
             <node concept="2SqB2G" id="7$6jWp$QmrN" role="2SqHTX">
-              <property role="TrG5h" value="xxx" />
+              <property role="TrG5h" value="button" />
             </node>
           </node>
         </node>
@@ -962,6 +962,9 @@
             <property role="1Intyy" value="true" />
             <property role="1$x2rV" value="button" />
             <ref role="1NtTu8" to="xehl:5HF1wNNZucg" resolve="trigger" />
+            <node concept="2SqB2G" id="7oQ0uB$vYVi" role="2SqHTX">
+              <property role="TrG5h" value="trigger" />
+            </node>
           </node>
         </node>
       </node>

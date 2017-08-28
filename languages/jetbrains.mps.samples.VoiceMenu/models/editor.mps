@@ -160,6 +160,7 @@
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
+        <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
         <reference id="1139959269582" name="actionMap" index="1ERwB7" />
         <child id="1198512004906" name="focusPolicyApplicable" index="cStSX" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
@@ -991,6 +992,9 @@
             <property role="1O74Pk" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
             <ref role="1k5W1q" node="11pGboo2CX2" resolve="Declarations" />
+            <node concept="2SqB2G" id="7oQ0uB$vZ5e" role="2SqHTX">
+              <property role="TrG5h" value="button" />
+            </node>
           </node>
         </node>
       </node>
@@ -1001,9 +1005,6 @@
         <node concept="VPxyj" id="7$6jWp$LPmN" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
-        <node concept="2SqB2G" id="7$6jWp$SCkZ" role="2SqHTX">
-          <property role="TrG5h" value="YYY_button" />
-        </node>
       </node>
       <node concept="1iCGBv" id="5HF1wNO0qpz" role="3EZMnx">
         <ref role="1NtTu8" to="xehl:5HF1wNNZwzN" resolve="event" />
@@ -1011,6 +1012,7 @@
           <node concept="3F0A7n" id="5HF1wNO0qqr" role="2wV5jI">
             <property role="1$x2rV" value="button" />
             <property role="1O74Pk" value="true" />
+            <property role="1cu_pB" value="0" />
             <ref role="1NtTu8" to="xehl:5HF1wNNZucg" resolve="trigger" />
             <ref role="1k5W1q" node="11pGboo2CX2" resolve="Declarations" />
             <node concept="pkWqt" id="1L4ryxd$iXH" role="cStSX">
@@ -1027,6 +1029,9 @@
                   </node>
                 </node>
               </node>
+            </node>
+            <node concept="2SqB2G" id="7oQ0uB$xtGq" role="2SqHTX">
+              <property role="TrG5h" value="trigger" />
             </node>
           </node>
         </node>

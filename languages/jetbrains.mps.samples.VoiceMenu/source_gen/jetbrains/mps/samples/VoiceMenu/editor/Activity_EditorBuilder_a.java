@@ -168,7 +168,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
       provider.setAllowsEmptyTarget(true);
       EditorCell editorCell;
       editorCell = provider.createEditorCell(getEditorContext());
-      editorCell.setCellId("property_name");
+      editorCell.setCellId("button");
       Style style = new StyleImpl();
       new DeclarationsStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
       editorCell.getStyle().putAll(style);
@@ -183,7 +183,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
   }
   private EditorCell createConstant_luypn2_c0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "on button:");
-    editorCell.setCellId("YYY_button");
+    editorCell.setCellId("Constant_luypn2_c0");
     Style style = new StyleImpl();
     new HardCodedTextStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
     style.set(StyleAttributes.EDITABLE, false);
@@ -252,7 +252,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
       provider.setAllowsEmptyTarget(true);
       EditorCell editorCell;
       editorCell = provider.createEditorCell(getEditorContext());
-      editorCell.setCellId("property_trigger");
+      editorCell.setCellId("trigger");
       Style style = new StyleImpl();
       new DeclarationsStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
       editorCell.getStyle().putAll(style);
