@@ -50,7 +50,7 @@ public class Main__0 implements ActionListener {
     _Five_qy4hiv_c0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + _Five_qy4hiv_c0.trigger;
     Variables.myHashMap.put(Variables.path, _Five_qy4hiv_c0);
-    _Five_qy4hiv_c0.setAction("back");
+    _Five_qy4hiv_c0.setAction("other");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     _Five_qy4hiv_c0.childs = new ArrayList<Event>();
     Event _Nine_qy4hiv_b0 = new Event("Nine", "9");
@@ -59,23 +59,13 @@ public class Main__0 implements ActionListener {
     _Nine_qy4hiv_b0.childs = new ArrayList<Event>();
     Variables.path = Variables.path + _Nine_qy4hiv_b0.trigger;
     Variables.myHashMap.put(Variables.path, _Nine_qy4hiv_b0);
-    _Nine_qy4hiv_b0.setAction("back");
+    _Nine_qy4hiv_b0.setAction("other");
     Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
     _Nine_qy4hiv_b0.childs = new ArrayList<Event>();
-    Event _pokus4_qy4hiv_d0 = new Event("pokus4", "0");
-    _pokus4_qy4hiv_d0.setAction("");
-    _pokus4_qy4hiv_d0.setGreeting("");
-    _pokus4_qy4hiv_d0.setGreeting("Sample Grwreweeeting");
-    _pokus4_qy4hiv_d0.childs = new ArrayList<Event>();
-    Variables.path = Variables.path + _pokus4_qy4hiv_d0.trigger;
-    Variables.myHashMap.put(Variables.path, _pokus4_qy4hiv_d0);
-    Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
-    _pokus4_qy4hiv_d0.childs = new ArrayList<Event>();
 
     Home.childs.add(_Eight_qy4hiv_a0);
     Home.childs.add(_Nine_qy4hiv_b0);
     Home.childs.add(_Five_qy4hiv_c0);
-    Home.childs.add(_pokus4_qy4hiv_d0);
   }
 
   public static void main(String[] args) {

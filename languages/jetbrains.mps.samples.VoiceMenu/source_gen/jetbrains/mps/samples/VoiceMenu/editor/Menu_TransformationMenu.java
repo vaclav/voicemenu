@@ -368,10 +368,18 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
           SNodeFactoryOperations.replaceWithNewChild(_context.getNode(), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, "jetbrains.mps.samples.VoiceMenu.structure.DirectCall")));
         }
 
+        @Override
+        public boolean canExecute(@NotNull String pattern) {
+          boolean isInstanceOf = SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace"));
+          if (isInstanceOf) {
+            return false;
+          }
+          return true;
+        }
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c6j_3;
+          return IconContainer.RESOURCE_a0a01c6j;
         }
         @Override
         public String getTooltipText() {
@@ -414,10 +422,18 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
           SNodeFactoryOperations.replaceWithNewChild(_context.getNode(), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acaL, "jetbrains.mps.samples.VoiceMenu.structure.Back")));
         }
 
+        @Override
+        public boolean canExecute(@NotNull String pattern) {
+          boolean isInstanceOf = SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace"));
+          if (isInstanceOf) {
+            return false;
+          }
+          return true;
+        }
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c7j_3;
+          return IconContainer.RESOURCE_a0a01c7j;
         }
         @Override
         public String getTooltipText() {
@@ -460,10 +476,18 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
           SNodeFactoryOperations.replaceWithNewChild(_context.getNode(), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, "jetbrains.mps.samples.VoiceMenu.structure.GetInfo")));
         }
 
+        @Override
+        public boolean canExecute(@NotNull String pattern) {
+          boolean isInstanceOf = SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace"));
+          if (isInstanceOf) {
+            return false;
+          }
+          return true;
+        }
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c8j_3;
+          return IconContainer.RESOURCE_a0a01c8j;
         }
         @Override
         public String getTooltipText() {
@@ -506,10 +530,18 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
           SNodeFactoryOperations.replaceWithNewChild(_context.getNode(), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, "jetbrains.mps.samples.VoiceMenu.structure.Other")));
         }
 
+        @Override
+        public boolean canExecute(@NotNull String pattern) {
+          boolean isInstanceOf = SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace"));
+          if (isInstanceOf) {
+            return false;
+          }
+          return true;
+        }
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c9j_3;
+          return IconContainer.RESOURCE_a0a01c9j;
         }
         @Override
         public String getTooltipText() {
