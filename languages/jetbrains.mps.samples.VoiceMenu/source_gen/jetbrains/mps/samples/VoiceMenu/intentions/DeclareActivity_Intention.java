@@ -81,6 +81,14 @@ public final class DeclareActivity_Intention extends AbstractIntentionDescriptor
     public void execute(final SNode node, final EditorContext editorContext) {
 
 
+      editorContext.getSelectedCell().setCellId("nice_name");
+
+
+      if (LOG.isInfoEnabled()) {
+        LoggingRuntime.legacyLog(Level.INFO, ((EditorCell_Constant) editorContext.getSelectedCell()).getText(), DeclareActivity_Intention.class, null);
+      }
+
+
       String cellID = ((EditorCell_Constant) editorContext.getSelectedCell()).getText();
       cellID = "**" + cellID + "**";
       if (LOG.isInfoEnabled()) {

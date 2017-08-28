@@ -15,6 +15,7 @@
       </concept>
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <reference id="1213106917431" name="defaultConcreteConcept" index="1MND4H" />
         <child id="1213100494875" name="referent" index="1Mr941" />
       </concept>
       <concept id="1148687176410" name="jetbrains.mps.lang.constraints.structure.NodeReferentConstraint" flags="ng" index="1N5Pfh">
@@ -31,6 +32,10 @@
         <ref role="1dDu$A" to="xehl:5HF1wNNZucc" resolve="Event" />
       </node>
     </node>
+  </node>
+  <node concept="1M2fIO" id="7$6jWp$CSRZ">
+    <ref role="1M2myG" to="xehl:5lu2mvqIooX" resolve="Command" />
+    <ref role="1MND4H" to="xehl:5lu2mvqIsn3" resolve="Empty" />
   </node>
 </model>
 

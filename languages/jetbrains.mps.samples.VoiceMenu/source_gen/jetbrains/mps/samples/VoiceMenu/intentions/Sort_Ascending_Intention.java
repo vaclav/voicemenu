@@ -65,10 +65,6 @@ public final class Sort_Ascending_Intention extends AbstractIntentionDescriptor 
 
         SelectionUtil.selectCell(editorContext, node, SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
       }
-
-
-
-
     }
     @Override
     public IntentionDescriptor getDescriptor() {
