@@ -209,7 +209,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
   }
   private EditorCell createConstant_tm0j27_c0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "on button:");
-    editorCell.setCellId("XXX_button");
+    editorCell.setCellId("Constant_tm0j27_c0");
     Style style = new StyleImpl();
     new HardCodedTextStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
     style.set(StyleAttributes.EDITABLE, false);
@@ -242,9 +242,6 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
       editorCell.setReferenceCell(true);
       editorCell.setRole("event");
     }
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.SELECTABLE, false);
-    editorCell.getStyle().putAll(style);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     if (attributeConcept != null) {
@@ -282,10 +279,6 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
       EditorCell editorCell;
       editorCell = provider.createEditorCell(getEditorContext());
       editorCell.setCellId("property_trigger");
-      Style style = new StyleImpl();
-      style.set(StyleAttributes.EDITABLE, false);
-      style.set(StyleAttributes.SELECTABLE, false);
-      editorCell.getStyle().putAll(style);
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
       SNode attributeConcept = provider.getRoleAttribute();
       if (attributeConcept != null) {

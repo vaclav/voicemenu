@@ -962,16 +962,7 @@
             <property role="1Intyy" value="true" />
             <property role="1$x2rV" value="button" />
             <ref role="1NtTu8" to="xehl:5HF1wNNZucg" resolve="trigger" />
-            <node concept="VPxyj" id="5lu2mvqIDau" role="3F10Kt">
-              <property role="VOm3f" value="false" />
-            </node>
-            <node concept="VPM3Z" id="5lu2mvqMDDr" role="3F10Kt">
-              <property role="VOm3f" value="false" />
-            </node>
           </node>
-        </node>
-        <node concept="VPM3Z" id="dcxjWI9ucX" role="3F10Kt">
-          <property role="VOm3f" value="false" />
         </node>
       </node>
       <node concept="3F0ifn" id="2m0r6rVTw$V" role="3EZMnx">

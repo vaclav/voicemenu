@@ -26,7 +26,6 @@ import jetbrains.mps.editor.runtime.impl.CellUtil;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.DeclarationsStyleClass;
-import jetbrains.mps.editor.runtime.style.FocusPolicy;
 import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.GreetingStyleClass;
 import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -131,7 +130,6 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     }
     Style style = new StyleImpl();
     new BracketsStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
-    style.set(StyleAttributes.SHOW_BOUNDARIES_IN, ShowBoundariesArea.GUTTER);
     editorCell.getStyle().putAll(style);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -173,8 +171,6 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
       editorCell.setCellId("property_name");
       Style style = new StyleImpl();
       new DeclarationsStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
-      style.set(StyleAttributes.EDITABLE, true);
-      style.set(StyleAttributes.SELECTABLE, true);
       editorCell.getStyle().putAll(style);
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
       SNode attributeConcept = provider.getRoleAttribute();
@@ -220,9 +216,6 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
       editorCell.setReferenceCell(true);
       editorCell.setRole("event");
     }
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.SELECTABLE, false);
-    editorCell.getStyle().putAll(style);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     if (attributeConcept != null) {
@@ -262,12 +255,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
       editorCell.setCellId("property_trigger");
       Style style = new StyleImpl();
       new DeclarationsStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
-      style.set(StyleAttributes.EDITABLE, true);
-      style.set(StyleAttributes.SELECTABLE, true);
       editorCell.getStyle().putAll(style);
-      if (nodeCondition_luypn2_a0a3a()) {
-        editorCell.getStyle().set(StyleAttributes.FOCUS_POLICY, FocusPolicy.FIRST_EDITABLE_CELL);
-      }
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
       SNode attributeConcept = provider.getRoleAttribute();
       if (attributeConcept != null) {

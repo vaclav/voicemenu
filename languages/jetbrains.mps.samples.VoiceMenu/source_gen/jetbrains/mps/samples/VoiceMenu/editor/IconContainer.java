@@ -79,7 +79,8 @@ public class IconContainer {
   protected static IconResource RESOURCE_a0a01c7i_1 = new IconResource("plus.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c8i_4 = new IconResource("add_to_list.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c9i = new IconResource("add_to_list.png", IconContainer.class);
-  protected static IconResource RESOURCE_a0a9c01i = new IconResource("remove.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a01c01i = new IconResource("init.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a9c11i = new IconResource("remove.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a01c6h_6 = new IconResource("remove.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a01c7h_6 = new IconResource("plus.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a01c6i_2 = new IconResource("unhide.png", IconContainer.class);

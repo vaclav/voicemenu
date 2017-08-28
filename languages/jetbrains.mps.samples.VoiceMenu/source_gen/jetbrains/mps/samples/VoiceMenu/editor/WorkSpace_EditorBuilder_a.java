@@ -98,7 +98,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
   private boolean nodeCondition_ikqrmj_a0a() {
     String[] initialEditorHints = getEditorContext().getEditorComponent().getUpdater().getInitialEditorHints();
 
-    if (SPropertyOperations.getBoolean(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar")) && (initialEditorHints == null || initialEditorHints.length == 0)) {
+    if (SPropertyOperations.getBoolean(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar")) && !((initialEditorHints == null || initialEditorHints.length == 0))) {
       return true;
     } else {
       return false;
@@ -107,7 +107,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
   private boolean nodeCondition_ikqrmj_a1a() {
     String[] initialEditorHints = getEditorContext().getEditorComponent().getUpdater().getInitialEditorHints();
 
-    if (SPropertyOperations.getBoolean(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar")) && !((initialEditorHints == null || initialEditorHints.length == 0))) {
+    if (SPropertyOperations.getBoolean(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar")) && (initialEditorHints == null || initialEditorHints.length == 0)) {
       return true;
     } else {
       return false;
