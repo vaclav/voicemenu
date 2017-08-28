@@ -1783,7 +1783,7 @@
       <node concept="3clFbS" id="1L4ryxcZBj1" role="2VODD2">
         <node concept="3clFbF" id="1L4ryxcZBj2" role="3cqZAp">
           <node concept="Xl_RD" id="1L4ryxcZBj3" role="3clFbG">
-            <property role="Xl_RC" value="Declare Activity4" />
+            <property role="Xl_RC" value="Initialize Activity" />
           </node>
         </node>
         <node concept="3clFbH" id="1L4ryxcZBj4" role="3cqZAp" />
