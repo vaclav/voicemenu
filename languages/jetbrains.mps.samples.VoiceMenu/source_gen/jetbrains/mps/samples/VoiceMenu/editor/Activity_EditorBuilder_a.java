@@ -26,6 +26,7 @@ import jetbrains.mps.editor.runtime.impl.CellUtil;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.DeclarationsStyleClass;
+import jetbrains.mps.editor.runtime.style.FocusPolicy;
 import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.GreetingStyleClass;
 import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -175,7 +176,6 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
       style.set(StyleAttributes.EDITABLE, true);
       style.set(StyleAttributes.SELECTABLE, true);
       editorCell.getStyle().putAll(style);
-      RemoveActivityandEvent.setCellActions(editorCell, myNode, getEditorContext());
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
       SNode attributeConcept = provider.getRoleAttribute();
       if (attributeConcept != null) {
@@ -265,7 +265,9 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
       style.set(StyleAttributes.EDITABLE, true);
       style.set(StyleAttributes.SELECTABLE, true);
       editorCell.getStyle().putAll(style);
-      RemoveActivityandEvent.setCellActions(editorCell, myNode, getEditorContext());
+      if (nodeCondition_luypn2_a0a3a()) {
+        editorCell.getStyle().set(StyleAttributes.FOCUS_POLICY, FocusPolicy.FIRST_EDITABLE_CELL);
+      }
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
       SNode attributeConcept = provider.getRoleAttribute();
       if (attributeConcept != null) {
@@ -273,6 +275,12 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
         return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
       } else
       return editorCell;
+    }
+    private boolean nodeCondition_luypn2_a0a3a() {
+      return isNotEmptyString(SPropertyOperations.getString(myNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+    }
+    private static boolean isNotEmptyString(String str) {
+      return str != null && str.length() > 0;
     }
   }
   private EditorCell createConstant_luypn2_e0() {
