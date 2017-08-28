@@ -23,24 +23,25 @@ import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.openapi.editor.menus.transformation.ActionItemBase;
 import jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.SidebarActionItem;
 import jetbrains.mps.openapi.editor.menus.EditorMenuTraceInfo;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.internal.collections.runtime.ISelector;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.editor.runtime.selection.SelectionUtil;
 import jetbrains.mps.openapi.editor.selection.SelectionManager;
 import jetbrains.mps.smodel.runtime.IconResource;
 import jetbrains.mps.lang.editor.menus.ParameterizedMenuPart;
-import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.editor.runtime.cells.CellIdManager;
 import java.util.Random;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 
 public class Event_TransformationMenu extends TransformationMenuBase {
-  private final Set<String> myLocations = SetSequence.fromSetAndArray(new HashSet<String>(), MenuLocations.CONTEXT_ACTIONS_TOOL, jetbrains.mps.lang.editor.menus.transformation.MenuLocations.CONTEXT_ASSISTANT, jetbrains.mps.lang.editor.menus.transformation.MenuLocations.CONTEXT_ASSISTANT, MenuLocations.CONTEXT_ACTIONS_TOOL, MenuLocations.CONTEXT_ACTIONS_TOOL, MenuLocations.CONTEXT_ACTIONS_TOOL);
+  private final Set<String> myLocations = SetSequence.fromSetAndArray(new HashSet<String>(), MenuLocations.CONTEXT_ACTIONS_TOOL, MenuLocations.CONTEXT_ACTIONS_TOOL, jetbrains.mps.lang.editor.menus.transformation.MenuLocations.CONTEXT_ASSISTANT, jetbrains.mps.lang.editor.menus.transformation.MenuLocations.CONTEXT_ASSISTANT, MenuLocations.CONTEXT_ACTIONS_TOOL, MenuLocations.CONTEXT_ACTIONS_TOOL, MenuLocations.CONTEXT_ACTIONS_TOOL);
   @Override
   public boolean isApplicableToLocation(@NotNull String location) {
     return SetSequence.fromSet(myLocations).contains(location);
@@ -65,14 +66,14 @@ public class Event_TransformationMenu extends TransformationMenuBase {
     if (ListSequence.fromListAndArray(new ArrayList<String>(), MenuLocations.CONTEXT_ACTIONS_TOOL).contains(_context.getMenuLocation())) {
       result.add(new Event_TransformationMenu.TMP_SubMenu_8shh52_a0());
     }
-    if (ListSequence.fromListAndArray(new ArrayList<String>(), jetbrains.mps.lang.editor.menus.transformation.MenuLocations.CONTEXT_ASSISTANT).contains(_context.getMenuLocation())) {
-      result.add(new Event_TransformationMenu.TMP_Param_8shh52_a1());
-    }
-    if (ListSequence.fromListAndArray(new ArrayList<String>(), jetbrains.mps.lang.editor.menus.transformation.MenuLocations.CONTEXT_ASSISTANT).contains(_context.getMenuLocation())) {
-      result.add(new Event_TransformationMenu.TMP_Action_8shh52_a2());
-    }
     if (ListSequence.fromListAndArray(new ArrayList<String>(), MenuLocations.CONTEXT_ACTIONS_TOOL).contains(_context.getMenuLocation())) {
-      result.add(new Event_TransformationMenu.TMP_SubMenu_8shh52_a3());
+      result.add(new Event_TransformationMenu.TMP_SubMenu_8shh52_a1());
+    }
+    if (ListSequence.fromListAndArray(new ArrayList<String>(), jetbrains.mps.lang.editor.menus.transformation.MenuLocations.CONTEXT_ASSISTANT).contains(_context.getMenuLocation())) {
+      result.add(new Event_TransformationMenu.TMP_Param_8shh52_a2());
+    }
+    if (ListSequence.fromListAndArray(new ArrayList<String>(), jetbrains.mps.lang.editor.menus.transformation.MenuLocations.CONTEXT_ASSISTANT).contains(_context.getMenuLocation())) {
+      result.add(new Event_TransformationMenu.TMP_Action_8shh52_a3());
     }
     if (ListSequence.fromListAndArray(new ArrayList<String>(), MenuLocations.CONTEXT_ACTIONS_TOOL).contains(_context.getMenuLocation())) {
       result.add(new Event_TransformationMenu.TMP_SubMenu_8shh52_a4());
@@ -80,10 +81,146 @@ public class Event_TransformationMenu extends TransformationMenuBase {
     if (ListSequence.fromListAndArray(new ArrayList<String>(), MenuLocations.CONTEXT_ACTIONS_TOOL).contains(_context.getMenuLocation())) {
       result.add(new Event_TransformationMenu.TMP_SubMenu_8shh52_a5());
     }
+    if (ListSequence.fromListAndArray(new ArrayList<String>(), MenuLocations.CONTEXT_ACTIONS_TOOL).contains(_context.getMenuLocation())) {
+      result.add(new Event_TransformationMenu.TMP_SubMenu_8shh52_a6());
+    }
     return result;
   }
 
   public class TMP_SubMenu_8shh52_a0 extends SubMenuMenuTransformationMenuPart {
+    @Override
+    protected String getText(TransformationMenuContext _context) {
+      return "Appearance";
+    }
+
+    @NotNull
+    @Override
+    public TransformationMenuItem createItem(@NotNull TransformationMenuContext context) {
+      context.getEditorMenuTrace().pushTraceInfo();
+      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("submenu " + getText(context), new SNodePointer("r:7c1e5bbb-2d18-4cf3-a11d-502be6b13261(jetbrains.mps.samples.VoiceMenu.editor)", "8720745441966922035")));
+      try {
+        return super.createItem(context);
+      } finally {
+        context.getEditorMenuTrace().popTraceInfo();
+      }
+    }
+
+
+    @Override
+    protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Event_TransformationMenu.TMP_SubMenu_8shh52_a0.TMP_Action_8shh52_a0a(), new Event_TransformationMenu.TMP_SubMenu_8shh52_a0.TMP_Action_8shh52_b0a());
+    }
+    private class TMP_Action_8shh52_a0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+      @Nullable
+      protected TransformationMenuItem createItem(TransformationMenuContext context) {
+        return new Event_TransformationMenu.TMP_SubMenu_8shh52_a0.TMP_Action_8shh52_a0a.Item(context);
+      }
+
+      private class Item extends ActionItemBase implements SidebarActionItem {
+        private final TransformationMenuContext _context;
+        private final EditorMenuTraceInfo myEditorMenuTraceInfo;
+        private Item(TransformationMenuContext context) {
+          _context = context;
+          _context.getEditorMenuTrace().pushTraceInfo();
+          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("single item: " + getLabelText(""), new SNodePointer("r:7c1e5bbb-2d18-4cf3-a11d-502be6b13261(jetbrains.mps.samples.VoiceMenu.editor)", "8720745441967956366")));
+          myEditorMenuTraceInfo = _context.getEditorMenuTrace().getTraceInfo();
+          context.getEditorMenuTrace().popTraceInfo();
+        }
+
+        @Nullable
+        @Override
+        public String getLabelText(String pattern) {
+          return "Sort Descending";
+        }
+
+        @Override
+        public void execute(@NotNull String pattern) {
+          List<SNode> list = ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"))).sort(new ISelector<SNode, String>() {
+            public String select(SNode it) {
+              return SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"));
+            }
+          }, false).toListSequence();
+          for (SNode item : ListSequence.fromList(list)) {
+            ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"))).addElement(item);
+          }
+          SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
+        }
+
+
+        @Override
+        public IconResource getIcon() {
+          return IconContainer.RESOURCE_a0a9c6h;
+        }
+        @Override
+        public String getTooltipText() {
+          return null;
+        }
+
+
+        @Override
+        public EditorMenuTraceInfo getTraceInfo() {
+          return myEditorMenuTraceInfo;
+        }
+      }
+
+    }
+    private class TMP_Action_8shh52_b0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+      @Nullable
+      protected TransformationMenuItem createItem(TransformationMenuContext context) {
+        return new Event_TransformationMenu.TMP_SubMenu_8shh52_a0.TMP_Action_8shh52_b0a.Item(context);
+      }
+
+      private class Item extends ActionItemBase implements SidebarActionItem {
+        private final TransformationMenuContext _context;
+        private final EditorMenuTraceInfo myEditorMenuTraceInfo;
+        private Item(TransformationMenuContext context) {
+          _context = context;
+          _context.getEditorMenuTrace().pushTraceInfo();
+          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("single item: " + getLabelText(""), new SNodePointer("r:7c1e5bbb-2d18-4cf3-a11d-502be6b13261(jetbrains.mps.samples.VoiceMenu.editor)", "8720745441966924279")));
+          myEditorMenuTraceInfo = _context.getEditorMenuTrace().getTraceInfo();
+          context.getEditorMenuTrace().popTraceInfo();
+        }
+
+        @Nullable
+        @Override
+        public String getLabelText(String pattern) {
+          return "Sort Ascending";
+        }
+
+        @Override
+        public void execute(@NotNull String pattern) {
+          List<SNode> list = ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"))).sort(new ISelector<SNode, String>() {
+            public String select(SNode it) {
+              return SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"));
+            }
+          }, true).toListSequence();
+          for (SNode item : ListSequence.fromList(list)) {
+            ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"))).addElement(item);
+
+            SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
+          }
+        }
+
+
+        @Override
+        public IconResource getIcon() {
+          return IconContainer.RESOURCE_a0a9c7h;
+        }
+        @Override
+        public String getTooltipText() {
+          return null;
+        }
+
+
+        @Override
+        public EditorMenuTraceInfo getTraceInfo() {
+          return myEditorMenuTraceInfo;
+        }
+      }
+
+    }
+  }
+  public class TMP_SubMenu_8shh52_a1 extends SubMenuMenuTransformationMenuPart {
     @Override
     protected String getText(TransformationMenuContext _context) {
       return "Settings";
@@ -104,12 +241,12 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Event_TransformationMenu.TMP_SubMenu_8shh52_a0.TMP_Action_8shh52_a0a(), new Event_TransformationMenu.TMP_SubMenu_8shh52_a0.TMP_Action_8shh52_b0a());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Event_TransformationMenu.TMP_SubMenu_8shh52_a1.TMP_Action_8shh52_a0b(), new Event_TransformationMenu.TMP_SubMenu_8shh52_a1.TMP_Action_8shh52_b0b());
     }
-    private class TMP_Action_8shh52_a0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_8shh52_a0b extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new Event_TransformationMenu.TMP_SubMenu_8shh52_a0.TMP_Action_8shh52_a0a.Item(context);
+        return new Event_TransformationMenu.TMP_SubMenu_8shh52_a1.TMP_Action_8shh52_a0b.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {
@@ -143,7 +280,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a01c6h_0;
+          return IconContainer.RESOURCE_a0a01c6i;
         }
         @Override
         public String getTooltipText() {
@@ -158,10 +295,10 @@ public class Event_TransformationMenu extends TransformationMenuBase {
       }
 
     }
-    private class TMP_Action_8shh52_b0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_8shh52_b0b extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new Event_TransformationMenu.TMP_SubMenu_8shh52_a0.TMP_Action_8shh52_b0a.Item(context);
+        return new Event_TransformationMenu.TMP_SubMenu_8shh52_a1.TMP_Action_8shh52_b0b.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {
@@ -195,7 +332,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a01c7h_0;
+          return IconContainer.RESOURCE_a0a01c7i;
         }
         @Override
         public String getTooltipText() {
@@ -211,12 +348,12 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
     }
   }
-  private class TMP_Param_8shh52_a1 extends ParameterizedMenuPart<String, TransformationMenuItem, TransformationMenuContext> {
+  private class TMP_Param_8shh52_a2 extends ParameterizedMenuPart<String, TransformationMenuItem, TransformationMenuContext> {
 
     @NotNull
     @Override
     protected List<TransformationMenuItem> createItems(String parameter, TransformationMenuContext context) {
-      return new Event_TransformationMenu.TMP_Param_8shh52_a1.TMP_Action_8shh52_a0b(parameter).createItems(context);
+      return new Event_TransformationMenu.TMP_Param_8shh52_a2.TMP_Action_8shh52_a0c(parameter).createItems(context);
     }
 
     @Nullable
@@ -260,14 +397,14 @@ public class Event_TransformationMenu extends TransformationMenuBase {
       }
     }
 
-    private class TMP_Action_8shh52_a0b extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_8shh52_a0c extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       private final String myParameterObject;
-      public TMP_Action_8shh52_a0b(String parameterObject) {
+      public TMP_Action_8shh52_a0c(String parameterObject) {
         myParameterObject = parameterObject;
       }
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new Event_TransformationMenu.TMP_Param_8shh52_a1.TMP_Action_8shh52_a0b.Item(context);
+        return new Event_TransformationMenu.TMP_Param_8shh52_a2.TMP_Action_8shh52_a0c.Item(context);
       }
 
       private class Item extends ActionItemBase {
@@ -314,10 +451,10 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
     }
   }
-  private class TMP_Action_8shh52_a2 extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+  private class TMP_Action_8shh52_a3 extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
     @Nullable
     protected TransformationMenuItem createItem(TransformationMenuContext context) {
-      return new Event_TransformationMenu.TMP_Action_8shh52_a2.Item(context);
+      return new Event_TransformationMenu.TMP_Action_8shh52_a3.Item(context);
     }
 
     private class Item extends ActionItemBase {
@@ -363,7 +500,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
     }
 
   }
-  public class TMP_SubMenu_8shh52_a3 extends SubMenuMenuTransformationMenuPart {
+  public class TMP_SubMenu_8shh52_a4 extends SubMenuMenuTransformationMenuPart {
     @Override
     protected String getText(TransformationMenuContext _context) {
       return "Available Buttons";
@@ -384,14 +521,14 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Event_TransformationMenu.TMP_SubMenu_8shh52_a3.TMP_Param_8shh52_a0d());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Event_TransformationMenu.TMP_SubMenu_8shh52_a4.TMP_Param_8shh52_a0e());
     }
-    private class TMP_Param_8shh52_a0d extends ParameterizedMenuPart<String, TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Param_8shh52_a0e extends ParameterizedMenuPart<String, TransformationMenuItem, TransformationMenuContext> {
 
       @NotNull
       @Override
       protected List<TransformationMenuItem> createItems(String parameter, TransformationMenuContext context) {
-        return new Event_TransformationMenu.TMP_SubMenu_8shh52_a3.TMP_Param_8shh52_a0d.TMP_Action_8shh52_a0a3(parameter).createItems(context);
+        return new Event_TransformationMenu.TMP_SubMenu_8shh52_a4.TMP_Param_8shh52_a0e.TMP_Action_8shh52_a0a4(parameter).createItems(context);
       }
 
       @Nullable
@@ -437,14 +574,14 @@ public class Event_TransformationMenu extends TransformationMenuBase {
         }
       }
 
-      private class TMP_Action_8shh52_a0a3 extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+      private class TMP_Action_8shh52_a0a4 extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
         private final String myParameterObject;
-        public TMP_Action_8shh52_a0a3(String parameterObject) {
+        public TMP_Action_8shh52_a0a4(String parameterObject) {
           myParameterObject = parameterObject;
         }
         @Nullable
         protected TransformationMenuItem createItem(TransformationMenuContext context) {
-          return new Event_TransformationMenu.TMP_SubMenu_8shh52_a3.TMP_Param_8shh52_a0d.TMP_Action_8shh52_a0a3.Item(context);
+          return new Event_TransformationMenu.TMP_SubMenu_8shh52_a4.TMP_Param_8shh52_a0e.TMP_Action_8shh52_a0a4.Item(context);
         }
 
         private class Item extends ActionItemBase implements SidebarActionItem {
@@ -484,7 +621,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
           @Override
           public IconResource getIcon() {
-            return IconContainer.RESOURCE_a0a01e6g01;
+            return IconContainer.RESOURCE_a0a01e6g11;
           }
           @Override
           public String getTooltipText() {
@@ -501,7 +638,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
       }
     }
   }
-  public class TMP_SubMenu_8shh52_a4 extends SubMenuMenuTransformationMenuPart {
+  public class TMP_SubMenu_8shh52_a5 extends SubMenuMenuTransformationMenuPart {
     @Override
     protected String getText(TransformationMenuContext _context) {
       return "Possible Names";
@@ -522,12 +659,12 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Event_TransformationMenu.TMP_SubMenu_8shh52_a4.TMP_Action_8shh52_a0e());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Event_TransformationMenu.TMP_SubMenu_8shh52_a5.TMP_Action_8shh52_a0f());
     }
-    private class TMP_Action_8shh52_a0e extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_8shh52_a0f extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new Event_TransformationMenu.TMP_SubMenu_8shh52_a4.TMP_Action_8shh52_a0e.Item(context);
+        return new Event_TransformationMenu.TMP_SubMenu_8shh52_a5.TMP_Action_8shh52_a0f.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {
@@ -571,7 +708,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a01c6l;
+          return IconContainer.RESOURCE_a0a01c6m;
         }
         @Override
         public String getTooltipText() {
@@ -587,7 +724,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
     }
   }
-  public class TMP_SubMenu_8shh52_a5 extends SubMenuMenuTransformationMenuPart {
+  public class TMP_SubMenu_8shh52_a6 extends SubMenuMenuTransformationMenuPart {
     @Override
     protected String getText(TransformationMenuContext _context) {
       return "Options";
@@ -608,12 +745,12 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Event_TransformationMenu.TMP_SubMenu_8shh52_a5.TMP_Action_8shh52_a0f(), new Event_TransformationMenu.TMP_SubMenu_8shh52_a5.TMP_Action_8shh52_b0f(), new Event_TransformationMenu.TMP_SubMenu_8shh52_a5.TMP_Action_8shh52_c0f(), new Event_TransformationMenu.TMP_SubMenu_8shh52_a5.TMP_Action_8shh52_d0f());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Event_TransformationMenu.TMP_SubMenu_8shh52_a6.TMP_Action_8shh52_a0g(), new Event_TransformationMenu.TMP_SubMenu_8shh52_a6.TMP_Action_8shh52_b0g(), new Event_TransformationMenu.TMP_SubMenu_8shh52_a6.TMP_Action_8shh52_c0g(), new Event_TransformationMenu.TMP_SubMenu_8shh52_a6.TMP_Action_8shh52_d0g());
     }
-    private class TMP_Action_8shh52_a0f extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_8shh52_a0g extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new Event_TransformationMenu.TMP_SubMenu_8shh52_a5.TMP_Action_8shh52_a0f.Item(context);
+        return new Event_TransformationMenu.TMP_SubMenu_8shh52_a6.TMP_Action_8shh52_a0g.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {
@@ -643,7 +780,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c6m;
+          return IconContainer.RESOURCE_a0a9c6n;
         }
         @Override
         public String getTooltipText() {
@@ -658,10 +795,10 @@ public class Event_TransformationMenu extends TransformationMenuBase {
       }
 
     }
-    private class TMP_Action_8shh52_b0f extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_8shh52_b0g extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new Event_TransformationMenu.TMP_SubMenu_8shh52_a5.TMP_Action_8shh52_b0f.Item(context);
+        return new Event_TransformationMenu.TMP_SubMenu_8shh52_a6.TMP_Action_8shh52_b0g.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {
@@ -690,7 +827,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c7m;
+          return IconContainer.RESOURCE_a0a9c7n;
         }
         @Override
         public String getTooltipText() {
@@ -705,10 +842,10 @@ public class Event_TransformationMenu extends TransformationMenuBase {
       }
 
     }
-    private class TMP_Action_8shh52_c0f extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_8shh52_c0g extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new Event_TransformationMenu.TMP_SubMenu_8shh52_a5.TMP_Action_8shh52_c0f.Item(context);
+        return new Event_TransformationMenu.TMP_SubMenu_8shh52_a6.TMP_Action_8shh52_c0g.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {
@@ -744,7 +881,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c8m;
+          return IconContainer.RESOURCE_a0a9c8n;
         }
         @Override
         public String getTooltipText() {
@@ -759,10 +896,10 @@ public class Event_TransformationMenu extends TransformationMenuBase {
       }
 
     }
-    private class TMP_Action_8shh52_d0f extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_8shh52_d0g extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new Event_TransformationMenu.TMP_SubMenu_8shh52_a5.TMP_Action_8shh52_d0f.Item(context);
+        return new Event_TransformationMenu.TMP_SubMenu_8shh52_a6.TMP_Action_8shh52_d0g.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {
@@ -799,7 +936,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a01c9m;
+          return IconContainer.RESOURCE_a0a01c9n;
         }
         @Override
         public String getTooltipText() {
