@@ -13,7 +13,6 @@
   </imports>
   <registry>
     <language id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu">
-      <concept id="6151364482690565571" name="jetbrains.mps.samples.VoiceMenu.structure.Empty" flags="ng" index="2fTWM$" />
       <concept id="6587365532662359693" name="jetbrains.mps.samples.VoiceMenu.structure.Activity" flags="ng" index="2C_I21">
         <property id="2702278965990916343" name="greeting" index="3upAMh" />
         <reference id="6587365532662368499" name="event" index="2C_gVZ" />
@@ -242,7 +241,7 @@
       <node concept="2C_I21" id="2ABtujzdGbS" role="2C_I26">
         <property role="3upAMh" value="Sample Grwreweeeting" />
         <ref role="2C_gVZ" node="2ABtujzdGdI" resolve="pokus4" />
-        <node concept="2fTWM$" id="2ABtujzdGbT" role="2C_gVu" />
+        <node concept="1$pBvp" id="2ABtujzft5M" role="2C_gVu" />
       </node>
       <node concept="2C_Ik0" id="2ABtujzdGdI" role="2C_I24">
         <property role="2C_Iks" value="0" />
