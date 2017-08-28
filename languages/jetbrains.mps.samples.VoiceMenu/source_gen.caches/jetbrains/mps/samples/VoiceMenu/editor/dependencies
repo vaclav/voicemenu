@@ -361,6 +361,7 @@
   </dependency>
   <dependency className="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu" file="Event_TransformationMenu.java">
     <classNode dependClassName="java.lang.Iterable" />
+    <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.ArrayList" />

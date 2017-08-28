@@ -130,7 +130,7 @@ public class DirectCall_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a01c6h_1;
+          return IconContainer.RESOURCE_a0a01c6h_2;
         }
         @Override
         public String getTooltipText() {
@@ -182,7 +182,7 @@ public class DirectCall_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a01c7h_1;
+          return IconContainer.RESOURCE_a0a01c7h_2;
         }
         @Override
         public String getTooltipText() {
