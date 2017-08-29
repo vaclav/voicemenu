@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
   <root>
     <file name="QueriesGenerated.java">
-      <unit at="13,0,23,0" name="main.QueriesGenerated" />
+      <unit at="14,0,26,0" name="main.QueriesGenerated" />
     </file>
   </root>
   <root nodeRef="r:0232c9ec-5e82-4497-9d90-bc22146935fd(main@generator)/1205667594137934964">
     <file name="QueriesGenerated.java">
-      <node id="1416608923402417899" at="19,108,20,192" concept="0" />
-      <scope id="1416608923402417686" at="19,108,20,192" />
+      <node id="1416608923407562863" at="19,108,20,192" concept="0" />
+      <scope id="1416608923407562857" at="19,108,20,192" />
+    </file>
+  </root>
+  <root nodeRef="r:0232c9ec-5e82-4497-9d90-bc22146935fd(main@generator)/1416608923402393454">
+    <file name="QueriesGenerated.java">
+      <node id="1416608923407061205" at="22,120,23,196" concept="0" />
+      <scope id="1416608923407061199" at="22,120,23,196" />
     </file>
   </root>
   <root nodeRef="r:0232c9ec-5e82-4497-9d90-bc22146935fd(main@generator)/1416608923402423299">
     <file name="QueriesGenerated.java">
-      <node id="1416608923402439172" at="15,112,16,332" concept="0" />
-      <node id="1416608923402441973" at="16,332,17,0" concept="1" />
-      <scope id="1416608923402438631" at="15,112,17,0" />
+      <node id="1416608923407046210" at="16,112,17,332" concept="0" />
+      <scope id="1416608923407045668" at="16,112,17,332" />
     </file>
   </root>
 </debug-info>

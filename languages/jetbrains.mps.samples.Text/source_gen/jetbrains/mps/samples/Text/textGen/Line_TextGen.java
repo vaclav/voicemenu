@@ -16,5 +16,6 @@ public class Line_TextGen extends TextGenDescriptorBase {
     for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x10bb6449f9c96432L, 0x13a8ce4f710d5b84L, "elements"))) {
       tgs.appendNode(item);
     }
+    tgs.newLine();
   }
 }
