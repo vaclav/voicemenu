@@ -54,7 +54,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_text");
     Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
     editorCell.getStyle().putAll(style);
     editorCell.setRole(handler.getElementRole());
     return editorCell;
