@@ -12,6 +12,7 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
+  /*package*/ final ConceptDescriptor myConceptElement = createDescriptorForElement();
   /*package*/ final ConceptDescriptor myConceptLine = createDescriptorForLine();
   /*package*/ final ConceptDescriptor myConceptTextFile = createDescriptorForTextFile();
   private final LanguageConceptSwitch myConceptIndex;
@@ -22,13 +23,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptLine, myConceptTextFile);
+    return Arrays.asList(myConceptElement, myConceptLine, myConceptTextFile);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myConceptIndex.index(id)) {
+      case LanguageConceptSwitch.Element:
+        return myConceptElement;
       case LanguageConceptSwitch.Line:
         return myConceptLine;
       case LanguageConceptSwitch.TextFile:
@@ -42,11 +45,19 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myConceptIndex.index(c);
   }
 
+  private static ConceptDescriptor createDescriptorForElement() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.samples.Text", "Element", 0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f710d5b81L);
+    b.class_(false, false, false);
+    b.origin("r:5e8e0652-8a9b-4dc5-a599-f2416177a2d1(jetbrains.mps.samples.Text.structure)/1416608923402460033");
+    b.prop("value", 0x13a8ce4f710d5b82L, "1416608923402460034");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForLine() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.samples.Text", "Line", 0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x10bb6449f9c96432L);
     b.class_(false, false, false);
     b.origin("r:5e8e0652-8a9b-4dc5-a599-f2416177a2d1(jetbrains.mps.samples.Text.structure)/1205667594137855026");
     b.prop("line", 0x10bb6449f9ca14cdL, "1205667594137900237");
+    b.aggregate("elements", 0x13a8ce4f710d5b84L).target(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f710d5b81L).optional(true).ordered(true).multiple(true).origin("1416608923402460036").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTextFile() {

@@ -66,6 +66,23 @@
       <property role="TrG5h" value="line" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyj" id="1eCN$XL3lI4" role="1TKVEi">
+      <property role="IQ2ns" value="1416608923402460036" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elements" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1eCN$XL3lI1" resolve="Element" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1eCN$XL3lI1">
+    <property role="EcuMT" value="1416608923402460033" />
+    <property role="TrG5h" value="Element" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="1eCN$XL3lI2" role="1TKVEl">
+      <property role="IQ2nx" value="1416608923402460034" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
 </model>
 
