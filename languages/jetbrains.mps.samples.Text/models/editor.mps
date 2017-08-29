@@ -15,6 +15,7 @@
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
+      <concept id="1106270637846" name="jetbrains.mps.lang.editor.structure.CellLayout_Flow" flags="nn" index="2iR$Sn" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
@@ -48,7 +49,7 @@
         <ref role="1NtTu8" to="m807:1eCN$XL3lI4" resolve="elements" />
         <node concept="2iRfu4" id="1eCN$XLkLiz" role="2czzBx" />
       </node>
-      <node concept="2iRfu4" id="1eCN$XLiSjE" role="2iSdaV" />
+      <node concept="2iR$Sn" id="1eCN$XLkNQh" role="2iSdaV" />
       <node concept="pVoyu" id="1eCN$XLkMoF" role="3F10Kt">
         <property role="VOm3f" value="true" />
       </node>
