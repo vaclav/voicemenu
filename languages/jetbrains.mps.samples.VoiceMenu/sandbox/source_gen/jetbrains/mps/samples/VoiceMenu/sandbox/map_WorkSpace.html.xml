@@ -19,7 +19,6 @@
       }
       </style>
   <body>
-    
     <b style="margin-left: 40px;color:blue">myVoiceMenu</b>
     <toast>
       <b style="color: #616161">    -->    Toast:  </b>
@@ -28,33 +27,23 @@
           Welcome to our voicemenu
           ]</toast_text>
     </toast>
-    
-    
     <menu>
-      
-      <table class="roundedCorners">
-        
-        <tr>
-          <th>Event</th>
-          <td>   </td>
-          <th>Trigger</th>
-        </tr>
-        <tr>
-          
-          <td>Internetu</td>
-          <td>   </td>
-          <td>1</td>
-          
-        </tr>
-        <tr>
-          
-          <td>Television</td>
-          <td>   </td>
-          <td>2</td>
-          
-        </tr>
-        
-      </table>
+      <p>
+        <table class="roundedCorners">
+          <tr>
+            <th>Event</th>
+            <th>Trigger</th>
+          </tr>
+          <tr>
+            <td>Internetu</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Television</td>
+            <td>2</td>
+          </tr>
+        </table>
+      </p>
       
       
       <activity>
@@ -70,32 +59,23 @@
         
         
         <p>
-          
           <menu>
-            
-            <table class="roundedCorners">
-              
-              <tr>
-                <th>Event</th>
-                <td>   </td>
-                <th>Trigger</th>
-              </tr>
-              <tr>
-                
-                <td>Speed up</td>
-                <td>   </td>
-                <td>1</td>
-                
-              </tr>
-              <tr>
-                
-                <td>Discount</td>
-                <td>   </td>
-                <td>2</td>
-                
-              </tr>
-              
-            </table>
+            <p>
+              <table class="roundedCorners">
+                <tr>
+                  <th>Event</th>
+                  <th>Trigger</th>
+                </tr>
+                <tr>
+                  <td>Speed up</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Discount</td>
+                  <td>2</td>
+                </tr>
+              </table>
+            </p>
             
             
             <activity>
@@ -111,9 +91,7 @@
               
               
               <p>
-                
-                <action style="margin-left: 80px;color:red">--> [ Get Info ]</action>
-                
+                <action style="margin-left: 80px;color:green">--> [ Get Info ]</action>
               </p>
             </activity>
             <activity>
@@ -129,46 +107,31 @@
               
               
               <p>
-                
                 <menu>
-                  
-                  <table class="roundedCorners">
-                    
-                    <tr>
-                      <th>Event</th>
-                      <td>   </td>
-                      <th>Trigger</th>
-                    </tr>
-                    <tr>
-                      
-                      <td>Small Discount</td>
-                      <td>   </td>
-                      <td>2</td>
-                      
-                    </tr>
-                    <tr>
-                      
-                      <td>Big Discount</td>
-                      <td>   </td>
-                      <td>1</td>
-                      
-                    </tr>
-                    <tr>
-                      
-                      <td>Going Back</td>
-                      <td>   </td>
-                      <td>*</td>
-                      
-                    </tr>
-                    <tr>
-                      
-                      <td>Going Back</td>
-                      <td>   </td>
-                      <td>#</td>
-                      
-                    </tr>
-                    
-                  </table>
+                  <p>
+                    <table class="roundedCorners">
+                      <tr>
+                        <th>Event</th>
+                        <th>Trigger</th>
+                      </tr>
+                      <tr>
+                        <td>Small Discount</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        <td>Big Discount</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>Going Back</td>
+                        <td>*</td>
+                      </tr>
+                      <tr>
+                        <td>Going Back</td>
+                        <td>#</td>
+                      </tr>
+                    </table>
+                  </p>
                   
                   
                   <activity>
@@ -177,9 +140,7 @@
                     
                     
                     <p>
-                      
-                      <action style="margin-left: 80px;color:red">--> [ Direct Call ]</action>
-                      
+                      <action style="margin-left: 80px;color:green">--> [ Direct Call ]</action>
                     </p>
                   </activity>
                   <activity>
@@ -188,9 +149,7 @@
                     
                     
                     <p>
-                      
-                      <action style="margin-left: 80px;color:red">--> [ Direct Call ]</action>
-                      
+                      <action style="margin-left: 80px;color:green">--> [ Direct Call ]</action>
                     </p>
                   </activity>
                   <activity>
@@ -199,9 +158,7 @@
                     
                     
                     <p>
-                      
-                      <action style="margin-left: 80px;color:red">--> [ Back ]</action>
-                      
+                      <action style="margin-left: 80px;color:green">--> [ Back ]</action>
                     </p>
                   </activity>
                   <activity>
@@ -210,19 +167,15 @@
                     
                     
                     <p>
-                      
-                      <action style="margin-left: 80px;color:red">--> [ Back ]</action>
-                      
+                      <action style="margin-left: 80px;color:green">--> [ Back ]</action>
                     </p>
                   </activity>
                   
                 </menu>
-                
               </p>
             </activity>
             
           </menu>
-          
         </p>
       </activity>
       <activity>
@@ -231,17 +184,10 @@
         
         
         <p>
-          
-          <action style="margin-left: 80px;color:red">--> [ Get Info ]</action>
-          
+          <action style="margin-left: 80px;color:green">--> [ Get Info ]</action>
         </p>
       </activity>
       
     </menu>
-    
-    
-    
   </body>
-  
-  
 </Call_Centrum>

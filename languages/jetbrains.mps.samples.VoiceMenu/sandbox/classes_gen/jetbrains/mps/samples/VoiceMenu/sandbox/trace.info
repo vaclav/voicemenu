@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
   <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/1392947290832575034">
-    <file name="map_WorkSpace.xml">
-      <unit id="1392947290832575034" at="1,0,146,15" name="jetbrains.mps.samples.VoiceMenu.sandbox.map_WorkSpace" />
+    <file name="map_WorkSpace.html.xml">
+      <unit id="1392947290832575034" at="1,0,102,15" name="jetbrains.mps.samples.VoiceMenu.sandbox.map_WorkSpace$html" />
     </file>
   </root>
   <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/2892639838852006608">
-    <file name="map_WorkSpace.xml">
-      <unit id="2892639838852006608" at="1,0,511,15" name="jetbrains.mps.samples.VoiceMenu.sandbox.map_WorkSpace" />
+    <file name="map_WorkSpace.html.xml">
+      <unit id="2892639838852006608" at="1,0,403,15" name="jetbrains.mps.samples.VoiceMenu.sandbox.map_WorkSpace$html" />
     </file>
   </root>
   <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/7335900905079802776">
-    <file name="map_WorkSpace.xml">
-      <unit id="7335900905079802776" at="1,0,247,15" name="jetbrains.mps.samples.VoiceMenu.sandbox.map_WorkSpace" />
+    <file name="map_WorkSpace.html.xml">
+      <unit id="7335900905079802776" at="1,0,193,15" name="jetbrains.mps.samples.VoiceMenu.sandbox.map_WorkSpace$html" />
     </file>
   </root>
 </debug-info>
