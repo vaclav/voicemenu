@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root>
+    <file name="TextGenAspectDescriptor.java">
+      <unit at="15,0,47,0" name="jetbrains.mps.samples.VoiceMenuToAsterisk.textGen.TextGenAspectDescriptor" />
+    </file>
+  </root>
+</debug-info>
+

@@ -5,6 +5,7 @@
       <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.samples.VoiceMenu/jetbrains.mps.samples.VoiceMenu.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.samples.VoiceMenu/sandbox/jetbrains.mps.samples.VoiceMenu.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.samples.VoiceMenuTabularEditor/jetbrains.mps.samples.VoiceMenuTabularEditor.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.samples.VoiceMenuToAsterisk/jetbrains.mps.samples.VoiceMenuToAsterisk.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.samples.VoiceMenuToHTML_2/jetbrains.mps.samples.VoiceMenuToHTML.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.samples.VoiceMenuToJava/jetbrains.mps.samples.VoiceMenuToJava.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.samples.VoiceMenuToXML/jetbrains.mps.samples.VoiceMenuToXML.mpl" folder="" />
