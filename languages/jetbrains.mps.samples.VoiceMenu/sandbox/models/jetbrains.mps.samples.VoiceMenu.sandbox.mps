@@ -216,7 +216,7 @@
     <node concept="2C_Ik4" id="1dkJyTcULCV" role="2JqgbB">
       <node concept="2C_I21" id="4matEwaOelE" role="2C_I26">
         <property role="3upAMh" value="" />
-        <ref role="2C_gVZ" node="54keEMKoACO" resolve="EIGHT" />
+        <ref role="2C_gVZ" node="54keEMKoACO" resolve="eight" />
         <node concept="1$pBvq" id="5o6E870NcHa" role="2C_gVu" />
       </node>
       <node concept="2C_I21" id="4matEwaOelQ" role="2C_I26">
@@ -240,25 +240,24 @@
       </node>
       <node concept="2C_Ik0" id="54keEMKoACO" role="2C_I24">
         <property role="2C_Iks" value="2" />
-        <property role="TrG5h" value="EIGHT" />
+        <property role="TrG5h" value="eight" />
       </node>
-      <node concept="2C_Ik0" id="1L4ryxdJ5oz" role="2C_I24">
-        <property role="2C_Iks" value="3" />
-        <property role="TrG5h" value="Action_38" />
-        <ref role="D9pxj" node="1L4ryxdJ5oD" />
-      </node>
-      <node concept="2C_Ik0" id="1L4ryxdHDoT" role="2C_I24">
+      <node concept="2C_Ik0" id="1L4ryxdNwHg" role="2C_I24">
         <property role="2C_Iks" value="7" />
-        <property role="TrG5h" value="Action_6" />
-        <ref role="D9pxj" node="1L4ryxdHDoY" />
+        <property role="TrG5h" value="action_794" />
+        <ref role="D9pxj" node="1L4ryxdNwHl" />
       </node>
-      <node concept="2C_I21" id="1L4ryxdHDoY" role="2C_I26">
-        <ref role="2C_gVZ" node="1L4ryxdHDoT" resolve="Action_6" />
-        <node concept="2fTWM$" id="1L4ryxdHDp0" role="2C_gVu" />
+      <node concept="2C_Ik0" id="1L4ryxdSy25" role="2C_I24">
+        <property role="2C_Iks" value="1" />
+        <property role="TrG5h" value="pokus" />
       </node>
-      <node concept="2C_I21" id="1L4ryxdJ5oD" role="2C_I26">
-        <ref role="2C_gVZ" node="1L4ryxdJ5oz" resolve="Action_38" />
-        <node concept="2fTWM$" id="1L4ryxdJ5oF" role="2C_gVu" />
+      <node concept="2C_I21" id="1L4ryxdNwHl" role="2C_I26">
+        <ref role="2C_gVZ" node="1L4ryxdNwHg" resolve="action_794" />
+        <node concept="2fTWM$" id="1L4ryxdNwHn" role="2C_gVu" />
+      </node>
+      <node concept="2C_I21" id="1L4ryxdSyuD" role="2C_I26">
+        <ref role="2C_gVZ" node="1L4ryxdSy25" resolve="pokus" />
+        <node concept="2fTWM$" id="1L4ryxdSyuF" role="2C_gVu" />
       </node>
     </node>
   </node>

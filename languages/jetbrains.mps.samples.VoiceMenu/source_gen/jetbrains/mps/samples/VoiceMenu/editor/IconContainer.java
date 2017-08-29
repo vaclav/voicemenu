@@ -25,6 +25,7 @@ public class IconContainer {
   protected static IconResource RESOURCE_a0a01c7i = new IconResource("hide.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a01e6g11 = new IconResource("button_click.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a01c6m = new IconResource("random.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a01c7m = new IconResource("random.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c6n = new IconResource("add_to_list.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c7n = new IconResource("add_to_list.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c8n = new IconResource("remove.png", IconContainer.class);
