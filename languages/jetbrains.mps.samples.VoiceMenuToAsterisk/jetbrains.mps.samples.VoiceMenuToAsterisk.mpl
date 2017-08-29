@@ -9,6 +9,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">4bc750d7-5688-4f52-b7d5-b263a3393a24(jetbrains.mps.samples.VoiceMenu)</dependency>
+    <dependency reexport="false" scope="generate-into">4bc750d7-5688-4f52-b7d5-b263a3393a24(jetbrains.mps.samples.VoiceMenu)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="5" />
@@ -43,6 +44,7 @@
     <language slang="l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen" version="1" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
     <language slang="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" version="1" />
+    <language slang="l:4bc750d7-5688-4f52-b7d5-b263a3393a24:jetbrains.mps.samples.VoiceMenu" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
@@ -56,8 +58,6 @@
     <module reference="4bc750d7-5688-4f52-b7d5-b263a3393a24(jetbrains.mps.samples.VoiceMenu)" version="0" />
     <module reference="e2a803a4-d4b8-43eb-b458-517effd2a87f(jetbrains.mps.samples.VoiceMenuToAsterisk)" version="0" />
   </dependencyVersions>
-  <extendedLanguages>
-    <extendedLanguage>4bc750d7-5688-4f52-b7d5-b263a3393a24(jetbrains.mps.samples.VoiceMenu)</extendedLanguage>
-  </extendedLanguages>
+  <extendedLanguages />
 </language>
 

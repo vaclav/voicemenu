@@ -16,7 +16,6 @@
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenuToXML.structure.StructureAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenuToXML.typesystem.TypesystemDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConceptPresentationAspect" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor" />
