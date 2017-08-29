@@ -648,17 +648,19 @@
       <node id="6198827212362409869" at="1223,379,1224,196" concept="2" />
       <node id="6198827212362416342" at="1224,196,1225,432" concept="2" />
       <node id="6198827212362414907" at="1225,432,1226,0" concept="9" />
-      <node id="2036874050861794312" at="1232,45,1233,231" concept="8" />
-      <node id="6198827212363682082" at="1239,39,1240,49" concept="8" />
-      <node id="6198827212362250517" at="1243,40,1244,22" concept="8" />
-      <node id="6198827212362250517" at="1249,51,1250,39" concept="8" />
-      <node id="8517997849288880830" at="1256,65,1257,46" concept="8" />
-      <node id="8517997849288876442" at="1259,65,1260,46" concept="8" />
-      <node id="5010947999512316754" at="1262,66,1263,51" concept="8" />
-      <node id="5010947999511658414" at="1265,66,1266,51" concept="8" />
-      <node id="5842359129973594574" at="1268,52,1269,44" concept="8" />
-      <node id="5842359129972571631" at="1271,55,1272,43" concept="8" />
-      <node id="2036874050861801289" at="1274,75,1275,51" concept="8" />
+      <node id="1205667594129175229" at="1230,60,1231,409" concept="7" />
+      <node id="1205667594129266965" at="1233,45,1234,519" concept="8" />
+      <node id="1205667594129284965" at="1237,37,1238,24" concept="8" />
+      <node id="1205667594129289927" at="1239,11,1240,23" concept="8" />
+      <node id="6198827212363682082" at="1244,39,1245,49" concept="8" />
+      <node id="6198827212362250517" at="1248,40,1249,22" concept="8" />
+      <node id="6198827212362250517" at="1254,51,1255,39" concept="8" />
+      <node id="8517997849288880830" at="1261,65,1262,46" concept="8" />
+      <node id="8517997849288876442" at="1264,65,1265,46" concept="8" />
+      <node id="5010947999512316754" at="1267,66,1268,51" concept="8" />
+      <node id="5010947999511658414" at="1270,66,1271,51" concept="8" />
+      <node id="5842359129973594574" at="1273,52,1274,44" concept="8" />
+      <node id="5842359129972571631" at="1276,55,1277,43" concept="8" />
       <node id="3202371390660710030" at="65,156,68,5" concept="5" />
       <node id="3202371390660710030" at="68,5,71,5" concept="5" />
       <node id="3202371390660710030" at="71,5,74,5" concept="5" />
@@ -678,14 +680,14 @@
       <node id="2036874050862412759" at="936,0,939,11" concept="5" />
       <node id="6198827212361914916" at="998,0,1001,11" concept="5" />
       <node id="3712338390306890988" at="1169,0,1172,0" concept="6" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="2036874050861792911" at="1232,0,1235,0" concept="6" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="8517997849288880830" at="1256,0,1259,0" concept="10" trace="eq_8shh52_a0a0i2g7#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="8517997849288876442" at="1259,0,1262,0" concept="10" trace="eq_8shh52_a0a0i2h7#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="5010947999512316754" at="1262,0,1265,0" concept="10" trace="neq_8shh52_a0a0i2i7#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="5010947999511658414" at="1265,0,1268,0" concept="10" trace="neq_8shh52_a0a0i2j7#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="5842359129973594574" at="1268,0,1271,0" concept="10" trace="isEmptyString#(Ljava/lang/String;)Z" />
-      <node id="5842359129972571631" at="1271,0,1274,0" concept="10" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
-      <node id="2036874050861801289" at="1274,0,1277,0" concept="10" trace="neq_8shh52_a0a0a0a0a0a0a8c9n#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="1205667594129266963" at="1233,0,1236,0" concept="6" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="1205667594129273599" at="1236,13,1239,11" concept="5" />
+      <node id="8517997849288880830" at="1261,0,1264,0" concept="10" trace="eq_8shh52_a0a0i2g7#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="8517997849288876442" at="1264,0,1267,0" concept="10" trace="eq_8shh52_a0a0i2h7#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="5010947999512316754" at="1267,0,1270,0" concept="10" trace="neq_8shh52_a0a0i2i7#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="5010947999511658414" at="1270,0,1273,0" concept="10" trace="neq_8shh52_a0a0i2j7#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="5842359129973594574" at="1273,0,1276,0" concept="10" trace="isEmptyString#(Ljava/lang/String;)Z" />
+      <node id="5842359129972571631" at="1276,0,1279,0" concept="10" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
       <node id="3202371390660710030" at="45,0,49,0" concept="6" trace="isApplicableToLocation#(Ljava/lang/String;)Z" />
       <node id="8720745441966916379" at="91,0,95,0" concept="6" trace="getText#(Ljetbrains/mps/openapi/editor/menus/transformation/TransformationMenuContext;)Ljava/lang/String;" />
       <node id="8720745441966916379" at="109,0,113,0" concept="6" trace="getParts#()Ljava/util/List;" />
@@ -767,9 +769,9 @@
       <node id="6198827212362250517" at="1183,0,1187,0" concept="6" trace="getTooltipText#()Ljava/lang/String;" />
       <node id="6198827212362250517" at="1189,0,1193,0" concept="6" trace="getTraceInfo#()Ljetbrains/mps/openapi/editor/menus/EditorMenuTraceInfo;" />
       <node id="6198827212362250517" at="1197,0,1201,0" concept="6" trace="createItem#(Ljetbrains/mps/openapi/editor/menus/transformation/TransformationMenuContext;)Ljetbrains/mps/openapi/editor/menus/transformation/TransformationMenuItem;" />
-      <node id="6198827212362250517" at="1238,0,1242,0" concept="6" trace="getIcon#()Ljetbrains/mps/smodel/runtime/IconResource;" />
-      <node id="6198827212362250517" at="1242,0,1246,0" concept="6" trace="getTooltipText#()Ljava/lang/String;" />
-      <node id="6198827212362250517" at="1248,0,1252,0" concept="6" trace="getTraceInfo#()Ljetbrains/mps/openapi/editor/menus/EditorMenuTraceInfo;" />
+      <node id="6198827212362250517" at="1243,0,1247,0" concept="6" trace="getIcon#()Ljetbrains/mps/smodel/runtime/IconResource;" />
+      <node id="6198827212362250517" at="1247,0,1251,0" concept="6" trace="getTooltipText#()Ljava/lang/String;" />
+      <node id="6198827212362250517" at="1253,0,1257,0" concept="6" trace="getTraceInfo#()Ljetbrains/mps/openapi/editor/menus/EditorMenuTraceInfo;" />
       <node id="3202371390660710030" at="54,246,59,5" concept="13" />
       <node id="8720745441966916379" at="100,233,105,7" concept="13" />
       <node id="8720745441966916379" at="130,0,135,0" concept="6" trace="getLabelText#(Ljava/lang/String;)Ljava/lang/String;" />
@@ -804,7 +806,7 @@
       <node id="6198827212362250517" at="1159,0,1164,0" concept="6" trace="getLabelText#(Ljava/lang/String;)Ljava/lang/String;" />
       <node id="3712338390306890977" at="1167,0,1172,14" concept="2" />
       <node id="6198827212362250517" at="1213,0,1218,0" concept="6" trace="getLabelText#(Ljava/lang/String;)Ljava/lang/String;" />
-      <node id="6198827212362270680" at="1230,60,1235,13" concept="8" />
+      <node id="1205667594129266952" at="1231,409,1236,13" concept="7" />
       <node id="8720745441959843885" at="498,0,504,0" concept="6" trace="execute#(Ljava/lang/String;)V" />
       <node id="8720745441959843885" at="550,0,556,0" concept="6" trace="execute#(Ljava/lang/String;)V" />
       <node id="5842359129972400842" at="607,0,613,7" concept="4" />
@@ -829,7 +831,6 @@
       <node id="6198827212362250517" at="1104,0,1111,0" concept="1" trace="Item#(Ljetbrains/mps/openapi/editor/menus/transformation/TransformationMenuContext;)V" />
       <node id="6198827212362250517" at="1151,0,1158,0" concept="1" trace="Item#(Ljetbrains/mps/openapi/editor/menus/transformation/TransformationMenuContext;)V" />
       <node id="6198827212362250517" at="1205,0,1212,0" concept="1" trace="Item#(Ljetbrains/mps/openapi/editor/menus/transformation/TransformationMenuContext;)V" />
-      <node id="6198827212362250517" at="1229,0,1237,0" concept="6" trace="canExecute#(Ljava/lang/String;)Z" />
       <node id="6198827212362250517" at="1219,0,1228,0" concept="6" trace="execute#(Ljava/lang/String;)V" />
       <node id="5842359129972397232" at="662,0,672,0" concept="6" trace="canExecute#(Ljava/lang/String;)Z" />
       <node id="5842359129968711401" at="840,0,850,0" concept="6" trace="canExecute#(Ljava/lang/String;)Z" />
@@ -848,6 +849,7 @@
       <node id="8720745441966916379" at="365,0,377,0" concept="6" trace="execute#(Ljava/lang/String;)V" />
       <node id="6198827212362250517" at="1165,0,1177,0" concept="6" trace="execute#(Ljava/lang/String;)V" />
       <node id="8720745441966916379" at="419,0,432,0" concept="6" trace="execute#(Ljava/lang/String;)V" />
+      <node id="6198827212362250517" at="1229,0,1242,0" concept="6" trace="canExecute#(Ljava/lang/String;)Z" />
       <node id="6198827212361898351" at="916,0,932,0" concept="6" trace="execute#(Ljava/lang/String;)V" />
       <node id="8720745441966916379" at="237,0,255,0" concept="6" trace="execute#(Ljava/lang/String;)V" />
       <node id="8720745441966916379" at="301,0,319,0" concept="6" trace="execute#(Ljava/lang/String;)V" />
@@ -988,17 +990,17 @@
       <scope id="6198827212362250517" at="1190,51,1191,39" />
       <scope id="6198827212362250517" at="1198,86,1199,102" />
       <scope id="6198827212362263676" at="1215,52,1216,36" />
-      <scope id="2036874050861792912" at="1232,45,1233,231" />
-      <scope id="6198827212363681894" at="1239,39,1240,49" />
-      <scope id="6198827212362250517" at="1243,40,1244,22" />
-      <scope id="6198827212362250517" at="1249,51,1250,39" />
-      <scope id="8517997849288880830" at="1256,65,1257,46" />
-      <scope id="8517997849288876442" at="1259,65,1260,46" />
-      <scope id="5010947999512316754" at="1262,66,1263,51" />
-      <scope id="5010947999511658414" at="1265,66,1266,51" />
-      <scope id="5842359129973594574" at="1268,52,1269,44" />
-      <scope id="5842359129972571631" at="1271,55,1272,43" />
-      <scope id="2036874050861801289" at="1274,75,1275,51" />
+      <scope id="1205667594129266964" at="1233,45,1234,519" />
+      <scope id="1205667594129273601" at="1237,37,1238,24" />
+      <scope id="6198827212363681894" at="1244,39,1245,49" />
+      <scope id="6198827212362250517" at="1248,40,1249,22" />
+      <scope id="6198827212362250517" at="1254,51,1255,39" />
+      <scope id="8517997849288880830" at="1261,65,1262,46" />
+      <scope id="8517997849288876442" at="1264,65,1265,46" />
+      <scope id="5010947999512316754" at="1267,66,1268,51" />
+      <scope id="5010947999511658414" at="1270,66,1271,51" />
+      <scope id="5842359129973594574" at="1273,52,1274,44" />
+      <scope id="5842359129972571631" at="1276,55,1277,43" />
       <scope id="8517997849287035547" at="187,54,189,181">
         <var name="toUpperCase" id="8517997849287057478" />
       </scope>
@@ -1033,34 +1035,30 @@
       <scope id="3712338390306890988" at="1169,0,1172,0">
         <var name="it" id="3712338390306890988" />
       </scope>
-      <scope id="2036874050861792911" at="1232,0,1235,0">
-        <var name="it" id="2036874050861792911" />
+      <scope id="1205667594129266963" at="1233,0,1236,0">
+        <var name="it" id="1205667594129266963" />
       </scope>
-      <scope id="8517997849288880830" at="1256,0,1259,0">
+      <scope id="8517997849288880830" at="1261,0,1264,0">
         <var name="a" id="8517997849288880830" />
         <var name="b" id="8517997849288880830" />
       </scope>
-      <scope id="8517997849288876442" at="1259,0,1262,0">
+      <scope id="8517997849288876442" at="1264,0,1267,0">
         <var name="a" id="8517997849288876442" />
         <var name="b" id="8517997849288876442" />
       </scope>
-      <scope id="5010947999512316754" at="1262,0,1265,0">
+      <scope id="5010947999512316754" at="1267,0,1270,0">
         <var name="a" id="5010947999512316754" />
         <var name="b" id="5010947999512316754" />
       </scope>
-      <scope id="5010947999511658414" at="1265,0,1268,0">
+      <scope id="5010947999511658414" at="1270,0,1273,0">
         <var name="a" id="5010947999511658414" />
         <var name="b" id="5010947999511658414" />
       </scope>
-      <scope id="5842359129973594574" at="1268,0,1271,0">
+      <scope id="5842359129973594574" at="1273,0,1276,0">
         <var name="str" id="5842359129973594574" />
       </scope>
-      <scope id="5842359129972571631" at="1271,0,1274,0">
+      <scope id="5842359129972571631" at="1276,0,1279,0">
         <var name="str" id="5842359129972571631" />
-      </scope>
-      <scope id="2036874050861801289" at="1274,0,1277,0">
-        <var name="a" id="2036874050861801289" />
-        <var name="b" id="2036874050861801289" />
       </scope>
       <scope id="3202371390660710030" at="45,0,49,0">
         <var name="location" id="3202371390660710030" />
@@ -1209,9 +1207,9 @@
       <scope id="6198827212362250517" at="1197,0,1201,0">
         <var name="context" id="6198827212362250517" />
       </scope>
-      <scope id="6198827212362250517" at="1238,0,1242,0" />
-      <scope id="6198827212362250517" at="1242,0,1246,0" />
-      <scope id="6198827212362250517" at="1248,0,1252,0" />
+      <scope id="6198827212362250517" at="1243,0,1247,0" />
+      <scope id="6198827212362250517" at="1247,0,1251,0" />
+      <scope id="6198827212362250517" at="1253,0,1257,0" />
       <scope id="8720745441966916379" at="122,57,127,54" />
       <scope id="8720745441966916379" at="130,0,135,0">
         <var name="pattern" id="8720745441966916379" />
@@ -1300,7 +1298,6 @@
       <scope id="6198827212362250517" at="1213,0,1218,0">
         <var name="pattern" id="6198827212362250517" />
       </scope>
-      <scope id="6198827212362270216" at="1230,60,1235,13" />
       <scope id="8720745441959843885" at="498,0,504,0">
         <var name="pattern" id="8720745441959843885" />
       </scope>
@@ -1404,9 +1401,6 @@
         <var name="myActivity" id="4323022269989144083" />
         <var name="srcMenu" id="7325093694384923567" />
       </scope>
-      <scope id="6198827212362250517" at="1229,0,1237,0">
-        <var name="pattern" id="6198827212362250517" />
-      </scope>
       <scope id="8720745441967956374" at="366,54,375,243">
         <var name="list" id="5010947999511190067" />
       </scope>
@@ -1431,6 +1425,10 @@
       </scope>
       <scope id="6198827212361898351" at="995,0,1005,0">
         <var name="pattern" id="6198827212361898351" />
+      </scope>
+      <scope id="6198827212362270216" at="1230,60,1240,23">
+        <var name="found" id="1205667594129266953" />
+        <var name="notEmpty" id="1205667594129175230" />
       </scope>
       <scope id="3202371390660710030" at="50,0,61,0">
         <var name="context" id="3202371390660710030" />
@@ -1472,6 +1470,9 @@
         <var name="myActivity" id="2036874050862412710" />
         <var name="random" id="2036874050862412687" />
         <var name="randomNumber" id="2036874050862412692" />
+      </scope>
+      <scope id="6198827212362250517" at="1229,0,1242,0">
+        <var name="pattern" id="6198827212362250517" />
       </scope>
       <scope id="8720745441968910552" at="238,54,253,0">
         <var name="events" id="5010947999512316690" />
@@ -1515,7 +1516,7 @@
       <unit id="5010947999511190080" at="367,435,371,11" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a0$TMP_Action_8shh52_e0a$Item$1" />
       <unit id="5010947999510932774" at="421,435,425,11" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a0$TMP_Action_8shh52_f0a$Item$1" />
       <unit id="3712338390306890988" at="1168,452,1172,11" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a6$TMP_Action_8shh52_c0g$Item$1" />
-      <unit id="2036874050861792911" at="1231,809,1235,11" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a6$TMP_Action_8shh52_d0g$Item$1" />
+      <unit id="1205667594129266963" at="1232,435,1236,11" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a6$TMP_Action_8shh52_d0g$Item$1" />
       <unit id="6198827212362250517" at="1101,0,1140,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a6$TMP_Action_8shh52_b0g$Item" />
       <unit id="6198827212362250517" at="1053,0,1093,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a6$TMP_Action_8shh52_a0g$Item" />
       <unit id="5842359129972397232" at="639,0,680,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_Param_8shh52_a2$TMP_Action_8shh52_a0c$Item" />
@@ -1533,7 +1534,6 @@
       <unit id="8720745441966916379" at="113,0,163,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a0$TMP_Action_8shh52_a0a" />
       <unit id="5842359129968711401" at="816,0,866,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a4$TMP_Param_8shh52_a0e$TMP_Action_8shh52_a0a4$Item" />
       <unit id="8720745441966916379" at="163,0,214,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a0$TMP_Action_8shh52_b0a" />
-      <unit id="6198827212362250517" at="1202,0,1253,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a6$TMP_Action_8shh52_d0g$Item" />
       <unit id="8720745441959843885" at="475,0,527,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a1$TMP_Action_8shh52_a0b" />
       <unit id="8720745441959843885" at="527,0,579,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a1$TMP_Action_8shh52_b0b" />
       <unit id="5842359129972397232" at="629,0,682,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_Param_8shh52_a2$TMP_Action_8shh52_a0c" />
@@ -1543,21 +1543,22 @@
       <unit id="8720745441966916379" at="396,0,451,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a0$TMP_Action_8shh52_f0a" />
       <unit id="8720745441966916379" at="220,0,276,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a0$TMP_Action_8shh52_c0a$Item" />
       <unit id="8720745441966916379" at="284,0,340,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a0$TMP_Action_8shh52_d0a$Item" />
-      <unit id="6198827212362250517" at="1196,0,1255,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a6$TMP_Action_8shh52_d0g" />
+      <unit id="6198827212362250517" at="1202,0,1258,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a6$TMP_Action_8shh52_d0g$Item" />
       <unit id="6198827212361898351" at="899,0,959,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a5$TMP_Action_8shh52_a0f$Item" />
       <unit id="5842359129968711401" at="806,0,868,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a4$TMP_Param_8shh52_a0e$TMP_Action_8shh52_a0a4" />
       <unit id="6198827212361898351" at="961,0,1023,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a5$TMP_Action_8shh52_b0f" />
       <unit id="8720745441966916379" at="214,0,278,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a0$TMP_Action_8shh52_c0a" />
       <unit id="8720745441966916379" at="278,0,342,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a0$TMP_Action_8shh52_d0a" />
+      <unit id="6198827212362250517" at="1196,0,1260,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a6$TMP_Action_8shh52_d0g" />
       <unit id="6198827212361898351" at="893,0,961,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a5$TMP_Action_8shh52_a0f" />
       <unit id="5842359129972397232" at="580,0,683,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_Param_8shh52_a2" />
       <unit id="5842359129968711401" at="755,0,869,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a4$TMP_Param_8shh52_a0e" />
       <unit id="8720745441959843885" at="452,0,580,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a1" />
       <unit id="5842359129968711401" at="732,0,870,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a4" />
       <unit id="6198827212361898351" at="870,0,1024,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a5" />
-      <unit id="6198827212362250517" at="1024,0,1256,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a6" />
+      <unit id="6198827212362250517" at="1024,0,1261,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a6" />
       <unit id="8720745441966916379" at="90,0,452,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu$TMP_SubMenu_8shh52_a0" />
-      <unit id="3202371390660710030" at="43,0,1278,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu" />
+      <unit id="3202371390660710030" at="43,0,1280,0" name="jetbrains.mps.samples.VoiceMenu.editor.Event_TransformationMenu" />
     </file>
   </root>
   <root nodeRef="r:7c1e5bbb-2d18-4cf3-a11d-502be6b13261(jetbrains.mps.samples.VoiceMenu.editor)/3919338464395437802">
