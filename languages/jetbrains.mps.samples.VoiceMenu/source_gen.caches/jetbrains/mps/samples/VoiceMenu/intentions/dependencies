@@ -34,7 +34,7 @@
     <classNode extendsClassName="jetbrains.mps.intentions.AbstractIntentionDescriptor" />
     <classNode extendsClassName="jetbrains.mps.openapi.intentions.IntentionFactory" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.intentions.InitActivity_Intention" file="InitActivity_Intention.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.intentions.DeclareActivity_Intention" file="DeclareActivity_Intention.java">
     <classNode dependClassName="java.lang.Exception" />
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Override" />
@@ -89,7 +89,7 @@
     <classNode dependClassName="jetbrains.mps.openapi.intentions.IntentionFactory" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.intentions.Add_Greeting_tmpActivity_Intention" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.intentions.Add_Main_Greeting_Intention" />
-    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.intentions.InitActivity_Intention" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.intentions.DeclareActivity_Intention" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.intentions.InitializeNewEvent_Intention" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.intentions.MoveDown_Intention" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.intentions.MoveUp_Intention" />

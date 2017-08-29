@@ -13,6 +13,7 @@
   </imports>
   <registry>
     <language id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu">
+      <concept id="6151364482690565571" name="jetbrains.mps.samples.VoiceMenu.structure.Empty" flags="ng" index="2fTWM$" />
       <concept id="6587365532662359693" name="jetbrains.mps.samples.VoiceMenu.structure.Activity" flags="ng" index="2C_I21">
         <property id="2702278965990916343" name="greeting" index="3upAMh" />
         <reference id="6587365532662368499" name="event" index="2C_gVZ" />
@@ -228,10 +229,6 @@
         <ref role="2C_gVZ" node="2ABtujyXXeq" resolve="nine" />
         <node concept="1$pBvq" id="7$6jWp$AOSv" role="2C_gVu" />
       </node>
-      <node concept="2C_I21" id="7oQ0uB$dMx$" role="2C_I26">
-        <ref role="2C_gVZ" node="7oQ0uB$dMxI" resolve="name" />
-        <node concept="1$pBvo" id="7oQ0uB$h5W9" role="2C_gVu" />
-      </node>
       <node concept="2C_Ik0" id="2ABtujyXXeq" role="2C_I24">
         <property role="TrG5h" value="nine" />
         <property role="2C_Iks" value="4" />
@@ -245,10 +242,23 @@
         <property role="2C_Iks" value="2" />
         <property role="TrG5h" value="EIGHT" />
       </node>
-      <node concept="2C_Ik0" id="7oQ0uB$dMxI" role="2C_I24">
-        <property role="TrG5h" value="name" />
-        <property role="2C_Iks" value="0" />
-        <ref role="D9pxj" node="7oQ0uB$dMx$" />
+      <node concept="2C_Ik0" id="1L4ryxdJ5oz" role="2C_I24">
+        <property role="2C_Iks" value="3" />
+        <property role="TrG5h" value="Action_38" />
+        <ref role="D9pxj" node="1L4ryxdJ5oD" />
+      </node>
+      <node concept="2C_Ik0" id="1L4ryxdHDoT" role="2C_I24">
+        <property role="2C_Iks" value="7" />
+        <property role="TrG5h" value="Action_6" />
+        <ref role="D9pxj" node="1L4ryxdHDoY" />
+      </node>
+      <node concept="2C_I21" id="1L4ryxdHDoY" role="2C_I26">
+        <ref role="2C_gVZ" node="1L4ryxdHDoT" resolve="Action_6" />
+        <node concept="2fTWM$" id="1L4ryxdHDp0" role="2C_gVu" />
+      </node>
+      <node concept="2C_I21" id="1L4ryxdJ5oD" role="2C_I26">
+        <ref role="2C_gVZ" node="1L4ryxdJ5oz" resolve="Action_38" />
+        <node concept="2fTWM$" id="1L4ryxdJ5oF" role="2C_gVu" />
       </node>
     </node>
   </node>

@@ -1758,7 +1758,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="1L4ryxcZBiZ">
-    <property role="TrG5h" value="InitActivity" />
+    <property role="TrG5h" value="DeclareActivity" />
     <ref role="2ZfgGC" to="xehl:5HF1wNNZuqd" resolve="Activity" />
     <node concept="2S6ZIM" id="1L4ryxcZBj0" role="2ZfVej">
       <node concept="3clFbS" id="1L4ryxcZBj1" role="2VODD2">

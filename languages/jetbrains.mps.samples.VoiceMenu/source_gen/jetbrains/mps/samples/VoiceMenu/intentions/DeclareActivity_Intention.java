@@ -23,14 +23,14 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 
-public final class InitActivity_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
+public final class DeclareActivity_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
-  public InitActivity_Intention() {
+  public DeclareActivity_Intention() {
     super(Kind.NORMAL, false, new SNodePointer("r:d92c1500-00d3-4072-866a-5077893293b8(jetbrains.mps.samples.VoiceMenu.intentions)", "2036874050847798463"));
   }
   @Override
   public String getPresentation() {
-    return "InitActivity";
+    return "DeclareActivity";
   }
   @Override
   public boolean isApplicable(final SNode node, final EditorContext editorContext) {
@@ -48,7 +48,7 @@ public final class InitActivity_Intention extends AbstractIntentionDescriptor im
   }
   public Collection<IntentionExecutable> instances(final SNode node, final EditorContext context) {
     if (myCachedExecutable == null) {
-      myCachedExecutable = Collections.<IntentionExecutable>singletonList(new InitActivity_Intention.IntentionImplementation());
+      myCachedExecutable = Collections.<IntentionExecutable>singletonList(new DeclareActivity_Intention.IntentionImplementation());
     }
     return myCachedExecutable;
   }
@@ -92,7 +92,7 @@ public final class InitActivity_Intention extends AbstractIntentionDescriptor im
     }
     @Override
     public IntentionDescriptor getDescriptor() {
-      return InitActivity_Intention.this;
+      return DeclareActivity_Intention.this;
     }
   }
 }
