@@ -61,7 +61,6 @@
       <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="ln" index="29HgVG">
         <child id="1168024447342" name="sourceNodeQuery" index="3NFExx" />
       </concept>
-      <concept id="1202776937179" name="jetbrains.mps.lang.generator.structure.AbandonInput_RuleConsequence" flags="lg" index="b5Tf3" />
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
         <child id="1167514678247" name="rootMappingRule" index="3lj3bC" />
@@ -164,7 +163,9 @@
     </node>
     <node concept="3aamgX" id="2m0r6rVSxQG" role="3acgRq">
       <ref role="30HIoZ" to="xehl:5lu2mvqIsn3" resolve="Empty" />
-      <node concept="b5Tf3" id="2m0r6rVSxR9" role="1lVwrX" />
+      <node concept="j$656" id="12Vp4BTpr2D" role="1lVwrX">
+        <ref role="v9R2y" node="12Vp4BTpr2B" resolve="reduce_Empty" />
+      </node>
     </node>
     <node concept="3aamgX" id="2m0r6rVSyAZ" role="3acgRq">
       <ref role="30HIoZ" to="xehl:5RYvhcTA0Fb" resolve="GetInfo" />
@@ -180,11 +181,11 @@
     </node>
     <node concept="3lhOvk" id="2m0r6rVRMzb" role="3lj3bC">
       <ref role="30HIoZ" to="xehl:5HF1wNO0wj8" resolve="WorkSpace" />
-      <ref role="3lhOvi" node="2m0r6rVRMzx" resolve="map_WorkSpace" />
+      <ref role="3lhOvi" node="2m0r6rVRMzx" resolve="map_WorkSpace.html" />
     </node>
   </node>
   <node concept="2pMbU2" id="2m0r6rVRMzx">
-    <property role="TrG5h" value="map_WorkSpace" />
+    <property role="TrG5h" value="map_WorkSpace.html" />
     <node concept="3rIKKV" id="2m0r6rVRMzy" role="2pMbU3">
       <node concept="2pNNFK" id="2m0r6rVRMEq" role="2pNm8H">
         <property role="2pNNFO" value="Call_Centrum" />
@@ -640,7 +641,7 @@
       <node concept="2pNUuL" id="2m0r6rVSpwo" role="2pNNFR">
         <property role="2pNUuO" value="style" />
         <node concept="2pMdtt" id="2m0r6rVSpwq" role="2pMdts">
-          <property role="2pMdty" value="margin-left: 80px;color:red" />
+          <property role="2pMdty" value="margin-left: 80px;color:green" />
         </node>
       </node>
       <node concept="3o6iSG" id="2m0r6rVSpws" role="3o6s8t">
@@ -658,7 +659,7 @@
       <node concept="2pNUuL" id="2m0r6rVSx8P" role="2pNNFR">
         <property role="2pNUuO" value="style" />
         <node concept="2pMdtt" id="2m0r6rVSx8R" role="2pMdts">
-          <property role="2pMdty" value="margin-left: 80px;color:red" />
+          <property role="2pMdty" value="margin-left: 80px;color:green" />
         </node>
       </node>
       <node concept="3o6iSG" id="2m0r6rVSx8V" role="3o6s8t">
@@ -676,7 +677,7 @@
       <node concept="2pNUuL" id="2m0r6rVSyBo" role="2pNNFR">
         <property role="2pNUuO" value="style" />
         <node concept="2pMdtt" id="2m0r6rVSyBq" role="2pMdts">
-          <property role="2pMdty" value="margin-left: 80px;color:red" />
+          <property role="2pMdty" value="margin-left: 80px;color:green" />
         </node>
       </node>
       <node concept="3o6iSG" id="2m0r6rVSyBs" role="3o6s8t">
@@ -694,13 +695,30 @@
       <node concept="2pNUuL" id="2m0r6rVSzlC" role="2pNNFR">
         <property role="2pNUuO" value="style" />
         <node concept="2pMdtt" id="2m0r6rVS$5C" role="2pMdts">
-          <property role="2pMdty" value="margin-left: 80px;color:red" />
+          <property role="2pMdty" value="margin-left: 80px;color:green" />
         </node>
       </node>
       <node concept="3o6iSG" id="2m0r6rVS$5E" role="3o6s8t">
         <property role="3o6i5n" value="--&gt; [ Others ]" />
       </node>
       <node concept="raruj" id="2m0r6rVS$5G" role="lGtFl" />
+    </node>
+  </node>
+  <node concept="13MO4I" id="12Vp4BTpr2B">
+    <property role="TrG5h" value="reduce_Empty" />
+    <ref role="3gUMe" to="xehl:5lu2mvqIsn3" resolve="Empty" />
+    <node concept="2pNNFK" id="12Vp4BTpr2H" role="13RCb5">
+      <property role="2pNNFO" value="action" />
+      <node concept="2pNUuL" id="12Vp4BTpr2I" role="2pNNFR">
+        <property role="2pNUuO" value="style" />
+        <node concept="2pMdtt" id="12Vp4BTpr2J" role="2pMdts">
+          <property role="2pMdty" value="margin-left: 80px;color:red" />
+        </node>
+      </node>
+      <node concept="3o6iSG" id="12Vp4BTpr2K" role="3o6s8t">
+        <property role="3o6i5n" value="--&gt; [ Empty ]" />
+      </node>
+      <node concept="raruj" id="12Vp4BTpr2L" role="lGtFl" />
     </node>
   </node>
 </model>
