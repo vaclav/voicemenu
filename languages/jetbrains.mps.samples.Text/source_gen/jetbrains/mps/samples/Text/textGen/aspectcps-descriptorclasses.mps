@@ -1543,7 +1543,7 @@
               </node>
             </node>
             <node concept="3Tsc0h" id="7R" role="2OqNvi">
-              <ref role="3TtcxE" to="m807:12Vp4BTMmir" resolve="text" />
+              <ref role="3TtcxE" to="m807:12Vp4BTMmir" resolve="body" />
             </node>
           </node>
         </node>

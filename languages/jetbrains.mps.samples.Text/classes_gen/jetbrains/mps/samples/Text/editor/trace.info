@@ -70,7 +70,7 @@
       <node id="1205667594137865455" at="78,0,81,0" concept="4" trace="createNodeToInsert#(Ljetbrains/mps/openapi/editor/EditorContext;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="1205667594137865455" at="105,9,108,9" concept="3" />
       <node id="1205667594137865455" at="29,0,33,0" concept="0" trace="WorkSpace_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="1205667594137865455" at="67,0,71,0" concept="0" trace="textListHandler_ikqrmj_a0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="1205667594137865455" at="67,0,71,0" concept="0" trace="bodyListHandler_ikqrmj_a0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="1205667594137865455" at="101,134,105,9" concept="3" />
       <node id="1205667594137865455" at="34,0,39,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="1205667594137865455" at="72,0,77,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -132,7 +132,7 @@
         <var name="elementNode" id="1205667594137865455" />
       </scope>
       <scope id="1205667594137865455" at="86,0,99,0" />
-      <unit id="1205667594137865455" at="63,0,112,0" name="jetbrains.mps.samples.Text.editor.WorkSpace_EditorBuilder_a$textListHandler_ikqrmj_a0" />
+      <unit id="1205667594137865455" at="63,0,112,0" name="jetbrains.mps.samples.Text.editor.WorkSpace_EditorBuilder_a$bodyListHandler_ikqrmj_a0" />
       <unit id="1205667594137865455" at="25,0,113,0" name="jetbrains.mps.samples.Text.editor.WorkSpace_EditorBuilder_a" />
     </file>
   </root>

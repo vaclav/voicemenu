@@ -15,7 +15,7 @@
       </models>
       <external-templates />
       <dependencies>
-        <dependency reexport="false">914c58c4-0680-49cf-8599-f5ced7a657d6(jetbrains.mps.samples.AsteriskLang)</dependency>
+        <dependency reexport="false">914c58c4-0680-49cf-8599-f5ced7a657d6(jetbrains.mps.samples.Text)</dependency>
         <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
         <dependency reexport="false">985c8c6a-64b4-486d-a91e-7d4112742556(jetbrains.mps.baseLanguage#1129914002933)</dependency>
         <dependency reexport="false">83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)</dependency>
