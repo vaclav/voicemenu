@@ -20,12 +20,9 @@ public class QueriesGenerated {
   }
   public static Object propertyMacro_GetPropertyValue_7433663067481843923(final PropertyMacroContext _context) {
     String number = SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"));
-    SNode tmp = _context.getNode();
-
     for (SNode actvt : Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getNodeAncestors(_context.getNode(), null, false), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity")))) {
       number = SPropertyOperations.getString(SLinkOperations.getTarget(actvt, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")) + number;
     }
-
     return number;
   }
   public static Object propertyMacro_GetPropertyValue_1416608923408556722(final PropertyMacroContext _context) {

@@ -157,9 +157,6 @@
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
-      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
-        <reference id="1138405853777" name="concept" index="ehGHo" />
-      </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -342,16 +339,6 @@
                   </node>
                 </node>
               </node>
-              <node concept="3cpWs8" id="6sDFiMPcC84" role="3cqZAp">
-                <node concept="3cpWsn" id="6sDFiMPcC85" role="3cpWs9">
-                  <property role="TrG5h" value="tmp" />
-                  <node concept="3Tqbb2" id="6sDFiMPcC83" role="1tU5fm">
-                    <ref role="ehGHo" to="xehl:5HF1wNNZuqd" resolve="Activity" />
-                  </node>
-                  <node concept="30H73N" id="6sDFiMPcC86" role="33vP2m" />
-                </node>
-              </node>
-              <node concept="3clFbH" id="6sDFiMPcDoP" role="3cqZAp" />
               <node concept="2Gpval" id="6sDFiMPcGyw" role="3cqZAp">
                 <node concept="2GrKxI" id="6sDFiMPcGyy" role="2Gsz3X">
                   <property role="TrG5h" value="actvt" />
@@ -395,7 +382,6 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbH" id="6sDFiMPcAdi" role="3cqZAp" />
               <node concept="3cpWs6" id="6sDFiMPcAyg" role="3cqZAp">
                 <node concept="37vLTw" id="6sDFiMPcAIQ" role="3cqZAk">
                   <ref role="3cqZAo" node="6sDFiMPcz3B" resolve="number" />
