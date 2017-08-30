@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:c0eb7e61-c7bc-4e2c-a95b-197b48175f56(jetbrains.mps.samples.Text.editor)">
+<model ref="r:c0eb7e61-c7bc-4e2c-a95b-197b48175f56(jetbrains.mps.samples.AsteriskLang.editor)">
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
-    <import index="m807" ref="r:5e8e0652-8a9b-4dc5-a599-f2416177a2d1(jetbrains.mps.samples.Text.structure)" implicit="true" />
+    <import index="m807" ref="r:5e8e0652-8a9b-4dc5-a599-f2416177a2d1(jetbrains.mps.samples.AsteriskLang.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -53,7 +53,7 @@
     <ref role="1XX52x" to="m807:12Vp4BTMmfW" resolve="WorkSpace" />
     <node concept="3EZMnI" id="12Vp4BTMoO3" role="2wV5jI">
       <node concept="3F2HdR" id="12Vp4BTMoOd" role="3EZMnx">
-        <ref role="1NtTu8" to="m807:12Vp4BTMmir" resolve="text" />
+        <ref role="1NtTu8" to="m807:12Vp4BTMmir" resolve="body" />
         <node concept="l2Vlx" id="1eCN$XLiU67" role="2czzBx" />
         <node concept="pVoyu" id="1eCN$XLiU65" role="3F10Kt">
           <property role="VOm3f" value="true" />

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:5e8e0652-8a9b-4dc5-a599-f2416177a2d1(jetbrains.mps.samples.Text.structure)">
+<model ref="r:5e8e0652-8a9b-4dc5-a599-f2416177a2d1(jetbrains.mps.samples.AsteriskLang.structure)">
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="5" />
@@ -51,7 +51,7 @@
     <node concept="1TJgyj" id="12Vp4BTMmir" role="1TKVEi">
       <property role="IQ2ns" value="1205667594137855131" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="text" />
+      <property role="20kJfa" value="body" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="12Vp4BTMmgM" resolve="Command" />
     </node>

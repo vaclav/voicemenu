@@ -7,7 +7,7 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" version="-1" />
     <use id="914c58c4-0680-49cf-8599-f5ced7a657d6" name="jetbrains.mps.samples.Text" version="0" />
-    <engage id="914c58c4-0680-49cf-8599-f5ced7a657d6" name="jetbrains.mps.samples.Text" />
+    <engage id="e2a803a4-d4b8-43eb-b458-517effd2a87f" name="jetbrains.mps.samples.VoiceMenuToAsterisk" />
   </languages>
   <imports>
     <import index="ibtu" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#427a473d-5177-432c-9905-bcbceb71b996(jetbrains.mps.lang.project.modules/module.jetbrains.mps.build.mps.runner@project_stub)" />
@@ -45,6 +45,9 @@
         <child id="1416608923407889292" name="argument" index="1yMfR3" />
       </concept>
       <concept id="1416608923407654241" name="jetbrains.mps.samples.Text.structure.Context" flags="ng" index="1yX5cI" />
+      <concept id="1416608923407654284" name="jetbrains.mps.samples.Text.structure.Comment" flags="ng" index="1yX5f3">
+        <property id="1416608923407654285" name="value" index="1yX5f2" />
+      </concept>
       <concept id="1416608923407654319" name="jetbrains.mps.samples.Text.structure.Extend" flags="ng" index="1yX5fw">
         <property id="1416608923407654327" name="action" index="1yX5fS" />
         <property id="1416608923407654324" name="priority" index="1yX5fV" />
@@ -341,6 +344,7 @@
     </node>
   </node>
   <node concept="3DswuP" id="1eCN$XLo0YH">
+    <property role="TrG5h" value="AsteriskLang" />
     <node concept="1yX5cI" id="1eCN$XLoiBD" role="3Dsw3i">
       <property role="TrG5h" value="mainmenu" />
     </node>
@@ -363,7 +367,9 @@
         <property role="1yX5fL" value="w" />
       </node>
     </node>
-    <node concept="1yM5C5" id="1eCN$XLoiDF" role="3Dsw3i" />
+    <node concept="1yX5f3" id="1eCN$XLqgHe" role="3Dsw3i">
+      <property role="1yX5f2" value="wfonweofewofne" />
+    </node>
     <node concept="1yM5C5" id="1eCN$XLoiDw" role="3Dsw3i" />
     <node concept="1yM5C5" id="1eCN$XLoaIB" role="3Dsw3i" />
     <node concept="1yM5C5" id="1eCN$XLoaIG" role="3Dsw3i" />

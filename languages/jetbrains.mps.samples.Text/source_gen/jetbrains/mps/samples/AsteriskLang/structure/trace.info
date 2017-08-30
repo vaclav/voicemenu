@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root>
+    <file name="ConceptPresentationAspectImpl.java">
+      <unit at="11,0,93,0" name="jetbrains.mps.samples.AsteriskLang.structure.ConceptPresentationAspectImpl" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <unit at="10,0,44,0" name="jetbrains.mps.samples.AsteriskLang.structure.LanguageConceptSwitch" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <unit at="14,0,143,0" name="jetbrains.mps.samples.AsteriskLang.structure.StructureAspectDescriptor" />
+    </file>
+  </root>
+</debug-info>
+
