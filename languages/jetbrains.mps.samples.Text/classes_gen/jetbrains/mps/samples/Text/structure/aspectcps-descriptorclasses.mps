@@ -2893,7 +2893,7 @@
                         <node concept="liA8E" id="g5" role="2OqNvi">
                           <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.aggregate(java.lang.String,long):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2$AggregationLinkBuilder" resolve="aggregate" />
                           <node concept="Xl_RD" id="g6" role="37wK5m">
-                            <property role="Xl_RC" value="text" />
+                            <property role="Xl_RC" value="body" />
                           </node>
                           <node concept="1adDum" id="g7" role="37wK5m">
                             <property role="1adDun" value="0x10bb6449f9c9649bL" />
