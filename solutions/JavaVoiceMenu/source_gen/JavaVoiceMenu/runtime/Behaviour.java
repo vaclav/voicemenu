@@ -7,6 +7,7 @@ import java.io.IOException;
 
 public class Behaviour {
   public static void runLogic(ActionEvent evt) throws IOException {
+    Variables.voice.stop();
     // Initilization of voice output 
     Boolean wrongButtonPressed = false;
     // Variable to store which character was pressed 

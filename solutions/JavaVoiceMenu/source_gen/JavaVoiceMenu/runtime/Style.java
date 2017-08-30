@@ -70,6 +70,7 @@ public class Style {
     // set End button onClick actions 
     End.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent p0) {
+        Variables.voice.stop();
         System.out.println("Terminating program");
         System.exit(0);
       }
