@@ -11,6 +11,7 @@
       <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.samples.VoiceMenuToJava/jetbrains.mps.samples.VoiceMenuToJava.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.samples.VoiceMenuToXML/jetbrains.mps.samples.VoiceMenuToXML.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/JavaVoiceMenu/JavaVoiceMenu.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/TTSLibrary/TTSLibrary.msd" folder="" />
     </projectModules>
   </component>
 </project>
