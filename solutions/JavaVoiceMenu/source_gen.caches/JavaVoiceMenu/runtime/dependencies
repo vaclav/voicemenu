@@ -17,6 +17,14 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.List" />
   </dependency>
+  <dependency className="JavaVoiceMenu.runtime.MacVoice" file="MacVoice.java">
+    <classNode dependClassName="java.io.IOException" />
+    <classNode dependClassName="java.lang.Boolean" />
+    <classNode dependClassName="java.lang.Process" />
+    <classNode dependClassName="java.lang.Runtime" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+  </dependency>
   <dependency className="JavaVoiceMenu.runtime.Style" file="Style.java">
     <classNode dependClassName="JavaVoiceMenu.runtime.Event" />
     <classNode dependClassName="JavaVoiceMenu.runtime.Variables" />
@@ -45,6 +53,7 @@
   </dependency>
   <dependency className="JavaVoiceMenu.runtime.Variables" file="Variables.java">
     <classNode dependClassName="JavaVoiceMenu.runtime.Event" />
+    <classNode dependClassName="JavaVoiceMenu.runtime.MacVoice" />
     <classNode dependClassName="JavaVoiceMenu.runtime.myVoice" />
     <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.String" />
@@ -53,11 +62,11 @@
     <classNode dependClassName="java.util.List" />
   </dependency>
   <dependency className="JavaVoiceMenu.runtime.myVoice" file="myVoice.java">
+    <classNode dependClassName="JavaVoiceMenu.runtime.Variables" />
     <classNode dependClassName="java.io.IOException" />
-    <classNode dependClassName="java.lang.Boolean" />
-    <classNode dependClassName="java.lang.Runtime" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.util.Objects" />
   </dependency>
 </dependenciesRoot>
 
