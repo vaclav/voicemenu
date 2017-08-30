@@ -6,6 +6,7 @@
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" version="-1" />
+    <engage id="e2a803a4-d4b8-43eb-b458-517effd2a87f" name="jetbrains.mps.samples.VoiceMenuToAsterisk" />
   </languages>
   <imports>
     <import index="ibtu" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#427a473d-5177-432c-9905-bcbceb71b996(jetbrains.mps.lang.project.modules/module.jetbrains.mps.build.mps.runner@project_stub)" />
@@ -215,7 +216,26 @@
       <node concept="2C_I21" id="4matEwaOelE" role="2C_I26">
         <property role="3upAMh" value="" />
         <ref role="2C_gVZ" node="54keEMKoACO" resolve="eight" />
-        <node concept="1$pBvq" id="5o6E870NcHa" role="2C_gVu" />
+        <node concept="2C_Ik4" id="6sDFiMPeKz$" role="2C_gVu">
+          <node concept="2C_Ik0" id="6sDFiMPeKz_" role="2C_I24">
+            <property role="2C_Iks" value="1" />
+            <property role="TrG5h" value="Action_108" />
+            <ref role="D9pxj" node="6sDFiMPeKzS" />
+          </node>
+          <node concept="2C_Ik0" id="6sDFiMPeKzD" role="2C_I24">
+            <property role="2C_Iks" value="2" />
+            <property role="TrG5h" value="Action_117" />
+            <ref role="D9pxj" node="6sDFiMPeKzZ" />
+          </node>
+          <node concept="2C_I21" id="6sDFiMPeKzS" role="2C_I26">
+            <ref role="2C_gVZ" node="6sDFiMPeKz_" resolve="Action_108" />
+            <node concept="1$pBvq" id="6sDFiMPeK$t" role="2C_gVu" />
+          </node>
+          <node concept="2C_I21" id="6sDFiMPeKzZ" role="2C_I26">
+            <ref role="2C_gVZ" node="6sDFiMPeKzD" resolve="Action_117" />
+            <node concept="1$pBvq" id="6sDFiMPeK$L" role="2C_gVu" />
+          </node>
+        </node>
       </node>
       <node concept="2C_I21" id="4matEwaOelQ" role="2C_I26">
         <property role="3upAMh" value="" />
