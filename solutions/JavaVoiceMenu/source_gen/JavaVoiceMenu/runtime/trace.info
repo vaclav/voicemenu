@@ -236,70 +236,48 @@
   </root>
   <root nodeRef="r:d8d37b74-a8e1-4a57-a2ee-4a996f4ba158(JavaVoiceMenu.runtime)/7103833127138624230">
     <file name="WinVoice.java">
-      <node id="7103833127138624232" at="9,0,10,0" concept="3" trace="Kevin" />
-      <node id="7103833127138624237" at="10,0,11,0" concept="3" trace="proc" />
-      <node id="7103833127138624250" at="16,53,17,16" concept="7" />
-      <node id="7103833127138624280" at="29,29,30,17" concept="8" />
-      <node id="7103833127138624240" at="11,0,13,0" concept="1" trace="WinVoice#()V" />
-      <node id="7103833127138624269" at="22,0,24,0" concept="6" trace="changeVoice#()V" />
-      <node id="7103833127138624274" at="24,0,26,0" concept="6" trace="stop#()V" />
-      <node id="7103833127138624244" at="16,0,19,0" concept="6" trace="speak#(Ljava/lang/String;)V" />
-      <node id="7103833127138624278" at="29,0,32,0" concept="6" trace="getVoice#()Ljava/lang/String;" />
-      <scope id="7103833127138624242" at="11,21,11,21" />
-      <scope id="7103833127138624270" at="22,29,22,29" />
-      <scope id="7103833127138624275" at="24,22,24,22" />
-      <scope id="7103833127138624248" at="16,53,17,16">
+      <node id="7103833127138624237" at="9,0,10,0" concept="3" trace="proc" />
+      <node id="7103833127138624250" at="15,53,16,16" concept="7" />
+      <node id="7103833127138624240" at="10,0,12,0" concept="1" trace="WinVoice#()V" />
+      <node id="7103833127138624269" at="21,0,23,0" concept="6" trace="changeVoice#()V" />
+      <node id="7103833127138624274" at="23,0,25,0" concept="6" trace="stop#()V" />
+      <node id="7103833127138624244" at="15,0,18,0" concept="6" trace="speak#(Ljava/lang/String;)V" />
+      <scope id="7103833127138624242" at="10,21,10,21" />
+      <scope id="7103833127138624270" at="21,29,21,29" />
+      <scope id="7103833127138624275" at="23,22,23,22" />
+      <scope id="7103833127138624248" at="15,53,16,16">
         <var name="voice" id="7103833127138624249" />
       </scope>
-      <scope id="7103833127138624279" at="29,29,30,17" />
-      <scope id="7103833127138624240" at="11,0,13,0" />
-      <scope id="7103833127138624269" at="22,0,24,0" />
-      <scope id="7103833127138624274" at="24,0,26,0" />
-      <scope id="7103833127138624244" at="16,0,19,0">
+      <scope id="7103833127138624240" at="10,0,12,0" />
+      <scope id="7103833127138624269" at="21,0,23,0" />
+      <scope id="7103833127138624274" at="23,0,25,0" />
+      <scope id="7103833127138624244" at="15,0,18,0">
         <var name="text" id="7103833127138624245" />
       </scope>
-      <scope id="7103833127138624278" at="29,0,32,0" />
-      <unit id="7103833127138624230" at="8,0,33,0" name="JavaVoiceMenu.runtime.WinVoice" />
+      <unit id="7103833127138624230" at="8,0,26,0" name="JavaVoiceMenu.runtime.WinVoice" />
     </file>
   </root>
   <root nodeRef="r:d8d37b74-a8e1-4a57-a2ee-4a996f4ba158(JavaVoiceMenu.runtime)/7103833127138761510">
     <file name="UniVoice.java">
-      <node id="7103833127138761512" at="8,0,9,0" concept="3" trace="Default" />
       <node id="7103833127138761517" at="9,0,10,0" concept="3" trace="proc" />
-      <node id="7103833127138761530" at="15,53,16,35" concept="7" />
-      <node id="7103833127138764254" at="16,35,17,38" concept="7" />
-      <node id="7103833127138770859" at="18,9,19,26" concept="2" />
-      <node id="7103833127138761551" at="20,29,21,26" concept="2" />
-      <node id="7103833127138774540" at="27,29,28,35" concept="2" />
-      <node id="7103833127138761568" at="30,22,31,19" concept="2" />
-      <node id="7103833127138761574" at="36,29,37,19" concept="8" />
+      <node id="4604010141008107929" at="15,53,16,16" concept="7" />
       <node id="7103833127138761520" at="10,0,12,0" concept="1" trace="UniVoice#()V" />
-      <node id="7103833127138761558" at="27,0,30,0" concept="6" trace="changeVoice#()V" />
-      <node id="7103833127138761566" at="30,0,33,0" concept="6" trace="stop#()V" />
-      <node id="7103833127138761572" at="36,0,39,0" concept="6" trace="getVoice#()Ljava/lang/String;" />
-      <node id="7103833127138761553" at="17,38,22,5" concept="13" />
-      <node id="7103833127138761524" at="15,0,24,0" concept="6" trace="speak#(Ljava/lang/String;)V" />
+      <node id="4604010141008107961" at="21,0,23,0" concept="6" trace="changeVoice#()V" />
+      <node id="4604010141008107968" at="23,0,25,0" concept="6" trace="stop#()V" />
+      <node id="4604010141008107924" at="15,0,18,0" concept="6" trace="speak#(Ljava/lang/String;)V" />
       <scope id="7103833127138761522" at="10,21,10,21" />
-      <scope id="7103833127138761540" at="18,9,19,26" />
-      <scope id="7103833127138761554" at="20,0,21,26">
-        <var name="e" id="7103833127138761546" />
+      <scope id="4604010141008107962" at="21,29,21,29" />
+      <scope id="4604010141008107969" at="23,22,23,22" />
+      <scope id="4604010141008107928" at="15,53,16,16">
+        <var name="voice" id="4604010141008107930" />
       </scope>
-      <scope id="7103833127138761550" at="20,29,21,26" />
-      <scope id="7103833127138761559" at="27,29,28,35" />
-      <scope id="7103833127138761567" at="30,22,31,19" />
-      <scope id="7103833127138761573" at="36,29,37,19" />
       <scope id="7103833127138761520" at="10,0,12,0" />
-      <scope id="7103833127138761558" at="27,0,30,0" />
-      <scope id="7103833127138761566" at="30,0,33,0" />
-      <scope id="7103833127138761572" at="36,0,39,0" />
-      <scope id="7103833127138761528" at="15,53,22,5">
-        <var name="rt" id="7103833127138764255" />
-        <var name="tts" id="7103833127138761529" />
+      <scope id="4604010141008107961" at="21,0,23,0" />
+      <scope id="4604010141008107968" at="23,0,25,0" />
+      <scope id="4604010141008107924" at="15,0,18,0">
+        <var name="text" id="4604010141008107925" />
       </scope>
-      <scope id="7103833127138761524" at="15,0,24,0">
-        <var name="text" id="7103833127138761525" />
-      </scope>
-      <unit id="7103833127138761510" at="7,0,40,0" name="JavaVoiceMenu.runtime.UniVoice" />
+      <unit id="7103833127138761510" at="8,0,26,0" name="JavaVoiceMenu.runtime.UniVoice" />
     </file>
   </root>
   <root nodeRef="r:d8d37b74-a8e1-4a57-a2ee-4a996f4ba158(JavaVoiceMenu.runtime)/7103833127138780293">
@@ -412,10 +390,10 @@
       <node id="7172104517365636108" at="21,9,22,26" concept="2" />
       <node id="7172104517365636169" at="22,26,23,25" concept="9" />
       <node id="7172104517365636118" at="24,29,25,26" concept="2" />
-      <node id="7172104517365636127" at="31,29,32,23" concept="2" />
-      <node id="7172104517365652350" at="32,23,33,35" concept="2" />
+      <node id="7172104517365636127" at="31,29,32,21" concept="2" />
+      <node id="7172104517365652350" at="32,21,33,35" concept="2" />
       <node id="7172104517365655492" at="35,22,36,19" concept="2" />
-      <node id="7172104517365636153" at="42,21,43,22" concept="8" />
+      <node id="7172104517365636153" at="42,19,43,22" concept="8" />
       <node id="7172104517365636157" at="44,12,45,18" concept="8" />
       <node id="7172104517365636087" at="12,0,14,0" concept="1" trace="MacVoice#()V" />
       <node id="7172104517365636155" at="44,10,46,5" concept="0" />
@@ -431,7 +409,7 @@
       </scope>
       <scope id="7172104517365636117" at="24,29,25,26" />
       <scope id="7172104517365636140" at="35,22,36,19" />
-      <scope id="7172104517365636152" at="42,21,43,22" />
+      <scope id="7172104517365636152" at="42,19,43,22" />
       <scope id="7172104517365636156" at="44,12,45,18" />
       <scope id="7172104517365636087" at="12,0,14,0" />
       <scope id="7172104517365636107" at="21,9,23,25" />
@@ -551,12 +529,13 @@
       <node id="7983725069972257157" at="166,34,167,66" concept="2" />
       <node id="7983725069972257160" at="167,66,168,17" concept="2" />
       <node id="7983725069972257162" at="168,17,169,27" concept="2" />
-      <node id="7983725069972257216" at="171,35,172,27" concept="9" />
-      <node id="7983725069972257169" at="172,27,173,26" concept="2" />
+      <node id="4604010141009207527" at="169,27,170,30" concept="2" />
+      <node id="7983725069972257216" at="172,35,173,27" concept="9" />
+      <node id="7983725069972257169" at="173,27,174,26" concept="2" />
       <node id="7983725069972257038" at="130,0,133,0" concept="12" trace="setTextToScreen#(Ljava/lang/String;)V" />
       <node id="7983725069973207155" at="80,0,84,0" concept="6" trace="actionPerformed#(Ljava/awt/event/ActionEvent;)V" />
       <node id="7983725069972257047" at="133,0,137,0" concept="12" trace="setScreen#(Ljavax/swing/JTextArea;)V" />
-      <node id="7983725069972257167" at="171,0,175,0" concept="12" trace="setContent#()V" />
+      <node id="7983725069972257167" at="172,0,176,0" concept="12" trace="setContent#()V" />
       <node id="7983725069972256734" at="45,39,50,5" concept="4" />
       <node id="7983725069972937685" at="60,49,65,11" concept="13" />
       <node id="7983725069973044386" at="72,0,77,0" concept="6" trace="actionPerformed#(Ljava/awt/event/ActionEvent;)V" />
@@ -569,9 +548,9 @@
       <node id="7983725069972256997" at="119,0,130,0" concept="12" trace="setHeader#(Ljavax/swing/JPanel;)V" />
       <node id="7983725069972257093" at="146,0,157,0" concept="12" trace="setMainPanel#(Ljavax/swing/JPanel;)V" />
       <node id="7983725069972918617" at="56,0,69,0" concept="6" trace="actionPerformed#(Ljava/awt/event/ActionEvent;)V" />
-      <node id="7983725069972257127" at="157,0,171,0" concept="12" trace="setFrame#()V" />
       <node id="7983725069972898311" at="54,39,69,7" concept="2" />
       <node id="7983725069972256933" at="104,0,119,0" concept="12" trace="setDeliminatorLine#(Ljavax/swing/JPanel;)V" />
+      <node id="7983725069972257127" at="157,0,172,0" concept="12" trace="setFrame#()V" />
       <node id="7983725069972256859" at="86,0,104,0" concept="12" trace="setCallButtons#(Ljavax/swing/JPanel;)V" />
       <node id="7983725069972256757" at="53,0,86,0" concept="12" trace="addListeners#(Ljavax/swing/JButton;Ljavax/swing/JButton;Ljavax/swing/JButton;)V" />
       <scope id="7983725069972937692" at="61,15,62,27" />
@@ -582,7 +561,7 @@
       <scope id="7983725069972257041" at="130,51,131,27" />
       <scope id="7983725069973207161" at="80,51,82,43" />
       <scope id="7983725069972257050" at="133,53,135,47" />
-      <scope id="7983725069972257168" at="171,35,173,26" />
+      <scope id="7983725069972257168" at="172,35,174,26" />
       <scope id="7983725069972256736" at="46,36,49,51" />
       <scope id="7983725069973044392" at="72,51,75,23" />
       <scope id="7983725069972257038" at="130,0,133,0">
@@ -595,7 +574,7 @@
       <scope id="7983725069972257047" at="133,0,137,0">
         <var name="myScreen" id="7983725069972257048" />
       </scope>
-      <scope id="7983725069972257167" at="171,0,175,0" />
+      <scope id="7983725069972257167" at="172,0,176,0" />
       <scope id="7983725069972256734" at="45,39,50,5">
         <var name="child" id="7983725069972256749" />
       </scope>
@@ -634,11 +613,6 @@
       <scope id="7983725069972257093" at="146,0,157,0">
         <var name="myPhone" id="7983725069972257094" />
       </scope>
-      <scope id="7983725069972257128" at="157,33,169,27">
-        <var name="height" id="7983725069972257135" />
-        <var name="screenSize" id="7983725069972257129" />
-        <var name="width" id="7983725069972257139" />
-      </scope>
       <scope id="7983725069972918617" at="56,0,69,0">
         <var name="p0" id="7983725069972918621" />
       </scope>
@@ -647,10 +621,15 @@
         <var name="line2" id="5365399549502870142" />
         <var name="topLine" id="7983725069972256937" />
       </scope>
-      <scope id="7983725069972257127" at="157,0,171,0" />
+      <scope id="7983725069972257128" at="157,33,170,30">
+        <var name="height" id="7983725069972257135" />
+        <var name="screenSize" id="7983725069972257129" />
+        <var name="width" id="7983725069972257139" />
+      </scope>
       <scope id="7983725069972256933" at="104,0,119,0">
         <var name="panel" id="7983725069972256934" />
       </scope>
+      <scope id="7983725069972257127" at="157,0,172,0" />
       <scope id="7983725069972256862" at="86,52,102,48">
         <var name="border" id="5365399549502760441" />
         <var name="buttonCall" id="7983725069972256881" />
@@ -671,7 +650,7 @@
       <unit id="7983725069973207153" at="79,38,84,5" name="JavaVoiceMenu.runtime.Style$3" />
       <unit id="7983725069973044384" at="71,30,77,5" name="JavaVoiceMenu.runtime.Style$2" />
       <unit id="7983725069972918615" at="55,31,69,5" name="JavaVoiceMenu.runtime.Style$1" />
-      <unit id="7983725069972256650" at="26,0,176,0" name="JavaVoiceMenu.runtime.Style" />
+      <unit id="7983725069972256650" at="26,0,177,0" name="JavaVoiceMenu.runtime.Style" />
     </file>
   </root>
 </debug-info>

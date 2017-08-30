@@ -167,6 +167,7 @@ public class Style {
     frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     frame.pack();
     frame.setVisible(true);
+    frame.setResizable(false);
   }
   public static void setContent() {
     // set visible content 

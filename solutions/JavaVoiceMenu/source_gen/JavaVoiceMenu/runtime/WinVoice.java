@@ -6,7 +6,6 @@ import java.io.IOException;
 import com.sun.speech.freetts.Voice;
 
 public class WinVoice {
-  public String Kevin = "kevin16 ";
   public Process proc;
   public WinVoice() {
   }
@@ -22,11 +21,5 @@ public class WinVoice {
   public void changeVoice() {
   }
   public void stop() {
-  }
-  /**
-   * func to decide what language use next
-   */
-  private String getVoice() {
-    return Kevin;
   }
 }

@@ -29,7 +29,7 @@ public class MacVoice {
    * switch voices
    */
   public void changeVoice() {
-    voice = !((voice));
+    voice = !(voice);
     System.out.println(getVoice());
   }
   public void stop() {
@@ -39,7 +39,7 @@ public class MacVoice {
    * func to decide what language use next
    */
   private String getVoice() {
-    if (!((voice))) {
+    if (!(voice)) {
       return Samantha;
     } else {
       return Alex;

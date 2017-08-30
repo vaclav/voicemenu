@@ -52,11 +52,10 @@
     <classNode dependClassName="javax.swing.border.LineBorder" />
   </dependency>
   <dependency className="JavaVoiceMenu.runtime.UniVoice" file="UniVoice.java">
+    <classNode dependClassName="com.sun.speech.freetts.Voice" />
     <classNode dependClassName="java.io.IOException" />
     <classNode dependClassName="java.lang.Process" />
-    <classNode dependClassName="java.lang.Runtime" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.lang.System" />
   </dependency>
   <dependency className="JavaVoiceMenu.runtime.Variables" file="Variables.java">
     <classNode dependClassName="JavaVoiceMenu.runtime.Event" />
