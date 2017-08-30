@@ -51,15 +51,30 @@
     <classNode dependClassName="javax.swing.border.EmptyBorder" />
     <classNode dependClassName="javax.swing.border.LineBorder" />
   </dependency>
+  <dependency className="JavaVoiceMenu.runtime.UniVoice" file="UniVoice.java">
+    <classNode dependClassName="java.io.IOException" />
+    <classNode dependClassName="java.lang.Process" />
+    <classNode dependClassName="java.lang.Runtime" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+  </dependency>
   <dependency className="JavaVoiceMenu.runtime.Variables" file="Variables.java">
     <classNode dependClassName="JavaVoiceMenu.runtime.Event" />
     <classNode dependClassName="JavaVoiceMenu.runtime.MacVoice" />
+    <classNode dependClassName="JavaVoiceMenu.runtime.UniVoice" />
+    <classNode dependClassName="JavaVoiceMenu.runtime.WinVoice" />
     <classNode dependClassName="JavaVoiceMenu.runtime.myVoice" />
     <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="java.util.HashMap" />
     <classNode dependClassName="java.util.List" />
+  </dependency>
+  <dependency className="JavaVoiceMenu.runtime.WinVoice" file="WinVoice.java">
+    <classNode dependClassName="com.sun.speech.freetts.Voice" />
+    <classNode dependClassName="java.io.IOException" />
+    <classNode dependClassName="java.lang.Process" />
+    <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="JavaVoiceMenu.runtime.myVoice" file="myVoice.java">
     <classNode dependClassName="JavaVoiceMenu.runtime.Variables" />

@@ -27,12 +27,30 @@ public class myVoice {
    * run speak
    */
   public void speak() throws IOException {
-    Variables.macVoice.speak(text);
+    if (Objects.equals(OS, "mac")) {
+      Variables.macVoice.speak(text);
+    } else if (Objects.equals(OS, "win")) {
+      Variables.winVoice.speak(text);
+    } else if (Objects.equals(OS, "unix")) {
+      Variables.uniVoice.speak(text);
+    } else {
+      System.out.println("Voices are not supported");
+    }
     text = "";
   }
+  /**
+   * stop speech
+   */
   public void stop() {
+
     if (Objects.equals(OS, "mac")) {
       Variables.macVoice.stop();
+    } else if (Objects.equals(OS, "win")) {
+      Variables.winVoice.stop();
+    } else if (Objects.equals(OS, "unix")) {
+      Variables.uniVoice.stop();
+    } else {
+      System.out.println("Voices are not supported");
     }
   }
   /**
@@ -41,6 +59,12 @@ public class myVoice {
   public void changeVoice() {
     if (Objects.equals(OS, "mac")) {
       Variables.macVoice.changeVoice();
+    } else if (Objects.equals(OS, "win")) {
+      Variables.winVoice.changeVoice();
+    } else if (Objects.equals(OS, "unix")) {
+      Variables.uniVoice.changeVoice();
+    } else {
+      System.out.println("Voices are not supported");
     }
   }
   /**

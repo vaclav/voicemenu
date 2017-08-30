@@ -18,5 +18,6 @@ public class Variables {
   public static Boolean finished = false;
   public static String main_Text;
   public static MacVoice macVoice = new MacVoice();
-
+  public static WinVoice winVoice = new WinVoice();
+  public static UniVoice uniVoice = new UniVoice();
 }
