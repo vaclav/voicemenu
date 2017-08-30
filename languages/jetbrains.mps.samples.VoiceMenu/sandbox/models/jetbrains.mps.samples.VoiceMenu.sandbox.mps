@@ -6,14 +6,14 @@
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" version="-1" />
-    <engage id="e2a803a4-d4b8-43eb-b458-517effd2a87f" name="jetbrains.mps.samples.VoiceMenuToAsterisk" />
+    <use id="914c58c4-0680-49cf-8599-f5ced7a657d6" name="jetbrains.mps.samples.Text" version="0" />
+    <engage id="914c58c4-0680-49cf-8599-f5ced7a657d6" name="jetbrains.mps.samples.Text" />
   </languages>
   <imports>
     <import index="ibtu" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#427a473d-5177-432c-9905-bcbceb71b996(jetbrains.mps.lang.project.modules/module.jetbrains.mps.build.mps.runner@project_stub)" />
   </imports>
   <registry>
     <language id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu">
-      <concept id="6151364482690565571" name="jetbrains.mps.samples.VoiceMenu.structure.Empty" flags="ng" index="2fTWM$" />
       <concept id="6587365532662359693" name="jetbrains.mps.samples.VoiceMenu.structure.Activity" flags="ng" index="2C_I21">
         <property id="2702278965990916343" name="greeting" index="3upAMh" />
         <reference id="6587365532662368499" name="event" index="2C_gVZ" />
@@ -36,6 +36,26 @@
       <concept id="6772988411135920842" name="jetbrains.mps.samples.VoiceMenu.structure.Back" flags="ng" index="1$pBvp" />
       <concept id="6772988411135920841" name="jetbrains.mps.samples.VoiceMenu.structure.Other" flags="ng" index="1$pBvq" />
       <concept id="6772988411135920840" name="jetbrains.mps.samples.VoiceMenu.structure.DirectCall" flags="ng" index="1$pBvr" />
+    </language>
+    <language id="914c58c4-0680-49cf-8599-f5ced7a657d6" name="jetbrains.mps.samples.Text">
+      <concept id="1416608923407914058" name="jetbrains.mps.samples.Text.structure.Empty" flags="ng" index="1yM5C5" />
+      <concept id="1416608923407889291" name="jetbrains.mps.samples.Text.structure.Same" flags="ng" index="1yMfR4">
+        <property id="1416608923407889295" name="action" index="1yMfR0" />
+        <property id="1416608923407889294" name="priority" index="1yMfR1" />
+        <child id="1416608923407889292" name="argument" index="1yMfR3" />
+      </concept>
+      <concept id="1416608923407654241" name="jetbrains.mps.samples.Text.structure.Context" flags="ng" index="1yX5cI" />
+      <concept id="1416608923407654319" name="jetbrains.mps.samples.Text.structure.Extend" flags="ng" index="1yX5fw">
+        <property id="1416608923407654327" name="action" index="1yX5fS" />
+        <property id="1416608923407654324" name="priority" index="1yX5fV" />
+        <property id="1416608923407654322" name="target" index="1yX5fX" />
+      </concept>
+      <concept id="1416608923407654333" name="jetbrains.mps.samples.Text.structure.Argument" flags="ng" index="1yX5fM">
+        <property id="1416608923407654334" name="value" index="1yX5fL" />
+      </concept>
+      <concept id="1205667594137854972" name="jetbrains.mps.samples.Text.structure.WorkSpace" flags="ng" index="3DswuP">
+        <child id="1205667594137855131" name="text" index="3Dsw3i" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -242,23 +262,6 @@
         <property role="2C_Iks" value="2" />
         <property role="TrG5h" value="eight" />
       </node>
-      <node concept="2C_Ik0" id="1L4ryxdNwHg" role="2C_I24">
-        <property role="2C_Iks" value="7" />
-        <property role="TrG5h" value="action_794" />
-        <ref role="D9pxj" node="1L4ryxdNwHl" />
-      </node>
-      <node concept="2C_Ik0" id="1L4ryxdSy25" role="2C_I24">
-        <property role="2C_Iks" value="1" />
-        <property role="TrG5h" value="pokus" />
-      </node>
-      <node concept="2C_I21" id="1L4ryxdNwHl" role="2C_I26">
-        <ref role="2C_gVZ" node="1L4ryxdNwHg" resolve="action_794" />
-        <node concept="2fTWM$" id="1L4ryxdNwHn" role="2C_gVu" />
-      </node>
-      <node concept="2C_I21" id="1L4ryxdSyuD" role="2C_I26">
-        <ref role="2C_gVZ" node="1L4ryxdSy25" resolve="pokus" />
-        <node concept="2fTWM$" id="1L4ryxdSyuF" role="2C_gVu" />
-      </node>
     </node>
   </node>
   <node concept="2Jqgb4" id="6nemK62JSIo">
@@ -336,6 +339,34 @@
         <node concept="1$pBvo" id="6nemK62KXYn" role="2C_gVu" />
       </node>
     </node>
+  </node>
+  <node concept="3DswuP" id="1eCN$XLo0YH">
+    <node concept="1yX5cI" id="1eCN$XLoiBD" role="3Dsw3i">
+      <property role="TrG5h" value="mainmenu" />
+    </node>
+    <node concept="1yX5fw" id="1eCN$XLoiC3" role="3Dsw3i">
+      <property role="1yX5fX" value="s" />
+      <property role="1yX5fV" value="1" />
+      <property role="1yX5fS" value="Answer" />
+    </node>
+    <node concept="1yMfR4" id="1eCN$XLoiD6" role="3Dsw3i">
+      <property role="1yMfR1" value="n" />
+      <property role="1yMfR0" value="SetMusicOnHold" />
+      <node concept="1yX5fM" id="1eCN$XLoiDd" role="1yMfR3">
+        <property role="1yX5fL" value="default" />
+      </node>
+    </node>
+    <node concept="1yMfR4" id="1eCN$XLoiDn" role="3Dsw3i">
+      <property role="1yMfR1" value="n" />
+      <property role="1yMfR0" value="hangUp" />
+      <node concept="1yX5fM" id="1eCN$XLoiDD" role="1yMfR3">
+        <property role="1yX5fL" value="w" />
+      </node>
+    </node>
+    <node concept="1yM5C5" id="1eCN$XLoiDF" role="3Dsw3i" />
+    <node concept="1yM5C5" id="1eCN$XLoiDw" role="3Dsw3i" />
+    <node concept="1yM5C5" id="1eCN$XLoaIB" role="3Dsw3i" />
+    <node concept="1yM5C5" id="1eCN$XLoaIG" role="3Dsw3i" />
   </node>
 </model>
 

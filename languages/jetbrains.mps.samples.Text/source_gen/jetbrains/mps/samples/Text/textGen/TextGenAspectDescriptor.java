@@ -22,12 +22,20 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
   @Override
   public TextGenDescriptor getDescriptor(@NotNull SAbstractConcept concept) {
     switch (myIndex.index(concept)) {
-      case LanguageConceptSwitch.Element:
-        return new Element_TextGen();
-      case LanguageConceptSwitch.Line:
-        return new Line_TextGen();
-      case LanguageConceptSwitch.TextFile:
-        return new TextFile_TextGen();
+      case LanguageConceptSwitch.Argument:
+        return new Argument_TextGen();
+      case LanguageConceptSwitch.Comment:
+        return new Comment_TextGen();
+      case LanguageConceptSwitch.Context:
+        return new Context_TextGen();
+      case LanguageConceptSwitch.Empty:
+        return new Empty_TextGen();
+      case LanguageConceptSwitch.Extend:
+        return new Extend_TextGen();
+      case LanguageConceptSwitch.Same:
+        return new Same_TextGen();
+      case LanguageConceptSwitch.WorkSpace:
+        return new WorkSpace_TextGen();
     }
     return null;
   }
@@ -35,18 +43,18 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
   @Override
   public void breakdownToUnits(@NotNull TextGenModelOutline outline) {
     for (SNode root : outline.getModel().getRootNodes()) {
-      if (root.getConcept().equals(MetaAdapterFactory.getConcept(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x10bb6449f9c963fcL, "jetbrains.mps.samples.Text.structure.TextFile"))) {
-        String fname = getFileName_TextFile(root);
-        String ext = getFileExtension_TextFile(root);
+      if (root.getConcept().equals(MetaAdapterFactory.getConcept(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x10bb6449f9c963fcL, "jetbrains.mps.samples.Text.structure.WorkSpace"))) {
+        String fname = getFileName_WorkSpace(root);
+        String ext = getFileExtension_WorkSpace(root);
         outline.registerTextUnit((ext == null ? fname : (fname + '.' + ext)), root);
         continue;
       }
     }
   }
-  private static String getFileName_TextFile(SNode node) {
-    return "asterisk";
+  private static String getFileName_WorkSpace(SNode node) {
+    return "extensions";
   }
-  private static String getFileExtension_TextFile(SNode node) {
+  private static String getFileExtension_WorkSpace(SNode node) {
     return "conf";
   }
 }

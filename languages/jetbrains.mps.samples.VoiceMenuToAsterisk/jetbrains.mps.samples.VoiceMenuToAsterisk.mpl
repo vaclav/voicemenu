@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="" namespace="jetbrains.mps.samples.VoiceMenuToAsterisk#1205667594137341584" uuid="8bc479f2-3502-4589-a8aa-c358ff06874a" reflective-queries="true">
+    <generator alias="" namespace="jetbrains.mps.samples.VoiceMenuToAsterisk#1416608923407982813" uuid="6e677ad1-d756-4f38-90d2-11505348026d" reflective-queries="true">
       <models>
         <modelRoot contentPath="${module}/generator/template" type="default">
           <sourceRoot location="." />
@@ -28,10 +28,7 @@
         <language slang="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" version="0" />
         <language slang="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" version="0" />
         <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="8" />
-        <language slang="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" version="5" />
-        <language slang="l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen" version="1" />
         <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
-        <language slang="l:914c58c4-0680-49cf-8599-f5ced7a657d6:jetbrains.mps.samples.Text" version="0" />
       </languageVersions>
       <dependencyVersions>
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
@@ -43,7 +40,7 @@
         <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
         <module reference="4bc750d7-5688-4f52-b7d5-b263a3393a24(jetbrains.mps.samples.VoiceMenu)" version="0" />
         <module reference="e2a803a4-d4b8-43eb-b458-517effd2a87f(jetbrains.mps.samples.VoiceMenuToAsterisk)" version="0" />
-        <module reference="8bc479f2-3502-4589-a8aa-c358ff06874a(jetbrains.mps.samples.VoiceMenuToAsterisk#1205667594137341584)" version="0" />
+        <module reference="6e677ad1-d756-4f38-90d2-11505348026d(jetbrains.mps.samples.VoiceMenuToAsterisk#1416608923407982813)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>

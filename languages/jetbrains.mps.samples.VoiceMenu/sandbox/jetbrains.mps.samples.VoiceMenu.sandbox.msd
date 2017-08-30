@@ -13,6 +13,7 @@
   <languageVersions>
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
+    <language slang="l:914c58c4-0680-49cf-8599-f5ced7a657d6:jetbrains.mps.samples.Text" version="0" />
     <language slang="l:4bc750d7-5688-4f52-b7d5-b263a3393a24:jetbrains.mps.samples.VoiceMenu" version="-1" />
     <language slang="l:b346e003-e240-4a78-ab18-9d3086938853:jetbrains.mps.samples.VoiceMenuToJava" version="0" />
   </languageVersions>

@@ -22,11 +22,11 @@ import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
 import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 
-/*package*/ class TextFile_EditorBuilder_a extends AbstractEditorBuilder {
+/*package*/ class WorkSpace_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
   private SNode myNode;
 
-  public TextFile_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
+  public WorkSpace_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
     super(context);
     myNode = node;
   }
@@ -38,32 +38,33 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
   }
 
   /*package*/ EditorCell createCell() {
-    return createCollection_fmnf9t_a();
+    return createCollection_ikqrmj_a();
   }
 
-  private EditorCell createCollection_fmnf9t_a() {
+  private EditorCell createCollection_ikqrmj_a() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
-    editorCell.setCellId("Collection_fmnf9t_a");
+    editorCell.setCellId("Collection_ikqrmj_a");
     editorCell.setBig(true);
     editorCell.setCellContext(getCellFactory().getCellContext());
-    editorCell.addEditorCell(createRefNodeList_fmnf9t_a0());
+    editorCell.addEditorCell(createRefNodeList_ikqrmj_a0());
     return editorCell;
   }
-  private EditorCell createRefNodeList_fmnf9t_a0() {
-    AbstractCellListHandler handler = new TextFile_EditorBuilder_a.textListHandler_fmnf9t_a0(myNode, "text", getEditorContext());
+  private EditorCell createRefNodeList_ikqrmj_a0() {
+    AbstractCellListHandler handler = new WorkSpace_EditorBuilder_a.textListHandler_ikqrmj_a0(myNode, "text", getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_text");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, true);
     editorCell.getStyle().putAll(style);
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
-  private static class textListHandler_fmnf9t_a0 extends RefNodeListHandler {
+  private static class textListHandler_ikqrmj_a0 extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public textListHandler_fmnf9t_a0(SNode ownerNode, String childRole, EditorContext context) {
+    public textListHandler_ikqrmj_a0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
       myNode = ownerNode;
     }
@@ -75,7 +76,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     }
 
     public SNode createNodeToInsert(EditorContext editorContext) {
-      return NodeFactoryManager.createNode(MetaAdapterFactory.getConcept(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x10bb6449f9c96432L, "jetbrains.mps.samples.Text.structure.Line"), null, getNode(), getNode().getModel());
+      return NodeFactoryManager.createNode(MetaAdapterFactory.getConcept(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x10bb6449f9c96432L, "jetbrains.mps.samples.Text.structure.Command"), null, getNode(), getNode().getModel());
     }
     public EditorCell createNodeCell(SNode elementNode) {
       EditorCell elementCell = getUpdateSession().updateChildNodeCell(elementNode);
@@ -84,7 +85,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(textListHandler_fmnf9t_a0.this.getNode(), MetaAdapterFactory.getContainmentLink(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x10bb6449f9c963fcL, 0x10bb6449f9c9649bL, "text")));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(textListHandler_ikqrmj_a0.this.getNode(), MetaAdapterFactory.getContainmentLink(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x10bb6449f9c963fcL, 0x10bb6449f9c9649bL, "text")));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();

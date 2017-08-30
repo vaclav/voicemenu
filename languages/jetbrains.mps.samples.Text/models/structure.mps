@@ -12,6 +12,8 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -43,7 +45,7 @@
   </registry>
   <node concept="1TIwiD" id="12Vp4BTMmfW">
     <property role="EcuMT" value="1205667594137854972" />
-    <property role="TrG5h" value="TextFile" />
+    <property role="TrG5h" value="WorkSpace" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="12Vp4BTMmir" role="1TKVEi">
@@ -51,7 +53,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="text" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="12Vp4BTMmgM" resolve="Line" />
+      <ref role="20lvS9" node="12Vp4BTMmgM" resolve="Command" />
     </node>
     <node concept="PrWs8" id="12Vp4BTMpBx" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -59,30 +61,111 @@
   </node>
   <node concept="1TIwiD" id="12Vp4BTMmgM">
     <property role="EcuMT" value="1205667594137855026" />
-    <property role="TrG5h" value="Line" />
+    <property role="TrG5h" value="Command" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="12Vp4BTMxjd" role="1TKVEl">
-      <property role="IQ2nx" value="1205667594137900237" />
-      <property role="TrG5h" value="line" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyj" id="1eCN$XL3lI4" role="1TKVEi">
-      <property role="IQ2ns" value="1416608923402460036" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="elements" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="1eCN$XL3lI1" resolve="Element" />
+  </node>
+  <node concept="1TIwiD" id="1eCN$XLn9Px">
+    <property role="EcuMT" value="1416608923407654241" />
+    <property role="TrG5h" value="Context" />
+    <ref role="1TJDcQ" node="12Vp4BTMmgM" resolve="Command" />
+    <node concept="PrWs8" id="1eCN$XLn9Py" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
-  <node concept="1TIwiD" id="1eCN$XL3lI1">
-    <property role="EcuMT" value="1416608923402460033" />
-    <property role="TrG5h" value="Element" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="1eCN$XL3lI2" role="1TKVEl">
-      <property role="IQ2nx" value="1416608923402460034" />
+  <node concept="1TIwiD" id="1eCN$XLn9Qc">
+    <property role="EcuMT" value="1416608923407654284" />
+    <property role="TrG5h" value="Comment" />
+    <ref role="1TJDcQ" node="12Vp4BTMmgM" resolve="Command" />
+    <node concept="1TJgyi" id="1eCN$XLn9Qd" role="1TKVEl">
+      <property role="IQ2nx" value="1416608923407654285" />
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1eCN$XLn9QJ">
+    <property role="EcuMT" value="1416608923407654319" />
+    <property role="TrG5h" value="Extend" />
+    <ref role="1TJDcQ" node="12Vp4BTMmgM" resolve="Command" />
+    <node concept="1TJgyj" id="1eCN$XLn9QV" role="1TKVEi">
+      <property role="IQ2ns" value="1416608923407654331" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="argument" />
+      <ref role="20lvS9" node="1eCN$XLn9QX" resolve="Argument" />
+    </node>
+    <node concept="1TJgyi" id="1eCN$XLn9QM" role="1TKVEl">
+      <property role="IQ2nx" value="1416608923407654322" />
+      <property role="TrG5h" value="target" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="1eCN$XLn9QO" role="1TKVEl">
+      <property role="IQ2nx" value="1416608923407654324" />
+      <property role="TrG5h" value="priority" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="1eCN$XLn9QR" role="1TKVEl">
+      <property role="IQ2nx" value="1416608923407654327" />
+      <property role="TrG5h" value="action" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="1eCN$XLn9QK" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1eCN$XLn9QX">
+    <property role="EcuMT" value="1416608923407654333" />
+    <property role="TrG5h" value="Argument" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="1eCN$XLn9QY" role="1TKVEl">
+      <property role="IQ2nx" value="1416608923407654334" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1eCN$XLo3eb">
+    <property role="EcuMT" value="1416608923407889291" />
+    <property role="TrG5h" value="Same" />
+    <ref role="1TJDcQ" node="12Vp4BTMmgM" resolve="Command" />
+    <node concept="1TJgyj" id="1eCN$XLo3ec" role="1TKVEi">
+      <property role="IQ2ns" value="1416608923407889292" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="argument" />
+      <ref role="20lvS9" node="1eCN$XLn9QX" resolve="Argument" />
+    </node>
+    <node concept="1TJgyi" id="1eCN$XLo3ee" role="1TKVEl">
+      <property role="IQ2nx" value="1416608923407889294" />
+      <property role="TrG5h" value="priority" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="1eCN$XLo3ef" role="1TKVEl">
+      <property role="IQ2nx" value="1416608923407889295" />
+      <property role="TrG5h" value="action" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="1eCN$XLo3eg" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1eCN$XLo4AQ">
+    <property role="EcuMT" value="1416608923407894966" />
+    <property role="TrG5h" value="PlainText" />
+    <ref role="1TJDcQ" node="12Vp4BTMmgM" resolve="Command" />
+    <node concept="1TJgyi" id="1eCN$XLo4AR" role="1TKVEl">
+      <property role="IQ2nx" value="1416608923407894967" />
+      <property role="TrG5h" value="argument1" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="1eCN$XLo5MK" role="1TKVEl">
+      <property role="IQ2nx" value="1416608923407899824" />
+      <property role="TrG5h" value="argument2" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1eCN$XLo9ha">
+    <property role="EcuMT" value="1416608923407914058" />
+    <property role="TrG5h" value="Empty" />
+    <ref role="1TJDcQ" node="12Vp4BTMmgM" resolve="Command" />
   </node>
 </model>
 
