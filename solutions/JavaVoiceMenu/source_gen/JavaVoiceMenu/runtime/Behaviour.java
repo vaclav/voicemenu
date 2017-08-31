@@ -46,18 +46,27 @@ public class Behaviour {
         Variables.voice.addText("Direct call has begun").speak();
         Style.setTextToScreen("Direct Call");
         Variables.finished = true;
-
         return;
       } else
       if (currentEvent.action.equals("getInfo")) {
-        Variables.voice.addText("Now we are sending you super secret informations").speak();
+        Variables.voice.addText(currentEvent.toast).speak();
         Style.setTextToScreen("Getting Informations");
         Variables.finished = true;
         return;
       } else
       if (currentEvent.action.equals("other")) {
-        Variables.voice.addText("You just entered section of special services. Good Luck").speak();
+        Variables.voice.addText(currentEvent.toast).speak();
         Style.setTextToScreen("Other Services");
+        Variables.finished = true;
+        return;
+      } else if (currentEvent.action.equals("hangUp")) {
+        Variables.voice.addText(currentEvent.toast).speak();
+        Style.setTextToScreen("End of Call");
+        Variables.finished = true;
+        return;
+      } else if (currentEvent.action.equals("record")) {
+        Variables.voice.addText(currentEvent.toast).speak();
+        Style.setTextToScreen("Recording");
         Variables.finished = true;
         return;
       }

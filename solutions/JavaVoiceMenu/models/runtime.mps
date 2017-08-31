@@ -13,7 +13,6 @@
     <import index="9z78" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.border(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="oici" ref="r:d8d37b74-a8e1-4a57-a2ee-4a996f4ba158(JavaVoiceMenu.runtime)" />
     <import index="r791" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.text(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="ss6x" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#828f8f6b-2bf3-4a70-82a0-c413d7f22140(jetbrains.mps.lang.project.modules/module.TTSLibrary@project_stub)" />
@@ -3140,8 +3139,13 @@
                             </node>
                             <node concept="liA8E" id="5mb0yBfJ3JT" role="2OqNvi">
                               <ref role="37wK5l" node="6alSDtAKAit" resolve="addText" />
-                              <node concept="Xl_RD" id="5mb0yBfJ3JU" role="37wK5m">
-                                <property role="Xl_RC" value="You just entered section of special services. Good Luck" />
+                              <node concept="2OqwBi" id="48dyn_Zj7eE" role="37wK5m">
+                                <node concept="37vLTw" id="48dyn_Zj77c" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="5mb0yBfID1E" resolve="currentEvent" />
+                                </node>
+                                <node concept="2OwXpG" id="48dyn_Zj7mN" role="2OqNvi">
+                                  <ref role="2Oxat5" node="3_1GZis4X27" resolve="toast" />
+                                </node>
                               </node>
                             </node>
                           </node>
@@ -3188,23 +3192,158 @@
                         </node>
                       </node>
                     </node>
-                  </node>
-                  <node concept="3clFbS" id="5mb0yBfIcHM" role="3clFbx">
-                    <node concept="3clFbF" id="5mb0yBfIcHN" role="3cqZAp">
-                      <node concept="2OqwBi" id="5mb0yBfK7WM" role="3clFbG">
-                        <node concept="2OqwBi" id="5mb0yBfIl79" role="2Oq$k0">
-                          <node concept="10M0yZ" id="5mb0yBfIl78" role="2Oq$k0">
-                            <ref role="1PxDUh" node="2Bi0dpyCD0T" resolve="Variables" />
-                            <ref role="3cqZAo" node="6VbSUrc4QmS" resolve="voice" />
-                          </node>
-                          <node concept="liA8E" id="5mb0yBfIl7a" role="2OqNvi">
-                            <ref role="37wK5l" node="6alSDtAKAit" resolve="addText" />
-                            <node concept="Xl_RD" id="5mb0yBfIl7b" role="37wK5m">
-                              <property role="Xl_RC" value="Now we are sending you super secret informations" />
+                    <node concept="3eNFk2" id="48dyn_ZiPud" role="3eNLev">
+                      <node concept="3clFbS" id="48dyn_ZiPuf" role="3eOfB_">
+                        <node concept="3clFbF" id="48dyn_Zj7Rp" role="3cqZAp">
+                          <node concept="2OqwBi" id="48dyn_Zj7Rq" role="3clFbG">
+                            <node concept="2OqwBi" id="48dyn_Zj7Rr" role="2Oq$k0">
+                              <node concept="10M0yZ" id="48dyn_Zj7Rs" role="2Oq$k0">
+                                <ref role="3cqZAo" node="6VbSUrc4QmS" resolve="voice" />
+                                <ref role="1PxDUh" node="2Bi0dpyCD0T" resolve="Variables" />
+                              </node>
+                              <node concept="liA8E" id="48dyn_Zj7Rt" role="2OqNvi">
+                                <ref role="37wK5l" node="6alSDtAKAit" resolve="addText" />
+                                <node concept="2OqwBi" id="48dyn_Zj7Ru" role="37wK5m">
+                                  <node concept="37vLTw" id="48dyn_Zj7Rv" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="5mb0yBfID1E" resolve="currentEvent" />
+                                  </node>
+                                  <node concept="2OwXpG" id="48dyn_Zj7Rw" role="2OqNvi">
+                                    <ref role="2Oxat5" node="3_1GZis4X27" resolve="toast" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="48dyn_Zj7Rx" role="2OqNvi">
+                              <ref role="37wK5l" node="6alSDtAKAiI" resolve="speak" />
                             </node>
                           </node>
                         </node>
-                        <node concept="liA8E" id="5mb0yBfK89l" role="2OqNvi">
+                        <node concept="3clFbF" id="48dyn_ZiQ2K" role="3cqZAp">
+                          <node concept="2YIFZM" id="48dyn_ZiQ2L" role="3clFbG">
+                            <ref role="1Pybhc" node="6VbSUrc4Vua" resolve="Style" />
+                            <ref role="37wK5l" node="6VbSUrc4V$e" resolve="setTextToScreen" />
+                            <node concept="Xl_RD" id="48dyn_ZiQ2M" role="37wK5m">
+                              <property role="Xl_RC" value="End of Call" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="48dyn_ZiQ2N" role="3cqZAp">
+                          <node concept="37vLTI" id="48dyn_ZiQ2O" role="3clFbG">
+                            <node concept="3clFbT" id="48dyn_ZiQ2P" role="37vLTx">
+                              <property role="3clFbU" value="true" />
+                            </node>
+                            <node concept="10M0yZ" id="48dyn_ZiQ2Q" role="37vLTJ">
+                              <ref role="1PxDUh" node="2Bi0dpyCD0T" resolve="Variables" />
+                              <ref role="3cqZAo" node="6VbSUrc4RdI" resolve="finished" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3cpWs6" id="48dyn_ZiQ2T" role="3cqZAp" />
+                      </node>
+                      <node concept="2OqwBi" id="48dyn_ZiP_Z" role="3eO9$A">
+                        <node concept="2OqwBi" id="48dyn_ZiPA0" role="2Oq$k0">
+                          <node concept="37vLTw" id="48dyn_ZiPA1" role="2Oq$k0">
+                            <ref role="3cqZAo" node="5mb0yBfID1E" resolve="currentEvent" />
+                          </node>
+                          <node concept="2OwXpG" id="48dyn_ZiPA2" role="2OqNvi">
+                            <ref role="2Oxat5" node="3_1GZis4X24" resolve="action" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="48dyn_ZiPA3" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <node concept="Xl_RD" id="48dyn_ZiPA4" role="37wK5m">
+                            <property role="Xl_RC" value="hangUp" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3eNFk2" id="48dyn_ZiY9y" role="3eNLev">
+                      <node concept="3clFbS" id="48dyn_ZiY9z" role="3eOfB_">
+                        <node concept="3clFbF" id="48dyn_Zj8dm" role="3cqZAp">
+                          <node concept="2OqwBi" id="48dyn_Zj8dn" role="3clFbG">
+                            <node concept="2OqwBi" id="48dyn_Zj8do" role="2Oq$k0">
+                              <node concept="10M0yZ" id="48dyn_Zj8dp" role="2Oq$k0">
+                                <ref role="3cqZAo" node="6VbSUrc4QmS" resolve="voice" />
+                                <ref role="1PxDUh" node="2Bi0dpyCD0T" resolve="Variables" />
+                              </node>
+                              <node concept="liA8E" id="48dyn_Zj8dq" role="2OqNvi">
+                                <ref role="37wK5l" node="6alSDtAKAit" resolve="addText" />
+                                <node concept="2OqwBi" id="48dyn_Zj8dr" role="37wK5m">
+                                  <node concept="37vLTw" id="48dyn_Zj8ds" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="5mb0yBfID1E" resolve="currentEvent" />
+                                  </node>
+                                  <node concept="2OwXpG" id="48dyn_Zj8dt" role="2OqNvi">
+                                    <ref role="2Oxat5" node="3_1GZis4X27" resolve="toast" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="48dyn_Zj8du" role="2OqNvi">
+                              <ref role="37wK5l" node="6alSDtAKAiI" resolve="speak" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="48dyn_ZiY9F" role="3cqZAp">
+                          <node concept="2YIFZM" id="48dyn_ZiY9G" role="3clFbG">
+                            <ref role="1Pybhc" node="6VbSUrc4Vua" resolve="Style" />
+                            <ref role="37wK5l" node="6VbSUrc4V$e" resolve="setTextToScreen" />
+                            <node concept="Xl_RD" id="48dyn_ZiY9H" role="37wK5m">
+                              <property role="Xl_RC" value="Recording" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="48dyn_ZiY9I" role="3cqZAp">
+                          <node concept="37vLTI" id="48dyn_ZiY9J" role="3clFbG">
+                            <node concept="3clFbT" id="48dyn_ZiY9K" role="37vLTx">
+                              <property role="3clFbU" value="true" />
+                            </node>
+                            <node concept="10M0yZ" id="48dyn_ZiY9L" role="37vLTJ">
+                              <ref role="1PxDUh" node="2Bi0dpyCD0T" resolve="Variables" />
+                              <ref role="3cqZAo" node="6VbSUrc4RdI" resolve="finished" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3cpWs6" id="48dyn_ZiY9M" role="3cqZAp" />
+                      </node>
+                      <node concept="2OqwBi" id="48dyn_ZiY9N" role="3eO9$A">
+                        <node concept="2OqwBi" id="48dyn_ZiY9O" role="2Oq$k0">
+                          <node concept="37vLTw" id="48dyn_ZiY9P" role="2Oq$k0">
+                            <ref role="3cqZAo" node="5mb0yBfID1E" resolve="currentEvent" />
+                          </node>
+                          <node concept="2OwXpG" id="48dyn_ZiY9Q" role="2OqNvi">
+                            <ref role="2Oxat5" node="3_1GZis4X24" resolve="action" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="48dyn_ZiY9R" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <node concept="Xl_RD" id="48dyn_ZiY9S" role="37wK5m">
+                            <property role="Xl_RC" value="record" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="5mb0yBfIcHM" role="3clFbx">
+                    <node concept="3clFbF" id="48dyn_Zj7u2" role="3cqZAp">
+                      <node concept="2OqwBi" id="48dyn_Zj7u3" role="3clFbG">
+                        <node concept="2OqwBi" id="48dyn_Zj7u4" role="2Oq$k0">
+                          <node concept="10M0yZ" id="48dyn_Zj7u5" role="2Oq$k0">
+                            <ref role="1PxDUh" node="2Bi0dpyCD0T" resolve="Variables" />
+                            <ref role="3cqZAo" node="6VbSUrc4QmS" resolve="voice" />
+                          </node>
+                          <node concept="liA8E" id="48dyn_Zj7u6" role="2OqNvi">
+                            <ref role="37wK5l" node="6alSDtAKAit" resolve="addText" />
+                            <node concept="2OqwBi" id="48dyn_Zj7u7" role="37wK5m">
+                              <node concept="37vLTw" id="48dyn_Zj7u8" role="2Oq$k0">
+                                <ref role="3cqZAo" node="5mb0yBfID1E" resolve="currentEvent" />
+                              </node>
+                              <node concept="2OwXpG" id="48dyn_Zj7u9" role="2OqNvi">
+                                <ref role="2Oxat5" node="3_1GZis4X27" resolve="toast" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="48dyn_Zj7ua" role="2OqNvi">
                           <ref role="37wK5l" node="6alSDtAKAiI" resolve="speak" />
                         </node>
                       </node>
@@ -3288,7 +3427,6 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbH" id="5mb0yBfK0rW" role="3cqZAp" />
                   <node concept="3cpWs6" id="5mb0yBfIcHH" role="3cqZAp" />
                 </node>
               </node>

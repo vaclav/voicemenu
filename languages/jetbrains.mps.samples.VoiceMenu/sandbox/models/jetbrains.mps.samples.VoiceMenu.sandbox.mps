@@ -6,8 +6,7 @@
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" version="-1" />
-    <engage id="e2a803a4-d4b8-43eb-b458-517effd2a87f" name="jetbrains.mps.samples.VoiceMenuToAsterisk" />
-    <engage id="750ae49d-4f57-400c-b5dc-2b58c1e3f9a9" name="jetbrains.mps.samples.VoiceMenuToXML" />
+    <engage id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" />
   </languages>
   <imports>
     <import index="ibtu" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#427a473d-5177-432c-9905-bcbceb71b996(jetbrains.mps.lang.project.modules/module.jetbrains.mps.build.mps.runner@project_stub)" />
@@ -32,6 +31,8 @@
         <property id="3919338464396137862" name="toolbar" index="1EJLKn" />
         <child id="6587365532662629611" name="bodyMenu" index="2JqgbB" />
       </concept>
+      <concept id="4759611536116094710" name="jetbrains.mps.samples.VoiceMenu.structure.Record" flags="ng" index="X09Yf" />
+      <concept id="4759611536116094683" name="jetbrains.mps.samples.VoiceMenu.structure.HangUp" flags="ng" index="X09Yy" />
       <concept id="6772988411135920843" name="jetbrains.mps.samples.VoiceMenu.structure.GetInfo" flags="ng" index="1$pBvo" />
       <concept id="6772988411135920842" name="jetbrains.mps.samples.VoiceMenu.structure.Back" flags="ng" index="1$pBvp" />
       <concept id="6772988411135920841" name="jetbrains.mps.samples.VoiceMenu.structure.Other" flags="ng" index="1$pBvq" />
@@ -67,6 +68,11 @@
       <node concept="2C_Ik0" id="2w$I9I9URiB" role="2C_I24">
         <property role="2C_Iks" value="5" />
         <property role="TrG5h" value="Other requirements" />
+      </node>
+      <node concept="2C_Ik0" id="48dyn_ZgF14" role="2C_I24">
+        <property role="2C_Iks" value="6" />
+        <property role="TrG5h" value="Record Message" />
+        <ref role="D9pxj" node="48dyn_ZgF1b" />
       </node>
       <node concept="2C_I21" id="2w$I9I9URiH" role="2C_I26">
         <property role="3upAMh" value="Did you know that our internet is faster than ever?" />
@@ -121,10 +127,19 @@
             <property role="2C_Iks" value="*" />
             <property role="TrG5h" value="Return to main menu" />
           </node>
+          <node concept="2C_Ik0" id="48dyn_ZgF26" role="2C_I24">
+            <property role="2C_Iks" value="3" />
+            <property role="TrG5h" value="Exit" />
+          </node>
           <node concept="2C_I21" id="2w$I9I9VH5u" role="2C_I26">
             <property role="3upAMh" value="Going back to the previous menu." />
             <ref role="2C_gVZ" node="2w$I9I9VH5q" resolve="Return to main menu" />
             <node concept="1$pBvp" id="2w$I9I9VH5K" role="2C_gVu" />
+          </node>
+          <node concept="2C_I21" id="48dyn_ZgF2b" role="2C_I26">
+            <property role="3upAMh" value="We are sorry, that you are leaving this menu. Looking forward to hear you again. Goodbye." />
+            <ref role="2C_gVZ" node="48dyn_ZgF26" resolve="Exit" />
+            <node concept="X09Yy" id="48dyn_ZgF2w" role="2C_gVu" />
           </node>
         </node>
       </node>
@@ -181,6 +196,7 @@
             <property role="TrG5h" value="Summer News" />
           </node>
           <node concept="2C_I21" id="2w$I9Ia1nSN" role="2C_I26">
+            <property role="3upAMh" value="Direct call has begun" />
             <ref role="2C_gVZ" node="2w$I9Ia1nSJ" resolve="Summer News" />
             <node concept="1$pBvr" id="2w$I9Ia1nTj" role="2C_gVu" />
           </node>
@@ -204,8 +220,14 @@
         </node>
       </node>
       <node concept="2C_I21" id="2w$I9I9URjn" role="2C_I26">
+        <property role="3upAMh" value="You just entered section of special services. Good Luck" />
         <ref role="2C_gVZ" node="2w$I9I9URiB" resolve="Other requirements" />
         <node concept="1$pBvq" id="2w$I9Ia1nSB" role="2C_gVu" />
+      </node>
+      <node concept="2C_I21" id="48dyn_ZgF1b" role="2C_I26">
+        <property role="3upAMh" value="If you want to leave us message, now it's you chance." />
+        <ref role="2C_gVZ" node="48dyn_ZgF14" resolve="Record Message" />
+        <node concept="X09Yf" id="48dyn_ZgF23" role="2C_gVu" />
       </node>
     </node>
   </node>
