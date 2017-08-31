@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="jetbrains.mps.samples.Text.textGen.Argument_TextGen" file="Argument_TextGen.java">
+  <dependency className="jetbrains.mps.samples.Text.textGen.Body_TextGen" file="Body_TextGen.java">
     <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
     <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
   <dependency className="jetbrains.mps.samples.Text.textGen.Comment_TextGen" file="Comment_TextGen.java">
@@ -39,6 +40,24 @@
     <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
+  <dependency className="jetbrains.mps.samples.Text.textGen.GeneralFunction_TextGen" file="GeneralFunction_TextGen.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
+  </dependency>
+  <dependency className="jetbrains.mps.samples.Text.textGen.GoTo_TextGen" file="GoTo_TextGen.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
+  </dependency>
   <dependency className="jetbrains.mps.samples.Text.textGen.Same_TextGen" file="Same_TextGen.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
@@ -52,11 +71,13 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.samples.Text.structure.LanguageConceptSwitch" />
-    <classNode dependClassName="jetbrains.mps.samples.Text.textGen.Argument_TextGen" />
+    <classNode dependClassName="jetbrains.mps.samples.Text.textGen.Body_TextGen" />
     <classNode dependClassName="jetbrains.mps.samples.Text.textGen.Comment_TextGen" />
     <classNode dependClassName="jetbrains.mps.samples.Text.textGen.Context_TextGen" />
     <classNode dependClassName="jetbrains.mps.samples.Text.textGen.Empty_TextGen" />
     <classNode dependClassName="jetbrains.mps.samples.Text.textGen.Extend_TextGen" />
+    <classNode dependClassName="jetbrains.mps.samples.Text.textGen.GeneralFunction_TextGen" />
+    <classNode dependClassName="jetbrains.mps.samples.Text.textGen.GoTo_TextGen" />
     <classNode dependClassName="jetbrains.mps.samples.Text.textGen.Same_TextGen" />
     <classNode dependClassName="jetbrains.mps.samples.Text.textGen.WorkSpace_TextGen" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />

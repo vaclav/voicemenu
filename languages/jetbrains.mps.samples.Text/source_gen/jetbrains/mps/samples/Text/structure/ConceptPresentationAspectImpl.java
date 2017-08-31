@@ -10,11 +10,14 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_Argument;
+  private ConceptPresentation props_Body;
   private ConceptPresentation props_Command;
   private ConceptPresentation props_Comment;
   private ConceptPresentation props_Context;
   private ConceptPresentation props_Empty;
   private ConceptPresentation props_Extend;
+  private ConceptPresentation props_GeneralFunction;
+  private ConceptPresentation props_GoTo;
   private ConceptPresentation props_PlainText;
   private ConceptPresentation props_Same;
   private ConceptPresentation props_WorkSpace;
@@ -27,10 +30,16 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Argument:
         if (props_Argument == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Argument");
           props_Argument = cpb.create();
         }
         return props_Argument;
+      case LanguageConceptSwitch.Body:
+        if (props_Body == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Body");
+          props_Body = cpb.create();
+        }
+        return props_Body;
       case LanguageConceptSwitch.Command:
         if (props_Command == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -65,6 +74,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Extend = cpb.create();
         }
         return props_Extend;
+      case LanguageConceptSwitch.GeneralFunction:
+        if (props_GeneralFunction == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("GeneralFunction");
+          props_GeneralFunction = cpb.create();
+        }
+        return props_GeneralFunction;
+      case LanguageConceptSwitch.GoTo:
+        if (props_GoTo == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("GoTo");
+          props_GoTo = cpb.create();
+        }
+        return props_GoTo;
       case LanguageConceptSwitch.PlainText:
         if (props_PlainText == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

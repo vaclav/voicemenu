@@ -22,8 +22,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
   @Override
   public TextGenDescriptor getDescriptor(@NotNull SAbstractConcept concept) {
     switch (myIndex.index(concept)) {
-      case LanguageConceptSwitch.Argument:
-        return new Argument_TextGen();
+      case LanguageConceptSwitch.Body:
+        return new Body_TextGen();
       case LanguageConceptSwitch.Comment:
         return new Comment_TextGen();
       case LanguageConceptSwitch.Context:
@@ -32,6 +32,10 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new Empty_TextGen();
       case LanguageConceptSwitch.Extend:
         return new Extend_TextGen();
+      case LanguageConceptSwitch.GeneralFunction:
+        return new GeneralFunction_TextGen();
+      case LanguageConceptSwitch.GoTo:
+        return new GoTo_TextGen();
       case LanguageConceptSwitch.Same:
         return new Same_TextGen();
       case LanguageConceptSwitch.WorkSpace:
