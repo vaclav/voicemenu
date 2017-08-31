@@ -36,7 +36,9 @@
       <concept id="6772988411135920843" name="jetbrains.mps.samples.VoiceMenu.structure.GetInfo" flags="ng" index="1$pBvo" />
       <concept id="6772988411135920842" name="jetbrains.mps.samples.VoiceMenu.structure.Back" flags="ng" index="1$pBvp" />
       <concept id="6772988411135920841" name="jetbrains.mps.samples.VoiceMenu.structure.Other" flags="ng" index="1$pBvq" />
-      <concept id="6772988411135920840" name="jetbrains.mps.samples.VoiceMenu.structure.DirectCall" flags="ng" index="1$pBvr" />
+      <concept id="6772988411135920840" name="jetbrains.mps.samples.VoiceMenu.structure.DirectCall" flags="ng" index="1$pBvr">
+        <property id="4759611536120921316" name="isNotFinite" index="XmNmt" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -93,7 +95,9 @@
               <node concept="2C_I21" id="2w$I9I9VzAc" role="2C_I26">
                 <property role="3upAMh" value="Don't worry, while waiting you will listen your calm music." />
                 <ref role="2C_gVZ" node="2w$I9I9VzA8" resolve="Summer discount" />
-                <node concept="1$pBvr" id="54keEMK2IqT" role="2C_gVu" />
+                <node concept="1$pBvr" id="54keEMK2IqT" role="2C_gVu">
+                  <property role="XmNmt" value="false" />
+                </node>
               </node>
               <node concept="2C_Ik0" id="2w$I9I9VzAl" role="2C_I24">
                 <property role="2C_Iks" value="2" />
@@ -241,8 +245,8 @@
         <ref role="2C_gVZ" node="54keEMKoACO" resolve="One" />
         <node concept="2C_Ik4" id="6sDFiMPeKz$" role="2C_gVu">
           <node concept="2C_Ik0" id="6sDFiMPeKz_" role="2C_I24">
-            <property role="2C_Iks" value="1" />
             <property role="TrG5h" value="One" />
+            <property role="2C_Iks" value="D" />
             <ref role="D9pxj" node="6sDFiMPeKzS" />
           </node>
           <node concept="2C_Ik0" id="6sDFiMPeKzD" role="2C_I24">

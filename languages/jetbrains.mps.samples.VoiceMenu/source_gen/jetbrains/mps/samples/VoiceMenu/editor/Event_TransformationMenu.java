@@ -780,6 +780,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
         ListSequence.fromList(list).addElement("0");
         ListSequence.fromList(list).addElement("*");
         ListSequence.fromList(list).addElement("#");
+        ListSequence.fromList(list).addElement("D");
 
         for (SNode event : array) {
 
@@ -827,6 +828,9 @@ public class Event_TransformationMenu extends TransformationMenuBase {
           @Nullable
           @Override
           public String getLabelText(String pattern) {
+            if (myParameterObject.equals("D")) {
+              return "Default";
+            }
             return myParameterObject;
           }
 

@@ -2101,5 +2101,52 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="48dyn_ZuNYn">
+    <property role="TrG5h" value="FiniteDirectCall" />
+    <ref role="2ZfgGC" to="xehl:5RYvhcTA0F8" resolve="DirectCall" />
+    <node concept="2S6ZIM" id="48dyn_ZuNYo" role="2ZfVej">
+      <node concept="3clFbS" id="48dyn_ZuNYp" role="2VODD2">
+        <node concept="3clFbF" id="48dyn_ZuW9V" role="3cqZAp">
+          <node concept="Xl_RD" id="48dyn_ZuW9U" role="3clFbG">
+            <property role="Xl_RC" value="Set as not Finite" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="48dyn_ZuNYq" role="2ZfgGD">
+      <node concept="3clFbS" id="48dyn_ZuNYr" role="2VODD2">
+        <node concept="3clFbF" id="48dyn_Zv01A" role="3cqZAp">
+          <node concept="37vLTI" id="48dyn_Zv1aX" role="3clFbG">
+            <node concept="3clFbT" id="48dyn_Zv1dE" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="48dyn_Zv09U" role="37vLTJ">
+              <node concept="2Sf5sV" id="48dyn_Zv01_" role="2Oq$k0" />
+              <node concept="3TrcHB" id="48dyn_Zv0zz" role="2OqNvi">
+                <ref role="3TsBF5" to="xehl:48dyn_ZlFN$" resolve="isNotFinite" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="48dyn_ZuXJQ" role="2ZfVeh">
+      <node concept="3clFbS" id="48dyn_ZuXJR" role="2VODD2">
+        <node concept="3clFbF" id="48dyn_ZuXSc" role="3cqZAp">
+          <node concept="3clFbC" id="48dyn_ZuZ8i" role="3clFbG">
+            <node concept="3clFbT" id="48dyn_ZuZs8" role="3uHU7w">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="48dyn_ZuY5V" role="3uHU7B">
+              <node concept="2Sf5sV" id="48dyn_ZuXSb" role="2Oq$k0" />
+              <node concept="3TrcHB" id="48dyn_ZuYpV" role="2OqNvi">
+                <ref role="3TsBF5" to="xehl:48dyn_ZlFN$" resolve="isNotFinite" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
