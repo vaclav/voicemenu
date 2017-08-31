@@ -53,6 +53,7 @@
   </dependency>
   <dependency className="JavaVoiceMenu.runtime.UniVoice" file="UniVoice.java">
     <classNode dependClassName="com.sun.speech.freetts.Voice" />
+    <classNode dependClassName="com.sun.speech.freetts.VoiceManager" />
     <classNode dependClassName="java.io.IOException" />
     <classNode dependClassName="java.lang.Process" />
     <classNode dependClassName="java.lang.String" />
@@ -71,6 +72,7 @@
   </dependency>
   <dependency className="JavaVoiceMenu.runtime.WinVoice" file="WinVoice.java">
     <classNode dependClassName="com.sun.speech.freetts.Voice" />
+    <classNode dependClassName="com.sun.speech.freetts.VoiceManager" />
     <classNode dependClassName="java.io.IOException" />
     <classNode dependClassName="java.lang.Process" />
     <classNode dependClassName="java.lang.String" />
