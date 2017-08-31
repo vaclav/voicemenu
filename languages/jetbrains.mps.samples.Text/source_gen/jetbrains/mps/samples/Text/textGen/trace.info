@@ -165,11 +165,11 @@
     <file name="GoTo_TextGen.java">
       <node id="479456951538941908" at="14,54,15,55" concept="4" />
       <node id="479456951538941908" at="15,55,16,20" concept="0" />
-      <node id="479456951538941908" at="16,20,17,340" concept="0" />
+      <node id="479456951538941908" at="16,20,17,501" concept="0" />
       <node id="479456951538953624" at="18,204,19,194" concept="0" />
       <node id="479456951539058253" at="20,5,21,20" concept="0" />
       <node id="479456951538953469" at="23,55,24,43" concept="5" />
-      <node id="479456951538947041" at="17,340,20,5" concept="2" />
+      <node id="479456951538947041" at="17,501,20,5" concept="2" />
       <node id="479456951538953469" at="23,0,26,0" concept="6" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
       <node id="479456951538941908" at="13,0,23,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="479456951538947043" at="18,204,19,194" />

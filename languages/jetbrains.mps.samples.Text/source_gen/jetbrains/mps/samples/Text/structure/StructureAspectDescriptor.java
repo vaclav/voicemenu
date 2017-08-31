@@ -17,6 +17,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptCommand = createDescriptorForCommand();
   /*package*/ final ConceptDescriptor myConceptComment = createDescriptorForComment();
   /*package*/ final ConceptDescriptor myConceptContext = createDescriptorForContext();
+  /*package*/ final ConceptDescriptor myConceptContextReference = createDescriptorForContextReference();
   /*package*/ final ConceptDescriptor myConceptEmpty = createDescriptorForEmpty();
   /*package*/ final ConceptDescriptor myConceptExtend = createDescriptorForExtend();
   /*package*/ final ConceptDescriptor myConceptGeneralFunction = createDescriptorForGeneralFunction();
@@ -32,7 +33,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptArgument, myConceptBody, myConceptCommand, myConceptComment, myConceptContext, myConceptEmpty, myConceptExtend, myConceptGeneralFunction, myConceptGoTo, myConceptPlainText, myConceptSame, myConceptWorkSpace);
+    return Arrays.asList(myConceptArgument, myConceptBody, myConceptCommand, myConceptComment, myConceptContext, myConceptContextReference, myConceptEmpty, myConceptExtend, myConceptGeneralFunction, myConceptGoTo, myConceptPlainText, myConceptSame, myConceptWorkSpace);
   }
 
   @Override
@@ -49,6 +50,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptComment;
       case LanguageConceptSwitch.Context:
         return myConceptContext;
+      case LanguageConceptSwitch.ContextReference:
+        return myConceptContextReference;
       case LanguageConceptSwitch.Empty:
         return myConceptEmpty;
       case LanguageConceptSwitch.Extend:
@@ -107,6 +110,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:5e8e0652-8a9b-4dc5-a599-f2416177a2d1(jetbrains.mps.samples.Text.structure)/1416608923407654241");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForContextReference() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.samples.Text", "ContextReference", 0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x6a75f8ea1a2e649L);
+    b.class_(false, false, false);
+    b.origin("r:5e8e0652-8a9b-4dc5-a599-f2416177a2d1(jetbrains.mps.samples.Text.structure)/479456951540049481");
+    b.associate("context", 0x6a75f8ea1a2e64aL).target(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f715c9d61L).optional(false).origin("479456951540049482").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForEmpty() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.samples.Text", "Empty", 0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f7160944aL);
     b.class_(false, false, false);
@@ -140,7 +150,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("jetbrains.mps.samples.Text.structure.Argument", 0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f715c9dbdL);
     b.origin("r:5e8e0652-8a9b-4dc5-a599-f2416177a2d1(jetbrains.mps.samples.Text.structure)/479456951538852001");
     b.prop("value", 0x6a75f8ea190a0a4L, "479456951538852004");
-    b.associate("context", 0x6a75f8ea1935af1L).target(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f715c9d61L).optional(false).origin("479456951539030769").done();
+    b.aggregate("reference", 0x6a75f8ea1a339e5L).target(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x6a75f8ea1a2e649L).optional(true).ordered(true).multiple(false).origin("479456951540070885").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPlainText() {

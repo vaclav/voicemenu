@@ -5,28 +5,42 @@ package main;
 import jetbrains.mps.generator.runtime.Generated;
 import jetbrains.mps.generator.template.PropertyMacroContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.generator.template.ReferenceMacroContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodeContext;
-import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
 
 @Generated
 public class QueriesGenerated {
-  public static Object propertyMacro_GetPropertyValue_479456951538987641(final PropertyMacroContext _context) {
-    return _context.createUniqueName(SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")), null);
+  public static Object propertyMacro_GetPropertyValue_479456951540086333(final PropertyMacroContext _context) {
+    return _context.createUniqueName(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")), null);
   }
-  public static Object propertyMacro_GetPropertyValue_479456951539974196(final PropertyMacroContext _context) {
+  public static Object propertyMacro_GetPropertyValue_479456951540163442(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"));
+  }
+  public static Object referenceMacro_GetReferent_479456951540152473(final ReferenceMacroContext _context) {
+    return _context.getOutputNodeByInputNodeAndMappingLabel(_context.getNode(), "Event");
   }
   public static SNode sourceNodeQuery_479456951538974395(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x5b6b060cf40204ebL, "bodyMenu"));
   }
+  public static SNode sourceNodeQuery_479456951540208672(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event"));
+  }
+  public static SNode sourceNodeQuery_479456951541050843(final SourceSubstituteMacroNodeContext _context) {
+    return Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getChildren(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d133997fdc5L, "jetbrains.mps.samples.VoiceMenu.structure.Action"))).first();
+  }
+  public static SNode sourceNodeQuery_479456951540178157(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08d2L, "commands"));
+  }
   public static Iterable<SNode> sourceNodesQuery_2493374653982037920(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities"));
   }
-  public static Iterable<SNode> sourceNodesQuery_479456951539952732(final SourceSubstituteMacroNodesContext _context) {
+  public static Iterable<SNode> sourceNodesQuery_479456951540135426(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.collectMany(SNodeOperations.ofConcept(SNodeOperations.getChildren(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"));
   }
 }
