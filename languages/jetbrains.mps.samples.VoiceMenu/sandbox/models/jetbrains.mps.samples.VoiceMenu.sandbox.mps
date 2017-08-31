@@ -31,11 +31,17 @@
         <property id="3919338464396137862" name="toolbar" index="1EJLKn" />
         <child id="6587365532662629611" name="bodyMenu" index="2JqgbB" />
       </concept>
-      <concept id="4759611536116094710" name="jetbrains.mps.samples.VoiceMenu.structure.Record" flags="ng" index="X09Yf" />
+      <concept id="4759611536116094710" name="jetbrains.mps.samples.VoiceMenu.structure.Record" flags="ng" index="X09Yf">
+        <property id="4759611536120921491" name="isFinal" index="XmNjE" />
+      </concept>
       <concept id="4759611536116094683" name="jetbrains.mps.samples.VoiceMenu.structure.HangUp" flags="ng" index="X09Yy" />
-      <concept id="6772988411135920843" name="jetbrains.mps.samples.VoiceMenu.structure.GetInfo" flags="ng" index="1$pBvo" />
+      <concept id="6772988411135920843" name="jetbrains.mps.samples.VoiceMenu.structure.GetInfo" flags="ng" index="1$pBvo">
+        <property id="4759611536120921399" name="isFinal" index="XmNhe" />
+      </concept>
       <concept id="6772988411135920842" name="jetbrains.mps.samples.VoiceMenu.structure.Back" flags="ng" index="1$pBvp" />
-      <concept id="6772988411135920841" name="jetbrains.mps.samples.VoiceMenu.structure.Other" flags="ng" index="1$pBvq" />
+      <concept id="6772988411135920841" name="jetbrains.mps.samples.VoiceMenu.structure.Other" flags="ng" index="1$pBvq">
+        <property id="4759611536120921574" name="isFinal" index="XmNiv" />
+      </concept>
       <concept id="6772988411135920840" name="jetbrains.mps.samples.VoiceMenu.structure.DirectCall" flags="ng" index="1$pBvr">
         <property id="4759611536120921316" name="isFinal" index="XmNmt" />
       </concept>
@@ -190,7 +196,9 @@
       </node>
       <node concept="2C_I21" id="2w$I9I9URj3" role="2C_I26">
         <ref role="2C_gVZ" node="2w$I9I9URiu" resolve="Roaming" />
-        <node concept="1$pBvo" id="2w$I9Ia1nTs" role="2C_gVu" />
+        <node concept="1$pBvo" id="2w$I9Ia1nTs" role="2C_gVu">
+          <property role="XmNhe" value="true" />
+        </node>
       </node>
       <node concept="2C_I21" id="2w$I9I9URjc" role="2C_I26">
         <ref role="2C_gVZ" node="2w$I9I9URiy" resolve="News" />
@@ -226,12 +234,16 @@
       <node concept="2C_I21" id="2w$I9I9URjn" role="2C_I26">
         <property role="3upAMh" value="You just entered section of special services. Good Luck" />
         <ref role="2C_gVZ" node="2w$I9I9URiB" resolve="Other requirements" />
-        <node concept="1$pBvq" id="2w$I9Ia1nSB" role="2C_gVu" />
+        <node concept="1$pBvq" id="2w$I9Ia1nSB" role="2C_gVu">
+          <property role="XmNiv" value="true" />
+        </node>
       </node>
       <node concept="2C_I21" id="48dyn_ZgF1b" role="2C_I26">
         <property role="3upAMh" value="If you want to leave us message, now it's you chance." />
         <ref role="2C_gVZ" node="48dyn_ZgF14" resolve="Record Message" />
-        <node concept="X09Yf" id="48dyn_ZgF23" role="2C_gVu" />
+        <node concept="X09Yf" id="48dyn_ZgF23" role="2C_gVu">
+          <property role="XmNjE" value="true" />
+        </node>
       </node>
     </node>
   </node>
@@ -302,6 +314,12 @@
           </node>
         </node>
       </node>
+      <node concept="2C_I21" id="4JcMHpR1ogc" role="2C_I26">
+        <ref role="2C_gVZ" node="4JcMHpR0_Z4" resolve="2" />
+        <node concept="1$pBvr" id="4JcMHpR2j3q" role="2C_gVu">
+          <property role="XmNmt" value="true" />
+        </node>
+      </node>
       <node concept="2C_Ik0" id="54keEMKoACO" role="2C_I24">
         <property role="2C_Iks" value="1" />
         <property role="TrG5h" value="1" />
@@ -309,10 +327,6 @@
       <node concept="2C_Ik0" id="4JcMHpR0_Z4" role="2C_I24">
         <property role="2C_Iks" value="2" />
         <property role="TrG5h" value="2" />
-      </node>
-      <node concept="2C_I21" id="4JcMHpR0_Z7" role="2C_I26">
-        <ref role="2C_gVZ" node="4JcMHpR0_Z4" resolve="2" />
-        <node concept="1$pBvo" id="4JcMHpR0Aii" role="2C_gVu" />
       </node>
     </node>
   </node>
@@ -392,7 +406,9 @@
       </node>
       <node concept="2C_I21" id="6nemK62JSKu" role="2C_I26">
         <ref role="2C_gVZ" node="6nemK62JSKr" resolve="Television" />
-        <node concept="1$pBvo" id="6nemK62KXYn" role="2C_gVu" />
+        <node concept="1$pBvq" id="4JcMHpR2C1B" role="2C_gVu">
+          <property role="XmNiv" value="true" />
+        </node>
       </node>
     </node>
   </node>
