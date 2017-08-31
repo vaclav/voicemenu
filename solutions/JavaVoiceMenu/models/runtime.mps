@@ -13,7 +13,6 @@
     <import index="9z78" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.border(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="oici" ref="r:d8d37b74-a8e1-4a57-a2ee-4a996f4ba158(JavaVoiceMenu.runtime)" />
     <import index="r791" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.text(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="ss6x" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#828f8f6b-2bf3-4a70-82a0-c413d7f22140(jetbrains.mps.lang.project.modules/module.TTSLibrary@project_stub)" />
@@ -3428,7 +3427,6 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbH" id="5mb0yBfK0rW" role="3cqZAp" />
                   <node concept="3cpWs6" id="5mb0yBfIcHH" role="3cqZAp" />
                 </node>
               </node>

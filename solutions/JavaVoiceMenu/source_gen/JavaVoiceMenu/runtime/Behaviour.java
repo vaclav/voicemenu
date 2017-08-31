@@ -46,7 +46,6 @@ public class Behaviour {
         Variables.voice.addText("Direct call has begun").speak();
         Style.setTextToScreen("Direct Call");
         Variables.finished = true;
-
         return;
       } else
       if (currentEvent.action.equals("getInfo")) {
