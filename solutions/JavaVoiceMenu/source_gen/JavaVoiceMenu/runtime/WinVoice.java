@@ -4,6 +4,7 @@ package JavaVoiceMenu.runtime;
 
 import java.io.IOException;
 import com.sun.speech.freetts.Voice;
+import com.sun.speech.freetts.VoiceManager;
 
 public class WinVoice {
   public Process proc;
@@ -14,6 +15,10 @@ public class WinVoice {
    */
   public void speak(String text) throws IOException {
     Voice voice;
+    VoiceManager voiceManager = VoiceManager.getInstance();
+    voice = voiceManager.getVoice("kevin16");
+    voice.allocate();
+    voice.speak(text);
   }
   /**
    * switch voices

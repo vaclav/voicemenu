@@ -45,6 +45,7 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.ActionStyleClass
     editorCell.addEditorCell(createImage_stlc2q_a0());
     editorCell.addEditorCell(createConstant_stlc2q_b0());
     editorCell.addEditorCell(createConstant_stlc2q_c0());
+    editorCell.addEditorCell(createConstant_stlc2q_d0());
     return editorCell;
   }
   private EditorCell createImage_stlc2q_a0() {
@@ -75,6 +76,15 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.ActionStyleClass
     Style style = new StyleImpl();
     new ActionStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_stlc2q_d0() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "  [F]");
+    editorCell.setCellId("Constant_stlc2q_d0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;

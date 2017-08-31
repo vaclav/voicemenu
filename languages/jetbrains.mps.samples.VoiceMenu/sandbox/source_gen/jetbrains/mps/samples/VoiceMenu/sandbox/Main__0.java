@@ -44,7 +44,7 @@ public class Main__0 implements ActionListener {
     var_qy4hiv_a0a0.setGreeting("");
     var_qy4hiv_a0a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("011", var_qy4hiv_a0a0);
-    var_qy4hiv_a0a0.setAction("record");
+    var_qy4hiv_a0a0.setAction("call");
     var_qy4hiv_a0a0.childs = new ArrayList<Event>();
     Event var_qy4hiv_b0a0 = new Event("Two", "2");
     var_qy4hiv_b0a0.setAction("");
