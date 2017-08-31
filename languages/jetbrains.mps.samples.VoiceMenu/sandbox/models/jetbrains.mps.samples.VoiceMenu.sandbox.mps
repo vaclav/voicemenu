@@ -6,7 +6,7 @@
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" version="-1" />
-    <engage id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" />
+    <engage id="e2a803a4-d4b8-43eb-b458-517effd2a87f" name="jetbrains.mps.samples.VoiceMenuToAsterisk" />
   </languages>
   <imports>
     <import index="ibtu" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#427a473d-5177-432c-9905-bcbceb71b996(jetbrains.mps.lang.project.modules/module.jetbrains.mps.build.mps.runner@project_stub)" />
@@ -31,8 +31,6 @@
         <property id="3919338464396137862" name="toolbar" index="1EJLKn" />
         <child id="6587365532662629611" name="bodyMenu" index="2JqgbB" />
       </concept>
-      <concept id="4759611536116094710" name="jetbrains.mps.samples.VoiceMenu.structure.Record" flags="ng" index="X09Yf" />
-      <concept id="4759611536116094683" name="jetbrains.mps.samples.VoiceMenu.structure.HangUp" flags="ng" index="X09Yy" />
       <concept id="6772988411135920843" name="jetbrains.mps.samples.VoiceMenu.structure.GetInfo" flags="ng" index="1$pBvo" />
       <concept id="6772988411135920842" name="jetbrains.mps.samples.VoiceMenu.structure.Back" flags="ng" index="1$pBvp" />
       <concept id="6772988411135920841" name="jetbrains.mps.samples.VoiceMenu.structure.Other" flags="ng" index="1$pBvq" />
@@ -217,59 +215,31 @@
     <node concept="2C_Ik4" id="1dkJyTcULCV" role="2JqgbB">
       <node concept="2C_I21" id="4matEwaOelE" role="2C_I26">
         <property role="3upAMh" value="" />
-        <ref role="2C_gVZ" node="54keEMKoACO" resolve="eight" />
+        <ref role="2C_gVZ" node="54keEMKoACO" resolve="One" />
         <node concept="2C_Ik4" id="6sDFiMPeKz$" role="2C_gVu">
           <node concept="2C_Ik0" id="6sDFiMPeKz_" role="2C_I24">
             <property role="2C_Iks" value="1" />
-            <property role="TrG5h" value="Action_108" />
+            <property role="TrG5h" value="One" />
             <ref role="D9pxj" node="6sDFiMPeKzS" />
           </node>
           <node concept="2C_Ik0" id="6sDFiMPeKzD" role="2C_I24">
             <property role="2C_Iks" value="2" />
-            <property role="TrG5h" value="Action_117" />
+            <property role="TrG5h" value="Two" />
             <ref role="D9pxj" node="6sDFiMPeKzZ" />
           </node>
           <node concept="2C_I21" id="6sDFiMPeKzS" role="2C_I26">
-            <ref role="2C_gVZ" node="6sDFiMPeKz_" resolve="Action_108" />
+            <ref role="2C_gVZ" node="6sDFiMPeKz_" resolve="One" />
             <node concept="1$pBvq" id="6sDFiMPeK$t" role="2C_gVu" />
           </node>
           <node concept="2C_I21" id="6sDFiMPeKzZ" role="2C_I26">
-            <ref role="2C_gVZ" node="6sDFiMPeKzD" resolve="Action_117" />
-            <node concept="X09Yy" id="48dyn_Z5DDR" role="2C_gVu" />
+            <ref role="2C_gVZ" node="6sDFiMPeKzD" resolve="Two" />
+            <node concept="1$pBvq" id="qBnSUxzX3h" role="2C_gVu" />
           </node>
         </node>
       </node>
-      <node concept="2C_I21" id="4matEwaOelQ" role="2C_I26">
-        <property role="3upAMh" value="" />
-        <ref role="2C_gVZ" node="4matEwaMLmN" resolve="Five" />
-        <node concept="1$pBvq" id="7$6jWp$Hmsk" role="2C_gVu" />
-      </node>
-      <node concept="2C_I21" id="2ABtujyXXex" role="2C_I26">
-        <property role="3upAMh" value="" />
-        <ref role="2C_gVZ" node="2ABtujyXXeq" resolve="nine" />
-        <node concept="1$pBvq" id="7$6jWp$AOSv" role="2C_gVu" />
-      </node>
-      <node concept="2C_Ik0" id="2ABtujyXXeq" role="2C_I24">
-        <property role="TrG5h" value="nine" />
-        <property role="2C_Iks" value="4" />
-        <ref role="D9pxj" node="2ABtujyXXex" />
-      </node>
-      <node concept="2C_Ik0" id="4matEwaMLmN" role="2C_I24">
-        <property role="TrG5h" value="Five" />
-        <property role="2C_Iks" value="5" />
-      </node>
       <node concept="2C_Ik0" id="54keEMKoACO" role="2C_I24">
-        <property role="2C_Iks" value="2" />
-        <property role="TrG5h" value="eight" />
-      </node>
-      <node concept="2C_Ik0" id="48dyn_Z5DE2" role="2C_I24">
         <property role="2C_Iks" value="1" />
-        <property role="TrG5h" value="ss" />
-        <ref role="D9pxj" node="48dyn_Z5DE7" />
-      </node>
-      <node concept="2C_I21" id="48dyn_Z5DE7" role="2C_I26">
-        <ref role="2C_gVZ" node="48dyn_Z5DE2" resolve="ss" />
-        <node concept="X09Yf" id="48dyn_Z5DEq" role="2C_gVu" />
+        <property role="TrG5h" value="One" />
       </node>
     </node>
   </node>
