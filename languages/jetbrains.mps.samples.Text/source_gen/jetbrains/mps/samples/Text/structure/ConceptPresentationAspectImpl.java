@@ -84,7 +84,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.GoTo:
         if (props_GoTo == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("GoTo");
+          cpb.presentationByReference(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x6a75f8ea190a0a1L, 0x6a75f8ea1935af1L, "context", "", "");
           props_GoTo = cpb.create();
         }
         return props_GoTo;

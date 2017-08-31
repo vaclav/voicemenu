@@ -32,7 +32,6 @@
         <property id="3919338464396137862" name="toolbar" index="1EJLKn" />
         <child id="6587365532662629611" name="bodyMenu" index="2JqgbB" />
       </concept>
-      <concept id="4759611536116094710" name="jetbrains.mps.samples.VoiceMenu.structure.Record" flags="ng" index="X09Yf" />
       <concept id="6772988411135920843" name="jetbrains.mps.samples.VoiceMenu.structure.GetInfo" flags="ng" index="1$pBvo" />
       <concept id="6772988411135920842" name="jetbrains.mps.samples.VoiceMenu.structure.Back" flags="ng" index="1$pBvp" />
       <concept id="6772988411135920841" name="jetbrains.mps.samples.VoiceMenu.structure.Other" flags="ng" index="1$pBvq" />
@@ -231,7 +230,7 @@
           </node>
           <node concept="2C_I21" id="6sDFiMPeKzS" role="2C_I26">
             <ref role="2C_gVZ" node="6sDFiMPeKz_" resolve="One" />
-            <node concept="X09Yf" id="48dyn_ZdxEX" role="2C_gVu" />
+            <node concept="1$pBvr" id="qBnSUxA9pi" role="2C_gVu" />
           </node>
           <node concept="2C_I21" id="6sDFiMPeKzZ" role="2C_I26">
             <ref role="2C_gVZ" node="6sDFiMPeKzD" resolve="Two" />
