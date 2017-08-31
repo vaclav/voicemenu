@@ -873,7 +873,7 @@
                       <node concept="liA8E" id="4r" role="2OqNvi">
                         <ref role="37wK5l" to="ze1i:~ConceptPresentationBuilder.rawPresentation(java.lang.String):jetbrains.mps.smodel.runtime.ConceptPresentationBuilder" resolve="rawPresentation" />
                         <node concept="Xl_RD" id="4s" role="37wK5m">
-                          <property role="Xl_RC" value="HangUp" />
+                          <property role="Xl_RC" value="Hang Up" />
                         </node>
                       </node>
                     </node>
@@ -3332,7 +3332,7 @@
             <node concept="liA8E" id="i$" role="2OqNvi">
               <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.alias(java.lang.String):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2" resolve="alias" />
               <node concept="Xl_RD" id="i_" role="37wK5m">
-                <property role="Xl_RC" value="HangUp" />
+                <property role="Xl_RC" value="Hang Up" />
               </node>
             </node>
           </node>

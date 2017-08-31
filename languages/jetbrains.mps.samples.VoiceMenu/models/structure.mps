@@ -200,7 +200,7 @@
     <property role="EcuMT" value="4759611536116094683" />
     <property role="3GE5qa" value="RealActions" />
     <property role="TrG5h" value="HangUp" />
-    <property role="34LRSv" value="HangUp" />
+    <property role="34LRSv" value="Hang Up" />
     <ref role="1TJDcQ" node="5RYvhcT_ZR5" resolve="Action" />
   </node>
   <node concept="1TIwiD" id="48dyn_Z3hrQ">
