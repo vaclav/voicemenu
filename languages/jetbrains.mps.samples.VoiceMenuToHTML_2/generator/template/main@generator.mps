@@ -179,6 +179,18 @@
         <ref role="v9R2y" node="2m0r6rVSzlv" resolve="reduce_Other" />
       </node>
     </node>
+    <node concept="3aamgX" id="48dyn_Ze4KB" role="3acgRq">
+      <ref role="30HIoZ" to="xehl:48dyn_Z3hrQ" resolve="Record" />
+      <node concept="j$656" id="48dyn_Ze4KZ" role="1lVwrX">
+        <ref role="v9R2y" node="48dyn_Ze4KX" resolve="reduce_Record" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="48dyn_Ze4CV" role="3acgRq">
+      <ref role="30HIoZ" to="xehl:48dyn_Z3hrr" resolve="HangUp" />
+      <node concept="j$656" id="48dyn_Ze4Dh" role="1lVwrX">
+        <ref role="v9R2y" node="48dyn_Ze4Df" resolve="reduce_HangUp" />
+      </node>
+    </node>
     <node concept="3lhOvk" id="2m0r6rVRMzb" role="3lj3bC">
       <ref role="30HIoZ" to="xehl:5HF1wNO0wj8" resolve="WorkSpace" />
       <ref role="3lhOvi" node="2m0r6rVRMzx" resolve="map_WorkSpace.html" />
@@ -719,6 +731,40 @@
         <property role="3o6i5n" value="--&gt; [ Empty ]" />
       </node>
       <node concept="raruj" id="12Vp4BTpr2L" role="lGtFl" />
+    </node>
+  </node>
+  <node concept="13MO4I" id="48dyn_Ze4Df">
+    <property role="TrG5h" value="reduce_HangUp" />
+    <ref role="3gUMe" to="xehl:48dyn_Z3hrr" resolve="HangUp" />
+    <node concept="2pNNFK" id="48dyn_Ze4Dk" role="13RCb5">
+      <property role="2pNNFO" value="action" />
+      <node concept="2pNUuL" id="48dyn_Ze4Dl" role="2pNNFR">
+        <property role="2pNUuO" value="style" />
+        <node concept="2pMdtt" id="48dyn_Ze4Dm" role="2pMdts">
+          <property role="2pMdty" value="margin-left: 80px;color:green" />
+        </node>
+      </node>
+      <node concept="3o6iSG" id="48dyn_Ze4Dn" role="3o6s8t">
+        <property role="3o6i5n" value="--&gt; [ Hang Up ]" />
+      </node>
+      <node concept="raruj" id="48dyn_Ze4Do" role="lGtFl" />
+    </node>
+  </node>
+  <node concept="13MO4I" id="48dyn_Ze4KX">
+    <property role="TrG5h" value="reduce_Record" />
+    <ref role="3gUMe" to="xehl:48dyn_Z3hrQ" resolve="Record" />
+    <node concept="2pNNFK" id="48dyn_Ze4L2" role="13RCb5">
+      <property role="2pNNFO" value="action" />
+      <node concept="2pNUuL" id="48dyn_Ze4L3" role="2pNNFR">
+        <property role="2pNUuO" value="style" />
+        <node concept="2pMdtt" id="48dyn_Ze4L4" role="2pMdts">
+          <property role="2pMdty" value="margin-left: 80px;color:green" />
+        </node>
+      </node>
+      <node concept="3o6iSG" id="48dyn_Ze4L5" role="3o6s8t">
+        <property role="3o6i5n" value="--&gt; [ Record ]" />
+      </node>
+      <node concept="raruj" id="48dyn_Ze4L6" role="lGtFl" />
     </node>
   </node>
 </model>

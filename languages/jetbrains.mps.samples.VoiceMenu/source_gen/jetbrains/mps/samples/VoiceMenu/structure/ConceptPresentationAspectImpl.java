@@ -85,7 +85,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.HangUp:
         if (props_HangUp == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("HangUp");
+          cpb.rawPresentation("Hang Up");
           props_HangUp = cpb.create();
         }
         return props_HangUp;

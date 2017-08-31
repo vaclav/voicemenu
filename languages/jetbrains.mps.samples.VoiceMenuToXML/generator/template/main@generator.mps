@@ -145,7 +145,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="2m0r6rVQ3la" role="3acgRq">
-      <ref role="30HIoZ" to="xehl:5RYvhcTA0F8" resolve="Call" />
+      <ref role="30HIoZ" to="xehl:5RYvhcTA0F8" resolve="DirectCall" />
       <node concept="j$656" id="2m0r6rVQ9Jz" role="1lVwrX">
         <ref role="v9R2y" node="2m0r6rVQ9Jx" resolve="reduce_DirectCall" />
       </node>
@@ -170,6 +170,18 @@
       <ref role="30HIoZ" to="xehl:5RYvhcTA0Fa" resolve="Back" />
       <node concept="j$656" id="2m0r6rVQfEd" role="1lVwrX">
         <ref role="v9R2y" node="2m0r6rVQfEb" resolve="reduce_Back" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="48dyn_ZeoLS" role="3acgRq">
+      <ref role="30HIoZ" to="xehl:48dyn_Z3hrr" resolve="HangUp" />
+      <node concept="j$656" id="48dyn_ZeoMc" role="1lVwrX">
+        <ref role="v9R2y" node="48dyn_ZeoMa" resolve="reduce_HangUp" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="48dyn_ZeoMn" role="3acgRq">
+      <ref role="30HIoZ" to="xehl:48dyn_Z3hrQ" resolve="Record" />
+      <node concept="j$656" id="48dyn_ZeoMH" role="1lVwrX">
+        <ref role="v9R2y" node="48dyn_ZeoMF" resolve="reduce_Record" />
       </node>
     </node>
     <node concept="3lhOvk" id="5RYvhcT_ZRS" role="3lj3bC">
@@ -483,7 +495,7 @@
   <node concept="13MO4I" id="2m0r6rVQ9Jx">
     <property role="TrG5h" value="reduce_DirectCall" />
     <property role="3GE5qa" value="RealActions" />
-    <ref role="3gUMe" to="xehl:5RYvhcTA0F8" resolve="Call" />
+    <ref role="3gUMe" to="xehl:5RYvhcTA0F8" resolve="DirectCall" />
     <node concept="2pNNFK" id="2m0r6rVQ9JA" role="13RCb5">
       <property role="2pNNFO" value="action" />
       <node concept="2pNUuL" id="2m0r6rVQ9JG" role="2pNNFR">
@@ -538,6 +550,34 @@
         </node>
       </node>
       <node concept="raruj" id="2m0r6rVQfEj" role="lGtFl" />
+    </node>
+  </node>
+  <node concept="13MO4I" id="48dyn_ZeoMa">
+    <property role="TrG5h" value="reduce_HangUp" />
+    <ref role="3gUMe" to="xehl:48dyn_Z3hrr" resolve="HangUp" />
+    <node concept="2pNNFK" id="48dyn_ZeoMf" role="13RCb5">
+      <property role="2pNNFO" value="action" />
+      <node concept="2pNUuL" id="48dyn_ZeoMg" role="2pNNFR">
+        <property role="2pNUuO" value="name" />
+        <node concept="2pMdtt" id="48dyn_ZeoMh" role="2pMdts">
+          <property role="2pMdty" value="Hang Up" />
+        </node>
+      </node>
+      <node concept="raruj" id="48dyn_ZeoMi" role="lGtFl" />
+    </node>
+  </node>
+  <node concept="13MO4I" id="48dyn_ZeoMF">
+    <property role="TrG5h" value="reduce_Record" />
+    <ref role="3gUMe" to="xehl:48dyn_Z3hrQ" resolve="Record" />
+    <node concept="2pNNFK" id="48dyn_ZeoMK" role="13RCb5">
+      <property role="2pNNFO" value="action" />
+      <node concept="2pNUuL" id="48dyn_ZeoML" role="2pNNFR">
+        <property role="2pNUuO" value="name" />
+        <node concept="2pMdtt" id="48dyn_ZeoMM" role="2pMdts">
+          <property role="2pMdty" value="Record" />
+        </node>
+      </node>
+      <node concept="raruj" id="48dyn_ZeoMN" role="lGtFl" />
     </node>
   </node>
 </model>
