@@ -4,6 +4,7 @@
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="jetbrains.mps.generator.runtime.Generated" />
+    <classNode dependClassName="jetbrains.mps.generator.template.IfMacroContext" />
     <classNode dependClassName="jetbrains.mps.generator.template.PropertyMacroContext" />
     <classNode dependClassName="jetbrains.mps.generator.template.ReferenceMacroContext" />
     <classNode dependClassName="jetbrains.mps.generator.template.SourceSubstituteMacroNodeContext" />
