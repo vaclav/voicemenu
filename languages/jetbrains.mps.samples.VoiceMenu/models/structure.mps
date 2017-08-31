@@ -162,7 +162,7 @@
     <ref role="1TJDcQ" node="5RYvhcT_ZR5" resolve="Action" />
     <node concept="1TJgyi" id="48dyn_ZlFN$" role="1TKVEl">
       <property role="IQ2nx" value="4759611536120921316" />
-      <property role="TrG5h" value="isNotFinite" />
+      <property role="TrG5h" value="isFinal" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
@@ -174,7 +174,7 @@
     <ref role="1TJDcQ" node="5RYvhcT_ZR5" resolve="Action" />
     <node concept="1TJgyi" id="48dyn_ZlFRA" role="1TKVEl">
       <property role="IQ2nx" value="4759611536120921574" />
-      <property role="TrG5h" value="isNotFinite" />
+      <property role="TrG5h" value="isFinal" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
@@ -193,7 +193,7 @@
     <ref role="1TJDcQ" node="5RYvhcT_ZR5" resolve="Action" />
     <node concept="1TJgyi" id="48dyn_ZlFOR" role="1TKVEl">
       <property role="IQ2nx" value="4759611536120921399" />
-      <property role="TrG5h" value="isNotFinite" />
+      <property role="TrG5h" value="isFinal" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
@@ -222,11 +222,11 @@
     <property role="EcuMT" value="4759611536116094710" />
     <property role="3GE5qa" value="RealActions" />
     <property role="TrG5h" value="Record" />
-    <property role="34LRSv" value="Record" />
+    <property role="34LRSv" value="RecordMemo" />
     <ref role="1TJDcQ" node="5RYvhcT_ZR5" resolve="Action" />
     <node concept="1TJgyi" id="48dyn_ZlFQj" role="1TKVEl">
       <property role="IQ2nx" value="4759611536120921491" />
-      <property role="TrG5h" value="isNotFinite" />
+      <property role="TrG5h" value="isFinal" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>

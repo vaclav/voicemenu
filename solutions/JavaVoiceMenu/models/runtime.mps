@@ -17,6 +17,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="ss6x" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#828f8f6b-2bf3-4a70-82a0-c413d7f22140(jetbrains.mps.lang.project.modules/module.TTSLibrary@project_stub)" />
     <import index="ezje" ref="828f8f6b-2bf3-4a70-82a0-c413d7f22140/java:com.sun.speech.freetts(TTSLibrary/)" />
+    <import index="uz8b" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#fdcdc48f-bfd8-4831-aa76-5abac2ffa010(jetbrains.mps.lang.project.modules/module.jetbrains.mps.baseLanguage.jdk8@project_stub)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">

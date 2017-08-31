@@ -106,7 +106,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Record:
         if (props_Record == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Record");
+          cpb.rawPresentation("RecordMemo");
           props_Record = cpb.create();
         }
         return props_Record;

@@ -1065,7 +1065,7 @@
                       <node concept="liA8E" id="5A" role="2OqNvi">
                         <ref role="37wK5l" to="ze1i:~ConceptPresentationBuilder.rawPresentation(java.lang.String):jetbrains.mps.smodel.runtime.ConceptPresentationBuilder" resolve="rawPresentation" />
                         <node concept="Xl_RD" id="5B" role="37wK5m">
-                          <property role="Xl_RC" value="Record" />
+                          <property role="Xl_RC" value="RecordMemo" />
                         </node>
                       </node>
                     </node>
@@ -2810,7 +2810,7 @@
             <node concept="liA8E" id="fD" role="2OqNvi">
               <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.prop(java.lang.String,long,java.lang.String):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2" resolve="prop" />
               <node concept="Xl_RD" id="fE" role="37wK5m">
-                <property role="Xl_RC" value="isNotFinite" />
+                <property role="Xl_RC" value="isFinal" />
               </node>
               <node concept="1adDum" id="fF" role="37wK5m">
                 <property role="1adDun" value="0x420d89797f56bce4L" />
@@ -3234,7 +3234,7 @@
             <node concept="liA8E" id="i2" role="2OqNvi">
               <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.prop(java.lang.String,long,java.lang.String):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2" resolve="prop" />
               <node concept="Xl_RD" id="i3" role="37wK5m">
-                <property role="Xl_RC" value="isNotFinite" />
+                <property role="Xl_RC" value="isFinal" />
               </node>
               <node concept="1adDum" id="i4" role="37wK5m">
                 <property role="1adDun" value="0x420d89797f56bd37L" />
@@ -3757,7 +3757,7 @@
             <node concept="liA8E" id="l0" role="2OqNvi">
               <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.prop(java.lang.String,long,java.lang.String):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2" resolve="prop" />
               <node concept="Xl_RD" id="l1" role="37wK5m">
-                <property role="Xl_RC" value="isNotFinite" />
+                <property role="Xl_RC" value="isFinal" />
               </node>
               <node concept="1adDum" id="l2" role="37wK5m">
                 <property role="1adDun" value="0x420d89797f56bde6L" />
@@ -3893,7 +3893,7 @@
             <node concept="liA8E" id="lL" role="2OqNvi">
               <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.prop(java.lang.String,long,java.lang.String):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2" resolve="prop" />
               <node concept="Xl_RD" id="lM" role="37wK5m">
-                <property role="Xl_RC" value="isNotFinite" />
+                <property role="Xl_RC" value="isFinal" />
               </node>
               <node concept="1adDum" id="lN" role="37wK5m">
                 <property role="1adDun" value="0x420d89797f56bd93L" />
@@ -3912,7 +3912,7 @@
             <node concept="liA8E" id="lR" role="2OqNvi">
               <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.alias(java.lang.String):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2" resolve="alias" />
               <node concept="Xl_RD" id="lS" role="37wK5m">
-                <property role="Xl_RC" value="Record" />
+                <property role="Xl_RC" value="RecordMemo" />
               </node>
             </node>
           </node>

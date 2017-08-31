@@ -113,7 +113,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("jetbrains.mps.samples.VoiceMenu.structure.Action", 0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d133997fdc5L);
     b.origin("r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)/6772988411135920840");
-    b.prop("isNotFinite", 0x420d89797f56bce4L, "4759611536120921316");
+    b.prop("isFinal", 0x420d89797f56bce4L, "4759611536120921316");
     b.alias("Direct call");
     return b.create();
   }
@@ -139,7 +139,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("jetbrains.mps.samples.VoiceMenu.structure.Action", 0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d133997fdc5L);
     b.origin("r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)/6772988411135920843");
-    b.prop("isNotFinite", 0x420d89797f56bd37L, "4759611536120921399");
+    b.prop("isFinal", 0x420d89797f56bd37L, "4759611536120921399");
     b.alias("Get informations");
     return b.create();
   }
@@ -167,7 +167,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("jetbrains.mps.samples.VoiceMenu.structure.Action", 0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d133997fdc5L);
     b.origin("r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)/6772988411135920841");
-    b.prop("isNotFinite", 0x420d89797f56bde6L, "4759611536120921574");
+    b.prop("isFinal", 0x420d89797f56bde6L, "4759611536120921574");
     b.alias("Other");
     return b.create();
   }
@@ -176,8 +176,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("jetbrains.mps.samples.VoiceMenu.structure.Action", 0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d133997fdc5L);
     b.origin("r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)/4759611536116094710");
-    b.prop("isNotFinite", 0x420d89797f56bd93L, "4759611536120921491");
-    b.alias("Record");
+    b.prop("isFinal", 0x420d89797f56bd93L, "4759611536120921491");
+    b.alias("RecordMemo");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForWorkSpace() {

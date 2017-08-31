@@ -37,7 +37,7 @@
       <concept id="6772988411135920842" name="jetbrains.mps.samples.VoiceMenu.structure.Back" flags="ng" index="1$pBvp" />
       <concept id="6772988411135920841" name="jetbrains.mps.samples.VoiceMenu.structure.Other" flags="ng" index="1$pBvq" />
       <concept id="6772988411135920840" name="jetbrains.mps.samples.VoiceMenu.structure.DirectCall" flags="ng" index="1$pBvr">
-        <property id="4759611536120921316" name="isNotFinite" index="XmNmt" />
+        <property id="4759611536120921316" name="isFinal" index="XmNmt" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -245,7 +245,7 @@
         <ref role="2C_gVZ" node="54keEMKoACO" resolve="1" />
         <node concept="2C_Ik4" id="6sDFiMPeKz$" role="2C_gVu">
           <node concept="2C_Ik0" id="6sDFiMPeKz_" role="2C_I24">
-            <property role="2C_Iks" value="D" />
+            <property role="2C_Iks" value="1" />
             <property role="TrG5h" value="11" />
             <ref role="D9pxj" node="6sDFiMPeKzS" />
           </node>
@@ -261,7 +261,7 @@
           </node>
           <node concept="2C_I21" id="6sDFiMPeKzS" role="2C_I26">
             <ref role="2C_gVZ" node="6sDFiMPeKz_" resolve="11" />
-            <node concept="1$pBvq" id="qBnSUxDg8d" role="2C_gVu" />
+            <node concept="1$pBvp" id="4JcMHpQXmPK" role="2C_gVu" />
           </node>
           <node concept="2C_I21" id="qBnSUxL1lR" role="2C_I26">
             <ref role="2C_gVZ" node="qBnSUxL1m6" resolve="13" />
@@ -344,11 +344,15 @@
             <node concept="2C_Ik4" id="6nemK62JSJ9" role="2C_gVu">
               <node concept="2C_I21" id="6nemK62JSJe" role="2C_I26">
                 <ref role="2C_gVZ" node="6nemK62JSJc" resolve="Big Discount" />
-                <node concept="1$pBvr" id="6nemK62JSL9" role="2C_gVu" />
+                <node concept="1$pBvr" id="6nemK62JSL9" role="2C_gVu">
+                  <property role="XmNmt" value="true" />
+                </node>
               </node>
               <node concept="2C_I21" id="6nemK62JSJm" role="2C_I26">
                 <ref role="2C_gVZ" node="6nemK62JSJj" resolve="Small Discount" />
-                <node concept="1$pBvr" id="6nemK62JSJw" role="2C_gVu" />
+                <node concept="1$pBvr" id="6nemK62JSJw" role="2C_gVu">
+                  <property role="XmNmt" value="false" />
+                </node>
               </node>
               <node concept="2C_I21" id="6nemK62JSJW" role="2C_I26">
                 <ref role="2C_gVZ" node="6nemK62JSJS" resolve="Going Back" />

@@ -16,14 +16,14 @@ import java.util.Collections;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 
-public final class FiniteDirectCall_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
+public final class SetAsNotFinalDirectCall_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
-  public FiniteDirectCall_Intention() {
+  public SetAsNotFinalDirectCall_Intention() {
     super(Kind.NORMAL, false, new SNodePointer("r:d92c1500-00d3-4072-866a-5077893293b8(jetbrains.mps.samples.VoiceMenu.intentions)", "4759611536123314071"));
   }
   @Override
   public String getPresentation() {
-    return "FiniteDirectCall";
+    return "SetAsNotFinalDirectCall";
   }
   @Override
   public boolean isApplicable(final SNode node, final EditorContext editorContext) {
@@ -33,7 +33,7 @@ public final class FiniteDirectCall_Intention extends AbstractIntentionDescripto
     return true;
   }
   private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-    return SPropertyOperations.getBoolean(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, 0x420d89797f56bce4L, "isNotFinite")) == true;
+    return eq_fu0bit_a0a0e(SPropertyOperations.getBoolean(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, 0x420d89797f56bce4L, "isFinal")), true);
   }
   @Override
   public boolean isSurroundWith() {
@@ -41,7 +41,7 @@ public final class FiniteDirectCall_Intention extends AbstractIntentionDescripto
   }
   public Collection<IntentionExecutable> instances(final SNode node, final EditorContext context) {
     if (myCachedExecutable == null) {
-      myCachedExecutable = Collections.<IntentionExecutable>singletonList(new FiniteDirectCall_Intention.IntentionImplementation());
+      myCachedExecutable = Collections.<IntentionExecutable>singletonList(new SetAsNotFinalDirectCall_Intention.IntentionImplementation());
     }
     return myCachedExecutable;
   }
@@ -50,15 +50,18 @@ public final class FiniteDirectCall_Intention extends AbstractIntentionDescripto
     }
     @Override
     public String getDescription(final SNode node, final EditorContext editorContext) {
-      return "Set as not Finite";
+      return "Set as not Final";
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, 0x420d89797f56bce4L, "isNotFinite"), "" + (true));
+      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, 0x420d89797f56bce4L, "isFinal"), "" + (false));
     }
     @Override
     public IntentionDescriptor getDescriptor() {
-      return FiniteDirectCall_Intention.this;
+      return SetAsNotFinalDirectCall_Intention.this;
     }
+  }
+  private static boolean eq_fu0bit_a0a0e(Object a, Object b) {
+    return (a != null ? a.equals(b) : a == b);
   }
 }

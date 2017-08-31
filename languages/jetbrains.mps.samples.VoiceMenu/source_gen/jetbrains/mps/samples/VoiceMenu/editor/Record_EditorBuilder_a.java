@@ -54,7 +54,7 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.ActionStyleClass
     return editorCell;
   }
   private boolean nodeCondition_n4bxxp_a4a() {
-    return SPropertyOperations.getBoolean(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, 0x420d89797f56bd93L, "isNotFinite"));
+    return SPropertyOperations.getBoolean(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, 0x420d89797f56bd93L, "isFinal"));
   }
   private EditorCell createImage_n4bxxp_a0() {
     SModule imageModule;
