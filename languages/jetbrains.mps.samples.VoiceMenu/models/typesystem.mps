@@ -22,6 +22,7 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1173175405605" name="jetbrains.mps.baseLanguage.structure.ArrayAccessExpression" flags="nn" index="AH0OO">
         <child id="1173175577737" name="index" index="AHEQo" />
         <child id="1173175590490" name="array" index="AHHXb" />
@@ -472,17 +473,39 @@
               </node>
             </node>
           </node>
-          <node concept="17R0WA" id="48dyn_Zt2lZ" role="3uHU7w">
-            <node concept="2OqwBi" id="48dyn_Zt2m0" role="3uHU7B">
-              <node concept="1YBJjd" id="48dyn_Zt2m1" role="2Oq$k0">
-                <ref role="1YBMHb" node="5HF1wNNZNyB" resolve="event" />
+          <node concept="1eOMI4" id="48dyn_ZDJ4M" role="3uHU7w">
+            <node concept="1Wc70l" id="48dyn_ZDK08" role="1eOMHV">
+              <node concept="17R0WA" id="48dyn_ZE5OA" role="3uHU7w">
+                <node concept="2OqwBi" id="48dyn_ZDVQH" role="3uHU7B">
+                  <node concept="2OqwBi" id="48dyn_ZDKoC" role="2Oq$k0">
+                    <node concept="1YBJjd" id="48dyn_ZDK8p" role="2Oq$k0">
+                      <ref role="1YBMHb" node="5HF1wNNZNyB" resolve="event" />
+                    </node>
+                    <node concept="3TrcHB" id="48dyn_ZDKC4" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="48dyn_ZDWqv" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.toString():java.lang.String" resolve="toString" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="48dyn_ZDLDI" role="3uHU7w">
+                  <property role="Xl_RC" value="Default" />
+                </node>
               </node>
-              <node concept="3TrcHB" id="48dyn_Zt2m2" role="2OqNvi">
-                <ref role="3TsBF5" to="xehl:5HF1wNNZucg" resolve="trigger" />
+              <node concept="17R0WA" id="48dyn_Zt2lZ" role="3uHU7B">
+                <node concept="2OqwBi" id="48dyn_Zt2m0" role="3uHU7B">
+                  <node concept="1YBJjd" id="48dyn_Zt2m1" role="2Oq$k0">
+                    <ref role="1YBMHb" node="5HF1wNNZNyB" resolve="event" />
+                  </node>
+                  <node concept="3TrcHB" id="48dyn_Zt2m2" role="2OqNvi">
+                    <ref role="3TsBF5" to="xehl:5HF1wNNZucg" resolve="trigger" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="48dyn_Zt2m3" role="3uHU7w">
+                  <property role="Xl_RC" value="D" />
+                </node>
               </node>
-            </node>
-            <node concept="Xl_RD" id="48dyn_Zt2m3" role="3uHU7w">
-              <property role="Xl_RC" value="D" />
             </node>
           </node>
         </node>
