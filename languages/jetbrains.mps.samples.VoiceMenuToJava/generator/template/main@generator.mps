@@ -360,6 +360,18 @@
         <ref role="v9R2y" node="1P3iGaPqqyg" resolve="reduce_Other" />
       </node>
     </node>
+    <node concept="3aamgX" id="48dyn_Zerve" role="3acgRq">
+      <ref role="30HIoZ" to="xehl:48dyn_Z3hrr" resolve="HangUp" />
+      <node concept="j$656" id="48dyn_Zer$p" role="1lVwrX">
+        <ref role="v9R2y" node="48dyn_Zer$n" resolve="reduce_HangUp" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="48dyn_Zes8r" role="3acgRq">
+      <ref role="30HIoZ" to="xehl:48dyn_Z3hrQ" resolve="Record" />
+      <node concept="j$656" id="48dyn_Zes8L" role="1lVwrX">
+        <ref role="v9R2y" node="48dyn_Zes8J" resolve="reduce_Record" />
+      </node>
+    </node>
     <node concept="3aamgX" id="5mb0yBfMqm4" role="3acgRq">
       <ref role="30HIoZ" to="xehl:5lu2mvqIsn3" resolve="Empty" />
       <node concept="b5Tf3" id="5mb0yBfMqmJ" role="1lVwrX" />
@@ -1817,6 +1829,111 @@
         <node concept="raruj" id="1P3iGaPqtLD" role="lGtFl" />
       </node>
       <node concept="3clFbH" id="1P3iGaPqtLo" role="3cqZAp" />
+    </node>
+  </node>
+  <node concept="13MO4I" id="48dyn_Zer$n">
+    <property role="TrG5h" value="reduce_HangUp" />
+    <property role="3GE5qa" value="Actions" />
+    <ref role="3gUMe" to="xehl:48dyn_Z3hrr" resolve="HangUp" />
+    <node concept="9aQIb" id="48dyn_Zer$s" role="13RCb5">
+      <node concept="3clFbS" id="48dyn_Zer$t" role="9aQI4">
+        <node concept="3clFbF" id="48dyn_Zer$u" role="3cqZAp">
+          <node concept="2OqwBi" id="48dyn_Zer$v" role="3clFbG">
+            <node concept="37vLTw" id="48dyn_Zer$w" role="2Oq$k0">
+              <ref role="3cqZAo" node="1P3iGaPqtN6" resolve="myEvent" />
+              <node concept="1ZhdrF" id="48dyn_Zer$x" role="lGtFl">
+                <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068498886296/1068581517664" />
+                <property role="2qtEX8" value="variableDeclaration" />
+                <node concept="3$xsQk" id="48dyn_Zer$y" role="3$ytzL">
+                  <node concept="3clFbS" id="48dyn_Zer$z" role="2VODD2">
+                    <node concept="3clFbF" id="48dyn_Zer$$" role="3cqZAp">
+                      <node concept="2OqwBi" id="48dyn_Zer$_" role="3clFbG">
+                        <node concept="1iwH7S" id="48dyn_Zer$A" role="2Oq$k0" />
+                        <node concept="1iwH70" id="48dyn_Zer$B" role="2OqNvi">
+                          <ref role="1iwH77" node="6EKBnCQXDzm" resolve="Event" />
+                          <node concept="2OqwBi" id="48dyn_Zer$C" role="1iwH7V">
+                            <node concept="1PxgMI" id="48dyn_Zer$D" role="2Oq$k0">
+                              <node concept="chp4Y" id="48dyn_Zer$E" role="3oSUPX">
+                                <ref role="cht4Q" to="xehl:5HF1wNNZuqd" resolve="Activity" />
+                              </node>
+                              <node concept="2OqwBi" id="48dyn_Zer$F" role="1m5AlR">
+                                <node concept="30H73N" id="48dyn_Zer$G" role="2Oq$k0" />
+                                <node concept="1mfA1w" id="48dyn_Zer$H" role="2OqNvi" />
+                              </node>
+                            </node>
+                            <node concept="3TrEf2" id="48dyn_Zer$I" role="2OqNvi">
+                              <ref role="3Tt5mk" to="xehl:5HF1wNNZwzN" resolve="event" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="48dyn_Zer$J" role="2OqNvi">
+              <ref role="37wK5l" to="oici:2aqfKAeyGS9" resolve="setAction" />
+              <node concept="Xl_RD" id="48dyn_Zer$K" role="37wK5m">
+                <property role="Xl_RC" value="hangUp" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="raruj" id="48dyn_Zer$L" role="lGtFl" />
+    </node>
+  </node>
+  <node concept="13MO4I" id="48dyn_Zes8J">
+    <property role="TrG5h" value="reduce_Record" />
+    <ref role="3gUMe" to="xehl:48dyn_Z3hrQ" resolve="Record" />
+    <node concept="9aQIb" id="48dyn_Zes8O" role="13RCb5">
+      <node concept="3clFbS" id="48dyn_Zes8P" role="9aQI4">
+        <node concept="3clFbF" id="48dyn_Zes8Q" role="3cqZAp">
+          <node concept="2OqwBi" id="48dyn_Zes8R" role="3clFbG">
+            <node concept="37vLTw" id="48dyn_Zes8S" role="2Oq$k0">
+              <ref role="3cqZAo" node="1P3iGaPqtN6" resolve="myEvent" />
+              <node concept="1ZhdrF" id="48dyn_Zes8T" role="lGtFl">
+                <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068498886296/1068581517664" />
+                <property role="2qtEX8" value="variableDeclaration" />
+                <node concept="3$xsQk" id="48dyn_Zes8U" role="3$ytzL">
+                  <node concept="3clFbS" id="48dyn_Zes8V" role="2VODD2">
+                    <node concept="3clFbF" id="48dyn_Zes8W" role="3cqZAp">
+                      <node concept="2OqwBi" id="48dyn_Zes8X" role="3clFbG">
+                        <node concept="1iwH7S" id="48dyn_Zes8Y" role="2Oq$k0" />
+                        <node concept="1iwH70" id="48dyn_Zes8Z" role="2OqNvi">
+                          <ref role="1iwH77" node="6EKBnCQXDzm" resolve="Event" />
+                          <node concept="2OqwBi" id="48dyn_Zes90" role="1iwH7V">
+                            <node concept="1PxgMI" id="48dyn_Zes91" role="2Oq$k0">
+                              <node concept="chp4Y" id="48dyn_Zes92" role="3oSUPX">
+                                <ref role="cht4Q" to="xehl:5HF1wNNZuqd" resolve="Activity" />
+                              </node>
+                              <node concept="2OqwBi" id="48dyn_Zes93" role="1m5AlR">
+                                <node concept="30H73N" id="48dyn_Zes94" role="2Oq$k0" />
+                                <node concept="1mfA1w" id="48dyn_Zes95" role="2OqNvi" />
+                              </node>
+                            </node>
+                            <node concept="3TrEf2" id="48dyn_Zes96" role="2OqNvi">
+                              <ref role="3Tt5mk" to="xehl:5HF1wNNZwzN" resolve="event" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="48dyn_Zes97" role="2OqNvi">
+              <ref role="37wK5l" to="oici:2aqfKAeyGS9" resolve="setAction" />
+              <node concept="Xl_RD" id="48dyn_Zes98" role="37wK5m">
+                <property role="Xl_RC" value="record" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="raruj" id="48dyn_Zes99" role="lGtFl" />
     </node>
   </node>
 </model>
