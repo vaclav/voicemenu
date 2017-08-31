@@ -27,6 +27,10 @@ public class CheckBackAtRoot_NonTypesystemRule extends AbstractNonTypesystemRule
           BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("jetbrains.mps.samples.VoiceMenu.typesystem.ResetAction_QuickFix", false);
           _reporter_2309309498.addIntentionProvider(intentionProvider);
         }
+        {
+          BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("jetbrains.mps.samples.VoiceMenu.typesystem.SetFinaltoTrue_QuickFix", false);
+          _reporter_2309309498.addIntentionProvider(intentionProvider);
+        }
       }
     }
   }
