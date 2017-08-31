@@ -10540,5 +10540,59 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="48dyn_Z3hr$">
+    <property role="3GE5qa" value="RealActions" />
+    <ref role="1XX52x" to="xehl:48dyn_Z3hrr" resolve="HangUp" />
+    <node concept="3EZMnI" id="48dyn_Z3hrA" role="2wV5jI">
+      <node concept="1u4HXA" id="48dyn_Z3hrB" role="3EZMnx">
+        <property role="1$Qi42" value="-150" />
+        <property role="1ubRXE" value="${module}/src/hangup.png" />
+        <node concept="VPM3Z" id="48dyn_Z3hrC" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="48dyn_Z3hrD" role="3EZMnx">
+        <property role="3F0ifm" value="" />
+        <node concept="VPM3Z" id="48dyn_Z3hrE" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="48dyn_Z3hrF" role="3EZMnx">
+        <property role="3F0ifm" value="HangUp" />
+        <ref role="1k5W1q" node="5lu2mvqIGvq" resolve="Action" />
+        <node concept="lj46D" id="48dyn_Z3hrG" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="48dyn_Z3hrH" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="48dyn_Z3jxq">
+    <property role="3GE5qa" value="RealActions" />
+    <ref role="1XX52x" to="xehl:48dyn_Z3hrQ" resolve="Record" />
+    <node concept="3EZMnI" id="48dyn_Z3jxs" role="2wV5jI">
+      <node concept="1u4HXA" id="48dyn_Z3jxt" role="3EZMnx">
+        <property role="1$Qi42" value="-150" />
+        <property role="1ubRXE" value="${module}/src/record.png" />
+        <node concept="VPM3Z" id="48dyn_Z3jxu" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="48dyn_Z3jxv" role="3EZMnx">
+        <property role="3F0ifm" value="" />
+        <node concept="VPM3Z" id="48dyn_Z3jxw" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="48dyn_Z3jxx" role="3EZMnx">
+        <property role="3F0ifm" value="Record" />
+        <ref role="1k5W1q" node="5lu2mvqIGvq" resolve="Action" />
+        <node concept="lj46D" id="48dyn_Z3jxy" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="48dyn_Z3jxz" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

@@ -20,8 +20,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptEmpty = createDescriptorForEmpty();
   /*package*/ final ConceptDescriptor myConceptEvent = createDescriptorForEvent();
   /*package*/ final ConceptDescriptor myConceptGetInfo = createDescriptorForGetInfo();
+  /*package*/ final ConceptDescriptor myConceptHangUp = createDescriptorForHangUp();
   /*package*/ final ConceptDescriptor myConceptMenu = createDescriptorForMenu();
   /*package*/ final ConceptDescriptor myConceptOther = createDescriptorForOther();
+  /*package*/ final ConceptDescriptor myConceptRecord = createDescriptorForRecord();
   /*package*/ final ConceptDescriptor myConceptWorkSpace = createDescriptorForWorkSpace();
   private final LanguageConceptSwitch myConceptIndex;
 
@@ -31,7 +33,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptActivity, myConceptBack, myConceptCommand, myConceptDirectCall, myConceptEmpty, myConceptEvent, myConceptGetInfo, myConceptMenu, myConceptOther, myConceptWorkSpace);
+    return Arrays.asList(myConceptAction, myConceptActivity, myConceptBack, myConceptCommand, myConceptDirectCall, myConceptEmpty, myConceptEvent, myConceptGetInfo, myConceptHangUp, myConceptMenu, myConceptOther, myConceptRecord, myConceptWorkSpace);
   }
 
   @Override
@@ -54,10 +56,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptEvent;
       case LanguageConceptSwitch.GetInfo:
         return myConceptGetInfo;
+      case LanguageConceptSwitch.HangUp:
+        return myConceptHangUp;
       case LanguageConceptSwitch.Menu:
         return myConceptMenu;
       case LanguageConceptSwitch.Other:
         return myConceptOther;
+      case LanguageConceptSwitch.Record:
+        return myConceptRecord;
       case LanguageConceptSwitch.WorkSpace:
         return myConceptWorkSpace;
       default:
@@ -135,6 +141,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("Get informations");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForHangUp() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.samples.VoiceMenu", "HangUp", 0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16dbL);
+    b.class_(false, false, false);
+    b.super_("jetbrains.mps.samples.VoiceMenu.structure.Action", 0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d133997fdc5L);
+    b.origin("r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)/4759611536116094683");
+    b.alias("HangUp");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForMenu() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.samples.VoiceMenu", "Menu", 0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L);
     b.class_(false, false, false);
@@ -152,6 +166,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("jetbrains.mps.samples.VoiceMenu.structure.Action", 0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d133997fdc5L);
     b.origin("r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)/6772988411135920841");
     b.alias("Other");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForRecord() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.samples.VoiceMenu", "Record", 0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L);
+    b.class_(false, false, false);
+    b.super_("jetbrains.mps.samples.VoiceMenu.structure.Action", 0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d133997fdc5L);
+    b.origin("r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)/4759611536116094710");
+    b.alias("Record");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForWorkSpace() {

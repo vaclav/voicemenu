@@ -31,6 +31,8 @@
         <property id="3919338464396137862" name="toolbar" index="1EJLKn" />
         <child id="6587365532662629611" name="bodyMenu" index="2JqgbB" />
       </concept>
+      <concept id="4759611536116094710" name="jetbrains.mps.samples.VoiceMenu.structure.Record" flags="ng" index="X09Yf" />
+      <concept id="4759611536116094683" name="jetbrains.mps.samples.VoiceMenu.structure.HangUp" flags="ng" index="X09Yy" />
       <concept id="6772988411135920843" name="jetbrains.mps.samples.VoiceMenu.structure.GetInfo" flags="ng" index="1$pBvo" />
       <concept id="6772988411135920842" name="jetbrains.mps.samples.VoiceMenu.structure.Back" flags="ng" index="1$pBvp" />
       <concept id="6772988411135920841" name="jetbrains.mps.samples.VoiceMenu.structure.Other" flags="ng" index="1$pBvq" />
@@ -233,7 +235,7 @@
           </node>
           <node concept="2C_I21" id="6sDFiMPeKzZ" role="2C_I26">
             <ref role="2C_gVZ" node="6sDFiMPeKzD" resolve="Action_117" />
-            <node concept="1$pBvq" id="6sDFiMPeK$L" role="2C_gVu" />
+            <node concept="X09Yy" id="48dyn_Z5DDR" role="2C_gVu" />
           </node>
         </node>
       </node>
@@ -259,6 +261,15 @@
       <node concept="2C_Ik0" id="54keEMKoACO" role="2C_I24">
         <property role="2C_Iks" value="2" />
         <property role="TrG5h" value="eight" />
+      </node>
+      <node concept="2C_Ik0" id="48dyn_Z5DE2" role="2C_I24">
+        <property role="2C_Iks" value="1" />
+        <property role="TrG5h" value="ss" />
+        <ref role="D9pxj" node="48dyn_Z5DE7" />
+      </node>
+      <node concept="2C_I21" id="48dyn_Z5DE7" role="2C_I26">
+        <ref role="2C_gVZ" node="48dyn_Z5DE2" resolve="ss" />
+        <node concept="X09Yf" id="48dyn_Z5DEq" role="2C_gVu" />
       </node>
     </node>
   </node>

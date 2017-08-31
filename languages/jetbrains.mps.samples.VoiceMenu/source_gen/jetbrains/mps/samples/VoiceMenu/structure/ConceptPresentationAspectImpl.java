@@ -17,8 +17,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Empty;
   private ConceptPresentation props_Event;
   private ConceptPresentation props_GetInfo;
+  private ConceptPresentation props_HangUp;
   private ConceptPresentation props_Menu;
   private ConceptPresentation props_Other;
+  private ConceptPresentation props_Record;
   private ConceptPresentation props_WorkSpace;
 
   @Override
@@ -80,6 +82,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_GetInfo = cpb.create();
         }
         return props_GetInfo;
+      case LanguageConceptSwitch.HangUp:
+        if (props_HangUp == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("HangUp");
+          props_HangUp = cpb.create();
+        }
+        return props_HangUp;
       case LanguageConceptSwitch.Menu:
         if (props_Menu == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -94,6 +103,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Other = cpb.create();
         }
         return props_Other;
+      case LanguageConceptSwitch.Record:
+        if (props_Record == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Record");
+          props_Record = cpb.create();
+        }
+        return props_Record;
       case LanguageConceptSwitch.WorkSpace:
         if (props_WorkSpace == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
