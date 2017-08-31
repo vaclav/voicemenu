@@ -14,6 +14,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Command;
   private ConceptPresentation props_Comment;
   private ConceptPresentation props_Context;
+  private ConceptPresentation props_ContextReference;
   private ConceptPresentation props_Empty;
   private ConceptPresentation props_Extend;
   private ConceptPresentation props_GeneralFunction;
@@ -60,6 +61,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Context = cpb.create();
         }
         return props_Context;
+      case LanguageConceptSwitch.ContextReference:
+        if (props_ContextReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x6a75f8ea1a2e649L, 0x6a75f8ea1a2e64aL, "context", "", "");
+          props_ContextReference = cpb.create();
+        }
+        return props_ContextReference;
       case LanguageConceptSwitch.Empty:
         if (props_Empty == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -84,7 +92,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.GoTo:
         if (props_GoTo == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x6a75f8ea190a0a1L, 0x6a75f8ea1935af1L, "context", "", "");
+          cpb.rawPresentation("GoTo");
           props_GoTo = cpb.create();
         }
         return props_GoTo;

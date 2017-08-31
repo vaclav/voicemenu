@@ -178,12 +178,11 @@
     <property role="EcuMT" value="479456951538852001" />
     <property role="TrG5h" value="GoTo" />
     <ref role="1TJDcQ" node="1eCN$XLn9QX" resolve="Argument" />
-    <node concept="1TJgyj" id="qBnSUx$PFL" role="1TKVEi">
-      <property role="IQ2ns" value="479456951539030769" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="context" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1eCN$XLn9Px" resolve="Context" />
+    <node concept="1TJgyj" id="qBnSUxCNB_" role="1TKVEi">
+      <property role="IQ2ns" value="479456951540070885" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="reference" />
+      <ref role="20lvS9" node="qBnSUxCIp9" resolve="ContextReference" />
     </node>
     <node concept="1TJgyi" id="qBnSUx$a2$" role="1TKVEl">
       <property role="IQ2nx" value="479456951538852004" />
@@ -201,6 +200,18 @@
       <property role="20kJfa" value="Commands" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="12Vp4BTMmgM" resolve="Command" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="qBnSUxCIp9">
+    <property role="EcuMT" value="479456951540049481" />
+    <property role="TrG5h" value="ContextReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="qBnSUxCIpa" role="1TKVEi">
+      <property role="IQ2ns" value="479456951540049482" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="context" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1eCN$XLn9Px" resolve="Context" />
     </node>
   </node>
 </model>
