@@ -9,6 +9,8 @@ import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.module.SModule;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Image;
@@ -45,7 +47,14 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.ActionStyleClass
     editorCell.addEditorCell(createImage_n4bxxp_a0());
     editorCell.addEditorCell(createConstant_n4bxxp_b0());
     editorCell.addEditorCell(createConstant_n4bxxp_c0());
+    editorCell.addEditorCell(createConstant_n4bxxp_d0());
+    if (nodeCondition_n4bxxp_a4a()) {
+      editorCell.addEditorCell(createImage_n4bxxp_e0());
+    }
     return editorCell;
+  }
+  private boolean nodeCondition_n4bxxp_a4a() {
+    return SPropertyOperations.getBoolean(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, 0x420d89797f56bd93L, "isNotFinite"));
   }
   private EditorCell createImage_n4bxxp_a0() {
     SModule imageModule;
@@ -77,6 +86,22 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.ActionStyleClass
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_n4bxxp_d0() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "  ");
+    editorCell.setCellId("Constant_n4bxxp_d0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createImage_n4bxxp_e0() {
+    SModule imageModule;
+    String imagePath;
+    imageModule = SNodeOperations.getConcept(myNode).getLanguage().getSourceModule();
+    imagePath = "${module}/src/isNotFinite.png";
+    EditorCell_Image editorCell = EditorCell_Image.createImageCell(getEditorContext(), myNode, imageModule, imagePath);
+    editorCell.setCellId("Image_n4bxxp_e0");
+    editorCell.setDescent(-150);
     return editorCell;
   }
 }

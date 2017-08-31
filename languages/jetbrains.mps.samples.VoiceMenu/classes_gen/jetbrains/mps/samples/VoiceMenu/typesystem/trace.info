@@ -280,59 +280,62 @@
       <node id="6587365532662446244" at="35,50,36,155" concept="7" />
       <node id="6587365532662446244" at="38,68,39,102" concept="7" />
       <node id="6587365532662446244" at="41,30,42,17" concept="7" />
-      <node id="6587365532662453563" at="44,75,45,46" concept="7" />
-      <node id="6587365532662462225" at="47,77,48,46" concept="7" />
-      <node id="6587365532662462671" at="50,74,51,46" concept="7" />
-      <node id="6587365532662462886" at="53,73,54,46" concept="7" />
-      <node id="6587365532662463122" at="56,72,57,46" concept="7" />
-      <node id="6587365532662463379" at="59,71,60,46" concept="7" />
-      <node id="6587365532662466733" at="62,70,63,46" concept="7" />
-      <node id="6587365532662467032" at="65,69,66,46" concept="7" />
-      <node id="6587365532662467352" at="68,68,69,46" concept="7" />
-      <node id="6587365532662467693" at="71,67,72,46" concept="7" />
-      <node id="6587365532662468055" at="74,66,75,46" concept="7" />
-      <node id="6587365532662468300" at="77,64,78,46" concept="7" />
-      <node id="7983725069968177216" at="80,63,81,46" concept="7" />
+      <node id="6587365532662453563" at="44,76,45,46" concept="7" />
+      <node id="6587365532662462225" at="47,78,48,46" concept="7" />
+      <node id="6587365532662462671" at="50,75,51,46" concept="7" />
+      <node id="6587365532662462886" at="53,74,54,46" concept="7" />
+      <node id="6587365532662463122" at="56,73,57,46" concept="7" />
+      <node id="6587365532662463379" at="59,72,60,46" concept="7" />
+      <node id="6587365532662466733" at="62,71,63,46" concept="7" />
+      <node id="6587365532662467032" at="65,70,66,46" concept="7" />
+      <node id="6587365532662467352" at="68,69,69,46" concept="7" />
+      <node id="6587365532662467693" at="71,68,72,46" concept="7" />
+      <node id="6587365532662468055" at="74,67,75,46" concept="7" />
+      <node id="6587365532662468300" at="77,65,78,46" concept="7" />
+      <node id="7983725069968177216" at="80,64,81,46" concept="7" />
+      <node id="4759611536122848639" at="83,63,84,46" concept="7" />
       <node id="6587365532662446244" at="19,0,21,0" concept="1" trace="CheckPhoneButtons_NonTypesystemRule#()V" />
       <node id="6587365532662446244" at="35,0,38,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="6587365532662446244" at="38,0,41,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="6587365532662446244" at="41,0,44,0" concept="5" trace="overrides#()Z" />
-      <node id="6587365532662453563" at="44,0,47,0" concept="9" trace="eq_tbjozr_a0a0a0a0a0a0a0a0a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="6587365532662462225" at="47,0,50,0" concept="9" trace="eq_tbjozr_a0a0a0a0a0a0a0a0a1_0#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="6587365532662462671" at="50,0,53,0" concept="9" trace="eq_tbjozr_a0a0a0a0a0a0a0a0b#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="6587365532662462886" at="53,0,56,0" concept="9" trace="eq_tbjozr_a0a0a0a0a0a0a0a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="6587365532662463122" at="56,0,59,0" concept="9" trace="eq_tbjozr_a0a0a0a0a0a0a0b#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="6587365532662463379" at="59,0,62,0" concept="9" trace="eq_tbjozr_a0a0a0a0a0a0a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="6587365532662466733" at="62,0,65,0" concept="9" trace="eq_tbjozr_a0a0a0a0a0a0b#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="6587365532662467032" at="65,0,68,0" concept="9" trace="eq_tbjozr_a0a0a0a0a0a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="6587365532662467352" at="68,0,71,0" concept="9" trace="eq_tbjozr_a0a0a0a0a0b#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="6587365532662467693" at="71,0,74,0" concept="9" trace="eq_tbjozr_a0a0a0a0a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="6587365532662468055" at="74,0,77,0" concept="9" trace="eq_tbjozr_a0a0a0a0b#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="6587365532662468300" at="77,0,80,0" concept="9" trace="eq_tbjozr_a0a0a0b#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="7983725069968177216" at="80,0,83,0" concept="9" trace="eq_tbjozr_a0a0a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="6587365532662453563" at="44,0,47,0" concept="9" trace="eq_tbjozr_a0a0a0a0a0a0a0a0a0b#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="6587365532662462225" at="47,0,50,0" concept="9" trace="eq_tbjozr_a0a0a0a0a0a0a0a0a0b_0#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="6587365532662462671" at="50,0,53,0" concept="9" trace="eq_tbjozr_a0a0a0a0a0a0a0a0a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="6587365532662462886" at="53,0,56,0" concept="9" trace="eq_tbjozr_a0a0a0a0a0a0a0a0b#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="6587365532662463122" at="56,0,59,0" concept="9" trace="eq_tbjozr_a0a0a0a0a0a0a0a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="6587365532662463379" at="59,0,62,0" concept="9" trace="eq_tbjozr_a0a0a0a0a0a0a0b#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="6587365532662466733" at="62,0,65,0" concept="9" trace="eq_tbjozr_a0a0a0a0a0a0a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="6587365532662467032" at="65,0,68,0" concept="9" trace="eq_tbjozr_a0a0a0a0a0a0b#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="6587365532662467352" at="68,0,71,0" concept="9" trace="eq_tbjozr_a0a0a0a0a0a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="6587365532662467693" at="71,0,74,0" concept="9" trace="eq_tbjozr_a0a0a0a0a0b#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="6587365532662468055" at="74,0,77,0" concept="9" trace="eq_tbjozr_a0a0a0a0a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="6587365532662468300" at="77,0,80,0" concept="9" trace="eq_tbjozr_a0a0a0a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="7983725069968177216" at="80,0,83,0" concept="9" trace="eq_tbjozr_a0a0a0b#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="4759611536122848639" at="83,0,86,0" concept="9" trace="eq_tbjozr_a0a0a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
       <node id="2036874050862904852" at="26,259,30,9" concept="0" />
       <node id="2036874050862904852" at="23,12,31,7" concept="0" />
       <node id="6587365532662476591" at="23,10,32,5" concept="0" />
       <node id="6587365532662446257" at="21,118,32,5" concept="4" />
       <node id="6587365532662446244" at="21,0,35,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
       <scope id="6587365532662446244" at="19,48,19,48" />
-      <scope id="6587365532662446259" at="22,2589,22,2589" />
+      <scope id="6587365532662446259" at="22,2792,22,2792" />
       <scope id="6587365532662446244" at="35,50,36,155" />
       <scope id="6587365532662446244" at="38,68,39,102" />
       <scope id="6587365532662446244" at="41,30,42,17" />
-      <scope id="6587365532662453563" at="44,75,45,46" />
-      <scope id="6587365532662462225" at="47,77,48,46" />
-      <scope id="6587365532662462671" at="50,74,51,46" />
-      <scope id="6587365532662462886" at="53,73,54,46" />
-      <scope id="6587365532662463122" at="56,72,57,46" />
-      <scope id="6587365532662463379" at="59,71,60,46" />
-      <scope id="6587365532662466733" at="62,70,63,46" />
-      <scope id="6587365532662467032" at="65,69,66,46" />
-      <scope id="6587365532662467352" at="68,68,69,46" />
-      <scope id="6587365532662467693" at="71,67,72,46" />
-      <scope id="6587365532662468055" at="74,66,75,46" />
-      <scope id="6587365532662468300" at="77,64,78,46" />
-      <scope id="7983725069968177216" at="80,63,81,46" />
+      <scope id="6587365532662453563" at="44,76,45,46" />
+      <scope id="6587365532662462225" at="47,78,48,46" />
+      <scope id="6587365532662462671" at="50,75,51,46" />
+      <scope id="6587365532662462886" at="53,74,54,46" />
+      <scope id="6587365532662463122" at="56,73,57,46" />
+      <scope id="6587365532662463379" at="59,72,60,46" />
+      <scope id="6587365532662466733" at="62,71,63,46" />
+      <scope id="6587365532662467032" at="65,70,66,46" />
+      <scope id="6587365532662467352" at="68,69,69,46" />
+      <scope id="6587365532662467693" at="71,68,72,46" />
+      <scope id="6587365532662468055" at="74,67,75,46" />
+      <scope id="6587365532662468300" at="77,65,78,46" />
+      <scope id="7983725069968177216" at="80,64,81,46" />
+      <scope id="4759611536122848639" at="83,63,84,46" />
       <scope id="6587365532662446244" at="19,0,21,0" />
       <scope id="2036874050862904852" at="27,9,29,71">
         <var name="intentionProvider" id="2036874050862904852" />
@@ -394,6 +397,10 @@
         <var name="a" id="7983725069968177216" />
         <var name="b" id="7983725069968177216" />
       </scope>
+      <scope id="4759611536122848639" at="83,0,86,0">
+        <var name="a" id="4759611536122848639" />
+        <var name="b" id="4759611536122848639" />
+      </scope>
       <scope id="2036874050862904852" at="24,7,30,9">
         <var name="_reporter_2309309498" id="2036874050862904852" />
         <var name="errorTarget" id="2036874050862904852" />
@@ -405,7 +412,7 @@
         <var name="status" id="6587365532662446244" />
         <var name="typeCheckingContext" id="6587365532662446244" />
       </scope>
-      <unit id="6587365532662446244" at="18,0,84,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.CheckPhoneButtons_NonTypesystemRule" />
+      <unit id="6587365532662446244" at="18,0,87,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.CheckPhoneButtons_NonTypesystemRule" />
     </file>
   </root>
   <root nodeRef="r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)/7167187293241760276">
