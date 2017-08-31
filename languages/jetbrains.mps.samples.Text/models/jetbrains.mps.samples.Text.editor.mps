@@ -24,8 +24,13 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
+        <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
+      <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1214560368769" name="emptyNoTargetText" index="39s7Ar" />
+        <property id="1140017977771" name="readOnly" index="1Intyy" />
         <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -93,7 +98,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1eCN$XLn9R8">
-    <ref role="1XX52x" to="m807:1eCN$XLn9QX" resolve="Argument" />
+    <ref role="1XX52x" to="m807:qBnSUx$a2t" resolve="GeneralFunction" />
     <node concept="3EZMnI" id="1eCN$XLn9Ra" role="2wV5jI">
       <node concept="3F0ifn" id="1eCN$XLn9Rh" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -101,7 +106,7 @@
       <node concept="3F0A7n" id="1eCN$XLn9Rn" role="3EZMnx">
         <property role="1O74Pk" value="true" />
         <property role="39s7Ar" value="true" />
-        <ref role="1NtTu8" to="m807:1eCN$XLn9QY" resolve="value" />
+        <ref role="1NtTu8" to="m807:qBnSUx$a2v" resolve="value" />
       </node>
       <node concept="3F0ifn" id="1eCN$XLn9Rv" role="3EZMnx">
         <property role="3F0ifm" value=")" />
@@ -185,6 +190,37 @@
   <node concept="24kQdi" id="1eCN$XLo9hj">
     <ref role="1XX52x" to="m807:1eCN$XLo9ha" resolve="Empty" />
     <node concept="3F0ifn" id="1eCN$XLo9hl" role="2wV5jI" />
+  </node>
+  <node concept="24kQdi" id="qBnSUx$fbZ">
+    <ref role="1XX52x" to="m807:qBnSUx$a2x" resolve="GoTo" />
+    <node concept="3EZMnI" id="qBnSUx$fc1" role="2wV5jI">
+      <node concept="1iCGBv" id="qBnSUx$puq" role="3EZMnx">
+        <ref role="1NtTu8" to="m807:qBnSUx$a2y" resolve="node" />
+        <node concept="1sVBvm" id="qBnSUx$pus" role="1sWHZn">
+          <node concept="3F0A7n" id="qBnSUx$pu$" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0A7n" id="qBnSUx$fco" role="3EZMnx">
+        <ref role="1NtTu8" to="m807:qBnSUx$a2$" resolve="value" />
+      </node>
+      <node concept="l2Vlx" id="qBnSUx$fc4" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="qBnSUx$rNQ">
+    <ref role="1XX52x" to="m807:qBnSUx$rNF" resolve="Body" />
+    <node concept="3EZMnI" id="qBnSUx$rNS" role="2wV5jI">
+      <node concept="3F2HdR" id="qBnSUx$rNZ" role="3EZMnx">
+        <ref role="1NtTu8" to="m807:qBnSUx$rNG" resolve="Commands" />
+        <node concept="l2Vlx" id="qBnSUx$rO1" role="2czzBx" />
+        <node concept="pj6Ft" id="qBnSUx$rO4" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="qBnSUx$rNV" role="2iSdaV" />
+    </node>
   </node>
 </model>
 
