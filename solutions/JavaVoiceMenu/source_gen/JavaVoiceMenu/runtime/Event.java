@@ -16,7 +16,7 @@ public class Event {
   public boolean isFinal;
 
   public Event() {
-    // empty 
+    this.isFinal = false;
   }
   public Event(String name, String trigger) {
     this.name = name;

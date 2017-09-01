@@ -30,17 +30,20 @@ public class Main__1 implements ActionListener {
     Home.setAction("", true);
     Home.setGreeting("Welcome to our voicemenu");
     Home.childs = new ArrayList<Event>();
+    Home.isFinal = false;
     Variables.main_Text = "myVoiceMenu";
     Variables.myHashMap.put("0", Home);
 
 
     Event var_35s59u_a0 = new Event("Internetu", "1");
+    var_35s59u_a0.isFinal = false;
     var_35s59u_a0.setAction("", false);
     var_35s59u_a0.setGreeting("");
     var_35s59u_a0.setGreeting("Welcome to the Internet");
     var_35s59u_a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("01", var_35s59u_a0);
     Event var_35s59u_a0a0 = new Event("Speed up", "1");
+    var_35s59u_a0a0.isFinal = false;
     var_35s59u_a0a0.setAction("", false);
     var_35s59u_a0a0.setGreeting("");
     var_35s59u_a0a0.setGreeting("Increasing speed was chosen");
@@ -49,12 +52,14 @@ public class Main__1 implements ActionListener {
     var_35s59u_a0a0.setAction("getInfo", false);
     var_35s59u_a0a0.childs = new ArrayList<Event>();
     Event var_35s59u_b0a0 = new Event("Discount", "2");
+    var_35s59u_b0a0.isFinal = false;
     var_35s59u_b0a0.setAction("", false);
     var_35s59u_b0a0.setGreeting("");
     var_35s59u_b0a0.setGreeting("Great choice!");
     var_35s59u_b0a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("012", var_35s59u_b0a0);
     Event var_35s59u_b0b0a0 = new Event("Big Discount", "1");
+    var_35s59u_b0b0a0.isFinal = false;
     var_35s59u_b0b0a0.setAction("", false);
     var_35s59u_b0b0a0.setGreeting("");
     var_35s59u_b0b0a0.childs = new ArrayList<Event>();
@@ -62,6 +67,7 @@ public class Main__1 implements ActionListener {
     var_35s59u_b0b0a0.setAction("call", true);
     var_35s59u_b0b0a0.childs = new ArrayList<Event>();
     Event var_35s59u_a0b0a0 = new Event("Small Discount", "2");
+    var_35s59u_a0b0a0.isFinal = false;
     var_35s59u_a0b0a0.setAction("", false);
     var_35s59u_a0b0a0.setGreeting("");
     var_35s59u_a0b0a0.childs = new ArrayList<Event>();
@@ -69,18 +75,20 @@ public class Main__1 implements ActionListener {
     var_35s59u_a0b0a0.setAction("call", false);
     var_35s59u_a0b0a0.childs = new ArrayList<Event>();
     Event var_35s59u_d0b0a0 = new Event("Going Back", "#");
+    var_35s59u_d0b0a0.isFinal = false;
     var_35s59u_d0b0a0.setAction("", false);
     var_35s59u_d0b0a0.setGreeting("");
     var_35s59u_d0b0a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("012#", var_35s59u_d0b0a0);
-    var_35s59u_d0b0a0.setAction("back", true);
+    var_35s59u_d0b0a0.setAction("back", false);
     var_35s59u_d0b0a0.childs = new ArrayList<Event>();
     Event var_35s59u_c0b0a0 = new Event("Going Back", "*");
+    var_35s59u_c0b0a0.isFinal = false;
     var_35s59u_c0b0a0.setAction("", false);
     var_35s59u_c0b0a0.setGreeting("");
     var_35s59u_c0b0a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("012*", var_35s59u_c0b0a0);
-    var_35s59u_c0b0a0.setAction("back", true);
+    var_35s59u_c0b0a0.setAction("back", false);
     var_35s59u_c0b0a0.childs = new ArrayList<Event>();
     var_35s59u_b0a0.childs = new ArrayList<Event>();
     var_35s59u_b0a0.childs.add(var_35s59u_a0b0a0);
@@ -91,6 +99,7 @@ public class Main__1 implements ActionListener {
     var_35s59u_a0.childs.add(var_35s59u_a0a0);
     var_35s59u_a0.childs.add(var_35s59u_b0a0);
     Event var_35s59u_b0 = new Event("Television", "2");
+    var_35s59u_b0.isFinal = false;
     var_35s59u_b0.setAction("", false);
     var_35s59u_b0.setGreeting("");
     var_35s59u_b0.childs = new ArrayList<Event>();

@@ -47,7 +47,6 @@ public class Behaviour {
         Variables.voice.addText("Going to the previous menu");
         Variables.path = Variables.path.substring(0, Variables.path.length() - 2);
         // loading previous event 
-        currentEvent = Variables.myHashMap.get(Variables.path);
       } else
       if (currentEvent.action.equals("call")) {
         Variables.voice.addText("Direct call has begun");
@@ -82,24 +81,23 @@ public class Behaviour {
         Variables.voice.speak();
         try {
           TimeUnit.SECONDS.sleep(5);
-
         } catch (Exception e) {
         }
         Variables.voice.addText("Succesfully recorded");
-        Variables.finished = currentEvent.isFinal;
       }
-
+      Variables.finished = currentEvent.isFinal;
+      System.out.println(currentEvent.name + " + " + currentEvent.isFinal);
       if (Variables.finished) {
         Variables.voice.speak();
         Style.setTextToScreen("PhoneCall finished");
         return;
       } else {
-
-        Variables.path = Variables.path.substring(0, Variables.path.length() - 2);
+        if (!(currentEvent.action.equals("back"))) {
+          Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
+        }
         currentEvent = Variables.myHashMap.get(Variables.path);
       }
       Style.setTextToScreen(currentEvent.action);
-
     }
     Style.setTextToScreen(currentEvent.name);
     // Handling voice output 
