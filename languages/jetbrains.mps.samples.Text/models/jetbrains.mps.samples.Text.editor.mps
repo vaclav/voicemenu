@@ -98,7 +98,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1eCN$XLn9R8">
-    <ref role="1XX52x" to="m807:qBnSUx$a2t" resolve="GeneralFunction" />
+    <ref role="1XX52x" to="m807:qBnSUx$a2t" resolve="general1arg" />
     <node concept="3EZMnI" id="1eCN$XLn9Ra" role="2wV5jI">
       <node concept="3F0ifn" id="1eCN$XLn9Rh" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -235,6 +235,24 @@
         </node>
       </node>
       <node concept="l2Vlx" id="qBnSUxCIpr" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6HhgIFX113d">
+    <ref role="1XX52x" to="m807:6HhgIFX112X" resolve="general2args" />
+    <node concept="3EZMnI" id="6HhgIFX113f" role="2wV5jI">
+      <node concept="3F0ifn" id="6HhgIFX3WZ1" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+      </node>
+      <node concept="3F0A7n" id="6HhgIFX113p" role="3EZMnx">
+        <ref role="1NtTu8" to="m807:6HhgIFX1130" resolve="value1" />
+      </node>
+      <node concept="3F0A7n" id="6HhgIFX113v" role="3EZMnx">
+        <ref role="1NtTu8" to="m807:6HhgIFX1132" resolve="value2" />
+      </node>
+      <node concept="3F0ifn" id="6HhgIFX3WZb" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="l2Vlx" id="6HhgIFX113i" role="2iSdaV" />
     </node>
   </node>
 </model>

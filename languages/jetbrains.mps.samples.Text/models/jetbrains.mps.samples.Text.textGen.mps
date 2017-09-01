@@ -107,7 +107,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="1eCN$XLoaIM">
-    <ref role="WuzLi" to="m807:qBnSUx$a2t" resolve="GeneralFunction" />
+    <ref role="WuzLi" to="m807:qBnSUx$a2t" resolve="general1arg" />
     <node concept="11bSqf" id="1eCN$XLoaIN" role="11c4hB">
       <node concept="3clFbS" id="1eCN$XLoaIO" role="2VODD2">
         <node concept="lc7rE" id="1eCN$XLoaJ8" role="3cqZAp">
@@ -378,6 +378,37 @@
         </node>
         <node concept="lc7rE" id="qBnSUx$Wpd" role="3cqZAp">
           <node concept="la8eA" id="qBnSUx$WuO" role="lcghm">
+            <property role="lacIc" value=")" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="6HhgIFX113z">
+    <ref role="WuzLi" to="m807:6HhgIFX112X" resolve="general2args" />
+    <node concept="11bSqf" id="6HhgIFX113$" role="11c4hB">
+      <node concept="3clFbS" id="6HhgIFX113_" role="2VODD2">
+        <node concept="lc7rE" id="6HhgIFX113T" role="3cqZAp">
+          <node concept="la8eA" id="6HhgIFX3X2w" role="lcghm">
+            <property role="lacIc" value="(" />
+          </node>
+          <node concept="l9hG8" id="6HhgIFX114f" role="lcghm">
+            <node concept="2OqwBi" id="6HhgIFX11du" role="lb14g">
+              <node concept="117lpO" id="6HhgIFX1157" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6HhgIFX11st" role="2OqNvi">
+                <ref role="3TsBF5" to="m807:6HhgIFX1130" resolve="value1" />
+              </node>
+            </node>
+          </node>
+          <node concept="l9hG8" id="6HhgIFX11xC" role="lcghm">
+            <node concept="2OqwBi" id="6HhgIFX11GX" role="lb14g">
+              <node concept="117lpO" id="6HhgIFX11$N" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6HhgIFX125r" role="2OqNvi">
+                <ref role="3TsBF5" to="m807:6HhgIFX1132" resolve="value2" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6HhgIFX3X8P" role="lcghm">
             <property role="lacIc" value=")" />
           </node>
         </node>

@@ -166,7 +166,7 @@
   </node>
   <node concept="1TIwiD" id="qBnSUx$a2t">
     <property role="EcuMT" value="479456951538851997" />
-    <property role="TrG5h" value="GeneralFunction" />
+    <property role="TrG5h" value="general1arg" />
     <ref role="1TJDcQ" node="1eCN$XLn9QX" resolve="Argument" />
     <node concept="1TJgyi" id="qBnSUx$a2v" role="1TKVEl">
       <property role="IQ2nx" value="479456951538851999" />
@@ -212,6 +212,21 @@
       <property role="20kJfa" value="context" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1eCN$XLn9Px" resolve="Context" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6HhgIFX112X">
+    <property role="EcuMT" value="7733035612206534845" />
+    <property role="TrG5h" value="general2args" />
+    <ref role="1TJDcQ" node="1eCN$XLn9QX" resolve="Argument" />
+    <node concept="1TJgyi" id="6HhgIFX1130" role="1TKVEl">
+      <property role="IQ2nx" value="7733035612206534848" />
+      <property role="TrG5h" value="value1" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6HhgIFX1132" role="1TKVEl">
+      <property role="IQ2nx" value="7733035612206534850" />
+      <property role="TrG5h" value="value2" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

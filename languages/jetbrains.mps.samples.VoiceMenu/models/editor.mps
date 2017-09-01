@@ -1776,7 +1776,10 @@
       <node concept="3F0A7n" id="6HhgIFWV$t_" role="3EZMnx">
         <property role="1O74Pk" value="true" />
         <property role="1$x2rV" value="record" />
-        <ref role="1NtTu8" to="xehl:6HhgIFWVzO3" resolve="nameOfRecording" />
+        <ref role="1NtTu8" to="xehl:6HhgIFWVzO3" resolve="nameOfRecord" />
+        <node concept="VechU" id="6HhgIFX6LQw" role="3F10Kt">
+          <property role="Vb096" value="gray" />
+        </node>
       </node>
     </node>
   </node>

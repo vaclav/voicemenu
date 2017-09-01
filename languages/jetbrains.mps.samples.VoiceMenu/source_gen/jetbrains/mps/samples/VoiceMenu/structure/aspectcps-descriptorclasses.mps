@@ -3221,7 +3221,7 @@
             <node concept="liA8E" id="hX" role="2OqNvi">
               <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.prop(java.lang.String,long,java.lang.String):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2" resolve="prop" />
               <node concept="Xl_RD" id="hY" role="37wK5m">
-                <property role="Xl_RC" value="nameOfRecording" />
+                <property role="Xl_RC" value="nameOfRecord" />
               </node>
               <node concept="1adDum" id="hZ" role="37wK5m">
                 <property role="1adDun" value="0x6b5142eafcee3d03L" />

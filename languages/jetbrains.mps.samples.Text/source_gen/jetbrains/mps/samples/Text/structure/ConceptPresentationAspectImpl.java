@@ -17,11 +17,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ContextReference;
   private ConceptPresentation props_Empty;
   private ConceptPresentation props_Extend;
-  private ConceptPresentation props_GeneralFunction;
   private ConceptPresentation props_GoTo;
   private ConceptPresentation props_PlainText;
   private ConceptPresentation props_Same;
   private ConceptPresentation props_WorkSpace;
+  private ConceptPresentation props_general1arg;
+  private ConceptPresentation props_general2args;
 
   @Override
   @Nullable
@@ -82,13 +83,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Extend = cpb.create();
         }
         return props_Extend;
-      case LanguageConceptSwitch.GeneralFunction:
-        if (props_GeneralFunction == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("GeneralFunction");
-          props_GeneralFunction = cpb.create();
-        }
-        return props_GeneralFunction;
       case LanguageConceptSwitch.GoTo:
         if (props_GoTo == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -117,6 +111,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_WorkSpace = cpb.create();
         }
         return props_WorkSpace;
+      case LanguageConceptSwitch.general1arg:
+        if (props_general1arg == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("general1arg");
+          props_general1arg = cpb.create();
+        }
+        return props_general1arg;
+      case LanguageConceptSwitch.general2args:
+        if (props_general2args == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("general2args");
+          props_general2args = cpb.create();
+        }
+        return props_general2args;
     }
     return null;
   }

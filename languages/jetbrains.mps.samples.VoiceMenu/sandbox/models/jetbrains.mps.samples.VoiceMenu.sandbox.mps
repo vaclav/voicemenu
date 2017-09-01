@@ -35,6 +35,7 @@
       </concept>
       <concept id="4759611536116094683" name="jetbrains.mps.samples.VoiceMenu.structure.HangUp" flags="ng" index="X09Yy" />
       <concept id="6772988411135920843" name="jetbrains.mps.samples.VoiceMenu.structure.GetInfo" flags="ng" index="1$pBvo">
+        <property id="7733035612205104387" name="nameOfRecord" index="2nJRZD" />
         <property id="4759611536120921399" name="isFinal" index="XmNhe" />
       </concept>
       <concept id="6772988411135920842" name="jetbrains.mps.samples.VoiceMenu.structure.Back" flags="ng" index="1$pBvp" />
@@ -42,6 +43,7 @@
         <property id="4759611536120921574" name="isFinal" index="XmNiv" />
       </concept>
       <concept id="6772988411135920840" name="jetbrains.mps.samples.VoiceMenu.structure.DirectCall" flags="ng" index="1$pBvr">
+        <property id="7733035612202996721" name="number" index="2nBP4r" />
         <property id="4759611536120921316" name="isFinal" index="XmNmt" />
       </concept>
     </language>
@@ -262,6 +264,7 @@
             <ref role="2C_gVZ" node="5K3$FqBvEo7" resolve="Getting info" />
             <node concept="1$pBvo" id="5K3$FqCn5Pa" role="2C_gVu">
               <property role="XmNhe" value="false" />
+              <property role="2nJRZD" value="Support_info.wav" />
             </node>
           </node>
           <node concept="2C_I21" id="5K3$FqCoflB" role="2C_I26">
@@ -275,12 +278,14 @@
                 <ref role="2C_gVZ" node="5K3$FqCDNLh" resolve="BackState" />
                 <node concept="1$pBvr" id="6HhgIFWPl4p" role="2C_gVu">
                   <property role="XmNmt" value="false" />
+                  <property role="2nBP4r" value="725345126" />
                 </node>
               </node>
               <node concept="2C_I21" id="6HhgIFWYFJh" role="2C_I26">
                 <ref role="2C_gVZ" node="6HhgIFWYFJn" resolve="info" />
                 <node concept="1$pBvo" id="6HhgIFWYFJA" role="2C_gVu">
                   <property role="XmNhe" value="false" />
+                  <property role="2nJRZD" value="Sales_info.wav" />
                 </node>
               </node>
               <node concept="2C_Ik0" id="6HhgIFWYFJn" role="2C_I24">

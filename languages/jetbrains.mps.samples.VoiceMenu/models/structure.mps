@@ -196,7 +196,7 @@
     </node>
     <node concept="1TJgyi" id="6HhgIFWVzO3" role="1TKVEl">
       <property role="IQ2nx" value="7733035612205104387" />
-      <property role="TrG5h" value="nameOfRecording" />
+      <property role="TrG5h" value="nameOfRecord" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>

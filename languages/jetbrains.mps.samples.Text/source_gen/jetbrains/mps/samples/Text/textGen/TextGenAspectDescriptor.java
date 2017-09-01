@@ -32,14 +32,16 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new Empty_TextGen();
       case LanguageConceptSwitch.Extend:
         return new Extend_TextGen();
-      case LanguageConceptSwitch.GeneralFunction:
-        return new GeneralFunction_TextGen();
       case LanguageConceptSwitch.GoTo:
         return new GoTo_TextGen();
       case LanguageConceptSwitch.Same:
         return new Same_TextGen();
       case LanguageConceptSwitch.WorkSpace:
         return new WorkSpace_TextGen();
+      case LanguageConceptSwitch.general1arg:
+        return new general1arg_TextGen();
+      case LanguageConceptSwitch.general2args:
+        return new general2args_TextGen();
     }
     return null;
   }

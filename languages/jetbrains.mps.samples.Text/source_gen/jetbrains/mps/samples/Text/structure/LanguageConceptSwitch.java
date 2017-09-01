@@ -17,11 +17,12 @@ public final class LanguageConceptSwitch {
   public static final int ContextReference = 5;
   public static final int Empty = 6;
   public static final int Extend = 7;
-  public static final int GeneralFunction = 8;
-  public static final int GoTo = 9;
-  public static final int PlainText = 10;
-  public static final int Same = 11;
-  public static final int WorkSpace = 12;
+  public static final int GoTo = 8;
+  public static final int PlainText = 9;
+  public static final int Same = 10;
+  public static final int WorkSpace = 11;
+  public static final int general1arg = 12;
+  public static final int general2args = 13;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x914c58c4068049cfL, 0x8599f5ced7a657d6L);
@@ -33,11 +34,12 @@ public final class LanguageConceptSwitch {
     builder.put(0x6a75f8ea1a2e649L, ContextReference);
     builder.put(0x13a8ce4f7160944aL, Empty);
     builder.put(0x13a8ce4f715c9dafL, Extend);
-    builder.put(0x6a75f8ea190a09dL, GeneralFunction);
     builder.put(0x6a75f8ea190a0a1L, GoTo);
     builder.put(0x13a8ce4f716049b6L, PlainText);
     builder.put(0x13a8ce4f7160338bL, Same);
     builder.put(0x10bb6449f9c963fcL, WorkSpace);
+    builder.put(0x6a75f8ea190a09dL, general1arg);
+    builder.put(0x6b5142eafd0410bdL, general2args);
     myIndex = builder.seal();
   }
 
