@@ -254,7 +254,7 @@ public class Back_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c6i_2;
+          return IconContainer.RESOURCE_a0a9c6i_0;
         }
         @Override
         public String getTooltipText() {
@@ -302,7 +302,7 @@ public class Back_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c7i_2;
+          return IconContainer.RESOURCE_a0a9c7i_0;
         }
         @Override
         public String getTooltipText() {
