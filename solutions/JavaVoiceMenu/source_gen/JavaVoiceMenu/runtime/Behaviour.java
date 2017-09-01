@@ -4,16 +4,19 @@ package JavaVoiceMenu.runtime;
 
 import java.awt.event.ActionEvent;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 public class Behaviour {
-  public static void runLogic(ActionEvent evt) throws IOException {
+
+  public static void runLogic(ActionEvent evt, boolean repeat) throws IOException {
     Variables.voice.stop();
     // Initilization of voice output 
     Boolean wrongButtonPressed = false;
     // Variable to store which character was pressed 
     String character = evt.getActionCommand();
     // Checking if correct option was pressed. If so Variables.path is updated 
-    if (!(Variables.possibleOptList.contains(character))) {
+
+    if (!(Variables.possibleOptList.contains(character)) && repeat == false) {
       String charToRead;
       if (character == "*") {
         charToRead = "star ";
@@ -26,8 +29,12 @@ public class Behaviour {
       Variables.voice.addText(charToRead + "is a bad option. please try again");
       wrongButtonPressed = true;
     } else {
-      Variables.path = Variables.path + character;
+      if (!(repeat)) {
+        Variables.path = Variables.path + character;
+
+      }
     }
+
     System.out.println(Variables.path);
     // Loading next Event according to what is specified in "Variables.path" 
     Event currentEvent = Variables.myHashMap.get(Variables.path);
@@ -43,34 +50,56 @@ public class Behaviour {
         currentEvent = Variables.myHashMap.get(Variables.path);
       } else
       if (currentEvent.action.equals("call")) {
-        Variables.voice.addText("Direct call has begun").speak();
+        Variables.voice.addText("Direct call has begun");
+        Variables.voice.addText("Calling our operator, who'll assist you");
         Style.setTextToScreen("Direct Call");
-        Variables.finished = true;
-        return;
+        Variables.finished = currentEvent.isFinal;
+
       } else
       if (currentEvent.action.equals("getInfo")) {
-        Variables.voice.addText(currentEvent.toast).speak();
+        Variables.voice.addText(currentEvent.toast);
+        Variables.voice.addText("Getting you the latest information");
         Style.setTextToScreen("Getting Informations");
-        Variables.finished = true;
-        return;
+        Variables.finished = currentEvent.isFinal;
+
       } else
       if (currentEvent.action.equals("other")) {
-        Variables.voice.addText(currentEvent.toast).speak();
+        Variables.voice.addText(currentEvent.toast);
+        Variables.voice.addText("You've entered section of Other Services");
         Style.setTextToScreen("Other Services");
-        Variables.finished = true;
-        return;
+        Variables.finished = currentEvent.isFinal;
+
       } else if (currentEvent.action.equals("hangUp")) {
-        Variables.voice.addText(currentEvent.toast).speak();
+        Variables.voice.addText(currentEvent.toast);
+        Variables.voice.addText("Phone call ended");
         Style.setTextToScreen("End of Call");
-        Variables.finished = true;
-        return;
+        Variables.finished = currentEvent.isFinal;
+
       } else if (currentEvent.action.equals("record")) {
-        Variables.voice.addText(currentEvent.toast).speak();
+        Variables.voice.addText(currentEvent.toast);
         Style.setTextToScreen("Recording");
-        Variables.finished = true;
+        Variables.voice.addText("After beep start speaking beep");
+        Variables.voice.speak();
+        try {
+          TimeUnit.SECONDS.sleep(5);
+
+        } catch (Exception e) {
+        }
+        Variables.voice.addText("Succesfully recorded");
+        Variables.finished = currentEvent.isFinal;
+      }
+
+      if (Variables.finished) {
+        Variables.voice.speak();
+        Style.setTextToScreen("PhoneCall finished");
         return;
+      } else {
+
+        Variables.path = Variables.path.substring(0, Variables.path.length() - 2);
+        currentEvent = Variables.myHashMap.get(Variables.path);
       }
       Style.setTextToScreen(currentEvent.action);
+
     }
     Style.setTextToScreen(currentEvent.name);
     // Handling voice output 

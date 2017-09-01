@@ -13,7 +13,6 @@
   </imports>
   <registry>
     <language id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu">
-      <concept id="6151364482690565571" name="jetbrains.mps.samples.VoiceMenu.structure.Empty" flags="ng" index="2fTWM$" />
       <concept id="6587365532662359693" name="jetbrains.mps.samples.VoiceMenu.structure.Activity" flags="ng" index="2C_I21">
         <property id="2702278965990916343" name="greeting" index="3upAMh" />
         <reference id="6587365532662368499" name="event" index="2C_gVZ" />
@@ -261,9 +260,7 @@
           </node>
           <node concept="2C_I21" id="5K3$FqBvEob" role="2C_I26">
             <ref role="2C_gVZ" node="5K3$FqBvEo7" resolve="4" />
-            <node concept="X09Yf" id="5K3$FqC6TGS" role="2C_gVu">
-              <property role="XmNjE" value="false" />
-            </node>
+            <node concept="1$pBvo" id="5K3$FqCn5Pa" role="2C_gVu" />
           </node>
         </node>
       </node>
@@ -277,12 +274,9 @@
       </node>
       <node concept="2C_I21" id="5K3$FqBvEoS" role="2C_I26">
         <ref role="2C_gVZ" node="5K3$FqBvEoo" resolve="1" />
-        <node concept="1$pBvr" id="5K3$FqC2s_d" role="2C_gVu">
-          <property role="XmNmt" value="true" />
+        <node concept="X09Yf" id="5K3$FqCn5Pd" role="2C_gVu">
+          <property role="XmNjE" value="true" />
         </node>
-      </node>
-      <node concept="2C_I21" id="5K3$FqC0Q8Q" role="2C_I26">
-        <node concept="2fTWM$" id="5K3$FqC0Q8R" role="2C_gVu" />
       </node>
     </node>
   </node>

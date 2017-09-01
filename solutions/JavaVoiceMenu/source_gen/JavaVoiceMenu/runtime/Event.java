@@ -13,6 +13,7 @@ public class Event {
   public List<Event> childs;
   public String action;
   public String toast;
+  public boolean isFinal;
 
   public Event() {
     // empty 
@@ -36,8 +37,9 @@ public class Event {
   /**
    * set specific informations for Action
    */
-  public Event setAction(String action) {
+  public Event setAction(String action, boolean flag) {
     this.action = action;
+    this.isFinal = flag;
     return this;
   }
   /**

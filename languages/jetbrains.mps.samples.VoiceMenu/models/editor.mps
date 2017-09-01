@@ -5174,23 +5174,6 @@
                   <node concept="7Obwk" id="1L4ryxdRneW" role="37vLTx" />
                 </node>
               </node>
-              <node concept="1X3_iC" id="5K3$FqBk0v0" role="lGtFl">
-                <property role="3V$3am" value="statement" />
-                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                <node concept="3clFbF" id="1L4ryxdRneX" role="8Wnug">
-                  <node concept="37vLTI" id="1L4ryxdRneY" role="3clFbG">
-                    <node concept="37vLTw" id="1L4ryxdRneZ" role="37vLTx">
-                      <ref role="3cqZAo" node="1L4ryxdRneA" resolve="myActivity" />
-                    </node>
-                    <node concept="2OqwBi" id="1L4ryxdRnf0" role="37vLTJ">
-                      <node concept="3TrEf2" id="1L4ryxdRnf1" role="2OqNvi">
-                        <ref role="3Tt5mk" to="xehl:7pupFtvuZV$" resolve="Activity" />
-                      </node>
-                      <node concept="7Obwk" id="1L4ryxdRnf2" role="2Oq$k0" />
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3clFbH" id="1L4ryxdRnf3" role="3cqZAp" />
               <node concept="3clFbH" id="1L4ryxdRnf4" role="3cqZAp" />
               <node concept="3clFbF" id="1L4ryxdRnf5" role="3cqZAp">

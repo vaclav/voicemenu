@@ -27,7 +27,7 @@ public class Main__0 implements ActionListener {
   public static void initHashMap() {
 
     Event Home = new Event("myVoiceMenu3", "0");
-    Home.setAction("");
+    Home.setAction("", true);
     Home.setGreeting("");
     Home.childs = new ArrayList<Event>();
     Variables.main_Text = "myVoiceMenu3";
@@ -35,25 +35,25 @@ public class Main__0 implements ActionListener {
 
 
     Event var_qy4hiv_b0 = new Event("2", "2");
-    var_qy4hiv_b0.setAction("");
+    var_qy4hiv_b0.setAction("", false);
     var_qy4hiv_b0.setGreeting("");
     var_qy4hiv_b0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("02", var_qy4hiv_b0);
     Event var_qy4hiv_a0a0 = new Event("4", "4");
-    var_qy4hiv_a0a0.setAction("");
+    var_qy4hiv_a0a0.setAction("", false);
     var_qy4hiv_a0a0.setGreeting("");
     var_qy4hiv_a0a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("024", var_qy4hiv_a0a0);
-    var_qy4hiv_a0a0.setAction("other");
+    var_qy4hiv_a0a0.setAction("getInfo", false);
     var_qy4hiv_a0a0.childs = new ArrayList<Event>();
     var_qy4hiv_b0.childs = new ArrayList<Event>();
     var_qy4hiv_b0.childs.add(var_qy4hiv_a0a0);
     Event var_qy4hiv_a0 = new Event("1", "1");
-    var_qy4hiv_a0.setAction("");
+    var_qy4hiv_a0.setAction("", false);
     var_qy4hiv_a0.setGreeting("");
     var_qy4hiv_a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("01", var_qy4hiv_a0);
-    var_qy4hiv_a0.setAction("getInfo");
+    var_qy4hiv_a0.setAction("record", true);
     var_qy4hiv_a0.childs = new ArrayList<Event>();
 
     Home.childs.add(var_qy4hiv_a0);
@@ -90,7 +90,8 @@ public class Main__0 implements ActionListener {
   public void actionPerformed(ActionEvent event) {
     if (!(((Variables.path == null || Variables.path.length() == 0) || Variables.finished == true || Variables.started == false))) {
       try {
-        Behaviour.runLogic(event);
+        Behaviour.runLogic(event, false);
+
       } catch (IOException e) {
         e.printStackTrace();
       }

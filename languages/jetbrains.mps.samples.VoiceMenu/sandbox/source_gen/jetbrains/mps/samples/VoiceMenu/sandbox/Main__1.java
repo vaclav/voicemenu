@@ -27,7 +27,7 @@ public class Main__1 implements ActionListener {
   public static void initHashMap() {
 
     Event Home = new Event("myVoiceMenu", "0");
-    Home.setAction("");
+    Home.setAction("", true);
     Home.setGreeting("Welcome to our voicemenu");
     Home.childs = new ArrayList<Event>();
     Variables.main_Text = "myVoiceMenu";
@@ -35,52 +35,52 @@ public class Main__1 implements ActionListener {
 
 
     Event var_35s59u_a0 = new Event("Internetu", "1");
-    var_35s59u_a0.setAction("");
+    var_35s59u_a0.setAction("", false);
     var_35s59u_a0.setGreeting("");
     var_35s59u_a0.setGreeting("Welcome to the Internet");
     var_35s59u_a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("01", var_35s59u_a0);
     Event var_35s59u_a0a0 = new Event("Speed up", "1");
-    var_35s59u_a0a0.setAction("");
+    var_35s59u_a0a0.setAction("", false);
     var_35s59u_a0a0.setGreeting("");
     var_35s59u_a0a0.setGreeting("Increasing speed was chosen");
     var_35s59u_a0a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("011", var_35s59u_a0a0);
-    var_35s59u_a0a0.setAction("getInfo");
+    var_35s59u_a0a0.setAction("getInfo", false);
     var_35s59u_a0a0.childs = new ArrayList<Event>();
     Event var_35s59u_b0a0 = new Event("Discount", "2");
-    var_35s59u_b0a0.setAction("");
+    var_35s59u_b0a0.setAction("", false);
     var_35s59u_b0a0.setGreeting("");
     var_35s59u_b0a0.setGreeting("Great choice!");
     var_35s59u_b0a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("012", var_35s59u_b0a0);
     Event var_35s59u_b0b0a0 = new Event("Big Discount", "1");
-    var_35s59u_b0b0a0.setAction("");
+    var_35s59u_b0b0a0.setAction("", false);
     var_35s59u_b0b0a0.setGreeting("");
     var_35s59u_b0b0a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("0121", var_35s59u_b0b0a0);
-    var_35s59u_b0b0a0.setAction("call");
+    var_35s59u_b0b0a0.setAction("call", true);
     var_35s59u_b0b0a0.childs = new ArrayList<Event>();
     Event var_35s59u_a0b0a0 = new Event("Small Discount", "2");
-    var_35s59u_a0b0a0.setAction("");
+    var_35s59u_a0b0a0.setAction("", false);
     var_35s59u_a0b0a0.setGreeting("");
     var_35s59u_a0b0a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("0122", var_35s59u_a0b0a0);
-    var_35s59u_a0b0a0.setAction("call");
+    var_35s59u_a0b0a0.setAction("call", false);
     var_35s59u_a0b0a0.childs = new ArrayList<Event>();
     Event var_35s59u_d0b0a0 = new Event("Going Back", "#");
-    var_35s59u_d0b0a0.setAction("");
+    var_35s59u_d0b0a0.setAction("", false);
     var_35s59u_d0b0a0.setGreeting("");
     var_35s59u_d0b0a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("012#", var_35s59u_d0b0a0);
-    var_35s59u_d0b0a0.setAction("back");
+    var_35s59u_d0b0a0.setAction("back", true);
     var_35s59u_d0b0a0.childs = new ArrayList<Event>();
     Event var_35s59u_c0b0a0 = new Event("Going Back", "*");
-    var_35s59u_c0b0a0.setAction("");
+    var_35s59u_c0b0a0.setAction("", false);
     var_35s59u_c0b0a0.setGreeting("");
     var_35s59u_c0b0a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("012*", var_35s59u_c0b0a0);
-    var_35s59u_c0b0a0.setAction("back");
+    var_35s59u_c0b0a0.setAction("back", true);
     var_35s59u_c0b0a0.childs = new ArrayList<Event>();
     var_35s59u_b0a0.childs = new ArrayList<Event>();
     var_35s59u_b0a0.childs.add(var_35s59u_a0b0a0);
@@ -91,11 +91,11 @@ public class Main__1 implements ActionListener {
     var_35s59u_a0.childs.add(var_35s59u_a0a0);
     var_35s59u_a0.childs.add(var_35s59u_b0a0);
     Event var_35s59u_b0 = new Event("Television", "2");
-    var_35s59u_b0.setAction("");
+    var_35s59u_b0.setAction("", false);
     var_35s59u_b0.setGreeting("");
     var_35s59u_b0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("02", var_35s59u_b0);
-    var_35s59u_b0.setAction("other");
+    var_35s59u_b0.setAction("other", true);
     var_35s59u_b0.childs = new ArrayList<Event>();
 
     Home.childs.add(var_35s59u_a0);
@@ -132,7 +132,8 @@ public class Main__1 implements ActionListener {
   public void actionPerformed(ActionEvent event) {
     if (!(((Variables.path == null || Variables.path.length() == 0) || Variables.finished == true || Variables.started == false))) {
       try {
-        Behaviour.runLogic(event);
+        Behaviour.runLogic(event, false);
+
       } catch (IOException e) {
         e.printStackTrace();
       }
