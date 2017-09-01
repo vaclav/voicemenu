@@ -6,7 +6,7 @@
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" version="-1" />
-    <engage id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" />
+    <engage id="e2a803a4-d4b8-43eb-b458-517effd2a87f" name="jetbrains.mps.samples.VoiceMenuToAsterisk" />
   </languages>
   <imports>
     <import index="ibtu" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#427a473d-5177-432c-9905-bcbceb71b996(jetbrains.mps.lang.project.modules/module.jetbrains.mps.build.mps.runner@project_stub)" />
@@ -260,7 +260,9 @@
           </node>
           <node concept="2C_I21" id="5K3$FqBvEob" role="2C_I26">
             <ref role="2C_gVZ" node="5K3$FqBvEo7" resolve="Getting info" />
-            <node concept="1$pBvo" id="5K3$FqCn5Pa" role="2C_gVu" />
+            <node concept="1$pBvo" id="5K3$FqCn5Pa" role="2C_gVu">
+              <property role="XmNhe" value="false" />
+            </node>
           </node>
           <node concept="2C_I21" id="5K3$FqCoflB" role="2C_I26">
             <ref role="2C_gVZ" node="5K3$FqCoflP" resolve="back" />
@@ -272,6 +274,12 @@
           </node>
         </node>
       </node>
+      <node concept="2C_I21" id="5K3$FqCx4kV" role="2C_I26">
+        <ref role="2C_gVZ" node="5K3$FqBvEoo" resolve="Technical issues" />
+        <node concept="X09Yf" id="5K3$FqC$CbP" role="2C_gVu">
+          <property role="XmNjE" value="false" />
+        </node>
+      </node>
       <node concept="2C_Ik0" id="5K3$FqBvEoo" role="2C_I24">
         <property role="2C_Iks" value="1" />
         <property role="TrG5h" value="Technical issues" />
@@ -279,29 +287,6 @@
       <node concept="2C_Ik0" id="4JcMHpR0_Z4" role="2C_I24">
         <property role="2C_Iks" value="2" />
         <property role="TrG5h" value="Support" />
-      </node>
-      <node concept="2C_I21" id="5K3$FqBvEoS" role="2C_I26">
-        <ref role="2C_gVZ" node="5K3$FqBvEoo" resolve="Technical issues" />
-        <node concept="2C_Ik4" id="5K3$FqCo6_T" role="2C_gVu">
-          <node concept="2C_Ik0" id="5K3$FqCo6_U" role="2C_I24">
-            <property role="2C_Iks" value="6" />
-            <property role="TrG5h" value="Leave a message" />
-          </node>
-          <node concept="2C_I21" id="5K3$FqCo6A2" role="2C_I26">
-            <ref role="2C_gVZ" node="5K3$FqCo6_U" resolve="Leave a message" />
-            <node concept="X09Yf" id="5K3$FqCo6Ah" role="2C_gVu">
-              <property role="XmNjE" value="false" />
-            </node>
-          </node>
-          <node concept="2C_I21" id="5K3$FqCoflV" role="2C_I26">
-            <ref role="2C_gVZ" node="5K3$FqCofm1" resolve="back" />
-            <node concept="1$pBvp" id="5K3$FqCofm4" role="2C_gVu" />
-          </node>
-          <node concept="2C_Ik0" id="5K3$FqCofm1" role="2C_I24">
-            <property role="TrG5h" value="back" />
-            <property role="2C_Iks" value="#" />
-          </node>
-        </node>
       </node>
     </node>
   </node>
