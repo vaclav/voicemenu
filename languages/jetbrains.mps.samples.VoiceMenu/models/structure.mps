@@ -158,6 +158,11 @@
       <property role="TrG5h" value="isFinal" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="6HhgIFWNxfL" role="1TKVEl">
+      <property role="IQ2nx" value="7733035612202996721" />
+      <property role="TrG5h" value="number" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5RYvhcTA0F9">
     <property role="EcuMT" value="6772988411135920841" />
@@ -188,6 +193,11 @@
       <property role="IQ2nx" value="4759611536120921399" />
       <property role="TrG5h" value="isFinal" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="6HhgIFWVzO3" role="1TKVEl">
+      <property role="IQ2nx" value="7733035612205104387" />
+      <property role="TrG5h" value="nameOfRecording" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="5lu2mvqIooX">

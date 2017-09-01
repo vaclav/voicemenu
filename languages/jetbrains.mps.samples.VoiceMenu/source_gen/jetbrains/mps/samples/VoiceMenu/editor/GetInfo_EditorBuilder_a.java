@@ -19,6 +19,9 @@ import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.ActionStyleClass;
+import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
+import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
+import jetbrains.mps.nodeEditor.EditorManager;
 
 /*package*/ class GetInfo_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -54,6 +57,8 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.ActionStyleClass
     if (nodeCondition_vdzkpg_a5a()) {
       editorCell.addEditorCell(createImage_vdzkpg_f0());
     }
+    editorCell.addEditorCell(createConstant_vdzkpg_g0());
+    editorCell.addEditorCell(createProperty_vdzkpg_h0());
     return editorCell;
   }
   private boolean nodeCondition_vdzkpg_a4a() {
@@ -120,6 +125,28 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.ActionStyleClass
     editorCell.setCellId("Image_vdzkpg_f0");
     SwitchFinal_NonFinal.setCellActions(editorCell, myNode, getEditorContext());
     editorCell.setDescent(-150);
+    return editorCell;
+  }
+  private EditorCell createConstant_vdzkpg_g0() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "  ");
+    editorCell.setCellId("Constant_vdzkpg_g0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_vdzkpg_h0() {
+    CellProviderWithRole provider = new PropertyCellProvider(myNode, getEditorContext());
+    provider.setRole("nameOfRecording");
+    provider.setNoTargetText("record");
+    provider.setAllowsEmptyTarget(true);
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(getEditorContext());
+    editorCell.setCellId("property_nameOfRecording");
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(getEditorContext());
+      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
+    } else
     return editorCell;
   }
 }
