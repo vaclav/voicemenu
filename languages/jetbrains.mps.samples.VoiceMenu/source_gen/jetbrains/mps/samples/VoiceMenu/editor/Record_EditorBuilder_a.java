@@ -51,10 +51,16 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.ActionStyleClass
     if (nodeCondition_n4bxxp_a4a()) {
       editorCell.addEditorCell(createImage_n4bxxp_e0());
     }
+    if (nodeCondition_n4bxxp_a5a()) {
+      editorCell.addEditorCell(createImage_n4bxxp_f0());
+    }
     return editorCell;
   }
   private boolean nodeCondition_n4bxxp_a4a() {
     return !(SPropertyOperations.getBoolean(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, 0x420d89797f56bd93L, "isFinal")));
+  }
+  private boolean nodeCondition_n4bxxp_a5a() {
+    return SPropertyOperations.getBoolean(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, 0x420d89797f56bd93L, "isFinal"));
   }
   private EditorCell createImage_n4bxxp_a0() {
     SModule imageModule;
@@ -98,9 +104,21 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.ActionStyleClass
     SModule imageModule;
     String imagePath;
     imageModule = SNodeOperations.getConcept(myNode).getLanguage().getSourceModule();
-    imagePath = "${module}/src/isNotFinite.png";
+    imagePath = "${module}/src/NotFinalState.png";
     EditorCell_Image editorCell = EditorCell_Image.createImageCell(getEditorContext(), myNode, imageModule, imagePath);
     editorCell.setCellId("Image_n4bxxp_e0");
+    SwitchFinal_NonFinal.setCellActions(editorCell, myNode, getEditorContext());
+    editorCell.setDescent(-150);
+    return editorCell;
+  }
+  private EditorCell createImage_n4bxxp_f0() {
+    SModule imageModule;
+    String imagePath;
+    imageModule = SNodeOperations.getConcept(myNode).getLanguage().getSourceModule();
+    imagePath = "${module}/src/FinalState.png";
+    EditorCell_Image editorCell = EditorCell_Image.createImageCell(getEditorContext(), myNode, imageModule, imagePath);
+    editorCell.setCellId("Image_n4bxxp_f0");
+    SwitchFinal_NonFinal.setCellActions(editorCell, myNode, getEditorContext());
     editorCell.setDescent(-150);
     return editorCell;
   }
