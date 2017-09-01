@@ -522,7 +522,7 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a01c8j;
+          return IconContainer.RESOURCE_a0a01c8j_0;
         }
         @Override
         public String getTooltipText() {
@@ -570,7 +570,7 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c9j_3;
+          return IconContainer.RESOURCE_a0a9c9j_1;
         }
         @Override
         public String getTooltipText() {

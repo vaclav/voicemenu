@@ -577,7 +577,6 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
         public void execute(@NotNull String pattern) {
           SNode myNode = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event"));
           SLinkOperations.setTarget(_context.getNode(), MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event"), myNode);
-          SLinkOperations.setTarget(myNode, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x765e66b75f7bfee4L, "Activity"), _context.getNode());
 
           Iterable<EditorCell> contentCells = _context.getEditorContext().getSelectedCell().getParent().getContentCells();
 

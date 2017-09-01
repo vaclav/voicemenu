@@ -75,13 +75,6 @@
     <property role="EcuMT" value="6587365532662358796" />
     <property role="TrG5h" value="Event" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="7pupFtvuZV$" role="1TKVEi">
-      <property role="IQ2ns" value="8529367682053308132" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="Activity" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="5HF1wNNZuqd" resolve="Activity" />
-    </node>
     <node concept="1TJgyi" id="5HF1wNNZucg" role="1TKVEl">
       <property role="IQ2nx" value="6587365532662358800" />
       <property role="TrG5h" value="trigger" />

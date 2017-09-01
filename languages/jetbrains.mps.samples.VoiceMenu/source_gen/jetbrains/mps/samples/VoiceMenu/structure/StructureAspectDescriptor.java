@@ -131,7 +131,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)/6587365532662358796");
     b.prop("trigger", 0x5b6b060cf3fde310L, "6587365532662358800");
-    b.associate("Activity", 0x765e66b75f7bfee4L).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL).optional(true).origin("8529367682053308132").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForGetInfo() {
