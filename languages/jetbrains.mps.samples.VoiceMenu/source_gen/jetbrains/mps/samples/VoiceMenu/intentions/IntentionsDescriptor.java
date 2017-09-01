@@ -34,12 +34,14 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
       case 0:
         if (true) {
           // Concept: Action 
-          intentions = new IntentionFactory[5];
+          intentions = new IntentionFactory[7];
           intentions[0] = new changeToDirectCall_Intention();
           intentions[1] = new changeToOther_Intention();
           intentions[2] = new changeToBack_Intention();
           intentions[3] = new changeToGetInfo_Intention();
           intentions[4] = new changeToMenu_Intention();
+          intentions[5] = new SetAsFinal_Intention();
+          intentions[6] = new SetAsNonFinal_Intention();
         }
         break;
       case 1:
@@ -55,14 +57,6 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
         break;
       case 2:
         if (true) {
-          // Concept: DirectCall 
-          intentions = new IntentionFactory[2];
-          intentions[0] = new SetAsNotFinalDirectCall_Intention();
-          intentions[1] = new SetAsFinalDirectCall_Intention();
-        }
-        break;
-      case 3:
-        if (true) {
           // Concept: Event 
           intentions = new IntentionFactory[5];
           intentions[0] = new RemoveEventWithActivity_Intention();
@@ -72,7 +66,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
           intentions[4] = new MoveDown_Intention();
         }
         break;
-      case 4:
+      case 3:
         if (true) {
           // Concept: WorkSpace 
           intentions = new IntentionFactory[4];
@@ -111,9 +105,9 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
     rv[16] = new MoveDown_Intention();
     rv[17] = new RemoveActivityWithEvent_Intention();
     rv[18] = new DeclareActivity_Intention();
-    rv[19] = new SetAsNotFinalDirectCall_Intention();
-    rv[20] = new SetAsFinalDirectCall_Intention();
+    rv[19] = new SetAsFinal_Intention();
+    rv[20] = new SetAsNonFinal_Intention();
     return Arrays.asList(rv);
   }
-  private static final ConceptSwitchIndex index_hphjzv_d0f = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d133997fdc5L), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L)).seal();
+  private static final ConceptSwitchIndex index_hphjzv_d0f = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d133997fdc5L), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L)).seal();
 }

@@ -209,7 +209,7 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
   public class TMP_SubMenu_caopkk_b0 extends SubMenuMenuTransformationMenuPart {
     @Override
     protected String getText(TransformationMenuContext _context) {
-      return "SettingsMENUUUUU";
+      return "Settings";
     }
 
     @NotNull

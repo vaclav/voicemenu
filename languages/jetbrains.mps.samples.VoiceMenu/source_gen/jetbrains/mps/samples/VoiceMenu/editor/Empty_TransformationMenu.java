@@ -79,7 +79,7 @@ public class Empty_TransformationMenu extends TransformationMenuBase {
   public class TMP_SubMenu_8h8mrh_a0 extends SubMenuMenuTransformationMenuPart {
     @Override
     protected String getText(TransformationMenuContext _context) {
-      return "SettingsEMPTY";
+      return "Settings";
     }
 
     @NotNull
