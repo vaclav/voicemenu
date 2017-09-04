@@ -6,8 +6,8 @@ import java.io.IOException;
 import java.util.Objects;
 
 public class myVoice {
-  private String text;
-  private String OS;
+  private String text = "";
+  private String OS = "";
   /**
    * default constuctor
    */
@@ -20,7 +20,7 @@ public class myVoice {
    * set text to speak
    */
   public myVoice addText(String text) {
-    this.text += text + ", ";
+    this.text += text + " ";
     return this;
   }
   /**
