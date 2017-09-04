@@ -16,6 +16,7 @@ public class MacVoice {
    */
   public void speak(String text) throws IOException {
     String tts = getVoice() + text;
+    System.out.println(tts);
     // Runtime.getRuntime().exec(tts); 
     Runtime rt = Runtime.getRuntime();
     try {

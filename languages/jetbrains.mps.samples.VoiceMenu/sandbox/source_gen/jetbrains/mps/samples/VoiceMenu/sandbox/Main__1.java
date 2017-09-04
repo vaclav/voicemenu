@@ -76,7 +76,7 @@ public class Main__1 implements ActionListener {
     Sales_support_rwbd_b0.setGreeting("Leave us a message");
     Sales_support_rwbd_b0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("02", Sales_support_rwbd_b0);
-    Sales_support_rwbd_b0.setAction("record", false);
+    Sales_support_rwbd_b0.setAction("record", true);
     Sales_support_rwbd_b0.childs = new ArrayList<Event>();
     Event timeout_rwbd_c0 = new Event("timeout", "X");
     timeout_rwbd_c0.isFinal = false;
@@ -89,7 +89,6 @@ public class Main__1 implements ActionListener {
 
     Home.childs.add(Technical_issues_rwbd_a0);
     Home.childs.add(Sales_support_rwbd_b0);
-    Home.childs.add(timeout_rwbd_c0);
   }
 
   public static void main(String[] args) {

@@ -125,7 +125,11 @@ public class QueriesGenerated extends QueryProviderBase {
     return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08d2L, "commands"));
   }
   public static Iterable<SNode> sourceNodesQuery_7687817712156343731(final SourceSubstituteMacroNodesContext _context) {
-    return SLinkOperations.getChildren(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x5b6b060cf40204ebL, "bodyMenu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"));
+    return Sequence.fromIterable(SLinkOperations.collectMany(SNodeOperations.ofConcept(SNodeOperations.getChildren(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"))).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return neq_x583g4_a0a0a0a0a0a0cb(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).toLowerCase(), "timeout");
+      }
+    });
   }
   public static Iterable<SNode> sourceNodesQuery_2493374653982037920(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities"));
@@ -136,7 +140,6 @@ public class QueriesGenerated extends QueryProviderBase {
         return neq_x583g4_a0a0a0a0a0a0eb(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).toLowerCase(), "timeout");
       }
     });
-
   }
   private final Map<String, SourceNodeQuery> snqMethods = new HashMap<String, SourceNodeQuery>();
   {
@@ -361,6 +364,9 @@ public class QueriesGenerated extends QueryProviderBase {
   }
   private static boolean isNotEmptyString(String str) {
     return str != null && str.length() > 0;
+  }
+  private static boolean neq_x583g4_a0a0a0a0a0a0cb(Object a, Object b) {
+    return !(((a != null ? a.equals(b) : a == b)));
   }
   private static boolean neq_x583g4_a0a0a0a0a0a0eb(Object a, Object b) {
     return !(((a != null ? a.equals(b) : a == b)));
