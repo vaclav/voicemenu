@@ -6,7 +6,7 @@
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" version="-1" />
-    <engage id="e2a803a4-d4b8-43eb-b458-517effd2a87f" name="jetbrains.mps.samples.VoiceMenuToAsterisk" />
+    <engage id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" />
   </languages>
   <imports>
     <import index="ibtu" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#427a473d-5177-432c-9905-bcbceb71b996(jetbrains.mps.lang.project.modules/module.jetbrains.mps.build.mps.runner@project_stub)" />
@@ -326,9 +326,9 @@
         <property role="TrG5h" value="timeout" />
         <property role="2C_Iks" value="X" />
       </node>
-      <node concept="2C_I21" id="6HhgIFXleWR" role="2C_I26">
+      <node concept="2C_I21" id="6HhgIFXzQdu" role="2C_I26">
         <ref role="2C_gVZ" node="6HhgIFXh5PY" resolve="timeout" />
-        <node concept="2m1r4j" id="6HhgIFXprJa" role="2C_gVu" />
+        <node concept="2m1r4j" id="6HhgIFXzQdW" role="2C_gVu" />
       </node>
     </node>
   </node>
