@@ -236,7 +236,7 @@
   <node concept="1TIwiD" id="6HhgIFXlffT">
     <property role="EcuMT" value="7733035612211835897" />
     <property role="3GE5qa" value="RealActions" />
-    <property role="TrG5h" value="ReplayOptions" />
+    <property role="TrG5h" value="RepeatOptions" />
     <ref role="1TJDcQ" node="5RYvhcT_ZR5" resolve="Action" />
   </node>
 </model>
