@@ -44,6 +44,7 @@
         <property id="4759611536120921574" name="isFinal" index="XmNiv" />
       </concept>
       <concept id="6772988411135920840" name="jetbrains.mps.samples.VoiceMenu.structure.DirectCall" flags="ng" index="1$pBvr">
+        <property id="7733035612202996721" name="number" index="2nBP4r" />
         <property id="4759611536120921316" name="isFinal" index="XmNmt" />
       </concept>
     </language>
@@ -331,10 +332,10 @@
     </node>
   </node>
   <node concept="2Jqgb4" id="6HhgIFXTyQ2">
-    <property role="TrG5h" value="Test" />
+    <property role="TrG5h" value="Test(togetINfoHangUP)" />
     <node concept="2C_Ik4" id="6HhgIFXTyQ3" role="2JqgbB">
       <node concept="2C_I21" id="6HhgIFXYxj0" role="2C_I26">
-        <ref role="2C_gVZ" node="6HhgIFXYxiR" resolve="Technical issues" />
+        <ref role="2C_gVZ" node="6HhgIFXYxiR" resolve="Technical issues(toGETINFOZij dale)" />
         <node concept="2C_Ik4" id="6HhgIFXYxji" role="2C_gVu">
           <node concept="2C_Ik0" id="6HhgIFXYxjj" role="2C_I24">
             <property role="2C_Iks" value="1" />
@@ -362,9 +363,9 @@
           </node>
           <node concept="2C_I21" id="6HhgIFXYxjW" role="2C_I26">
             <ref role="2C_gVZ" node="6HhgIFXYxjS" resolve="DirectCallHangUp" />
-            <node concept="1$pBvo" id="6HhgIFXYxkn" role="2C_gVu">
-              <property role="XmNhe" value="true" />
-              <property role="2nJRZD" value="test2.wav" />
+            <node concept="1$pBvr" id="64d_H8NaJUU" role="2C_gVu">
+              <property role="XmNmt" value="true" />
+              <property role="2nBP4r" value="00420756432123" />
             </node>
           </node>
         </node>
@@ -378,11 +379,14 @@
       </node>
       <node concept="2C_I21" id="6HhgIFY76D4" role="2C_I26">
         <ref role="2C_gVZ" node="6HhgIFXTyQ5" resolve="timeout" />
-        <node concept="X09Yy" id="64d_H8NaDDZ" role="2C_gVu" />
+        <node concept="1$pBvo" id="64d_H8NaJUX" role="2C_gVu">
+          <property role="2nJRZD" value="test1.wav" />
+          <property role="XmNhe" value="true" />
+        </node>
       </node>
       <node concept="2C_Ik0" id="6HhgIFXYxiR" role="2C_I24">
         <property role="2C_Iks" value="1" />
-        <property role="TrG5h" value="Technical issues" />
+        <property role="TrG5h" value="Technical issues(toGETINFOZij dale)" />
       </node>
       <node concept="2C_Ik0" id="6HhgIFXYxiW" role="2C_I24">
         <property role="2C_Iks" value="2" />
