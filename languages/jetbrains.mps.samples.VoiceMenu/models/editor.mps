@@ -888,6 +888,12 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+      <node concept="3F0ifn" id="6HhgIFYwKAm" role="3EZMnx">
+        <property role="3F0ifm" value="" />
+        <node concept="pVoyu" id="6HhgIFYwKKJ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="3F2HdR" id="5HF1wNNZurU" role="3EZMnx">
         <ref role="1NtTu8" to="xehl:5HF1wNNZuqa" resolve="activities" />
         <ref role="1k5W1q" node="11pGboo2CX2" resolve="Declarations" />
@@ -930,7 +936,6 @@
         </node>
       </node>
       <node concept="l2Vlx" id="5HF1wNNZurD" role="2iSdaV" />
-      <node concept="3F0ifn" id="2w$I9I9V$Yd" role="3EZMnx" />
     </node>
   </node>
   <node concept="24kQdi" id="5HF1wNNZwzs">
@@ -1184,7 +1189,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="3F0ifn" id="6HhgIFXKvu4" role="3EZMnx">
-          <property role="3F0ifm" value="Timeout: " />
+          <property role="3F0ifm" value="Timeout:" />
           <node concept="VechU" id="6HhgIFXNSib" role="3F10Kt">
             <property role="Vb096" value="gray" />
           </node>
@@ -1195,8 +1200,25 @@
             <property role="VOm3f" value="false" />
           </node>
         </node>
+        <node concept="3F0A7n" id="64d_H8N2ncK" role="3EZMnx">
+          <property role="1$x2rV" value="max duration" />
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="xehl:64d_H8N2inJ" resolve="timeout" />
+        </node>
+        <node concept="3F0ifn" id="64d_H8N2nAG" role="3EZMnx">
+          <property role="3F0ifm" value="sec." />
+          <node concept="Vb9p2" id="64d_H8N2pQC" role="3F10Kt">
+            <property role="Vbekb" value="ITALIC" />
+          </node>
+          <node concept="VechU" id="64d_H8N2pQH" role="3F10Kt">
+            <property role="Vb096" value="gray" />
+          </node>
+        </node>
         <node concept="3F1sOY" id="6HhgIFXKvus" role="3EZMnx">
           <ref role="1NtTu8" to="xehl:5HF1wNNZwzi" resolve="commands" />
+          <node concept="pVoyu" id="6HhgIFYypJy" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
         </node>
         <node concept="l2Vlx" id="6HhgIFXKvei" role="2iSdaV" />
         <node concept="pkWqt" id="6HhgIFXKzfR" role="pqm2j">
@@ -1221,8 +1243,11 @@
             </node>
           </node>
         </node>
+        <node concept="3F0ifn" id="6HhgIFYtrav" role="3EZMnx">
+          <property role="3F0ifm" value="" />
+        </node>
         <node concept="3F0ifn" id="6HhgIFXWMf5" role="3EZMnx">
-          <property role="3F0ifm" value="Greeting: " />
+          <property role="3F0ifm" value="Info: " />
           <ref role="1k5W1q" node="11pGboo1Ya6" resolve="HardCodedText" />
           <ref role="1ERwB7" node="6VbSUrbOori" resolve="RemoveGreeting" />
           <node concept="pkWqt" id="6HhgIFXWMf6" role="pqm2j">
@@ -1687,11 +1712,6 @@
               </node>
             </node>
           </node>
-        </node>
-      </node>
-      <node concept="3F0ifn" id="7$6jWp$9aVL" role="3EZMnx">
-        <node concept="pVoyu" id="7$6jWp$9baq" role="3F10Kt">
-          <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F1sOY" id="5HF1wNO0wkV" role="3EZMnx">
