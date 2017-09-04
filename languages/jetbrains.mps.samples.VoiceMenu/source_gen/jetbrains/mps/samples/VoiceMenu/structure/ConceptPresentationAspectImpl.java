@@ -21,6 +21,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Menu;
   private ConceptPresentation props_Other;
   private ConceptPresentation props_Record;
+  private ConceptPresentation props_RepeatOptions;
   private ConceptPresentation props_WorkSpace;
 
   @Override
@@ -110,6 +111,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Record = cpb.create();
         }
         return props_Record;
+      case LanguageConceptSwitch.RepeatOptions:
+        if (props_RepeatOptions == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("RepeatOptions");
+          props_RepeatOptions = cpb.create();
+        }
+        return props_RepeatOptions;
       case LanguageConceptSwitch.WorkSpace:
         if (props_WorkSpace == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
