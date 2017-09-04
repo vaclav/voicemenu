@@ -308,7 +308,7 @@
       <property role="eg7rD" value="false" />
       <property role="34CwA1" value="false" />
       <property role="3TUv4t" value="false" />
-      <property role="TrG5h" value="props_RepeatOptions" />
+      <property role="TrG5h" value="props_ReplayOptions" />
       <node concept="3uibUv" id="F" role="1tU5fm">
         <ref role="3uigEE" to="ze1i:~ConceptPresentation" resolve="ConceptPresentation" />
       </node>
@@ -1139,7 +1139,7 @@
                       <node concept="liA8E" id="63" role="2OqNvi">
                         <ref role="37wK5l" to="ze1i:~ConceptPresentationBuilder.rawPresentation(java.lang.String):jetbrains.mps.smodel.runtime.ConceptPresentationBuilder" resolve="rawPresentation" />
                         <node concept="Xl_RD" id="64" role="37wK5m">
-                          <property role="Xl_RC" value="RepeatOptions" />
+                          <property role="Xl_RC" value="ReplayOptions" />
                         </node>
                       </node>
                     </node>
@@ -1155,7 +1155,7 @@
                         </node>
                       </node>
                       <node concept="37vLTw" id="67" role="37vLTJ">
-                        <ref role="3cqZAo" node="e" resolve="props_RepeatOptions" />
+                        <ref role="3cqZAo" node="e" resolve="props_ReplayOptions" />
                       </node>
                     </node>
                   </node>
@@ -1163,19 +1163,19 @@
                 <node concept="3clFbC" id="5T" role="3clFbw">
                   <node concept="10Nm6u" id="6a" role="3uHU7w" />
                   <node concept="37vLTw" id="6b" role="3uHU7B">
-                    <ref role="3cqZAo" node="e" resolve="props_RepeatOptions" />
+                    <ref role="3cqZAo" node="e" resolve="props_ReplayOptions" />
                   </node>
                 </node>
               </node>
               <node concept="3cpWs6" id="5R" role="3cqZAp">
                 <node concept="37vLTw" id="6c" role="3cqZAk">
-                  <ref role="3cqZAo" node="e" resolve="props_RepeatOptions" />
+                  <ref role="3cqZAo" node="e" resolve="props_ReplayOptions" />
                 </node>
               </node>
             </node>
             <node concept="10M0yZ" id="5P" role="3Kbmr1">
               <ref role="1PxDUh" node="6H" resolve="LanguageConceptSwitch" />
-              <ref role="3cqZAo" node="6V" resolve="RepeatOptions" />
+              <ref role="3cqZAo" node="6V" resolve="ReplayOptions" />
             </node>
           </node>
           <node concept="3KbdKl" id="1f" role="3KbHQx">
@@ -1424,7 +1424,7 @@
       <property role="2dlcS1" value="false" />
       <property role="2dld4O" value="false" />
       <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="RepeatOptions" />
+      <property role="TrG5h" value="ReplayOptions" />
       <node concept="3Tm1VV" id="7E" role="1B3o_S" />
       <node concept="10Oyi0" id="7F" role="1tU5fm" />
       <node concept="3cmrfG" id="7G" role="33vP2m">
@@ -1669,7 +1669,7 @@
                 <property role="1adDun" value="0x6b5142eafd54f3f9L" />
               </node>
               <node concept="37vLTw" id="99" role="37wK5m">
-                <ref role="3cqZAo" node="6V" resolve="RepeatOptions" />
+                <ref role="3cqZAo" node="6V" resolve="ReplayOptions" />
               </node>
             </node>
           </node>
@@ -1915,12 +1915,12 @@
       <property role="eg7rD" value="false" />
       <property role="34CwA1" value="false" />
       <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="myConceptRepeatOptions" />
+      <property role="TrG5h" value="myConceptReplayOptions" />
       <node concept="3uibUv" id="aC" role="1tU5fm">
         <ref role="3uigEE" to="ze1i:~ConceptDescriptor" resolve="ConceptDescriptor" />
       </node>
       <node concept="1rXfSq" id="aD" role="33vP2m">
-        <ref role="37wK5l" node="ae" resolve="createDescriptorForRepeatOptions" />
+        <ref role="37wK5l" node="ae" resolve="createDescriptorForReplayOptions" />
       </node>
     </node>
     <node concept="312cEg" id="9Q" role="jymVt">
@@ -2011,7 +2011,7 @@
               <ref role="3cqZAo" node="9O" resolve="myConceptRecord" />
             </node>
             <node concept="37vLTw" id="b8" role="37wK5m">
-              <ref role="3cqZAo" node="9P" resolve="myConceptRepeatOptions" />
+              <ref role="3cqZAo" node="9P" resolve="myConceptReplayOptions" />
             </node>
             <node concept="37vLTw" id="b9" role="37wK5m">
               <ref role="3cqZAo" node="9Q" resolve="myConceptWorkSpace" />
@@ -2205,13 +2205,13 @@
             <node concept="3clFbS" id="cj" role="3Kbo56">
               <node concept="3cpWs6" id="cl" role="3cqZAp">
                 <node concept="37vLTw" id="cm" role="3cqZAk">
-                  <ref role="3cqZAo" node="9P" resolve="myConceptRepeatOptions" />
+                  <ref role="3cqZAo" node="9P" resolve="myConceptReplayOptions" />
                 </node>
               </node>
             </node>
             <node concept="10M0yZ" id="ck" role="3Kbmr1">
               <ref role="1PxDUh" node="6H" resolve="LanguageConceptSwitch" />
-              <ref role="3cqZAo" node="6V" resolve="RepeatOptions" />
+              <ref role="3cqZAo" node="6V" resolve="ReplayOptions" />
             </node>
           </node>
           <node concept="3KbdKl" id="bw" role="3KbHQx">
@@ -4053,7 +4053,7 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="createDescriptorForRepeatOptions" />
+      <property role="TrG5h" value="createDescriptorForReplayOptions" />
       <node concept="3clFbS" id="mC" role="3clF47">
         <node concept="3cpWs8" id="mF" role="3cqZAp">
           <node concept="3cpWsn" id="mK" role="3cpWs9">
@@ -4068,7 +4068,7 @@
                   <property role="Xl_RC" value="jetbrains.mps.samples.VoiceMenu" />
                 </node>
                 <node concept="Xl_RD" id="mP" role="37wK5m">
-                  <property role="Xl_RC" value="RepeatOptions" />
+                  <property role="Xl_RC" value="ReplayOptions" />
                 </node>
                 <node concept="1adDum" id="mQ" role="37wK5m">
                   <property role="1adDun" value="0x4bc750d756884f52L" />

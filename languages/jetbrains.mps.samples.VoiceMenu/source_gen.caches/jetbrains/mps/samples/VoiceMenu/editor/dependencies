@@ -8,6 +8,7 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
   <dependency className="jetbrains.mps.samples.VoiceMenu.editor.Activity_EditorBuilder_a" file="Activity_EditorBuilder_a.java">
+    <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.impl.CellUtil" />
@@ -21,6 +22,8 @@
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.MPSColors" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.MPSFonts" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole" />
@@ -32,6 +35,7 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.style.StyleRegistry" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.RemoveActivityandEvent" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.RemoveGreeting" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.BracketsStyleClass" />
@@ -254,8 +258,8 @@
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.Other_TransformationMenu" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.Record_Editor" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.Record_TransformationMenu" />
-    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.RepeatOptions_Editor" />
-    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.RepeatOptions_TransformationMenu" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.ReplayOptions_Editor" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.ReplayOptions_TransformationMenu" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.WorkSpace_Editor" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.WorkSpace_TransformationMenu" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
@@ -849,14 +853,14 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.editor.RepeatOptions_Editor" file="RepeatOptions_Editor.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.editor.ReplayOptions_Editor" file="ReplayOptions_Editor.java">
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.RepeatOptions_EditorBuilder_a" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.ReplayOptions_EditorBuilder_a" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.editor.RepeatOptions_EditorBuilder_a" file="RepeatOptions_EditorBuilder_a.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.editor.ReplayOptions_EditorBuilder_a" file="ReplayOptions_EditorBuilder_a.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
@@ -875,7 +879,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.module.SModule" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.editor.RepeatOptions_TransformationMenu" file="RepeatOptions_TransformationMenu.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.editor.ReplayOptions_TransformationMenu" file="ReplayOptions_TransformationMenu.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.ArrayList" />

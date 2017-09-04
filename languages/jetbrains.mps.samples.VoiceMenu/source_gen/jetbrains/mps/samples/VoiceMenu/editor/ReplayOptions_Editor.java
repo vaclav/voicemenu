@@ -7,8 +7,8 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class RepeatOptions_Editor extends DefaultNodeEditor {
+public class ReplayOptions_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new RepeatOptions_EditorBuilder_a(editorContext, node).createCell();
+    return new ReplayOptions_EditorBuilder_a(editorContext, node).createCell();
   }
 }

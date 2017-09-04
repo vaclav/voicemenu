@@ -6,14 +6,14 @@
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" version="-1" />
-    <engage id="e2a803a4-d4b8-43eb-b458-517effd2a87f" name="jetbrains.mps.samples.VoiceMenuToAsterisk" />
+    <engage id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" />
   </languages>
   <imports>
     <import index="ibtu" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#427a473d-5177-432c-9905-bcbceb71b996(jetbrains.mps.lang.project.modules/module.jetbrains.mps.build.mps.runner@project_stub)" />
   </imports>
   <registry>
     <language id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu">
-      <concept id="7733035612211835897" name="jetbrains.mps.samples.VoiceMenu.structure.RepeatOptions" flags="ng" index="2m1r4j" />
+      <concept id="7733035612211835897" name="jetbrains.mps.samples.VoiceMenu.structure.ReplayOptions" flags="ng" index="2m1r4j" />
       <concept id="6587365532662359693" name="jetbrains.mps.samples.VoiceMenu.structure.Activity" flags="ng" index="2C_I21">
         <property id="2702278965990916343" name="greeting" index="3upAMh" />
         <reference id="6587365532662368499" name="event" index="2C_gVZ" />
@@ -44,7 +44,6 @@
         <property id="4759611536120921574" name="isFinal" index="XmNiv" />
       </concept>
       <concept id="6772988411135920840" name="jetbrains.mps.samples.VoiceMenu.structure.DirectCall" flags="ng" index="1$pBvr">
-        <property id="7733035612202996721" name="number" index="2nBP4r" />
         <property id="4759611536120921316" name="isFinal" index="XmNmt" />
       </concept>
     </language>
@@ -249,89 +248,6 @@
       </node>
     </node>
   </node>
-  <node concept="2Jqgb4" id="1dkJyTcULCU">
-    <property role="TrG5h" value="myVoiceMenu3" />
-    <property role="1EJLKn" value="true" />
-    <property role="3uoZKU" value="" />
-    <node concept="2C_Ik4" id="1dkJyTcULCV" role="2JqgbB">
-      <node concept="2C_I21" id="4JcMHpR1ogc" role="2C_I26">
-        <ref role="2C_gVZ" node="4JcMHpR0_Z4" resolve="Support" />
-        <node concept="2C_Ik4" id="5K3$FqBvEo6" role="2C_gVu">
-          <node concept="2C_Ik0" id="5K3$FqBvEo7" role="2C_I24">
-            <property role="2C_Iks" value="4" />
-            <property role="TrG5h" value="Getting info" />
-          </node>
-          <node concept="2C_I21" id="5K3$FqBvEob" role="2C_I26">
-            <ref role="2C_gVZ" node="5K3$FqBvEo7" resolve="Getting info" />
-            <node concept="1$pBvo" id="5K3$FqCn5Pa" role="2C_gVu">
-              <property role="XmNhe" value="true" />
-              <property role="2nJRZD" value="Support_info.wav" />
-            </node>
-          </node>
-          <node concept="2C_I21" id="5K3$FqCoflB" role="2C_I26">
-            <ref role="2C_gVZ" node="5K3$FqCoflP" resolve="Level" />
-            <node concept="2C_Ik4" id="5K3$FqCDNLg" role="2C_gVu">
-              <node concept="2C_Ik0" id="5K3$FqCDNLh" role="2C_I24">
-                <property role="2C_Iks" value="*" />
-                <property role="TrG5h" value="BackState" />
-              </node>
-              <node concept="2C_I21" id="5K3$FqCDNLl" role="2C_I26">
-                <ref role="2C_gVZ" node="5K3$FqCDNLh" resolve="BackState" />
-                <node concept="1$pBvr" id="6HhgIFWPl4p" role="2C_gVu">
-                  <property role="XmNmt" value="false" />
-                  <property role="2nBP4r" value="00420725345126" />
-                </node>
-              </node>
-              <node concept="2C_I21" id="6HhgIFWYFJh" role="2C_I26">
-                <ref role="2C_gVZ" node="6HhgIFWYFJn" resolve="info" />
-                <node concept="1$pBvo" id="6HhgIFWYFJA" role="2C_gVu">
-                  <property role="XmNhe" value="false" />
-                  <property role="2nJRZD" value="Sales_info.wav" />
-                </node>
-              </node>
-              <node concept="2C_Ik0" id="6HhgIFWYFJn" role="2C_I24">
-                <property role="TrG5h" value="info" />
-                <property role="2C_Iks" value="4" />
-              </node>
-            </node>
-          </node>
-          <node concept="2C_Ik0" id="5K3$FqCoflP" role="2C_I24">
-            <property role="TrG5h" value="Level" />
-            <property role="2C_Iks" value="#" />
-          </node>
-        </node>
-      </node>
-      <node concept="2C_I21" id="5K3$FqCx4kV" role="2C_I26">
-        <ref role="2C_gVZ" node="5K3$FqBvEoo" resolve="Technical issues" />
-        <node concept="2C_Ik4" id="5K3$FqCE1bM" role="2C_gVu">
-          <node concept="2C_Ik0" id="5K3$FqCE1bN" role="2C_I24">
-            <property role="2C_Iks" value="1" />
-            <property role="TrG5h" value="backSta" />
-          </node>
-          <node concept="2C_I21" id="5K3$FqCE1bV" role="2C_I26">
-            <ref role="2C_gVZ" node="5K3$FqCE1bN" resolve="backSta" />
-            <node concept="1$pBvp" id="6HhgIFXsY_C" role="2C_gVu" />
-          </node>
-        </node>
-      </node>
-      <node concept="2C_Ik0" id="5K3$FqBvEoo" role="2C_I24">
-        <property role="2C_Iks" value="1" />
-        <property role="TrG5h" value="Technical issues" />
-      </node>
-      <node concept="2C_Ik0" id="4JcMHpR0_Z4" role="2C_I24">
-        <property role="2C_Iks" value="2" />
-        <property role="TrG5h" value="Support" />
-      </node>
-      <node concept="2C_Ik0" id="6HhgIFXh5PY" role="2C_I24">
-        <property role="TrG5h" value="timeout" />
-        <property role="2C_Iks" value="7" />
-      </node>
-      <node concept="2C_I21" id="6HhgIFXzQdu" role="2C_I26">
-        <ref role="2C_gVZ" node="6HhgIFXh5PY" resolve="timeout" />
-        <node concept="2m1r4j" id="6HhgIFXzQdW" role="2C_gVu" />
-      </node>
-    </node>
-  </node>
   <node concept="2Jqgb4" id="6nemK62JSIo">
     <property role="TrG5h" value="myVoiceMenu" />
     <property role="1EJLKn" value="true" />
@@ -411,6 +327,70 @@
         <node concept="1$pBvq" id="4JcMHpR2C1B" role="2C_gVu">
           <property role="XmNiv" value="true" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2Jqgb4" id="6HhgIFXTyQ2">
+    <property role="TrG5h" value="Test" />
+    <node concept="2C_Ik4" id="6HhgIFXTyQ3" role="2JqgbB">
+      <node concept="2C_I21" id="6HhgIFXYxj0" role="2C_I26">
+        <ref role="2C_gVZ" node="6HhgIFXYxiR" resolve="Technical issues" />
+        <node concept="2C_Ik4" id="6HhgIFXYxji" role="2C_gVu">
+          <node concept="2C_Ik0" id="6HhgIFXYxjj" role="2C_I24">
+            <property role="2C_Iks" value="1" />
+            <property role="TrG5h" value="Internet" />
+          </node>
+          <node concept="2C_Ik0" id="6HhgIFXYxjS" role="2C_I24">
+            <property role="2C_Iks" value="2" />
+            <property role="TrG5h" value="Phone" />
+          </node>
+          <node concept="2C_Ik0" id="6HhgIFXYxjk" role="2C_I24">
+            <property role="2C_Iks" value="X" />
+            <property role="TrG5h" value="timeout" />
+          </node>
+          <node concept="2C_I21" id="6HhgIFXYxjl" role="2C_I26">
+            <property role="3upAMh" value="Repeating possible options" />
+            <ref role="2C_gVZ" node="6HhgIFXYxjk" resolve="timeout" />
+            <node concept="2m1r4j" id="6HhgIFXYxkq" role="2C_gVu" />
+          </node>
+          <node concept="2C_I21" id="6HhgIFXYxjx" role="2C_I26">
+            <ref role="2C_gVZ" node="6HhgIFXYxjj" resolve="Internet" />
+            <node concept="1$pBvo" id="6HhgIFXYxjP" role="2C_gVu">
+              <property role="XmNhe" value="false" />
+              <property role="2nJRZD" value="test1.wav" />
+            </node>
+          </node>
+          <node concept="2C_I21" id="6HhgIFXYxjW" role="2C_I26">
+            <ref role="2C_gVZ" node="6HhgIFXYxjS" resolve="Phone" />
+            <node concept="1$pBvo" id="6HhgIFXYxkn" role="2C_gVu">
+              <property role="XmNhe" value="true" />
+              <property role="2nJRZD" value="test2.wav" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2C_I21" id="6HhgIFY09IU" role="2C_I26">
+        <property role="3upAMh" value="Leave us a message" />
+        <ref role="2C_gVZ" node="6HhgIFXYxiW" resolve="Sales support" />
+        <node concept="X09Yf" id="6HhgIFY09JN" role="2C_gVu">
+          <property role="XmNjE" value="false" />
+        </node>
+      </node>
+      <node concept="2C_I21" id="6HhgIFY76D4" role="2C_I26">
+        <ref role="2C_gVZ" node="6HhgIFXTyQ5" resolve="timeout" />
+        <node concept="2m1r4j" id="6HhgIFY8ImY" role="2C_gVu" />
+      </node>
+      <node concept="2C_Ik0" id="6HhgIFXYxiR" role="2C_I24">
+        <property role="2C_Iks" value="1" />
+        <property role="TrG5h" value="Technical issues" />
+      </node>
+      <node concept="2C_Ik0" id="6HhgIFXYxiW" role="2C_I24">
+        <property role="2C_Iks" value="2" />
+        <property role="TrG5h" value="Sales support" />
+      </node>
+      <node concept="2C_Ik0" id="6HhgIFXTyQ5" role="2C_I24">
+        <property role="2C_Iks" value="X" />
+        <property role="TrG5h" value="timeout" />
       </node>
     </node>
   </node>
