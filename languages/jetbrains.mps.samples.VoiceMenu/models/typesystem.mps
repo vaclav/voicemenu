@@ -507,12 +507,12 @@
                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                     </node>
                   </node>
-                  <node concept="liA8E" id="48dyn_ZDWqv" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.toString():java.lang.String" resolve="toString" />
+                  <node concept="liA8E" id="6HhgIFXiE9l" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
                   </node>
                 </node>
                 <node concept="Xl_RD" id="48dyn_ZDLDI" role="3uHU7w">
-                  <property role="Xl_RC" value="Default" />
+                  <property role="Xl_RC" value="timeout" />
                 </node>
               </node>
               <node concept="17R0WA" id="48dyn_Zt2lZ" role="3uHU7B">
@@ -525,7 +525,7 @@
                   </node>
                 </node>
                 <node concept="Xl_RD" id="48dyn_Zt2m3" role="3uHU7w">
-                  <property role="Xl_RC" value="D" />
+                  <property role="Xl_RC" value="X" />
                 </node>
               </node>
             </node>

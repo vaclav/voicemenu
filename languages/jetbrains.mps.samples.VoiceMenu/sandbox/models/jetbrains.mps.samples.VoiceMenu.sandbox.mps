@@ -263,7 +263,7 @@
           <node concept="2C_I21" id="5K3$FqBvEob" role="2C_I26">
             <ref role="2C_gVZ" node="5K3$FqBvEo7" resolve="Getting info" />
             <node concept="1$pBvo" id="5K3$FqCn5Pa" role="2C_gVu">
-              <property role="XmNhe" value="false" />
+              <property role="XmNhe" value="true" />
               <property role="2nJRZD" value="Support_info.wav" />
             </node>
           </node>
@@ -278,7 +278,7 @@
                 <ref role="2C_gVZ" node="5K3$FqCDNLh" resolve="BackState" />
                 <node concept="1$pBvr" id="6HhgIFWPl4p" role="2C_gVu">
                   <property role="XmNmt" value="false" />
-                  <property role="2nBP4r" value="725345126" />
+                  <property role="2nBP4r" value="00420725345126" />
                 </node>
               </node>
               <node concept="2C_I21" id="6HhgIFWYFJh" role="2C_I26">
@@ -324,6 +324,10 @@
       <node concept="2C_Ik0" id="6HhgIFXh5PY" role="2C_I24">
         <property role="TrG5h" value="timeout" />
         <property role="2C_Iks" value="X" />
+      </node>
+      <node concept="2C_I21" id="6HhgIFXleWR" role="2C_I26">
+        <ref role="2C_gVZ" node="6HhgIFXh5PY" resolve="timeout" />
+        <node concept="X09Yy" id="6HhgIFXleXY" role="2C_gVu" />
       </node>
     </node>
   </node>

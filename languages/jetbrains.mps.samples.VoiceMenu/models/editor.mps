@@ -15289,5 +15289,18 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="6HhgIFXlfhn">
+    <property role="3GE5qa" value="RealActions" />
+    <ref role="1XX52x" to="xehl:6HhgIFXlffT" resolve="RepeatOptions" />
+    <node concept="3EZMnI" id="6HhgIFXlfhp" role="2wV5jI">
+      <node concept="3F0ifn" id="6HhgIFXlfJH" role="3EZMnx">
+        <property role="3F0ifm" value="ICON" />
+      </node>
+      <node concept="3F0ifn" id="6HhgIFXlfhw" role="3EZMnx">
+        <property role="3F0ifm" value="Repeat options" />
+      </node>
+      <node concept="l2Vlx" id="6HhgIFXlfhs" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

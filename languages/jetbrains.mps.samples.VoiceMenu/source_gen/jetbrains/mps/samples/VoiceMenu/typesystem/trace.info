@@ -443,7 +443,7 @@
       <node id="6587365532662446257" at="21,118,32,5" concept="4" />
       <node id="6587365532662446244" at="21,0,35,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
       <scope id="6587365532662446244" at="19,48,19,48" />
-      <scope id="6587365532662446259" at="22,2996,22,2996" />
+      <scope id="6587365532662446259" at="22,2999,22,2999" />
       <scope id="6587365532662446244" at="35,50,36,155" />
       <scope id="6587365532662446244" at="38,68,39,102" />
       <scope id="6587365532662446244" at="41,30,42,17" />

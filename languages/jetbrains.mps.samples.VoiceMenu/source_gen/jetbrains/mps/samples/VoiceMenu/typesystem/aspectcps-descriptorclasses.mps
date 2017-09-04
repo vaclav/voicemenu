@@ -2048,11 +2048,11 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="bH" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.toString():java.lang.String" resolve="toString" />
+                      <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
                     </node>
                   </node>
                   <node concept="Xl_RD" id="bF" role="3uHU7w">
-                    <property role="Xl_RC" value="Default" />
+                    <property role="Xl_RC" value="timeout" />
                   </node>
                 </node>
                 <node concept="17R0WA" id="bD" role="3uHU7B">
@@ -2065,7 +2065,7 @@
                     </node>
                   </node>
                   <node concept="Xl_RD" id="bL" role="3uHU7w">
-                    <property role="Xl_RC" value="D" />
+                    <property role="Xl_RC" value="X" />
                   </node>
                 </node>
               </node>
