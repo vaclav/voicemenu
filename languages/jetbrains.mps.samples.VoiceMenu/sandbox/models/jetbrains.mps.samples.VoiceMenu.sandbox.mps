@@ -6,7 +6,7 @@
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" version="-1" />
-    <engage id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" />
+    <engage id="e2a803a4-d4b8-43eb-b458-517effd2a87f" name="jetbrains.mps.samples.VoiceMenuToAsterisk" />
   </languages>
   <imports>
     <import index="ibtu" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#427a473d-5177-432c-9905-bcbceb71b996(jetbrains.mps.lang.project.modules/module.jetbrains.mps.build.mps.runner@project_stub)" />
@@ -338,11 +338,11 @@
         <node concept="2C_Ik4" id="6HhgIFXYxji" role="2C_gVu">
           <node concept="2C_Ik0" id="6HhgIFXYxjj" role="2C_I24">
             <property role="2C_Iks" value="1" />
-            <property role="TrG5h" value="Internet" />
+            <property role="TrG5h" value="GetInfoCotinue" />
           </node>
           <node concept="2C_Ik0" id="6HhgIFXYxjS" role="2C_I24">
             <property role="2C_Iks" value="2" />
-            <property role="TrG5h" value="Phone" />
+            <property role="TrG5h" value="DirectCallHangUp" />
           </node>
           <node concept="2C_Ik0" id="6HhgIFXYxjk" role="2C_I24">
             <property role="2C_Iks" value="X" />
@@ -354,14 +354,14 @@
             <node concept="2m1r4j" id="6HhgIFXYxkq" role="2C_gVu" />
           </node>
           <node concept="2C_I21" id="6HhgIFXYxjx" role="2C_I26">
-            <ref role="2C_gVZ" node="6HhgIFXYxjj" resolve="Internet" />
+            <ref role="2C_gVZ" node="6HhgIFXYxjj" resolve="GetInfoCotinue" />
             <node concept="1$pBvo" id="6HhgIFXYxjP" role="2C_gVu">
               <property role="XmNhe" value="false" />
               <property role="2nJRZD" value="test1.wav" />
             </node>
           </node>
           <node concept="2C_I21" id="6HhgIFXYxjW" role="2C_I26">
-            <ref role="2C_gVZ" node="6HhgIFXYxjS" resolve="Phone" />
+            <ref role="2C_gVZ" node="6HhgIFXYxjS" resolve="DirectCallHangUp" />
             <node concept="1$pBvo" id="6HhgIFXYxkn" role="2C_gVu">
               <property role="XmNhe" value="true" />
               <property role="2nJRZD" value="test2.wav" />
@@ -371,14 +371,14 @@
       </node>
       <node concept="2C_I21" id="6HhgIFY09IU" role="2C_I26">
         <property role="3upAMh" value="Leave us a message" />
-        <ref role="2C_gVZ" node="6HhgIFXYxiW" resolve="Sales support" />
+        <ref role="2C_gVZ" node="6HhgIFXYxiW" resolve="recordHangUP" />
         <node concept="X09Yf" id="6HhgIFY09JN" role="2C_gVu">
           <property role="XmNjE" value="true" />
         </node>
       </node>
       <node concept="2C_I21" id="6HhgIFY76D4" role="2C_I26">
         <ref role="2C_gVZ" node="6HhgIFXTyQ5" resolve="timeout" />
-        <node concept="2m1r4j" id="6HhgIFYk91a" role="2C_gVu" />
+        <node concept="X09Yy" id="64d_H8NaDDZ" role="2C_gVu" />
       </node>
       <node concept="2C_Ik0" id="6HhgIFXYxiR" role="2C_I24">
         <property role="2C_Iks" value="1" />
@@ -386,7 +386,7 @@
       </node>
       <node concept="2C_Ik0" id="6HhgIFXYxiW" role="2C_I24">
         <property role="2C_Iks" value="2" />
-        <property role="TrG5h" value="Sales support" />
+        <property role="TrG5h" value="recordHangUP" />
       </node>
       <node concept="2C_Ik0" id="6HhgIFXTyQ5" role="2C_I24">
         <property role="2C_Iks" value="X" />
