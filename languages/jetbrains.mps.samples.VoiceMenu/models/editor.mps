@@ -16323,7 +16323,7 @@
     <ref role="1XX52x" to="xehl:6HhgIFXlffT" resolve="RepeatOptions" />
     <node concept="3EZMnI" id="6HhgIFXprZ8" role="2wV5jI">
       <node concept="1u4HXA" id="6HhgIFXprZ9" role="3EZMnx">
-        <property role="1ubRXE" value="${module}/src/repeatOptions.png" />
+        <property role="1ubRXE" value="${module}/src/replayOpt.png" />
         <property role="1$Qi42" value="-150" />
         <node concept="VPM3Z" id="6HhgIFXprZa" role="3F10Kt">
           <property role="VOm3f" value="false" />

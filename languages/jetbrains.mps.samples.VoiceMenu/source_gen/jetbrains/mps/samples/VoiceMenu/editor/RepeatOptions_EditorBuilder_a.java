@@ -51,7 +51,7 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.ActionStyleClass
     SModule imageModule;
     String imagePath;
     imageModule = SNodeOperations.getConcept(myNode).getLanguage().getSourceModule();
-    imagePath = "${module}/src/repeatOptions.png";
+    imagePath = "${module}/src/replayOpt.png";
     EditorCell_Image editorCell = EditorCell_Image.createImageCell(getEditorContext(), myNode, imageModule, imagePath);
     editorCell.setCellId("Image_cr68ok_a0");
     Style style = new StyleImpl();
