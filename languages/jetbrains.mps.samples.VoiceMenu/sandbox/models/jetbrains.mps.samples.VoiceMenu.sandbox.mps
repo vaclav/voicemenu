@@ -324,7 +324,7 @@
       </node>
       <node concept="2C_Ik0" id="6HhgIFXh5PY" role="2C_I24">
         <property role="TrG5h" value="timeout" />
-        <property role="2C_Iks" value="X" />
+        <property role="2C_Iks" value="7" />
       </node>
       <node concept="2C_I21" id="6HhgIFXzQdu" role="2C_I26">
         <ref role="2C_gVZ" node="6HhgIFXh5PY" resolve="timeout" />

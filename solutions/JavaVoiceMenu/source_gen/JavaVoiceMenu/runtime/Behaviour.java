@@ -53,7 +53,6 @@ public class Behaviour {
         Variables.voice.addText("Calling our operator, who'll assist you");
         Style.setTextToScreen("Direct Call");
         Variables.finished = currentEvent.isFinal;
-
       } else
       if (currentEvent.action.equals("getInfo")) {
         Variables.voice.addText(currentEvent.toast);
@@ -84,6 +83,9 @@ public class Behaviour {
         } catch (Exception e) {
         }
         Variables.voice.addText("Succesfully recorded");
+      } else if (currentEvent.action.equals("repeat")) {
+        Variables.voice.addText("Repeating possible options");
+        Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
       }
       Variables.finished = currentEvent.isFinal;
       System.out.println(currentEvent.name + " + " + currentEvent.isFinal);
@@ -92,7 +94,7 @@ public class Behaviour {
         Style.setTextToScreen("PhoneCall finished");
         return;
       } else {
-        if (!(currentEvent.action.equals("back"))) {
+        if (!(currentEvent.action.equals("back")) && !(currentEvent.action.equals("repeat"))) {
           Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
         }
         currentEvent = Variables.myHashMap.get(Variables.path);
