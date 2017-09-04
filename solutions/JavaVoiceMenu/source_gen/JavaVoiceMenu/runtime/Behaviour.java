@@ -106,7 +106,7 @@ public class Behaviour {
     if (wrongButtonPressed == false) {
       Variables.voice.addText(currentEvent.toast);
     }
-    Variables.voice.addText("Choose from this menu");
+    Variables.voice.addText("Choose from this menu, ");
     // Delete all the previous possible options 
     Variables.possibleOptList.clear();
     // Proposing possible options consisting of next events 

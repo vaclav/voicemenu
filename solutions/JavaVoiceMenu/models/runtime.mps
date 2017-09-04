@@ -3994,7 +3994,7 @@
             <node concept="liA8E" id="5mb0yBfJwAP" role="2OqNvi">
               <ref role="37wK5l" node="6alSDtAKAit" resolve="addText" />
               <node concept="Xl_RD" id="5mb0yBfJwAQ" role="37wK5m">
-                <property role="Xl_RC" value="Choose from this menu" />
+                <property role="Xl_RC" value="Choose from this menu, " />
               </node>
             </node>
           </node>
