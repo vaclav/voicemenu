@@ -2835,5 +2835,137 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="1Dc9HeHL7nV">
+    <property role="TrG5h" value="changeToHangUp" />
+    <property role="3GE5qa" value="changeActions" />
+    <ref role="2ZfgGC" to="xehl:5RYvhcT_ZR5" resolve="Action" />
+    <node concept="2S6ZIM" id="1Dc9HeHL7nW" role="2ZfVej">
+      <node concept="3clFbS" id="1Dc9HeHL7nX" role="2VODD2">
+        <node concept="3clFbF" id="1Dc9HeHL7nY" role="3cqZAp">
+          <node concept="Xl_RD" id="1Dc9HeHL7nZ" role="3clFbG">
+            <property role="Xl_RC" value="Change Actioon to HangUp" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1Dc9HeHL7o0" role="2ZfgGD">
+      <node concept="3clFbS" id="1Dc9HeHL7o1" role="2VODD2">
+        <node concept="3clFbF" id="1Dc9HeHL7o2" role="3cqZAp">
+          <node concept="2OqwBi" id="1Dc9HeHL7o3" role="3clFbG">
+            <node concept="2Sf5sV" id="1Dc9HeHL7o4" role="2Oq$k0" />
+            <node concept="2DeJnW" id="1Dc9HeHL7o5" role="2OqNvi">
+              <ref role="1_rbq0" to="xehl:48dyn_Z3hrr" resolve="HangUp" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="1Dc9HeHL7o6" role="2ZfVeh">
+      <node concept="3clFbS" id="1Dc9HeHL7o7" role="2VODD2">
+        <node concept="3clFbF" id="1Dc9HeHL7o8" role="3cqZAp">
+          <node concept="3fqX7Q" id="1Dc9HeHL7o9" role="3clFbG">
+            <node concept="1eOMI4" id="1Dc9HeHL7oa" role="3fr31v">
+              <node concept="2OqwBi" id="1Dc9HeHL7ob" role="1eOMHV">
+                <node concept="2Sf5sV" id="1Dc9HeHL7oc" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="1Dc9HeHL7od" role="2OqNvi">
+                  <node concept="chp4Y" id="1Dc9HeHL8ZC" role="cj9EA">
+                    <ref role="cht4Q" to="xehl:48dyn_Z3hrr" resolve="HangUp" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="1Dc9HeHL9k7">
+    <property role="TrG5h" value="changeToRecord" />
+    <property role="3GE5qa" value="changeActions" />
+    <ref role="2ZfgGC" to="xehl:5RYvhcT_ZR5" resolve="Action" />
+    <node concept="2S6ZIM" id="1Dc9HeHL9k8" role="2ZfVej">
+      <node concept="3clFbS" id="1Dc9HeHL9k9" role="2VODD2">
+        <node concept="3clFbF" id="1Dc9HeHL9ka" role="3cqZAp">
+          <node concept="Xl_RD" id="1Dc9HeHL9kb" role="3clFbG">
+            <property role="Xl_RC" value="Change Actioon to Record" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1Dc9HeHL9kc" role="2ZfgGD">
+      <node concept="3clFbS" id="1Dc9HeHL9kd" role="2VODD2">
+        <node concept="3clFbF" id="1Dc9HeHL9ke" role="3cqZAp">
+          <node concept="2OqwBi" id="1Dc9HeHL9kf" role="3clFbG">
+            <node concept="2Sf5sV" id="1Dc9HeHL9kg" role="2Oq$k0" />
+            <node concept="2DeJnW" id="1Dc9HeHL9kh" role="2OqNvi">
+              <ref role="1_rbq0" to="xehl:48dyn_Z3hrQ" resolve="Record" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="1Dc9HeHL9ki" role="2ZfVeh">
+      <node concept="3clFbS" id="1Dc9HeHL9kj" role="2VODD2">
+        <node concept="3clFbF" id="1Dc9HeHL9kk" role="3cqZAp">
+          <node concept="3fqX7Q" id="1Dc9HeHL9kl" role="3clFbG">
+            <node concept="1eOMI4" id="1Dc9HeHL9km" role="3fr31v">
+              <node concept="2OqwBi" id="1Dc9HeHL9kn" role="1eOMHV">
+                <node concept="2Sf5sV" id="1Dc9HeHL9ko" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="1Dc9HeHL9kp" role="2OqNvi">
+                  <node concept="chp4Y" id="1Dc9HeHLdNI" role="cj9EA">
+                    <ref role="cht4Q" to="xehl:48dyn_Z3hrQ" resolve="Record" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="1Dc9HeHLe8d">
+    <property role="TrG5h" value="changeToReplay" />
+    <property role="3GE5qa" value="changeActions" />
+    <ref role="2ZfgGC" to="xehl:5RYvhcT_ZR5" resolve="Action" />
+    <node concept="2S6ZIM" id="1Dc9HeHLe8e" role="2ZfVej">
+      <node concept="3clFbS" id="1Dc9HeHLe8f" role="2VODD2">
+        <node concept="3clFbF" id="1Dc9HeHLe8g" role="3cqZAp">
+          <node concept="Xl_RD" id="1Dc9HeHLe8h" role="3clFbG">
+            <property role="Xl_RC" value="Change Actioon to Replay Options" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1Dc9HeHLe8i" role="2ZfgGD">
+      <node concept="3clFbS" id="1Dc9HeHLe8j" role="2VODD2">
+        <node concept="3clFbF" id="1Dc9HeHLe8k" role="3cqZAp">
+          <node concept="2OqwBi" id="1Dc9HeHLe8l" role="3clFbG">
+            <node concept="2Sf5sV" id="1Dc9HeHLe8m" role="2Oq$k0" />
+            <node concept="2DeJnW" id="1Dc9HeHLe8n" role="2OqNvi">
+              <ref role="1_rbq0" to="xehl:6HhgIFXlffT" resolve="ReplayOptions" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="1Dc9HeHLe8o" role="2ZfVeh">
+      <node concept="3clFbS" id="1Dc9HeHLe8p" role="2VODD2">
+        <node concept="3clFbF" id="1Dc9HeHLe8q" role="3cqZAp">
+          <node concept="3fqX7Q" id="1Dc9HeHLe8r" role="3clFbG">
+            <node concept="1eOMI4" id="1Dc9HeHLe8s" role="3fr31v">
+              <node concept="2OqwBi" id="1Dc9HeHLe8t" role="1eOMHV">
+                <node concept="2Sf5sV" id="1Dc9HeHLe8u" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="1Dc9HeHLe8v" role="2OqNvi">
+                  <node concept="chp4Y" id="1Dc9HeHLfcO" role="cj9EA">
+                    <ref role="cht4Q" to="xehl:6HhgIFXlffT" resolve="ReplayOptions" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
