@@ -1,0 +1,47 @@
+<?xml version = "1.0" encoding = "UTF-8" standalone = "no"?>
+<state_machine>
+  
+  <state id="Test" isInitial="true">
+    
+    
+    <activity event="1" target_child="Technical issues">
+      <timeout>5</timeout>
+      <state id="Technical issues">
+        <activity event="X" target_child="timeout">
+          <toast>TIMEOUT CHANGED</toast>
+          <state id="timeout">
+            <action name="Replay Options"></action>
+          </state>
+          
+        </activity>
+        <activity event="1" target_child="GetInfo">
+          <state id="GetInfo">
+            <action name="Get Info"></action>
+          </state>
+          
+        </activity>
+        <activity event="2" target_child="DirectCall">
+          <state id="DirectCall">
+            <action name="Direct Call"></action>
+          </state>
+          
+        </activity>
+      </state>
+      
+    </activity>
+    <activity event="2" target_child="record">
+      <toast>Leave us a message</toast>
+      <state id="record">
+        <action name="Record"></action>
+      </state>
+      
+    </activity>
+    <activity event="X" target_child="timeout">
+      <state id="timeout">
+        <action name="Get Info"></action>
+      </state>
+      
+    </activity>
+    
+  </state>
+</state_machine>
