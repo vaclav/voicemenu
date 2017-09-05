@@ -8,8 +8,11 @@
     <classNode dependClassName="java.io.IOException" />
     <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Runnable" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.lang.Thread" />
     <classNode dependClassName="java.util.concurrent.TimeUnit" />
   </dependency>
   <dependency className="JavaVoiceMenu.runtime.Data" file="Data.java">
@@ -68,6 +71,7 @@
     <classNode dependClassName="JavaVoiceMenu.runtime.myVoice" />
     <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.Thread" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="java.util.HashMap" />
     <classNode dependClassName="java.util.List" />

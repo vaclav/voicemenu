@@ -14,14 +14,16 @@ public class Event {
   public String action;
   public String toast;
   public boolean isFinal;
+  public int duration = 4;
 
   public Event() {
     this.isFinal = false;
   }
-  public Event(String name, String trigger) {
+  public Event(String name, String trigger, int dur) {
     this.name = name;
     this.trigger = trigger;
     this.action = "";
+    this.duration = dur;
   }
   /**
    * set full informations about state

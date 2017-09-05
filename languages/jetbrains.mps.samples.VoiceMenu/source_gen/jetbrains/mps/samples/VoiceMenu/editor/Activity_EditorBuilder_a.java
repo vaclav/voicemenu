@@ -427,7 +427,7 @@ import jetbrains.mps.nodeEditor.MPSFonts;
     return isNotEmptyString(SPropertyOperations.getString(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "greeting")));
   }
   private EditorCell createConstant_luypn2_a1a() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Timeout: ");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Timeout:");
     editorCell.setCellId("Constant_luypn2_a1a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.gray));

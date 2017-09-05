@@ -45,7 +45,7 @@ public class Style {
     Variables.voice.addText(tmp.toast);
     for (Event child : tmp.childs) {
       // myVoice.speak("For" + child.name + "press" + child.trigger); 
-      Variables.voice.addText("For" + child.name + "press" + child.trigger);
+      Variables.voice.addText(" For " + child.name + " press " + child.trigger);
       Variables.possibleOptList.add(child.trigger);
     }
     Variables.voice.speak();

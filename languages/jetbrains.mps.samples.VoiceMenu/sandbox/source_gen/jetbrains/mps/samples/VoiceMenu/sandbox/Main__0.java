@@ -26,7 +26,7 @@ public class Main__0 implements ActionListener {
 
   public static void initHashMap() {
 
-    Event Home = new Event("myVoiceMenu", "0");
+    Event Home = new Event("myVoiceMenu", "0", 8);
     Home.setAction("", true);
     Home.setGreeting("Welcome to our voicemenu");
     Home.childs = new ArrayList<Event>();
@@ -35,14 +35,14 @@ public class Main__0 implements ActionListener {
     Variables.myHashMap.put("0", Home);
 
 
-    Event Internet_35s59u_a0 = new Event("Internet", "1");
+    Event Internet_35s59u_a0 = new Event("Internet", "1", 16);
     Internet_35s59u_a0.isFinal = false;
     Internet_35s59u_a0.setAction("", false);
     Internet_35s59u_a0.setGreeting("");
     Internet_35s59u_a0.setGreeting("Welcome to the Internet");
     Internet_35s59u_a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("01", Internet_35s59u_a0);
-    Event Speed_up_35s59u_a0a0 = new Event("Speed up", "1");
+    Event Speed_up_35s59u_a0a0 = new Event("Speed up", "1", 16);
     Speed_up_35s59u_a0a0.isFinal = false;
     Speed_up_35s59u_a0a0.setAction("", false);
     Speed_up_35s59u_a0a0.setGreeting("");
@@ -51,14 +51,14 @@ public class Main__0 implements ActionListener {
     Variables.myHashMap.put("011", Speed_up_35s59u_a0a0);
     Speed_up_35s59u_a0a0.setAction("getInfo", false);
     Speed_up_35s59u_a0a0.childs = new ArrayList<Event>();
-    Event Discount_35s59u_b0a0 = new Event("Discount", "2");
+    Event Discount_35s59u_b0a0 = new Event("Discount", "2", 16);
     Discount_35s59u_b0a0.isFinal = false;
     Discount_35s59u_b0a0.setAction("", false);
     Discount_35s59u_b0a0.setGreeting("");
     Discount_35s59u_b0a0.setGreeting("Great choice!");
     Discount_35s59u_b0a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("012", Discount_35s59u_b0a0);
-    Event Big_Discount_35s59u_b0b0a0 = new Event("Big Discount", "1");
+    Event Big_Discount_35s59u_b0b0a0 = new Event("Big Discount", "1", 16);
     Big_Discount_35s59u_b0b0a0.isFinal = false;
     Big_Discount_35s59u_b0b0a0.setAction("", false);
     Big_Discount_35s59u_b0b0a0.setGreeting("");
@@ -66,7 +66,7 @@ public class Main__0 implements ActionListener {
     Variables.myHashMap.put("0121", Big_Discount_35s59u_b0b0a0);
     Big_Discount_35s59u_b0b0a0.setAction("call", true);
     Big_Discount_35s59u_b0b0a0.childs = new ArrayList<Event>();
-    Event Small_Discount_35s59u_a0b0a0 = new Event("Small Discount", "2");
+    Event Small_Discount_35s59u_a0b0a0 = new Event("Small Discount", "2", 16);
     Small_Discount_35s59u_a0b0a0.isFinal = false;
     Small_Discount_35s59u_a0b0a0.setAction("", false);
     Small_Discount_35s59u_a0b0a0.setGreeting("");
@@ -74,7 +74,7 @@ public class Main__0 implements ActionListener {
     Variables.myHashMap.put("0122", Small_Discount_35s59u_a0b0a0);
     Small_Discount_35s59u_a0b0a0.setAction("call", false);
     Small_Discount_35s59u_a0b0a0.childs = new ArrayList<Event>();
-    Event Going_Back_35s59u_d0b0a0 = new Event("Going Back", "#");
+    Event Going_Back_35s59u_d0b0a0 = new Event("Going Back", "#", 16);
     Going_Back_35s59u_d0b0a0.isFinal = false;
     Going_Back_35s59u_d0b0a0.setAction("", false);
     Going_Back_35s59u_d0b0a0.setGreeting("");
@@ -82,7 +82,7 @@ public class Main__0 implements ActionListener {
     Variables.myHashMap.put("012#", Going_Back_35s59u_d0b0a0);
     Going_Back_35s59u_d0b0a0.setAction("back", false);
     Going_Back_35s59u_d0b0a0.childs = new ArrayList<Event>();
-    Event Going_Back_35s59u_c0b0a0 = new Event("Going Back", "*");
+    Event Going_Back_35s59u_c0b0a0 = new Event("Going Back", "*", 16);
     Going_Back_35s59u_c0b0a0.isFinal = false;
     Going_Back_35s59u_c0b0a0.setAction("", false);
     Going_Back_35s59u_c0b0a0.setGreeting("");
@@ -98,7 +98,7 @@ public class Main__0 implements ActionListener {
     Internet_35s59u_a0.childs = new ArrayList<Event>();
     Internet_35s59u_a0.childs.add(Speed_up_35s59u_a0a0);
     Internet_35s59u_a0.childs.add(Discount_35s59u_b0a0);
-    Event Television_35s59u_b0 = new Event("Television", "2");
+    Event Television_35s59u_b0 = new Event("Television", "2", 16);
     Television_35s59u_b0.isFinal = false;
     Television_35s59u_b0.setAction("", false);
     Television_35s59u_b0.setGreeting("");
@@ -117,6 +117,8 @@ public class Main__0 implements ActionListener {
     Main__0.initHashMap();
     initView();
     Behaviour.runInitSetup();
+    (Variables.timerThr = new Thread(new Behaviour.myTimer(null, true, 10))).start();
+
   }
 
   public static void initView() {
@@ -141,6 +143,9 @@ public class Main__0 implements ActionListener {
   public void actionPerformed(ActionEvent event) {
     if (!(((Variables.path == null || Variables.path.length() == 0) || Variables.finished == true || Variables.started == false))) {
       try {
+        if (Variables.timerThr.isAlive()) {
+          Variables.timerThr.interrupt();
+        }
         Behaviour.runLogic(event, false);
 
       } catch (IOException e) {

@@ -26,7 +26,7 @@ public class Main__1 implements ActionListener {
 
   public static void initHashMap() {
 
-    Event Home = new Event("Test", "0");
+    Event Home = new Event("Test", "0", 8);
     Home.setAction("", true);
     Home.setGreeting("");
     Home.childs = new ArrayList<Event>();
@@ -35,60 +35,61 @@ public class Main__1 implements ActionListener {
     Variables.myHashMap.put("0", Home);
 
 
-    Event Technical_issues_rwbd_a0 = new Event("Technical issues", "1");
+    Event Technical_issues_rwbd_a0 = new Event("Technical issues", "1", 16);
     Technical_issues_rwbd_a0.isFinal = false;
     Technical_issues_rwbd_a0.setAction("", false);
     Technical_issues_rwbd_a0.setGreeting("");
+    Technical_issues_rwbd_a0.duration = 5;
     Technical_issues_rwbd_a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("01", Technical_issues_rwbd_a0);
-    Event Internet_rwbd_a0a0 = new Event("Internet", "1");
-    Internet_rwbd_a0a0.isFinal = false;
-    Internet_rwbd_a0a0.setAction("", false);
-    Internet_rwbd_a0a0.setGreeting("");
-    Internet_rwbd_a0a0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("011", Internet_rwbd_a0a0);
-    Internet_rwbd_a0a0.setAction("getInfo", false);
-    Internet_rwbd_a0a0.childs = new ArrayList<Event>();
-    Event Phone_rwbd_b0a0 = new Event("Phone", "2");
-    Phone_rwbd_b0a0.isFinal = false;
-    Phone_rwbd_b0a0.setAction("", false);
-    Phone_rwbd_b0a0.setGreeting("");
-    Phone_rwbd_b0a0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("012", Phone_rwbd_b0a0);
-    Phone_rwbd_b0a0.setAction("getInfo", true);
-    Phone_rwbd_b0a0.childs = new ArrayList<Event>();
-    Event timeout_rwbd_c0a0 = new Event("timeout", "X");
+    Event timeout_rwbd_c0a0 = new Event("timeout", "X", 16);
     timeout_rwbd_c0a0.isFinal = false;
     timeout_rwbd_c0a0.setAction("", false);
     timeout_rwbd_c0a0.setGreeting("");
-    timeout_rwbd_c0a0.setGreeting("Repeating possible options");
+    timeout_rwbd_c0a0.setGreeting("TIMEOUT CHANGED");
     timeout_rwbd_c0a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("01X", timeout_rwbd_c0a0);
     timeout_rwbd_c0a0.setAction("repeat", false);
     timeout_rwbd_c0a0.childs = new ArrayList<Event>();
+    Event GetInfo_rwbd_a0a0 = new Event("GetInfo", "1", 16);
+    GetInfo_rwbd_a0a0.isFinal = false;
+    GetInfo_rwbd_a0a0.setAction("", false);
+    GetInfo_rwbd_a0a0.setGreeting("");
+    GetInfo_rwbd_a0a0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("011", GetInfo_rwbd_a0a0);
+    GetInfo_rwbd_a0a0.setAction("getInfo", false);
+    GetInfo_rwbd_a0a0.childs = new ArrayList<Event>();
+    Event DirectCall_rwbd_b0a0 = new Event("DirectCall", "2", 16);
+    DirectCall_rwbd_b0a0.isFinal = false;
+    DirectCall_rwbd_b0a0.setAction("", false);
+    DirectCall_rwbd_b0a0.setGreeting("");
+    DirectCall_rwbd_b0a0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("012", DirectCall_rwbd_b0a0);
+    DirectCall_rwbd_b0a0.setAction("call", true);
+    DirectCall_rwbd_b0a0.childs = new ArrayList<Event>();
     Technical_issues_rwbd_a0.childs = new ArrayList<Event>();
-    Technical_issues_rwbd_a0.childs.add(Internet_rwbd_a0a0);
-    Technical_issues_rwbd_a0.childs.add(Phone_rwbd_b0a0);
-    Event Sales_support_rwbd_b0 = new Event("Sales support", "2");
-    Sales_support_rwbd_b0.isFinal = false;
-    Sales_support_rwbd_b0.setAction("", false);
-    Sales_support_rwbd_b0.setGreeting("");
-    Sales_support_rwbd_b0.setGreeting("Leave us a message");
-    Sales_support_rwbd_b0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("02", Sales_support_rwbd_b0);
-    Sales_support_rwbd_b0.setAction("record", true);
-    Sales_support_rwbd_b0.childs = new ArrayList<Event>();
-    Event timeout_rwbd_c0 = new Event("timeout", "X");
+    Technical_issues_rwbd_a0.childs.add(GetInfo_rwbd_a0a0);
+    Technical_issues_rwbd_a0.childs.add(DirectCall_rwbd_b0a0);
+    Event record_rwbd_b0 = new Event("record", "2", 16);
+    record_rwbd_b0.isFinal = false;
+    record_rwbd_b0.setAction("", false);
+    record_rwbd_b0.setGreeting("");
+    record_rwbd_b0.setGreeting("Leave us a message");
+    record_rwbd_b0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("02", record_rwbd_b0);
+    record_rwbd_b0.setAction("record", true);
+    record_rwbd_b0.childs = new ArrayList<Event>();
+    Event timeout_rwbd_c0 = new Event("timeout", "X", 16);
     timeout_rwbd_c0.isFinal = false;
     timeout_rwbd_c0.setAction("", false);
     timeout_rwbd_c0.setGreeting("");
     timeout_rwbd_c0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("0X", timeout_rwbd_c0);
-    timeout_rwbd_c0.setAction("repeat", false);
+    timeout_rwbd_c0.setAction("getInfo", true);
     timeout_rwbd_c0.childs = new ArrayList<Event>();
 
     Home.childs.add(Technical_issues_rwbd_a0);
-    Home.childs.add(Sales_support_rwbd_b0);
+    Home.childs.add(record_rwbd_b0);
   }
 
   public static void main(String[] args) {
@@ -97,6 +98,8 @@ public class Main__1 implements ActionListener {
     Main__1.initHashMap();
     initView();
     Behaviour.runInitSetup();
+    (Variables.timerThr = new Thread(new Behaviour.myTimer(null, true, 10))).start();
+
   }
 
   public static void initView() {
@@ -121,6 +124,9 @@ public class Main__1 implements ActionListener {
   public void actionPerformed(ActionEvent event) {
     if (!(((Variables.path == null || Variables.path.length() == 0) || Variables.finished == true || Variables.started == false))) {
       try {
+        if (Variables.timerThr.isAlive()) {
+          Variables.timerThr.interrupt();
+        }
         Behaviour.runLogic(event, false);
 
       } catch (IOException e) {

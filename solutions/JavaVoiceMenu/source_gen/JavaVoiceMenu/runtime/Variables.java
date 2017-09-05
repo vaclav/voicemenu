@@ -20,4 +20,5 @@ public class Variables {
   public static MacVoice macVoice = new MacVoice();
   public static WinVoice winVoice = new WinVoice();
   public static UniVoice uniVoice = new UniVoice();
+  public static Thread timerThr = new Thread();
 }
