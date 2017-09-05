@@ -6,7 +6,7 @@
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" version="-1" />
-    <engage id="750ae49d-4f57-400c-b5dc-2b58c1e3f9a9" name="jetbrains.mps.samples.VoiceMenuToXML" />
+    <engage id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" />
   </languages>
   <imports>
     <import index="ibtu" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#427a473d-5177-432c-9905-bcbceb71b996(jetbrains.mps.lang.project.modules/module.jetbrains.mps.build.mps.runner@project_stub)" />
@@ -380,6 +380,7 @@
         </node>
       </node>
       <node concept="2C_I21" id="6HhgIFY76D4" role="2C_I26">
+        <property role="1i1bcX" value="9" />
         <ref role="2C_gVZ" node="6HhgIFXTyQ5" resolve="timeout" />
         <node concept="1$pBvo" id="64d_H8NaJUX" role="2C_gVu">
           <property role="2nJRZD" value="test1.wav" />
