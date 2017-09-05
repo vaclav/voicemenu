@@ -160,6 +160,12 @@
       <ref role="30HIoZ" to="xehl:5lu2mvqIsn3" resolve="Empty" />
       <node concept="b5Tf3" id="2m0r6rVQf8c" role="1lVwrX" />
     </node>
+    <node concept="3aamgX" id="1Dc9HeHMdb3" role="3acgRq">
+      <ref role="30HIoZ" to="xehl:6HhgIFXlffT" resolve="ReplayOptions" />
+      <node concept="j$656" id="1Dc9HeHMdbp" role="1lVwrX">
+        <ref role="v9R2y" node="1Dc9HeHMdaY" resolve="reduce_ReplayOptions" />
+      </node>
+    </node>
     <node concept="3aamgX" id="2m0r6rVQf8f" role="3acgRq">
       <ref role="30HIoZ" to="xehl:5RYvhcTA0Fb" resolve="GetInfo" />
       <node concept="j$656" id="2m0r6rVQf8z" role="1lVwrX">
@@ -554,6 +560,7 @@
   </node>
   <node concept="13MO4I" id="48dyn_ZeoMa">
     <property role="TrG5h" value="reduce_HangUp" />
+    <property role="3GE5qa" value="RealActions" />
     <ref role="3gUMe" to="xehl:48dyn_Z3hrr" resolve="HangUp" />
     <node concept="2pNNFK" id="48dyn_ZeoMf" role="13RCb5">
       <property role="2pNNFO" value="action" />
@@ -568,6 +575,7 @@
   </node>
   <node concept="13MO4I" id="48dyn_ZeoMF">
     <property role="TrG5h" value="reduce_Record" />
+    <property role="3GE5qa" value="RealActions" />
     <ref role="3gUMe" to="xehl:48dyn_Z3hrQ" resolve="Record" />
     <node concept="2pNNFK" id="48dyn_ZeoMK" role="13RCb5">
       <property role="2pNNFO" value="action" />
@@ -578,6 +586,21 @@
         </node>
       </node>
       <node concept="raruj" id="48dyn_ZeoMN" role="lGtFl" />
+    </node>
+  </node>
+  <node concept="13MO4I" id="1Dc9HeHMdaY">
+    <property role="TrG5h" value="reduce_ReplayOptions" />
+    <property role="3GE5qa" value="RealActions" />
+    <ref role="3gUMe" to="xehl:6HhgIFXlffT" resolve="ReplayOptions" />
+    <node concept="2pNNFK" id="1Dc9HeHMdaZ" role="13RCb5">
+      <property role="2pNNFO" value="action" />
+      <node concept="2pNUuL" id="1Dc9HeHMdb0" role="2pNNFR">
+        <property role="2pNUuO" value="name" />
+        <node concept="2pMdtt" id="1Dc9HeHMdb1" role="2pMdts">
+          <property role="2pMdty" value="Replay Options" />
+        </node>
+      </node>
+      <node concept="raruj" id="1Dc9HeHMdb2" role="lGtFl" />
     </node>
   </node>
 </model>
