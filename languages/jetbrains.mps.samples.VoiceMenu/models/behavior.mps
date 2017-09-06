@@ -223,7 +223,7 @@
             <node concept="2ShNRf" id="6HhgIFXEUrM" role="37vLTx">
               <node concept="2fJWfE" id="6HhgIFXEUCo" role="2ShVmc">
                 <node concept="3Tqbb2" id="6HhgIFXEUCq" role="3zrR0E">
-                  <ref role="ehGHo" to="xehl:5lu2mvqIooX" resolve="Command" />
+                  <ref role="ehGHo" to="xehl:6HhgIFXlffT" resolve="ReplayOptions" />
                 </node>
               </node>
             </node>
