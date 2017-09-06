@@ -417,6 +417,10 @@
         <property role="2C_Iks" value="X" />
         <property role="TrG5h" value="timeout" />
       </node>
+      <node concept="2C_Ik0" id="4_j0sPhCA5_" role="2C_I24">
+        <property role="TrG5h" value="Pokus" />
+        <property role="2C_Iks" value="4" />
+      </node>
     </node>
   </node>
   <node concept="2Jqgb4" id="1Dc9HeI1ivS">
