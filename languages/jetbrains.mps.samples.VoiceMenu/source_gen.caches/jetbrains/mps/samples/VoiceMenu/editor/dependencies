@@ -85,6 +85,7 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.selection.SelectionManager" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.IconContainer" />
     <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
+    <classNode dependClassName="jetbrains.mps.smodel.action.SNodeFactoryOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.IconResource" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />

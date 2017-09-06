@@ -476,7 +476,7 @@ public class ReplayOptions_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c7j_3;
+          return IconContainer.RESOURCE_a0a9c7j_2;
         }
         @Override
         public String getTooltipText() {
@@ -522,7 +522,7 @@ public class ReplayOptions_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c8j_4;
+          return IconContainer.RESOURCE_a0a9c8j_3;
         }
         @Override
         public String getTooltipText() {
@@ -568,7 +568,7 @@ public class ReplayOptions_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c9j_3;
+          return IconContainer.RESOURCE_a0a9c9j_2;
         }
         @Override
         public String getTooltipText() {
@@ -614,7 +614,7 @@ public class ReplayOptions_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c01j_1;
+          return IconContainer.RESOURCE_a0a9c01j_0;
         }
         @Override
         public String getTooltipText() {
@@ -660,7 +660,7 @@ public class ReplayOptions_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c11j_4;
+          return IconContainer.RESOURCE_a0a9c11j_3;
         }
         @Override
         public String getTooltipText() {
@@ -706,7 +706,7 @@ public class ReplayOptions_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c21j_3;
+          return IconContainer.RESOURCE_a0a9c21j_2;
         }
         @Override
         public String getTooltipText() {

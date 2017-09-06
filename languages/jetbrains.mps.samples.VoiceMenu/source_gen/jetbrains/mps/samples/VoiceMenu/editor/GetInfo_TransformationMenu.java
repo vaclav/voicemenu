@@ -523,7 +523,7 @@ public class GetInfo_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c6j_2;
+          return IconContainer.RESOURCE_a0a9c6j_1;
         }
         @Override
         public String getTooltipText() {
@@ -569,7 +569,7 @@ public class GetInfo_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c7j_2;
+          return IconContainer.RESOURCE_a0a9c7j_1;
         }
         @Override
         public String getTooltipText() {
@@ -615,7 +615,7 @@ public class GetInfo_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c8j_2;
+          return IconContainer.RESOURCE_a0a9c8j_1;
         }
         @Override
         public String getTooltipText() {
@@ -661,7 +661,7 @@ public class GetInfo_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c9j_1;
+          return IconContainer.RESOURCE_a0a9c9j_0;
         }
         @Override
         public String getTooltipText() {
@@ -757,7 +757,7 @@ public class GetInfo_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c11j_2;
+          return IconContainer.RESOURCE_a0a9c11j_1;
         }
         @Override
         public String getTooltipText() {
@@ -804,7 +804,7 @@ public class GetInfo_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c21j_2;
+          return IconContainer.RESOURCE_a0a9c21j_1;
         }
         @Override
         public String getTooltipText() {
