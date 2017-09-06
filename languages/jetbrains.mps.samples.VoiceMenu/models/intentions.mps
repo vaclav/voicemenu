@@ -419,8 +419,21 @@
     <node concept="2S6ZIM" id="6nPYyO4nYQ0" role="2ZfVej">
       <node concept="3clFbS" id="6nPYyO4nYQ1" role="2VODD2">
         <node concept="3cpWs6" id="5o6E870Y3ee" role="3cqZAp">
-          <node concept="Xl_RD" id="6nPYyO4nYZf" role="3cqZAk">
-            <property role="Xl_RC" value="Initialize New Event" />
+          <node concept="3cpWs3" id="4_j0sPi28Je" role="3cqZAk">
+            <node concept="2OqwBi" id="4_j0sPi2aoP" role="3uHU7w">
+              <node concept="2OqwBi" id="4_j0sPi29ub" role="2Oq$k0">
+                <node concept="2Sf5sV" id="4_j0sPi29a_" role="2Oq$k0" />
+                <node concept="3TrEf2" id="4_j0sPi29Tw" role="2OqNvi">
+                  <ref role="3Tt5mk" to="xehl:5HF1wNNZwzN" resolve="event" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="4_j0sPi2aWe" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="6nPYyO4nYZf" role="3uHU7B">
+              <property role="Xl_RC" value="Set up " />
+            </node>
           </node>
         </node>
       </node>

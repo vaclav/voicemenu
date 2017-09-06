@@ -86,6 +86,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -228,17 +229,9 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1380,25 +1373,6 @@
             </node>
           </node>
         </node>
-        <node concept="1X3_iC" id="5K3$FqBlyKW" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="dcxjWHKBeD" role="8Wnug">
-            <node concept="37vLTI" id="dcxjWHKC6L" role="3clFbG">
-              <node concept="37vLTw" id="dcxjWHKCd3" role="37vLTx">
-                <ref role="3cqZAo" node="3JYttAAN$oj" resolve="myActivity" />
-              </node>
-              <node concept="2OqwBi" id="dcxjWHKBn0" role="37vLTJ">
-                <node concept="QwW4i" id="dcxjWHKBeB" role="2Oq$k0">
-                  <ref role="QwW4h" node="3JYttAANqBS" resolve="srcEvent" />
-                </node>
-                <node concept="3TrEf2" id="dcxjWHKBwM" role="2OqNvi">
-                  <ref role="3Tt5mk" to="xehl:7pupFtvuZV$" resolve="Activity" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="3JYttAANI4W" role="3cqZAp">
           <node concept="2OqwBi" id="3JYttAANKh_" role="3clFbG">
             <node concept="2OqwBi" id="3JYttAANIdX" role="2Oq$k0">
@@ -1422,8 +1396,21 @@
     <node concept="QznSV" id="3JYttAAKH2G" role="QzAvj">
       <node concept="3clFbS" id="3JYttAAKH2H" role="2VODD2">
         <node concept="3clFbF" id="3JYttAAKHb6" role="3cqZAp">
-          <node concept="Xl_RD" id="3JYttAAKHb5" role="3clFbG">
-            <property role="Xl_RC" value="Initilize Event" />
+          <node concept="3cpWs3" id="4_j0sPi36r8" role="3clFbG">
+            <node concept="2OqwBi" id="4_j0sPi37$J" role="3uHU7w">
+              <node concept="1PxgMI" id="4_j0sPi377c" role="2Oq$k0">
+                <node concept="chp4Y" id="4_j0sPi37g2" role="3oSUPX">
+                  <ref role="cht4Q" to="xehl:5HF1wNNZucc" resolve="Event" />
+                </node>
+                <node concept="Q6c8r" id="4_j0sPi36zL" role="1m5AlR" />
+              </node>
+              <node concept="3TrcHB" id="4_j0sPi37Xq" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="3JYttAAKHb5" role="3uHU7B">
+              <property role="Xl_RC" value="Set up " />
+            </node>
           </node>
         </node>
       </node>

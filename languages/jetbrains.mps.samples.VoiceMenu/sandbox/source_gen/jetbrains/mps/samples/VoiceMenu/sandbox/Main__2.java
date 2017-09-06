@@ -177,7 +177,7 @@ public class Main__2 implements ActionListener {
     Main__2.initHashMap();
     initView();
     Behaviour.runInitSetup();
-    (Variables.timerThr = new Thread(new Behaviour.myTimer(null, true, 16))).start();
+    (Variables.timerThr = new Thread(new Behaviour.myTimer(null, true, 13))).start();
 
   }
 

@@ -80,17 +80,25 @@ public class Main__1 implements ActionListener {
     Variables.myHashMap.put("02", record_rwbd_b0);
     record_rwbd_b0.setAction("record", true);
     record_rwbd_b0.childs = new ArrayList<Event>();
-    Event timeout_rwbd_c0 = new Event("timeout", "X", 16);
-    timeout_rwbd_c0.isFinal = false;
-    timeout_rwbd_c0.setAction("", false);
-    timeout_rwbd_c0.setGreeting("");
-    timeout_rwbd_c0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("0X", timeout_rwbd_c0);
-    timeout_rwbd_c0.setAction("getInfo", true);
-    timeout_rwbd_c0.childs = new ArrayList<Event>();
+    Event timeout_rwbd_d0 = new Event("timeout", "X", 16);
+    timeout_rwbd_d0.isFinal = false;
+    timeout_rwbd_d0.setAction("", false);
+    timeout_rwbd_d0.setGreeting("");
+    timeout_rwbd_d0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("0X", timeout_rwbd_d0);
+    timeout_rwbd_d0.setAction("getInfo", true);
+    timeout_rwbd_d0.childs = new ArrayList<Event>();
+    Event Action_225_rwbd_c0 = new Event("Action_225", "4", 16);
+    Action_225_rwbd_c0.isFinal = false;
+    Action_225_rwbd_c0.setAction("", false);
+    Action_225_rwbd_c0.setGreeting("");
+    Action_225_rwbd_c0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("04", Action_225_rwbd_c0);
+    Action_225_rwbd_c0.childs = new ArrayList<Event>();
 
     Home.childs.add(Technical_issues_rwbd_a0);
     Home.childs.add(record_rwbd_b0);
+    Home.childs.add(Action_225_rwbd_c0);
   }
 
   public static void main(String[] args) {
@@ -99,7 +107,7 @@ public class Main__1 implements ActionListener {
     Main__1.initHashMap();
     initView();
     Behaviour.runInitSetup();
-    (Variables.timerThr = new Thread(new Behaviour.myTimer(null, true, 16))).start();
+    (Variables.timerThr = new Thread(new Behaviour.myTimer(null, true, 13))).start();
 
   }
 

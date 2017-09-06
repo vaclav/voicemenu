@@ -220,6 +220,22 @@ public class Main_ implements ActionListener {
     Variables.myHashMap.put("06", Record_m25aj_f0);
     Record_m25aj_f0.setAction("record", true);
     Record_m25aj_f0.childs = new ArrayList<Event>();
+    Event Action_867_m25aj_g0 = new Event("Action_867", "0", 16);
+    Action_867_m25aj_g0.isFinal = false;
+    Action_867_m25aj_g0.setAction("", false);
+    Action_867_m25aj_g0.setGreeting("");
+    Action_867_m25aj_g0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("00", Action_867_m25aj_g0);
+    Event timeout_m25aj_a0g0 = new Event("timeout", "X", 16);
+    timeout_m25aj_a0g0.isFinal = false;
+    timeout_m25aj_a0g0.setAction("", false);
+    timeout_m25aj_a0g0.setGreeting("");
+    timeout_m25aj_a0g0.setGreeting("Timeout");
+    timeout_m25aj_a0g0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("00X", timeout_m25aj_a0g0);
+    timeout_m25aj_a0g0.setAction("repeat", false);
+    timeout_m25aj_a0g0.childs = new ArrayList<Event>();
+    Action_867_m25aj_g0.childs = new ArrayList<Event>();
 
     Home.childs.add(Internet_m25aj_a0);
     Home.childs.add(Payment_m25aj_b0);
@@ -227,6 +243,7 @@ public class Main_ implements ActionListener {
     Home.childs.add(News_m25aj_d0);
     Home.childs.add(Other_requirements_m25aj_e0);
     Home.childs.add(Record_m25aj_f0);
+    Home.childs.add(Action_867_m25aj_g0);
   }
 
   public static void main(String[] args) {
@@ -235,7 +252,7 @@ public class Main_ implements ActionListener {
     Main_.initHashMap();
     initView();
     Behaviour.runInitSetup();
-    (Variables.timerThr = new Thread(new Behaviour.myTimer(null, true, 16))).start();
+    (Variables.timerThr = new Thread(new Behaviour.myTimer(null, true, 13))).start();
 
   }
 

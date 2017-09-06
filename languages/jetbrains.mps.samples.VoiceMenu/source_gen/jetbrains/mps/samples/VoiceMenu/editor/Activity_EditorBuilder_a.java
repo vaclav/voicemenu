@@ -33,6 +33,7 @@ import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart;
 import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
+import jetbrains.mps.editor.runtime.style.FocusPolicy;
 import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
 import jetbrains.mps.openapi.editor.style.StyleRegistry;
 import jetbrains.mps.nodeEditor.MPSColors;
@@ -298,7 +299,7 @@ import jetbrains.mps.nodeEditor.MPSFonts;
     return editorCell;
   }
   private EditorCell createConstant_luypn2_f0a() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Greeting: ");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Info: ");
     editorCell.setCellId("Constant_luypn2_f0a");
     Style style = new StyleImpl();
     new HardCodedTextStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
@@ -379,6 +380,9 @@ import jetbrains.mps.nodeEditor.MPSFonts;
       style.set(StyleAttributes.EDITABLE, true);
       style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
       editorCell.getStyle().putAll(style);
+      if (nodeCondition_luypn2_a8a0()) {
+        editorCell.getStyle().set(StyleAttributes.FOCUS_POLICY, FocusPolicy.FIRST_EDITABLE_CELL);
+      }
     }
     @Override
     protected EditorCell createEmptyCell() {
@@ -398,6 +402,9 @@ import jetbrains.mps.nodeEditor.MPSFonts;
       editorCell.setCellId("Constant_luypn2_a8a0");
       editorCell.setDefaultText("");
       return editorCell;
+    }
+    private boolean nodeCondition_luypn2_a8a0() {
+      return (myNode == null);
     }
   }
   private EditorCell createCollection_luypn2_b0() {

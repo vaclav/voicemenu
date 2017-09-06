@@ -19,10 +19,11 @@ import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.ActionStyleClass;
-import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
-import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.openapi.editor.style.StyleRegistry;
 import jetbrains.mps.nodeEditor.MPSColors;
+import jetbrains.mps.nodeEditor.MPSFonts;
+import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
+import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
 
 /*package*/ class DirectCall_EditorBuilder_a extends AbstractEditorBuilder {
@@ -60,7 +61,8 @@ import jetbrains.mps.nodeEditor.EditorManager;
       editorCell.addEditorCell(createImage_stlc2q_f0());
     }
     editorCell.addEditorCell(createConstant_stlc2q_g0());
-    editorCell.addEditorCell(createProperty_stlc2q_h0());
+    editorCell.addEditorCell(createConstant_stlc2q_h0());
+    editorCell.addEditorCell(createProperty_stlc2q_i0());
     return editorCell;
   }
   private boolean nodeCondition_stlc2q_a4a() {
@@ -138,7 +140,18 @@ import jetbrains.mps.nodeEditor.EditorManager;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createProperty_stlc2q_h0() {
+  private EditorCell createConstant_stlc2q_h0() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Number:");
+    editorCell.setCellId("Constant_stlc2q_h0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.gray));
+    style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
+    style.set(StyleAttributes.SELECTABLE, false);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_stlc2q_i0() {
     CellProviderWithRole provider = new PropertyCellProvider(myNode, getEditorContext());
     provider.setRole("number");
     provider.setNoTargetText("phone number");

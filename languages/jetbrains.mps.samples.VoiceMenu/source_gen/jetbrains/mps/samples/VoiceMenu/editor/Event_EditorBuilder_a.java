@@ -124,7 +124,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_ContextAssistantComponent;
   private EditorCell createProperty_ymj9mh_b0a() {
     CellProviderWithRole provider = new PropertyCellProvider(myNode, getEditorContext());
     provider.setRole("trigger");
-    provider.setNoTargetText("<no trigger>");
+    provider.setNoTargetText("Number of button");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(getEditorContext());
     editorCell.setCellId("property_trigger");
@@ -159,7 +159,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_ContextAssistantComponent;
   private EditorCell createProperty_ymj9mh_d0a() {
     CellProviderWithRole provider = new PropertyCellProvider(myNode, getEditorContext());
     provider.setRole("name");
-    provider.setNoTargetText("activity");
+    provider.setNoTargetText("Name of activity");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(getEditorContext());
     editorCell.setCellId("property_name");
