@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Objects;
 
 public class myVoice {
-  private String text = "";
+  public String text = "";
   private String OS = "";
   /**
    * default constuctor

@@ -20,12 +20,13 @@ public class Behaviour {
     }
     public void run() {
       try {
+        action = "";
         TimeUnit.SECONDS.sleep(duration);
-        if (neq_d7l93i_a0b0a0g0(Variables.path.charAt(Variables.path.length() - 1), 'X')) {
+        if (neq_d7l93i_a0c0a0g0(Variables.path.charAt(Variables.path.length() - 1), 'X')) {
           Variables.path += "X";
         } else {
           action = Variables.myHashMap.get(Variables.path).action;
-          if (eq_d7l93i_a0b0a1a0a6a(action, "")) {
+          if (eq_d7l93i_a0b0a2a0a6a(action, "")) {
             // Activity is menu, so we have to nest into it 
             Variables.path += "X";
           }
@@ -42,10 +43,10 @@ public class Behaviour {
         System.out.println("repeat interrupted");
       }
     }
-    private static boolean neq_d7l93i_a0b0a0g0(Object a, Object b) {
+    private static boolean neq_d7l93i_a0c0a0g0(Object a, Object b) {
       return !(((a != null ? a.equals(b) : a == b)));
     }
-    private static boolean eq_d7l93i_a0b0a1a0a6a(Object a, Object b) {
+    private static boolean eq_d7l93i_a0b0a2a0a6a(Object a, Object b) {
       return (a != null ? a.equals(b) : a == b);
     }
     private static boolean eq_d7l93i_a0a0a0a6a(Object a, Object b) {
@@ -95,8 +96,7 @@ public class Behaviour {
         // loading previous event 
       } else
       if (currentEvent.action.equals("call")) {
-        Variables.voice.addText("Direct call has begun");
-        Variables.voice.addText("Calling our operator, who'll assist you");
+        Variables.voice.addText("Direct call started");
         Style.setTextToScreen("Direct Call");
         Variables.finished = currentEvent.isFinal;
       } else
@@ -125,8 +125,9 @@ public class Behaviour {
         Variables.voice.addText("After beep start speaking beep");
         Variables.voice.speak();
         try {
-          TimeUnit.SECONDS.sleep(5);
+          Thread.sleep(((long) 5));
         } catch (Exception e) {
+
         }
         Variables.voice.addText("Succesfully recorded");
       } else if (currentEvent.action.equals("repeat")) {
@@ -166,16 +167,13 @@ public class Behaviour {
         trigger = child.trigger;
       }
 
-      Variables.voice.addText(" For " + child.name + " press " + trigger + " ");
-      if (!(child.isFinal)) {
-        Variables.voice.addText(",");
-      }
+      Variables.voice.addText(" For " + child.name + " press " + trigger + ",");
       Variables.possibleOptList.add(child.trigger);
     }
     Variables.voice.speak();
     if (!(Variables.finished)) {
       System.out.println("duration: " + currentEvent.duration + currentEvent.name);
-      (Variables.timerThr = new Thread(new Behaviour.myTimer(evt, false, 10))).start();
+      (Variables.timerThr = new Thread(new Behaviour.myTimer(evt, false, 11))).start();
     }
   }
   public static void runInitSetup() {

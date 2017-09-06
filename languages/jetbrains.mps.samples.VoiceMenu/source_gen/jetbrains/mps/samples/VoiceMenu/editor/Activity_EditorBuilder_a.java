@@ -440,7 +440,7 @@ import jetbrains.mps.nodeEditor.MPSFonts;
   private EditorCell createProperty_luypn2_b1a() {
     CellProviderWithRole provider = new PropertyCellProvider(myNode, getEditorContext());
     provider.setRole("timeout");
-    provider.setNoTargetText("max duration");
+    provider.setNoTargetText("max duration ");
     provider.setAllowsEmptyTarget(true);
     EditorCell editorCell;
     editorCell = provider.createEditorCell(getEditorContext());

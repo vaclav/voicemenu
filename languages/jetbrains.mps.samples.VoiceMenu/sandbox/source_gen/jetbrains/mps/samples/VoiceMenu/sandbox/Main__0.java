@@ -28,10 +28,11 @@ public class Main__0 implements ActionListener {
 
     Event Home = new Event("myVoiceMenu", "0", 8);
     Home.setAction("", true);
-    Home.setGreeting("Welcome to our voicemenu");
+    Home.setGreeting("Welcome to our voicemenu" + ", ");
     Home.childs = new ArrayList<Event>();
     Home.isFinal = false;
     Variables.main_Text = "myVoiceMenu";
+
     Variables.myHashMap.put("0", Home);
 
 
@@ -117,7 +118,7 @@ public class Main__0 implements ActionListener {
     Main__0.initHashMap();
     initView();
     Behaviour.runInitSetup();
-    (Variables.timerThr = new Thread(new Behaviour.myTimer(null, true, 7))).start();
+    (Variables.timerThr = new Thread(new Behaviour.myTimer(null, true, 11))).start();
 
   }
 

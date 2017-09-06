@@ -1201,7 +1201,7 @@
           </node>
         </node>
         <node concept="3F0A7n" id="64d_H8N2ncK" role="3EZMnx">
-          <property role="1$x2rV" value="max duration" />
+          <property role="1$x2rV" value="max duration " />
           <property role="1O74Pk" value="true" />
           <ref role="1NtTu8" to="xehl:64d_H8N2inJ" resolve="timeout" />
         </node>
@@ -1652,9 +1652,6 @@
       <node concept="3F0A7n" id="2w$I9I9UyNj" role="3EZMnx">
         <property role="1$x2rV" value="Name of Voicemenu" />
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        <node concept="ljvvj" id="2w$I9I9Uz0q" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
         <node concept="VSNWy" id="2w$I9I9UzNW" role="3F10Kt">
           <property role="1lJzqX" value="25" />
         </node>
@@ -1668,11 +1665,7 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F0ifn" id="2w$I9I9UBZj" role="3EZMnx">
-        <node concept="ljvvj" id="2w$I9I9UCcu" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
+      <node concept="3F0ifn" id="1Dc9HeI4zQT" role="3EZMnx" />
       <node concept="3F0ifn" id="2m0r6rVTbw4" role="3EZMnx">
         <property role="3F0ifm" value="Greeting:" />
         <ref role="1k5W1q" node="11pGboo1Ya6" resolve="HardCodedText" />
@@ -1696,6 +1689,7 @@
         </node>
       </node>
       <node concept="3F0A7n" id="2m0r6rVST1A" role="3EZMnx">
+        <property role="1$x2rV" value="Enter greeting here" />
         <ref role="1NtTu8" to="xehl:2m0r6rVST1s" resolve="greeting" />
         <ref role="1ERwB7" node="6VbSUrbOFEG" resolve="RemoveMainGreeting" />
         <ref role="1k5W1q" node="2w$I9I9VHjr" resolve="Greeting" />
@@ -1713,6 +1707,12 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1Dc9HeI6dDU" role="3EZMnx">
+        <property role="3F0ifm" value="" />
+        <node concept="pVoyu" id="1Dc9HeI6eeT" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F1sOY" id="5HF1wNO0wkV" role="3EZMnx">

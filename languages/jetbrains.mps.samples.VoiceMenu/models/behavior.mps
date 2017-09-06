@@ -240,7 +240,7 @@
         <node concept="3clFbF" id="6HhgIFXEWjj" role="3cqZAp">
           <node concept="37vLTI" id="6HhgIFXEYNC" role="3clFbG">
             <node concept="Xl_RD" id="6HhgIFXEYPU" role="37vLTx">
-              <property role="Xl_RC" value="Repeating possible options" />
+              <property role="Xl_RC" value="Timeout" />
             </node>
             <node concept="2OqwBi" id="6HhgIFXEY0L" role="37vLTJ">
               <node concept="37vLTw" id="6HhgIFXEWjh" role="2Oq$k0">
