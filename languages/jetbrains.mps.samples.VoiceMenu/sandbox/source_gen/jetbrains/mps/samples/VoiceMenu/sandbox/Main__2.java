@@ -82,7 +82,7 @@ public class Main__2 implements ActionListener {
     Previous_Menu_9upjpn_c0b0.setGreeting("");
     Previous_Menu_9upjpn_c0b0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("01#", Previous_Menu_9upjpn_c0b0);
-    Previous_Menu_9upjpn_c0b0.setAction("back", false);
+    Previous_Menu_9upjpn_c0b0.setAction("call", false);
     Previous_Menu_9upjpn_c0b0.childs = new ArrayList<Event>();
     Sales_9upjpn_a0.childs = new ArrayList<Event>();
     Sales_9upjpn_a0.childs.add(Call_department_9upjpn_a0b0);
@@ -177,7 +177,7 @@ public class Main__2 implements ActionListener {
     Main__2.initHashMap();
     initView();
     Behaviour.runInitSetup();
-    (Variables.timerThr = new Thread(new Behaviour.myTimer(null, true, 11))).start();
+    (Variables.timerThr = new Thread(new Behaviour.myTimer(null, true, 16))).start();
 
   }
 
