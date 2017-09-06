@@ -42,7 +42,6 @@ Either click on Context tool or in the right Context Action panel choose `Set up
 
 
 [![MPS_VoiceMenu_Sample](../../extras/pic3.png)](https://www.jetbrains.com/mps/)
-[![MPS_VoiceMenu_Sample](../../extras/pic0.png)](https://www.jetbrains.com/mps/)
 
 Let's complete the second step in which we select what actually happens under the hood to the activity which we gave its trigger (pressed phone button) and that shiny name in the first step.
 Both the name and the trigger of the Activity are completed automatically. Choose if the Activity is subMenu (select Menu) or is a concrete Action 
