@@ -80,25 +80,17 @@ public class Main__1 implements ActionListener {
     Variables.myHashMap.put("02", record_rwbd_b0);
     record_rwbd_b0.setAction("record", true);
     record_rwbd_b0.childs = new ArrayList<Event>();
-    Event timeout_rwbd_d0 = new Event("timeout", "X", 16);
-    timeout_rwbd_d0.isFinal = false;
-    timeout_rwbd_d0.setAction("", false);
-    timeout_rwbd_d0.setGreeting("");
-    timeout_rwbd_d0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("0X", timeout_rwbd_d0);
-    timeout_rwbd_d0.setAction("getInfo", true);
-    timeout_rwbd_d0.childs = new ArrayList<Event>();
-    Event Technical_issues_rwbd_a0_0 = new Event("Technical issues", "1", 16);
-    Technical_issues_rwbd_a0_0.isFinal = false;
-    Technical_issues_rwbd_a0_0.setAction("", false);
-    Technical_issues_rwbd_a0_0.setGreeting("");
-    Technical_issues_rwbd_a0_0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("01", Technical_issues_rwbd_a0_0);
-    Technical_issues_rwbd_a0_0.childs = new ArrayList<Event>();
+    Event timeout_rwbd_c0 = new Event("timeout", "X", 16);
+    timeout_rwbd_c0.isFinal = false;
+    timeout_rwbd_c0.setAction("", false);
+    timeout_rwbd_c0.setGreeting("");
+    timeout_rwbd_c0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("0X", timeout_rwbd_c0);
+    timeout_rwbd_c0.setAction("getInfo", false);
+    timeout_rwbd_c0.childs = new ArrayList<Event>();
 
     Home.childs.add(Technical_issues_rwbd_a0);
     Home.childs.add(record_rwbd_b0);
-    Home.childs.add();
   }
 
   public static void main(String[] args) {

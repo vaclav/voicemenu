@@ -539,6 +539,7 @@ import jetbrains.mps.nodeEditor.MPSFonts;
       }
       Style style = new StyleImpl();
       style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
+      style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
       editorCell.getStyle().putAll(style);
     }
     @Override

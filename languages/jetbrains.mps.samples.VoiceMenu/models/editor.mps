@@ -1247,6 +1247,9 @@
           <node concept="pVoyu" id="6HhgIFYypJy" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
+          <node concept="Vb9p2" id="4_j0sPiGLYE" role="3F10Kt">
+            <property role="Vbekb" value="ITALIC" />
+          </node>
         </node>
         <node concept="l2Vlx" id="6HhgIFXKvei" role="2iSdaV" />
         <node concept="pkWqt" id="6HhgIFXKzfR" role="pqm2j">
