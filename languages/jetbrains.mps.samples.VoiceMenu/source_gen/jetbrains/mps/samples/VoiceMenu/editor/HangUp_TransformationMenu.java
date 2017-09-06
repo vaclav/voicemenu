@@ -362,7 +362,7 @@ public class HangUp_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c8i_5;
+          return IconContainer.RESOURCE_a0a9c8i_4;
         }
         @Override
         public String getTooltipText() {
@@ -653,7 +653,7 @@ public class HangUp_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a01c9k_0;
+          return IconContainer.RESOURCE_a0a01c9k;
         }
         @Override
         public String getTooltipText() {

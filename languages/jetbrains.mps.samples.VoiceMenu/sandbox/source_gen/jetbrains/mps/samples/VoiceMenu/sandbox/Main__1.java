@@ -88,17 +88,17 @@ public class Main__1 implements ActionListener {
     Variables.myHashMap.put("0X", timeout_rwbd_d0);
     timeout_rwbd_d0.setAction("getInfo", true);
     timeout_rwbd_d0.childs = new ArrayList<Event>();
-    Event Action_225_rwbd_c0 = new Event("Action_225", "4", 16);
-    Action_225_rwbd_c0.isFinal = false;
-    Action_225_rwbd_c0.setAction("", false);
-    Action_225_rwbd_c0.setGreeting("");
-    Action_225_rwbd_c0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("04", Action_225_rwbd_c0);
-    Action_225_rwbd_c0.childs = new ArrayList<Event>();
+    Event Technical_issues_rwbd_a0_0 = new Event("Technical issues", "1", 16);
+    Technical_issues_rwbd_a0_0.isFinal = false;
+    Technical_issues_rwbd_a0_0.setAction("", false);
+    Technical_issues_rwbd_a0_0.setGreeting("");
+    Technical_issues_rwbd_a0_0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("01", Technical_issues_rwbd_a0_0);
+    Technical_issues_rwbd_a0_0.childs = new ArrayList<Event>();
 
     Home.childs.add(Technical_issues_rwbd_a0);
     Home.childs.add(record_rwbd_b0);
-    Home.childs.add(Action_225_rwbd_c0);
+    Home.childs.add();
   }
 
   public static void main(String[] args) {
