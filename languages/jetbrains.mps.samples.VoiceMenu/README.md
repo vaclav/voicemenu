@@ -31,31 +31,33 @@ How to use
 
 To start with your first voice menu create a new model in the sandbox solution with `WorkSpace` as the root. It's highly recommended to use either autocomplete `Ctrl + Space` or intentions `Alt + Enter` for easier usage.
 
+In the first step we assign phone buttons and names to activities.
 Simply fill in in each gap one by another. 
 Add upto 12 buttons.
 
-[![MPS_VoiceMenu_Sample](../../extras/VM30.43.png)](https://www.jetbrains.com/mps/)
-[![MPS_VoiceMenu_Sample](../../extras/VM32.51.png)](https://www.jetbrains.com/mps/)
+[![MPS_VoiceMenu_Sample](../../extras/pic1.png)](https://www.jetbrains.com/mps/)
+[![MPS_VoiceMenu_Sample](../../extras/pic2.png)](https://www.jetbrains.com/mps/)
 
-Click on a button you would like to specify an Event to and press `Alt Enter` for Intentions/Quickfixes.
-Choose "Initiliaze Event". (It might be done manually without quickfix)
+Either click on Context tool or in the right Context Action panel choose `Set up ..`
 
-[![MPS_VoiceMenu_Sample](../../extras/VM33.10.png)](https://www.jetbrains.com/mps/)
-[![MPS_VoiceMenu_Sample](../../extras/VM38.12.png)](https://www.jetbrains.com/mps/)
 
-Both the name and the trigger of the event were completed automatically. Choose if the Event is an Action (if so choose which concrete action) or a Menu.
+[![MPS_VoiceMenu_Sample](../../extras/pic3.png)](https://www.jetbrains.com/mps/)
+[![MPS_VoiceMenu_Sample](../../extras/pic0.png)](https://www.jetbrains.com/mps/)
 
-[![MPS_VoiceMenu_Sample](../../extras/VM37.46.png)](https://www.jetbrains.com/mps/)
+Let's complete the second step in which we select what actually happens under the hood to the activity which we gave its trigger (pressed phone button) and that shiny name in the first step.
+Both the name and the trigger of the Activity are completed automatically. Choose if the Activity is subMenu (select Menu) or is a concrete Action 
+
+[![MPS_VoiceMenu_Sample](../../extras/pic4.png)](https://www.jetbrains.com/mps/)
 
 Fill the rest of the Events in a similiar way.
 
-[![MPS_VoiceMenu_Sample](../../extras/VM37.24.png)](https://www.jetbrains.com/mps/)
+[![MPS_VoiceMenu_Sample](../../extras/pic5.png)](https://www.jetbrains.com/mps/)
 
 
 Let's try the very first solution!
 Rebuild the whole project. At the very top of the screen click on `Build` and choose `Rebuild Project`.
 Right click the myVoicemenu sandbox solution in the left panel and choose `Run` .
-[![MPS_VoiceMenu_Sample](../../extras/VM11.12.png)](https://www.jetbrains.com/mps/)
+[![MPS_VoiceMenu_Sample](../../extras/pic6.png)](https://www.jetbrains.com/mps/)
 
 
 
