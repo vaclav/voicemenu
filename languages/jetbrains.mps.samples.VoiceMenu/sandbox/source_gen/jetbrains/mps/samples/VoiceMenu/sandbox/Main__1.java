@@ -43,7 +43,7 @@ public class Main__1 implements ActionListener {
     Get_Info_rwbd_a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("01", Get_Info_rwbd_a0);
     Get_Info_rwbd_a0.setAction("getInfo", false);
-    Get_Info_rwbd_a0.info = "Victory";
+    Get_Info_rwbd_a0.info = "/Users/jetbrains/Documents/Get.wav";
     Get_Info_rwbd_a0.childs = new ArrayList<Event>();
     Event Get_Info_rwbd_b0 = new Event("Get Info", "2", 16);
     Get_Info_rwbd_b0.isFinal = false;

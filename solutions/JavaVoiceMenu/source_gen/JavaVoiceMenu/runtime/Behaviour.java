@@ -4,6 +4,10 @@ package JavaVoiceMenu.runtime;
 
 import java.awt.event.ActionEvent;
 import java.util.concurrent.TimeUnit;
+import java.io.File;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 import java.io.IOException;
 
 public class Behaviour {
@@ -31,7 +35,6 @@ public class Behaviour {
             Variables.path += "X";
           }
         }
-        System.out.println("TIMER path:" + Variables.path);
         if (Variables.timerThr.isAlive()) {
           Variables.timerThr.interrupt();
         }
@@ -40,7 +43,6 @@ public class Behaviour {
         if (eq_d7l93i_a0a0a0a6a(Variables.path.charAt(Variables.path.length() - 1), 'X')) {
           Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
         }
-        System.out.println("repeat interrupted");
       }
     }
     private static boolean neq_d7l93i_a0c0a0g0(Object a, Object b) {
@@ -53,6 +55,36 @@ public class Behaviour {
       return (a != null ? a.equals(b) : a == b);
     }
   }
+
+  public static void PlayGetInfo(String path) {
+    try {
+      File iFile = new File(path);
+      AudioInputStream iStream = AudioSystem.getAudioInputStream(iFile);
+      Clip myClip = AudioSystem.getClip();
+      myClip.open(iStream);
+      myClip.start();
+
+      while (myClip.isOpen()) {
+        try {
+          Thread.sleep(10);
+          System.out.println("slept");
+          if (!(myClip.isActive())) {
+            break;
+          }
+
+        } catch (Exception e) {
+          e.getStackTrace();
+        }
+      }
+
+
+    } catch (Exception e) {
+      System.out.println("File does NOT exist\ntext used as input for generating speech");
+      Variables.voice.addText(path);
+    }
+
+  }
+
   public static void runLogic(ActionEvent evt, boolean repeat) throws IOException {
     Variables.voice.stop();
     // Initilization of voice output 
@@ -76,19 +108,13 @@ public class Behaviour {
         Variables.path = Variables.path + character;
       }
 
-
-
     }
     // Checking if correct option was pressed. If so Variables.path is updated 
 
-
-    System.out.println(Variables.path);
     // Loading next Event according to what is specified in "Variables.path" 
     Event currentEvent = Variables.myHashMap.get(Variables.path);
     // Checking if "back" option was selected via name of the current event 
-    System.out.println(currentEvent.action);
     if (!(isEmptyString(currentEvent.action))) {
-      System.out.println(currentEvent.action);
       if (currentEvent.action.equals("back")) {
         // updating Variables.path to get back 
         Variables.voice.addText("Going to the previous menu");
@@ -99,12 +125,13 @@ public class Behaviour {
         Variables.voice.addText("Direct call started");
         Style.setTextToScreen("Direct Call");
         Variables.finished = currentEvent.isFinal;
+
       } else
       if (currentEvent.action.equals("getInfo")) {
         if (isEmptyString(currentEvent.info)) {
           Variables.voice.addText("Getting you the latest information");
         } else {
-          Variables.voice.addText(currentEvent.info);
+          PlayGetInfo(currentEvent.info);
         }
         Style.setTextToScreen("Getting Informations");
         Variables.finished = currentEvent.isFinal;
@@ -138,7 +165,6 @@ public class Behaviour {
         Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
       }
       Variables.finished = currentEvent.isFinal;
-      System.out.println(currentEvent.name + " + " + currentEvent.isFinal);
       if (Variables.finished) {
         Variables.voice.speak();
         Style.setTextToScreen("PhoneCall finished");
@@ -175,7 +201,6 @@ public class Behaviour {
     }
     Variables.voice.speak();
     if (!(Variables.finished)) {
-      System.out.println("duration: " + currentEvent.duration + currentEvent.name);
       (Variables.timerThr = new Thread(new Behaviour.myTimer(evt, false, 11))).start();
     }
   }

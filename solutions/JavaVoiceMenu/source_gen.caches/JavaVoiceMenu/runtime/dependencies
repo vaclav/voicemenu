@@ -5,6 +5,7 @@
     <classNode dependClassName="JavaVoiceMenu.runtime.Style" />
     <classNode dependClassName="JavaVoiceMenu.runtime.Variables" />
     <classNode dependClassName="java.awt.event.ActionEvent" />
+    <classNode dependClassName="java.io.File" />
     <classNode dependClassName="java.io.IOException" />
     <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Exception" />
@@ -14,6 +15,9 @@
     <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.lang.Thread" />
     <classNode dependClassName="java.util.concurrent.TimeUnit" />
+    <classNode dependClassName="javax.sound.sampled.AudioInputStream" />
+    <classNode dependClassName="javax.sound.sampled.AudioSystem" />
+    <classNode dependClassName="javax.sound.sampled.Clip" />
   </dependency>
   <dependency className="JavaVoiceMenu.runtime.Data" file="Data.java">
     <classNode dependClassName="java.lang.String" />

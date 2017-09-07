@@ -355,8 +355,8 @@
     <node concept="2C_Ik4" id="6HhgIFXTyQ3" role="2JqgbB">
       <node concept="2C_I21" id="6HhgIFXYxj0" role="2C_I26">
         <ref role="2C_gVZ" node="6HhgIFXYxiR" resolve="Get Info" />
-        <node concept="1$pBvo" id="60WteoFXZXA" role="2C_gVu">
-          <property role="2nJRZD" value="Victory" />
+        <node concept="1$pBvo" id="60WteoG74Eg" role="2C_gVu">
+          <property role="2nJRZD" value="/Users/jetbrains/Documents/Get.wav" />
         </node>
       </node>
       <node concept="2C_I21" id="6HhgIFY09IU" role="2C_I26">

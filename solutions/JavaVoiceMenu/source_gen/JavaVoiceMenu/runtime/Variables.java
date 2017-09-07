@@ -21,4 +21,5 @@ public class Variables {
   public static WinVoice winVoice = new WinVoice();
   public static UniVoice uniVoice = new UniVoice();
   public static Thread timerThr = new Thread();
+  public static boolean speaking;
 }
