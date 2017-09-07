@@ -11,16 +11,16 @@ Introduction
 ------------
 
 Let's start with explainig basic idea how it works. 
-Voicemenu designer is asked to fill in (just as in a simple web page) necessary fields according to their preferences.
-Voicemenu consists of Events which are connected with their descedant Events via triggers (phone buttons pressed by a customer on their cellphone).
+A Voicemenu designer is asked to fill in (just as in a simple web page) necessary fields according to their preferences.
+A Voicemenu consists of Events which are connected with their descedant Events via triggers (phone buttons pressed by a customer on their cellphone).
 
 Basics
 ------
 
 Each Event must have set 3 properties: 
-1 Name
-2 Trigger
-3 Action
+1. Name
+2. Trigger
+3. Action
 
 * Name - Obviously represents name of its Event.
 * Trigger - Phone button (0..9,*,#), pressed on a cellphone, to navigate from an Event to another one.
@@ -30,8 +30,8 @@ Name and Action are completely different concepts! Having said that, in a few ca
 Let's focus on Actions.
 
 MPS Voicemenu project supports 7 different actions.
-* Back - Jump to previous menu
-* Direct Call - Call specific number
+* Back - Jump to the previous menu
+* Direct Call - Call a specific number
 * Get Information - Play a record with information
 * Hang Up - End a phonecall
 * Record - Make a voicerecord of customers input
@@ -44,24 +44,24 @@ To start with your first voice menu create a new model in the sandbox solution w
 (Supported advanced shortcut for autocomplete is `Ctrl + Space` and to invoke intentions is `Alt + Enter`)
 
 In the first step we assign triggers (phone buttons) and names to activities.
-Simply fill in in each gap one by another. Add upto 12 buttons. Use Context Action panel (the one on the rigth side). Only suitable options are shown there for every field that needs to fill in.
+Simply fill in each gap one by another. Add upto 12 buttons. Use Context Action panel (the one on the rigth side). Only valid options are shown there for every field that needs to fill in.
 
 [![MPS_VoiceMenu_Sample](../../extras/pic1.png)](https://www.jetbrains.com/mps/)
 [![MPS_VoiceMenu_Sample](../../extras/pic2.png)](https://www.jetbrains.com/mps/)
 
-As we completed the first step let's move onto the second one - specifying action. To this click on `Set up ..`in the Context Action panel (or anywhere else on a title `Set up ..` )
+As we completed the first step let's move onto the second one - specifying action. To do this click on `Set up ..`in the Context Action panel (or anywhere else on a title `Set up ..` )
 
 
 [![MPS_VoiceMenu_Sample](../../extras/pic3.png)](https://www.jetbrains.com/mps/)
 
-In the second step we select what actually happens under the hood to the activity which we gave its trigger ( phone button) and that shiny name in the first step.
-Both the name and the trigger of the Activity are completed automatically. Choose if the Activity is Menu (select Menu) or is a concrete Action. 
+In the second step we select what actually happens under the hood to the Event which we gave its trigger (phone button) and that shiny name in the first step.
+Both the name and the trigger of the Event are completed automatically. Choose if the Event is a Menu (select Menu) or is a concrete Action. 
 
 [![MPS_VoiceMenu_Sample](../../extras/pic4.png)](https://www.jetbrains.com/mps/)
 
 Fill the rest of the Events. 
-Remember: All events are created in the very same way! Every Evet has its own name even if the name might be the same as what an action is called. For example: Voicemenu designer would like to have an Event on the button 2 with the action Direct Call.
-* Possible solution might be an Event with properties: **name** = "Direct Call" , **trigger** = 2 , **activity** = Direct Call 
+Remember: All events are created in the very same way! Every Event has its own name even if the name might be the same as what an action is called. For example: A voicemenu designer would like to have an Event on the button 2 with the action Direct Call.
+* A possible solution might be an Event with properties: **name** = "Direct Call" , **trigger** = 2 , **activity** = Direct Call 
 
 [![MPS_VoiceMenu_Sample](../../extras/pic5.png)](https://www.jetbrains.com/mps/)
 
@@ -103,7 +103,6 @@ Different errors invoke different quickfixes.
 |CheckMultipleActvOneEvnt|-->|RenameActivity|
 
 
-Place where the language is defined
 
 Sample
 ------
