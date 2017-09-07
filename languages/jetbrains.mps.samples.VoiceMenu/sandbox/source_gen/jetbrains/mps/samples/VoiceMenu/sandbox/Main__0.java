@@ -51,6 +51,7 @@ public class Main__0 implements ActionListener {
     Speed_up_35s59u_a0a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("011", Speed_up_35s59u_a0a0);
     Speed_up_35s59u_a0a0.setAction("getInfo", false);
+    Speed_up_35s59u_a0a0.info = "";
     Speed_up_35s59u_a0a0.childs = new ArrayList<Event>();
     Event Discount_35s59u_b0a0 = new Event("Discount", "2", 16);
     Discount_35s59u_b0a0.isFinal = false;

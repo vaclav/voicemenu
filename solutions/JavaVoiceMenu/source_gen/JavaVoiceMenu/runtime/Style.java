@@ -42,7 +42,7 @@ public class Style {
   private static void readChildren() throws IOException {
     Event tmp = Variables.myHashMap.get("0");
     // myVoice.speak(tmp.toast); 
-    Variables.voice.addText(tmp.toast);
+    Variables.voice.addText(tmp.info);
     for (Event child : tmp.childs) {
       // myVoice.speak("For" + child.name + "press" + child.trigger); 
       Variables.voice.addText(" For " + child.name + " press " + child.trigger);

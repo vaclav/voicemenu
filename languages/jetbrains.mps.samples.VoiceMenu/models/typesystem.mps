@@ -1831,5 +1831,76 @@
       </node>
     </node>
   </node>
+  <node concept="18kY7G" id="60WteoFX8ZO">
+    <property role="3GE5qa" value="QuickFixes" />
+    <property role="TrG5h" value="CheckEmptyACtivity" />
+    <node concept="3clFbS" id="60WteoFX8ZP" role="18ibNy">
+      <node concept="3clFbJ" id="60WteoFX900" role="3cqZAp">
+        <node concept="22lmx$" id="60WteoFXark" role="3clFbw">
+          <node concept="1eOMI4" id="60WteoFXPky" role="3uHU7B">
+            <node concept="1Wc70l" id="60WteoFXKo8" role="1eOMHV">
+              <node concept="2OqwBi" id="60WteoFXOrc" role="3uHU7w">
+                <node concept="2OqwBi" id="60WteoFXMj$" role="2Oq$k0">
+                  <node concept="2OqwBi" id="60WteoFXKNb" role="2Oq$k0">
+                    <node concept="1YBJjd" id="60WteoFXKAy" role="2Oq$k0">
+                      <ref role="1YBMHb" node="60WteoFX8ZR" resolve="activity" />
+                    </node>
+                    <node concept="32TBzR" id="60WteoFXL6i" role="2OqNvi" />
+                  </node>
+                  <node concept="v3k3i" id="60WteoFXNXM" role="2OqNvi">
+                    <node concept="chp4Y" id="60WteoFXO5C" role="v3oSu">
+                      <ref role="cht4Q" to="xehl:5HF1wNNZuc8" resolve="Menu" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1v1jN8" id="60WteoFXONn" role="2OqNvi" />
+              </node>
+              <node concept="2OqwBi" id="60WteoFX$kb" role="3uHU7B">
+                <node concept="2OqwBi" id="60WteoFXwHl" role="2Oq$k0">
+                  <node concept="2OqwBi" id="60WteoFX9wD" role="2Oq$k0">
+                    <node concept="1YBJjd" id="60WteoFX90c" role="2Oq$k0">
+                      <ref role="1YBMHb" node="60WteoFX8ZR" resolve="activity" />
+                    </node>
+                    <node concept="32TBzR" id="60WteoFXuDb" role="2OqNvi" />
+                  </node>
+                  <node concept="v3k3i" id="60WteoFX$0a" role="2OqNvi">
+                    <node concept="chp4Y" id="60WteoFX$3l" role="v3oSu">
+                      <ref role="cht4Q" to="xehl:5RYvhcT_ZR5" resolve="Action" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1v1jN8" id="60WteoFX$Xi" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="60WteoFXb7m" role="3uHU7w">
+            <node concept="2OqwBi" id="60WteoFXaE2" role="2Oq$k0">
+              <node concept="1YBJjd" id="60WteoFXavz" role="2Oq$k0">
+                <ref role="1YBMHb" node="60WteoFX8ZR" resolve="activity" />
+              </node>
+              <node concept="3TrEf2" id="60WteoFXaO9" role="2OqNvi">
+                <ref role="3Tt5mk" to="xehl:5HF1wNNZwzN" resolve="event" />
+              </node>
+            </node>
+            <node concept="3w_OXm" id="60WteoFXbt5" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="60WteoFX902" role="3clFbx">
+          <node concept="2MkqsV" id="60WteoFXdSm" role="3cqZAp">
+            <node concept="Xl_RD" id="60WteoFXdSy" role="2MkJ7o">
+              <property role="Xl_RC" value="Incomplete Activity" />
+            </node>
+            <node concept="1YBJjd" id="60WteoFXdTN" role="2OEOjV">
+              <ref role="1YBMHb" node="60WteoFX8ZR" resolve="activity" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="60WteoFX8ZR" role="1YuTPh">
+      <property role="TrG5h" value="activity" />
+      <ref role="1YaFvo" to="xehl:5HF1wNNZuqd" resolve="Activity" />
+    </node>
+  </node>
 </model>
 

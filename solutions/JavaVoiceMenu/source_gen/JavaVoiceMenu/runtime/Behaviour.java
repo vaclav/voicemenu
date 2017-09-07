@@ -101,26 +101,29 @@ public class Behaviour {
         Variables.finished = currentEvent.isFinal;
       } else
       if (currentEvent.action.equals("getInfo")) {
-        Variables.voice.addText(currentEvent.toast);
-        Variables.voice.addText("Getting you the latest information");
+        if (isEmptyString(currentEvent.info)) {
+          Variables.voice.addText("Getting you the latest information");
+        } else {
+          Variables.voice.addText(currentEvent.info);
+        }
         Style.setTextToScreen("Getting Informations");
         Variables.finished = currentEvent.isFinal;
 
       } else
       if (currentEvent.action.equals("other")) {
-        Variables.voice.addText(currentEvent.toast);
+        Variables.voice.addText(currentEvent.info);
         Variables.voice.addText("You've entered section of Other Services");
         Style.setTextToScreen("Other Services");
         Variables.finished = currentEvent.isFinal;
 
       } else if (currentEvent.action.equals("hangUp")) {
-        Variables.voice.addText(currentEvent.toast);
+        Variables.voice.addText(currentEvent.info);
         Variables.voice.addText("Phone call ended");
         Style.setTextToScreen("End of Call");
         Variables.finished = currentEvent.isFinal;
 
       } else if (currentEvent.action.equals("record")) {
-        Variables.voice.addText(currentEvent.toast);
+        Variables.voice.addText(currentEvent.info);
         Style.setTextToScreen("Recording");
         Variables.voice.addText("After beep start speaking beep");
         Variables.voice.speak();
@@ -151,7 +154,7 @@ public class Behaviour {
     Style.setTextToScreen(currentEvent.name);
     // Handling voice output 
     if (wrongButtonPressed == false) {
-      Variables.voice.addText(currentEvent.toast);
+      Variables.voice.addText(currentEvent.info);
     }
     Variables.voice.addText("Choose from this menu, ");
     // Delete all the previous possible options 

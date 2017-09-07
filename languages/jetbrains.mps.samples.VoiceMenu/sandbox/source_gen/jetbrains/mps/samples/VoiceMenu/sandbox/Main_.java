@@ -66,6 +66,7 @@ public class Main_ implements ActionListener {
     Hidden_discounts_m25aj_b0a0a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("0112", Hidden_discounts_m25aj_b0a0a0);
     Hidden_discounts_m25aj_b0a0a0.setAction("getInfo", false);
+    Hidden_discounts_m25aj_b0a0a0.info = "";
     Hidden_discounts_m25aj_b0a0a0.childs = new ArrayList<Event>();
     Event Step_back_m25aj_c0a0a0 = new Event("Step back", "*", 16);
     Step_back_m25aj_c0a0a0.isFinal = false;
@@ -135,6 +136,7 @@ public class Main_ implements ActionListener {
     Recharging_m25aj_b0b0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("022", Recharging_m25aj_b0b0);
     Recharging_m25aj_b0b0.setAction("getInfo", false);
+    Recharging_m25aj_b0b0.info = "";
     Recharging_m25aj_b0b0.childs = new ArrayList<Event>();
     Event Payments_m25aj_c0b0 = new Event("Payments", "3", 16);
     Payments_m25aj_c0b0.isFinal = false;
@@ -166,6 +168,7 @@ public class Main_ implements ActionListener {
     Roaming_m25aj_c0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("03", Roaming_m25aj_c0);
     Roaming_m25aj_c0.setAction("getInfo", true);
+    Roaming_m25aj_c0.info = "";
     Roaming_m25aj_c0.childs = new ArrayList<Event>();
     Event News_m25aj_d0 = new Event("News", "4", 16);
     News_m25aj_d0.isFinal = false;
@@ -189,6 +192,7 @@ public class Main_ implements ActionListener {
     Cold_News_m25aj_b0d0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("042", Cold_News_m25aj_b0d0);
     Cold_News_m25aj_b0d0.setAction("getInfo", false);
+    Cold_News_m25aj_b0d0.info = "";
     Cold_News_m25aj_b0d0.childs = new ArrayList<Event>();
     Event Step_Back_m25aj_c0d0 = new Event("Step Back", "3", 16);
     Step_Back_m25aj_c0d0.isFinal = false;

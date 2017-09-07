@@ -12,7 +12,7 @@ public class Event {
   public String trigger;
   public List<Event> childs;
   public String action;
-  public String toast;
+  public String info;
   public boolean isFinal;
   public int duration = 4;
 
@@ -28,12 +28,12 @@ public class Event {
   /**
    * set full informations about state
    */
-  public Event setElements(String name, String trigger, List<Event> childs, String action, String toast) {
+  public Event setElements(String name, String trigger, List<Event> childs, String action, String info) {
     this.name = name;
     this.trigger = trigger;
     this.childs = childs;
     this.action = action;
-    this.toast = toast;
+    this.info = info;
     return this;
   }
   /**
@@ -48,7 +48,7 @@ public class Event {
    * set greeting for action
    */
   public Event setGreeting(String greeting) {
-    this.toast = greeting;
+    this.info = greeting;
     return this;
   }
   /**

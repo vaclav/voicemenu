@@ -75,6 +75,7 @@ public class Main__2 implements ActionListener {
     Get_Informations_9upjpn_b0b0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("012", Get_Informations_9upjpn_b0b0);
     Get_Informations_9upjpn_b0b0.setAction("getInfo", false);
+    Get_Informations_9upjpn_b0b0.info = "text1.wav";
     Get_Informations_9upjpn_b0b0.childs = new ArrayList<Event>();
     Event Previous_Menu_9upjpn_c0b0 = new Event("Previous Menu", "#", 16);
     Previous_Menu_9upjpn_c0b0.isFinal = false;
@@ -141,6 +142,7 @@ public class Main__2 implements ActionListener {
     Get_Informations_9upjpn_b0c0c0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("0222", Get_Informations_9upjpn_b0c0c0);
     Get_Informations_9upjpn_b0c0c0.setAction("getInfo", true);
+    Get_Informations_9upjpn_b0c0c0.info = "";
     Get_Informations_9upjpn_b0c0c0.childs = new ArrayList<Event>();
     Event Previous_Menu_9upjpn_c0c0c0 = new Event("Previous Menu", "#", 16);
     Previous_Menu_9upjpn_c0c0c0.isFinal = false;

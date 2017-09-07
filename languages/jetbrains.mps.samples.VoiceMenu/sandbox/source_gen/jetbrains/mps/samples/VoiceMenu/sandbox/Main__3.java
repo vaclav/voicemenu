@@ -36,15 +36,15 @@ public class Main__3 implements ActionListener {
     Variables.myHashMap.put("0", Home);
 
 
-    Event Timeout_8fudl3_e0 = new Event("Timeout", "X", 16);
-    Timeout_8fudl3_e0.isFinal = false;
-    Timeout_8fudl3_e0.setAction("", false);
-    Timeout_8fudl3_e0.setGreeting("");
-    Timeout_8fudl3_e0.setGreeting("Timeout");
-    Timeout_8fudl3_e0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("0X", Timeout_8fudl3_e0);
-    Timeout_8fudl3_e0.setAction("repeat", false);
-    Timeout_8fudl3_e0.childs = new ArrayList<Event>();
+    Event Timeout_8fudl3_d0 = new Event("Timeout", "X", 16);
+    Timeout_8fudl3_d0.isFinal = false;
+    Timeout_8fudl3_d0.setAction("", false);
+    Timeout_8fudl3_d0.setGreeting("");
+    Timeout_8fudl3_d0.setGreeting("Timeout");
+    Timeout_8fudl3_d0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("0X", Timeout_8fudl3_d0);
+    Timeout_8fudl3_d0.setAction("repeat", false);
+    Timeout_8fudl3_d0.childs = new ArrayList<Event>();
     Event Technical_department_8fudl3_a0 = new Event("Technical department", "1", 16);
     Technical_department_8fudl3_a0.isFinal = false;
     Technical_department_8fudl3_a0.setAction("", false);
@@ -67,6 +67,7 @@ public class Main__3 implements ActionListener {
     Hardware_8fudl3_a0b0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("011", Hardware_8fudl3_a0b0);
     Hardware_8fudl3_a0b0.setAction("getInfo", false);
+    Hardware_8fudl3_a0b0.info = "";
     Hardware_8fudl3_a0b0.childs = new ArrayList<Event>();
     Event Previous_Menu_8fudl3_b0b0 = new Event("Previous Menu", "*", 16);
     Previous_Menu_8fudl3_b0b0.isFinal = false;
@@ -94,19 +95,12 @@ public class Main__3 implements ActionListener {
     Others_8fudl3_c0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("03", Others_8fudl3_c0);
     Others_8fudl3_c0.setAction("getInfo", true);
+    Others_8fudl3_c0.info = "";
     Others_8fudl3_c0.childs = new ArrayList<Event>();
-    Event Action_888_8fudl3_d0 = new Event("Action_888", "0", 16);
-    Action_888_8fudl3_d0.isFinal = false;
-    Action_888_8fudl3_d0.setAction("", false);
-    Action_888_8fudl3_d0.setGreeting("");
-    Action_888_8fudl3_d0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("00", Action_888_8fudl3_d0);
-    Action_888_8fudl3_d0.childs = new ArrayList<Event>();
 
     Home.childs.add(Technical_department_8fudl3_a0);
     Home.childs.add(Marketing_department_8fudl3_b0);
     Home.childs.add(Others_8fudl3_c0);
-    Home.childs.add(Action_888_8fudl3_d0);
   }
 
   public static void main(String[] args) {
