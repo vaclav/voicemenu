@@ -19,6 +19,12 @@ import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.ActionStyleClass;
+import jetbrains.mps.openapi.editor.style.StyleRegistry;
+import jetbrains.mps.nodeEditor.MPSColors;
+import jetbrains.mps.nodeEditor.MPSFonts;
+import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
+import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
+import jetbrains.mps.nodeEditor.EditorManager;
 
 /*package*/ class Record_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -54,6 +60,9 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.ActionStyleClass
     if (nodeCondition_n4bxxp_a5a()) {
       editorCell.addEditorCell(createImage_n4bxxp_f0());
     }
+    editorCell.addEditorCell(createConstant_n4bxxp_g0());
+    editorCell.addEditorCell(createConstant_n4bxxp_h0());
+    editorCell.addEditorCell(createProperty_n4bxxp_i0());
     return editorCell;
   }
   private boolean nodeCondition_n4bxxp_a4a() {
@@ -120,6 +129,42 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.ActionStyleClass
     editorCell.setCellId("Image_n4bxxp_f0");
     SwitchFinal_NonFinal.setCellActions(editorCell, myNode, getEditorContext());
     editorCell.setDescent(-150);
+    return editorCell;
+  }
+  private EditorCell createConstant_n4bxxp_g0() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
+    editorCell.setCellId("Constant_n4bxxp_g0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_n4bxxp_h0() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Name: ");
+    editorCell.setCellId("Constant_n4bxxp_h0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.gray));
+    style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_n4bxxp_i0() {
+    CellProviderWithRole provider = new PropertyCellProvider(myNode, getEditorContext());
+    provider.setRole("nameOfRecord");
+    provider.setNoTargetText("name of new record");
+    provider.setAllowsEmptyTarget(true);
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(getEditorContext());
+    editorCell.setCellId("property_nameOfRecord");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.gray));
+    style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
+    editorCell.getStyle().putAll(style);
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(getEditorContext());
+      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
+    } else
     return editorCell;
   }
 }

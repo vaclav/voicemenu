@@ -105,7 +105,7 @@
     </node>
     <node concept="1TJgyi" id="2m0r6rVTw3R" role="1TKVEl">
       <property role="IQ2nx" value="2702278965990916343" />
-      <property role="TrG5h" value="greeting" />
+      <property role="TrG5h" value="playback" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="64d_H8N2inJ" role="1TKVEl">
@@ -135,7 +135,7 @@
     </node>
     <node concept="1TJgyi" id="2m0r6rVST1s" role="1TKVEl">
       <property role="IQ2nx" value="2702278965990756444" />
-      <property role="TrG5h" value="greeting" />
+      <property role="TrG5h" value="info" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="3p$ip5sQPm6" role="1TKVEl">
@@ -199,11 +199,6 @@
       <property role="TrG5h" value="isFinal" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-    <node concept="1TJgyi" id="6HhgIFWVzO3" role="1TKVEl">
-      <property role="IQ2nx" value="7733035612205104387" />
-      <property role="TrG5h" value="nameOfRecord" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
   </node>
   <node concept="1TIwiD" id="5lu2mvqIooX">
     <property role="EcuMT" value="6151364482690549309" />
@@ -232,6 +227,11 @@
     <property role="TrG5h" value="Record" />
     <property role="34LRSv" value="RecordMemo" />
     <ref role="1TJDcQ" node="5RYvhcT_ZR5" resolve="Action" />
+    <node concept="1TJgyi" id="2mgRGhu3mzh" role="1TKVEl">
+      <property role="IQ2nx" value="2706908311022561489" />
+      <property role="TrG5h" value="nameOfRecord" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyi" id="48dyn_ZlFQj" role="1TKVEl">
       <property role="IQ2nx" value="4759611536120921491" />
       <property role="TrG5h" value="isFinal" />

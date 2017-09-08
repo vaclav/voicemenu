@@ -19,12 +19,6 @@ import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.ActionStyleClass;
-import jetbrains.mps.openapi.editor.style.StyleRegistry;
-import jetbrains.mps.nodeEditor.MPSColors;
-import jetbrains.mps.nodeEditor.MPSFonts;
-import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
-import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
-import jetbrains.mps.nodeEditor.EditorManager;
 
 /*package*/ class GetInfo_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -61,8 +55,6 @@ import jetbrains.mps.nodeEditor.EditorManager;
       editorCell.addEditorCell(createImage_vdzkpg_f0());
     }
     editorCell.addEditorCell(createConstant_vdzkpg_g0());
-    editorCell.addEditorCell(createConstant_vdzkpg_h0());
-    editorCell.addEditorCell(createProperty_vdzkpg_i0());
     return editorCell;
   }
   private boolean nodeCondition_vdzkpg_a4a() {
@@ -135,36 +127,6 @@ import jetbrains.mps.nodeEditor.EditorManager;
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "  ");
     editorCell.setCellId("Constant_vdzkpg_g0");
     editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_vdzkpg_h0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Record:");
-    editorCell.setCellId("Constant_vdzkpg_h0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.gray));
-    style.set(StyleAttributes.SELECTABLE, false);
-    style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createProperty_vdzkpg_i0() {
-    CellProviderWithRole provider = new PropertyCellProvider(myNode, getEditorContext());
-    provider.setRole("nameOfRecord");
-    provider.setNoTargetText("record");
-    provider.setAllowsEmptyTarget(true);
-    EditorCell editorCell;
-    editorCell = provider.createEditorCell(getEditorContext());
-    editorCell.setCellId("property_nameOfRecord");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.gray));
-    editorCell.getStyle().putAll(style);
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-    SNode attributeConcept = provider.getRoleAttribute();
-    if (attributeConcept != null) {
-      EditorManager manager = EditorManager.getInstanceFromContext(getEditorContext());
-      return manager.createNodeRoleAttributeCell(attributeConcept, provider.getRoleAttributeKind(), editorCell);
-    } else
     return editorCell;
   }
 }

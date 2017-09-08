@@ -129,6 +129,7 @@ public class Styles_StyleSheet {
     @Override
     public void apply(Style style, EditorCell editorCell) {
       style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.black));
+      style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
       style.set(StyleAttributes.SHOW_BOUNDARIES_IN, ShowBoundariesArea.GUTTER);
     }
 

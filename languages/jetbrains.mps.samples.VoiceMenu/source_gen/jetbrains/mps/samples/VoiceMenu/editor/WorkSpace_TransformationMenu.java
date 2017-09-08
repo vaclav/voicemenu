@@ -229,18 +229,18 @@ public class WorkSpace_TransformationMenu extends TransformationMenuBase {
         @Nullable
         @Override
         public String getLabelText(String pattern) {
-          return "Remove Greeting";
+          return "Remove Playback";
         }
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.set(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "greeting"), "");
+          SPropertyOperations.set(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "info"), "");
           SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return isNotEmptyString(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "greeting")));
+          return isNotEmptyString(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "info")));
         }
 
         @Override
@@ -280,17 +280,19 @@ public class WorkSpace_TransformationMenu extends TransformationMenuBase {
         @Nullable
         @Override
         public String getLabelText(String pattern) {
-          return "Add Greeting";
+          return "Add Playback";
         }
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.set(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "greeting"), "Sample Greeting");
+          SPropertyOperations.set(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "info"), "Welcome to our Voicemenu");
+          SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
+
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return isEmptyString(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "greeting")));
+          return isEmptyString(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "info")));
         }
 
         @Override

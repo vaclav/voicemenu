@@ -27,6 +27,10 @@ import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.DeclarationsStyleClass;
 import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.GreetingStyleClass;
+import jetbrains.mps.openapi.editor.style.StyleRegistry;
+import jetbrains.mps.nodeEditor.MPSColors;
+import jetbrains.mps.nodeEditor.MPSFonts;
+import jetbrains.mps.editor.runtime.style.FocusPolicy;
 import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
@@ -34,10 +38,6 @@ import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart;
 import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
-import jetbrains.mps.openapi.editor.style.StyleRegistry;
-import jetbrains.mps.nodeEditor.MPSColors;
-import jetbrains.mps.nodeEditor.MPSFonts;
-import jetbrains.mps.editor.runtime.style.FocusPolicy;
 
 /*package*/ class Activity_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -102,13 +102,13 @@ import jetbrains.mps.editor.runtime.style.FocusPolicy;
     return editorCell;
   }
   private boolean nodeCondition_luypn2_a4a0() {
-    return isNotEmptyString(SPropertyOperations.getString(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "greeting")));
+    return isNotEmptyString(SPropertyOperations.getString(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")));
   }
   private boolean nodeCondition_luypn2_a5a0() {
-    return isNotEmptyString(SPropertyOperations.getString(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "greeting")));
+    return isNotEmptyString(SPropertyOperations.getString(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")));
   }
   private boolean nodeCondition_luypn2_a6a0() {
-    return isNotEmptyString(SPropertyOperations.getString(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "greeting")));
+    return isNotEmptyString(SPropertyOperations.getString(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")));
   }
   private SNode _StyleParameter_QueryFunction_luypn2_a0a0() {
     return SLinkOperations.getTarget(getNode(), MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event"));
@@ -299,7 +299,7 @@ import jetbrains.mps.editor.runtime.style.FocusPolicy;
     return editorCell;
   }
   private EditorCell createConstant_luypn2_f0a() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Info: ");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Playback: ");
     editorCell.setCellId("Constant_luypn2_f0a");
     Style style = new StyleImpl();
     new HardCodedTextStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
@@ -311,15 +311,20 @@ import jetbrains.mps.editor.runtime.style.FocusPolicy;
   }
   private EditorCell createProperty_luypn2_g0a() {
     CellProviderWithRole provider = new PropertyCellProvider(myNode, getEditorContext());
-    provider.setRole("greeting");
-    provider.setNoTargetText("<no greeting>");
+    provider.setRole("playback");
+    provider.setNoTargetText("<no playback>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(getEditorContext());
-    editorCell.setCellId("property_greeting");
+    editorCell.setCellId("property_playback");
     Style style = new StyleImpl();
     new GreetingStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
     style.set(StyleAttributes.EDITABLE, true);
+    style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.gray));
+    style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
     editorCell.getStyle().putAll(style);
+    if (true) {
+      editorCell.getStyle().set(StyleAttributes.FOCUS_POLICY, FocusPolicy.ATTRACTS_FOCUS);
+    }
     RemoveGreeting.setCellActions(editorCell, myNode, getEditorContext());
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -425,16 +430,16 @@ import jetbrains.mps.editor.runtime.style.FocusPolicy;
     return editorCell;
   }
   private boolean nodeCondition_luypn2_a3b0() {
-    return isNotEmptyString(SPropertyOperations.getString(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "greeting")));
+    return isNotEmptyString(SPropertyOperations.getString(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")));
   }
   private boolean nodeCondition_luypn2_a4b0() {
-    return isNotEmptyString(SPropertyOperations.getString(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "greeting")));
+    return isNotEmptyString(SPropertyOperations.getString(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")));
   }
   private EditorCell createConstant_luypn2_a1a() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Timeout:");
     editorCell.setCellId("Constant_luypn2_a1a");
     Style style = new StyleImpl();
-    style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.gray));
+    new DeclarationsStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
     style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
@@ -463,12 +468,13 @@ import jetbrains.mps.editor.runtime.style.FocusPolicy;
     Style style = new StyleImpl();
     style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
     style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.gray));
+    style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createConstant_luypn2_d1a() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Info: ");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Playback: ");
     editorCell.setCellId("Constant_luypn2_d1a");
     Style style = new StyleImpl();
     new HardCodedTextStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
@@ -480,14 +486,16 @@ import jetbrains.mps.editor.runtime.style.FocusPolicy;
   }
   private EditorCell createProperty_luypn2_e1a() {
     CellProviderWithRole provider = new PropertyCellProvider(myNode, getEditorContext());
-    provider.setRole("greeting");
-    provider.setNoTargetText("<no greeting>");
+    provider.setRole("playback");
+    provider.setNoTargetText("<no playback>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(getEditorContext());
-    editorCell.setCellId("property_greeting_1");
+    editorCell.setCellId("property_playback_1");
     Style style = new StyleImpl();
     new GreetingStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
     style.set(StyleAttributes.EDITABLE, true);
+    style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.gray));
+    style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
     editorCell.getStyle().putAll(style);
     RemoveGreeting.setCellActions(editorCell, myNode, getEditorContext());
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
@@ -537,6 +545,7 @@ import jetbrains.mps.editor.runtime.style.FocusPolicy;
       Style style = new StyleImpl();
       style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
+      style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
       editorCell.getStyle().putAll(style);
       if (true) {
         editorCell.getStyle().set(StyleAttributes.FOCUS_POLICY, FocusPolicy.ATTRACTS_FOCUS);

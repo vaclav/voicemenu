@@ -258,7 +258,7 @@
                 <ref role="3cqZAo" node="6HhgIFXEKPB" resolve="timeoutActvt" />
               </node>
               <node concept="3TrcHB" id="6HhgIFXEYay" role="2OqNvi">
-                <ref role="3TsBF5" to="xehl:2m0r6rVTw3R" resolve="greeting" />
+                <ref role="3TsBF5" to="xehl:2m0r6rVTw3R" resolve="playback" />
               </node>
             </node>
           </node>

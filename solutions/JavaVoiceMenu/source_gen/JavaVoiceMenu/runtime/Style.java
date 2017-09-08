@@ -32,7 +32,6 @@ public class Style {
 
   public static JPanel myPhone = new JPanel(new BorderLayout(5, 0));
   public static JPanel myPanelOfButtons = new JPanel(new GridLayout(4, 3, 2, 2));
-  public static String main_Greeting = "";
   private static void customizeButton(JButton button, Border border, Dimension dim, Color color) {
     button.setBackground(color);
     button.setOpaque(true);
@@ -42,10 +41,12 @@ public class Style {
   private static void readChildren() throws IOException {
     Event tmp = Variables.myHashMap.get("0");
     // myVoice.speak(tmp.toast); 
-    Variables.voice.addText(tmp.info);
+    Variables.voice.addText(tmp.playback);
     for (Event child : tmp.childs) {
       // myVoice.speak("For" + child.name + "press" + child.trigger); 
-      Variables.voice.addText(" For " + child.name + " press " + child.trigger);
+      if (isEmptyString(tmp.playback)) {
+        Variables.voice.addText(" For " + child.name + " press " + child.trigger);
+      }
       Variables.possibleOptList.add(child.trigger);
     }
     Variables.voice.speak();
@@ -57,7 +58,6 @@ public class Style {
         if (Variables.started == false) {
           setTextToScreen(Variables.main_Text);
           Variables.path = "0";
-          Variables.voice.addText(main_Greeting);
           try {
             readChildren();
           } catch (IOException e) {
@@ -172,5 +172,8 @@ public class Style {
   public static void setContent() {
     // set visible content 
     setMainPanel(myPhone);
+  }
+  private static boolean isEmptyString(String str) {
+    return str == null || str.length() == 0;
   }
 }

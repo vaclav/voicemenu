@@ -12,7 +12,7 @@ public class Event {
   public String trigger;
   public List<Event> childs;
   public String action;
-  public String info;
+  public String playback;
   public boolean isFinal;
   public int duration = 4;
 
@@ -33,7 +33,7 @@ public class Event {
     this.trigger = trigger;
     this.childs = childs;
     this.action = action;
-    this.info = info;
+    this.playback = info;
     return this;
   }
   /**
@@ -48,7 +48,7 @@ public class Event {
    * set greeting for action
    */
   public Event setGreeting(String greeting) {
-    this.info = greeting;
+    this.playback = greeting;
     return this;
   }
   /**

@@ -16,14 +16,14 @@ import java.util.Collections;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 
-public final class Add_Greeting_tmpActivity_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
+public final class Remove_Playback_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
-  public Add_Greeting_tmpActivity_Intention() {
-    super(Kind.NORMAL, false, new SNodePointer("r:d92c1500-00d3-4072-866a-5077893293b8(jetbrains.mps.samples.VoiceMenu.intentions)", "7325093694383027347"));
+  public Remove_Playback_Intention() {
+    super(Kind.NORMAL, false, new SNodePointer("r:d92c1500-00d3-4072-866a-5077893293b8(jetbrains.mps.samples.VoiceMenu.intentions)", "6428598319199030283"));
   }
   @Override
   public String getPresentation() {
-    return "Add_Greeting_tmpActivity";
+    return "Remove_Playback";
   }
   @Override
   public boolean isApplicable(final SNode node, final EditorContext editorContext) {
@@ -33,7 +33,8 @@ public final class Add_Greeting_tmpActivity_Intention extends AbstractIntentionD
     return true;
   }
   private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-    return isEmptyString(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "greeting")));
+    return isNotEmptyString(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")));
+
   }
   @Override
   public boolean isSurroundWith() {
@@ -41,7 +42,7 @@ public final class Add_Greeting_tmpActivity_Intention extends AbstractIntentionD
   }
   public Collection<IntentionExecutable> instances(final SNode node, final EditorContext context) {
     if (myCachedExecutable == null) {
-      myCachedExecutable = Collections.<IntentionExecutable>singletonList(new Add_Greeting_tmpActivity_Intention.IntentionImplementation());
+      myCachedExecutable = Collections.<IntentionExecutable>singletonList(new Remove_Playback_Intention.IntentionImplementation());
     }
     return myCachedExecutable;
   }
@@ -50,18 +51,18 @@ public final class Add_Greeting_tmpActivity_Intention extends AbstractIntentionD
     }
     @Override
     public String getDescription(final SNode node, final EditorContext editorContext) {
-      return "Add Greeting";
+      return "Remove Playback";
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "greeting"), "Sample Greeting");
+      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback"), "");
     }
     @Override
     public IntentionDescriptor getDescriptor() {
-      return Add_Greeting_tmpActivity_Intention.this;
+      return Remove_Playback_Intention.this;
     }
   }
-  private static boolean isEmptyString(String str) {
-    return str == null || str.length() == 0;
+  private static boolean isNotEmptyString(String str) {
+    return str != null && str.length() > 0;
   }
 }

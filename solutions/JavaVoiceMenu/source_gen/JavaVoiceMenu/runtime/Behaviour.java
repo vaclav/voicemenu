@@ -62,12 +62,12 @@ public class Behaviour {
       AudioInputStream iStream = AudioSystem.getAudioInputStream(iFile);
       Clip myClip = AudioSystem.getClip();
       myClip.open(iStream);
+      Variables.voice.speak();
       myClip.start();
 
       while (myClip.isOpen()) {
         try {
           Thread.sleep(10);
-          System.out.println("slept");
           if (!(myClip.isActive())) {
             break;
           }
@@ -128,40 +128,46 @@ public class Behaviour {
 
       } else
       if (currentEvent.action.equals("getInfo")) {
-        if (isEmptyString(currentEvent.info)) {
+        if (isEmptyString(currentEvent.playback)) {
           Variables.voice.addText("Getting you the latest information");
         } else {
-          PlayGetInfo(currentEvent.info);
+          PlayGetInfo(currentEvent.playback);
         }
         Style.setTextToScreen("Getting Informations");
         Variables.finished = currentEvent.isFinal;
 
       } else
       if (currentEvent.action.equals("other")) {
-        Variables.voice.addText(currentEvent.info);
+        Variables.voice.addText(currentEvent.playback);
         Variables.voice.addText("You've entered section of Other Services");
         Style.setTextToScreen("Other Services");
         Variables.finished = currentEvent.isFinal;
 
       } else if (currentEvent.action.equals("hangUp")) {
-        Variables.voice.addText(currentEvent.info);
+        Variables.voice.addText(currentEvent.playback);
         Variables.voice.addText("Phone call ended");
         Style.setTextToScreen("End of Call");
         Variables.finished = currentEvent.isFinal;
 
       } else if (currentEvent.action.equals("record")) {
-        Variables.voice.addText(currentEvent.info);
+        Variables.voice.addText(currentEvent.playback);
         Style.setTextToScreen("Recording");
         Variables.voice.addText("After beep start speaking beep");
         Variables.voice.speak();
         try {
-          Thread.sleep(((long) 5));
+          Thread.sleep(((long) 2000));
         } catch (Exception e) {
 
         }
         Variables.voice.addText("Succesfully recorded");
+
       } else if (currentEvent.action.equals("repeat")) {
-        Variables.voice.addText("Repeating possible options");
+        if (isEmptyString(currentEvent.playback)) {
+          Variables.voice.addText("Repeating possible options");
+        } else {
+          PlayGetInfo(currentEvent.playback);
+        }
+
         Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
       }
       Variables.finished = currentEvent.isFinal;
@@ -179,10 +185,12 @@ public class Behaviour {
     }
     Style.setTextToScreen(currentEvent.name);
     // Handling voice output 
-    if (wrongButtonPressed == false) {
-      Variables.voice.addText(currentEvent.info);
+    if (isNotEmptyString(currentEvent.playback)) {
+      PlayGetInfo(currentEvent.playback);
     }
-    Variables.voice.addText("Choose from this menu, ");
+    if (isEmptyString(currentEvent.playback)) {
+      Variables.voice.addText("Choose from this menu, ");
+    }
     // Delete all the previous possible options 
     Variables.possibleOptList.clear();
     // Proposing possible options consisting of next events 
@@ -195,8 +203,9 @@ public class Behaviour {
       } else {
         trigger = child.trigger;
       }
-
-      Variables.voice.addText(" For " + child.name + " press " + trigger + ",");
+      if (isEmptyString(currentEvent.playback)) {
+        Variables.voice.addText(" For " + child.name + " press " + trigger + ",");
+      }
       Variables.possibleOptList.add(child.trigger);
     }
     Variables.voice.speak();
@@ -215,5 +224,8 @@ public class Behaviour {
   }
   private static boolean isEmptyString(String str) {
     return str == null || str.length() == 0;
+  }
+  private static boolean isNotEmptyString(String str) {
+    return str != null && str.length() > 0;
   }
 }

@@ -1,0 +1,51 @@
+<?xml version = "1.0" encoding = "UTF-8" standalone = "no"?>
+<state_machine>
+  
+  <state id="Test" isInitial="true">
+    <playback>Welcome to our Voicemenu</playback>
+    
+    
+    <activity event="1" target_child="Get Info1">
+      <playback>Choose from..</playback>
+      <state id="Get Info1">
+        <action name="Get Info"></action>
+      </state>
+      
+    </activity>
+    <activity event="2" target_child="Menu">
+      <playback>/Users/jetbrains/Documents/menu1.wav</playback>
+      <state id="Menu">
+        <activity event="X" target_child="Timeout">
+          <playback>/Users/jetbrains/Documents/repeat1.wav</playback>
+          <state id="Timeout">
+            <action name="Replay Options"></action>
+          </state>
+          
+        </activity>
+        <activity event="1" target_child="HangUp">
+          <playback>Hang up</playback>
+          <state id="HangUp">
+            <action name="Hang Up"></action>
+          </state>
+          
+        </activity>
+        <activity event="2" target_child="GetInfo">
+          <playback>get Info</playback>
+          <state id="GetInfo">
+            <action name="Get Info"></action>
+          </state>
+          
+        </activity>
+      </state>
+      
+    </activity>
+    <activity event="X" target_child="timeout">
+      <playback>/Users/jetbrains/Documents/repeat1.wav</playback>
+      <state id="timeout">
+        <action name="Replay Options"></action>
+      </state>
+      
+    </activity>
+    
+  </state>
+</state_machine>

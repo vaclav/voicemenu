@@ -6,7 +6,7 @@
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" version="-1" />
-    <engage id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" />
+    <engage id="750ae49d-4f57-400c-b5dc-2b58c1e3f9a9" name="jetbrains.mps.samples.VoiceMenuToXML" />
   </languages>
   <imports>
     <import index="ibtu" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#427a473d-5177-432c-9905-bcbceb71b996(jetbrains.mps.lang.project.modules/module.jetbrains.mps.build.mps.runner@project_stub)" />
@@ -16,7 +16,7 @@
       <concept id="7733035612211835897" name="jetbrains.mps.samples.VoiceMenu.structure.ReplayOptions" flags="ng" index="2m1r4j" />
       <concept id="6587365532662359693" name="jetbrains.mps.samples.VoiceMenu.structure.Activity" flags="ng" index="2C_I21">
         <property id="6993411625919784431" name="timeout" index="1i1bcX" />
-        <property id="2702278965990916343" name="greeting" index="3upAMh" />
+        <property id="2702278965990916343" name="playback" index="3upAMh" />
         <reference id="6587365532662368499" name="event" index="2C_gVZ" />
         <child id="6587365532662368466" name="commands" index="2C_gVu" />
       </concept>
@@ -28,7 +28,7 @@
         <child id="6587365532662359690" name="activities" index="2C_I26" />
       </concept>
       <concept id="6587365532662629576" name="jetbrains.mps.samples.VoiceMenu.structure.WorkSpace" flags="ng" index="2Jqgb4">
-        <property id="2702278965990756444" name="greeting" index="3uoZKU" />
+        <property id="2702278965990756444" name="info" index="3uoZKU" />
         <property id="3919338464396137862" name="toolbar" index="1EJLKn" />
         <child id="6587365532662629611" name="bodyMenu" index="2JqgbB" />
       </concept>
@@ -37,7 +37,6 @@
       </concept>
       <concept id="4759611536116094683" name="jetbrains.mps.samples.VoiceMenu.structure.HangUp" flags="ng" index="X09Yy" />
       <concept id="6772988411135920843" name="jetbrains.mps.samples.VoiceMenu.structure.GetInfo" flags="ng" index="1$pBvo">
-        <property id="7733035612205104387" name="nameOfRecord" index="2nJRZD" />
         <property id="4759611536120921399" name="isFinal" index="XmNhe" />
       </concept>
       <concept id="6772988411135920842" name="jetbrains.mps.samples.VoiceMenu.structure.Back" flags="ng" index="1$pBvp" />
@@ -352,32 +351,61 @@
   </node>
   <node concept="2Jqgb4" id="6HhgIFXTyQ2">
     <property role="TrG5h" value="Test" />
+    <property role="3uoZKU" value="Welcome to our Voicemenu" />
     <node concept="2C_Ik4" id="6HhgIFXTyQ3" role="2JqgbB">
       <node concept="2C_I21" id="6HhgIFXYxj0" role="2C_I26">
-        <ref role="2C_gVZ" node="6HhgIFXYxiR" resolve="Get Info" />
-        <node concept="1$pBvo" id="60WteoG74Eg" role="2C_gVu">
-          <property role="2nJRZD" value="/Users/jetbrains/Documents/Get.wav" />
-        </node>
+        <property role="3upAMh" value="/Users/jetbrains/Documents/Get.wav" />
+        <ref role="2C_gVZ" node="6HhgIFXYxiR" resolve="Get Info1" />
+        <node concept="1$pBvo" id="60WteoG74Eg" role="2C_gVu" />
       </node>
       <node concept="2C_I21" id="6HhgIFY09IU" role="2C_I26">
-        <property role="3upAMh" value="" />
-        <ref role="2C_gVZ" node="6HhgIFXYxiW" resolve="Get Info" />
-        <node concept="1$pBvo" id="60WteoFXZXG" role="2C_gVu">
-          <property role="XmNhe" value="true" />
+        <property role="3upAMh" value="/Users/jetbrains/Documents/menu1.wav" />
+        <ref role="2C_gVZ" node="6HhgIFXYxiW" resolve="Menu" />
+        <node concept="2C_Ik4" id="2mgRGhu34iD" role="2C_gVu">
+          <node concept="2C_Ik0" id="2mgRGhu34iE" role="2C_I24">
+            <property role="2C_Iks" value="1" />
+            <property role="TrG5h" value="HangUp" />
+          </node>
+          <node concept="2C_Ik0" id="2mgRGhu34iP" role="2C_I24">
+            <property role="2C_Iks" value="2" />
+            <property role="TrG5h" value="GetInfo" />
+          </node>
+          <node concept="2C_Ik0" id="2mgRGhu34iF" role="2C_I24">
+            <property role="2C_Iks" value="X" />
+            <property role="TrG5h" value="Timeout" />
+          </node>
+          <node concept="2C_I21" id="2mgRGhu34iG" role="2C_I26">
+            <property role="3upAMh" value="/Users/jetbrains/Documents/repeat1.wav" />
+            <ref role="2C_gVZ" node="2mgRGhu34iF" resolve="Timeout" />
+            <node concept="2m1r4j" id="2mgRGhuB8TD" role="2C_gVu" />
+          </node>
+          <node concept="2C_I21" id="2mgRGhu34j1" role="2C_I26">
+            <property role="3upAMh" value="Hang up" />
+            <ref role="2C_gVZ" node="2mgRGhu34iE" resolve="HangUp" />
+            <node concept="X09Yy" id="2mgRGhu34j9" role="2C_gVu" />
+          </node>
+          <node concept="2C_I21" id="2mgRGhu34iT" role="2C_I26">
+            <property role="3upAMh" value="get Info" />
+            <ref role="2C_gVZ" node="2mgRGhu34iP" resolve="GetInfo" />
+            <node concept="1$pBvo" id="2mgRGhu34jc" role="2C_gVu">
+              <property role="XmNhe" value="false" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2C_I21" id="6HhgIFY76D4" role="2C_I26">
         <property role="1i1bcX" value="9" />
+        <property role="3upAMh" value="/Users/jetbrains/Documents/repeat1.wav" />
         <ref role="2C_gVZ" node="6HhgIFXTyQ5" resolve="timeout" />
         <node concept="2m1r4j" id="60WteoFXZXD" role="2C_gVu" />
       </node>
       <node concept="2C_Ik0" id="6HhgIFXYxiR" role="2C_I24">
-        <property role="TrG5h" value="Get Info" />
+        <property role="TrG5h" value="Get Info1" />
         <property role="2C_Iks" value="1" />
       </node>
       <node concept="2C_Ik0" id="6HhgIFXYxiW" role="2C_I24">
         <property role="2C_Iks" value="2" />
-        <property role="TrG5h" value="Get Info" />
+        <property role="TrG5h" value="Menu" />
       </node>
       <node concept="2C_Ik0" id="6HhgIFXTyQ5" role="2C_I24">
         <property role="2C_Iks" value="X" />
@@ -441,10 +469,7 @@
           </node>
           <node concept="2C_I21" id="1Dc9HeI7QYh" role="2C_I26">
             <ref role="2C_gVZ" node="1Dc9HeI7QXU" resolve="Get Informations" />
-            <node concept="1$pBvo" id="1Dc9HeI7QYr" role="2C_gVu">
-              <property role="XmNhe" value="false" />
-              <property role="2nJRZD" value="text1.wav" />
-            </node>
+            <node concept="1$pBvo" id="2mgRGhukCEq" role="2C_gVu" />
           </node>
           <node concept="2C_I21" id="1Dc9HeI7QYu" role="2C_I26">
             <ref role="2C_gVZ" node="1Dc9HeI7QXY" resolve="Previous Menu" />

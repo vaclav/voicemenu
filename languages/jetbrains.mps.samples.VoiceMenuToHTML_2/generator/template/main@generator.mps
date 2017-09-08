@@ -303,7 +303,7 @@
             </node>
           </node>
           <node concept="2pNNFK" id="2m0r6rVTQ54" role="3o6s8t">
-            <property role="2pNNFO" value="toast" />
+            <property role="2pNNFO" value="playback" />
             <node concept="2pNNFK" id="2m0r6rVTXzs" role="3o6s8t">
               <property role="2pNNFO" value="b" />
               <node concept="2pNUuL" id="2m0r6rVTXPw" role="2pNNFR">
@@ -317,7 +317,7 @@
               </node>
             </node>
             <node concept="2pNNFK" id="2m0r6rVU0li" role="3o6s8t">
-              <property role="2pNNFO" value="toast_text" />
+              <property role="2pNNFO" value="playback_text" />
               <node concept="2pNUuL" id="2m0r6rVU1r9" role="2pNNFR">
                 <property role="2pNUuO" value="style" />
                 <node concept="2pMdtt" id="2m0r6rVU1_x" role="2pMdts">
@@ -338,7 +338,7 @@
                       <node concept="3clFbF" id="2m0r6rVTQjG" role="3cqZAp">
                         <node concept="2OqwBi" id="2m0r6rVTQjB" role="3clFbG">
                           <node concept="3TrcHB" id="2m0r6rVTQjE" role="2OqNvi">
-                            <ref role="3TsBF5" to="xehl:2m0r6rVST1s" resolve="greeting" />
+                            <ref role="3TsBF5" to="xehl:2m0r6rVST1s" resolve="info" />
                           </node>
                           <node concept="30H73N" id="2m0r6rVTQjF" role="2Oq$k0" />
                         </node>
@@ -359,7 +359,7 @@
                       <node concept="2OqwBi" id="2m0r6rVTR7n" role="2Oq$k0">
                         <node concept="30H73N" id="2m0r6rVTQUp" role="2Oq$k0" />
                         <node concept="3TrcHB" id="2m0r6rVTRsX" role="2OqNvi">
-                          <ref role="3TsBF5" to="xehl:2m0r6rVST1s" resolve="greeting" />
+                          <ref role="3TsBF5" to="xehl:2m0r6rVST1s" resolve="info" />
                         </node>
                       </node>
                       <node concept="17RvpY" id="2m0r6rVTSAt" role="2OqNvi" />
@@ -554,7 +554,7 @@
             </node>
           </node>
           <node concept="2pNNFK" id="2m0r6rVUtzD" role="3o6s8t">
-            <property role="2pNNFO" value="toast_text" />
+            <property role="2pNNFO" value="playback_text" />
             <node concept="2pNUuL" id="2m0r6rVUtzE" role="2pNNFR">
               <property role="2pNUuO" value="style" />
               <node concept="2pMdtt" id="2m0r6rVUtzF" role="2pMdts">
@@ -575,7 +575,7 @@
                     <node concept="3clFbF" id="2m0r6rVUtzM" role="3cqZAp">
                       <node concept="2OqwBi" id="2m0r6rVUtzN" role="3clFbG">
                         <node concept="3TrcHB" id="2m0r6rVUtzO" role="2OqNvi">
-                          <ref role="3TsBF5" to="xehl:2m0r6rVTw3R" resolve="greeting" />
+                          <ref role="3TsBF5" to="xehl:2m0r6rVTw3R" resolve="info" />
                         </node>
                         <node concept="30H73N" id="2m0r6rVUtzP" role="2Oq$k0" />
                       </node>
@@ -596,7 +596,7 @@
                     <node concept="2OqwBi" id="2m0r6rVUtzW" role="2Oq$k0">
                       <node concept="30H73N" id="2m0r6rVUtzX" role="2Oq$k0" />
                       <node concept="3TrcHB" id="2m0r6rVUtzY" role="2OqNvi">
-                        <ref role="3TsBF5" to="xehl:2m0r6rVTw3R" resolve="greeting" />
+                        <ref role="3TsBF5" to="xehl:2m0r6rVTw3R" resolve="info" />
                       </node>
                     </node>
                     <node concept="17RvpY" id="2m0r6rVUtzZ" role="2OqNvi" />

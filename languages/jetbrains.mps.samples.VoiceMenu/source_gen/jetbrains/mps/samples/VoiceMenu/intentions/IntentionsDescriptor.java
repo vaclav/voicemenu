@@ -51,11 +51,11 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
         if (true) {
           // Concept: Activity 
           intentions = new IntentionFactory[5];
-          intentions[0] = new Remove_Greeting_Intention();
+          intentions[0] = new Remove_Playback_Intention();
           intentions[1] = new InitializeNewEvent_Intention();
-          intentions[2] = new Add_Greeting_tmpActivity_Intention();
-          intentions[3] = new RemoveActivityWithEvent_Intention();
-          intentions[4] = new DeclareActivity_Intention();
+          intentions[2] = new RemoveActivityWithEvent_Intention();
+          intentions[3] = new DeclareActivity_Intention();
+          intentions[4] = new Add_Playback_Intention();
         }
         break;
       case 2:
@@ -73,10 +73,10 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
         if (true) {
           // Concept: WorkSpace 
           intentions = new IntentionFactory[4];
-          intentions[0] = new Add_Main_Greeting_Intention();
-          intentions[1] = new Remove_Main_Greeting_Intention();
-          intentions[2] = new ViewAsTabular_Intention();
-          intentions[3] = new ShowToolbar_Intention();
+          intentions[0] = new Remove_Main_Playback_Intention();
+          intentions[1] = new ViewAsTabular_Intention();
+          intentions[2] = new ShowToolbar_Intention();
+          intentions[3] = new Add_Main_Playback_Intention();
         }
         break;
       default:
@@ -89,30 +89,30 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
   @Override
   public Collection<IntentionFactory> getAllIntentions() {
     IntentionFactory[] rv = new IntentionFactory[24];
-    rv[0] = new Add_Main_Greeting_Intention();
-    rv[1] = new Remove_Greeting_Intention();
-    rv[2] = new Remove_Main_Greeting_Intention();
-    rv[3] = new InitializeNewEvent_Intention();
-    rv[4] = new changeToDirectCall_Intention();
-    rv[5] = new changeToOther_Intention();
-    rv[6] = new changeToBack_Intention();
-    rv[7] = new changeToGetInfo_Intention();
-    rv[8] = new changeToMenu_Intention();
-    rv[9] = new ViewAsTabular_Intention();
-    rv[10] = new ShowToolbar_Intention();
-    rv[11] = new RemoveEventWithActivity_Intention();
-    rv[12] = new Add_Greeting_tmpActivity_Intention();
-    rv[13] = new Sort_Ascending_Intention();
-    rv[14] = new Sort_Descending_Intention();
-    rv[15] = new MoveUp_Intention();
-    rv[16] = new MoveDown_Intention();
-    rv[17] = new RemoveActivityWithEvent_Intention();
-    rv[18] = new DeclareActivity_Intention();
-    rv[19] = new SetAsFinal_Intention();
-    rv[20] = new SetAsNonFinal_Intention();
-    rv[21] = new changeToHangUp_Intention();
-    rv[22] = new changeToRecord_Intention();
-    rv[23] = new changeToReplay_Intention();
+    rv[0] = new Remove_Playback_Intention();
+    rv[1] = new Remove_Main_Playback_Intention();
+    rv[2] = new InitializeNewEvent_Intention();
+    rv[3] = new changeToDirectCall_Intention();
+    rv[4] = new changeToOther_Intention();
+    rv[5] = new changeToBack_Intention();
+    rv[6] = new changeToGetInfo_Intention();
+    rv[7] = new changeToMenu_Intention();
+    rv[8] = new ViewAsTabular_Intention();
+    rv[9] = new ShowToolbar_Intention();
+    rv[10] = new RemoveEventWithActivity_Intention();
+    rv[11] = new Sort_Ascending_Intention();
+    rv[12] = new Sort_Descending_Intention();
+    rv[13] = new MoveUp_Intention();
+    rv[14] = new MoveDown_Intention();
+    rv[15] = new RemoveActivityWithEvent_Intention();
+    rv[16] = new DeclareActivity_Intention();
+    rv[17] = new SetAsFinal_Intention();
+    rv[18] = new SetAsNonFinal_Intention();
+    rv[19] = new changeToHangUp_Intention();
+    rv[20] = new changeToRecord_Intention();
+    rv[21] = new changeToReplay_Intention();
+    rv[22] = new Add_Playback_Intention();
+    rv[23] = new Add_Main_Playback_Intention();
     return Arrays.asList(rv);
   }
   private static final ConceptSwitchIndex index_hphjzv_d0f = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d133997fdc5L), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L)).seal();
