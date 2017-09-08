@@ -204,6 +204,7 @@ public class Behaviour {
         trigger = child.trigger;
       }
       if (isEmptyString(currentEvent.playback)) {
+        System.out.println("Playback: '" + currentEvent.playback + "'");
         Variables.voice.addText(" For " + child.name + " press " + trigger + ",");
       }
       Variables.possibleOptList.add(child.trigger);

@@ -4678,6 +4678,35 @@
             </node>
             <node concept="3clFbJ" id="2mgRGhtTqqV" role="3cqZAp">
               <node concept="3clFbS" id="2mgRGhtTqqX" role="3clFbx">
+                <node concept="3clFbF" id="2mgRGhuW99V" role="3cqZAp">
+                  <node concept="2OqwBi" id="2mgRGhuW99S" role="3clFbG">
+                    <node concept="10M0yZ" id="2mgRGhuW99T" role="2Oq$k0">
+                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                    </node>
+                    <node concept="liA8E" id="2mgRGhuW99U" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <node concept="3cpWs3" id="2mgRGhuWsnb" role="37wK5m">
+                        <node concept="3cpWs3" id="2mgRGhuWiJs" role="3uHU7B">
+                          <node concept="Xl_RD" id="2mgRGhuWiSc" role="3uHU7B">
+                            <property role="Xl_RC" value="Playback: '" />
+                          </node>
+                          <node concept="2OqwBi" id="2mgRGhuW9Bm" role="3uHU7w">
+                            <node concept="37vLTw" id="2mgRGhuW9uw" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5mb0yBfID1E" resolve="currentEvent" />
+                            </node>
+                            <node concept="2OwXpG" id="2mgRGhuW9Hj" role="2OqNvi">
+                              <ref role="2Oxat5" node="3_1GZis4X27" resolve="playback" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="2mgRGhuWt8A" role="3uHU7w">
+                          <property role="Xl_RC" value="'" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbF" id="5mb0yBfK_Yd" role="3cqZAp">
                   <node concept="2OqwBi" id="5mb0yBfKDWM" role="3clFbG">
                     <node concept="10M0yZ" id="5mb0yBfKD6l" role="2Oq$k0">
