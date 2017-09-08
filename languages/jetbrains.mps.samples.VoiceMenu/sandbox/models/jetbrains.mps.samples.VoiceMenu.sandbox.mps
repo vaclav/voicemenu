@@ -351,7 +351,7 @@
   </node>
   <node concept="2Jqgb4" id="6HhgIFXTyQ2">
     <property role="TrG5h" value="Test" />
-    <property role="3uoZKU" value="Welcome to our Voicemenu" />
+    <property role="3uoZKU" value="/Users/jetbrains/Documents/sample.wav" />
     <node concept="2C_Ik4" id="6HhgIFXTyQ3" role="2JqgbB">
       <node concept="2C_I21" id="6HhgIFXYxj0" role="2C_I26">
         <property role="3upAMh" value="/Users/jetbrains/Documents/Get.wav" />

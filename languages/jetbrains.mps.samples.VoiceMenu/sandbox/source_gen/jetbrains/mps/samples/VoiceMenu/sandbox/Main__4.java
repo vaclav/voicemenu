@@ -36,14 +36,14 @@ public class Main__4 implements ActionListener {
     Variables.myHashMap.put("0", Home);
 
 
-    Event Get_Info1_o0tsw_a0 = new Event("Get Info1", "1", 16);
-    Get_Info1_o0tsw_a0.isFinal = false;
-    Get_Info1_o0tsw_a0.setAction("", false);
-    Get_Info1_o0tsw_a0.setGreeting("");
-    Get_Info1_o0tsw_a0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("01", Get_Info1_o0tsw_a0);
-    Get_Info1_o0tsw_a0.setAction("getInfo", false);
-    Get_Info1_o0tsw_a0.childs = new ArrayList<Event>();
+    Event Get_Info_o0tsw_a0 = new Event("Get Info", "1", 16);
+    Get_Info_o0tsw_a0.isFinal = false;
+    Get_Info_o0tsw_a0.setAction("", false);
+    Get_Info_o0tsw_a0.setGreeting("");
+    Get_Info_o0tsw_a0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("01", Get_Info_o0tsw_a0);
+    Get_Info_o0tsw_a0.setAction("getInfo", false);
+    Get_Info_o0tsw_a0.childs = new ArrayList<Event>();
     Event Menu_o0tsw_b0 = new Event("Menu", "2", 16);
     Menu_o0tsw_b0.isFinal = false;
     Menu_o0tsw_b0.setAction("", false);
@@ -86,7 +86,7 @@ public class Main__4 implements ActionListener {
     timeout_o0tsw_c0.setAction("repeat", false);
     timeout_o0tsw_c0.childs = new ArrayList<Event>();
 
-    Home.childs.add(Get_Info1_o0tsw_a0);
+    Home.childs.add(Get_Info_o0tsw_a0);
     Home.childs.add(Menu_o0tsw_b0);
   }
 

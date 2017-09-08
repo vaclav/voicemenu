@@ -93,7 +93,8 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
       editorCell.addEditorCell(createProperty_ikqrmj_l0());
     }
     editorCell.addEditorCell(createConstant_ikqrmj_m0());
-    editorCell.addEditorCell(createRefNode_ikqrmj_n0());
+    editorCell.addEditorCell(createConstant_ikqrmj_n0());
+    editorCell.addEditorCell(createRefNode_ikqrmj_o0());
     return editorCell;
   }
   private boolean nodeCondition_ikqrmj_a0a() {
@@ -277,21 +278,27 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
   private EditorCell createConstant_ikqrmj_m0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
     editorCell.setCellId("Constant_ikqrmj_m0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_ikqrmj_n0() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
+    editorCell.setCellId("Constant_ikqrmj_n0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefNode_ikqrmj_n0() {
-    SingleRoleCellProvider provider = new WorkSpace_EditorBuilder_a.bodyMenuSingleRoleHandler_ikqrmj_n0(myNode, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x5b6b060cf40204ebL, "bodyMenu"), getEditorContext());
+  private EditorCell createRefNode_ikqrmj_o0() {
+    SingleRoleCellProvider provider = new WorkSpace_EditorBuilder_a.bodyMenuSingleRoleHandler_ikqrmj_o0(myNode, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x5b6b060cf40204ebL, "bodyMenu"), getEditorContext());
     return provider.createCell();
   }
-  private static class bodyMenuSingleRoleHandler_ikqrmj_n0 extends SingleRoleCellProvider {
+  private static class bodyMenuSingleRoleHandler_ikqrmj_o0 extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public bodyMenuSingleRoleHandler_ikqrmj_n0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public bodyMenuSingleRoleHandler_ikqrmj_o0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }

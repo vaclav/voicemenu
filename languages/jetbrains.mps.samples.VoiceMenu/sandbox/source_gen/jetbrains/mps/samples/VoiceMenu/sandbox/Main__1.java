@@ -28,7 +28,7 @@ public class Main__1 implements ActionListener {
 
     Event Home = new Event("Test", "0", 8);
     Home.setAction("", true);
-    Home.setGreeting("Welcome to our Voicemenu");
+    Home.setGreeting("/Users/jetbrains/Documents/sample.wav");
     Home.childs = new ArrayList<Event>();
     Home.isFinal = false;
     Variables.main_Text = "Test";
