@@ -18262,9 +18262,6 @@
     <property role="3GE5qa" value="RealActions" />
     <ref role="1XX52x" to="xehl:6HhgIFXlffT" resolve="ReplayOptions" />
     <node concept="3EZMnI" id="6HhgIFXprZ8" role="2wV5jI">
-      <node concept="3F0ifn" id="6HhgIFYbZOM" role="3EZMnx">
-        <property role="3F0ifm" value=" " />
-      </node>
       <node concept="1u4HXA" id="6HhgIFYamlS" role="3EZMnx">
         <property role="1ubRXE" value="${module}/src/replayOpt.png" />
         <property role="1$Qi42" value="-150" />
