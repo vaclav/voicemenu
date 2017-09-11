@@ -361,12 +361,19 @@
       <node concept="2C_I21" id="6HhgIFXYxj0" role="2C_I26">
         <property role="3upAMh" value="/Users/jetbrains/Documents/Get.wav" />
         <ref role="2C_gVZ" node="6HhgIFXYxiR" resolve="Get Info" />
-        <node concept="1$pBvo" id="60WteoG74Eg" role="2C_gVu" />
+        <node concept="1$pBvo" id="60WteoG74Eg" role="2C_gVu">
+          <property role="XmNhe" value="false" />
+        </node>
       </node>
       <node concept="2C_I21" id="6HhgIFY09IU" role="2C_I26">
         <property role="3upAMh" value="/Users/jetbrains/Documents/menu1.wav" />
         <ref role="2C_gVZ" node="6HhgIFXYxiW" resolve="Menu" />
         <node concept="2C_Ik4" id="2mgRGhu34iD" role="2C_gVu">
+          <node concept="2C_I21" id="3BO6$VadieQ" role="2C_I26">
+            <property role="3upAMh" value="/Users/jetbrains/Documents/repeat1.wav" />
+            <ref role="2C_gVZ" node="2mgRGhu34iF" resolve="Timeout" />
+            <node concept="2m1r4j" id="2mgRGhuB8TD" role="2C_gVu" />
+          </node>
           <node concept="2C_Ik0" id="2mgRGhu34iE" role="2C_I24">
             <property role="2C_Iks" value="1" />
             <property role="TrG5h" value="HangUp" />
@@ -379,11 +386,6 @@
             <property role="2C_Iks" value="X" />
             <property role="TrG5h" value="Timeout" />
           </node>
-          <node concept="2C_I21" id="2mgRGhu34iG" role="2C_I26">
-            <property role="3upAMh" value="/Users/jetbrains/Documents/repeat1.wav" />
-            <ref role="2C_gVZ" node="2mgRGhu34iF" resolve="Timeout" />
-            <node concept="2m1r4j" id="2mgRGhuB8TD" role="2C_gVu" />
-          </node>
           <node concept="2C_I21" id="2mgRGhu34j1" role="2C_I26">
             <property role="3upAMh" value="Hang up" />
             <ref role="2C_gVZ" node="2mgRGhu34iE" resolve="HangUp" />
@@ -392,8 +394,8 @@
           <node concept="2C_I21" id="2mgRGhu34iT" role="2C_I26">
             <property role="3upAMh" value="get Info" />
             <ref role="2C_gVZ" node="2mgRGhu34iP" resolve="GetInfo" />
-            <node concept="1$pBvo" id="2mgRGhu34jc" role="2C_gVu">
-              <property role="XmNhe" value="true" />
+            <node concept="X09Yf" id="3BO6$Vadig4" role="2C_gVu">
+              <property role="XmNjE" value="true" />
             </node>
           </node>
         </node>

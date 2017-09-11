@@ -18262,19 +18262,24 @@
     <property role="3GE5qa" value="RealActions" />
     <ref role="1XX52x" to="xehl:6HhgIFXlffT" resolve="ReplayOptions" />
     <node concept="3EZMnI" id="6HhgIFXprZ8" role="2wV5jI">
-      <node concept="3F0ifn" id="6HhgIFXprZd" role="3EZMnx">
-        <property role="3F0ifm" value="Replay Options" />
-        <ref role="1k5W1q" node="5lu2mvqIGvq" resolve="Action" />
-        <node concept="lj46D" id="6HhgIFXprZe" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
       <node concept="3F0ifn" id="6HhgIFYbZOM" role="3EZMnx">
         <property role="3F0ifm" value=" " />
       </node>
       <node concept="1u4HXA" id="6HhgIFYamlS" role="3EZMnx">
         <property role="1ubRXE" value="${module}/src/replayOpt.png" />
         <property role="1$Qi42" value="-150" />
+      </node>
+      <node concept="3F0ifn" id="3BO6$VafiTV" role="3EZMnx">
+        <property role="3F0ifm" value="" />
+      </node>
+      <node concept="3F0ifn" id="3BO6$Vadr6T" role="3EZMnx">
+        <property role="3F0ifm" value="Replay Options" />
+        <node concept="VechU" id="3BO6$Vah47h" role="3F10Kt">
+          <property role="Vb096" value="black" />
+        </node>
+        <node concept="Vb9p2" id="3BO6$VaiQeP" role="3F10Kt">
+          <property role="Vbekb" value="ITALIC" />
+        </node>
       </node>
       <node concept="l2Vlx" id="6HhgIFXprZf" role="2iSdaV" />
     </node>

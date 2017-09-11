@@ -13638,75 +13638,85 @@
       <unit id="7733035612212936647" at="10,0,15,0" name="jetbrains.mps.samples.VoiceMenu.editor.ReplayOptions_Editor" />
     </file>
     <file name="ReplayOptions_EditorBuilder_a.java">
-      <node id="7733035612212936647" at="25,93,26,19" concept="12" />
-      <node id="7733035612212936647" at="26,19,27,18" concept="2" />
-      <node id="7733035612212936647" at="32,26,33,18" concept="8" />
-      <node id="7733035612212936647" at="36,39,37,39" concept="8" />
-      <node id="7733035612212936647" at="40,50,41,118" concept="7" />
-      <node id="7733035612212936647" at="41,118,42,48" concept="2" />
-      <node id="7733035612212936647" at="42,48,43,28" concept="2" />
-      <node id="7733035612212936647" at="43,28,44,65" concept="2" />
-      <node id="7733035612212936647" at="44,65,45,57" concept="2" />
-      <node id="7733035612212936647" at="45,57,46,57" concept="2" />
-      <node id="7733035612212936647" at="46,57,47,54" concept="2" />
-      <node id="7733035612212936647" at="47,54,48,22" concept="8" />
-      <node id="7733035612212936653" at="50,49,51,107" concept="7" />
-      <node id="7733035612212936653" at="51,107,52,47" concept="2" />
-      <node id="7733035612212936653" at="52,47,53,34" concept="7" />
-      <node id="7733035612212936653" at="53,34,54,81" concept="2" />
-      <node id="7733035612212936653" at="54,81,55,58" concept="2" />
-      <node id="7733035612212936653" at="55,58,56,40" concept="2" />
-      <node id="7733035612212936653" at="56,40,57,34" concept="2" />
-      <node id="7733035612212936653" at="57,34,58,22" concept="8" />
-      <node id="7733035612226190642" at="60,49,61,94" concept="7" />
-      <node id="7733035612226190642" at="61,94,62,47" concept="2" />
-      <node id="7733035612226190642" at="62,47,63,34" concept="2" />
-      <node id="7733035612226190642" at="63,34,64,22" concept="8" />
-      <node id="7733035612225758584" at="66,46,67,24" concept="7" />
-      <node id="7733035612225758584" at="67,24,68,21" concept="7" />
-      <node id="7733035612225758584" at="68,21,69,85" concept="2" />
-      <node id="7733035612225758584" at="69,85,70,46" concept="2" />
-      <node id="7733035612225758584" at="70,46,71,119" concept="7" />
-      <node id="7733035612225758584" at="71,119,72,44" concept="2" />
-      <node id="7733035612225758584" at="72,44,73,32" concept="2" />
-      <node id="7733035612225758584" at="73,32,74,22" concept="8" />
-      <node id="7733035612212936647" at="22,0,24,0" concept="3" trace="myNode" />
-      <node id="7733035612212936647" at="36,0,39,0" concept="6" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="7733035612212936647" at="25,0,29,0" concept="1" trace="ReplayOptions_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="7733035612212936647" at="30,0,35,0" concept="6" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="7733035612226190642" at="60,0,66,0" concept="6" trace="createConstant_bcvqca_b0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="7733035612212936647" at="40,0,50,0" concept="6" trace="createCollection_bcvqca_a#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="7733035612212936653" at="50,0,60,0" concept="6" trace="createConstant_bcvqca_a0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="7733035612225758584" at="66,0,76,0" concept="6" trace="createImage_bcvqca_c0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="7733035612212936647" at="32,26,33,18" />
-      <scope id="7733035612212936647" at="36,39,37,39" />
-      <scope id="7733035612212936647" at="25,93,27,18" />
-      <scope id="7733035612212936647" at="36,0,39,0" />
-      <scope id="7733035612212936647" at="25,0,29,0">
+      <node id="7733035612212936647" at="27,93,28,19" concept="12" />
+      <node id="7733035612212936647" at="28,19,29,18" concept="2" />
+      <node id="7733035612212936647" at="34,26,35,18" concept="8" />
+      <node id="7733035612212936647" at="38,39,39,39" concept="8" />
+      <node id="7733035612212936647" at="42,50,43,118" concept="7" />
+      <node id="7733035612212936647" at="43,118,44,48" concept="2" />
+      <node id="7733035612212936647" at="44,48,45,28" concept="2" />
+      <node id="7733035612212936647" at="45,28,46,65" concept="2" />
+      <node id="7733035612212936647" at="46,65,47,57" concept="2" />
+      <node id="7733035612212936647" at="47,57,48,54" concept="2" />
+      <node id="7733035612212936647" at="48,54,49,57" concept="2" />
+      <node id="7733035612212936647" at="49,57,50,57" concept="2" />
+      <node id="7733035612212936647" at="50,57,51,22" concept="8" />
+      <node id="7733035612226190642" at="53,49,54,94" concept="7" />
+      <node id="7733035612226190642" at="54,94,55,47" concept="2" />
+      <node id="7733035612226190642" at="55,47,56,34" concept="2" />
+      <node id="7733035612226190642" at="56,34,57,22" concept="8" />
+      <node id="7733035612225758584" at="59,46,60,24" concept="7" />
+      <node id="7733035612225758584" at="60,24,61,21" concept="7" />
+      <node id="7733035612225758584" at="61,21,62,85" concept="2" />
+      <node id="7733035612225758584" at="62,85,63,46" concept="2" />
+      <node id="7733035612225758584" at="63,46,64,119" concept="7" />
+      <node id="7733035612225758584" at="64,119,65,44" concept="2" />
+      <node id="7733035612225758584" at="65,44,66,32" concept="2" />
+      <node id="7733035612225758584" at="66,32,67,22" concept="8" />
+      <node id="4175991680182070907" at="69,49,70,93" concept="7" />
+      <node id="4175991680182070907" at="70,93,71,47" concept="2" />
+      <node id="4175991680182070907" at="71,47,72,34" concept="2" />
+      <node id="4175991680182070907" at="72,34,73,22" concept="8" />
+      <node id="4175991680181580217" at="75,49,76,107" concept="7" />
+      <node id="4175991680181580217" at="76,107,77,47" concept="2" />
+      <node id="4175991680181580217" at="77,47,78,34" concept="7" />
+      <node id="4175991680181580217" at="78,34,79,103" concept="2" />
+      <node id="4175991680181580217" at="79,103,80,59" concept="2" />
+      <node id="4175991680181580217" at="80,59,81,40" concept="2" />
+      <node id="4175991680181580217" at="81,40,82,34" concept="2" />
+      <node id="4175991680181580217" at="82,34,83,22" concept="8" />
+      <node id="7733035612212936647" at="24,0,26,0" concept="3" trace="myNode" />
+      <node id="7733035612212936647" at="38,0,41,0" concept="6" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="7733035612212936647" at="27,0,31,0" concept="1" trace="ReplayOptions_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="7733035612212936647" at="32,0,37,0" concept="6" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7733035612226190642" at="53,0,59,0" concept="6" trace="createConstant_bcvqca_a0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="4175991680182070907" at="69,0,75,0" concept="6" trace="createConstant_bcvqca_c0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="7733035612225758584" at="59,0,69,0" concept="6" trace="createImage_bcvqca_b0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="4175991680181580217" at="75,0,85,0" concept="6" trace="createConstant_bcvqca_d0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="7733035612212936647" at="42,0,53,0" concept="6" trace="createCollection_bcvqca_a#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="7733035612212936647" at="34,26,35,18" />
+      <scope id="7733035612212936647" at="38,39,39,39" />
+      <scope id="7733035612212936647" at="27,93,29,18" />
+      <scope id="7733035612212936647" at="38,0,41,0" />
+      <scope id="7733035612212936647" at="27,0,31,0">
         <var name="context" id="7733035612212936647" />
         <var name="node" id="7733035612212936647" />
       </scope>
-      <scope id="7733035612226190642" at="60,49,64,22">
+      <scope id="7733035612226190642" at="53,49,57,22">
         <var name="editorCell" id="7733035612226190642" />
       </scope>
-      <scope id="7733035612212936647" at="30,0,35,0" />
-      <scope id="7733035612226190642" at="60,0,66,0" />
-      <scope id="7733035612212936647" at="40,50,48,22">
-        <var name="editorCell" id="7733035612212936647" />
+      <scope id="4175991680182070907" at="69,49,73,22">
+        <var name="editorCell" id="4175991680182070907" />
       </scope>
-      <scope id="7733035612212936653" at="50,49,58,22">
-        <var name="editorCell" id="7733035612212936653" />
-        <var name="style" id="7733035612212936653" />
-      </scope>
-      <scope id="7733035612225758584" at="66,46,74,22">
+      <scope id="7733035612212936647" at="32,0,37,0" />
+      <scope id="7733035612226190642" at="53,0,59,0" />
+      <scope id="4175991680182070907" at="69,0,75,0" />
+      <scope id="7733035612225758584" at="59,46,67,22">
         <var name="editorCell" id="7733035612225758584" />
         <var name="imageModule" id="7733035612225758584" />
         <var name="imagePath" id="7733035612225758584" />
       </scope>
-      <scope id="7733035612212936647" at="40,0,50,0" />
-      <scope id="7733035612212936653" at="50,0,60,0" />
-      <scope id="7733035612225758584" at="66,0,76,0" />
-      <unit id="7733035612212936647" at="21,0,77,0" name="jetbrains.mps.samples.VoiceMenu.editor.ReplayOptions_EditorBuilder_a" />
+      <scope id="4175991680181580217" at="75,49,83,22">
+        <var name="editorCell" id="4175991680181580217" />
+        <var name="style" id="4175991680181580217" />
+      </scope>
+      <scope id="7733035612212936647" at="42,50,51,22">
+        <var name="editorCell" id="7733035612212936647" />
+      </scope>
+      <scope id="7733035612225758584" at="59,0,69,0" />
+      <scope id="4175991680181580217" at="75,0,85,0" />
+      <scope id="7733035612212936647" at="42,0,53,0" />
+      <unit id="7733035612212936647" at="23,0,86,0" name="jetbrains.mps.samples.VoiceMenu.editor.ReplayOptions_EditorBuilder_a" />
     </file>
   </root>
   <root nodeRef="r:7c1e5bbb-2d18-4cf3-a11d-502be6b13261(jetbrains.mps.samples.VoiceMenu.editor)/7983725069967918802">
