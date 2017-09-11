@@ -181,7 +181,7 @@ public class Behaviour {
       }
       Style.setTextToScreen(currentEvent.action);
     }
-    Style.setTextToScreen(currentEvent.name);
+
     // Handling voice output 
     if (isNotEmptyString(currentEvent.playback)) {
       PlayGetInfo(currentEvent.playback);

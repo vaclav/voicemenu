@@ -246,6 +246,13 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
     </language>
   </registry>
   <node concept="312cEu" id="2Bi0dpyCD0T">
@@ -2385,17 +2392,27 @@
         </node>
       </node>
       <node concept="3clFbS" id="6VbSUrc4V$h" role="3clF47">
-        <node concept="3clFbF" id="6VbSUrc4V$i" role="3cqZAp">
-          <node concept="2OqwBi" id="4DPIBqia7LP" role="3clFbG">
-            <node concept="37vLTw" id="4DPIBqia7LO" role="2Oq$k0">
-              <ref role="3cqZAo" node="6VbSUrc50RO" resolve="myScreen" />
-            </node>
-            <node concept="liA8E" id="4DPIBqia7LQ" role="2OqNvi">
-              <ref role="37wK5l" to="r791:~JTextComponent.setText(java.lang.String):void" resolve="setText" />
-              <node concept="37vLTw" id="4DPIBqia7LR" role="37wK5m">
-                <ref role="3cqZAo" node="6VbSUrc4V$f" resolve="text" />
+        <node concept="3clFbJ" id="3BO6$VaH_0c" role="3cqZAp">
+          <node concept="3clFbS" id="3BO6$VaH_0e" role="3clFbx">
+            <node concept="3clFbF" id="6VbSUrc4V$i" role="3cqZAp">
+              <node concept="2OqwBi" id="4DPIBqia7LP" role="3clFbG">
+                <node concept="37vLTw" id="3BO6$VaH_nU" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6VbSUrc50RO" resolve="myScreen" />
+                </node>
+                <node concept="liA8E" id="4DPIBqia7LQ" role="2OqNvi">
+                  <ref role="37wK5l" to="r791:~JTextComponent.setText(java.lang.String):void" resolve="setText" />
+                  <node concept="37vLTw" id="4DPIBqia7LR" role="37wK5m">
+                    <ref role="3cqZAo" node="6VbSUrc4V$f" resolve="text" />
+                  </node>
+                </node>
               </node>
             </node>
+          </node>
+          <node concept="2OqwBi" id="3BO6$VaH_dj" role="3clFbw">
+            <node concept="37vLTw" id="3BO6$VaH_4h" role="2Oq$k0">
+              <ref role="3cqZAo" node="6VbSUrc4V$f" resolve="text" />
+            </node>
+            <node concept="17RvpY" id="3BO6$VaH_lx" role="2OqNvi" />
           </node>
         </node>
       </node>
@@ -4459,20 +4476,25 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5mb0yBfIcIl" role="3cqZAp">
-          <node concept="2YIFZM" id="5mb0yBfKpfQ" role="3clFbG">
-            <ref role="1Pybhc" node="6VbSUrc4Vua" resolve="Style" />
-            <ref role="37wK5l" node="6VbSUrc4V$e" resolve="setTextToScreen" />
-            <node concept="2OqwBi" id="5mb0yBfKpfR" role="37wK5m">
-              <node concept="37vLTw" id="5mb0yBfKpfS" role="2Oq$k0">
-                <ref role="3cqZAo" node="5mb0yBfID1E" resolve="currentEvent" />
-              </node>
-              <node concept="2OwXpG" id="5mb0yBfKpfT" role="2OqNvi">
-                <ref role="2Oxat5" node="3_1GZis4X1T" resolve="name" />
+        <node concept="1X3_iC" id="3BO6$VaH4Uq" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="5mb0yBfIcIl" role="8Wnug">
+            <node concept="2YIFZM" id="5mb0yBfKpfQ" role="3clFbG">
+              <ref role="1Pybhc" node="6VbSUrc4Vua" resolve="Style" />
+              <ref role="37wK5l" node="6VbSUrc4V$e" resolve="setTextToScreen" />
+              <node concept="2OqwBi" id="5mb0yBfKpfR" role="37wK5m">
+                <node concept="37vLTw" id="5mb0yBfKpfS" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5mb0yBfID1E" resolve="currentEvent" />
+                </node>
+                <node concept="2OwXpG" id="5mb0yBfKpfT" role="2OqNvi">
+                  <ref role="2Oxat5" node="3_1GZis4X1T" resolve="name" />
+                </node>
               </node>
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="3BO6$VaHeRd" role="3cqZAp" />
         <node concept="3SKdUt" id="5mb0yBfIcJv" role="3cqZAp">
           <node concept="3SKdUq" id="5mb0yBfIcJu" role="3SKWNk">
             <property role="3SKdUp" value="Handling voice output" />
