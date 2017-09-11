@@ -319,7 +319,7 @@ import jetbrains.mps.editor.runtime.style.FocusPolicy;
     return editorCell;
   }
   private EditorCell createConstant_tm0j27_f0a() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Greeting: ");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "PlayBack: ");
     editorCell.setCellId("Constant_tm0j27_f0a");
     Style style = new StyleImpl();
     new HardCodedTextStyleClass(getEditorContext(), getNode()).apply(style, editorCell);

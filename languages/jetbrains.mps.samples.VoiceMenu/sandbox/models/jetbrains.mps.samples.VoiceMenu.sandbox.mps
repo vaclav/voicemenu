@@ -394,7 +394,7 @@
             <property role="3upAMh" value="get Info" />
             <ref role="2C_gVZ" node="2mgRGhu34iP" resolve="GetInfo" />
             <node concept="X09Yf" id="3BO6$Vadig4" role="2C_gVu">
-              <property role="XmNjE" value="false" />
+              <property role="XmNjE" value="true" />
             </node>
           </node>
         </node>
