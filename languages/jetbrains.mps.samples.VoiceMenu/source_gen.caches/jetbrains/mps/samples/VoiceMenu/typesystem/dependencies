@@ -162,6 +162,34 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.errors.QuickFix_Runtime" />
   </dependency>
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.MoveTimeoutToBot_QuickFix" file="MoveTimeoutToBot_QuickFix.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.errors.QuickFix_Runtime" />
+  </dependency>
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.MoveTimeoutToTop_QuickFix" file="MoveTimeoutToTop_QuickFix.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.errors.QuickFix_Runtime" />
+  </dependency>
   <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.RemoveActivity_QuickFix" file="RemoveActivity_QuickFix.java">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
@@ -217,34 +245,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.errors.QuickFix_Runtime" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.TypesystemDescriptor" file="TypesystemDescriptor.java">
-    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
-    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.typesystem.CheckBackAtRoot_NonTypesystemRule" />
-    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.typesystem.CheckDuplicateNumber_NonTypesystemRule" />
-    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.typesystem.CheckEmptyACtivity_NonTypesystemRule" />
-    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.typesystem.CheckEmptyMenu_NonTypesystemRule" />
-    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.typesystem.CheckEventImplemented_NonTypesystemRule" />
-    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.typesystem.CheckMultipleActivitiesOneEvent_NonTypesystemRule" />
-    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.typesystem.CheckPhoneButtons_NonTypesystemRule" />
-    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.typesystem.EmptyWorkspace_NonTypesystemRule" />
-    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.typesystem.timeoutAsFirst_NonTypesystemRule" />
-    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.BaseHelginsDescriptor" />
-  </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.moveTimeoutToTop_QuickFix" file="moveTimeoutToTop_QuickFix.java">
-    <classNode dependClassName="java.lang.Object" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.errors.QuickFix_Runtime" />
-  </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.timeoutAsFirst_NonTypesystemRule" file="timeoutAsFirst_NonTypesystemRule.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.TimeoutAsFirst_NonTypesystemRule" file="TimeoutAsFirst_NonTypesystemRule.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="jetbrains.mps.errors.BaseQuickFixProvider" />
     <classNode dependClassName="jetbrains.mps.errors.IErrorReporter" />
@@ -260,6 +261,37 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
+  </dependency>
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.TimeoutAsLast_NonTypesystemRule" file="TimeoutAsLast_NonTypesystemRule.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="jetbrains.mps.errors.BaseQuickFixProvider" />
+    <classNode dependClassName="jetbrains.mps.errors.IErrorReporter" />
+    <classNode dependClassName="jetbrains.mps.errors.messageTargets.MessageTarget" />
+    <classNode dependClassName="jetbrains.mps.errors.messageTargets.NodeMessageTarget" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
+  </dependency>
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.TypesystemDescriptor" file="TypesystemDescriptor.java">
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.typesystem.CheckBackAtRoot_NonTypesystemRule" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.typesystem.CheckDuplicateNumber_NonTypesystemRule" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.typesystem.CheckEmptyACtivity_NonTypesystemRule" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.typesystem.CheckEmptyMenu_NonTypesystemRule" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.typesystem.CheckEventImplemented_NonTypesystemRule" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.typesystem.CheckMultipleActivitiesOneEvent_NonTypesystemRule" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.typesystem.CheckPhoneButtons_NonTypesystemRule" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.typesystem.EmptyWorkspace_NonTypesystemRule" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.typesystem.TimeoutAsFirst_NonTypesystemRule" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.typesystem.TimeoutAsLast_NonTypesystemRule" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.BaseHelginsDescriptor" />
   </dependency>
 </dependenciesRoot>
 
