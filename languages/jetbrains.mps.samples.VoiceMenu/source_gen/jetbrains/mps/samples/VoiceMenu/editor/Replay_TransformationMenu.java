@@ -430,7 +430,7 @@ public class Replay_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a01c6j_1;
+          return IconContainer.RESOURCE_a0a01c6j_2;
         }
         @Override
         public String getTooltipText() {

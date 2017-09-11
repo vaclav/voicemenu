@@ -503,7 +503,7 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
       @Nullable
       @Override
       public String getLabelText(String pattern) {
-        return "`Remove Activity";
+        return "Remove Activity";
       }
 
       @Override
@@ -537,7 +537,7 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
 
       @Override
       public IconResource getIcon() {
-        return null;
+        return IconContainer.RESOURCE_a0a01c11;
       }
       @Override
       public String getTooltipText() {

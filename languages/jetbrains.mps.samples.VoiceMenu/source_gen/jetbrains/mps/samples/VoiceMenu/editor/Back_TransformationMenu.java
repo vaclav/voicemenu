@@ -433,7 +433,7 @@ public class Back_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return null;
+          return IconContainer.RESOURCE_a0a01c6j;
         }
         @Override
         public String getTooltipText() {
