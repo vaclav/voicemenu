@@ -15,7 +15,6 @@
     <language id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu">
       <concept id="7733035612211835897" name="jetbrains.mps.samples.VoiceMenu.structure.ReplayOptions" flags="ng" index="2m1r4j" />
       <concept id="6587365532662359693" name="jetbrains.mps.samples.VoiceMenu.structure.Activity" flags="ng" index="2C_I21">
-        <property id="6993411625919784431" name="timeout" index="1i1bcX" />
         <property id="2702278965990916343" name="playback" index="3upAMh" />
         <reference id="6587365532662368499" name="event" index="2C_gVZ" />
         <child id="6587365532662368466" name="commands" index="2C_gVu" />
@@ -352,6 +351,7 @@
   <node concept="2Jqgb4" id="6HhgIFXTyQ2">
     <property role="TrG5h" value="Test" />
     <property role="3uoZKU" value="/Users/jetbrains/Documents/sample.wav" />
+    <property role="1EJLKn" value="true" />
     <node concept="2C_Ik4" id="6HhgIFXTyQ3" role="2JqgbB">
       <node concept="2C_I21" id="wr2MGcltI0" role="2C_I26">
         <ref role="2C_gVZ" node="6HhgIFXTyQ5" resolve="timeout" />
@@ -632,7 +632,13 @@
   <node concept="2Jqgb4" id="2mgRGhuVIsI">
     <property role="TrG5h" value="Test2" />
     <property role="3uoZKU" value="" />
+    <property role="1EJLKn" value="true" />
     <node concept="2C_Ik4" id="2mgRGhuVIsJ" role="2JqgbB">
+      <node concept="2C_I21" id="3BO6$VatVs8" role="2C_I26">
+        <property role="3upAMh" value="" />
+        <ref role="2C_gVZ" node="2mgRGhuVIt1" resolve="timeout" />
+        <node concept="2m1r4j" id="2mgRGhuVIsY" role="2C_gVu" />
+      </node>
       <node concept="2C_I21" id="2mgRGhuVIsK" role="2C_I26">
         <property role="3upAMh" value="" />
         <ref role="2C_gVZ" node="2mgRGhuVIsZ" resolve="Get Info" />
@@ -672,12 +678,6 @@
             </node>
           </node>
         </node>
-      </node>
-      <node concept="2C_I21" id="2mgRGhuVIsX" role="2C_I26">
-        <property role="1i1bcX" value="9" />
-        <property role="3upAMh" value="" />
-        <ref role="2C_gVZ" node="2mgRGhuVIt1" resolve="timeout" />
-        <node concept="2m1r4j" id="2mgRGhuVIsY" role="2C_gVu" />
       </node>
       <node concept="2C_Ik0" id="2mgRGhuVIsZ" role="2C_I24">
         <property role="TrG5h" value="Get Info" />
