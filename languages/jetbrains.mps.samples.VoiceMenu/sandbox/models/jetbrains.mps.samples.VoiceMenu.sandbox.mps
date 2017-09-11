@@ -43,7 +43,6 @@
         <property id="4759611536120921574" name="isFinal" index="XmNiv" />
       </concept>
       <concept id="6772988411135920840" name="jetbrains.mps.samples.VoiceMenu.structure.DirectCall" flags="ng" index="1$pBvr">
-        <property id="7733035612202996721" name="number" index="2nBP4r" />
         <property id="4759611536120921316" name="isFinal" index="XmNmt" />
       </concept>
     </language>
@@ -413,152 +412,6 @@
       </node>
     </node>
   </node>
-  <node concept="2Jqgb4" id="1Dc9HeI1ivS">
-    <property role="TrG5h" value="JetBrains" />
-    <property role="3uoZKU" value="Welcome to JetBrains" />
-    <node concept="2C_Ik4" id="1Dc9HeI1ivT" role="2JqgbB">
-      <node concept="2C_Ik0" id="1Dc9HeI1ivU" role="2C_I24">
-        <property role="2C_Iks" value="1" />
-        <property role="TrG5h" value="Sales" />
-      </node>
-      <node concept="2C_Ik0" id="1Dc9HeI7QD0" role="2C_I24">
-        <property role="2C_Iks" value="2" />
-        <property role="TrG5h" value="General Questions" />
-      </node>
-      <node concept="2C_Ik0" id="1Dc9HeI1ivV" role="2C_I24">
-        <property role="2C_Iks" value="X" />
-        <property role="TrG5h" value="timeout" />
-      </node>
-      <node concept="2C_I21" id="1Dc9HeI1ivW" role="2C_I26">
-        <property role="3upAMh" value="Timeout" />
-        <ref role="2C_gVZ" node="1Dc9HeI1ivV" resolve="timeout" />
-        <node concept="2m1r4j" id="1Dc9HeI1ivY" role="2C_gVu" />
-      </node>
-      <node concept="2C_I21" id="1Dc9HeI7QXA" role="2C_I26">
-        <ref role="2C_gVZ" node="1Dc9HeI1ivU" resolve="Sales" />
-        <node concept="2C_Ik4" id="1Dc9HeI7QXI" role="2C_gVu">
-          <node concept="2C_Ik0" id="1Dc9HeI7QXJ" role="2C_I24">
-            <property role="2C_Iks" value="1" />
-            <property role="TrG5h" value="Call department" />
-          </node>
-          <node concept="2C_Ik0" id="1Dc9HeI7QXU" role="2C_I24">
-            <property role="2C_Iks" value="2" />
-            <property role="TrG5h" value="Get Informations" />
-          </node>
-          <node concept="2C_Ik0" id="1Dc9HeI7QXY" role="2C_I24">
-            <property role="2C_Iks" value="#" />
-            <property role="TrG5h" value="Previous Menu" />
-          </node>
-          <node concept="2C_Ik0" id="1Dc9HeI7QXK" role="2C_I24">
-            <property role="2C_Iks" value="X" />
-            <property role="TrG5h" value="timeout" />
-          </node>
-          <node concept="2C_I21" id="1Dc9HeI7QXL" role="2C_I26">
-            <property role="3upAMh" value="Timeout" />
-            <ref role="2C_gVZ" node="1Dc9HeI7QXK" resolve="timeout" />
-            <node concept="1$pBvo" id="wr2MGcj3Vo" role="2C_gVu">
-              <property role="XmNhe" value="true" />
-            </node>
-          </node>
-          <node concept="2C_I21" id="1Dc9HeI7QY6" role="2C_I26">
-            <ref role="2C_gVZ" node="1Dc9HeI7QXJ" resolve="Call department" />
-            <node concept="1$pBvr" id="1Dc9HeI7QYe" role="2C_gVu">
-              <property role="XmNmt" value="true" />
-              <property role="2nBP4r" value="00420123456789" />
-            </node>
-          </node>
-          <node concept="2C_I21" id="1Dc9HeI7QYh" role="2C_I26">
-            <ref role="2C_gVZ" node="1Dc9HeI7QXU" resolve="Get Informations" />
-            <node concept="1$pBvo" id="2mgRGhukCEq" role="2C_gVu" />
-          </node>
-          <node concept="2C_I21" id="1Dc9HeI7QYu" role="2C_I26">
-            <ref role="2C_gVZ" node="1Dc9HeI7QXY" resolve="Previous Menu" />
-            <node concept="1$pBvr" id="1Dc9HeIjiGq" role="2C_gVu">
-              <property role="XmNmt" value="false" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2C_I21" id="1Dc9HeI7QYH" role="2C_I26">
-        <ref role="2C_gVZ" node="1Dc9HeI7QD0" resolve="General Questions" />
-        <node concept="2C_Ik4" id="1Dc9HeI7QZ3" role="2C_gVu">
-          <node concept="2C_Ik0" id="1Dc9HeI7QZ4" role="2C_I24">
-            <property role="2C_Iks" value="1" />
-            <property role="TrG5h" value="Leave us a message" />
-          </node>
-          <node concept="2C_Ik0" id="1Dc9HeI7QZp" role="2C_I24">
-            <property role="2C_Iks" value="2" />
-            <property role="TrG5h" value="MPS support" />
-          </node>
-          <node concept="2C_Ik0" id="1Dc9HeI7QZt" role="2C_I24">
-            <property role="2C_Iks" value="#" />
-            <property role="TrG5h" value="Previous Menu" />
-          </node>
-          <node concept="2C_Ik0" id="1Dc9HeI7QZ5" role="2C_I24">
-            <property role="2C_Iks" value="X" />
-            <property role="TrG5h" value="timeout" />
-          </node>
-          <node concept="2C_I21" id="1Dc9HeI7QZ6" role="2C_I26">
-            <property role="3upAMh" value="Repeating possible options" />
-            <ref role="2C_gVZ" node="1Dc9HeI7QZ5" resolve="timeout" />
-            <node concept="2m1r4j" id="1Dc9HeI7QZ8" role="2C_gVu" />
-          </node>
-          <node concept="2C_I21" id="1Dc9HeI7QZG" role="2C_I26">
-            <ref role="2C_gVZ" node="1Dc9HeI7QZ4" resolve="Leave us a message" />
-            <node concept="X09Yf" id="1Dc9HeI7QZO" role="2C_gVu">
-              <property role="XmNjE" value="true" />
-            </node>
-          </node>
-          <node concept="2C_I21" id="1Dc9HeI7QZR" role="2C_I26">
-            <ref role="2C_gVZ" node="1Dc9HeI7QZp" resolve="MPS support" />
-            <node concept="2C_Ik4" id="1Dc9HeI7R01" role="2C_gVu">
-              <node concept="2C_Ik0" id="1Dc9HeI7R02" role="2C_I24">
-                <property role="2C_Iks" value="1" />
-                <property role="TrG5h" value="Call the team" />
-              </node>
-              <node concept="2C_Ik0" id="1Dc9HeI7R0d" role="2C_I24">
-                <property role="2C_Iks" value="2" />
-                <property role="TrG5h" value="Get Informations" />
-              </node>
-              <node concept="2C_Ik0" id="1Dc9HeI7R0h" role="2C_I24">
-                <property role="2C_Iks" value="#" />
-                <property role="TrG5h" value="Previous Menu" />
-              </node>
-              <node concept="2C_Ik0" id="1Dc9HeI7R03" role="2C_I24">
-                <property role="2C_Iks" value="X" />
-                <property role="TrG5h" value="timeout" />
-              </node>
-              <node concept="2C_I21" id="1Dc9HeI7R04" role="2C_I26">
-                <property role="3upAMh" value="Timeout! " />
-                <ref role="2C_gVZ" node="1Dc9HeI7R03" resolve="timeout" />
-                <node concept="X09Yy" id="1Dc9HeI7R0m" role="2C_gVu" />
-              </node>
-              <node concept="2C_I21" id="1Dc9HeI9A2B" role="2C_I26">
-                <ref role="2C_gVZ" node="1Dc9HeI7R02" resolve="Call the team" />
-                <node concept="1$pBvr" id="1Dc9HeI9A2J" role="2C_gVu">
-                  <property role="XmNmt" value="true" />
-                </node>
-              </node>
-              <node concept="2C_I21" id="1Dc9HeI9A2M" role="2C_I26">
-                <ref role="2C_gVZ" node="1Dc9HeI7R0d" resolve="Get Informations" />
-                <node concept="1$pBvo" id="1Dc9HeI9A2W" role="2C_gVu">
-                  <property role="XmNhe" value="true" />
-                </node>
-              </node>
-              <node concept="2C_I21" id="1Dc9HeI9A2Z" role="2C_I26">
-                <ref role="2C_gVZ" node="1Dc9HeI7R0h" resolve="Previous Menu" />
-                <node concept="1$pBvp" id="1Dc9HeI9A3b" role="2C_gVu" />
-              </node>
-            </node>
-          </node>
-          <node concept="2C_I21" id="1Dc9HeI9A3e" role="2C_I26">
-            <ref role="2C_gVZ" node="1Dc9HeI7QZt" resolve="Previous Menu" />
-            <node concept="2m1r4j" id="wr2MGclp79" role="2C_gVu" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="2Jqgb4" id="4_j0sPiGLCz">
     <property role="TrG5h" value="HowToGithub" />
     <node concept="2C_Ik4" id="4_j0sPiGLC$" role="2JqgbB">
@@ -629,67 +482,144 @@
       </node>
     </node>
   </node>
-  <node concept="2Jqgb4" id="2mgRGhuVIsI">
-    <property role="TrG5h" value="Test2" />
+  <node concept="2Jqgb4" id="3BO6$VaLho1">
+    <property role="TrG5h" value="JetBrains2" />
     <property role="3uoZKU" value="" />
-    <property role="1EJLKn" value="true" />
-    <node concept="2C_Ik4" id="2mgRGhuVIsJ" role="2JqgbB">
-      <node concept="2C_I21" id="3BO6$VatVs8" role="2C_I26">
-        <property role="3upAMh" value="" />
-        <ref role="2C_gVZ" node="2mgRGhuVIt1" resolve="timeout" />
-        <node concept="2m1r4j" id="2mgRGhuVIsY" role="2C_gVu" />
+    <node concept="2C_Ik4" id="3BO6$VaLho2" role="2JqgbB">
+      <node concept="2C_Ik0" id="3BO6$VaLho3" role="2C_I24">
+        <property role="2C_Iks" value="1" />
+        <property role="TrG5h" value="Sales" />
       </node>
-      <node concept="2C_I21" id="2mgRGhuVIsK" role="2C_I26">
-        <property role="3upAMh" value="" />
-        <ref role="2C_gVZ" node="2mgRGhuVIsZ" resolve="Get Info" />
-        <node concept="X09Yy" id="wr2MGdsmzB" role="2C_gVu" />
+      <node concept="2C_Ik0" id="3BO6$VaLho8" role="2C_I24">
+        <property role="2C_Iks" value="2" />
+        <property role="TrG5h" value="General Questions" />
       </node>
-      <node concept="2C_I21" id="2mgRGhuVIsM" role="2C_I26">
-        <property role="3upAMh" value="" />
-        <ref role="2C_gVZ" node="2mgRGhuVIt0" resolve="Menu" />
-        <node concept="2C_Ik4" id="2mgRGhuVIsN" role="2C_gVu">
-          <node concept="2C_Ik0" id="2mgRGhuVIsO" role="2C_I24">
+      <node concept="2C_Ik0" id="3BO6$VaLho4" role="2C_I24">
+        <property role="2C_Iks" value="X" />
+        <property role="TrG5h" value="Timeout" />
+      </node>
+      <node concept="2C_I21" id="3BO6$VaLho5" role="2C_I26">
+        <property role="3upAMh" value="Timeout" />
+        <ref role="2C_gVZ" node="3BO6$VaLho4" resolve="Timeout" />
+        <node concept="2m1r4j" id="3BO6$VaLho7" role="2C_gVu" />
+      </node>
+      <node concept="2C_I21" id="3BO6$VaLhok" role="2C_I26">
+        <ref role="2C_gVZ" node="3BO6$VaLho3" resolve="Sales" />
+        <node concept="2C_Ik4" id="3BO6$VaLhos" role="2C_gVu">
+          <node concept="2C_Ik0" id="3BO6$VaLhot" role="2C_I24">
             <property role="2C_Iks" value="1" />
-            <property role="TrG5h" value="HangUp" />
+            <property role="TrG5h" value="Call department" />
           </node>
-          <node concept="2C_Ik0" id="2mgRGhuVIsP" role="2C_I24">
+          <node concept="2C_Ik0" id="3BO6$VaLhoC" role="2C_I24">
             <property role="2C_Iks" value="2" />
-            <property role="TrG5h" value="GetInfo" />
+            <property role="TrG5h" value="Get Informations" />
           </node>
-          <node concept="2C_I21" id="2mgRGhuVIsR" role="2C_I26">
-            <property role="3upAMh" value="" />
-            <ref role="2C_gVZ" node="wr2MGdw$Gq" resolve="Timeout" />
-            <node concept="2m1r4j" id="2mgRGhuVIsS" role="2C_gVu" />
+          <node concept="2C_Ik0" id="3BO6$VaLhoG" role="2C_I24">
+            <property role="2C_Iks" value="#" />
+            <property role="TrG5h" value="Previous Menu" />
           </node>
-          <node concept="2C_I21" id="2mgRGhuVIsT" role="2C_I26">
-            <property role="3upAMh" value="" />
-            <ref role="2C_gVZ" node="2mgRGhuVIsO" resolve="HangUp" />
-            <node concept="X09Yy" id="2mgRGhuVIsU" role="2C_gVu" />
-          </node>
-          <node concept="2C_I21" id="2mgRGhuVIsV" role="2C_I26">
-            <property role="3upAMh" value="" />
-            <ref role="2C_gVZ" node="2mgRGhuVIsP" resolve="GetInfo" />
-            <node concept="1$pBvo" id="2mgRGhuVIsW" role="2C_gVu">
-              <property role="XmNhe" value="false" />
-            </node>
-          </node>
-          <node concept="2C_Ik0" id="wr2MGdw$Gq" role="2C_I24">
+          <node concept="2C_Ik0" id="3BO6$VaLhou" role="2C_I24">
             <property role="2C_Iks" value="X" />
             <property role="TrG5h" value="Timeout" />
           </node>
+          <node concept="2C_I21" id="3BO6$VaLhov" role="2C_I26">
+            <property role="3upAMh" value="Timeout" />
+            <ref role="2C_gVZ" node="3BO6$VaLhou" resolve="Timeout" />
+            <node concept="2m1r4j" id="3BO6$VaLhox" role="2C_gVu" />
+          </node>
+          <node concept="2C_I21" id="3BO6$VaLhrr" role="2C_I26">
+            <ref role="2C_gVZ" node="3BO6$VaLhot" resolve="Call department" />
+            <node concept="1$pBvr" id="3BO6$VaLhrz" role="2C_gVu">
+              <property role="XmNmt" value="true" />
+            </node>
+          </node>
+          <node concept="2C_I21" id="3BO6$VaLhrA" role="2C_I26">
+            <ref role="2C_gVZ" node="3BO6$VaLhoC" resolve="Get Informations" />
+            <node concept="1$pBvo" id="3BO6$VaLhrK" role="2C_gVu" />
+          </node>
+          <node concept="2C_I21" id="3BO6$VaLhrN" role="2C_I26">
+            <ref role="2C_gVZ" node="3BO6$VaLhoG" resolve="Previous Menu" />
+            <node concept="1$pBvp" id="3BO6$VaLhrZ" role="2C_gVu" />
+          </node>
         </node>
       </node>
-      <node concept="2C_Ik0" id="2mgRGhuVIsZ" role="2C_I24">
-        <property role="TrG5h" value="Get Info" />
-        <property role="2C_Iks" value="1" />
-      </node>
-      <node concept="2C_Ik0" id="2mgRGhuVIt0" role="2C_I24">
-        <property role="2C_Iks" value="2" />
-        <property role="TrG5h" value="Menu" />
-      </node>
-      <node concept="2C_Ik0" id="2mgRGhuVIt1" role="2C_I24">
-        <property role="2C_Iks" value="X" />
-        <property role="TrG5h" value="timeout" />
+      <node concept="2C_I21" id="3BO6$VaLhoL" role="2C_I26">
+        <ref role="2C_gVZ" node="3BO6$VaLho8" resolve="General Questions" />
+        <node concept="2C_Ik4" id="3BO6$VaLhp1" role="2C_gVu">
+          <node concept="2C_Ik0" id="3BO6$VaLhp2" role="2C_I24">
+            <property role="2C_Iks" value="1" />
+            <property role="TrG5h" value="Leave a message" />
+          </node>
+          <node concept="2C_Ik0" id="3BO6$VaLhpd" role="2C_I24">
+            <property role="2C_Iks" value="2" />
+            <property role="TrG5h" value="MPS Support" />
+          </node>
+          <node concept="2C_Ik0" id="3BO6$VaLhph" role="2C_I24">
+            <property role="2C_Iks" value="#" />
+            <property role="TrG5h" value="Previous Menu" />
+          </node>
+          <node concept="2C_Ik0" id="3BO6$VaLhp3" role="2C_I24">
+            <property role="2C_Iks" value="X" />
+            <property role="TrG5h" value="Timeout" />
+          </node>
+          <node concept="2C_I21" id="3BO6$VaLhp4" role="2C_I26">
+            <property role="3upAMh" value="Timeout" />
+            <ref role="2C_gVZ" node="3BO6$VaLhp3" resolve="Timeout" />
+            <node concept="1$pBvr" id="3BO6$VaLjZU" role="2C_gVu">
+              <property role="XmNmt" value="true" />
+            </node>
+          </node>
+          <node concept="2C_I21" id="3BO6$VaLhpm" role="2C_I26">
+            <ref role="2C_gVZ" node="3BO6$VaLhp2" resolve="Leave a message" />
+            <node concept="X09Yf" id="3BO6$VaLhpu" role="2C_gVu">
+              <property role="XmNjE" value="true" />
+            </node>
+          </node>
+          <node concept="2C_I21" id="3BO6$VaLhpx" role="2C_I26">
+            <ref role="2C_gVZ" node="3BO6$VaLhpd" resolve="MPS Support" />
+            <node concept="2C_Ik4" id="3BO6$VaLhpF" role="2C_gVu">
+              <node concept="2C_Ik0" id="3BO6$VaLhpG" role="2C_I24">
+                <property role="2C_Iks" value="1" />
+                <property role="TrG5h" value="Direct Call" />
+              </node>
+              <node concept="2C_Ik0" id="3BO6$VaLhpR" role="2C_I24">
+                <property role="2C_Iks" value="2" />
+                <property role="TrG5h" value="Get Info" />
+              </node>
+              <node concept="2C_Ik0" id="3BO6$VaLhpV" role="2C_I24">
+                <property role="2C_Iks" value="#" />
+                <property role="TrG5h" value="Previous Menu" />
+              </node>
+              <node concept="2C_Ik0" id="3BO6$VaLhpH" role="2C_I24">
+                <property role="2C_Iks" value="X" />
+                <property role="TrG5h" value="Timeout" />
+              </node>
+              <node concept="2C_I21" id="3BO6$VaLhpI" role="2C_I26">
+                <property role="3upAMh" value="Timeout" />
+                <ref role="2C_gVZ" node="3BO6$VaLhpH" resolve="Timeout" />
+                <node concept="2m1r4j" id="3BO6$VaLhpK" role="2C_gVu" />
+              </node>
+              <node concept="2C_I21" id="3BO6$VaLhqO" role="2C_I26">
+                <ref role="2C_gVZ" node="3BO6$VaLhpG" resolve="Direct Call" />
+                <node concept="1$pBvr" id="3BO6$VaLhqW" role="2C_gVu">
+                  <property role="XmNmt" value="true" />
+                </node>
+              </node>
+              <node concept="2C_I21" id="3BO6$VaLhqZ" role="2C_I26">
+                <ref role="2C_gVZ" node="3BO6$VaLhpR" resolve="Get Info" />
+                <node concept="1$pBvo" id="3BO6$VaLhr9" role="2C_gVu" />
+              </node>
+              <node concept="2C_I21" id="3BO6$VaLhrc" role="2C_I26">
+                <ref role="2C_gVZ" node="3BO6$VaLhpV" resolve="Previous Menu" />
+                <node concept="1$pBvp" id="3BO6$VaLhro" role="2C_gVu" />
+              </node>
+            </node>
+          </node>
+          <node concept="2C_I21" id="3BO6$VaLhqv" role="2C_I26">
+            <ref role="2C_gVZ" node="3BO6$VaLhph" resolve="Previous Menu" />
+            <node concept="1$pBvp" id="3BO6$VaLjZR" role="2C_gVu" />
+          </node>
+        </node>
       </node>
     </node>
   </node>

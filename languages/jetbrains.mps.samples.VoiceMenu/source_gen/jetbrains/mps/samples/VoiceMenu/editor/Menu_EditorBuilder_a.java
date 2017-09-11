@@ -9,15 +9,15 @@ import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Vertical;
-import jetbrains.mps.openapi.editor.style.Style;
-import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.BracketsStyleClass;
-import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
 import jetbrains.mps.smodel.action.NodeFactoryManager;
 import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
@@ -51,33 +51,42 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.DeclarationsStyl
     editorCell.setCellId("Collection_gd4rom_a");
     editorCell.setBig(true);
     editorCell.setCellContext(getCellFactory().getCellContext());
+    editorCell.addEditorCell(createCollection_gd4rom_a0());
+    return editorCell;
+  }
+  private EditorCell createCollection_gd4rom_a0() {
+    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
+    editorCell.setCellId("Collection_gd4rom_a0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
+    editorCell.getStyle().putAll(style);
     editorCell.setFoldable(true);
-    editorCell.addEditorCell(createRefNodeList_gd4rom_a0());
-    if (nodeCondition_gd4rom_a1a()) {
-      editorCell.addEditorCell(createRefNodeList_gd4rom_b0());
+    editorCell.addEditorCell(createRefNodeList_gd4rom_a0a());
+    if (nodeCondition_gd4rom_a1a0()) {
+      editorCell.addEditorCell(createRefNodeList_gd4rom_b0a());
     }
     return editorCell;
   }
-  private boolean nodeCondition_gd4rom_a1a() {
+  private boolean nodeCondition_gd4rom_a1a0() {
     return ListSequence.fromList(SLinkOperations.getChildren(myNode, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"))).isNotEmpty();
   }
-  private EditorCell createRefNodeList_gd4rom_a0() {
-    AbstractCellListHandler handler = new Menu_EditorBuilder_a.eventsListHandler_gd4rom_a0(myNode, "events", getEditorContext());
+  private EditorCell createRefNodeList_gd4rom_a0a() {
+    AbstractCellListHandler handler = new Menu_EditorBuilder_a.eventsListHandler_gd4rom_a0a(myNode, "events", getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Vertical(), false);
     editorCell.setCellId("refNodeList_events");
     Style style = new StyleImpl();
     new BracketsStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
-    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
     editorCell.getStyle().putAll(style);
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
-  private static class eventsListHandler_gd4rom_a0 extends RefNodeListHandler {
+  private static class eventsListHandler_gd4rom_a0a extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public eventsListHandler_gd4rom_a0(SNode ownerNode, String childRole, EditorContext context) {
+    public eventsListHandler_gd4rom_a0a(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
       myNode = ownerNode;
     }
@@ -98,7 +107,7 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.DeclarationsStyl
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(eventsListHandler_gd4rom_a0.this.getNode(), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events")));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(eventsListHandler_gd4rom_a0a.this.getNode(), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events")));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -122,15 +131,14 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.DeclarationsStyl
       }
     }
   }
-  private EditorCell createRefNodeList_gd4rom_b0() {
-    AbstractCellListHandler handler = new Menu_EditorBuilder_a.activitiesListHandler_gd4rom_b0(myNode, "activities", getEditorContext());
+  private EditorCell createRefNodeList_gd4rom_b0a() {
+    AbstractCellListHandler handler = new Menu_EditorBuilder_a.activitiesListHandler_gd4rom_b0a(myNode, "activities", getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_activities");
     Style style = new StyleImpl();
     new DeclarationsStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
     style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, true);
-    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
     style.set(StyleAttributes.BASE_LINE_CELL, true);
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
@@ -139,11 +147,11 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.DeclarationsStyl
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
-  private static class activitiesListHandler_gd4rom_b0 extends RefNodeListHandler {
+  private static class activitiesListHandler_gd4rom_b0a extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public activitiesListHandler_gd4rom_b0(SNode ownerNode, String childRole, EditorContext context) {
+    public activitiesListHandler_gd4rom_b0a(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
       myNode = ownerNode;
     }
@@ -164,7 +172,7 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.DeclarationsStyl
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(activitiesListHandler_gd4rom_b0.this.getNode(), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities")));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(activitiesListHandler_gd4rom_b0a.this.getNode(), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities")));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();

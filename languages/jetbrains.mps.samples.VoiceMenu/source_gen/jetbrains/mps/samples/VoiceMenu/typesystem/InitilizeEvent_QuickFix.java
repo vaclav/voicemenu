@@ -27,5 +27,6 @@ public class InitilizeEvent_QuickFix extends QuickFix_Runtime {
     ListSequence.fromList(SLinkOperations.getChildren(((SNode) InitilizeEvent_QuickFix.this.getField("srcMenu")[0]), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities"))).addElement(myActivity);
 
 
+
   }
 }

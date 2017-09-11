@@ -127,24 +127,25 @@
       <node id="4323022269989140486" at="24,399,25,375" concept="2" />
       <node id="4323022269989153673" at="25,375,26,236" concept="2" />
       <node id="4323022269989183804" at="26,236,27,278" concept="2" />
-      <node id="5283568769205995659" at="27,278,28,0" concept="8" />
-      <node id="4323022269989140300" at="28,0,29,0" concept="8" />
+      <node id="4175991680191044129" at="27,278,28,0" concept="8" />
+      <node id="5283568769205995659" at="28,0,29,0" concept="8" />
+      <node id="4323022269989140300" at="29,0,30,0" concept="8" />
       <node id="4323022269988352616" at="16,0,19,0" concept="1" trace="InitilizeEvent_QuickFix#()V" />
       <node id="4323022269988352616" at="19,0,22,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="4323022269988352616" at="22,0,31,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4323022269988352616" at="22,0,32,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="4323022269988352616" at="16,36,17,137" />
       <scope id="4323022269988393133" at="19,44,20,340" />
       <scope id="4323022269988352616" at="16,0,19,0" />
       <scope id="4323022269988352616" at="19,0,22,0">
         <var name="node" id="4323022269988352616" />
       </scope>
-      <scope id="4323022269988352618" at="22,35,29,0">
+      <scope id="4323022269988352618" at="22,35,30,0">
         <var name="myActivity" id="4323022269989144083" />
       </scope>
-      <scope id="4323022269988352616" at="22,0,31,0">
+      <scope id="4323022269988352616" at="22,0,32,0">
         <var name="node" id="4323022269988352616" />
       </scope>
-      <unit id="4323022269988352616" at="15,0,32,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.InitilizeEvent_QuickFix" />
+      <unit id="4323022269988352616" at="15,0,33,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.InitilizeEvent_QuickFix" />
     </file>
   </root>
   <root nodeRef="r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)/4323022269989322689">
