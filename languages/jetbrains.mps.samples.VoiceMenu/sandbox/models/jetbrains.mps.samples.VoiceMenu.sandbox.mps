@@ -58,6 +58,12 @@
     <property role="3uoZKU" value="Hello, welcome in Jet-Mobile" />
     <property role="1EJLKn" value="true" />
     <node concept="2C_Ik4" id="2w$I9I9UGbh" role="2JqgbB">
+      <node concept="2C_I21" id="2C1EnhOSo3K" role="2C_I26">
+        <ref role="2C_gVZ" node="2C1EnhOSo3H" resolve="Timeout" />
+        <node concept="1$pBvr" id="2C1EnhOSo58" role="2C_gVu">
+          <property role="XmNmt" value="true" />
+        </node>
+      </node>
       <node concept="2C_Ik0" id="2w$I9I9UGbk" role="2C_I24">
         <property role="2C_Iks" value="1" />
         <property role="TrG5h" value="Internet" />
@@ -90,6 +96,10 @@
         <property role="3upAMh" value="Did you know that our internet is faster than ever?" />
         <ref role="2C_gVZ" node="2w$I9I9UGbk" resolve="Internet" />
         <node concept="2C_Ik4" id="2w$I9I9URl3" role="2C_gVu">
+          <node concept="2C_I21" id="2C1EnhOSo5z" role="2C_I26">
+            <ref role="2C_gVZ" node="2C1EnhOSo5w" resolve="Timeout" />
+            <node concept="X09Yy" id="2C1EnhOSo6c" role="2C_gVu" />
+          </node>
           <node concept="2C_Ik0" id="2w$I9I9URl8" role="2C_I24">
             <property role="2C_Iks" value="1" />
             <property role="TrG5h" value="Discount" />
@@ -98,6 +108,10 @@
             <property role="3upAMh" value="Welcome in section of discounts, here is everything cheaper." />
             <ref role="2C_gVZ" node="2w$I9I9URl8" resolve="Discount" />
             <node concept="2C_Ik4" id="2w$I9I9VzA3" role="2C_gVu">
+              <node concept="2C_I21" id="2C1EnhOSo6t" role="2C_I26">
+                <ref role="2C_gVZ" node="2C1EnhOSo6q" resolve="Timeout" />
+                <node concept="X09Yy" id="2C1EnhOSo6I" role="2C_gVu" />
+              </node>
               <node concept="2C_Ik0" id="2w$I9I9VzA8" role="2C_I24">
                 <property role="2C_Iks" value="1" />
                 <property role="TrG5h" value="Summer discount" />
@@ -125,6 +139,10 @@
                 <property role="3upAMh" value="Going back to the previous menu." />
                 <ref role="2C_gVZ" node="2w$I9I9VzA_" resolve="Step back" />
                 <node concept="1$pBvp" id="2LL6X0rivt9" role="2C_gVu" />
+              </node>
+              <node concept="2C_Ik0" id="2C1EnhOSo6q" role="2C_I24">
+                <property role="2C_Iks" value="X" />
+                <property role="TrG5h" value="Timeout" />
               </node>
             </node>
           </node>
@@ -155,12 +173,22 @@
             <ref role="2C_gVZ" node="48dyn_ZgF26" resolve="Exit" />
             <node concept="X09Yy" id="48dyn_ZgF2w" role="2C_gVu" />
           </node>
+          <node concept="2C_Ik0" id="2C1EnhOSo5w" role="2C_I24">
+            <property role="2C_Iks" value="X" />
+            <property role="TrG5h" value="Timeout" />
+          </node>
         </node>
       </node>
       <node concept="2C_I21" id="2w$I9I9URiO" role="2C_I26">
         <property role="3upAMh" value="Since now we offer you easiest way of payment." />
         <ref role="2C_gVZ" node="2w$I9I9URir" resolve="Payment" />
         <node concept="2C_Ik4" id="2w$I9I9URjW" role="2C_gVu">
+          <node concept="2C_I21" id="2C1EnhOTmbQ" role="2C_I26">
+            <ref role="2C_gVZ" node="2C1EnhOTmbN" resolve="Timeout" />
+            <node concept="1$pBvo" id="2C1EnhOTmc9" role="2C_gVu">
+              <property role="XmNhe" value="true" />
+            </node>
+          </node>
           <node concept="2C_Ik0" id="2w$I9I9URk1" role="2C_I24">
             <property role="2C_Iks" value="1" />
             <property role="TrG5h" value="Billing" />
@@ -198,6 +226,10 @@
             <ref role="2C_gVZ" node="2w$I9I9URk$" resolve="Step back" />
             <node concept="1$pBvp" id="2w$I9I9URkO" role="2C_gVu" />
           </node>
+          <node concept="2C_Ik0" id="2C1EnhOTmbN" role="2C_I24">
+            <property role="2C_Iks" value="X" />
+            <property role="TrG5h" value="Timeout" />
+          </node>
         </node>
       </node>
       <node concept="2C_I21" id="2w$I9I9URj3" role="2C_I26">
@@ -209,6 +241,12 @@
       <node concept="2C_I21" id="2w$I9I9URjc" role="2C_I26">
         <ref role="2C_gVZ" node="2w$I9I9URiy" resolve="News" />
         <node concept="2C_Ik4" id="2w$I9Ia1nSE" role="2C_gVu">
+          <node concept="2C_I21" id="2C1EnhOSo7R" role="2C_I26">
+            <ref role="2C_gVZ" node="2C1EnhOSo7O" resolve="Timeout" />
+            <node concept="1$pBvo" id="2C1EnhOSo87" role="2C_gVu">
+              <property role="XmNhe" value="true" />
+            </node>
+          </node>
           <node concept="2C_Ik0" id="2w$I9Ia1nSJ" role="2C_I24">
             <property role="2C_Iks" value="1" />
             <property role="TrG5h" value="Summer News" />
@@ -234,6 +272,10 @@
             <property role="3upAMh" value="Going back to the previous menu." />
             <ref role="2C_gVZ" node="2w$I9Ia1nT6" resolve="Step Back" />
             <node concept="1$pBvp" id="2w$I9Ia1nTp" role="2C_gVu" />
+          </node>
+          <node concept="2C_Ik0" id="2C1EnhOSo7O" role="2C_I24">
+            <property role="2C_Iks" value="X" />
+            <property role="TrG5h" value="Timeout" />
           </node>
         </node>
       </node>
@@ -263,6 +305,10 @@
             <node concept="2m1r4j" id="4_j0sPhAm_W" role="2C_gVu" />
           </node>
         </node>
+      </node>
+      <node concept="2C_Ik0" id="2C1EnhOSo3H" role="2C_I24">
+        <property role="2C_Iks" value="X" />
+        <property role="TrG5h" value="Timeout" />
       </node>
     </node>
   </node>
@@ -689,6 +735,29 @@
       <node concept="2C_Ik0" id="2mgRGhuVIt1" role="2C_I24">
         <property role="2C_Iks" value="X" />
         <property role="TrG5h" value="timeout" />
+      </node>
+    </node>
+  </node>
+  <node concept="2Jqgb4" id="wr2MGd$4C8">
+    <property role="TrG5h" value="Test3" />
+    <node concept="2C_Ik4" id="wr2MGd$4C9" role="2JqgbB">
+      <node concept="2C_I21" id="2C1EnhOWT77" role="2C_I26">
+        <ref role="2C_gVZ" node="2C1EnhOWT74" resolve="Timeout" />
+        <node concept="X09Yy" id="2C1EnhOWT7q" role="2C_gVu" />
+      </node>
+      <node concept="2C_Ik0" id="wr2MGd$4Ca" role="2C_I24">
+        <property role="2C_Iks" value="2" />
+        <property role="TrG5h" value="Internet" />
+      </node>
+      <node concept="2C_I21" id="2C1EnhONg3i" role="2C_I26">
+        <ref role="2C_gVZ" node="wr2MGd$4Ca" resolve="Internet" />
+        <node concept="1$pBvr" id="2C1EnhONg3q" role="2C_gVu">
+          <property role="XmNmt" value="true" />
+        </node>
+      </node>
+      <node concept="2C_Ik0" id="2C1EnhOWT74" role="2C_I24">
+        <property role="2C_Iks" value="X" />
+        <property role="TrG5h" value="Timeout" />
       </node>
     </node>
   </node>
