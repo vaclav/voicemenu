@@ -906,12 +906,6 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F0ifn" id="6HhgIFYwKAm" role="3EZMnx">
-        <property role="3F0ifm" value="" />
-        <node concept="pVoyu" id="6HhgIFYwKKJ" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
       <node concept="3F2HdR" id="5HF1wNNZurU" role="3EZMnx">
         <ref role="1NtTu8" to="xehl:5HF1wNNZuqa" resolve="activities" />
         <ref role="1k5W1q" node="11pGboo2CX2" resolve="Declarations" />
@@ -1295,11 +1289,6 @@
         </node>
         <node concept="3F0ifn" id="6HhgIFYtrav" role="3EZMnx">
           <property role="3F0ifm" value="" />
-        </node>
-        <node concept="3F0ifn" id="6HhgIFXYxGk" role="3EZMnx">
-          <node concept="pVoyu" id="6HhgIFXYxTe" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
         </node>
       </node>
     </node>
