@@ -353,9 +353,14 @@
     <property role="TrG5h" value="Test" />
     <property role="3uoZKU" value="/Users/jetbrains/Documents/sample.wav" />
     <node concept="2C_Ik4" id="6HhgIFXTyQ3" role="2JqgbB">
+      <node concept="2C_I21" id="3BO6$Vadbql" role="2C_I26">
+        <property role="3upAMh" value="/Users/jetbrains/Documents/repeat1.wav" />
+        <ref role="2C_gVZ" node="6HhgIFXTyQ5" resolve="timeout" />
+        <node concept="2m1r4j" id="60WteoFXZXD" role="2C_gVu" />
+      </node>
       <node concept="2C_I21" id="6HhgIFXYxj0" role="2C_I26">
         <property role="3upAMh" value="/Users/jetbrains/Documents/Get.wav" />
-        <ref role="2C_gVZ" node="6HhgIFXYxiR" resolve="Get Info1" />
+        <ref role="2C_gVZ" node="6HhgIFXYxiR" resolve="Get Info" />
         <node concept="1$pBvo" id="60WteoG74Eg" role="2C_gVu" />
       </node>
       <node concept="2C_I21" id="6HhgIFY09IU" role="2C_I26">
@@ -388,19 +393,13 @@
             <property role="3upAMh" value="get Info" />
             <ref role="2C_gVZ" node="2mgRGhu34iP" resolve="GetInfo" />
             <node concept="1$pBvo" id="2mgRGhu34jc" role="2C_gVu">
-              <property role="XmNhe" value="false" />
+              <property role="XmNhe" value="true" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="2C_I21" id="6HhgIFY76D4" role="2C_I26">
-        <property role="1i1bcX" value="9" />
-        <property role="3upAMh" value="/Users/jetbrains/Documents/repeat1.wav" />
-        <ref role="2C_gVZ" node="6HhgIFXTyQ5" resolve="timeout" />
-        <node concept="2m1r4j" id="60WteoFXZXD" role="2C_gVu" />
-      </node>
       <node concept="2C_Ik0" id="6HhgIFXYxiR" role="2C_I24">
-        <property role="TrG5h" value="Get Info1" />
+        <property role="TrG5h" value="Get Info" />
         <property role="2C_Iks" value="1" />
       </node>
       <node concept="2C_Ik0" id="6HhgIFXYxiW" role="2C_I24">
