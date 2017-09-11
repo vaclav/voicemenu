@@ -64,10 +64,9 @@ public class Main__1 implements ActionListener {
     Timeout_rwbd_c0c0.isFinal = false;
     Timeout_rwbd_c0c0.setAction("", false);
     Timeout_rwbd_c0c0.setGreeting("");
-    Timeout_rwbd_c0c0.playback = "/Users/jetbrains/Documents/repeat1.wav";
     Timeout_rwbd_c0c0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("02X", Timeout_rwbd_c0c0);
-    Timeout_rwbd_c0c0.setAction("repeat", false);
+    Timeout_rwbd_c0c0.setAction("back", false);
     Timeout_rwbd_c0c0.childs = new ArrayList<Event>();
     Event HANGUP_rwbd_a0c0 = new Event("HANGUP", "1", 16);
     HANGUP_rwbd_a0c0.isFinal = false;

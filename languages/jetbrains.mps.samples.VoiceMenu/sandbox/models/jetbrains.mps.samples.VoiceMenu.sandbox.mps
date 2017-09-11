@@ -13,7 +13,7 @@
   </imports>
   <registry>
     <language id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu">
-      <concept id="7733035612211835897" name="jetbrains.mps.samples.VoiceMenu.structure.ReplayOptions" flags="ng" index="2m1r4j" />
+      <concept id="7733035612211835897" name="jetbrains.mps.samples.VoiceMenu.structure.Replay" flags="ng" index="2m1r4j" />
       <concept id="6587365532662359693" name="jetbrains.mps.samples.VoiceMenu.structure.Activity" flags="ng" index="2C_I21">
         <property id="2702278965990916343" name="playback" index="3upAMh" />
         <reference id="6587365532662368499" name="event" index="2C_gVZ" />
@@ -368,10 +368,9 @@
         <property role="3upAMh" value="/Users/jetbrains/Documents/menu1.wav" />
         <ref role="2C_gVZ" node="6HhgIFXYxiW" resolve="Menu" />
         <node concept="2C_Ik4" id="2mgRGhu34iD" role="2C_gVu">
-          <node concept="2C_I21" id="3BO6$VadieQ" role="2C_I26">
-            <property role="3upAMh" value="/Users/jetbrains/Documents/repeat1.wav" />
+          <node concept="2C_I21" id="wr2MGd3qCx" role="2C_I26">
             <ref role="2C_gVZ" node="2mgRGhu34iF" resolve="Timeout" />
-            <node concept="2m1r4j" id="2mgRGhuB8TD" role="2C_gVu" />
+            <node concept="1$pBvp" id="wr2MGd3qCC" role="2C_gVu" />
           </node>
           <node concept="2C_I21" id="2mgRGhu34j1" role="2C_I26">
             <property role="3upAMh" value="Hang up" />
