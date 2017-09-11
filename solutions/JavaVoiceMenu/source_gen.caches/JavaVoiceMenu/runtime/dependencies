@@ -7,7 +7,6 @@
     <classNode dependClassName="java.awt.event.ActionEvent" />
     <classNode dependClassName="java.io.File" />
     <classNode dependClassName="java.io.IOException" />
-    <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Exception" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Runnable" />

@@ -3484,17 +3484,6 @@
             <property role="3SKdUp" value="Initilization of voice output" />
           </node>
         </node>
-        <node concept="3cpWs8" id="2w$I9Iamk5a" role="3cqZAp">
-          <node concept="3cpWsn" id="2w$I9Iamk5b" role="3cpWs9">
-            <property role="TrG5h" value="wrongButtonPressed" />
-            <node concept="3uibUv" id="2w$I9Iamk5c" role="1tU5fm">
-              <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
-            </node>
-            <node concept="3clFbT" id="2w$I9IamlOn" role="33vP2m">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-        </node>
         <node concept="3SKdUt" id="5mb0yBfIcJj" role="3cqZAp">
           <node concept="3SKdUq" id="5mb0yBfIcJi" role="3SKWNk">
             <property role="3SKdUp" value="Variable to store which character was pressed" />
@@ -3638,16 +3627,6 @@
                           <property role="Xl_RC" value="is a bad option. please try again" />
                         </node>
                       </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbF" id="2w$I9Iamm3D" role="3cqZAp">
-                  <node concept="37vLTI" id="2w$I9IammsN" role="3clFbG">
-                    <node concept="3clFbT" id="2w$I9IammxL" role="37vLTx">
-                      <property role="3clFbU" value="true" />
-                    </node>
-                    <node concept="37vLTw" id="2w$I9Iamm3B" role="37vLTJ">
-                      <ref role="3cqZAo" node="2w$I9Iamk5b" resolve="wrongButtonPressed" />
                     </node>
                   </node>
                 </node>

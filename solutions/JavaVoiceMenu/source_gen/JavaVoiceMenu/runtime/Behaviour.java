@@ -88,7 +88,6 @@ public class Behaviour {
   public static void runLogic(ActionEvent evt, boolean repeat) throws IOException {
     Variables.voice.stop();
     // Initilization of voice output 
-    Boolean wrongButtonPressed = false;
     // Variable to store which character was pressed 
     if (!(repeat)) {
       String character = evt.getActionCommand();
@@ -103,7 +102,6 @@ public class Behaviour {
         }
 
         Variables.voice.addText(charToRead + "is a bad option. please try again");
-        wrongButtonPressed = true;
       } else {
         Variables.path = Variables.path + character;
       }
