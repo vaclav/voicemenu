@@ -39,13 +39,5 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       NonTypesystemRule_Runtime nonTypesystemRule = new EmptyWorkspace_NonTypesystemRule();
       this.myNonTypesystemRules.add(nonTypesystemRule);
     }
-    {
-      NonTypesystemRule_Runtime nonTypesystemRule = new TimeoutAsFirst_NonTypesystemRule();
-      this.myNonTypesystemRules.add(nonTypesystemRule);
-    }
-    {
-      NonTypesystemRule_Runtime nonTypesystemRule = new TimeoutAsLast_NonTypesystemRule();
-      this.myNonTypesystemRules.add(nonTypesystemRule);
-    }
   }
 }

@@ -22,6 +22,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Other;
   private ConceptPresentation props_Record;
   private ConceptPresentation props_Replay;
+  private ConceptPresentation props_Timeout;
   private ConceptPresentation props_WorkSpace;
 
   @Override
@@ -118,6 +119,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Replay = cpb.create();
         }
         return props_Replay;
+      case LanguageConceptSwitch.Timeout:
+        if (props_Timeout == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Timeout");
+          props_Timeout = cpb.create();
+        }
+        return props_Timeout;
       case LanguageConceptSwitch.WorkSpace:
         if (props_WorkSpace == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

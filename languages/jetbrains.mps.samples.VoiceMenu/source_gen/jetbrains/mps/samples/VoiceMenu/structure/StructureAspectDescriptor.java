@@ -25,6 +25,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptOther = createDescriptorForOther();
   /*package*/ final ConceptDescriptor myConceptRecord = createDescriptorForRecord();
   /*package*/ final ConceptDescriptor myConceptReplay = createDescriptorForReplay();
+  /*package*/ final ConceptDescriptor myConceptTimeout = createDescriptorForTimeout();
   /*package*/ final ConceptDescriptor myConceptWorkSpace = createDescriptorForWorkSpace();
   private final LanguageConceptSwitch myConceptIndex;
 
@@ -34,7 +35,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptActivity, myConceptBack, myConceptCommand, myConceptDirectCall, myConceptEmpty, myConceptEvent, myConceptGetInfo, myConceptHangUp, myConceptMenu, myConceptOther, myConceptRecord, myConceptReplay, myConceptWorkSpace);
+    return Arrays.asList(myConceptAction, myConceptActivity, myConceptBack, myConceptCommand, myConceptDirectCall, myConceptEmpty, myConceptEvent, myConceptGetInfo, myConceptHangUp, myConceptMenu, myConceptOther, myConceptRecord, myConceptReplay, myConceptTimeout, myConceptWorkSpace);
   }
 
   @Override
@@ -67,6 +68,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptRecord;
       case LanguageConceptSwitch.Replay:
         return myConceptReplay;
+      case LanguageConceptSwitch.Timeout:
+        return myConceptTimeout;
       case LanguageConceptSwitch.WorkSpace:
         return myConceptWorkSpace;
       default:
@@ -193,6 +196,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("Replay");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForTimeout() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.samples.VoiceMenu", "Timeout", 0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L);
+    b.class_(false, false, false);
+    b.origin("r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)/859446834198103481");
+    b.prop("duration", 0xbed5e5797b645bcL, "859446834198103484");
+    b.aggregate("Action", 0xbed5e5797d28d77L).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d133997fdc5L).optional(false).ordered(true).multiple(false).origin("859446834199956855").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForWorkSpace() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.samples.VoiceMenu", "WorkSpace", 0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L);
     b.class_(false, false, true);
@@ -202,6 +213,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.prop("info", 0x25806c66fbe3905cL, "2702278965990756444");
     b.prop("toolbar", 0x366449915cdb5586L, "3919338464396137862");
     b.aggregate("bodyMenu", 0x5b6b060cf40204ebL).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L).optional(false).ordered(true).multiple(false).origin("6587365532662629611").done();
+    b.aggregate("timeout", 0xbed5e5797b645beL).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L).optional(false).ordered(true).multiple(false).origin("859446834198103486").done();
     b.alias("Work Space");
     return b.create();
   }

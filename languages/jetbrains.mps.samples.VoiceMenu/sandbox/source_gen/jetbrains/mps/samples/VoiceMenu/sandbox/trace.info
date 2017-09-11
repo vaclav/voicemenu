@@ -323,13 +323,13 @@
     <file name="Main__3.java">
       <node id="4175991680190977537" at="25,0,26,0" concept="6" trace="instance" />
       <node id="4175991680190977537" at="27,36,28,0" concept="5" />
-      <node id="4175991680190977537" at="28,0,29,48" concept="4" />
-      <node id="4175991680190977537" at="29,48,30,29" concept="0" />
+      <node id="4175991680190977537" at="28,0,29,49" concept="4" />
+      <node id="4175991680190977537" at="29,49,30,29" concept="0" />
       <node id="4175991680190977537" at="30,29,31,25" concept="0" />
       <node id="4175991680190977537" at="31,25,32,41" concept="0" />
       <node id="4175991680190977537" at="32,41,33,25" concept="0" />
-      <node id="4175991680190977537" at="33,25,34,38" concept="0" />
-      <node id="4175991680190977537" at="34,38,35,0" concept="5" />
+      <node id="4175991680190977537" at="33,25,34,39" concept="0" />
+      <node id="4175991680190977537" at="34,39,35,0" concept="5" />
       <node id="4175991680190977537" at="35,0,36,39" concept="0" />
       <node id="4175991680190977537" at="36,39,37,0" concept="5" />
       <node id="4175991680190977537" at="37,0,38,0" concept="5" />
@@ -526,22 +526,22 @@
         <var name="event" id="4175991680190977537" />
       </scope>
       <scope id="4175991680190977537" at="27,36,171,49">
-        <var name="Call_department_9upjpn_a0b0" id="4175991680190977537" />
-        <var name="Direct_Call_9upjpn_a0c0c0" id="4175991680190977537" />
-        <var name="General_Questions_9upjpn_b0" id="4175991680190977537" />
-        <var name="Get_Info_9upjpn_b0c0c0" id="4175991680190977537" />
-        <var name="Get_Informations_9upjpn_b0b0" id="4175991680190977537" />
+        <var name="Call_department_lbjr72_a0b0" id="4175991680190977537" />
+        <var name="Direct_Call_lbjr72_a0c0c0" id="4175991680190977537" />
+        <var name="General_Questions_lbjr72_b0" id="4175991680190977537" />
+        <var name="Get_Info_lbjr72_b0c0c0" id="4175991680190977537" />
+        <var name="Get_Informations_lbjr72_b0b0" id="4175991680190977537" />
         <var name="Home" id="4175991680190977537" />
-        <var name="Leave_a_message_9upjpn_a0c0" id="4175991680190977537" />
-        <var name="MPS_Support_9upjpn_b0c0" id="4175991680190977537" />
-        <var name="Previous_Menu_9upjpn_c0b0" id="4175991680190977537" />
-        <var name="Previous_Menu_9upjpn_c0c0" id="4175991680190977537" />
-        <var name="Previous_Menu_9upjpn_c0c0c0" id="4175991680190977537" />
-        <var name="Sales_9upjpn_a0" id="4175991680190977537" />
-        <var name="Timeout_9upjpn_c0" id="4175991680190977537" />
-        <var name="Timeout_9upjpn_d0b0" id="4175991680190977537" />
-        <var name="Timeout_9upjpn_d0c0" id="4175991680190977537" />
-        <var name="Timeout_9upjpn_d0c0c0" id="4175991680190977537" />
+        <var name="Leave_a_message_lbjr72_a0c0" id="4175991680190977537" />
+        <var name="MPS_Support_lbjr72_b0c0" id="4175991680190977537" />
+        <var name="Previous_Menu_lbjr72_c0b0" id="4175991680190977537" />
+        <var name="Previous_Menu_lbjr72_c0c0" id="4175991680190977537" />
+        <var name="Previous_Menu_lbjr72_c0c0c0" id="4175991680190977537" />
+        <var name="Sales_lbjr72_a0" id="4175991680190977537" />
+        <var name="Timeout_lbjr72_c0" id="4175991680190977537" />
+        <var name="Timeout_lbjr72_d0b0" id="4175991680190977537" />
+        <var name="Timeout_lbjr72_d0c0" id="4175991680190977537" />
+        <var name="Timeout_lbjr72_d0c0c0" id="4175991680190977537" />
       </scope>
       <scope id="4175991680190977537" at="27,0,173,0" />
       <unit id="4175991680190977537" at="22,0,218,0" name="jetbrains.mps.samples.VoiceMenu.sandbox.Main__3" />
@@ -999,6 +999,156 @@
       </scope>
       <scope id="7733035612221353346" at="27,0,96,0" />
       <unit id="7733035612221353346" at="22,0,141,0" name="jetbrains.mps.samples.VoiceMenu.sandbox.Main__1" />
+    </file>
+  </root>
+  <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/859446834197549353">
+    <file name="Main__4.java">
+      <node id="859446834197549353" at="25,0,26,0" concept="6" trace="instance" />
+      <node id="859446834197549353" at="27,36,28,0" concept="5" />
+      <node id="859446834197549353" at="28,0,29,48" concept="4" />
+      <node id="859446834197549353" at="29,48,30,29" concept="0" />
+      <node id="859446834197549353" at="30,29,31,25" concept="0" />
+      <node id="859446834197549353" at="31,25,32,41" concept="0" />
+      <node id="859446834197549353" at="32,41,33,25" concept="0" />
+      <node id="859446834197549353" at="33,25,34,38" concept="0" />
+      <node id="859446834197549353" at="34,38,35,0" concept="5" />
+      <node id="859446834197549353" at="35,0,36,39" concept="0" />
+      <node id="859446834197549353" at="36,39,37,0" concept="5" />
+      <node id="859446834197549353" at="37,0,38,0" concept="5" />
+      <node id="859446834197549353" at="38,0,39,60" concept="4" />
+      <node id="859446834197549353" at="39,60,40,38" concept="0" />
+      <node id="859446834197549353" at="40,38,41,43" concept="0" />
+      <node id="859446834197549353" at="41,43,42,38" concept="0" />
+      <node id="859446834197549353" at="42,38,43,43" concept="0" />
+      <node id="859446834197549353" at="43,43,44,54" concept="0" />
+      <node id="859446834197549353" at="44,54,45,53" concept="0" />
+      <node id="859446834197549359" at="45,53,46,49" concept="0" />
+      <node id="859446834197549353" at="46,49,47,54" concept="0" />
+      <node id="859446834197549353" at="47,54,48,56" concept="4" />
+      <node id="859446834197549353" at="48,56,49,36" concept="0" />
+      <node id="859446834197549353" at="49,36,50,41" concept="0" />
+      <node id="859446834197549353" at="50,41,51,36" concept="0" />
+      <node id="859446834197549353" at="51,36,52,52" concept="0" />
+      <node id="859446834197549353" at="52,52,53,51" concept="0" />
+      <node id="859446834197549421" at="53,51,54,44" concept="0" />
+      <node id="859446834197549353" at="54,44,55,52" concept="0" />
+      <node id="859446834197549353" at="55,52,56,62" concept="4" />
+      <node id="859446834197549353" at="56,62,57,39" concept="0" />
+      <node id="859446834197549353" at="57,39,58,44" concept="0" />
+      <node id="859446834197549353" at="58,44,59,39" concept="0" />
+      <node id="859446834197549353" at="59,39,60,55" concept="0" />
+      <node id="859446834197549353" at="60,55,61,54" concept="0" />
+      <node id="859446834197549353" at="61,54,62,62" concept="4" />
+      <node id="859446834197549353" at="62,62,63,40" concept="0" />
+      <node id="859446834197549353" at="63,40,64,45" concept="0" />
+      <node id="859446834197549353" at="64,45,65,40" concept="0" />
+      <node id="859446834197549353" at="65,40,66,45" concept="0" />
+      <node id="859446834197549353" at="66,45,67,56" concept="0" />
+      <node id="859446834197549353" at="67,56,68,56" concept="0" />
+      <node id="859446834197549464" at="68,56,69,51" concept="0" />
+      <node id="859446834197549353" at="69,51,70,56" concept="0" />
+      <node id="859446834197549353" at="70,56,71,72" concept="4" />
+      <node id="859446834197549353" at="71,72,72,45" concept="0" />
+      <node id="859446834197549353" at="72,45,73,50" concept="0" />
+      <node id="859446834197549353" at="73,50,74,45" concept="0" />
+      <node id="859446834197549353" at="74,45,75,61" concept="0" />
+      <node id="859446834197549353" at="75,61,76,61" concept="0" />
+      <node id="859446834197549488" at="76,61,77,53" concept="0" />
+      <node id="859446834197549353" at="77,53,78,61" concept="0" />
+      <node id="859446834197549353" at="78,61,79,68" concept="4" />
+      <node id="859446834197549353" at="79,68,80,43" concept="0" />
+      <node id="859446834197549353" at="80,43,81,48" concept="0" />
+      <node id="859446834197549353" at="81,48,82,43" concept="0" />
+      <node id="859446834197549353" at="82,43,83,59" concept="0" />
+      <node id="859446834197549353" at="83,59,84,59" concept="0" />
+      <node id="859446834197549501" at="84,59,85,51" concept="0" />
+      <node id="859446834197549353" at="85,51,86,59" concept="0" />
+      <node id="859446834197549353" at="86,59,87,62" concept="4" />
+      <node id="859446834197549353" at="87,62,88,40" concept="0" />
+      <node id="859446834197549353" at="88,40,89,45" concept="0" />
+      <node id="859446834197549353" at="89,45,90,40" concept="0" />
+      <node id="859446834197549353" at="90,40,91,56" concept="0" />
+      <node id="859446834197549353" at="91,56,92,56" concept="0" />
+      <node id="859446834197549516" at="92,56,93,49" concept="0" />
+      <node id="859446834197549353" at="93,49,94,56" concept="0" />
+      <node id="859446834197549353" at="94,56,95,55" concept="0" />
+      <node id="859446834197549353" at="95,55,96,60" concept="0" />
+      <node id="859446834197549353" at="96,60,97,58" concept="0" />
+      <node id="859446834197549353" at="97,58,98,55" concept="0" />
+      <node id="859446834197549353" at="98,55,99,0" concept="5" />
+      <node id="859446834197549353" at="99,0,100,37" concept="0" />
+      <node id="859446834197549353" at="100,37,101,40" concept="0" />
+      <node id="859446834197549353" at="104,42,105,18" concept="0" />
+      <node id="859446834197549353" at="105,18,106,29" concept="0" />
+      <node id="859446834197549353" at="106,29,107,26" concept="0" />
+      <node id="859446834197549353" at="107,26,108,15" concept="0" />
+      <node id="859446834197549353" at="108,15,109,29" concept="0" />
+      <node id="859446834197549353" at="109,29,110,85" concept="0" />
+      <node id="859446834197549353" at="110,85,111,0" concept="5" />
+      <node id="859446834197549353" at="114,33,115,23" concept="0" />
+      <node id="859446834197549353" at="115,23,116,39" concept="0" />
+      <node id="859446834197549353" at="116,39,117,66" concept="0" />
+      <node id="859446834197549353" at="117,66,118,21" concept="0" />
+      <node id="859446834197549353" at="122,51,123,51" concept="4" />
+      <node id="859446834197549353" at="123,51,124,46" concept="0" />
+      <node id="859446834197549353" at="124,46,125,41" concept="0" />
+      <node id="859446834197549353" at="125,41,126,53" concept="0" />
+      <node id="859446834197549353" at="126,53,127,54" concept="4" />
+      <node id="859446834197549353" at="127,54,128,31" concept="0" />
+      <node id="859446834197549353" at="128,31,129,35" concept="0" />
+      <node id="859446834197549353" at="136,43,137,41" concept="0" />
+      <node id="859446834197549353" at="138,9,139,41" concept="0" />
+      <node id="859446834197549353" at="139,41,140,0" concept="5" />
+      <node id="859446834197549353" at="141,31,142,28" concept="0" />
+      <node id="859446834197549353" at="135,11,138,9" concept="2" />
+      <node id="859446834197549353" at="114,0,120,0" concept="7" trace="initView#()V" />
+      <node id="859446834197549353" at="104,0,113,0" concept="7" trace="main#([Ljava/lang/String;)V" />
+      <node id="859446834197549353" at="121,58,130,5" concept="1" />
+      <node id="859446834197549353" at="134,132,143,7" concept="8" />
+      <node id="859446834197549353" at="121,0,132,0" concept="7" trace="addButtons#(Ljavax/swing/JPanel;)V" />
+      <node id="859446834197549353" at="133,50,144,5" concept="2" />
+      <node id="859446834197549353" at="132,0,146,0" concept="3" trace="actionPerformed#(Ljava/awt/event/ActionEvent;)V" />
+      <node id="859446834197549353" at="27,0,103,0" concept="7" trace="initHashMap#()V" />
+      <scope id="859446834197549353" at="136,43,137,41" />
+      <scope id="859446834197549353" at="141,0,142,28">
+        <var name="e" id="859446834197549353" />
+      </scope>
+      <scope id="859446834197549353" at="141,31,142,28" />
+      <scope id="859446834197549353" at="114,33,118,21" />
+      <scope id="859446834197549353" at="135,11,140,0" />
+      <scope id="859446834197549353" at="114,0,120,0" />
+      <scope id="859446834197549353" at="104,42,111,0" />
+      <scope id="859446834197549353" at="122,51,129,35">
+        <var name="border" id="859446834197549353" />
+        <var name="button" id="859446834197549353" />
+      </scope>
+      <scope id="859446834197549353" at="104,0,113,0">
+        <var name="args" id="859446834197549353" />
+      </scope>
+      <scope id="859446834197549353" at="121,58,130,5" />
+      <scope id="859446834197549353" at="121,58,130,5">
+        <var name="item" id="859446834197549353" />
+      </scope>
+      <scope id="859446834197549353" at="134,132,143,7" />
+      <scope id="859446834197549353" at="121,0,132,0">
+        <var name="myPanelOfButtons" id="859446834197549353" />
+      </scope>
+      <scope id="859446834197549353" at="133,50,144,5" />
+      <scope id="859446834197549353" at="132,0,146,0">
+        <var name="event" id="859446834197549353" />
+      </scope>
+      <scope id="859446834197549353" at="27,36,101,40">
+        <var name="Call_Martina_9upjpn_a0c0" id="859446834197549353" />
+        <var name="Call_Oscar_9upjpn_b0c0" id="859446834197549353" />
+        <var name="Go_back_9upjpn_c0c0" id="859446834197549353" />
+        <var name="Home" id="859446834197549353" />
+        <var name="NetSuite_9upjpn_b0" id="859446834197549353" />
+        <var name="Sales_9upjpn_a0" id="859446834197549353" />
+        <var name="Timeout_9upjpn_c0" id="859446834197549353" />
+        <var name="Timeout_9upjpn_d0c0" id="859446834197549353" />
+      </scope>
+      <scope id="859446834197549353" at="27,0,103,0" />
+      <unit id="859446834197549353" at="22,0,148,0" name="jetbrains.mps.samples.VoiceMenu.sandbox.Main__4" />
     </file>
   </root>
 </debug-info>

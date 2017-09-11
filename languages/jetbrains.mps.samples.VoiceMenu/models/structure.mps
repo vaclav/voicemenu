@@ -127,6 +127,13 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5HF1wNNZuc8" resolve="Menu" />
     </node>
+    <node concept="1TJgyj" id="JHn_unH$mY" role="1TKVEi">
+      <property role="IQ2ns" value="859446834198103486" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="timeout" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="JHn_unH$mT" resolve="Timeout" />
+    </node>
     <node concept="PrWs8" id="5HF1wNO0wky" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -244,6 +251,23 @@
     <property role="TrG5h" value="Replay" />
     <property role="34LRSv" value="Replay" />
     <ref role="1TJDcQ" node="5RYvhcT_ZR5" resolve="Action" />
+  </node>
+  <node concept="1TIwiD" id="JHn_unH$mT">
+    <property role="EcuMT" value="859446834198103481" />
+    <property role="TrG5h" value="Timeout" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="JHn_unH$mW" role="1TKVEl">
+      <property role="IQ2nx" value="859446834198103484" />
+      <property role="TrG5h" value="duration" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="JHn_unOCPR" role="1TKVEi">
+      <property role="IQ2ns" value="859446834199956855" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="Action" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5RYvhcT_ZR5" resolve="Action" />
+    </node>
   </node>
 </model>
 

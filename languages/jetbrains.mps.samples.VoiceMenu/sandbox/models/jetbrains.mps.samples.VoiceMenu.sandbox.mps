@@ -14,6 +14,10 @@
   <registry>
     <language id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu">
       <concept id="7733035612211835897" name="jetbrains.mps.samples.VoiceMenu.structure.Replay" flags="ng" index="2m1r4j" />
+      <concept id="859446834198103481" name="jetbrains.mps.samples.VoiceMenu.structure.Timeout" flags="ng" index="2smLJI">
+        <property id="859446834198103484" name="duration" index="2smLJF" />
+        <child id="859446834199956855" name="Action" index="2sfXcw" />
+      </concept>
       <concept id="6587365532662359693" name="jetbrains.mps.samples.VoiceMenu.structure.Activity" flags="ng" index="2C_I21">
         <property id="2702278965990916343" name="playback" index="3upAMh" />
         <reference id="6587365532662368499" name="event" index="2C_gVZ" />
@@ -29,6 +33,7 @@
       <concept id="6587365532662629576" name="jetbrains.mps.samples.VoiceMenu.structure.WorkSpace" flags="ng" index="2Jqgb4">
         <property id="2702278965990756444" name="info" index="3uoZKU" />
         <property id="3919338464396137862" name="toolbar" index="1EJLKn" />
+        <child id="859446834198103486" name="timeout" index="2smLJD" />
         <child id="6587365532662629611" name="bodyMenu" index="2JqgbB" />
       </concept>
       <concept id="4759611536116094710" name="jetbrains.mps.samples.VoiceMenu.structure.Record" flags="ng" index="X09Yf">
@@ -43,6 +48,7 @@
         <property id="4759611536120921574" name="isFinal" index="XmNiv" />
       </concept>
       <concept id="6772988411135920840" name="jetbrains.mps.samples.VoiceMenu.structure.DirectCall" flags="ng" index="1$pBvr">
+        <property id="7733035612202996721" name="number" index="2nBP4r" />
         <property id="4759611536120921316" name="isFinal" index="XmNmt" />
       </concept>
     </language>
@@ -80,10 +86,6 @@
       <node concept="2C_Ik0" id="5K3$FqBqTHW" role="2C_I24">
         <property role="2C_Iks" value="6" />
         <property role="TrG5h" value="Record" />
-      </node>
-      <node concept="2C_Ik0" id="4_j0sPhAmyI" role="2C_I24">
-        <property role="2C_Iks" value="0" />
-        <property role="TrG5h" value="Action_867" />
       </node>
       <node concept="2C_I21" id="2w$I9I9URiH" role="2C_I26">
         <property role="3upAMh" value="Did you know that our internet is faster than ever?" />
@@ -249,20 +251,9 @@
           <property role="XmNjE" value="true" />
         </node>
       </node>
-      <node concept="2C_I21" id="4_j0sPhAmyQ" role="2C_I26">
-        <ref role="2C_gVZ" node="4_j0sPhAmyI" resolve="Action_867" />
-        <node concept="2C_Ik4" id="4_j0sPhAm_R" role="2C_gVu">
-          <node concept="2C_Ik0" id="4_j0sPhAm_T" role="2C_I24">
-            <property role="2C_Iks" value="X" />
-            <property role="TrG5h" value="timeout" />
-          </node>
-          <node concept="2C_I21" id="4_j0sPhAm_U" role="2C_I26">
-            <property role="3upAMh" value="Timeout" />
-            <ref role="2C_gVZ" node="4_j0sPhAm_T" resolve="timeout" />
-            <node concept="2m1r4j" id="4_j0sPhAm_W" role="2C_gVu" />
-          </node>
-        </node>
-      </node>
+    </node>
+    <node concept="2smLJI" id="JHn_unRV$e" role="2smLJD">
+      <node concept="2m1r4j" id="JHn_unRV$i" role="2sfXcw" />
     </node>
   </node>
   <node concept="2Jqgb4" id="6nemK62JSIo">
@@ -346,17 +337,15 @@
         </node>
       </node>
     </node>
+    <node concept="2smLJI" id="JHn_unRV$_" role="2smLJD">
+      <node concept="2m1r4j" id="JHn_unRV$D" role="2sfXcw" />
+    </node>
   </node>
   <node concept="2Jqgb4" id="6HhgIFXTyQ2">
     <property role="TrG5h" value="Test160" />
     <property role="3uoZKU" value="rrr/Users/jetbrains/Documents/sample.wav" />
     <property role="1EJLKn" value="true" />
     <node concept="2C_Ik4" id="6HhgIFXTyQ3" role="2JqgbB">
-      <node concept="2C_I21" id="wr2MGcltI0" role="2C_I26">
-        <property role="3upAMh" value="" />
-        <ref role="2C_gVZ" node="6HhgIFXTyQ5" resolve="timeout" />
-        <node concept="1$pBvo" id="3BO6$VaHgDN" role="2C_gVu" />
-      </node>
       <node concept="2C_I21" id="6HhgIFXYxj0" role="2C_I26">
         <property role="3upAMh" value="/Users/jetbrains/Documents/Get.wav" />
         <ref role="2C_gVZ" node="6HhgIFXYxiR" resolve="Get Info" />
@@ -368,10 +357,6 @@
         <property role="3upAMh" value="/Users/jetbrains/Documents/menu1.wav" />
         <ref role="2C_gVZ" node="6HhgIFXYxiW" resolve="Menu" />
         <node concept="2C_Ik4" id="2mgRGhu34iD" role="2C_gVu">
-          <node concept="2C_I21" id="wr2MGd3qCx" role="2C_I26">
-            <ref role="2C_gVZ" node="2mgRGhu34iF" resolve="Timeout" />
-            <node concept="2m1r4j" id="3BO6$VaDZp0" role="2C_gVu" />
-          </node>
           <node concept="2C_I21" id="2mgRGhu34j1" role="2C_I26">
             <property role="3upAMh" value="Hang up" />
             <ref role="2C_gVZ" node="2mgRGhu34iE" resolve="HANGUP" />
@@ -392,10 +377,6 @@
             <property role="2C_Iks" value="2" />
             <property role="TrG5h" value="GetInfo" />
           </node>
-          <node concept="2C_Ik0" id="2mgRGhu34iF" role="2C_I24">
-            <property role="2C_Iks" value="X" />
-            <property role="TrG5h" value="Timeout" />
-          </node>
         </node>
       </node>
       <node concept="2C_Ik0" id="6HhgIFXYxiR" role="2C_I24">
@@ -406,10 +387,9 @@
         <property role="2C_Iks" value="2" />
         <property role="TrG5h" value="Menu" />
       </node>
-      <node concept="2C_Ik0" id="6HhgIFXTyQ5" role="2C_I24">
-        <property role="2C_Iks" value="X" />
-        <property role="TrG5h" value="timeout" />
-      </node>
+    </node>
+    <node concept="2smLJI" id="JHn_unRV$u" role="2smLJD">
+      <node concept="2m1r4j" id="JHn_unRV$y" role="2sfXcw" />
     </node>
   </node>
   <node concept="2Jqgb4" id="4_j0sPiGLCz">
@@ -427,15 +407,6 @@
         <property role="2C_Iks" value="3" />
         <property role="TrG5h" value="Others" />
       </node>
-      <node concept="2C_Ik0" id="4_j0sPiGLCA" role="2C_I24">
-        <property role="2C_Iks" value="X" />
-        <property role="TrG5h" value="Timeout" />
-      </node>
-      <node concept="2C_I21" id="4_j0sPiGLCB" role="2C_I26">
-        <property role="3upAMh" value="Timeout" />
-        <ref role="2C_gVZ" node="4_j0sPiGLCA" resolve="Timeout" />
-        <node concept="2m1r4j" id="4_j0sPiGLCD" role="2C_gVu" />
-      </node>
       <node concept="2C_I21" id="4_j0sPiIDXy" role="2C_I26">
         <ref role="2C_gVZ" node="4_j0sPiGLC_" resolve="Technical department" />
         <node concept="2C_Ik4" id="4_j0sPiIDXQ" role="2C_gVu">
@@ -446,15 +417,6 @@
           <node concept="2C_Ik0" id="4_j0sPiIDYb" role="2C_I24">
             <property role="2C_Iks" value="*" />
             <property role="TrG5h" value="Previous Menu" />
-          </node>
-          <node concept="2C_Ik0" id="4_j0sPiIDXS" role="2C_I24">
-            <property role="2C_Iks" value="X" />
-            <property role="TrG5h" value="Timeout" />
-          </node>
-          <node concept="2C_I21" id="4_j0sPiIDXT" role="2C_I26">
-            <property role="3upAMh" value="Timeout" />
-            <ref role="2C_gVZ" node="4_j0sPiIDXS" resolve="Timeout" />
-            <node concept="2m1r4j" id="4_j0sPiIDXV" role="2C_gVu" />
           </node>
           <node concept="2C_I21" id="4_j0sPiIDY2" role="2C_I26">
             <ref role="2C_gVZ" node="4_j0sPiIDXR" resolve="Hardware" />
@@ -480,6 +442,9 @@
           <property role="XmNhe" value="true" />
         </node>
       </node>
+    </node>
+    <node concept="2smLJI" id="JHn_unRVze" role="2smLJD">
+      <node concept="2m1r4j" id="JHn_unSHjE" role="2sfXcw" />
     </node>
   </node>
   <node concept="2Jqgb4" id="3BO6$VaLho1">
@@ -621,6 +586,69 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="2smLJI" id="JHn_unRV$n" role="2smLJD">
+      <node concept="2m1r4j" id="JHn_unRV$r" role="2sfXcw" />
+    </node>
+  </node>
+  <node concept="2Jqgb4" id="JHn_unFt4D">
+    <property role="TrG5h" value="JetBrains" />
+    <property role="1EJLKn" value="true" />
+    <node concept="2C_Ik4" id="JHn_unFt4E" role="2JqgbB">
+      <node concept="2C_Ik0" id="JHn_unFt4F" role="2C_I24">
+        <property role="2C_Iks" value="1" />
+        <property role="TrG5h" value="Sales" />
+      </node>
+      <node concept="2C_Ik0" id="JHn_unFt50" role="2C_I24">
+        <property role="2C_Iks" value="2" />
+        <property role="TrG5h" value="NetSuite" />
+      </node>
+      <node concept="2C_I21" id="JHn_unFt5f" role="2C_I26">
+        <ref role="2C_gVZ" node="JHn_unFt4F" resolve="Sales" />
+        <node concept="1$pBvr" id="JHn_unFt5H" role="2C_gVu">
+          <property role="XmNmt" value="true" />
+          <property role="2nBP4r" value="111111" />
+        </node>
+      </node>
+      <node concept="2C_I21" id="JHn_unFt65" role="2C_I26">
+        <ref role="2C_gVZ" node="JHn_unFt50" resolve="NetSuite" />
+        <node concept="2C_Ik4" id="JHn_unFt6j" role="2C_gVu">
+          <node concept="2C_Ik0" id="JHn_unFt6k" role="2C_I24">
+            <property role="2C_Iks" value="1" />
+            <property role="TrG5h" value="Call Martina" />
+          </node>
+          <node concept="2C_Ik0" id="JHn_unFt6v" role="2C_I24">
+            <property role="2C_Iks" value="2" />
+            <property role="TrG5h" value="Call Oscar" />
+          </node>
+          <node concept="2C_Ik0" id="JHn_unFt6z" role="2C_I24">
+            <property role="2C_Iks" value="3" />
+            <property role="TrG5h" value="Go back" />
+          </node>
+          <node concept="2C_I21" id="JHn_unFt6C" role="2C_I26">
+            <ref role="2C_gVZ" node="JHn_unFt6k" resolve="Call Martina" />
+            <node concept="1$pBvr" id="JHn_unFt6K" role="2C_gVu">
+              <property role="XmNmt" value="true" />
+              <property role="2nBP4r" value="22222" />
+            </node>
+          </node>
+          <node concept="2C_I21" id="JHn_unFt6N" role="2C_I26">
+            <ref role="2C_gVZ" node="JHn_unFt6v" resolve="Call Oscar" />
+            <node concept="1$pBvr" id="JHn_unFt6X" role="2C_gVu">
+              <property role="XmNmt" value="true" />
+              <property role="2nBP4r" value="3333" />
+            </node>
+          </node>
+          <node concept="2C_I21" id="JHn_unFt70" role="2C_I26">
+            <ref role="2C_gVZ" node="JHn_unFt6z" resolve="Go back" />
+            <node concept="1$pBvp" id="JHn_unFt7c" role="2C_gVu" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2smLJI" id="JHn_unJkpP" role="2smLJD">
+      <property role="2smLJF" value="5" />
+      <node concept="2m1r4j" id="JHn_unRV$l" role="2sfXcw" />
     </node>
   </node>
 </model>
