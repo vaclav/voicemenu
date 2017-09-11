@@ -86,7 +86,7 @@ public class Main__1 implements ActionListener {
     GetInfo_rwbd_b0c0.playback = "get Info";
     GetInfo_rwbd_b0c0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("022", GetInfo_rwbd_b0c0);
-    GetInfo_rwbd_b0c0.setAction("record", false);
+    GetInfo_rwbd_b0c0.setAction("record", true);
     GetInfo_rwbd_b0c0.childs = new ArrayList<Event>();
     Menu_rwbd_b0.childs = new ArrayList<Event>();
     Menu_rwbd_b0.childs.add(HangUp_rwbd_a0c0);

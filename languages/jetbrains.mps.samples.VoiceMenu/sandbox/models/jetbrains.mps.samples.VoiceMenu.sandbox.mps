@@ -353,16 +353,15 @@
     <property role="TrG5h" value="Test" />
     <property role="3uoZKU" value="/Users/jetbrains/Documents/sample.wav" />
     <node concept="2C_Ik4" id="6HhgIFXTyQ3" role="2JqgbB">
-      <node concept="2C_I21" id="3BO6$Vadbql" role="2C_I26">
-        <property role="3upAMh" value="/Users/jetbrains/Documents/repeat1.wav" />
+      <node concept="2C_I21" id="wr2MGcltI0" role="2C_I26">
         <ref role="2C_gVZ" node="6HhgIFXTyQ5" resolve="timeout" />
-        <node concept="2m1r4j" id="60WteoFXZXD" role="2C_gVu" />
+        <node concept="X09Yy" id="wr2MGcltIx" role="2C_gVu" />
       </node>
       <node concept="2C_I21" id="6HhgIFXYxj0" role="2C_I26">
         <property role="3upAMh" value="/Users/jetbrains/Documents/Get.wav" />
         <ref role="2C_gVZ" node="6HhgIFXYxiR" resolve="Get Info" />
-        <node concept="1$pBvo" id="60WteoG74Eg" role="2C_gVu">
-          <property role="XmNhe" value="false" />
+        <node concept="1$pBvo" id="wr2MGct3$O" role="2C_gVu">
+          <property role="XmNhe" value="true" />
         </node>
       </node>
       <node concept="2C_I21" id="6HhgIFY09IU" role="2C_I26">
@@ -395,7 +394,7 @@
             <property role="3upAMh" value="get Info" />
             <ref role="2C_gVZ" node="2mgRGhu34iP" resolve="GetInfo" />
             <node concept="X09Yf" id="3BO6$Vadig4" role="2C_gVu">
-              <property role="XmNjE" value="true" />
+              <property role="XmNjE" value="false" />
             </node>
           </node>
         </node>
@@ -457,8 +456,8 @@
           <node concept="2C_I21" id="1Dc9HeI7QXL" role="2C_I26">
             <property role="3upAMh" value="Timeout" />
             <ref role="2C_gVZ" node="1Dc9HeI7QXK" resolve="timeout" />
-            <node concept="X09Yf" id="1Dc9HeI7QY3" role="2C_gVu">
-              <property role="XmNjE" value="true" />
+            <node concept="1$pBvo" id="wr2MGcj3Vo" role="2C_gVu">
+              <property role="XmNhe" value="true" />
             </node>
           </node>
           <node concept="2C_I21" id="1Dc9HeI7QY6" role="2C_I26">
@@ -554,7 +553,7 @@
           </node>
           <node concept="2C_I21" id="1Dc9HeI9A3e" role="2C_I26">
             <ref role="2C_gVZ" node="1Dc9HeI7QZt" resolve="Previous Menu" />
-            <node concept="1$pBvp" id="1Dc9HeI9A3A" role="2C_gVu" />
+            <node concept="2m1r4j" id="wr2MGclp79" role="2C_gVu" />
           </node>
         </node>
       </node>
