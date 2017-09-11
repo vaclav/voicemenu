@@ -50,7 +50,7 @@ public class Main__4 implements ActionListener {
     Get_Info_o0tsw_a0.setGreeting("");
     Get_Info_o0tsw_a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("01", Get_Info_o0tsw_a0);
-    Get_Info_o0tsw_a0.setAction("getInfo", false);
+    Get_Info_o0tsw_a0.setAction("hangUp", true);
     Get_Info_o0tsw_a0.childs = new ArrayList<Event>();
     Event Menu_o0tsw_b0 = new Event("Menu", "2", 16);
     Menu_o0tsw_b0.isFinal = false;

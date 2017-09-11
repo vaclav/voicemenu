@@ -22,7 +22,6 @@
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="8ofa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.applet(JDK/)" />
     <import index="higz" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.sound.sampled(JDK/)" />
-    <import index="oici" ref="r:d8d37b74-a8e1-4a57-a2ee-4a996f4ba158(JavaVoiceMenu.runtime)" />
     <import index="jaqa" ref="b387285c-3448-452c-b3bb-a3f8de8eaf08/java:com.sun.tools.classfile(JDK-tools/)" />
   </imports>
   <registry>

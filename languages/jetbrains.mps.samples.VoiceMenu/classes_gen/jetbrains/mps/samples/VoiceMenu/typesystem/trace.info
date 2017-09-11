@@ -763,8 +763,8 @@
   </root>
   <root nodeRef="r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)/6934546058172469236">
     <file name="CheckEmptyACtivity_NonTypesystemRule.java">
-      <node id="6934546058172489238" at="24,7,25,60" concept="6" />
-      <node id="6934546058172489238" at="25,60,26,243" concept="6" />
+      <node id="584072856212762008" at="24,7,25,60" concept="6" />
+      <node id="584072856212762008" at="25,60,26,240" concept="6" />
       <node id="6934546058172469236" at="30,50,31,158" concept="7" />
       <node id="6934546058172469236" at="33,68,34,102" concept="7" />
       <node id="6934546058172469236" at="36,30,37,17" concept="7" />
@@ -772,7 +772,7 @@
       <node id="6934546058172469236" at="30,0,33,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="6934546058172469236" at="33,0,36,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="6934546058172469236" at="36,0,39,0" concept="5" trace="overrides#()Z" />
-      <node id="6934546058172489238" at="23,680,27,7" concept="0" />
+      <node id="584072856212762008" at="23,680,27,7" concept="0" />
       <node id="6934546058172469248" at="22,121,28,5" concept="4" />
       <node id="6934546058172469236" at="22,0,30,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
       <scope id="6934546058172469236" at="20,49,20,49" />
@@ -780,9 +780,9 @@
       <scope id="6934546058172469236" at="33,68,34,102" />
       <scope id="6934546058172469236" at="36,30,37,17" />
       <scope id="6934546058172469236" at="20,0,22,0" />
-      <scope id="6934546058172489238" at="24,7,26,243">
-        <var name="_reporter_2309309498" id="6934546058172489238" />
-        <var name="errorTarget" id="6934546058172489238" />
+      <scope id="584072856212762008" at="24,7,26,240">
+        <var name="_reporter_2309309498" id="584072856212762008" />
+        <var name="errorTarget" id="584072856212762008" />
       </scope>
       <scope id="6934546058172469236" at="30,0,33,0" />
       <scope id="6934546058172469236" at="33,0,36,0">

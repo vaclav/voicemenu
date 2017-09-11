@@ -23,7 +23,7 @@ public class CheckEmptyACtivity_NonTypesystemRule extends AbstractNonTypesystemR
     if ((Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getChildren(activity), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d133997fdc5L, "jetbrains.mps.samples.VoiceMenu.structure.Action"))).isEmpty() && Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getChildren(activity), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu"))).isEmpty()) || (SLinkOperations.getTarget(activity, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")) == null)) {
       {
         MessageTarget errorTarget = new NodeMessageTarget();
-        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(activity, "Incomplete Activity", "r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)", "6934546058172489238", null, errorTarget);
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportWarning(activity, "Incomplete Activity", "r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)", "584072856212762008", null, errorTarget);
       }
     }
   }

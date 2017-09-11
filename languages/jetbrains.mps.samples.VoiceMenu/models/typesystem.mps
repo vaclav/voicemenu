@@ -1839,7 +1839,7 @@
     </node>
   </node>
   <node concept="18kY7G" id="60WteoFX8ZO">
-    <property role="3GE5qa" value="QuickFixes" />
+    <property role="3GE5qa" value="" />
     <property role="TrG5h" value="CheckEmptyACtivity" />
     <node concept="3clFbS" id="60WteoFX8ZP" role="18ibNy">
       <node concept="3clFbJ" id="60WteoFX900" role="3cqZAp">
@@ -1893,11 +1893,11 @@
           </node>
         </node>
         <node concept="3clFbS" id="60WteoFX902" role="3clFbx">
-          <node concept="2MkqsV" id="60WteoFXdSm" role="3cqZAp">
-            <node concept="Xl_RD" id="60WteoFXdSy" role="2MkJ7o">
+          <node concept="a7r0C" id="wr2MGdwAQo" role="3cqZAp">
+            <node concept="Xl_RD" id="wr2MGdwAQq" role="a7wSD">
               <property role="Xl_RC" value="Incomplete Activity" />
             </node>
-            <node concept="1YBJjd" id="60WteoFXdTN" role="2OEOjV">
+            <node concept="1YBJjd" id="wr2MGdwAQr" role="2OEOjV">
               <ref role="1YBMHb" node="60WteoFX8ZR" resolve="activity" />
             </node>
           </node>

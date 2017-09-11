@@ -982,7 +982,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="4H" role="2OqNvi">
-                        <ref role="37wK5l" to="u78q:~TypeCheckingContext.reportTypeError(org.jetbrains.mps.openapi.model.SNode,java.lang.String,java.lang.String,java.lang.String,jetbrains.mps.errors.QuickFixProvider,jetbrains.mps.errors.messageTargets.MessageTarget):jetbrains.mps.errors.IErrorReporter" resolve="reportTypeError" />
+                        <ref role="37wK5l" to="u78q:~TypeCheckingContext.reportWarning(org.jetbrains.mps.openapi.model.SNode,java.lang.String,java.lang.String,java.lang.String,jetbrains.mps.errors.QuickFixProvider,jetbrains.mps.errors.messageTargets.MessageTarget):jetbrains.mps.errors.IErrorReporter" resolve="reportWarning" />
                         <node concept="37vLTw" id="4J" role="37wK5m">
                           <ref role="3cqZAo" node="3Y" resolve="activity" />
                         </node>
@@ -993,7 +993,7 @@
                           <property role="Xl_RC" value="r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)" />
                         </node>
                         <node concept="Xl_RD" id="4M" role="37wK5m">
-                          <property role="Xl_RC" value="6934546058172489238" />
+                          <property role="Xl_RC" value="584072856212762008" />
                         </node>
                         <node concept="10Nm6u" id="4N" role="37wK5m" />
                         <node concept="37vLTw" id="4O" role="37wK5m">
@@ -1005,7 +1005,7 @@
                 </node>
               </node>
               <node concept="6wLe0" id="4y" role="lGtFl">
-                <property role="6wLej" value="6934546058172489238" />
+                <property role="6wLej" value="584072856212762008" />
                 <property role="6wLeW" value="r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)" />
               </node>
             </node>
