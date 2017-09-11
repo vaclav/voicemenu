@@ -784,6 +784,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
         @Override
         public void execute(@NotNull String pattern) {
           SPropertyOperations.set(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"), null);
+          SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), "*" + CellIdManager.createPropertyId("trigger"));
         }
 
         @Override
@@ -792,12 +793,12 @@ public class Event_TransformationMenu extends TransformationMenuBase {
             public boolean accept(SNode it) {
               return eq_8shh52_a0a0a0a0a0a0a8c6l_0(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
             }
-          }) || !(((eq_8shh52_a0a0a0a0a0a0a0a0a0a0a8c6l(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "1")) || (eq_8shh52_a0a0a0a0a0a0a0a0a0a0a8c6l_0(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "2")) || (eq_8shh52_a0a0a0a0a0a0a0a0a0a0i2g11(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "3")) || (eq_8shh52_a0a0a0a0a0a0a0a0a0a8c6l(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "4")) || (eq_8shh52_a0a0a0a0a0a0a0a0a0i2g11(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "5")) || (eq_8shh52_a0a0a0a0a0a0a0a0a8c6l(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "6")) || (eq_8shh52_a0a0a0a0a0a0a0a0i2g11(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "7")) || (eq_8shh52_a0a0a0a0a0a0a0a8c6l(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "8")) || (eq_8shh52_a0a0a0a0a0a0a0i2g11(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "9")) || (eq_8shh52_a0a0a0a0a0a0a8c6l(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "*")) || (eq_8shh52_a0a0a0a0a0a0i2g11(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "+")) || eq_8shh52_a0a0a0a0a0i2g11(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "#") || eq_8shh52_a0a0a0a0a8c6l(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "0") || (eq_8shh52_a0a0a0a0a0i2g11_1(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "X") && eq_8shh52_a0a0a0a0a0i2g11_0(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).toLowerCase(), "timeout"))));
+          }) || !(((eq_8shh52_a0a0a0a0a0a0a0a0a0a0a0i2g11(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "1")) || (eq_8shh52_a0a0a0a0a0a0a0a0a0a0a0i2g11_0(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "2")) || (eq_8shh52_a0a0a0a0a0a0a0a0a0a0a8c6l(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "3")) || (eq_8shh52_a0a0a0a0a0a0a0a0a0a0i2g11(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "4")) || (eq_8shh52_a0a0a0a0a0a0a0a0a0a8c6l(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "5")) || (eq_8shh52_a0a0a0a0a0a0a0a0a0i2g11(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "6")) || (eq_8shh52_a0a0a0a0a0a0a0a0a8c6l(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "7")) || (eq_8shh52_a0a0a0a0a0a0a0a0i2g11(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "8")) || (eq_8shh52_a0a0a0a0a0a0a0a8c6l(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "9")) || (eq_8shh52_a0a0a0a0a0a0a0i2g11(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "*")) || (eq_8shh52_a0a0a0a0a0a0a8c6l(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "+")) || eq_8shh52_a0a0a0a0a0a8c6l(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "#") || eq_8shh52_a0a0a0a0a0i2g11_1(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "0") || isEmptyString(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"))) || (eq_8shh52_a0a0a0a0a0i2g11_0(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "X") && eq_8shh52_a0a0a0a0a0i2g11(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).toLowerCase(), "timeout"))));
         }
 
         @Override
         public IconResource getIcon() {
-          return null;
+          return IconContainer.RESOURCE_a0a01c6l;
         }
         @Override
         public String getTooltipText() {
@@ -869,12 +870,12 @@ public class Event_TransformationMenu extends TransformationMenuBase {
             public boolean accept(SNode it) {
               return eq_8shh52_a0a0a0a0a0a0a8c7l(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
             }
-          }) || !(((eq_8shh52_a0a0a0a0a0a0a0a0a0a0a8c7l(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "1")) || (eq_8shh52_a0a0a0a0a0a0a0a0a0a0a8c7l_0(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "2")) || (eq_8shh52_a0a0a0a0a0a0a0a0a0a0i2h11(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "3")) || (eq_8shh52_a0a0a0a0a0a0a0a0a0a8c7l(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "4")) || (eq_8shh52_a0a0a0a0a0a0a0a0a0i2h11(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "5")) || (eq_8shh52_a0a0a0a0a0a0a0a0a8c7l(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "6")) || (eq_8shh52_a0a0a0a0a0a0a0a0i2h11(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "7")) || (eq_8shh52_a0a0a0a0a0a0a0a8c7l(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "8")) || (eq_8shh52_a0a0a0a0a0a0a0i2h11(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "9")) || (eq_8shh52_a0a0a0a0a0a0a8c7l_0(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "*")) || (eq_8shh52_a0a0a0a0a0a0i2h11(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "+")) || eq_8shh52_a0a0a0a0a0i2h11(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "#") || eq_8shh52_a0a0a0a0a8c7l(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "0") || (eq_8shh52_a0a0a0a0a0i2h11_1(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "X") && eq_8shh52_a0a0a0a0a0i2h11_0(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).toLowerCase(), "timeout"))));
+          }) || !(((eq_8shh52_a0a0a0a0a0a0a0a0a0a0a0i2h11(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "1")) || (eq_8shh52_a0a0a0a0a0a0a0a0a0a0a0i2h11_0(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "2")) || (eq_8shh52_a0a0a0a0a0a0a0a0a0a0a8c7l(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "3")) || (eq_8shh52_a0a0a0a0a0a0a0a0a0a0i2h11(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "4")) || (eq_8shh52_a0a0a0a0a0a0a0a0a0a8c7l(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "5")) || (eq_8shh52_a0a0a0a0a0a0a0a0a0i2h11(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "6")) || (eq_8shh52_a0a0a0a0a0a0a0a0a8c7l(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "7")) || (eq_8shh52_a0a0a0a0a0a0a0a0i2h11(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "8")) || (eq_8shh52_a0a0a0a0a0a0a0a8c7l(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "9")) || (eq_8shh52_a0a0a0a0a0a0a0i2h11(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "*")) || (eq_8shh52_a0a0a0a0a0a0a8c7l_0(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "+")) || eq_8shh52_a0a0a0a0a0a8c7l(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "#") || eq_8shh52_a0a0a0a0a0i2h11_1(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "0") || isEmptyString(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"))) || (eq_8shh52_a0a0a0a0a0i2h11_0(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "X") && eq_8shh52_a0a0a0a0a0i2h11(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).toLowerCase(), "timeout"))));
         }
 
         @Override
         public IconResource getIcon() {
-          return null;
+          return IconContainer.RESOURCE_a0a01c7l;
         }
         @Override
         public String getTooltipText() {
@@ -1444,10 +1445,19 @@ public class Event_TransformationMenu extends TransformationMenuBase {
   private static boolean isNotEmptyString(String str) {
     return str != null && str.length() > 0;
   }
-  private static boolean eq_8shh52_a0a0a0a0a0a0a0a0a0a0a8c6l(Object a, Object b) {
+  private static boolean eq_8shh52_a0a0a0a0a0i2g11(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
-  private static boolean eq_8shh52_a0a0a0a0a0a0a0a0a0a0a8c6l_0(Object a, Object b) {
+  private static boolean eq_8shh52_a0a0a0a0a0i2g11_0(Object a, Object b) {
+    return (a != null ? a.equals(b) : a == b);
+  }
+  private static boolean eq_8shh52_a0a0a0a0a0a0a0a0a0a0a0i2g11(Object a, Object b) {
+    return (a != null ? a.equals(b) : a == b);
+  }
+  private static boolean eq_8shh52_a0a0a0a0a0a0a0a0a0a0a0i2g11_0(Object a, Object b) {
+    return (a != null ? a.equals(b) : a == b);
+  }
+  private static boolean eq_8shh52_a0a0a0a0a0a0a0a0a0a0a8c6l(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
   private static boolean eq_8shh52_a0a0a0a0a0a0a0a0a0a0i2g11(Object a, Object b) {
@@ -1474,16 +1484,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
   private static boolean eq_8shh52_a0a0a0a0a0a0a8c6l(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
-  private static boolean eq_8shh52_a0a0a0a0a0a0i2g11(Object a, Object b) {
-    return (a != null ? a.equals(b) : a == b);
-  }
-  private static boolean eq_8shh52_a0a0a0a0a0i2g11(Object a, Object b) {
-    return (a != null ? a.equals(b) : a == b);
-  }
-  private static boolean eq_8shh52_a0a0a0a0a8c6l(Object a, Object b) {
-    return (a != null ? a.equals(b) : a == b);
-  }
-  private static boolean eq_8shh52_a0a0a0a0a0i2g11_0(Object a, Object b) {
+  private static boolean eq_8shh52_a0a0a0a0a0a8c6l(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
   private static boolean eq_8shh52_a0a0a0a0a0i2g11_1(Object a, Object b) {
@@ -1495,10 +1496,19 @@ public class Event_TransformationMenu extends TransformationMenuBase {
   private static boolean eq_8shh52_a0a0a0a0a0a0a8c7l(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
-  private static boolean eq_8shh52_a0a0a0a0a0a0a0a0a0a0a8c7l(Object a, Object b) {
+  private static boolean eq_8shh52_a0a0a0a0a0i2h11(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
-  private static boolean eq_8shh52_a0a0a0a0a0a0a0a0a0a0a8c7l_0(Object a, Object b) {
+  private static boolean eq_8shh52_a0a0a0a0a0i2h11_0(Object a, Object b) {
+    return (a != null ? a.equals(b) : a == b);
+  }
+  private static boolean eq_8shh52_a0a0a0a0a0a0a0a0a0a0a0i2h11(Object a, Object b) {
+    return (a != null ? a.equals(b) : a == b);
+  }
+  private static boolean eq_8shh52_a0a0a0a0a0a0a0a0a0a0a0i2h11_0(Object a, Object b) {
+    return (a != null ? a.equals(b) : a == b);
+  }
+  private static boolean eq_8shh52_a0a0a0a0a0a0a0a0a0a0a8c7l(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
   private static boolean eq_8shh52_a0a0a0a0a0a0a0a0a0a0i2h11(Object a, Object b) {
@@ -1525,16 +1535,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
   private static boolean eq_8shh52_a0a0a0a0a0a0a8c7l_0(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
-  private static boolean eq_8shh52_a0a0a0a0a0a0i2h11(Object a, Object b) {
-    return (a != null ? a.equals(b) : a == b);
-  }
-  private static boolean eq_8shh52_a0a0a0a0a0i2h11(Object a, Object b) {
-    return (a != null ? a.equals(b) : a == b);
-  }
-  private static boolean eq_8shh52_a0a0a0a0a8c7l(Object a, Object b) {
-    return (a != null ? a.equals(b) : a == b);
-  }
-  private static boolean eq_8shh52_a0a0a0a0a0i2h11_0(Object a, Object b) {
+  private static boolean eq_8shh52_a0a0a0a0a0a8c7l(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
   private static boolean eq_8shh52_a0a0a0a0a0i2h11_1(Object a, Object b) {
