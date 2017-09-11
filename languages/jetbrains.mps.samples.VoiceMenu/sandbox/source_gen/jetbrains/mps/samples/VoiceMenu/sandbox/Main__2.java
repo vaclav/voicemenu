@@ -58,7 +58,7 @@ public class Main__2 implements ActionListener {
     timeout_9upjpn_d0b0.playback = "Timeout";
     timeout_9upjpn_d0b0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("01X", timeout_9upjpn_d0b0);
-    timeout_9upjpn_d0b0.setAction("record", true);
+    timeout_9upjpn_d0b0.setAction("getInfo", true);
     timeout_9upjpn_d0b0.childs = new ArrayList<Event>();
     Event Call_department_9upjpn_a0b0 = new Event("Call department", "1", 16);
     Call_department_9upjpn_a0b0.isFinal = false;
@@ -160,7 +160,7 @@ public class Main__2 implements ActionListener {
     Previous_Menu_9upjpn_c0c0.setGreeting("");
     Previous_Menu_9upjpn_c0c0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("02#", Previous_Menu_9upjpn_c0c0);
-    Previous_Menu_9upjpn_c0c0.setAction("back", false);
+    Previous_Menu_9upjpn_c0c0.setAction("repeat", false);
     Previous_Menu_9upjpn_c0c0.childs = new ArrayList<Event>();
     General_Questions_9upjpn_b0.childs = new ArrayList<Event>();
     General_Questions_9upjpn_b0.childs.add(Leave_us_a_message_9upjpn_a0c0);

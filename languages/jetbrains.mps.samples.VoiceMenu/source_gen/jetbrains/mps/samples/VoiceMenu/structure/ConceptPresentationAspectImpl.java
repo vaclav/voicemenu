@@ -114,7 +114,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.ReplayOptions:
         if (props_ReplayOptions == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("ReplayOptions");
+          cpb.rawPresentation("Replay");
           props_ReplayOptions = cpb.create();
         }
         return props_ReplayOptions;

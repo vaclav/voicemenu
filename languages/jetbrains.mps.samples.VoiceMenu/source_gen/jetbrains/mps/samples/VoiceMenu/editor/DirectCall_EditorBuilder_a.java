@@ -137,6 +137,9 @@ import jetbrains.mps.nodeEditor.EditorManager;
   private EditorCell createConstant_stlc2q_g0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "  ");
     editorCell.setCellId("Constant_stlc2q_g0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, false);
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }

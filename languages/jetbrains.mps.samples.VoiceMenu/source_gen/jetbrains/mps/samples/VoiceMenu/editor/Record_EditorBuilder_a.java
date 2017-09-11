@@ -106,6 +106,9 @@ import jetbrains.mps.nodeEditor.EditorManager;
   private EditorCell createConstant_n4bxxp_d0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "  ");
     editorCell.setCellId("Constant_n4bxxp_d0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, false);
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }

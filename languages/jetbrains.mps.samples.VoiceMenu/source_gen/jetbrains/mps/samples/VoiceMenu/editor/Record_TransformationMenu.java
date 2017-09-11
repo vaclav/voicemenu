@@ -29,6 +29,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.editor.runtime.selection.SelectionUtil;
 import jetbrains.mps.openapi.editor.selection.SelectionManager;
 import jetbrains.mps.smodel.runtime.IconResource;
+import jetbrains.mps.editor.runtime.cells.CellIdManager;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
@@ -253,6 +254,9 @@ public class Record_TransformationMenu extends TransformationMenuBase {
         @Override
         public void execute(@NotNull String pattern) {
           SPropertyOperations.set(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, 0x420d89797f56bd93L, "isFinal"), "" + (false));
+          SelectionUtil.selectNode(_context.getEditorContext(), _context.getNode());
+          SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), "*" + CellIdManager.createPropertyId("isFinal"));
+
         }
 
         @Override
@@ -304,6 +308,9 @@ public class Record_TransformationMenu extends TransformationMenuBase {
         @Override
         public void execute(@NotNull String pattern) {
           SPropertyOperations.set(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, 0x420d89797f56bd93L, "isFinal"), "" + (true));
+          SelectionUtil.selectNode(_context.getEditorContext(), _context.getNode());
+          SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), "*" + CellIdManager.createPropertyId("isFinal"));
+
         }
 
         @Override
