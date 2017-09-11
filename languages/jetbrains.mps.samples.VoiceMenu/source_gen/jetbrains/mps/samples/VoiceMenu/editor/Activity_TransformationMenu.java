@@ -559,10 +559,14 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
           ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"))).addElement(newEvent);
         }
 
+        @Override
+        public boolean canExecute(@NotNull String pattern) {
+          return !((eq_rgk9zw_a0a0a0i2j9(SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "X")));
+        }
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c9j_1;
+          return IconContainer.RESOURCE_a0a01c9j_0;
         }
         @Override
         public String getTooltipText() {
@@ -732,5 +736,8 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
   }
   private static boolean isEmptyString(String str) {
     return str == null || str.length() == 0;
+  }
+  private static boolean eq_rgk9zw_a0a0a0i2j9(Object a, Object b) {
+    return (a != null ? a.equals(b) : a == b);
   }
 }

@@ -47,7 +47,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
       case 10:
         return Collections.<ConceptEditor>singletonList(new Record_Editor());
       case 11:
-        return Collections.<ConceptEditor>singletonList(new ReplayOptions_Editor());
+        return Collections.<ConceptEditor>singletonList(new Replay_Editor());
       case 12:
         return Collections.<ConceptEditor>singletonList(new WorkSpace_Editor());
       default:
@@ -85,7 +85,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
       case 9:
         return Collections.<TransformationMenu>singletonList(new Record_TransformationMenu());
       case 10:
-        return Collections.<TransformationMenu>singletonList(new ReplayOptions_TransformationMenu());
+        return Collections.<TransformationMenu>singletonList(new Replay_TransformationMenu());
       case 11:
         return Collections.<TransformationMenu>singletonList(new WorkSpace_TransformationMenu());
       default:

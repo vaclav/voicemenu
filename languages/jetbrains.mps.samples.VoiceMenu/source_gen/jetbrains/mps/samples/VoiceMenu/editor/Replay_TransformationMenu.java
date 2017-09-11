@@ -35,7 +35,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 
-public class ReplayOptions_TransformationMenu extends TransformationMenuBase {
+public class Replay_TransformationMenu extends TransformationMenuBase {
   private final Set<String> myLocations = SetSequence.fromSetAndArray(new HashSet<String>(), MenuLocations.CONTEXT_ACTIONS_TOOL, MenuLocations.CONTEXT_ACTIONS_TOOL, MenuLocations.CONTEXT_ACTIONS_TOOL);
   @Override
   public boolean isApplicableToLocation(@NotNull String location) {
@@ -46,7 +46,7 @@ public class ReplayOptions_TransformationMenu extends TransformationMenuBase {
   @Override
   public List<TransformationMenuItem> createMenuItems(@NotNull TransformationMenuContext context) {
     context.getEditorMenuTrace().pushTraceInfo();
-    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default transformation menu for " + "ReplayOptions", new SNodePointer("r:7c1e5bbb-2d18-4cf3-a11d-502be6b13261(jetbrains.mps.samples.VoiceMenu.editor)", "7733035612212048759")));
+    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default transformation menu for " + "Replay", new SNodePointer("r:7c1e5bbb-2d18-4cf3-a11d-502be6b13261(jetbrains.mps.samples.VoiceMenu.editor)", "7733035612212048759")));
     try {
       return super.createMenuItems(context);
     } finally {
@@ -59,18 +59,18 @@ public class ReplayOptions_TransformationMenu extends TransformationMenuBase {
   protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts(TransformationMenuContext _context) {
     List<MenuPart<TransformationMenuItem, TransformationMenuContext>> result = new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>();
     if (ListSequence.fromListAndArray(new ArrayList<String>(), MenuLocations.CONTEXT_ACTIONS_TOOL).contains(_context.getMenuLocation())) {
-      result.add(new ReplayOptions_TransformationMenu.TMP_SubMenu_feau08_a0());
+      result.add(new Replay_TransformationMenu.TMP_SubMenu_wgaisw_a0());
     }
     if (ListSequence.fromListAndArray(new ArrayList<String>(), MenuLocations.CONTEXT_ACTIONS_TOOL).contains(_context.getMenuLocation())) {
-      result.add(new ReplayOptions_TransformationMenu.TMP_SubMenu_feau08_a1());
+      result.add(new Replay_TransformationMenu.TMP_SubMenu_wgaisw_a1());
     }
     if (ListSequence.fromListAndArray(new ArrayList<String>(), MenuLocations.CONTEXT_ACTIONS_TOOL).contains(_context.getMenuLocation())) {
-      result.add(new ReplayOptions_TransformationMenu.TMP_SubMenu_feau08_a2());
+      result.add(new Replay_TransformationMenu.TMP_SubMenu_wgaisw_a2());
     }
     return result;
   }
 
-  public class TMP_SubMenu_feau08_a0 extends SubMenuMenuTransformationMenuPart {
+  public class TMP_SubMenu_wgaisw_a0 extends SubMenuMenuTransformationMenuPart {
     @Override
     protected String getText(TransformationMenuContext _context) {
       return "Settings";
@@ -91,12 +91,12 @@ public class ReplayOptions_TransformationMenu extends TransformationMenuBase {
 
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new ReplayOptions_TransformationMenu.TMP_SubMenu_feau08_a0.TMP_Action_feau08_a0a(), new ReplayOptions_TransformationMenu.TMP_SubMenu_feau08_a0.TMP_Action_feau08_b0a());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Replay_TransformationMenu.TMP_SubMenu_wgaisw_a0.TMP_Action_wgaisw_a0a(), new Replay_TransformationMenu.TMP_SubMenu_wgaisw_a0.TMP_Action_wgaisw_b0a());
     }
-    private class TMP_Action_feau08_a0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_wgaisw_a0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new ReplayOptions_TransformationMenu.TMP_SubMenu_feau08_a0.TMP_Action_feau08_a0a.Item(context);
+        return new Replay_TransformationMenu.TMP_SubMenu_wgaisw_a0.TMP_Action_wgaisw_a0a.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {
@@ -145,10 +145,10 @@ public class ReplayOptions_TransformationMenu extends TransformationMenuBase {
       }
 
     }
-    private class TMP_Action_feau08_b0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_wgaisw_b0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new ReplayOptions_TransformationMenu.TMP_SubMenu_feau08_a0.TMP_Action_feau08_b0a.Item(context);
+        return new Replay_TransformationMenu.TMP_SubMenu_wgaisw_a0.TMP_Action_wgaisw_b0a.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {
@@ -198,7 +198,7 @@ public class ReplayOptions_TransformationMenu extends TransformationMenuBase {
 
     }
   }
-  public class TMP_SubMenu_feau08_a1 extends SubMenuMenuTransformationMenuPart {
+  public class TMP_SubMenu_wgaisw_a1 extends SubMenuMenuTransformationMenuPart {
     @Override
     protected String getText(TransformationMenuContext _context) {
       return "Options";
@@ -219,12 +219,12 @@ public class ReplayOptions_TransformationMenu extends TransformationMenuBase {
 
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new ReplayOptions_TransformationMenu.TMP_SubMenu_feau08_a1.TMP_Action_feau08_a0b(), new ReplayOptions_TransformationMenu.TMP_SubMenu_feau08_a1.TMP_Action_feau08_b0b(), new ReplayOptions_TransformationMenu.TMP_SubMenu_feau08_a1.TMP_Action_feau08_c0b());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Replay_TransformationMenu.TMP_SubMenu_wgaisw_a1.TMP_Action_wgaisw_a0b(), new Replay_TransformationMenu.TMP_SubMenu_wgaisw_a1.TMP_Action_wgaisw_b0b(), new Replay_TransformationMenu.TMP_SubMenu_wgaisw_a1.TMP_Action_wgaisw_c0b());
     }
-    private class TMP_Action_feau08_a0b extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_wgaisw_a0b extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new ReplayOptions_TransformationMenu.TMP_SubMenu_feau08_a1.TMP_Action_feau08_a0b.Item(context);
+        return new Replay_TransformationMenu.TMP_SubMenu_wgaisw_a1.TMP_Action_wgaisw_a0b.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {
@@ -269,10 +269,10 @@ public class ReplayOptions_TransformationMenu extends TransformationMenuBase {
       }
 
     }
-    private class TMP_Action_feau08_b0b extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_wgaisw_b0b extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new ReplayOptions_TransformationMenu.TMP_SubMenu_feau08_a1.TMP_Action_feau08_b0b.Item(context);
+        return new Replay_TransformationMenu.TMP_SubMenu_wgaisw_a1.TMP_Action_wgaisw_b0b.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {
@@ -317,10 +317,10 @@ public class ReplayOptions_TransformationMenu extends TransformationMenuBase {
       }
 
     }
-    private class TMP_Action_feau08_c0b extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_wgaisw_c0b extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new ReplayOptions_TransformationMenu.TMP_SubMenu_feau08_a1.TMP_Action_feau08_c0b.Item(context);
+        return new Replay_TransformationMenu.TMP_SubMenu_wgaisw_a1.TMP_Action_wgaisw_c0b.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {
@@ -372,7 +372,7 @@ public class ReplayOptions_TransformationMenu extends TransformationMenuBase {
 
     }
   }
-  public class TMP_SubMenu_feau08_a2 extends SubMenuMenuTransformationMenuPart {
+  public class TMP_SubMenu_wgaisw_a2 extends SubMenuMenuTransformationMenuPart {
     @Override
     protected String getText(TransformationMenuContext _context) {
       return "Actions";
@@ -393,12 +393,12 @@ public class ReplayOptions_TransformationMenu extends TransformationMenuBase {
 
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new ReplayOptions_TransformationMenu.TMP_SubMenu_feau08_a2.TMP_Action_feau08_a0c(), new ReplayOptions_TransformationMenu.TMP_SubMenu_feau08_a2.TMP_Action_feau08_b0c(), new ReplayOptions_TransformationMenu.TMP_SubMenu_feau08_a2.TMP_Action_feau08_c0c(), new ReplayOptions_TransformationMenu.TMP_SubMenu_feau08_a2.TMP_Action_feau08_d0c(), new ReplayOptions_TransformationMenu.TMP_SubMenu_feau08_a2.TMP_Action_feau08_e0c(), new ReplayOptions_TransformationMenu.TMP_SubMenu_feau08_a2.TMP_Action_feau08_f0c(), new ReplayOptions_TransformationMenu.TMP_SubMenu_feau08_a2.TMP_Action_feau08_g0c());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Replay_TransformationMenu.TMP_SubMenu_wgaisw_a2.TMP_Action_wgaisw_a0c(), new Replay_TransformationMenu.TMP_SubMenu_wgaisw_a2.TMP_Action_wgaisw_b0c(), new Replay_TransformationMenu.TMP_SubMenu_wgaisw_a2.TMP_Action_wgaisw_c0c(), new Replay_TransformationMenu.TMP_SubMenu_wgaisw_a2.TMP_Action_wgaisw_d0c(), new Replay_TransformationMenu.TMP_SubMenu_wgaisw_a2.TMP_Action_wgaisw_e0c(), new Replay_TransformationMenu.TMP_SubMenu_wgaisw_a2.TMP_Action_wgaisw_f0c(), new Replay_TransformationMenu.TMP_SubMenu_wgaisw_a2.TMP_Action_wgaisw_g0c());
     }
-    private class TMP_Action_feau08_a0c extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_wgaisw_a0c extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new ReplayOptions_TransformationMenu.TMP_SubMenu_feau08_a2.TMP_Action_feau08_a0c.Item(context);
+        return new Replay_TransformationMenu.TMP_SubMenu_wgaisw_a2.TMP_Action_wgaisw_a0c.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {
@@ -445,10 +445,10 @@ public class ReplayOptions_TransformationMenu extends TransformationMenuBase {
       }
 
     }
-    private class TMP_Action_feau08_b0c extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_wgaisw_b0c extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new ReplayOptions_TransformationMenu.TMP_SubMenu_feau08_a2.TMP_Action_feau08_b0c.Item(context);
+        return new Replay_TransformationMenu.TMP_SubMenu_wgaisw_a2.TMP_Action_wgaisw_b0c.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {
@@ -491,10 +491,10 @@ public class ReplayOptions_TransformationMenu extends TransformationMenuBase {
       }
 
     }
-    private class TMP_Action_feau08_c0c extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_wgaisw_c0c extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new ReplayOptions_TransformationMenu.TMP_SubMenu_feau08_a2.TMP_Action_feau08_c0c.Item(context);
+        return new Replay_TransformationMenu.TMP_SubMenu_wgaisw_a2.TMP_Action_wgaisw_c0c.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {
@@ -537,10 +537,10 @@ public class ReplayOptions_TransformationMenu extends TransformationMenuBase {
       }
 
     }
-    private class TMP_Action_feau08_d0c extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_wgaisw_d0c extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new ReplayOptions_TransformationMenu.TMP_SubMenu_feau08_a2.TMP_Action_feau08_d0c.Item(context);
+        return new Replay_TransformationMenu.TMP_SubMenu_wgaisw_a2.TMP_Action_wgaisw_d0c.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {
@@ -568,7 +568,7 @@ public class ReplayOptions_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c9j_2;
+          return IconContainer.RESOURCE_a0a9c9j_1;
         }
         @Override
         public String getTooltipText() {
@@ -583,10 +583,10 @@ public class ReplayOptions_TransformationMenu extends TransformationMenuBase {
       }
 
     }
-    private class TMP_Action_feau08_e0c extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_wgaisw_e0c extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new ReplayOptions_TransformationMenu.TMP_SubMenu_feau08_a2.TMP_Action_feau08_e0c.Item(context);
+        return new Replay_TransformationMenu.TMP_SubMenu_wgaisw_a2.TMP_Action_wgaisw_e0c.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {
@@ -629,10 +629,10 @@ public class ReplayOptions_TransformationMenu extends TransformationMenuBase {
       }
 
     }
-    private class TMP_Action_feau08_f0c extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_wgaisw_f0c extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new ReplayOptions_TransformationMenu.TMP_SubMenu_feau08_a2.TMP_Action_feau08_f0c.Item(context);
+        return new Replay_TransformationMenu.TMP_SubMenu_wgaisw_a2.TMP_Action_wgaisw_f0c.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {
@@ -675,10 +675,10 @@ public class ReplayOptions_TransformationMenu extends TransformationMenuBase {
       }
 
     }
-    private class TMP_Action_feau08_g0c extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_wgaisw_g0c extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new ReplayOptions_TransformationMenu.TMP_SubMenu_feau08_a2.TMP_Action_feau08_g0c.Item(context);
+        return new Replay_TransformationMenu.TMP_SubMenu_wgaisw_a2.TMP_Action_wgaisw_g0c.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {

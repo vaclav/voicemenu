@@ -40,10 +40,9 @@ public class Main__1 implements ActionListener {
     timeout_rwbd_c0.isFinal = false;
     timeout_rwbd_c0.setAction("", false);
     timeout_rwbd_c0.setGreeting("");
-    timeout_rwbd_c0.playback = "/Users/jetbrains/Documents/repeat1.wav";
     timeout_rwbd_c0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("0X", timeout_rwbd_c0);
-    timeout_rwbd_c0.setAction("repeat", false);
+    timeout_rwbd_c0.setAction("hangUp", true);
     timeout_rwbd_c0.childs = new ArrayList<Event>();
     Event Get_Info_rwbd_a0 = new Event("Get Info", "1", 16);
     Get_Info_rwbd_a0.isFinal = false;
@@ -70,15 +69,15 @@ public class Main__1 implements ActionListener {
     Variables.myHashMap.put("02X", Timeout_rwbd_c0c0);
     Timeout_rwbd_c0c0.setAction("repeat", false);
     Timeout_rwbd_c0c0.childs = new ArrayList<Event>();
-    Event HangUp_rwbd_a0c0 = new Event("HangUp", "1", 16);
-    HangUp_rwbd_a0c0.isFinal = false;
-    HangUp_rwbd_a0c0.setAction("", false);
-    HangUp_rwbd_a0c0.setGreeting("");
-    HangUp_rwbd_a0c0.playback = "Hang up";
-    HangUp_rwbd_a0c0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("021", HangUp_rwbd_a0c0);
-    HangUp_rwbd_a0c0.setAction("hangUp", true);
-    HangUp_rwbd_a0c0.childs = new ArrayList<Event>();
+    Event HANGUP_rwbd_a0c0 = new Event("HANGUP", "1", 16);
+    HANGUP_rwbd_a0c0.isFinal = false;
+    HANGUP_rwbd_a0c0.setAction("", false);
+    HANGUP_rwbd_a0c0.setGreeting("");
+    HANGUP_rwbd_a0c0.playback = "Hang up";
+    HANGUP_rwbd_a0c0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("021", HANGUP_rwbd_a0c0);
+    HANGUP_rwbd_a0c0.setAction("hangUp", true);
+    HANGUP_rwbd_a0c0.childs = new ArrayList<Event>();
     Event GetInfo_rwbd_b0c0 = new Event("GetInfo", "2", 16);
     GetInfo_rwbd_b0c0.isFinal = false;
     GetInfo_rwbd_b0c0.setAction("", false);
@@ -89,7 +88,7 @@ public class Main__1 implements ActionListener {
     GetInfo_rwbd_b0c0.setAction("record", true);
     GetInfo_rwbd_b0c0.childs = new ArrayList<Event>();
     Menu_rwbd_b0.childs = new ArrayList<Event>();
-    Menu_rwbd_b0.childs.add(HangUp_rwbd_a0c0);
+    Menu_rwbd_b0.childs.add(HANGUP_rwbd_a0c0);
     Menu_rwbd_b0.childs.add(GetInfo_rwbd_b0c0);
 
     Home.childs.add(Get_Info_rwbd_a0);

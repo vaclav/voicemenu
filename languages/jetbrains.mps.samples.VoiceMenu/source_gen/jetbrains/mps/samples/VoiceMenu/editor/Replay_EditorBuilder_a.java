@@ -12,19 +12,19 @@ import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import org.jetbrains.mps.openapi.module.SModule;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Image;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.openapi.editor.style.StyleRegistry;
 import jetbrains.mps.nodeEditor.MPSColors;
 import jetbrains.mps.nodeEditor.MPSFonts;
 
-/*package*/ class ReplayOptions_EditorBuilder_a extends AbstractEditorBuilder {
+/*package*/ class Replay_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
   private SNode myNode;
 
-  public ReplayOptions_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
+  public Replay_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
     super(context);
     myNode = node;
   }
@@ -36,38 +36,41 @@ import jetbrains.mps.nodeEditor.MPSFonts;
   }
 
   /*package*/ EditorCell createCell() {
-    return createCollection_bcvqca_a();
+    return createCollection_vmvky_a();
   }
 
-  private EditorCell createCollection_bcvqca_a() {
+  private EditorCell createCollection_vmvky_a() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
-    editorCell.setCellId("Collection_bcvqca_a");
+    editorCell.setCellId("Collection_vmvky_a");
     editorCell.setBig(true);
     editorCell.setCellContext(getCellFactory().getCellContext());
-    editorCell.addEditorCell(createImage_bcvqca_a0());
-    editorCell.addEditorCell(createConstant_bcvqca_b0());
-    editorCell.addEditorCell(createConstant_bcvqca_c0());
+    editorCell.addEditorCell(createImage_vmvky_a0());
+    editorCell.addEditorCell(createConstant_vmvky_b0());
+    editorCell.addEditorCell(createConstant_vmvky_c0());
     return editorCell;
   }
-  private EditorCell createImage_bcvqca_a0() {
+  private EditorCell createImage_vmvky_a0() {
     SModule imageModule;
     String imagePath;
     imageModule = SNodeOperations.getConcept(myNode).getLanguage().getSourceModule();
     imagePath = "${module}/src/replayOpt.png";
     EditorCell_Image editorCell = EditorCell_Image.createImageCell(getEditorContext(), myNode, imageModule, imagePath);
-    editorCell.setCellId("Image_bcvqca_a0");
+    editorCell.setCellId("Image_vmvky_a0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, false);
+    editorCell.getStyle().putAll(style);
     editorCell.setDescent(-150);
     return editorCell;
   }
-  private EditorCell createConstant_bcvqca_b0() {
+  private EditorCell createConstant_vmvky_b0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
-    editorCell.setCellId("Constant_bcvqca_b0");
+    editorCell.setCellId("Constant_vmvky_b0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_bcvqca_c0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Replay Options");
-    editorCell.setCellId("Constant_bcvqca_c0");
+  private EditorCell createConstant_vmvky_c0() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Replay");
+    editorCell.setCellId("Constant_vmvky_c0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.black));
     style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);

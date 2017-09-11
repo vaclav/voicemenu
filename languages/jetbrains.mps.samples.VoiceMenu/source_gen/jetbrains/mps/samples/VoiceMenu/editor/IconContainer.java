@@ -104,7 +104,7 @@ public class IconContainer {
   protected static IconResource RESOURCE_a0a01c6j = new IconResource("remove.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a01c7j = new IconResource("plus.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c8j_2 = new IconResource("add_to_list.png", IconContainer.class);
-  protected static IconResource RESOURCE_a0a9c9j_1 = new IconResource("add_to_list.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a01c9j_0 = new IconResource("add_to_list.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a01c01j_1 = new IconResource("init.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c11j_2 = new IconResource("remove.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a01c6h_6 = new IconResource("Uppercase.png", IconContainer.class);
@@ -147,7 +147,7 @@ public class IconContainer {
   protected static IconResource RESOURCE_a0a01c6j_1 = new IconResource("arrow.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c7j_3 = new IconResource("hangup.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c8j_3 = new IconResource("record.png", IconContainer.class);
-  protected static IconResource RESOURCE_a0a9c9j_2 = new IconResource("phone.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a9c9j_1 = new IconResource("phone.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c01j_0 = new IconResource("menu.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c11j_3 = new IconResource("info.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c21j_2 = new IconResource("donkey.png", IconContainer.class);
