@@ -215,8 +215,8 @@
       <node id="6630304389623619381" at="177,95,178,84" concept="3" />
       <node id="6630304389625271953" at="179,9,180,63" concept="3" />
       <node id="6164022893589154416" at="181,7,182,49" concept="3" />
-      <node id="6164022893588564885" at="183,5,184,45" concept="3" />
-      <node id="6164022893588564959" at="184,45,185,29" concept="10" />
+      <node id="4175991680189918669" at="183,5,184,0" concept="11" />
+      <node id="6164022893588564959" at="184,0,185,29" concept="10" />
       <node id="2706908311022513930" at="186,50,187,41" concept="3" />
       <node id="6164022893588564891" at="189,47,190,57" concept="3" />
       <node id="6164022893588564961" at="191,5,192,48" concept="10" />
@@ -679,62 +679,63 @@
       <node id="7983725069972257027" at="125,28,126,28" concept="3" />
       <node id="7983725069972257030" at="126,28,127,42" concept="3" />
       <node id="7983725069972257033" at="127,42,128,22" concept="3" />
-      <node id="7983725069972257042" at="130,51,131,27" concept="3" />
-      <node id="5365399549502979171" at="133,53,134,56" concept="3" />
-      <node id="7983725069972257057" at="134,56,135,47" concept="3" />
-      <node id="7983725069972257071" at="137,52,138,57" concept="8" />
-      <node id="7983725069972257200" at="138,57,139,19" concept="10" />
-      <node id="7983725069972257077" at="139,19,140,24" concept="3" />
-      <node id="7983725069972257080" at="140,24,141,24" concept="3" />
-      <node id="7983725069972257202" at="141,24,142,32" concept="10" />
-      <node id="5365399549503010545" at="142,32,143,47" concept="3" />
-      <node id="7983725069972257087" at="143,47,144,47" concept="3" />
-      <node id="7983725069972257098" at="146,52,147,57" concept="8" />
-      <node id="5365399549503026437" at="147,57,148,55" concept="8" />
-      <node id="7983725069972257204" at="148,55,149,30" concept="10" />
-      <node id="7983725069972257111" at="149,30,150,26" concept="3" />
-      <node id="7983725069972257206" at="150,26,151,28" concept="10" />
-      <node id="7983725069972257114" at="151,28,152,31" concept="3" />
-      <node id="7983725069972257208" at="152,31,153,39" concept="10" />
-      <node id="7983725069972257117" at="153,39,154,46" concept="3" />
-      <node id="7983725069972257121" at="154,46,155,45" concept="3" />
-      <node id="7983725069972257210" at="157,33,158,31" concept="10" />
-      <node id="7983725069972257130" at="158,31,159,71" concept="8" />
-      <node id="7983725069972257136" at="159,71,160,35" concept="8" />
-      <node id="7983725069972257140" at="160,35,161,33" concept="8" />
-      <node id="7983725069972257143" at="161,33,162,41" concept="3" />
-      <node id="7983725069972257212" at="162,41,163,26" concept="10" />
-      <node id="7983725069972257151" at="163,26,164,38" concept="3" />
-      <node id="7983725069972257214" at="164,38,165,17" concept="10" />
-      <node id="7983725069972257154" at="165,17,166,34" concept="3" />
-      <node id="7983725069972257157" at="166,34,167,66" concept="3" />
-      <node id="7983725069972257160" at="167,66,168,17" concept="3" />
-      <node id="7983725069972257162" at="168,17,169,27" concept="3" />
-      <node id="4604010141009207527" at="169,27,170,30" concept="3" />
-      <node id="7983725069972257216" at="172,35,173,27" concept="10" />
-      <node id="7983725069972257169" at="173,27,174,26" concept="3" />
-      <node id="2706908311020090486" at="176,52,177,44" concept="9" />
+      <node id="7983725069972257042" at="131,46,132,29" concept="3" />
+      <node id="5365399549502979171" at="135,53,136,56" concept="3" />
+      <node id="7983725069972257057" at="136,56,137,47" concept="3" />
+      <node id="7983725069972257071" at="139,52,140,57" concept="8" />
+      <node id="7983725069972257200" at="140,57,141,19" concept="10" />
+      <node id="7983725069972257077" at="141,19,142,24" concept="3" />
+      <node id="7983725069972257080" at="142,24,143,24" concept="3" />
+      <node id="7983725069972257202" at="143,24,144,32" concept="10" />
+      <node id="5365399549503010545" at="144,32,145,47" concept="3" />
+      <node id="7983725069972257087" at="145,47,146,47" concept="3" />
+      <node id="7983725069972257098" at="148,52,149,57" concept="8" />
+      <node id="5365399549503026437" at="149,57,150,55" concept="8" />
+      <node id="7983725069972257204" at="150,55,151,30" concept="10" />
+      <node id="7983725069972257111" at="151,30,152,26" concept="3" />
+      <node id="7983725069972257206" at="152,26,153,28" concept="10" />
+      <node id="7983725069972257114" at="153,28,154,31" concept="3" />
+      <node id="7983725069972257208" at="154,31,155,39" concept="10" />
+      <node id="7983725069972257117" at="155,39,156,46" concept="3" />
+      <node id="7983725069972257121" at="156,46,157,45" concept="3" />
+      <node id="7983725069972257210" at="159,33,160,31" concept="10" />
+      <node id="7983725069972257130" at="160,31,161,71" concept="8" />
+      <node id="7983725069972257136" at="161,71,162,35" concept="8" />
+      <node id="7983725069972257140" at="162,35,163,33" concept="8" />
+      <node id="7983725069972257143" at="163,33,164,41" concept="3" />
+      <node id="7983725069972257212" at="164,41,165,26" concept="10" />
+      <node id="7983725069972257151" at="165,26,166,38" concept="3" />
+      <node id="7983725069972257214" at="166,38,167,17" concept="10" />
+      <node id="7983725069972257154" at="167,17,168,34" concept="3" />
+      <node id="7983725069972257157" at="168,34,169,66" concept="3" />
+      <node id="7983725069972257160" at="169,66,170,17" concept="3" />
+      <node id="7983725069972257162" at="170,17,171,27" concept="3" />
+      <node id="4604010141009207527" at="171,27,172,30" concept="3" />
+      <node id="7983725069972257216" at="174,35,175,27" concept="10" />
+      <node id="7983725069972257169" at="175,27,176,26" concept="3" />
+      <node id="2706908311020090486" at="178,52,179,44" concept="9" />
       <node id="2706908311020078878" at="46,70,49,7" concept="6" />
-      <node id="7983725069972257038" at="130,0,133,0" concept="13" trace="setTextToScreen#(Ljava/lang/String;)V" />
-      <node id="2706908311020090486" at="176,0,179,0" concept="13" trace="isEmptyString#(Ljava/lang/String;)Z" />
+      <node id="4175991680190009356" at="130,51,133,5" concept="6" />
+      <node id="2706908311020090486" at="178,0,181,0" concept="13" trace="isEmptyString#(Ljava/lang/String;)Z" />
       <node id="7983725069973207155" at="80,0,84,0" concept="7" trace="actionPerformed#(Ljava/awt/event/ActionEvent;)V" />
-      <node id="7983725069972257047" at="133,0,137,0" concept="13" trace="setScreen#(Ljavax/swing/JTextArea;)V" />
-      <node id="7983725069972257167" at="172,0,176,0" concept="13" trace="setContent#()V" />
+      <node id="7983725069972257047" at="135,0,139,0" concept="13" trace="setScreen#(Ljavax/swing/JTextArea;)V" />
+      <node id="7983725069972257167" at="174,0,178,0" concept="13" trace="setContent#()V" />
       <node id="7983725069972937685" at="60,31,65,11" concept="14" />
       <node id="7983725069973044386" at="72,0,77,0" concept="7" trace="actionPerformed#(Ljava/awt/event/ActionEvent;)V" />
+      <node id="7983725069972257038" at="130,0,135,0" concept="13" trace="setTextToScreen#(Ljava/lang/String;)V" />
       <node id="7983725069972256688" at="35,0,41,0" concept="13" trace="customizeButton#(Ljavax/swing/JButton;Ljavax/swing/border/Border;Ljava/awt/Dimension;Ljava/awt/Color;)V" />
       <node id="7983725069973178864" at="78,39,84,7" concept="3" />
       <node id="7983725069972256734" at="44,42,51,5" concept="5" />
       <node id="7983725069973003910" at="70,38,77,7" concept="3" />
-      <node id="7983725069972257066" at="137,0,146,0" concept="13" trace="setTopPanel#(Ljavax/swing/JPanel;)V" />
+      <node id="7983725069972257066" at="139,0,148,0" concept="13" trace="setTopPanel#(Ljavax/swing/JPanel;)V" />
       <node id="7983725069972937665" at="57,51,67,9" concept="6" />
       <node id="7983725069972256997" at="119,0,130,0" concept="13" trace="setHeader#(Ljavax/swing/JPanel;)V" />
-      <node id="7983725069972257093" at="146,0,157,0" concept="13" trace="setMainPanel#(Ljavax/swing/JPanel;)V" />
+      <node id="7983725069972257093" at="148,0,159,0" concept="13" trace="setMainPanel#(Ljavax/swing/JPanel;)V" />
       <node id="7983725069972918617" at="57,0,69,0" concept="7" trace="actionPerformed#(Ljava/awt/event/ActionEvent;)V" />
       <node id="7983725069972256712" at="41,0,54,0" concept="13" trace="readChildren#()V" />
       <node id="7983725069972898311" at="55,39,69,7" concept="3" />
       <node id="7983725069972256933" at="104,0,119,0" concept="13" trace="setDeliminatorLine#(Ljavax/swing/JPanel;)V" />
-      <node id="7983725069972257127" at="157,0,172,0" concept="13" trace="setFrame#()V" />
+      <node id="7983725069972257127" at="159,0,174,0" concept="13" trace="setFrame#()V" />
       <node id="7983725069972256859" at="86,0,104,0" concept="13" trace="setCallButtons#(Ljavax/swing/JPanel;)V" />
       <node id="7983725069972256757" at="54,0,86,0" concept="13" trace="addListeners#(Ljavax/swing/JButton;Ljavax/swing/JButton;Ljavax/swing/JButton;)V" />
       <scope id="2706908311020078880" at="47,40,48,82" />
@@ -743,29 +744,30 @@
         <var name="e" id="7983725069972937690" />
       </scope>
       <scope id="7983725069972937687" at="63,35,64,32" />
-      <scope id="7983725069972257041" at="130,51,131,27" />
-      <scope id="2706908311020090486" at="176,52,177,44" />
+      <scope id="4175991680190009358" at="131,46,132,29" />
+      <scope id="2706908311020090486" at="178,52,179,44" />
       <scope id="7983725069973207161" at="80,51,82,43" />
-      <scope id="7983725069972257050" at="133,53,135,47" />
-      <scope id="7983725069972257168" at="172,35,174,26" />
+      <scope id="7983725069972257050" at="135,53,137,47" />
+      <scope id="7983725069972257168" at="174,35,176,26" />
       <scope id="7983725069973044392" at="72,51,75,23" />
-      <scope id="7983725069972257038" at="130,0,133,0">
-        <var name="text" id="7983725069972257039" />
-      </scope>
-      <scope id="2706908311020090486" at="176,0,179,0">
+      <scope id="7983725069972257041" at="130,51,133,5" />
+      <scope id="2706908311020090486" at="178,0,181,0">
         <var name="str" id="2706908311020090486" />
       </scope>
       <scope id="7983725069972256697" at="35,98,39,29" />
       <scope id="7983725069973207155" at="80,0,84,0">
         <var name="p0" id="7983725069973207159" />
       </scope>
-      <scope id="7983725069972257047" at="133,0,137,0">
+      <scope id="7983725069972257047" at="135,0,139,0">
         <var name="myScreen" id="7983725069972257048" />
       </scope>
-      <scope id="7983725069972257167" at="172,0,176,0" />
+      <scope id="7983725069972257167" at="174,0,178,0" />
       <scope id="7983725069972256736" at="45,36,50,51" />
       <scope id="7983725069973044386" at="72,0,77,0">
         <var name="p0" id="7983725069973044390" />
+      </scope>
+      <scope id="7983725069972257038" at="130,0,135,0">
+        <var name="text" id="7983725069972257039" />
       </scope>
       <scope id="7983725069972256688" at="35,0,41,0">
         <var name="border" id="7983725069972256691" />
@@ -776,7 +778,7 @@
       <scope id="7983725069972256734" at="44,42,51,5">
         <var name="child" id="7983725069972256749" />
       </scope>
-      <scope id="7983725069972257069" at="137,52,144,47">
+      <scope id="7983725069972257069" at="139,52,146,47">
         <var name="myHeader" id="7983725069972257070" />
       </scope>
       <scope id="7983725069972937669" at="58,41,66,35" />
@@ -784,10 +786,10 @@
         <var name="header" id="7983725069972257001" />
         <var name="inset" id="7983725069972257005" />
       </scope>
-      <scope id="7983725069972257066" at="137,0,146,0">
+      <scope id="7983725069972257066" at="139,0,148,0">
         <var name="topPanel" id="7983725069972257067" />
       </scope>
-      <scope id="7983725069972257096" at="146,52,155,45">
+      <scope id="7983725069972257096" at="148,52,157,45">
         <var name="myLine" id="5365399549503026438" />
         <var name="topPanel" id="7983725069972257097" />
       </scope>
@@ -798,7 +800,7 @@
       <scope id="7983725069972256997" at="119,0,130,0">
         <var name="panel" id="7983725069972256998" />
       </scope>
-      <scope id="7983725069972257093" at="146,0,157,0">
+      <scope id="7983725069972257093" at="148,0,159,0">
         <var name="myPhone" id="7983725069972257094" />
       </scope>
       <scope id="7983725069972918617" at="57,0,69,0">
@@ -810,7 +812,7 @@
         <var name="line2" id="5365399549502870142" />
         <var name="topLine" id="7983725069972256937" />
       </scope>
-      <scope id="7983725069972257128" at="157,33,170,30">
+      <scope id="7983725069972257128" at="159,33,172,30">
         <var name="height" id="7983725069972257135" />
         <var name="screenSize" id="7983725069972257129" />
         <var name="width" id="7983725069972257139" />
@@ -818,7 +820,7 @@
       <scope id="7983725069972256933" at="104,0,119,0">
         <var name="panel" id="7983725069972256934" />
       </scope>
-      <scope id="7983725069972257127" at="157,0,172,0" />
+      <scope id="7983725069972257127" at="159,0,174,0" />
       <scope id="7983725069972256862" at="86,52,102,48">
         <var name="border" id="5365399549502760441" />
         <var name="buttonCall" id="7983725069972256881" />
@@ -839,7 +841,7 @@
       <unit id="7983725069973207153" at="79,38,84,5" name="JavaVoiceMenu.runtime.Style$3" />
       <unit id="7983725069973044384" at="71,30,77,5" name="JavaVoiceMenu.runtime.Style$2" />
       <unit id="7983725069972918615" at="56,31,69,5" name="JavaVoiceMenu.runtime.Style$1" />
-      <unit id="7983725069972256650" at="26,0,180,0" name="JavaVoiceMenu.runtime.Style" />
+      <unit id="7983725069972256650" at="26,0,182,0" name="JavaVoiceMenu.runtime.Style" />
     </file>
   </root>
 </debug-info>

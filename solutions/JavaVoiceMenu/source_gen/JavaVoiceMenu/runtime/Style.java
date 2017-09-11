@@ -128,7 +128,9 @@ public class Style {
     panel.add(header);
   }
   public static void setTextToScreen(String text) {
-    myScreen.setText(text);
+    if ((text != null && text.length() > 0)) {
+      myScreen.setText(text);
+    }
   }
   private static void setScreen(JTextArea myScreen) {
     myScreen.setFont(new Font("Arial", Font.PLAIN, 16));
