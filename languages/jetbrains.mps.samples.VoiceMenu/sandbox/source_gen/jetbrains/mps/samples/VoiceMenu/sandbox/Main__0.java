@@ -28,6 +28,8 @@ public class Main__0 implements ActionListener {
 
     Event Home = new Event("myVoiceMenu", "0");
     Home.setAction("", true);
+    Home.setGreeting("Welcome to " + "myVoiceMenu");
+
     Home.setGreeting("Welcome to our voicemenu");
     Home.childs = new ArrayList<Event>();
     Home.isFinal = false;
@@ -123,7 +125,7 @@ public class Main__0 implements ActionListener {
     Main__0.initHashMap();
     initView();
     Behaviour.runInitSetup();
-    (Variables.timerThr = new Thread(new Behaviour.myTimer(null, true, 13))).start();
+    (Variables.timerThr = new Thread(new Behaviour.myTimer(null, true))).start();
 
   }
 

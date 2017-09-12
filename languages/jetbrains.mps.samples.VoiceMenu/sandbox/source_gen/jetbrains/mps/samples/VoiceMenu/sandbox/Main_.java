@@ -28,6 +28,8 @@ public class Main_ implements ActionListener {
 
     Event Home = new Event("Jet-Mobile", "0");
     Home.setAction("", true);
+    Home.setGreeting("Welcome to " + "Jet-Mobile");
+
     Home.setGreeting("Hello, welcome in Jet-Mobile");
     Home.childs = new ArrayList<Event>();
     Home.isFinal = false;
@@ -240,7 +242,7 @@ public class Main_ implements ActionListener {
     Main_.initHashMap();
     initView();
     Behaviour.runInitSetup();
-    (Variables.timerThr = new Thread(new Behaviour.myTimer(null, true, 13))).start();
+    (Variables.timerThr = new Thread(new Behaviour.myTimer(null, true))).start();
 
   }
 

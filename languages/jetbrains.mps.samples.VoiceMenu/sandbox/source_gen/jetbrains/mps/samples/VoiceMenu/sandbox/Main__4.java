@@ -28,7 +28,8 @@ public class Main__4 implements ActionListener {
 
     Event Home = new Event("JetBrains", "0");
     Home.setAction("", true);
-    Home.setGreeting("");
+    Home.setGreeting("Welcome to " + "JetBrains");
+
     Home.childs = new ArrayList<Event>();
     Home.isFinal = false;
     Variables.main_Text = "JetBrains";
@@ -49,8 +50,8 @@ public class Main__4 implements ActionListener {
 
     Variables.timeout = new Event("timeout", "X");
     Variables.timeout.playback = "PlayBack test";
-    Variables.timeout.action = "back";
-    Variables.timeout.isFinal = true;
+    Variables.timeout.action = "getInfo";
+    Variables.timeout.isFinal = false;
   }
 
   public static void main(String[] args) {
@@ -59,7 +60,7 @@ public class Main__4 implements ActionListener {
     Main__4.initHashMap();
     initView();
     Behaviour.runInitSetup();
-    (Variables.timerThr = new Thread(new Behaviour.myTimer(null, true, 13))).start();
+    (Variables.timerThr = new Thread(new Behaviour.myTimer(null, true))).start();
 
   }
 
