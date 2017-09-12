@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="main.QueriesGenerated" file="QueriesGenerated.java">
+    <classNode dependClassName="java.lang.Exception" />
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />

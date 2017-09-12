@@ -18323,7 +18323,7 @@
                     </node>
                   </node>
                   <node concept="Xl_RD" id="7IHEnsdG7ZB" role="37vLTx">
-                    <property role="Xl_RC" value="Choose from .." />
+                    <property role="Xl_RC" value="Timeout" />
                   </node>
                 </node>
               </node>
