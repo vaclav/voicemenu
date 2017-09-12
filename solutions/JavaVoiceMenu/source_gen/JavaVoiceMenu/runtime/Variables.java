@@ -23,4 +23,6 @@ public class Variables {
   public static Thread timerThr = new Thread();
   public static boolean speaking;
   public static Event timeout;
+  public static boolean playbackisFile = false;
+
 }

@@ -28,6 +28,8 @@ public class Main__1 implements ActionListener {
 
     Event Home = new Event("Test160", "0");
     Home.setAction("", true);
+    Home.setGreeting("Welcome to " + "Test160");
+
     Home.setGreeting("rrr/Users/jetbrains/Documents/sample.wav");
     Home.childs = new ArrayList<Event>();
     Home.isFinal = false;
@@ -89,7 +91,7 @@ public class Main__1 implements ActionListener {
     Main__1.initHashMap();
     initView();
     Behaviour.runInitSetup();
-    (Variables.timerThr = new Thread(new Behaviour.myTimer(null, true, 13))).start();
+    (Variables.timerThr = new Thread(new Behaviour.myTimer(null, true))).start();
 
   }
 

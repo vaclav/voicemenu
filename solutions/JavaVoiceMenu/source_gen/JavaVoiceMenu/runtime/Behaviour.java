@@ -17,41 +17,126 @@ public class Behaviour {
     public static boolean loadEvnt;
     /*package*/ String action = "";
 
-    public myTimer(ActionEvent EVNT, boolean RPT, int drtn) {
+    public myTimer(ActionEvent EVNT, boolean RPT) {
       evt = EVNT;
       loadEvnt = RPT;
-      duration = drtn;
     }
     public void run() {
       try {
-        action = "";
-        TimeUnit.SECONDS.sleep(duration);
-        if (neq_d7l93i_a0c0a0g0(Variables.path.charAt(Variables.path.length() - 1), 'X')) {
-          Variables.path += "X";
-        } else {
-          action = Variables.myHashMap.get(Variables.path).action;
-          if (eq_d7l93i_a0b0a2a0a6a(action, "")) {
-            // Activity is menu, so we have to nest into it 
-            Variables.path += "X";
-          }
-        }
-        if (Variables.timerThr.isAlive()) {
-          Variables.timerThr.interrupt();
-        }
-        Behaviour.runLogic(evt, true);
-      } catch (Exception e) {
-        if (eq_d7l93i_a0a0a0a6a(Variables.path.charAt(Variables.path.length() - 1), 'X')) {
+        TimeUnit.SECONDS.sleep(Variables.timeout.duration);
+        String timeoutAction = Variables.timeout.action;
+
+        if (eq_d7l93i_a0d0a0g0(timeoutAction, "back")) {
           Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
+          Style.setTextToScreen("Back");
+
+          if (isEmptyString(Variables.timeout.playback)) {
+            Variables.voice.addText("Going to the previous menu");
+          } else {
+            PlayGetInfo(Variables.timeout.playback);
+          }
+
+        } else if (eq_d7l93i_a0a3a0a6a(timeoutAction, "call")) {
+          Style.setTextToScreen("Direct Call");
+
+          if (isEmptyString(Variables.timeout.playback)) {
+            Variables.voice.addText("Direct call has begun");
+          } else {
+            PlayGetInfo(Variables.timeout.playback);
+          }
+          if (Variables.timeout.isFinal) {
+            Style.setTextToScreen("Call ended");
+          }
+
+
+        } else if (eq_d7l93i_a0b3a0a6a(timeoutAction, "getInfo")) {
+          Style.setTextToScreen("Get Info");
+          if (isEmptyString(Variables.timeout.playback)) {
+            Variables.voice.addText("Getting you the latest info");
+          } else {
+            PlayGetInfo(Variables.timeout.playback);
+          }
+          if (Variables.timeout.isFinal) {
+            Style.setTextToScreen("Call ended");
+          }
+
+
+        } else if (eq_d7l93i_a0c3a0a6a(timeoutAction, "HangUp")) {
+          Style.setTextToScreen("HangUp");
+          if (isEmptyString(Variables.timeout.playback)) {
+            Variables.voice.addText("Phone call ended");
+          } else {
+            PlayGetInfo(Variables.timeout.playback);
+          }
+          Style.setTextToScreen("Call ended");
+
+        } else if (eq_d7l93i_a0d3a0a6a(timeoutAction, "other")) {
+          Style.setTextToScreen("Other");
+          if (isEmptyString(Variables.timeout.playback)) {
+            Variables.voice.addText("Other");
+          } else {
+            PlayGetInfo(Variables.timeout.playback);
+          }
+          if (Variables.timeout.isFinal) {
+            Style.setTextToScreen("Call ended");
+          }
+
+        } else if (eq_d7l93i_a0e3a0a6a(timeoutAction, "record")) {
+          Style.setTextToScreen("Recording");
+          if (isEmptyString(Variables.timeout.playback)) {
+            Variables.voice.addText("After beep start speaking, beep");
+            Variables.voice.speak();
+            Thread.sleep(3000);
+          } else {
+            PlayGetInfo(Variables.timeout.playback);
+          }
+          if (Variables.timeout.isFinal) {
+            Style.setTextToScreen("Call ended");
+          }
+
+        } else if (eq_d7l93i_a0f3a0a6a(timeoutAction, "replay")) {
+          Style.setTextToScreen("Replay");
+          if (isEmptyString(Variables.timeout.playback)) {
+            Variables.voice.addText("Replay Options");
+          } else {
+            PlayGetInfo(Variables.timeout.playback);
+          }
+          if (Variables.timeout.isFinal) {
+            Style.setTextToScreen("Call ended");
+          }
+
         }
+
+        Variables.voice.speak();
+        Behaviour.runLogic(evt, true);
+
+
+      } catch (Exception e) {
+        e.printStackTrace();
       }
     }
-    private static boolean neq_d7l93i_a0c0a0g0(Object a, Object b) {
-      return !(((a != null ? a.equals(b) : a == b)));
+    private static boolean isEmptyString(String str) {
+      return str == null || str.length() == 0;
     }
-    private static boolean eq_d7l93i_a0b0a2a0a6a(Object a, Object b) {
+    private static boolean eq_d7l93i_a0d0a0g0(Object a, Object b) {
       return (a != null ? a.equals(b) : a == b);
     }
-    private static boolean eq_d7l93i_a0a0a0a6a(Object a, Object b) {
+    private static boolean eq_d7l93i_a0a3a0a6a(Object a, Object b) {
+      return (a != null ? a.equals(b) : a == b);
+    }
+    private static boolean eq_d7l93i_a0b3a0a6a(Object a, Object b) {
+      return (a != null ? a.equals(b) : a == b);
+    }
+    private static boolean eq_d7l93i_a0c3a0a6a(Object a, Object b) {
+      return (a != null ? a.equals(b) : a == b);
+    }
+    private static boolean eq_d7l93i_a0d3a0a6a(Object a, Object b) {
+      return (a != null ? a.equals(b) : a == b);
+    }
+    private static boolean eq_d7l93i_a0e3a0a6a(Object a, Object b) {
+      return (a != null ? a.equals(b) : a == b);
+    }
+    private static boolean eq_d7l93i_a0f3a0a6a(Object a, Object b) {
       return (a != null ? a.equals(b) : a == b);
     }
   }
@@ -73,10 +158,11 @@ public class Behaviour {
           }
 
         } catch (Exception e) {
+          Variables.playbackisFile = false;
           e.getStackTrace();
         }
+        Variables.playbackisFile = true;
       }
-
 
     } catch (Exception e) {
       System.out.println("File does NOT exist\ntext used as input for generating speech");
@@ -188,7 +274,7 @@ public class Behaviour {
     if (isNotEmptyString(currentEvent.playback)) {
       PlayGetInfo(currentEvent.playback);
     }
-    if (isEmptyString(currentEvent.playback)) {
+    if (!(Variables.playbackisFile)) {
       Variables.voice.addText("Choose from this menu, ");
     }
     // Delete all the previous possible options 
@@ -203,14 +289,14 @@ public class Behaviour {
       } else {
         trigger = child.trigger;
       }
-      if (isEmptyString(currentEvent.playback)) {
+      if (!(Variables.playbackisFile)) {
         Variables.voice.addText(" For " + child.name + " press " + trigger + ",");
       }
       Variables.possibleOptList.add(child.trigger);
     }
     Variables.voice.speak();
     if (!(Variables.finished)) {
-      (Variables.timerThr = new Thread(new Behaviour.myTimer(evt, false, 11))).start();
+      (Variables.timerThr = new Thread(new Behaviour.myTimer(evt, false))).start();
     }
   }
   public static void runInitSetup() {
