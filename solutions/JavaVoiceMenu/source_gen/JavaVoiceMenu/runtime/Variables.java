@@ -22,4 +22,5 @@ public class Variables {
   public static UniVoice uniVoice = new UniVoice();
   public static Thread timerThr = new Thread();
   public static boolean speaking;
+  public static Event timeout;
 }

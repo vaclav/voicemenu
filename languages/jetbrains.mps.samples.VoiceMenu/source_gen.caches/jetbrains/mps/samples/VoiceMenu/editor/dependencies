@@ -281,6 +281,7 @@
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.Replay_Editor" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.Replay_TransformationMenu" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.Timeout_Editor" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.Timeout_TransformationMenu" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.WorkSpace_Editor" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.WorkSpace_TransformationMenu" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
@@ -1012,6 +1013,22 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
+  </dependency>
+  <dependency className="jetbrains.mps.samples.VoiceMenu.editor.Timeout_TransformationMenu" file="Timeout_TransformationMenu.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.HashSet" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="java.util.Set" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.SetSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.EditorMenuDescriptorBase" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.MenuPart" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuItem" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.transformation.TransformationMenuBase" />
   </dependency>
   <dependency className="jetbrains.mps.samples.VoiceMenu.editor.WorkSpace_Editor" file="WorkSpace_Editor.java">
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />

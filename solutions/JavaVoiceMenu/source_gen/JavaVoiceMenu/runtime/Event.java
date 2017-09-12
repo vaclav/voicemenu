@@ -19,11 +19,10 @@ public class Event {
   public Event() {
     this.isFinal = false;
   }
-  public Event(String name, String trigger, int dur) {
+  public Event(String name, String trigger) {
     this.name = name;
     this.trigger = trigger;
     this.action = "";
-    this.duration = dur;
   }
   /**
    * set full informations about state
