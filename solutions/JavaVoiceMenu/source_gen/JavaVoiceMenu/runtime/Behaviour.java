@@ -23,10 +23,13 @@ public class Behaviour {
     }
     public void run() {
       try {
-        TimeUnit.SECONDS.sleep(Variables.timeout.duration + 3);
+        if (!(Variables.started)) {
+          return;
+        }
+        TimeUnit.SECONDS.sleep(Variables.timeout.duration + 4);
         String timeoutAction = Variables.timeout.action;
         System.out.println("Timeout playback: " + Variables.timeout.playback);
-        if (eq_d7l93i_a0d0a0g0(timeoutAction, "back")) {
+        if (eq_d7l93i_a0e0a0g0(timeoutAction, "back")) {
           if (Variables.path.length() > 1) {
             Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
           }
@@ -38,7 +41,7 @@ public class Behaviour {
             PlayGetInfo(Variables.timeout.playback);
           }
 
-        } else if (eq_d7l93i_a0a3a0a6a(timeoutAction, "call")) {
+        } else if (eq_d7l93i_a0a4a0a6a(timeoutAction, "call")) {
           Style.setTextToScreen("Direct Call");
 
           if (isEmptyString(Variables.timeout.playback)) {
@@ -54,7 +57,7 @@ public class Behaviour {
           }
 
 
-        } else if (eq_d7l93i_a0b3a0a6a(timeoutAction, "getInfo")) {
+        } else if (eq_d7l93i_a0b4a0a6a(timeoutAction, "getInfo")) {
           Style.setTextToScreen("Get Info");
           if (isEmptyString(Variables.timeout.playback)) {
             Variables.voice.addText("Getting you the latest info");
@@ -67,7 +70,7 @@ public class Behaviour {
             return;
           }
 
-        } else if (eq_d7l93i_a0c3a0a6a(timeoutAction, "hangUp")) {
+        } else if (eq_d7l93i_a0c4a0a6a(timeoutAction, "hangUp")) {
           Style.setTextToScreen("HangUp");
           if (isEmptyString(Variables.timeout.playback)) {
             Variables.voice.addText("Phone call ended");
@@ -78,7 +81,7 @@ public class Behaviour {
           Variables.voice.speak();
           return;
 
-        } else if (eq_d7l93i_a0d3a0a6a(timeoutAction, "other")) {
+        } else if (eq_d7l93i_a0d4a0a6a(timeoutAction, "other")) {
           Style.setTextToScreen("Other");
           if (isEmptyString(Variables.timeout.playback)) {
             Variables.voice.addText("Other");
@@ -91,7 +94,7 @@ public class Behaviour {
             return;
           }
 
-        } else if (eq_d7l93i_a0e3a0a6a(timeoutAction, "record")) {
+        } else if (eq_d7l93i_a0e4a0a6a(timeoutAction, "record")) {
           Style.setTextToScreen("Recording");
           if (isEmptyString(Variables.timeout.playback)) {
             Variables.voice.addText("After beep start speaking, beep");
@@ -108,7 +111,7 @@ public class Behaviour {
 
           }
 
-        } else if (eq_d7l93i_a0f3a0a6a(timeoutAction, "replay")) {
+        } else if (eq_d7l93i_a0f4a0a6a(timeoutAction, "replay")) {
           Style.setTextToScreen("Replay");
           if (isEmptyString(Variables.timeout.playback)) {
             Variables.voice.addText("Replay Options");
@@ -116,9 +119,7 @@ public class Behaviour {
             PlayGetInfo(Variables.timeout.playback);
           }
         }
-
-        Variables.voice.speak();
-        Thread.sleep(3000);
+        Thread.sleep(Variables.voice.speak() * 120);
         Behaviour.runLogic(evt, true);
       } catch (Exception e) {
         e.printStackTrace();
@@ -127,25 +128,25 @@ public class Behaviour {
     private static boolean isEmptyString(String str) {
       return str == null || str.length() == 0;
     }
-    private static boolean eq_d7l93i_a0d0a0g0(Object a, Object b) {
+    private static boolean eq_d7l93i_a0e0a0g0(Object a, Object b) {
       return (a != null ? a.equals(b) : a == b);
     }
-    private static boolean eq_d7l93i_a0a3a0a6a(Object a, Object b) {
+    private static boolean eq_d7l93i_a0a4a0a6a(Object a, Object b) {
       return (a != null ? a.equals(b) : a == b);
     }
-    private static boolean eq_d7l93i_a0b3a0a6a(Object a, Object b) {
+    private static boolean eq_d7l93i_a0b4a0a6a(Object a, Object b) {
       return (a != null ? a.equals(b) : a == b);
     }
-    private static boolean eq_d7l93i_a0c3a0a6a(Object a, Object b) {
+    private static boolean eq_d7l93i_a0c4a0a6a(Object a, Object b) {
       return (a != null ? a.equals(b) : a == b);
     }
-    private static boolean eq_d7l93i_a0d3a0a6a(Object a, Object b) {
+    private static boolean eq_d7l93i_a0d4a0a6a(Object a, Object b) {
       return (a != null ? a.equals(b) : a == b);
     }
-    private static boolean eq_d7l93i_a0e3a0a6a(Object a, Object b) {
+    private static boolean eq_d7l93i_a0e4a0a6a(Object a, Object b) {
       return (a != null ? a.equals(b) : a == b);
     }
-    private static boolean eq_d7l93i_a0f3a0a6a(Object a, Object b) {
+    private static boolean eq_d7l93i_a0f4a0a6a(Object a, Object b) {
       return (a != null ? a.equals(b) : a == b);
     }
   }
@@ -285,7 +286,7 @@ public class Behaviour {
       PlayGetInfo(currentEvent.playback);
     }
     if (!(Variables.playbackisFile)) {
-      Variables.voice.addText("Choose from this menu, ");
+      Variables.voice.addText(",Choose from this menu, ");
     }
     // Delete all the previous possible options 
     Variables.possibleOptList.clear();
@@ -300,7 +301,7 @@ public class Behaviour {
         trigger = child.trigger;
       }
       if (!(Variables.playbackisFile)) {
-        Variables.voice.addText(" For " + child.name + " press " + trigger + ",");
+        Variables.voice.addText(" ,For " + child.name + " press " + trigger + ",");
       }
       Variables.possibleOptList.add(child.trigger);
     }

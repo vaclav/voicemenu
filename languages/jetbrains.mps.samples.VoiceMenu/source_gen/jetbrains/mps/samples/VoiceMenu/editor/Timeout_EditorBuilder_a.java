@@ -127,6 +127,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "PlayBack:");
     editorCell.setCellId("Constant_tbvjtx_e0");
     Style style = new StyleImpl();
+    new HardCodedTextStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, false);
     style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
     style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.gray));
