@@ -1,34 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debug-info version="2">
-  <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/2892639838852006608">
-    <file name="Jet-Mobile.html.xml">
-      <unit id="2892639838852006608" at="1,0,470,15" name="jetbrains.mps.samples.VoiceMenu.sandbox.Jet-Mobile$html" />
-    </file>
-  </root>
-  <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/4175991680190977537">
-    <file name="JetBrains2.html.xml">
-      <unit id="4175991680190977537" at="1,0,227,15" name="jetbrains.mps.samples.VoiceMenu.sandbox.JetBrains2$html" />
-    </file>
-  </root>
-  <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/5283568769203116579">
-    <file name="HowToGithub.html.xml">
-      <unit id="5283568769203116579" at="1,0,119,15" name="jetbrains.mps.samples.VoiceMenu.sandbox.HowToGithub$html" />
-    </file>
-  </root>
-  <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/7335900905079802776">
-    <file name="myVoiceMenu.html.xml">
-      <unit id="7335900905079802776" at="1,0,201,15" name="jetbrains.mps.samples.VoiceMenu.sandbox.myVoiceMenu$html" />
-    </file>
-  </root>
-  <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/7733035612221353346">
-    <file name="Test160.html.xml">
-      <unit id="7733035612221353346" at="1,0,51,15" name="jetbrains.mps.samples.VoiceMenu.sandbox.Test160$html" />
-    </file>
-  </root>
-  <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/859446834197549353">
-    <file name="JetBrains.html.xml">
-      <unit id="859446834197549353" at="1,0,58,15" name="jetbrains.mps.samples.VoiceMenu.sandbox.JetBrains$html" />
-    </file>
-  </root>
-</debug-info>
+<debug-info version="2" />
 

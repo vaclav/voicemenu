@@ -6,12 +6,11 @@
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" version="-1" />
-    <engage id="0b30ef64-0c5e-4567-b992-9bf5bbc44c0a" name="jetbrains.mps.samples.VoiceMenuToHTML" />
+    <engage id="e2a803a4-d4b8-43eb-b458-517effd2a87f" name="jetbrains.mps.samples.VoiceMenuToAsterisk" />
   </languages>
   <imports />
   <registry>
     <language id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu">
-      <concept id="6151364482690565571" name="jetbrains.mps.samples.VoiceMenu.structure.Empty" flags="ng" index="2fTWM$" />
       <concept id="7733035612211835897" name="jetbrains.mps.samples.VoiceMenu.structure.Replay" flags="ng" index="2m1r4j" />
       <concept id="859446834198103481" name="jetbrains.mps.samples.VoiceMenu.structure.Timeout" flags="ng" index="2smLJI">
         <property id="859446834198103484" name="duration" index="2smLJF" />
@@ -534,13 +533,33 @@
       </node>
       <node concept="2C_I21" id="JHn_unFt5f" role="2C_I26">
         <ref role="2C_gVZ" node="JHn_unFt4F" resolve="Sales" />
-        <node concept="2fTWM$" id="3jUOcBQpSy3" role="2C_gVu" />
+        <node concept="2C_Ik4" id="2PV9jnunKGy" role="2C_gVu">
+          <node concept="2C_Ik0" id="2PV9jnunKGB" role="2C_I24">
+            <property role="2C_Iks" value="1" />
+            <property role="TrG5h" value="Menu" />
+          </node>
+          <node concept="2C_I21" id="2PV9jnunKGI" role="2C_I26">
+            <ref role="2C_gVZ" node="2PV9jnunKGB" resolve="Menu" />
+            <node concept="2C_Ik4" id="2PV9jnupc_H" role="2C_gVu">
+              <node concept="2C_Ik0" id="2PV9jnupc_M" role="2C_I24">
+                <property role="2C_Iks" value="1" />
+                <property role="TrG5h" value="Call" />
+              </node>
+              <node concept="2C_I21" id="2PV9jnupc_Q" role="2C_I26">
+                <ref role="2C_gVZ" node="2PV9jnupc_M" resolve="Call" />
+                <node concept="1$pBvr" id="2PV9jnupcA0" role="2C_gVu">
+                  <property role="XmNmt" value="true" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2smLJI" id="JHn_unJkpP" role="2smLJD">
       <property role="2smLJF" value="7" />
       <property role="31ipjb" value="Choose from .." />
-      <node concept="2m1r4j" id="3jUOcBQax9j" role="2sfXcw" />
+      <node concept="1$pBvp" id="2PV9jnuuKHX" role="2sfXcw" />
     </node>
   </node>
 </model>
