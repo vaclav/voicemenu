@@ -185,7 +185,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)/4759611536116094710");
     b.prop("nameOfRecord", 0x2590dec45e0d68d1L, "2706908311022561489");
     b.prop("isFinal", 0x420d89797f56bd93L, "4759611536120921491");
-    b.alias("RecordMemo");
+    b.alias("Record");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForReplay() {

@@ -717,10 +717,14 @@ public class DirectCall_TransformationMenu extends TransformationMenuBase {
           SNodeFactoryOperations.replaceWithNewChild(_context.getNode(), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")));
         }
 
+        @Override
+        public boolean canExecute(@NotNull String pattern) {
+          return !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, "jetbrains.mps.samples.VoiceMenu.structure.Timeout")));
+        }
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c01j;
+          return IconContainer.RESOURCE_a0a01c01j_0;
         }
         @Override
         public String getTooltipText() {
@@ -766,7 +770,7 @@ public class DirectCall_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c11j_0;
+          return IconContainer.RESOURCE_a0a9c11j;
         }
         @Override
         public String getTooltipText() {
