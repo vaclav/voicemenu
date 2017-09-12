@@ -147,6 +147,8 @@ public class IconContainer {
   protected static IconResource RESOURCE_a0a01c01j_2 = new IconResource("menu.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c11j_0 = new IconResource("info.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c21j_2 = new IconResource("donkey.png", IconContainer.class);
-  protected static IconResource RESOURCE_a0a01c6h_10 = new IconResource("unhide.png", IconContainer.class);
-  protected static IconResource RESOURCE_a0a01c7h_10 = new IconResource("hide.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a01c6h_10 = new IconResource("remove.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a01c7h_10 = new IconResource("plus.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a01c6i_11 = new IconResource("unhide.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a01c7i_11 = new IconResource("hide.png", IconContainer.class);
 }

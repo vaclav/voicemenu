@@ -13,7 +13,6 @@
   </imports>
   <registry>
     <language id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu">
-      <concept id="6151364482690565571" name="jetbrains.mps.samples.VoiceMenu.structure.Empty" flags="ng" index="2fTWM$" />
       <concept id="7733035612211835897" name="jetbrains.mps.samples.VoiceMenu.structure.Replay" flags="ng" index="2m1r4j" />
       <concept id="859446834198103481" name="jetbrains.mps.samples.VoiceMenu.structure.Timeout" flags="ng" index="2smLJI">
         <property id="859446834198103484" name="duration" index="2smLJF" />
@@ -347,12 +346,17 @@
     <property role="3uoZKU" value="" />
     <property role="1EJLKn" value="true" />
     <node concept="2C_Ik4" id="6HhgIFXTyQ3" role="2JqgbB">
-      <node concept="2C_I21" id="7loivjkHwQw" role="2C_I26">
-        <node concept="2fTWM$" id="7loivjkHwQx" role="2C_gVu" />
+      <node concept="2C_I21" id="7IHEnsdAb2n" role="2C_I26">
+        <ref role="2C_gVZ" node="7IHEnsdAb2p" resolve="xxx" />
+        <node concept="1$pBvq" id="7IHEnsdAb2t" role="2C_gVu" />
       </node>
-      <node concept="2C_Ik0" id="7loivjkHwQy" role="2C_I24" />
+      <node concept="2C_Ik0" id="7IHEnsdAb2p" role="2C_I24">
+        <property role="2C_Iks" value="2" />
+        <property role="TrG5h" value="xxx" />
+      </node>
     </node>
     <node concept="2smLJI" id="JHn_unRV$u" role="2smLJD">
+      <property role="31ipjb" value="Choose from .." />
       <node concept="1$pBvp" id="7loivjkgMKY" role="2sfXcw" />
     </node>
   </node>
