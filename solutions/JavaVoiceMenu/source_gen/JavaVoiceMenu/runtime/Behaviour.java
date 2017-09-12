@@ -23,11 +23,13 @@ public class Behaviour {
     }
     public void run() {
       try {
-        TimeUnit.SECONDS.sleep(Variables.timeout.duration);
+        TimeUnit.SECONDS.sleep(Variables.timeout.duration + 3);
         String timeoutAction = Variables.timeout.action;
-
+        System.out.println("Timeout playback: " + Variables.timeout.playback);
         if (eq_d7l93i_a0d0a0g0(timeoutAction, "back")) {
-          Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
+          if (Variables.path.length() > 1) {
+            Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
+          }
           Style.setTextToScreen("Back");
 
           if (isEmptyString(Variables.timeout.playback)) {
@@ -46,6 +48,9 @@ public class Behaviour {
           }
           if (Variables.timeout.isFinal) {
             Style.setTextToScreen("Call ended");
+            Variables.voice.speak();
+            return;
+
           }
 
 
@@ -58,10 +63,11 @@ public class Behaviour {
           }
           if (Variables.timeout.isFinal) {
             Style.setTextToScreen("Call ended");
+            Variables.voice.speak();
+            return;
           }
 
-
-        } else if (eq_d7l93i_a0c3a0a6a(timeoutAction, "HangUp")) {
+        } else if (eq_d7l93i_a0c3a0a6a(timeoutAction, "hangUp")) {
           Style.setTextToScreen("HangUp");
           if (isEmptyString(Variables.timeout.playback)) {
             Variables.voice.addText("Phone call ended");
@@ -69,6 +75,8 @@ public class Behaviour {
             PlayGetInfo(Variables.timeout.playback);
           }
           Style.setTextToScreen("Call ended");
+          Variables.voice.speak();
+          return;
 
         } else if (eq_d7l93i_a0d3a0a6a(timeoutAction, "other")) {
           Style.setTextToScreen("Other");
@@ -79,6 +87,8 @@ public class Behaviour {
           }
           if (Variables.timeout.isFinal) {
             Style.setTextToScreen("Call ended");
+            Variables.voice.speak();
+            return;
           }
 
         } else if (eq_d7l93i_a0e3a0a6a(timeoutAction, "record")) {
@@ -86,12 +96,16 @@ public class Behaviour {
           if (isEmptyString(Variables.timeout.playback)) {
             Variables.voice.addText("After beep start speaking, beep");
             Variables.voice.speak();
-            Thread.sleep(3000);
+            Thread.sleep(2000);
+            Variables.voice.addText("Succesfully recorded");
           } else {
             PlayGetInfo(Variables.timeout.playback);
           }
           if (Variables.timeout.isFinal) {
             Style.setTextToScreen("Call ended");
+            Variables.voice.speak();
+            return;
+
           }
 
         } else if (eq_d7l93i_a0f3a0a6a(timeoutAction, "replay")) {
@@ -101,16 +115,11 @@ public class Behaviour {
           } else {
             PlayGetInfo(Variables.timeout.playback);
           }
-          if (Variables.timeout.isFinal) {
-            Style.setTextToScreen("Call ended");
-          }
-
         }
 
         Variables.voice.speak();
+        Thread.sleep(3000);
         Behaviour.runLogic(evt, true);
-
-
       } catch (Exception e) {
         e.printStackTrace();
       }
@@ -197,6 +206,7 @@ public class Behaviour {
 
     // Loading next Event according to what is specified in "Variables.path" 
     Event currentEvent = Variables.myHashMap.get(Variables.path);
+    Style.setTextToScreen(currentEvent.name);
     // Checking if "back" option was selected via name of the current event 
     if (!(isEmptyString(currentEvent.action))) {
       System.out.println("sout current event action" + currentEvent.action);

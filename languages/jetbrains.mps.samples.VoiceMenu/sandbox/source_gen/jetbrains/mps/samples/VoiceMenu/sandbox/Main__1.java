@@ -30,7 +30,6 @@ public class Main__1 implements ActionListener {
     Home.setAction("", true);
     Home.setGreeting("Welcome to " + "Test160");
 
-    Home.setGreeting("rrr/Users/jetbrains/Documents/sample.wav");
     Home.childs = new ArrayList<Event>();
     Home.isFinal = false;
     Variables.main_Text = "Test160";
@@ -47,37 +46,8 @@ public class Main__1 implements ActionListener {
     Variables.myHashMap.put("01", Get_Info_2032os_a0);
     Get_Info_2032os_a0.setAction("getInfo", false);
     Get_Info_2032os_a0.childs = new ArrayList<Event>();
-    Event Menu_2032os_b0 = new Event("Menu", "2");
-    Menu_2032os_b0.isFinal = false;
-    Menu_2032os_b0.setAction("", false);
-    Menu_2032os_b0.setGreeting("");
-    Menu_2032os_b0.playback = "/Users/jetbrains/Documents/menu1.wav";
-    Menu_2032os_b0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("02", Menu_2032os_b0);
-    Event HANGUP_2032os_a0b0 = new Event("HANGUP", "1");
-    HANGUP_2032os_a0b0.isFinal = false;
-    HANGUP_2032os_a0b0.setAction("", false);
-    HANGUP_2032os_a0b0.setGreeting("");
-    HANGUP_2032os_a0b0.playback = "Hang up";
-    HANGUP_2032os_a0b0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("021", HANGUP_2032os_a0b0);
-    HANGUP_2032os_a0b0.setAction("hangUp", true);
-    HANGUP_2032os_a0b0.childs = new ArrayList<Event>();
-    Event GetInfo_2032os_b0b0 = new Event("GetInfo", "2");
-    GetInfo_2032os_b0b0.isFinal = false;
-    GetInfo_2032os_b0b0.setAction("", false);
-    GetInfo_2032os_b0b0.setGreeting("");
-    GetInfo_2032os_b0b0.playback = "get Info";
-    GetInfo_2032os_b0b0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("022", GetInfo_2032os_b0b0);
-    GetInfo_2032os_b0b0.setAction("record", true);
-    GetInfo_2032os_b0b0.childs = new ArrayList<Event>();
-    Menu_2032os_b0.childs = new ArrayList<Event>();
-    Menu_2032os_b0.childs.add(HANGUP_2032os_a0b0);
-    Menu_2032os_b0.childs.add(GetInfo_2032os_b0b0);
 
     Home.childs.add(Get_Info_2032os_a0);
-    Home.childs.add(Menu_2032os_b0);
 
     Variables.timeout = new Event("timeout", "X");
     Variables.timeout.playback = "";

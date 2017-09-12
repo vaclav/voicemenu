@@ -30,6 +30,7 @@ public class Main__4 implements ActionListener {
     Home.setAction("", true);
     Home.setGreeting("Welcome to " + "JetBrains");
 
+    Home.setGreeting("Welcome to the best company ever");
     Home.childs = new ArrayList<Event>();
     Home.isFinal = false;
     Variables.main_Text = "JetBrains";
@@ -43,14 +44,14 @@ public class Main__4 implements ActionListener {
     Sales_9upjpn_a0.setGreeting("");
     Sales_9upjpn_a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("01", Sales_9upjpn_a0);
-    Sales_9upjpn_a0.setAction("call", true);
+    Sales_9upjpn_a0.setAction("call", false);
     Sales_9upjpn_a0.childs = new ArrayList<Event>();
 
     Home.childs.add(Sales_9upjpn_a0);
 
     Variables.timeout = new Event("timeout", "X");
-    Variables.timeout.playback = "PlayBack test";
-    Variables.timeout.action = "getInfo";
+    Variables.timeout.playback = "";
+    Variables.timeout.action = "replay";
     Variables.timeout.isFinal = false;
   }
 
