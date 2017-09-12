@@ -1085,7 +1085,7 @@
                       <node concept="liA8E" id="5I" role="2OqNvi">
                         <ref role="37wK5l" to="ze1i:~ConceptPresentationBuilder.rawPresentation(java.lang.String):jetbrains.mps.smodel.runtime.ConceptPresentationBuilder" resolve="rawPresentation" />
                         <node concept="Xl_RD" id="5J" role="37wK5m">
-                          <property role="Xl_RC" value="RecordMemo" />
+                          <property role="Xl_RC" value="Record" />
                         </node>
                       </node>
                     </node>
@@ -4176,7 +4176,7 @@
             <node concept="liA8E" id="nr" role="2OqNvi">
               <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.alias(java.lang.String):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2" resolve="alias" />
               <node concept="Xl_RD" id="ns" role="37wK5m">
-                <property role="Xl_RC" value="RecordMemo" />
+                <property role="Xl_RC" value="Record" />
               </node>
             </node>
           </node>
