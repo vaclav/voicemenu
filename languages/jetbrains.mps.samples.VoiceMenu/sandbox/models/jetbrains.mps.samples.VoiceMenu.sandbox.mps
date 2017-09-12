@@ -346,20 +346,17 @@
     <property role="3uoZKU" value="" />
     <property role="1EJLKn" value="true" />
     <node concept="2C_Ik4" id="6HhgIFXTyQ3" role="2JqgbB">
-      <node concept="2C_I21" id="6HhgIFXYxj0" role="2C_I26">
-        <property role="3upAMh" value="/Users/jetbrains/Documents/Get.wav" />
-        <ref role="2C_gVZ" node="6HhgIFXYxiR" resolve="Get Info" />
-        <node concept="1$pBvo" id="wr2MGct3$O" role="2C_gVu">
-          <property role="XmNhe" value="false" />
-        </node>
-      </node>
       <node concept="2C_Ik0" id="6HhgIFXYxiR" role="2C_I24">
         <property role="TrG5h" value="Get Info" />
         <property role="2C_Iks" value="1" />
       </node>
+      <node concept="2C_I21" id="7loivjkkBzW" role="2C_I26">
+        <ref role="2C_gVZ" node="6HhgIFXYxiR" resolve="Get Info" />
+        <node concept="1$pBvq" id="7loivjkkBzY" role="2C_gVu" />
+      </node>
     </node>
     <node concept="2smLJI" id="JHn_unRV$u" role="2smLJD">
-      <node concept="1$pBvq" id="7loivjk1aof" role="2sfXcw" />
+      <node concept="1$pBvp" id="7loivjkgMKY" role="2sfXcw" />
     </node>
   </node>
   <node concept="2Jqgb4" id="4_j0sPiGLCz">

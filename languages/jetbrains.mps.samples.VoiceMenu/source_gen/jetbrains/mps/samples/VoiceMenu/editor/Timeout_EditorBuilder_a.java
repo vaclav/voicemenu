@@ -170,6 +170,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
       }
       Style style = new StyleImpl();
       style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
+      style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
       editorCell.getStyle().putAll(style);
     }
     @Override
