@@ -22,7 +22,7 @@
   </root>
   <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/7733035612221353346">
     <file name="Test160.html.xml">
-      <unit id="7733035612221353346" at="1,0,61,15" name="jetbrains.mps.samples.VoiceMenu.sandbox.Test160$html" />
+      <unit id="7733035612221353346" at="1,0,51,15" name="jetbrains.mps.samples.VoiceMenu.sandbox.Test160$html" />
     </file>
   </root>
   <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/859446834197549353">

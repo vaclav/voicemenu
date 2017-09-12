@@ -15,9 +15,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="r791" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.text(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="ss6x" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#828f8f6b-2bf3-4a70-82a0-c413d7f22140(jetbrains.mps.lang.project.modules/module.TTSLibrary@project_stub)" />
     <import index="ezje" ref="828f8f6b-2bf3-4a70-82a0-c413d7f22140/java:com.sun.speech.freetts(TTSLibrary/)" />
-    <import index="uz8b" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#fdcdc48f-bfd8-4831-aa76-5abac2ffa010(jetbrains.mps.lang.project.modules/module.jetbrains.mps.baseLanguage.jdk8@project_stub)" />
     <import index="kpdv" ref="847a3235-09f9-403c-b6a9-1c294a212e92/java:org.apache.tools.ant.taskdefs(Ant/)" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="8ofa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.applet(JDK/)" />
