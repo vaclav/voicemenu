@@ -1217,7 +1217,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="6e" role="2OqNvi">
-                        <ref role="37wK5l" to="u78q:~TypeCheckingContext.reportWarning(org.jetbrains.mps.openapi.model.SNode,java.lang.String,java.lang.String,java.lang.String,jetbrains.mps.errors.QuickFixProvider,jetbrains.mps.errors.messageTargets.MessageTarget):jetbrains.mps.errors.IErrorReporter" resolve="reportWarning" />
+                        <ref role="37wK5l" to="u78q:~TypeCheckingContext.reportTypeError(org.jetbrains.mps.openapi.model.SNode,java.lang.String,java.lang.String,java.lang.String,jetbrains.mps.errors.QuickFixProvider,jetbrains.mps.errors.messageTargets.MessageTarget):jetbrains.mps.errors.IErrorReporter" resolve="reportTypeError" />
                         <node concept="37vLTw" id="6g" role="37wK5m">
                           <ref role="3cqZAo" node="5x" resolve="event" />
                         </node>
@@ -1228,7 +1228,7 @@
                           <property role="Xl_RC" value="r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)" />
                         </node>
                         <node concept="Xl_RD" id="6j" role="37wK5m">
-                          <property role="Xl_RC" value="2036874050862906690" />
+                          <property role="Xl_RC" value="8455589616260334561" />
                         </node>
                         <node concept="10Nm6u" id="6k" role="37wK5m" />
                         <node concept="37vLTw" id="6l" role="37wK5m">
@@ -1336,7 +1336,7 @@
                 </node>
               </node>
               <node concept="6wLe0" id="61" role="lGtFl">
-                <property role="6wLej" value="2036874050862906690" />
+                <property role="6wLej" value="8455589616260334561" />
                 <property role="6wLeW" value="r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)" />
               </node>
             </node>

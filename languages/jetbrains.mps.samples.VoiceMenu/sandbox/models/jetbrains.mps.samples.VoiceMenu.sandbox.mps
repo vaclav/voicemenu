@@ -343,7 +343,7 @@
   </node>
   <node concept="2Jqgb4" id="6HhgIFXTyQ2">
     <property role="TrG5h" value="Test160" />
-    <property role="3uoZKU" value="rrr/Users/jetbrains/Documents/sample.wav" />
+    <property role="3uoZKU" value="" />
     <property role="1EJLKn" value="true" />
     <node concept="2C_Ik4" id="6HhgIFXTyQ3" role="2JqgbB">
       <node concept="2C_I21" id="6HhgIFXYxj0" role="2C_I26">
@@ -353,39 +353,9 @@
           <property role="XmNhe" value="false" />
         </node>
       </node>
-      <node concept="2C_I21" id="6HhgIFY09IU" role="2C_I26">
-        <property role="3upAMh" value="/Users/jetbrains/Documents/menu1.wav" />
-        <ref role="2C_gVZ" node="6HhgIFXYxiW" resolve="Menu" />
-        <node concept="2C_Ik4" id="2mgRGhu34iD" role="2C_gVu">
-          <node concept="2C_I21" id="2mgRGhu34j1" role="2C_I26">
-            <property role="3upAMh" value="Hang up" />
-            <ref role="2C_gVZ" node="2mgRGhu34iE" resolve="HANGUP" />
-            <node concept="X09Yy" id="2mgRGhu34j9" role="2C_gVu" />
-          </node>
-          <node concept="2C_I21" id="2mgRGhu34iT" role="2C_I26">
-            <property role="3upAMh" value="get Info" />
-            <ref role="2C_gVZ" node="2mgRGhu34iP" resolve="GetInfo" />
-            <node concept="X09Yf" id="3BO6$Vadig4" role="2C_gVu">
-              <property role="XmNjE" value="true" />
-            </node>
-          </node>
-          <node concept="2C_Ik0" id="2mgRGhu34iE" role="2C_I24">
-            <property role="2C_Iks" value="1" />
-            <property role="TrG5h" value="HANGUP" />
-          </node>
-          <node concept="2C_Ik0" id="2mgRGhu34iP" role="2C_I24">
-            <property role="2C_Iks" value="2" />
-            <property role="TrG5h" value="GetInfo" />
-          </node>
-        </node>
-      </node>
       <node concept="2C_Ik0" id="6HhgIFXYxiR" role="2C_I24">
         <property role="TrG5h" value="Get Info" />
         <property role="2C_Iks" value="1" />
-      </node>
-      <node concept="2C_Ik0" id="6HhgIFXYxiW" role="2C_I24">
-        <property role="2C_Iks" value="2" />
-        <property role="TrG5h" value="Menu" />
       </node>
     </node>
     <node concept="2smLJI" id="JHn_unRV$u" role="2smLJD">
@@ -571,8 +541,8 @@
       </node>
     </node>
     <node concept="2smLJI" id="JHn_unJkpP" role="2smLJD">
-      <property role="31ipjb" value="PlayBack test" />
       <property role="2smLJF" value="4" />
+      <property role="31ipjb" value="PlayBack test" />
       <node concept="1$pBvo" id="3jUOcBPUHW1" role="2sfXcw" />
     </node>
   </node>

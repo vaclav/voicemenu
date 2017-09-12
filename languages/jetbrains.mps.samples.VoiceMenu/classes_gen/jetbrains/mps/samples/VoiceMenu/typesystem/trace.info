@@ -1020,13 +1020,13 @@
   <root nodeRef="r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)/7660908927727797697">
     <file name="CheckDuplicateNumber_NonTypesystemRule.java">
       <node id="7660908927727797720" at="26,39,27,366" concept="7" />
-      <node id="2036874050862906690" at="30,7,31,60" concept="6" />
-      <node id="2036874050862906690" at="31,60,32,235" concept="6" />
-      <node id="2036874050862906690" at="33,9,34,151" concept="6" />
-      <node id="2036874050862906690" at="34,151,35,71" concept="2" />
-      <node id="2036874050862906690" at="37,9,38,152" concept="6" />
-      <node id="2036874050862906690" at="38,152,39,251" concept="2" />
-      <node id="2036874050862906690" at="39,251,40,71" concept="2" />
+      <node id="8455589616260334561" at="30,7,31,60" concept="6" />
+      <node id="8455589616260334561" at="31,60,32,237" concept="6" />
+      <node id="8455589616260334561" at="33,9,34,151" concept="6" />
+      <node id="8455589616260334561" at="34,151,35,71" concept="2" />
+      <node id="8455589616260334561" at="37,9,38,152" concept="6" />
+      <node id="8455589616260334561" at="38,152,39,251" concept="2" />
+      <node id="8455589616260334561" at="39,251,40,71" concept="2" />
       <node id="7660908927727797697" at="45,50,46,155" concept="7" />
       <node id="7660908927727797697" at="48,68,49,102" concept="7" />
       <node id="7660908927727797697" at="51,30,52,17" concept="7" />
@@ -1037,9 +1037,9 @@
       <node id="7660908927727797697" at="48,0,51,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="7660908927727797697" at="51,0,54,0" concept="5" trace="overrides#()Z" />
       <node id="7660908927727797721" at="54,0,57,0" concept="9" trace="eq_bpxx27_a0a0a0a0a0a0b#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="2036874050862906690" at="32,235,36,9" concept="0" />
-      <node id="2036874050862906690" at="36,9,41,9" concept="0" />
-      <node id="2036874050862906690" at="29,9,42,7" concept="0" />
+      <node id="8455589616260334561" at="32,237,36,9" concept="0" />
+      <node id="8455589616260334561" at="36,9,41,9" concept="0" />
+      <node id="8455589616260334561" at="29,9,42,7" concept="0" />
       <node id="7660908927727797709" at="24,118,43,5" concept="4" />
       <node id="7660908927727797697" at="24,0,45,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
       <scope id="7660908927727797697" at="22,51,22,51" />
@@ -1049,14 +1049,14 @@
       <scope id="7660908927727797697" at="51,30,52,17" />
       <scope id="7660908927727797721" at="54,70,55,46" />
       <scope id="7660908927727797697" at="22,0,24,0" />
-      <scope id="2036874050862906690" at="33,9,35,71">
-        <var name="intentionProvider" id="2036874050862906690" />
+      <scope id="8455589616260334561" at="33,9,35,71">
+        <var name="intentionProvider" id="8455589616260334561" />
       </scope>
       <scope id="7660908927727797718" at="26,0,29,0">
         <var name="it" id="7660908927727797718" />
       </scope>
-      <scope id="2036874050862906690" at="37,9,40,71">
-        <var name="intentionProvider" id="2036874050862906690" />
+      <scope id="8455589616260334561" at="37,9,40,71">
+        <var name="intentionProvider" id="8455589616260334561" />
       </scope>
       <scope id="7660908927727797697" at="45,0,48,0" />
       <scope id="7660908927727797697" at="48,0,51,0">
@@ -1067,9 +1067,9 @@
         <var name="a" id="7660908927727797721" />
         <var name="b" id="7660908927727797721" />
       </scope>
-      <scope id="2036874050862906690" at="30,7,41,9">
-        <var name="_reporter_2309309498" id="2036874050862906690" />
-        <var name="errorTarget" id="2036874050862906690" />
+      <scope id="8455589616260334561" at="30,7,41,9">
+        <var name="_reporter_2309309498" id="8455589616260334561" />
+        <var name="errorTarget" id="8455589616260334561" />
       </scope>
       <scope id="7660908927727797730" at="29,9,42,7" />
       <scope id="7660908927727797698" at="24,118,43,5" />
