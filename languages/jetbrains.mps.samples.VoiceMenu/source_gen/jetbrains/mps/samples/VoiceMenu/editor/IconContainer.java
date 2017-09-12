@@ -104,9 +104,8 @@ public class IconContainer {
   protected static IconResource RESOURCE_a0a01c6j_0 = new IconResource("remove.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a01c7j = new IconResource("plus.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c8j_2 = new IconResource("add_to_list.png", IconContainer.class);
-  protected static IconResource RESOURCE_a0a01c9j_0 = new IconResource("add_to_list.png", IconContainer.class);
-  protected static IconResource RESOURCE_a0a01c01j_2 = new IconResource("init.png", IconContainer.class);
-  protected static IconResource RESOURCE_a0a9c11j_0 = new IconResource("remove.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a01c9j_0 = new IconResource("init.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a9c01j = new IconResource("remove.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a01c6h_6 = new IconResource("Uppercase.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a01c7h_6 = new IconResource("Lowercase.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a01c6i_7 = new IconResource("remove.png", IconContainer.class);
@@ -145,7 +144,9 @@ public class IconContainer {
   protected static IconResource RESOURCE_a0a9c7j_3 = new IconResource("hangup.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c8j_3 = new IconResource("record.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c9j_1 = new IconResource("phone.png", IconContainer.class);
-  protected static IconResource RESOURCE_a0a01c01j_3 = new IconResource("menu.png", IconContainer.class);
-  protected static IconResource RESOURCE_a0a9c11j_1 = new IconResource("info.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a01c01j_2 = new IconResource("menu.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a9c11j_0 = new IconResource("info.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c21j_2 = new IconResource("donkey.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a01c6h_10 = new IconResource("unhide.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a01c7h_10 = new IconResource("hide.png", IconContainer.class);
 }
