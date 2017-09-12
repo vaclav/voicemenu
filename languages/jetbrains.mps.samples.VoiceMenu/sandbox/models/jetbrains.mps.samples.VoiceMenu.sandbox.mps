@@ -16,6 +16,7 @@
       <concept id="7733035612211835897" name="jetbrains.mps.samples.VoiceMenu.structure.Replay" flags="ng" index="2m1r4j" />
       <concept id="859446834198103481" name="jetbrains.mps.samples.VoiceMenu.structure.Timeout" flags="ng" index="2smLJI">
         <property id="859446834198103484" name="duration" index="2smLJF" />
+        <property id="3817593199979086850" name="playback" index="31ipjb" />
         <child id="859446834199956855" name="Action" index="2sfXcw" />
       </concept>
       <concept id="6587365532662359693" name="jetbrains.mps.samples.VoiceMenu.structure.Activity" flags="ng" index="2C_I21">
@@ -48,7 +49,6 @@
         <property id="4759611536120921574" name="isFinal" index="XmNiv" />
       </concept>
       <concept id="6772988411135920840" name="jetbrains.mps.samples.VoiceMenu.structure.DirectCall" flags="ng" index="1$pBvr">
-        <property id="7733035612202996721" name="number" index="2nBP4r" />
         <property id="4759611536120921316" name="isFinal" index="XmNmt" />
       </concept>
     </language>
@@ -353,6 +353,14 @@
           <property role="XmNhe" value="false" />
         </node>
       </node>
+      <node concept="2C_I21" id="7loivjjtgfJ" role="2C_I26">
+        <ref role="2C_gVZ" node="7loivjjbTpQ" resolve="nn" />
+        <node concept="1$pBvq" id="7loivjjtgh8" role="2C_gVu" />
+      </node>
+      <node concept="2C_I21" id="7loivjjtgh4" role="2C_I26">
+        <ref role="2C_gVZ" node="7loivjjp4im" resolve="wq" />
+        <node concept="1$pBvq" id="7loivjjtgh6" role="2C_gVu" />
+      </node>
       <node concept="2C_Ik0" id="6HhgIFXYxiR" role="2C_I24">
         <property role="TrG5h" value="Get Info" />
         <property role="2C_Iks" value="1" />
@@ -364,14 +372,6 @@
       <node concept="2C_Ik0" id="7loivjjbTpQ" role="2C_I24">
         <property role="2C_Iks" value="4" />
         <property role="TrG5h" value="nn" />
-      </node>
-      <node concept="2C_I21" id="7loivjjtgfJ" role="2C_I26">
-        <ref role="2C_gVZ" node="7loivjjbTpQ" resolve="nn" />
-        <node concept="1$pBvq" id="7loivjjtgh8" role="2C_gVu" />
-      </node>
-      <node concept="2C_I21" id="7loivjjtgh4" role="2C_I26">
-        <ref role="2C_gVZ" node="7loivjjp4im" resolve="wq" />
-        <node concept="1$pBvq" id="7loivjjtgh6" role="2C_gVu" />
       </node>
     </node>
     <node concept="2smLJI" id="JHn_unRV$u" role="2smLJD">
@@ -445,15 +445,6 @@
         <property role="2C_Iks" value="2" />
         <property role="TrG5h" value="General Questions" />
       </node>
-      <node concept="2C_Ik0" id="3BO6$VaLho4" role="2C_I24">
-        <property role="2C_Iks" value="X" />
-        <property role="TrG5h" value="Timeout" />
-      </node>
-      <node concept="2C_I21" id="3BO6$VaLho5" role="2C_I26">
-        <property role="3upAMh" value="Timeout" />
-        <ref role="2C_gVZ" node="3BO6$VaLho4" resolve="Timeout" />
-        <node concept="2m1r4j" id="3BO6$VaLho7" role="2C_gVu" />
-      </node>
       <node concept="2C_I21" id="3BO6$VaLhok" role="2C_I26">
         <ref role="2C_gVZ" node="3BO6$VaLho3" resolve="Sales" />
         <node concept="2C_Ik4" id="3BO6$VaLhos" role="2C_gVu">
@@ -468,15 +459,6 @@
           <node concept="2C_Ik0" id="3BO6$VaLhoG" role="2C_I24">
             <property role="2C_Iks" value="#" />
             <property role="TrG5h" value="Previous Menu" />
-          </node>
-          <node concept="2C_Ik0" id="3BO6$VaLhou" role="2C_I24">
-            <property role="2C_Iks" value="X" />
-            <property role="TrG5h" value="Timeout" />
-          </node>
-          <node concept="2C_I21" id="3BO6$VaLhov" role="2C_I26">
-            <property role="3upAMh" value="Timeout" />
-            <ref role="2C_gVZ" node="3BO6$VaLhou" resolve="Timeout" />
-            <node concept="2m1r4j" id="3BO6$VaLhox" role="2C_gVu" />
           </node>
           <node concept="2C_I21" id="3BO6$VaLhrr" role="2C_I26">
             <ref role="2C_gVZ" node="3BO6$VaLhot" resolve="Call department" />
@@ -509,17 +491,6 @@
             <property role="2C_Iks" value="#" />
             <property role="TrG5h" value="Previous Menu" />
           </node>
-          <node concept="2C_Ik0" id="3BO6$VaLhp3" role="2C_I24">
-            <property role="2C_Iks" value="X" />
-            <property role="TrG5h" value="Timeout" />
-          </node>
-          <node concept="2C_I21" id="3BO6$VaLhp4" role="2C_I26">
-            <property role="3upAMh" value="Timeout" />
-            <ref role="2C_gVZ" node="3BO6$VaLhp3" resolve="Timeout" />
-            <node concept="1$pBvr" id="3BO6$VaLjZU" role="2C_gVu">
-              <property role="XmNmt" value="true" />
-            </node>
-          </node>
           <node concept="2C_I21" id="3BO6$VaLhpm" role="2C_I26">
             <ref role="2C_gVZ" node="3BO6$VaLhp2" resolve="Leave a message" />
             <node concept="X09Yf" id="3BO6$VaLhpu" role="2C_gVu">
@@ -540,15 +511,6 @@
               <node concept="2C_Ik0" id="3BO6$VaLhpV" role="2C_I24">
                 <property role="2C_Iks" value="#" />
                 <property role="TrG5h" value="Previous Menu" />
-              </node>
-              <node concept="2C_Ik0" id="3BO6$VaLhpH" role="2C_I24">
-                <property role="2C_Iks" value="X" />
-                <property role="TrG5h" value="Timeout" />
-              </node>
-              <node concept="2C_I21" id="3BO6$VaLhpI" role="2C_I26">
-                <property role="3upAMh" value="Timeout" />
-                <ref role="2C_gVZ" node="3BO6$VaLhpH" resolve="Timeout" />
-                <node concept="2m1r4j" id="3BO6$VaLhpK" role="2C_gVu" />
               </node>
               <node concept="2C_I21" id="3BO6$VaLhqO" role="2C_I26">
                 <ref role="2C_gVZ" node="3BO6$VaLhpG" resolve="Direct Call" />
@@ -574,7 +536,9 @@
       </node>
     </node>
     <node concept="2smLJI" id="JHn_unRV$n" role="2smLJD">
-      <node concept="2m1r4j" id="JHn_unRV$r" role="2sfXcw" />
+      <node concept="1$pBvo" id="JHn_unTIjR" role="2sfXcw">
+        <property role="XmNhe" value="false" />
+      </node>
     </node>
   </node>
   <node concept="2Jqgb4" id="JHn_unFt4D">
@@ -585,56 +549,17 @@
         <property role="2C_Iks" value="1" />
         <property role="TrG5h" value="Sales" />
       </node>
-      <node concept="2C_Ik0" id="JHn_unFt50" role="2C_I24">
-        <property role="2C_Iks" value="2" />
-        <property role="TrG5h" value="NetSuite" />
-      </node>
       <node concept="2C_I21" id="JHn_unFt5f" role="2C_I26">
         <ref role="2C_gVZ" node="JHn_unFt4F" resolve="Sales" />
-        <node concept="1$pBvr" id="JHn_unFt5H" role="2C_gVu">
+        <node concept="1$pBvr" id="3jUOcBPOda_" role="2C_gVu">
           <property role="XmNmt" value="true" />
-          <property role="2nBP4r" value="111111" />
-        </node>
-      </node>
-      <node concept="2C_I21" id="JHn_unFt65" role="2C_I26">
-        <ref role="2C_gVZ" node="JHn_unFt50" resolve="NetSuite" />
-        <node concept="2C_Ik4" id="JHn_unFt6j" role="2C_gVu">
-          <node concept="2C_Ik0" id="JHn_unFt6k" role="2C_I24">
-            <property role="2C_Iks" value="1" />
-            <property role="TrG5h" value="Call Martina" />
-          </node>
-          <node concept="2C_Ik0" id="JHn_unFt6v" role="2C_I24">
-            <property role="2C_Iks" value="2" />
-            <property role="TrG5h" value="Call Oscar" />
-          </node>
-          <node concept="2C_Ik0" id="JHn_unFt6z" role="2C_I24">
-            <property role="2C_Iks" value="3" />
-            <property role="TrG5h" value="Go back" />
-          </node>
-          <node concept="2C_I21" id="JHn_unFt6C" role="2C_I26">
-            <ref role="2C_gVZ" node="JHn_unFt6k" resolve="Call Martina" />
-            <node concept="1$pBvr" id="JHn_unFt6K" role="2C_gVu">
-              <property role="XmNmt" value="true" />
-              <property role="2nBP4r" value="22222" />
-            </node>
-          </node>
-          <node concept="2C_I21" id="JHn_unFt6N" role="2C_I26">
-            <ref role="2C_gVZ" node="JHn_unFt6v" resolve="Call Oscar" />
-            <node concept="1$pBvr" id="JHn_unFt6X" role="2C_gVu">
-              <property role="XmNmt" value="true" />
-              <property role="2nBP4r" value="3333" />
-            </node>
-          </node>
-          <node concept="2C_I21" id="JHn_unFt70" role="2C_I26">
-            <ref role="2C_gVZ" node="JHn_unFt6z" resolve="Go back" />
-            <node concept="1$pBvp" id="JHn_unFt7c" role="2C_gVu" />
-          </node>
         </node>
       </node>
     </node>
     <node concept="2smLJI" id="JHn_unJkpP" role="2smLJD">
       <property role="2smLJF" value="5" />
-      <node concept="2m1r4j" id="JHn_unRV$l" role="2sfXcw" />
+      <property role="31ipjb" value="PlayBack test" />
+      <node concept="1$pBvp" id="3jUOcBPSax1" role="2sfXcw" />
     </node>
   </node>
 </model>

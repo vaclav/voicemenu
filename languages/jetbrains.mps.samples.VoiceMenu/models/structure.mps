@@ -261,6 +261,11 @@
       <property role="TrG5h" value="duration" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyi" id="3jUOcBPGOg2" role="1TKVEl">
+      <property role="IQ2nx" value="3817593199979086850" />
+      <property role="TrG5h" value="playback" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="JHn_unOCPR" role="1TKVEi">
       <property role="IQ2ns" value="859446834199956855" />
       <property role="20lmBu" value="aggregation" />

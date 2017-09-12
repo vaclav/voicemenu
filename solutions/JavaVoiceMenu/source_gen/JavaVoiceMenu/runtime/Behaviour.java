@@ -113,6 +113,7 @@ public class Behaviour {
     Event currentEvent = Variables.myHashMap.get(Variables.path);
     // Checking if "back" option was selected via name of the current event 
     if (!(isEmptyString(currentEvent.action))) {
+      System.out.println("sout current event action" + currentEvent.action);
       if (currentEvent.action.equals("back")) {
         // updating Variables.path to get back 
         Variables.voice.addText("Going to the previous menu");
@@ -159,9 +160,10 @@ public class Behaviour {
         }
         Variables.voice.addText("Succesfully recorded");
 
-      } else if (currentEvent.action.equals("repeat")) {
+      } else if (currentEvent.action.equals("replay")) {
         if (isEmptyString(currentEvent.playback)) {
           Variables.voice.addText("Repeating possible options");
+          System.out.println("addtext");
         } else {
           PlayGetInfo(currentEvent.playback);
         }
@@ -174,7 +176,7 @@ public class Behaviour {
         Style.setTextToScreen("PhoneCall finished");
         return;
       } else {
-        if (!(currentEvent.action.equals("back")) && !(currentEvent.action.equals("repeat"))) {
+        if (!(currentEvent.action.equals("back")) && !(currentEvent.action.equals("replay"))) {
           Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
         }
         currentEvent = Variables.myHashMap.get(Variables.path);

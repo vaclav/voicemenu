@@ -26,7 +26,7 @@ public class Main__1 implements ActionListener {
 
   public static void initHashMap() {
 
-    Event Home = new Event("Test160", "0", 8);
+    Event Home = new Event("Test160", "0");
     Home.setAction("", true);
     Home.setGreeting("rrr/Users/jetbrains/Documents/sample.wav");
     Home.childs = new ArrayList<Event>();
@@ -36,7 +36,7 @@ public class Main__1 implements ActionListener {
     Variables.myHashMap.put("0", Home);
 
 
-    Event Get_Info_2032os_a0 = new Event("Get Info", "1", 16);
+    Event Get_Info_2032os_a0 = new Event("Get Info", "1");
     Get_Info_2032os_a0.isFinal = false;
     Get_Info_2032os_a0.setAction("", false);
     Get_Info_2032os_a0.setGreeting("");
@@ -45,14 +45,14 @@ public class Main__1 implements ActionListener {
     Variables.myHashMap.put("01", Get_Info_2032os_a0);
     Get_Info_2032os_a0.setAction("getInfo", false);
     Get_Info_2032os_a0.childs = new ArrayList<Event>();
-    Event Menu_2032os_b0 = new Event("Menu", "2", 16);
+    Event Menu_2032os_b0 = new Event("Menu", "2");
     Menu_2032os_b0.isFinal = false;
     Menu_2032os_b0.setAction("", false);
     Menu_2032os_b0.setGreeting("");
     Menu_2032os_b0.playback = "/Users/jetbrains/Documents/menu1.wav";
     Menu_2032os_b0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("02", Menu_2032os_b0);
-    Event HANGUP_2032os_a0b0 = new Event("HANGUP", "1", 16);
+    Event HANGUP_2032os_a0b0 = new Event("HANGUP", "1");
     HANGUP_2032os_a0b0.isFinal = false;
     HANGUP_2032os_a0b0.setAction("", false);
     HANGUP_2032os_a0b0.setGreeting("");
@@ -61,7 +61,7 @@ public class Main__1 implements ActionListener {
     Variables.myHashMap.put("021", HANGUP_2032os_a0b0);
     HANGUP_2032os_a0b0.setAction("hangUp", true);
     HANGUP_2032os_a0b0.childs = new ArrayList<Event>();
-    Event GetInfo_2032os_b0b0 = new Event("GetInfo", "2", 16);
+    Event GetInfo_2032os_b0b0 = new Event("GetInfo", "2");
     GetInfo_2032os_b0b0.isFinal = false;
     GetInfo_2032os_b0b0.setAction("", false);
     GetInfo_2032os_b0b0.setGreeting("");
@@ -76,6 +76,11 @@ public class Main__1 implements ActionListener {
 
     Home.childs.add(Get_Info_2032os_a0);
     Home.childs.add(Menu_2032os_b0);
+
+    Variables.timeout = new Event("timeout", "X");
+    Variables.timeout.playback = "";
+    Variables.timeout.action = "replay";
+    Variables.timeout.isFinal = false;
   }
 
   public static void main(String[] args) {
