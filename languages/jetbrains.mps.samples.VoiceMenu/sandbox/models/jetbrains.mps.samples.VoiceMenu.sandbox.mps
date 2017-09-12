@@ -16,7 +16,6 @@
       <concept id="7733035612211835897" name="jetbrains.mps.samples.VoiceMenu.structure.Replay" flags="ng" index="2m1r4j" />
       <concept id="859446834198103481" name="jetbrains.mps.samples.VoiceMenu.structure.Timeout" flags="ng" index="2smLJI">
         <property id="859446834198103484" name="duration" index="2smLJF" />
-        <property id="3817593199979086850" name="playback" index="31ipjb" />
         <child id="859446834199956855" name="Action" index="2sfXcw" />
       </concept>
       <concept id="6587365532662359693" name="jetbrains.mps.samples.VoiceMenu.structure.Activity" flags="ng" index="2C_I21">
@@ -527,7 +526,8 @@
   </node>
   <node concept="2Jqgb4" id="JHn_unFt4D">
     <property role="TrG5h" value="JetBrains" />
-    <property role="1EJLKn" value="true" />
+    <property role="1EJLKn" value="false" />
+    <property role="3uoZKU" value="Welcome to the best company ever" />
     <node concept="2C_Ik4" id="JHn_unFt4E" role="2JqgbB">
       <node concept="2C_Ik0" id="JHn_unFt4F" role="2C_I24">
         <property role="2C_Iks" value="1" />
@@ -536,14 +536,13 @@
       <node concept="2C_I21" id="JHn_unFt5f" role="2C_I26">
         <ref role="2C_gVZ" node="JHn_unFt4F" resolve="Sales" />
         <node concept="1$pBvr" id="3jUOcBPOda_" role="2C_gVu">
-          <property role="XmNmt" value="true" />
+          <property role="XmNmt" value="false" />
         </node>
       </node>
     </node>
     <node concept="2smLJI" id="JHn_unJkpP" role="2smLJD">
-      <property role="2smLJF" value="4" />
-      <property role="31ipjb" value="PlayBack test" />
-      <node concept="1$pBvo" id="3jUOcBPUHW1" role="2sfXcw" />
+      <property role="2smLJF" value="7" />
+      <node concept="2m1r4j" id="3jUOcBQax9j" role="2sfXcw" />
     </node>
   </node>
 </model>
