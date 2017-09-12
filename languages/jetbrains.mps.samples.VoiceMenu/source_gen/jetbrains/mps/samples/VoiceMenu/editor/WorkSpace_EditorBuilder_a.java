@@ -176,7 +176,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     imagePath = "${module}/src/icons8-Search-24.png";
     EditorCell_Image editorCell = EditorCell_Image.createImageCell(getEditorContext(), myNode, imageModule, imagePath);
     editorCell.setCellId("Image_ikqrmj_d0");
-    FindError.setCellActions(editorCell, myNode, getEditorContext());
+    FixAll.setCellActions(editorCell, myNode, getEditorContext());
     editorCell.setDescent(0);
     return editorCell;
   }
