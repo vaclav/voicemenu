@@ -1559,7 +1559,11 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F0ifn" id="1Dc9HeI4zQT" role="3EZMnx" />
+      <node concept="3F0ifn" id="1Dc9HeI4zQT" role="3EZMnx">
+        <node concept="VPM3Z" id="7IHEnsegU7Y" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
       <node concept="3F0ifn" id="2m0r6rVTbw4" role="3EZMnx">
         <property role="3F0ifm" value="Playback:" />
         <ref role="1k5W1q" node="11pGboo1Ya6" resolve="HardCodedText" />
@@ -1590,6 +1594,9 @@
       </node>
       <node concept="3F0ifn" id="2mgRGhubMGN" role="3EZMnx">
         <property role="3F0ifm" value="" />
+        <node concept="VPM3Z" id="7IHEnsegU80" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
       </node>
       <node concept="3F0A7n" id="2m0r6rVST1A" role="3EZMnx">
         <property role="1$x2rV" value="Enter greeting here" />
