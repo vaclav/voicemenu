@@ -26,11 +26,41 @@ public class Behaviour {
       try {
         action = "";
         TimeUnit.SECONDS.sleep(duration);
-        if (neq_d7l93i_a0c0a0g0(Variables.path.charAt(Variables.path.length() - 1), 'X')) {
+        String timeoutAction = Variables.timeout.action;
+
+        if (eq_d7l93i_a0e0a0g0(timeoutAction, "back")) {
+          Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
+          Style.setTextToScreen("Back");
+
+          if (isEmptyString(Variables.timeout.playback)) {
+            Variables.voice.addText("Going to the previous menu");
+          } else {
+            PlayGetInfo(Variables.timeout.playback);
+          }
+
+        } else if (eq_d7l93i_a0a4a0a6a(timeoutAction, "call")) {
+          Style.setTextToScreen("Direct Call");
+
+          if (isEmptyString(Variables.timeout.playback)) {
+            Variables.voice.addText("Direct call has begun");
+          } else {
+            PlayGetInfo(Variables.timeout.playback);
+            if (Variables.timeout.isFinal) {
+              Style.setTextToScreen("Call ended");
+            }
+          }
+
+        } else if (eq_d7l93i_a0b4a0a6a(timeoutAction, "getInfo")) {
+        }
+
+
+
+
+        if (neq_d7l93i_a0j0a0g0(Variables.path.charAt(Variables.path.length() - 1), 'X')) {
           Variables.path += "X";
         } else {
           action = Variables.myHashMap.get(Variables.path).action;
-          if (eq_d7l93i_a0b0a2a0a6a(action, "")) {
+          if (eq_d7l93i_a0b0a9a0a6a(action, "")) {
             // Activity is menu, so we have to nest into it 
             Variables.path += "X";
           }
@@ -45,10 +75,22 @@ public class Behaviour {
         }
       }
     }
-    private static boolean neq_d7l93i_a0c0a0g0(Object a, Object b) {
+    private static boolean isEmptyString(String str) {
+      return str == null || str.length() == 0;
+    }
+    private static boolean eq_d7l93i_a0e0a0g0(Object a, Object b) {
+      return (a != null ? a.equals(b) : a == b);
+    }
+    private static boolean eq_d7l93i_a0a4a0a6a(Object a, Object b) {
+      return (a != null ? a.equals(b) : a == b);
+    }
+    private static boolean eq_d7l93i_a0b4a0a6a(Object a, Object b) {
+      return (a != null ? a.equals(b) : a == b);
+    }
+    private static boolean neq_d7l93i_a0j0a0g0(Object a, Object b) {
       return !(((a != null ? a.equals(b) : a == b)));
     }
-    private static boolean eq_d7l93i_a0b0a2a0a6a(Object a, Object b) {
+    private static boolean eq_d7l93i_a0b0a9a0a6a(Object a, Object b) {
       return (a != null ? a.equals(b) : a == b);
     }
     private static boolean eq_d7l93i_a0a0a0a6a(Object a, Object b) {

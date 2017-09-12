@@ -343,7 +343,7 @@
   </node>
   <node concept="2Jqgb4" id="6HhgIFXTyQ2">
     <property role="TrG5h" value="Test160" />
-    <property role="3uoZKU" value="rrr/Users/jetbrains/Documents/sample.wav" />
+    <property role="3uoZKU" value="" />
     <property role="1EJLKn" value="true" />
     <node concept="2C_Ik4" id="6HhgIFXTyQ3" role="2JqgbB">
       <node concept="2C_I21" id="6HhgIFXYxj0" role="2C_I26">
@@ -359,7 +359,7 @@
       </node>
       <node concept="2C_I21" id="7loivjjtgh4" role="2C_I26">
         <ref role="2C_gVZ" node="7loivjjp4im" resolve="wq" />
-        <node concept="1$pBvq" id="7loivjjtgh6" role="2C_gVu" />
+        <node concept="X09Yf" id="7loivjjFqST" role="2C_gVu" />
       </node>
       <node concept="2C_Ik0" id="6HhgIFXYxiR" role="2C_I24">
         <property role="TrG5h" value="Get Info" />
@@ -367,11 +367,35 @@
       </node>
       <node concept="2C_Ik0" id="7loivjjp4im" role="2C_I24">
         <property role="TrG5h" value="wq" />
-        <property role="2C_Iks" value="2" />
+        <property role="2C_Iks" value="0" />
       </node>
       <node concept="2C_Ik0" id="7loivjjbTpQ" role="2C_I24">
         <property role="2C_Iks" value="4" />
         <property role="TrG5h" value="nn" />
+      </node>
+      <node concept="2C_Ik0" id="7loivjjMnuj" role="2C_I24">
+        <property role="2C_Iks" value="3" />
+        <property role="TrG5h" value="dasdsa" />
+      </node>
+      <node concept="2C_Ik0" id="7loivjjMnup" role="2C_I24">
+        <property role="2C_Iks" value="5" />
+        <property role="TrG5h" value="fsafffff" />
+      </node>
+      <node concept="2C_Ik0" id="7loivjjBSi_" role="2C_I24">
+        <property role="2C_Iks" value="2" />
+        <property role="TrG5h" value="fsajfsa" />
+      </node>
+      <node concept="2C_I21" id="7loivjjBSk2" role="2C_I26">
+        <ref role="2C_gVZ" node="7loivjjBSi_" resolve="fsajfsa" />
+        <node concept="1$pBvq" id="7loivjjBSk4" role="2C_gVu" />
+      </node>
+      <node concept="2C_I21" id="7loivjjMnuw" role="2C_I26">
+        <ref role="2C_gVZ" node="7loivjjMnuj" resolve="dasdsa" />
+        <node concept="1$pBvq" id="7loivjjMnuy" role="2C_gVu" />
+      </node>
+      <node concept="2C_I21" id="7loivjjMnu$" role="2C_I26">
+        <ref role="2C_gVZ" node="7loivjjMnup" resolve="fsafffff" />
+        <node concept="1$pBvq" id="7loivjjMnuA" role="2C_gVu" />
       </node>
     </node>
     <node concept="2smLJI" id="JHn_unRV$u" role="2smLJD">
