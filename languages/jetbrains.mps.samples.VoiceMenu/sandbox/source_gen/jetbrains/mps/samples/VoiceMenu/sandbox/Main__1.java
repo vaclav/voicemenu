@@ -45,35 +45,8 @@ public class Main__1 implements ActionListener {
     Variables.myHashMap.put("01", Get_Info_2032os_a0);
     Get_Info_2032os_a0.setAction("getInfo", false);
     Get_Info_2032os_a0.childs = new ArrayList<Event>();
-    Event nn_2032os_c0 = new Event("nn", "4");
-    nn_2032os_c0.isFinal = false;
-    nn_2032os_c0.setAction("", false);
-    nn_2032os_c0.setGreeting("");
-    nn_2032os_c0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("04", nn_2032os_c0);
-    nn_2032os_c0.setAction("other", false);
-    nn_2032os_c0.childs = new ArrayList<Event>();
-    Event wq_2032os_b0 = new Event("wq", "2");
-    wq_2032os_b0.isFinal = false;
-    wq_2032os_b0.setAction("", false);
-    wq_2032os_b0.setGreeting("");
-    wq_2032os_b0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("02", wq_2032os_b0);
-    wq_2032os_b0.setAction("record", false);
-    wq_2032os_b0.childs = new ArrayList<Event>();
-    Event fsajfsa_2032os_d0 = new Event("fsajfsa", "2");
-    fsajfsa_2032os_d0.isFinal = false;
-    fsajfsa_2032os_d0.setAction("", false);
-    fsajfsa_2032os_d0.setGreeting("");
-    fsajfsa_2032os_d0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("02", fsajfsa_2032os_d0);
-    fsajfsa_2032os_d0.setAction("other", false);
-    fsajfsa_2032os_d0.childs = new ArrayList<Event>();
 
     Home.childs.add(Get_Info_2032os_a0);
-    Home.childs.add(wq_2032os_b0);
-    Home.childs.add(nn_2032os_c0);
-    Home.childs.add(fsajfsa_2032os_d0);
 
     Variables.timeout = new Event("timeout", "X");
     Variables.timeout.playback = "";
