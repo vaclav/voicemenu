@@ -44,8 +44,8 @@ public class Style {
     Variables.voice.addText(tmp.playback);
     for (Event child : tmp.childs) {
       // myVoice.speak("For" + child.name + "press" + child.trigger); 
-      if (isEmptyString(tmp.playback)) {
-        Variables.voice.addText(" For " + child.name + " press " + child.trigger);
+      if (!(Variables.playbackisFile)) {
+        Variables.voice.addText(", For " + child.name + " press " + child.trigger);
       }
       Variables.possibleOptList.add(child.trigger);
     }
@@ -56,14 +56,16 @@ public class Style {
     Call.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent p0) {
         if (Variables.started == false) {
+          Variables.started = true;
           setTextToScreen(Variables.main_Text);
           Variables.path = "0";
           try {
             readChildren();
+            (Variables.timerThr = new Thread(new Behaviour.myTimer(null, true))).start();
+
           } catch (IOException e) {
             e.printStackTrace();
           }
-          Variables.started = true;
         }
       }
     });
@@ -174,8 +176,5 @@ public class Style {
   public static void setContent() {
     // set visible content 
     setMainPanel(myPhone);
-  }
-  private static boolean isEmptyString(String str) {
-    return str == null || str.length() == 0;
   }
 }

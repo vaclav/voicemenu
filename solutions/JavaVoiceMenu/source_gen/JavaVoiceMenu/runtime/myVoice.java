@@ -26,7 +26,7 @@ public class myVoice {
   /**
    * run speak
    */
-  public void speak() throws IOException {
+  public int speak() throws IOException {
     if (Objects.equals(OS, "mac")) {
       Variables.macVoice.speak(text);
     } else if (Objects.equals(OS, "win")) {
@@ -36,7 +36,9 @@ public class myVoice {
     } else {
       System.out.println("Voices are not supported");
     }
+    int length = text.length();
     text = "";
+    return length;
   }
   /**
    * stop speech

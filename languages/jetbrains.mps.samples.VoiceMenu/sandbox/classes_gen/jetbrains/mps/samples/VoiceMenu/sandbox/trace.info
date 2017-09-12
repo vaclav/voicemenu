@@ -308,7 +308,7 @@
     </file>
   </root>
   <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/4175991680190977537">
-    <file name="Main__2.java">
+    <file name="Main__1.java">
       <node id="4175991680190977537" at="25,0,26,0" concept="6" trace="instance" />
       <node id="4175991680190977537" at="27,36,28,0" concept="5" />
       <node id="4175991680190977537" at="28,0,29,46" concept="4" />
@@ -498,11 +498,11 @@
         <var name="Sales_lbjr72_a0" id="4175991680190977537" />
       </scope>
       <scope id="4175991680190977537" at="27,0,143,0" />
-      <unit id="4175991680190977537" at="22,0,188,0" name="jetbrains.mps.samples.VoiceMenu.sandbox.Main__2" />
+      <unit id="4175991680190977537" at="22,0,188,0" name="jetbrains.mps.samples.VoiceMenu.sandbox.Main__1" />
     </file>
   </root>
   <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/5283568769203116579">
-    <file name="Main__3.java">
+    <file name="Main__2.java">
       <node id="5283568769203116579" at="25,0,26,0" concept="6" trace="instance" />
       <node id="5283568769203116579" at="27,36,28,0" concept="5" />
       <node id="5283568769203116579" at="28,0,29,47" concept="4" />
@@ -634,7 +634,7 @@
         <var name="Technical_department_8fudl3_a0" id="5283568769203116579" />
       </scope>
       <scope id="5283568769203116579" at="27,0,91,0" />
-      <unit id="5283568769203116579" at="22,0,136,0" name="jetbrains.mps.samples.VoiceMenu.sandbox.Main__3" />
+      <unit id="5283568769203116579" at="22,0,136,0" name="jetbrains.mps.samples.VoiceMenu.sandbox.Main__2" />
     </file>
   </root>
   <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/7335900905079802776">
@@ -806,106 +806,8 @@
       <unit id="7335900905079802776" at="22,0,166,0" name="jetbrains.mps.samples.VoiceMenu.sandbox.Main__0" />
     </file>
   </root>
-  <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/7733035612221353346">
-    <file name="Main__1.java">
-      <node id="7733035612221353346" at="25,0,26,0" concept="6" trace="instance" />
-      <node id="7733035612221353346" at="27,36,28,0" concept="5" />
-      <node id="7733035612221353346" at="28,0,29,43" concept="4" />
-      <node id="7733035612221353346" at="29,43,30,29" concept="0" />
-      <node id="7733035612221353346" at="30,29,31,48" concept="0" />
-      <node id="7733035612221353346" at="31,48,32,0" concept="5" />
-      <node id="7733035612221353346" at="32,0,33,41" concept="0" />
-      <node id="7733035612221353346" at="33,41,34,25" concept="0" />
-      <node id="7733035612221353346" at="34,25,35,36" concept="0" />
-      <node id="7733035612221353346" at="35,36,36,0" concept="5" />
-      <node id="7733035612221353346" at="36,0,37,39" concept="0" />
-      <node id="7733035612221353346" at="37,39,38,0" concept="5" />
-      <node id="7733035612221353346" at="38,0,39,0" concept="5" />
-      <node id="7733035612221353346" at="39,0,40,58" concept="4" />
-      <node id="7733035612221353346" at="40,58,41,39" concept="0" />
-      <node id="7733035612221353346" at="41,39,42,44" concept="0" />
-      <node id="7733035612221353346" at="42,44,43,39" concept="0" />
-      <node id="7733035612221353346" at="43,39,44,71" concept="0" />
-      <node id="7733035612221353346" at="44,71,45,55" concept="0" />
-      <node id="7733035612221353346" at="45,55,46,54" concept="0" />
-      <node id="584072856195053876" at="46,54,47,51" concept="0" />
-      <node id="7733035612221353346" at="47,51,48,55" concept="0" />
-      <node id="7733035612221353346" at="48,55,49,0" concept="5" />
-      <node id="7733035612221353346" at="49,0,50,40" concept="0" />
-      <node id="7733035612221353346" at="50,40,51,0" concept="5" />
-      <node id="7733035612221353346" at="51,0,52,50" concept="0" />
-      <node id="7733035612221353346" at="52,50,53,36" concept="0" />
-      <node id="7733035612221353346" at="53,36,54,40" concept="0" />
-      <node id="7733035612221353346" at="54,40,55,38" concept="0" />
-      <node id="7733035612221353346" at="58,42,59,18" concept="0" />
-      <node id="7733035612221353346" at="59,18,60,29" concept="0" />
-      <node id="7733035612221353346" at="60,29,61,26" concept="0" />
-      <node id="7733035612221353346" at="61,26,62,15" concept="0" />
-      <node id="7733035612221353346" at="62,15,63,29" concept="0" />
-      <node id="7733035612221353346" at="63,29,64,81" concept="0" />
-      <node id="7733035612221353346" at="64,81,65,0" concept="5" />
-      <node id="7733035612221353346" at="68,33,69,23" concept="0" />
-      <node id="7733035612221353346" at="69,23,70,39" concept="0" />
-      <node id="7733035612221353346" at="70,39,71,66" concept="0" />
-      <node id="7733035612221353346" at="71,66,72,21" concept="0" />
-      <node id="7733035612221353346" at="76,51,77,51" concept="4" />
-      <node id="7733035612221353346" at="77,51,78,46" concept="0" />
-      <node id="7733035612221353346" at="78,46,79,41" concept="0" />
-      <node id="7733035612221353346" at="79,41,80,53" concept="0" />
-      <node id="7733035612221353346" at="80,53,81,54" concept="4" />
-      <node id="7733035612221353346" at="81,54,82,31" concept="0" />
-      <node id="7733035612221353346" at="82,31,83,35" concept="0" />
-      <node id="7733035612221353346" at="90,43,91,41" concept="0" />
-      <node id="7733035612221353346" at="92,9,93,41" concept="0" />
-      <node id="7733035612221353346" at="93,41,94,0" concept="5" />
-      <node id="7733035612221353346" at="95,31,96,28" concept="0" />
-      <node id="7733035612221353346" at="89,11,92,9" concept="2" />
-      <node id="7733035612221353346" at="68,0,74,0" concept="7" trace="initView#()V" />
-      <node id="7733035612221353346" at="58,0,67,0" concept="7" trace="main#([Ljava/lang/String;)V" />
-      <node id="7733035612221353346" at="75,58,84,5" concept="1" />
-      <node id="7733035612221353346" at="88,132,97,7" concept="8" />
-      <node id="7733035612221353346" at="75,0,86,0" concept="7" trace="addButtons#(Ljavax/swing/JPanel;)V" />
-      <node id="7733035612221353346" at="87,50,98,5" concept="2" />
-      <node id="7733035612221353346" at="86,0,100,0" concept="3" trace="actionPerformed#(Ljava/awt/event/ActionEvent;)V" />
-      <node id="7733035612221353346" at="27,0,57,0" concept="7" trace="initHashMap#()V" />
-      <scope id="7733035612221353346" at="90,43,91,41" />
-      <scope id="7733035612221353346" at="95,0,96,28">
-        <var name="e" id="7733035612221353346" />
-      </scope>
-      <scope id="7733035612221353346" at="95,31,96,28" />
-      <scope id="7733035612221353346" at="68,33,72,21" />
-      <scope id="7733035612221353346" at="89,11,94,0" />
-      <scope id="7733035612221353346" at="68,0,74,0" />
-      <scope id="7733035612221353346" at="58,42,65,0" />
-      <scope id="7733035612221353346" at="76,51,83,35">
-        <var name="border" id="7733035612221353346" />
-        <var name="button" id="7733035612221353346" />
-      </scope>
-      <scope id="7733035612221353346" at="58,0,67,0">
-        <var name="args" id="7733035612221353346" />
-      </scope>
-      <scope id="7733035612221353346" at="75,58,84,5" />
-      <scope id="7733035612221353346" at="75,58,84,5">
-        <var name="item" id="7733035612221353346" />
-      </scope>
-      <scope id="7733035612221353346" at="88,132,97,7" />
-      <scope id="7733035612221353346" at="75,0,86,0">
-        <var name="myPanelOfButtons" id="7733035612221353346" />
-      </scope>
-      <scope id="7733035612221353346" at="87,50,98,5" />
-      <scope id="7733035612221353346" at="86,0,100,0">
-        <var name="event" id="7733035612221353346" />
-      </scope>
-      <scope id="7733035612221353346" at="27,36,55,38">
-        <var name="Get_Info_2032os_a0" id="7733035612221353346" />
-        <var name="Home" id="7733035612221353346" />
-      </scope>
-      <scope id="7733035612221353346" at="27,0,57,0" />
-      <unit id="7733035612221353346" at="22,0,102,0" name="jetbrains.mps.samples.VoiceMenu.sandbox.Main__1" />
-    </file>
-  </root>
   <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/859446834197549353">
-    <file name="Main__4.java">
+    <file name="Main__3.java">
       <node id="859446834197549353" at="25,0,26,0" concept="6" trace="instance" />
       <node id="859446834197549353" at="27,36,28,0" concept="5" />
       <node id="859446834197549353" at="28,0,29,45" concept="4" />
@@ -999,7 +901,7 @@
         <var name="Sales_9upjpn_a0" id="859446834197549353" />
       </scope>
       <scope id="859446834197549353" at="27,0,57,0" />
-      <unit id="859446834197549353" at="22,0,102,0" name="jetbrains.mps.samples.VoiceMenu.sandbox.Main__4" />
+      <unit id="859446834197549353" at="22,0,102,0" name="jetbrains.mps.samples.VoiceMenu.sandbox.Main__3" />
     </file>
   </root>
 </debug-info>
