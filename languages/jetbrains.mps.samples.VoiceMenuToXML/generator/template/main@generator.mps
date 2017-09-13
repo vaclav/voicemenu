@@ -9,7 +9,6 @@
     <import index="a1wu" ref="r:cbe17672-897a-4e99-b386-da57fca3b392(jetbrains.mps.samples.VoiceMenuToXML.structure)" />
     <import index="xehl" ref="r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="7tp6" ref="r:fcbe328d-713d-4d59-808c-943d2b78f9f3(main@generator)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -220,7 +219,7 @@
       <node concept="b5Tf3" id="2m0r6rVQf8c" role="1lVwrX" />
     </node>
     <node concept="3aamgX" id="1Dc9HeHMdb3" role="3acgRq">
-      <ref role="30HIoZ" to="xehl:6HhgIFXlffT" resolve="ReplayOptions" />
+      <ref role="30HIoZ" to="xehl:6HhgIFXlffT" resolve="Replay" />
       <node concept="j$656" id="1Dc9HeHMdbp" role="1lVwrX">
         <ref role="v9R2y" node="1Dc9HeHMdaY" resolve="reduce_ReplayOptions" />
       </node>
@@ -479,7 +478,7 @@
                 <node concept="3clFbF" id="2m0r6rVTJSZ" role="3cqZAp">
                   <node concept="2OqwBi" id="2m0r6rVTJSU" role="3clFbG">
                     <node concept="3TrcHB" id="2m0r6rVTJSX" role="2OqNvi">
-                      <ref role="3TsBF5" to="xehl:2m0r6rVTw3R" resolve="info" />
+                      <ref role="3TsBF5" to="xehl:2m0r6rVTw3R" resolve="playback" />
                     </node>
                     <node concept="30H73N" id="2m0r6rVTJSY" role="2Oq$k0" />
                   </node>
@@ -496,7 +495,7 @@
                   <node concept="2OqwBi" id="2m0r6rVTKGE" role="2Oq$k0">
                     <node concept="30H73N" id="2m0r6rVTKvG" role="2Oq$k0" />
                     <node concept="3TrcHB" id="2m0r6rVTL2g" role="2OqNvi">
-                      <ref role="3TsBF5" to="xehl:2m0r6rVTw3R" resolve="info" />
+                      <ref role="3TsBF5" to="xehl:2m0r6rVTw3R" resolve="playback" />
                     </node>
                   </node>
                   <node concept="17RvpY" id="2m0r6rVTMbK" role="2OqNvi" />
@@ -793,7 +792,7 @@
   <node concept="13MO4I" id="1Dc9HeHMdaY">
     <property role="TrG5h" value="reduce_ReplayOptions" />
     <property role="3GE5qa" value="RealActions" />
-    <ref role="3gUMe" to="xehl:6HhgIFXlffT" resolve="ReplayOptions" />
+    <ref role="3gUMe" to="xehl:6HhgIFXlffT" resolve="Replay" />
     <node concept="2pNNFK" id="1Dc9HeHMdaZ" role="13RCb5">
       <property role="2pNNFO" value="action" />
       <node concept="2pNUuL" id="1Dc9HeHMdb0" role="2pNNFR">
