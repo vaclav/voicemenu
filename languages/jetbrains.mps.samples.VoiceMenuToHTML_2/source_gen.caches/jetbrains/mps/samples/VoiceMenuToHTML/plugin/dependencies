@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="jetbrains.mps.samples.VoiceMenuToHTML.plugin.FacetAspectDescriptor" file="FacetAspectDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.make.facet.IFacetManifest" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenuToHTML.plugin.FacetManifest" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.MakeAspectDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.samples.VoiceMenuToHTML.plugin.FacetManifest" file="FacetManifest.java">
+    <classNode dependClassName="java.lang.Iterable" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.make.facet.IFacet" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenuToHTML.plugin.RenameXmlToHtml_Facet" />
+    <classNode extendsClassName="jetbrains.mps.make.facet.IFacetManifest" />
+  </dependency>
+  <dependency className="jetbrains.mps.samples.VoiceMenuToHTML.plugin.RenameXmlToHtml_Facet" file="RenameXmlToHtml_Facet.java">
+    <classNode dependClassName="java.lang.Class" />
+    <classNode dependClassName="java.lang.Iterable" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Runnable" />
+    <classNode dependClassName="java.lang.RuntimeException" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="java.util.Map" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.Sequence" />
+    <classNode dependClassName="jetbrains.mps.internal.make.runtime.util.DeltaReconciler" />
+    <classNode dependClassName="jetbrains.mps.internal.make.runtime.util.FilesDelta" />
+    <classNode dependClassName="jetbrains.mps.make.facet.ITarget" />
+    <classNode dependClassName="jetbrains.mps.make.facet.ITargetEx" />
+    <classNode dependClassName="jetbrains.mps.make.resources.IPropertiesAccessor" />
+    <classNode dependClassName="jetbrains.mps.make.resources.IPropertiesPersistence" />
+    <classNode dependClassName="jetbrains.mps.make.resources.IResource" />
+    <classNode dependClassName="jetbrains.mps.make.script.IConfig" />
+    <classNode dependClassName="jetbrains.mps.make.script.IJob" />
+    <classNode dependClassName="jetbrains.mps.make.script.IJobMonitor" />
+    <classNode dependClassName="jetbrains.mps.make.script.IPropertiesPool" />
+    <classNode dependClassName="jetbrains.mps.make.script.IResult" />
+    <classNode dependClassName="jetbrains.mps.smodel.resources.TResource" />
+    <classNode dependClassName="jetbrains.mps.vfs.FileSystem" />
+    <classNode dependClassName="jetbrains.mps.vfs.IFile" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.util.ProgressMonitor" />
+    <classNode extendsClassName="jetbrains.mps.make.facet.IFacet" />
+  </dependency>
+</dependenciesRoot>
+

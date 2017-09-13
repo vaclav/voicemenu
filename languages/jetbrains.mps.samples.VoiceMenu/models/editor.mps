@@ -3224,7 +3224,7 @@
             <node concept="3clFbS" id="54keEMKeYyj" role="2VODD2">
               <node concept="3clFbF" id="54keEMKeYyk" role="3cqZAp">
                 <node concept="Xl_RD" id="54keEMKeYyl" role="3clFbG">
-                  <property role="Xl_RC" value="Get Informations" />
+                  <property role="Xl_RC" value="Get Information" />
                 </node>
               </node>
             </node>
@@ -8006,7 +8006,7 @@
             <node concept="3clFbS" id="54keEMKgjh5" role="2VODD2">
               <node concept="3clFbF" id="54keEMKgjh6" role="3cqZAp">
                 <node concept="Xl_RD" id="54keEMKgjh7" role="3clFbG">
-                  <property role="Xl_RC" value="Get Informations" />
+                  <property role="Xl_RC" value="Get Information" />
                 </node>
               </node>
             </node>
@@ -8906,7 +8906,7 @@
             <node concept="3clFbS" id="54keEMKgixH" role="2VODD2">
               <node concept="3clFbF" id="54keEMKgixI" role="3cqZAp">
                 <node concept="Xl_RD" id="54keEMKgixJ" role="3clFbG">
-                  <property role="Xl_RC" value="Get Informations" />
+                  <property role="Xl_RC" value="Get Information" />
                 </node>
               </node>
             </node>
@@ -9720,7 +9720,7 @@
             <node concept="3clFbS" id="54keEMKfTbD" role="2VODD2">
               <node concept="3clFbF" id="54keEMKfTbE" role="3cqZAp">
                 <node concept="Xl_RD" id="54keEMKfTbF" role="3clFbG">
-                  <property role="Xl_RC" value="Get Informations" />
+                  <property role="Xl_RC" value="Get Information" />
                 </node>
               </node>
             </node>
@@ -11841,7 +11841,7 @@
             <node concept="3clFbS" id="5o6E870JSgJ" role="2VODD2">
               <node concept="3clFbF" id="5o6E870JSgK" role="3cqZAp">
                 <node concept="Xl_RD" id="5o6E870JSgL" role="3clFbG">
-                  <property role="Xl_RC" value="Get Informations" />
+                  <property role="Xl_RC" value="Get Information" />
                 </node>
               </node>
             </node>
@@ -14721,7 +14721,7 @@
             <node concept="3clFbS" id="48dyn_Zc6zJ" role="2VODD2">
               <node concept="3clFbF" id="48dyn_Zc6zK" role="3cqZAp">
                 <node concept="Xl_RD" id="48dyn_Zc6zL" role="3clFbG">
-                  <property role="Xl_RC" value="Get Informations" />
+                  <property role="Xl_RC" value="Get Information" />
                 </node>
               </node>
             </node>
@@ -15760,7 +15760,7 @@
             <node concept="3clFbS" id="48dyn_Zc9yd" role="2VODD2">
               <node concept="3clFbF" id="48dyn_Zc9ye" role="3cqZAp">
                 <node concept="Xl_RD" id="48dyn_Zc9yf" role="3clFbG">
-                  <property role="Xl_RC" value="Get Informations" />
+                  <property role="Xl_RC" value="Get Information" />
                 </node>
               </node>
             </node>
@@ -16836,7 +16836,7 @@
             <node concept="3clFbS" id="6HhgIFXm3j0" role="2VODD2">
               <node concept="3clFbF" id="6HhgIFXm3j1" role="3cqZAp">
                 <node concept="Xl_RD" id="6HhgIFXm3j2" role="3clFbG">
-                  <property role="Xl_RC" value="Get Informations" />
+                  <property role="Xl_RC" value="Get Information" />
                 </node>
               </node>
             </node>

@@ -698,7 +698,7 @@ public class HangUp_TransformationMenu extends TransformationMenuBase {
         @Nullable
         @Override
         public String getLabelText(String pattern) {
-          return "Get Informations";
+          return "Get Information";
         }
 
         @Override

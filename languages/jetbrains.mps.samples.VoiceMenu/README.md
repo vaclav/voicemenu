@@ -9,6 +9,7 @@ Simple guide showing how to build the very first voice menu.
 
 Introduction
 ------------
+The VoiceMenu project aims to simplify both creating and maintaining voicemenus. Possible generation languages are: Asterisk, Java, Xml, Html. Java output is suggested to use during development as an example how the resulting voicemenu behaves.
 
 Let's start with explainig basic idea how it works. 
 A Voicemenu designer is asked to fill in (just as in a simple web page) necessary fields according to their preferences.
@@ -16,59 +17,53 @@ A Voicemenu consists of Events which are connected with their descedant Events v
 
 Basics
 ------
+An user of VoiceMenu DSL language is asked to fill in (just as in a simple webpage) the necessary fields according to their preferences. A Voicemenu consists of Events which are connected with their descendant Events via triggers (phone buttons pressed by a customer on their cell phone).
 
-Each Event must have set 3 properties: 
-1. Name
-2. Trigger
-3. Action
+Each Event must have set 3 properties:
 
-* Name - Obviously represents name of its Event.
-* Trigger - Phone button (0..9,*,#), pressed on a cellphone, to navigate from an Event to another one.
-* Action - Place to specify what really happens according to Events name and trigger
+* Name – represents the name of the Event.
+* Trigger – phone key (0..9,*,#), pressed on a cell phone, to navigate from one Event to another.
+* Action – place to specify what really happens according to Events name and trigger. Name and Action are completely different concepts, though in some cases they might seem similar.
+
+
 Name and Action are completely different concepts! Having said that, in a few cases they might seem similiar.
 
 Let's focus on Actions.
 
-MPS Voicemenu project supports 7 different actions.
-* Back - Jump to the previous menu
-* Direct Call - Call a specific number
-* Get Information - Play a record with information
-* Hang Up - End a phonecall
-* Record - Make a voicerecord of customers input
-* Repeat options - repeat options in a current menu
-* Menu - create a new (sub)menu.
+The MPS Voicemenu project supports 7 different actions:
+* Back – jump to the previous menu
+* Direct Call – call a specific number
+* Get Information – play a record with information
+* Hang Up – end a phone call
+* Record – make a voice record of customer’s input
+* Repeat options – repeat options in a current menu
+* Menu – create a new (sub)menu
+
 
 Step by Step guide
 ==================
-To start with your first voice menu create a new model in the sandbox solution with `WorkSpace` as the root. 
-(Supported advanced shortcut for autocomplete is `Ctrl + Space` and to invoke intentions is `Alt + Enter`)
-
-In the first step we assign triggers (phone buttons) and names to activities.
-Simply fill in each gap one by another. Add upto 12 buttons. Use Context Action panel (the one on the rigth side). Only valid options are shown there for every field that needs to fill in.
+To start with your first voice menu, create a new model in the sandbox solution with WorkSpace as the root. (The  advanced shortcut for autocomplete is Ctrl + Space; to invoke intentions, press Alt + Enter.)
+In the first step we assign triggers (phone buttons) and names to activities. Simply fill in each gap one by one. Add up to 12 buttons. Use the Context Action panel (the one on the right side). Only valid options are shown there for every required field.
 
 [![MPS_VoiceMenu_Sample](../../extras/pic1.png)](https://www.jetbrains.com/mps/)
 [![MPS_VoiceMenu_Sample](../../extras/pic2.png)](https://www.jetbrains.com/mps/)
 
-As we completed the first step let's move onto the second one - specifying action. To do this click on `Set up ..`in the Context Action panel (or anywhere else on a title `Set up ..` )
+As we completed the first step, let's move on to the second one - specifying the action. To do this, click `Set up` in the Context Action panel (or anywhere else you can click  `Set up ..` 
 
 
 [![MPS_VoiceMenu_Sample](../../extras/pic3.png)](https://www.jetbrains.com/mps/)
 
-In the second step we select what actually happens under the hood to the Event which we gave its trigger (phone button) and that shiny name in the first step.
-Both the name and the trigger of the Event are completed automatically. Choose if the Event is a Menu (select Menu) or is a concrete Action. 
-
+At the second step, we select what actually happens under the hood of the Event which we gave the trigger (phone button) and that shiny name in the first step. Both the name and the trigger of the Event are completed automatically. Choose if the Event is a Menu (select Menu) or a concrete Action.
+ 
 [![MPS_VoiceMenu_Sample](../../extras/pic4.png)](https://www.jetbrains.com/mps/)
 
-Fill the rest of the Events. 
-Remember: All events are created in the very same way! Every Event has its own name even if the name might be the same as what an action is called. For example: A voicemenu designer would like to have an Event on the button 2 with the action Direct Call.
-* A possible solution might be an Event with properties: **name** = "Direct Call" , **trigger** = 2 , **activity** = Direct Call 
+Fill in the rest of the Events. Remember: all events are created in the very same way/ Every Event has its own name even it’s the same as the name of an action. For example: A voicemenu designer would like to have an Event on the button 2 with the action Direct Call.
+* A possible solution might be an Event with properties: name = "Direct Call" , trigger = 2, activity = Direct Call.
+ 
 
 [![MPS_VoiceMenu_Sample](../../extras/pic5.png)](https://www.jetbrains.com/mps/)
 
-
-Let's try the very first solution!
-Rebuild the whole project. At the very top of the screen click on `Build` and choose `Rebuild Project`.
-Right click the myVoicemenu sandbox solution in the left panel and choose `Run` .
+Let's try the very first solution. Rebuild the whole project. At the very top of the screen click `Build` and choose `Rebuild Project`. Right click the myVoicemenu sandbox solution in the left panel and choose `Run` .
 [![MPS_VoiceMenu_Sample](../../extras/pic6.png)](https://www.jetbrains.com/mps/)
 
 
@@ -77,7 +72,7 @@ Intentions
 ----------
 
 
-Mostly different intentions are specified for each of nodes.
+In most cases different intentions are specified for each of nodes.
 All intentions are invoked by pressing `Alt + Enter` shortcut.
 
 |Event Declaration|Activity|Action|Global|
