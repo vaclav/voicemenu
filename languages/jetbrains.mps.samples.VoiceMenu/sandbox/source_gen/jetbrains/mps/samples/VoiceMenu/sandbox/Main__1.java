@@ -49,13 +49,18 @@ public class Main__1 implements ActionListener {
     Home.childs.add(xxx_2032os_a0);
 
     Variables.timeout = new Event("timeout", "X");
-    Variables.timeout.playback = "Choose from ..";
+    Variables.timeout.playback = "";
+    Variables.timeout.duration = 2;
+    System.out.println(Variables.timeout.duration + 2);
     Variables.timeout.action = "back";
     Variables.timeout.isFinal = true;
+
+
   }
 
   public static void main(String[] args) {
     initHashMap();
+    System.out.println("done");
     instance = new Main__1();
     Main__1.initHashMap();
     initView();

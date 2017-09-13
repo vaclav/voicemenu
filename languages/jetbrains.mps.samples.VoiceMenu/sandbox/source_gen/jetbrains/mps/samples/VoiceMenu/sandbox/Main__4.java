@@ -75,12 +75,17 @@ public class Main__4 implements ActionListener {
 
     Variables.timeout = new Event("timeout", "X");
     Variables.timeout.playback = "Choose from ..";
+    Variables.timeout.duration = 7;
+    System.out.println(Variables.timeout.duration + 7);
     Variables.timeout.action = "replay";
     Variables.timeout.isFinal = false;
+
+
   }
 
   public static void main(String[] args) {
     initHashMap();
+    System.out.println("done");
     instance = new Main__4();
     Main__4.initHashMap();
     initView();

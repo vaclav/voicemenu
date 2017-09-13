@@ -3,9 +3,13 @@
   <persistence version="9" />
   <languages>
     <use id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="fdcdc48f-bfd8-4831-aa76-5abac2ffa010" name="jetbrains.mps.baseLanguage.jdk8" version="0" />
     <engage id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" />
   </languages>
-  <imports />
+  <imports>
+    <import index="oici" ref="r:d8d37b74-a8e1-4a57-a2ee-4a996f4ba158(JavaVoiceMenu.runtime)" />
+  </imports>
   <registry>
     <language id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu">
       <concept id="7733035612211835897" name="jetbrains.mps.samples.VoiceMenu.structure.Replay" flags="ng" index="2m1r4j" />
@@ -351,8 +355,7 @@
       </node>
     </node>
     <node concept="2smLJI" id="JHn_unRV$u" role="2smLJD">
-      <property role="31ipjb" value="Choose from .." />
-      <property role="2smLJF" value="231" />
+      <property role="2smLJF" value="2" />
       <node concept="1$pBvp" id="3jUOcBQwqiS" role="2sfXcw" />
     </node>
   </node>

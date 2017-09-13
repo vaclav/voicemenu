@@ -533,30 +533,11 @@
   </root>
   <root nodeRef="r:d8d37b74-a8e1-4a57-a2ee-4a996f4ba158(JavaVoiceMenu.runtime)/7103833127138624230">
     <file name="WinVoice.java">
-      <node id="7103833127138624237" at="10,0,11,0" concept="4" trace="proc" />
-      <node id="7103833127138624250" at="16,53,17,16" concept="8" />
-      <node id="7103833127138624253" at="17,16,18,59" concept="8" />
-      <node id="7103833127138650136" at="18,59,19,45" concept="3" />
-      <node id="7103833127138624261" at="19,45,20,21" concept="3" />
-      <node id="7103833127138624263" at="20,21,21,22" concept="3" />
-      <node id="7103833127138624240" at="11,0,13,0" concept="2" trace="WinVoice#()V" />
-      <node id="7103833127138624269" at="26,0,28,0" concept="7" trace="changeVoice#()V" />
-      <node id="7103833127138624274" at="28,0,30,0" concept="7" trace="stop#()V" />
-      <node id="7103833127138624244" at="16,0,23,0" concept="7" trace="speak#(Ljava/lang/String;)V" />
-      <scope id="7103833127138624242" at="11,21,11,21" />
-      <scope id="7103833127138624270" at="26,29,26,29" />
-      <scope id="7103833127138624275" at="28,22,28,22" />
-      <scope id="7103833127138624240" at="11,0,13,0" />
-      <scope id="7103833127138624269" at="26,0,28,0" />
-      <scope id="7103833127138624274" at="28,0,30,0" />
-      <scope id="7103833127138624248" at="16,53,21,22">
-        <var name="voice" id="7103833127138624249" />
-        <var name="voiceManager" id="7103833127138624252" />
-      </scope>
-      <scope id="7103833127138624244" at="16,0,23,0">
-        <var name="text" id="7103833127138624245" />
-      </scope>
-      <unit id="7103833127138624230" at="9,0,31,0" name="JavaVoiceMenu.runtime.WinVoice" />
+      <node id="7103833127138624237" at="7,0,8,0" concept="4" trace="proc" />
+      <node id="7103833127138624240" at="8,0,10,0" concept="2" trace="WinVoice#()V" />
+      <scope id="7103833127138624242" at="8,21,8,21" />
+      <scope id="7103833127138624240" at="8,0,10,0" />
+      <unit id="7103833127138624230" at="6,0,11,0" name="JavaVoiceMenu.runtime.WinVoice" />
     </file>
   </root>
   <root nodeRef="r:d8d37b74-a8e1-4a57-a2ee-4a996f4ba158(JavaVoiceMenu.runtime)/7103833127138761510">

@@ -137,12 +137,17 @@ public class Main__2 implements ActionListener {
 
     Variables.timeout = new Event("timeout", "X");
     Variables.timeout.playback = "";
+    Variables.timeout.duration = 0;
+    System.out.println(Variables.timeout.duration + 0);
     Variables.timeout.action = "getInfo";
     Variables.timeout.isFinal = false;
+
+
   }
 
   public static void main(String[] args) {
     initHashMap();
+    System.out.println("done");
     instance = new Main__2();
     Main__2.initHashMap();
     initView();

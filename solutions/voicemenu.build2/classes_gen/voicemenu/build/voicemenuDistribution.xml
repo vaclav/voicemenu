@@ -3,7 +3,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/voicemenuDistribution" />
   <property name="build.layout" location="${build.dir}/artifacts/voicemenuDistribution" />
-  <property name="mps_home" location="" />
+  <property name="mps_home" location="${basedir}/../../MPS 2017.2" />
   <property name="version" value="2017.2.1" />
   <property name="artifacts.voicemenu" location="${build.dir}/artifacts/voicemenu" />
   <property file="${artifacts.voicemenu}/build.properties" prefix="import.voicemenu" />
@@ -30,7 +30,7 @@
     </copy>
     <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz_f755" />
     <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz_f755">
-      <fileset file="${mps_home}/mps.sh" />
+      <fileset file="${mps_home}/bin/mps.sh" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
@@ -64,18 +64,15 @@
       </zipfileset>
       <zipfileset file="${mps_home}/bin/linux/fsnotifier" prefix="voicemenu ${version}/bin/linux" filemode="755" />
       <zipfileset file="${mps_home}/bin/linux/fsnotifier64" prefix="voicemenu ${version}/bin/linux" filemode="755" />
-      <zipfileset dir="${mps_home}/bin/nix" prefix="voicemenu ${version}/bin/nix" filemode="755" />
-      <zipfileset file="${mps_home}/bin/mac/libbreakgen.jnilib" prefix="voicemenu ${version}/bin/mac" />
-      <zipfileset file="${mps_home}/bin/mac/libbreakgen64.jnilib" prefix="voicemenu ${version}/bin/mac" />
+      <zipfileset file="${mps_home}/bin/mac/libMacNativeKit64.dylib" prefix="voicemenu ${version}/bin/mac" />
       <zipfileset file="${mps_home}/bin/mac/restarter" prefix="voicemenu ${version}/bin/mac" filemode="755" />
       <zipfileset file="${mps_home}/bin/mac/fsnotifier" prefix="voicemenu ${version}/bin/mac" filemode="755" />
       <zipfileset file="${mps_home}/bin/mac/printenv.py" prefix="voicemenu ${version}/bin/mac" filemode="755" />
       <zipfileset file="${mps_home}/bin/mac/Contents/Info.plist" prefix="voicemenu ${version}/bin/mac/Contents" />
       <zipfileset file="${mps_home}/bin/mac/Contents/Resources/mps.icns" prefix="voicemenu ${version}/bin/mac/Contents/Resources" />
       <zipfileset file="${mps_home}/bin/mac/Contents/MacOS/mps" prefix="voicemenu ${version}/bin/mac/Contents/MacOS" filemode="755" />
-      <zipfileset file="${mps_home}/bin/mac/Contents/MacOS/idea_appLauncher" prefix="voicemenu ${version}/bin/mac/Contents/MacOS" filemode="644" />
-      <zipfileset file="${mps_home}/mps.sh" prefix="voicemenu ${version}" filemode="755" />
-      <zipfileset file="${mps_home}/mps.bat" prefix="voicemenu ${version}" filemode="755" />
+      <zipfileset file="${mps_home}/bin/mps.sh" prefix="voicemenu ${version}" filemode="755" />
+      <zipfileset file="${mps_home}/bin/win/mps.bat" prefix="voicemenu ${version}" filemode="755" />
     </zip>
     <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip" />
     <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/voicemenu ${version}.app" />
@@ -102,7 +99,7 @@
     </copy>
     <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip_f755" />
     <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip_f755">
-      <fileset file="${mps_home}/mps.sh" />
+      <fileset file="${mps_home}/bin/mps.sh" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
@@ -112,9 +109,7 @@
       <zipfileset file="${mps_home}/bin/mac/Contents/Info.plist" prefix="voicemenu ${version}.app/Contents" />
       <zipfileset file="${mps_home}/bin/mac/Contents/Resources/mps.icns" prefix="voicemenu ${version}.app/Contents/Resources" />
       <zipfileset file="${mps_home}/bin/mac/Contents/MacOS/mps" prefix="voicemenu ${version}.app/Contents/MacOS" filemode="755" />
-      <zipfileset file="${mps_home}/bin/mac/Contents/MacOS/idea_appLauncher" prefix="voicemenu ${version}.app/Contents/MacOS" filemode="644" />
-      <zipfileset file="${mps_home}/bin/mac/libbreakgen.jnilib" prefix="voicemenu ${version}.app/Contents/bin" />
-      <zipfileset file="${mps_home}/bin/mac/libbreakgen64.jnilib" prefix="voicemenu ${version}.app/Contents/bin" />
+      <zipfileset file="${mps_home}/bin/mac/libMacNativeKit64.dylib" prefix="voicemenu ${version}.app/Contents/bin" />
       <zipfileset file="${mps_home}/bin/mac/restarter" prefix="voicemenu ${version}.app/Contents/bin" filemode="755" />
       <zipfileset file="${mps_home}/bin/mac/fsnotifier" prefix="voicemenu ${version}.app/Contents/bin" filemode="755" />
       <zipfileset dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip_f755" filemode="755" prefix="voicemenu ${version}.app/Contents" />

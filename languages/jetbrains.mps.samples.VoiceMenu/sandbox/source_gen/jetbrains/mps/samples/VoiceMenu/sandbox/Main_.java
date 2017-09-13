@@ -232,12 +232,17 @@ public class Main_ implements ActionListener {
 
     Variables.timeout = new Event("timeout", "X");
     Variables.timeout.playback = "";
+    Variables.timeout.duration = 0;
+    System.out.println(Variables.timeout.duration + 0);
     Variables.timeout.action = "replay";
     Variables.timeout.isFinal = false;
+
+
   }
 
   public static void main(String[] args) {
     initHashMap();
+    System.out.println("done");
     instance = new Main_();
     Main_.initHashMap();
     initView();
