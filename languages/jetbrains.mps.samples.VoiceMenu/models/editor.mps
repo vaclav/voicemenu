@@ -11841,7 +11841,7 @@
             <node concept="3clFbS" id="5o6E870JSgJ" role="2VODD2">
               <node concept="3clFbF" id="5o6E870JSgK" role="3cqZAp">
                 <node concept="Xl_RD" id="5o6E870JSgL" role="3clFbG">
-                  <property role="Xl_RC" value="Get Informations" />
+                  <property role="Xl_RC" value="Get Information" />
                 </node>
               </node>
             </node>
