@@ -6,6 +6,7 @@
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
     <use id="b1c7d06f-525d-43b5-9b0a-2fc8f7f076ba" name="jetbrains.mps.editor.contextActionsTool.lang.menus" version="-1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -360,6 +361,9 @@
       <concept id="8954657570916342471" name="jetbrains.mps.editor.contextActionsTool.lang.menus.structure.TransformationFeature_Icon" flags="ng" index="2jZ$Xq">
         <child id="8954657570916343203" name="query" index="2jZ$wY" />
       </concept>
+    </language>
+    <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
+      <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -13351,7 +13355,7 @@
                   <node concept="Xl_RD" id="7oQ0uB$s1tf" role="3uHU7w">
                     <property role="Xl_RC" value="property_name" />
                   </node>
-                  <node concept="2OqwBi" id="7oQ0uB$s1tg" role="3uHU7B">
+                  <node concept="2EnYce" id="ajUKjNZkQy" role="3uHU7B">
                     <node concept="2OqwBi" id="7oQ0uB$s1th" role="2Oq$k0">
                       <node concept="1Q80Hx" id="7oQ0uB$s1ti" role="2Oq$k0" />
                       <node concept="liA8E" id="7oQ0uB$s1tj" role="2OqNvi">
@@ -13423,7 +13427,7 @@
                   <node concept="Xl_RD" id="7oQ0uB$s23g" role="3uHU7w">
                     <property role="Xl_RC" value="property_name" />
                   </node>
-                  <node concept="2OqwBi" id="7oQ0uB$s23h" role="3uHU7B">
+                  <node concept="2EnYce" id="ajUKjNZlqf" role="3uHU7B">
                     <node concept="2OqwBi" id="7oQ0uB$s23i" role="2Oq$k0">
                       <node concept="1Q80Hx" id="7oQ0uB$s23j" role="2Oq$k0" />
                       <node concept="liA8E" id="7oQ0uB$s23k" role="2OqNvi">
