@@ -13,6 +13,8 @@ import jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor;
 import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
 import jetbrains.mps.samples.VoiceMenuToHTML.editor.EditorAspectDescriptorImpl;
+import jetbrains.mps.smodel.runtime.MakeAspectDescriptor;
+import jetbrains.mps.samples.VoiceMenuToHTML.plugin.FacetAspectDescriptor;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConceptPresentationAspect;
 import jetbrains.mps.samples.VoiceMenuToHTML.structure.ConceptPresentationAspectImpl;
@@ -58,6 +60,9 @@ public class Language extends LanguageRuntime {
     }
     if (aspectClass == EditorAspectDescriptor.class) {
       return aspectClass.cast(new EditorAspectDescriptorImpl());
+    }
+    if (aspectClass == MakeAspectDescriptor.class) {
+      return aspectClass.cast(new FacetAspectDescriptor());
     }
     if (aspectClass == StructureAspectDescriptor.class) {
       return aspectClass.cast(new jetbrains.mps.samples.VoiceMenuToHTML.structure.StructureAspectDescriptor());

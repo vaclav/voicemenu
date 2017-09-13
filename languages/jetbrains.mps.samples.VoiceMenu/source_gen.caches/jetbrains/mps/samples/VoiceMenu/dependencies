@@ -14,7 +14,6 @@
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.constraints.ConstraintsAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.EditorAspectDescriptorImpl" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.intentions.IntentionsDescriptor" />
-    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.plugin.FacetAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.structure.ConceptPresentationAspectImpl" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.structure.StructureAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.typesystem.TypesystemDescriptor" />
@@ -23,7 +22,6 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConceptPresentationAspect" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />
-    <classNode dependClassName="jetbrains.mps.smodel.runtime.MakeAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SLanguage" />
     <classNode extendsClassName="jetbrains.mps.smodel.language.LanguageRuntime" />
