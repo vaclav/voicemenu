@@ -3224,7 +3224,7 @@
             <node concept="3clFbS" id="54keEMKeYyj" role="2VODD2">
               <node concept="3clFbF" id="54keEMKeYyk" role="3cqZAp">
                 <node concept="Xl_RD" id="54keEMKeYyl" role="3clFbG">
-                  <property role="Xl_RC" value="Get Informations" />
+                  <property role="Xl_RC" value="Get Information" />
                 </node>
               </node>
             </node>
