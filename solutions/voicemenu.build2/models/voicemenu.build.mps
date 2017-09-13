@@ -58,7 +58,9 @@
         <child id="4380385936562148502" name="containerName" index="Nbhlr" />
       </concept>
       <concept id="7389400916848036984" name="jetbrains.mps.build.structure.BuildLayout_Folder" flags="ng" index="398223" />
-      <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT" />
+      <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT">
+        <child id="7389400916848144618" name="defaultPath" index="398pKh" />
+      </concept>
       <concept id="7389400916848153117" name="jetbrains.mps.build.structure.BuildSourceMacroRelativePath" flags="ng" index="398BVA">
         <reference id="7389400916848153130" name="macro" index="398BVh" />
       </concept>
@@ -115,8 +117,18 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps">
@@ -312,6 +324,15 @@
         </node>
       </node>
     </node>
+    <node concept="2sgV4H" id="5$IQOQwbK72" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:1JaUSFUm4ER" resolve="mpsContextActionsTool" />
+      <node concept="398BVA" id="5$IQOQwbK73" role="2JcizS">
+        <ref role="398BVh" node="5ruKdSwyero" resolve="mps_home" />
+        <node concept="2Ry0Ak" id="5$IQOQwbK74" role="iGT6I">
+          <property role="2Ry0Am" value="plugins" />
+        </node>
+      </node>
+    </node>
     <node concept="1l3spV" id="5ruKdSwyesX" role="1l3spN">
       <node concept="3_I8Xc" id="5ruKdSwyet5" role="39821P">
         <ref role="3_I8Xa" to="ffeo:1diLdO26H79" resolve="languages" />
@@ -399,6 +420,150 @@
         </node>
         <node concept="m$_wl" id="5ruKdSwyetx" role="39821P">
           <ref role="m_rDy" node="5ruKdSwyesO" resolve="voicemenu" />
+          <node concept="28jJK3" id="5$IQOQwbKaz" role="39821P">
+            <node concept="55IIr" id="5$IQOQwbKa$" role="28jJRO">
+              <node concept="2Ry0Ak" id="5$IQOQwbKcm" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="5$IQOQwbKcp" role="2Ry0An">
+                  <property role="2Ry0Am" value="TTSLibrary" />
+                  <node concept="2Ry0Ak" id="5$IQOQwbKcs" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="5$IQOQwbKcv" role="2Ry0An">
+                      <property role="2Ry0Am" value="cmu_time_awb.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="28jJK3" id="5$IQOQwbKcw" role="39821P">
+            <node concept="55IIr" id="5$IQOQwbKcx" role="28jJRO">
+              <node concept="2Ry0Ak" id="5$IQOQwbKcy" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="5$IQOQwbKcz" role="2Ry0An">
+                  <property role="2Ry0Am" value="TTSLibrary" />
+                  <node concept="2Ry0Ak" id="5$IQOQwbKc$" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="5$IQOQwbKeZ" role="2Ry0An">
+                      <property role="2Ry0Am" value="cmu_us_kal.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="28jJK3" id="5$IQOQwbKcA" role="39821P">
+            <node concept="55IIr" id="5$IQOQwbKcB" role="28jJRO">
+              <node concept="2Ry0Ak" id="5$IQOQwbKcC" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="5$IQOQwbKcD" role="2Ry0An">
+                  <property role="2Ry0Am" value="TTSLibrary" />
+                  <node concept="2Ry0Ak" id="5$IQOQwbKcE" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="5$IQOQwbKgJ" role="2Ry0An">
+                      <property role="2Ry0Am" value="cmudict04.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="28jJK3" id="5$IQOQwbKcG" role="39821P">
+            <node concept="55IIr" id="5$IQOQwbKcH" role="28jJRO">
+              <node concept="2Ry0Ak" id="5$IQOQwbKcI" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="5$IQOQwbKcJ" role="2Ry0An">
+                  <property role="2Ry0Am" value="TTSLibrary" />
+                  <node concept="2Ry0Ak" id="5$IQOQwbKcK" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="5$IQOQwbKkf" role="2Ry0An">
+                      <property role="2Ry0Am" value="cmulex.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="28jJK3" id="5$IQOQwbKcM" role="39821P">
+            <node concept="55IIr" id="5$IQOQwbKcN" role="28jJRO">
+              <node concept="2Ry0Ak" id="5$IQOQwbKcO" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="5$IQOQwbKcP" role="2Ry0An">
+                  <property role="2Ry0Am" value="TTSLibrary" />
+                  <node concept="2Ry0Ak" id="5$IQOQwbKcQ" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="5$IQOQwbKlZ" role="2Ry0An">
+                      <property role="2Ry0Am" value="cmutimelex.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="28jJK3" id="5$IQOQwbKcS" role="39821P">
+            <node concept="55IIr" id="5$IQOQwbKcT" role="28jJRO">
+              <node concept="2Ry0Ak" id="5$IQOQwbKcU" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="5$IQOQwbKcV" role="2Ry0An">
+                  <property role="2Ry0Am" value="TTSLibrary" />
+                  <node concept="2Ry0Ak" id="5$IQOQwbKcW" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="5$IQOQwbKnJ" role="2Ry0An">
+                      <property role="2Ry0Am" value="en_us.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="28jJK3" id="5$IQOQwbKcY" role="39821P">
+            <node concept="55IIr" id="5$IQOQwbKcZ" role="28jJRO">
+              <node concept="2Ry0Ak" id="5$IQOQwbKd0" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="5$IQOQwbKd1" role="2Ry0An">
+                  <property role="2Ry0Am" value="TTSLibrary" />
+                  <node concept="2Ry0Ak" id="5$IQOQwbKd2" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="5$IQOQwbKpv" role="2Ry0An">
+                      <property role="2Ry0Am" value="freetts-jsapi10.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="28jJK3" id="5$IQOQwbKd4" role="39821P">
+            <node concept="55IIr" id="5$IQOQwbKd5" role="28jJRO">
+              <node concept="2Ry0Ak" id="5$IQOQwbKd6" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="5$IQOQwbKd7" role="2Ry0An">
+                  <property role="2Ry0Am" value="TTSLibrary" />
+                  <node concept="2Ry0Ak" id="5$IQOQwbKd8" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="5$IQOQwbKrf" role="2Ry0An">
+                      <property role="2Ry0Am" value="freetts.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="28jJK3" id="5$IQOQwbKda" role="39821P">
+            <node concept="55IIr" id="5$IQOQwbKdb" role="28jJRO">
+              <node concept="2Ry0Ak" id="5$IQOQwbKdc" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="5$IQOQwbKdd" role="2Ry0An">
+                  <property role="2Ry0Am" value="TTSLibrary" />
+                  <node concept="2Ry0Ak" id="5$IQOQwbKde" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="5$IQOQwbKsZ" role="2Ry0An">
+                      <property role="2Ry0Am" value="mbrola.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3_J27D" id="5ruKdSwyety" role="Nbhlr">
           <node concept="3Mxwew" id="5ruKdSwyetz" role="3MwsjC">
@@ -1088,7 +1253,10 @@
             <node concept="398BVA" id="5ruKdSwyew8" role="28jJRO">
               <ref role="398BVh" node="5ruKdSwyevt" resolve="mps_home" />
               <node concept="2Ry0Ak" id="5ruKdSwyew9" role="iGT6I">
-                <property role="2Ry0Am" value="mps.sh" />
+                <property role="2Ry0Am" value="bin" />
+                <node concept="2Ry0Ak" id="5$IQOQwcnGU" role="2Ry0An">
+                  <property role="2Ry0Am" value="mps.sh" />
+                </node>
               </node>
             </node>
           </node>
@@ -1257,27 +1425,6 @@
                 </node>
               </node>
             </node>
-            <node concept="398223" id="5ruKdSwyezp" role="39821P">
-              <node concept="yKbIv" id="5ruKdSwyezq" role="39821P">
-                <property role="yKbIr" value="755" />
-                <node concept="2HvfSZ" id="5ruKdSwyezr" role="39821P">
-                  <node concept="398BVA" id="5ruKdSwyexu" role="2HvfZ0">
-                    <ref role="398BVh" node="5ruKdSwyevt" resolve="mps_home" />
-                    <node concept="2Ry0Ak" id="5ruKdSwyexv" role="iGT6I">
-                      <property role="2Ry0Am" value="bin" />
-                      <node concept="2Ry0Ak" id="5ruKdSwyexw" role="2Ry0An">
-                        <property role="2Ry0Am" value="nix" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3_J27D" id="5ruKdSwyezs" role="Nbhlr">
-                <node concept="3Mxwew" id="5ruKdSwyezt" role="3MwsjC">
-                  <property role="3MwjfP" value="nix" />
-                </node>
-              </node>
-            </node>
             <node concept="398223" id="5ruKdSwyezu" role="39821P">
               <node concept="28jJK3" id="5ruKdSwyezv" role="39821P">
                 <node concept="398BVA" id="5ruKdSwyex_" role="28jJRO">
@@ -1286,22 +1433,26 @@
                     <property role="2Ry0Am" value="bin" />
                     <node concept="2Ry0Ak" id="5ruKdSwyexB" role="2Ry0An">
                       <property role="2Ry0Am" value="mac" />
-                      <node concept="2Ry0Ak" id="5ruKdSwyexC" role="2Ry0An">
-                        <property role="2Ry0Am" value="libbreakgen.jnilib" />
+                      <node concept="2Ry0Ak" id="5$IQOQwcnIH" role="2Ry0An">
+                        <property role="2Ry0Am" value="libMacNativeKit64.dylib" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="28jJK3" id="5ruKdSwyezw" role="39821P">
-                <node concept="398BVA" id="5ruKdSwyexH" role="28jJRO">
-                  <ref role="398BVh" node="5ruKdSwyevt" resolve="mps_home" />
-                  <node concept="2Ry0Ak" id="5ruKdSwyexI" role="iGT6I">
-                    <property role="2Ry0Am" value="bin" />
-                    <node concept="2Ry0Ak" id="5ruKdSwyexJ" role="2Ry0An">
-                      <property role="2Ry0Am" value="mac" />
-                      <node concept="2Ry0Ak" id="5ruKdSwyexK" role="2Ry0An">
-                        <property role="2Ry0Am" value="libbreakgen64.jnilib" />
+              <node concept="1X3_iC" id="5$IQOQwcnIJ" role="lGtFl">
+                <property role="3V$3am" value="children" />
+                <property role="3V$3ak" value="798100da-4f0a-421a-b991-71f8c50ce5d2/4701820937132344003/7389400916848037006" />
+                <node concept="28jJK3" id="5ruKdSwyezw" role="8Wnug">
+                  <node concept="398BVA" id="5ruKdSwyexH" role="28jJRO">
+                    <ref role="398BVh" node="5ruKdSwyevt" resolve="mps_home" />
+                    <node concept="2Ry0Ak" id="5ruKdSwyexI" role="iGT6I">
+                      <property role="2Ry0Am" value="bin" />
+                      <node concept="2Ry0Ak" id="5ruKdSwyexJ" role="2Ry0An">
+                        <property role="2Ry0Am" value="mac" />
+                        <node concept="2Ry0Ak" id="5ruKdSwyexK" role="2Ry0An">
+                          <property role="2Ry0Am" value="libbreakgen64.jnilib" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -1412,20 +1563,24 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="28jJK3" id="5ruKdSwyezJ" role="39821P">
-                    <property role="28jJZ5" value="644" />
-                    <node concept="398BVA" id="5ruKdSwyeyB" role="28jJRO">
-                      <ref role="398BVh" node="5ruKdSwyevt" resolve="mps_home" />
-                      <node concept="2Ry0Ak" id="5ruKdSwyeyC" role="iGT6I">
-                        <property role="2Ry0Am" value="bin" />
-                        <node concept="2Ry0Ak" id="5ruKdSwyeyD" role="2Ry0An">
-                          <property role="2Ry0Am" value="mac" />
-                          <node concept="2Ry0Ak" id="5ruKdSwyeyE" role="2Ry0An">
-                            <property role="2Ry0Am" value="Contents" />
-                            <node concept="2Ry0Ak" id="5ruKdSwyeyF" role="2Ry0An">
-                              <property role="2Ry0Am" value="MacOS" />
-                              <node concept="2Ry0Ak" id="5ruKdSwyeyG" role="2Ry0An">
-                                <property role="2Ry0Am" value="idea_appLauncher" />
+                  <node concept="1X3_iC" id="5$IQOQwcnJN" role="lGtFl">
+                    <property role="3V$3am" value="children" />
+                    <property role="3V$3ak" value="798100da-4f0a-421a-b991-71f8c50ce5d2/4701820937132344003/7389400916848037006" />
+                    <node concept="28jJK3" id="5ruKdSwyezJ" role="8Wnug">
+                      <property role="28jJZ5" value="644" />
+                      <node concept="398BVA" id="5ruKdSwyeyB" role="28jJRO">
+                        <ref role="398BVh" node="5ruKdSwyevt" resolve="mps_home" />
+                        <node concept="2Ry0Ak" id="5ruKdSwyeyC" role="iGT6I">
+                          <property role="2Ry0Am" value="bin" />
+                          <node concept="2Ry0Ak" id="5ruKdSwyeyD" role="2Ry0An">
+                            <property role="2Ry0Am" value="mac" />
+                            <node concept="2Ry0Ak" id="5ruKdSwyeyE" role="2Ry0An">
+                              <property role="2Ry0Am" value="Contents" />
+                              <node concept="2Ry0Ak" id="5ruKdSwyeyF" role="2Ry0An">
+                                <property role="2Ry0Am" value="MacOS" />
+                                <node concept="2Ry0Ak" id="5ruKdSwyeyG" role="2Ry0An">
+                                  <property role="2Ry0Am" value="idea_appLauncher" />
+                                </node>
                               </node>
                             </node>
                           </node>
@@ -1464,7 +1619,10 @@
             <node concept="398BVA" id="5ruKdSwyeyT" role="28jJRO">
               <ref role="398BVh" node="5ruKdSwyevt" resolve="mps_home" />
               <node concept="2Ry0Ak" id="5ruKdSwyeyU" role="iGT6I">
-                <property role="2Ry0Am" value="mps.sh" />
+                <property role="2Ry0Am" value="bin" />
+                <node concept="2Ry0Ak" id="5$IQOQwcnKd" role="2Ry0An">
+                  <property role="2Ry0Am" value="mps.sh" />
+                </node>
               </node>
             </node>
           </node>
@@ -1472,8 +1630,14 @@
             <property role="28jJZ5" value="755" />
             <node concept="398BVA" id="5ruKdSwyeyX" role="28jJRO">
               <ref role="398BVh" node="5ruKdSwyevt" resolve="mps_home" />
-              <node concept="2Ry0Ak" id="5ruKdSwyeyY" role="iGT6I">
-                <property role="2Ry0Am" value="mps.bat" />
+              <node concept="2Ry0Ak" id="5$IQOQwcnKf" role="iGT6I">
+                <property role="2Ry0Am" value="bin" />
+                <node concept="2Ry0Ak" id="5$IQOQwcnKk" role="2Ry0An">
+                  <property role="2Ry0Am" value="win" />
+                  <node concept="2Ry0Ak" id="5$IQOQwcnKp" role="2Ry0An">
+                    <property role="2Ry0Am" value="mps.bat" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -1568,20 +1732,24 @@
                   <property role="3MwjfP" value="MacOS" />
                 </node>
               </node>
-              <node concept="28jJK3" id="5ruKdSwye_M" role="39821P">
-                <property role="28jJZ5" value="644" />
-                <node concept="398BVA" id="5ruKdSwye$p" role="28jJRO">
-                  <ref role="398BVh" node="5ruKdSwyevt" resolve="mps_home" />
-                  <node concept="2Ry0Ak" id="5ruKdSwye$q" role="iGT6I">
-                    <property role="2Ry0Am" value="bin" />
-                    <node concept="2Ry0Ak" id="5ruKdSwye$r" role="2Ry0An">
-                      <property role="2Ry0Am" value="mac" />
-                      <node concept="2Ry0Ak" id="5ruKdSwye$s" role="2Ry0An">
-                        <property role="2Ry0Am" value="Contents" />
-                        <node concept="2Ry0Ak" id="5ruKdSwye$t" role="2Ry0An">
-                          <property role="2Ry0Am" value="MacOS" />
-                          <node concept="2Ry0Ak" id="5ruKdSwye$u" role="2Ry0An">
-                            <property role="2Ry0Am" value="idea_appLauncher" />
+              <node concept="1X3_iC" id="5$IQOQwcnKr" role="lGtFl">
+                <property role="3V$3am" value="children" />
+                <property role="3V$3ak" value="798100da-4f0a-421a-b991-71f8c50ce5d2/4701820937132344003/7389400916848037006" />
+                <node concept="28jJK3" id="5ruKdSwye_M" role="8Wnug">
+                  <property role="28jJZ5" value="644" />
+                  <node concept="398BVA" id="5ruKdSwye$p" role="28jJRO">
+                    <ref role="398BVh" node="5ruKdSwyevt" resolve="mps_home" />
+                    <node concept="2Ry0Ak" id="5ruKdSwye$q" role="iGT6I">
+                      <property role="2Ry0Am" value="bin" />
+                      <node concept="2Ry0Ak" id="5ruKdSwye$r" role="2Ry0An">
+                        <property role="2Ry0Am" value="mac" />
+                        <node concept="2Ry0Ak" id="5ruKdSwye$s" role="2Ry0An">
+                          <property role="2Ry0Am" value="Contents" />
+                          <node concept="2Ry0Ak" id="5ruKdSwye$t" role="2Ry0An">
+                            <property role="2Ry0Am" value="MacOS" />
+                            <node concept="2Ry0Ak" id="5ruKdSwye$u" role="2Ry0An">
+                              <property role="2Ry0Am" value="idea_appLauncher" />
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -1620,22 +1788,26 @@
                     <property role="2Ry0Am" value="bin" />
                     <node concept="2Ry0Ak" id="5ruKdSwye$J" role="2Ry0An">
                       <property role="2Ry0Am" value="mac" />
-                      <node concept="2Ry0Ak" id="5ruKdSwye$K" role="2Ry0An">
-                        <property role="2Ry0Am" value="libbreakgen.jnilib" />
+                      <node concept="2Ry0Ak" id="5$IQOQwcnKM" role="2Ry0An">
+                        <property role="2Ry0Am" value="libMacNativeKit64.dylib" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="28jJK3" id="5ruKdSwye_S" role="39821P">
-                <node concept="398BVA" id="5ruKdSwye$P" role="28jJRO">
-                  <ref role="398BVh" node="5ruKdSwyevt" resolve="mps_home" />
-                  <node concept="2Ry0Ak" id="5ruKdSwye$Q" role="iGT6I">
-                    <property role="2Ry0Am" value="bin" />
-                    <node concept="2Ry0Ak" id="5ruKdSwye$R" role="2Ry0An">
-                      <property role="2Ry0Am" value="mac" />
-                      <node concept="2Ry0Ak" id="5ruKdSwye$S" role="2Ry0An">
-                        <property role="2Ry0Am" value="libbreakgen64.jnilib" />
+              <node concept="1X3_iC" id="5$IQOQwcnKO" role="lGtFl">
+                <property role="3V$3am" value="children" />
+                <property role="3V$3ak" value="798100da-4f0a-421a-b991-71f8c50ce5d2/4701820937132344003/7389400916848037006" />
+                <node concept="28jJK3" id="5ruKdSwye_S" role="8Wnug">
+                  <node concept="398BVA" id="5ruKdSwye$P" role="28jJRO">
+                    <ref role="398BVh" node="5ruKdSwyevt" resolve="mps_home" />
+                    <node concept="2Ry0Ak" id="5ruKdSwye$Q" role="iGT6I">
+                      <property role="2Ry0Am" value="bin" />
+                      <node concept="2Ry0Ak" id="5ruKdSwye$R" role="2Ry0An">
+                        <property role="2Ry0Am" value="mac" />
+                        <node concept="2Ry0Ak" id="5ruKdSwye$S" role="2Ry0An">
+                          <property role="2Ry0Am" value="libbreakgen64.jnilib" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -1730,7 +1902,10 @@
               <node concept="398BVA" id="5ruKdSwye_v" role="28jJRO">
                 <ref role="398BVh" node="5ruKdSwyevt" resolve="mps_home" />
                 <node concept="2Ry0Ak" id="5ruKdSwye_w" role="iGT6I">
-                  <property role="2Ry0Am" value="mps.sh" />
+                  <property role="2Ry0Am" value="bin" />
+                  <node concept="2Ry0Ak" id="5$IQOQwcnLy" role="2Ry0An">
+                    <property role="2Ry0Am" value="mps.sh" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -1751,6 +1926,17 @@
     </node>
     <node concept="398rNT" id="5ruKdSwyevt" role="1l3spd">
       <property role="TrG5h" value="mps_home" />
+      <node concept="55IIr" id="5$IQOQwcnGE" role="398pKh">
+        <node concept="2Ry0Ak" id="5$IQOQwcnGH" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="5$IQOQwcnGK" role="2Ry0An">
+            <property role="2Ry0Am" value=".." />
+            <node concept="2Ry0Ak" id="5$IQOQwcnGP" role="2Ry0An">
+              <property role="2Ry0Am" value="MPS 2017.2" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2kB4xC" id="5ruKdSwyevu" role="1l3spd">
       <property role="TrG5h" value="version" />
