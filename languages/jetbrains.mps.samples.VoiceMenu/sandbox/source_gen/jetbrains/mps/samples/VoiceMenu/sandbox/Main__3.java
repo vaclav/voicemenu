@@ -26,76 +26,61 @@ public class Main__3 implements ActionListener {
 
   public static void initHashMap() {
 
-    Event Home = new Event("HowToGithub", "0");
+    Event Home = new Event("JetBrains", "0");
     Home.setAction("", true);
-    Home.setGreeting("Welcome to " + "HowToGithub");
+    Home.setGreeting("Welcome to " + "JetBrains");
 
+    Home.setGreeting("Welcome to the best company ever");
     Home.childs = new ArrayList<Event>();
     Home.isFinal = false;
-    Variables.main_Text = "HowToGithub";
+    Variables.main_Text = "JetBrains";
 
     Variables.myHashMap.put("0", Home);
 
 
-    Event Technical_department_8fudl3_a0 = new Event("Technical department", "1");
-    Technical_department_8fudl3_a0.isFinal = false;
-    Technical_department_8fudl3_a0.setAction("", false);
-    Technical_department_8fudl3_a0.setGreeting("");
-    Technical_department_8fudl3_a0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("01", Technical_department_8fudl3_a0);
-    Event Hardware_8fudl3_a0a0 = new Event("Hardware", "1");
-    Hardware_8fudl3_a0a0.isFinal = false;
-    Hardware_8fudl3_a0a0.setAction("", false);
-    Hardware_8fudl3_a0a0.setGreeting("");
-    Hardware_8fudl3_a0a0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("011", Hardware_8fudl3_a0a0);
-    Hardware_8fudl3_a0a0.setAction("getInfo", false);
-    Hardware_8fudl3_a0a0.childs = new ArrayList<Event>();
-    Event Previous_Menu_8fudl3_b0a0 = new Event("Previous Menu", "*");
-    Previous_Menu_8fudl3_b0a0.isFinal = false;
-    Previous_Menu_8fudl3_b0a0.setAction("", false);
-    Previous_Menu_8fudl3_b0a0.setGreeting("");
-    Previous_Menu_8fudl3_b0a0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("01*", Previous_Menu_8fudl3_b0a0);
-    Previous_Menu_8fudl3_b0a0.setAction("back", false);
-    Previous_Menu_8fudl3_b0a0.childs = new ArrayList<Event>();
-    Technical_department_8fudl3_a0.childs = new ArrayList<Event>();
-    Technical_department_8fudl3_a0.childs.add(Hardware_8fudl3_a0a0);
-    Technical_department_8fudl3_a0.childs.add(Previous_Menu_8fudl3_b0a0);
-    Event Marketing_department_8fudl3_b0 = new Event("Marketing department", "2");
-    Marketing_department_8fudl3_b0.isFinal = false;
-    Marketing_department_8fudl3_b0.setAction("", false);
-    Marketing_department_8fudl3_b0.setGreeting("");
-    Marketing_department_8fudl3_b0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("02", Marketing_department_8fudl3_b0);
-    Marketing_department_8fudl3_b0.setAction("call", true);
-    Marketing_department_8fudl3_b0.childs = new ArrayList<Event>();
-    Event Others_8fudl3_c0 = new Event("Others", "3");
-    Others_8fudl3_c0.isFinal = false;
-    Others_8fudl3_c0.setAction("", false);
-    Others_8fudl3_c0.setGreeting("");
-    Others_8fudl3_c0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("03", Others_8fudl3_c0);
-    Others_8fudl3_c0.setAction("getInfo", true);
-    Others_8fudl3_c0.childs = new ArrayList<Event>();
+    Event Menu1_9upjpn_a0 = new Event("Menu1", "1");
+    Menu1_9upjpn_a0.isFinal = false;
+    Menu1_9upjpn_a0.setAction("", false);
+    Menu1_9upjpn_a0.setGreeting("");
+    Menu1_9upjpn_a0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("01", Menu1_9upjpn_a0);
+    Event Menu2_9upjpn_a0a0 = new Event("Menu2", "1");
+    Menu2_9upjpn_a0a0.isFinal = false;
+    Menu2_9upjpn_a0a0.setAction("", false);
+    Menu2_9upjpn_a0a0.setGreeting("");
+    Menu2_9upjpn_a0a0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("011", Menu2_9upjpn_a0a0);
+    Event Menu3_9upjpn_a0a0a0 = new Event("Menu3", "1");
+    Menu3_9upjpn_a0a0a0.isFinal = false;
+    Menu3_9upjpn_a0a0a0.setAction("", false);
+    Menu3_9upjpn_a0a0a0.setGreeting("");
+    Menu3_9upjpn_a0a0a0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("0111", Menu3_9upjpn_a0a0a0);
+    Event Call_9upjpn_a0a0a0a0 = new Event("Call", "1");
+    Call_9upjpn_a0a0a0a0.isFinal = false;
+    Call_9upjpn_a0a0a0a0.setAction("", false);
+    Call_9upjpn_a0a0a0a0.setGreeting("");
+    Call_9upjpn_a0a0a0a0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("01111", Call_9upjpn_a0a0a0a0);
+    Call_9upjpn_a0a0a0a0.setAction("call", true);
+    Call_9upjpn_a0a0a0a0.childs = new ArrayList<Event>();
+    Menu3_9upjpn_a0a0a0.childs = new ArrayList<Event>();
+    Menu3_9upjpn_a0a0a0.childs.add(Call_9upjpn_a0a0a0a0);
+    Menu2_9upjpn_a0a0.childs = new ArrayList<Event>();
+    Menu2_9upjpn_a0a0.childs.add(Menu3_9upjpn_a0a0a0);
+    Menu1_9upjpn_a0.childs = new ArrayList<Event>();
+    Menu1_9upjpn_a0.childs.add(Menu2_9upjpn_a0a0);
 
-    Home.childs.add(Technical_department_8fudl3_a0);
-    Home.childs.add(Marketing_department_8fudl3_b0);
-    Home.childs.add(Others_8fudl3_c0);
+    Home.childs.add(Menu1_9upjpn_a0);
 
     Variables.timeout = new Event("timeout", "X");
-    Variables.timeout.playback = "";
-    Variables.timeout.duration = 0;
-    System.out.println(Variables.timeout.duration + 0);
+    Variables.timeout.playback = "Choose from ..";
     Variables.timeout.action = "replay";
     Variables.timeout.isFinal = false;
-
-
   }
 
   public static void main(String[] args) {
     initHashMap();
-    System.out.println("done");
     instance = new Main__3();
     Main__3.initHashMap();
     initView();

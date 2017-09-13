@@ -13,7 +13,6 @@
     <classNode dependClassName="java.io.IOException" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="javax.swing.JButton" />
     <classNode dependClassName="javax.swing.JPanel" />
@@ -34,7 +33,6 @@
     <classNode dependClassName="java.io.IOException" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="javax.swing.JButton" />
     <classNode dependClassName="javax.swing.JPanel" />
@@ -55,7 +53,6 @@
     <classNode dependClassName="java.io.IOException" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="javax.swing.JButton" />
     <classNode dependClassName="javax.swing.JPanel" />
@@ -76,7 +73,6 @@
     <classNode dependClassName="java.io.IOException" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="javax.swing.JButton" />
     <classNode dependClassName="javax.swing.JPanel" />
@@ -97,7 +93,6 @@
     <classNode dependClassName="java.io.IOException" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="javax.swing.JButton" />
     <classNode dependClassName="javax.swing.JPanel" />
@@ -118,7 +113,26 @@
     <classNode dependClassName="java.io.IOException" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="javax.swing.JButton" />
+    <classNode dependClassName="javax.swing.JPanel" />
+    <classNode dependClassName="javax.swing.border.Border" />
+    <classNode dependClassName="javax.swing.border.LineBorder" />
+    <classNode extendsClassName="java.awt.event.ActionListener" />
+  </dependency>
+  <dependency className="jetbrains.mps.samples.VoiceMenu.sandbox.Main__5" file="Main__5.java">
+    <classNode dependClassName="JavaVoiceMenu.runtime.Behaviour" />
+    <classNode dependClassName="JavaVoiceMenu.runtime.Data" />
+    <classNode dependClassName="JavaVoiceMenu.runtime.Event" />
+    <classNode dependClassName="JavaVoiceMenu.runtime.Style" />
+    <classNode dependClassName="JavaVoiceMenu.runtime.Variables" />
+    <classNode dependClassName="java.awt.BorderLayout" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Dimension" />
+    <classNode dependClassName="java.awt.event.ActionEvent" />
+    <classNode dependClassName="java.io.IOException" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="javax.swing.JButton" />
     <classNode dependClassName="javax.swing.JPanel" />

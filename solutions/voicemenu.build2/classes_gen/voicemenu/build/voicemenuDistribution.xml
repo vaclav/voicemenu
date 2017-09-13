@@ -127,7 +127,7 @@
   </target>
   
   <target name="buildDependents">
-    <ant antfile="build.xml" inheritAll="false" useNativeBasedir="true" />
+    <ant antfile="voicemenu.xml" inheritAll="false" useNativeBasedir="true" />
   </target>
   
   <target name="fetchDependencies" />

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root nodeRef="r:77dbf2f6-47ba-4e30-9724-6cb401a543ff(voicemenu.build)/6259652592352683727">
+    <file name="voicemenu.xml">
+      <unit id="6259652592352683727" at="1,0,1496,10" name="voicemenu.build.voicemenu" />
+    </file>
+  </root>
+  <root nodeRef="r:77dbf2f6-47ba-4e30-9724-6cb401a543ff(voicemenu.build)/6259652592352683994">
+    <file name="voicemenuDistribution.xml">
+      <unit id="6259652592352683994" at="1,0,141,10" name="voicemenu.build.voicemenuDistribution" />
+    </file>
+  </root>
+</debug-info>
+

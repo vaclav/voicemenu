@@ -16,6 +16,9 @@
         <child id="9126048691955220774" name="parameters" index="28jJR8" />
         <child id="9126048691955220762" name="path" index="28jJRO" />
       </concept>
+      <concept id="9126048691954557131" name="jetbrains.mps.build.structure.BuildLayout_Comment" flags="ng" index="28u9K_">
+        <property id="9126048691954700811" name="text" index="28hIV_" />
+      </concept>
       <concept id="2755237150521975431" name="jetbrains.mps.build.structure.BuildVariableMacroInitWithString" flags="ng" index="aVJcg">
         <child id="2755237150521975437" name="value" index="aVJcq" />
       </concept>
@@ -205,6 +208,7 @@
   <node concept="1l3spW" id="5ruKdSwyerf">
     <property role="TrG5h" value="voicemenu" />
     <property role="2DA0ip" value="../../" />
+    <property role="turDy" value="voicemenu.xml" />
     <node concept="10PD9b" id="5ruKdSwyerg" role="10PD9s" />
     <node concept="3b7kt6" id="5ruKdSwyerh" role="10PD9s" />
     <node concept="1zClus" id="5ruKdSwyeru" role="3989C9">
@@ -277,7 +281,7 @@
         <node concept="2Ry0Ak" id="5ruKdSwyerS" role="iGT6I">
           <property role="2Ry0Am" value="icons" />
           <node concept="2Ry0Ak" id="5ruKdSwyerT" role="2Ry0An">
-            <property role="2Ry0Am" value="splash.png" />
+            <property role="2Ry0Am" value="test.png" />
           </node>
         </node>
       </node>
@@ -313,6 +317,15 @@
       <ref role="1l3spb" to="ffeo:1diLdO26mQ6" resolve="mpsStandalone" />
       <node concept="398BVA" id="5ruKdSwyerq" role="2JcizS">
         <ref role="398BVh" node="5ruKdSwyero" resolve="mps_home" />
+      </node>
+    </node>
+    <node concept="2sgV4H" id="5ruKdSy0i54" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:5mc7nVumjii" resolve="mpsDebuggerPlugin" />
+      <node concept="398BVA" id="5ruKdSy0i6Y" role="2JcizS">
+        <ref role="398BVh" node="5ruKdSwyero" resolve="mps_home" />
+        <node concept="2Ry0Ak" id="5ruKdSy0i8K" role="iGT6I">
+          <property role="2Ry0Am" value="plugins" />
+        </node>
       </node>
     </node>
     <node concept="2sgV4H" id="5ruKdSwyerr" role="1l3spa">
@@ -570,6 +583,12 @@
             <property role="3MwjfP" value="plugins" />
           </node>
         </node>
+      </node>
+      <node concept="28u9K_" id="5ruKdSy0iCm" role="39821P">
+        <property role="28hIV_" value="optianal plugins" />
+      </node>
+      <node concept="3_I8Xc" id="5ruKdSy0iTs" role="39821P">
+        <ref role="3_I8Xa" to="ffeo:1x6h9EwqP32" resolve="mps-make" />
       </node>
       <node concept="1TblL5" id="5ruKdSwyet$" role="39821P">
         <node concept="3_J27D" id="5ruKdSwyet_" role="1TblL3">

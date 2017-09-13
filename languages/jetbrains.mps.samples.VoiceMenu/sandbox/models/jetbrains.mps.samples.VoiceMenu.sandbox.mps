@@ -3,8 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
-    <use id="fdcdc48f-bfd8-4831-aa76-5abac2ffa010" name="jetbrains.mps.baseLanguage.jdk8" version="0" />
     <engage id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" />
   </languages>
   <imports>
@@ -256,7 +254,7 @@
     </node>
   </node>
   <node concept="2Jqgb4" id="6nemK62JSIo">
-    <property role="TrG5h" value="myVoiceMenu" />
+    <property role="TrG5h" value="Connectivity provider" />
     <property role="1EJLKn" value="true" />
     <property role="3uoZKU" value="Welcome to our voicemenu" />
     <node concept="2C_Ik4" id="6nemK62JSIp" role="2JqgbB">
@@ -467,61 +465,6 @@
       </node>
     </node>
   </node>
-  <node concept="2Jqgb4" id="4_j0sPiGLCz">
-    <property role="TrG5h" value="HowToGithub" />
-    <node concept="2C_Ik4" id="4_j0sPiGLC$" role="2JqgbB">
-      <node concept="2C_Ik0" id="4_j0sPiGLC_" role="2C_I24">
-        <property role="2C_Iks" value="1" />
-        <property role="TrG5h" value="Technical department" />
-      </node>
-      <node concept="2C_Ik0" id="4_j0sPiGLCE" role="2C_I24">
-        <property role="2C_Iks" value="2" />
-        <property role="TrG5h" value="Marketing department" />
-      </node>
-      <node concept="2C_Ik0" id="4_j0sPiGLCQ" role="2C_I24">
-        <property role="2C_Iks" value="3" />
-        <property role="TrG5h" value="Others" />
-      </node>
-      <node concept="2C_I21" id="4_j0sPiIDXy" role="2C_I26">
-        <ref role="2C_gVZ" node="4_j0sPiGLC_" resolve="Technical department" />
-        <node concept="2C_Ik4" id="4_j0sPiIDXQ" role="2C_gVu">
-          <node concept="2C_Ik0" id="4_j0sPiIDXR" role="2C_I24">
-            <property role="2C_Iks" value="1" />
-            <property role="TrG5h" value="Hardware" />
-          </node>
-          <node concept="2C_Ik0" id="4_j0sPiIDYb" role="2C_I24">
-            <property role="2C_Iks" value="*" />
-            <property role="TrG5h" value="Previous Menu" />
-          </node>
-          <node concept="2C_I21" id="4_j0sPiIDY2" role="2C_I26">
-            <ref role="2C_gVZ" node="4_j0sPiIDXR" resolve="Hardware" />
-            <node concept="1$pBvo" id="4_j0sPiIDYt" role="2C_gVu">
-              <property role="XmNhe" value="false" />
-            </node>
-          </node>
-          <node concept="2C_I21" id="4_j0sPiIDYf" role="2C_I26">
-            <ref role="2C_gVZ" node="4_j0sPiIDYb" resolve="Previous Menu" />
-            <node concept="1$pBvp" id="4_j0sPiIDYq" role="2C_gVu" />
-          </node>
-        </node>
-      </node>
-      <node concept="2C_I21" id="4_j0sPiIDYw" role="2C_I26">
-        <ref role="2C_gVZ" node="4_j0sPiGLCE" resolve="Marketing department" />
-        <node concept="1$pBvr" id="4_j0sPiIDYO" role="2C_gVu">
-          <property role="XmNmt" value="true" />
-        </node>
-      </node>
-      <node concept="2C_I21" id="4_j0sPiIDYR" role="2C_I26">
-        <ref role="2C_gVZ" node="4_j0sPiGLCQ" resolve="Others" />
-        <node concept="1$pBvo" id="4_j0sPiIDZd" role="2C_gVu">
-          <property role="XmNhe" value="true" />
-        </node>
-      </node>
-    </node>
-    <node concept="2smLJI" id="JHn_unRVze" role="2smLJD">
-      <node concept="2m1r4j" id="JHn_unSHjE" role="2sfXcw" />
-    </node>
-  </node>
   <node concept="2Jqgb4" id="JHn_unFt4D">
     <property role="TrG5h" value="JetBrains" />
     <property role="1EJLKn" value="false" />
@@ -569,6 +512,62 @@
       <property role="2smLJF" value="7" />
       <property role="31ipjb" value="Choose from .." />
       <node concept="2m1r4j" id="5ruKdSwCfYq" role="2sfXcw" />
+    </node>
+  </node>
+  <node concept="2Jqgb4" id="5ruKdSy78$W">
+    <property role="TrG5h" value="myVoiceMenu" />
+    <node concept="2C_Ik4" id="5ruKdSy78$X" role="2JqgbB">
+      <node concept="2C_Ik0" id="5ruKdSy78_2" role="2C_I24">
+        <property role="TrG5h" value="Technical Department" />
+        <property role="2C_Iks" value="1" />
+      </node>
+      <node concept="2C_Ik0" id="5ruKdSy78_6" role="2C_I24">
+        <property role="2C_Iks" value="2" />
+        <property role="TrG5h" value="Marketing department" />
+      </node>
+      <node concept="2C_Ik0" id="5ruKdSy78_9" role="2C_I24">
+        <property role="2C_Iks" value="3" />
+        <property role="TrG5h" value="Others" />
+      </node>
+      <node concept="2C_I21" id="5ruKdSy78_0" role="2C_I26">
+        <ref role="2C_gVZ" node="5ruKdSy78_2" resolve="Technical Department" />
+        <node concept="2C_Ik4" id="5ruKdSy78_d" role="2C_gVu">
+          <node concept="2C_Ik0" id="5ruKdSy78_i" role="2C_I24">
+            <property role="TrG5h" value="Hardware" />
+            <property role="2C_Iks" value="1" />
+          </node>
+          <node concept="2C_Ik0" id="5ruKdSy78_m" role="2C_I24">
+            <property role="2C_Iks" value="*" />
+            <property role="TrG5h" value="Previous Menu" />
+          </node>
+          <node concept="2C_I21" id="5ruKdSy78_g" role="2C_I26">
+            <ref role="2C_gVZ" node="5ruKdSy78_i" resolve="Hardware" />
+            <node concept="1$pBvo" id="5ruKdSy78_$" role="2C_gVu">
+              <property role="XmNhe" value="true" />
+            </node>
+          </node>
+          <node concept="2C_I21" id="5ruKdSy78_p" role="2C_I26">
+            <ref role="2C_gVZ" node="5ruKdSy78_m" resolve="Previous Menu" />
+            <node concept="1$pBvp" id="5ruKdSy78_x" role="2C_gVu" />
+          </node>
+        </node>
+      </node>
+      <node concept="2C_I21" id="5ruKdSy78_B" role="2C_I26">
+        <ref role="2C_gVZ" node="5ruKdSy78_6" resolve="Marketing department" />
+        <node concept="1$pBvr" id="5ruKdSy78_P" role="2C_gVu">
+          <property role="XmNmt" value="true" />
+        </node>
+      </node>
+      <node concept="2C_I21" id="5ruKdSy78_S" role="2C_I26">
+        <ref role="2C_gVZ" node="5ruKdSy78_9" resolve="Others" />
+        <node concept="1$pBvq" id="5ruKdSy78A8" role="2C_gVu">
+          <property role="XmNiv" value="true" />
+        </node>
+      </node>
+    </node>
+    <node concept="2smLJI" id="5ruKdSy78$Y" role="2smLJD">
+      <property role="2smLJF" value="7" />
+      <node concept="2m1r4j" id="5ruKdSy78$Z" role="2sfXcw" />
     </node>
   </node>
 </model>

@@ -26,66 +26,71 @@ public class Main__4 implements ActionListener {
 
   public static void initHashMap() {
 
-    Event Home = new Event("JetBrains", "0");
+    Event Home = new Event("myVoiceMenu", "0");
     Home.setAction("", true);
-    Home.setGreeting("Welcome to " + "JetBrains");
+    Home.setGreeting("Welcome to " + "myVoiceMenu");
 
-    Home.setGreeting("Welcome to the best company ever");
     Home.childs = new ArrayList<Event>();
     Home.isFinal = false;
-    Variables.main_Text = "JetBrains";
+    Variables.main_Text = "myVoiceMenu";
 
     Variables.myHashMap.put("0", Home);
 
 
-    Event Menu1_9upjpn_a0 = new Event("Menu1", "1");
-    Menu1_9upjpn_a0.isFinal = false;
-    Menu1_9upjpn_a0.setAction("", false);
-    Menu1_9upjpn_a0.setGreeting("");
-    Menu1_9upjpn_a0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("01", Menu1_9upjpn_a0);
-    Event Menu2_9upjpn_a0a0 = new Event("Menu2", "1");
-    Menu2_9upjpn_a0a0.isFinal = false;
-    Menu2_9upjpn_a0a0.setAction("", false);
-    Menu2_9upjpn_a0a0.setGreeting("");
-    Menu2_9upjpn_a0a0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("011", Menu2_9upjpn_a0a0);
-    Event Menu3_9upjpn_a0a0a0 = new Event("Menu3", "1");
-    Menu3_9upjpn_a0a0a0.isFinal = false;
-    Menu3_9upjpn_a0a0a0.setAction("", false);
-    Menu3_9upjpn_a0a0a0.setGreeting("");
-    Menu3_9upjpn_a0a0a0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("0111", Menu3_9upjpn_a0a0a0);
-    Event Call_9upjpn_a0a0a0a0 = new Event("Call", "1");
-    Call_9upjpn_a0a0a0a0.isFinal = false;
-    Call_9upjpn_a0a0a0a0.setAction("", false);
-    Call_9upjpn_a0a0a0a0.setGreeting("");
-    Call_9upjpn_a0a0a0a0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("01111", Call_9upjpn_a0a0a0a0);
-    Call_9upjpn_a0a0a0a0.setAction("call", true);
-    Call_9upjpn_a0a0a0a0.childs = new ArrayList<Event>();
-    Menu3_9upjpn_a0a0a0.childs = new ArrayList<Event>();
-    Menu3_9upjpn_a0a0a0.childs.add(Call_9upjpn_a0a0a0a0);
-    Menu2_9upjpn_a0a0.childs = new ArrayList<Event>();
-    Menu2_9upjpn_a0a0.childs.add(Menu3_9upjpn_a0a0a0);
-    Menu1_9upjpn_a0.childs = new ArrayList<Event>();
-    Menu1_9upjpn_a0.childs.add(Menu2_9upjpn_a0a0);
+    Event Technical_Department_35s59u_a0 = new Event("Technical Department", "1");
+    Technical_Department_35s59u_a0.isFinal = false;
+    Technical_Department_35s59u_a0.setAction("", false);
+    Technical_Department_35s59u_a0.setGreeting("");
+    Technical_Department_35s59u_a0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("01", Technical_Department_35s59u_a0);
+    Event Hardware_35s59u_a0a0 = new Event("Hardware", "1");
+    Hardware_35s59u_a0a0.isFinal = false;
+    Hardware_35s59u_a0a0.setAction("", false);
+    Hardware_35s59u_a0a0.setGreeting("");
+    Hardware_35s59u_a0a0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("011", Hardware_35s59u_a0a0);
+    Hardware_35s59u_a0a0.setAction("getInfo", true);
+    Hardware_35s59u_a0a0.childs = new ArrayList<Event>();
+    Event Previous_Menu_35s59u_b0a0 = new Event("Previous Menu", "*");
+    Previous_Menu_35s59u_b0a0.isFinal = false;
+    Previous_Menu_35s59u_b0a0.setAction("", false);
+    Previous_Menu_35s59u_b0a0.setGreeting("");
+    Previous_Menu_35s59u_b0a0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("01*", Previous_Menu_35s59u_b0a0);
+    Previous_Menu_35s59u_b0a0.setAction("back", false);
+    Previous_Menu_35s59u_b0a0.childs = new ArrayList<Event>();
+    Technical_Department_35s59u_a0.childs = new ArrayList<Event>();
+    Technical_Department_35s59u_a0.childs.add(Hardware_35s59u_a0a0);
+    Technical_Department_35s59u_a0.childs.add(Previous_Menu_35s59u_b0a0);
+    Event Marketing_department_35s59u_b0 = new Event("Marketing department", "2");
+    Marketing_department_35s59u_b0.isFinal = false;
+    Marketing_department_35s59u_b0.setAction("", false);
+    Marketing_department_35s59u_b0.setGreeting("");
+    Marketing_department_35s59u_b0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("02", Marketing_department_35s59u_b0);
+    Marketing_department_35s59u_b0.setAction("call", true);
+    Marketing_department_35s59u_b0.childs = new ArrayList<Event>();
+    Event Others_35s59u_c0 = new Event("Others", "3");
+    Others_35s59u_c0.isFinal = false;
+    Others_35s59u_c0.setAction("", false);
+    Others_35s59u_c0.setGreeting("");
+    Others_35s59u_c0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("03", Others_35s59u_c0);
+    Others_35s59u_c0.setAction("other", true);
+    Others_35s59u_c0.childs = new ArrayList<Event>();
 
-    Home.childs.add(Menu1_9upjpn_a0);
+    Home.childs.add(Technical_Department_35s59u_a0);
+    Home.childs.add(Marketing_department_35s59u_b0);
+    Home.childs.add(Others_35s59u_c0);
 
     Variables.timeout = new Event("timeout", "X");
-    Variables.timeout.playback = "Choose from ..";
-    Variables.timeout.duration = 7;
-    System.out.println(Variables.timeout.duration + 7);
+    Variables.timeout.playback = "";
     Variables.timeout.action = "replay";
     Variables.timeout.isFinal = false;
-
-
   }
 
   public static void main(String[] args) {
     initHashMap();
-    System.out.println("done");
     instance = new Main__4();
     Main__4.initHashMap();
     initView();

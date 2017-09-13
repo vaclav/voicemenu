@@ -9,6 +9,7 @@
   <property name="build.number" value="voicemenu-1.0" />
   <property name="mps_home" location="" />
   <property name="artifacts.mpsStandalone" location="${mps_home}" />
+  <property name="artifacts.mpsDebuggerPlugin" location="${mps_home}/plugins" />
   <property name="artifacts.mpsMakePlugin" location="${mps_home}/plugins" />
   <property name="artifacts.mpsContextActionsTool" location="${mps_home}/plugins" />
   <property file="${artifacts.mpsStandalone}/build.properties" prefix="import.mpsStandalone" />
@@ -60,7 +61,7 @@
       <component>
         <version codename="voicemenu" major="1" minor="0" eap="false" />
         <build number="${build.number}" date="${date}" />
-        <logo url="/splash.png" textcolor="002387" />
+        <logo url="/test.png" textcolor="002387" />
         <about url="/about.png" />
         <icon size32="/MPS32.png" size16="/MPS16.png" size32opaque="/MPS32.png" />
         <package code="code" />
@@ -77,7 +78,7 @@
       <fileset file="${basedir}/icons/MPS16.png" />
       <fileset file="${basedir}/icons/MPS32.png" />
       <fileset file="${basedir}/icons/logo.png" />
-      <fileset file="${basedir}/icons/splash.png" />
+      <fileset file="${basedir}/icons/test.png" />
       <fileset file="${basedir}/icons/about.png" />
       <fileset dir="${build.tmp}/default/branding.jar" />
     </jar>
@@ -749,6 +750,10 @@
     </copy>
     <copy todir="${build.layout}/plugins/voicemenu">
       <fileset file="${basedir}/solutions/TTSLibrary/lib/mbrola.jar" />
+    </copy>
+    <mkdir dir="${build.layout}/mps-make" />
+    <copy todir="${build.layout}/mps-make">
+      <fileset dir="${artifacts.mpsMakePlugin}/mps-make" />
     </copy>
     <echo file="${build.layout}/build.number">build.number=${build.number}${line.separator}date=${date}${line.separator}version=1.0</echo>
     <echo file="${build.layout}/build.properties">voicemenu.date=${date}${line.separator}voicemenu.build.number=${build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
