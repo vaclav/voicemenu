@@ -521,10 +521,6 @@
         <property role="TrG5h" value="Technical Department" />
         <property role="2C_Iks" value="1" />
       </node>
-      <node concept="2C_Ik0" id="5ruKdSy78_6" role="2C_I24">
-        <property role="2C_Iks" value="2" />
-        <property role="TrG5h" value="Marketing department" />
-      </node>
       <node concept="2C_Ik0" id="5ruKdSy78_9" role="2C_I24">
         <property role="2C_Iks" value="3" />
         <property role="TrG5h" value="Others" />
@@ -552,12 +548,6 @@
           </node>
         </node>
       </node>
-      <node concept="2C_I21" id="5ruKdSy78_B" role="2C_I26">
-        <ref role="2C_gVZ" node="5ruKdSy78_6" resolve="Marketing department" />
-        <node concept="1$pBvr" id="5ruKdSy78_P" role="2C_gVu">
-          <property role="XmNmt" value="true" />
-        </node>
-      </node>
       <node concept="2C_I21" id="5ruKdSy78_S" role="2C_I26">
         <ref role="2C_gVZ" node="5ruKdSy78_9" resolve="Others" />
         <node concept="1$pBvq" id="5ruKdSy78A8" role="2C_gVu">
@@ -566,7 +556,7 @@
       </node>
     </node>
     <node concept="2smLJI" id="5ruKdSy78$Y" role="2smLJD">
-      <property role="2smLJF" value="7" />
+      <property role="2smLJF" value="9" />
       <node concept="2m1r4j" id="5ruKdSy78$Z" role="2sfXcw" />
     </node>
   </node>

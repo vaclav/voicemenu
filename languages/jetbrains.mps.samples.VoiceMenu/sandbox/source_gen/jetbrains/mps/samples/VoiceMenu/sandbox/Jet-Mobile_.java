@@ -19,10 +19,10 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
 
-public class Main_ implements ActionListener {
+public class Jet-Mobile_ implements ActionListener {
 
 
-  public static Main_ instance;
+  public static Jet-Mobile_ instance;
 
   public static void initHashMap() {
 
@@ -230,6 +230,7 @@ public class Main_ implements ActionListener {
     Home.childs.add(Other_requirements_m25aj_e0);
     Home.childs.add(Record_m25aj_f0);
 
+
     Variables.timeout = new Event("timeout", "X");
     Variables.timeout.playback = "";
     Variables.timeout.action = "replay";
@@ -238,8 +239,8 @@ public class Main_ implements ActionListener {
 
   public static void main(String[] args) {
     initHashMap();
-    instance = new Main_();
-    Main_.initHashMap();
+    instance = new Jet-Mobile_();
+    Jet-Mobile_.initHashMap();
     initView();
     Behaviour.runInitSetup();
 

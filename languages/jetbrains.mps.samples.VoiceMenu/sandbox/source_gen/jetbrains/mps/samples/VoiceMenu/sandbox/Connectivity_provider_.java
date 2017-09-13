@@ -19,10 +19,10 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
 
-public class Main__0 implements ActionListener {
+public class Connectivity_provider_ implements ActionListener {
 
 
-  public static Main__0 instance;
+  public static Connectivity_provider_ instance;
 
   public static void initHashMap() {
 
@@ -113,6 +113,7 @@ public class Main__0 implements ActionListener {
     Home.childs.add(Internet_azlqml_a0);
     Home.childs.add(Television_azlqml_b0);
 
+
     Variables.timeout = new Event("timeout", "X");
     Variables.timeout.playback = "";
     Variables.timeout.action = "replay";
@@ -121,8 +122,8 @@ public class Main__0 implements ActionListener {
 
   public static void main(String[] args) {
     initHashMap();
-    instance = new Main__0();
-    Main__0.initHashMap();
+    instance = new Connectivity_provider_();
+    Connectivity_provider_.initHashMap();
     initView();
     Behaviour.runInitSetup();
 

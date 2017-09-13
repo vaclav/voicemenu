@@ -26,7 +26,7 @@ public class Behaviour {
         if (!(Variables.started)) {
           return;
         }
-        TimeUnit.SECONDS.sleep(Variables.timeout.duration + 4);
+        TimeUnit.SECONDS.sleep(Variables.timeout.duration + 6);
         String timeoutAction = Variables.timeout.action;
         System.out.println("Timeout playback: " + Variables.timeout.playback);
         if (eq_d7l93i_a0e0a0g0(timeoutAction, "back")) {

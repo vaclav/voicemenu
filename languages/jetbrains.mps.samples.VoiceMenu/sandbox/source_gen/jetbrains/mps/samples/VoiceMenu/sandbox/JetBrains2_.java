@@ -19,10 +19,10 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
 
-public class Main__2 implements ActionListener {
+public class JetBrains2_ implements ActionListener {
 
 
-  public static Main__2 instance;
+  public static JetBrains2_ instance;
 
   public static void initHashMap() {
 
@@ -135,6 +135,7 @@ public class Main__2 implements ActionListener {
     Home.childs.add(Sales_lbjr72_a0);
     Home.childs.add(General_Questions_lbjr72_b0);
 
+
     Variables.timeout = new Event("timeout", "X");
     Variables.timeout.playback = "";
     Variables.timeout.action = "getInfo";
@@ -143,8 +144,8 @@ public class Main__2 implements ActionListener {
 
   public static void main(String[] args) {
     initHashMap();
-    instance = new Main__2();
-    Main__2.initHashMap();
+    instance = new JetBrains2_();
+    JetBrains2_.initHashMap();
     initView();
     Behaviour.runInitSetup();
 

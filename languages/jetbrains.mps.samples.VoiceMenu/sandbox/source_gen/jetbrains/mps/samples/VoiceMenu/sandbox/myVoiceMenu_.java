@@ -19,10 +19,10 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
 
-public class Main__4 implements ActionListener {
+public class myVoiceMenu_ implements ActionListener {
 
 
-  public static Main__4 instance;
+  public static myVoiceMenu_ instance;
 
   public static void initHashMap() {
 
@@ -62,26 +62,18 @@ public class Main__4 implements ActionListener {
     Technical_Department_35s59u_a0.childs = new ArrayList<Event>();
     Technical_Department_35s59u_a0.childs.add(Hardware_35s59u_a0a0);
     Technical_Department_35s59u_a0.childs.add(Previous_Menu_35s59u_b0a0);
-    Event Marketing_department_35s59u_b0 = new Event("Marketing department", "2");
-    Marketing_department_35s59u_b0.isFinal = false;
-    Marketing_department_35s59u_b0.setAction("", false);
-    Marketing_department_35s59u_b0.setGreeting("");
-    Marketing_department_35s59u_b0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("02", Marketing_department_35s59u_b0);
-    Marketing_department_35s59u_b0.setAction("call", true);
-    Marketing_department_35s59u_b0.childs = new ArrayList<Event>();
-    Event Others_35s59u_c0 = new Event("Others", "3");
-    Others_35s59u_c0.isFinal = false;
-    Others_35s59u_c0.setAction("", false);
-    Others_35s59u_c0.setGreeting("");
-    Others_35s59u_c0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("03", Others_35s59u_c0);
-    Others_35s59u_c0.setAction("other", true);
-    Others_35s59u_c0.childs = new ArrayList<Event>();
+    Event Others_35s59u_b0 = new Event("Others", "3");
+    Others_35s59u_b0.isFinal = false;
+    Others_35s59u_b0.setAction("", false);
+    Others_35s59u_b0.setGreeting("");
+    Others_35s59u_b0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("03", Others_35s59u_b0);
+    Others_35s59u_b0.setAction("other", true);
+    Others_35s59u_b0.childs = new ArrayList<Event>();
 
     Home.childs.add(Technical_Department_35s59u_a0);
-    Home.childs.add(Marketing_department_35s59u_b0);
-    Home.childs.add(Others_35s59u_c0);
+    Home.childs.add(Others_35s59u_b0);
+
 
     Variables.timeout = new Event("timeout", "X");
     Variables.timeout.playback = "";
@@ -91,8 +83,8 @@ public class Main__4 implements ActionListener {
 
   public static void main(String[] args) {
     initHashMap();
-    instance = new Main__4();
-    Main__4.initHashMap();
+    instance = new myVoiceMenu_();
+    myVoiceMenu_.initHashMap();
     initView();
     Behaviour.runInitSetup();
 
