@@ -28,6 +28,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.smodel.runtime.IconResource;
 import jetbrains.mps.editor.runtime.selection.SelectionUtil;
 import jetbrains.mps.openapi.editor.selection.SelectionManager;
+import jetbrains.mps.openapi.editor.cells.EditorCell;
 
 public class WorkSpace_TransformationMenu extends TransformationMenuBase {
   private final Set<String> myLocations = SetSequence.fromSetAndArray(new HashSet<String>(), MenuLocations.CONTEXT_ACTIONS_TOOL);
@@ -115,7 +116,7 @@ public class WorkSpace_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return eq_tva3ah_a0a0i2g7(_context.getEditorContext().getSelectedCell().getCellId(), "property_name");
+          return eq_tva3ah_a0a0i2g7(check_tva3ah_a0a0a0a0(_context.getEditorContext().getSelectedCell()), "property_name");
         }
 
         @Override
@@ -165,7 +166,7 @@ public class WorkSpace_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return eq_tva3ah_a0a0i2h7(_context.getEditorContext().getSelectedCell().getCellId(), "property_name");
+          return eq_tva3ah_a0a0i2h7(check_tva3ah_a0a0a1a0(_context.getEditorContext().getSelectedCell()), "property_name");
         }
 
         @Override
@@ -440,6 +441,18 @@ public class WorkSpace_TransformationMenu extends TransformationMenuBase {
       }
 
     }
+  }
+  private static String check_tva3ah_a0a0a0a0(EditorCell checkedDotOperand) {
+    if (null != checkedDotOperand) {
+      return checkedDotOperand.getCellId();
+    }
+    return null;
+  }
+  private static String check_tva3ah_a0a0a1a0(EditorCell checkedDotOperand) {
+    if (null != checkedDotOperand) {
+      return checkedDotOperand.getCellId();
+    }
+    return null;
   }
   private static boolean eq_tva3ah_a0a0i2g7(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
