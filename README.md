@@ -28,12 +28,12 @@ A few sample voice menu definitions can be found in the Sandbox module.
 Licence
 -------
 
-MPS is licensed under the Apache 2 open-source license. See the [Licence](https://github.com/vaclav/voicemenu/blob/master/LICENSE) for full details.
+MPS is licensed under the Apache 2 open-source license. See the [License](https://github.com/vaclav/voicemenu/blob/master/LICENSE) for full details.
 
 System requirements
 -------------------
 
-To build Voice Menu project from sources you need JetBrains MPS 2017.2 or later. Voices in the java example are available on Mac.
+To build the Voice Menu project from the sources you need JetBrains MPS 2017.2 or later.
 
 ----------
 
