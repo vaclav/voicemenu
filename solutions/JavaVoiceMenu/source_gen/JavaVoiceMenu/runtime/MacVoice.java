@@ -44,7 +44,6 @@ public class MacVoice {
       if (MacVoice.waitingThr.isAlive()) {
         waitingThr.interrupt();
       }
-
       (MacVoice.waitingThr = new Thread(new MacVoice.SpeakDurationHandler())).start();
       // proc.destroy(); 
     } catch (Exception e) {
@@ -62,10 +61,12 @@ public class MacVoice {
     MacVoice.waitingThr.interrupt();
     speakingProc.destroy();
   }
+
+
   /**
    * func to decide what language use next
    */
-  private String getVoice() {
+  public String getVoice() {
     if (!(voice)) {
       return Samantha;
     } else {

@@ -3,10 +3,10 @@
   <persistence version="9" />
   <languages>
     <use id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu" version="-1" />
-    <use id="750ae49d-4f57-400c-b5dc-2b58c1e3f9a9" name="jetbrains.mps.samples.VoiceMenuToXML" version="0" />
-    <use id="e2a803a4-d4b8-43eb-b458-517effd2a87f" name="jetbrains.mps.samples.VoiceMenuToAsterisk" version="0" />
-    <use id="0b30ef64-0c5e-4567-b992-9bf5bbc44c0a" name="jetbrains.mps.samples.VoiceMenuToHTML" version="0" />
-    <use id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" version="0" />
+    <use id="750ae49d-4f57-400c-b5dc-2b58c1e3f9a9" name="jetbrains.mps.samples.VoiceMenuToXML" version="-1" />
+    <use id="e2a803a4-d4b8-43eb-b458-517effd2a87f" name="jetbrains.mps.samples.VoiceMenuToAsterisk" version="-1" />
+    <use id="0b30ef64-0c5e-4567-b992-9bf5bbc44c0a" name="jetbrains.mps.samples.VoiceMenuToHTML" version="-1" />
+    <use id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" version="-1" />
     <engage id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" />
   </languages>
   <imports>
@@ -348,19 +348,21 @@
     <property role="1EJLKn" value="true" />
     <node concept="2C_Ik4" id="6HhgIFXTyQ3" role="2JqgbB">
       <node concept="2C_I21" id="7IHEnsdAb2n" role="2C_I26">
-        <ref role="2C_gVZ" node="7IHEnsdAb2p" resolve="info speaking speaking speaking speaking speaking speaking speaking speaking speaking" />
+        <ref role="2C_gVZ" node="7IHEnsdAb2p" resolve="info" />
         <node concept="1$pBvo" id="48mTguK45il" role="2C_gVu">
           <property role="XmNhe" value="false" />
         </node>
       </node>
       <node concept="2C_Ik0" id="7IHEnsdAb2p" role="2C_I24">
-        <property role="TrG5h" value="info speaking speaking speaking speaking speaking speaking speaking speaking speaking" />
+        <property role="TrG5h" value="info" />
         <property role="2C_Iks" value="2" />
       </node>
     </node>
     <node concept="2smLJI" id="JHn_unRV$u" role="2smLJD">
-      <property role="2smLJF" value="2" />
-      <node concept="1$pBvp" id="3jUOcBQwqiS" role="2sfXcw" />
+      <property role="2smLJF" value="5" />
+      <node concept="X09Yf" id="2T27OaN4s4m" role="2sfXcw">
+        <property role="XmNjE" value="false" />
+      </node>
     </node>
   </node>
   <node concept="2Jqgb4" id="3BO6$VaLho1">
@@ -569,10 +571,6 @@
   <node concept="2Jqgb4" id="42GgdiBTieu">
     <property role="1EJLKn" value="true" />
     <property role="TrG5h" value="MY TEST" />
-    <node concept="2smLJI" id="42GgdiBTiew" role="2smLJD">
-      <property role="2smLJF" value="7" />
-      <node concept="2m1r4j" id="42GgdiBTiex" role="2sfXcw" />
-    </node>
     <node concept="2C_Ik4" id="1ychykAt_Ns" role="2JqgbB">
       <node concept="2C_I21" id="1ychykAt_N$" role="2C_I26">
         <ref role="2C_gVZ" node="1ychykAt_NA" resolve="dsa" />
@@ -593,6 +591,10 @@
         <property role="2C_Iks" value="6" />
         <property role="TrG5h" value="dsa" />
       </node>
+    </node>
+    <node concept="2smLJI" id="42GgdiBTiew" role="2smLJD">
+      <property role="2smLJF" value="7" />
+      <node concept="2m1r4j" id="42GgdiBTiex" role="2sfXcw" />
     </node>
   </node>
 </model>
