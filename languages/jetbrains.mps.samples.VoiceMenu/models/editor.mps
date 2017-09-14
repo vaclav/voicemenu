@@ -1795,7 +1795,7 @@
     </node>
   </node>
   <node concept="3p36aQ" id="5lu2mvqIsnF">
-    <property role="3GE5qa" value="RealActions" />
+    <property role="3GE5qa" value="RealActions.SubstituteMenu" />
     <ref role="aqKnT" to="xehl:5lu2mvqIsn3" resolve="Empty" />
   </node>
   <node concept="24kQdi" id="5lu2mvqIGvY">
@@ -2464,7 +2464,7 @@
     </node>
   </node>
   <node concept="IW6AY" id="5Toe17L8lQz">
-    <property role="3GE5qa" value="RealActions" />
+    <property role="3GE5qa" value="RealActions.TransformationMenu" />
     <ref role="aqKnT" to="xehl:5lu2mvqIsn3" resolve="Empty" />
     <node concept="1Qtc8_" id="42GgdiCLPYg" role="IW6Ez">
       <node concept="2jZ$wP" id="42GgdiCLQFh" role="1Qtc8$" />
@@ -2837,6 +2837,7 @@
     </node>
   </node>
   <node concept="IW6AY" id="2LL6X0rd8Ue">
+    <property role="3GE5qa" value="TransformationMenu" />
     <ref role="aqKnT" to="xehl:5HF1wNNZucc" resolve="Event" />
     <node concept="1Qtc8_" id="42GgdiCqDiq" role="IW6Ez">
       <node concept="2jZ$wP" id="42GgdiCqG4a" role="1Qtc8$" />
@@ -6564,7 +6565,7 @@
     </node>
   </node>
   <node concept="IW6AY" id="54keEMKgjfY">
-    <property role="3GE5qa" value="RealActions" />
+    <property role="3GE5qa" value="RealActions.TransformationMenu" />
     <ref role="aqKnT" to="xehl:5RYvhcTA0F9" resolve="Other" />
     <node concept="1Qtc8_" id="42GgdiCksTd" role="IW6Ez">
       <node concept="L$LW2" id="42GgdiCksTm" role="1Qtc8A" />
@@ -6572,7 +6573,7 @@
     </node>
   </node>
   <node concept="IW6AY" id="54keEMKgiwA">
-    <property role="3GE5qa" value="RealActions" />
+    <property role="3GE5qa" value="RealActions.TransformationMenu" />
     <ref role="aqKnT" to="xehl:5RYvhcTA0F8" resolve="DirectCall" />
     <node concept="1Qtc8_" id="42GgdiC3OOW" role="IW6Ez">
       <node concept="2jZ$wP" id="42GgdiC3OP0" role="1Qtc8$" />
@@ -6580,7 +6581,7 @@
     </node>
   </node>
   <node concept="IW6AY" id="54keEMKfT1_">
-    <property role="3GE5qa" value="RealActions" />
+    <property role="3GE5qa" value="RealActions.TransformationMenu" />
     <ref role="aqKnT" to="xehl:5RYvhcTA0Fa" resolve="Back" />
     <node concept="1Qtc8_" id="42GgdiBDSCA" role="IW6Ez">
       <node concept="2jZ$wP" id="42GgdiBDTr4" role="1Qtc8$" />
@@ -6588,7 +6589,7 @@
     </node>
   </node>
   <node concept="IW6AY" id="54keEMKgiSi">
-    <property role="3GE5qa" value="RealActions" />
+    <property role="3GE5qa" value="RealActions.TransformationMenu" />
     <ref role="aqKnT" to="xehl:5RYvhcTA0Fb" resolve="GetInfo" />
     <node concept="1Qtc8_" id="7$6jWp$_Xao" role="IW6Ez">
       <node concept="2jZ$wP" id="7$6jWp$_Xap" role="1Qtc8$" />
@@ -6596,6 +6597,7 @@
     </node>
   </node>
   <node concept="IW6AY" id="5o6E870JSfC">
+    <property role="3GE5qa" value="TransformationMenu" />
     <ref role="aqKnT" to="xehl:5HF1wNNZuc8" resolve="Menu" />
     <node concept="1Qtc8_" id="42GgdiCsJ5n" role="IW6Ez">
       <node concept="2jZ$wP" id="42GgdiCsMN3" role="1Qtc8$" />
@@ -7224,6 +7226,7 @@
     </node>
   </node>
   <node concept="IW6AY" id="5o6E870Yihs">
+    <property role="3GE5qa" value="TransformationMenu" />
     <ref role="aqKnT" to="xehl:5HF1wNNZuqd" resolve="Activity" />
     <node concept="1Qtc8_" id="7$6jWp$EYjX" role="IW6Ez">
       <node concept="2jZ$wP" id="7$6jWp$EYjY" role="1Qtc8$" />
@@ -8527,6 +8530,7 @@
     </node>
   </node>
   <node concept="IW6AY" id="7$6jWp$Da8i">
+    <property role="3GE5qa" value="TransformationMenu" />
     <ref role="aqKnT" to="xehl:5HF1wNO0wj8" resolve="WorkSpace" />
     <node concept="1Qtc8_" id="7$6jWp$Da8I" role="IW6Ez">
       <node concept="2jZ$wP" id="7$6jWp$Da8J" role="1Qtc8$" />
@@ -9144,7 +9148,7 @@
     </node>
   </node>
   <node concept="IW6AY" id="48dyn_Zc6tp">
-    <property role="3GE5qa" value="RealActions" />
+    <property role="3GE5qa" value="RealActions.TransformationMenu" />
     <ref role="aqKnT" to="xehl:48dyn_Z3hrr" resolve="HangUp" />
     <node concept="1Qtc8_" id="42GgdiCi8Mq" role="IW6Ez">
       <node concept="2jZ$wP" id="42GgdiCi8R_" role="1Qtc8$" />
@@ -9152,7 +9156,7 @@
     </node>
   </node>
   <node concept="IW6AY" id="48dyn_Zc9rR">
-    <property role="3GE5qa" value="RealActions" />
+    <property role="3GE5qa" value="RealActions.TransformationMenu" />
     <ref role="aqKnT" to="xehl:48dyn_Z3hrQ" resolve="Record" />
     <node concept="1Qtc8_" id="42GgdiCky1j" role="IW6Ez">
       <node concept="2jZ$wP" id="42GgdiCky6w" role="1Qtc8$" />
@@ -9472,7 +9476,7 @@
     </node>
   </node>
   <node concept="IW6AY" id="6HhgIFXm3dR">
-    <property role="3GE5qa" value="RealActions" />
+    <property role="3GE5qa" value="RealActions.TransformationMenu" />
     <ref role="aqKnT" to="xehl:6HhgIFXlffT" resolve="Replay" />
     <node concept="1Qtc8_" id="42GgdiCkAnY" role="IW6Ez">
       <node concept="2jZ$wP" id="42GgdiCkAo4" role="1Qtc8$" />
@@ -11012,7 +11016,7 @@
     </node>
   </node>
   <node concept="IW6AY" id="JHn_unTDmD">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="TransformationMenu" />
     <ref role="aqKnT" to="xehl:JHn_unH$mT" resolve="Timeout" />
     <node concept="1Qtc8_" id="7loivjkltEo" role="IW6Ez">
       <node concept="1vlq3a" id="7IHEnsdG6XL" role="1Qtc8A">
@@ -11362,7 +11366,7 @@
     </node>
   </node>
   <node concept="IW6AY" id="42GgdiBDJnQ">
-    <property role="3GE5qa" value="RealActions" />
+    <property role="3GE5qa" value="RealActions.TransformationMenu" />
     <ref role="aqKnT" to="xehl:5RYvhcT_ZR5" resolve="Action" />
     <node concept="1Qtc8_" id="42GgdiCmQg$" role="IW6Ez">
       <node concept="2jZ$wP" id="42GgdiCmRx5" role="1Qtc8$" />
@@ -11686,6 +11690,7 @@
     </node>
   </node>
   <node concept="IW6AY" id="42GgdiCmPEb">
+    <property role="3GE5qa" value="TransformationMenu" />
     <ref role="aqKnT" to="xehl:5lu2mvqIooX" resolve="Command" />
     <node concept="1Qtc8_" id="42GgdiCmPEc" role="IW6Ez">
       <node concept="1vlq3a" id="42GgdiCmPEj" role="1Qtc8A">
