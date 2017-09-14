@@ -1065,8 +1065,31 @@
             </node>
           </node>
         </node>
+        <node concept="3F0ifn" id="2T27OaNksPc" role="3EZMnx">
+          <property role="3F0ifm" value="Playback" />
+          <ref role="1ERwB7" node="6VbSUrbOori" resolve="RemoveGreeting" />
+          <ref role="1k5W1q" node="11pGboo1Ya6" resolve="HardCodedText" />
+          <node concept="pkWqt" id="2T27OaNksPd" role="pqm2j">
+            <node concept="3clFbS" id="2T27OaNksPe" role="2VODD2">
+              <node concept="3clFbF" id="2T27OaNksPf" role="3cqZAp">
+                <node concept="2OqwBi" id="2T27OaNksPh" role="3clFbG">
+                  <node concept="2OqwBi" id="2T27OaNksPi" role="2Oq$k0">
+                    <node concept="pncrf" id="2T27OaNksPj" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="2T27OaNksPk" role="2OqNvi">
+                      <ref role="3TsBF5" to="xehl:2m0r6rVTw3R" resolve="playback" />
+                    </node>
+                  </node>
+                  <node concept="17RvpY" id="2T27OaNksPl" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="VPM3Z" id="2T27OaNksPp" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+        </node>
         <node concept="3F0ifn" id="2m0r6rVTw_X" role="3EZMnx">
-          <property role="3F0ifm" value="Playback File: " />
+          <property role="3F0ifm" value="File: " />
           <ref role="1ERwB7" node="6VbSUrbOori" resolve="RemoveGreeting" />
           <ref role="1k5W1q" node="11pGboo1Ya6" resolve="HardCodedText" />
           <node concept="pkWqt" id="2m0r6rVTzvu" role="pqm2j">
@@ -1095,11 +1118,20 @@
           <node concept="VPM3Z" id="dcxjWI7i_W" role="3F10Kt">
             <property role="VOm3f" value="false" />
           </node>
+          <node concept="VechU" id="2T27OaNlqLY" role="3F10Kt">
+            <property role="Vb096" value="black" />
+          </node>
+          <node concept="Vb9p2" id="2T27OaNmodd" role="3F10Kt">
+            <property role="Vbekb" value="BOLD_ITALIC" />
+          </node>
         </node>
         <node concept="3F0ifn" id="2T27OaNfzLE" role="3EZMnx">
-          <property role="3F0ifm" value="Playback Text: " />
+          <property role="3F0ifm" value="Text: " />
           <ref role="1k5W1q" node="11pGboo1Ya6" resolve="HardCodedText" />
           <ref role="1ERwB7" node="6VbSUrbOori" resolve="RemoveGreeting" />
+          <node concept="VechU" id="2T27OaNlr5e" role="3F10Kt">
+            <property role="Vb096" value="black" />
+          </node>
           <node concept="pkWqt" id="2T27OaNfzLF" role="pqm2j">
             <node concept="3clFbS" id="2T27OaNfzLG" role="2VODD2">
               <node concept="3clFbF" id="2T27OaNfzLH" role="3cqZAp">
@@ -1127,6 +1159,9 @@
           </node>
           <node concept="VPM3Z" id="2T27OaNfzLN" role="3F10Kt">
             <property role="VOm3f" value="false" />
+          </node>
+          <node concept="Vb9p2" id="2T27OaNmnBb" role="3F10Kt">
+            <property role="Vbekb" value="BOLD_ITALIC" />
           </node>
         </node>
         <node concept="3F0A7n" id="2m0r6rVTwB1" role="3EZMnx">
