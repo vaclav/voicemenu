@@ -134,7 +134,7 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a01c6h_5;
+          return IconContainer.RESOURCE_a0a01c6h_1;
         }
         @Override
         public String getTooltipText() {
@@ -186,7 +186,7 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a01c7h_5;
+          return IconContainer.RESOURCE_a0a01c7h_1;
         }
         @Override
         public String getTooltipText() {
@@ -270,7 +270,7 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a01c6i_6;
+          return IconContainer.RESOURCE_a0a01c6i_0;
         }
         @Override
         public String getTooltipText() {
@@ -339,7 +339,7 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a01c7i_6;
+          return IconContainer.RESOURCE_a0a01c7i_0;
         }
         @Override
         public String getTooltipText() {
@@ -414,7 +414,7 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a01c6j_0;
+          return IconContainer.RESOURCE_a0a01c6j;
         }
         @Override
         public String getTooltipText() {
@@ -515,7 +515,7 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c8j_2;
+          return IconContainer.RESOURCE_a0a9c8j;
         }
         @Override
         public String getTooltipText() {
@@ -592,7 +592,7 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a01c9j_0;
+          return IconContainer.RESOURCE_a0a01c9j;
         }
         @Override
         public String getTooltipText() {

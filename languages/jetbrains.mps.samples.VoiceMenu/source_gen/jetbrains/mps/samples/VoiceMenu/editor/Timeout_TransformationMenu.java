@@ -119,7 +119,7 @@ public class Timeout_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a01c6h_10;
+          return IconContainer.RESOURCE_a0a01c6h_3;
         }
         @Override
         public String getTooltipText() {
@@ -171,7 +171,7 @@ public class Timeout_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a01c7h_10;
+          return IconContainer.RESOURCE_a0a01c7h_3;
         }
         @Override
         public String getTooltipText() {
@@ -247,7 +247,7 @@ public class Timeout_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a01c6i_11;
+          return IconContainer.RESOURCE_a0a01c6i_2;
         }
         @Override
         public String getTooltipText() {
@@ -299,7 +299,7 @@ public class Timeout_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a01c7i_11;
+          return IconContainer.RESOURCE_a0a01c7i_2;
         }
         @Override
         public String getTooltipText() {
