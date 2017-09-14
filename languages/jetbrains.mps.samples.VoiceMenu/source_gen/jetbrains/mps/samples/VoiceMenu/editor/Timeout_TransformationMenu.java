@@ -28,6 +28,8 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.editor.runtime.selection.SelectionUtil;
 import jetbrains.mps.openapi.editor.selection.SelectionManager;
 import jetbrains.mps.smodel.runtime.IconResource;
+import java.awt.Robot;
+import java.awt.AWTException;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 
 public class Timeout_TransformationMenu extends TransformationMenuBase {
@@ -119,7 +121,7 @@ public class Timeout_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a01c6h_3;
+          return IconContainer.RESOURCE_a0a01c6h_0;
         }
         @Override
         public String getTooltipText() {
@@ -171,7 +173,7 @@ public class Timeout_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a01c7h_3;
+          return IconContainer.RESOURCE_a0a01c7h_2;
         }
         @Override
         public String getTooltipText() {
@@ -208,12 +210,70 @@ public class Timeout_TransformationMenu extends TransformationMenuBase {
 
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Timeout_TransformationMenu.TMP_SubMenu_4a1v5f_b0.TMP_Action_4a1v5f_a1a(), new Timeout_TransformationMenu.TMP_SubMenu_4a1v5f_b0.TMP_Action_4a1v5f_b1a());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Timeout_TransformationMenu.TMP_SubMenu_4a1v5f_b0.TMP_Action_4a1v5f_a1a(), new Timeout_TransformationMenu.TMP_SubMenu_4a1v5f_b0.TMP_Action_4a1v5f_b1a(), new Timeout_TransformationMenu.TMP_SubMenu_4a1v5f_b0.TMP_Action_4a1v5f_c1a());
     }
     private class TMP_Action_4a1v5f_a1a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
         return new Timeout_TransformationMenu.TMP_SubMenu_4a1v5f_b0.TMP_Action_4a1v5f_a1a.Item(context);
+      }
+
+      private class Item extends ActionItemBase implements SidebarActionItem {
+        private final TransformationMenuContext _context;
+        private final EditorMenuTraceInfo myEditorMenuTraceInfo;
+        private Item(TransformationMenuContext context) {
+          _context = context;
+          _context.getEditorMenuTrace().pushTraceInfo();
+          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("single item: " + getLabelText(""), new SNodePointer("r:7c1e5bbb-2d18-4cf3-a11d-502be6b13261(jetbrains.mps.samples.VoiceMenu.editor)", "971041030088049322")));
+          myEditorMenuTraceInfo = _context.getEditorMenuTrace().getTraceInfo();
+          context.getEditorMenuTrace().popTraceInfo();
+        }
+
+        @Nullable
+        @Override
+        public String getLabelText(String pattern) {
+          return "Step Back";
+        }
+
+        @Override
+        public void execute(@NotNull String pattern) {
+
+          try {
+            Robot r = new Robot();
+            r.keyPress(157);
+            r.keyPress(90);
+
+            r.keyRelease(90);
+            r.keyRelease(157);
+
+          } catch (AWTException e) {
+            e.printStackTrace();
+          }
+
+        }
+
+
+        @Override
+        public IconResource getIcon() {
+          return IconContainer.RESOURCE_a0a9c6i_0;
+        }
+        @Override
+        public String getTooltipText() {
+          return null;
+        }
+
+
+        @Override
+        public EditorMenuTraceInfo getTraceInfo() {
+          return myEditorMenuTraceInfo;
+        }
+      }
+
+    }
+    private class TMP_Action_4a1v5f_b1a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+      @Nullable
+      protected TransformationMenuItem createItem(TransformationMenuContext context) {
+        return new Timeout_TransformationMenu.TMP_SubMenu_4a1v5f_b0.TMP_Action_4a1v5f_b1a.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {
@@ -247,7 +307,7 @@ public class Timeout_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a01c6i_1;
+          return IconContainer.RESOURCE_a0a01c7i_2;
         }
         @Override
         public String getTooltipText() {
@@ -262,10 +322,10 @@ public class Timeout_TransformationMenu extends TransformationMenuBase {
       }
 
     }
-    private class TMP_Action_4a1v5f_b1a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_4a1v5f_c1a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new Timeout_TransformationMenu.TMP_SubMenu_4a1v5f_b0.TMP_Action_4a1v5f_b1a.Item(context);
+        return new Timeout_TransformationMenu.TMP_SubMenu_4a1v5f_b0.TMP_Action_4a1v5f_c1a.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {
@@ -299,7 +359,7 @@ public class Timeout_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a01c7i_1;
+          return IconContainer.RESOURCE_a0a01c8i_0;
         }
         @Override
         public String getTooltipText() {
