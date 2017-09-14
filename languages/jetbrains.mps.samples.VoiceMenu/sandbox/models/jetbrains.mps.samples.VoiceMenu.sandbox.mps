@@ -56,7 +56,7 @@
     </language>
   </registry>
   <node concept="2Jqgb4" id="2w$I9I9UGbg">
-    <property role="TrG5h" value="Jet-Mobile" />
+    <property role="TrG5h" value="Jet Mobile" />
     <property role="3uoZKU" value="Hello, welcome in Jet-Mobile" />
     <property role="1EJLKn" value="true" />
     <node concept="2C_Ik4" id="2w$I9I9UGbh" role="2JqgbB">
@@ -344,12 +344,14 @@
     <property role="1EJLKn" value="true" />
     <node concept="2C_Ik4" id="6HhgIFXTyQ3" role="2JqgbB">
       <node concept="2C_I21" id="7IHEnsdAb2n" role="2C_I26">
-        <ref role="2C_gVZ" node="7IHEnsdAb2p" resolve="xxx" />
-        <node concept="1$pBvq" id="7IHEnsdAb2t" role="2C_gVu" />
+        <ref role="2C_gVZ" node="7IHEnsdAb2p" resolve="info speaking speaking speaking speaking speaking speaking speaking speaking speaking" />
+        <node concept="1$pBvo" id="48mTguK45il" role="2C_gVu">
+          <property role="XmNhe" value="false" />
+        </node>
       </node>
       <node concept="2C_Ik0" id="7IHEnsdAb2p" role="2C_I24">
         <property role="2C_Iks" value="2" />
-        <property role="TrG5h" value="xxx" />
+        <property role="TrG5h" value="info speaking speaking speaking speaking speaking speaking speaking speaking speaking" />
       </node>
     </node>
     <node concept="2smLJI" id="JHn_unRV$u" role="2smLJD">

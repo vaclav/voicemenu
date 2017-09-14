@@ -73,6 +73,7 @@ public class Style {
     End.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent p0) {
         Variables.voice.stop();
+        MacVoice.waitingThr.interrupt();
         System.out.println("Terminating program");
         System.exit(0);
       }

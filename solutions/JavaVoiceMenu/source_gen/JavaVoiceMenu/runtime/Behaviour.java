@@ -26,7 +26,7 @@ public class Behaviour {
         if (!(Variables.started)) {
           return;
         }
-        TimeUnit.SECONDS.sleep(Variables.timeout.duration + 6);
+        TimeUnit.SECONDS.sleep(Variables.timeout.duration);
         String timeoutAction = Variables.timeout.action;
         System.out.println("Timeout playback: " + Variables.timeout.playback);
         if (eq_d7l93i_a0e0a0g0(timeoutAction, "back")) {
@@ -99,7 +99,6 @@ public class Behaviour {
           if (isEmptyString(Variables.timeout.playback)) {
             Variables.voice.addText("After beep start speaking, beep");
             Variables.voice.speak();
-            Thread.sleep(2000);
             Variables.voice.addText("Succesfully recorded");
           } else {
             PlayGetInfo(Variables.timeout.playback);
@@ -119,7 +118,6 @@ public class Behaviour {
             PlayGetInfo(Variables.timeout.playback);
           }
         }
-        Thread.sleep(Variables.voice.speak() * 120);
         Behaviour.runLogic(evt, true);
       } catch (Exception e) {
         e.printStackTrace();
@@ -251,7 +249,6 @@ public class Behaviour {
         Variables.voice.addText("After beep start speaking beep");
         Variables.voice.speak();
         try {
-          Thread.sleep(((long) 2000));
         } catch (Exception e) {
 
         }
@@ -306,9 +303,6 @@ public class Behaviour {
       Variables.possibleOptList.add(child.trigger);
     }
     Variables.voice.speak();
-    if (!(Variables.finished)) {
-      (Variables.timerThr = new Thread(new Behaviour.myTimer(evt, false))).start();
-    }
   }
   public static void runInitSetup() {
     // Static first iteration of Voicemenu 

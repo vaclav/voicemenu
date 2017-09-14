@@ -17,6 +17,7 @@ import javax.swing.border.Border;
 import javax.swing.border.LineBorder;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
+import JavaVoiceMenu.runtime.MacVoice;
 import java.io.IOException;
 
 public class Test160_ implements ActionListener {
@@ -37,20 +38,21 @@ public class Test160_ implements ActionListener {
     Variables.myHashMap.put("0", Home);
 
 
-    Event xxx_2032os_a0 = new Event("xxx", "2");
-    xxx_2032os_a0.isFinal = false;
-    xxx_2032os_a0.setAction("", false);
-    xxx_2032os_a0.setGreeting("");
-    xxx_2032os_a0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("02", xxx_2032os_a0);
-    xxx_2032os_a0.setAction("other", false);
-    xxx_2032os_a0.childs = new ArrayList<Event>();
+    Event info_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_2032os_a0 = new Event("info speaking speaking speaking speaking speaking speaking speaking speaking speaking", "2");
+    info_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_2032os_a0.isFinal = false;
+    info_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_2032os_a0.setAction("", false);
+    info_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_2032os_a0.setGreeting("");
+    info_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_2032os_a0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("02", info_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_2032os_a0);
+    info_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_2032os_a0.setAction("getInfo", false);
+    info_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_2032os_a0.childs = new ArrayList<Event>();
 
-    Home.childs.add(xxx_2032os_a0);
+    Home.childs.add(info_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_2032os_a0);
 
 
     Variables.timeout = new Event("timeout", "X");
     Variables.timeout.playback = "";
+    Variables.timeout.duration = 2;
     Variables.timeout.action = "back";
     Variables.timeout.isFinal = true;
   }
@@ -89,11 +91,19 @@ public class Test160_ implements ActionListener {
         if (Variables.timerThr.isAlive()) {
           Variables.timerThr.interrupt();
         }
+        try {
+          if (MacVoice.waitingThr.isAlive()) {
+            MacVoice.waitingThr.interrupt();
+          }
+        } catch (Exception e) {
+        }
         Behaviour.runLogic(event, false);
 
       } catch (IOException e) {
         e.printStackTrace();
       }
+
+
     }
   }
 

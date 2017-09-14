@@ -8,8 +8,28 @@ public class MacVoice {
   public String Samantha = "Say -v Samantha ";
   public String Alex = "Say ";
   public Boolean voice = false;
-  /*package*/ Process proc;
+  public static Process speakingProc;
+  public static Thread waitingThr = new Thread();
+
   public MacVoice() {
+  }
+
+  public static class SpeakDurationHandler implements Runnable {
+
+    @Override
+    public void run() {
+      try {
+        MacVoice.speakingProc.waitFor();
+        if (!(Variables.finished)) {
+          if (Variables.timerThr.isAlive()) {
+            Variables.timerThr.interrupt();
+          }
+          (Variables.timerThr = new Thread(new Behaviour.myTimer(null, true))).start();
+        }
+      } catch (Exception e) {
+      }
+
+    }
   }
   /**
    * run speak
@@ -20,9 +40,14 @@ public class MacVoice {
     // Runtime.getRuntime().exec(tts); 
     Runtime rt = Runtime.getRuntime();
     try {
-      proc = rt.exec(tts);
+      speakingProc = rt.exec(tts);
+      if (MacVoice.waitingThr.isAlive()) {
+        waitingThr.interrupt();
+      }
+
+      (MacVoice.waitingThr = new Thread(new MacVoice.SpeakDurationHandler())).start();
       // proc.destroy(); 
-    } catch (IOException e) {
+    } catch (Exception e) {
       e.printStackTrace();
     }
   }
@@ -34,7 +59,8 @@ public class MacVoice {
     System.out.println(getVoice());
   }
   public void stop() {
-    proc.destroy();
+    MacVoice.waitingThr.interrupt();
+    speakingProc.destroy();
   }
   /**
    * func to decide what language use next

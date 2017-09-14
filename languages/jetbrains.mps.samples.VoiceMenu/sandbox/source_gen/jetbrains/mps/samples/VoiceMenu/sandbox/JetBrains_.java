@@ -17,6 +17,7 @@ import javax.swing.border.Border;
 import javax.swing.border.LineBorder;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
+import JavaVoiceMenu.runtime.MacVoice;
 import java.io.IOException;
 
 public class JetBrains_ implements ActionListener {
@@ -76,6 +77,7 @@ public class JetBrains_ implements ActionListener {
 
     Variables.timeout = new Event("timeout", "X");
     Variables.timeout.playback = "Choose from ..";
+    Variables.timeout.duration = 7;
     Variables.timeout.action = "replay";
     Variables.timeout.isFinal = false;
   }
@@ -114,11 +116,19 @@ public class JetBrains_ implements ActionListener {
         if (Variables.timerThr.isAlive()) {
           Variables.timerThr.interrupt();
         }
+        try {
+          if (MacVoice.waitingThr.isAlive()) {
+            MacVoice.waitingThr.interrupt();
+          }
+        } catch (Exception e) {
+        }
         Behaviour.runLogic(event, false);
 
       } catch (IOException e) {
         e.printStackTrace();
       }
+
+
     }
   }
 

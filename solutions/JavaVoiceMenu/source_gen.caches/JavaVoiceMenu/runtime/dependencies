@@ -26,16 +26,23 @@
     <classNode dependClassName="java.util.List" />
   </dependency>
   <dependency className="JavaVoiceMenu.runtime.MacVoice" file="MacVoice.java">
+    <classNode dependClassName="JavaVoiceMenu.runtime.Behaviour" />
+    <classNode dependClassName="JavaVoiceMenu.runtime.Variables" />
     <classNode dependClassName="java.io.IOException" />
     <classNode dependClassName="java.lang.Boolean" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.Process" />
+    <classNode dependClassName="java.lang.Runnable" />
     <classNode dependClassName="java.lang.Runtime" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.lang.Thread" />
   </dependency>
   <dependency className="JavaVoiceMenu.runtime.Style" file="Style.java">
     <classNode dependClassName="JavaVoiceMenu.runtime.Behaviour" />
     <classNode dependClassName="JavaVoiceMenu.runtime.Event" />
+    <classNode dependClassName="JavaVoiceMenu.runtime.MacVoice" />
     <classNode dependClassName="JavaVoiceMenu.runtime.Variables" />
     <classNode dependClassName="java.awt.BorderLayout" />
     <classNode dependClassName="java.awt.Color" />

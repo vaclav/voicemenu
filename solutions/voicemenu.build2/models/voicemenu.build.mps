@@ -280,8 +280,8 @@
       <node concept="55IIr" id="5ruKdSwyerR" role="2EqU2t">
         <node concept="2Ry0Ak" id="5ruKdSwyerS" role="iGT6I">
           <property role="2Ry0Am" value="icons" />
-          <node concept="2Ry0Ak" id="5ruKdSwyerT" role="2Ry0An">
-            <property role="2Ry0Am" value="test.png" />
+          <node concept="2Ry0Ak" id="48mTguKdUVQ" role="2Ry0An">
+            <property role="2Ry0Am" value="splash.png" />
           </node>
         </node>
       </node>
