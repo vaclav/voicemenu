@@ -242,7 +242,6 @@ public class Behaviour {
         Variables.voice.addText(currentEvent.playback);
         Style.setTextToScreen("Recording");
         Variables.voice.addText("After beep start speaking beep");
-        Variables.voice.speak();
         try {
         } catch (Exception e) {
 

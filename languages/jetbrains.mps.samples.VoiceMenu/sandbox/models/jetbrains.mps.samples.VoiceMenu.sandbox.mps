@@ -581,17 +581,15 @@
           <property role="XmNiv" value="true" />
         </node>
       </node>
-      <node concept="2C_I21" id="6hlAN$dHYUE" role="2C_I26">
+      <node concept="2C_I21" id="PTPaKdFyUU" role="2C_I26">
         <ref role="2C_gVZ" node="6hlAN$dv4xF" resolve="ddd" />
-        <node concept="1$pBvq" id="6hlAN$dHYUG" role="2C_gVu">
-          <property role="XmNiv" value="true" />
+        <node concept="1$pBvo" id="PTPaKdFyVK" role="2C_gVu">
+          <property role="XmNhe" value="true" />
         </node>
       </node>
       <node concept="2C_I21" id="6hlAN$dYEDo" role="2C_I26">
         <ref role="2C_gVZ" node="6hlAN$dJGBT" resolve="Action_646" />
-        <node concept="1$pBvq" id="6hlAN$dYEDq" role="2C_gVu">
-          <property role="XmNiv" value="true" />
-        </node>
+        <node concept="X09Yy" id="PTPaKdFyUB" role="2C_gVu" />
       </node>
       <node concept="2C_Ik0" id="1ychykAt_NA" role="2C_I24">
         <property role="2C_Iks" value="6" />

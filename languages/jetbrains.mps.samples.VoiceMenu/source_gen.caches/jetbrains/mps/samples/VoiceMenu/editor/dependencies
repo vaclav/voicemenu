@@ -496,6 +496,7 @@
   <dependency className="jetbrains.mps.samples.VoiceMenu.editor.FixAll" file="FixAll.java">
     <classNode dependClassName="java.io.File" />
     <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.ArrayList" />
