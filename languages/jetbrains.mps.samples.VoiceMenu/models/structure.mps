@@ -199,7 +199,7 @@
     <property role="EcuMT" value="6772988411135920843" />
     <property role="TrG5h" value="GetInfo" />
     <property role="3GE5qa" value="RealActions" />
-    <property role="34LRSv" value="Get informations" />
+    <property role="34LRSv" value="Get information" />
     <ref role="1TJDcQ" node="5RYvhcT_ZR5" resolve="Action" />
     <node concept="1TJgyi" id="48dyn_ZlFOR" role="1TKVEl">
       <property role="IQ2nx" value="4759611536120921399" />

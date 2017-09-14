@@ -56,7 +56,7 @@
     </language>
   </registry>
   <node concept="2Jqgb4" id="2w$I9I9UGbg">
-    <property role="TrG5h" value="Jet-Mobile" />
+    <property role="TrG5h" value="Jet_Mobile" />
     <property role="3uoZKU" value="Hello, welcome in Jet-Mobile" />
     <property role="1EJLKn" value="true" />
     <node concept="2C_Ik4" id="2w$I9I9UGbh" role="2JqgbB">

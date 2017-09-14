@@ -790,6 +790,7 @@
       <library file="${artifacts.mpsContextActionsTool}/context-tool/languages/mps-context-actions-tool/jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.jar" />
       <library file="${artifacts.mpsContextActionsTool}/context-tool/languages/mps-context-actions-tool/jetbrains.mps.editor.contextActionsTool.pluginSolution.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
+      <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.checkedDots.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
