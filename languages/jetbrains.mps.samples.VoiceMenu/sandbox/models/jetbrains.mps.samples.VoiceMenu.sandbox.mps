@@ -572,24 +572,25 @@
     <property role="1EJLKn" value="true" />
     <property role="TrG5h" value="MY TEST" />
     <node concept="2C_Ik4" id="1ychykAt_Ns" role="2JqgbB">
-      <node concept="2C_I21" id="1ychykAt_N$" role="2C_I26">
-        <ref role="2C_gVZ" node="1ychykAt_NA" resolve="dsa" />
-        <node concept="2C_Ik4" id="1ychykAt_NE" role="2C_gVu">
-          <node concept="2C_Ik0" id="1ychykAvwX0" role="2C_I24">
-            <property role="TrG5h" value="da" />
-            <property role="2C_Iks" value="3" />
-          </node>
-          <node concept="2C_I21" id="6hlAN$dnSma" role="2C_I26">
-            <ref role="2C_gVZ" node="1ychykAvwX0" resolve="da" />
-            <node concept="1$pBvq" id="6hlAN$dnSmc" role="2C_gVu">
-              <property role="XmNiv" value="true" />
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="2C_Ik0" id="1ychykAt_NA" role="2C_I24">
         <property role="2C_Iks" value="6" />
         <property role="TrG5h" value="dsa" />
+      </node>
+      <node concept="2C_Ik0" id="6hlAN$dv4xF" role="2C_I24">
+        <property role="2C_Iks" value="3" />
+        <property role="TrG5h" value="ddd" />
+      </node>
+      <node concept="2C_I21" id="6hlAN$dHYUy" role="2C_I26">
+        <ref role="2C_gVZ" node="1ychykAt_NA" resolve="dsa" />
+        <node concept="1$pBvq" id="6hlAN$dHYU$" role="2C_gVu">
+          <property role="XmNiv" value="true" />
+        </node>
+      </node>
+      <node concept="2C_I21" id="6hlAN$dHYUE" role="2C_I26">
+        <ref role="2C_gVZ" node="6hlAN$dv4xF" resolve="ddd" />
+        <node concept="1$pBvq" id="6hlAN$dHYUG" role="2C_gVu">
+          <property role="XmNiv" value="true" />
+        </node>
       </node>
     </node>
     <node concept="2smLJI" id="42GgdiBTiew" role="2smLJD">
