@@ -109,7 +109,7 @@ public class Connectivity_provider_ implements ActionListener {
 
     Variables.timeout = new Event("timeout", "X");
     Variables.timeout.playback = "";
-    Variables.timeout.duration = 0;
+    Variables.timeout.duration = 7;
     Variables.timeout.action = "replay";
     Variables.timeout.isFinal = false;
   }

@@ -57,14 +57,8 @@ public class MY_TEST_ implements ActionListener {
     Action_646_i6fxvn_c0.setAction("", false);
     Action_646_i6fxvn_c0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("02", Action_646_i6fxvn_c0);
-    Event _i6fxvn_a0c0 = new Event("", "");
-    _i6fxvn_a0c0.isFinal = false;
-    _i6fxvn_a0c0.setAction("", false);
-    _i6fxvn_a0c0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("02null", _i6fxvn_a0c0);
-    _i6fxvn_a0c0.childs = new ArrayList<Event>();
+    Action_646_i6fxvn_c0.setAction("other", true);
     Action_646_i6fxvn_c0.childs = new ArrayList<Event>();
-    Action_646_i6fxvn_c0.childs.add(_i6fxvn_a0c0);
 
     Home.childs.add(dsa_i6fxvn_a0);
     Home.childs.add(ddd_i6fxvn_b0);

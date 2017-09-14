@@ -44,8 +44,14 @@ public class Test160_ implements ActionListener {
     Info_2032os_a0.playback = "/Users/jetbrains/Desktop/sample.wav";
     Info_2032os_a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("02", Info_2032os_a0);
-    Info_2032os_a0.setAction("getInfo", false);
+    Event _2032os_a0a0 = new Event("", "");
+    _2032os_a0a0.isFinal = false;
+    _2032os_a0a0.setAction("", false);
+    _2032os_a0a0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("02null", _2032os_a0a0);
+    _2032os_a0a0.childs = new ArrayList<Event>();
     Info_2032os_a0.childs = new ArrayList<Event>();
+    Info_2032os_a0.childs.add(_2032os_a0a0);
 
     Home.childs.add(Info_2032os_a0);
 
