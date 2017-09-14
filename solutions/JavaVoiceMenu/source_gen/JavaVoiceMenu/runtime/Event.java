@@ -46,7 +46,7 @@ public class Event {
   /**
    * set greeting for action
    */
-  public Event setGreeting(String greeting) {
+  public Event setPlayBack(String greeting) {
     this.playback = greeting;
     return this;
   }

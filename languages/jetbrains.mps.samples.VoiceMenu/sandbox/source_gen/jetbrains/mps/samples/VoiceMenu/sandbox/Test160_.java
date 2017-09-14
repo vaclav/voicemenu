@@ -29,7 +29,7 @@ public class Test160_ implements ActionListener {
 
     Event Home = new Event("Test160", "0");
     Home.setAction("", true);
-    Home.setGreeting("Welcome to " + "Test160");
+    Home.setPlayBack("Welcome to " + "Test160");
 
     Home.childs = new ArrayList<Event>();
     Home.isFinal = false;
@@ -38,23 +38,22 @@ public class Test160_ implements ActionListener {
     Variables.myHashMap.put("0", Home);
 
 
-    Event info_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_2032os_a0 = new Event("info speaking speaking speaking speaking speaking speaking speaking speaking speaking", "2");
-    info_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_2032os_a0.isFinal = false;
-    info_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_2032os_a0.setAction("", false);
-    info_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_2032os_a0.setGreeting("");
-    info_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_2032os_a0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("02", info_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_2032os_a0);
-    info_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_2032os_a0.setAction("getInfo", false);
-    info_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_2032os_a0.childs = new ArrayList<Event>();
+    Event info_2032os_a0 = new Event("info", "2");
+    info_2032os_a0.isFinal = false;
+    info_2032os_a0.setAction("", false);
+    info_2032os_a0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("02", info_2032os_a0);
+    info_2032os_a0.setAction("getInfo", false);
+    info_2032os_a0.childs = new ArrayList<Event>();
 
-    Home.childs.add(info_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_speaking_2032os_a0);
+    Home.childs.add(info_2032os_a0);
 
 
     Variables.timeout = new Event("timeout", "X");
     Variables.timeout.playback = "";
-    Variables.timeout.duration = 2;
-    Variables.timeout.action = "back";
-    Variables.timeout.isFinal = true;
+    Variables.timeout.duration = 5;
+    Variables.timeout.action = "record";
+    Variables.timeout.isFinal = false;
   }
 
   public static void main(String[] args) {

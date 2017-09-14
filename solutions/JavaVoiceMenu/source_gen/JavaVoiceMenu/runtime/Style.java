@@ -61,7 +61,6 @@ public class Style {
           Variables.path = "0";
           try {
             readChildren();
-            (Variables.timerThr = new Thread(new Behaviour.myTimer(null, true))).start();
 
           } catch (IOException e) {
             e.printStackTrace();

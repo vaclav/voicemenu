@@ -29,9 +29,9 @@ public class Connectivity_provider_ implements ActionListener {
 
     Event Home = new Event("Connectivity provider", "0");
     Home.setAction("", true);
-    Home.setGreeting("Welcome to " + "Connectivity provider");
+    Home.setPlayBack("Welcome to " + "Connectivity provider");
 
-    Home.setGreeting("Welcome to our voicemenu");
+    Home.setPlayBack("Welcome to our voicemenu");
     Home.childs = new ArrayList<Event>();
     Home.isFinal = false;
     Variables.main_Text = "Connectivity provider";
@@ -42,14 +42,12 @@ public class Connectivity_provider_ implements ActionListener {
     Event Internet_azlqml_a0 = new Event("Internet", "1");
     Internet_azlqml_a0.isFinal = false;
     Internet_azlqml_a0.setAction("", false);
-    Internet_azlqml_a0.setGreeting("");
     Internet_azlqml_a0.playback = "Welcome to the Internet";
     Internet_azlqml_a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("01", Internet_azlqml_a0);
     Event Speed_up_azlqml_a0a0 = new Event("Speed up", "1");
     Speed_up_azlqml_a0a0.isFinal = false;
     Speed_up_azlqml_a0a0.setAction("", false);
-    Speed_up_azlqml_a0a0.setGreeting("");
     Speed_up_azlqml_a0a0.playback = "Increasing speed was chosen";
     Speed_up_azlqml_a0a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("011", Speed_up_azlqml_a0a0);
@@ -58,14 +56,12 @@ public class Connectivity_provider_ implements ActionListener {
     Event Discount_azlqml_b0a0 = new Event("Discount", "2");
     Discount_azlqml_b0a0.isFinal = false;
     Discount_azlqml_b0a0.setAction("", false);
-    Discount_azlqml_b0a0.setGreeting("");
     Discount_azlqml_b0a0.playback = "Great choice!";
     Discount_azlqml_b0a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("012", Discount_azlqml_b0a0);
     Event Big_Discount_azlqml_b0b0a0 = new Event("Big Discount", "1");
     Big_Discount_azlqml_b0b0a0.isFinal = false;
     Big_Discount_azlqml_b0b0a0.setAction("", false);
-    Big_Discount_azlqml_b0b0a0.setGreeting("");
     Big_Discount_azlqml_b0b0a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("0121", Big_Discount_azlqml_b0b0a0);
     Big_Discount_azlqml_b0b0a0.setAction("call", true);
@@ -73,7 +69,6 @@ public class Connectivity_provider_ implements ActionListener {
     Event Small_Discount_azlqml_a0b0a0 = new Event("Small Discount", "2");
     Small_Discount_azlqml_a0b0a0.isFinal = false;
     Small_Discount_azlqml_a0b0a0.setAction("", false);
-    Small_Discount_azlqml_a0b0a0.setGreeting("");
     Small_Discount_azlqml_a0b0a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("0122", Small_Discount_azlqml_a0b0a0);
     Small_Discount_azlqml_a0b0a0.setAction("call", false);
@@ -81,7 +76,6 @@ public class Connectivity_provider_ implements ActionListener {
     Event Going_Back_azlqml_d0b0a0 = new Event("Going Back", "#");
     Going_Back_azlqml_d0b0a0.isFinal = false;
     Going_Back_azlqml_d0b0a0.setAction("", false);
-    Going_Back_azlqml_d0b0a0.setGreeting("");
     Going_Back_azlqml_d0b0a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("012#", Going_Back_azlqml_d0b0a0);
     Going_Back_azlqml_d0b0a0.setAction("back", false);
@@ -89,7 +83,6 @@ public class Connectivity_provider_ implements ActionListener {
     Event Going_Back_azlqml_c0b0a0 = new Event("Going Back", "*");
     Going_Back_azlqml_c0b0a0.isFinal = false;
     Going_Back_azlqml_c0b0a0.setAction("", false);
-    Going_Back_azlqml_c0b0a0.setGreeting("");
     Going_Back_azlqml_c0b0a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("012*", Going_Back_azlqml_c0b0a0);
     Going_Back_azlqml_c0b0a0.setAction("back", false);
@@ -105,7 +98,6 @@ public class Connectivity_provider_ implements ActionListener {
     Event Television_azlqml_b0 = new Event("Television", "2");
     Television_azlqml_b0.isFinal = false;
     Television_azlqml_b0.setAction("", false);
-    Television_azlqml_b0.setGreeting("");
     Television_azlqml_b0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("02", Television_azlqml_b0);
     Television_azlqml_b0.setAction("other", true);
@@ -117,7 +109,7 @@ public class Connectivity_provider_ implements ActionListener {
 
     Variables.timeout = new Event("timeout", "X");
     Variables.timeout.playback = "";
-    Variables.timeout.duration = 0;
+    Variables.timeout.duration = 7;
     Variables.timeout.action = "replay";
     Variables.timeout.isFinal = false;
   }

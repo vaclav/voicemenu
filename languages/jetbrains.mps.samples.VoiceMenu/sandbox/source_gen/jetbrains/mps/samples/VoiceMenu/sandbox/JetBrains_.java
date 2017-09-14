@@ -29,9 +29,9 @@ public class JetBrains_ implements ActionListener {
 
     Event Home = new Event("JetBrains", "0");
     Home.setAction("", true);
-    Home.setGreeting("Welcome to " + "JetBrains");
+    Home.setPlayBack("Welcome to " + "JetBrains");
 
-    Home.setGreeting("Welcome to the best company ever");
+    Home.setPlayBack("Welcome to the best company ever");
     Home.childs = new ArrayList<Event>();
     Home.isFinal = false;
     Variables.main_Text = "JetBrains";
@@ -42,25 +42,21 @@ public class JetBrains_ implements ActionListener {
     Event Menu1_9upjpn_a0 = new Event("Menu1", "1");
     Menu1_9upjpn_a0.isFinal = false;
     Menu1_9upjpn_a0.setAction("", false);
-    Menu1_9upjpn_a0.setGreeting("");
     Menu1_9upjpn_a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("01", Menu1_9upjpn_a0);
     Event Menu2_9upjpn_a0a0 = new Event("Menu2", "1");
     Menu2_9upjpn_a0a0.isFinal = false;
     Menu2_9upjpn_a0a0.setAction("", false);
-    Menu2_9upjpn_a0a0.setGreeting("");
     Menu2_9upjpn_a0a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("011", Menu2_9upjpn_a0a0);
     Event Menu3_9upjpn_a0a0a0 = new Event("Menu3", "1");
     Menu3_9upjpn_a0a0a0.isFinal = false;
     Menu3_9upjpn_a0a0a0.setAction("", false);
-    Menu3_9upjpn_a0a0a0.setGreeting("");
     Menu3_9upjpn_a0a0a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("0111", Menu3_9upjpn_a0a0a0);
     Event Call_9upjpn_a0a0a0a0 = new Event("Call", "1");
     Call_9upjpn_a0a0a0a0.isFinal = false;
     Call_9upjpn_a0a0a0a0.setAction("", false);
-    Call_9upjpn_a0a0a0a0.setGreeting("");
     Call_9upjpn_a0a0a0a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("01111", Call_9upjpn_a0a0a0a0);
     Call_9upjpn_a0a0a0a0.setAction("call", true);

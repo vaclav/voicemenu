@@ -29,7 +29,7 @@ public class myVoiceMenu_ implements ActionListener {
 
     Event Home = new Event("myVoiceMenu", "0");
     Home.setAction("", true);
-    Home.setGreeting("Welcome to " + "myVoiceMenu");
+    Home.setPlayBack("Welcome to " + "myVoiceMenu");
 
     Home.childs = new ArrayList<Event>();
     Home.isFinal = false;
@@ -41,13 +41,11 @@ public class myVoiceMenu_ implements ActionListener {
     Event Technical_Department_35s59u_a0 = new Event("Technical Department", "1");
     Technical_Department_35s59u_a0.isFinal = false;
     Technical_Department_35s59u_a0.setAction("", false);
-    Technical_Department_35s59u_a0.setGreeting("");
     Technical_Department_35s59u_a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("01", Technical_Department_35s59u_a0);
     Event Hardware_35s59u_a0a0 = new Event("Hardware", "1");
     Hardware_35s59u_a0a0.isFinal = false;
     Hardware_35s59u_a0a0.setAction("", false);
-    Hardware_35s59u_a0a0.setGreeting("");
     Hardware_35s59u_a0a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("011", Hardware_35s59u_a0a0);
     Hardware_35s59u_a0a0.setAction("getInfo", true);
@@ -55,7 +53,6 @@ public class myVoiceMenu_ implements ActionListener {
     Event Previous_Menu_35s59u_b0a0 = new Event("Previous Menu", "*");
     Previous_Menu_35s59u_b0a0.isFinal = false;
     Previous_Menu_35s59u_b0a0.setAction("", false);
-    Previous_Menu_35s59u_b0a0.setGreeting("");
     Previous_Menu_35s59u_b0a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("01*", Previous_Menu_35s59u_b0a0);
     Previous_Menu_35s59u_b0a0.setAction("back", false);
@@ -66,7 +63,6 @@ public class myVoiceMenu_ implements ActionListener {
     Event Others_35s59u_b0 = new Event("Others", "3");
     Others_35s59u_b0.isFinal = false;
     Others_35s59u_b0.setAction("", false);
-    Others_35s59u_b0.setGreeting("");
     Others_35s59u_b0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("03", Others_35s59u_b0);
     Others_35s59u_b0.setAction("other", true);

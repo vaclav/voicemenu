@@ -21,6 +21,7 @@ public class Behaviour {
       evt = EVNT;
       loadEvnt = RPT;
     }
+
     public void run() {
       try {
         if (!(Variables.started)) {
@@ -28,8 +29,7 @@ public class Behaviour {
         }
         TimeUnit.SECONDS.sleep(Variables.timeout.duration);
         String timeoutAction = Variables.timeout.action;
-        System.out.println("Timeout playback: " + Variables.timeout.playback);
-        if (eq_d7l93i_a0e0a0g0(timeoutAction, "back")) {
+        if (eq_d7l93i_a0d0a0h0(timeoutAction, "back")) {
           if (Variables.path.length() > 1) {
             Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
           }
@@ -41,7 +41,7 @@ public class Behaviour {
             PlayGetInfo(Variables.timeout.playback);
           }
 
-        } else if (eq_d7l93i_a0a4a0a6a(timeoutAction, "call")) {
+        } else if (eq_d7l93i_a0a3a0a7a(timeoutAction, "call")) {
           Style.setTextToScreen("Direct Call");
 
           if (isEmptyString(Variables.timeout.playback)) {
@@ -53,11 +53,9 @@ public class Behaviour {
             Style.setTextToScreen("Call ended");
             Variables.voice.speak();
             return;
-
           }
 
-
-        } else if (eq_d7l93i_a0b4a0a6a(timeoutAction, "getInfo")) {
+        } else if (eq_d7l93i_a0b3a0a7a(timeoutAction, "getInfo")) {
           Style.setTextToScreen("Get Info");
           if (isEmptyString(Variables.timeout.playback)) {
             Variables.voice.addText("Getting you the latest info");
@@ -70,7 +68,7 @@ public class Behaviour {
             return;
           }
 
-        } else if (eq_d7l93i_a0c4a0a6a(timeoutAction, "hangUp")) {
+        } else if (eq_d7l93i_a0c3a0a7a(timeoutAction, "hangUp")) {
           Style.setTextToScreen("HangUp");
           if (isEmptyString(Variables.timeout.playback)) {
             Variables.voice.addText("Phone call ended");
@@ -81,7 +79,7 @@ public class Behaviour {
           Variables.voice.speak();
           return;
 
-        } else if (eq_d7l93i_a0d4a0a6a(timeoutAction, "other")) {
+        } else if (eq_d7l93i_a0d3a0a7a(timeoutAction, "other")) {
           Style.setTextToScreen("Other");
           if (isEmptyString(Variables.timeout.playback)) {
             Variables.voice.addText("Other");
@@ -94,15 +92,19 @@ public class Behaviour {
             return;
           }
 
-        } else if (eq_d7l93i_a0e4a0a6a(timeoutAction, "record")) {
-          Style.setTextToScreen("Recording");
+        } else if (eq_d7l93i_a0e3a0a7a(timeoutAction, "record")) {
+          Style.setTextToScreen("Initiliazing record");
+          Thread.sleep(900);
+          Style.setTextToScreen("Recording started");
+          Thread.sleep(2000);
           if (isEmptyString(Variables.timeout.playback)) {
-            Variables.voice.addText("After beep start speaking, beep");
-            Variables.voice.speak();
             Variables.voice.addText("Succesfully recorded");
           } else {
             PlayGetInfo(Variables.timeout.playback);
           }
+          Style.setTextToScreen("Succesfully recorded");
+          Thread.sleep(900);
+
           if (Variables.timeout.isFinal) {
             Style.setTextToScreen("Call ended");
             Variables.voice.speak();
@@ -110,7 +112,7 @@ public class Behaviour {
 
           }
 
-        } else if (eq_d7l93i_a0f4a0a6a(timeoutAction, "replay")) {
+        } else if (eq_d7l93i_a0f3a0a7a(timeoutAction, "replay")) {
           Style.setTextToScreen("Replay");
           if (isEmptyString(Variables.timeout.playback)) {
             Variables.voice.addText("Replay Options");
@@ -126,25 +128,25 @@ public class Behaviour {
     private static boolean isEmptyString(String str) {
       return str == null || str.length() == 0;
     }
-    private static boolean eq_d7l93i_a0e0a0g0(Object a, Object b) {
+    private static boolean eq_d7l93i_a0d0a0h0(Object a, Object b) {
       return (a != null ? a.equals(b) : a == b);
     }
-    private static boolean eq_d7l93i_a0a4a0a6a(Object a, Object b) {
+    private static boolean eq_d7l93i_a0a3a0a7a(Object a, Object b) {
       return (a != null ? a.equals(b) : a == b);
     }
-    private static boolean eq_d7l93i_a0b4a0a6a(Object a, Object b) {
+    private static boolean eq_d7l93i_a0b3a0a7a(Object a, Object b) {
       return (a != null ? a.equals(b) : a == b);
     }
-    private static boolean eq_d7l93i_a0c4a0a6a(Object a, Object b) {
+    private static boolean eq_d7l93i_a0c3a0a7a(Object a, Object b) {
       return (a != null ? a.equals(b) : a == b);
     }
-    private static boolean eq_d7l93i_a0d4a0a6a(Object a, Object b) {
+    private static boolean eq_d7l93i_a0d3a0a7a(Object a, Object b) {
       return (a != null ? a.equals(b) : a == b);
     }
-    private static boolean eq_d7l93i_a0e4a0a6a(Object a, Object b) {
+    private static boolean eq_d7l93i_a0e3a0a7a(Object a, Object b) {
       return (a != null ? a.equals(b) : a == b);
     }
-    private static boolean eq_d7l93i_a0f4a0a6a(Object a, Object b) {
+    private static boolean eq_d7l93i_a0f3a0a7a(Object a, Object b) {
       return (a != null ? a.equals(b) : a == b);
     }
   }
@@ -164,26 +166,23 @@ public class Behaviour {
           if (!(myClip.isActive())) {
             break;
           }
-
         } catch (Exception e) {
           Variables.playbackisFile = false;
           e.getStackTrace();
         }
         Variables.playbackisFile = true;
       }
-
     } catch (Exception e) {
       System.out.println("File does NOT exist\ntext used as input for generating speech");
       Variables.voice.addText(path);
     }
-
   }
 
-  public static void runLogic(ActionEvent evt, boolean repeat) throws IOException {
+  public static void runLogic(ActionEvent evt, boolean sameEvnt) throws IOException {
     Variables.voice.stop();
     // Initilization of voice output 
     // Variable to store which character was pressed 
-    if (!(repeat)) {
+    if (!(sameEvnt)) {
       String character = evt.getActionCommand();
       if (!(Variables.possibleOptList.contains(character))) {
         String charToRead;
@@ -194,21 +193,17 @@ public class Behaviour {
         } else {
           charToRead = character;
         }
-
         Variables.voice.addText(charToRead + "is a bad option. please try again");
       } else {
         Variables.path = Variables.path + character;
       }
-
     }
     // Checking if correct option was pressed. If so Variables.path is updated 
-
     // Loading next Event according to what is specified in "Variables.path" 
     Event currentEvent = Variables.myHashMap.get(Variables.path);
     Style.setTextToScreen(currentEvent.name);
     // Checking if "back" option was selected via name of the current event 
     if (!(isEmptyString(currentEvent.action))) {
-      System.out.println("sout current event action" + currentEvent.action);
       if (currentEvent.action.equals("back")) {
         // updating Variables.path to get back 
         Variables.voice.addText("Going to the previous menu");
@@ -261,7 +256,6 @@ public class Behaviour {
         } else {
           PlayGetInfo(currentEvent.playback);
         }
-
         Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
       }
       Variables.finished = currentEvent.isFinal;

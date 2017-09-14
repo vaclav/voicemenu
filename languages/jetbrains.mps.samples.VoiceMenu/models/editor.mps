@@ -18053,7 +18053,7 @@
       </node>
       <node concept="3F0A7n" id="JHn_unHAHu" role="3EZMnx">
         <property role="1O74Pk" value="true" />
-        <property role="1$x2rV" value="number of seconds to wait" />
+        <property role="1$x2rV" value="seconds to wait" />
         <ref role="1NtTu8" to="xehl:JHn_unH$mW" resolve="duration" />
       </node>
       <node concept="3F0ifn" id="JHn_unHAHZ" role="3EZMnx">

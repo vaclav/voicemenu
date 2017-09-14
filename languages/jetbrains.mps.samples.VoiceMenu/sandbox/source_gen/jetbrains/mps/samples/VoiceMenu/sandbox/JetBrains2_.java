@@ -29,7 +29,7 @@ public class JetBrains2_ implements ActionListener {
 
     Event Home = new Event("JetBrains2", "0");
     Home.setAction("", true);
-    Home.setGreeting("Welcome to " + "JetBrains2");
+    Home.setPlayBack("Welcome to " + "JetBrains2");
 
     Home.childs = new ArrayList<Event>();
     Home.isFinal = false;
@@ -41,13 +41,11 @@ public class JetBrains2_ implements ActionListener {
     Event Sales_lbjr72_a0 = new Event("Sales", "1");
     Sales_lbjr72_a0.isFinal = false;
     Sales_lbjr72_a0.setAction("", false);
-    Sales_lbjr72_a0.setGreeting("");
     Sales_lbjr72_a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("01", Sales_lbjr72_a0);
     Event Call_department_lbjr72_a0a0 = new Event("Call department", "1");
     Call_department_lbjr72_a0a0.isFinal = false;
     Call_department_lbjr72_a0a0.setAction("", false);
-    Call_department_lbjr72_a0a0.setGreeting("");
     Call_department_lbjr72_a0a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("011", Call_department_lbjr72_a0a0);
     Call_department_lbjr72_a0a0.setAction("call", true);
@@ -55,7 +53,6 @@ public class JetBrains2_ implements ActionListener {
     Event Get_Informations_lbjr72_b0a0 = new Event("Get Informations", "2");
     Get_Informations_lbjr72_b0a0.isFinal = false;
     Get_Informations_lbjr72_b0a0.setAction("", false);
-    Get_Informations_lbjr72_b0a0.setGreeting("");
     Get_Informations_lbjr72_b0a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("012", Get_Informations_lbjr72_b0a0);
     Get_Informations_lbjr72_b0a0.setAction("getInfo", false);
@@ -63,7 +60,6 @@ public class JetBrains2_ implements ActionListener {
     Event Previous_Menu_lbjr72_c0a0 = new Event("Previous Menu", "#");
     Previous_Menu_lbjr72_c0a0.isFinal = false;
     Previous_Menu_lbjr72_c0a0.setAction("", false);
-    Previous_Menu_lbjr72_c0a0.setGreeting("");
     Previous_Menu_lbjr72_c0a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("01#", Previous_Menu_lbjr72_c0a0);
     Previous_Menu_lbjr72_c0a0.setAction("back", false);
@@ -75,13 +71,11 @@ public class JetBrains2_ implements ActionListener {
     Event General_Questions_lbjr72_b0 = new Event("General Questions", "2");
     General_Questions_lbjr72_b0.isFinal = false;
     General_Questions_lbjr72_b0.setAction("", false);
-    General_Questions_lbjr72_b0.setGreeting("");
     General_Questions_lbjr72_b0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("02", General_Questions_lbjr72_b0);
     Event Leave_a_message_lbjr72_a0b0 = new Event("Leave a message", "1");
     Leave_a_message_lbjr72_a0b0.isFinal = false;
     Leave_a_message_lbjr72_a0b0.setAction("", false);
-    Leave_a_message_lbjr72_a0b0.setGreeting("");
     Leave_a_message_lbjr72_a0b0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("021", Leave_a_message_lbjr72_a0b0);
     Leave_a_message_lbjr72_a0b0.setAction("record", true);
@@ -89,13 +83,11 @@ public class JetBrains2_ implements ActionListener {
     Event MPS_Support_lbjr72_b0b0 = new Event("MPS Support", "2");
     MPS_Support_lbjr72_b0b0.isFinal = false;
     MPS_Support_lbjr72_b0b0.setAction("", false);
-    MPS_Support_lbjr72_b0b0.setGreeting("");
     MPS_Support_lbjr72_b0b0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("022", MPS_Support_lbjr72_b0b0);
     Event Direct_Call_lbjr72_a0b0b0 = new Event("Direct Call", "1");
     Direct_Call_lbjr72_a0b0b0.isFinal = false;
     Direct_Call_lbjr72_a0b0b0.setAction("", false);
-    Direct_Call_lbjr72_a0b0b0.setGreeting("");
     Direct_Call_lbjr72_a0b0b0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("0221", Direct_Call_lbjr72_a0b0b0);
     Direct_Call_lbjr72_a0b0b0.setAction("call", true);
@@ -103,7 +95,6 @@ public class JetBrains2_ implements ActionListener {
     Event Get_Info_lbjr72_b0b0b0 = new Event("Get Info", "2");
     Get_Info_lbjr72_b0b0b0.isFinal = false;
     Get_Info_lbjr72_b0b0b0.setAction("", false);
-    Get_Info_lbjr72_b0b0b0.setGreeting("");
     Get_Info_lbjr72_b0b0b0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("0222", Get_Info_lbjr72_b0b0b0);
     Get_Info_lbjr72_b0b0b0.setAction("getInfo", false);
@@ -111,7 +102,6 @@ public class JetBrains2_ implements ActionListener {
     Event Previous_Menu_lbjr72_c0b0b0 = new Event("Previous Menu", "#");
     Previous_Menu_lbjr72_c0b0b0.isFinal = false;
     Previous_Menu_lbjr72_c0b0b0.setAction("", false);
-    Previous_Menu_lbjr72_c0b0b0.setGreeting("");
     Previous_Menu_lbjr72_c0b0b0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("022#", Previous_Menu_lbjr72_c0b0b0);
     Previous_Menu_lbjr72_c0b0b0.setAction("back", false);
@@ -123,7 +113,6 @@ public class JetBrains2_ implements ActionListener {
     Event Previous_Menu_lbjr72_c0b0 = new Event("Previous Menu", "#");
     Previous_Menu_lbjr72_c0b0.isFinal = false;
     Previous_Menu_lbjr72_c0b0.setAction("", false);
-    Previous_Menu_lbjr72_c0b0.setGreeting("");
     Previous_Menu_lbjr72_c0b0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("02#", Previous_Menu_lbjr72_c0b0);
     Previous_Menu_lbjr72_c0b0.setAction("back", false);
@@ -139,7 +128,7 @@ public class JetBrains2_ implements ActionListener {
 
     Variables.timeout = new Event("timeout", "X");
     Variables.timeout.playback = "";
-    Variables.timeout.duration = 0;
+    Variables.timeout.duration = 7;
     Variables.timeout.action = "getInfo";
     Variables.timeout.isFinal = false;
   }

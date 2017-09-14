@@ -344,19 +344,21 @@
     <property role="1EJLKn" value="true" />
     <node concept="2C_Ik4" id="6HhgIFXTyQ3" role="2JqgbB">
       <node concept="2C_I21" id="7IHEnsdAb2n" role="2C_I26">
-        <ref role="2C_gVZ" node="7IHEnsdAb2p" resolve="info speaking speaking speaking speaking speaking speaking speaking speaking speaking" />
+        <ref role="2C_gVZ" node="7IHEnsdAb2p" resolve="info" />
         <node concept="1$pBvo" id="48mTguK45il" role="2C_gVu">
           <property role="XmNhe" value="false" />
         </node>
       </node>
       <node concept="2C_Ik0" id="7IHEnsdAb2p" role="2C_I24">
         <property role="2C_Iks" value="2" />
-        <property role="TrG5h" value="info speaking speaking speaking speaking speaking speaking speaking speaking speaking" />
+        <property role="TrG5h" value="info" />
       </node>
     </node>
     <node concept="2smLJI" id="JHn_unRV$u" role="2smLJD">
-      <property role="2smLJF" value="2" />
-      <node concept="1$pBvp" id="3jUOcBQwqiS" role="2sfXcw" />
+      <property role="2smLJF" value="5" />
+      <node concept="X09Yf" id="2T27OaN4s4m" role="2sfXcw">
+        <property role="XmNjE" value="false" />
+      </node>
     </node>
   </node>
   <node concept="2Jqgb4" id="3BO6$VaLho1">
