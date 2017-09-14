@@ -132,9 +132,6 @@ public class FixAll {
           LoggingRuntime.logMsgView(Level.INFO, "Init Empty Menu", FixAll.class, null, null);
 
         }
-
-
-
         // ............................................................. remove empty 
         if (ListSequence.fromList(SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"), false, new SAbstractConcept[]{})).any(new IWhereFilter<SNode>() {
           public boolean accept(SNode it) {
@@ -208,9 +205,6 @@ public class FixAll {
           LoggingRuntime.logMsgView(Level.INFO, "Duplicate Activity", FixAll.class, null, null);
         }
       }
-
-
-
       // ............................................................. Resolve File / Playback 
 
       for (SNode actvt : ListSequence.fromList(SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"), false, new SAbstractConcept[]{}))) {

@@ -49,8 +49,10 @@ public class IconContainer {
   protected static IconResource RESOURCE_a0a01c7i_2 = new IconResource("unhide.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a01c8i_0 = new IconResource("hide.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a01c6h_1 = new IconResource("fix.png", IconContainer.class);
-  protected static IconResource RESOURCE_a0a01c6h_2 = new IconResource("add_to_list.png", IconContainer.class);
-  protected static IconResource RESOURCE_a0a01c7h_3 = new IconResource("remove.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a3a01c6h = new IconResource("notFinalState.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a0d0k2g7 = new IconResource("FinalState.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a01c7h_3 = new IconResource("add_to_list.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a01c8h_1 = new IconResource("remove.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a9c6i_1 = new IconResource("arrow.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a01c7i_3 = new IconResource("unhide.png", IconContainer.class);
   protected static IconResource RESOURCE_a0a01c8i_1 = new IconResource("hide.png", IconContainer.class);
