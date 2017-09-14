@@ -612,12 +612,12 @@
     <file name="CheckMultipleActivitiesOneEvent_NonTypesystemRule.java">
       <node id="6428598319198818963" at="24,117,25,204" concept="6" />
       <node id="6428598319198827305" at="28,41,29,747" concept="7" />
-      <node id="2036874050862903340" at="32,9,33,62" concept="6" />
-      <node id="2036874050862903340" at="33,62,34,259" concept="6" />
-      <node id="2036874050862903340" at="35,11,36,155" concept="6" />
-      <node id="2036874050862903340" at="36,155,37,73" concept="2" />
-      <node id="2036874050862903340" at="39,11,40,155" concept="6" />
-      <node id="2036874050862903340" at="40,155,41,73" concept="2" />
+      <node id="6218942490161504715" at="32,9,33,62" concept="6" />
+      <node id="6218942490161504715" at="33,62,34,261" concept="6" />
+      <node id="6218942490161504715" at="35,11,36,155" concept="6" />
+      <node id="6218942490161504715" at="36,155,37,73" concept="2" />
+      <node id="6218942490161504715" at="39,11,40,155" concept="6" />
+      <node id="6218942490161504715" at="40,155,41,73" concept="2" />
       <node id="6428598319198780334" at="47,50,48,154" concept="7" />
       <node id="6428598319198780334" at="50,68,51,102" concept="7" />
       <node id="6428598319198780334" at="53,30,54,17" concept="7" />
@@ -630,9 +630,9 @@
       <node id="6428598319198780334" at="53,0,56,0" concept="5" trace="overrides#()Z" />
       <node id="6428598319198843829" at="56,0,59,0" concept="9" trace="eq_a119ti_a0a0a0a0a0a0a1a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
       <node id="6428598319198828581" at="59,0,62,0" concept="9" trace="neq_a119ti_a0a0a0a0a0a0a1a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="2036874050862903340" at="34,259,38,11" concept="0" />
-      <node id="2036874050862903340" at="38,11,42,11" concept="0" />
-      <node id="2036874050862903340" at="31,11,43,9" concept="0" />
+      <node id="6218942490161504715" at="34,261,38,11" concept="0" />
+      <node id="6218942490161504715" at="38,11,42,11" concept="0" />
+      <node id="6218942490161504715" at="31,11,43,9" concept="0" />
       <node id="6428598319198819112" at="26,75,44,7" concept="4" />
       <node id="6428598319198819016" at="25,204,45,5" concept="3" />
       <node id="6428598319198780334" at="24,0,47,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
@@ -644,11 +644,11 @@
       <scope id="6428598319198843829" at="56,73,57,46" />
       <scope id="6428598319198828581" at="59,74,60,51" />
       <scope id="6428598319198780334" at="22,0,24,0" />
-      <scope id="2036874050862903340" at="35,11,37,73">
-        <var name="intentionProvider" id="2036874050862903340" />
+      <scope id="6218942490161504715" at="35,11,37,73">
+        <var name="intentionProvider" id="6218942490161504715" />
       </scope>
-      <scope id="2036874050862903340" at="39,11,41,73">
-        <var name="intentionProvider" id="2036874050862903340" />
+      <scope id="6218942490161504715" at="39,11,41,73">
+        <var name="intentionProvider" id="6218942490161504715" />
       </scope>
       <scope id="6428598319198820448" at="28,0,31,0">
         <var name="it" id="6428598319198820448" />
@@ -666,9 +666,9 @@
         <var name="a" id="6428598319198828581" />
         <var name="b" id="6428598319198828581" />
       </scope>
-      <scope id="2036874050862903340" at="32,9,42,11">
-        <var name="_reporter_2309309498" id="2036874050862903340" />
-        <var name="errorTarget" id="2036874050862903340" />
+      <scope id="6218942490161504715" at="32,9,42,11">
+        <var name="_reporter_2309309498" id="6218942490161504715" />
+        <var name="errorTarget" id="6218942490161504715" />
       </scope>
       <scope id="6428598319198819114" at="31,11,43,9" />
       <scope id="6428598319198819022" at="26,75,44,7" />

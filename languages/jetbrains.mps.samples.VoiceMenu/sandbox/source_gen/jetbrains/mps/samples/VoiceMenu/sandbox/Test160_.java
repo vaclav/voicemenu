@@ -43,10 +43,35 @@ public class Test160_ implements ActionListener {
     xxx_2032os_a0.setGreeting("");
     xxx_2032os_a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("02", xxx_2032os_a0);
-    xxx_2032os_a0.setAction("other", false);
+    Event Action_939_2032os_a0a0 = new Event("Action_939", "2");
+    Action_939_2032os_a0a0.isFinal = false;
+    Action_939_2032os_a0a0.setAction("", false);
+    Action_939_2032os_a0a0.setGreeting("");
+    Action_939_2032os_a0a0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("022", Action_939_2032os_a0a0);
+    Action_939_2032os_a0a0.setAction("other", true);
+    Action_939_2032os_a0a0.childs = new ArrayList<Event>();
+    Event Action_939_2032os_a0a0_0 = new Event("Action_939", "2");
+    Action_939_2032os_a0a0_0.isFinal = false;
+    Action_939_2032os_a0a0_0.setAction("", false);
+    Action_939_2032os_a0a0_0.setGreeting("");
+    Action_939_2032os_a0a0_0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("022", Action_939_2032os_a0a0_0);
+    Action_939_2032os_a0a0.setAction("record", true);
+    Action_939_2032os_a0a0_0.childs = new ArrayList<Event>();
     xxx_2032os_a0.childs = new ArrayList<Event>();
+    xxx_2032os_a0.childs.add(Action_939_2032os_a0a0);
+    Event Action_308_2032os_b0 = new Event("Action_308", "7");
+    Action_308_2032os_b0.isFinal = false;
+    Action_308_2032os_b0.setAction("", false);
+    Action_308_2032os_b0.setGreeting("");
+    Action_308_2032os_b0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("07", Action_308_2032os_b0);
+    Action_308_2032os_b0.setAction("other", true);
+    Action_308_2032os_b0.childs = new ArrayList<Event>();
 
     Home.childs.add(xxx_2032os_a0);
+    Home.childs.add(Action_308_2032os_b0);
 
 
     Variables.timeout = new Event("timeout", "X");

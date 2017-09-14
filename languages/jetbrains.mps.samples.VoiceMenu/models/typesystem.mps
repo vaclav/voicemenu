@@ -546,18 +546,18 @@
         <node concept="3clFbS" id="5$QY1LNxdbe" role="2LFqv$">
           <node concept="3clFbJ" id="5$QY1LNxdcC" role="3cqZAp">
             <node concept="3clFbS" id="5$QY1LNxdcE" role="3clFbx">
-              <node concept="a7r0C" id="1L4ryxdTf0G" role="3cqZAp">
-                <node concept="3Cnw8n" id="1L4ryxdTf23" role="2OEOjU">
-                  <ref role="QpYPw" node="3QwtLquzL$B" resolve="RemoveActivity" />
-                </node>
-                <node concept="3Cnw8n" id="1L4ryxdTf24" role="2OEOjU">
-                  <ref role="QpYPw" node="6Dh11itMJPD" resolve="RenameActivity" />
-                </node>
-                <node concept="Xl_RD" id="1L4ryxdTf16" role="a7wSD">
+              <node concept="2MkqsV" id="5pe7NVkEe7b" role="3cqZAp">
+                <node concept="Xl_RD" id="5pe7NVkEe7f" role="2MkJ7o">
                   <property role="Xl_RC" value="Duplicate reference to Event" />
                 </node>
-                <node concept="2GrUjf" id="1L4ryxdTf1t" role="2OEOjV">
+                <node concept="2GrUjf" id="5pe7NVkEe7g" role="2OEOjV">
                   <ref role="2Gs0qQ" node="5$QY1LNxdba" resolve="currentActivity" />
+                </node>
+                <node concept="3Cnw8n" id="5pe7NVkEe7d" role="2OEOjU">
+                  <ref role="QpYPw" node="3QwtLquzL$B" resolve="RemoveActivity" />
+                </node>
+                <node concept="3Cnw8n" id="5pe7NVkEe7e" role="2OEOjU">
+                  <ref role="QpYPw" node="6Dh11itMJPD" resolve="RenameActivity" />
                 </node>
               </node>
             </node>

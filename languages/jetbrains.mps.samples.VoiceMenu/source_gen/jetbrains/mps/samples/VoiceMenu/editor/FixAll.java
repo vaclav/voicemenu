@@ -23,6 +23,8 @@ import jetbrains.mps.baseLanguage.logging.runtime.model.LoggingRuntime;
 import org.apache.log4j.Level;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.editor.runtime.selection.SelectionUtil;
+import jetbrains.mps.openapi.editor.selection.SelectionManager;
 
 public class FixAll {
   private static final Logger LOG = LogManager.getLogger(FixAll.class);
@@ -147,7 +149,6 @@ public class FixAll {
           }));
 
         } else {
-          LoggingRuntime.logMsgView(Level.INFO, "Finished", FixAll.class, null, null);
           break;
         }
       }
@@ -164,6 +165,46 @@ public class FixAll {
         SLinkOperations.setTarget(newActivity, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event"), newEvent);
       }
 
+      // ............................................................. Remove duplicates 
+      List<SNode> menuDescendants = SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu"), false, new SAbstractConcept[]{});
+
+      for (SNode menu : ListSequence.fromList(menuDescendants)) {
+        Iterable<SNode> activities = SLinkOperations.getChildren(menu, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities"));
+        for (final SNode currentActivity : Sequence.fromIterable(activities)) {
+
+          if (Sequence.fromIterable(activities).where(new IWhereFilter<SNode>() {
+            public boolean accept(SNode it) {
+              return neq_heizli_a0a0a0a0a0a0b0b0h0d2(it, currentActivity) && eq_heizli_a0a0a0a0a0a0b0b0h0d2(SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), SPropertyOperations.getString(SLinkOperations.getTarget(currentActivity, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
+            }
+          }).isNotEmpty()) {
+
+            SNode activity = Sequence.fromIterable(activities).findLast(new IWhereFilter<SNode>() {
+              public boolean accept(SNode it) {
+                return neq_heizli_a0a0a0a0a0a0b0b0b0h0d2(it, currentActivity) && eq_heizli_a0a0a0a0a0a0b0b0b0h0d2(SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), SPropertyOperations.getString(SLinkOperations.getTarget(currentActivity, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
+              }
+            });
+
+
+            if (SNodeOperations.getIndexInParent(activity) < 0) {
+              continue;
+            }
+
+            SNodeOperations.deleteNode(Sequence.fromIterable(activities).findLast(new IWhereFilter<SNode>() {
+              public boolean accept(SNode it) {
+                return neq_heizli_a0a0a0a0a0a0g0b0b0h0d2(it, currentActivity) && eq_heizli_a0a0a0a0a0a0g0b0b0h0d2(SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), SPropertyOperations.getString(SLinkOperations.getTarget(currentActivity, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
+              }
+            }));
+
+            LoggingRuntime.logMsgView(Level.INFO, "Removing Duplicate Activity " + SPropertyOperations.getString(SLinkOperations.getTarget(activity, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")), FixAll.class, null, null);
+
+          }
+        }
+      }
+
+      LoggingRuntime.logMsgView(Level.INFO, "FINISHED", FixAll.class, null, null);
+
+      SelectionUtil.selectCell(editorContext, node, SelectionManager.FIRST_ERROR_CELL);
+
     }
     private static boolean eq_heizli_a0a0a0a0a0a0c0b0d2(Object a, Object b) {
       return (a != null ? a.equals(b) : a == b);
@@ -176,6 +217,24 @@ public class FixAll {
     }
     private static boolean isEmptyString(String str) {
       return str == null || str.length() == 0;
+    }
+    private static boolean eq_heizli_a0a0a0a0a0a0b0b0b0h0d2(Object a, Object b) {
+      return (a != null ? a.equals(b) : a == b);
+    }
+    private static boolean neq_heizli_a0a0a0a0a0a0b0b0b0h0d2(Object a, Object b) {
+      return !(((a != null ? a.equals(b) : a == b)));
+    }
+    private static boolean eq_heizli_a0a0a0a0a0a0g0b0b0h0d2(Object a, Object b) {
+      return (a != null ? a.equals(b) : a == b);
+    }
+    private static boolean neq_heizli_a0a0a0a0a0a0g0b0b0h0d2(Object a, Object b) {
+      return !(((a != null ? a.equals(b) : a == b)));
+    }
+    private static boolean eq_heizli_a0a0a0a0a0a0b0b0h0d2(Object a, Object b) {
+      return (a != null ? a.equals(b) : a == b);
+    }
+    private static boolean neq_heizli_a0a0a0a0a0a0b0b0h0d2(Object a, Object b) {
+      return !(((a != null ? a.equals(b) : a == b)));
     }
   }
 }
