@@ -569,55 +569,30 @@
   <node concept="2Jqgb4" id="42GgdiBTieu">
     <property role="1EJLKn" value="true" />
     <property role="TrG5h" value="MY TEST" />
-    <node concept="2C_Ik4" id="42GgdiBTiev" role="2JqgbB">
-      <node concept="2C_Ik0" id="42GgdiBTie$" role="2C_I24">
-        <property role="TrG5h" value="xxx" />
-        <property role="2C_Iks" value="2" />
-      </node>
-      <node concept="2C_Ik0" id="42GgdiBTieN" role="2C_I24">
-        <property role="2C_Iks" value="3" />
-        <property role="TrG5h" value="yyy" />
-      </node>
-      <node concept="2C_I21" id="42GgdiBTiey" role="2C_I26">
-        <ref role="2C_gVZ" node="42GgdiBTie$" resolve="xxx" />
-        <node concept="X09Yy" id="42GgdiBTieC" role="2C_gVu" />
-      </node>
-      <node concept="2C_I21" id="42GgdiBTieQ" role="2C_I26">
-        <ref role="2C_gVZ" node="42GgdiBTieN" resolve="yyy" />
-        <node concept="2C_Ik4" id="42GgdiBTif4" role="2C_gVu">
-          <node concept="2C_Ik0" id="42GgdiBTif9" role="2C_I24">
-            <property role="TrG5h" value="zzz" />
-            <property role="2C_Iks" value="2" />
+    <node concept="2smLJI" id="42GgdiBTiew" role="2smLJD">
+      <property role="2smLJF" value="7" />
+      <node concept="2m1r4j" id="42GgdiBTiex" role="2sfXcw" />
+    </node>
+    <node concept="2C_Ik4" id="1ychykAt_Ns" role="2JqgbB">
+      <node concept="2C_I21" id="1ychykAt_N$" role="2C_I26">
+        <ref role="2C_gVZ" node="1ychykAt_NA" resolve="dsa" />
+        <node concept="2C_Ik4" id="1ychykAt_NE" role="2C_gVu">
+          <node concept="2C_Ik0" id="1ychykAvwX0" role="2C_I24">
+            <property role="TrG5h" value="da" />
+            <property role="2C_Iks" value="3" />
           </node>
-          <node concept="2C_I21" id="42GgdiBTif7" role="2C_I26">
-            <ref role="2C_gVZ" node="42GgdiBTif9" resolve="zzz" />
-            <node concept="2C_Ik4" id="42GgdiCuEpO" role="2C_gVu">
-              <node concept="2C_I21" id="42GgdiCuEpP" role="2C_I26">
-                <ref role="2C_gVZ" node="42GgdiCuEpR" resolve="Action_490" />
-                <node concept="1$pBvq" id="42GgdiC$Wiw" role="2C_gVu">
-                  <property role="XmNiv" value="true" />
-                </node>
-              </node>
-              <node concept="2C_Ik0" id="42GgdiCuEpR" role="2C_I24">
-                <property role="TrG5h" value="Action_490" />
-                <property role="2C_Iks" value="1" />
-              </node>
-              <node concept="2C_Ik0" id="42GgdiC$WiD" role="2C_I24">
-                <property role="2C_Iks" value="6" />
-                <property role="TrG5h" value="Action_773" />
-              </node>
-              <node concept="2C_I21" id="42GgdiCCOGI" role="2C_I26">
-                <ref role="2C_gVZ" node="42GgdiC$WiD" resolve="Action_773" />
-                <node concept="X09Yy" id="42GgdiCCOHc" role="2C_gVu" />
-              </node>
+          <node concept="2C_I21" id="6hlAN$dnSma" role="2C_I26">
+            <ref role="2C_gVZ" node="1ychykAvwX0" resolve="da" />
+            <node concept="1$pBvq" id="6hlAN$dnSmc" role="2C_gVu">
+              <property role="XmNiv" value="true" />
             </node>
           </node>
         </node>
       </node>
-    </node>
-    <node concept="2smLJI" id="42GgdiBTiew" role="2smLJD">
-      <property role="2smLJF" value="7" />
-      <node concept="2m1r4j" id="42GgdiBTiex" role="2sfXcw" />
+      <node concept="2C_Ik0" id="1ychykAt_NA" role="2C_I24">
+        <property role="2C_Iks" value="6" />
+        <property role="TrG5h" value="dsa" />
+      </node>
     </node>
   </node>
 </model>
