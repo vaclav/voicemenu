@@ -21,6 +21,7 @@
         <child id="859446834199956855" name="Action" index="2sfXcw" />
       </concept>
       <concept id="6587365532662359693" name="jetbrains.mps.samples.VoiceMenu.structure.Activity" flags="ng" index="2C_I21">
+        <property id="3333261045542858623" name="PBisFile" index="2tub0X" />
         <property id="2702278965990916343" name="playback" index="3upAMh" />
         <reference id="6587365532662368499" name="event" index="2C_gVZ" />
         <child id="6587365532662368466" name="commands" index="2C_gVu" />
@@ -348,6 +349,8 @@
     <property role="1EJLKn" value="true" />
     <node concept="2C_Ik4" id="6HhgIFXTyQ3" role="2JqgbB">
       <node concept="2C_I21" id="7IHEnsdAb2n" role="2C_I26">
+        <property role="3upAMh" value="/Users/jetbrains/Desktop/sample.wav" />
+        <property role="2tub0X" value="true" />
         <ref role="2C_gVZ" node="7IHEnsdAb2p" resolve="info" />
         <node concept="1$pBvo" id="48mTguK45il" role="2C_gVu">
           <property role="XmNhe" value="false" />
