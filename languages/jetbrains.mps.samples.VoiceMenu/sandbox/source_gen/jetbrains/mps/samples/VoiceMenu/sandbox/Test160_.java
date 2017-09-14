@@ -38,16 +38,16 @@ public class Test160_ implements ActionListener {
     Variables.myHashMap.put("0", Home);
 
 
-    Event info_2032os_a0 = new Event("info", "2");
-    info_2032os_a0.isFinal = false;
-    info_2032os_a0.setAction("", false);
-    info_2032os_a0.playback = "/Users/jetbrains/Desktop/sample.wav";
-    info_2032os_a0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("02", info_2032os_a0);
-    info_2032os_a0.setAction("getInfo", false);
-    info_2032os_a0.childs = new ArrayList<Event>();
+    Event Info_2032os_a0 = new Event("Info", "2");
+    Info_2032os_a0.isFinal = false;
+    Info_2032os_a0.setAction("", false);
+    Info_2032os_a0.playback = "/Users/jetbrains/Desktop/sample.wav";
+    Info_2032os_a0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("02", Info_2032os_a0);
+    Info_2032os_a0.setAction("getInfo", false);
+    Info_2032os_a0.childs = new ArrayList<Event>();
 
-    Home.childs.add(info_2032os_a0);
+    Home.childs.add(Info_2032os_a0);
 
 
     Variables.timeout = new Event("timeout", "X");

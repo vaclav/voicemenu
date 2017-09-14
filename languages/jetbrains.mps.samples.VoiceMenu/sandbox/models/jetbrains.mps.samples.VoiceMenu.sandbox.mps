@@ -351,13 +351,13 @@
       <node concept="2C_I21" id="7IHEnsdAb2n" role="2C_I26">
         <property role="3upAMh" value="/Users/jetbrains/Desktop/sample.wav" />
         <property role="2tub0X" value="true" />
-        <ref role="2C_gVZ" node="7IHEnsdAb2p" resolve="info" />
+        <ref role="2C_gVZ" node="7IHEnsdAb2p" resolve="Info" />
         <node concept="1$pBvo" id="48mTguK45il" role="2C_gVu">
           <property role="XmNhe" value="false" />
         </node>
       </node>
       <node concept="2C_Ik0" id="7IHEnsdAb2p" role="2C_I24">
-        <property role="TrG5h" value="info" />
+        <property role="TrG5h" value="Info" />
         <property role="2C_Iks" value="2" />
       </node>
     </node>
