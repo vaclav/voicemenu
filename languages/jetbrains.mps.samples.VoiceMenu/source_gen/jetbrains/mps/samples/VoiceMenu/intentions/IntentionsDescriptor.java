@@ -50,12 +50,13 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
       case 1:
         if (true) {
           // Concept: Activity 
-          intentions = new IntentionFactory[5];
+          intentions = new IntentionFactory[6];
           intentions[0] = new Remove_Playback_Intention();
           intentions[1] = new InitializeNewEvent_Intention();
           intentions[2] = new RemoveActivityWithEvent_Intention();
           intentions[3] = new DeclareActivity_Intention();
           intentions[4] = new Add_Playback_Intention();
+          intentions[5] = new toFile_Intention();
         }
         break;
       case 2:
@@ -88,7 +89,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
   @NotNull
   @Override
   public Collection<IntentionFactory> getAllIntentions() {
-    IntentionFactory[] rv = new IntentionFactory[24];
+    IntentionFactory[] rv = new IntentionFactory[25];
     rv[0] = new Remove_Playback_Intention();
     rv[1] = new Remove_Main_Playback_Intention();
     rv[2] = new InitializeNewEvent_Intention();
@@ -113,6 +114,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
     rv[21] = new changeToReplay_Intention();
     rv[22] = new Add_Playback_Intention();
     rv[23] = new Add_Main_Playback_Intention();
+    rv[24] = new toFile_Intention();
     return Arrays.asList(rv);
   }
   private static final ConceptSwitchIndex index_hphjzv_d0f = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d133997fdc5L), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L)).seal();

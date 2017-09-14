@@ -15,7 +15,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164879751025:jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
   <root>
     <file name="IntentionsDescriptor.java">
-      <unit at="18,0,120,0" name="jetbrains.mps.samples.VoiceMenu.intentions.IntentionsDescriptor" />
+      <unit at="18,0,122,0" name="jetbrains.mps.samples.VoiceMenu.intentions.IntentionsDescriptor" />
     </file>
   </root>
   <root nodeRef="r:d92c1500-00d3-4072-866a-5077893293b8(jetbrains.mps.samples.VoiceMenu.intentions)/1894932233811424763">
@@ -468,6 +468,79 @@
       <unit id="237711386747857092" at="54,601,58,7" name="jetbrains.mps.samples.VoiceMenu.intentions.RemoveEventWithActivity_Intention$IntentionImplementation$1" />
       <unit id="2892639838856113778" at="45,0,66,0" name="jetbrains.mps.samples.VoiceMenu.intentions.RemoveEventWithActivity_Intention$IntentionImplementation" />
       <unit id="2892639838856113778" at="22,0,70,0" name="jetbrains.mps.samples.VoiceMenu.intentions.RemoveEventWithActivity_Intention" />
+    </file>
+  </root>
+  <root nodeRef="r:d92c1500-00d3-4072-866a-5077893293b8(jetbrains.mps.samples.VoiceMenu.intentions)/3333261045543359069">
+    <file name="toFile_Intention.java">
+      <node id="3333261045543359069" at="21,0,22,0" concept="3" trace="myCachedExecutable" />
+      <node id="3333261045543359069" at="22,29,23,157" concept="11" />
+      <node id="3333261045543359069" at="26,35,27,20" concept="8" />
+      <node id="3333261045543359069" at="30,84,31,16" concept="8" />
+      <node id="3333261045543359069" at="34,35,35,17" concept="8" />
+      <node id="3333261045543359069" at="38,37,39,122" concept="2" />
+      <node id="3333261045543359069" at="40,5,41,30" concept="8" />
+      <node id="3333261045543359646" at="47,87,48,27" concept="8" />
+      <node id="3333261045543348045" at="52,11,53,193" concept="7" />
+      <node id="3333261045543497009" at="53,193,54,0" concept="9" />
+      <node id="3333261045543352511" at="55,27,56,181" concept="2" />
+      <node id="3333261045543502857" at="57,16,58,182" concept="2" />
+      <node id="3333261045543469789" at="60,29,61,180" concept="2" />
+      <node id="3333261045543359069" at="65,48,66,35" concept="8" />
+      <node id="3333261045543359069" at="44,0,46,0" concept="1" trace="IntentionImplementation#()V" />
+      <node id="3333261045543502668" at="57,14,59,9" concept="0" />
+      <node id="3333261045543359069" at="22,0,25,0" concept="1" trace="toFile_Intention#()V" />
+      <node id="3333261045543359069" at="37,99,40,5" concept="5" />
+      <node id="3333261045543359069" at="25,0,29,0" concept="6" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="3333261045543359069" at="29,0,33,0" concept="6" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="3333261045543359069" at="33,0,37,0" concept="6" trace="isSurroundWith#()Z" />
+      <node id="3333261045543359069" at="46,0,50,0" concept="6" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <node id="3333261045543359069" at="64,0,68,0" concept="6" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
+      <node id="3333261045543497417" at="54,0,59,9" concept="5" />
+      <node id="3333261045543359069" at="37,0,43,0" concept="6" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <node id="3333261045543348020" at="51,78,62,7" concept="12" />
+      <node id="3333261045543359069" at="50,0,64,0" concept="6" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <scope id="3333261045543359069" at="44,38,44,38" />
+      <scope id="3333261045543359069" at="22,29,23,157" />
+      <scope id="3333261045543359069" at="26,35,27,20" />
+      <scope id="3333261045543359069" at="30,84,31,16" />
+      <scope id="3333261045543359069" at="34,35,35,17" />
+      <scope id="3333261045543359069" at="38,37,39,122" />
+      <scope id="3333261045543359071" at="47,87,48,27" />
+      <scope id="3333261045543497419" at="55,27,56,181" />
+      <scope id="3333261045543502669" at="57,16,58,182" />
+      <scope id="3333261045543348022" at="60,0,61,180">
+        <var name="e" id="3333261045543348023" />
+      </scope>
+      <scope id="3333261045543348025" at="60,29,61,180" />
+      <scope id="3333261045543359069" at="65,48,66,35" />
+      <scope id="3333261045543359069" at="44,0,46,0" />
+      <scope id="3333261045543359069" at="22,0,25,0" />
+      <scope id="3333261045543359069" at="25,0,29,0" />
+      <scope id="3333261045543359069" at="29,0,33,0">
+        <var name="editorContext" id="3333261045543359069" />
+        <var name="node" id="3333261045543359069" />
+      </scope>
+      <scope id="3333261045543359069" at="33,0,37,0" />
+      <scope id="3333261045543359069" at="37,99,41,30" />
+      <scope id="3333261045543359069" at="46,0,50,0">
+        <var name="editorContext" id="3333261045543359069" />
+        <var name="node" id="3333261045543359069" />
+      </scope>
+      <scope id="3333261045543359069" at="64,0,68,0" />
+      <scope id="3333261045543359069" at="37,0,43,0">
+        <var name="context" id="3333261045543359069" />
+        <var name="node" id="3333261045543359069" />
+      </scope>
+      <scope id="3333261045543348021" at="52,11,59,9">
+        <var name="tmp" id="3333261045543348046" />
+      </scope>
+      <scope id="3333261045543359073" at="51,78,62,7" />
+      <scope id="3333261045543359069" at="50,0,64,0">
+        <var name="editorContext" id="3333261045543359069" />
+        <var name="node" id="3333261045543359069" />
+      </scope>
+      <unit id="3333261045543359069" at="43,0,69,0" name="jetbrains.mps.samples.VoiceMenu.intentions.toFile_Intention$IntentionImplementation" />
+      <unit id="3333261045543359069" at="20,0,70,0" name="jetbrains.mps.samples.VoiceMenu.intentions.toFile_Intention" />
     </file>
   </root>
   <root nodeRef="r:d92c1500-00d3-4072-866a-5077893293b8(jetbrains.mps.samples.VoiceMenu.intentions)/3919338464396174374">
