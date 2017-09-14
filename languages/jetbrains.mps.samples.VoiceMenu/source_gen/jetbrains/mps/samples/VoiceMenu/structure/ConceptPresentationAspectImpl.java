@@ -80,7 +80,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.GetInfo:
         if (props_GetInfo == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Get informations");
+          cpb.rawPresentation("Get information");
           props_GetInfo = cpb.create();
         }
         return props_GetInfo;
