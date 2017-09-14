@@ -14,6 +14,7 @@
   </imports>
   <registry>
     <language id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu">
+      <concept id="6151364482690565571" name="jetbrains.mps.samples.VoiceMenu.structure.Empty" flags="ng" index="2fTWM$" />
       <concept id="7733035612211835897" name="jetbrains.mps.samples.VoiceMenu.structure.Replay" flags="ng" index="2m1r4j" />
       <concept id="859446834198103481" name="jetbrains.mps.samples.VoiceMenu.structure.Timeout" flags="ng" index="2smLJI">
         <property id="859446834198103484" name="duration" index="2smLJF" />
@@ -352,8 +353,14 @@
         <property role="3upAMh" value="/Users/jetbrains/Desktop/sample.wav" />
         <property role="2tub0X" value="true" />
         <ref role="2C_gVZ" node="7IHEnsdAb2p" resolve="info" />
-        <node concept="1$pBvo" id="48mTguK45il" role="2C_gVu">
-          <property role="XmNhe" value="false" />
+        <node concept="2C_Ik4" id="6hlAN$dK17h" role="2C_gVu">
+          <node concept="2C_I21" id="6hlAN$dK17i" role="2C_I26">
+            <ref role="2C_gVZ" node="6hlAN$dK17k" resolve="" />
+            <node concept="2fTWM$" id="6hlAN$dK17j" role="2C_gVu" />
+          </node>
+          <node concept="2C_Ik0" id="6hlAN$dK17k" role="2C_I24">
+            <property role="TrG5h" value="" />
+          </node>
         </node>
       </node>
       <node concept="2C_Ik0" id="7IHEnsdAb2p" role="2C_I24">
@@ -594,6 +601,16 @@
       <node concept="2C_Ik0" id="6hlAN$dv4xF" role="2C_I24">
         <property role="2C_Iks" value="3" />
         <property role="TrG5h" value="ddd" />
+      </node>
+      <node concept="2C_Ik0" id="6hlAN$dJGBT" role="2C_I24">
+        <property role="2C_Iks" value="2" />
+        <property role="TrG5h" value="Action_646" />
+      </node>
+      <node concept="2C_I21" id="6hlAN$dYEDo" role="2C_I26">
+        <ref role="2C_gVZ" node="6hlAN$dJGBT" resolve="Action_646" />
+        <node concept="1$pBvq" id="6hlAN$dYEDq" role="2C_gVu">
+          <property role="XmNiv" value="true" />
+        </node>
       </node>
     </node>
     <node concept="2smLJI" id="42GgdiBTiew" role="2smLJD">

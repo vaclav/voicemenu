@@ -20,53 +20,68 @@ import java.awt.event.ActionEvent;
 import JavaVoiceMenu.runtime.MacVoice;
 import java.io.IOException;
 
-public class Test160_ implements ActionListener {
+public class MY_TEST_ implements ActionListener {
 
 
-  public static Test160_ instance;
+  public static MY_TEST_ instance;
 
   public static void initHashMap() {
 
-    Event Home = new Event("Test160", "0");
+    Event Home = new Event("MY TEST", "0");
     Home.setAction("", true);
-    Home.setPlayBack("Welcome to " + "Test160");
+    Home.setPlayBack("Welcome to " + "MY TEST");
 
     Home.childs = new ArrayList<Event>();
     Home.isFinal = false;
-    Variables.main_Text = "Test160";
+    Variables.main_Text = "MY TEST";
 
     Variables.myHashMap.put("0", Home);
 
 
-    Event info_2032os_a0 = new Event("info", "2");
-    info_2032os_a0.isFinal = false;
-    info_2032os_a0.setAction("", false);
-    info_2032os_a0.playback = "/Users/jetbrains/Desktop/sample.wav";
-    info_2032os_a0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("02", info_2032os_a0);
-    Event _2032os_a0a0 = new Event("", "");
-    _2032os_a0a0.isFinal = false;
-    _2032os_a0a0.setAction("", false);
-    _2032os_a0a0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("02null", _2032os_a0a0);
-    _2032os_a0a0.childs = new ArrayList<Event>();
-    info_2032os_a0.childs = new ArrayList<Event>();
-    info_2032os_a0.childs.add(_2032os_a0a0);
+    Event dsa_i6fxvn_a0 = new Event("dsa", "6");
+    dsa_i6fxvn_a0.isFinal = false;
+    dsa_i6fxvn_a0.setAction("", false);
+    dsa_i6fxvn_a0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("06", dsa_i6fxvn_a0);
+    dsa_i6fxvn_a0.setAction("other", true);
+    dsa_i6fxvn_a0.childs = new ArrayList<Event>();
+    Event ddd_i6fxvn_b0 = new Event("ddd", "3");
+    ddd_i6fxvn_b0.isFinal = false;
+    ddd_i6fxvn_b0.setAction("", false);
+    ddd_i6fxvn_b0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("03", ddd_i6fxvn_b0);
+    ddd_i6fxvn_b0.setAction("other", true);
+    ddd_i6fxvn_b0.childs = new ArrayList<Event>();
+    Event Action_646_i6fxvn_c0 = new Event("Action_646", "2");
+    Action_646_i6fxvn_c0.isFinal = false;
+    Action_646_i6fxvn_c0.setAction("", false);
+    Action_646_i6fxvn_c0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("02", Action_646_i6fxvn_c0);
+    Event _i6fxvn_a0c0 = new Event("", "");
+    _i6fxvn_a0c0.isFinal = false;
+    _i6fxvn_a0c0.setAction("", false);
+    _i6fxvn_a0c0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("02null", _i6fxvn_a0c0);
+    _i6fxvn_a0c0.childs = new ArrayList<Event>();
+    Action_646_i6fxvn_c0.childs = new ArrayList<Event>();
+    Action_646_i6fxvn_c0.childs.add(_i6fxvn_a0c0);
 
-    Home.childs.add(info_2032os_a0);
+    Home.childs.add(dsa_i6fxvn_a0);
+    Home.childs.add(ddd_i6fxvn_b0);
+    Home.childs.add(Action_646_i6fxvn_c0);
 
 
     Variables.timeout = new Event("timeout", "X");
     Variables.timeout.playback = "";
-    Variables.timeout.duration = 5;
-    Variables.timeout.action = "record";
+    Variables.timeout.duration = 7;
+    Variables.timeout.action = "replay";
     Variables.timeout.isFinal = false;
   }
 
   public static void main(String[] args) {
     initHashMap();
-    instance = new Test160_();
-    Test160_.initHashMap();
+    instance = new MY_TEST_();
+    MY_TEST_.initHashMap();
     initView();
     Behaviour.runInitSetup();
 

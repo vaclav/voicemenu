@@ -84,8 +84,7 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
       result.add(new Menu_TransformationMenu.TMP_SubMenu_caopkk_a2());
     }
     if (ListSequence.fromListAndArray(new ArrayList<String>(), MenuLocations.CONTEXT_ACTIONS_TOOL).contains(_context.getMenuLocation())) {
-      result.add(new Menu_TransformationMenu.TMP_SubMenu_caopkk_a3());
-      result.add(new Menu_TransformationMenu.TMP_Action_caopkk_b3());
+      result.add(new Menu_TransformationMenu.TMP_Action_caopkk_a3());
     }
     return result;
   }
@@ -153,7 +152,7 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c6h;
+          return IconContainer.RESOURCE_a0a9c6h_0;
         }
         @Override
         public String getTooltipText() {
@@ -245,60 +244,12 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
 
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Menu_TransformationMenu.TMP_SubMenu_caopkk_a2.TMP_Action_caopkk_a0c(), new Menu_TransformationMenu.TMP_SubMenu_caopkk_a2.TMP_Action_caopkk_b0c());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Menu_TransformationMenu.TMP_SubMenu_caopkk_a2.TMP_Action_caopkk_a0c());
     }
     private class TMP_Action_caopkk_a0c extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
         return new Menu_TransformationMenu.TMP_SubMenu_caopkk_a2.TMP_Action_caopkk_a0c.Item(context);
-      }
-
-      private class Item extends ActionItemBase implements SidebarActionItem {
-        private final TransformationMenuContext _context;
-        private final EditorMenuTraceInfo myEditorMenuTraceInfo;
-        private Item(TransformationMenuContext context) {
-          _context = context;
-          _context.getEditorMenuTrace().pushTraceInfo();
-          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("single item: " + getLabelText(""), new SNodePointer("r:7c1e5bbb-2d18-4cf3-a11d-502be6b13261(jetbrains.mps.samples.VoiceMenu.editor)", "6198827212365002662")));
-          myEditorMenuTraceInfo = _context.getEditorMenuTrace().getTraceInfo();
-          context.getEditorMenuTrace().popTraceInfo();
-        }
-
-        @Nullable
-        @Override
-        public String getLabelText(String pattern) {
-          return "Add new Activity";
-        }
-
-        @Override
-        public void execute(@NotNull String pattern) {
-          SNode newActivity = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"));
-          SLinkOperations.setTarget(newActivity, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08d2L, "commands"), SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9c5c3L, "jetbrains.mps.samples.VoiceMenu.structure.Empty")));
-          ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities"))).addElement(newActivity);
-        }
-
-
-        @Override
-        public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c6i;
-        }
-        @Override
-        public String getTooltipText() {
-          return null;
-        }
-
-
-        @Override
-        public EditorMenuTraceInfo getTraceInfo() {
-          return myEditorMenuTraceInfo;
-        }
-      }
-
-    }
-    private class TMP_Action_caopkk_b0c extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
-      @Nullable
-      protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new Menu_TransformationMenu.TMP_SubMenu_caopkk_a2.TMP_Action_caopkk_b0c.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {
@@ -328,7 +279,7 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a9c7i;
+          return IconContainer.RESOURCE_a0a9c6i;
         }
         @Override
         public String getTooltipText() {
@@ -344,34 +295,10 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
 
     }
   }
-  public class TMP_SubMenu_caopkk_a3 extends SubMenuMenuTransformationMenuPart {
-    @Override
-    protected String getText(TransformationMenuContext _context) {
-      return "QuickFixes";
-    }
-
-    @NotNull
-    @Override
-    public TransformationMenuItem createItem(@NotNull TransformationMenuContext context) {
-      context.getEditorMenuTrace().pushTraceInfo();
-      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("submenu " + getText(context), new SNodePointer("r:7c1e5bbb-2d18-4cf3-a11d-502be6b13261(jetbrains.mps.samples.VoiceMenu.editor)", "5283568769197464867")));
-      try {
-        return super.createItem(context);
-      } finally {
-        context.getEditorMenuTrace().popTraceInfo();
-      }
-    }
-
-
-    @Override
-    protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList();
-    }
-  }
-  private class TMP_Action_caopkk_b3 extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+  private class TMP_Action_caopkk_a3 extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
     @Nullable
     protected TransformationMenuItem createItem(TransformationMenuContext context) {
-      return new Menu_TransformationMenu.TMP_Action_caopkk_b3.Item(context);
+      return new Menu_TransformationMenu.TMP_Action_caopkk_a3.Item(context);
     }
 
     private class Item extends ActionItemBase implements SidebarActionItem {
@@ -397,7 +324,7 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
         for (final SNode currentActvt : Sequence.fromIterable(activities)) {
           if (Sequence.fromIterable(activities).any(new IWhereFilter<SNode>() {
             public boolean accept(SNode it) {
-              return neq_caopkk_a0a0a0a0a0a0a1a6c01(it, currentActvt) && eq_caopkk_a0a0a0a0a0a0a1a6c01(SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), SPropertyOperations.getString(SLinkOperations.getTarget(currentActvt, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
+              return neq_caopkk_a0a0a0a0a0a0a1a6c9(it, currentActvt) && eq_caopkk_a0a0a0a0a0a0a1a6c9(SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), SPropertyOperations.getString(SLinkOperations.getTarget(currentActvt, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
             }
           })) {
             SNodeOperations.deleteNode(currentActvt);
@@ -411,7 +338,7 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
         for (final SNode currentActvt : Sequence.fromIterable(activities)) {
           if (Sequence.fromIterable(activities).any(new IWhereFilter<SNode>() {
             public boolean accept(SNode it) {
-              return neq_caopkk_a0a0a0a0a0a0a1a8c01(it, currentActvt) && eq_caopkk_a0a0a0a0a0a0a1a8c01(SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), SPropertyOperations.getString(SLinkOperations.getTarget(currentActvt, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
+              return neq_caopkk_a0a0a0a0a0a0a1a8c9(it, currentActvt) && eq_caopkk_a0a0a0a0a0a0a1a8c9(SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), SPropertyOperations.getString(SLinkOperations.getTarget(currentActvt, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
             }
           })) {
             return true;
@@ -422,7 +349,7 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
 
       @Override
       public IconResource getIcon() {
-        return IconContainer.RESOURCE_a0a01c01;
+        return IconContainer.RESOURCE_a0a01c9;
       }
       @Override
       public String getTooltipText() {
@@ -437,16 +364,16 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
     }
 
   }
-  private static boolean eq_caopkk_a0a0a0a0a0a0a1a6c01(Object a, Object b) {
+  private static boolean eq_caopkk_a0a0a0a0a0a0a1a6c9(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
-  private static boolean neq_caopkk_a0a0a0a0a0a0a1a6c01(Object a, Object b) {
+  private static boolean neq_caopkk_a0a0a0a0a0a0a1a6c9(Object a, Object b) {
     return !(((a != null ? a.equals(b) : a == b)));
   }
-  private static boolean eq_caopkk_a0a0a0a0a0a0a1a8c01(Object a, Object b) {
+  private static boolean eq_caopkk_a0a0a0a0a0a0a1a8c9(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
-  private static boolean neq_caopkk_a0a0a0a0a0a0a1a8c01(Object a, Object b) {
+  private static boolean neq_caopkk_a0a0a0a0a0a0a1a8c9(Object a, Object b) {
     return !(((a != null ? a.equals(b) : a == b)));
   }
 }

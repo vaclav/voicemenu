@@ -23,12 +23,14 @@ import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.openapi.editor.menus.transformation.ActionItemBase;
 import jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.SidebarActionItem;
 import jetbrains.mps.openapi.editor.menus.EditorMenuTraceInfo;
+import java.awt.Robot;
+import java.awt.AWTException;
+import jetbrains.mps.smodel.runtime.IconResource;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.editor.runtime.selection.SelectionUtil;
 import jetbrains.mps.openapi.editor.selection.SelectionManager;
-import jetbrains.mps.smodel.runtime.IconResource;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -94,12 +96,70 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
 
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Activity_TransformationMenu.TMP_SubMenu_rgk9zw_a0.TMP_Action_rgk9zw_a0a(), new Activity_TransformationMenu.TMP_SubMenu_rgk9zw_a0.TMP_Action_rgk9zw_b0a());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Activity_TransformationMenu.TMP_SubMenu_rgk9zw_a0.TMP_Action_rgk9zw_a0a(), new Activity_TransformationMenu.TMP_SubMenu_rgk9zw_a0.TMP_Action_rgk9zw_b0a(), new Activity_TransformationMenu.TMP_SubMenu_rgk9zw_a0.TMP_Action_rgk9zw_c0a());
     }
     private class TMP_Action_rgk9zw_a0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
         return new Activity_TransformationMenu.TMP_SubMenu_rgk9zw_a0.TMP_Action_rgk9zw_a0a.Item(context);
+      }
+
+      private class Item extends ActionItemBase implements SidebarActionItem {
+        private final TransformationMenuContext _context;
+        private final EditorMenuTraceInfo myEditorMenuTraceInfo;
+        private Item(TransformationMenuContext context) {
+          _context = context;
+          _context.getEditorMenuTrace().pushTraceInfo();
+          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("single item: " + getLabelText(""), new SNodePointer("r:7c1e5bbb-2d18-4cf3-a11d-502be6b13261(jetbrains.mps.samples.VoiceMenu.editor)", "971041030088529427")));
+          myEditorMenuTraceInfo = _context.getEditorMenuTrace().getTraceInfo();
+          context.getEditorMenuTrace().popTraceInfo();
+        }
+
+        @Nullable
+        @Override
+        public String getLabelText(String pattern) {
+          return "Step Back";
+        }
+
+        @Override
+        public void execute(@NotNull String pattern) {
+
+          try {
+            Robot r = new Robot();
+            r.keyPress(157);
+            r.keyPress(90);
+
+            r.keyRelease(90);
+            r.keyRelease(157);
+
+          } catch (AWTException e) {
+            e.printStackTrace();
+          }
+
+        }
+
+
+        @Override
+        public IconResource getIcon() {
+          return IconContainer.RESOURCE_a0a9c6h_1;
+        }
+        @Override
+        public String getTooltipText() {
+          return null;
+        }
+
+
+        @Override
+        public EditorMenuTraceInfo getTraceInfo() {
+          return myEditorMenuTraceInfo;
+        }
+      }
+
+    }
+    private class TMP_Action_rgk9zw_b0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+      @Nullable
+      protected TransformationMenuItem createItem(TransformationMenuContext context) {
+        return new Activity_TransformationMenu.TMP_SubMenu_rgk9zw_a0.TMP_Action_rgk9zw_b0a.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {
@@ -134,7 +194,7 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a01c6h_1;
+          return IconContainer.RESOURCE_a0a01c7h_0;
         }
         @Override
         public String getTooltipText() {
@@ -149,10 +209,10 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
       }
 
     }
-    private class TMP_Action_rgk9zw_b0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_rgk9zw_c0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new Activity_TransformationMenu.TMP_SubMenu_rgk9zw_a0.TMP_Action_rgk9zw_b0a.Item(context);
+        return new Activity_TransformationMenu.TMP_SubMenu_rgk9zw_a0.TMP_Action_rgk9zw_c0a.Item(context);
       }
 
       private class Item extends ActionItemBase implements SidebarActionItem {
@@ -186,7 +246,7 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a01c7h_1;
+          return IconContainer.RESOURCE_a0a01c8h_0;
         }
         @Override
         public String getTooltipText() {
@@ -270,7 +330,7 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a01c6i;
+          return IconContainer.RESOURCE_a0a01c6i_0;
         }
         @Override
         public String getTooltipText() {
@@ -339,7 +399,7 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a01c7i;
+          return IconContainer.RESOURCE_a0a01c7i_0;
         }
         @Override
         public String getTooltipText() {

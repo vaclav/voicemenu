@@ -128,7 +128,7 @@ public class JetBrains2_ implements ActionListener {
 
     Variables.timeout = new Event("timeout", "X");
     Variables.timeout.playback = "";
-    Variables.timeout.duration = 7;
+    Variables.timeout.duration = 0;
     Variables.timeout.action = "getInfo";
     Variables.timeout.isFinal = false;
   }
