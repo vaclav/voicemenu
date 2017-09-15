@@ -350,6 +350,7 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.BaseHelginsDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.TypoFile_NonTypesystemRule" file="TypoFile_NonTypesystemRule.java">
+    <classNode dependClassName="java.lang.Exception" />
     <classNode dependClassName="jetbrains.mps.errors.BaseQuickFixProvider" />
     <classNode dependClassName="jetbrains.mps.errors.IErrorReporter" />
     <classNode dependClassName="jetbrains.mps.errors.messageTargets.MessageTarget" />
