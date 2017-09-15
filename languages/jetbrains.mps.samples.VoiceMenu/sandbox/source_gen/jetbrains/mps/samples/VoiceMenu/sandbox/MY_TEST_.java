@@ -38,38 +38,22 @@ public class MY_TEST_ implements ActionListener {
     Variables.myHashMap.put("0", Home);
 
 
-    Event dsa_i6fxvn_a0 = new Event("dsa", "6");
-    dsa_i6fxvn_a0.isFinal = false;
-    dsa_i6fxvn_a0.setAction("", false);
-    dsa_i6fxvn_a0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("06", dsa_i6fxvn_a0);
-    dsa_i6fxvn_a0.setAction("other", true);
-    dsa_i6fxvn_a0.childs = new ArrayList<Event>();
-    Event ddd_i6fxvn_b0 = new Event("ddd", "3");
-    ddd_i6fxvn_b0.isFinal = false;
-    ddd_i6fxvn_b0.setAction("", false);
-    ddd_i6fxvn_b0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("03", ddd_i6fxvn_b0);
-    ddd_i6fxvn_b0.setAction("other", true);
-    ddd_i6fxvn_b0.childs = new ArrayList<Event>();
-    Event Action_646_i6fxvn_c0 = new Event("Action_646", "2");
-    Action_646_i6fxvn_c0.isFinal = false;
-    Action_646_i6fxvn_c0.setAction("", false);
-    Action_646_i6fxvn_c0.childs = new ArrayList<Event>();
-    Variables.myHashMap.put("02", Action_646_i6fxvn_c0);
-    Action_646_i6fxvn_c0.setAction("other", true);
-    Action_646_i6fxvn_c0.childs = new ArrayList<Event>();
+    Event Action_37_i6fxvn_a0 = new Event("Action_37", "8");
+    Action_37_i6fxvn_a0.isFinal = false;
+    Action_37_i6fxvn_a0.setAction("", false);
+    Action_37_i6fxvn_a0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("08", Action_37_i6fxvn_a0);
+    Action_37_i6fxvn_a0.setAction("hangUp", true);
+    Action_37_i6fxvn_a0.childs = new ArrayList<Event>();
 
-    Home.childs.add(dsa_i6fxvn_a0);
-    Home.childs.add(ddd_i6fxvn_b0);
-    Home.childs.add(Action_646_i6fxvn_c0);
+    Home.childs.add(Action_37_i6fxvn_a0);
 
 
     Variables.timeout = new Event("timeout", "X");
     Variables.timeout.playback = "";
     Variables.timeout.duration = 7;
-    Variables.timeout.action = "replay";
-    Variables.timeout.isFinal = false;
+    Variables.timeout.action = "getInfo";
+    Variables.timeout.isFinal = true;
   }
 
   public static void main(String[] args) {

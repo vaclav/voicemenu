@@ -17,19 +17,18 @@ import jetbrains.mps.make.script.IJobMonitor;
 import jetbrains.mps.make.resources.IPropertiesAccessor;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.util.ProgressMonitor;
-import jetbrains.mps.smodel.resources.MResource;
-import jetbrains.mps.internal.collections.runtime.LinkedListSequence;
-import java.util.LinkedList;
-import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
-import jetbrains.mps.internal.collections.runtime.IVisitor;
-import org.jetbrains.mps.openapi.model.SModel;
+import jetbrains.mps.smodel.resources.TResource;
+import jetbrains.mps.vfs.FileSystem;
+import jetbrains.mps.internal.make.runtime.util.DeltaReconciler;
+import jetbrains.mps.internal.make.runtime.util.FilesDelta;
+import jetbrains.mps.vfs.IFile;
 import jetbrains.mps.make.script.IConfig;
 import java.util.Map;
 import jetbrains.mps.make.script.IPropertiesPool;
 
 public class RenameXmlToHtml_Facet extends IFacet.Stub {
   private List<ITarget> targets = ListSequence.fromList(new ArrayList<ITarget>());
-  private IFacet.Name name = new IFacet.Name("null.RenameXmlToHtml");
+  private IFacet.Name name = new IFacet.Name("jetbrains.mps.samples.VoiceMenuToHTML.RenameXmlToHtml");
   public RenameXmlToHtml_Facet() {
     ListSequence.fromList(targets).addElement(new RenameXmlToHtml_Facet.Target_doRename());
   }
@@ -40,7 +39,7 @@ public class RenameXmlToHtml_Facet extends IFacet.Stub {
     return null;
   }
   public Iterable<IFacet.Name> required() {
-    return Sequence.fromArray(new IFacet.Name[]{new IFacet.Name("jetbrains.mps.lang.core.Generate")});
+    return Sequence.fromArray(new IFacet.Name[]{new IFacet.Name("jetbrains.mps.lang.core.TextGen"), new IFacet.Name("jetbrains.mps.lang.core.Generate")});
   }
   public Iterable<IFacet.Name> extended() {
     return null;
@@ -52,7 +51,7 @@ public class RenameXmlToHtml_Facet extends IFacet.Stub {
     return new RenameXmlToHtml_Facet.TargetProperties();
   }
   public static class Target_doRename implements ITargetEx {
-    private static final ITarget.Name name = new ITarget.Name("null.RenameXmlToHtml.doRename");
+    private static final ITarget.Name name = new ITarget.Name("jetbrains.mps.samples.VoiceMenuToHTML.RenameXmlToHtml.doRename");
     public Target_doRename() {
     }
     public IJob createJob() {
@@ -60,24 +59,36 @@ public class RenameXmlToHtml_Facet extends IFacet.Stub {
         @Override
         public IResult execute(final Iterable<IResource> rawInput, final IJobMonitor monitor, final IPropertiesAccessor pa, @NotNull final ProgressMonitor progressMonitor) {
           Iterable<IResource> _output_5y1u67_a0a = null;
-          final Iterable<MResource> input = (Iterable<MResource>) (Iterable) rawInput;
+          final Iterable<TResource> input = (Iterable<TResource>) (Iterable) rawInput;
           switch (0) {
             case 0:
-              LinkedListSequence.fromLinkedListNew(new LinkedList<Tuples._2<String, String>>());
-              Sequence.fromIterable(input).visitAll(new IVisitor<MResource>() {
-                public void visit(MResource inpt) {
-                  MResource resource = (MResource) inpt;
-                  Sequence.fromIterable(resource.models()).visitAll(new IVisitor<SModel>() {
-                    public void visit(SModel it) {
+              for (IResource resource : input) {
+                final TResource tres = ((TResource) resource);
+                FileSystem.getInstance().runWriteTransaction(new Runnable() {
+                  public void run() {
+                    new DeltaReconciler(tres.delta()).visitAll(new FilesDelta.Visitor() {
+                      @Override
+                      public boolean acceptWritten(IFile file) {
+                        doRename(file);
+                        return super.acceptWritten(file);
+                      }
 
-                      it.getName().getLongName().replace(".xml", ".html");
+                      @Override
+                      public boolean acceptKept(IFile file) {
+                        doRename(file);
+                        return super.acceptKept(file);
+                      }
+                      private void doRename(final IFile file) {
+                        String name = file.getName();
+                        if (name.endsWith(".html.xml")) {
+                          file.rename(name.substring(0, name.length() - 4));
+                        }
 
-                    }
-                  });
-
-                  // NOT WORKING NOW 
-                }
-              });
+                      }
+                    });
+                  }
+                });
+              }
             default:
               progressMonitor.done();
               return new IResult.SUCCESS(_output_5y1u67_a0a);
@@ -114,7 +125,7 @@ public class RenameXmlToHtml_Facet extends IFacet.Stub {
     }
     public Iterable<Class<? extends IResource>> expectedInput() {
       List<Class<? extends IResource>> rv = ListSequence.fromList(new ArrayList<Class<? extends IResource>>());
-      ListSequence.fromList(rv).addElement(MResource.class);
+      ListSequence.fromList(rv).addElement(TResource.class);
       return rv;
     }
     public Iterable<Class<? extends IResource>> expectedOutput() {
