@@ -350,7 +350,7 @@
     <node concept="2C_Ik4" id="6HhgIFXTyQ3" role="2JqgbB">
       <node concept="2C_I21" id="7IHEnsdAb2n" role="2C_I26">
         <property role="3upAMh" value="/Users/jetbrains/Desktop/sample.wav" />
-        <property role="2tub0X" value="true" />
+        <property role="2tub0X" value="false" />
         <ref role="2C_gVZ" node="7IHEnsdAb2p" resolve="Info" />
         <node concept="1$pBvo" id="2T27OaN$NBF" role="2C_gVu">
           <property role="XmNhe" value="true" />
@@ -579,11 +579,31 @@
         <property role="2C_Iks" value="8" />
         <property role="TrG5h" value="Action_37" />
       </node>
+      <node concept="2C_Ik0" id="3CsZFp2ijOP" role="2C_I24">
+        <property role="2C_Iks" value="4" />
+        <property role="TrG5h" value="gggggg" />
+      </node>
+      <node concept="2C_Ik0" id="3CsZFp2ijOS" role="2C_I24">
+        <property role="2C_Iks" value="0" />
+        <property role="TrG5h" value="gsgds" />
+      </node>
       <node concept="2C_I21" id="3CsZFp1$MmG" role="2C_I26">
-        <property role="2tub0X" value="true" />
+        <property role="2tub0X" value="false" />
         <property role="3upAMh" value="file.txt" />
         <ref role="2C_gVZ" node="3CsZFp1$MmI" resolve="Action_37" />
         <node concept="X09Yy" id="3CsZFp1DyG4" role="2C_gVu" />
+      </node>
+      <node concept="2C_I21" id="3CsZFp2ijOW" role="2C_I26">
+        <ref role="2C_gVZ" node="3CsZFp2ijOP" resolve="gggggg" />
+        <node concept="1$pBvq" id="3CsZFp2ijOY" role="2C_gVu">
+          <property role="XmNiv" value="true" />
+        </node>
+      </node>
+      <node concept="2C_I21" id="3CsZFp2ijP0" role="2C_I26">
+        <ref role="2C_gVZ" node="3CsZFp2ijOS" resolve="gsgds" />
+        <node concept="1$pBvq" id="3CsZFp2ijP2" role="2C_gVu">
+          <property role="XmNiv" value="true" />
+        </node>
       </node>
     </node>
     <node concept="2smLJI" id="42GgdiBTiew" role="2smLJD">

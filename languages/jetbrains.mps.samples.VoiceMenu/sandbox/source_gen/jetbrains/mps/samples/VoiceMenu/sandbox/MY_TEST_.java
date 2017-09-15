@@ -41,12 +41,29 @@ public class MY_TEST_ implements ActionListener {
     Event Action_37_i6fxvn_a0 = new Event("Action_37", "8");
     Action_37_i6fxvn_a0.isFinal = false;
     Action_37_i6fxvn_a0.setAction("", false);
+    Action_37_i6fxvn_a0.playback = "file.txt";
     Action_37_i6fxvn_a0.childs = new ArrayList<Event>();
     Variables.myHashMap.put("08", Action_37_i6fxvn_a0);
     Action_37_i6fxvn_a0.setAction("hangUp", true);
     Action_37_i6fxvn_a0.childs = new ArrayList<Event>();
+    Event gggggg_i6fxvn_b0 = new Event("gggggg", "4");
+    gggggg_i6fxvn_b0.isFinal = false;
+    gggggg_i6fxvn_b0.setAction("", false);
+    gggggg_i6fxvn_b0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("04", gggggg_i6fxvn_b0);
+    gggggg_i6fxvn_b0.setAction("other", true);
+    gggggg_i6fxvn_b0.childs = new ArrayList<Event>();
+    Event gsgds_i6fxvn_c0 = new Event("gsgds", "0");
+    gsgds_i6fxvn_c0.isFinal = false;
+    gsgds_i6fxvn_c0.setAction("", false);
+    gsgds_i6fxvn_c0.childs = new ArrayList<Event>();
+    Variables.myHashMap.put("00", gsgds_i6fxvn_c0);
+    gsgds_i6fxvn_c0.setAction("other", true);
+    gsgds_i6fxvn_c0.childs = new ArrayList<Event>();
 
     Home.childs.add(Action_37_i6fxvn_a0);
+    Home.childs.add(gggggg_i6fxvn_b0);
+    Home.childs.add(gsgds_i6fxvn_c0);
 
 
     Variables.timeout = new Event("timeout", "X");
