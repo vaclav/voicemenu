@@ -350,7 +350,7 @@
     <node concept="2C_Ik4" id="6HhgIFXTyQ3" role="2JqgbB">
       <node concept="2C_I21" id="7IHEnsdAb2n" role="2C_I26">
         <property role="3upAMh" value="/Users/jetbrains/Desktop/sample.wav" />
-        <property role="2tub0X" value="false" />
+        <property role="2tub0X" value="true" />
         <ref role="2C_gVZ" node="7IHEnsdAb2p" resolve="Info" />
         <node concept="1$pBvo" id="2T27OaN$NBF" role="2C_gVu">
           <property role="XmNhe" value="true" />
