@@ -96,8 +96,12 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     if (nodeCondition_luypn2_a8a0()) {
       editorCell.addEditorCell(createProperty_luypn2_i0a());
     }
-    editorCell.addEditorCell(createConstant_luypn2_j0a());
-    editorCell.addEditorCell(createImage_luypn2_k0a());
+    if (nodeCondition_luypn2_a9a0()) {
+      editorCell.addEditorCell(createConstant_luypn2_j0a());
+    }
+    if (nodeCondition_luypn2_a01a0()) {
+      editorCell.addEditorCell(createImage_luypn2_k0a());
+    }
     editorCell.addEditorCell(createConstant_luypn2_l0a());
     editorCell.addEditorCell(createRefNode_luypn2_m0a());
     return editorCell;
@@ -115,6 +119,12 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     return isNotEmptyString(SPropertyOperations.getString(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback"))) && !(SPropertyOperations.getBoolean(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile")));
   }
   private boolean nodeCondition_luypn2_a8a0() {
+    return isNotEmptyString(SPropertyOperations.getString(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")));
+  }
+  private boolean nodeCondition_luypn2_a9a0() {
+    return isNotEmptyString(SPropertyOperations.getString(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")));
+  }
+  private boolean nodeCondition_luypn2_a01a0() {
     return isNotEmptyString(SPropertyOperations.getString(myNode, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")));
   }
   private SNode _StyleParameter_QueryFunction_luypn2_a0a0() {
@@ -370,6 +380,9 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
   private EditorCell createConstant_luypn2_j0a() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
     editorCell.setCellId("Constant_luypn2_j0a");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, false);
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -380,7 +393,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     imagePath = "${module}/src/Refresh.png";
     EditorCell_Image editorCell = EditorCell_Image.createImageCell(getEditorContext(), myNode, imageModule, imagePath);
     editorCell.setCellId("Image_luypn2_k0a");
-    RefreshFileTextrecognition.setCellActions(editorCell, myNode, getEditorContext());
+    RefreshFileTextRecognition.setCellActions(editorCell, myNode, getEditorContext());
     editorCell.setDescent(-150);
     return editorCell;
   }

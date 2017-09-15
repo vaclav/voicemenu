@@ -580,6 +580,8 @@
         <property role="TrG5h" value="Action_37" />
       </node>
       <node concept="2C_I21" id="3CsZFp1$MmG" role="2C_I26">
+        <property role="2tub0X" value="true" />
+        <property role="3upAMh" value="file.txt" />
         <ref role="2C_gVZ" node="3CsZFp1$MmI" resolve="Action_37" />
         <node concept="X09Yy" id="3CsZFp1DyG4" role="2C_gVu" />
       </node>
