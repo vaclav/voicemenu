@@ -7,7 +7,7 @@
     <use id="e2a803a4-d4b8-43eb-b458-517effd2a87f" name="jetbrains.mps.samples.VoiceMenuToAsterisk" version="-1" />
     <use id="0b30ef64-0c5e-4567-b992-9bf5bbc44c0a" name="jetbrains.mps.samples.VoiceMenuToHTML" version="-1" />
     <use id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" version="-1" />
-    <engage id="0b30ef64-0c5e-4567-b992-9bf5bbc44c0a" name="jetbrains.mps.samples.VoiceMenuToHTML" />
+    <engage id="e2a803a4-d4b8-43eb-b458-517effd2a87f" name="jetbrains.mps.samples.VoiceMenuToAsterisk" />
   </languages>
   <imports>
     <import index="oici" ref="r:d8d37b74-a8e1-4a57-a2ee-4a996f4ba158(JavaVoiceMenu.runtime)" />
@@ -594,6 +594,8 @@
         <node concept="X09Yy" id="3CsZFp1DyG4" role="2C_gVu" />
       </node>
       <node concept="2C_I21" id="3CsZFp2ijOW" role="2C_I26">
+        <property role="3upAMh" value="Choose from.wav" />
+        <property role="2tub0X" value="false" />
         <ref role="2C_gVZ" node="3CsZFp2ijOP" resolve="gggggg" />
         <node concept="1$pBvq" id="3CsZFp2ijOY" role="2C_gVu">
           <property role="XmNiv" value="false" />
