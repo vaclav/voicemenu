@@ -354,18 +354,13 @@ public class QueriesGenerated {
 
     String path = System.getProperty("user.home") + "/MPS_ASTERISK/";
 
-    try {
-      Runtime.getRuntime().exec("rm " + path + "/*");
-    } catch (Exception e) {
-      System.out.println("Cant delete old records");
-    }
     String name = "record";
 
     for (SNode actvt : ListSequence.fromList(SModelOperations.nodes(_context.getModel(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity")))) {
       if (!(SPropertyOperations.getBoolean(actvt, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile")))) {
         try {
           name = "";
-          name += _context.createUniqueName(SPropertyOperations.getString(SLinkOperations.getTarget(actvt, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).toString(), null);
+          name += SPropertyOperations.getString(SLinkOperations.getTarget(actvt, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
         } catch (Exception e) {
         }
         Voice voice;
@@ -379,6 +374,19 @@ public class QueriesGenerated {
         tmpPlayer.close();
       }
     }
+
+    Voice voice;
+    VoiceManager voiceManager = VoiceManager.getInstance();
+    voice = voiceManager.getVoice("kevin16");
+    voice.allocate();
+    name = SPropertyOperations.getString(ListSequence.fromList(SModelOperations.roots(_context.getModel(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace"))).first(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
+    AudioPlayer tmpPlayer = new SingleFileAudioPlayer(path + name, AudioFileFormat.Type.WAVE);
+    voice.setAudioPlayer(tmpPlayer);
+    voice.speak(SPropertyOperations.getString(ListSequence.fromList(SModelOperations.roots(_context.getModel(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace"))).first(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "info")));
+    voice.deallocate();
+    tmpPlayer.close();
+
+
 
   }
   private static boolean eq_x583g4_a0a0a0a0a0a0w(Object a, Object b) {
