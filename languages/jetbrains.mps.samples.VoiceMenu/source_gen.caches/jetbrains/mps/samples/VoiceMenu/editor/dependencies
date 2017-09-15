@@ -180,8 +180,10 @@
   <dependency className="jetbrains.mps.samples.VoiceMenu.editor.Command_TransformationMenu" file="Command_TransformationMenu.java">
     <classNode dependClassName="java.awt.AWTException" />
     <classNode dependClassName="java.awt.Robot" />
+    <classNode dependClassName="java.awt.event.KeyEvent" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.HashSet" />

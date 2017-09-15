@@ -33,6 +33,7 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import java.awt.event.KeyEvent;
 import java.awt.Robot;
 import java.awt.AWTException;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
@@ -368,13 +369,21 @@ public class Command_TransformationMenu extends TransformationMenuBase {
         @Override
         public void execute(@NotNull String pattern) {
 
+          String localOS = System.getProperty("os.name").toLowerCase();
+          int Z = 90;
+          int cmd = KeyEvent.VK_CONTROL;
+
+          if (localOS.contains("mac")) {
+            cmd = 157;
+          }
+
           try {
             Robot r = new Robot();
-            r.keyPress(157);
-            r.keyPress(90);
+            r.keyPress(cmd);
+            r.keyPress(Z);
 
-            r.keyRelease(90);
-            r.keyRelease(157);
+            r.keyRelease(Z);
+            r.keyRelease(cmd);
 
           } catch (AWTException e) {
             e.printStackTrace();
