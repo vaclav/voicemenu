@@ -61,7 +61,7 @@
       <component>
         <version codename="voicemenu" major="1" minor="0" eap="false" />
         <build number="${build.number}" date="${date}" />
-        <logo url="/splash.png" textcolor="002387" />
+        <logo url="/test.png" textcolor="002387" />
         <about url="/about.png" />
         <icon size32="/MPS32.png" size16="/MPS16.png" size32opaque="/MPS32.png" />
         <package code="code" />
@@ -78,7 +78,7 @@
       <fileset file="${basedir}/icons/MPS16.png" />
       <fileset file="${basedir}/icons/MPS32.png" />
       <fileset file="${basedir}/icons/logo.png" />
-      <fileset file="${basedir}/icons/splash.png" />
+      <fileset file="${basedir}/icons/test.png" />
       <fileset file="${basedir}/icons/about.png" />
       <fileset dir="${build.tmp}/default/branding.jar" />
     </jar>

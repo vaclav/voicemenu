@@ -132,9 +132,6 @@ public class FixAll {
           LoggingRuntime.logMsgView(Level.INFO, "Init Empty Menu", FixAll.class, null, null);
 
         }
-
-
-
         // ............................................................. remove empty 
         if (ListSequence.fromList(SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"), false, new SAbstractConcept[]{})).any(new IWhereFilter<SNode>() {
           public boolean accept(SNode it) {
@@ -177,6 +174,8 @@ public class FixAll {
           break;
         }
       }
+      // ............................................................. Init Main Menu 
+
       if (ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x5b6b060cf40204ebL, "bodyMenu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"))).isEmpty() || ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x5b6b060cf40204ebL, "bodyMenu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities"))).isEmpty()) {
 
         SNode newActivity = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"));
@@ -189,8 +188,24 @@ public class FixAll {
         ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x5b6b060cf40204ebL, "bodyMenu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"))).addElement(newEvent);
         SLinkOperations.setTarget(newActivity, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event"), newEvent);
         LoggingRuntime.logMsgView(Level.INFO, "Init Main Menu", FixAll.class, null, null);
-
       }
+      // ............................................................. remove Duplicate Actions 
+
+
+      List<SNode> duplicateMenus = SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu"), false, new SAbstractConcept[]{});
+
+      Iterable<SNode> activities = SLinkOperations.collectMany(duplicateMenus, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities"));
+      for (final SNode currentActivity : Sequence.fromIterable(activities)) {
+        if (Sequence.fromIterable(activities).any(new IWhereFilter<SNode>() {
+          public boolean accept(SNode it) {
+            return neq_heizli_a0a0a0a0a0a0a11a3c(it, currentActivity) && eq_heizli_a0a0a0a0a0a0a11a3c(SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), SPropertyOperations.getString(SLinkOperations.getTarget(currentActivity, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
+          }
+        })) {
+          SNodeOperations.deleteNode(currentActivity);
+          LoggingRuntime.logMsgView(Level.INFO, "Duplicate Activity", FixAll.class, null, null);
+        }
+      }
+      // ............................................................. Resolve File / Playback 
 
       for (SNode actvt : ListSequence.fromList(SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"), false, new SAbstractConcept[]{}))) {
         try {
@@ -223,6 +238,12 @@ public class FixAll {
     }
     private static boolean isEmptyString(String str) {
       return str == null || str.length() == 0;
+    }
+    private static boolean eq_heizli_a0a0a0a0a0a0a11a3c(Object a, Object b) {
+      return (a != null ? a.equals(b) : a == b);
+    }
+    private static boolean neq_heizli_a0a0a0a0a0a0a11a3c(Object a, Object b) {
+      return !(((a != null ? a.equals(b) : a == b)));
     }
   }
 }
