@@ -22,11 +22,14 @@ public class PlayBacktoText_NonTypesystemRule extends AbstractNonTypesystemRule_
   public void applyRule(final SNode activity, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
     if (SPropertyOperations.getBoolean(activity, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile"))) {
       try {
-        File tmp = new File(SPropertyOperations.getString(activity, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")));
+
+        String path = System.getProperty("user.home") + "/MPS_ASTERISK";
+
+        File tmp = new File(path + "/" + SPropertyOperations.getString(activity, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")));
         if (!(tmp.isFile())) {
           {
             MessageTarget errorTarget = new NodeMessageTarget();
-            IErrorReporter _reporter_2309309498 = typeCheckingContext.reportWarning(activity, "Is Text", "r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)", "3333261045545357169", null, errorTarget);
+            IErrorReporter _reporter_2309309498 = typeCheckingContext.reportWarning(activity, "Is Text", "r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)", "4187501812310882417", null, errorTarget);
             {
               BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("jetbrains.mps.samples.VoiceMenu.typesystem.TransformPBtoText_QuickFix", true);
               intentionProvider.putArgument("activity", activity);
@@ -34,6 +37,7 @@ public class PlayBacktoText_NonTypesystemRule extends AbstractNonTypesystemRule_
             }
           }
         }
+
       } catch (Exception e) {
       }
     }
