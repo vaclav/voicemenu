@@ -51,7 +51,6 @@ public final class toFile_Intention extends AbstractIntentionDescriptor implemen
     public void execute(final SNode node, final EditorContext editorContext) {
       try {
         File tmp = new File(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")));
-
         if (tmp.isFile()) {
           SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile"), "" + (true));
         } else {
