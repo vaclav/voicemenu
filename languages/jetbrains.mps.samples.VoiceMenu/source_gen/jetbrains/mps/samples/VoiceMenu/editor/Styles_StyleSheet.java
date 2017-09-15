@@ -144,7 +144,7 @@ public class Styles_StyleSheet {
       style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.darkGray));
       style.set(StyleAttributes.SHOW_BOUNDARIES_IN, ShowBoundariesArea.GUTTER);
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
-      style.set(StyleAttributes.FONT_SIZE, 11);
+      style.set(StyleAttributes.FONT_SIZE, 17);
     }
 
   }
@@ -158,7 +158,7 @@ public class Styles_StyleSheet {
       style.set(StyleAttributes.SHOW_BOUNDARIES_IN, ShowBoundariesArea.GUTTER);
       style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.black));
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
-      style.set(StyleAttributes.FONT_SIZE, 13);
+      style.set(StyleAttributes.FONT_SIZE, 20);
     }
 
   }
@@ -171,7 +171,7 @@ public class Styles_StyleSheet {
     public void apply(Style style, EditorCell editorCell) {
       style.set(StyleAttributes.SHOW_BOUNDARIES_IN, ShowBoundariesArea.GUTTER);
       style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.DARK_MAGENTA));
-      style.set(StyleAttributes.FONT_SIZE, 13);
+      style.set(StyleAttributes.FONT_SIZE, 20);
     }
 
   }
@@ -195,7 +195,7 @@ public class Styles_StyleSheet {
     public void apply(Style style, EditorCell editorCell) {
       style.set(StyleAttributes.SHOW_BOUNDARIES_IN, ShowBoundariesArea.GUTTER);
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
-      style.set(StyleAttributes.FONT_SIZE, 11);
+      style.set(StyleAttributes.FONT_SIZE, 17);
       style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(new Color(5606191)));
     }
 

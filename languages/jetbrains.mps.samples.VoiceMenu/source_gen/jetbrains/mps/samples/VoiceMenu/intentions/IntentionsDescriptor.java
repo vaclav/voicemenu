@@ -73,11 +73,15 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
       case 3:
         if (true) {
           // Concept: WorkSpace 
-          intentions = new IntentionFactory[4];
+          intentions = new IntentionFactory[8];
           intentions[0] = new Remove_Main_Playback_Intention();
           intentions[1] = new ViewAsTabular_Intention();
           intentions[2] = new ShowToolbar_Intention();
           intentions[3] = new Add_Main_Playback_Intention();
+          intentions[4] = new SwitchGeneratorToHTML_Intention();
+          intentions[5] = new SwitchGeneratorToXML_Intention();
+          intentions[6] = new SwitchGeneratorToJavaSimulator_Intention();
+          intentions[7] = new SwitchGeneratorToAsterisk_Intention();
         }
         break;
       default:
@@ -89,7 +93,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
   @NotNull
   @Override
   public Collection<IntentionFactory> getAllIntentions() {
-    IntentionFactory[] rv = new IntentionFactory[25];
+    IntentionFactory[] rv = new IntentionFactory[29];
     rv[0] = new Remove_Playback_Intention();
     rv[1] = new Remove_Main_Playback_Intention();
     rv[2] = new InitializeNewEvent_Intention();
@@ -115,6 +119,10 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
     rv[22] = new Add_Playback_Intention();
     rv[23] = new Add_Main_Playback_Intention();
     rv[24] = new toFile_Intention();
+    rv[25] = new SwitchGeneratorToHTML_Intention();
+    rv[26] = new SwitchGeneratorToXML_Intention();
+    rv[27] = new SwitchGeneratorToJavaSimulator_Intention();
+    rv[28] = new SwitchGeneratorToAsterisk_Intention();
     return Arrays.asList(rv);
   }
   private static final ConceptSwitchIndex index_hphjzv_d0f = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d133997fdc5L), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L)).seal();
