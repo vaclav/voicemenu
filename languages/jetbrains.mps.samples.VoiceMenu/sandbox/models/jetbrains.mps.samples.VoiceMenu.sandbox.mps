@@ -2,11 +2,11 @@
 <model ref="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu" version="-1" />
-    <use id="750ae49d-4f57-400c-b5dc-2b58c1e3f9a9" name="jetbrains.mps.samples.VoiceMenuToXML" version="-1" />
-    <use id="e2a803a4-d4b8-43eb-b458-517effd2a87f" name="jetbrains.mps.samples.VoiceMenuToAsterisk" version="-1" />
-    <use id="0b30ef64-0c5e-4567-b992-9bf5bbc44c0a" name="jetbrains.mps.samples.VoiceMenuToHTML" version="-1" />
-    <use id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" version="-1" />
+    <use id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu" version="0" />
+    <use id="750ae49d-4f57-400c-b5dc-2b58c1e3f9a9" name="jetbrains.mps.samples.VoiceMenuToXML" version="0" />
+    <use id="e2a803a4-d4b8-43eb-b458-517effd2a87f" name="jetbrains.mps.samples.VoiceMenuToAsterisk" version="0" />
+    <use id="0b30ef64-0c5e-4567-b992-9bf5bbc44c0a" name="jetbrains.mps.samples.VoiceMenuToHTML" version="0" />
+    <use id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" version="0" />
     <engage id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" />
   </languages>
   <imports>
@@ -575,40 +575,20 @@
     <property role="1EJLKn" value="true" />
     <property role="TrG5h" value="MY TEST" />
     <node concept="2C_Ik4" id="1ychykAt_Ns" role="2JqgbB">
-      <node concept="2C_I21" id="6hlAN$dHYUy" role="2C_I26">
-        <ref role="2C_gVZ" node="1ychykAt_NA" resolve="dsa" />
-        <node concept="1$pBvq" id="6hlAN$dHYU$" role="2C_gVu">
-          <property role="XmNiv" value="true" />
-        </node>
+      <node concept="2C_Ik0" id="3CsZFp1$MmI" role="2C_I24">
+        <property role="2C_Iks" value="8" />
+        <property role="TrG5h" value="Action_37" />
       </node>
-      <node concept="2C_I21" id="6hlAN$dHYUE" role="2C_I26">
-        <ref role="2C_gVZ" node="6hlAN$dv4xF" resolve="ddd" />
-        <node concept="1$pBvq" id="6hlAN$dHYUG" role="2C_gVu">
-          <property role="XmNiv" value="true" />
-        </node>
-      </node>
-      <node concept="2C_I21" id="6hlAN$dYEDo" role="2C_I26">
-        <ref role="2C_gVZ" node="6hlAN$dJGBT" resolve="Action_646" />
-        <node concept="1$pBvq" id="6hlAN$dYEDq" role="2C_gVu">
-          <property role="XmNiv" value="true" />
-        </node>
-      </node>
-      <node concept="2C_Ik0" id="1ychykAt_NA" role="2C_I24">
-        <property role="2C_Iks" value="6" />
-        <property role="TrG5h" value="dsa" />
-      </node>
-      <node concept="2C_Ik0" id="6hlAN$dv4xF" role="2C_I24">
-        <property role="2C_Iks" value="3" />
-        <property role="TrG5h" value="ddd" />
-      </node>
-      <node concept="2C_Ik0" id="6hlAN$dJGBT" role="2C_I24">
-        <property role="2C_Iks" value="2" />
-        <property role="TrG5h" value="Action_646" />
+      <node concept="2C_I21" id="3CsZFp1$MmG" role="2C_I26">
+        <ref role="2C_gVZ" node="3CsZFp1$MmI" resolve="Action_37" />
+        <node concept="X09Yy" id="3CsZFp1DyG4" role="2C_gVu" />
       </node>
     </node>
     <node concept="2smLJI" id="42GgdiBTiew" role="2smLJD">
       <property role="2smLJF" value="7" />
-      <node concept="2m1r4j" id="42GgdiBTiex" role="2sfXcw" />
+      <node concept="1$pBvo" id="PTPaKdGXDX" role="2sfXcw">
+        <property role="XmNhe" value="true" />
+      </node>
     </node>
   </node>
 </model>
