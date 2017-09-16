@@ -1,17 +1,26 @@
 Asterisk IVR language
 ======================
+Asterisk IVR language contain syntax that is used in extensions.conf that is one of the most used and most important configuration file in Asterisk because it contains the dialplan.
 
-The Dialplan consists of a collection of contexts in extensions.conf file. A context is a collection of extensions and is defined in brackets above extensions ```[context]```
 
 Syntax
 ------
+The Dialplan consists of a collection of contexts in extensions.conf file. A context is a collection of extensions and is defined in brackets above extensions ```[context]``` Each extension contains action, number defines priority (second) and the trigger (first)
+
 ```
-[default]
+[context]
 exten => 123,1,Answer
 exten => 123,2,Playback(intro)
-exten => 123,3,Voicemail(1)
-exten => 123,4,Hangup
+exten => 123,3,Hangup
 ```
+
+There are some important predefined extension names:
+
+```i``` Invalid
+
+```s``` Start
+
+```t``` Timeout
 
 
 Example
