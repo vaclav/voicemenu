@@ -20,6 +20,8 @@ Modules
 * [XML Generator](https://github.com/vaclav/voicemenu/tree/master/languages/jetbrains.mps.samples.VoiceMenuToXML) - Generation of XML file
 * [HTML Generator](https://github.com/vaclav/voicemenu/tree/master/languages/jetbrains.mps.samples.VoiceMenuToHTML_2) - Generation of HTML usable as visual documentation of the structure
 * [Java Generator](https://github.com/vaclav/voicemenu/tree/master/languages/jetbrains.mps.samples.VoiceMenuToJava) - Generation of a runable application (simulator)
+* [Asterisk Generator](https://github.com/vaclav/voicemenu/tree/master/languages/jetbrains.mps.samples.VoiceMenuToAsterisk) - Generation of a Asterisk IVR extensions file
+* [Asterisk Language](https://github.com/vaclav/voicemenu/tree/master/languages/jetbrains.mps.samples.Text) - Base structure of Asterisk IVR language
 
 Sample
 ------
