@@ -471,7 +471,7 @@
     </file>
   </root>
   <root nodeRef="r:d92c1500-00d3-4072-866a-5077893293b8(jetbrains.mps.samples.VoiceMenu.intentions)/3333261045543359069">
-    <file name="toFile_Intention.java">
+    <file name="ToFile_Intention.java">
       <node id="3333261045543359069" at="23,0,24,0" concept="3" trace="myCachedExecutable" />
       <node id="3333261045543359069" at="24,29,25,157" concept="11" />
       <node id="3333261045543359069" at="28,35,29,20" concept="8" />
@@ -493,7 +493,7 @@
       <node id="3333261045543359069" at="46,0,48,0" concept="1" trace="IntentionImplementation#()V" />
       <node id="2725727231239932823" at="52,12,54,7" concept="0" />
       <node id="2725727231235583160" at="68,14,70,9" concept="0" />
-      <node id="3333261045543359069" at="24,0,27,0" concept="1" trace="toFile_Intention#()V" />
+      <node id="3333261045543359069" at="24,0,27,0" concept="1" trace="ToFile_Intention#()V" />
       <node id="3333261045543359069" at="39,99,42,5" concept="5" />
       <node id="4187501812294987809" at="59,0,62,7" concept="5" />
       <node id="3333261045543359069" at="27,0,31,0" concept="6" trace="getPresentation#()Ljava/lang/String;" />
@@ -551,8 +551,8 @@
         <var name="editorContext" id="3333261045543359069" />
         <var name="node" id="3333261045543359069" />
       </scope>
-      <unit id="3333261045543359069" at="45,0,80,0" name="jetbrains.mps.samples.VoiceMenu.intentions.toFile_Intention$IntentionImplementation" />
-      <unit id="3333261045543359069" at="22,0,81,0" name="jetbrains.mps.samples.VoiceMenu.intentions.toFile_Intention" />
+      <unit id="3333261045543359069" at="45,0,80,0" name="jetbrains.mps.samples.VoiceMenu.intentions.ToFile_Intention$IntentionImplementation" />
+      <unit id="3333261045543359069" at="22,0,81,0" name="jetbrains.mps.samples.VoiceMenu.intentions.ToFile_Intention" />
     </file>
   </root>
   <root nodeRef="r:d92c1500-00d3-4072-866a-5077893293b8(jetbrains.mps.samples.VoiceMenu.intentions)/3919338464396174374">

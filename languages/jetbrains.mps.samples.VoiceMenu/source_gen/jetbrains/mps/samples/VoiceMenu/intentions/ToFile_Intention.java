@@ -19,14 +19,14 @@ import java.nio.file.Paths;
 import java.io.File;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 
-public final class toFile_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
+public final class ToFile_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
-  public toFile_Intention() {
+  public ToFile_Intention() {
     super(Kind.NORMAL, false, new SNodePointer("r:d92c1500-00d3-4072-866a-5077893293b8(jetbrains.mps.samples.VoiceMenu.intentions)", "3333261045543359069"));
   }
   @Override
   public String getPresentation() {
-    return "toFile";
+    return "ToFile";
   }
   @Override
   public boolean isApplicable(final SNode node, final EditorContext editorContext) {
@@ -38,7 +38,7 @@ public final class toFile_Intention extends AbstractIntentionDescriptor implemen
   }
   public Collection<IntentionExecutable> instances(final SNode node, final EditorContext context) {
     if (myCachedExecutable == null) {
-      myCachedExecutable = Collections.<IntentionExecutable>singletonList(new toFile_Intention.IntentionImplementation());
+      myCachedExecutable = Collections.<IntentionExecutable>singletonList(new ToFile_Intention.IntentionImplementation());
     }
     return myCachedExecutable;
   }
@@ -74,7 +74,7 @@ public final class toFile_Intention extends AbstractIntentionDescriptor implemen
     }
     @Override
     public IntentionDescriptor getDescriptor() {
-      return toFile_Intention.this;
+      return ToFile_Intention.this;
     }
   }
 }

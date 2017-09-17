@@ -56,7 +56,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
           intentions[2] = new RemoveActivityWithEvent_Intention();
           intentions[3] = new DeclareActivity_Intention();
           intentions[4] = new Add_Playback_Intention();
-          intentions[5] = new toFile_Intention();
+          intentions[5] = new ToFile_Intention();
         }
         break;
       case 2:
@@ -118,7 +118,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
     rv[21] = new changeToReplay_Intention();
     rv[22] = new Add_Playback_Intention();
     rv[23] = new Add_Main_Playback_Intention();
-    rv[24] = new toFile_Intention();
+    rv[24] = new ToFile_Intention();
     rv[25] = new SwitchGeneratorToHTML_Intention();
     rv[26] = new SwitchGeneratorToXML_Intention();
     rv[27] = new SwitchGeneratorToJavaSimulator_Intention();
