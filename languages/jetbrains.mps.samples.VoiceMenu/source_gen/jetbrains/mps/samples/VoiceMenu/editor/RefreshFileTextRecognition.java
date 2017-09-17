@@ -9,11 +9,11 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.editor.runtime.cells.AbstractCellAction;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.io.File;
 import jetbrains.mps.baseLanguage.logging.runtime.model.LoggingRuntime;
 import org.apache.log4j.Level;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.io.IOException;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
@@ -36,6 +36,10 @@ public class RefreshFileTextRecognition {
     public void execute_internal(EditorContext editorContext, SNode node) {
 
       String path = System.getProperty("user.home") + "/MPS_ASTERISK";
+
+      if (!(Files.exists(Paths.get(path)))) {
+        new File(path).mkdir();
+      }
 
       try {
         File currentDirectory = new File(new File(".").getAbsolutePath());
