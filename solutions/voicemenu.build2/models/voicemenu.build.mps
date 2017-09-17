@@ -777,6 +777,18 @@
               <ref role="3bR37D" node="5ruKdSwyes2" resolve="jetbrains.mps.samples.VoiceMenu" />
             </node>
           </node>
+          <node concept="1SiIV0" id="2njIBAGK0aC" role="3bR37C">
+            <node concept="3bR9La" id="2njIBAGK0aD" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:3405ypXZilV" resolve="JDK-tools" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="2njIBAGK0aE" role="3bR37C">
+            <node concept="3bR9La" id="2njIBAGK0aF" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="5ruKdSwyesw" resolve="TTSLibrary" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="1E1JtA" id="5ruKdSwyese" role="2G$12L">
@@ -1166,6 +1178,12 @@
             <node concept="3bR9La" id="5ruKdSwyePr" role="1SiIV1">
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" node="5ruKdSwyes2" resolve="jetbrains.mps.samples.VoiceMenu" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="2njIBAGK0cK" role="3bR37C">
+            <node concept="3bR9La" id="2njIBAGK0cL" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="5ruKdSwyesw" resolve="TTSLibrary" />
             </node>
           </node>
         </node>

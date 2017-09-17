@@ -132,10 +132,8 @@
           <module ref="25811379-ae76-45d3-b18c-739c1ab28a1a(jetbrains.mps.editor.contextActionsTool.lang.menus.runtime)" />
           <module ref="28583149-5b6e-4663-9c02-b9a8fa3cb09a(jetbrains.mps.editor.contextActionsTool.pluginSolution)" />
           <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
-          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
-          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" />
           <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
@@ -789,6 +787,7 @@
       <library file="${artifacts.mpsContextActionsTool}/context-tool/languages/mps-context-actions-tool/jetbrains.mps.editor.contextActionsTool.lang.menus.jar" />
       <library file="${artifacts.mpsContextActionsTool}/context-tool/languages/mps-context-actions-tool/jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.jar" />
       <library file="${artifacts.mpsContextActionsTool}/context-tool/languages/mps-context-actions-tool/jetbrains.mps.editor.contextActionsTool.pluginSolution.jar" />
+      <library file="${artifacts.mpsDebuggerPlugin}/mps-debugger-java/languages/mps-debugger-java/JDK-tools.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.checkedDots.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
@@ -972,7 +971,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.jetbrains.mps.samples.VoiceMenuToJava" depends="java.compile.JavaVoiceMenu, java.compile.jetbrains.mps.samples.VoiceMenu, fetchDependencies">
+  <target name="java.compile.jetbrains.mps.samples.VoiceMenuToJava" depends="java.compile.JavaVoiceMenu, java.compile.TTSLibrary, java.compile.jetbrains.mps.samples.VoiceMenu, fetchDependencies">
     <mkdir dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToJava/source_gen" />
     <mkdir dir="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenuToJava" />
     <javac destdir="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenuToJava" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -982,6 +981,7 @@
       </src>
       <classpath>
         <pathelement path="${build.tmp}/java/out/JavaVoiceMenu" />
+        <pathelement path="${build.tmp}/java/out/TTSLibrary" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
@@ -999,6 +999,15 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenu" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/cmu_time_awb.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/cmu_us_kal.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/cmudict04.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/cmulex.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/cmutimelex.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/en_us.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/freetts-jsapi10.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/freetts.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/mbrola.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
@@ -1017,7 +1026,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.jetbrains.mps.samples.VoiceMenuToJava#6772988411135912590" depends="java.compile.JavaVoiceMenu, java.compile.jetbrains.mps.samples.VoiceMenu, java.compile.jetbrains.mps.samples.VoiceMenuToJava, fetchDependencies">
+  <target name="java.compile.jetbrains.mps.samples.VoiceMenuToJava#6772988411135912590" depends="java.compile.JavaVoiceMenu, java.compile.TTSLibrary, java.compile.jetbrains.mps.samples.VoiceMenu, java.compile.jetbrains.mps.samples.VoiceMenuToJava, fetchDependencies">
     <mkdir dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToJava/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenuToJava#6772988411135912590" />
     <javac destdir="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenuToJava#6772988411135912590" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -1027,6 +1036,7 @@
       </src>
       <classpath>
         <pathelement path="${build.tmp}/java/out/JavaVoiceMenu" />
+        <pathelement path="${build.tmp}/java/out/TTSLibrary" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
@@ -1045,6 +1055,15 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenu" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenuToJava" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/cmu_time_awb.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/cmu_us_kal.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/cmudict04.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/cmulex.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/cmutimelex.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/en_us.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/freetts-jsapi10.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/freetts.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/mbrola.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
@@ -1355,7 +1374,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.jetbrains.mps.samples.VoiceMenuToAsterisk" depends="java.compile.jetbrains.mps.samples.Text, java.compile.jetbrains.mps.samples.VoiceMenu, fetchDependencies">
+  <target name="java.compile.jetbrains.mps.samples.VoiceMenuToAsterisk" depends="java.compile.TTSLibrary, java.compile.jetbrains.mps.samples.Text, java.compile.jetbrains.mps.samples.VoiceMenu, fetchDependencies">
     <mkdir dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToAsterisk/source_gen" />
     <mkdir dir="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenuToAsterisk" />
     <javac destdir="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenuToAsterisk" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -1364,6 +1383,7 @@
         <path location="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToAsterisk/source_gen" />
       </src>
       <classpath>
+        <pathelement path="${build.tmp}/java/out/TTSLibrary" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
@@ -1382,6 +1402,15 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.Text" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenu" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/cmu_time_awb.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/cmu_us_kal.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/cmudict04.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/cmulex.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/cmutimelex.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/en_us.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/freetts-jsapi10.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/freetts.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/mbrola.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
@@ -1397,7 +1426,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.jetbrains.mps.samples.VoiceMenuToAsterisk#1416608923407982813" depends="java.compile.jetbrains.mps.samples.Text, java.compile.jetbrains.mps.samples.VoiceMenu, java.compile.jetbrains.mps.samples.VoiceMenuToAsterisk, fetchDependencies">
+  <target name="java.compile.jetbrains.mps.samples.VoiceMenuToAsterisk#1416608923407982813" depends="java.compile.TTSLibrary, java.compile.jetbrains.mps.samples.Text, java.compile.jetbrains.mps.samples.VoiceMenu, java.compile.jetbrains.mps.samples.VoiceMenuToAsterisk, fetchDependencies">
     <mkdir dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToAsterisk/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenuToAsterisk#1416608923407982813" />
     <javac destdir="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenuToAsterisk#1416608923407982813" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -1406,6 +1435,7 @@
         <path location="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToAsterisk/generator/source_gen" />
       </src>
       <classpath>
+        <pathelement path="${build.tmp}/java/out/TTSLibrary" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
@@ -1425,6 +1455,15 @@
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.Text" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenu" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenuToAsterisk" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/cmu_time_awb.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/cmu_us_kal.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/cmudict04.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/cmulex.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/cmutimelex.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/en_us.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/freetts-jsapi10.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/freetts.jar" />
+        <fileset file="${basedir}/solutions/TTSLibrary/lib/mbrola.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />

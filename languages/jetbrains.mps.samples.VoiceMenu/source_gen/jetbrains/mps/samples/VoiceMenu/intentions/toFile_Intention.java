@@ -12,9 +12,11 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
 import java.util.Collections;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
-import java.io.File;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.io.File;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 
 public final class toFile_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
@@ -45,12 +47,22 @@ public final class toFile_Intention extends AbstractIntentionDescriptor implemen
     }
     @Override
     public String getDescription(final SNode node, final EditorContext editorContext) {
-      return "File ? Text";
+      if (SPropertyOperations.getBoolean(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile"))) {
+        return "To Text";
+      } else {
+        return "To File";
+      }
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
+      String path = System.getProperty("user.home") + "/MPS_ASTERISK";
+
+      if (!(Files.exists(Paths.get(path)))) {
+        new File(path).mkdir();
+      }
+
       try {
-        File tmp = new File(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")));
+        File tmp = new File(path + "/" + SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")));
         if (tmp.isFile()) {
           SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile"), "" + (true));
         } else {

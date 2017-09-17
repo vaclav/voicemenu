@@ -7,7 +7,7 @@
     <use id="e2a803a4-d4b8-43eb-b458-517effd2a87f" name="jetbrains.mps.samples.VoiceMenuToAsterisk" version="-1" />
     <use id="0b30ef64-0c5e-4567-b992-9bf5bbc44c0a" name="jetbrains.mps.samples.VoiceMenuToHTML" version="-1" />
     <use id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" version="-1" />
-    <engage id="e2a803a4-d4b8-43eb-b458-517effd2a87f" name="jetbrains.mps.samples.VoiceMenuToAsterisk" />
+    <engage id="0b30ef64-0c5e-4567-b992-9bf5bbc44c0a" name="jetbrains.mps.samples.VoiceMenuToHTML" />
   </languages>
   <imports>
     <import index="oici" ref="r:d8d37b74-a8e1-4a57-a2ee-4a996f4ba158(JavaVoiceMenu.runtime)" />
@@ -91,12 +91,9 @@
       </node>
       <node concept="2C_I21" id="2w$I9I9URiH" role="2C_I26">
         <property role="3upAMh" value="Did you know that our internet is faster than ever?" />
+        <property role="2tub0X" value="false" />
         <ref role="2C_gVZ" node="2w$I9I9UGbk" resolve="Internet" />
         <node concept="2C_Ik4" id="2w$I9I9URl3" role="2C_gVu">
-          <node concept="2C_Ik0" id="2w$I9I9URl8" role="2C_I24">
-            <property role="2C_Iks" value="1" />
-            <property role="TrG5h" value="Discount" />
-          </node>
           <node concept="2C_I21" id="2w$I9I9URlc" role="2C_I26">
             <property role="3upAMh" value="Welcome in section of discounts, here is everything cheaper." />
             <ref role="2C_gVZ" node="2w$I9I9URl8" resolve="Discount" />
@@ -131,22 +128,10 @@
               </node>
             </node>
           </node>
-          <node concept="2C_Ik0" id="2w$I9I9Vz_L" role="2C_I24">
-            <property role="2C_Iks" value="2" />
-            <property role="TrG5h" value="Data limit" />
-          </node>
           <node concept="2C_I21" id="2w$I9I9Vz_O" role="2C_I26">
             <property role="3upAMh" value="Take care this call will be monitored." />
             <ref role="2C_gVZ" node="2w$I9I9Vz_L" resolve="Data limit" />
             <node concept="1$pBvr" id="2w$I9I9Vz_Y" role="2C_gVu" />
-          </node>
-          <node concept="2C_Ik0" id="2w$I9I9VH5q" role="2C_I24">
-            <property role="2C_Iks" value="*" />
-            <property role="TrG5h" value="Return to main menu" />
-          </node>
-          <node concept="2C_Ik0" id="48dyn_ZgF26" role="2C_I24">
-            <property role="2C_Iks" value="3" />
-            <property role="TrG5h" value="Exit" />
           </node>
           <node concept="2C_I21" id="2w$I9I9VH5u" role="2C_I26">
             <property role="3upAMh" value="Going back to the previous menu." />
@@ -157,6 +142,22 @@
             <property role="3upAMh" value="We are sorry, that you are leaving this menu. Looking forward to hear you again. Goodbye." />
             <ref role="2C_gVZ" node="48dyn_ZgF26" resolve="Exit" />
             <node concept="X09Yy" id="48dyn_ZgF2w" role="2C_gVu" />
+          </node>
+          <node concept="2C_Ik0" id="2w$I9I9URl8" role="2C_I24">
+            <property role="2C_Iks" value="1" />
+            <property role="TrG5h" value="Discount" />
+          </node>
+          <node concept="2C_Ik0" id="2w$I9I9Vz_L" role="2C_I24">
+            <property role="2C_Iks" value="2" />
+            <property role="TrG5h" value="Data limit" />
+          </node>
+          <node concept="2C_Ik0" id="48dyn_ZgF26" role="2C_I24">
+            <property role="2C_Iks" value="3" />
+            <property role="TrG5h" value="Exit" />
+          </node>
+          <node concept="2C_Ik0" id="2w$I9I9VH5q" role="2C_I24">
+            <property role="2C_Iks" value="*" />
+            <property role="TrG5h" value="Return to main menu" />
           </node>
         </node>
       </node>
@@ -218,6 +219,7 @@
           </node>
           <node concept="2C_I21" id="2w$I9Ia1nSN" role="2C_I26">
             <property role="3upAMh" value="Direct call has begun" />
+            <property role="2tub0X" value="false" />
             <ref role="2C_gVZ" node="2w$I9Ia1nSJ" resolve="Summer News" />
             <node concept="1$pBvr" id="2w$I9Ia1nTj" role="2C_gVu" />
           </node>
@@ -261,7 +263,7 @@
   <node concept="2Jqgb4" id="6nemK62JSIo">
     <property role="TrG5h" value="Connectivity provider" />
     <property role="1EJLKn" value="true" />
-    <property role="3uoZKU" value="Welcome to our voicemenu" />
+    <property role="3uoZKU" value="Welcome.txt" />
     <node concept="2C_Ik4" id="6nemK62JSIp" role="2JqgbB">
       <node concept="2C_Ik0" id="6nemK62JSIs" role="2C_I24">
         <property role="2C_Iks" value="1" />
@@ -349,8 +351,8 @@
     <property role="1EJLKn" value="true" />
     <node concept="2C_Ik4" id="6HhgIFXTyQ3" role="2JqgbB">
       <node concept="2C_I21" id="7IHEnsdAb2n" role="2C_I26">
-        <property role="3upAMh" value="/Users/jetbrains/Desktop/sample.wav" />
-        <property role="2tub0X" value="false" />
+        <property role="3upAMh" value="file.wav" />
+        <property role="2tub0X" value="true" />
         <ref role="2C_gVZ" node="7IHEnsdAb2p" resolve="Info" />
         <node concept="1$pBvo" id="2T27OaN$NBF" role="2C_gVu">
           <property role="XmNhe" value="true" />

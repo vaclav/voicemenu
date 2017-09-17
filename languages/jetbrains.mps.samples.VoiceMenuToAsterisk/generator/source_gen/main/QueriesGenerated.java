@@ -17,12 +17,6 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodeContext;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
 import jetbrains.mps.generator.template.MappingScriptContext;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
-import com.sun.speech.freetts.Voice;
-import com.sun.speech.freetts.VoiceManager;
-import com.sun.speech.freetts.audio.AudioPlayer;
-import com.sun.speech.freetts.audio.SingleFileAudioPlayer;
-import javax.sound.sampled.AudioFileFormat;
 
 @Generated
 public class QueriesGenerated {
@@ -31,7 +25,7 @@ public class QueriesGenerated {
   }
   public static Object propertyMacro_GetPropertyValue_2706908311032669969(final PropertyMacroContext _context) {
     String path = System.getProperty("user.home") + "/MPS_ASTERISK/";
-    return path + SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "info"));
+    return path + SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "info")).replaceAll(" ", "_");
   }
   public static Object propertyMacro_GetPropertyValue_6630304389629581355(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"));
@@ -51,7 +45,8 @@ public class QueriesGenerated {
 
 
     String path = System.getProperty("user.home") + "/MPS_ASTERISK/";
-    return path + name;
+    return path + name.replaceAll(" ", "_");
+
   }
   public static Object propertyMacro_GetPropertyValue_6259652592354467598(final PropertyMacroContext _context) {
     return "\"" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "\"";
@@ -358,43 +353,6 @@ public class QueriesGenerated {
     return SLinkOperations.collectMany(SNodeOperations.ofConcept(SNodeOperations.getChildren(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities"));
   }
   public static void mappingScript_CodeBlock_4077690302637424764(final MappingScriptContext _context) {
-
-    String path = System.getProperty("user.home") + "/MPS_ASTERISK/";
-
-    String name = "";
-
-    for (SNode actvt : ListSequence.fromList(SModelOperations.nodes(_context.getModel(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity")))) {
-      if (!(SPropertyOperations.getBoolean(actvt, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile")))) {
-
-        name = SPropertyOperations.getString(SLinkOperations.getTarget(actvt, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"));
-        for (SNode actvt2 : Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getNodeAncestors(actvt, null, false), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity")))) {
-          name = SPropertyOperations.getString(SLinkOperations.getTarget(actvt2, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")) + name;
-        }
-        name += SPropertyOperations.getString(SLinkOperations.getTarget(actvt, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
-
-        Voice voice;
-        VoiceManager voiceManager = VoiceManager.getInstance();
-        voice = voiceManager.getVoice("kevin16");
-        voice.allocate();
-        AudioPlayer tmpPlayer = new SingleFileAudioPlayer(path + name, AudioFileFormat.Type.WAVE);
-        voice.setAudioPlayer(tmpPlayer);
-        voice.speak(SPropertyOperations.getString(actvt, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")));
-        voice.deallocate();
-        tmpPlayer.close();
-      }
-    }
-
-    Voice voice;
-    VoiceManager voiceManager = VoiceManager.getInstance();
-    voice = voiceManager.getVoice("kevin16");
-    voice.allocate();
-    name = SPropertyOperations.getString(ListSequence.fromList(SModelOperations.roots(_context.getModel(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace"))).first(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
-    AudioPlayer tmpPlayer = new SingleFileAudioPlayer(path + name, AudioFileFormat.Type.WAVE);
-    voice.setAudioPlayer(tmpPlayer);
-    voice.speak(SPropertyOperations.getString(ListSequence.fromList(SModelOperations.roots(_context.getModel(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace"))).first(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "info")));
-    voice.deallocate();
-    tmpPlayer.close();
-
 
 
   }
