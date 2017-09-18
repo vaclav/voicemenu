@@ -9,6 +9,8 @@ import jetbrains.mps.typesystem.inference.TypeCheckingContext;
 import jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.io.File;
 import jetbrains.mps.errors.messageTargets.MessageTarget;
 import jetbrains.mps.errors.messageTargets.NodeMessageTarget;
@@ -24,6 +26,10 @@ public class PlayBacktoFile_NonTypesystemRule extends AbstractNonTypesystemRule_
       try {
 
         String path = System.getProperty("user.home") + "/MPS_ASTERISK";
+
+        if (!(Files.exists(Paths.get(path)))) {
+          new File(path).mkdir();
+        }
 
         File tmp = new File(path + "/" + SPropertyOperations.getString(activity, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")));
         if (tmp.isFile()) {

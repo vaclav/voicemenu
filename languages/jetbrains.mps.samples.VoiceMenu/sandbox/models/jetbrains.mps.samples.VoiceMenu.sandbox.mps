@@ -7,7 +7,7 @@
     <use id="e2a803a4-d4b8-43eb-b458-517effd2a87f" name="jetbrains.mps.samples.VoiceMenuToAsterisk" version="-1" />
     <use id="0b30ef64-0c5e-4567-b992-9bf5bbc44c0a" name="jetbrains.mps.samples.VoiceMenuToHTML" version="-1" />
     <use id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" version="-1" />
-    <engage id="0b30ef64-0c5e-4567-b992-9bf5bbc44c0a" name="jetbrains.mps.samples.VoiceMenuToHTML" />
+    <engage id="e2a803a4-d4b8-43eb-b458-517effd2a87f" name="jetbrains.mps.samples.VoiceMenuToAsterisk" />
   </languages>
   <imports>
     <import index="oici" ref="r:d8d37b74-a8e1-4a57-a2ee-4a996f4ba158(JavaVoiceMenu.runtime)" />
@@ -347,7 +347,7 @@
   </node>
   <node concept="2Jqgb4" id="6HhgIFXTyQ2">
     <property role="TrG5h" value="Test160" />
-    <property role="3uoZKU" value="" />
+    <property role="3uoZKU" value="Welcome to Test160" />
     <property role="1EJLKn" value="true" />
     <node concept="2C_Ik4" id="6HhgIFXTyQ3" role="2JqgbB">
       <node concept="2C_I21" id="7IHEnsdAb2n" role="2C_I26">
@@ -372,7 +372,7 @@
   </node>
   <node concept="2Jqgb4" id="3BO6$VaLho1">
     <property role="TrG5h" value="JetBrains2" />
-    <property role="3uoZKU" value="" />
+    <property role="3uoZKU" value="Welcome to JetBrains2" />
     <node concept="2C_Ik4" id="3BO6$VaLho2" role="2JqgbB">
       <node concept="2C_Ik0" id="3BO6$VaLho3" role="2C_I24">
         <property role="2C_Iks" value="1" />
@@ -576,6 +576,7 @@
   <node concept="2Jqgb4" id="42GgdiBTieu">
     <property role="1EJLKn" value="true" />
     <property role="TrG5h" value="MY TEST" />
+    <property role="3uoZKU" value="Welcome to MY TEST" />
     <node concept="2C_Ik4" id="1ychykAt_Ns" role="2JqgbB">
       <node concept="2C_Ik0" id="3CsZFp1$MmI" role="2C_I24">
         <property role="2C_Iks" value="8" />
