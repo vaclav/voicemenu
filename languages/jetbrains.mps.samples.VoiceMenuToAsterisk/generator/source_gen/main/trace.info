@@ -12,7 +12,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164879751025:jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
   <root>
     <file name="QueriesGenerated.java">
-      <unit at="25,0,385,0" name="main.QueriesGenerated" />
+      <unit at="25,0,382,0" name="main.QueriesGenerated" />
     </file>
   </root>
   <root nodeRef="r:862c9c49-fcb0-423e-b1b9-f2fc5047e773(main@generator)/1416608923408470870">
@@ -50,18 +50,18 @@
       <node id="479456951538974609" at="327,107,328,192" concept="6" />
       <node id="3277254067138088700" at="330,108,331,544" concept="6" />
       <node id="6993411625921634277" at="347,39,348,365" concept="6" />
-      <node id="2570975912433517814" at="369,55,370,43" concept="6" />
-      <node id="1894932233812489477" at="372,70,373,46" concept="6" />
-      <node id="6993411625921651757" at="378,72,379,51" concept="6" />
+      <node id="2570975912433517814" at="366,55,367,43" concept="6" />
+      <node id="1894932233812489477" at="369,70,370,46" concept="6" />
+      <node id="6993411625921651757" at="375,72,376,51" concept="6" />
       <node id="3277254067138088774" at="174,12,176,7" concept="0" />
       <node id="3277254067138088803" at="183,12,185,7" concept="0" />
       <node id="3277254067138088832" at="192,12,194,7" concept="0" />
       <node id="3277254067138088861" at="201,12,203,7" concept="0" />
       <node id="1894932233812489474" at="148,0,151,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="6993411625921631723" at="347,0,350,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="2570975912433517814" at="369,0,372,0" concept="8" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
-      <node id="1894932233812489477" at="372,0,375,0" concept="8" trace="eq_x583g4_a0a0a0a0a0a0y#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="6993411625921651757" at="378,0,381,0" concept="8" trace="neq_x583g4_a0a0a0a0a0a0fc#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="2570975912433517814" at="366,0,369,0" concept="8" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
+      <node id="1894932233812489477" at="369,0,372,0" concept="8" trace="eq_x583g4_a0a0a0a0a0a0y#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="6993411625921651757" at="375,0,378,0" concept="8" trace="neq_x583g4_a0a0a0a0a0a0fc#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
       <node id="1894932233812489463" at="146,94,151,7" concept="6" />
       <node id="3277254067138088756" at="171,9,176,7" concept="3" />
       <node id="3277254067138088785" at="180,9,185,7" concept="3" />
@@ -109,9 +109,9 @@
       <scope id="479456951538974396" at="327,107,328,192" />
       <scope id="3277254067138088699" at="330,108,331,544" />
       <scope id="6993411625921631724" at="347,39,348,365" />
-      <scope id="2570975912433517814" at="369,55,370,43" />
-      <scope id="1894932233812489477" at="372,70,373,46" />
-      <scope id="6993411625921651757" at="378,72,379,51" />
+      <scope id="2570975912433517814" at="366,55,367,43" />
+      <scope id="1894932233812489477" at="369,70,370,46" />
+      <scope id="6993411625921651757" at="375,72,376,51" />
       <scope id="1894932233812489474" at="148,0,151,0">
         <var name="it" id="1894932233812489474" />
       </scope>
@@ -121,14 +121,14 @@
       <scope id="6993411625921631723" at="347,0,350,0">
         <var name="it" id="6993411625921631723" />
       </scope>
-      <scope id="2570975912433517814" at="369,0,372,0">
+      <scope id="2570975912433517814" at="366,0,369,0">
         <var name="str" id="2570975912433517814" />
       </scope>
-      <scope id="1894932233812489477" at="372,0,375,0">
+      <scope id="1894932233812489477" at="369,0,372,0">
         <var name="a" id="1894932233812489477" />
         <var name="b" id="1894932233812489477" />
       </scope>
-      <scope id="6993411625921651757" at="378,0,381,0">
+      <scope id="6993411625921651757" at="375,0,378,0">
         <var name="a" id="6993411625921651757" />
         <var name="b" id="6993411625921651757" />
       </scope>
@@ -201,9 +201,8 @@
       <node id="479456951540178164" at="339,107,340,261" concept="6" />
       <node id="3277254067136968046" at="342,108,343,544" concept="6" />
       <node id="6993411625921309305" at="357,39,358,208" concept="6" />
-      <node id="6993411625921393349" at="362,120,363,396" concept="6" />
-      <node id="1894932233812418725" at="375,71,376,46" concept="6" />
-      <node id="6993411625921326633" at="381,72,382,51" concept="6" />
+      <node id="1894932233812418725" at="372,71,373,46" concept="6" />
+      <node id="6993411625921326633" at="378,72,379,51" concept="6" />
       <node id="3277254067136824221" at="89,10,91,5" concept="0" />
       <node id="3277254067137623344" at="96,10,98,5" concept="0" />
       <node id="3277254067137672273" at="268,12,270,7" concept="0" />
@@ -217,8 +216,8 @@
       <node id="6993411625921509609" at="232,0,235,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="6993411625921515794" at="239,0,242,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="6993411625921306913" at="357,0,360,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="1894932233812418725" at="375,0,378,0" concept="8" trace="eq_x583g4_a0a0a0a0a0a0fb#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="6993411625921326633" at="381,0,384,0" concept="8" trace="neq_x583g4_a0a0a0a0a0a0hc#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="1894932233812418725" at="372,0,375,0" concept="8" trace="eq_x583g4_a0a0a0a0a0a0fb#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="6993411625921326633" at="378,0,381,0" concept="8" trace="neq_x583g4_a0a0a0a0a0a0hc#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
       <node id="3277254067136824200" at="86,109,91,5" concept="3" />
       <node id="3277254067137623329" at="93,109,98,5" concept="3" />
       <node id="1894932233812216128" at="209,94,214,7" concept="6" />
@@ -284,9 +283,8 @@
       <scope id="479456951540178158" at="339,107,340,261" />
       <scope id="3277254067136968040" at="342,108,343,544" />
       <scope id="6993411625921306914" at="357,39,358,208" />
-      <scope id="6993411625921393036" at="362,120,363,396" />
-      <scope id="1894932233812418725" at="375,71,376,46" />
-      <scope id="6993411625921326633" at="381,72,382,51" />
+      <scope id="1894932233812418725" at="372,71,373,46" />
+      <scope id="6993411625921326633" at="378,72,379,51" />
       <scope id="4077690302644230645" at="47,352,50,5">
         <var name="actvt" id="4077690302644230646" />
       </scope>
@@ -311,11 +309,11 @@
       <scope id="6993411625921306913" at="357,0,360,0">
         <var name="it" id="6993411625921306913" />
       </scope>
-      <scope id="1894932233812418725" at="375,0,378,0">
+      <scope id="1894932233812418725" at="372,0,375,0">
         <var name="a" id="1894932233812418725" />
         <var name="b" id="1894932233812418725" />
       </scope>
-      <scope id="6993411625921326633" at="381,0,384,0">
+      <scope id="6993411625921326633" at="378,0,381,0">
         <var name="a" id="6993411625921326633" />
         <var name="b" id="6993411625921326633" />
       </scope>
@@ -382,9 +380,9 @@
   </root>
   <root nodeRef="r:862c9c49-fcb0-423e-b1b9-f2fc5047e773(main@generator)/4077690302637424763">
     <file name="QueriesGenerated.java">
-      <node id="4077690302643845800" at="365,103,366,0" concept="7" />
-      <node id="4077690302637426373" at="366,0,367,0" concept="7" />
-      <scope id="4077690302637424765" at="365,103,367,0" />
+      <node id="4077690302643845800" at="362,103,363,0" concept="7" />
+      <node id="4077690302637426373" at="363,0,364,0" concept="7" />
+      <scope id="4077690302637424765" at="362,103,364,0" />
     </file>
   </root>
   <root nodeRef="r:862c9c49-fcb0-423e-b1b9-f2fc5047e773(main@generator)/5461963470561114074">
