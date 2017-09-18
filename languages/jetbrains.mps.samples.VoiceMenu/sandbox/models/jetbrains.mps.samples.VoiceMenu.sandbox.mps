@@ -106,7 +106,7 @@
                 <property role="3upAMh" value="Don't worry, while waiting you will listen your calm music." />
                 <ref role="2C_gVZ" node="2w$I9I9VzA8" resolve="Summer discount" />
                 <node concept="1$pBvr" id="54keEMK2IqT" role="2C_gVu">
-                  <property role="XmNmt" value="false" />
+                  <property role="XmNmt" value="true" />
                 </node>
               </node>
               <node concept="2C_Ik0" id="2w$I9I9VzAl" role="2C_I24">
