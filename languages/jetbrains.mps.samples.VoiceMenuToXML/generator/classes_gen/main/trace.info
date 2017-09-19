@@ -4,17 +4,17 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="QueriesGenerated.java">
-      <unit at="117,0,132,0" name="main.QueriesGenerated$SNsQ" />
-      <unit at="86,0,103,0" name="main.QueriesGenerated$SNQ" />
-      <unit at="195,0,212,0" name="main.QueriesGenerated$IfMC" />
-      <unit at="152,0,180,0" name="main.QueriesGenerated$PVQ" />
-      <unit at="30,0,216,0" name="main.QueriesGenerated" />
+      <unit at="120,0,135,0" name="main.QueriesGenerated$SNsQ" />
+      <unit at="89,0,106,0" name="main.QueriesGenerated$SNQ" />
+      <unit at="201,0,218,0" name="main.QueriesGenerated$IfMC" />
+      <unit at="156,0,186,0" name="main.QueriesGenerated$PVQ" />
+      <unit at="30,0,222,0" name="main.QueriesGenerated" />
     </file>
   </root>
   <root nodeRef="r:26ac9a5c-bb52-4745-897b-371eb809a830(main@generator)/2702278965989924935">
     <file name="QueriesGenerated.java">
-      <node id="2702278965990196576" at="68,120,69,196" concept="0" />
-      <scope id="2702278965990196570" at="68,120,69,196" />
+      <node id="2702278965990196576" at="71,120,72,196" concept="0" />
+      <scope id="2702278965990196570" at="71,120,72,196" />
     </file>
   </root>
   <root nodeRef="r:26ac9a5c-bb52-4745-897b-371eb809a830(main@generator)/2702278965989958874">
@@ -23,14 +23,20 @@
       <node id="2702278965990321945" at="47,112,48,332" concept="0" />
       <node id="2702278965990981183" at="50,112,51,189" concept="0" />
       <node id="2702278965990151600" at="53,112,54,332" concept="0" />
-      <node id="2702278965990983661" at="59,94,60,207" concept="0" />
-      <node id="2702278965990009067" at="65,108,66,192" concept="0" />
+      <node id="2702278965990983661" at="62,94,63,207" concept="0" />
+      <node id="2702278965990009067" at="68,108,69,192" concept="0" />
       <scope id="2702278965990313229" at="44,112,45,345" />
       <scope id="2702278965990321151" at="47,112,48,332" />
       <scope id="2702278965990981177" at="50,112,51,189" />
       <scope id="2702278965990151059" at="53,112,54,332" />
-      <scope id="2702278965990982537" at="59,94,60,207" />
-      <scope id="2702278965990009061" at="65,108,66,192" />
+      <scope id="2702278965990982537" at="62,94,63,207" />
+      <scope id="2702278965990009061" at="68,108,69,192" />
+    </file>
+  </root>
+  <root nodeRef="r:26ac9a5c-bb52-4745-897b-371eb809a830(main@generator)/2702278965990038497">
+    <file name="QueriesGenerated.java">
+      <node id="125198760251423152" at="56,111,57,187" concept="0" />
+      <scope id="125198760251422599" at="56,111,57,187" />
     </file>
   </root>
   <root nodeRef="r:26ac9a5c-bb52-4745-897b-371eb809a830(main@generator)/6772988411135917562">
@@ -38,17 +44,17 @@
       <node id="2702278965990908811" at="35,112,36,185" concept="0" />
       <node id="2702278965990065383" at="38,112,39,175" concept="0" />
       <node id="6772988411135917592" at="41,112,42,175" concept="0" />
-      <node id="2702278965990899279" at="56,94,57,203" concept="0" />
-      <node id="2702278965989927900" at="62,108,63,192" concept="0" />
-      <node id="2702278965990906194" at="212,55,213,43" concept="0" />
-      <node id="2702278965990906194" at="212,0,215,0" concept="1" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
+      <node id="2702278965990899279" at="59,94,60,203" concept="0" />
+      <node id="2702278965989927900" at="65,108,66,192" concept="0" />
+      <node id="2702278965990906194" at="218,55,219,43" concept="0" />
+      <node id="2702278965990906194" at="218,0,221,0" concept="1" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
       <scope id="2702278965990908270" at="35,112,36,185" />
       <scope id="2702278965990065377" at="38,112,39,175" />
       <scope id="6772988411135917586" at="41,112,42,175" />
-      <scope id="2702278965990898817" at="56,94,57,203" />
-      <scope id="2702278965989927894" at="62,108,63,192" />
-      <scope id="2702278965990906194" at="212,55,213,43" />
-      <scope id="2702278965990906194" at="212,0,215,0">
+      <scope id="2702278965990898817" at="59,94,60,203" />
+      <scope id="2702278965989927894" at="65,108,66,192" />
+      <scope id="2702278965990906194" at="218,55,219,43" />
+      <scope id="2702278965990906194" at="218,0,221,0">
         <var name="str" id="2702278965990906194" />
       </scope>
     </file>
