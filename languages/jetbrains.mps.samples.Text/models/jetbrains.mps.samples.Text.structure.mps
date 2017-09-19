@@ -58,6 +58,16 @@
     <node concept="PrWs8" id="12Vp4BTMpBx" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyi" id="7lUjv43pu2k" role="1TKVEl">
+      <property role="IQ2nx" value="8465164147135733908" />
+      <property role="TrG5h" value="typeOfFile" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7lUjv43q5LQ" role="1TKVEl">
+      <property role="IQ2nx" value="8465164147135896694" />
+      <property role="TrG5h" value="typeVisible" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="12Vp4BTMmgM">
     <property role="EcuMT" value="1205667594137855026" />

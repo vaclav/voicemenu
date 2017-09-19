@@ -9,13 +9,13 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TextGenAspectDescriptor.java">
-      <unit at="15,0,67,0" name="jetbrains.mps.samples.Text.textGen.TextGenAspectDescriptor" />
+      <unit at="16,0,68,0" name="jetbrains.mps.samples.Text.textGen.TextGenAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:a8b76dab-5e9b-4c8b-b4ea-27758c157328(jetbrains.mps.samples.Text.textGen)/1416608923407904800">
     <file name="TextGenAspectDescriptor.java">
-      <node id="1416608923407905342" at="60,59,61,24" concept="5" />
-      <node id="1416608923407908065" at="63,64,64,18" concept="5" />
+      <node id="1416608923407905342" at="61,59,62,177" concept="5" />
+      <node id="1416608923407908065" at="64,64,65,18" concept="5" />
     </file>
     <file name="WorkSpace_TextGen.java">
       <node id="1416608923407904800" at="14,54,15,55" concept="4" />

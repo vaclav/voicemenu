@@ -76,8 +76,11 @@
     <node concept="29tfMY" id="1eCN$XLo70z" role="29tGrW">
       <node concept="3clFbS" id="1eCN$XLo70$" role="2VODD2">
         <node concept="3clFbF" id="1eCN$XLo78Y" role="3cqZAp">
-          <node concept="Xl_RD" id="1eCN$XLo78X" role="3clFbG">
-            <property role="Xl_RC" value="extensions" />
+          <node concept="2OqwBi" id="7lUjv43prQH" role="3clFbG">
+            <node concept="117lpO" id="7lUjv43prEQ" role="2Oq$k0" />
+            <node concept="3TrcHB" id="7lUjv43pw7G" role="2OqNvi">
+              <ref role="3TsBF5" to="m807:7lUjv43pu2k" resolve="typeOfFile" />
+            </node>
           </node>
         </node>
       </node>

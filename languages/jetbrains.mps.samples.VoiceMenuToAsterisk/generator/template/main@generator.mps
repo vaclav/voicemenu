@@ -238,6 +238,8 @@
         <child id="1416608923407654331" name="argument" index="1yX5fO" />
       </concept>
       <concept id="1205667594137854972" name="jetbrains.mps.samples.Text.structure.WorkSpace" flags="ng" index="3DswuP">
+        <property id="8465164147135896694" name="typeVisible" index="1Q4x67" />
+        <property id="8465164147135733908" name="typeOfFile" index="1Q7UP_" />
         <child id="1205667594137855131" name="body" index="3Dsw3i" />
       </concept>
     </language>
@@ -405,12 +407,17 @@
       <ref role="30HIoZ" to="xehl:5HF1wNO0wj8" resolve="WorkSpace" />
       <ref role="3lhOvi" node="1eCN$XLqhdm" resolve="map_WorkSpace" />
     </node>
+    <node concept="3lhOvk" id="7lUjv43dB_n" role="3lj3bC">
+      <ref role="30HIoZ" to="xehl:5HF1wNO0wj8" resolve="WorkSpace" />
+      <ref role="3lhOvi" node="7lUjv43dBR0" resolve="map_WorkSpP" />
+    </node>
     <node concept="1puMqW" id="3ymRrB946lY" role="1puA0r">
       <ref role="1puQsG" node="3ymRrB8K$1V" resolve="script" />
     </node>
   </node>
   <node concept="3DswuP" id="1eCN$XLqhdm">
     <property role="TrG5h" value="map_WorkSpace" />
+    <property role="1Q7UP_" value="extensions" />
     <node concept="n94m4" id="1eCN$XLqhdn" role="lGtFl">
       <ref role="n9lRv" to="xehl:5HF1wNO0wj8" resolve="WorkSpace" />
     </node>
@@ -769,6 +776,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="1yX5f3" id="2eHWfy3gRyU" role="2BdIdy">
+        <property role="1yX5f2" value="Timeout" />
       </node>
       <node concept="1yX5fw" id="2PV9jnuu4SV" role="2BdIdy">
         <property role="1yX5fX" value="s" />
@@ -1256,9 +1266,8 @@
         </node>
       </node>
       <node concept="1yM5C5" id="2eHWfy37_0D" role="2BdIdy" />
-      <node concept="1yM5C5" id="2PV9jnuu3un" role="2BdIdy" />
       <node concept="1yX5f3" id="2eHWfy2PuD_" role="2BdIdy">
-        <property role="1yX5f2" value="================================================================= " />
+        <property role="1yX5f2" value="=================================================================  " />
       </node>
       <node concept="1yM5C5" id="2eHWfy2Ptcj" role="2BdIdy" />
       <node concept="1yX5cI" id="2eHWfy2KRZx" role="2BdIdy">
@@ -1323,6 +1332,7 @@
     <property role="TrG5h" value="reduce_Activity" />
     <ref role="3gUMe" to="xehl:5HF1wNNZuqd" resolve="Activity" />
     <node concept="3DswuP" id="qBnSUx$AeI" role="13RCb5">
+      <property role="TrG5h" value=" " />
       <node concept="2BdId_" id="qBnSUx$AeK" role="3Dsw3i">
         <node concept="1yX5cI" id="qBnSUx$P1e" role="2BdIdy">
           <property role="TrG5h" value="sample" />
@@ -1663,7 +1673,6 @@
             </node>
           </node>
         </node>
-        <node concept="1yM5C5" id="2eHWfy2ZMjV" role="2BdIdy" />
         <node concept="1yM5C5" id="2eHWfy3cwxh" role="2BdIdy" />
         <node concept="1yX5fw" id="4JcMHpQYOyM" role="2BdIdy">
           <property role="1yX5fX" value="t" />
@@ -2033,6 +2042,9 @@
               </node>
             </node>
           </node>
+        </node>
+        <node concept="1yX5f3" id="2eHWfy3gAH8" role="2BdIdy">
+          <property role="1yX5f2" value="Timeout" />
         </node>
         <node concept="1yX5fw" id="2PV9jnupASm" role="2BdIdy">
           <property role="1yX5fX" value="s" />
@@ -4374,6 +4386,23 @@
         <node concept="3clFbH" id="3ymRrB8K$r5" role="3cqZAp" />
       </node>
     </node>
+  </node>
+  <node concept="3DswuP" id="7lUjv43dBR0">
+    <property role="TrG5h" value="map_WorkSpP" />
+    <property role="1Q7UP_" value="sip" />
+    <property role="1Q4x67" value="true" />
+    <node concept="n94m4" id="7lUjv43dBR1" role="lGtFl">
+      <ref role="n9lRv" to="xehl:5HF1wNO0wj8" resolve="WorkSpace" />
+    </node>
+    <node concept="2BdId_" id="7lUjv43dBR2" role="3Dsw3i">
+      <node concept="1yM5C5" id="7lUjv43dGlw" role="2BdIdy" />
+      <node concept="1yM5C5" id="7lUjv43dGlA" role="2BdIdy" />
+      <node concept="1yX5cI" id="7lUjv43dBWH" role="2BdIdy">
+        <property role="TrG5h" value="default" />
+      </node>
+    </node>
+    <node concept="2BdId_" id="7lUjv43dBWL" role="3Dsw3i" />
+    <node concept="2BdId_" id="7lUjv43dBWM" role="3Dsw3i" />
   </node>
 </model>
 

@@ -96,6 +96,7 @@
         <node concept="2C_Ik4" id="2w$I9I9URl3" role="2C_gVu">
           <node concept="2C_I21" id="2w$I9I9URlc" role="2C_I26">
             <property role="3upAMh" value="Welcome in section of discounts, here is everything cheaper." />
+            <property role="2tub0X" value="false" />
             <ref role="2C_gVZ" node="2w$I9I9URl8" resolve="Discount" />
             <node concept="2C_Ik4" id="2w$I9I9VzA3" role="2C_gVu">
               <node concept="2C_Ik0" id="2w$I9I9VzA8" role="2C_I24">
@@ -358,14 +359,6 @@
           <property role="XmNhe" value="true" />
         </node>
       </node>
-      <node concept="2C_Ik0" id="7IHEnsdAb2p" role="2C_I24">
-        <property role="TrG5h" value="Info" />
-        <property role="2C_Iks" value="2" />
-      </node>
-      <node concept="2C_Ik0" id="2eHWfy2GzSH" role="2C_I24">
-        <property role="2C_Iks" value="1" />
-        <property role="TrG5h" value="Calls" />
-      </node>
       <node concept="2C_I21" id="2eHWfy2PL69" role="2C_I26">
         <ref role="2C_gVZ" node="2eHWfy2GzSH" resolve="Calls" />
         <node concept="2C_Ik4" id="2eHWfy2PL6h" role="2C_gVu">
@@ -389,6 +382,14 @@
             <property role="2C_Iks" value="1" />
           </node>
         </node>
+      </node>
+      <node concept="2C_Ik0" id="2eHWfy2GzSH" role="2C_I24">
+        <property role="2C_Iks" value="1" />
+        <property role="TrG5h" value="Calls" />
+      </node>
+      <node concept="2C_Ik0" id="7IHEnsdAb2p" role="2C_I24">
+        <property role="TrG5h" value="Info" />
+        <property role="2C_Iks" value="2" />
       </node>
     </node>
     <node concept="2smLJI" id="JHn_unRV$u" role="2smLJD">

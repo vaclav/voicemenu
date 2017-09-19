@@ -62,6 +62,7 @@
   <dependency className="jetbrains.mps.samples.Text.textGen.TextGenAspectDescriptor" file="TextGenAspectDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.samples.Text.structure.LanguageConceptSwitch" />
     <classNode dependClassName="jetbrains.mps.samples.Text.textGen.Body_TextGen" />
     <classNode dependClassName="jetbrains.mps.samples.Text.textGen.Comment_TextGen" />
