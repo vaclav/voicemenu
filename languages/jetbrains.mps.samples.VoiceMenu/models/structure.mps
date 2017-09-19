@@ -150,6 +150,21 @@
       <property role="TrG5h" value="toolbar" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="3RP3wB6gbET" role="1TKVEl">
+      <property role="IQ2nx" value="4464490040751340217" />
+      <property role="TrG5h" value="default_number" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3RP3wB6gbEX" role="1TKVEl">
+      <property role="IQ2nx" value="4464490040751340221" />
+      <property role="TrG5h" value="default_path" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3RP3wB6ibf5" role="1TKVEl">
+      <property role="IQ2nx" value="4464490040751862725" />
+      <property role="TrG5h" value="default_visible" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5RYvhcT_ZR5">
     <property role="EcuMT" value="6772988411135917509" />
@@ -265,6 +280,11 @@
       <property role="IQ2nx" value="3817593199979086850" />
       <property role="TrG5h" value="playback" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="5jBAcX4JGBH" role="1TKVEl">
+      <property role="IQ2nx" value="6118026634785114605" />
+      <property role="TrG5h" value="PBisFile" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyj" id="JHn_unOCPR" role="1TKVEi">
       <property role="IQ2ns" value="859446834199956855" />

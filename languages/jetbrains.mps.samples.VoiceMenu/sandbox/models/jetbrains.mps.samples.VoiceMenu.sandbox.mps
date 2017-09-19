@@ -16,6 +16,8 @@
     <language id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu">
       <concept id="7733035612211835897" name="jetbrains.mps.samples.VoiceMenu.structure.Replay" flags="ng" index="2m1r4j" />
       <concept id="859446834198103481" name="jetbrains.mps.samples.VoiceMenu.structure.Timeout" flags="ng" index="2smLJI">
+        <property id="6118026634785114605" name="PBisFile" index="gml4y" />
+        <property id="3817593199979086850" name="playback" index="31ipjb" />
         <child id="859446834199956855" name="Action" index="2sfXcw" />
       </concept>
       <concept id="6587365532662359693" name="jetbrains.mps.samples.VoiceMenu.structure.Activity" flags="ng" index="2C_I21">
@@ -34,6 +36,7 @@
       <concept id="6587365532662629576" name="jetbrains.mps.samples.VoiceMenu.structure.WorkSpace" flags="ng" index="2Jqgb4">
         <property id="2702278965990756444" name="info" index="3uoZKU" />
         <property id="3919338464396137862" name="toolbar" index="1EJLKn" />
+        <property id="4464490040751862725" name="default_visible" index="3VJrRc" />
         <child id="859446834198103486" name="timeout" index="2smLJD" />
         <child id="6587365532662629611" name="bodyMenu" index="2JqgbB" />
       </concept>
@@ -49,6 +52,7 @@
         <property id="4759611536120921574" name="isFinal" index="XmNiv" />
       </concept>
       <concept id="6772988411135920840" name="jetbrains.mps.samples.VoiceMenu.structure.DirectCall" flags="ng" index="1$pBvr">
+        <property id="7733035612202996721" name="number" index="2nBP4r" />
         <property id="4759611536120921316" name="isFinal" index="XmNmt" />
       </concept>
     </language>
@@ -62,6 +66,7 @@
     <property role="TrG5h" value="Jet Mobile" />
     <property role="3uoZKU" value="Hello, welcome in Jet-Mobile" />
     <property role="1EJLKn" value="true" />
+    <property role="3VJrRc" value="true" />
     <node concept="2C_Ik4" id="2w$I9I9UGbh" role="2JqgbB">
       <node concept="2C_Ik0" id="2w$I9I9UGbk" role="2C_I24">
         <property role="2C_Iks" value="1" />
@@ -123,6 +128,7 @@
               </node>
               <node concept="2C_I21" id="2w$I9I9VzAD" role="2C_I26">
                 <property role="3upAMh" value="Going back to the previous menu." />
+                <property role="2tub0X" value="false" />
                 <ref role="2C_gVZ" node="2w$I9I9VzA_" resolve="Step back" />
                 <node concept="1$pBvp" id="2LL6X0rivt9" role="2C_gVu" />
               </node>
@@ -221,7 +227,9 @@
             <property role="3upAMh" value="Direct call has begun" />
             <property role="2tub0X" value="false" />
             <ref role="2C_gVZ" node="2w$I9Ia1nSJ" resolve="Summer News" />
-            <node concept="1$pBvr" id="2w$I9Ia1nTj" role="2C_gVu" />
+            <node concept="1$pBvr" id="2w$I9Ia1nTj" role="2C_gVu">
+              <property role="2nBP4r" value="333444555" />
+            </node>
           </node>
           <node concept="2C_Ik0" id="2w$I9Ia1nSW" role="2C_I24">
             <property role="2C_Iks" value="2" />
@@ -252,11 +260,13 @@
       <node concept="2C_I21" id="5K3$FqBqTI3" role="2C_I26">
         <ref role="2C_gVZ" node="5K3$FqBqTHW" resolve="Record" />
         <node concept="X09Yf" id="5K3$FqBqTJ2" role="2C_gVu">
-          <property role="XmNjE" value="true" />
+          <property role="XmNjE" value="false" />
         </node>
       </node>
     </node>
     <node concept="2smLJI" id="JHn_unRV$e" role="2smLJD">
+      <property role="31ipjb" value="Timeout" />
+      <property role="gml4y" value="false" />
       <node concept="2m1r4j" id="JHn_unRV$i" role="2sfXcw" />
     </node>
   </node>

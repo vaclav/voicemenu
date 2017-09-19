@@ -214,6 +214,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)/6587365532662629576");
     b.prop("info", 0x25806c66fbe3905cL, "2702278965990756444");
     b.prop("toolbar", 0x366449915cdb5586L, "3919338464396137862");
+    b.prop("default_number", 0x3df50e09c640bab9L, "4464490040751340217");
+    b.prop("default_path", 0x3df50e09c640babdL, "4464490040751340221");
+    b.prop("default_visible", 0x3df50e09c648b3c5L, "4464490040751862725");
     b.aggregate("bodyMenu", 0x5b6b060cf40204ebL).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L).optional(false).ordered(true).multiple(false).origin("6587365532662629611").done();
     b.aggregate("timeout", 0xbed5e5797b645beL).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L).optional(false).ordered(true).multiple(false).origin("859446834198103486").done();
     b.alias("Work Space");

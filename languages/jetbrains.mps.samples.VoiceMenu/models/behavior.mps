@@ -473,6 +473,19 @@
     <ref role="13h7C2" to="xehl:5HF1wNO0wj8" resolve="WorkSpace" />
     <node concept="13hLZK" id="5ruKdSy0pZa" role="13h7CW">
       <node concept="3clFbS" id="5ruKdSy0pZb" role="2VODD2">
+        <node concept="3clFbF" id="3RP3wB6ibhT" role="3cqZAp">
+          <node concept="37vLTI" id="3RP3wB6ictt" role="3clFbG">
+            <node concept="3clFbT" id="3RP3wB6ictR" role="37vLTx">
+              <property role="3clFbU" value="false" />
+            </node>
+            <node concept="2OqwBi" id="3RP3wB6ibqw" role="37vLTJ">
+              <node concept="13iPFW" id="3RP3wB6ibhR" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3RP3wB6ibQ6" role="2OqNvi">
+                <ref role="3TsBF5" to="xehl:3RP3wB6ibf5" resolve="default_visible" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="5pe7NVk6L_s" role="3cqZAp">
           <node concept="37vLTI" id="5pe7NVk6MC_" role="3clFbG">
             <node concept="3clFbT" id="5pe7NVk6MFi" role="37vLTx">
