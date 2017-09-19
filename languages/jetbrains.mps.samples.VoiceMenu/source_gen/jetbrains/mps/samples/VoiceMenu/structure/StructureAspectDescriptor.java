@@ -202,6 +202,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)/859446834198103481");
     b.prop("duration", 0xbed5e5797b645bcL, "859446834198103484");
     b.prop("playback", 0x34fad0c9f5b34402L, "3817593199979086850");
+    b.prop("PBisFile", 0x54e798cf44bec9edL, "6118026634785114605");
     b.aggregate("Action", 0xbed5e5797d28d77L).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d133997fdc5L).optional(false).ordered(true).multiple(false).origin("859446834199956855").done();
     return b.create();
   }

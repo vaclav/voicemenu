@@ -95,6 +95,16 @@ public class Styles_StyleSheet {
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
     new Styles_StyleSheet.GreetingStyleClass(editorContext, node).apply(style, editorCell);
   }
+  /**
+   * 
+   * @deprecated Since MPS 3.5 use generated StyleClass
+   */
+  @Deprecated
+  public static void apply_EmptyCell(Style style, EditorCell editorCell) {
+    SNode node = (editorCell == null ? null : editorCell.getSNode());
+    EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
+    new Styles_StyleSheet.EmptyCellStyleClass(editorContext, node).apply(style, editorCell);
+  }
 
   public static class ArrowsStyleClass extends AbstractStyleClass {
     public ArrowsStyleClass(EditorContext editorContext, SNode node) {
@@ -196,7 +206,19 @@ public class Styles_StyleSheet {
       style.set(StyleAttributes.SHOW_BOUNDARIES_IN, ShowBoundariesArea.GUTTER);
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
       style.set(StyleAttributes.FONT_SIZE, 17);
-      style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(new Color(5606191)));
+      style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(new Color(11514923)));
+      style.set(StyleAttributes.NULL_TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.gray));
+    }
+
+  }
+  public static class EmptyCellStyleClass extends AbstractStyleClass {
+    public EmptyCellStyleClass(EditorContext editorContext, SNode node) {
+      super(editorContext, node);
+    }
+
+    @Override
+    public void apply(Style style, EditorCell editorCell) {
+      style.set(StyleAttributes.NULL_TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.gray));
     }
 
   }
