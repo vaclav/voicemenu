@@ -66,7 +66,7 @@
     <property role="TrG5h" value="Jet Mobile" />
     <property role="3uoZKU" value="Hello, welcome in Jet-Mobile" />
     <property role="1EJLKn" value="true" />
-    <property role="3VJrRc" value="true" />
+    <property role="3VJrRc" value="false" />
     <node concept="2C_Ik4" id="2w$I9I9UGbh" role="2JqgbB">
       <node concept="2C_Ik0" id="2w$I9I9UGbk" role="2C_I24">
         <property role="2C_Iks" value="1" />
@@ -265,7 +265,7 @@
       </node>
     </node>
     <node concept="2smLJI" id="JHn_unRV$e" role="2smLJD">
-      <property role="31ipjb" value="Timeout" />
+      <property role="31ipjb" value="dasfsafsa" />
       <property role="gml4y" value="false" />
       <node concept="2m1r4j" id="JHn_unRV$i" role="2sfXcw" />
     </node>

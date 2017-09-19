@@ -12,6 +12,7 @@ import jetbrains.mps.openapi.editor.style.StyleRegistry;
 import jetbrains.mps.nodeEditor.MPSColors;
 import jetbrains.mps.nodeEditor.MPSFonts;
 import jetbrains.mps.editor.runtime.style.ShowBoundariesArea;
+import jetbrains.mps.nodeEditor.EditorSettings;
 import java.awt.Color;
 
 public class Styles_StyleSheet {
@@ -24,16 +25,6 @@ public class Styles_StyleSheet {
     SNode node = (editorCell == null ? null : editorCell.getSNode());
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
     new Styles_StyleSheet.ArrowsStyleClass(editorContext, node).apply(style, editorCell);
-  }
-  /**
-   * 
-   * @deprecated Since MPS 3.5 use generated StyleClass
-   */
-  @Deprecated
-  public static void apply_Title(Style style, EditorCell editorCell) {
-    SNode node = (editorCell == null ? null : editorCell.getSNode());
-    EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
-    new Styles_StyleSheet.TitleStyleClass(editorContext, node).apply(style, editorCell);
   }
   /**
    * 
@@ -95,16 +86,6 @@ public class Styles_StyleSheet {
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
     new Styles_StyleSheet.GreetingStyleClass(editorContext, node).apply(style, editorCell);
   }
-  /**
-   * 
-   * @deprecated Since MPS 3.5 use generated StyleClass
-   */
-  @Deprecated
-  public static void apply_EmptyCell(Style style, EditorCell editorCell) {
-    SNode node = (editorCell == null ? null : editorCell.getSNode());
-    EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
-    new Styles_StyleSheet.EmptyCellStyleClass(editorContext, node).apply(style, editorCell);
-  }
 
   public static class ArrowsStyleClass extends AbstractStyleClass {
     public ArrowsStyleClass(EditorContext editorContext, SNode node) {
@@ -116,20 +97,12 @@ public class Styles_StyleSheet {
       style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.black));
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
       style.set(StyleAttributes.SHOW_BOUNDARIES_IN, ShowBoundariesArea.GUTTER);
+      style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_kkd5s1_a3a());
     }
 
-  }
-  public static class TitleStyleClass extends AbstractStyleClass {
-    public TitleStyleClass(EditorContext editorContext, SNode node) {
-      super(editorContext, node);
+    private int _StyleParameter_QueryFunction_kkd5s1_a3a() {
+      return (EditorSettings.getInstance().getFontSize() * 120 / 100);
     }
-
-    @Override
-    public void apply(Style style, EditorCell editorCell) {
-      style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.DARK_MAGENTA));
-      style.set(StyleAttributes.SHOW_BOUNDARIES_IN, ShowBoundariesArea.GUTTER);
-    }
-
   }
   public static class ActionStyleClass extends AbstractStyleClass {
     public ActionStyleClass(EditorContext editorContext, SNode node) {
@@ -141,8 +114,12 @@ public class Styles_StyleSheet {
       style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.black));
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
       style.set(StyleAttributes.SHOW_BOUNDARIES_IN, ShowBoundariesArea.GUTTER);
+      style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_kkd5s1_a3b());
     }
 
+    private int _StyleParameter_QueryFunction_kkd5s1_a3b() {
+      return (EditorSettings.getInstance().getFontSize() * 130 / 100);
+    }
   }
   public static class HardCodedTextStyleClass extends AbstractStyleClass {
     public HardCodedTextStyleClass(EditorContext editorContext, SNode node) {
@@ -154,9 +131,12 @@ public class Styles_StyleSheet {
       style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.darkGray));
       style.set(StyleAttributes.SHOW_BOUNDARIES_IN, ShowBoundariesArea.GUTTER);
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
-      style.set(StyleAttributes.FONT_SIZE, 17);
+      style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_kkd5s1_a3c());
     }
 
+    private int _StyleParameter_QueryFunction_kkd5s1_a3c() {
+      return (EditorSettings.getInstance().getFontSize() * 120 / 100);
+    }
   }
   public static class UserWrittenTextStyleClass extends AbstractStyleClass {
     public UserWrittenTextStyleClass(EditorContext editorContext, SNode node) {
@@ -168,9 +148,12 @@ public class Styles_StyleSheet {
       style.set(StyleAttributes.SHOW_BOUNDARIES_IN, ShowBoundariesArea.GUTTER);
       style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.black));
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
-      style.set(StyleAttributes.FONT_SIZE, 20);
+      style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_kkd5s1_a3d());
     }
 
+    private int _StyleParameter_QueryFunction_kkd5s1_a3d() {
+      return (EditorSettings.getInstance().getFontSize() * 140 / 100);
+    }
   }
   public static class DeclarationsStyleClass extends AbstractStyleClass {
     public DeclarationsStyleClass(EditorContext editorContext, SNode node) {
@@ -181,9 +164,12 @@ public class Styles_StyleSheet {
     public void apply(Style style, EditorCell editorCell) {
       style.set(StyleAttributes.SHOW_BOUNDARIES_IN, ShowBoundariesArea.GUTTER);
       style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.DARK_MAGENTA));
-      style.set(StyleAttributes.FONT_SIZE, 20);
+      style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_kkd5s1_a2e());
     }
 
+    private int _StyleParameter_QueryFunction_kkd5s1_a2e() {
+      return (EditorSettings.getInstance().getFontSize() * 140 / 100);
+    }
   }
   public static class BracketsStyleClass extends AbstractStyleClass {
     public BracketsStyleClass(EditorContext editorContext, SNode node) {
@@ -193,8 +179,12 @@ public class Styles_StyleSheet {
     @Override
     public void apply(Style style, EditorCell editorCell) {
       style.set(StyleAttributes.SHOW_BOUNDARIES_IN, ShowBoundariesArea.GUTTER);
+      style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_kkd5s1_a1f());
     }
 
+    private int _StyleParameter_QueryFunction_kkd5s1_a1f() {
+      return (EditorSettings.getInstance().getFontSize() * 100 / 100);
+    }
   }
   public static class GreetingStyleClass extends AbstractStyleClass {
     public GreetingStyleClass(EditorContext editorContext, SNode node) {
@@ -205,21 +195,13 @@ public class Styles_StyleSheet {
     public void apply(Style style, EditorCell editorCell) {
       style.set(StyleAttributes.SHOW_BOUNDARIES_IN, ShowBoundariesArea.GUTTER);
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
-      style.set(StyleAttributes.FONT_SIZE, 17);
+      style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_kkd5s1_a2g());
       style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(new Color(11514923)));
       style.set(StyleAttributes.NULL_TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.gray));
     }
 
-  }
-  public static class EmptyCellStyleClass extends AbstractStyleClass {
-    public EmptyCellStyleClass(EditorContext editorContext, SNode node) {
-      super(editorContext, node);
+    private int _StyleParameter_QueryFunction_kkd5s1_a2g() {
+      return (EditorSettings.getInstance().getFontSize() * 110 / 100);
     }
-
-    @Override
-    public void apply(Style style, EditorCell editorCell) {
-      style.set(StyleAttributes.NULL_TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.gray));
-    }
-
   }
 }
