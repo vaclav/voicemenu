@@ -50,6 +50,14 @@
     <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
+  <dependency className="jetbrains.mps.samples.Text.textGen.PlainText_TextGen" file="PlainText_TextGen.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
+  </dependency>
   <dependency className="jetbrains.mps.samples.Text.textGen.Same_TextGen" file="Same_TextGen.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
@@ -70,6 +78,7 @@
     <classNode dependClassName="jetbrains.mps.samples.Text.textGen.Empty_TextGen" />
     <classNode dependClassName="jetbrains.mps.samples.Text.textGen.Extend_TextGen" />
     <classNode dependClassName="jetbrains.mps.samples.Text.textGen.GoTo_TextGen" />
+    <classNode dependClassName="jetbrains.mps.samples.Text.textGen.PlainText_TextGen" />
     <classNode dependClassName="jetbrains.mps.samples.Text.textGen.Same_TextGen" />
     <classNode dependClassName="jetbrains.mps.samples.Text.textGen.WorkSpace_TextGen" />
     <classNode dependClassName="jetbrains.mps.samples.Text.textGen.general1arg_TextGen" />

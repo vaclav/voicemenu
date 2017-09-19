@@ -222,6 +222,10 @@
         <child id="479456951540070885" name="reference" index="2B16pF" />
       </concept>
       <concept id="1416608923407914058" name="jetbrains.mps.samples.Text.structure.Empty" flags="ng" index="1yM5C5" />
+      <concept id="1416608923407894966" name="jetbrains.mps.samples.Text.structure.PlainText" flags="ng" index="1yM8vT">
+        <property id="1416608923407894967" name="argument1" index="1yM8vS" />
+        <property id="1416608923407899824" name="argument2" index="1yM9bZ" />
+      </concept>
       <concept id="1416608923407889291" name="jetbrains.mps.samples.Text.structure.Same" flags="ng" index="1yMfR4">
         <property id="1416608923407889295" name="action" index="1yMfR0" />
         <property id="1416608923407889294" name="priority" index="1yMfR1" />
@@ -409,7 +413,7 @@
     </node>
     <node concept="3lhOvk" id="7lUjv43dB_n" role="3lj3bC">
       <ref role="30HIoZ" to="xehl:5HF1wNO0wj8" resolve="WorkSpace" />
-      <ref role="3lhOvi" node="7lUjv43dBR0" resolve="map_WorkSpP" />
+      <ref role="3lhOvi" node="7lUjv43dBR0" resolve="map_WorkSpace_SIP" />
     </node>
     <node concept="1puMqW" id="3ymRrB946lY" role="1puA0r">
       <ref role="1puQsG" node="3ymRrB8K$1V" resolve="script" />
@@ -4388,17 +4392,44 @@
     </node>
   </node>
   <node concept="3DswuP" id="7lUjv43dBR0">
-    <property role="TrG5h" value="map_WorkSpP" />
+    <property role="TrG5h" value="map_WorkSpace_SIP" />
     <property role="1Q7UP_" value="sip" />
     <property role="1Q4x67" value="true" />
     <node concept="n94m4" id="7lUjv43dBR1" role="lGtFl">
       <ref role="n9lRv" to="xehl:5HF1wNO0wj8" resolve="WorkSpace" />
     </node>
     <node concept="2BdId_" id="7lUjv43dBR2" role="3Dsw3i">
-      <node concept="1yM5C5" id="7lUjv43dGlw" role="2BdIdy" />
       <node concept="1yM5C5" id="7lUjv43dGlA" role="2BdIdy" />
       <node concept="1yX5cI" id="7lUjv43dBWH" role="2BdIdy">
-        <property role="TrG5h" value="default" />
+        <property role="TrG5h" value="general" />
+      </node>
+      <node concept="1yM8vT" id="7lUjv43qpbM" role="2BdIdy">
+        <property role="1yM8vS" value="port" />
+        <property role="1yM9bZ" value="5060" />
+      </node>
+      <node concept="1yM8vT" id="7lUjv43qpbW" role="2BdIdy">
+        <property role="1yM8vS" value="bindaddr" />
+        <property role="1yM9bZ" value="0.0.0.0" />
+      </node>
+      <node concept="1yM8vT" id="7lUjv43qpc8" role="2BdIdy">
+        <property role="1yM8vS" value="context" />
+        <property role="1yM9bZ" value="default" />
+      </node>
+      <node concept="1yM5C5" id="7lUjv43qpcf" role="2BdIdy" />
+      <node concept="1yX5cI" id="7lUjv43qpcu" role="2BdIdy">
+        <property role="TrG5h" value="1000" />
+      </node>
+      <node concept="1yM8vT" id="7lUjv43qpcK" role="2BdIdy">
+        <property role="1yM8vS" value="type" />
+        <property role="1yM9bZ" value="friend" />
+      </node>
+      <node concept="1yM8vT" id="7lUjv43qpd4" role="2BdIdy">
+        <property role="1yM8vS" value="host" />
+        <property role="1yM9bZ" value="dynamic" />
+      </node>
+      <node concept="1yM8vT" id="7lUjv43qpdq" role="2BdIdy">
+        <property role="1yM8vS" value="secret" />
+        <property role="1yM9bZ" value="xxxx" />
       </node>
     </node>
     <node concept="2BdId_" id="7lUjv43dBWL" role="3Dsw3i" />

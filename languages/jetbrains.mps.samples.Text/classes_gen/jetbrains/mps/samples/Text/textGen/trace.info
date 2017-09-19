@@ -9,13 +9,13 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TextGenAspectDescriptor.java">
-      <unit at="15,0,67,0" name="jetbrains.mps.samples.Text.textGen.TextGenAspectDescriptor" />
+      <unit at="16,0,70,0" name="jetbrains.mps.samples.Text.textGen.TextGenAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:a8b76dab-5e9b-4c8b-b4ea-27758c157328(jetbrains.mps.samples.Text.textGen)/1416608923407904800">
     <file name="TextGenAspectDescriptor.java">
-      <node id="1416608923407905342" at="60,59,61,24" concept="5" />
-      <node id="1416608923407908065" at="63,64,64,18" concept="5" />
+      <node id="1416608923407905342" at="63,59,64,177" concept="5" />
+      <node id="1416608923407908065" at="66,64,67,18" concept="5" />
     </file>
     <file name="WorkSpace_TextGen.java">
       <node id="1416608923407904800" at="14,54,15,55" concept="4" />
@@ -201,6 +201,23 @@
         <var name="ctx" id="7733035612206534883" />
       </scope>
       <unit id="7733035612206534883" at="11,0,21,0" name="jetbrains.mps.samples.Text.textGen.general2args_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:a8b76dab-5e9b-4c8b-b4ea-27758c157328(jetbrains.mps.samples.Text.textGen)/8465164147136038074">
+    <file name="PlainText_TextGen.java">
+      <node id="8465164147136038074" at="13,54,14,55" concept="4" />
+      <node id="8465164147136038074" at="14,55,15,198" concept="0" />
+      <node id="8465164147136038074" at="15,198,16,20" concept="0" />
+      <node id="8465164147136038074" at="16,20,17,198" concept="0" />
+      <node id="8465164147136038074" at="17,198,18,18" concept="0" />
+      <node id="8465164147136038074" at="12,0,20,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="8465164147136038074" at="13,54,18,18">
+        <var name="tgs" id="8465164147136038074" />
+      </scope>
+      <scope id="8465164147136038074" at="12,0,20,0">
+        <var name="ctx" id="8465164147136038074" />
+      </scope>
+      <unit id="8465164147136038074" at="11,0,21,0" name="jetbrains.mps.samples.Text.textGen.PlainText_TextGen" />
     </file>
   </root>
 </debug-info>
