@@ -409,7 +409,14 @@ public class QueriesGenerated {
       if (SNodeOperations.isInstanceOf(ListSequence.fromList(SNodeOperations.getChildren(activity)).first(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu"))) {
         for (SNode event : Sequence.fromIterable(SLinkOperations.collectMany(SNodeOperations.ofConcept(SNodeOperations.getChildren(activity), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events")))) {
           LoggingRuntime.logMsgView(Level.INFO, SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "    " + SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), QueriesGenerated.class, null, null);
-          actionOptions = actionOptions + ", for " + SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + " press " + SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"));
+          String trigger = SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"));
+          if (eq_x583g4_a0c0a0k0m0pc(trigger, "*")) {
+            trigger = "star";
+          }
+          if (eq_x583g4_a0d0a0k0m0pc(trigger, "#")) {
+            trigger = "hash";
+          }
+          actionOptions = actionOptions + ", for " + SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + " press " + trigger;
         }
       } else {
         if (isEmptyString(SPropertyOperations.getString(activity, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")))) {
@@ -441,7 +448,15 @@ public class QueriesGenerated {
     }
 
     for (SNode event : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(ListSequence.fromList(SModelOperations.roots(_context.getModel(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace"))).first(), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x5b6b060cf40204ebL, "bodyMenu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events")))) {
-      options = options + ", for " + SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + " press " + SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"));
+      String trigger = SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"));
+      if (eq_x583g4_a0b0s0pc(trigger, "*")) {
+        trigger = "star";
+      }
+      if (eq_x583g4_a0c0s0pc(trigger, "#")) {
+        trigger = "hash";
+      }
+
+      options = options + ", for " + SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + " press " + trigger;
     }
     if (isMac == true) {
       try {
@@ -468,7 +483,19 @@ public class QueriesGenerated {
   private static boolean neq_x583g4_a0a0a0a0a0a0oc(Object a, Object b) {
     return !(((a != null ? a.equals(b) : a == b)));
   }
+  private static boolean eq_x583g4_a0c0a0k0m0pc(Object a, Object b) {
+    return (a != null ? a.equals(b) : a == b);
+  }
+  private static boolean eq_x583g4_a0d0a0k0m0pc(Object a, Object b) {
+    return (a != null ? a.equals(b) : a == b);
+  }
   private static boolean isEmptyString(String str) {
     return str == null || str.length() == 0;
+  }
+  private static boolean eq_x583g4_a0b0s0pc(Object a, Object b) {
+    return (a != null ? a.equals(b) : a == b);
+  }
+  private static boolean eq_x583g4_a0c0s0pc(Object a, Object b) {
+    return (a != null ? a.equals(b) : a == b);
   }
 }
