@@ -115,6 +115,7 @@
                 <property role="TrG5h" value="Hidden discounts" />
               </node>
               <node concept="2C_I21" id="2w$I9I9VzAo" role="2C_I26">
+                <property role="3upAMh" value="Secret info" />
                 <ref role="2C_gVZ" node="2w$I9I9VzAl" resolve="Hidden discounts" />
                 <node concept="1$pBvo" id="2w$I9I9VzAy" role="2C_gVu" />
               </node>
