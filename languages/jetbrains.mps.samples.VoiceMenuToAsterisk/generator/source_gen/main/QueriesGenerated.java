@@ -381,64 +381,82 @@ public class QueriesGenerated {
   public static void mappingScript_CodeBlock_4077690302637424764(final MappingScriptContext _context) {
 
     String path = System.getProperty("user.home") + "/MPS_ASTERISK/";
-    boolean isMac = System.getProperty("os.name").toLowerCase().contains("map");
+    boolean isMac = System.getProperty("os.name").toLowerCase().contains("mac");
 
-    String name = "";
+    String name = "0";
     Voice voice;
     VoiceManager voiceManager = VoiceManager.getInstance();
     voice = voiceManager.getVoice("kevin16");
     voice.allocate();
 
-    for (SNode actvt : ListSequence.fromList(SModelOperations.nodes(_context.getModel(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity")))) {
-      if (!(SPropertyOperations.getBoolean(actvt, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile"))) && isNotEmptyString(SPropertyOperations.getString(actvt, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")))) {
 
-        name = SPropertyOperations.getString(SLinkOperations.getTarget(actvt, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"));
-        for (SNode actvt2 : Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getNodeAncestors(actvt, null, false), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity")))) {
-          name = SPropertyOperations.getString(SLinkOperations.getTarget(actvt2, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")) + name;
+
+    for (SNode activity : ListSequence.fromList(SModelOperations.nodes(_context.getModel(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity")))) {
+      String playback = "";
+      if (isNotEmptyString(SPropertyOperations.getString(activity, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")))) {
+        playback = SPropertyOperations.getString(activity, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback"));
+      }
+
+      name = SPropertyOperations.getString(SLinkOperations.getTarget(activity, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"));
+      for (SNode actvt2 : Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getNodeAncestors(activity, null, false), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity")))) {
+        name = SPropertyOperations.getString(SLinkOperations.getTarget(actvt2, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")) + name;
+      }
+      name += SPropertyOperations.getString(SLinkOperations.getTarget(activity, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).replaceAll(" ", "_");
+      String actionOptions = ". ";
+
+      LoggingRuntime.logMsgView(Level.INFO, name, QueriesGenerated.class, null, null);
+
+      if (SNodeOperations.isInstanceOf(ListSequence.fromList(SNodeOperations.getChildren(activity)).first(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu"))) {
+        for (SNode event : Sequence.fromIterable(SLinkOperations.collectMany(SNodeOperations.ofConcept(SNodeOperations.getChildren(activity), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events")))) {
+          LoggingRuntime.logMsgView(Level.INFO, SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "    " + SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), QueriesGenerated.class, null, null);
+          actionOptions = actionOptions + ", for " + SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + " press " + SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"));
         }
-        name += SPropertyOperations.getString(SLinkOperations.getTarget(actvt, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).replaceAll(" ", "_");
-
-
-        if (isMac == true) {
-          try {
-            String command = "say -v samantha -o " + path + name + ".wav" + " --data-format=LEF32@8000 " + SPropertyOperations.getString(actvt, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback"));
-            LoggingRuntime.logMsgView(Level.INFO, SPropertyOperations.getString(actvt, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")), QueriesGenerated.class, null, null);
-            Runtime.getRuntime().exec(command);
-          } catch (IOException e) {
-            e.printStackTrace();
-          }
-        } else {
-          AudioPlayer tmpPlayer = new SingleFileAudioPlayer(path + name, AudioFileFormat.Type.WAVE);
-          voice.setAudioPlayer(tmpPlayer);
-          voice.speak(SPropertyOperations.getString(actvt, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")));
-          tmpPlayer.close();
-          tmpPlayer.end();
+      } else {
+        if (isEmptyString(SPropertyOperations.getString(activity, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")))) {
+          continue;
         }
       }
-    }
 
-    if (isNotEmptyString(SPropertyOperations.getString(ListSequence.fromList(SModelOperations.roots(_context.getModel(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace"))).first(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "info")))) {
-      String options = ". ";
-      for (SNode event : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(ListSequence.fromList(SModelOperations.roots(_context.getModel(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace"))).first(), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x5b6b060cf40204ebL, "bodyMenu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events")))) {
-        options = options + ", for " + SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + " press " + SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"));
-      }
+
       if (isMac == true) {
         try {
-          String command = "say -v samantha -o " + path + "home" + ".wav" + " --data-format=LEF32@8000 " + SPropertyOperations.getString(ListSequence.fromList(SModelOperations.roots(_context.getModel(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace"))).first(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "info")) + options;
-          LoggingRuntime.logMsgView(Level.INFO, SPropertyOperations.getString(ListSequence.fromList(SModelOperations.roots(_context.getModel(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace"))).first(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "info")), QueriesGenerated.class, null, null);
+          String command = "say -v samantha -o " + path + name + ".wav" + " --data-format=LEF32@8000 " + playback + actionOptions;
           Runtime.getRuntime().exec(command);
         } catch (IOException e) {
           e.printStackTrace();
         }
-
       } else {
-        AudioPlayer tmpPlayer = new SingleFileAudioPlayer(path + "home", AudioFileFormat.Type.WAVE);
+        AudioPlayer tmpPlayer = new SingleFileAudioPlayer(path + name, AudioFileFormat.Type.WAVE);
         voice.setAudioPlayer(tmpPlayer);
-        voice.speak(SPropertyOperations.getString(ListSequence.fromList(SModelOperations.roots(_context.getModel(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace"))).first(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "info")) + options);
+        voice.speak(playback + actionOptions);
         tmpPlayer.close();
         tmpPlayer.end();
       }
+    }
 
+    String options = ". ";
+    String playback = "";
+    if (isNotEmptyString(SPropertyOperations.getString(ListSequence.fromList(SModelOperations.roots(_context.getModel(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace"))).first(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "info")))) {
+      playback = SPropertyOperations.getString(ListSequence.fromList(SModelOperations.roots(_context.getModel(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace"))).first(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "info"));
+    }
+
+    for (SNode event : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(ListSequence.fromList(SModelOperations.roots(_context.getModel(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace"))).first(), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x5b6b060cf40204ebL, "bodyMenu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events")))) {
+      options = options + ", for " + SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + " press " + SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"));
+    }
+    if (isMac == true) {
+      try {
+        String command = "say -v samantha -o " + path + "home" + ".wav" + " --data-format=LEF32@8000 " + playback + options;
+        Runtime.getRuntime().exec(command);
+      } catch (IOException e) {
+        e.printStackTrace();
+      }
+
+    } else {
+      AudioPlayer tmpPlayer = new SingleFileAudioPlayer(path + "home", AudioFileFormat.Type.WAVE);
+      voice.setAudioPlayer(tmpPlayer);
+      voice.speak(playback + options);
+      tmpPlayer.close();
+      tmpPlayer.end();
     }
   }
   private static boolean isNotEmptyString(String str) {
@@ -449,5 +467,8 @@ public class QueriesGenerated {
   }
   private static boolean neq_x583g4_a0a0a0a0a0a0oc(Object a, Object b) {
     return !(((a != null ? a.equals(b) : a == b)));
+  }
+  private static boolean isEmptyString(String str) {
+    return str == null || str.length() == 0;
   }
 }
