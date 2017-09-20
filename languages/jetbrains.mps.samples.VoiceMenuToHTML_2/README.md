@@ -43,6 +43,7 @@ Choose the generator which suits your needs:
 
   [![sandbox_menu](../../extras/Intention_Switch_Target.png)](https://github.com/vaclav/voicemenu/blob/master/extras/Intention_Switch_Target.png)
 
+**or**
 
 * Right click on Solution model (sandbox) and choose Model Properties
 * Select target language in Model Properties --> Advanced --> Languages engaged on generation 
@@ -57,6 +58,7 @@ Choose the generator which suits your needs:
     jetbrains.mps.samples.VoiceMenuToJava
     jetbrains.mps.samples.VoiceMenuToXML
     jetbrains.mps.samples.VoiceMenuToHTML
+    jetbrains.mps.samples.VoiceMenuToAsterisk
 ```
 * Click on blue button OK
 * Rebuild the Solution Model
