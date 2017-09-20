@@ -104,7 +104,7 @@ Sample
 
 A little demonstration of what an editor looks like
 
-[![Sample_code](../../extras/Sample_table_2.png)](https://www.jetbrains.com/mps/)
+[![Sample_code](../../extras/Sample_Menu.png)](https://github.com/vaclav/voicemenu/blob/master/extras/Sample_Menu.png)
 
 Toolbar
 -------
@@ -113,8 +113,15 @@ Toolbar with action buttons for more pleasant usage
 
 
 
-[![Switch](../../extras/Pencil.png)](https://www.jetbrains.com/mps/)    Switch Editor Hints
+[![Switch](../../languages/jetbrains.mps.samples.VoiceMenu/src/icons8-Table-24.png)](https://github.com/vaclav/voicemenu/blob/master/languages/jetbrains.mps.samples.VoiceMenu/src/icons8-Table-24.png)     Switch Editor Hints to Tabular
 
-[![Find](../../extras/Search.png)](https://www.jetbrains.com/mps/)    Find Error in code
+[![Switch](../../languages/jetbrains.mps.samples.VoiceMenu/src/icons8-List-24.png)](https://github.com/vaclav/voicemenu/blob/master/languages/jetbrains.mps.samples.VoiceMenu/src/icons8-List-24.png)     Switch Editor Hints to Structural
 
-[![Hide](../../extras/Close.png)](https://www.jetbrains.com/mps/)    Hide Toolbar
+[![Find](../../languages/jetbrains.mps.samples.VoiceMenu/src/icons8-Search-24.png)](https://github.com/vaclav/voicemenu/blob/master/languages/jetbrains.mps.samples.VoiceMenu/src/icons8-Search-24.png)     Find Error in code
+
+[![Hide](../../languages/jetbrains.mps.samples.VoiceMenu/src/icons8-Hide-24.png)](https://github.com/vaclav/voicemenu/blob/master/languages/jetbrains.mps.samples.VoiceMenu/src/icons8-Hide-24.png)     Hide Toolbar
+
+[![Fix](../../languages/jetbrains.mps.samples.VoiceMenu/src/AllCheck.png)](https://github.com/vaclav/voicemenu/blob/master/languages/jetbrains.mps.samples.VoiceMenu/src/AllCheck.png)     Fix all errors in code
+
+[![Settings](../../languages/jetbrains.mps.samples.VoiceMenu/src/default_settings.png)](https://github.com/vaclav/voicemenu/blob/master/languages/jetbrains.mps.samples.VoiceMenu/src/default_settings.png)         Show/Hide Settings
+
