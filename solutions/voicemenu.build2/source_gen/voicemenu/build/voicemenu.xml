@@ -60,6 +60,7 @@
     <echoxml file="${build.tmp}/default/branding.jar/idea/IdeaApplicationInfo.xml">
       <component>
         <version codename="voicemenu" major="1" minor="0" eap="false" />
+        <company name="JetBrains" url="http://www.jetbrains.com" />
         <build number="${build.number}" date="${date}" />
         <logo url="/splash.png" textcolor="002387" />
         <about url="/about.png" />
@@ -70,6 +71,7 @@
         <welcome-screen logo-url="/logo.png" />
         
         
+        <plugins url="" />
         
         
       </component>

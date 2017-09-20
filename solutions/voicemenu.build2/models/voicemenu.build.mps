@@ -155,6 +155,10 @@
       <concept id="1500819558095907805" name="jetbrains.mps.build.mps.structure.BuildMps_Group" flags="ng" index="2G$12M">
         <child id="1500819558095907806" name="modules" index="2G$12L" />
       </concept>
+      <concept id="781140262677906392" name="jetbrains.mps.build.mps.structure.BuildMps_BrandingCompany" flags="ng" index="IuM$Q">
+        <child id="781140262677906402" name="url" index="IuM$c" />
+        <child id="781140262677906401" name="name" index="IuM$f" />
+      </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
         <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
@@ -177,6 +181,7 @@
         <child id="6108265972537372847" name="shortName" index="2EtHGA" />
         <child id="6108265972537372848" name="fullName" index="2EtHGT" />
         <child id="8795525031433238889" name="textColor" index="HFo83" />
+        <child id="781140262677914381" name="company" index="IuKBz" />
         <child id="3497141547781549827" name="codename" index="2OjNyQ" />
         <child id="1462305029084462472" name="buildDate" index="R$TG_" />
         <child id="772379520210716142" name="welcomeLogo" index="3vi$VU" />
@@ -290,6 +295,18 @@
           <property role="2Ry0Am" value="icons" />
           <node concept="2Ry0Ak" id="5ruKdSwyerW" role="2Ry0An">
             <property role="2Ry0Am" value="about.png" />
+          </node>
+        </node>
+      </node>
+      <node concept="IuM$Q" id="BkRLA8xBWI" role="IuKBz">
+        <node concept="3_J27D" id="BkRLA8xBWJ" role="IuM$f">
+          <node concept="3Mxwew" id="BkRLA8xBYz" role="3MwsjC">
+            <property role="3MwjfP" value="JetBrains" />
+          </node>
+        </node>
+        <node concept="3_J27D" id="BkRLA8xBWK" role="IuM$c">
+          <node concept="3Mxwew" id="BkRLA8xBY_" role="3MwsjC">
+            <property role="3MwjfP" value="http://www.jetbrains.com" />
           </node>
         </node>
       </node>
@@ -414,7 +431,7 @@
             </node>
           </node>
           <node concept="1zDrgl" id="5ruKdSwyetr" role="39821P">
-            <ref role="1zDrgn" node="5ruKdSwyeru" resolve="voicemenu" />
+            <ref role="1zDrgn" node="5ruKdSwyeru" resolve="voicemenu 1.0" />
           </node>
         </node>
       </node>
