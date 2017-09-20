@@ -253,6 +253,19 @@ public class FixAll {
         }
       }
 
+      if (eq_heizli_a0p0d2(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")).charAt(0), '/')) {
+        LoggingRuntime.logMsgView(Level.INFO, "/ Removed", FixAll.class, null, null);
+        SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path"), SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")).substring(1));
+      }
+      if (neq_heizli_a0q0d2(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")).charAt(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")).length() - 1), '/')) {
+        LoggingRuntime.logMsgView(Level.INFO, "/ Added", FixAll.class, null, null);
+        SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path"), SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")) + "/");
+      }
+      while (SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")).contains("//")) {
+        LoggingRuntime.logMsgView(Level.INFO, "// Replaced with /", FixAll.class, null, null);
+        SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path"), SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")).replaceAll("//", "/"));
+      }
+
       LoggingRuntime.logMsgView(Level.INFO, "FINISHED", FixAll.class, null, null);
 
       SelectionUtil.selectCell(editorContext, node, SelectionManager.FIRST_ERROR_CELL);
@@ -277,6 +290,12 @@ public class FixAll {
       return (a != null ? a.equals(b) : a == b);
     }
     private static boolean neq_heizli_a0a0a0a0a0a3a01a3c(Object a, Object b) {
+      return !(((a != null ? a.equals(b) : a == b)));
+    }
+    private static boolean eq_heizli_a0p0d2(Object a, Object b) {
+      return (a != null ? a.equals(b) : a == b);
+    }
+    private static boolean neq_heizli_a0q0d2(Object a, Object b) {
       return !(((a != null ? a.equals(b) : a == b)));
     }
   }

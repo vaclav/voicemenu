@@ -71,6 +71,16 @@ public class Styles_StyleSheet {
    * @deprecated Since MPS 3.5 use generated StyleClass
    */
   @Deprecated
+  public static void apply_EmptyCell(Style style, EditorCell editorCell) {
+    SNode node = (editorCell == null ? null : editorCell.getSNode());
+    EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
+    new Styles_StyleSheet.EmptyCellStyleClass(editorContext, node).apply(style, editorCell);
+  }
+  /**
+   * 
+   * @deprecated Since MPS 3.5 use generated StyleClass
+   */
+  @Deprecated
   public static void apply_Brackets(Style style, EditorCell editorCell) {
     SNode node = (editorCell == null ? null : editorCell.getSNode());
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
@@ -118,7 +128,7 @@ public class Styles_StyleSheet {
     }
 
     private int _StyleParameter_QueryFunction_kkd5s1_a3b() {
-      return (EditorSettings.getInstance().getFontSize() * 130 / 100);
+      return (EditorSettings.getInstance().getFontSize() * 110 / 100);
     }
   }
   public static class HardCodedTextStyleClass extends AbstractStyleClass {
@@ -171,6 +181,20 @@ public class Styles_StyleSheet {
       return (EditorSettings.getInstance().getFontSize() * 140 / 100);
     }
   }
+  public static class EmptyCellStyleClass extends AbstractStyleClass {
+    public EmptyCellStyleClass(EditorContext editorContext, SNode node) {
+      super(editorContext, node);
+    }
+
+    @Override
+    public void apply(Style style, EditorCell editorCell) {
+      style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_kkd5s1_a0f());
+    }
+
+    private int _StyleParameter_QueryFunction_kkd5s1_a0f() {
+      return (EditorSettings.getInstance().getFontSize() * 120 / 100);
+    }
+  }
   public static class BracketsStyleClass extends AbstractStyleClass {
     public BracketsStyleClass(EditorContext editorContext, SNode node) {
       super(editorContext, node);
@@ -179,10 +203,10 @@ public class Styles_StyleSheet {
     @Override
     public void apply(Style style, EditorCell editorCell) {
       style.set(StyleAttributes.SHOW_BOUNDARIES_IN, ShowBoundariesArea.GUTTER);
-      style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_kkd5s1_a1f());
+      style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_kkd5s1_a1g());
     }
 
-    private int _StyleParameter_QueryFunction_kkd5s1_a1f() {
+    private int _StyleParameter_QueryFunction_kkd5s1_a1g() {
       return (EditorSettings.getInstance().getFontSize() * 100 / 100);
     }
   }
@@ -195,12 +219,12 @@ public class Styles_StyleSheet {
     public void apply(Style style, EditorCell editorCell) {
       style.set(StyleAttributes.SHOW_BOUNDARIES_IN, ShowBoundariesArea.GUTTER);
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
-      style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_kkd5s1_a2g());
+      style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_kkd5s1_a2h());
       style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(new Color(11514923)));
       style.set(StyleAttributes.NULL_TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.gray));
     }
 
-    private int _StyleParameter_QueryFunction_kkd5s1_a2g() {
+    private int _StyleParameter_QueryFunction_kkd5s1_a2h() {
       return (EditorSettings.getInstance().getFontSize() * 110 / 100);
     }
   }

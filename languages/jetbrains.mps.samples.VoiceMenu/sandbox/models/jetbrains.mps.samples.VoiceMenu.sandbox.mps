@@ -36,6 +36,8 @@
       <concept id="6587365532662629576" name="jetbrains.mps.samples.VoiceMenu.structure.WorkSpace" flags="ng" index="2Jqgb4">
         <property id="2702278965990756444" name="info" index="3uoZKU" />
         <property id="3919338464396137862" name="toolbar" index="1EJLKn" />
+        <property id="4464490040751340217" name="default_number" index="3VHriK" />
+        <property id="4464490040751340221" name="default_path" index="3VHriO" />
         <property id="4464490040751862725" name="default_visible" index="3VJrRc" />
         <child id="859446834198103486" name="timeout" index="2smLJD" />
         <child id="6587365532662629611" name="bodyMenu" index="2JqgbB" />
@@ -66,7 +68,9 @@
     <property role="TrG5h" value="Jet Mobile" />
     <property role="3uoZKU" value="Hello, welcome in Jet-Mobile" />
     <property role="1EJLKn" value="true" />
-    <property role="3VJrRc" value="false" />
+    <property role="3VJrRc" value="true" />
+    <property role="3VHriK" value="800" />
+    <property role="3VHriO" value="etc/asterisk/" />
     <node concept="2C_Ik4" id="2w$I9I9UGbh" role="2JqgbB">
       <node concept="2C_Ik0" id="2w$I9I9UGbk" role="2C_I24">
         <property role="2C_Iks" value="1" />
@@ -120,7 +124,9 @@
               <node concept="2C_I21" id="2w$I9I9VzAo" role="2C_I26">
                 <property role="3upAMh" value="Secret info" />
                 <ref role="2C_gVZ" node="2w$I9I9VzAl" resolve="Hidden discounts" />
-                <node concept="1$pBvo" id="2w$I9I9VzAy" role="2C_gVu" />
+                <node concept="1$pBvo" id="2w$I9I9VzAy" role="2C_gVu">
+                  <property role="XmNhe" value="false" />
+                </node>
               </node>
               <node concept="2C_Ik0" id="2w$I9I9VzA_" role="2C_I24">
                 <property role="2C_Iks" value="*" />

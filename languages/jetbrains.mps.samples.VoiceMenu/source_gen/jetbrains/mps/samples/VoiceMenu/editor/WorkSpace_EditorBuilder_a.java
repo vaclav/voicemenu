@@ -312,7 +312,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     return editorCell;
   }
   private EditorCell createConstant_ikqrmj_l0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Advance settings:");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Advanced settings:");
     editorCell.setCellId("Constant_ikqrmj_l0");
     Style style = new StyleImpl();
     new HardCodedTextStyleClass(getEditorContext(), getNode()).apply(style, editorCell);

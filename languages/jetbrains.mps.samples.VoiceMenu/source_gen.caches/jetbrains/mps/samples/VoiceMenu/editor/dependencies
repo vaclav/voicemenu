@@ -265,6 +265,7 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.style.StyleRegistry" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.ActionStyleClass" />
+    <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.EmptyCellStyleClass" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.GreetingStyleClass" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.HardCodedTextStyleClass" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.editor.SwitchFinal_NonFinal" />
