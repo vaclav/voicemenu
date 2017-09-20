@@ -14,9 +14,11 @@
   </imports>
   <registry>
     <language id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu">
+      <concept id="6151364482690565571" name="jetbrains.mps.samples.VoiceMenu.structure.Empty" flags="ng" index="2fTWM$" />
       <concept id="7733035612211835897" name="jetbrains.mps.samples.VoiceMenu.structure.Replay" flags="ng" index="2m1r4j" />
       <concept id="859446834198103481" name="jetbrains.mps.samples.VoiceMenu.structure.Timeout" flags="ng" index="2smLJI">
         <property id="6118026634785114605" name="PBisFile" index="gml4y" />
+        <property id="859446834198103484" name="duration" index="2smLJF" />
         <property id="3817593199979086850" name="playback" index="31ipjb" />
         <child id="859446834199956855" name="Action" index="2sfXcw" />
       </concept>
@@ -68,7 +70,7 @@
     <property role="TrG5h" value="Jet Mobile" />
     <property role="3uoZKU" value="Hello, welcome in Jet-Mobile" />
     <property role="1EJLKn" value="true" />
-    <property role="3VJrRc" value="true" />
+    <property role="3VJrRc" value="false" />
     <property role="3VHriK" value="800" />
     <property role="3VHriO" value="etc/asterisk/" />
     <node concept="2C_Ik4" id="2w$I9I9UGbh" role="2JqgbB">
@@ -274,6 +276,25 @@
       <property role="31ipjb" value="dasfsafsa" />
       <property role="gml4y" value="false" />
       <node concept="2m1r4j" id="JHn_unRV$i" role="2sfXcw" />
+    </node>
+  </node>
+  <node concept="2Jqgb4" id="46vUbM4_$$P">
+    <property role="3VJrRc" value="false" />
+    <property role="1EJLKn" value="true" />
+    <property role="TrG5h" value="Jetbrains" />
+    <node concept="2C_Ik4" id="46vUbM4_$$Q" role="2JqgbB">
+      <node concept="2C_Ik0" id="46vUbM4_$$V" role="2C_I24">
+        <property role="TrG5h" value="Internet" />
+        <property role="2C_Iks" value="2" />
+      </node>
+      <node concept="2C_I21" id="46vUbM4_$$T" role="2C_I26">
+        <ref role="2C_gVZ" node="46vUbM4_$$V" resolve="Internet" />
+        <node concept="2fTWM$" id="46vUbM4_$$U" role="2C_gVu" />
+      </node>
+    </node>
+    <node concept="2smLJI" id="46vUbM4_$$R" role="2smLJD">
+      <property role="2smLJF" value="7" />
+      <node concept="2m1r4j" id="46vUbM4_$$S" role="2sfXcw" />
     </node>
   </node>
 </model>
