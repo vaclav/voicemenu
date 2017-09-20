@@ -395,13 +395,16 @@ public class QueriesGenerated {
   public static SNode sourceNodeQuery_4728754030118874103(final SourceSubstituteMacroNodeContext _context) {
     return Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getChildren(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d133997fdc5L, "jetbrains.mps.samples.VoiceMenu.structure.Action"))).first();
   }
+  public static SNode sourceNodeQuery_4728754030136216505(final SourceSubstituteMacroNodeContext _context) {
+    return Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getChildren(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu"))).first();
+  }
   public static SNode sourceNodeQuery_4728754030119357852(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace"), false, false), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0xbed5e5797b645beL, "timeout")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0xbed5e5797d28d77L, "Action"));
   }
   public static Iterable<SNode> sourceNodesQuery_6630304389629574181(final SourceSubstituteMacroNodesContext _context) {
     return ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x5b6b060cf40204ebL, "bodyMenu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities"))).where(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
-        return neq_x583g4_a0a0a0a0a0a0rc(SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "X");
+        return neq_x583g4_a0a0a0a0a0a0sc(SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "X");
       }
     });
   }
@@ -441,10 +444,10 @@ public class QueriesGenerated {
       if (SNodeOperations.isInstanceOf(ListSequence.fromList(SNodeOperations.getChildren(activity)).first(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu"))) {
         for (SNode event : Sequence.fromIterable(SLinkOperations.collectMany(SNodeOperations.ofConcept(SNodeOperations.getChildren(activity), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events")))) {
           String trigger = SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"));
-          if (eq_x583g4_a0b0a0j0m0uc(trigger, "*")) {
+          if (eq_x583g4_a0b0a0j0m0vc(trigger, "*")) {
             trigger = "star";
           }
-          if (eq_x583g4_a0c0a0j0m0uc(trigger, "#")) {
+          if (eq_x583g4_a0c0a0j0m0vc(trigger, "#")) {
             trigger = "hash";
           }
           actionOptions = actionOptions + ", for " + SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + " press " + trigger;
@@ -480,10 +483,10 @@ public class QueriesGenerated {
 
     for (SNode event : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(ListSequence.fromList(SModelOperations.roots(_context.getModel(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace"))).first(), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x5b6b060cf40204ebL, "bodyMenu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events")))) {
       String trigger = SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"));
-      if (eq_x583g4_a0b0s0uc(trigger, "*")) {
+      if (eq_x583g4_a0b0s0vc(trigger, "*")) {
         trigger = "star";
       }
-      if (eq_x583g4_a0c0s0uc(trigger, "#")) {
+      if (eq_x583g4_a0c0s0vc(trigger, "#")) {
         trigger = "hash";
       }
 
@@ -508,22 +511,22 @@ public class QueriesGenerated {
   private static boolean isNotEmptyString(String str) {
     return str != null && str.length() > 0;
   }
-  private static boolean neq_x583g4_a0a0a0a0a0a0rc(Object a, Object b) {
+  private static boolean neq_x583g4_a0a0a0a0a0a0sc(Object a, Object b) {
     return !(((a != null ? a.equals(b) : a == b)));
   }
-  private static boolean eq_x583g4_a0b0a0j0m0uc(Object a, Object b) {
+  private static boolean eq_x583g4_a0b0a0j0m0vc(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
-  private static boolean eq_x583g4_a0c0a0j0m0uc(Object a, Object b) {
+  private static boolean eq_x583g4_a0c0a0j0m0vc(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
   private static boolean isEmptyString(String str) {
     return str == null || str.length() == 0;
   }
-  private static boolean eq_x583g4_a0b0s0uc(Object a, Object b) {
+  private static boolean eq_x583g4_a0b0s0vc(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
-  private static boolean eq_x583g4_a0c0s0uc(Object a, Object b) {
+  private static boolean eq_x583g4_a0c0s0vc(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
 }
