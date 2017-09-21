@@ -249,11 +249,6 @@
     <property role="TrG5h" value="Record" />
     <property role="34LRSv" value="Record" />
     <ref role="1TJDcQ" node="5RYvhcT_ZR5" resolve="Action" />
-    <node concept="1TJgyi" id="2mgRGhu3mzh" role="1TKVEl">
-      <property role="IQ2nx" value="2706908311022561489" />
-      <property role="TrG5h" value="nameOfRecord" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyi" id="48dyn_ZlFQj" role="1TKVEl">
       <property role="IQ2nx" value="4759611536120921491" />
       <property role="TrG5h" value="isFinal" />

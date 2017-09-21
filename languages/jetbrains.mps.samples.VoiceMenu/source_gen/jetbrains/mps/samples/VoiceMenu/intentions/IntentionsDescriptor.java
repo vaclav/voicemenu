@@ -72,6 +72,14 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
         break;
       case 3:
         if (true) {
+          // Concept: Timeout 
+          intentions = new IntentionFactory[2];
+          intentions[0] = new Add_Playback_Timeout_Intention();
+          intentions[1] = new Remove_Playback_Timeout_Intention();
+        }
+        break;
+      case 4:
+        if (true) {
           // Concept: WorkSpace 
           intentions = new IntentionFactory[8];
           intentions[0] = new Remove_Main_Playback_Intention();
@@ -93,7 +101,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
   @NotNull
   @Override
   public Collection<IntentionFactory> getAllIntentions() {
-    IntentionFactory[] rv = new IntentionFactory[29];
+    IntentionFactory[] rv = new IntentionFactory[31];
     rv[0] = new Remove_Playback_Intention();
     rv[1] = new Remove_Main_Playback_Intention();
     rv[2] = new InitializeNewEvent_Intention();
@@ -123,7 +131,9 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
     rv[26] = new SwitchGeneratorToXML_Intention();
     rv[27] = new SwitchGeneratorToJavaSimulator_Intention();
     rv[28] = new SwitchGeneratorToAsterisk_Intention();
+    rv[29] = new Add_Playback_Timeout_Intention();
+    rv[30] = new Remove_Playback_Timeout_Intention();
     return Arrays.asList(rv);
   }
-  private static final ConceptSwitchIndex index_hphjzv_d0f = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d133997fdc5L), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L)).seal();
+  private static final ConceptSwitchIndex index_hphjzv_d0f = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d133997fdc5L), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L), MetaIdFactory.conceptId(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L)).seal();
 }

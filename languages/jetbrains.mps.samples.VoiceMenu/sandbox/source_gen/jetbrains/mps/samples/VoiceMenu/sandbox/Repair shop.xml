@@ -1,0 +1,46 @@
+<?xml version = "1.0" encoding = "UTF-8" standalone = "no"?>
+<state_machine>
+  
+  <state id="Repair shop" isInitial="true">
+    
+    
+    <activity event="1" target_child="Repair Car">
+      <state id="Repair Car">
+        <action name="Direct Call">111 222 111</action>
+      </state>
+      
+    </activity>
+    <activity event="2" target_child="Billing">
+      <playback>Now is time to pay.</playback>
+      <state id="Billing">
+        <action name="Get Info"></action>
+      </state>
+      
+    </activity>
+    <activity event="3" target_child="Others">
+      <state id="Others">
+        <activity event="1" target_child="Repair washer machine">
+          <playback>Don't worry, we gonna fix it.</playback>
+          <state id="Repair washer machine">
+            <action name="Direct Call">333 444 555</action>
+          </state>
+          
+        </activity>
+        <activity event="2" target_child="Replace bulb">
+          <state id="Replace bulb">
+            <action name="Record"></action>
+          </state>
+          
+        </activity>
+        <activity event="*" target_child="Back">
+          <state id="Back">
+            <action name="Back"></action>
+          </state>
+          
+        </activity>
+      </state>
+      
+    </activity>
+    
+  </state>
+</state_machine>

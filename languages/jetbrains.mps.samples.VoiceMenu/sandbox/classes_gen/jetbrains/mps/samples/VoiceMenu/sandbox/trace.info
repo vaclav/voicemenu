@@ -5,5 +5,10 @@
       <unit id="2892639838852006608" at="1,0,141,16" name="jetbrains.mps.samples.VoiceMenu.sandbox.Jet Mobile" />
     </file>
   </root>
+  <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/6353162083927585389">
+    <file name="Repair shop.xml">
+      <unit id="6353162083927585389" at="1,0,46,16" name="jetbrains.mps.samples.VoiceMenu.sandbox.Repair shop" />
+    </file>
+  </root>
 </debug-info>
 

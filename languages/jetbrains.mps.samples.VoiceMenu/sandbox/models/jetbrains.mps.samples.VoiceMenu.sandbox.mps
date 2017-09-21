@@ -17,6 +17,7 @@
       <concept id="7733035612211835897" name="jetbrains.mps.samples.VoiceMenu.structure.Replay" flags="ng" index="2m1r4j" />
       <concept id="859446834198103481" name="jetbrains.mps.samples.VoiceMenu.structure.Timeout" flags="ng" index="2smLJI">
         <property id="6118026634785114605" name="PBisFile" index="gml4y" />
+        <property id="859446834198103484" name="duration" index="2smLJF" />
         <property id="3817593199979086850" name="playback" index="31ipjb" />
         <child id="859446834199956855" name="Action" index="2sfXcw" />
       </concept>
@@ -277,6 +278,80 @@
       <property role="31ipjb" value="dasfsafsa" />
       <property role="gml4y" value="false" />
       <node concept="2m1r4j" id="JHn_unRV$i" role="2sfXcw" />
+    </node>
+  </node>
+  <node concept="2Jqgb4" id="5wEXO4WYZ9H">
+    <property role="3VJrRc" value="false" />
+    <property role="1EJLKn" value="true" />
+    <property role="TrG5h" value="Repair shop" />
+    <node concept="2C_Ik4" id="5wEXO4WYZ9I" role="2JqgbB">
+      <node concept="2C_Ik0" id="5wEXO4WYZ9N" role="2C_I24">
+        <property role="TrG5h" value="Repair Car" />
+        <property role="2C_Iks" value="1" />
+      </node>
+      <node concept="2C_Ik0" id="5wEXO4WYZ9R" role="2C_I24">
+        <property role="2C_Iks" value="2" />
+        <property role="TrG5h" value="Billing" />
+      </node>
+      <node concept="2C_Ik0" id="5wEXO4WYZak" role="2C_I24">
+        <property role="2C_Iks" value="3" />
+        <property role="TrG5h" value="Others" />
+      </node>
+      <node concept="2C_I21" id="5wEXO4WYZ9L" role="2C_I26">
+        <ref role="2C_gVZ" node="5wEXO4WYZ9N" resolve="Repair Car" />
+        <node concept="1$pBvr" id="5wEXO4WYZa2" role="2C_gVu">
+          <property role="XmNmt" value="true" />
+          <property role="2nBP4r" value="111 222 111" />
+        </node>
+      </node>
+      <node concept="2C_I21" id="5wEXO4WYZ9U" role="2C_I26">
+        <property role="3upAMh" value="billing.wav" />
+        <property role="2tub0X" value="true" />
+        <ref role="2C_gVZ" node="5wEXO4WYZ9R" resolve="Billing" />
+        <node concept="1$pBvo" id="5wEXO4WYZa5" role="2C_gVu">
+          <property role="XmNhe" value="true" />
+        </node>
+      </node>
+      <node concept="2C_I21" id="5wEXO4WYZao" role="2C_I26">
+        <ref role="2C_gVZ" node="5wEXO4WYZak" resolve="Others" />
+        <node concept="2C_Ik4" id="5wEXO4WYZay" role="2C_gVu">
+          <node concept="2C_I21" id="5wEXO4WYZaz" role="2C_I26">
+            <property role="3upAMh" value="Don't worry, we gonna fix it." />
+            <ref role="2C_gVZ" node="5wEXO4WYZa_" resolve="Repair washer machine" />
+            <node concept="1$pBvr" id="5wEXO4WYZaH" role="2C_gVu">
+              <property role="XmNmt" value="true" />
+              <property role="2nBP4r" value="333 444 555" />
+            </node>
+          </node>
+          <node concept="2C_Ik0" id="5wEXO4WYZa_" role="2C_I24">
+            <property role="TrG5h" value="Repair washer machine" />
+            <property role="2C_Iks" value="1" />
+          </node>
+          <node concept="2C_Ik0" id="5wEXO4WYZb6" role="2C_I24">
+            <property role="2C_Iks" value="2" />
+            <property role="TrG5h" value="Replace bulb" />
+          </node>
+          <node concept="2C_Ik0" id="5wEXO4X6H2a" role="2C_I24">
+            <property role="2C_Iks" value="*" />
+            <property role="TrG5h" value="Back" />
+          </node>
+          <node concept="2C_I21" id="5wEXO4WYZb9" role="2C_I26">
+            <ref role="2C_gVZ" node="5wEXO4WYZb6" resolve="Replace bulb" />
+            <node concept="X09Yf" id="5wEXO4WYZbi" role="2C_gVu">
+              <property role="XmNjE" value="true" />
+            </node>
+          </node>
+          <node concept="2C_I21" id="5wEXO4X6H2e" role="2C_I26">
+            <ref role="2C_gVZ" node="5wEXO4X6H2a" resolve="Back" />
+            <node concept="1$pBvp" id="5wEXO4X6H2o" role="2C_gVu" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2smLJI" id="5wEXO4WYZ9J" role="2smLJD">
+      <property role="2smLJF" value="7" />
+      <property role="31ipjb" value="Repeating options." />
+      <node concept="2m1r4j" id="5wEXO4WYZ9K" role="2sfXcw" />
     </node>
   </node>
 </model>

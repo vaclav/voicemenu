@@ -380,7 +380,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
     if (true) {
       editorCell.getStyle().set(StyleAttributes.FOCUS_POLICY, FocusPolicy.ATTRACTS_FOCUS);
     }
-    RemoveGreeting.setCellActions(editorCell, myNode, getEditorContext());
+    ActivityPlayback.setCellActions(editorCell, myNode, getEditorContext());
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     if (attributeConcept != null) {
