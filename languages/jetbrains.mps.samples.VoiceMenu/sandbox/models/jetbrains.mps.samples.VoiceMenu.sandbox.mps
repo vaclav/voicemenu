@@ -14,7 +14,6 @@
   </imports>
   <registry>
     <language id="4bc750d7-5688-4f52-b7d5-b263a3393a24" name="jetbrains.mps.samples.VoiceMenu">
-      <concept id="6151364482690565571" name="jetbrains.mps.samples.VoiceMenu.structure.Empty" flags="ng" index="2fTWM$" />
       <concept id="7733035612211835897" name="jetbrains.mps.samples.VoiceMenu.structure.Replay" flags="ng" index="2m1r4j" />
       <concept id="859446834198103481" name="jetbrains.mps.samples.VoiceMenu.structure.Timeout" flags="ng" index="2smLJI">
         <property id="6118026634785114605" name="PBisFile" index="gml4y" />
@@ -289,7 +288,9 @@
       </node>
       <node concept="2C_I21" id="46vUbM4_$$T" role="2C_I26">
         <ref role="2C_gVZ" node="46vUbM4_$$V" resolve="Internet" />
-        <node concept="2fTWM$" id="46vUbM4_$$U" role="2C_gVu" />
+        <node concept="1$pBvq" id="5wEXO4VTtrr" role="2C_gVu">
+          <property role="XmNiv" value="true" />
+        </node>
       </node>
     </node>
     <node concept="2smLJI" id="46vUbM4_$$R" role="2smLJD">
