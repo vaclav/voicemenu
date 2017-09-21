@@ -24,6 +24,7 @@ Each Event must have set 3 properties:
 * Name – represents the name of the Event.
 * Trigger – phone key (0..9,*,#), pressed on a cell phone, to navigate from one Event to another.
 * Action – place to specify what really happens according to Events name and trigger. Name and Action are completely different concepts, though in some cases they might seem similar.
+* Playback - record or text which is played in activity.
 
 
 Name and Action are completely different concepts! Having said that, in a few cases they might seem similiar.
@@ -79,8 +80,8 @@ All intentions are invoked by pressing `Alt + Enter` shortcut.
 |-----------------|--------|------|------|
 |Sort Ascendind|Initiliaze New Event|Change Action to Back|Hide Toolbar|
 |Sort Descending|Make Declaration|Change Action to Other|Show Toolbar|
-|Move Up|Remove Greeting|Change Action to Direct Call|Show as Structural|
-|Move Down|Add Greeting|Change Action to Get Info|Show as Tabular|
+|Move Up|Remove Playback|Change Action to Direct Call|Show as Structural|
+|Move Down|Add Playback|Change Action to Get Info|Show as Tabular|
 |Remove Evnt. + its Actvt.|Remove Actvt. + its Evnt.|Change Action to Menu|||
 
 TypeSystem
