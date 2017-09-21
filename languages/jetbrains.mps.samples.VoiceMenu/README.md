@@ -80,8 +80,8 @@ All intentions are invoked by pressing `Alt + Enter` shortcut.
 |-----------------|--------|------|------|
 |Sort Ascendind|Initiliaze New Event|Change Action to Back|Hide Toolbar|
 |Sort Descending|Make Declaration|Change Action to Other|Show Toolbar|
-|Move Up|Remove Greeting|Change Action to Direct Call|Show as Structural|
-|Move Down|Add Greeting|Change Action to Get Info|Show as Tabular|
+|Move Up|Remove Playback|Change Action to Direct Call|Show as Structural|
+|Move Down|Add Playback|Change Action to Get Info|Show as Tabular|
 |Remove Evnt. + its Actvt.|Remove Actvt. + its Evnt.|Change Action to Menu|||
 
 TypeSystem
