@@ -36,7 +36,7 @@ public class Behaviour {
           Style.setTextToScreen("Back");
 
           if (isEmptyString(Variables.timeout.playback)) {
-            Variables.voice.addText("Going to the previous menu");
+            Variables.voice.addText("Going to the previous menu.");
           } else {
             PlayGetInfo(Variables.timeout.playback);
           }
@@ -45,7 +45,7 @@ public class Behaviour {
           Style.setTextToScreen("Direct Call");
 
           if (isEmptyString(Variables.timeout.playback)) {
-            Variables.voice.addText("Direct call has begun");
+            Variables.voice.addText("Direct call has begun.");
           } else {
             PlayGetInfo(Variables.timeout.playback);
           }
@@ -58,7 +58,7 @@ public class Behaviour {
         } else if (eq_d7l93i_a0b3a0a7a(timeoutAction, "getInfo")) {
           Style.setTextToScreen("Get Info");
           if (isEmptyString(Variables.timeout.playback)) {
-            Variables.voice.addText("Getting you the latest info");
+            Variables.voice.addText("Getting you the latest info.");
           } else {
             PlayGetInfo(Variables.timeout.playback);
           }
@@ -71,7 +71,7 @@ public class Behaviour {
         } else if (eq_d7l93i_a0c3a0a7a(timeoutAction, "hangUp")) {
           Style.setTextToScreen("HangUp");
           if (isEmptyString(Variables.timeout.playback)) {
-            Variables.voice.addText("Phone call ended");
+            Variables.voice.addText("Phone call ended.");
           } else {
             PlayGetInfo(Variables.timeout.playback);
           }
@@ -93,12 +93,12 @@ public class Behaviour {
           }
 
         } else if (eq_d7l93i_a0e3a0a7a(timeoutAction, "record")) {
-          Style.setTextToScreen("Initiliazing record");
+          Style.setTextToScreen("Initiliazing record. ");
           Thread.sleep(900);
-          Style.setTextToScreen("Recording started");
+          Style.setTextToScreen("Recording started. ");
           Thread.sleep(2000);
           if (isEmptyString(Variables.timeout.playback)) {
-            Variables.voice.addText("Succesfully recorded");
+            Variables.voice.addText("Succesfully recorded. ");
           } else {
             PlayGetInfo(Variables.timeout.playback);
           }
@@ -276,7 +276,11 @@ public class Behaviour {
       PlayGetInfo(currentEvent.playback);
     }
     if (!(Variables.playbackisFile)) {
-      Variables.voice.addText(",Choose from this menu, ");
+      if (isEmptyString(Variables.voice.text)) {
+        Variables.voice.addText("Choose from this menu, ");
+      } else {
+        Variables.voice.addText(", Choose from this menu, ");
+      }
     }
     // Delete all the previous possible options 
     Variables.possibleOptList.clear();

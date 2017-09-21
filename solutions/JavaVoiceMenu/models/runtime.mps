@@ -3176,7 +3176,7 @@
                           <node concept="liA8E" id="3jUOcBPSoje" role="2OqNvi">
                             <ref role="37wK5l" node="6alSDtAKAit" resolve="addText" />
                             <node concept="Xl_RD" id="3jUOcBPSojf" role="37wK5m">
-                              <property role="Xl_RC" value="Going to the previous menu" />
+                              <property role="Xl_RC" value="Going to the previous menu." />
                             </node>
                           </node>
                         </node>
@@ -3254,7 +3254,7 @@
                             <node concept="liA8E" id="3jUOcBPSzyi" role="2OqNvi">
                               <ref role="37wK5l" node="6alSDtAKAit" resolve="addText" />
                               <node concept="Xl_RD" id="3jUOcBPSzyj" role="37wK5m">
-                                <property role="Xl_RC" value="Direct call has begun" />
+                                <property role="Xl_RC" value="Direct call has begun." />
                               </node>
                             </node>
                           </node>
@@ -3358,7 +3358,7 @@
                             <node concept="liA8E" id="3jUOcBPT$MA" role="2OqNvi">
                               <ref role="37wK5l" node="6alSDtAKAit" resolve="addText" />
                               <node concept="Xl_RD" id="3jUOcBPT$MB" role="37wK5m">
-                                <property role="Xl_RC" value="Getting you the latest info" />
+                                <property role="Xl_RC" value="Getting you the latest info." />
                               </node>
                             </node>
                           </node>
@@ -3462,7 +3462,7 @@
                             <node concept="liA8E" id="3jUOcBPTDev" role="2OqNvi">
                               <ref role="37wK5l" node="6alSDtAKAit" resolve="addText" />
                               <node concept="Xl_RD" id="3jUOcBPTDew" role="37wK5m">
-                                <property role="Xl_RC" value="Phone call ended" />
+                                <property role="Xl_RC" value="Phone call ended." />
                               </node>
                             </node>
                           </node>
@@ -3642,7 +3642,7 @@
                         <ref role="1Pybhc" node="6VbSUrc4Vua" resolve="Style" />
                         <ref role="37wK5l" node="6VbSUrc4V$e" resolve="setTextToScreen" />
                         <node concept="Xl_RD" id="3jUOcBPTMWP" role="37wK5m">
-                          <property role="Xl_RC" value="Initiliazing record" />
+                          <property role="Xl_RC" value="Initiliazing record. " />
                         </node>
                       </node>
                     </node>
@@ -3660,7 +3660,7 @@
                         <ref role="37wK5l" node="6VbSUrc4V$e" resolve="setTextToScreen" />
                         <ref role="1Pybhc" node="6VbSUrc4Vua" resolve="Style" />
                         <node concept="Xl_RD" id="2T27OaN9RJI" role="37wK5m">
-                          <property role="Xl_RC" value="Recording started" />
+                          <property role="Xl_RC" value="Recording started. " />
                         </node>
                       </node>
                     </node>
@@ -3684,7 +3684,7 @@
                             <node concept="liA8E" id="3jUOcBQ7o$2" role="2OqNvi">
                               <ref role="37wK5l" node="6alSDtAKAit" resolve="addText" />
                               <node concept="Xl_RD" id="3jUOcBQ7o$3" role="37wK5m">
-                                <property role="Xl_RC" value="Succesfully recorded" />
+                                <property role="Xl_RC" value="Succesfully recorded. " />
                               </node>
                             </node>
                           </node>
@@ -5169,16 +5169,50 @@
         </node>
         <node concept="3clFbJ" id="2mgRGhtT3j9" role="3cqZAp">
           <node concept="3clFbS" id="2mgRGhtT3jb" role="3clFbx">
-            <node concept="3clFbF" id="5mb0yBfIcIr" role="3cqZAp">
-              <node concept="2OqwBi" id="5mb0yBfJwAO" role="3clFbG">
-                <node concept="10M0yZ" id="5mb0yBfJwAN" role="2Oq$k0">
-                  <ref role="1PxDUh" node="2Bi0dpyCD0T" resolve="Variables" />
-                  <ref role="3cqZAo" node="6VbSUrc4QmS" resolve="voice" />
+            <node concept="3clFbJ" id="5wEXO4Xu_xn" role="3cqZAp">
+              <node concept="3clFbS" id="5wEXO4Xu_xp" role="3clFbx">
+                <node concept="3clFbF" id="5wEXO4Xu_X8" role="3cqZAp">
+                  <node concept="2OqwBi" id="5wEXO4Xu_X9" role="3clFbG">
+                    <node concept="10M0yZ" id="5wEXO4Xu_Xa" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6VbSUrc4QmS" resolve="voice" />
+                      <ref role="1PxDUh" node="2Bi0dpyCD0T" resolve="Variables" />
+                    </node>
+                    <node concept="liA8E" id="5wEXO4Xu_Xb" role="2OqNvi">
+                      <ref role="37wK5l" node="6alSDtAKAit" resolve="addText" />
+                      <node concept="Xl_RD" id="5wEXO4Xu_Xc" role="37wK5m">
+                        <property role="Xl_RC" value="Choose from this menu, " />
+                      </node>
+                    </node>
+                  </node>
                 </node>
-                <node concept="liA8E" id="5mb0yBfJwAP" role="2OqNvi">
-                  <ref role="37wK5l" node="6alSDtAKAit" resolve="addText" />
-                  <node concept="Xl_RD" id="5mb0yBfJwAQ" role="37wK5m">
-                    <property role="Xl_RC" value=",Choose from this menu, " />
+              </node>
+              <node concept="2OqwBi" id="5wEXO4XuyQv" role="3clFbw">
+                <node concept="2OqwBi" id="5wEXO4XuysY" role="2Oq$k0">
+                  <node concept="10M0yZ" id="5wEXO4XuyoG" role="2Oq$k0">
+                    <ref role="1PxDUh" node="2Bi0dpyCD0T" resolve="Variables" />
+                    <ref role="3cqZAo" node="6VbSUrc4QmS" resolve="voice" />
+                  </node>
+                  <node concept="2OwXpG" id="5wEXO4XuyHT" role="2OqNvi">
+                    <ref role="2Oxat5" node="6alSDtAKAi7" resolve="text" />
+                  </node>
+                </node>
+                <node concept="17RlXB" id="5wEXO4Xuz6j" role="2OqNvi" />
+              </node>
+              <node concept="9aQIb" id="5wEXO4XuAlr" role="9aQIa">
+                <node concept="3clFbS" id="5wEXO4XuAls" role="9aQI4">
+                  <node concept="3clFbF" id="5mb0yBfIcIr" role="3cqZAp">
+                    <node concept="2OqwBi" id="5mb0yBfJwAO" role="3clFbG">
+                      <node concept="10M0yZ" id="5mb0yBfJwAN" role="2Oq$k0">
+                        <ref role="1PxDUh" node="2Bi0dpyCD0T" resolve="Variables" />
+                        <ref role="3cqZAo" node="6VbSUrc4QmS" resolve="voice" />
+                      </node>
+                      <node concept="liA8E" id="5mb0yBfJwAP" role="2OqNvi">
+                        <ref role="37wK5l" node="6alSDtAKAit" resolve="addText" />
+                        <node concept="Xl_RD" id="5mb0yBfJwAQ" role="37wK5m">
+                          <property role="Xl_RC" value=", Choose from this menu, " />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
