@@ -5420,10 +5420,6 @@
         <property role="1yM9bZ" value="xxxx" />
       </node>
     </node>
-    <node concept="2BdId_" id="7lUjv43dBWL" role="3Dsw3i">
-      <node concept="1yM5C5" id="5jBAcX4Djj0" role="2BdIdy" />
-    </node>
-    <node concept="2BdId_" id="7lUjv43dBWM" role="3Dsw3i" />
     <node concept="17Uvod" id="7lUjv43yARU" role="lGtFl">
       <property role="P4ACc" value="914c58c4-0680-49cf-8599-f5ced7a657d6/1205667594137854972/8465164147135733908" />
       <property role="2qtEX9" value="typeOfFile" />

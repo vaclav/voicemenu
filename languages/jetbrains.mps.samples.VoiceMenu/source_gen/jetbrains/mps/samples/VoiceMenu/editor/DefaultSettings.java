@@ -21,6 +21,9 @@ public class DefaultSettings {
     public DefaultSettings_CLICK(SNode node) {
       this.myNode = node;
     }
+    public String getDescriptionText() {
+      return "\"Show / Hide settings\"";
+    }
     public void execute(EditorContext editorContext) {
       this.execute_internal(editorContext, this.myNode);
     }

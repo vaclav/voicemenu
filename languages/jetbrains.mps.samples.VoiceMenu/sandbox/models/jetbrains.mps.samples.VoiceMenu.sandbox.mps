@@ -7,7 +7,7 @@
     <use id="e2a803a4-d4b8-43eb-b458-517effd2a87f" name="jetbrains.mps.samples.VoiceMenuToAsterisk" version="-1" />
     <use id="0b30ef64-0c5e-4567-b992-9bf5bbc44c0a" name="jetbrains.mps.samples.VoiceMenuToHTML" version="-1" />
     <use id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" version="-1" />
-    <engage id="e2a803a4-d4b8-43eb-b458-517effd2a87f" name="jetbrains.mps.samples.VoiceMenuToAsterisk" />
+    <engage id="750ae49d-4f57-400c-b5dc-2b58c1e3f9a9" name="jetbrains.mps.samples.VoiceMenuToXML" />
   </languages>
   <imports>
     <import index="oici" ref="r:d8d37b74-a8e1-4a57-a2ee-4a996f4ba158(JavaVoiceMenu.runtime)" />
@@ -17,7 +17,6 @@
       <concept id="7733035612211835897" name="jetbrains.mps.samples.VoiceMenu.structure.Replay" flags="ng" index="2m1r4j" />
       <concept id="859446834198103481" name="jetbrains.mps.samples.VoiceMenu.structure.Timeout" flags="ng" index="2smLJI">
         <property id="6118026634785114605" name="PBisFile" index="gml4y" />
-        <property id="859446834198103484" name="duration" index="2smLJF" />
         <property id="3817593199979086850" name="playback" index="31ipjb" />
         <child id="859446834199956855" name="Action" index="2sfXcw" />
       </concept>
@@ -192,8 +191,11 @@
           </node>
           <node concept="2C_I21" id="2w$I9I9URkg" role="2C_I26">
             <property role="3upAMh" value="Now we are sending you super secret informations." />
+            <property role="2tub0X" value="false" />
             <ref role="2C_gVZ" node="2w$I9I9URk5" resolve="Recharging" />
-            <node concept="1$pBvo" id="2w$I9I9URkR" role="2C_gVu" />
+            <node concept="1$pBvo" id="2w$I9I9URkR" role="2C_gVu">
+              <property role="XmNhe" value="false" />
+            </node>
           </node>
           <node concept="2C_Ik0" id="2w$I9I9URkn" role="2C_I24">
             <property role="2C_Iks" value="3" />
@@ -275,27 +277,6 @@
       <property role="31ipjb" value="dasfsafsa" />
       <property role="gml4y" value="false" />
       <node concept="2m1r4j" id="JHn_unRV$i" role="2sfXcw" />
-    </node>
-  </node>
-  <node concept="2Jqgb4" id="46vUbM4_$$P">
-    <property role="3VJrRc" value="false" />
-    <property role="1EJLKn" value="true" />
-    <property role="TrG5h" value="Jetbrains" />
-    <node concept="2C_Ik4" id="46vUbM4_$$Q" role="2JqgbB">
-      <node concept="2C_Ik0" id="46vUbM4_$$V" role="2C_I24">
-        <property role="TrG5h" value="Internet" />
-        <property role="2C_Iks" value="2" />
-      </node>
-      <node concept="2C_I21" id="46vUbM4_$$T" role="2C_I26">
-        <ref role="2C_gVZ" node="46vUbM4_$$V" resolve="Internet" />
-        <node concept="1$pBvq" id="5wEXO4VTtrr" role="2C_gVu">
-          <property role="XmNiv" value="true" />
-        </node>
-      </node>
-    </node>
-    <node concept="2smLJI" id="46vUbM4_$$R" role="2smLJD">
-      <property role="2smLJF" value="7" />
-      <node concept="2m1r4j" id="46vUbM4_$$S" role="2sfXcw" />
     </node>
   </node>
 </model>

@@ -39,6 +39,9 @@ public class FixAll {
     public FixAll_CLICK(SNode node) {
       this.myNode = node;
     }
+    public String getDescriptionText() {
+      return "\"Fix all errors in code\"";
+    }
     public void execute(EditorContext editorContext) {
       this.execute_internal(editorContext, this.myNode);
     }
@@ -66,7 +69,7 @@ public class FixAll {
           buttons[11] = "*";
 
           for (String button : buttons) {
-            if (eq_heizli_a0a0r0c0b0d2(button, SPropertyOperations.getString(item, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")))) {
+            if (eq_heizli_a0a0r0c0b0e2(button, SPropertyOperations.getString(item, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")))) {
               legalButton = true;
             }
           }
@@ -76,7 +79,7 @@ public class FixAll {
 
           if (Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getAllSiblings(item, false), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event"))).any(new IWhereFilter<SNode>() {
             public boolean accept(SNode it) {
-              return eq_heizli_a0a0a0a0a0a02a2a1a3c(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), SPropertyOperations.getString(item, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
+              return eq_heizli_a0a0a0a0a0a02a2a1a4c(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), SPropertyOperations.getString(item, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
             }
           }) || legalButton == false) {
             String[] kbButtons = new String[12];
@@ -115,7 +118,7 @@ public class FixAll {
           if (isNotEmptyString(SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"))) && isNotEmptyString(SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")))) {
             if (Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getChildren(SNodeOperations.getParent(event)), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"))).any(new IWhereFilter<SNode>() {
               public boolean accept(SNode it) {
-                return SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) == SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) && eq_heizli_a0a0a0a0a0a0a0a9a1a3c(SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
+                return SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) == SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) && eq_heizli_a0a0a0a0a0a0a0a9a1a4c(SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
               }
             })) {
             } else {
@@ -224,7 +227,7 @@ public class FixAll {
 
         if (Sequence.fromIterable(siblings).any(new IWhereFilter<SNode>() {
           public boolean accept(SNode it) {
-            return neq_heizli_a0a0a0a0a0a3a01a3c(it, currentActivity) && eq_heizli_a0a0a0a0a0a3a01a3c(SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), SPropertyOperations.getString(SLinkOperations.getTarget(currentActivity, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
+            return neq_heizli_a0a0a0a0a0a3a01a4c(it, currentActivity) && eq_heizli_a0a0a0a0a0a3a01a4c(SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), SPropertyOperations.getString(SLinkOperations.getTarget(currentActivity, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
           }
         })) {
           SNodeOperations.deleteNode(currentActivity);
@@ -254,11 +257,11 @@ public class FixAll {
       }
 
       if (isNotEmptyString(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")))) {
-        if (eq_heizli_a0a0p0d2(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")).charAt(0), '/')) {
+        if (eq_heizli_a0a0p0e2(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")).charAt(0), '/')) {
           LoggingRuntime.logMsgView(Level.INFO, "/ Removed", FixAll.class, null, null);
           SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path"), SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")).substring(1));
         }
-        if (neq_heizli_a0b0p0d2(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")).charAt(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")).length() - 1), '/')) {
+        if (neq_heizli_a0b0p0e2(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")).charAt(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")).length() - 1), '/')) {
           LoggingRuntime.logMsgView(Level.INFO, "/ Added", FixAll.class, null, null);
           SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path"), SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")) + "/");
         }
@@ -268,18 +271,30 @@ public class FixAll {
         }
       }
 
+      List<SNode> descendants = SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, "jetbrains.mps.samples.VoiceMenu.structure.DirectCall"), false, new SAbstractConcept[]{});
+      for (SNode call : ListSequence.fromList(descendants)) {
+        if (SPropertyOperations.getString(call, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, 0x6b5142eafcce13f1L, "number")).contains(" ")) {
+          SPropertyOperations.set(call, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, 0x6b5142eafcce13f1L, "number"), SPropertyOperations.getString(call, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, 0x6b5142eafcce13f1L, "number")).replaceAll(" ", ""));
+          LoggingRuntime.logMsgView(Level.INFO, "Direct call number formated", FixAll.class, null, null);
+        }
+      }
+      if (SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640bab9L, "default_number")).contains(" ")) {
+        SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640bab9L, "default_number"), SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640bab9L, "default_number")).replaceAll(" ", ""));
+        LoggingRuntime.logMsgView(Level.INFO, "Default number formated", FixAll.class, null, null);
+      }
+
       LoggingRuntime.logMsgView(Level.INFO, "FINISHED", FixAll.class, null, null);
 
       SelectionUtil.selectCell(editorContext, node, SelectionManager.FIRST_ERROR_CELL);
 
     }
-    private static boolean eq_heizli_a0a0r0c0b0d2(Object a, Object b) {
+    private static boolean eq_heizli_a0a0r0c0b0e2(Object a, Object b) {
       return (a != null ? a.equals(b) : a == b);
     }
-    private static boolean eq_heizli_a0a0a0a0a0a02a2a1a3c(Object a, Object b) {
+    private static boolean eq_heizli_a0a0a0a0a0a02a2a1a4c(Object a, Object b) {
       return (a != null ? a.equals(b) : a == b);
     }
-    private static boolean eq_heizli_a0a0a0a0a0a0a0a9a1a3c(Object a, Object b) {
+    private static boolean eq_heizli_a0a0a0a0a0a0a0a9a1a4c(Object a, Object b) {
       return (a != null ? a.equals(b) : a == b);
     }
     private static boolean isNotEmptyString(String str) {
@@ -288,16 +303,16 @@ public class FixAll {
     private static boolean isEmptyString(String str) {
       return str == null || str.length() == 0;
     }
-    private static boolean eq_heizli_a0a0a0a0a0a3a01a3c(Object a, Object b) {
+    private static boolean eq_heizli_a0a0a0a0a0a3a01a4c(Object a, Object b) {
       return (a != null ? a.equals(b) : a == b);
     }
-    private static boolean neq_heizli_a0a0a0a0a0a3a01a3c(Object a, Object b) {
+    private static boolean neq_heizli_a0a0a0a0a0a3a01a4c(Object a, Object b) {
       return !(((a != null ? a.equals(b) : a == b)));
     }
-    private static boolean eq_heizli_a0a0p0d2(Object a, Object b) {
+    private static boolean eq_heizli_a0a0p0e2(Object a, Object b) {
       return (a != null ? a.equals(b) : a == b);
     }
-    private static boolean neq_heizli_a0b0p0d2(Object a, Object b) {
+    private static boolean neq_heizli_a0b0p0e2(Object a, Object b) {
       return !(((a != null ? a.equals(b) : a == b)));
     }
   }

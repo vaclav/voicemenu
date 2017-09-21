@@ -376,7 +376,8 @@ public class WorkSpace_TransformationMenu extends TransformationMenuBase {
           } catch (AWTException e) {
             e.printStackTrace();
           }
-
+          SelectionUtil.selectNode(_context.getEditorContext(), _context.getNode());
+          SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
         }
 
 

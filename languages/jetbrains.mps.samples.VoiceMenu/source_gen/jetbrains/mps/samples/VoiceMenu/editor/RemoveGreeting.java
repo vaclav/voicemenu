@@ -23,7 +23,7 @@ public class RemoveGreeting {
       this.myNode = node;
     }
     public String getDescriptionText() {
-      return "\"delete greeting\"";
+      return "\"Remove greeting\"";
     }
     public void execute(EditorContext editorContext) {
       this.execute_internal(editorContext, this.myNode);
@@ -51,7 +51,7 @@ public class RemoveGreeting {
       this.myNode = node;
     }
     public String getDescriptionText() {
-      return "\"delete greeting\"";
+      return "\"Remove greeting\"";
     }
     public void execute(EditorContext editorContext) {
       this.execute_internal(editorContext, this.myNode);

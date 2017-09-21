@@ -1,3 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debug-info version="2" />
+<debug-info version="2">
+  <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/2892639838852006608">
+    <file name="Jet Mobile.xml">
+      <unit id="2892639838852006608" at="1,0,141,16" name="jetbrains.mps.samples.VoiceMenu.sandbox.Jet Mobile" />
+    </file>
+  </root>
+</debug-info>
 

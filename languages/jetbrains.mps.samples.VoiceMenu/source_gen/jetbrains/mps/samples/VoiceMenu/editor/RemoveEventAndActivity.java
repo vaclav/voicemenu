@@ -23,18 +23,21 @@ public class RemoveEventAndActivity {
     public RemoveEventAndActivity_DELETE(SNode node) {
       this.myNode = node;
     }
+    public String getDescriptionText() {
+      return "\"Remove event and Activity\"";
+    }
     public void execute(EditorContext editorContext) {
       this.execute_internal(editorContext, this.myNode);
     }
     public void execute_internal(EditorContext editorContext, final SNode node) {
       SNodeOperations.deleteNode(Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(node), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities")), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"))).findFirst(new IWhereFilter<SNode>() {
         public boolean accept(SNode it) {
-          return eq_w93w14_a0a0a0a0a0a0a3b(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), node);
+          return eq_w93w14_a0a0a0a0a0a0a4b(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), node);
         }
       }));
       SNodeOperations.deleteNode(node);
     }
-    private static boolean eq_w93w14_a0a0a0a0a0a0a3b(Object a, Object b) {
+    private static boolean eq_w93w14_a0a0a0a0a0a0a4b(Object a, Object b) {
       return (a != null ? a.equals(b) : a == b);
     }
   }
@@ -43,18 +46,21 @@ public class RemoveEventAndActivity {
     public RemoveEventAndActivity_BACKSPACE(SNode node) {
       this.myNode = node;
     }
+    public String getDescriptionText() {
+      return "\"Remove event and Activity\"";
+    }
     public void execute(EditorContext editorContext) {
       this.execute_internal(editorContext, this.myNode);
     }
     public void execute_internal(EditorContext editorContext, final SNode node) {
       SNodeOperations.deleteNode(Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(node), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities")), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"))).findFirst(new IWhereFilter<SNode>() {
         public boolean accept(SNode it) {
-          return eq_w93w14_a0a0a0a0a0a0a3c(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), node);
+          return eq_w93w14_a0a0a0a0a0a0a4c(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), node);
         }
       }));
       SNodeOperations.deleteNode(node);
     }
-    private static boolean eq_w93w14_a0a0a0a0a0a0a3c(Object a, Object b) {
+    private static boolean eq_w93w14_a0a0a0a0a0a0a4c(Object a, Object b) {
       return (a != null ? a.equals(b) : a == b);
     }
   }

@@ -12,11 +12,10 @@ import jetbrains.mps.editor.runtime.cells.AbstractCellAction;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.io.File;
-import jetbrains.mps.baseLanguage.logging.runtime.model.LoggingRuntime;
-import org.apache.log4j.Level;
-import java.io.IOException;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.baseLanguage.logging.runtime.model.LoggingRuntime;
+import org.apache.log4j.Level;
 import jetbrains.mps.editor.runtime.selection.SelectionUtil;
 import jetbrains.mps.openapi.editor.selection.SelectionManager;
 
@@ -41,31 +40,22 @@ public class RefreshFileTextRecognition {
         new File(path).mkdir();
       }
 
-      try {
-        File currentDirectory = new File(new File(".").getAbsolutePath());
-        LoggingRuntime.logMsgView(Level.DEBUG, currentDirectory.getCanonicalPath(), RefreshFileTextRecognition.class, null, null);
+      path = System.getProperty("user.home") + "/MPS_ASTERISK";
 
-        path = System.getProperty("user.home") + "/MPS_ASTERISK";
-
-        if (Files.exists(Paths.get(path))) {
-          LoggingRuntime.logMsgView(Level.DEBUG, "Folder Exists", RefreshFileTextRecognition.class, null, null);
-        } else {
-          new File(path).mkdir();
-        }
-
-      } catch (IOException e) {
-        e.printStackTrace();
+      if (Files.exists(Paths.get(path))) {
+      } else {
+        new File(path).mkdir();
       }
 
       try {
         File tmp = new File(path + "/" + SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")));
         if (tmp.isFile()) {
           SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile"), "" + (true));
-          LoggingRuntime.logMsgView(Level.DEBUG, "Found", RefreshFileTextRecognition.class, null, null);
+          LoggingRuntime.logMsgView(Level.DEBUG, "Found -> File", RefreshFileTextRecognition.class, null, null);
 
         } else {
           SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile"), "" + (false));
-          LoggingRuntime.logMsgView(Level.DEBUG, "Not Found", RefreshFileTextRecognition.class, null, null);
+          LoggingRuntime.logMsgView(Level.DEBUG, "Not Found -> Text", RefreshFileTextRecognition.class, null, null);
 
         }
       } catch (Exception e) {

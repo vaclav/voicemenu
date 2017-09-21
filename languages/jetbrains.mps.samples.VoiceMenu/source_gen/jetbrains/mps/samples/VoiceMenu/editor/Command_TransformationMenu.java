@@ -33,11 +33,8 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
-import com.intellij.openapi.actionSystem.AnAction;
-import com.intellij.openapi.actionSystem.ActionManager;
-import com.intellij.openapi.actionSystem.AnActionEvent;
-import jetbrains.mps.workbench.action.ActionUtils;
-import com.intellij.openapi.actionSystem.ActionPlaces;
+import java.awt.Robot;
+import java.awt.AWTException;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 import jetbrains.mps.editor.runtime.cells.CellIdManager;
 
@@ -370,9 +367,22 @@ public class Command_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          AnAction action = ActionManager.getInstance().getAction("Undo");
-          AnActionEvent e = ActionUtils.createEvent(ActionPlaces.MAIN_MENU, null);
-          action.actionPerformed(e);
+          try {
+
+            Robot r = new Robot();
+            r.keyPress(157);
+            r.keyPress(90);
+
+            r.keyRelease(90);
+            r.keyRelease(157);
+
+
+          } catch (AWTException e) {
+            e.printStackTrace();
+          }
+          SelectionUtil.selectNode(_context.getEditorContext(), _context.getNode());
+          SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
+
         }
 
 
