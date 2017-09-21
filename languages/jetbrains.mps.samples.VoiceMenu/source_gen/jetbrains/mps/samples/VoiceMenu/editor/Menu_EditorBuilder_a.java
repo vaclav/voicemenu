@@ -58,20 +58,30 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.DeclarationsStyl
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
     editorCell.setCellId("Collection_gd4rom_a0");
     Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, false);
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.addEditorCell(createCollection_gd4rom_a0a());
+    return editorCell;
+  }
+  private EditorCell createCollection_gd4rom_a0a() {
+    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
+    editorCell.setCellId("Collection_gd4rom_a0a");
+    Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
     editorCell.getStyle().putAll(style);
     editorCell.setFoldable(true);
-    editorCell.addEditorCell(createRefNodeList_gd4rom_a0a());
-    if (nodeCondition_gd4rom_a1a0()) {
-      editorCell.addEditorCell(createRefNodeList_gd4rom_b0a());
+    editorCell.addEditorCell(createRefNodeList_gd4rom_a0a0());
+    if (nodeCondition_gd4rom_a1a0a()) {
+      editorCell.addEditorCell(createRefNodeList_gd4rom_b0a0());
     }
     return editorCell;
   }
-  private boolean nodeCondition_gd4rom_a1a0() {
+  private boolean nodeCondition_gd4rom_a1a0a() {
     return ListSequence.fromList(SLinkOperations.getChildren(myNode, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"))).isNotEmpty();
   }
-  private EditorCell createRefNodeList_gd4rom_a0a() {
-    AbstractCellListHandler handler = new Menu_EditorBuilder_a.eventsListHandler_gd4rom_a0a(myNode, "events", getEditorContext());
+  private EditorCell createRefNodeList_gd4rom_a0a0() {
+    AbstractCellListHandler handler = new Menu_EditorBuilder_a.eventsListHandler_gd4rom_a0a0(myNode, "events", getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Vertical(), false);
     editorCell.setCellId("refNodeList_events");
     Style style = new StyleImpl();
@@ -82,11 +92,11 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.DeclarationsStyl
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
-  private static class eventsListHandler_gd4rom_a0a extends RefNodeListHandler {
+  private static class eventsListHandler_gd4rom_a0a0 extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public eventsListHandler_gd4rom_a0a(SNode ownerNode, String childRole, EditorContext context) {
+    public eventsListHandler_gd4rom_a0a0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
       myNode = ownerNode;
     }
@@ -107,7 +117,7 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.DeclarationsStyl
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(eventsListHandler_gd4rom_a0a.this.getNode(), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events")));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(eventsListHandler_gd4rom_a0a0.this.getNode(), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events")));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -131,8 +141,8 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.DeclarationsStyl
       }
     }
   }
-  private EditorCell createRefNodeList_gd4rom_b0a() {
-    AbstractCellListHandler handler = new Menu_EditorBuilder_a.activitiesListHandler_gd4rom_b0a(myNode, "activities", getEditorContext());
+  private EditorCell createRefNodeList_gd4rom_b0a0() {
+    AbstractCellListHandler handler = new Menu_EditorBuilder_a.activitiesListHandler_gd4rom_b0a0(myNode, "activities", getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_activities");
     Style style = new StyleImpl();
@@ -147,11 +157,11 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.DeclarationsStyl
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
-  private static class activitiesListHandler_gd4rom_b0a extends RefNodeListHandler {
+  private static class activitiesListHandler_gd4rom_b0a0 extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public activitiesListHandler_gd4rom_b0a(SNode ownerNode, String childRole, EditorContext context) {
+    public activitiesListHandler_gd4rom_b0a0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
       myNode = ownerNode;
     }
@@ -172,7 +182,7 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.DeclarationsStyl
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(activitiesListHandler_gd4rom_b0a.this.getNode(), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities")));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(activitiesListHandler_gd4rom_b0a0.this.getNode(), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities")));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();

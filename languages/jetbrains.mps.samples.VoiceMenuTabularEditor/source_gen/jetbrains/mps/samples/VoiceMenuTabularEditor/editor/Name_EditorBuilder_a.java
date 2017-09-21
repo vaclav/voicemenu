@@ -18,6 +18,7 @@ import jetbrains.mps.openapi.editor.style.StyleRegistry;
 import jetbrains.mps.nodeEditor.MPSColors;
 import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.ArrowsStyleClass;
 import jetbrains.mps.samples.VoiceMenu.editor.RemoveEventAndActivity;
+import jetbrains.mps.nodeEditor.EditorSettings;
 
 /*package*/ class Name_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -88,10 +89,14 @@ import jetbrains.mps.samples.VoiceMenu.editor.RemoveEventAndActivity;
     new ArrowsStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
     style.set(StyleAttributes.DRAW_BORDER, true);
     style.set(StyleAttributes.SELECTABLE, false);
+    style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_5glmts_a2d0());
     editorCell.getStyle().putAll(style);
     RemoveEventAndActivity.setCellActions(editorCell, myNode, getEditorContext());
     editorCell.setDefaultText("");
     return editorCell;
+  }
+  private int _StyleParameter_QueryFunction_5glmts_a2d0() {
+    return (EditorSettings.getInstance().getFontSize() * 150 / 100);
   }
   private EditorCell createConstant_5glmts_e0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, " ACTIVITY");

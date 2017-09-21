@@ -561,7 +561,7 @@ public class Command_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return !(SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x6b5142eafd54f3f9L, "jetbrains.mps.samples.VoiceMenu.structure.Replay")));
+          return !(SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x6b5142eafd54f3f9L, "jetbrains.mps.samples.VoiceMenu.structure.Replay"))) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace")));
         }
 
         @Override
@@ -611,7 +611,7 @@ public class Command_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return !(SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16dbL, "jetbrains.mps.samples.VoiceMenu.structure.HangUp")));
+          return !(SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16dbL, "jetbrains.mps.samples.VoiceMenu.structure.HangUp"))) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace")));
         }
 
         @Override
@@ -662,7 +662,7 @@ public class Command_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return !(SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, "jetbrains.mps.samples.VoiceMenu.structure.Record")));
+          return !(SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, "jetbrains.mps.samples.VoiceMenu.structure.Record"))) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace")));
         }
 
         @Override
@@ -713,7 +713,7 @@ public class Command_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return !(SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, "jetbrains.mps.samples.VoiceMenu.structure.DirectCall")));
+          return !(SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, "jetbrains.mps.samples.VoiceMenu.structure.DirectCall"))) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace")));
         }
 
         @Override
@@ -763,7 +763,7 @@ public class Command_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return !(SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acaL, "jetbrains.mps.samples.VoiceMenu.structure.Back")));
+          return !(SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acaL, "jetbrains.mps.samples.VoiceMenu.structure.Back"))) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace")));
         }
 
         @Override
@@ -822,7 +822,7 @@ public class Command_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, "jetbrains.mps.samples.VoiceMenu.structure.Timeout"))) && !(SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")));
+          return !(SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu"))) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace")));
         }
 
         @Override
@@ -873,7 +873,7 @@ public class Command_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return !(SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, "jetbrains.mps.samples.VoiceMenu.structure.GetInfo")));
+          return !(SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, "jetbrains.mps.samples.VoiceMenu.structure.GetInfo"))) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace")));
         }
 
         @Override
@@ -924,7 +924,7 @@ public class Command_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return !(SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, "jetbrains.mps.samples.VoiceMenu.structure.Other")));
+          return !(SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, "jetbrains.mps.samples.VoiceMenu.structure.Other"))) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace")));
         }
 
         @Override
