@@ -7,7 +7,7 @@
     <use id="e2a803a4-d4b8-43eb-b458-517effd2a87f" name="jetbrains.mps.samples.VoiceMenuToAsterisk" version="-1" />
     <use id="0b30ef64-0c5e-4567-b992-9bf5bbc44c0a" name="jetbrains.mps.samples.VoiceMenuToHTML" version="-1" />
     <use id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" version="-1" />
-    <engage id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" />
+    <engage id="e2a803a4-d4b8-43eb-b458-517effd2a87f" name="jetbrains.mps.samples.VoiceMenuToAsterisk" />
   </languages>
   <imports>
     <import index="oici" ref="r:d8d37b74-a8e1-4a57-a2ee-4a996f4ba158(JavaVoiceMenu.runtime)" />
@@ -72,30 +72,6 @@
     <property role="3VHriK" value="800" />
     <property role="3VHriO" value="etc/asterisk/" />
     <node concept="2C_Ik4" id="2w$I9I9UGbh" role="2JqgbB">
-      <node concept="2C_Ik0" id="2w$I9I9UGbk" role="2C_I24">
-        <property role="2C_Iks" value="1" />
-        <property role="TrG5h" value="Internet" />
-      </node>
-      <node concept="2C_Ik0" id="2w$I9I9URir" role="2C_I24">
-        <property role="2C_Iks" value="2" />
-        <property role="TrG5h" value="Payment" />
-      </node>
-      <node concept="2C_Ik0" id="2w$I9I9URiu" role="2C_I24">
-        <property role="2C_Iks" value="3" />
-        <property role="TrG5h" value="Roaming" />
-      </node>
-      <node concept="2C_Ik0" id="2w$I9I9URiy" role="2C_I24">
-        <property role="2C_Iks" value="4" />
-        <property role="TrG5h" value="News" />
-      </node>
-      <node concept="2C_Ik0" id="2w$I9I9URiB" role="2C_I24">
-        <property role="2C_Iks" value="5" />
-        <property role="TrG5h" value="Other requirements" />
-      </node>
-      <node concept="2C_Ik0" id="5K3$FqBqTHW" role="2C_I24">
-        <property role="2C_Iks" value="6" />
-        <property role="TrG5h" value="Record" />
-      </node>
       <node concept="2C_I21" id="2w$I9I9URiH" role="2C_I26">
         <property role="3upAMh" value="Did you know that our internet is faster than ever?" />
         <property role="2tub0X" value="false" />
@@ -271,6 +247,30 @@
         <node concept="X09Yf" id="5K3$FqBqTJ2" role="2C_gVu">
           <property role="XmNjE" value="false" />
         </node>
+      </node>
+      <node concept="2C_Ik0" id="2w$I9I9UGbk" role="2C_I24">
+        <property role="2C_Iks" value="1" />
+        <property role="TrG5h" value="Internet" />
+      </node>
+      <node concept="2C_Ik0" id="2w$I9I9URir" role="2C_I24">
+        <property role="2C_Iks" value="2" />
+        <property role="TrG5h" value="Payment" />
+      </node>
+      <node concept="2C_Ik0" id="2w$I9I9URiu" role="2C_I24">
+        <property role="2C_Iks" value="3" />
+        <property role="TrG5h" value="Roaming" />
+      </node>
+      <node concept="2C_Ik0" id="2w$I9I9URiy" role="2C_I24">
+        <property role="2C_Iks" value="4" />
+        <property role="TrG5h" value="News" />
+      </node>
+      <node concept="2C_Ik0" id="2w$I9I9URiB" role="2C_I24">
+        <property role="2C_Iks" value="5" />
+        <property role="TrG5h" value="Other requirements" />
+      </node>
+      <node concept="2C_Ik0" id="5K3$FqBqTHW" role="2C_I24">
+        <property role="2C_Iks" value="6" />
+        <property role="TrG5h" value="Record" />
       </node>
     </node>
     <node concept="2smLJI" id="JHn_unRV$e" role="2smLJD">

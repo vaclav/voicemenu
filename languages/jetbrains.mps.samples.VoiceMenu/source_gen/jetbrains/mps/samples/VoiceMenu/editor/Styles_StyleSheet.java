@@ -31,6 +31,16 @@ public class Styles_StyleSheet {
    * @deprecated Since MPS 3.5 use generated StyleClass
    */
   @Deprecated
+  public static void apply_Heading(Style style, EditorCell editorCell) {
+    SNode node = (editorCell == null ? null : editorCell.getSNode());
+    EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
+    new Styles_StyleSheet.HeadingStyleClass(editorContext, node).apply(style, editorCell);
+  }
+  /**
+   * 
+   * @deprecated Since MPS 3.5 use generated StyleClass
+   */
+  @Deprecated
   public static void apply_Action(Style style, EditorCell editorCell) {
     SNode node = (editorCell == null ? null : editorCell.getSNode());
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
@@ -114,6 +124,23 @@ public class Styles_StyleSheet {
       return (EditorSettings.getInstance().getFontSize() * 120 / 100);
     }
   }
+  public static class HeadingStyleClass extends AbstractStyleClass {
+    public HeadingStyleClass(EditorContext editorContext, SNode node) {
+      super(editorContext, node);
+    }
+
+    @Override
+    public void apply(Style style, EditorCell editorCell) {
+      style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.DARK_BLUE));
+      style.set(StyleAttributes.FONT_STYLE, MPSFonts.BOLD);
+      style.set(StyleAttributes.AUTO_DELETABLE, true);
+      style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_kkd5s1_a3b());
+    }
+
+    private int _StyleParameter_QueryFunction_kkd5s1_a3b() {
+      return (EditorSettings.getInstance().getFontSize() * 180 / 100);
+    }
+  }
   public static class ActionStyleClass extends AbstractStyleClass {
     public ActionStyleClass(EditorContext editorContext, SNode node) {
       super(editorContext, node);
@@ -124,10 +151,10 @@ public class Styles_StyleSheet {
       style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.black));
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
       style.set(StyleAttributes.SHOW_BOUNDARIES_IN, ShowBoundariesArea.GUTTER);
-      style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_kkd5s1_a3b());
+      style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_kkd5s1_a3c());
     }
 
-    private int _StyleParameter_QueryFunction_kkd5s1_a3b() {
+    private int _StyleParameter_QueryFunction_kkd5s1_a3c() {
       return (EditorSettings.getInstance().getFontSize() * 110 / 100);
     }
   }
@@ -141,10 +168,10 @@ public class Styles_StyleSheet {
       style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.darkGray));
       style.set(StyleAttributes.SHOW_BOUNDARIES_IN, ShowBoundariesArea.GUTTER);
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
-      style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_kkd5s1_a3c());
+      style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_kkd5s1_a3d());
     }
 
-    private int _StyleParameter_QueryFunction_kkd5s1_a3c() {
+    private int _StyleParameter_QueryFunction_kkd5s1_a3d() {
       return (EditorSettings.getInstance().getFontSize() * 120 / 100);
     }
   }
@@ -158,10 +185,10 @@ public class Styles_StyleSheet {
       style.set(StyleAttributes.SHOW_BOUNDARIES_IN, ShowBoundariesArea.GUTTER);
       style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.black));
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
-      style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_kkd5s1_a3d());
+      style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_kkd5s1_a3e());
     }
 
-    private int _StyleParameter_QueryFunction_kkd5s1_a3d() {
+    private int _StyleParameter_QueryFunction_kkd5s1_a3e() {
       return (EditorSettings.getInstance().getFontSize() * 140 / 100);
     }
   }
@@ -174,10 +201,10 @@ public class Styles_StyleSheet {
     public void apply(Style style, EditorCell editorCell) {
       style.set(StyleAttributes.SHOW_BOUNDARIES_IN, ShowBoundariesArea.GUTTER);
       style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.DARK_MAGENTA));
-      style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_kkd5s1_a2e());
+      style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_kkd5s1_a2f());
     }
 
-    private int _StyleParameter_QueryFunction_kkd5s1_a2e() {
+    private int _StyleParameter_QueryFunction_kkd5s1_a2f() {
       return (EditorSettings.getInstance().getFontSize() * 140 / 100);
     }
   }
@@ -188,10 +215,10 @@ public class Styles_StyleSheet {
 
     @Override
     public void apply(Style style, EditorCell editorCell) {
-      style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_kkd5s1_a0f());
+      style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_kkd5s1_a0g());
     }
 
-    private int _StyleParameter_QueryFunction_kkd5s1_a0f() {
+    private int _StyleParameter_QueryFunction_kkd5s1_a0g() {
       return (EditorSettings.getInstance().getFontSize() * 120 / 100);
     }
   }
@@ -203,10 +230,10 @@ public class Styles_StyleSheet {
     @Override
     public void apply(Style style, EditorCell editorCell) {
       style.set(StyleAttributes.SHOW_BOUNDARIES_IN, ShowBoundariesArea.GUTTER);
-      style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_kkd5s1_a1g());
+      style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_kkd5s1_a1h());
     }
 
-    private int _StyleParameter_QueryFunction_kkd5s1_a1g() {
+    private int _StyleParameter_QueryFunction_kkd5s1_a1h() {
       return (EditorSettings.getInstance().getFontSize() * 100 / 100);
     }
   }
@@ -219,12 +246,12 @@ public class Styles_StyleSheet {
     public void apply(Style style, EditorCell editorCell) {
       style.set(StyleAttributes.SHOW_BOUNDARIES_IN, ShowBoundariesArea.GUTTER);
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
-      style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_kkd5s1_a2h());
+      style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_kkd5s1_a2i());
       style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(new Color(11514923)));
       style.set(StyleAttributes.NULL_TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.gray));
     }
 
-    private int _StyleParameter_QueryFunction_kkd5s1_a2h() {
+    private int _StyleParameter_QueryFunction_kkd5s1_a2i() {
       return (EditorSettings.getInstance().getFontSize() * 110 / 100);
     }
   }

@@ -1357,6 +1357,48 @@
         </node>
       </node>
     </node>
+    <node concept="14StLt" id="1PV02mlgu3V" role="V601i">
+      <property role="TrG5h" value="Heading" />
+      <node concept="VechU" id="1PV02mlguyt" role="3F10Kt">
+        <property role="Vb096" value="DARK_BLUE" />
+      </node>
+      <node concept="Vb9p2" id="1PV02mlguyu" role="3F10Kt">
+        <property role="Vbekb" value="BOLD" />
+      </node>
+      <node concept="VPRnO" id="1PV02mlguyv" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="VSNWy" id="1PV02mlgu3Z" role="3F10Kt">
+        <property role="1lJzqX" value="17" />
+        <node concept="1cFabM" id="1PV02mlgu40" role="1d8cEk">
+          <node concept="3clFbS" id="1PV02mlgu41" role="2VODD2">
+            <node concept="3clFbF" id="1PV02mlgu42" role="3cqZAp">
+              <node concept="1eOMI4" id="1PV02mlgu43" role="3clFbG">
+                <node concept="FJ1c_" id="1PV02mlgu44" role="1eOMHV">
+                  <node concept="17qRlL" id="1PV02mlgu45" role="3uHU7B">
+                    <node concept="2OqwBi" id="1PV02mlgu46" role="3uHU7B">
+                      <node concept="2YIFZM" id="1PV02mlgu47" role="2Oq$k0">
+                        <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+                        <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                      </node>
+                      <node concept="liA8E" id="1PV02mlgu48" role="2OqNvi">
+                        <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                      </node>
+                    </node>
+                    <node concept="3cmrfG" id="1PV02mlgu49" role="3uHU7w">
+                      <property role="3cmrfH" value="180" />
+                    </node>
+                  </node>
+                  <node concept="3cmrfG" id="1PV02mlgu4a" role="3uHU7w">
+                    <property role="3cmrfH" value="100" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="14StLt" id="5lu2mvqIGvq" role="V601i">
       <property role="TrG5h" value="Action" />
       <node concept="VechU" id="5lu2mvqIGvK" role="3F10Kt">
@@ -2093,18 +2135,7 @@
       <node concept="3F0A7n" id="2w$I9I9UyNj" role="3EZMnx">
         <property role="1$x2rV" value="Name of Voicemenu" />
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        <node concept="VSNWy" id="2w$I9I9UzNW" role="3F10Kt">
-          <property role="1lJzqX" value="25" />
-        </node>
-        <node concept="VechU" id="2w$I9I9UzO4" role="3F10Kt">
-          <property role="Vb096" value="DARK_BLUE" />
-        </node>
-        <node concept="Vb9p2" id="2w$I9I9UGbt" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
-        </node>
-        <node concept="VPRnO" id="2w$I9I9VroK" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
+        <ref role="1k5W1q" node="1PV02mlgu3V" resolve="Heading" />
       </node>
       <node concept="3F0ifn" id="1Dc9HeI4zQT" role="3EZMnx">
         <node concept="VPM3Z" id="7IHEnsegU7Y" role="3F10Kt">
