@@ -15,7 +15,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import java.util.Collections;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
 import jetbrains.mps.editor.runtime.selection.SelectionUtil;
-import jetbrains.mps.openapi.editor.selection.SelectionManager;
+import jetbrains.mps.editor.runtime.cells.CellIdManager;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 
 public final class Add_Playback_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
@@ -57,7 +57,7 @@ public final class Add_Playback_Intention extends AbstractIntentionDescriptor im
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
       SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback"), "Choose from..");
-      SelectionUtil.selectCell(editorContext, node, SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
+      SelectionUtil.selectCell(editorContext, node, "*" + CellIdManager.createPropertyId("PBisFile"));
     }
     @Override
     public IntentionDescriptor getDescriptor() {

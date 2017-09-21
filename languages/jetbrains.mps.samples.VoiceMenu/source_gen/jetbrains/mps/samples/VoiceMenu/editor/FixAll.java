@@ -255,13 +255,14 @@ public class FixAll {
         } catch (Exception e) {
         }
       }
+      // ............................................................. Formating Path 
 
       if (isNotEmptyString(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")))) {
-        if (eq_heizli_a0a0p0e2(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")).charAt(0), '/')) {
+        if (eq_heizli_a0a0q0e2(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")).charAt(0), '/')) {
           LoggingRuntime.logMsgView(Level.INFO, "/ Removed", FixAll.class, null, null);
           SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path"), SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")).substring(1));
         }
-        if (neq_heizli_a0b0p0e2(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")).charAt(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")).length() - 1), '/')) {
+        if (neq_heizli_a0b0q0e2(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")).charAt(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")).length() - 1), '/')) {
           LoggingRuntime.logMsgView(Level.INFO, "/ Added", FixAll.class, null, null);
           SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path"), SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")) + "/");
         }
@@ -270,6 +271,8 @@ public class FixAll {
           SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path"), SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")).replaceAll("//", "/"));
         }
       }
+
+      // ............................................................. Formating numbers 
 
       List<SNode> descendants = SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, "jetbrains.mps.samples.VoiceMenu.structure.DirectCall"), false, new SAbstractConcept[]{});
       if (ListSequence.fromList(descendants).isNotEmpty()) {
@@ -285,6 +288,23 @@ public class FixAll {
         SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640bab9L, "default_number"), SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640bab9L, "default_number")).replaceAll(" ", ""));
         LoggingRuntime.logMsgView(Level.INFO, "Default number formated", FixAll.class, null, null);
       }
+
+      // ............................................................. Remove " " in Playback 
+
+      List<SNode> ActivityDesc = SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"), false, new SAbstractConcept[]{});
+      for (SNode activity : ListSequence.fromList(ActivityDesc)) {
+        if (isNotEmptyString(SPropertyOperations.getString(activity, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")))) {
+          if (eq_heizli_a0a0a0bb0e2(SPropertyOperations.getString(activity, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")).charAt(0), ' ')) {
+            SPropertyOperations.set(activity, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback"), SPropertyOperations.getString(activity, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")).substring(1));
+          }
+        }
+      }
+      if (isNotEmptyString(SPropertyOperations.getString(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0xbed5e5797b645beL, "timeout")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x34fad0c9f5b34402L, "playback")))) {
+        if (eq_heizli_a0a0cb0e2(SPropertyOperations.getString(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0xbed5e5797b645beL, "timeout")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x34fad0c9f5b34402L, "playback")).charAt(0), ' ')) {
+          SPropertyOperations.set(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0xbed5e5797b645beL, "timeout")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x34fad0c9f5b34402L, "playback"), SPropertyOperations.getString(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0xbed5e5797b645beL, "timeout")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x34fad0c9f5b34402L, "playback")).substring(1));
+        }
+      }
+
 
       LoggingRuntime.logMsgView(Level.INFO, "FINISHED", FixAll.class, null, null);
 
@@ -312,11 +332,17 @@ public class FixAll {
     private static boolean neq_heizli_a0a0a0a0a0a3a01a4c(Object a, Object b) {
       return !(((a != null ? a.equals(b) : a == b)));
     }
-    private static boolean eq_heizli_a0a0p0e2(Object a, Object b) {
+    private static boolean eq_heizli_a0a0q0e2(Object a, Object b) {
       return (a != null ? a.equals(b) : a == b);
     }
-    private static boolean neq_heizli_a0b0p0e2(Object a, Object b) {
+    private static boolean neq_heizli_a0b0q0e2(Object a, Object b) {
       return !(((a != null ? a.equals(b) : a == b)));
+    }
+    private static boolean eq_heizli_a0a0a0bb0e2(Object a, Object b) {
+      return (a != null ? a.equals(b) : a == b);
+    }
+    private static boolean eq_heizli_a0a0cb0e2(Object a, Object b) {
+      return (a != null ? a.equals(b) : a == b);
     }
   }
 }

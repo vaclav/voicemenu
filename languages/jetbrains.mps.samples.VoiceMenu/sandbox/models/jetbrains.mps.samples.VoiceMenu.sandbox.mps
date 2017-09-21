@@ -329,13 +329,15 @@
             <property role="TrG5h" value="Back" />
           </node>
           <node concept="2C_I21" id="5wEXO4XAVlm" role="2C_I26">
-            <property role="3upAMh" value=" " />
+            <property role="3upAMh" value="" />
+            <property role="2tub0X" value="false" />
             <ref role="2C_gVZ" node="5wEXO4XAVkK" resolve="Replace bulb" />
             <node concept="X09Yf" id="5wEXO4XAVlu" role="2C_gVu">
               <property role="XmNjE" value="true" />
             </node>
           </node>
           <node concept="2C_I21" id="5wEXO4XAVpP" role="2C_I26">
+            <property role="3upAMh" value="ds  adsaf" />
             <ref role="2C_gVZ" node="5wEXO4XAVkN" resolve="Back" />
             <node concept="1$pBvp" id="5wEXO4XAVq0" role="2C_gVu" />
           </node>
