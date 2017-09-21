@@ -24,6 +24,7 @@ Each Event must have set 3 properties:
 * Name – represents the name of the Event.
 * Trigger – phone key (0..9,*,#), pressed on a cell phone, to navigate from one Event to another.
 * Action – place to specify what really happens according to Events name and trigger. Name and Action are completely different concepts, though in some cases they might seem similar.
+* Playback - record or text which is played in activity.
 
 
 Name and Action are completely different concepts! Having said that, in a few cases they might seem similiar.
