@@ -1,37 +1,27 @@
-Voice Menu - HTML Generator
+Voice Menu - Asterisk Generator
 ==========================
 
-Generation of html code from domain specific language
+Generation of Asterisk code from domain specific language
 
 Sample
 ------
 
-```html
-  <menu>
-      <table class="roundedCorners">
-        <tr>
-          <th>Event</th>
-          <td>   </td>
-          <th>Trigger</th>
-        </tr>
-        <tr>
-          <td>Sample Activity</td>
-          <td>   </td>
-          <td>1</td>
-        </tr>
-      </table>
-      
-      <activity>
-        <b style="margin-left: 40px;color:blue">Sample Activity</b>
-          <p>          
-            <action style="margin-left: 80px;color:red">--> [ Get Info ]</action>
-          </p>
-      </activity>
-      
-    </menu>
-
 ```
+[Sample]
+exten => s,1,Answer()
+same  => n,NoOp(Home)
+same  => n,PlayBack(/etc/asterisk/MPS_ASTERISK/sample.wav)
+same  => n,WaitExten(7)
 
+exten => t,1,NoOp(Timeout)
+same  => n,Goto(SampleTIMEOUT,s,1)
+
+exten => i,1,NoOp(Invalid Input)
+same  => n,Goto(Sample,s,1)
+
+exten => 1,1,Goto(Sample_Activity_1_a0,s,1)
+exten => 2,1,Goto(Sample_Activity_2_b0,s,1)
+```
 
 Select Generator
 ---------
