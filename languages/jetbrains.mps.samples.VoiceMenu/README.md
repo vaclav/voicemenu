@@ -46,7 +46,7 @@ Guide
 
 * [First Steps](https://github.com/vaclav/voicemenu/blob/master/languages/jetbrains.mps.samples.VoiceMenu/FIRSTSTEPS.md) - Creating very first menu
 * [Editing Rules](https://github.com/vaclav/voicemenu/blob/master/languages/jetbrains.mps.samples.VoiceMenu/EDITINGRULES.md) - Exploring options and fixing errors
-* [Advanced Options](https://github.com/vaclav/voicemenu/tree/master/languages/jetbrains.mps.samples.VoiceMenuTabularEditor) - Using advanced features
+* [Advanced Options](https://github.com/vaclav/voicemenu/blob/master/languages/jetbrains.mps.samples.VoiceMenu/ADVANCEDOPTIONS.md) - Using advanced features
 
 
 Sample
