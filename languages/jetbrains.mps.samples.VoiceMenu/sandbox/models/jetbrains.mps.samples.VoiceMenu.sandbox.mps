@@ -17,6 +17,7 @@
       <concept id="7733035612211835897" name="jetbrains.mps.samples.VoiceMenu.structure.Replay" flags="ng" index="2m1r4j" />
       <concept id="859446834198103481" name="jetbrains.mps.samples.VoiceMenu.structure.Timeout" flags="ng" index="2smLJI">
         <property id="6118026634785114605" name="PBisFile" index="gml4y" />
+        <property id="859446834198103484" name="duration" index="2smLJF" />
         <property id="3817593199979086850" name="playback" index="31ipjb" />
         <child id="859446834199956855" name="Action" index="2sfXcw" />
       </concept>
@@ -277,6 +278,90 @@
       <property role="31ipjb" value="dasfsafsa" />
       <property role="gml4y" value="false" />
       <node concept="2m1r4j" id="JHn_unRV$i" role="2sfXcw" />
+    </node>
+  </node>
+  <node concept="2Jqgb4" id="5sWh7jD7Lmh">
+    <property role="3VJrRc" value="false" />
+    <property role="1EJLKn" value="true" />
+    <property role="TrG5h" value="myVoiceMenu" />
+    <property role="3uoZKU" value="Welcome to myVoiceMenu" />
+    <node concept="2C_Ik4" id="5sWh7jD7Lmi" role="2JqgbB">
+      <node concept="2C_I21" id="5sWh7jD7Lmz" role="2C_I26">
+        <ref role="2C_gVZ" node="5sWh7jD7Lmx" resolve="Technical Department" />
+        <node concept="2C_Ik4" id="5sWh7jD7LnY" role="2C_gVu">
+          <node concept="2C_Ik0" id="5sWh7jD7Lo3" role="2C_I24">
+            <property role="TrG5h" value="Hardware" />
+            <property role="2C_Iks" value="1" />
+          </node>
+          <node concept="2C_Ik0" id="5sWh7jD7Lo7" role="2C_I24">
+            <property role="2C_Iks" value="*" />
+            <property role="TrG5h" value="Previous Menu" />
+          </node>
+          <node concept="2C_I21" id="5sWh7jD7Lo1" role="2C_I26">
+            <ref role="2C_gVZ" node="5sWh7jD7Lo3" resolve="Hardware" />
+            <node concept="1$pBvo" id="5sWh7jD7Loi" role="2C_gVu">
+              <property role="XmNhe" value="false" />
+            </node>
+          </node>
+          <node concept="2C_I21" id="5sWh7jD7Loa" role="2C_I26">
+            <ref role="2C_gVZ" node="5sWh7jD7Lo7" resolve="Previous Menu" />
+            <node concept="1$pBvo" id="5sWh7jD8rpo" role="2C_gVu">
+              <property role="XmNhe" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2C_Ik0" id="5sWh7jD7Lmx" role="2C_I24">
+        <property role="2C_Iks" value="1" />
+        <property role="TrG5h" value="Technical Department" />
+      </node>
+      <node concept="2C_Ik0" id="5sWh7jD7LmB" role="2C_I24">
+        <property role="2C_Iks" value="2" />
+        <property role="TrG5h" value="Marketing Department" />
+      </node>
+      <node concept="2C_Ik0" id="5sWh7jD7LmT" role="2C_I24">
+        <property role="2C_Iks" value="3" />
+        <property role="TrG5h" value="Others" />
+      </node>
+      <node concept="2C_I21" id="5sWh7jD7LmX" role="2C_I26">
+        <ref role="2C_gVZ" node="5sWh7jD7LmB" resolve="Marketing Department" />
+        <node concept="1$pBvr" id="5sWh7jD7LnK" role="2C_gVu">
+          <property role="XmNmt" value="true" />
+          <property role="2nBP4r" value="777666555" />
+        </node>
+      </node>
+      <node concept="2C_I21" id="5sWh7jD7Ln5" role="2C_I26">
+        <ref role="2C_gVZ" node="5sWh7jD7LmT" resolve="Others" />
+        <node concept="X09Yf" id="5sWh7jD7Loo" role="2C_gVu">
+          <property role="XmNjE" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2smLJI" id="5sWh7jD7Lmj" role="2smLJD">
+      <property role="2smLJF" value="7" />
+      <node concept="2m1r4j" id="5sWh7jD7Lmk" role="2sfXcw" />
+    </node>
+  </node>
+  <node concept="2Jqgb4" id="5sWh7jDcJ4Q">
+    <property role="3VJrRc" value="false" />
+    <property role="1EJLKn" value="true" />
+    <property role="TrG5h" value="Sample" />
+    <property role="3uoZKU" value="Welcome to Sample Menu" />
+    <node concept="2C_Ik4" id="5sWh7jDcJ4R" role="2JqgbB">
+      <node concept="2C_Ik0" id="5sWh7jDcJ4W" role="2C_I24">
+        <property role="TrG5h" value="Sample Activity" />
+        <property role="2C_Iks" value="1" />
+      </node>
+      <node concept="2C_I21" id="5sWh7jDcJ4U" role="2C_I26">
+        <ref role="2C_gVZ" node="5sWh7jDcJ4W" resolve="Sample Activity" />
+        <node concept="1$pBvo" id="5sWh7jDcJ50" role="2C_gVu">
+          <property role="XmNhe" value="true" />
+        </node>
+      </node>
+    </node>
+    <node concept="2smLJI" id="5sWh7jDcJ4S" role="2smLJD">
+      <property role="2smLJF" value="7" />
+      <node concept="2m1r4j" id="5sWh7jDcJ4T" role="2sfXcw" />
     </node>
   </node>
 </model>
