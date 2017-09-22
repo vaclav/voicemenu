@@ -1,12 +1,6 @@
 Voice Menu - Language
 =======================
 
-
-
-How to use
-==========
-Simple guide showing how to build the very first voice menu.
-
 Introduction
 ------------
 The VoiceMenu project aims to simplify both creating and maintaining voicemenus. Possible generation languages are: Asterisk, Java, Xml, Html. Java output is suggested to use during development as an example how the resulting voicemenu behaves.
