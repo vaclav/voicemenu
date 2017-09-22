@@ -74,10 +74,11 @@ import jetbrains.mps.nodeEditor.EditorSettings;
     return editorCell;
   }
   private EditorCell createConstant_5glmts_c0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, " ");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "  ");
     editorCell.setCellId("Constant_5glmts_c0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
+    style.set(StyleAttributes.FONT_SIZE, 9);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
