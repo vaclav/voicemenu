@@ -6,6 +6,6 @@ This is a second editor that makes code even more readable and it is possible sw
 Sample
 ------
 
-[![Table](../../extras/sample_table.png)](../../extras/sample_table.png)
+[![Table](../../extras/_Table_Sample.png)](https://github.com/vaclav/voicemenu/blob/master/extras/_Table_Sample.png)
 
 
