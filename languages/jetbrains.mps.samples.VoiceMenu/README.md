@@ -45,40 +45,8 @@ Guide
 -------
 
 * [First Steps](https://github.com/vaclav/voicemenu/blob/master/languages/jetbrains.mps.samples.VoiceMenu/FIRSTSTEPS.md) - Creating very first menu
-* [Editing Rules](https://github.com/vaclav/voicemenu/tree/master/languages/jetbrains.mps.samples.VoiceMenuTabularEditor) - Exploring options and fixing errors
+* [Editing Rules](https://github.com/vaclav/voicemenu/blob/master/languages/jetbrains.mps.samples.VoiceMenu/EDITINGRULES.md) - Exploring options and fixing errors
 * [Advanced Options](https://github.com/vaclav/voicemenu/tree/master/languages/jetbrains.mps.samples.VoiceMenuTabularEditor) - Using advanced features
-
-
-
-Intentions
-----------
-
-
-In most cases different intentions are specified for each of nodes.
-All intentions are invoked by pressing `Alt + Enter` shortcut.
-
-|Event Declaration|Activity|Action|Global|
-|-----------------|--------|------|------|
-|Sort Ascendind|Initiliaze New Event|Change Action to Back|Hide Toolbar|
-|Sort Descending|Make Declaration|Change Action to Other|Show Toolbar|
-|Move Up|Remove Playback|Change Action to Direct Call|Show as Structural|
-|Move Down|Add Playback|Change Action to Get Info|Show as Tabular|
-|Remove Evnt. + its Actvt.|Remove Actvt. + its Evnt.|Change Action to Menu|||
-
-TypeSystem
-----------
-Different errors invoke different quickfixes.
-
-|Checking rule| |QuickFix|
-|-------------|-|--------|
-|CheckActionImplemented|-->|InitilizeEvent|
-|CheckDuplicateNumber|-->|RemoveNumber|
-|CheckDuplicateNumber|-->|SuggestNumber|
-|CheckEmptyMenu|-->|InitiliazeMenu|
-|CheckPhoneButtons|-->|SuggestNumber|
-|CheckMultipleActvOneEvnt|-->|RemoveActivity|
-|CheckMultipleActvOneEvnt|-->|RenameActivity|
-
 
 
 Sample
