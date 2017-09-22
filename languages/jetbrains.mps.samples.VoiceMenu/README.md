@@ -1,12 +1,6 @@
 Voice Menu - Language
 =======================
 
-
-
-How to use
-==========
-Simple guide showing how to build the very first voice menu.
-
 Introduction
 ------------
 The VoiceMenu project aims to simplify both creating and maintaining voicemenus. Possible generation languages are: Asterisk, Java, Xml, Html. Java output is suggested to use during development as an example how the resulting voicemenu behaves.
@@ -41,63 +35,12 @@ The MPS Voicemenu project supports 7 different actions:
 * Menu – create a new (sub)menu
 
 
-Step by Step guide
-==================
-To start with your first voice menu, create a new model in the sandbox solution with WorkSpace as the root. (The  advanced shortcut for autocomplete is Ctrl + Space; to invoke intentions, press Alt + Enter.)
-In the first step we assign triggers (phone buttons) and names to activities. Simply fill in each gap one by one. Add up to 12 buttons. Use the Context Action panel (the one on the right side). Only valid options are shown there for every required field.
+Guide
+-------
 
-[![MPS_VoiceMenu_Sample](../../extras/pic1.png)](https://www.jetbrains.com/mps/)
-[![MPS_VoiceMenu_Sample](../../extras/pic2.png)](https://www.jetbrains.com/mps/)
-
-As we completed the first step, let's move on to the second one - specifying the action. To do this, click `Set up` in the Context Action panel (or anywhere else you can click  `Set up ..` 
-
-
-[![MPS_VoiceMenu_Sample](../../extras/pic3.png)](https://www.jetbrains.com/mps/)
-
-At the second step, we select what actually happens under the hood of the Event which we gave the trigger (phone button) and that shiny name in the first step. Both the name and the trigger of the Event are completed automatically. Choose if the Event is a Menu (select Menu) or a concrete Action.
- 
-[![MPS_VoiceMenu_Sample](../../extras/pic4.png)](https://www.jetbrains.com/mps/)
-
-Fill in the rest of the Events. Remember: all events are created in the very same way/ Every Event has its own name even it’s the same as the name of an action. For example: A voicemenu designer would like to have an Event on the button 2 with the action Direct Call.
-* A possible solution might be an Event with properties: name = "Direct Call" , trigger = 2, activity = Direct Call.
- 
-
-[![MPS_VoiceMenu_Sample](../../extras/pic5.png)](https://www.jetbrains.com/mps/)
-
-Let's try the very first solution. Rebuild the whole project. At the very top of the screen click `Build` and choose `Rebuild Project`. Right click the myVoicemenu sandbox solution in the left panel and choose `Run` .
-[![MPS_VoiceMenu_Sample](../../extras/pic6.png)](https://www.jetbrains.com/mps/)
-
-
-
-Intentions
-----------
-
-
-In most cases different intentions are specified for each of nodes.
-All intentions are invoked by pressing `Alt + Enter` shortcut.
-
-|Event Declaration|Activity|Action|Global|
-|-----------------|--------|------|------|
-|Sort Ascendind|Initiliaze New Event|Change Action to Back|Hide Toolbar|
-|Sort Descending|Make Declaration|Change Action to Other|Show Toolbar|
-|Move Up|Remove Playback|Change Action to Direct Call|Show as Structural|
-|Move Down|Add Playback|Change Action to Get Info|Show as Tabular|
-|Remove Evnt. + its Actvt.|Remove Actvt. + its Evnt.|Change Action to Menu|||
-
-TypeSystem
-----------
-Different errors invoke different quickfixes.
-
-|Checking rule| |QuickFix|
-|-------------|-|--------|
-|CheckActionImplemented|-->|InitilizeEvent|
-|CheckDuplicateNumber|-->|RemoveNumber|
-|CheckDuplicateNumber|-->|SuggestNumber|
-|CheckEmptyMenu|-->|InitiliazeMenu|
-|CheckPhoneButtons|-->|SuggestNumber|
-|CheckMultipleActvOneEvnt|-->|RemoveActivity|
-|CheckMultipleActvOneEvnt|-->|RenameActivity|
-
+* [First Steps](https://github.com/vaclav/voicemenu/blob/master/languages/jetbrains.mps.samples.VoiceMenu/FIRSTSTEPS.md) - Creating very first menu
+* [Editing Rules](https://github.com/vaclav/voicemenu/blob/master/languages/jetbrains.mps.samples.VoiceMenu/EDITINGRULES.md) - Exploring options and fixing errors
+* [Advanced Options](https://github.com/vaclav/voicemenu/blob/master/languages/jetbrains.mps.samples.VoiceMenu/ADVANCEDOPTIONS.md) - Using advanced features
 
 
 Sample
