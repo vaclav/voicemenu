@@ -66,7 +66,7 @@
         <about url="/about.png" />
         <icon size32="/MPS32.png" size16="/MPS16.png" size32opaque="/MPS32.png" />
         <package code="code" />
-        <names product="voicemenu" fullname="voicemenu" />
+        <names product="voicemenu" fullname="Voice Menu" />
         
         <welcome-screen logo-url="/logo.png" />
         

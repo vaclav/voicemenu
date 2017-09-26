@@ -265,7 +265,7 @@
       </node>
       <node concept="3_J27D" id="5ruKdSwyerD" role="2EtHGT">
         <node concept="3Mxwew" id="5ruKdSwyerE" role="3MwsjC">
-          <property role="3MwjfP" value="voicemenu" />
+          <property role="3MwjfP" value="Voice Menu" />
         </node>
       </node>
       <node concept="NbPM2" id="5ruKdSwyerF" role="2OjNyQ">
@@ -448,7 +448,7 @@
             </node>
           </node>
           <node concept="1zDrgl" id="5ruKdSwyetr" role="39821P">
-            <ref role="1zDrgn" node="5ruKdSwyeru" resolve="voicemenu 1.0" />
+            <ref role="1zDrgn" node="5ruKdSwyeru" resolve="Voice Menu 1.0" />
           </node>
         </node>
       </node>
