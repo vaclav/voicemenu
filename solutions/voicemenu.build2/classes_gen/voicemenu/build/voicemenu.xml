@@ -66,7 +66,7 @@
         <about url="/about.png" />
         <icon size32="/MPS32.png" size16="/MPS16.png" size32opaque="/MPS32.png" />
         <package code="code" />
-        <names product="voicemenu" fullname="voicemenu" />
+        <names product="voicemenu" fullname="Voice Menu" />
         
         <welcome-screen logo-url="/logo.png" />
         
@@ -100,6 +100,10 @@
     <mkdir dir="${build.layout}/plugins/mps-core" />
     <copy todir="${build.layout}/plugins/mps-core">
       <fileset dir="${artifacts.mpsStandalone}/plugins/mps-core" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/context-tool" />
+    <copy todir="${build.layout}/plugins/context-tool">
+      <fileset dir="${artifacts.mpsContextActionsTool}/context-tool" />
     </copy>
     <mkdir dir="${build.layout}/plugins/voicemenu" />
     <mkdir dir="${build.layout}/plugins/voicemenu/META-INF" />
@@ -724,6 +728,18 @@
       <zipfileset file="${basedir}/languages/jetbrains.mps.samples.Text/jetbrains.mps.samples.Text.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.Text-models" prefix="module/models" />
     </jar>
+    <mkdir dir="${build.tmp}/default/jetbrains.mps.devkit.voicemenu.jar" />
+    <mkdir dir="${build.tmp}/default/jetbrains.mps.devkit.voicemenu.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/jetbrains.mps.devkit.voicemenu.jar/META-INF/module.xml">
+      <module namespace="jetbrains.mps.devkit.voicemenu" type="devkit" uuid="a3a23ab5-6d9f-471b-8712-e59f4743e2cb">
+        <dependencies />
+        <sources jar="." descriptor="jetbrains.mps.devkit.voicemenu.devkit" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/plugins/voicemenu/languages/voicemenu/jetbrains.mps.devkit.voicemenu.jar" duplicate="preserve">
+      <zipfileset file="${basedir}/devkits/jetbrains.mps.devkit.voicemenu/jetbrains.mps.devkit.voicemenu.devkit" prefix="module" />
+      <fileset dir="${build.tmp}/default/jetbrains.mps.devkit.voicemenu.jar" />
+    </jar>
     <copy todir="${build.layout}/plugins/voicemenu">
       <fileset file="${basedir}/solutions/TTSLibrary/lib/cmu_time_awb.jar" />
     </copy>
@@ -874,6 +890,7 @@
       <chunk>
         <module file="${basedir}/solutions/JavaVoiceMenu/JavaVoiceMenu.msd" />
         <module file="${basedir}/solutions/TTSLibrary/TTSLibrary.msd" />
+        <module file="${basedir}/devkits/jetbrains.mps.devkit.voicemenu/jetbrains.mps.devkit.voicemenu.devkit" />
         <module file="${basedir}/languages/jetbrains.mps.samples.Text/jetbrains.mps.samples.Text.mpl" />
         <module file="${basedir}/languages/jetbrains.mps.samples.VoiceMenu/jetbrains.mps.samples.VoiceMenu.mpl" />
         <module file="${basedir}/languages/jetbrains.mps.samples.VoiceMenuTabularEditor/jetbrains.mps.samples.VoiceMenuTabularEditor.mpl" />

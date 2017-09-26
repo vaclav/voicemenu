@@ -448,7 +448,7 @@
             </node>
           </node>
           <node concept="1zDrgl" id="5ruKdSwyetr" role="39821P">
-            <ref role="1zDrgn" node="5ruKdSwyeru" resolve="Voice Menu 1.0" />
+            <ref role="1zDrgn" node="5ruKdSwyeru" resolve="voicemenu" />
           </node>
         </node>
       </node>
@@ -464,6 +464,9 @@
         </node>
         <node concept="3_I8Xc" id="5ruKdSwyetw" role="39821P">
           <ref role="3_I8Xa" to="ffeo:ymnOULBdbM" resolve="mps-core" />
+        </node>
+        <node concept="3_I8Xc" id="ihwYhQ3jLR" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:1JaUSFUm4H1" resolve="context-tool" />
         </node>
         <node concept="m$_wl" id="5ruKdSwyetx" role="39821P">
           <ref role="m_rDy" node="5ruKdSwyesO" resolve="voicemenu" />

@@ -101,6 +101,10 @@
     <copy todir="${build.layout}/plugins/mps-core">
       <fileset dir="${artifacts.mpsStandalone}/plugins/mps-core" />
     </copy>
+    <mkdir dir="${build.layout}/plugins/context-tool" />
+    <copy todir="${build.layout}/plugins/context-tool">
+      <fileset dir="${artifacts.mpsContextActionsTool}/context-tool" />
+    </copy>
     <mkdir dir="${build.layout}/plugins/voicemenu" />
     <mkdir dir="${build.layout}/plugins/voicemenu/META-INF" />
     <echoxml file="${build.layout}/plugins/voicemenu/META-INF/plugin.xml">
