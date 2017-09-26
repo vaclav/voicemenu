@@ -211,6 +211,12 @@
         <child id="3189788309731917348" name="runtime" index="1E1XAP" />
         <child id="9200313594498201639" name="generator" index="1TViLv" />
       </concept>
+      <concept id="322010710375794190" name="jetbrains.mps.build.mps.structure.BuildMps_DevKit" flags="ng" index="3LEwk6">
+        <child id="322010710375832962" name="exports" index="3LEDUa" />
+      </concept>
+      <concept id="322010710375832938" name="jetbrains.mps.build.mps.structure.BuildMps_DevKitExportLanguage" flags="ng" index="3LEDTy">
+        <reference id="322010710375832947" name="language" index="3LEDTV" />
+      </concept>
       <concept id="322010710375871467" name="jetbrains.mps.build.mps.structure.BuildMps_AbstractModule" flags="ng" index="3LEN3z">
         <property id="8369506495128725901" name="compact" index="BnDLt" />
         <property id="322010710375892619" name="uuid" index="3LESm3" />
@@ -704,12 +710,6 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="5ruKdSwyetO" role="3bR37C">
-          <node concept="3bR9La" id="5ruKdSwyetP" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:1ZViq9oppal" resolve="jetbrains.mps.make.facets" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="5ruKdSwyetQ" role="3bR37C">
           <node concept="3bR9La" id="5ruKdSwyetR" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -720,12 +720,6 @@
           <node concept="3bR9La" id="5ruKdSwyetT" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="5ruKdSwyetU" role="3bR37C">
-          <node concept="3bR9La" id="5ruKdSwyetV" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6LgV" resolve="jetbrains.mps.make.runtime" />
           </node>
         </node>
         <node concept="1SiIV0" id="5ruKdSwyetW" role="3bR37C">
@@ -744,12 +738,6 @@
           <node concept="3bR9La" id="5ruKdSwyeDg" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="5ruKdSwyes2" resolve="jetbrains.mps.samples.VoiceMenu" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="5ruKdSwyeDh" role="3bR37C">
-          <node concept="3bR9La" id="5ruKdSwyeDi" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg2" resolve="jetbrains.mps.smodel.resources" />
           </node>
         </node>
         <node concept="1yeLz9" id="5ruKdSwyeDj" role="1TViLv">
@@ -1366,6 +1354,40 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="3LEwk6" id="6hhWSLHWVCh" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="jetbrains.mps.devkit.voicemenu" />
+        <property role="3LESm3" value="a3a23ab5-6d9f-471b-8712-e59f4743e2cb" />
+        <node concept="55IIr" id="6hhWSLHWVCk" role="3LF7KH">
+          <node concept="2Ry0Ak" id="6hhWSLHWVQA" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="6hhWSLHWVXE" role="2Ry0An">
+              <property role="2Ry0Am" value="jetbrains.mps.devkit.voicemenu" />
+              <node concept="2Ry0Ak" id="6hhWSLHWXfk" role="2Ry0An">
+                <property role="2Ry0Am" value="jetbrains.mps.devkit.voicemenu.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEDTy" id="6hhWSLHWXUN" role="3LEDUa">
+          <ref role="3LEDTV" node="5ruKdSwyes2" resolve="jetbrains.mps.samples.VoiceMenu" />
+        </node>
+        <node concept="3LEDTy" id="6hhWSLHWXUO" role="3LEDUa">
+          <ref role="3LEDTV" node="5ruKdSwyesk" resolve="jetbrains.mps.samples.VoiceMenuTabularEditor" />
+        </node>
+        <node concept="3LEDTy" id="6hhWSLHWXUP" role="3LEDUa">
+          <ref role="3LEDTV" node="5ruKdSwyesG" resolve="jetbrains.mps.samples.VoiceMenuToAsterisk" />
+        </node>
+        <node concept="3LEDTy" id="6hhWSLHWXUQ" role="3LEDUa">
+          <ref role="3LEDTV" node="5ruKdSwyesA" resolve="jetbrains.mps.samples.VoiceMenuToHTML" />
+        </node>
+        <node concept="3LEDTy" id="6hhWSLHWXUR" role="3LEDUa">
+          <ref role="3LEDTV" node="5ruKdSwyes8" resolve="jetbrains.mps.samples.VoiceMenuToJava" />
+        </node>
+        <node concept="3LEDTy" id="6hhWSLHWXUS" role="3LEDUa">
+          <ref role="3LEDTV" node="5ruKdSwyesq" resolve="jetbrains.mps.samples.VoiceMenuToXML" />
         </node>
       </node>
     </node>

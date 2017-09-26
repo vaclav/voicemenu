@@ -724,6 +724,18 @@
       <zipfileset file="${basedir}/languages/jetbrains.mps.samples.Text/jetbrains.mps.samples.Text.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.Text-models" prefix="module/models" />
     </jar>
+    <mkdir dir="${build.tmp}/default/jetbrains.mps.devkit.voicemenu.jar" />
+    <mkdir dir="${build.tmp}/default/jetbrains.mps.devkit.voicemenu.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/jetbrains.mps.devkit.voicemenu.jar/META-INF/module.xml">
+      <module namespace="jetbrains.mps.devkit.voicemenu" type="devkit" uuid="a3a23ab5-6d9f-471b-8712-e59f4743e2cb">
+        <dependencies />
+        <sources jar="." descriptor="jetbrains.mps.devkit.voicemenu.devkit" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/plugins/voicemenu/languages/voicemenu/jetbrains.mps.devkit.voicemenu.jar" duplicate="preserve">
+      <zipfileset file="${basedir}/devkits/jetbrains.mps.devkit.voicemenu/jetbrains.mps.devkit.voicemenu.devkit" prefix="module" />
+      <fileset dir="${build.tmp}/default/jetbrains.mps.devkit.voicemenu.jar" />
+    </jar>
     <copy todir="${build.layout}/plugins/voicemenu">
       <fileset file="${basedir}/solutions/TTSLibrary/lib/cmu_time_awb.jar" />
     </copy>
@@ -874,6 +886,7 @@
       <chunk>
         <module file="${basedir}/solutions/JavaVoiceMenu/JavaVoiceMenu.msd" />
         <module file="${basedir}/solutions/TTSLibrary/TTSLibrary.msd" />
+        <module file="${basedir}/devkits/jetbrains.mps.devkit.voicemenu/jetbrains.mps.devkit.voicemenu.devkit" />
         <module file="${basedir}/languages/jetbrains.mps.samples.Text/jetbrains.mps.samples.Text.mpl" />
         <module file="${basedir}/languages/jetbrains.mps.samples.VoiceMenu/jetbrains.mps.samples.VoiceMenu.mpl" />
         <module file="${basedir}/languages/jetbrains.mps.samples.VoiceMenuTabularEditor/jetbrains.mps.samples.VoiceMenuTabularEditor.mpl" />
