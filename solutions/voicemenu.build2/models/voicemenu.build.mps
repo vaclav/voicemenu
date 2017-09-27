@@ -489,6 +489,9 @@
         <node concept="3_I8Xc" id="ihwYhQ3jLR" role="39821P">
           <ref role="3_I8Xa" to="ffeo:1JaUSFUm4H1" resolve="context-tool" />
         </node>
+        <node concept="3_I8Xc" id="5ruKdSy0iTs" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:1x6h9EwqP32" resolve="mps-make" />
+        </node>
         <node concept="m$_wl" id="5ruKdSwyetx" role="39821P">
           <ref role="m_rDy" node="5ruKdSwyesO" resolve="voicemenu" />
           <node concept="28jJK3" id="5$IQOQwbKaz" role="39821P">
@@ -641,12 +644,6 @@
             <property role="3MwjfP" value="plugins" />
           </node>
         </node>
-      </node>
-      <node concept="28u9K_" id="5ruKdSy0iCm" role="39821P">
-        <property role="28hIV_" value="optianal plugins" />
-      </node>
-      <node concept="3_I8Xc" id="5ruKdSy0iTs" role="39821P">
-        <ref role="3_I8Xa" to="ffeo:1x6h9EwqP32" resolve="mps-make" />
       </node>
       <node concept="1TblL5" id="5ruKdSwyet$" role="39821P">
         <node concept="3_J27D" id="5ruKdSwyet_" role="1TblL3">

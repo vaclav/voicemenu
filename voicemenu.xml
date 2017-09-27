@@ -105,6 +105,10 @@
     <copy todir="${build.layout}/plugins/context-tool">
       <fileset dir="${artifacts.mpsContextActionsTool}/context-tool" />
     </copy>
+    <mkdir dir="${build.layout}/plugins/mps-make" />
+    <copy todir="${build.layout}/plugins/mps-make">
+      <fileset dir="${artifacts.mpsMakePlugin}/mps-make" />
+    </copy>
     <mkdir dir="${build.layout}/plugins/voicemenu" />
     <mkdir dir="${build.layout}/plugins/voicemenu/META-INF" />
     <echoxml file="${build.layout}/plugins/voicemenu/META-INF/plugin.xml">
@@ -768,10 +772,6 @@
     </copy>
     <copy todir="${build.layout}/plugins/voicemenu">
       <fileset file="${basedir}/solutions/TTSLibrary/lib/mbrola.jar" />
-    </copy>
-    <mkdir dir="${build.layout}/mps-make" />
-    <copy todir="${build.layout}/mps-make">
-      <fileset dir="${artifacts.mpsMakePlugin}/mps-make" />
     </copy>
     <echo file="${build.layout}/build.number">build.number=${build.number}${line.separator}date=${date}${line.separator}version=1.0</echo>
     <echo file="${build.layout}/build.properties">voicemenu.date=${date}${line.separator}voicemenu.build.number=${build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
