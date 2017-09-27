@@ -484,7 +484,9 @@
     <mkdir dir="${build.tmp}/default/TTSLibrary.jar/META-INF" />
     <echoxml file="${build.tmp}/default/TTSLibrary.jar/META-INF/module.xml">
       <module namespace="TTSLibrary" type="solution" uuid="828f8f6b-2bf3-4a70-82a0-c413d7f22140">
-        <dependencies />
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+        </dependencies>
         <library jar="../../cmu_time_awb.jar" />
         <library jar="../../cmu_us_kal.jar" />
         <library jar="../../cmudict04.jar" />
