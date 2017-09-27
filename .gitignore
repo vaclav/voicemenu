@@ -1,5 +1,7 @@
-# Compiled class file
+# Compiled class files and folders
 *.class
+classes
+classes_gen
 
 # Log file
 *.log
@@ -19,3 +21,11 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# Build scripts output
+build/artifacts
+build/tmp
+
+# IDE developer specific files
+.mps/workspace.xml
+.mps/shelf
