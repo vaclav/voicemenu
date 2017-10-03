@@ -4644,7 +4644,7 @@
                   <ref role="3uigEE" to="wyt6:~String" resolve="String" />
                 </node>
                 <node concept="Xl_RD" id="5jBAcX3Dg5O" role="33vP2m">
-                  <property role="Xl_RC" value=". " />
+                  <property role="Xl_RC" value=" " />
                 </node>
               </node>
             </node>
@@ -5006,7 +5006,7 @@
               <ref role="3uigEE" to="wyt6:~String" resolve="String" />
             </node>
             <node concept="Xl_RD" id="5jBAcX1BbVj" role="33vP2m">
-              <property role="Xl_RC" value=". " />
+              <property role="Xl_RC" value=" " />
             </node>
           </node>
         </node>
