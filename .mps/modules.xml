@@ -14,6 +14,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/JavaVoiceMenu/JavaVoiceMenu.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/TTSLibrary/TTSLibrary.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/voicemenu.build/voicemenu.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/voicemenu/voicemenu.msd" folder="" />
     </projectModules>
   </component>
 </project>

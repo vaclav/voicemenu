@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:7e76c46c-6d36-4eff-a91f-bdb01cc6d244(voicemenu.plugin.project.wizard)/3796808963145666773">
+    <file name="VoiceMenuProjectGroup.java">
+      <node id="3796808963145677850" at="15,27,16,24" concept="5" />
+      <node id="3073516151938822604" at="20,56,21,72" concept="4" />
+      <node id="3073516151938828837" at="21,72,22,45" concept="0" />
+      <node id="3073516151938831644" at="22,45,23,16" concept="5" />
+      <node id="3796808963145677842" at="13,0,18,0" concept="3" trace="getName#()Ljava/lang/String;" />
+      <node id="3796808963145677891" at="18,0,25,0" concept="3" trace="getTemplates#()Ljava/util/Collection;" />
+      <scope id="3796808963145677847" at="15,27,16,24" />
+      <scope id="3796808963145677897" at="20,56,23,16">
+        <var name="list" id="3073516151938822605" />
+      </scope>
+      <scope id="3796808963145677842" at="13,0,18,0" />
+      <scope id="3796808963145677891" at="18,0,25,0" />
+      <unit id="3796808963145666773" at="12,0,26,0" name="voicemenu.plugin.project.wizard.VoiceMenuProjectGroup" />
+    </file>
+  </root>
+  <root nodeRef="r:7e76c46c-6d36-4eff-a91f-bdb01cc6d244(voicemenu.plugin.project.wizard)/3796808963145677975">
+    <file name="VoiceMenuProjectTemplate.java">
+      <node id="3796808963145749893" at="32,0,33,0" concept="1" trace="myMenuName" />
+      <node id="3348443391568009141" at="33,0,34,0" concept="1" trace="myProjectPath" />
+      <node id="3348443391568054106" at="35,0,36,0" concept="7" trace="DEFAULT_SOLUTION_NAME" />
+      <node id="3348443391568069004" at="36,0,37,0" concept="7" trace="DEFAULT_MODEL_NAME" />
+      <node id="3796808963145677997" at="40,25,41,16" concept="5" />
+      <node id="3796808963145678006" at="46,27,47,30" concept="5" />
+      <node id="3796808963145678015" at="52,34,53,46" concept="5" />
+      <node id="3796808963145733148" at="58,35,59,59" concept="4" />
+      <node id="3796808963145738161" at="59,59,60,0" concept="6" />
+      <node id="3796808963145744679" at="60,0,61,44" concept="4" />
+      <node id="3796808963145751230" at="61,44,62,196" concept="0" />
+      <node id="3796808963145755990" at="62,196,63,0" concept="6" />
+      <node id="3796808963145756675" at="63,0,64,216" concept="0" />
+      <node id="3796808963145738178" at="64,216,65,0" concept="6" />
+      <node id="3796808963145739718" at="65,0,66,17" concept="5" />
+      <node id="3348443391568226871" at="76,29,77,0" concept="6" />
+      <node id="3348443391567993774" at="77,0,78,107" concept="4" />
+      <node id="3348443391568221152" at="78,107,79,0" concept="6" />
+      <node id="3348443391568231507" at="79,0,80,79" concept="4" />
+      <node id="3348443391568229745" at="80,79,81,71" concept="4" />
+      <node id="3348443391568249930" at="81,71,82,0" concept="6" />
+      <node id="3348443391568269983" at="82,0,83,170" concept="0" />
+      <node id="3348443391568085630" at="83,170,84,0" concept="6" />
+      <node id="3348443391568480970" at="84,0,85,141" concept="4" />
+      <node id="3348443391568482949" at="85,141,86,0" concept="6" />
+      <node id="3348443391568545177" at="88,33,89,88" concept="0" />
+      <node id="3348443391568009672" at="99,43,100,25" concept="0" />
+      <node id="3796808963145768191" at="105,33,106,44" concept="4" />
+      <node id="3796808963145787560" at="107,47,108,49" concept="5" />
+      <node id="3796808963145679838" at="109,5,110,16" concept="5" />
+      <node id="3348443391568480975" at="124,95,125,63" concept="4" />
+      <node id="3348443391568480975" at="125,63,126,30" concept="4" />
+      <node id="3348443391568480975" at="126,30,127,30" concept="4" />
+      <node id="3348443391568480975" at="127,30,128,30" concept="4" />
+      <node id="3348443391568480975" at="128,30,129,30" concept="4" />
+      <node id="3348443391568480975" at="129,30,130,257" concept="0" />
+      <node id="3348443391568480975" at="130,257,131,190" concept="0" />
+      <node id="3348443391568480975" at="131,190,132,181" concept="0" />
+      <node id="3348443391568480975" at="132,181,133,182" concept="0" />
+      <node id="3348443391568480975" at="133,182,134,252" concept="0" />
+      <node id="3348443391568480975" at="134,252,135,175" concept="0" />
+      <node id="3348443391568480975" at="135,175,136,254" concept="0" />
+      <node id="3348443391568480975" at="136,254,137,177" concept="0" />
+      <node id="3348443391568480975" at="137,177,138,254" concept="0" />
+      <node id="3348443391568480975" at="138,254,139,171" concept="0" />
+      <node id="3348443391568480975" at="139,171,140,173" concept="0" />
+      <node id="3348443391568480975" at="140,173,141,24" concept="5" />
+      <node id="3348443391568525669" at="88,0,91,0" concept="3" trace="run#()V" />
+      <node id="3796808963145761913" at="106,44,109,5" concept="2" />
+      <node id="3796808963145679839" at="113,0,116,0" concept="3" trace="addListener#(Ljetbrains/mps/workbench/dialogs/project/newproject/MPSProjectTemplate/MPSProjectTemplateListener;)V" />
+      <node id="3796808963145679847" at="117,0,120,0" concept="3" trace="removeListener#(Ljetbrains/mps/workbench/dialogs/project/newproject/MPSProjectTemplate/MPSProjectTemplateListener;)V" />
+      <node id="3796808963145679855" at="121,0,124,0" concept="3" trace="fireSettingsChanged#()V" />
+      <node id="3796808963145679822" at="98,0,102,0" concept="3" trace="setProjectPath#(Ljava/lang/String;)V" />
+      <node id="3796808963145677989" at="38,0,43,0" concept="3" trace="getIcon#()Ljavax/swing/Icon;" />
+      <node id="3796808963145677998" at="44,0,49,0" concept="3" trace="getName#()Ljava/lang/String;" />
+      <node id="3796808963145678007" at="50,0,55,0" concept="3" trace="getDescription#()Ljava/lang/String;" />
+      <node id="3348443391568501650" at="86,0,91,15" concept="0" />
+      <node id="3796808963145679830" at="103,0,112,0" concept="3" trace="checkSettings#()Ljava/lang/String;" />
+      <node id="3796808963145678016" at="56,0,68,0" concept="3" trace="getSettings#()Ljavax/swing/JComponent;" />
+      <node id="3348443391567932635" at="76,0,93,0" concept="3" trace="run#()V" />
+      <node id="3348443391568152907" at="74,68,93,11" concept="0" />
+      <node id="3348443391568480975" at="124,0,143,0" concept="8" trace="_quotation_createNode_s9npm9_a0a0i0a0a0a0a0a0a0a0o#(Ljava/lang/Object;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="3796808963145717270" at="73,0,95,0" concept="3" trace="fillProjectWithModules#(Ljetbrains/mps/project/MPSProject;)V" />
+      <node id="3796808963145689922" at="71,45,95,6" concept="5" />
+      <node id="3796808963145678025" at="69,0,97,0" concept="3" trace="getTemplateFiller#()Ljetbrains/mps/workbench/dialogs/project/newproject/TemplateFiller;" />
+      <scope id="3796808963145679845" at="114,83,114,83" />
+      <scope id="3796808963145679853" at="118,86,118,86" />
+      <scope id="3796808963145679859" at="122,37,122,37" />
+      <scope id="3796808963145677994" at="40,25,41,16" />
+      <scope id="3796808963145678003" at="46,27,47,30" />
+      <scope id="3796808963145678012" at="52,34,53,46" />
+      <scope id="3348443391568525673" at="88,33,89,88" />
+      <scope id="3796808963145679828" at="99,43,100,25" />
+      <scope id="3796808963145761915" at="107,47,108,49" />
+      <scope id="3348443391568525669" at="88,0,91,0" />
+      <scope id="3796808963145679839" at="113,0,116,0">
+        <var name="listener" id="3796808963145679843" />
+      </scope>
+      <scope id="3796808963145679847" at="117,0,120,0">
+        <var name="listener" id="3796808963145679851" />
+      </scope>
+      <scope id="3796808963145679855" at="121,0,124,0" />
+      <scope id="3796808963145679822" at="98,0,102,0">
+        <var name="path" id="3796808963145679826" />
+      </scope>
+      <scope id="3796808963145677989" at="38,0,43,0" />
+      <scope id="3796808963145677998" at="44,0,49,0" />
+      <scope id="3796808963145678007" at="50,0,55,0" />
+      <scope id="3796808963145679835" at="105,33,110,16">
+        <var name="text" id="3796808963145768192" />
+      </scope>
+      <scope id="3796808963145678021" at="58,35,66,17">
+        <var name="label" id="3796808963145744680" />
+        <var name="panel" id="3796808963145733149" />
+      </scope>
+      <scope id="3796808963145679830" at="103,0,112,0" />
+      <scope id="3796808963145678016" at="56,0,68,0" />
+      <scope id="3348443391567932639" at="76,29,91,15">
+        <var name="defaultRoot" id="3348443391568231506" />
+        <var name="model" id="3348443391568229748" />
+        <var name="root" id="3348443391568480971" />
+        <var name="solution" id="3348443391567993775" />
+      </scope>
+      <scope id="3348443391567932635" at="76,0,93,0" />
+      <scope id="3348443391568480975" at="124,95,141,24">
+        <var name="facade" id="3348443391568480975" />
+        <var name="quotedNode_2" id="3348443391568480975" />
+        <var name="quotedNode_3" id="3348443391568480975" />
+        <var name="quotedNode_4" id="3348443391568480975" />
+        <var name="quotedNode_5" id="3348443391568480975" />
+      </scope>
+      <scope id="3796808963145717277" at="74,68,93,11" />
+      <scope id="3348443391568480975" at="124,0,143,0">
+        <var name="parameter_1" id="3348443391568480975" />
+      </scope>
+      <scope id="3796808963145717270" at="73,0,95,0">
+        <var name="project" id="3796808963145717274" />
+      </scope>
+      <scope id="3796808963145678030" at="71,45,95,6" />
+      <scope id="3796808963145678025" at="69,0,97,0" />
+      <unit id="3348443391568525667" at="87,64,91,13" name="voicemenu.plugin.project.wizard.VoiceMenuProjectTemplate$1$1$1" />
+      <unit id="3348443391567932633" at="75,52,93,9" name="voicemenu.plugin.project.wizard.VoiceMenuProjectTemplate$1$1" />
+      <unit id="3796808963145693666" at="72,15,95,5" name="voicemenu.plugin.project.wizard.VoiceMenuProjectTemplate$1" />
+      <unit id="3796808963145677975" at="31,0,144,0" name="voicemenu.plugin.project.wizard.VoiceMenuProjectTemplate" />
+    </file>
+  </root>
+</debug-info>
+
