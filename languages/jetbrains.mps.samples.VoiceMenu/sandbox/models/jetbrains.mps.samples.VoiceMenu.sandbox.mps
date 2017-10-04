@@ -66,15 +66,15 @@
     </language>
   </registry>
   <node concept="2Jqgb4" id="2w$I9I9UGbg">
-    <property role="TrG5h" value="Jet Mobile" />
     <property role="3uoZKU" value="Hello, welcome in Jet-Mobile" />
     <property role="1EJLKn" value="true" />
     <property role="3VJrRc" value="false" />
     <property role="3VHriK" value="800" />
     <property role="3VHriO" value="etc/asterisk/" />
+    <property role="TrG5h" value="Jet Mobile" />
     <node concept="2C_Ik4" id="2w$I9I9UGbh" role="2JqgbB">
       <node concept="2C_I21" id="2w$I9I9URiH" role="2C_I26">
-        <property role="3upAMh" value="Did you know that our internet is faster than ever?" />
+        <property role="3upAMh" value="Did you know that our internet is faster than evr?" />
         <property role="2tub0X" value="false" />
         <ref role="2C_gVZ" node="2w$I9I9UGbk" resolve="Internet" />
         <node concept="2C_Ik4" id="2w$I9I9URl3" role="2C_gVu">
@@ -284,7 +284,7 @@
     <property role="3VJrRc" value="false" />
     <property role="1EJLKn" value="true" />
     <property role="TrG5h" value="myVoiceMenu" />
-    <property role="3uoZKU" value="Welcome to myVoiceMenu" />
+    <property role="3uoZKU" value="" />
     <node concept="2C_Ik4" id="5sWh7jD7Lmi" role="2JqgbB">
       <node concept="2C_I21" id="5sWh7jD7Lmz" role="2C_I26">
         <ref role="2C_gVZ" node="5sWh7jD7Lmx" resolve="Technical Department" />
