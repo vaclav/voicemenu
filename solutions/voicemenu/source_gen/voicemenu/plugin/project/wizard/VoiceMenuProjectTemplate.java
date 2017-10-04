@@ -14,6 +14,7 @@ import javax.swing.JLabel;
 import com.intellij.uiDesigner.core.GridConstraints;
 import jetbrains.mps.workbench.dialogs.project.newproject.TemplateFiller;
 import jetbrains.mps.project.MPSProject;
+import com.intellij.openapi.startup.StartupManager;
 import org.jetbrains.mps.openapi.module.SModule;
 import jetbrains.mps.ide.newSolutionDialog.NewModuleUtil;
 import org.jetbrains.mps.openapi.persistence.ModelRoot;
@@ -72,21 +73,25 @@ public class VoiceMenuProjectTemplate implements MPSProjectTemplate {
     return new TemplateFiller() {
       @Override
       public void fillProjectWithModules(final MPSProject project) {
-        project.getModelAccess().executeCommand(new Runnable() {
+        StartupManager.getInstance(project.getProject()).registerPostStartupActivity(new Runnable() {
           public void run() {
-
-            SModule solution = NewModuleUtil.createSolution(DEFAULT_SOLUTION_NAME, myProjectPath, project);
-
-            ModelRoot defaultRoot = solution.getModelRoots().iterator().next();
-            SModel model = defaultRoot.createModel(DEFAULT_MODEL_NAME);
-
-            ((SModelBase) model).addDevKit(PersistenceFacade.getInstance().createModuleReference("a3a23ab5-6d9f-471b-8712-e59f4743e2cb(jetbrains.mps.devkit.voicemenu)"));
-
-            final SNode root = SModelOperations.addRootNode(model, _quotation_createNode_s9npm9_a0a0i0a0a0a0a0a0a0a0o(myMenuName.getText()));
-
-            ApplicationManager.getApplication().invokeLater(new Runnable() {
+            project.getModelAccess().executeCommand(new Runnable() {
               public void run() {
-                new EditorNavigator(project).shallFocus(true).open(root.getReference());
+
+                SModule solution = NewModuleUtil.createSolution(DEFAULT_SOLUTION_NAME, myProjectPath, project);
+
+                ModelRoot defaultRoot = solution.getModelRoots().iterator().next();
+                SModel model = defaultRoot.createModel(DEFAULT_MODEL_NAME);
+
+                ((SModelBase) model).addDevKit(PersistenceFacade.getInstance().createModuleReference("a3a23ab5-6d9f-471b-8712-e59f4743e2cb(jetbrains.mps.devkit.voicemenu)"));
+
+                final SNode root = SModelOperations.addRootNode(model, _quotation_createNode_s9npm9_a0a0i0a0a0a0a0a0a0a0a0a0a0a0o(myMenuName.getText()));
+
+                ApplicationManager.getApplication().invokeLater(new Runnable() {
+                  public void run() {
+                    new EditorNavigator(project).shallFocus(true).open(root.getReference());
+                  }
+                });
               }
             });
           }
@@ -121,7 +126,7 @@ public class VoiceMenuProjectTemplate implements MPSProjectTemplate {
   @Override
   public void fireSettingsChanged() {
   }
-  private static SNode _quotation_createNode_s9npm9_a0a0i0a0a0a0a0a0a0a0o(Object parameter_1) {
+  private static SNode _quotation_createNode_s9npm9_a0a0i0a0a0a0a0a0a0a0a0a0a0a0o(Object parameter_1) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_2 = null;
     SNode quotedNode_3 = null;

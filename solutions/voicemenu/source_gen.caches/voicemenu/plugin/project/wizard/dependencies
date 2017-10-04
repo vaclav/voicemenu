@@ -13,6 +13,7 @@
   </dependency>
   <dependency className="voicemenu.plugin.project.wizard.VoiceMenuProjectTemplate" file="VoiceMenuProjectTemplate.java">
     <classNode dependClassName="com.intellij.openapi.application.ApplicationManager" />
+    <classNode dependClassName="com.intellij.openapi.startup.StartupManager" />
     <classNode dependClassName="com.intellij.uiDesigner.core.GridConstraints" />
     <classNode dependClassName="com.intellij.uiDesigner.core.GridLayoutManager" />
     <classNode dependClassName="java.lang.Object" />
