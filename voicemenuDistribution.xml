@@ -61,6 +61,9 @@
         <tokenfilter>
           <replaceregex pattern="mps.icns" replace="IVR.icns" flags="" />
         </tokenfilter>
+        <tokenfilter>
+          <replaceregex pattern="string>MPS" replace="string>Voice Menu" flags="" />
+        </tokenfilter>
       </filterchain>
       <globmapper from="*" to="Info.plist" />
     </copy>
