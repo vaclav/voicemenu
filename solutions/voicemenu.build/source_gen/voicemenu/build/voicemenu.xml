@@ -62,8 +62,8 @@
         <version codename="voicemenu" major="1" minor="0" eap="false" />
         <company name="JetBrains" url="http://www.jetbrains.com" />
         <build number="${build.number}" date="${date}" />
-        <logo url="/IVR_splash.png" textcolor="002387" />
-        <about url="/IVR_about.png" />
+        <logo url="/IVR_splash.png" textcolor="002387" progressColor="234908" progressX="0" progressY="395" progressHeight="5" />
+        <about url="/IVR_about.png" foreground="FFFFFF" copyrightForeground="858585" />
         <icon size32="/IVR_icon_32.png" size16="/IVR_icon_16.png" size32opaque="/IVR_icon_32.png" size128="/IVR_icon_128.png" />
         <package code="code" />
         <names product="voicemenu" fullname="Voice Menu" />

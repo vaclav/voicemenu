@@ -204,6 +204,10 @@
       <concept id="7753544965996377997" name="jetbrains.mps.build.mps.structure.BuildMps_Branding" flags="ng" index="1zClus">
         <property id="3497141547781541445" name="minor" index="2OjLBK" />
         <property id="3497141547781541444" name="major" index="2OjLBL" />
+        <child id="6845119683729337285" name="progressY" index="27hAJg" />
+        <child id="6845119683729294884" name="progressColor" index="27hGoL" />
+        <child id="7962467864632399185" name="progressX" index="2gocG4" />
+        <child id="7962467864633062782" name="progressHeight" index="2gqIGF" />
         <child id="6108265972537182997" name="aboutScreen" index="2EqU2s" />
         <child id="6108265972537182996" name="splashScreen" index="2EqU2t" />
         <child id="6108265972537229337" name="buildNumber" index="2EteIg" />
@@ -218,6 +222,8 @@
         <child id="3497141547781549827" name="codename" index="2OjNyQ" />
         <child id="1462305029084462472" name="buildDate" index="R$TG_" />
         <child id="772379520210716142" name="welcomeLogo" index="3vi$VU" />
+        <child id="1084163669516664629" name="copyrightForeground" index="3KTKoD" />
+        <child id="1084163669516639223" name="foreground" index="3KTYbF" />
       </concept>
       <concept id="4278635856200826393" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyJar" flags="ng" index="1BurEX">
         <child id="4278635856200826394" name="path" index="1BurEY" />
@@ -355,6 +361,36 @@
           <node concept="2Ry0Ak" id="3w0kbvTSMH" role="2Ry0An">
             <property role="2Ry0Am" value="IVR_icon_128.png" />
           </node>
+        </node>
+      </node>
+      <node concept="NbPM2" id="3w0kbvVkV_" role="2gocG4">
+        <node concept="3Mxwew" id="3w0kbvVl12" role="3MwsjC">
+          <property role="3MwjfP" value="0" />
+        </node>
+      </node>
+      <node concept="NbPM2" id="3w0kbvVl2S" role="27hAJg">
+        <node concept="3Mxwew" id="3w0kbvVl2R" role="3MwsjC">
+          <property role="3MwjfP" value="395" />
+        </node>
+      </node>
+      <node concept="NbPM2" id="3w0kbvVl4J" role="27hGoL">
+        <node concept="3Mxwew" id="3w0kbvVl4I" role="3MwsjC">
+          <property role="3MwjfP" value="234908" />
+        </node>
+      </node>
+      <node concept="NbPM2" id="3w0kbvV$lm" role="2gqIGF">
+        <node concept="3Mxwew" id="3w0kbvV$ll" role="3MwsjC">
+          <property role="3MwjfP" value="5" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="3w0kbvV$Ch" role="3KTYbF">
+        <node concept="3Mxwew" id="3w0kbvV$E6" role="3MwsjC">
+          <property role="3MwjfP" value="FFFFFF" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="3w0kbvV$FV" role="3KTKoD">
+        <node concept="3Mxwew" id="3w0kbvV$HK" role="3MwsjC">
+          <property role="3MwjfP" value="858585" />
         </node>
       </node>
     </node>
