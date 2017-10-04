@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="voicemenu.plugin.VoiceMenu_CustomApplicationPlugin" file="VoiceMenu_CustomApplicationPlugin.java">
+    <classNode dependClassName="com.intellij.openapi.application.ApplicationNamesInfo" />
     <classNode dependClassName="com.intellij.openapi.extensions.Extensions" />
     <classNode dependClassName="jetbrains.mps.workbench.dialogs.project.newproject.ProjectTemplatesGroup" />
     <classNode dependClassName="voicemenu.plugin.project.wizard.VoiceMenuProjectGroup" />
