@@ -214,6 +214,7 @@
         <child id="6108265972537372848" name="fullName" index="2EtHGT" />
         <child id="8795525031433238889" name="textColor" index="HFo83" />
         <child id="781140262677914381" name="company" index="IuKBz" />
+        <child id="781140262677761022" name="icon128" index="IvI4g" />
         <child id="3497141547781549827" name="codename" index="2OjNyQ" />
         <child id="1462305029084462472" name="buildDate" index="R$TG_" />
         <child id="772379520210716142" name="welcomeLogo" index="3vi$VU" />
@@ -274,8 +275,8 @@
       <node concept="55IIr" id="5ruKdSwyer$" role="2EteIi">
         <node concept="2Ry0Ak" id="5ruKdSwyer_" role="iGT6I">
           <property role="2Ry0Am" value="icons" />
-          <node concept="2Ry0Ak" id="5ruKdSwyerA" role="2Ry0An">
-            <property role="2Ry0Am" value="MPS16.png" />
+          <node concept="2Ry0Ak" id="1i_nS1dxP6w" role="2Ry0An">
+            <property role="2Ry0Am" value="voicemenu16.png" />
           </node>
         </node>
       </node>
@@ -302,8 +303,8 @@
       <node concept="55IIr" id="5ruKdSwyerJ" role="2EteIj">
         <node concept="2Ry0Ak" id="5ruKdSwyerK" role="iGT6I">
           <property role="2Ry0Am" value="icons" />
-          <node concept="2Ry0Ak" id="5ruKdSwyerL" role="2Ry0An">
-            <property role="2Ry0Am" value="MPS32.png" />
+          <node concept="2Ry0Ak" id="1i_nS1dxP8l" role="2Ry0An">
+            <property role="2Ry0Am" value="voicemenu32.png" />
           </node>
         </node>
       </node>
@@ -315,8 +316,8 @@
       <node concept="55IIr" id="5ruKdSwyerO" role="2EteIl">
         <node concept="2Ry0Ak" id="5ruKdSwyerP" role="iGT6I">
           <property role="2Ry0Am" value="icons" />
-          <node concept="2Ry0Ak" id="5ruKdSwyerQ" role="2Ry0An">
-            <property role="2Ry0Am" value="MPS32.png" />
+          <node concept="2Ry0Ak" id="1i_nS1dxPnB" role="2Ry0An">
+            <property role="2Ry0Am" value="voicemenu32.png" />
           </node>
         </node>
       </node>
@@ -345,6 +346,14 @@
         <node concept="3_J27D" id="BkRLA8xBWK" role="IuM$c">
           <node concept="3Mxwew" id="BkRLA8xBY_" role="3MwsjC">
             <property role="3MwjfP" value="http://www.jetbrains.com" />
+          </node>
+        </node>
+      </node>
+      <node concept="55IIr" id="1i_nS1dyz1X" role="IvI4g">
+        <node concept="2Ry0Ak" id="1i_nS1dyz5C" role="iGT6I">
+          <property role="2Ry0Am" value="icons" />
+          <node concept="2Ry0Ak" id="1i_nS1dyz7w" role="2Ry0An">
+            <property role="2Ry0Am" value="voicemenu128.png" />
           </node>
         </node>
       </node>
