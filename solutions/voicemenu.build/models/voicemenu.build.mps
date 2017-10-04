@@ -2138,21 +2138,11 @@
                 </node>
               </node>
               <node concept="28jJK3" id="5ruKdSwye_H" role="39821P">
-                <node concept="398BVA" id="5ruKdSwye$1" role="28jJRO">
-                  <ref role="398BVh" node="5ruKdSwyevt" resolve="mps_home" />
-                  <node concept="2Ry0Ak" id="5ruKdSwye$2" role="iGT6I">
-                    <property role="2Ry0Am" value="bin" />
-                    <node concept="2Ry0Ak" id="5ruKdSwye$3" role="2Ry0An">
-                      <property role="2Ry0Am" value="mac" />
-                      <node concept="2Ry0Ak" id="5ruKdSwye$4" role="2Ry0An">
-                        <property role="2Ry0Am" value="Contents" />
-                        <node concept="2Ry0Ak" id="5ruKdSwye$5" role="2Ry0An">
-                          <property role="2Ry0Am" value="Resources" />
-                          <node concept="2Ry0Ak" id="5ruKdSwye$6" role="2Ry0An">
-                            <property role="2Ry0Am" value="mps.icns" />
-                          </node>
-                        </node>
-                      </node>
+                <node concept="55IIr" id="3w0kbvUnCL" role="28jJRO">
+                  <node concept="2Ry0Ak" id="3w0kbvUnCQ" role="iGT6I">
+                    <property role="2Ry0Am" value="icons" />
+                    <node concept="2Ry0Ak" id="3w0kbvUnCV" role="2Ry0An">
+                      <property role="2Ry0Am" value="IVR.icns" />
                     </node>
                   </node>
                 </node>
@@ -2212,6 +2202,14 @@
                 <node concept="NbPM2" id="_MjGH7RxCk" role="1688n0">
                   <node concept="3Mxwew" id="_MjGH7RxCo" role="3MwsjC">
                     <property role="3MwjfP" value="JetBrains Voice Menu" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1688n2" id="3w0kbvUnD5" role="28jJR8">
+                <property role="1688n3" value="mps.icns" />
+                <node concept="NbPM2" id="3w0kbvUnD7" role="1688n0">
+                  <node concept="3Mxwew" id="3w0kbvUnDh" role="3MwsjC">
+                    <property role="3MwjfP" value="IVR.icns" />
                   </node>
                 </node>
               </node>
