@@ -275,8 +275,8 @@
       <node concept="55IIr" id="5ruKdSwyer$" role="2EteIi">
         <node concept="2Ry0Ak" id="5ruKdSwyer_" role="iGT6I">
           <property role="2Ry0Am" value="icons" />
-          <node concept="2Ry0Ak" id="1i_nS1dxP6w" role="2Ry0An">
-            <property role="2Ry0Am" value="voicemenu16.png" />
+          <node concept="2Ry0Ak" id="3w0kbvTSHe" role="2Ry0An">
+            <property role="2Ry0Am" value="IVR_icon_16.png" />
           </node>
         </node>
       </node>
@@ -303,8 +303,8 @@
       <node concept="55IIr" id="5ruKdSwyerJ" role="2EteIj">
         <node concept="2Ry0Ak" id="5ruKdSwyerK" role="iGT6I">
           <property role="2Ry0Am" value="icons" />
-          <node concept="2Ry0Ak" id="1i_nS1dxP8l" role="2Ry0An">
-            <property role="2Ry0Am" value="voicemenu32.png" />
+          <node concept="2Ry0Ak" id="3w0kbvTSJ3" role="2Ry0An">
+            <property role="2Ry0Am" value="IVR_icon_32.png" />
           </node>
         </node>
       </node>
@@ -316,24 +316,24 @@
       <node concept="55IIr" id="5ruKdSwyerO" role="2EteIl">
         <node concept="2Ry0Ak" id="5ruKdSwyerP" role="iGT6I">
           <property role="2Ry0Am" value="icons" />
-          <node concept="2Ry0Ak" id="1i_nS1dxPnB" role="2Ry0An">
-            <property role="2Ry0Am" value="voicemenu32.png" />
+          <node concept="2Ry0Ak" id="3w0kbvTSKS" role="2Ry0An">
+            <property role="2Ry0Am" value="IVR_icon_32.png" />
           </node>
         </node>
       </node>
       <node concept="55IIr" id="5ruKdSwyerR" role="2EqU2t">
         <node concept="2Ry0Ak" id="5ruKdSwyerS" role="iGT6I">
           <property role="2Ry0Am" value="icons" />
-          <node concept="2Ry0Ak" id="5pe7NVk6$tG" role="2Ry0An">
-            <property role="2Ry0Am" value="splash.png" />
+          <node concept="2Ry0Ak" id="3w0kbvTSFp" role="2Ry0An">
+            <property role="2Ry0Am" value="IVR_splash.png" />
           </node>
         </node>
       </node>
       <node concept="55IIr" id="5ruKdSwyerU" role="2EqU2s">
         <node concept="2Ry0Ak" id="5ruKdSwyerV" role="iGT6I">
           <property role="2Ry0Am" value="icons" />
-          <node concept="2Ry0Ak" id="5ruKdSwyerW" role="2Ry0An">
-            <property role="2Ry0Am" value="about.png" />
+          <node concept="2Ry0Ak" id="3w0kbvTSD$" role="2Ry0An">
+            <property role="2Ry0Am" value="IVR_about.png" />
           </node>
         </node>
       </node>
@@ -352,8 +352,8 @@
       <node concept="55IIr" id="1i_nS1dyz1X" role="IvI4g">
         <node concept="2Ry0Ak" id="1i_nS1dyz5C" role="iGT6I">
           <property role="2Ry0Am" value="icons" />
-          <node concept="2Ry0Ak" id="1i_nS1dyz7w" role="2Ry0An">
-            <property role="2Ry0Am" value="voicemenu128.png" />
+          <node concept="2Ry0Ak" id="3w0kbvTSMH" role="2Ry0An">
+            <property role="2Ry0Am" value="IVR_icon_128.png" />
           </node>
         </node>
       </node>

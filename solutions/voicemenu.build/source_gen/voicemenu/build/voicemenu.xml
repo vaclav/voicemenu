@@ -62,9 +62,9 @@
         <version codename="voicemenu" major="1" minor="0" eap="false" />
         <company name="JetBrains" url="http://www.jetbrains.com" />
         <build number="${build.number}" date="${date}" />
-        <logo url="/splash.png" textcolor="002387" />
-        <about url="/about.png" />
-        <icon size32="/voicemenu32.png" size16="/voicemenu16.png" size32opaque="/voicemenu32.png" size128="/voicemenu128.png" />
+        <logo url="/IVR_splash.png" textcolor="002387" />
+        <about url="/IVR_about.png" />
+        <icon size32="/IVR_icon_32.png" size16="/IVR_icon_16.png" size32opaque="/IVR_icon_32.png" size128="/IVR_icon_128.png" />
         <package code="code" />
         <names product="voicemenu" fullname="Voice Menu" />
         
@@ -77,12 +77,12 @@
       </component>
     </echoxml>
     <jar destfile="${build.layout}/lib/branding.jar" duplicate="preserve">
-      <fileset file="${basedir}/icons/voicemenu16.png" />
-      <fileset file="${basedir}/icons/voicemenu32.png" />
-      <fileset file="${basedir}/icons/voicemenu128.png" />
+      <fileset file="${basedir}/icons/IVR_icon_16.png" />
+      <fileset file="${basedir}/icons/IVR_icon_32.png" />
+      <fileset file="${basedir}/icons/IVR_icon_128.png" />
       <fileset file="${basedir}/icons/logo.png" />
-      <fileset file="${basedir}/icons/splash.png" />
-      <fileset file="${basedir}/icons/about.png" />
+      <fileset file="${basedir}/icons/IVR_splash.png" />
+      <fileset file="${basedir}/icons/IVR_about.png" />
       <fileset dir="${build.tmp}/default/branding.jar" />
     </jar>
     <mkdir dir="${build.layout}/plugins" />
