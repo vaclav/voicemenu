@@ -1481,6 +1481,12 @@
             <ref role="3bR37D" node="5ruKdSwyes2" resolve="jetbrains.mps.samples.VoiceMenu" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1i_nS1dxy2g" role="3bR37C">
+          <node concept="3bR9La" id="1i_nS1dxy2h" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJt" resolve="jetbrains.mps.ide.platform" />
+          </node>
+        </node>
       </node>
     </node>
   </node>

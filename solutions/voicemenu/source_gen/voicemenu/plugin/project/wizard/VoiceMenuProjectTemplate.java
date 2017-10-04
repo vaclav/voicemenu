@@ -6,6 +6,9 @@ import jetbrains.mps.workbench.dialogs.project.newproject.MPSProjectTemplate;
 import javax.swing.JTextField;
 import org.jetbrains.annotations.Nullable;
 import javax.swing.Icon;
+import jetbrains.mps.smodel.runtime.IconResource;
+import com.intellij.openapi.application.ApplicationManager;
+import jetbrains.mps.ide.icons.GlobalIconManager;
 import org.jetbrains.annotations.NotNull;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
@@ -23,7 +26,6 @@ import jetbrains.mps.extapi.model.SModelBase;
 import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
-import com.intellij.openapi.application.ApplicationManager;
 import jetbrains.mps.openapi.navigation.EditorNavigator;
 import jetbrains.mps.smodel.SModelUtil_new;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
@@ -39,7 +41,8 @@ public class VoiceMenuProjectTemplate implements MPSProjectTemplate {
   @Nullable
   @Override
   public Icon getIcon() {
-    return null;
+    IconResource resource = IconContainer.RESOURCE_a0a0g;
+    return ApplicationManager.getApplication().getComponent(GlobalIconManager.class).getIconForResource(resource);
   }
 
   @NotNull
