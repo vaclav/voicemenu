@@ -2215,6 +2215,14 @@
                   </node>
                 </node>
               </node>
+              <node concept="2$gBol" id="3w0kbvU8nm" role="28jJR8">
+                <property role="2$htvj" value="*" />
+                <node concept="NbPM2" id="3w0kbvU8no" role="2$htvi">
+                  <node concept="3Mxwew" id="3w0kbvU8nv" role="3MwsjC">
+                    <property role="3MwjfP" value="Info.plist" />
+                  </node>
+                </node>
+              </node>
             </node>
             <node concept="398223" id="5ruKdSwye_O" role="39821P">
               <node concept="3_J27D" id="5ruKdSwye_P" role="Nbhlr">

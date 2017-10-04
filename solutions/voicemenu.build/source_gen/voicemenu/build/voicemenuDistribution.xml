@@ -59,6 +59,7 @@
           <replaceregex pattern="JetBrains MPS" replace="JetBrains Voice Menu" flags="" />
         </tokenfilter>
       </filterchain>
+      <globmapper from="*" to="Info.plist" />
     </copy>
     <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/voicemenu ${version}.app/Contents/bin" />
     <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/voicemenu ${version}.app/Contents/bin">
