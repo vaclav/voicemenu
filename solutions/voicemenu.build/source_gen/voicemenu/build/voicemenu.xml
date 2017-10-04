@@ -157,7 +157,12 @@
     </echoxml>
     <jar destfile="${build.layout}/plugins/voicemenu/languages/voicemenu/jetbrains.mps.samples.VoiceMenu.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenu" />
-      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenu" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenu">
+        <include name="src/icons8-*.png" />
+        <include name="src/AllCheck.png" />
+        <include name="src/default_settings.png" />
+      </fileset>
+      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenu/source_gen" includes="**/*.png" />
       <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenu/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/jetbrains.mps.samples.VoiceMenu.jar" />
     </jar>
@@ -774,6 +779,9 @@
     </echoxml>
     <jar destfile="${build.layout}/plugins/voicemenu/languages/voicemenu/voicemenu.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/voicemenu" />
+      <fileset dir="${basedir}/solutions/voicemenu/source_gen">
+        <include name="**/*.png" />
+      </fileset>
       <fileset dir="${basedir}/solutions/voicemenu/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/voicemenu.jar" />
     </jar>
