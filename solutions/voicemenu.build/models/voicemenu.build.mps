@@ -512,6 +512,9 @@
           <node concept="3LWZYq" id="3w0kbvXwRj" role="1juEy9">
             <property role="3LWZYl" value="mps-workbench.jar" />
           </node>
+          <node concept="3LWZYq" id="7pbG5A0Gknm" role="1juEy9">
+            <property role="3LWZYl" value="mps-platform.jar" />
+          </node>
         </node>
         <node concept="3981dx" id="5ruKdSwyeto" role="39821P">
           <node concept="3_J27D" id="5ruKdSwyetp" role="Nbhlr">
@@ -566,6 +569,57 @@
             <ref role="3ygNvj" to="ffeo:5xa9wY2ujzt" resolve="mps-workbench.jar" />
             <node concept="3LWZYq" id="3w0kbvXzdj" role="1juEy9">
               <property role="3LWZYl" value="META-INF/MPSPlatformExtensions.xml" />
+            </node>
+          </node>
+        </node>
+        <node concept="3981dx" id="7pbG5A0Gkfr" role="39821P">
+          <node concept="398223" id="7pbG5A0Gk_N" role="39821P">
+            <node concept="28jJK3" id="7pbG5A0LaES" role="39821P">
+              <node concept="30tkmh" id="7pbG5A0LaIS" role="28jJRO">
+                <node concept="398BVA" id="7pbG5A0LaGU" role="30tYEP">
+                  <ref role="398BVh" node="5ruKdSwyero" resolve="mps_home" />
+                  <node concept="2Ry0Ak" id="7pbG5A0LaIL" role="iGT6I">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="7pbG5A0LaIO" role="2Ry0An">
+                      <property role="2Ry0Am" value="mps-platform.jar" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2Ry0Ak" id="7pbG5A0LaIU" role="iGT6I">
+                  <property role="2Ry0Am" value="META-INF" />
+                  <node concept="2Ry0Ak" id="7pbG5A0LaTR" role="2Ry0An">
+                    <property role="2Ry0Am" value="MPSUI.xml" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1688n2" id="7pbG5A0Kr8E" role="28jJR8">
+                <property role="1688n3" value=".*mps.projectGroupTemplateEP.*" />
+                <node concept="NbPM2" id="7pbG5A0Kr8G" role="1688n0" />
+              </node>
+              <node concept="1688n2" id="7pbG5A0LqEo" role="28jJR8">
+                <property role="1688n3" value=".*mps.solutionProjectTemplateEP.*" />
+                <node concept="NbPM2" id="7pbG5A0LqEp" role="1688n0" />
+              </node>
+              <node concept="1688n2" id="7pbG5A0LqGi" role="28jJR8">
+                <property role="1688n3" value=".*mps.otherProjectTemplateEP .*" />
+                <node concept="NbPM2" id="7pbG5A0LqGj" role="1688n0" />
+              </node>
+            </node>
+            <node concept="3_J27D" id="7pbG5A0Gk_O" role="Nbhlr">
+              <node concept="3Mxwew" id="7pbG5A0Gk_P" role="3MwsjC">
+                <property role="3MwjfP" value="META-INF" />
+              </node>
+            </node>
+          </node>
+          <node concept="3ygNvl" id="7pbG5A0Gk_Z" role="39821P">
+            <ref role="3ygNvj" to="ffeo:16Vg0jOco4n" resolve="mps-platform.jar" />
+            <node concept="3LWZYq" id="7pbG5A0GkA0" role="1juEy9">
+              <property role="3LWZYl" value="META-INF/MPSUI.xml" />
+            </node>
+          </node>
+          <node concept="3_J27D" id="7pbG5A0Gkft" role="Nbhlr">
+            <node concept="3Mxwew" id="7pbG5A0GkhI" role="3MwsjC">
+              <property role="3MwjfP" value="mps-platform.jar" />
             </node>
           </node>
         </node>

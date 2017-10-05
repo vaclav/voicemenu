@@ -54,6 +54,7 @@
         <exclude name="MPS-src.zip" />
         <exclude name="branding.jar" />
         <exclude name="mps-workbench.jar" />
+        <exclude name="mps-platform.jar" />
       </fileset>
     </copy>
     <mkdir dir="${build.tmp}/default/branding.jar" />
@@ -106,6 +107,33 @@
         <exclude name="META-INF/MPSPlatformExtensions.xml" />
       </fileset>
       <fileset dir="${build.tmp}/default/mps-workbench.jar" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/mps-platform.jar" />
+    <unjar src="${mps_home}/lib/mps-platform.jar" dest="${build.tmp}/default/mps-platform_jar">
+      <patternset>
+        <include name="META-INF/MPSUI.xml" />
+      </patternset>
+    </unjar>
+    <mkdir dir="${build.tmp}/default/mps-platform.jar/META-INF" />
+    <copy todir="${build.tmp}/default/mps-platform.jar/META-INF">
+      <fileset file="${build.tmp}/default/mps-platform_jar/META-INF/MPSUI.xml" />
+      <filterchain>
+        <tokenfilter>
+          <replaceregex pattern=".*mps.projectGroupTemplateEP.*" replace="" flags="" />
+        </tokenfilter>
+        <tokenfilter>
+          <replaceregex pattern=".*mps.solutionProjectTemplateEP.*" replace="" flags="" />
+        </tokenfilter>
+        <tokenfilter>
+          <replaceregex pattern=".*mps.otherProjectTemplateEP .*" replace="" flags="" />
+        </tokenfilter>
+      </filterchain>
+    </copy>
+    <jar destfile="${build.layout}/lib/mps-platform.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/deps/mpsBootstrapCore/mps-platform.jar">
+        <exclude name="META-INF/MPSUI.xml" />
+      </fileset>
+      <fileset dir="${build.tmp}/default/mps-platform.jar" />
     </jar>
     <mkdir dir="${build.layout}/plugins" />
     <mkdir dir="${build.layout}/plugins/cvsIntegration" />
@@ -854,6 +882,8 @@
   <target name="buildDependents" />
   
   <target name="fetchDependencies">
+    <mkdir dir="${build.tmp}/deps/mpsBootstrapCore/mps-platform.jar" />
+    <unzip src="${artifacts.mpsStandalone}/lib/mps-platform.jar" dest="${build.tmp}/deps/mpsBootstrapCore/mps-platform.jar" />
     <mkdir dir="${build.tmp}/deps/mpsWorkbench/mps-workbench.jar" />
     <unzip src="${artifacts.mpsStandalone}/lib/mps-workbench.jar" dest="${build.tmp}/deps/mpsWorkbench/mps-workbench.jar" />
   </target>
@@ -910,7 +940,6 @@
       <library file="${artifacts.mpsStandalone}/languages/devkits/jetbrains.mps.devkit.language-design.jar" />
       <library file="${artifacts.mpsStandalone}/languages/devkits/jetbrains.mps.devkit.templates.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.baseLanguage.lightweightdsl.jar" />
-      <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.access.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.actions.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.aspect.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.behavior.jar" />

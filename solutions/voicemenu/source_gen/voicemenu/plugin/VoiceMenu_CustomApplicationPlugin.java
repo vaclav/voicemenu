@@ -4,22 +4,14 @@ package voicemenu.plugin;
 
 import jetbrains.mps.plugins.custom.BaseCustomApplicationPlugin;
 import voicemenu.plugin.project.wizard.VoiceMenuProjectGroup;
-import com.intellij.openapi.application.ApplicationNamesInfo;
-import jetbrains.mps.workbench.dialogs.project.newproject.ProjectTemplatesGroup;
 import com.intellij.openapi.extensions.Extensions;
+import jetbrains.mps.workbench.dialogs.project.newproject.ProjectTemplatesGroup;
 
 public class VoiceMenu_CustomApplicationPlugin extends BaseCustomApplicationPlugin {
   private VoiceMenuProjectGroup voiceMenuProjectGroup = new VoiceMenuProjectGroup();
   public VoiceMenu_CustomApplicationPlugin() {
   }
   public void doInit() {
-    // Hack for remove Development and Other groups from New Project Wizard 
-    if ("Voice Menu".equals(ApplicationNamesInfo.getInstance().getFullProductName())) {
-      for (ProjectTemplatesGroup group : Extensions.getRootArea().getExtensionPoint(ProjectTemplatesGroup.EP_NAME).getExtensions()) {
-        Extensions.getRootArea().getExtensionPoint(ProjectTemplatesGroup.EP_NAME).unregisterExtension(group);
-      }
-    }
-
     Extensions.getRootArea().getExtensionPoint(ProjectTemplatesGroup.EP_NAME).registerExtension(VoiceMenu_CustomApplicationPlugin.this.voiceMenuProjectGroup);
 
   }
