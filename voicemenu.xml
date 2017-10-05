@@ -53,6 +53,7 @@
       <fileset dir="${artifacts.mpsStandalone}/lib">
         <exclude name="MPS-src.zip" />
         <exclude name="branding.jar" />
+        <exclude name="mps-workbench.jar" />
       </fileset>
     </copy>
     <mkdir dir="${build.tmp}/default/branding.jar" />
@@ -84,6 +85,27 @@
       <fileset file="${basedir}/icons/IVR_splash.png" />
       <fileset file="${basedir}/icons/IVR_about.png" />
       <fileset dir="${build.tmp}/default/branding.jar" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/mps-workbench.jar" />
+    <unjar src="${mps_home}/lib/mps-workbench.jar" dest="${build.tmp}/default/mps-workbench_jar">
+      <patternset>
+        <include name="META-INF/MPSPlatformExtensions.xml" />
+      </patternset>
+    </unjar>
+    <mkdir dir="${build.tmp}/default/mps-workbench.jar/META-INF" />
+    <copy todir="${build.tmp}/default/mps-workbench.jar/META-INF">
+      <fileset file="${build.tmp}/default/mps-workbench_jar/META-INF/MPSPlatformExtensions.xml" />
+      <filterchain>
+        <tokenfilter>
+          <replaceregex pattern=".*com.intellij.ide.TipOfTheDayManager.*" replace="" flags="" />
+        </tokenfilter>
+      </filterchain>
+    </copy>
+    <jar destfile="${build.layout}/lib/mps-workbench.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/deps/mpsWorkbench/mps-workbench.jar">
+        <exclude name="META-INF/MPSPlatformExtensions.xml" />
+      </fileset>
+      <fileset dir="${build.tmp}/default/mps-workbench.jar" />
     </jar>
     <mkdir dir="${build.layout}/plugins" />
     <mkdir dir="${build.layout}/plugins/cvsIntegration" />
@@ -831,7 +853,10 @@
   
   <target name="buildDependents" />
   
-  <target name="fetchDependencies" />
+  <target name="fetchDependencies">
+    <mkdir dir="${build.tmp}/deps/mpsWorkbench/mps-workbench.jar" />
+    <unzip src="${artifacts.mpsStandalone}/lib/mps-workbench.jar" dest="${build.tmp}/deps/mpsWorkbench/mps-workbench.jar" />
+  </target>
   
   <target name="build" depends="assemble" />
   

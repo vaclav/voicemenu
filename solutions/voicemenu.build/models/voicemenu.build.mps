@@ -54,6 +54,9 @@
         <property id="8618885170173601779" name="head" index="2Ry0Am" />
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
+      <concept id="2539347366864541544" name="jetbrains.mps.build.structure.BuildSourceArchiveRelativePath" flags="ng" index="30tkmh">
+        <child id="2539347366864648268" name="archivePath" index="30tYEP" />
+      </concept>
       <concept id="6647099934206700647" name="jetbrains.mps.build.structure.BuildJavaPlugin" flags="ng" index="10PD9b" />
       <concept id="9184644532457106504" name="jetbrains.mps.build.structure.BuildLayout_CopyFilterReplaceRegex" flags="ng" index="1688n2">
         <property id="9184644532457106505" name="pattern" index="1688n3" />
@@ -506,6 +509,9 @@
           <node concept="3LWZYq" id="5ruKdSwyetn" role="1juEy9">
             <property role="3LWZYl" value="branding.jar" />
           </node>
+          <node concept="3LWZYq" id="3w0kbvXwRj" role="1juEy9">
+            <property role="3LWZYl" value="mps-workbench.jar" />
+          </node>
         </node>
         <node concept="3981dx" id="5ruKdSwyeto" role="39821P">
           <node concept="3_J27D" id="5ruKdSwyetp" role="Nbhlr">
@@ -515,6 +521,52 @@
           </node>
           <node concept="1zDrgl" id="5ruKdSwyetr" role="39821P">
             <ref role="1zDrgn" node="5ruKdSwyeru" resolve="Voice Menu 1.0" />
+          </node>
+        </node>
+        <node concept="28u9K_" id="7pbG5A0G4g1" role="39821P">
+          <property role="28hIV_" value="Modify mps-workbench.jar in build script by removing TipOfTheDayManager from MPSPlatformExtensions.xml" />
+        </node>
+        <node concept="3981dx" id="3w0kbvWMsf" role="39821P">
+          <node concept="3_J27D" id="3w0kbvWMsh" role="Nbhlr">
+            <node concept="3Mxwew" id="3w0kbvWMuf" role="3MwsjC">
+              <property role="3MwjfP" value="mps-workbench.jar" />
+            </node>
+          </node>
+          <node concept="398223" id="3w0kbvXxRs" role="39821P">
+            <node concept="28jJK3" id="7pbG5A0KUEL" role="39821P">
+              <node concept="30tkmh" id="7pbG5A0KUIL" role="28jJRO">
+                <node concept="398BVA" id="7pbG5A0KUGN" role="30tYEP">
+                  <ref role="398BVh" node="5ruKdSwyero" resolve="mps_home" />
+                  <node concept="2Ry0Ak" id="7pbG5A0KUIE" role="iGT6I">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="7pbG5A0KUIH" role="2Ry0An">
+                      <property role="2Ry0Am" value="mps-workbench.jar" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2Ry0Ak" id="7pbG5A0KUIN" role="iGT6I">
+                  <property role="2Ry0Am" value="META-INF" />
+                  <node concept="2Ry0Ak" id="7pbG5A0KUVz" role="2Ry0An">
+                    <property role="2Ry0Am" value="MPSPlatformExtensions.xml" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1688n2" id="7pbG5A0Fl_A" role="28jJR8">
+                <property role="1688n3" value=".*com.intellij.ide.TipOfTheDayManager.*" />
+                <node concept="NbPM2" id="7pbG5A0Fl_C" role="1688n0" />
+              </node>
+            </node>
+            <node concept="3_J27D" id="3w0kbvXxRu" role="Nbhlr">
+              <node concept="3Mxwew" id="3w0kbvXxTn" role="3MwsjC">
+                <property role="3MwjfP" value="META-INF" />
+              </node>
+            </node>
+          </node>
+          <node concept="3ygNvl" id="3w0kbvWMBs" role="39821P">
+            <ref role="3ygNvj" to="ffeo:5xa9wY2ujzt" resolve="mps-workbench.jar" />
+            <node concept="3LWZYq" id="3w0kbvXzdj" role="1juEy9">
+              <property role="3LWZYl" value="META-INF/MPSPlatformExtensions.xml" />
+            </node>
           </node>
         </node>
       </node>
