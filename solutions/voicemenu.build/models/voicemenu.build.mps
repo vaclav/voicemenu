@@ -277,7 +277,10 @@
         </node>
       </node>
       <node concept="3_J27D" id="5ruKdSwyery" role="2EteIg">
-        <node concept="3Mxwey" id="5ruKdSwyerz" role="3MwsjC">
+        <node concept="3Mxwew" id="7WMmgAvYFZ5" role="3MwsjC">
+          <property role="3MwjfP" value="173." />
+        </node>
+        <node concept="3Mxwey" id="7WMmgAvYG0U" role="3MwsjC">
           <ref role="3Mxwex" node="5ruKdSwyerk" resolve="build.number" />
         </node>
       </node>
@@ -445,6 +448,33 @@
       <node concept="398BVA" id="5$IQOQwbK73" role="2JcizS">
         <ref role="398BVh" node="5ruKdSwyero" resolve="mps_home" />
         <node concept="2Ry0Ak" id="5$IQOQwbK74" role="iGT6I">
+          <property role="2Ry0Am" value="plugins" />
+        </node>
+      </node>
+    </node>
+    <node concept="2sgV4H" id="7WMmgAvXU_J" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:5xa9wY2vh7j" resolve="mpsExecutionPlugin" />
+      <node concept="398BVA" id="7WMmgAvXUBK" role="2JcizS">
+        <ref role="398BVh" node="5ruKdSwyero" resolve="mps_home" />
+        <node concept="2Ry0Ak" id="7WMmgAvXUDA" role="iGT6I">
+          <property role="2Ry0Am" value="plugins" />
+        </node>
+      </node>
+    </node>
+    <node concept="2sgV4H" id="7WMmgAvYaHg" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:ymnOULAEsd" resolve="mpsTesting" />
+      <node concept="398BVA" id="7WMmgAvYaJk" role="2JcizS">
+        <ref role="398BVh" node="5ruKdSwyero" resolve="mps_home" />
+        <node concept="2Ry0Ak" id="7WMmgAvYaLa" role="iGT6I">
+          <property role="2Ry0Am" value="plugins" />
+        </node>
+      </node>
+    </node>
+    <node concept="2sgV4H" id="7WMmgAvYaNi" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:5mc7nVumjii" resolve="mpsDebuggerPlugin" />
+      <node concept="398BVA" id="7WMmgAvYaPp" role="2JcizS">
+        <ref role="398BVh" node="5ruKdSwyero" resolve="mps_home" />
+        <node concept="2Ry0Ak" id="7WMmgAvYaRf" role="iGT6I">
           <property role="2Ry0Am" value="plugins" />
         </node>
       </node>
@@ -642,6 +672,24 @@
         </node>
         <node concept="3_I8Xc" id="5ruKdSy0iTs" role="39821P">
           <ref role="3_I8Xa" to="ffeo:1x6h9EwqP32" resolve="mps-make" />
+        </node>
+        <node concept="3_I8Xc" id="7WMmgAvYbgy" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:5CFKsRWRsZ0" resolve="mps-execution-api" />
+        </node>
+        <node concept="3_I8Xc" id="7WMmgAvYb1y" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:5CFKsRWS5pU" resolve="mps-debugger-api" />
+        </node>
+        <node concept="3_I8Xc" id="7WMmgAvYb91" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:5CFKsRWS5yu" resolve="mps-debugger-java" />
+        </node>
+        <node concept="3_I8Xc" id="7WMmgAvYaU5" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:ymnOULAZ8H" resolve="mps-testing" />
+        </node>
+        <node concept="3_I8Xc" id="7WMmgAvXUwW" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:35y4BF72kxA" resolve="mps-execution-configurations" />
+        </node>
+        <node concept="3_I8Xc" id="7WMmgAvXUQA" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:35y4BF72i$D" resolve="mps-execution-languages" />
         </node>
         <node concept="m$_wl" id="5ruKdSwyetx" role="39821P">
           <ref role="m_rDy" node="5ruKdSwyesO" resolve="voicemenu" />

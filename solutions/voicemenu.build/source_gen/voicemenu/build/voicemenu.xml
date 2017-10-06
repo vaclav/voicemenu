@@ -12,6 +12,9 @@
   <property name="artifacts.mpsDebuggerPlugin" location="${mps_home}/plugins" />
   <property name="artifacts.mpsMakePlugin" location="${mps_home}/plugins" />
   <property name="artifacts.mpsContextActionsTool" location="${mps_home}/plugins" />
+  <property name="artifacts.mpsExecutionPlugin" location="${mps_home}/plugins" />
+  <property name="artifacts.mpsTesting" location="${mps_home}/plugins" />
+  <property name="artifacts.mpsDebuggerPlugin" location="${mps_home}/plugins" />
   <property file="${artifacts.mpsStandalone}/build.properties" prefix="import.mpsStandalone" />
   <property name="mpsBootstrapCore.version" value="${import.mpsStandalone.mpsBootstrapCore.version}" />
   <property name="environment" value="env" />
@@ -63,7 +66,7 @@
       <component>
         <version codename="voicemenu" major="1" minor="0" eap="false" />
         <company name="JetBrains" url="http://www.jetbrains.com" />
-        <build number="${build.number}" date="${date}" />
+        <build number="173.${build.number}" date="${date}" />
         <logo url="/IVR_splash.png" textcolor="002387" progressColor="234908" progressX="0" progressY="395" progressHeight="5" />
         <about url="/IVR_about.png" foreground="FFFFFF" copyrightForeground="858585" />
         <icon size32="/IVR_icon_32.png" size16="/IVR_icon_16.png" size32opaque="/IVR_icon_32.png" size128="/IVR_icon_128.png" />
@@ -159,6 +162,30 @@
     <mkdir dir="${build.layout}/plugins/mps-make" />
     <copy todir="${build.layout}/plugins/mps-make">
       <fileset dir="${artifacts.mpsMakePlugin}/mps-make" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-execution-api" />
+    <copy todir="${build.layout}/plugins/mps-execution-api">
+      <fileset dir="${artifacts.mpsDebuggerPlugin}/mps-execution-api" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-debugger-api" />
+    <copy todir="${build.layout}/plugins/mps-debugger-api">
+      <fileset dir="${artifacts.mpsDebuggerPlugin}/mps-debugger-api" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-debugger-java" />
+    <copy todir="${build.layout}/plugins/mps-debugger-java">
+      <fileset dir="${artifacts.mpsDebuggerPlugin}/mps-debugger-java" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-testing" />
+    <copy todir="${build.layout}/plugins/mps-testing">
+      <fileset dir="${artifacts.mpsTesting}/mps-testing" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-execution-configurations" />
+    <copy todir="${build.layout}/plugins/mps-execution-configurations">
+      <fileset dir="${artifacts.mpsExecutionPlugin}/mps-execution-configurations" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-execution-languages" />
+    <copy todir="${build.layout}/plugins/mps-execution-languages">
+      <fileset dir="${artifacts.mpsExecutionPlugin}/mps-execution-languages" />
     </copy>
     <mkdir dir="${build.layout}/plugins/voicemenu" />
     <mkdir dir="${build.layout}/plugins/voicemenu/META-INF" />
@@ -545,9 +572,7 @@
     <mkdir dir="${build.tmp}/default/TTSLibrary.jar/META-INF" />
     <echoxml file="${build.tmp}/default/TTSLibrary.jar/META-INF/module.xml">
       <module namespace="TTSLibrary" type="solution" uuid="828f8f6b-2bf3-4a70-82a0-c413d7f22140">
-        <dependencies>
-          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
-        </dependencies>
+        <dependencies />
         <library jar="../../cmu_time_awb.jar" />
         <library jar="../../cmu_us_kal.jar" />
         <library jar="../../cmudict04.jar" />
@@ -910,6 +935,7 @@
     <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" createStaticRefs="true" fork="true">
       <plugin path="${artifacts.mpsMakePlugin}/mps-make" />
       <plugin path="${artifacts.mpsStandalone}/plugins/mps-core/META-INF/plugin.xml/../.." />
+      <plugin path="${artifacts.mpsTesting}/mps-testing" />
       <library file="${artifacts.mpsContextActionsTool}/context-tool/languages/mps-context-actions-tool/jetbrains.mps.editor.contextActionsTool.lang.menus.jar" />
       <library file="${artifacts.mpsContextActionsTool}/context-tool/languages/mps-context-actions-tool/jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.jar" />
       <library file="${artifacts.mpsContextActionsTool}/context-tool/languages/mps-context-actions-tool/jetbrains.mps.editor.contextActionsTool.pluginSolution.jar" />
@@ -999,7 +1025,6 @@
       <library file="${artifacts.mpsStandalone}/lib/mps-workbench.jar" />
       <library file="${artifacts.mpsStandalone}/plugins/mps-core/languages/languageDesign/jetbrains.mps.lang.editor.table.jar" />
       <library file="${artifacts.mpsStandalone}/plugins/mps-core/languages/languageDesign/jetbrains.mps.lang.editor.table.runtime.jar" />
-      <library file="${artifacts.mpsStandalone}/plugins/mps-core/languages/util/jetbrains.mps.core.properties.jar" />
       <chunk>
         <module file="${basedir}/solutions/JavaVoiceMenu/JavaVoiceMenu.msd" />
         <module file="${basedir}/solutions/TTSLibrary/TTSLibrary.msd" />
