@@ -17,6 +17,7 @@ import jetbrains.mps.internal.collections.runtime.CollectionSequence;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import java.util.Collections;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
+import java.util.ArrayList;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 
 public final class SwitchGeneratorToJavaSimulator_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
@@ -63,7 +64,7 @@ public final class SwitchGeneratorToJavaSimulator_Intention extends AbstractInte
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      Collection<SLanguage> languagesEngagedOnGeneration = ((SModelBase) SNodeOperations.getModel(node)).getLanguagesEngagedOnGeneration();
+      Collection<SLanguage> languagesEngagedOnGeneration = new ArrayList<SLanguage>(((SModelBase) SNodeOperations.getModel(node)).getLanguagesEngagedOnGeneration());
       ((SModelBase) SNodeOperations.getModel(node)).addEngagedOnGenerationLanguage(MetaAdapterFactory.getLanguage(0xb346e003e2404a78L, 0xab189d3086938853L, "jetbrains.mps.samples.VoiceMenuToJava"));
       for (SLanguage l : CollectionSequence.fromCollection(languagesEngagedOnGeneration)) {
         ((SModelBase) SNodeOperations.getModel(node)).removeEngagedOnGenerationLanguage(l);

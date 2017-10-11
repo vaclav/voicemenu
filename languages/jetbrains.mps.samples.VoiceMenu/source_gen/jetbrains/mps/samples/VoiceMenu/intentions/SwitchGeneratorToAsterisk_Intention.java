@@ -17,6 +17,7 @@ import jetbrains.mps.internal.collections.runtime.CollectionSequence;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import java.util.Collections;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
+import java.util.ArrayList;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 
 public final class SwitchGeneratorToAsterisk_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
@@ -63,7 +64,7 @@ public final class SwitchGeneratorToAsterisk_Intention extends AbstractIntention
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      Collection<SLanguage> languagesEngagedOnGeneration = ((SModelBase) SNodeOperations.getModel(node)).getLanguagesEngagedOnGeneration();
+      Collection<SLanguage> languagesEngagedOnGeneration = new ArrayList<SLanguage>(((SModelBase) SNodeOperations.getModel(node)).getLanguagesEngagedOnGeneration());
       ((SModelBase) SNodeOperations.getModel(node)).addEngagedOnGenerationLanguage(MetaAdapterFactory.getLanguage(0xe2a803a4d4b843ebL, 0xb458517effd2a87fL, "jetbrains.mps.samples.VoiceMenuToAsterisk"));
       for (SLanguage l : CollectionSequence.fromCollection(languagesEngagedOnGeneration)) {
         ((SModelBase) SNodeOperations.getModel(node)).removeEngagedOnGenerationLanguage(l);
