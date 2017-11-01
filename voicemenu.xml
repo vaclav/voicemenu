@@ -1006,6 +1006,7 @@
       <library file="${artifacts.mpsStandalone}/languages/make/jetbrains.mps.make.reduced.jar" />
       <library file="${artifacts.mpsStandalone}/languages/make/jetbrains.mps.make.script.jar" />
       <library file="${artifacts.mpsStandalone}/languages/make/jetbrains.mps.tool.gentest.jar" />
+      <library file="${artifacts.mpsStandalone}/languages/text/jetbrains.mps.lang.text.jar" />
       <library file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
       <library file="${artifacts.mpsStandalone}/languages/workbench/jetbrains.mps.lang.plugin.standalone.jar" />
       <library file="${artifacts.mpsStandalone}/languages/xml/jetbrains.mps.core.xml.jar" />

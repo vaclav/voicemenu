@@ -483,6 +483,7 @@
     <classNode dependClassName="java.awt.AWTException" />
     <classNode dependClassName="java.awt.Robot" />
     <classNode dependClassName="java.lang.Iterable" />
+    <classNode dependClassName="java.lang.NullPointerException" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
