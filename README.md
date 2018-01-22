@@ -35,7 +35,7 @@ MPS is licensed under the Apache 2 open-source license. See the [License](https:
 System requirements
 -------------------
 
-To build the Voice Menu project from the sources you need JetBrains MPS 2017.2 or later.
+To build the Voice Menu project from the sources you need JetBrains MPS 2017.3 or later.
 
 ----------
 
