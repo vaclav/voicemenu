@@ -217,6 +217,7 @@
         <child id="6108265972537229339" name="icon16" index="2EteIi" />
         <child id="6108265972537229338" name="icon32" index="2EteIj" />
         <child id="6108265972537229340" name="icon32opaque" index="2EteIl" />
+        <child id="6108265972537335245" name="updateWebsite" index="2Etnp4" />
         <child id="6108265972537372847" name="shortName" index="2EtHGA" />
         <child id="6108265972537372848" name="fullName" index="2EtHGT" />
         <child id="8795525031433238889" name="textColor" index="HFo83" />
@@ -227,6 +228,10 @@
         <child id="772379520210716142" name="welcomeLogo" index="3vi$VU" />
         <child id="1084163669516664629" name="copyrightForeground" index="3KTKoD" />
         <child id="1084163669516639223" name="foreground" index="3KTYbF" />
+      </concept>
+      <concept id="7753544965996489991" name="jetbrains.mps.build.mps.structure.BuildMps_BrandingUpdateSite" flags="ng" index="1zDKOm">
+        <child id="6108265972537335225" name="updateUrl" index="2EtnoK" />
+        <child id="6108265972537335224" name="checkUrl" index="2EtnoL" />
       </concept>
       <concept id="4278635856200826393" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyJar" flags="ng" index="1BurEX">
         <child id="4278635856200826394" name="path" index="1BurEY" />
@@ -399,6 +404,18 @@
           <property role="3MwjfP" value="858585" />
         </node>
       </node>
+      <node concept="1zDKOm" id="6Ggq6U19z5V" role="2Etnp4">
+        <node concept="3_J27D" id="6Ggq6U19z5W" role="2EtnoL">
+          <node concept="3Mxwew" id="6Ggq6U19z7O" role="3MwsjC">
+            <property role="3MwjfP" value="http://www.jetbrains.com/mps/update.xml" />
+          </node>
+        </node>
+        <node concept="3_J27D" id="6Ggq6U19z5X" role="2EtnoK">
+          <node concept="3Mxwew" id="6Ggq6U19z7Q" role="3MwsjC">
+            <property role="3MwjfP" value="http://www.jetbrains.com/mps/download/" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2kB4xC" id="5ruKdSwyeri" role="1l3spd">
       <property role="TrG5h" value="date" />
@@ -554,6 +571,68 @@
           </node>
           <node concept="1zDrgl" id="5ruKdSwyetr" role="39821P">
             <ref role="1zDrgn" node="5ruKdSwyeru" resolve="Voice Menu 1.0" />
+          </node>
+        </node>
+        <node concept="28u9K_" id="VV7r8LjI59" role="39821P">
+          <property role="28hIV_" value="Modify toolbar to remove unsupported options" />
+        </node>
+        <node concept="3981dx" id="VV7r8LjIl7" role="39821P">
+          <node concept="3_J27D" id="VV7r8LjIl9" role="Nbhlr">
+            <node concept="3Mxwew" id="VV7r8LjInL" role="3MwsjC">
+              <property role="3MwjfP" value="mps-resources.jar" />
+            </node>
+          </node>
+          <node concept="398223" id="VV7r8Llfbb" role="39821P">
+            <node concept="3_J27D" id="VV7r8Llfbd" role="Nbhlr">
+              <node concept="3Mxwew" id="VV7r8Llfdb" role="3MwsjC">
+                <property role="3MwjfP" value="idea" />
+              </node>
+            </node>
+            <node concept="28jJK3" id="VV7r8Llfdd" role="39821P">
+              <node concept="1688n2" id="VV7r8Llvww" role="28jJR8">
+                <property role="1688n3" value=".*com.intellij.ide.actions.SendFeedbackAction.*" />
+                <node concept="NbPM2" id="VV7r8Llvwx" role="1688n0" />
+              </node>
+              <node concept="1688n2" id="VV7r8LlZY4" role="28jJR8">
+                <property role="1688n3" value=".*com.intellij.ide.actions.JetBrainsTvAction.*" />
+                <node concept="NbPM2" id="VV7r8LlZY5" role="1688n0" />
+              </node>
+              <node concept="1688n2" id="VV7r8Lm05m" role="28jJR8">
+                <property role="1688n3" value=".*com.intellij.ide.actions.HelpTopicsAction.*" />
+                <node concept="NbPM2" id="VV7r8Lm05n" role="1688n0" />
+              </node>
+              <node concept="1688n2" id="6Ggq6U16ZCI" role="28jJR8">
+                <property role="1688n3" value=".*ref=&amp;quot;HelpTopics.*" />
+                <node concept="NbPM2" id="6Ggq6U16ZCJ" role="1688n0" />
+              </node>
+              <node concept="1688n2" id="6Ggq6U181e_" role="28jJR8">
+                <property role="1688n3" value=".*ref=&amp;quot;Help.JetBrainsTV.*" />
+                <node concept="NbPM2" id="6Ggq6U181eA" role="1688n0" />
+              </node>
+              <node concept="30tkmh" id="VV7r8LlfgT" role="28jJRO">
+                <node concept="398BVA" id="VV7r8LlfgU" role="30tYEP">
+                  <ref role="398BVh" node="5ruKdSwyero" resolve="mps_home" />
+                  <node concept="2Ry0Ak" id="VV7r8LlfgV" role="iGT6I">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="VV7r8LlfgW" role="2Ry0An">
+                      <property role="2Ry0Am" value="mps-resources.jar" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2Ry0Ak" id="VV7r8LlfgX" role="iGT6I">
+                  <property role="2Ry0Am" value="idea" />
+                  <node concept="2Ry0Ak" id="VV7r8LlfkE" role="2Ry0An">
+                    <property role="2Ry0Am" value="PlatformActions.xml" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3ygNvl" id="VV7r8LmwJW" role="39821P">
+            <ref role="3ygNvj" to="ffeo:5xa9wY2vqbW" resolve="mps-resources.jar" />
+            <node concept="3LWZYq" id="VV7r8LmwJX" role="1juEy9">
+              <property role="3LWZYl" value="idea/PlatformActions.xml" />
+            </node>
           </node>
         </node>
         <node concept="28u9K_" id="7pbG5A0G4g1" role="39821P">
