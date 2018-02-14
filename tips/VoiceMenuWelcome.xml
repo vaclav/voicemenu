@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/tips.css"></link>
+  </head>
+  <body>
+    <h1>Welcome to &productName;</h1>
+    <p>We are happy that you have choosen our product</p>
+    <p>
+      If you would like to discover more, hit
+      <span class="shortcut">Enter</span>
+    </p>
+    <p class="image">
+      <img height="100" width="100" src="images/IVR_icon_128.png"></img>
+    </p>
+  </body>
+</html>
