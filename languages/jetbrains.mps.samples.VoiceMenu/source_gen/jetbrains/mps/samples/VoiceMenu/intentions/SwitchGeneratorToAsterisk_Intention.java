@@ -14,6 +14,7 @@ import org.jetbrains.mps.openapi.language.SLanguage;
 import jetbrains.mps.extapi.model.SModelBase;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.CollectionSequence;
+import java.util.Objects;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import java.util.Collections;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
@@ -39,7 +40,7 @@ public final class SwitchGeneratorToAsterisk_Intention extends AbstractIntention
   private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
     Collection<SLanguage> languagesEngagedOnGeneration = ((SModelBase) SNodeOperations.getModel(node)).getLanguagesEngagedOnGeneration();
     for (SLanguage l : CollectionSequence.fromCollection(languagesEngagedOnGeneration)) {
-      if (eq_hq68jw_a0a0b0e(l, MetaAdapterFactory.getLanguage(0xe2a803a4d4b843ebL, 0xb458517effd2a87fL, "jetbrains.mps.samples.VoiceMenuToAsterisk"))) {
+      if (Objects.equals(l, MetaAdapterFactory.getLanguage(0xe2a803a4d4b843ebL, 0xb458517effd2a87fL, "jetbrains.mps.samples.VoiceMenuToAsterisk"))) {
         return false;
       }
     }
@@ -74,8 +75,5 @@ public final class SwitchGeneratorToAsterisk_Intention extends AbstractIntention
     public IntentionDescriptor getDescriptor() {
       return SwitchGeneratorToAsterisk_Intention.this;
     }
-  }
-  private static boolean eq_hq68jw_a0a0b0e(Object a, Object b) {
-    return (a != null ? a.equals(b) : a == b);
   }
 }

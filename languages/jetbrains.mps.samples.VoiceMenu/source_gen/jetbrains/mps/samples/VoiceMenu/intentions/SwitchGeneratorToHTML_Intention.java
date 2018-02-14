@@ -14,6 +14,7 @@ import org.jetbrains.mps.openapi.language.SLanguage;
 import jetbrains.mps.extapi.model.SModelBase;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.CollectionSequence;
+import java.util.Objects;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import java.util.Collections;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
@@ -39,7 +40,7 @@ public final class SwitchGeneratorToHTML_Intention extends AbstractIntentionDesc
   private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
     Collection<SLanguage> languagesEngagedOnGeneration = ((SModelBase) SNodeOperations.getModel(node)).getLanguagesEngagedOnGeneration();
     for (SLanguage l : CollectionSequence.fromCollection(languagesEngagedOnGeneration)) {
-      if (eq_cfp7ll_a0a0b0e(l, MetaAdapterFactory.getLanguage(0xb30ef640c5e4567L, 0xb9929bf5bbc44c0aL, "jetbrains.mps.samples.VoiceMenuToHTML"))) {
+      if (Objects.equals(l, MetaAdapterFactory.getLanguage(0xb30ef640c5e4567L, 0xb9929bf5bbc44c0aL, "jetbrains.mps.samples.VoiceMenuToHTML"))) {
         return false;
       }
     }
@@ -74,8 +75,5 @@ public final class SwitchGeneratorToHTML_Intention extends AbstractIntentionDesc
     public IntentionDescriptor getDescriptor() {
       return SwitchGeneratorToHTML_Intention.this;
     }
-  }
-  private static boolean eq_cfp7ll_a0a0b0e(Object a, Object b) {
-    return (a != null ? a.equals(b) : a == b);
   }
 }

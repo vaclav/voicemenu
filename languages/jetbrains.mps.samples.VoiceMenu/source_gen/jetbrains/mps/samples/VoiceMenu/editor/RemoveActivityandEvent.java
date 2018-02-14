@@ -12,6 +12,7 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import java.util.Objects;
 
 public class RemoveActivityandEvent {
   public static void setCellActions(EditorCell editorCell, SNode node, EditorContext context) {
@@ -29,13 +30,10 @@ public class RemoveActivityandEvent {
     public void execute_internal(EditorContext editorContext, final SNode node) {
       SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(node), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"))).findFirst(new IWhereFilter<SNode>() {
         public boolean accept(SNode it) {
-          return eq_mywmwb_a0a0a0a0a0a0a3b(it, SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")));
+          return Objects.equals(it, SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")));
         }
       }));
       SNodeOperations.deleteNode(node);
-    }
-    private static boolean eq_mywmwb_a0a0a0a0a0a0a3b(Object a, Object b) {
-      return (a != null ? a.equals(b) : a == b);
     }
   }
   public static class RemoveActivityandEvent_BACKSPACE extends AbstractCellAction {
@@ -49,13 +47,10 @@ public class RemoveActivityandEvent {
     public void execute_internal(EditorContext editorContext, final SNode node) {
       SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(node), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"))).findFirst(new IWhereFilter<SNode>() {
         public boolean accept(SNode it) {
-          return eq_mywmwb_a0a0a0a0a0a0a3c(it, SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")));
+          return Objects.equals(it, SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")));
         }
       }));
       SNodeOperations.deleteNode(node);
-    }
-    private static boolean eq_mywmwb_a0a0a0a0a0a0a3c(Object a, Object b) {
-      return (a != null ? a.equals(b) : a == b);
     }
   }
 }

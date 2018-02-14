@@ -8,6 +8,7 @@
     <classNode dependClassName="java.util.Collection" />
     <classNode dependClassName="java.util.HashMap" />
     <classNode dependClassName="java.util.Map" />
+    <classNode dependClassName="java.util.Objects" />
     <classNode dependClassName="jetbrains.mps.generator.impl.GenerationFailureException" />
     <classNode dependClassName="jetbrains.mps.generator.impl.query.IfMacroCondition" />
     <classNode dependClassName="jetbrains.mps.generator.impl.query.PropertyValueQuery" />

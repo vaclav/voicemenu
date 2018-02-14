@@ -92,7 +92,7 @@ IF EXIST "%VM_OPTIONS_FILE%" SET ACC=%ACC% -Djb.vmOptionsFile="%VM_OPTIONS_FILE%
 
 
 set IDEA_PATHS_SELECTOR=voicemenu1.0
-SET COMMON_JVM_ARGS="-XX:ErrorFile=%USERPROFILE%\java_error_in_IDEA_%%p.log" "-XX:HeapDumpPath=%USERPROFILE%\java_error_in_IDEA.hprof" "-Xbootclasspath/a:%IDE_HOME%/lib/boot.jar" -Didea.paths.selector=%IDEA_PATHS_SELECTOR% %IDE_PROPERTIES_PROPERTY%
+SET COMMON_JVM_ARGS="-XX:ErrorFile=%USERPROFILE%\java_error_in_IDEA_%%p.log" "-XX:HeapDumpPath=%USERPROFILE%\java_error_in_IDEA.hprof" -Didea.paths.selector=%IDEA_PATHS_SELECTOR% %IDE_PROPERTIES_PROPERTY%
 SET IDE_JVM_ARGS=-Didea.platform.prefix=Idea -Didea.jre.check=true
 SET ALL_JVM_ARGS=%ACC% %COMMON_JVM_ARGS% %IDE_JVM_ARGS% %ADDITIONAL_JVM_ARGS%
 

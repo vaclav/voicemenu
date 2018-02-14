@@ -166,6 +166,9 @@
       </concept>
     </language>
     <language id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps">
+      <concept id="6818892319992984815" name="jetbrains.mps.build.mps.structure.BuildMps_TipsPackage" flags="ng" index="20sUq0">
+        <reference id="7323166234190549907" name="tips" index="21GgXK" />
+      </concept>
       <concept id="6592112598314586625" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginGroup" flags="ng" index="m$f5U">
         <reference id="6592112598314586626" name="group" index="m$f5T" />
       </concept>
@@ -199,6 +202,12 @@
       <concept id="5253498789149585690" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule" flags="ng" index="3bR9La">
         <property id="5253498789149547713" name="reexport" index="3bR36h" />
         <reference id="5253498789149547705" name="module" index="3bR37D" />
+      </concept>
+      <concept id="8174907532631605600" name="jetbrains.mps.build.mps.structure.BuildMps_TipsDir" flags="ng" index="3jnLDQ">
+        <child id="5102190059026414892" name="path" index="U0IfZ" />
+      </concept>
+      <concept id="8174907532628842428" name="jetbrains.mps.build.mps.structure.BuildMps_Tips" flags="ng" index="3jsGME">
+        <child id="8174907532631382423" name="imports" index="3jmSa1" />
       </concept>
       <concept id="763829979718664966" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleResources" flags="ng" index="3rtmxn">
         <child id="763829979718664967" name="files" index="3rtmxm" />
@@ -435,6 +444,29 @@
     </node>
     <node concept="398rNT" id="5ruKdSwyero" role="1l3spd">
       <property role="TrG5h" value="mps_home" />
+      <node concept="55IIr" id="2_OBAHWu$s2" role="398pKh">
+        <node concept="2Ry0Ak" id="2_OBAHWu$vF" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="2_OBAHWu$zk" role="2Ry0An">
+            <property role="2Ry0Am" value=".." />
+            <node concept="2Ry0Ak" id="2_OBAHWu$zn" role="2Ry0An">
+              <property role="2Ry0Am" value=".." />
+              <node concept="2Ry0Ak" id="2_OBAHWu$zq" role="2Ry0An">
+                <property role="2Ry0Am" value=".." />
+                <node concept="2Ry0Ak" id="2_OBAHWu$CS" role="2Ry0An">
+                  <property role="2Ry0Am" value="Applications" />
+                  <node concept="2Ry0Ak" id="2_OBAHWu$Im" role="2Ry0An">
+                    <property role="2Ry0Am" value="MPS 2018.1 EAP.app" />
+                    <node concept="2Ry0Ak" id="2_OBAHWu$NO" role="2Ry0An">
+                      <property role="2Ry0Am" value="Contents" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2sgV4H" id="5ruKdSwyerp" role="1l3spa">
       <ref role="1l3spb" to="ffeo:1diLdO26mQ6" resolve="mpsStandalone" />
@@ -562,6 +594,9 @@
           <node concept="3LWZYq" id="7pbG5A0Gknm" role="1juEy9">
             <property role="3LWZYl" value="mps-platform.jar" />
           </node>
+          <node concept="3LWZYq" id="2_OBAHWuOMu" role="1juEy9">
+            <property role="3LWZYl" value="mps-tips.jar" />
+          </node>
         </node>
         <node concept="3981dx" id="5ruKdSwyeto" role="39821P">
           <node concept="3_J27D" id="5ruKdSwyetp" role="Nbhlr">
@@ -572,6 +607,10 @@
           <node concept="1zDrgl" id="5ruKdSwyetr" role="39821P">
             <ref role="1zDrgn" node="5ruKdSwyeru" resolve="Voice Menu 1.0" />
           </node>
+        </node>
+        <node concept="20sUq0" id="2_OBAHWuPkI" role="39821P">
+          <property role="TrG5h" value="mps-tips.jar" />
+          <ref role="21GgXK" node="2_OBAHWuP13" resolve="mps-tips" />
         </node>
         <node concept="28u9K_" id="VV7r8LjI59" role="39821P">
           <property role="28hIV_" value="Modify toolbar to remove unsupported options" />
@@ -1796,6 +1835,16 @@
             <node concept="3LWZYx" id="1i_nS1dzn6x" role="3LXTna">
               <property role="3LWZYw" value="**/*.png" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3jsGME" id="2_OBAHWuP13" role="3989C9">
+      <property role="TrG5h" value="mps-tips" />
+      <node concept="3jnLDQ" id="2_OBAHWuPf$" role="3jmSa1">
+        <node concept="55IIr" id="2_OBAHWuPfA" role="U0IfZ">
+          <node concept="2Ry0Ak" id="2_OBAHWuPhD" role="iGT6I">
+            <property role="2Ry0Am" value="tips" />
           </node>
         </node>
       </node>

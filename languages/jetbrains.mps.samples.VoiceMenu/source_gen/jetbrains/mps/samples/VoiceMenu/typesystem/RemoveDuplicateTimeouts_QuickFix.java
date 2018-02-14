@@ -10,6 +10,7 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
 public class RemoveDuplicateTimeouts_QuickFix extends QuickFix_Runtime {
@@ -22,11 +23,8 @@ public class RemoveDuplicateTimeouts_QuickFix extends QuickFix_Runtime {
   public void execute(SNode node) {
     SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(((SNode) RemoveDuplicateTimeouts_QuickFix.this.getField("menu")[0]), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"))).findFirst(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
-        return eq_z3y5kn_a0a0a0a0a0a0a2(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "X");
+        return Objects.equals(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "X");
       }
     }));
-  }
-  private static boolean eq_z3y5kn_a0a0a0a0a0a0a2(Object a, Object b) {
-    return (a != null ? a.equals(b) : a == b);
   }
 }

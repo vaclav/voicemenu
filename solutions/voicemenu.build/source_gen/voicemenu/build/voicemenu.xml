@@ -7,7 +7,7 @@
     <format property="date" pattern="yyyyMMdd" />
   </tstamp>
   <property name="build.number" value="voicemenu-1.0" />
-  <property name="mps_home" location="" />
+  <property name="mps_home" location="${basedir}/../../../../Applications/MPS 2018.1 EAP.app/Contents" />
   <property name="artifacts.mpsStandalone" location="${mps_home}" />
   <property name="artifacts.mpsDebuggerPlugin" location="${mps_home}/plugins" />
   <property name="artifacts.mpsMakePlugin" location="${mps_home}/plugins" />
@@ -27,7 +27,22 @@
     <pathelement location="${artifacts.mpsStandalone}/lib/log4j.jar" />
   </path>
   
-  <target name="assemble" depends="classes, declare-mps-tasks, fetchDependencies">
+  <target name="assemble" depends="classes, declare-mps-tasks, collect-tips-mps-tips, fetchDependencies">
+    <unjar src="${mps_home}/lib/mps-resources.jar" dest="${build.tmp}/default/mps-resources_jar">
+      <patternset>
+        <include name="idea/PlatformActions.xml" />
+      </patternset>
+    </unjar>
+    <unjar src="${mps_home}/lib/mps-workbench.jar" dest="${build.tmp}/default/mps-workbench_jar">
+      <patternset>
+        <include name="META-INF/MPSPlatformExtensions.xml" />
+      </patternset>
+    </unjar>
+    <unjar src="${mps_home}/lib/mps-platform.jar" dest="${build.tmp}/default/mps-platform_jar">
+      <patternset>
+        <include name="META-INF/MPSUI.xml" />
+      </patternset>
+    </unjar>
     <mkdir dir="${build.layout}/languages" />
     <copy todir="${build.layout}/languages">
       <fileset dir="${artifacts.mpsStandalone}/languages" />
@@ -58,6 +73,7 @@
         <exclude name="branding.jar" />
         <exclude name="mps-workbench.jar" />
         <exclude name="mps-platform.jar" />
+        <exclude name="mps-tips.jar" />
       </fileset>
     </copy>
     <mkdir dir="${build.tmp}/default/branding.jar" />
@@ -91,12 +107,10 @@
       <fileset file="${basedir}/icons/IVR_about.png" />
       <fileset dir="${build.tmp}/default/branding.jar" />
     </jar>
+    <jar destfile="${build.layout}/lib/mps-tips.jar" duplicate="preserve">
+      <fileset file="${build.tmp}/out/mps-tips/mps-tips/**" />
+    </jar>
     <mkdir dir="${build.tmp}/default/mps-resources.jar" />
-    <unjar src="${mps_home}/lib/mps-resources.jar" dest="${build.tmp}/default/mps-resources_jar">
-      <patternset>
-        <include name="idea/PlatformActions.xml" />
-      </patternset>
-    </unjar>
     <mkdir dir="${build.tmp}/default/mps-resources.jar/idea" />
     <copy todir="${build.tmp}/default/mps-resources.jar/idea">
       <fileset file="${build.tmp}/default/mps-resources_jar/idea/PlatformActions.xml" />
@@ -125,11 +139,6 @@
       <fileset dir="${build.tmp}/default/mps-resources.jar" />
     </jar>
     <mkdir dir="${build.tmp}/default/mps-workbench.jar" />
-    <unjar src="${mps_home}/lib/mps-workbench.jar" dest="${build.tmp}/default/mps-workbench_jar">
-      <patternset>
-        <include name="META-INF/MPSPlatformExtensions.xml" />
-      </patternset>
-    </unjar>
     <mkdir dir="${build.tmp}/default/mps-workbench.jar/META-INF" />
     <copy todir="${build.tmp}/default/mps-workbench.jar/META-INF">
       <fileset file="${build.tmp}/default/mps-workbench_jar/META-INF/MPSPlatformExtensions.xml" />
@@ -146,11 +155,6 @@
       <fileset dir="${build.tmp}/default/mps-workbench.jar" />
     </jar>
     <mkdir dir="${build.tmp}/default/mps-platform.jar" />
-    <unjar src="${mps_home}/lib/mps-platform.jar" dest="${build.tmp}/default/mps-platform_jar">
-      <patternset>
-        <include name="META-INF/MPSUI.xml" />
-      </patternset>
-    </unjar>
     <mkdir dir="${build.tmp}/default/mps-platform.jar/META-INF" />
     <copy todir="${build.tmp}/default/mps-platform.jar/META-INF">
       <fileset file="${build.tmp}/default/mps-platform_jar/META-INF/MPSUI.xml" />
@@ -1013,7 +1017,6 @@
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.descriptor.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
-      <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.extension.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.findUsages.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.generator.generationContext.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.generator.generationParameters.jar" />
@@ -1021,13 +1024,13 @@
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.intentions.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.migration.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.migration.runtime.jar" />
+      <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.modelapi.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.pattern.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.plugin.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.project.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.quotation.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.refactoring.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.resources.jar" />
-      <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.script.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.sharedConcepts.jar" />
@@ -1119,7 +1122,7 @@
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.6.2.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.7.2.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsContextActionsTool}/context-tool/languages/mps-context-actions-tool/jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.jar" />
@@ -1127,8 +1130,6 @@
         <fileset file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
       </classpath>
     </javac>
   </target>
@@ -1163,12 +1164,10 @@
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.6.2.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.7.2.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
       </classpath>
     </javac>
   </target>
@@ -1214,15 +1213,13 @@
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.6.2.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.7.2.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
@@ -1270,14 +1267,12 @@
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.6.2.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.7.2.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
@@ -1336,14 +1331,12 @@
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.6.2.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.7.2.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
         <fileset file="${artifacts.mpsStandalone}/plugins/mps-core/languages/languageDesign/jetbrains.mps.lang.editor.table.runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
       </classpath>
     </javac>
   </target>
@@ -1379,13 +1372,11 @@
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.6.2.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.7.2.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/plugins/mps-core/languages/languageDesign/jetbrains.mps.lang.editor.table.runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
       </classpath>
     </javac>
   </target>
@@ -1420,13 +1411,11 @@
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.6.2.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.7.2.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
       </classpath>
     </javac>
   </target>
@@ -1462,12 +1451,10 @@
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.6.2.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.7.2.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
       </classpath>
     </javac>
   </target>
@@ -1524,13 +1511,12 @@
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.6.2.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.7.2.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
       </classpath>
     </javac>
   </target>
@@ -1566,12 +1552,10 @@
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.6.2.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.7.2.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
       </classpath>
     </javac>
   </target>
@@ -1617,13 +1601,11 @@
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.6.2.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.7.2.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
       </classpath>
     </javac>
   </target>
@@ -1670,12 +1652,10 @@
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.6.2.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.7.2.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
       </classpath>
     </javac>
   </target>
@@ -1709,13 +1689,11 @@
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.6.2.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.7.2.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
       </classpath>
     </javac>
   </target>
@@ -1754,12 +1732,11 @@
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.6.2.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.7.2.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib/ant/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
       </classpath>
     </javac>
   </target>
@@ -1781,5 +1758,26 @@
     <delete dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToXML/generator/source_gen" />
     <delete dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToAsterisk/generator/source_gen" />
     <delete dir="${basedir}/solutions/voicemenu/source_gen" />
+  </target>
+  
+  <target name="collect-tips-mps-tips">
+    <mkdir dir="${build.tmp}/out/mps-tips/mps-tips/tips/css" />
+    <mkdir dir="${build.tmp}/out/mps-tips/mps-tips/tips/images" />
+    <mkdir dir="${build.tmp}/out/mps-tips/mps-tips/tips" />
+    <copy todir="${build.tmp}/out/mps-tips/mps-tips/tips">
+      <fileset dir="${basedir}/tips" />
+    </copy>
+    <mkdir dir="${build.tmp}/out/mps-tips/mps-tips/META-INF" />
+    <fileset id="contents" includes="*.*" dir="${build.tmp}/out/mps-tips/mps-tips/tips" />
+    <property name="mps-tips.prop.contents" refid="contents" />
+    <echoxml file="${build.tmp}/out/mps-tips/mps-tips/META-INF/IdeTipsAndTricks.xml">
+      <idea-plugin>
+        <extensions defaultExtensionNs="com.intellij">
+          <tipAndTrick file="${mps-tips.prop.contents}" />
+        </extensions>
+      </idea-plugin>
+    </echoxml>
+    <replace file="${build.tmp}/out/mps-tips/mps-tips/META-INF/IdeTipsAndTricks.xml" token=";" value="&quot;/&gt;&#xD;&#x0009;&lt;tipAndTrick file=&quot;" />
+    <replace file="${build.tmp}/out/mps-tips/mps-tips/META-INF/IdeTipsAndTricks.xml" token="&lt;tipAndTrick file=&quot;&quot; /&gt;" value="" />
   </target>
 </project>

@@ -10,13 +10,14 @@ import jetbrains.mps.openapi.intentions.Kind;
 import jetbrains.mps.smodel.SNodePointer;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import java.util.Collections;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import java.util.Objects;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 
 public final class RemoveActivityWithEvent_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
@@ -30,7 +31,13 @@ public final class RemoveActivityWithEvent_Intention extends AbstractIntentionDe
   }
   @Override
   public boolean isApplicable(final SNode node, final EditorContext editorContext) {
+    if (!(isApplicableToNode(node, editorContext))) {
+      return false;
+    }
     return true;
+  }
+  private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
+    return SNodeOperations.isInstanceOf(SNodeOperations.getParent(node), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu"));
   }
   @Override
   public boolean isSurroundWith() {
@@ -53,7 +60,7 @@ public final class RemoveActivityWithEvent_Intention extends AbstractIntentionDe
     public void execute(final SNode node, final EditorContext editorContext) {
       SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(node), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"))).findFirst(new IWhereFilter<SNode>() {
         public boolean accept(SNode it) {
-          return eq_inxdkn_a0a0a0a0a0a0a2g(it, SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")));
+          return Objects.equals(it, SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")));
         }
       }));
       SNodeOperations.deleteNode(node);
@@ -62,8 +69,5 @@ public final class RemoveActivityWithEvent_Intention extends AbstractIntentionDe
     public IntentionDescriptor getDescriptor() {
       return RemoveActivityWithEvent_Intention.this;
     }
-  }
-  private static boolean eq_inxdkn_a0a0a0a0a0a0a2g(Object a, Object b) {
-    return (a != null ? a.equals(b) : a == b);
   }
 }

@@ -11,6 +11,7 @@ import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.editor.runtime.cells.AbstractCellAction;
 import jetbrains.mps.baseLanguage.logging.runtime.model.LoggingRuntime;
 import org.apache.log4j.Level;
+import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.editor.runtime.selection.SelectionUtil;
@@ -31,14 +32,11 @@ public class ActivityPlayback {
     }
     public void execute_internal(EditorContext editorContext, SNode node) {
       LoggingRuntime.logMsgView(Level.INFO, "Clicked", ActivityPlayback.class, null, null);
-      if (eq_1afigl_a0b0d2(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")), "Choose from..")) {
+      if (Objects.equals(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")), "Choose from..")) {
         SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback"), " ");
         SelectionUtil.selectNode(editorContext, node);
         SelectionUtil.selectCell(editorContext, node, "*" + CellIdManager.createPropertyId("playback"));
       }
-    }
-    private static boolean eq_1afigl_a0b0d2(Object a, Object b) {
-      return (a != null ? a.equals(b) : a == b);
     }
   }
 }
