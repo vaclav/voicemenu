@@ -1,56 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
   <root nodeRef="r:58bf119a-d092-45c2-92e9-e3033a50db5d(voicemenu.plugin)/3796808963145666757">
     <file name="Voicemenu_ApplicationPlugin.java">
-      <node id="3796808963145666757" at="13,0,14,0" concept="3" trace="myId" />
-      <node id="3796808963145666757" at="16,27,17,16" concept="6" />
-      <node id="3796808963145666757" at="19,62,20,112" concept="5" />
-      <node id="3796808963145666757" at="21,5,22,83" concept="5" />
-      <node id="3796808963145666757" at="22,83,23,52" concept="2" />
-      <node id="3796808963145666757" at="23,52,24,20" concept="2" />
-      <node id="3796808963145666757" at="25,5,26,15" concept="6" />
-      <node id="3796808963145666757" at="14,0,16,0" concept="1" trace="Voicemenu_ApplicationPlugin#()V" />
-      <node id="3796808963145666757" at="16,0,19,0" concept="4" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
-      <node id="3796808963145666757" at="20,112,25,5" concept="0" />
-      <node id="3796808963145666757" at="19,0,28,0" concept="4" trace="initCustomParts#()Ljava/util/List;" />
-      <scope id="3796808963145666757" at="14,40,14,40" />
-      <scope id="3796808963145666757" at="16,27,17,16" />
-      <scope id="3796808963145666757" at="14,0,16,0" />
-      <scope id="3796808963145666757" at="16,0,19,0" />
-      <scope id="3796808963145666757" at="21,5,24,20">
-        <var name="plugin" id="3796808963145666757" />
+      <node id="3796808963145666757" at="11,0,12,0" concept="2" trace="myId" />
+      <node id="3796808963145666757" at="14,27,15,16" concept="4" />
+      <node id="3796808963145666757" at="18,66,19,45" concept="1" />
+      <node id="3796808963145666757" at="12,0,14,0" concept="0" trace="Voicemenu_ApplicationPlugin#()V" />
+      <node id="3796808963145666757" at="14,0,17,0" concept="3" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
+      <node id="3796808963145666757" at="17,0,21,0" concept="3" trace="fillCustomParts#(Ljava/util/List;)V" />
+      <scope id="3796808963145666757" at="12,40,12,40" />
+      <scope id="3796808963145666757" at="14,27,15,16" />
+      <scope id="3796808963145666757" at="18,66,19,45" />
+      <scope id="3796808963145666757" at="12,0,14,0" />
+      <scope id="3796808963145666757" at="14,0,17,0" />
+      <scope id="3796808963145666757" at="17,0,21,0">
+        <var name="parts" id="3796808963145666757" />
       </scope>
-      <scope id="3796808963145666757" at="19,62,26,15">
-        <var name="res" id="3796808963145666757" />
-      </scope>
-      <scope id="3796808963145666757" at="19,0,28,0" />
-      <unit id="3796808963145666757" at="12,0,29,0" name="voicemenu.plugin.Voicemenu_ApplicationPlugin" />
+      <unit id="3796808963145666757" at="10,0,22,0" name="voicemenu.plugin.Voicemenu_ApplicationPlugin" />
     </file>
   </root>
   <root nodeRef="r:58bf119a-d092-45c2-92e9-e3033a50db5d(voicemenu.plugin)/3796808963145727029">
-    <file name="VoiceMenu_CustomApplicationPlugin.java">
-      <node id="3796808963145728358" at="11,0,12,0" concept="3" trace="voiceMenuProjectGroup" />
-      <node id="3073516151938863669" at="14,24,15,158" concept="2" />
-      <node id="7108108485709352019" at="15,158,16,0" concept="7" />
-      <node id="3796808963145728225" at="18,27,19,160" concept="2" />
-      <node id="3796808963145727029" at="12,0,14,0" concept="1" trace="VoiceMenu_CustomApplicationPlugin#()V" />
-      <node id="3796808963145727029" at="18,0,21,0" concept="4" trace="doDispose#()V" />
-      <node id="3796808963145727029" at="14,0,18,0" concept="4" trace="doInit#()V" />
-      <scope id="3796808963145727029" at="12,46,12,46" />
-      <scope id="3796808963145728214" at="18,27,19,160" />
+    <file name="VoiceMenu_AppPluginPart.java">
+      <node id="3796808963145728358" at="11,0,12,0" concept="2" trace="voiceMenuProjectGroup" />
+      <node id="3073516151938863669" at="15,22,16,148" concept="1" />
+      <node id="7108108485709352019" at="16,148,17,0" concept="5" />
+      <node id="3796808963145728225" at="20,25,21,150" concept="1" />
+      <node id="3796808963145727029" at="12,0,14,0" concept="0" trace="VoiceMenu_AppPluginPart#()V" />
+      <node id="3796808963145727029" at="19,0,23,0" concept="3" trace="dispose#()V" />
+      <node id="3796808963145727029" at="14,0,19,0" concept="3" trace="init#()V" />
+      <scope id="3796808963145727029" at="12,36,12,36" />
+      <scope id="3796808963145728214" at="20,25,21,150" />
       <scope id="3796808963145727029" at="12,0,14,0" />
-      <scope id="3796808963145727397" at="14,24,16,0" />
-      <scope id="3796808963145727029" at="18,0,21,0" />
-      <scope id="3796808963145727029" at="14,0,18,0" />
-      <unit id="3796808963145727029" at="10,0,22,0" name="voicemenu.plugin.VoiceMenu_CustomApplicationPlugin" />
+      <scope id="3796808963145727397" at="15,22,17,0" />
+      <scope id="3796808963145727029" at="19,0,23,0" />
+      <scope id="3796808963145727029" at="14,0,19,0" />
+      <unit id="3796808963145727029" at="10,0,24,0" name="voicemenu.plugin.VoiceMenu_AppPluginPart" />
     </file>
   </root>
 </debug-info>

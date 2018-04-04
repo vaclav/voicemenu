@@ -193,7 +193,6 @@ MAIN_CLASS=jetbrains.mps.Launcher
 IDEA_PATHS_SELECTOR=voicemenu1.0
 LD_LIBRARY_PATH="$IDE_BIN_HOME:$LD_LIBRARY_PATH" "$JAVA_BIN" \
   ${AGENT} \
-  "-Xbootclasspath/a:$IDE_HOME/lib/boot.jar" \
   -classpath "$CLASSPATH" \
   ${VM_OPTIONS} \
   -Dawt.useSystemAAFontSettings=lcd \

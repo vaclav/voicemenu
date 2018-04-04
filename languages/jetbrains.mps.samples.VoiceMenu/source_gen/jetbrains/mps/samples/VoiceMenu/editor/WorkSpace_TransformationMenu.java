@@ -26,6 +26,7 @@ import jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.SidebarActionI
 import jetbrains.mps.openapi.editor.menus.EditorMenuTraceInfo;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import java.util.Objects;
 import jetbrains.mps.smodel.runtime.IconResource;
 import jetbrains.mps.editor.runtime.selection.SelectionUtil;
 import jetbrains.mps.openapi.editor.selection.SelectionManager;
@@ -138,7 +139,7 @@ public class WorkSpace_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return eq_tva3ah_a0a0i2g7(check_tva3ah_a0a0a0a0(_context.getEditorContext().getSelectedCell()), "property_name");
+          return Objects.equals(check_tva3ah_a0a0a0a0(_context.getEditorContext().getSelectedCell()), "property_name");
         }
 
         @Override
@@ -201,7 +202,7 @@ public class WorkSpace_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return eq_tva3ah_a0a0i2h7(check_tva3ah_a0a0a1a0(_context.getEditorContext().getSelectedCell()), "property_name");
+          return Objects.equals(check_tva3ah_a0a0a1a0(_context.getEditorContext().getSelectedCell()), "property_name");
         }
 
         @Override
@@ -624,12 +625,6 @@ public class WorkSpace_TransformationMenu extends TransformationMenuBase {
       return checkedDotOperand.getCellId();
     }
     return null;
-  }
-  private static boolean eq_tva3ah_a0a0i2g7(Object a, Object b) {
-    return (a != null ? a.equals(b) : a == b);
-  }
-  private static boolean eq_tva3ah_a0a0i2h7(Object a, Object b) {
-    return (a != null ? a.equals(b) : a == b);
   }
   private static boolean isNotEmptyString(String str) {
     return str != null && str.length() > 0;

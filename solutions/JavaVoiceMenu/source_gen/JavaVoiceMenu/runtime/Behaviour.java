@@ -4,6 +4,7 @@ package JavaVoiceMenu.runtime;
 
 import java.awt.event.ActionEvent;
 import java.util.concurrent.TimeUnit;
+import java.util.Objects;
 import java.io.File;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
@@ -29,7 +30,7 @@ public class Behaviour {
         }
         TimeUnit.SECONDS.sleep(Variables.timeout.duration);
         String timeoutAction = Variables.timeout.action;
-        if (eq_d7l93i_a0d0a0h0(timeoutAction, "back")) {
+        if (Objects.equals(timeoutAction, "back")) {
           if (Variables.path.length() > 1) {
             Variables.path = Variables.path.substring(0, Variables.path.length() - 1);
           }
@@ -41,7 +42,7 @@ public class Behaviour {
             PlayGetInfo(Variables.timeout.playback);
           }
 
-        } else if (eq_d7l93i_a0a3a0a7a(timeoutAction, "call")) {
+        } else if (Objects.equals(timeoutAction, "call")) {
           Style.setTextToScreen("Direct Call");
 
           if (isEmptyString(Variables.timeout.playback)) {
@@ -55,7 +56,7 @@ public class Behaviour {
             return;
           }
 
-        } else if (eq_d7l93i_a0b3a0a7a(timeoutAction, "getInfo")) {
+        } else if (Objects.equals(timeoutAction, "getInfo")) {
           Style.setTextToScreen("Get Info");
           if (isEmptyString(Variables.timeout.playback)) {
             Variables.voice.addText("Getting you the latest info.");
@@ -68,7 +69,7 @@ public class Behaviour {
             return;
           }
 
-        } else if (eq_d7l93i_a0c3a0a7a(timeoutAction, "hangUp")) {
+        } else if (Objects.equals(timeoutAction, "hangUp")) {
           Style.setTextToScreen("HangUp");
           if (isEmptyString(Variables.timeout.playback)) {
             Variables.voice.addText("Phone call ended.");
@@ -79,7 +80,7 @@ public class Behaviour {
           Variables.voice.speak();
           return;
 
-        } else if (eq_d7l93i_a0d3a0a7a(timeoutAction, "other")) {
+        } else if (Objects.equals(timeoutAction, "other")) {
           Style.setTextToScreen("Other");
           if (isEmptyString(Variables.timeout.playback)) {
             Variables.voice.addText("Other");
@@ -92,7 +93,7 @@ public class Behaviour {
             return;
           }
 
-        } else if (eq_d7l93i_a0e3a0a7a(timeoutAction, "record")) {
+        } else if (Objects.equals(timeoutAction, "record")) {
           Style.setTextToScreen("Initiliazing record. ");
           Thread.sleep(900);
           Style.setTextToScreen("Recording started. ");
@@ -112,7 +113,7 @@ public class Behaviour {
 
           }
 
-        } else if (eq_d7l93i_a0f3a0a7a(timeoutAction, "replay")) {
+        } else if (Objects.equals(timeoutAction, "replay")) {
           Style.setTextToScreen("Replay");
           if (isEmptyString(Variables.timeout.playback)) {
             Variables.voice.addText("Replay Options");
@@ -127,27 +128,6 @@ public class Behaviour {
     }
     private static boolean isEmptyString(String str) {
       return str == null || str.length() == 0;
-    }
-    private static boolean eq_d7l93i_a0d0a0h0(Object a, Object b) {
-      return (a != null ? a.equals(b) : a == b);
-    }
-    private static boolean eq_d7l93i_a0a3a0a7a(Object a, Object b) {
-      return (a != null ? a.equals(b) : a == b);
-    }
-    private static boolean eq_d7l93i_a0b3a0a7a(Object a, Object b) {
-      return (a != null ? a.equals(b) : a == b);
-    }
-    private static boolean eq_d7l93i_a0c3a0a7a(Object a, Object b) {
-      return (a != null ? a.equals(b) : a == b);
-    }
-    private static boolean eq_d7l93i_a0d3a0a7a(Object a, Object b) {
-      return (a != null ? a.equals(b) : a == b);
-    }
-    private static boolean eq_d7l93i_a0e3a0a7a(Object a, Object b) {
-      return (a != null ? a.equals(b) : a == b);
-    }
-    private static boolean eq_d7l93i_a0f3a0a7a(Object a, Object b) {
-      return (a != null ? a.equals(b) : a == b);
     }
   }
 

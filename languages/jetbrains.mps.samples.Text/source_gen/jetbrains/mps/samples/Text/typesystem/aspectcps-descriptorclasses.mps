@@ -14,10 +14,12 @@
         <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
+        <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS" />
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
+      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
@@ -67,6 +69,7 @@
     <node concept="3clFbW" id="5" role="jymVt">
       <node concept="3clFbS" id="8" role="3clF47" />
       <node concept="3Tm1VV" id="9" role="1B3o_S" />
+      <node concept="3cqZAl" id="a" role="3clF45" />
     </node>
     <node concept="3Tm1VV" id="6" role="1B3o_S" />
     <node concept="3uibUv" id="7" role="1zkMxy">

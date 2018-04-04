@@ -8,11 +8,11 @@
     <classNode dependClassName="java.io.File" />
     <classNode dependClassName="java.io.IOException" />
     <classNode dependClassName="java.lang.Exception" />
-    <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Runnable" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.lang.Thread" />
+    <classNode dependClassName="java.util.Objects" />
     <classNode dependClassName="java.util.concurrent.TimeUnit" />
     <classNode dependClassName="javax.sound.sampled.AudioInputStream" />
     <classNode dependClassName="javax.sound.sampled.AudioSystem" />
