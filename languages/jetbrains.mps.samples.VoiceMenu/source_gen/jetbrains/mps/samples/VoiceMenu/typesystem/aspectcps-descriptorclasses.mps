@@ -340,7 +340,7 @@
     </language>
   </registry>
   <node concept="312cEu" id="0">
-    <property role="3GE5qa" value="definition.quickfix" />
+    <property role="3GE5qa" value="QuickFixes" />
     <property role="TrG5h" value="AddMissingTimeout_QuickFix" />
     <node concept="3clFbW" id="1" role="jymVt">
       <node concept="3clFbS" id="7" role="3clF47">
@@ -887,7 +887,6 @@
     </node>
   </node>
   <node concept="312cEu" id="3$">
-    <property role="3GE5qa" value="definition.rule" />
     <property role="TrG5h" value="CheckBackAtRoot_NonTypesystemRule" />
     <node concept="3clFbW" id="3_" role="jymVt">
       <node concept="3clFbS" id="3H" role="3clF47" />
@@ -1198,7 +1197,6 @@
     <node concept="3Tm1VV" id="3G" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="5E">
-    <property role="3GE5qa" value="definition.rule" />
     <property role="TrG5h" value="CheckDuplicateNumber_NonTypesystemRule" />
     <node concept="3clFbW" id="5F" role="jymVt">
       <node concept="3clFbS" id="5N" role="3clF47" />
@@ -1507,7 +1505,7 @@
     <node concept="3Tm1VV" id="5M" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="7G">
-    <property role="3GE5qa" value="definition.rule" />
+    <property role="3GE5qa" value="" />
     <property role="TrG5h" value="CheckEmptyACtivity_NonTypesystemRule" />
     <node concept="3clFbW" id="7H" role="jymVt">
       <node concept="3clFbS" id="7P" role="3clF47" />
@@ -1724,7 +1722,7 @@
     <node concept="3Tm1VV" id="7O" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="9c">
-    <property role="3GE5qa" value="definition.rule" />
+    <property role="3GE5qa" value="" />
     <property role="TrG5h" value="CheckEmptyMenu_NonTypesystemRule" />
     <node concept="3clFbW" id="9d" role="jymVt">
       <node concept="3clFbS" id="9l" role="3clF47" />
@@ -1971,7 +1969,6 @@
     <node concept="3Tm1VV" id="9k" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="aP">
-    <property role="3GE5qa" value="definition.rule" />
     <property role="TrG5h" value="CheckEventImplemented_NonTypesystemRule" />
     <node concept="3clFbW" id="aQ" role="jymVt">
       <node concept="3clFbS" id="aY" role="3clF47" />
@@ -2324,7 +2321,6 @@
     <node concept="3Tm1VV" id="aX" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="dc">
-    <property role="3GE5qa" value="definition.rule" />
     <property role="TrG5h" value="CheckMultipleActivitiesOneEvent_NonTypesystemRule" />
     <node concept="3clFbW" id="dd" role="jymVt">
       <node concept="3clFbS" id="dl" role="3clF47" />
@@ -2647,7 +2643,6 @@
     <node concept="3Tm1VV" id="dk" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="fi">
-    <property role="3GE5qa" value="definition.rule" />
     <property role="TrG5h" value="CheckPhoneButtons_NonTypesystemRule" />
     <node concept="3clFbW" id="fj" role="jymVt">
       <node concept="3clFbS" id="fr" role="3clF47" />
@@ -3070,7 +3065,6 @@
     <node concept="3Tm1VV" id="fq" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="i3">
-    <property role="3GE5qa" value="definition.rule" />
     <property role="TrG5h" value="DuplicateTimeout_NonTypesystemRule" />
     <node concept="3clFbW" id="i4" role="jymVt">
       <node concept="3clFbS" id="ic" role="3clF47" />
@@ -3371,7 +3365,6 @@
     <node concept="3Tm1VV" id="ib" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="k2">
-    <property role="3GE5qa" value="definition.rule" />
     <property role="TrG5h" value="EmptyWorkspace_NonTypesystemRule" />
     <node concept="3clFbW" id="k3" role="jymVt">
       <node concept="3clFbS" id="kb" role="3clF47" />
@@ -4722,7 +4715,7 @@
     </node>
   </node>
   <node concept="312cEu" id="qz">
-    <property role="3GE5qa" value="definition.quickfix" />
+    <property role="3GE5qa" value="QuickFixes" />
     <property role="TrG5h" value="InitWorkspace_QuickFix" />
     <node concept="3clFbW" id="q$" role="jymVt">
       <node concept="3clFbS" id="qD" role="3clF47">
@@ -4789,7 +4782,7 @@
     </node>
   </node>
   <node concept="312cEu" id="r0">
-    <property role="3GE5qa" value="definition.quickfix" />
+    <property role="3GE5qa" value="QuickFixes" />
     <property role="TrG5h" value="InitiliazeMenu_QuickFix" />
     <node concept="3clFbW" id="r1" role="jymVt">
       <node concept="3clFbS" id="r7" role="3clF47">
@@ -4955,7 +4948,7 @@
     </node>
   </node>
   <node concept="312cEu" id="s8">
-    <property role="3GE5qa" value="definition.quickfix" />
+    <property role="3GE5qa" value="QuickFixes" />
     <property role="TrG5h" value="InitilizeEvent_QuickFix" />
     <node concept="3clFbW" id="s9" role="jymVt">
       <node concept="3clFbS" id="sf" role="3clF47">
@@ -5172,7 +5165,7 @@
     </node>
   </node>
   <node concept="312cEu" id="tz">
-    <property role="3GE5qa" value="definition.rule" />
+    <property role="3GE5qa" value="" />
     <property role="TrG5h" value="PlayBacktoFile_NonTypesystemRule" />
     <node concept="3clFbW" id="t$" role="jymVt">
       <node concept="3clFbS" id="tG" role="3clF47" />
@@ -5513,7 +5506,7 @@
     <node concept="3Tm1VV" id="tF" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="vK">
-    <property role="3GE5qa" value="definition.rule" />
+    <property role="3GE5qa" value="" />
     <property role="TrG5h" value="PlayBacktoText_NonTypesystemRule" />
     <node concept="3clFbW" id="vL" role="jymVt">
       <node concept="3clFbS" id="vT" role="3clF47" />
@@ -5856,7 +5849,7 @@
     <node concept="3Tm1VV" id="vS" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="xZ">
-    <property role="3GE5qa" value="definition.quickfix" />
+    <property role="3GE5qa" value="QuickFixes" />
     <property role="TrG5h" value="RemoveActivity_QuickFix" />
     <node concept="3clFbW" id="y0" role="jymVt">
       <node concept="3clFbS" id="y6" role="3clF47">
@@ -5925,7 +5918,7 @@
     </node>
   </node>
   <node concept="312cEu" id="yu">
-    <property role="3GE5qa" value="definition.quickfix" />
+    <property role="3GE5qa" value="QuickFixes" />
     <property role="TrG5h" value="RemoveDuplicateTimeouts_QuickFix" />
     <node concept="3clFbW" id="yv" role="jymVt">
       <node concept="3clFbS" id="y_" role="3clF47">
@@ -6051,7 +6044,7 @@
     </node>
   </node>
   <node concept="312cEu" id="zk">
-    <property role="3GE5qa" value="definition.quickfix" />
+    <property role="3GE5qa" value="QuickFixes" />
     <property role="TrG5h" value="RemoveNumber_QuickFix" />
     <node concept="3clFbW" id="zl" role="jymVt">
       <node concept="3clFbS" id="zr" role="3clF47">
@@ -6120,7 +6113,7 @@
     </node>
   </node>
   <node concept="312cEu" id="zN">
-    <property role="3GE5qa" value="definition.quickfix" />
+    <property role="3GE5qa" value="QuickFixes" />
     <property role="TrG5h" value="RenameActivity_QuickFix" />
     <node concept="3clFbW" id="zO" role="jymVt">
       <node concept="3clFbS" id="zU" role="3clF47">
@@ -6196,7 +6189,7 @@
     </node>
   </node>
   <node concept="312cEu" id="$k">
-    <property role="3GE5qa" value="definition.quickfix" />
+    <property role="3GE5qa" value="QuickFixes" />
     <property role="TrG5h" value="ResetAction_QuickFix" />
     <node concept="3clFbW" id="$l" role="jymVt">
       <node concept="3clFbS" id="$r" role="3clF47">
@@ -6267,7 +6260,7 @@
     </node>
   </node>
   <node concept="312cEu" id="$N">
-    <property role="3GE5qa" value="definition.quickfix" />
+    <property role="3GE5qa" value="QuickFixes" />
     <property role="TrG5h" value="SetFinaltoTrue_QuickFix" />
     <node concept="3clFbW" id="$O" role="jymVt">
       <node concept="3clFbS" id="$U" role="3clF47">
@@ -6458,7 +6451,7 @@
     </node>
   </node>
   <node concept="312cEu" id="Aa">
-    <property role="3GE5qa" value="definition.quickfix" />
+    <property role="3GE5qa" value="QuickFixes" />
     <property role="TrG5h" value="SuggestNumber_QuickFix" />
     <node concept="3clFbW" id="Ab" role="jymVt">
       <node concept="3clFbS" id="Ah" role="3clF47">
@@ -6846,7 +6839,7 @@
     </node>
   </node>
   <node concept="312cEu" id="CI">
-    <property role="3GE5qa" value="definition.rule" />
+    <property role="3GE5qa" value="" />
     <property role="TrG5h" value="TimeoutIsMissing_NonTypesystemRule" />
     <node concept="3clFbW" id="CJ" role="jymVt">
       <node concept="3clFbS" id="CR" role="3clF47" />
@@ -7172,7 +7165,7 @@
     <node concept="3Tm1VV" id="CQ" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="ES">
-    <property role="3GE5qa" value="definition.quickfix" />
+    <property role="3GE5qa" value="QuickFixes" />
     <property role="TrG5h" value="TransformPBtoFile_QuickFix" />
     <node concept="3clFbW" id="ET" role="jymVt">
       <node concept="3clFbS" id="EZ" role="3clF47">
@@ -7273,7 +7266,7 @@
     </node>
   </node>
   <node concept="312cEu" id="Fy">
-    <property role="3GE5qa" value="definition.quickfix" />
+    <property role="3GE5qa" value="QuickFixes" />
     <property role="TrG5h" value="TransformPBtoText_QuickFix" />
     <node concept="3clFbW" id="Fz" role="jymVt">
       <node concept="3clFbS" id="FD" role="3clF47">
@@ -7816,7 +7809,6 @@
     </node>
   </node>
   <node concept="312cEu" id="J9">
-    <property role="3GE5qa" value="definition.rule" />
     <property role="TrG5h" value="TypoFile_NonTypesystemRule" />
     <node concept="3clFbW" id="Ja" role="jymVt">
       <node concept="3clFbS" id="Ji" role="3clF47" />
@@ -8159,7 +8151,7 @@
     <node concept="3Tm1VV" id="Jh" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="Lo">
-    <property role="3GE5qa" value="definition.quickfix" />
+    <property role="3GE5qa" value="QuickFixes" />
     <property role="TrG5h" value="suggestWav_QuickFix" />
     <node concept="3clFbW" id="Lp" role="jymVt">
       <node concept="3clFbS" id="Lv" role="3clF47">

@@ -13,7 +13,7 @@ public class ConstraintsAspectDescriptor extends BaseConstraintsAspectDescriptor
 
   @Override
   public ConstraintsDescriptor getConstraints(SAbstractConcept concept) {
-    SAbstractConcept cncpt_a0c = concept;
+    SAbstractConcept cncpt = concept;
     return new BaseConstraintsDescriptor(concept);
   }
 }

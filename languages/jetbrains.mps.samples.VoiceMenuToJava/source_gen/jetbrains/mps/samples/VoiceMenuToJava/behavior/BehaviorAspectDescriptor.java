@@ -15,7 +15,7 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
 
   @Nullable
   public BHDescriptor getDescriptor(@NotNull SAbstractConcept concept) {
-    SAbstractConcept cncpt_a0d = concept;
+    SAbstractConcept cncpt = concept;
     return null;
   }
 }

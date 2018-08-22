@@ -32,6 +32,9 @@
     </file>
   </root>
   <root nodeRef="r:7e76c46c-6d36-4eff-a91f-bdb01cc6d244(voicemenu.plugin.project.wizard)/3796808963145677975">
+    <file name="IconContainer.java">
+      <node id="1487700256576884017" at="8,0,9,0" concept="7" trace="RESOURCE_a0a0g" />
+    </file>
     <file name="VoiceMenuProjectTemplate.java">
       <node id="3796808963145749893" at="35,0,36,0" concept="1" trace="myMenuName" />
       <node id="3348443391568009141" at="36,0,37,0" concept="1" trace="myProjectPath" />

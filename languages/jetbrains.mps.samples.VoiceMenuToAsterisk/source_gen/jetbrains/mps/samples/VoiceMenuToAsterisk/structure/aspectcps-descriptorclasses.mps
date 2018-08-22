@@ -350,7 +350,7 @@
       <ref role="3uigEE" to="ze1i:~BaseStructureAspectDescriptor" resolve="BaseStructureAspectDescriptor" />
     </node>
     <node concept="312cEg" id="1j" role="jymVt">
-      <property role="TrG5h" value="myConceptIndex" />
+      <property role="TrG5h" value="myIndexSwitch" />
       <property role="3TUv4t" value="true" />
       <node concept="3Tm6S6" id="1u" role="1B3o_S" />
       <node concept="3uibUv" id="1v" role="1tU5fm">
@@ -371,7 +371,7 @@
               </node>
             </node>
             <node concept="37vLTw" id="1A" role="37vLTJ">
-              <ref role="3cqZAo" node="1j" resolve="myConceptIndex" />
+              <ref role="3cqZAo" node="1j" resolve="myIndexSwitch" />
             </node>
           </node>
         </node>
@@ -419,7 +419,7 @@
         <node concept="3KaCP$" id="1Q" role="3cqZAp">
           <node concept="2OqwBi" id="1R" role="3KbGdf">
             <node concept="37vLTw" id="1T" role="2Oq$k0">
-              <ref role="3cqZAo" node="1j" resolve="myConceptIndex" />
+              <ref role="3cqZAo" node="1j" resolve="myIndexSwitch" />
             </node>
             <node concept="liA8E" id="1U" role="2OqNvi">
               <ref role="37wK5l" node="C" resolve="index" />
@@ -453,7 +453,7 @@
         <node concept="3cpWs6" id="21" role="3cqZAp">
           <node concept="2OqwBi" id="22" role="3cqZAk">
             <node concept="37vLTw" id="23" role="2Oq$k0">
-              <ref role="3cqZAo" node="1j" resolve="myConceptIndex" />
+              <ref role="3cqZAo" node="1j" resolve="myIndexSwitch" />
             </node>
             <node concept="liA8E" id="24" role="2OqNvi">
               <ref role="37wK5l" node="E" resolve="index" />

@@ -22,10 +22,13 @@
     </file>
   </root>
   <root nodeRef="r:0b0ef0d3-9ccc-48f0-92c9-f345f12a8985(jetbrains.mps.samples.VoiceMenuToHTML.plugin)/4121025734888304966">
+    <file name="FacetManifest.java">
+      <node id="4121025734888304966" at="14,26,15,74" concept="1" />
+    </file>
     <file name="RenameXmlToHtml_Facet.java">
       <node id="4121025734888304966" at="30,0,31,0" concept="2" trace="targets" />
       <node id="4121025734888304966" at="31,0,32,0" concept="2" trace="name" />
-      <node id="4121025734888304966" at="32,34,33,91" concept="1" />
+      <node id="4121025734888304967" at="32,34,33,91" concept="1" />
       <node id="4121025734888304966" at="35,38,36,19" concept="7" />
       <node id="4121025734888304966" at="38,43,39,16" concept="7" />
       <node id="4121025734888304966" at="41,43,42,154" concept="7" />

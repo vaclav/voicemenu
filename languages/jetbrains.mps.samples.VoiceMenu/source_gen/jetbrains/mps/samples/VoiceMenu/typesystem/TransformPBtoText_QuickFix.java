@@ -16,6 +16,6 @@ public class TransformPBtoText_QuickFix extends QuickFix_Runtime {
     return "Set as Text to generate";
   }
   public void execute(SNode node) {
-    SPropertyOperations.set(((SNode) TransformPBtoText_QuickFix.this.getField("activity")[0]), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile"), "" + (false));
+    SPropertyOperations.assign(((SNode) TransformPBtoText_QuickFix.this.getField("activity")[0]), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile"), "" + (false));
   }
 }

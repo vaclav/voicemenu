@@ -10,7 +10,6 @@
     <file name="Voicemenu_ApplicationPlugin.java">
       <node id="3796808963145666757" at="11,0,12,0" concept="2" trace="myId" />
       <node id="3796808963145666757" at="14,27,15,16" concept="4" />
-      <node id="3796808963145666757" at="18,66,19,45" concept="1" />
       <node id="3796808963145666757" at="12,0,14,0" concept="0" trace="Voicemenu_ApplicationPlugin#()V" />
       <node id="3796808963145666757" at="14,0,17,0" concept="3" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
       <node id="3796808963145666757" at="17,0,21,0" concept="3" trace="fillCustomParts#(Ljava/util/List;)V" />
@@ -41,6 +40,9 @@
       <scope id="3796808963145727029" at="19,0,23,0" />
       <scope id="3796808963145727029" at="14,0,19,0" />
       <unit id="3796808963145727029" at="10,0,24,0" name="voicemenu.plugin.VoiceMenu_AppPluginPart" />
+    </file>
+    <file name="Voicemenu_ApplicationPlugin.java">
+      <node id="3796808963145727029" at="18,66,19,45" concept="1" />
     </file>
   </root>
 </debug-info>
