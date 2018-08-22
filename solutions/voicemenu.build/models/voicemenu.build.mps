@@ -189,6 +189,7 @@
       <concept id="781140262677906392" name="jetbrains.mps.build.mps.structure.BuildMps_BrandingCompany" flags="ng" index="IuM$Q">
         <child id="781140262677906402" name="url" index="IuM$c" />
         <child id="781140262677906401" name="name" index="IuM$f" />
+        <child id="2355727383336213970" name="copyrightStar" index="3fQQh0" />
       </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
@@ -363,6 +364,11 @@
         <node concept="3_J27D" id="BkRLA8xBWK" role="IuM$c">
           <node concept="3Mxwew" id="BkRLA8xBY_" role="3MwsjC">
             <property role="3MwjfP" value="http://www.jetbrains.com" />
+          </node>
+        </node>
+        <node concept="NbPM2" id="dQ$xbq5ka6" role="3fQQh0">
+          <node concept="3Mxwew" id="dQ$xbq5ka5" role="3MwsjC">
+            <property role="3MwjfP" value="JetBrains s.r.o." />
           </node>
         </node>
       </node>
@@ -2445,8 +2451,8 @@
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="5$IQOQwcnGK" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="5$IQOQwcnGP" role="2Ry0An">
-              <property role="2Ry0Am" value="MPS 2017.3" />
+            <node concept="2Ry0Ak" id="dQ$xbq5kbZ" role="2Ry0An">
+              <property role="2Ry0Am" value="MPS 2018.2" />
             </node>
           </node>
         </node>

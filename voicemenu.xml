@@ -20,6 +20,7 @@
   <property name="environment" value="env" />
   <property name="env.JAVA_HOME" value="${java.home}/.." />
   <property name="jdk.home" value="${env.JAVA_HOME}" />
+  <property name="mps.generator.skipUnmodifiedModels" value="false" />
   
   <path id="path.mps.ant.path">
     <pathelement location="${artifacts.mpsStandalone}/lib/ant/lib/ant-mps.jar" />
@@ -65,7 +66,7 @@
     <echoxml file="${build.tmp}/default/branding.jar/idea/IdeaApplicationInfo.xml">
       <component>
         <version codename="voicemenu" major="1" minor="0" eap="false" />
-        <company name="JetBrains" url="http://www.jetbrains.com" />
+        <company name="JetBrains" url="http://www.jetbrains.com" copyrightStart="JetBrains s.r.o." />
         <build number="173.${build.number}" date="${date}" />
         <logo url="/IVR_splash.png" textcolor="002387" progressColor="234908" progressX="0" progressY="395" progressHeight="5" />
         <about url="/IVR_about.png" foreground="FFFFFF" copyrightForeground="858585" />
@@ -968,7 +969,7 @@
   
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
-    <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" createStaticRefs="true" fork="true">
+    <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" createStaticRefs="true" fork="true" skipUnmodifiedModels="${mps.generator.skipUnmodifiedModels}">
       <plugin path="${artifacts.mpsMakePlugin}/mps-make" />
       <plugin path="${artifacts.mpsStandalone}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <plugin path="${artifacts.mpsTesting}/mps-testing" />
@@ -1730,7 +1731,6 @@
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.7.2.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
-        <fileset dir="${artifacts.mpsStandalone}/lib/ant/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
       </classpath>
