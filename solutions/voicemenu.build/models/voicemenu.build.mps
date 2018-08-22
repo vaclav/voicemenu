@@ -2252,6 +2252,21 @@
                   </node>
                 </node>
               </node>
+              <node concept="28jJK3" id="56oT4rHCliY" role="39821P">
+                <property role="28jJZ5" value="755" />
+                <node concept="398BVA" id="56oT4rHCliZ" role="28jJRO">
+                  <ref role="398BVh" node="5ruKdSwyevt" resolve="mps_home" />
+                  <node concept="2Ry0Ak" id="56oT4rHClj0" role="iGT6I">
+                    <property role="2Ry0Am" value="bin" />
+                    <node concept="2Ry0Ak" id="56oT4rHClj1" role="2Ry0An">
+                      <property role="2Ry0Am" value="mac" />
+                      <node concept="2Ry0Ak" id="56oT4rHClk9" role="2Ry0An">
+                        <property role="2Ry0Am" value="libnst64.dylib" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="1X3_iC" id="5$IQOQwcnKO" role="lGtFl">
                 <property role="3V$3am" value="children" />
                 <property role="3V$3ak" value="798100da-4f0a-421a-b991-71f8c50ce5d2/4701820937132344003/7389400916848037006" />

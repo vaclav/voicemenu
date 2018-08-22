@@ -122,6 +122,7 @@
       <zipfileset file="${basedir}/icons/IVR.icns" prefix="voicemenu ${version}.app/Contents/Resources" />
       <zipfileset file="${mps_home}/bin/mac/Contents/MacOS/mps" prefix="voicemenu ${version}.app/Contents/MacOS" filemode="755" />
       <zipfileset file="${mps_home}/bin/mac/libMacNativeKit64.dylib" prefix="voicemenu ${version}.app/Contents/bin" />
+      <zipfileset file="${mps_home}/bin/mac/libnst64.dylib" prefix="voicemenu ${version}.app/Contents/bin" filemode="755" />
       <zipfileset file="${mps_home}/bin/mac/restarter" prefix="voicemenu ${version}.app/Contents/bin" filemode="755" />
       <zipfileset file="${mps_home}/bin/mac/fsnotifier" prefix="voicemenu ${version}.app/Contents/bin" filemode="755" />
       <zipfileset dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip_f755" filemode="755" prefix="voicemenu ${version}.app/Contents/bin" />
