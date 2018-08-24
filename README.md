@@ -29,9 +29,9 @@ A few sample voice menu definitions can be found in the Sandbox module. These ca
 Double-click on them to have them open in teh editor. Then you will be able to edit your voice menu definitions.
 
 Before generation, you need to select the generation target (Java, XML, HTML etc.). Do the following:
-# Navigate to the top of the editor of your voice menu definition
-# A light-bulb symbol appears onthe screen
-# Click on the light-bulb symbol and choose the desired target of generation. The currently active generation target is not displayed as an oprion in the menu.
+1. Navigate to the top of the editor of your voice menu definition
+2. A light-bulb symbol appears onthe screen
+3. Click on the light-bulb symbol and choose the desired target of generation. The currently active generation target is not displayed as an oprion in the menu.
 
 
 Licence
