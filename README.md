@@ -25,7 +25,14 @@ Modules
 
 Sample
 ------
-A few sample voice menu definitions can be found in the Sandbox module.
+A few sample voice menu definitions can be found in the Sandbox module. These can be located in the "Project" tool window positioned on the left side of the screen.
+Double-click on them to have them open in teh editor. Then you will be able to edit your voice menu definitions.
+
+Before generation, you need to select the generation target (Java, XML, HTML etc.). Do the following:
+# Navigate to the top of the editor of your voice menu definition
+# A light-bulb symbol appears onthe screen
+# Click on the light-bulb symbol and choose the desired target of generation. The currently active generation target is not displayed as an oprion in the menu.
+
 
 Licence
 -------
@@ -35,7 +42,9 @@ MPS is licensed under the Apache 2 open-source license. See the [License](https:
 System requirements
 -------------------
 
-To build the Voice Menu project from the sources you need JetBrains MPS 2017.3 or later.
+You can download the Voice Menu IDE to experiment instantly for the JetBrains TeamCity server - [Download Voice Menu IDE](https://teamcity.jetbrains.com/guestAuth/repository/downloadAll/MPS_VoiceMenu_20182/.lastSuccessful/artifacts.zip).
+
+To build the Voice Menu project from the sources you need JetBrains MPS 2018.2.
 
 ----------
 
