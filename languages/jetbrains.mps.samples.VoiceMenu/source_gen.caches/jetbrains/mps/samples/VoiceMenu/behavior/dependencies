@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.behavior.Action__BehaviorDescriptor" file="Action__BehaviorDescriptor.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.behavior.Action__BehaviorDescriptor">
     <classNode dependClassName="java.lang.Exception" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -20,7 +20,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.behavior.Activity__BehaviorDescriptor" file="Activity__BehaviorDescriptor.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.behavior.Activity__BehaviorDescriptor">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.Arrays" />
@@ -39,7 +39,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.behavior.BehaviorAspectDescriptor" file="BehaviorAspectDescriptor.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.behavior.BehaviorAspectDescriptor">
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.ConceptSwitchIndex" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder" />
@@ -54,7 +54,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBehaviorAspectDescriptor" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.behavior.Menu__BehaviorDescriptor" file="Menu__BehaviorDescriptor.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.behavior.Menu__BehaviorDescriptor">
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -84,7 +84,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.behavior.Timeout__BehaviorDescriptor" file="Timeout__BehaviorDescriptor.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.behavior.Timeout__BehaviorDescriptor">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.Arrays" />
@@ -104,7 +104,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.behavior.WorkSpace__BehaviorDescriptor" file="WorkSpace__BehaviorDescriptor.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.behavior.WorkSpace__BehaviorDescriptor">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.Arrays" />

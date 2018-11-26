@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="aw1xuw2cqi7t1wyv4wk2ndl3vctoci4" />
+<product version="3" modelHash="-q2x2ov6hhoqx7pauq0w8acv4t2bsdv">
+  <files names="Info.plist.xml:voicemenu.bat:voicemenu.sh:voicemenu.vmoptions:voicemenu.xml:voicemenu64.vmoptions:voicemenuDistribution.xml" />
+</product>
 

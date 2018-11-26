@@ -193,7 +193,7 @@
               <ref role="3cqZAo" node="f" resolve="structureDescriptor" />
             </node>
             <node concept="liA8E" id="p" role="2OqNvi">
-              <ref role="37wK5l" node="1s" resolve="internalIndex" />
+              <ref role="37wK5l" node="1u" resolve="internalIndex" />
               <node concept="37vLTw" id="q" role="37wK5m">
                 <ref role="3cqZAo" node="6" resolve="c" />
               </node>
@@ -352,25 +352,25 @@
     <node concept="312cEg" id="1j" role="jymVt">
       <property role="TrG5h" value="myIndexSwitch" />
       <property role="3TUv4t" value="true" />
-      <node concept="3Tm6S6" id="1u" role="1B3o_S" />
-      <node concept="3uibUv" id="1v" role="1tU5fm">
+      <node concept="3Tm6S6" id="1w" role="1B3o_S" />
+      <node concept="3uibUv" id="1x" role="1tU5fm">
         <ref role="3uigEE" node="z" resolve="LanguageConceptSwitch" />
       </node>
     </node>
     <node concept="3Tm1VV" id="1k" role="1B3o_S" />
     <node concept="2tJIrI" id="1l" role="jymVt" />
     <node concept="3clFbW" id="1m" role="jymVt">
-      <node concept="3cqZAl" id="1w" role="3clF45" />
-      <node concept="3Tm1VV" id="1x" role="1B3o_S" />
-      <node concept="3clFbS" id="1y" role="3clF47">
-        <node concept="3clFbF" id="1z" role="3cqZAp">
-          <node concept="37vLTI" id="1$" role="3clFbG">
-            <node concept="2ShNRf" id="1_" role="37vLTx">
-              <node concept="1pGfFk" id="1B" role="2ShVmc">
+      <node concept="3cqZAl" id="1y" role="3clF45" />
+      <node concept="3Tm1VV" id="1z" role="1B3o_S" />
+      <node concept="3clFbS" id="1$" role="3clF47">
+        <node concept="3clFbF" id="1_" role="3cqZAp">
+          <node concept="37vLTI" id="1A" role="3clFbG">
+            <node concept="2ShNRf" id="1B" role="37vLTx">
+              <node concept="1pGfFk" id="1D" role="2ShVmc">
                 <ref role="37wK5l" node="A" resolve="LanguageConceptSwitch" />
               </node>
             </node>
-            <node concept="37vLTw" id="1A" role="37vLTJ">
+            <node concept="37vLTw" id="1C" role="37vLTJ">
               <ref role="3cqZAo" node="1j" resolve="myIndexSwitch" />
             </node>
           </node>
@@ -383,22 +383,22 @@
       <property role="od$2w" value="false" />
       <property role="TrG5h" value="getDescriptors" />
       <property role="DiZV1" value="false" />
-      <node concept="3clFbS" id="1C" role="3clF47">
-        <node concept="3cpWs6" id="1G" role="3cqZAp">
-          <node concept="2YIFZM" id="1H" role="3cqZAk">
+      <node concept="3clFbS" id="1E" role="3clF47">
+        <node concept="3cpWs6" id="1I" role="3cqZAp">
+          <node concept="2YIFZM" id="1J" role="3cqZAk">
             <ref role="1Pybhc" to="33ny:~Arrays" resolve="Arrays" />
             <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...):java.util.List" resolve="asList" />
           </node>
         </node>
       </node>
-      <node concept="3Tm1VV" id="1D" role="1B3o_S" />
-      <node concept="3uibUv" id="1E" role="3clF45">
+      <node concept="3Tm1VV" id="1F" role="1B3o_S" />
+      <node concept="3uibUv" id="1G" role="3clF45">
         <ref role="3uigEE" to="33ny:~Collection" resolve="Collection" />
-        <node concept="3uibUv" id="1I" role="11_B2D">
+        <node concept="3uibUv" id="1K" role="11_B2D">
           <ref role="3uigEE" to="ze1i:~ConceptDescriptor" resolve="ConceptDescriptor" />
         </node>
       </node>
-      <node concept="2AHcQZ" id="1F" role="2AJF6D">
+      <node concept="2AHcQZ" id="1H" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
@@ -408,70 +408,92 @@
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getDescriptor" />
       <property role="DiZV1" value="false" />
-      <node concept="3Tm1VV" id="1J" role="1B3o_S" />
-      <node concept="37vLTG" id="1K" role="3clF46">
+      <node concept="3Tm1VV" id="1L" role="1B3o_S" />
+      <node concept="37vLTG" id="1M" role="3clF46">
         <property role="TrG5h" value="id" />
-        <node concept="3uibUv" id="1P" role="1tU5fm">
+        <node concept="3uibUv" id="1R" role="1tU5fm">
           <ref role="3uigEE" to="e8bb:~SConceptId" resolve="SConceptId" />
         </node>
       </node>
-      <node concept="3clFbS" id="1L" role="3clF47">
-        <node concept="3KaCP$" id="1Q" role="3cqZAp">
-          <node concept="2OqwBi" id="1R" role="3KbGdf">
-            <node concept="37vLTw" id="1T" role="2Oq$k0">
+      <node concept="3clFbS" id="1N" role="3clF47">
+        <node concept="3KaCP$" id="1S" role="3cqZAp">
+          <node concept="2OqwBi" id="1T" role="3KbGdf">
+            <node concept="37vLTw" id="1V" role="2Oq$k0">
               <ref role="3cqZAo" node="1j" resolve="myIndexSwitch" />
             </node>
-            <node concept="liA8E" id="1U" role="2OqNvi">
+            <node concept="liA8E" id="1W" role="2OqNvi">
               <ref role="37wK5l" node="C" resolve="index" />
-              <node concept="37vLTw" id="1V" role="37wK5m">
-                <ref role="3cqZAo" node="1K" resolve="id" />
+              <node concept="37vLTw" id="1X" role="37wK5m">
+                <ref role="3cqZAo" node="1M" resolve="id" />
               </node>
             </node>
           </node>
-          <node concept="3clFbS" id="1S" role="3Kb1Dw">
-            <node concept="3cpWs6" id="1W" role="3cqZAp">
-              <node concept="10Nm6u" id="1X" role="3cqZAk" />
+          <node concept="3clFbS" id="1U" role="3Kb1Dw">
+            <node concept="3cpWs6" id="1Y" role="3cqZAp">
+              <node concept="10Nm6u" id="1Z" role="3cqZAk" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="3uibUv" id="1M" role="3clF45">
+      <node concept="3uibUv" id="1O" role="3clF45">
         <ref role="3uigEE" to="ze1i:~ConceptDescriptor" resolve="ConceptDescriptor" />
       </node>
-      <node concept="2AHcQZ" id="1N" role="2AJF6D">
+      <node concept="2AHcQZ" id="1P" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="2AHcQZ" id="1O" role="2AJF6D">
+      <node concept="2AHcQZ" id="1Q" role="2AJF6D">
         <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
       </node>
     </node>
     <node concept="2tJIrI" id="1r" role="jymVt" />
     <node concept="3clFb_" id="1s" role="jymVt">
+      <property role="TrG5h" value="getDataTypeDescriptors" />
+      <node concept="3Tm1VV" id="20" role="1B3o_S" />
+      <node concept="3uibUv" id="21" role="3clF45">
+        <ref role="3uigEE" to="33ny:~Collection" resolve="Collection" />
+        <node concept="3uibUv" id="24" role="11_B2D">
+          <ref role="3uigEE" to="ze1i:~DataTypeDescriptor" resolve="DataTypeDescriptor" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="22" role="3clF47">
+        <node concept="3cpWs6" id="25" role="3cqZAp">
+          <node concept="2YIFZM" id="26" role="3cqZAk">
+            <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...):java.util.List" resolve="asList" />
+            <ref role="1Pybhc" to="33ny:~Arrays" resolve="Arrays" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="23" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1t" role="jymVt" />
+    <node concept="3clFb_" id="1u" role="jymVt">
       <property role="TrG5h" value="internalIndex" />
-      <node concept="10Oyi0" id="1Y" role="3clF45" />
-      <node concept="3clFbS" id="1Z" role="3clF47">
-        <node concept="3cpWs6" id="21" role="3cqZAp">
-          <node concept="2OqwBi" id="22" role="3cqZAk">
-            <node concept="37vLTw" id="23" role="2Oq$k0">
+      <node concept="10Oyi0" id="27" role="3clF45" />
+      <node concept="3clFbS" id="28" role="3clF47">
+        <node concept="3cpWs6" id="2a" role="3cqZAp">
+          <node concept="2OqwBi" id="2b" role="3cqZAk">
+            <node concept="37vLTw" id="2c" role="2Oq$k0">
               <ref role="3cqZAo" node="1j" resolve="myIndexSwitch" />
             </node>
-            <node concept="liA8E" id="24" role="2OqNvi">
+            <node concept="liA8E" id="2d" role="2OqNvi">
               <ref role="37wK5l" node="E" resolve="index" />
-              <node concept="37vLTw" id="25" role="37wK5m">
-                <ref role="3cqZAo" node="20" resolve="c" />
+              <node concept="37vLTw" id="2e" role="37wK5m">
+                <ref role="3cqZAo" node="29" resolve="c" />
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="37vLTG" id="20" role="3clF46">
+      <node concept="37vLTG" id="29" role="3clF46">
         <property role="TrG5h" value="c" />
-        <node concept="3uibUv" id="26" role="1tU5fm">
+        <node concept="3uibUv" id="2f" role="1tU5fm">
           <ref role="3uigEE" to="c17a:~SAbstractConcept" resolve="SAbstractConcept" />
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="1t" role="jymVt" />
+    <node concept="2tJIrI" id="1v" role="jymVt" />
   </node>
 </model>
 

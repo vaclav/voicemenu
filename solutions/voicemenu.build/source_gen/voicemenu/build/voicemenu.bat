@@ -13,10 +13,10 @@ SET IDE_HOME=%IDE_BIN_DIR%\..
 
 IF "%IDE_BIN_DIR:~-8%" == "bin\win\" (
   echo.
-  echo    You are trying to run MPS from generic distribution
+  echo    You are trying to run Voice Menu from generic distribution
   echo Please first copy content of "%IDE_BIN_DIR%"
   echo into its parent directory ("%IDE_BIN_DIR:~0,-4%"^)
-  echo and then run mps.bat from there
+  echo and then run voicemenu.bat from there
   echo.
   pause
   exit
@@ -80,8 +80,8 @@ IF EXIST "%JRE%\lib\amd64" SET BITS=64
 IF NOT "%IDEA_PROPERTIES%" == "" SET IDE_PROPERTIES_PROPERTY="-Didea.properties.file=%IDEA_PROPERTIES%"
 
 SET USER_VM_OPTIONS_FILE=%USERPROFILE%\.voicemenu1.0\mps%BITS%.exe.vmoptions
-SET VM_OPTIONS_FILE=%IDE_BIN_DIR%\mps%BITS%.exe.vmoptions
-IF EXIST "%IDE_BIN_DIR%\win\mps%BITS%.exe.vmoptions" SET VM_OPTIONS_FILE=%IDE_BIN_DIR%\win\mps%BITS%.exe.vmoptions
+SET VM_OPTIONS_FILE=%IDE_BIN_DIR%\voicemenu%BITS%.exe.vmoptions
+IF EXIST "%IDE_BIN_DIR%\win\voicemenu%BITS%.exe.vmoptions" SET VM_OPTIONS_FILE=%IDE_BIN_DIR%\win\voicemenu%BITS%.exe.vmoptions
 IF EXIST %USER_VM_OPTIONS_FILE% SET VM_OPTIONS_FILE=%USER_VM_OPTIONS_FILE%
 IF NOT "%IDEA_VM_OPTIONS%" == "" SET VM_OPTIONS_FILE=%IDEA_VM_OPTIONS%
 

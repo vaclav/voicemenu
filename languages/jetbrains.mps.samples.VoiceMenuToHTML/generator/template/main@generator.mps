@@ -65,6 +65,7 @@
       </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
+      <concept id="1510949579266781519" name="jetbrains.mps.lang.generator.structure.TemplateCallMacro" flags="ln" index="5jKBG" />
       <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="ln" index="29HgVG">
         <child id="1168024447342" name="sourceNodeQuery" index="3NFExx" />
       </concept>
@@ -79,9 +80,6 @@
       <concept id="1095672379244" name="jetbrains.mps.lang.generator.structure.TemplateFragment" flags="ng" index="raruj" />
       <concept id="1722980698497626400" name="jetbrains.mps.lang.generator.structure.ITemplateCall" flags="ng" index="v9R3L">
         <reference id="1722980698497626483" name="template" index="v9R2y" />
-      </concept>
-      <concept id="1194565793557" name="jetbrains.mps.lang.generator.structure.IncludeMacro" flags="ln" index="xERo3">
-        <reference id="1194566366375" name="includeTemplate" index="xH3mL" />
       </concept>
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
@@ -128,7 +126,7 @@
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
-        <property id="1757699476691236117" name="propertyName" index="2qtEX9" />
+        <property id="1757699476691236117" name="name_DebugInfo" index="2qtEX9" />
         <property id="1341860900487648621" name="propertyId" index="P4ACc" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -217,8 +215,8 @@
         <node concept="3o6iSG" id="2m0r6rVRMEt" role="3o6s8t" />
         <node concept="3o6iSG" id="2m0r6rVRMEw" role="3o6s8t" />
         <node concept="3o6iSG" id="2m0r6rVRME_" role="3o6s8t">
-          <node concept="xERo3" id="2m0r6rVRMFv" role="lGtFl">
-            <ref role="xH3mL" node="2m0r6rVRMFz" resolve="HTML_Style" />
+          <node concept="5jKBG" id="67vomfiQGJT" role="lGtFl">
+            <ref role="v9R2y" node="2m0r6rVRMFz" resolve="HTML_Style" />
           </node>
         </node>
         <node concept="2pNNFK" id="2m0r6rVUdbQ" role="3o6s8t">

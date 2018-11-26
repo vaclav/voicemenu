@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-3743r3z64qbckigl8b88rxrwhfsdwu3" />
+<product version="3" modelHash="-3743r3z64qbckigl8b88rxrwhfsdwu3">
+  <files names="extensionsJet_Mobile.conf:extensionsSample.conf:extensionsmyVoiceMenu.conf:sipJet_Mobile.conf:sipSample.conf:sipmyVoiceMenu.conf" />
+</product>
 

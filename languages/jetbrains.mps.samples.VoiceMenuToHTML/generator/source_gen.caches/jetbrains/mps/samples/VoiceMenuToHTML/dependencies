@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="jetbrains.mps.samples.VoiceMenuToHTML.Generator" file="Generator.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenuToHTML.Generator">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.Collection" />

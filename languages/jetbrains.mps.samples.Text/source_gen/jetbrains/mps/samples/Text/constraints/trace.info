@@ -12,14 +12,14 @@
   <root nodeRef="r:69400da8-2354-4cfb-8cc0-386920b7a8ef(jetbrains.mps.samples.Text.constraints)/1416608923407914100">
     <file name="Command_Constraints.java">
       <node id="1416608923407914100" at="10,32,11,152" concept="3" />
-      <node id="1416608923407914100" at="14,55,15,150" concept="2" />
+      <node id="1416608923407914100" at="15,47,16,150" concept="2" />
       <node id="1416608923407914100" at="10,0,13,0" concept="0" trace="Command_Constraints#()V" />
-      <node id="1416608923407914100" at="14,0,17,0" concept="1" trace="getDefaultConcreteConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1416608923407914100" at="14,0,18,0" concept="1" trace="getDefaultConcreteConcept#()Lorg/jetbrains/mps/openapi/language/SConcept;" />
       <scope id="1416608923407914100" at="10,32,11,152" />
-      <scope id="1416608923407914100" at="14,55,15,150" />
+      <scope id="1416608923407914100" at="15,47,16,150" />
       <scope id="1416608923407914100" at="10,0,13,0" />
-      <scope id="1416608923407914100" at="14,0,17,0" />
-      <unit id="1416608923407914100" at="9,0,18,0" name="jetbrains.mps.samples.Text.constraints.Command_Constraints" />
+      <scope id="1416608923407914100" at="14,0,18,0" />
+      <unit id="1416608923407914100" at="9,0,19,0" name="jetbrains.mps.samples.Text.constraints.Command_Constraints" />
     </file>
   </root>
 </debug-info>

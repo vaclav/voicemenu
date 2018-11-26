@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-as4xgclsmes1zynjf42natco6hxtoaa" />
+<product version="3" modelHash="-dkaw1s0r1jljw7cw5ch2c3y2kc8xe5j">
+  <files names="Behaviour.java:Data.java:Event.java:MacVoice.java:Style.java:UniVoice.java:Variables.java:WinVoice.java:myVoice.java" />
+</product>
 

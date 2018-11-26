@@ -8,7 +8,7 @@
       <unit at="10,0,26,0" name="jetbrains.mps.samples.VoiceMenuToHTML.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="13,0,39,0" name="jetbrains.mps.samples.VoiceMenuToHTML.structure.StructureAspectDescriptor" />
+      <unit at="14,0,45,0" name="jetbrains.mps.samples.VoiceMenuToHTML.structure.StructureAspectDescriptor" />
     </file>
   </root>
 </debug-info>

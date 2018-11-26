@@ -12,9 +12,9 @@
           <string>mpr</string>
         </array>
         <key>CFBundleTypeIconFile</key>
-        <string>mps.icns</string>
+        <string>voicemenu.icns</string>
         <key>CFBundleTypeName</key>
-        <string>JetBrains MPS Project</string>
+        <string>Voice Menu Project</string>
         <key>CFBundleTypeRole</key>
         <string>Editor</string>
       </dict>
@@ -36,13 +36,13 @@
       </dict>
     </array>
     <key>CFBundleExecutable</key>
-    <string>mps</string>
+    <string>voicemenu</string>
     <key>CFBundleIconFile</key>
-    <string>mps.icns</string>
+    <string>voicemenu.icns</string>
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
     <key>CFBundleName</key>
-    <string>MPS</string>
+    <string>voicemenu</string>
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleIdentifier</key>
@@ -50,7 +50,7 @@
     <key>CFBundleSignature</key>
     <string>????</string>
     <key>CFBundleGetInfoString</key>
-    <string>JetBrains MPS $version$</string>
+    <string>Voice Menu $version$</string>
     <key>CFBundleShortVersionString</key>
     <string>$version$</string>
     <key>CFBundleVersion</key>
@@ -104,7 +104,7 @@
         <string>voicemenu1.0</string>
         
         <key>idea.executable</key>
-        <string>mps</string>
+        <string>voicemenu</string>
         
         <key>idea.java.redist</key>
         <string>NoJavaDistribution</string>

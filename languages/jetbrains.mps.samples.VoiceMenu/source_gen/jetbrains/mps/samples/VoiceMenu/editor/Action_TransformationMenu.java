@@ -143,7 +143,7 @@ public class Action_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SNodeFactoryOperations.replaceWithNewChild(_context.getNode(), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9c5c3L, "jetbrains.mps.samples.VoiceMenu.structure.Empty")));
+          SNodeFactoryOperations.replaceWithNewChild(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9c5c3L, "jetbrains.mps.samples.VoiceMenu.structure.Empty"));
         }
 
         @Override

@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-33hcjmbjh8a5idqfha2fvxoad2zgzsm" />
+<product version="3" modelHash="-eljjozx01v1dq3jvsq9ifz32kmvec6e">
+  <files names="Body_Editor.java:Body_EditorBuilder_a.java:Comment_Editor.java:Comment_EditorBuilder_a.java:ContextReference_Editor.java:ContextReference_EditorBuilder_a.java:ContextReference_SubstituteMenu.java:Context_Editor.java:Context_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:Empty_Editor.java:Empty_EditorBuilder_a.java:Extend_Editor.java:Extend_EditorBuilder_a.java:GoTo_Editor.java:GoTo_EditorBuilder_a.java:PlainText_Editor.java:PlainText_EditorBuilder_a.java:Same_Editor.java:Same_EditorBuilder_a.java:WorkSpace_Editor.java:WorkSpace_EditorBuilder_a.java:general1arg_Editor.java:general1arg_EditorBuilder_a.java:general2args_Editor.java:general2args_EditorBuilder_a.java" />
+</product>
 

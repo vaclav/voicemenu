@@ -55,7 +55,7 @@ public final class changeToDirectCall_Intention extends AbstractIntentionDescrip
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SNodeFactoryOperations.replaceWithNewChild(node, SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, "jetbrains.mps.samples.VoiceMenu.structure.DirectCall")));
+      SNodeFactoryOperations.replaceWithNewChild(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, "jetbrains.mps.samples.VoiceMenu.structure.DirectCall"));
     }
     @Override
     public IntentionDescriptor getDescriptor() {

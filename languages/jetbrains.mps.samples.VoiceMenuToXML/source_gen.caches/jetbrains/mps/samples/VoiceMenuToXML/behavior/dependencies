@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="jetbrains.mps.samples.VoiceMenuToXML.behavior.BehaviorAspectDescriptor" file="BehaviorAspectDescriptor.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenuToXML.behavior.BehaviorAspectDescriptor">
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHDescriptor" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />

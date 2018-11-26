@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.AddMissingTimeout_QuickFix" file="AddMissingTimeout_QuickFix.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.AddMissingTimeout_QuickFix">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Objects" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
@@ -14,7 +14,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.errors.QuickFix_Runtime" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.CheckBackAtRoot_NonTypesystemRule" file="CheckBackAtRoot_NonTypesystemRule.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.CheckBackAtRoot_NonTypesystemRule">
     <classNode dependClassName="jetbrains.mps.errors.BaseQuickFixProvider" />
     <classNode dependClassName="jetbrains.mps.errors.IErrorReporter" />
     <classNode dependClassName="jetbrains.mps.errors.messageTargets.MessageTarget" />
@@ -28,7 +28,7 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.CheckDuplicateNumber_NonTypesystemRule" file="CheckDuplicateNumber_NonTypesystemRule.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.CheckDuplicateNumber_NonTypesystemRule">
     <classNode dependClassName="java.util.Objects" />
     <classNode dependClassName="jetbrains.mps.errors.BaseQuickFixProvider" />
     <classNode dependClassName="jetbrains.mps.errors.IErrorReporter" />
@@ -46,7 +46,7 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.CheckEmptyACtivity_NonTypesystemRule" file="CheckEmptyACtivity_NonTypesystemRule.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.CheckEmptyACtivity_NonTypesystemRule">
     <classNode dependClassName="jetbrains.mps.errors.IErrorReporter" />
     <classNode dependClassName="jetbrains.mps.errors.messageTargets.MessageTarget" />
     <classNode dependClassName="jetbrains.mps.errors.messageTargets.NodeMessageTarget" />
@@ -61,7 +61,7 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.CheckEmptyMenu_NonTypesystemRule" file="CheckEmptyMenu_NonTypesystemRule.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.CheckEmptyMenu_NonTypesystemRule">
     <classNode dependClassName="jetbrains.mps.errors.BaseQuickFixProvider" />
     <classNode dependClassName="jetbrains.mps.errors.IErrorReporter" />
     <classNode dependClassName="jetbrains.mps.errors.messageTargets.MessageTarget" />
@@ -78,7 +78,7 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.CheckEventImplemented_NonTypesystemRule" file="CheckEventImplemented_NonTypesystemRule.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.CheckEventImplemented_NonTypesystemRule">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Objects" />
     <classNode dependClassName="jetbrains.mps.errors.BaseQuickFixProvider" />
@@ -98,7 +98,7 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.CheckMultipleActivitiesOneEvent_NonTypesystemRule" file="CheckMultipleActivitiesOneEvent_NonTypesystemRule.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.CheckMultipleActivitiesOneEvent_NonTypesystemRule">
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.util.Objects" />
     <classNode dependClassName="jetbrains.mps.errors.BaseQuickFixProvider" />
@@ -117,7 +117,7 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.CheckPhoneButtons_NonTypesystemRule" file="CheckPhoneButtons_NonTypesystemRule.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.CheckPhoneButtons_NonTypesystemRule">
     <classNode dependClassName="java.util.Objects" />
     <classNode dependClassName="jetbrains.mps.errors.BaseQuickFixProvider" />
     <classNode dependClassName="jetbrains.mps.errors.IErrorReporter" />
@@ -132,7 +132,7 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.DuplicateTimeout_NonTypesystemRule" file="DuplicateTimeout_NonTypesystemRule.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.DuplicateTimeout_NonTypesystemRule">
     <classNode dependClassName="java.util.Objects" />
     <classNode dependClassName="jetbrains.mps.errors.BaseQuickFixProvider" />
     <classNode dependClassName="jetbrains.mps.errors.IErrorReporter" />
@@ -151,7 +151,7 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.EmptyWorkspace_NonTypesystemRule" file="EmptyWorkspace_NonTypesystemRule.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.EmptyWorkspace_NonTypesystemRule">
     <classNode dependClassName="jetbrains.mps.errors.BaseQuickFixProvider" />
     <classNode dependClassName="jetbrains.mps.errors.IErrorReporter" />
     <classNode dependClassName="jetbrains.mps.errors.messageTargets.MessageTarget" />
@@ -165,7 +165,7 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.InitWorkspace_QuickFix" file="InitWorkspace_QuickFix.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.InitWorkspace_QuickFix">
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
@@ -174,7 +174,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.errors.QuickFix_Runtime" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.InitiliazeMenu_QuickFix" file="InitiliazeMenu_QuickFix.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.InitiliazeMenu_QuickFix">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
@@ -186,7 +186,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.errors.QuickFix_Runtime" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.InitilizeEvent_QuickFix" file="InitilizeEvent_QuickFix.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.InitilizeEvent_QuickFix">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
@@ -198,7 +198,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.errors.QuickFix_Runtime" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.PlayBacktoFile_NonTypesystemRule" file="PlayBacktoFile_NonTypesystemRule.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.PlayBacktoFile_NonTypesystemRule">
     <classNode dependClassName="java.io.File" />
     <classNode dependClassName="java.lang.Exception" />
     <classNode dependClassName="java.lang.String" />
@@ -218,7 +218,7 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.PlayBacktoText_NonTypesystemRule" file="PlayBacktoText_NonTypesystemRule.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.PlayBacktoText_NonTypesystemRule">
     <classNode dependClassName="java.io.File" />
     <classNode dependClassName="java.lang.Exception" />
     <classNode dependClassName="java.lang.String" />
@@ -238,14 +238,14 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.RemoveActivity_QuickFix" file="RemoveActivity_QuickFix.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.RemoveActivity_QuickFix">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.errors.QuickFix_Runtime" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.RemoveDuplicateTimeouts_QuickFix" file="RemoveDuplicateTimeouts_QuickFix.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.RemoveDuplicateTimeouts_QuickFix">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Objects" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
@@ -258,14 +258,14 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.errors.QuickFix_Runtime" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.RemoveNumber_QuickFix" file="RemoveNumber_QuickFix.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.RemoveNumber_QuickFix">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.errors.QuickFix_Runtime" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.RenameActivity_QuickFix" file="RenameActivity_QuickFix.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.RenameActivity_QuickFix">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
@@ -274,7 +274,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.errors.QuickFix_Runtime" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.ResetAction_QuickFix" file="ResetAction_QuickFix.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.ResetAction_QuickFix">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
     <classNode dependClassName="jetbrains.mps.smodel.action.SNodeFactoryOperations" />
@@ -282,7 +282,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.errors.QuickFix_Runtime" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.SetFinaltoTrue_QuickFix" file="SetFinaltoTrue_QuickFix.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.SetFinaltoTrue_QuickFix">
     <classNode dependClassName="java.lang.Exception" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
@@ -292,7 +292,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.errors.QuickFix_Runtime" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.SuggestNumber_QuickFix" file="SuggestNumber_QuickFix.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.SuggestNumber_QuickFix">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="java.util.List" />
@@ -306,7 +306,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.errors.QuickFix_Runtime" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.TimeoutIsMissing_NonTypesystemRule" file="TimeoutIsMissing_NonTypesystemRule.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.TimeoutIsMissing_NonTypesystemRule">
     <classNode dependClassName="java.util.Objects" />
     <classNode dependClassName="jetbrains.mps.errors.BaseQuickFixProvider" />
     <classNode dependClassName="jetbrains.mps.errors.IErrorReporter" />
@@ -324,7 +324,7 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.TransformPBtoFile_QuickFix" file="TransformPBtoFile_QuickFix.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.TransformPBtoFile_QuickFix">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
@@ -332,7 +332,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.errors.QuickFix_Runtime" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.TransformPBtoText_QuickFix" file="TransformPBtoText_QuickFix.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.TransformPBtoText_QuickFix">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
@@ -340,7 +340,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.errors.QuickFix_Runtime" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.TypesystemDescriptor" file="TypesystemDescriptor.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.TypesystemDescriptor">
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.typesystem.CheckBackAtRoot_NonTypesystemRule" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.typesystem.CheckDuplicateNumber_NonTypesystemRule" />
@@ -357,7 +357,7 @@
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenu.typesystem.TypoFile_NonTypesystemRule" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.BaseHelginsDescriptor" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.TypoFile_NonTypesystemRule" file="TypoFile_NonTypesystemRule.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.TypoFile_NonTypesystemRule">
     <classNode dependClassName="java.lang.Exception" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Objects" />
@@ -374,7 +374,7 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.suggestWav_QuickFix" file="suggestWav_QuickFix.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenu.typesystem.suggestWav_QuickFix">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />

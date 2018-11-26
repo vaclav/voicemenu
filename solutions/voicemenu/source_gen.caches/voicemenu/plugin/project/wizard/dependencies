@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="voicemenu.plugin.project.wizard.IconContainer" file="IconContainer.java">
+  <dependency className="voicemenu.plugin.project.wizard.IconContainer">
     <classNode dependClassName="jetbrains.mps.smodel.runtime.IconResource" />
   </dependency>
-  <dependency className="voicemenu.plugin.project.wizard.VoiceMenuProjectGroup" file="VoiceMenuProjectGroup.java">
+  <dependency className="voicemenu.plugin.project.wizard.VoiceMenuProjectGroup">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.ArrayList" />
@@ -14,7 +14,7 @@
     <classNode dependClassName="voicemenu.plugin.project.wizard.VoiceMenuProjectTemplate" />
     <classNode extendsClassName="jetbrains.mps.workbench.dialogs.project.newproject.ProjectTemplatesGroup" />
   </dependency>
-  <dependency className="voicemenu.plugin.project.wizard.VoiceMenuProjectTemplate" file="VoiceMenuProjectTemplate.java">
+  <dependency className="voicemenu.plugin.project.wizard.VoiceMenuProjectTemplate">
     <classNode dependClassName="com.intellij.openapi.application.ApplicationManager" />
     <classNode dependClassName="com.intellij.openapi.startup.StartupManager" />
     <classNode dependClassName="com.intellij.uiDesigner.core.GridConstraints" />

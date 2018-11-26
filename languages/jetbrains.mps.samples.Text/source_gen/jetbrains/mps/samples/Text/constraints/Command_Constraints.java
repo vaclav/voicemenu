@@ -4,14 +4,15 @@ package jetbrains.mps.samples.Text.constraints;
 
 import jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import org.jetbrains.mps.openapi.language.SConcept;
 
 public class Command_Constraints extends BaseConstraintsDescriptor {
   public Command_Constraints() {
     super(MetaAdapterFactory.getConcept(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x10bb6449f9c96432L, "jetbrains.mps.samples.Text.structure.Command"));
   }
 
-  public SAbstractConcept getDefaultConcreteConcept() {
+  @Override
+  public SConcept getDefaultConcreteConcept() {
     return MetaAdapterFactory.getConcept(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f7160944aL, "jetbrains.mps.samples.Text.structure.Empty");
   }
 }

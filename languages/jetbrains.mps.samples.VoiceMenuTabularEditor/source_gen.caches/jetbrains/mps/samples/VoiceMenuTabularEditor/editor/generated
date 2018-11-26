@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-dzstk7o9vo69usxcj1i19vmnoz4s1sp" />
+<product version="3" modelHash="-7nvqt76rtorhtb81ln86ymwf63btoqg">
+  <files names="Activity_tabular_Editor.java:Activity_tabular_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:Event_tabular_Editor.java:Event_tabular_EditorBuilder_a.java:Menu_tabular_Editor.java:Menu_tabular_EditorBuilder_a.java:Name_Editor.java:Name_EditorBuilder_a.java:VoiceMenuTable.java" />
+</product>
 

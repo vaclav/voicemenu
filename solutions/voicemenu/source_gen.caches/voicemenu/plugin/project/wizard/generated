@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-coxep3o4g9y7eww0j0nb22nw1h7wiye" />
+<product version="3" modelHash="26tydt7jvmpa8q2qmb2tgx8lu4kw0s7">
+  <files names="IconContainer.java:VoiceMenuProjectGroup.java:VoiceMenuProjectTemplate.java" />
+</product>
 

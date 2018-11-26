@@ -638,7 +638,7 @@
       <node id="3202371390658138920" at="45,38,46,203" concept="6" />
       <node id="7483705179651268903" at="48,36,49,225" concept="6" />
       <node id="7167187293246096860" at="50,5,51,16" concept="6" />
-      <node id="3919338464394830549" at="54,40,55,367" concept="1" />
+      <node id="3919338464394830549" at="54,40,55,186" concept="1" />
       <node id="3919338464394886048" at="59,40,60,246" concept="1" />
       <node id="4175991680186081906" at="34,0,37,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="3202371390658007103" at="44,48,47,5" concept="3" />
@@ -654,7 +654,7 @@
       <scope id="4175991680186081907" at="34,39,35,197" />
       <scope id="3202371390658007105" at="45,38,46,203" />
       <scope id="7483705179651268902" at="48,36,49,225" />
-      <scope id="3919338464394767467" at="54,40,55,367" />
+      <scope id="3919338464394767467" at="54,40,55,186" />
       <scope id="3919338464394882618" at="59,40,60,246" />
       <scope id="7167187293246041125" at="23,59,25,29" />
       <scope id="4175991680186049711" at="37,9,39,0" />
@@ -743,7 +743,7 @@
       <node id="6587365532662423829" at="136,34,137,22" concept="6" />
       <node id="8685075283343198617" at="139,40,140,170" concept="5" />
       <node id="8685075283343198617" at="144,39,145,128" concept="6" />
-      <node id="8685075283343198617" at="147,32,148,60" concept="1" />
+      <node id="8685075283343198617" at="147,153,148,60" concept="1" />
       <node id="8685075283343198617" at="148,60,149,48" concept="1" />
       <node id="8685075283343198617" at="149,48,150,54" concept="1" />
       <node id="8685075283343198617" at="150,54,151,20" concept="6" />
@@ -812,7 +812,7 @@
       <node id="6587365532662605318" at="262,34,263,22" concept="6" />
       <node id="8685075283343198617" at="265,40,266,170" concept="5" />
       <node id="8685075283343198617" at="270,39,271,128" concept="6" />
-      <node id="8685075283343198617" at="273,32,274,60" concept="1" />
+      <node id="8685075283343198617" at="273,153,274,60" concept="1" />
       <node id="8685075283343198617" at="274,60,275,48" concept="1" />
       <node id="8685075283343198617" at="275,48,276,54" concept="1" />
       <node id="8685075283343198617" at="276,54,277,20" concept="6" />
@@ -967,14 +967,14 @@
       <node id="8685075283343198617" at="421,0,425,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8685075283343198617" at="429,0,433,0" concept="0" trace="commandsSingleRoleHandler_tm0j27_i0a#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="8685075283343198617" at="68,0,73,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="8685075283343198617" at="142,72,147,32" concept="5" />
+      <node id="8685075283343198617" at="142,72,147,153" concept="5" />
       <node id="8685075283343198617" at="168,301,173,7" concept="5" />
       <node id="8685075283343198617" at="173,7,178,22" concept="3" />
       <node id="6587365532662423865" at="185,0,190,0" concept="0" trace="Inline_Builder0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="6587365532662423865" at="195,0,200,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="6587365532662428479" at="232,308,237,11" concept="5" />
       <node id="6587365532662428479" at="237,11,242,26" concept="3" />
-      <node id="8685075283343198617" at="268,72,273,32" concept="5" />
+      <node id="8685075283343198617" at="268,72,273,153" concept="5" />
       <node id="8685075283343198617" at="289,301,294,7" concept="5" />
       <node id="8685075283343198617" at="294,7,299,22" concept="3" />
       <node id="6587365532662605413" at="306,0,311,0" concept="0" trace="Inline_Builder1#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />

@@ -55,7 +55,7 @@ public final class changeToRecord_Intention extends AbstractIntentionDescriptor 
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SNodeFactoryOperations.replaceWithNewChild(node, SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, "jetbrains.mps.samples.VoiceMenu.structure.Record")));
+      SNodeFactoryOperations.replaceWithNewChild(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, "jetbrains.mps.samples.VoiceMenu.structure.Record"));
     }
     @Override
     public IntentionDescriptor getDescriptor() {

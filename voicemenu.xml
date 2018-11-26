@@ -70,9 +70,9 @@
         <build number="173.${build.number}" date="${date}" />
         <logo url="/IVR_splash.png" textcolor="002387" progressColor="234908" progressX="0" progressY="395" progressHeight="5" />
         <about url="/IVR_about.png" foreground="FFFFFF" copyrightForeground="858585" />
-        <icon size32="/IVR_icon_32.png" size16="/IVR_icon_16.png" size32opaque="/IVR_icon_32.png" size128="/IVR_icon_128.png" />
+        <icon size32="/IVR_icon_32.png" size16="/IVR_icon_16.png" size128="/IVR_icon_128.png" />
         <package code="code" />
-        <names product="voicemenu" fullname="Voice Menu" />
+        <names product="voicemenu" fullname="Voice Menu" script="voicemenu" />
         
         <welcome-screen logo-url="/logo.png" />
         
@@ -251,6 +251,7 @@
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
           <module ref="25811379-ae76-45d3-b18c-739c1ab28a1a(jetbrains.mps.editor.contextActionsTool.lang.menus.runtime)" />
@@ -289,6 +290,7 @@
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
@@ -339,6 +341,7 @@
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
           <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
@@ -370,6 +373,7 @@
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
@@ -414,6 +418,7 @@
       <module namespace="JavaVoiceMenu" type="solution" uuid="dac7f2c0-79a3-42ca-a0f2-e2cf2736613e">
         <dependencies>
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
         </dependencies>
         <classpath>
           <entry path="." />
@@ -452,6 +457,7 @@
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
           <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
@@ -484,6 +490,7 @@
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
@@ -534,6 +541,7 @@
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
           <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
@@ -565,6 +573,7 @@
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
@@ -654,6 +663,7 @@
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
           <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
@@ -687,6 +697,7 @@
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
@@ -737,6 +748,7 @@
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
           <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
@@ -768,6 +780,7 @@
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
@@ -818,6 +831,7 @@
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
           <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
@@ -875,6 +889,7 @@
           <module ref="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" />
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
           <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
@@ -942,12 +957,12 @@
   <target name="buildDependents" />
   
   <target name="fetchDependencies">
+    <mkdir dir="${build.tmp}/deps/mpsWorkbench/mps-workbench.jar" />
+    <unzip src="${artifacts.mpsStandalone}/lib/mps-workbench.jar" dest="${build.tmp}/deps/mpsWorkbench/mps-workbench.jar" />
     <mkdir dir="${build.tmp}/deps/mpsBootstrapCore/mps-platform.jar" />
     <unzip src="${artifacts.mpsStandalone}/lib/mps-platform.jar" dest="${build.tmp}/deps/mpsBootstrapCore/mps-platform.jar" />
     <mkdir dir="${build.tmp}/deps/mpsWorkbench/mps-resources.jar" />
     <unzip src="${artifacts.mpsStandalone}/lib/mps-resources.jar" dest="${build.tmp}/deps/mpsWorkbench/mps-resources.jar" />
-    <mkdir dir="${build.tmp}/deps/mpsWorkbench/mps-workbench.jar" />
-    <unzip src="${artifacts.mpsStandalone}/lib/mps-workbench.jar" dest="${build.tmp}/deps/mpsWorkbench/mps-workbench.jar" />
   </target>
   
   <target name="build" depends="assemble" />
@@ -970,9 +985,13 @@
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
     <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" createStaticRefs="true" fork="true" skipUnmodifiedModels="${mps.generator.skipUnmodifiedModels}">
-      <plugin path="${artifacts.mpsMakePlugin}/mps-make" />
+      <plugin path="${artifacts.mpsContextActionsTool}/context-tool" />
+      <plugin path="${artifacts.mpsDebuggerPlugin}/mps-debugger-api" />
+      <plugin path="${artifacts.mpsDebuggerPlugin}/mps-debugger-java" />
+      <plugin path="${artifacts.mpsDebuggerPlugin}/mps-execution-api" />
       <plugin path="${artifacts.mpsStandalone}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <plugin path="${artifacts.mpsTesting}/mps-testing" />
+      <plugin path="${build.tmp}/deps/mpsWorkbench/mps-workbench.jar/META-INF/plugin.xml/../.." />
       <library file="${artifacts.mpsContextActionsTool}/context-tool/languages/mps-context-actions-tool/jetbrains.mps.editor.contextActionsTool.lang.menus.jar" />
       <library file="${artifacts.mpsContextActionsTool}/context-tool/languages/mps-context-actions-tool/jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.jar" />
       <library file="${artifacts.mpsContextActionsTool}/context-tool/languages/mps-context-actions-tool/jetbrains.mps.editor.contextActionsTool.pluginSolution.jar" />
@@ -986,6 +1005,7 @@
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.javadoc.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk7.jar" />
+      <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk8.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.jar" />
@@ -1032,6 +1052,7 @@
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.script.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.sharedConcepts.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
+      <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.smodel.query.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.textGen.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
@@ -1039,9 +1060,7 @@
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.util.order.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.refactoring.participant.jar" />
       <library file="${artifacts.mpsStandalone}/languages/make/jetbrains.mps.make.facet.jar" />
-      <library file="${artifacts.mpsStandalone}/languages/make/jetbrains.mps.make.reduced.jar" />
       <library file="${artifacts.mpsStandalone}/languages/make/jetbrains.mps.make.script.jar" />
-      <library file="${artifacts.mpsStandalone}/languages/make/jetbrains.mps.tool.gentest.jar" />
       <library file="${artifacts.mpsStandalone}/languages/text/jetbrains.mps.lang.text.jar" />
       <library file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
       <library file="${artifacts.mpsStandalone}/languages/workbench/jetbrains.mps.lang.plugin.standalone.jar" />
@@ -1055,9 +1074,7 @@
       <library file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
-      <library file="${artifacts.mpsStandalone}/lib/mps-stubs.jar" />
-      <library file="${artifacts.mpsStandalone}/lib/mps-test.jar" />
-      <library file="${artifacts.mpsStandalone}/lib/mps-tool.jar" />
+      <library file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-workbench.jar" />
       <library file="${artifacts.mpsStandalone}/plugins/mps-core/languages/languageDesign/jetbrains.mps.lang.editor.table.jar" />
@@ -1108,6 +1125,7 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
@@ -1149,6 +1167,7 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
@@ -1178,6 +1197,7 @@
         <path location="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToJava/source_gen" />
       </src>
       <classpath>
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <pathelement path="${build.tmp}/java/out/JavaVoiceMenu" />
         <pathelement path="${build.tmp}/java/out/TTSLibrary" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
@@ -1231,6 +1251,7 @@
         <path location="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToJava/generator/source_gen" />
       </src>
       <classpath>
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <pathelement path="${build.tmp}/java/out/JavaVoiceMenu" />
         <pathelement path="${build.tmp}/java/out/TTSLibrary" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
@@ -1275,7 +1296,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.JavaVoiceMenu" depends="java.compile.TTSLibrary">
+  <target name="java.compile.JavaVoiceMenu" depends="java.compile.TTSLibrary, fetchDependencies">
     <mkdir dir="${basedir}/solutions/JavaVoiceMenu/source_gen" />
     <mkdir dir="${build.tmp}/java/out/JavaVoiceMenu" />
     <javac destdir="${build.tmp}/java/out/JavaVoiceMenu" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -1285,6 +1306,7 @@
       </src>
       <classpath>
         <pathelement path="${build.tmp}/java/out/TTSLibrary" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <fileset file="${basedir}/solutions/TTSLibrary/lib/cmu_time_awb.jar" />
         <fileset file="${basedir}/solutions/TTSLibrary/lib/cmu_us_kal.jar" />
         <fileset file="${basedir}/solutions/TTSLibrary/lib/cmudict04.jar" />
@@ -1316,6 +1338,7 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
@@ -1356,6 +1379,7 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
@@ -1396,6 +1420,7 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
@@ -1435,6 +1460,7 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
@@ -1496,6 +1522,7 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
@@ -1536,6 +1563,7 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
@@ -1576,6 +1604,7 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
@@ -1626,6 +1655,7 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
@@ -1675,6 +1705,7 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
@@ -1704,6 +1735,7 @@
         <path location="${basedir}/solutions/voicemenu/source_gen" />
       </src>
       <classpath>
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <pathelement path="${build.tmp}/java/out/JavaVoiceMenu" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
@@ -1722,7 +1754,6 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenu" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tool.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />

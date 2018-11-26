@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="JavaVoiceMenu.runtime.Behaviour" file="Behaviour.java">
+  <dependency className="JavaVoiceMenu.runtime.Behaviour">
     <classNode dependClassName="JavaVoiceMenu.runtime.Event" />
     <classNode dependClassName="JavaVoiceMenu.runtime.Style" />
     <classNode dependClassName="JavaVoiceMenu.runtime.Variables" />
@@ -18,14 +18,14 @@
     <classNode dependClassName="javax.sound.sampled.AudioSystem" />
     <classNode dependClassName="javax.sound.sampled.Clip" />
   </dependency>
-  <dependency className="JavaVoiceMenu.runtime.Data" file="Data.java">
+  <dependency className="JavaVoiceMenu.runtime.Data">
     <classNode dependClassName="java.lang.String" />
   </dependency>
-  <dependency className="JavaVoiceMenu.runtime.Event" file="Event.java">
+  <dependency className="JavaVoiceMenu.runtime.Event">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.List" />
   </dependency>
-  <dependency className="JavaVoiceMenu.runtime.MacVoice" file="MacVoice.java">
+  <dependency className="JavaVoiceMenu.runtime.MacVoice">
     <classNode dependClassName="JavaVoiceMenu.runtime.Behaviour" />
     <classNode dependClassName="JavaVoiceMenu.runtime.Variables" />
     <classNode dependClassName="java.io.IOException" />
@@ -39,7 +39,7 @@
     <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.lang.Thread" />
   </dependency>
-  <dependency className="JavaVoiceMenu.runtime.Style" file="Style.java">
+  <dependency className="JavaVoiceMenu.runtime.Style">
     <classNode dependClassName="JavaVoiceMenu.runtime.Event" />
     <classNode dependClassName="JavaVoiceMenu.runtime.MacVoice" />
     <classNode dependClassName="JavaVoiceMenu.runtime.Variables" />
@@ -66,14 +66,14 @@
     <classNode dependClassName="javax.swing.border.EmptyBorder" />
     <classNode dependClassName="javax.swing.border.LineBorder" />
   </dependency>
-  <dependency className="JavaVoiceMenu.runtime.UniVoice" file="UniVoice.java">
+  <dependency className="JavaVoiceMenu.runtime.UniVoice">
     <classNode dependClassName="com.sun.speech.freetts.Voice" />
     <classNode dependClassName="com.sun.speech.freetts.VoiceManager" />
     <classNode dependClassName="java.io.IOException" />
     <classNode dependClassName="java.lang.Process" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
-  <dependency className="JavaVoiceMenu.runtime.Variables" file="Variables.java">
+  <dependency className="JavaVoiceMenu.runtime.Variables">
     <classNode dependClassName="JavaVoiceMenu.runtime.Event" />
     <classNode dependClassName="JavaVoiceMenu.runtime.MacVoice" />
     <classNode dependClassName="JavaVoiceMenu.runtime.UniVoice" />
@@ -86,11 +86,11 @@
     <classNode dependClassName="java.util.HashMap" />
     <classNode dependClassName="java.util.List" />
   </dependency>
-  <dependency className="JavaVoiceMenu.runtime.WinVoice" file="WinVoice.java">
+  <dependency className="JavaVoiceMenu.runtime.WinVoice">
     <classNode dependClassName="java.lang.Process" />
     <classNode extendsClassName="JavaVoiceMenu.runtime.UniVoice" />
   </dependency>
-  <dependency className="JavaVoiceMenu.runtime.myVoice" file="myVoice.java">
+  <dependency className="JavaVoiceMenu.runtime.myVoice">
     <classNode dependClassName="JavaVoiceMenu.runtime.Variables" />
     <classNode dependClassName="java.io.IOException" />
     <classNode dependClassName="java.lang.String" />

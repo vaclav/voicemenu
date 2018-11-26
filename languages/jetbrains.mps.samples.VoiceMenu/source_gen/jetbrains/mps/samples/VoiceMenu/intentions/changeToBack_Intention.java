@@ -55,7 +55,7 @@ public final class changeToBack_Intention extends AbstractIntentionDescriptor im
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SNodeFactoryOperations.replaceWithNewChild(node, SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acaL, "jetbrains.mps.samples.VoiceMenu.structure.Back")));
+      SNodeFactoryOperations.replaceWithNewChild(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acaL, "jetbrains.mps.samples.VoiceMenu.structure.Back"));
     }
     @Override
     public IntentionDescriptor getDescriptor() {

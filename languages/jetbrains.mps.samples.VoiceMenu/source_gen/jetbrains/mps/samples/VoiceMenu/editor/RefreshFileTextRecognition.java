@@ -4,11 +4,9 @@ package jetbrains.mps.samples.VoiceMenu.editor;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.LogManager;
-import jetbrains.mps.openapi.editor.cells.EditorCell;
+import jetbrains.mps.editor.runtime.cells.AbstractCellAction;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
-import jetbrains.mps.openapi.editor.cells.CellActionType;
-import jetbrains.mps.editor.runtime.cells.AbstractCellAction;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.io.File;
@@ -18,51 +16,87 @@ import jetbrains.mps.baseLanguage.logging.runtime.model.LoggingRuntime;
 import org.apache.log4j.Level;
 import jetbrains.mps.editor.runtime.selection.SelectionUtil;
 import jetbrains.mps.openapi.editor.selection.SelectionManager;
+import jetbrains.mps.openapi.editor.cells.EditorCell;
+import jetbrains.mps.openapi.editor.cells.CellAction;
+import jetbrains.mps.openapi.editor.cells.CellActionType;
+import java.util.Objects;
 
 public class RefreshFileTextRecognition {
   private static final Logger LOG = LogManager.getLogger(RefreshFileTextRecognition.class);
-  public static void setCellActions(EditorCell editorCell, SNode node, EditorContext context) {
-    editorCell.setAction(CellActionType.CLICK, new RefreshFileTextRecognition.RefreshFileTextRecognition_CLICK(node));
-  }
-  public static class RefreshFileTextRecognition_CLICK extends AbstractCellAction {
-    /*package*/ SNode myNode;
-    public RefreshFileTextRecognition_CLICK(SNode node) {
-      this.myNode = node;
-    }
-    public void execute(EditorContext editorContext) {
-      this.execute_internal(editorContext, this.myNode);
-    }
-    public void execute_internal(EditorContext editorContext, SNode node) {
 
-      String path = System.getProperty("user.home") + "/MPS_ASTERISK";
-
-      if (!(Files.exists(Paths.get(path)))) {
-        new File(path).mkdir();
+  /*package*/ static AbstractCellAction createAction_CLICK(final SNode node) {
+    return new AbstractCellAction() {
+      public void execute(EditorContext editorContext) {
+        this.execute_internal(editorContext, node);
       }
+      public void execute_internal(EditorContext editorContext, SNode node) {
 
-      path = System.getProperty("user.home") + "/MPS_ASTERISK";
+        String path = System.getProperty("user.home") + "/MPS_ASTERISK";
 
-      if (Files.exists(Paths.get(path))) {
-      } else {
-        new File(path).mkdir();
-      }
-
-      try {
-        File tmp = new File(path + "/" + SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")));
-        if (tmp.isFile()) {
-          SPropertyOperations.assign(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile"), "" + (true));
-          LoggingRuntime.logMsgView(Level.DEBUG, "Found -> File", RefreshFileTextRecognition.class, null, null);
-
-        } else {
-          SPropertyOperations.assign(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile"), "" + (false));
-          LoggingRuntime.logMsgView(Level.DEBUG, "Not Found -> Text", RefreshFileTextRecognition.class, null, null);
-
+        if (!(Files.exists(Paths.get(path)))) {
+          new File(path).mkdir();
         }
-      } catch (Exception e) {
-        SPropertyOperations.assign(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile"), "" + (false));
+
+        path = System.getProperty("user.home") + "/MPS_ASTERISK";
+
+        if (Files.exists(Paths.get(path))) {
+        } else {
+          new File(path).mkdir();
+        }
+
+        try {
+          File tmp = new File(path + "/" + SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")));
+          if (tmp.isFile()) {
+            SPropertyOperations.assign(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile"), true);
+            LoggingRuntime.logMsgView(Level.DEBUG, "Found -> File", RefreshFileTextRecognition.class, null, null);
+
+          } else {
+            SPropertyOperations.assign(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile"), false);
+            LoggingRuntime.logMsgView(Level.DEBUG, "Not Found -> Text", RefreshFileTextRecognition.class, null, null);
+
+          }
+        } catch (Exception e) {
+          SPropertyOperations.assign(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile"), false);
+        }
+
+        SelectionUtil.selectCell(editorContext, node, SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
       }
 
-      SelectionUtil.selectCell(editorContext, node, SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
+    };
+  }
+
+  public static void setCellActions(EditorCell editorCell, SNode node, EditorContext context) {
+    CellAction originalDelete = editorCell.getAction(CellActionType.DELETE);
+    CellAction originalBackspace = editorCell.getAction(CellActionType.BACKSPACE);
+
+    // set actions that were actually defined 
+    setDefinedCellActions(editorCell, node, context);
+
+    // If we set a DELETE action but no BACKSPACE action, 
+    // use the DELETE action for BACKSPACE as well. 
+    CellAction deleteAction = editorCell.getAction(CellActionType.DELETE);
+    CellAction backspaceAction = editorCell.getAction(CellActionType.BACKSPACE);
+    if (deleteAction != originalDelete && backspaceAction == originalBackspace) {
+      editorCell.setAction(CellActionType.BACKSPACE, deleteAction);
+    }
+  }
+
+  public static void setDefinedCellActions(EditorCell editorCell, SNode node, EditorContext context) {
+
+    // set cell actions from all imported action maps 
+
+    // set cell actions defined directly in this action map 
+    editorCell.setAction(CellActionType.CLICK, createAction_CLICK(node));
+
+  }
+
+  public static void setDefinedCellActionsOfType(EditorCell editorCell, SNode node, EditorContext context, CellActionType actionType) {
+
+    // set cell action(s) of the given type from imported action maps 
+
+    // set cell action of the given type defined directly in this action map 
+    if (Objects.equals(actionType, CellActionType.CLICK)) {
+      editorCell.setAction(actionType, createAction_CLICK(node));
     }
   }
 }

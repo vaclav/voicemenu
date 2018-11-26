@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="jetbrains.mps.samples.VoiceMenuTabularEditor.editor.Activity_tabular_Editor" file="Activity_tabular_Editor.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenuTabularEditor.editor.Activity_tabular_Editor">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Arrays" />
@@ -12,7 +12,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenuTabularEditor.editor.Activity_tabular_EditorBuilder_a" file="Activity_tabular_EditorBuilder_a.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenuTabularEditor.editor.Activity_tabular_EditorBuilder_a">
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -70,7 +70,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenuTabularEditor.editor.EditorAspectDescriptorImpl" file="EditorAspectDescriptorImpl.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenuTabularEditor.editor.EditorAspectDescriptorImpl">
     <classNode dependClassName="java.util.Collection" />
     <classNode dependClassName="java.util.Collections" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.ConceptSwitchIndex" />
@@ -85,7 +85,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.EditorAspectDescriptorBase" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenuTabularEditor.editor.Event_tabular_Editor" file="Event_tabular_Editor.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenuTabularEditor.editor.Event_tabular_Editor">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Arrays" />
@@ -97,7 +97,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenuTabularEditor.editor.Event_tabular_EditorBuilder_a" file="Event_tabular_EditorBuilder_a.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenuTabularEditor.editor.Event_tabular_EditorBuilder_a">
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -142,7 +142,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenuTabularEditor.editor.Menu_tabular_Editor" file="Menu_tabular_Editor.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenuTabularEditor.editor.Menu_tabular_Editor">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Arrays" />
@@ -154,7 +154,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenuTabularEditor.editor.Menu_tabular_EditorBuilder_a" file="Menu_tabular_EditorBuilder_a.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenuTabularEditor.editor.Menu_tabular_EditorBuilder_a">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
@@ -188,14 +188,14 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenuTabularEditor.editor.Name_Editor" file="Name_Editor.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenuTabularEditor.editor.Name_Editor">
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenuTabularEditor.editor.Name_EditorBuilder_a" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenuTabularEditor.editor.Name_EditorBuilder_a" file="Name_EditorBuilder_a.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenuTabularEditor.editor.Name_EditorBuilder_a">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
@@ -215,7 +215,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenuTabularEditor.editor.VoiceMenuTable" file="VoiceMenuTable.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenuTabularEditor.editor.VoiceMenuTable">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.Objects" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />

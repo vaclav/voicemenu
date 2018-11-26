@@ -155,7 +155,7 @@ public class Empty_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SNodeOperations.replaceWithAnother(_context.getNode(), SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(myParameterObject), _context.getNode()));
+          SNodeOperations.replaceWithAnother(_context.getNode(), SNodeFactoryOperations.createNewNode(myParameterObject, _context.getNode()));
         }
 
 

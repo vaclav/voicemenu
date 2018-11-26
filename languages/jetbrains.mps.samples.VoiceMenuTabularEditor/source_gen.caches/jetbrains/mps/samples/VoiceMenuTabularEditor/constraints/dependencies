@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="jetbrains.mps.samples.VoiceMenuTabularEditor.constraints.ConstraintsAspectDescriptor" file="ConstraintsAspectDescriptor.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenuTabularEditor.constraints.ConstraintsAspectDescriptor">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintsDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />

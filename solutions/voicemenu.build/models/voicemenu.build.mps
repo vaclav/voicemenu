@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="5" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
     <use id="d5033cee-f632-44b6-b308-89d4fbde34ff" name="jetbrains.mps.build.startup" version="0" />
   </languages>
   <imports>
@@ -143,7 +143,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -179,10 +179,12 @@
       </concept>
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
+        <child id="3570488090019868128" name="packagingType" index="pUk7w" />
       </concept>
       <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
         <reference id="6592112598314499066" name="target" index="m$_y1" />
       </concept>
+      <concept id="3570488090019868065" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_AutoPluginLayoutType" flags="ng" index="pUk6x" />
       <concept id="1500819558095907805" name="jetbrains.mps.build.mps.structure.BuildMps_Group" flags="ng" index="2G$12M">
         <child id="1500819558095907806" name="modules" index="2G$12L" />
       </concept>
@@ -212,14 +214,14 @@
         <child id="6845119683729294884" name="progressColor" index="27hGoL" />
         <child id="7962467864632399185" name="progressX" index="2gocG4" />
         <child id="7962467864633062782" name="progressHeight" index="2gqIGF" />
+        <child id="922958177840117051" name="script" index="2gvbiD" />
         <child id="6108265972537182997" name="aboutScreen" index="2EqU2s" />
         <child id="6108265972537182996" name="splashScreen" index="2EqU2t" />
         <child id="6108265972537229337" name="buildNumber" index="2EteIg" />
         <child id="6108265972537229339" name="icon16" index="2EteIi" />
         <child id="6108265972537229338" name="icon32" index="2EteIj" />
-        <child id="6108265972537229340" name="icon32opaque" index="2EteIl" />
         <child id="6108265972537335245" name="updateWebsite" index="2Etnp4" />
-        <child id="6108265972537372847" name="shortName" index="2EtHGA" />
+        <child id="6108265972537372847" name="product" index="2EtHGA" />
         <child id="6108265972537372848" name="fullName" index="2EtHGT" />
         <child id="8795525031433238889" name="textColor" index="HFo83" />
         <child id="781140262677914381" name="company" index="IuKBz" />
@@ -331,14 +333,6 @@
           <ref role="3Mxwex" node="5ruKdSwyeri" resolve="date" />
         </node>
       </node>
-      <node concept="55IIr" id="5ruKdSwyerO" role="2EteIl">
-        <node concept="2Ry0Ak" id="5ruKdSwyerP" role="iGT6I">
-          <property role="2Ry0Am" value="icons" />
-          <node concept="2Ry0Ak" id="3w0kbvTSKS" role="2Ry0An">
-            <property role="2Ry0Am" value="IVR_icon_32.png" />
-          </node>
-        </node>
-      </node>
       <node concept="55IIr" id="5ruKdSwyerR" role="2EqU2t">
         <node concept="2Ry0Ak" id="5ruKdSwyerS" role="iGT6I">
           <property role="2Ry0Am" value="icons" />
@@ -420,6 +414,11 @@
           <node concept="3Mxwew" id="6Ggq6U19z7Q" role="3MwsjC">
             <property role="3MwjfP" value="http://www.jetbrains.com/mps/download/" />
           </node>
+        </node>
+      </node>
+      <node concept="3_J27D" id="67vomfiQGJX" role="2gvbiD">
+        <node concept="3Mxwew" id="67vomfiQGJY" role="3MwsjC">
+          <property role="3MwjfP" value="voicemenu" />
         </node>
       </node>
     </node>
@@ -922,6 +921,7 @@
               </node>
             </node>
           </node>
+          <node concept="pUk6x" id="67vomfiQGJV" role="pUk7w" />
         </node>
         <node concept="3_J27D" id="5ruKdSwyety" role="Nbhlr">
           <node concept="3Mxwew" id="5ruKdSwyetz" role="3MwsjC">

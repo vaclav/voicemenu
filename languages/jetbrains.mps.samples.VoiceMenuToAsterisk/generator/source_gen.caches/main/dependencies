@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="main.QueriesGenerated" file="QueriesGenerated.java">
+  <dependency className="main.QueriesGenerated">
     <classNode dependClassName="com.sun.speech.freetts.Voice" />
     <classNode dependClassName="com.sun.speech.freetts.VoiceManager" />
     <classNode dependClassName="com.sun.speech.freetts.audio.AudioPlayer" />

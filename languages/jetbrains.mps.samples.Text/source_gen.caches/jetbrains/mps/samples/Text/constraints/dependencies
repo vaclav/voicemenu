@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="jetbrains.mps.samples.Text.constraints.Command_Constraints" file="Command_Constraints.java">
+  <dependency className="jetbrains.mps.samples.Text.constraints.Command_Constraints">
+    <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SConcept" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.Text.constraints.ConstraintsAspectDescriptor" file="ConstraintsAspectDescriptor.java">
+  <dependency className="jetbrains.mps.samples.Text.constraints.ConstraintsAspectDescriptor">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.ConceptSwitchIndex" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder" />

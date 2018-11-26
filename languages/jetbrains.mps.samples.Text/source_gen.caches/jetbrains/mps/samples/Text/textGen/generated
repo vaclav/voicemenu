@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="b548ojir8u2c2uug8jf8a0fvtjqw81r" />
+<product version="3" modelHash="b548ojir8u2c2uug8jf8a0fvtjqw81r">
+  <files names="Body_TextGen.java:Comment_TextGen.java:Context_TextGen.java:Empty_TextGen.java:Extend_TextGen.java:GoTo_TextGen.java:PlainText_TextGen.java:Same_TextGen.java:TextGenAspectDescriptor.java:WorkSpace_TextGen.java:general1arg_TextGen.java:general2args_TextGen.java" />
+</product>
 

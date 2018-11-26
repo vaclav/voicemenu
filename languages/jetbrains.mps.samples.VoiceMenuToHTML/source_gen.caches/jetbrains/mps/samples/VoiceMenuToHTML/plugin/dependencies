@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="jetbrains.mps.samples.VoiceMenuToHTML.plugin.FacetAspectDescriptor" file="FacetAspectDescriptor.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenuToHTML.plugin.FacetAspectDescriptor">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.make.facet.IFacetManifest" />
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenuToHTML.plugin.FacetManifest" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.MakeAspectDescriptor" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenuToHTML.plugin.FacetManifest" file="FacetManifest.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenuToHTML.plugin.FacetManifest">
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="java.util.List" />
@@ -16,7 +16,7 @@
     <classNode dependClassName="jetbrains.mps.samples.VoiceMenuToHTML.plugin.RenameXmlToHtml_Facet" />
     <classNode extendsClassName="jetbrains.mps.make.facet.IFacetManifest" />
   </dependency>
-  <dependency className="jetbrains.mps.samples.VoiceMenuToHTML.plugin.RenameXmlToHtml_Facet" file="RenameXmlToHtml_Facet.java">
+  <dependency className="jetbrains.mps.samples.VoiceMenuToHTML.plugin.RenameXmlToHtml_Facet">
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Override" />

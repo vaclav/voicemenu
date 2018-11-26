@@ -16,6 +16,6 @@ public class ResetAction_QuickFix extends QuickFix_Runtime {
     return "Reset Action";
   }
   public void execute(SNode node) {
-    SNodeFactoryOperations.replaceWithNewChild(node, SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9863dL, "jetbrains.mps.samples.VoiceMenu.structure.Command")));
+    SNodeFactoryOperations.replaceWithNewChild(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9863dL, "jetbrains.mps.samples.VoiceMenu.structure.Command"));
   }
 }
