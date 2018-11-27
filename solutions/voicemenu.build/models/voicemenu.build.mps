@@ -1973,8 +1973,8 @@
                         <property role="2Ry0Am" value="voicemenu" />
                         <node concept="2Ry0Ak" id="27IwjAPlhy4" role="2Ry0An">
                           <property role="2Ry0Am" value="build" />
-                          <node concept="2Ry0Ak" id="27IwjAPlhy9" role="2Ry0An">
-                            <property role="2Ry0Am" value="mps.sh" />
+                          <node concept="2Ry0Ak" id="31XVCsFO3bu" role="2Ry0An">
+                            <property role="2Ry0Am" value="voicemenu.sh" />
                           </node>
                         </node>
                       </node>
@@ -2433,8 +2433,8 @@
                           <property role="2Ry0Am" value="voicemenu" />
                           <node concept="2Ry0Ak" id="27IwjAPmqmK" role="2Ry0An">
                             <property role="2Ry0Am" value="build" />
-                            <node concept="2Ry0Ak" id="27IwjAPmqmL" role="2Ry0An">
-                              <property role="2Ry0Am" value="mps.sh" />
+                            <node concept="2Ry0Ak" id="31XVCsFO3bw" role="2Ry0An">
+                              <property role="2Ry0Am" value="voicemenu.sh" />
                             </node>
                           </node>
                         </node>
