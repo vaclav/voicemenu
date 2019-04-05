@@ -165,6 +165,7 @@ public class Action_TransformationMenu extends TransformationMenuBase {
         public EditorMenuTraceInfo getTraceInfo() {
           return myEditorMenuTraceInfo;
         }
+
       }
 
     }

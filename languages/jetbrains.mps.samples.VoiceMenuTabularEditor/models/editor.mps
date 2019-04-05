@@ -416,10 +416,10 @@
                       <node concept="2OqwBi" id="3RP3wB7Bvox" role="3uHU7B">
                         <node concept="2YIFZM" id="3RP3wB7Bvoy" role="2Oq$k0">
                           <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
-                          <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                          <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
                         </node>
                         <node concept="liA8E" id="3RP3wB7Bvoz" role="2OqNvi">
-                          <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                          <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                         </node>
                       </node>
                       <node concept="3cmrfG" id="3RP3wB7Bvo$" role="3uHU7w">
@@ -764,7 +764,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="3BO6$VauTcX" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+                  <ref role="37wK5l" to="33ny:~List.size()" resolve="size" />
                 </node>
               </node>
             </node>
@@ -821,7 +821,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="6dQXHUGC43_" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+                <ref role="37wK5l" to="33ny:~List.size()" resolve="size" />
               </node>
             </node>
           </node>
@@ -1296,10 +1296,10 @@
                       <node concept="2OqwBi" id="3RP3wB7uYnP" role="3uHU7B">
                         <node concept="2YIFZM" id="3RP3wB7uYnQ" role="2Oq$k0">
                           <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
-                          <ref role="37wK5l" to="exr9:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
+                          <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
                         </node>
                         <node concept="liA8E" id="3RP3wB7uYnR" role="2OqNvi">
-                          <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize():int" resolve="getFontSize" />
+                          <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
                         </node>
                       </node>
                       <node concept="3cmrfG" id="3RP3wB7uYnS" role="3uHU7w">

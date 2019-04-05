@@ -185,6 +185,7 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
         public EditorMenuTraceInfo getTraceInfo() {
           return myEditorMenuTraceInfo;
         }
+
       }
 
     }
@@ -253,6 +254,7 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
         public EditorMenuTraceInfo getTraceInfo() {
           return myEditorMenuTraceInfo;
         }
+
       }
 
     }
@@ -344,6 +346,7 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
         public EditorMenuTraceInfo getTraceInfo() {
           return myEditorMenuTraceInfo;
         }
+
       }
 
     }
@@ -427,6 +430,7 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
       public EditorMenuTraceInfo getTraceInfo() {
         return myEditorMenuTraceInfo;
       }
+
     }
 
   }

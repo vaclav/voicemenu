@@ -1230,7 +1230,7 @@
               <ref role="1PxDUh" to="oici:2Bi0dpyCD0T" resolve="Variables" />
             </node>
             <node concept="liA8E" id="6EKBnCR3k9n" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+              <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object)" resolve="put" />
               <node concept="Xl_RD" id="6EKBnCR3kuZ" role="37wK5m">
                 <property role="Xl_RC" value="0" />
               </node>
@@ -1249,7 +1249,7 @@
               <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="2aqfKAez3TG" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="2aqfKAez3UO" role="37wK5m">
                 <property role="Xl_RC" value="reduction rule menu" />
               </node>
@@ -1282,7 +1282,7 @@
               </node>
             </node>
             <node concept="liA8E" id="6EKBnCR2deG" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="37vLTw" id="6EKBnCR2fcX" role="37wK5m">
                 <ref role="3cqZAo" node="7sMfXwW3G2A" resolve="Home" />
                 <node concept="1ZhdrF" id="6EKBnCR2wSv" role="lGtFl">
@@ -1345,7 +1345,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="6HhgIFYkj3h" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                                  <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
                                 </node>
                               </node>
                             </node>
@@ -1372,7 +1372,7 @@
               <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="3jUOcBPzjXE" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="3jUOcBPzkLB" role="37wK5m">
                 <property role="Xl_RC" value="timeout" />
               </node>
@@ -1475,7 +1475,7 @@
               <ref role="1PxDUh" to="oici:6VbSUrc4Vua" resolve="Style" />
             </node>
             <node concept="liA8E" id="2aqfKAez9r4" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
+              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component,java.lang.Object)" resolve="add" />
               <node concept="10M0yZ" id="5mb0yBfLsef" role="37wK5m">
                 <ref role="3cqZAo" to="oici:6VbSUrc5rOj" resolve="myPanelOfButtons" />
                 <ref role="1PxDUh" to="oici:6VbSUrc4Vua" resolve="Style" />
@@ -1539,7 +1539,7 @@
                   <ref role="3cqZAo" node="2aqfKAezhdp" resolve="button" />
                 </node>
                 <node concept="liA8E" id="2aqfKAezsd9" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~AbstractButton.setActionCommand(java.lang.String):void" resolve="setActionCommand" />
+                  <ref role="37wK5l" to="dxuu:~AbstractButton.setActionCommand(java.lang.String)" resolve="setActionCommand" />
                   <node concept="2OqwBi" id="2aqfKAezsVN" role="37wK5m">
                     <node concept="2GrUjf" id="2aqfKAezspV" role="2Oq$k0">
                       <ref role="2Gs0qQ" node="2aqfKAezgiW" resolve="item" />
@@ -1557,7 +1557,7 @@
                   <ref role="3cqZAo" node="2aqfKAezhdp" resolve="button" />
                 </node>
                 <node concept="liA8E" id="2aqfKAezGMO" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
+                  <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener)" resolve="addActionListener" />
                   <node concept="37vLTw" id="2aqfKAezHaz" role="37wK5m">
                     <ref role="3cqZAo" node="2aqfKAez3wn" resolve="instance" />
                   </node>
@@ -1570,7 +1570,7 @@
                   <ref role="3cqZAo" node="2aqfKAezhdp" resolve="button" />
                 </node>
                 <node concept="liA8E" id="2aqfKAezK8j" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~JComponent.setPreferredSize(java.awt.Dimension):void" resolve="setPreferredSize" />
+                  <ref role="37wK5l" to="dxuu:~JComponent.setPreferredSize(java.awt.Dimension)" resolve="setPreferredSize" />
                   <node concept="2ShNRf" id="2aqfKAezKos" role="37wK5m">
                     <node concept="1pGfFk" id="2aqfKAezLlY" role="2ShVmc">
                       <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
@@ -1611,7 +1611,7 @@
                   <ref role="3cqZAo" node="2aqfKAezhdp" resolve="button" />
                 </node>
                 <node concept="liA8E" id="2aqfKAezRHf" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~JComponent.setBorder(javax.swing.border.Border):void" resolve="setBorder" />
+                  <ref role="37wK5l" to="dxuu:~JComponent.setBorder(javax.swing.border.Border)" resolve="setBorder" />
                   <node concept="37vLTw" id="2aqfKAezScK" role="37wK5m">
                     <ref role="3cqZAo" node="2aqfKAezMIu" resolve="border" />
                   </node>
@@ -1624,7 +1624,7 @@
                   <ref role="3cqZAo" node="2aqfKAezfPK" resolve="myPanelOfButtons" />
                 </node>
                 <node concept="liA8E" id="2aqfKAezUK9" role="2OqNvi">
-                  <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+                  <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component)" resolve="add" />
                   <node concept="37vLTw" id="2aqfKAezUV3" role="37wK5m">
                     <ref role="3cqZAo" node="2aqfKAezhdp" resolve="button" />
                   </node>
@@ -1703,7 +1703,7 @@
                           <ref role="1PxDUh" to="oici:2Bi0dpyCD0T" resolve="Variables" />
                         </node>
                         <node concept="liA8E" id="64d_H8NS776" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Thread.interrupt():void" resolve="interrupt" />
+                          <ref role="37wK5l" to="wyt6:~Thread.interrupt()" resolve="interrupt" />
                         </node>
                       </node>
                     </node>
@@ -1714,7 +1714,7 @@
                       <ref role="1PxDUh" to="oici:2Bi0dpyCD0T" resolve="Variables" />
                     </node>
                     <node concept="liA8E" id="64d_H8NS5Nz" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Thread.isAlive():boolean" resolve="isAlive" />
+                      <ref role="37wK5l" to="wyt6:~Thread.isAlive()" resolve="isAlive" />
                     </node>
                   </node>
                 </node>
@@ -1738,7 +1738,7 @@
                               <ref role="1PxDUh" to="oici:6e8rKWxzpJz" resolve="MacVoice" />
                             </node>
                             <node concept="liA8E" id="48mTguKecoO" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~Thread.interrupt():void" resolve="interrupt" />
+                              <ref role="37wK5l" to="wyt6:~Thread.interrupt()" resolve="interrupt" />
                             </node>
                           </node>
                         </node>
@@ -1749,7 +1749,7 @@
                           <ref role="1PxDUh" to="oici:6e8rKWxzpJz" resolve="MacVoice" />
                         </node>
                         <node concept="liA8E" id="48mTguKm9Rp" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Thread.isAlive():boolean" resolve="isAlive" />
+                          <ref role="37wK5l" to="wyt6:~Thread.isAlive()" resolve="isAlive" />
                         </node>
                       </node>
                     </node>
@@ -1777,7 +1777,7 @@
                         <ref role="3cqZAo" node="5mb0yBfLujR" resolve="e" />
                       </node>
                       <node concept="liA8E" id="5mb0yBfLvEe" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                       </node>
                     </node>
                   </node>
@@ -1820,7 +1820,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="5ruKdSyobRN" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                    <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
                     <node concept="Xl_RD" id="5ruKdSyocd9" role="37wK5m">
                       <property role="Xl_RC" value=" " />
                     </node>
@@ -1851,7 +1851,7 @@
             <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
           </node>
           <node concept="liA8E" id="2aqfKAezX5f" role="2OqNvi">
-            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
             <node concept="Xl_RD" id="2aqfKAezX5U" role="37wK5m">
               <property role="Xl_RC" value="activity" />
             </node>
@@ -1981,7 +1981,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="6HhgIFYgfgD" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                          <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
                           <node concept="Xl_RD" id="6HhgIFYgfCD" role="37wK5m">
                             <property role="Xl_RC" value=" " />
                           </node>
@@ -2135,7 +2135,7 @@
             <ref role="3cqZAo" to="oici:2Bi0dpyCLQo" resolve="myHashMap" />
           </node>
           <node concept="liA8E" id="6EKBnCQZyLJ" role="2OqNvi">
-            <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+            <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object)" resolve="put" />
             <node concept="Xl_RD" id="6sDFiMPgGgp" role="37wK5m">
               <property role="Xl_RC" value="path" />
               <node concept="17Uvod" id="6sDFiMPgGQo" role="lGtFl">
@@ -2233,7 +2233,7 @@
             <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
           </node>
           <node concept="liA8E" id="1CIbeTAovoq" role="2OqNvi">
-            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
             <node concept="Xl_RD" id="1CIbeTAowR9" role="37wK5m">
               <property role="Xl_RC" value="Creating Menu and/or Actions" />
             </node>
@@ -2332,7 +2332,7 @@
             </node>
           </node>
           <node concept="liA8E" id="6EKBnCQZYjv" role="2OqNvi">
-            <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+            <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
             <node concept="37vLTw" id="6EKBnCQZYjw" role="37wK5m">
               <ref role="3cqZAo" node="2aqfKAeAJ6I" resolve="tmpEvent" />
               <node concept="1ZhdrF" id="6EKBnCQZYjx" role="lGtFl">
@@ -2352,7 +2352,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="6EKBnCQZYjE" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
+                            <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
                             <node concept="Xl_RD" id="6EKBnCQZYjF" role="37wK5m">
                               <property role="Xl_RC" value=" " />
                             </node>
@@ -2418,7 +2418,7 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="6HhgIFYjSCY" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                                <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
                               </node>
                             </node>
                           </node>

@@ -15,7 +15,7 @@
       <unit at="10,0,28,0" name="jetbrains.mps.samples.VoiceMenuTabularEditor.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="15,0,57,0" name="jetbrains.mps.samples.VoiceMenuTabularEditor.structure.StructureAspectDescriptor" />
+      <unit at="15,0,63,0" name="jetbrains.mps.samples.VoiceMenuTabularEditor.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:fe9fa7fb-ca86-4df8-961a-ed1f7f791fac(jetbrains.mps.samples.VoiceMenuTabularEditor.structure)/3202371390658134146">
@@ -37,19 +37,19 @@
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="3202371390658134146" at="16,0,17,0" concept="1" trace="myConceptName" />
-      <node id="3202371390658134146" at="32,38,33,29" concept="4" />
-      <node id="3202371390658134146" at="48,62,49,183" concept="3" />
-      <node id="3202371390658134146" at="49,183,50,34" concept="0" />
-      <node id="3202371390658134146" at="50,34,51,131" concept="0" />
-      <node id="3202371390658134146" at="51,131,52,17" concept="0" />
-      <node id="3202371390658134146" at="52,17,53,20" concept="0" />
-      <node id="3202371390658134146" at="53,20,54,22" concept="4" />
-      <node id="3202371390658134146" at="48,0,56,0" concept="6" trace="createDescriptorForName#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="3202371390658134146" at="32,38,33,29" />
-      <scope id="3202371390658134146" at="48,62,54,22">
+      <node id="3202371390658134146" at="38,38,39,29" concept="4" />
+      <node id="3202371390658134146" at="54,62,55,183" concept="3" />
+      <node id="3202371390658134146" at="55,183,56,34" concept="0" />
+      <node id="3202371390658134146" at="56,34,57,131" concept="0" />
+      <node id="3202371390658134146" at="57,131,58,17" concept="0" />
+      <node id="3202371390658134146" at="58,17,59,20" concept="0" />
+      <node id="3202371390658134146" at="59,20,60,22" concept="4" />
+      <node id="3202371390658134146" at="54,0,62,0" concept="6" trace="createDescriptorForName#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3202371390658134146" at="38,38,39,29" />
+      <scope id="3202371390658134146" at="54,62,60,22">
         <var name="b" id="3202371390658134146" />
       </scope>
-      <scope id="3202371390658134146" at="48,0,56,0" />
+      <scope id="3202371390658134146" at="54,0,62,0" />
     </file>
   </root>
 </debug-info>

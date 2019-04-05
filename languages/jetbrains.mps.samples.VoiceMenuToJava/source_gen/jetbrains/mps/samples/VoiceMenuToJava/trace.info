@@ -2,7 +2,7 @@
 <debug-info version="2">
   <root>
     <file name="Language.java">
-      <unit at="20,0,68,0" name="jetbrains.mps.samples.VoiceMenuToJava.Language" />
+      <unit at="11,0,41,0" name="jetbrains.mps.samples.VoiceMenuToJava.Language" />
     </file>
   </root>
 </debug-info>

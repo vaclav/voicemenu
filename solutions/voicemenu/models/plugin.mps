@@ -105,11 +105,11 @@
           <node concept="2OqwBi" id="2EBkEvJJtjC" role="3clFbG">
             <node concept="2OqwBi" id="2EBkEvJJta9" role="2Oq$k0">
               <node concept="2YIFZM" id="2EBkEvJJt9z" role="2Oq$k0">
-                <ref role="37wK5l" to="9ti4:~Extensions.getRootArea():com.intellij.openapi.extensions.ExtensionsArea" resolve="getRootArea" />
+                <ref role="37wK5l" to="9ti4:~Extensions.getRootArea()" resolve="getRootArea" />
                 <ref role="1Pybhc" to="9ti4:~Extensions" resolve="Extensions" />
               </node>
               <node concept="liA8E" id="2EBkEvJJtbI" role="2OqNvi">
-                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName):com.intellij.openapi.extensions.ExtensionPoint" resolve="getExtensionPoint" />
+                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName)" resolve="getExtensionPoint" />
                 <node concept="10M0yZ" id="2EBkEvJJsbL" role="37wK5m">
                   <ref role="1PxDUh" to="fpme:~ProjectTemplatesGroup" resolve="ProjectTemplatesGroup" />
                   <ref role="3cqZAo" to="fpme:~ProjectTemplatesGroup.EP_NAME" resolve="EP_NAME" />
@@ -117,7 +117,7 @@
               </node>
             </node>
             <node concept="liA8E" id="2EBkEvJJtsp" role="2OqNvi">
-              <ref role="37wK5l" to="9ti4:~ExtensionPoint.registerExtension(java.lang.Object):void" resolve="registerExtension" />
+              <ref role="37wK5l" to="9ti4:~ExtensionPoint.registerExtension(java.lang.Object)" resolve="registerExtension" />
               <node concept="2OqwBi" id="2EBkEvJJvhH" role="37wK5m">
                 <node concept="2WthIp" id="2EBkEvJJvhK" role="2Oq$k0" />
                 <node concept="2BZ7hE" id="3iKYqaSkwxZ" role="2OqNvi">
@@ -137,10 +137,10 @@
             <node concept="2OqwBi" id="2EBkEvJJvrs" role="2Oq$k0">
               <node concept="2YIFZM" id="2EBkEvJJvrt" role="2Oq$k0">
                 <ref role="1Pybhc" to="9ti4:~Extensions" resolve="Extensions" />
-                <ref role="37wK5l" to="9ti4:~Extensions.getRootArea():com.intellij.openapi.extensions.ExtensionsArea" resolve="getRootArea" />
+                <ref role="37wK5l" to="9ti4:~Extensions.getRootArea()" resolve="getRootArea" />
               </node>
               <node concept="liA8E" id="2EBkEvJJvru" role="2OqNvi">
-                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName):com.intellij.openapi.extensions.ExtensionPoint" resolve="getExtensionPoint" />
+                <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName)" resolve="getExtensionPoint" />
                 <node concept="10M0yZ" id="2EBkEvJJvrv" role="37wK5m">
                   <ref role="3cqZAo" to="fpme:~ProjectTemplatesGroup.EP_NAME" resolve="EP_NAME" />
                   <ref role="1PxDUh" to="fpme:~ProjectTemplatesGroup" resolve="ProjectTemplatesGroup" />
@@ -148,7 +148,7 @@
               </node>
             </node>
             <node concept="liA8E" id="2EBkEvJJvrw" role="2OqNvi">
-              <ref role="37wK5l" to="9ti4:~ExtensionPoint.unregisterExtension(java.lang.Object):void" resolve="unregisterExtension" />
+              <ref role="37wK5l" to="9ti4:~ExtensionPoint.unregisterExtension(java.lang.Object)" resolve="unregisterExtension" />
               <node concept="2OqwBi" id="2EBkEvJJvrx" role="37wK5m">
                 <node concept="2WthIp" id="2EBkEvJJvry" role="2Oq$k0" />
                 <node concept="2BZ7hE" id="3iKYqaSkwGh" role="2OqNvi">
