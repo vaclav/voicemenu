@@ -397,7 +397,7 @@
             </node>
             <node concept="2SwGe0" id="1i_nS1dxsOL" role="33vP2m">
               <node concept="1QGGSu" id="1i_nS1dxvsn" role="2SwzYu">
-                <property role="1iqoE4" value="/home/victor/Development/voicemenu/icons/voicemenu16.png" />
+                <property role="1iqoE4" value="${module}/icons/IVR_icon_16.png" />
               </node>
             </node>
           </node>

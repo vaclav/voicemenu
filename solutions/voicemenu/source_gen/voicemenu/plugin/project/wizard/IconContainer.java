@@ -5,5 +5,5 @@ package voicemenu.plugin.project.wizard;
 import jetbrains.mps.smodel.runtime.IconResource;
 
 public class IconContainer {
-  protected static IconResource RESOURCE_a0a0g = new IconResource("voicemenu16.png", IconContainer.class);
+  protected static IconResource RESOURCE_a0a0g = new IconResource("IVR_icon_16.png", IconContainer.class);
 }
