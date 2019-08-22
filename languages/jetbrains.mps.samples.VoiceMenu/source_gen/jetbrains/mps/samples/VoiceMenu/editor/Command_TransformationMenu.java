@@ -25,19 +25,23 @@ import jetbrains.mps.openapi.editor.menus.transformation.ActionItemBase;
 import jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.SidebarActionItem;
 import jetbrains.mps.openapi.editor.menus.EditorMenuTraceInfo;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.editor.runtime.selection.SelectionUtil;
 import jetbrains.mps.openapi.editor.selection.SelectionManager;
 import jetbrains.mps.smodel.runtime.IconResource;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import java.awt.Robot;
 import java.awt.AWTException;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 import jetbrains.mps.editor.runtime.cells.CellIdManager;
+import org.jetbrains.mps.openapi.language.SConcept;
+import org.jetbrains.mps.openapi.language.SProperty;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
 
 public class Command_TransformationMenu extends TransformationMenuBase {
   private final Set<String> myLocations = SetSequence.fromSetAndArray(new HashSet<String>(), MenuLocations.CONTEXT_ACTIONS_TOOL, MenuLocations.CONTEXT_ACTIONS_TOOL, MenuLocations.CONTEXT_ACTIONS_TOOL);
@@ -63,13 +67,13 @@ public class Command_TransformationMenu extends TransformationMenuBase {
   protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts(TransformationMenuContext _context) {
     List<MenuPart<TransformationMenuItem, TransformationMenuContext>> result = new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>();
     if (ListSequence.fromListAndArray(new ArrayList<String>(), MenuLocations.CONTEXT_ACTIONS_TOOL).contains(_context.getMenuLocation())) {
-      result.add(new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a0());
+      result.add(new TMP_SubMenu_8e2zmm_a0());
     }
     if (ListSequence.fromListAndArray(new ArrayList<String>(), MenuLocations.CONTEXT_ACTIONS_TOOL).contains(_context.getMenuLocation())) {
-      result.add(new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a1());
+      result.add(new TMP_SubMenu_8e2zmm_a1());
     }
     if (ListSequence.fromListAndArray(new ArrayList<String>(), MenuLocations.CONTEXT_ACTIONS_TOOL).contains(_context.getMenuLocation())) {
-      result.add(new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a2());
+      result.add(new TMP_SubMenu_8e2zmm_a2());
     }
     return result;
   }
@@ -101,12 +105,12 @@ public class Command_TransformationMenu extends TransformationMenuBase {
 
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a0.TMP_Action_8e2zmm_a0a(), new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a0.TMP_Action_8e2zmm_b0a(), new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a0.TMP_Action_8e2zmm_c0a());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new TMP_SubMenu_8e2zmm_a0.TMP_Action_8e2zmm_a0a(), new TMP_SubMenu_8e2zmm_a0.TMP_Action_8e2zmm_b0a(), new TMP_SubMenu_8e2zmm_a0.TMP_Action_8e2zmm_c0a());
     }
     private class TMP_Action_8e2zmm_a0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        Command_TransformationMenu.TMP_SubMenu_8e2zmm_a0.TMP_Action_8e2zmm_a0a.Item item = new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a0.TMP_Action_8e2zmm_a0a.Item(context);
+        TMP_SubMenu_8e2zmm_a0.TMP_Action_8e2zmm_a0a.Item item = new TMP_SubMenu_8e2zmm_a0.TMP_Action_8e2zmm_a0a.Item(context);
         String description;
         try {
           description = "single item: " + item.getLabelText("");
@@ -136,26 +140,26 @@ public class Command_TransformationMenu extends TransformationMenuBase {
         @Nullable
         @Override
         public String getLabelText(String pattern) {
-          if (SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, "jetbrains.mps.samples.VoiceMenu.structure.DirectCall"))) {
-            if (SPropertyOperations.getBoolean(SNodeOperations.cast(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, "jetbrains.mps.samples.VoiceMenu.structure.DirectCall")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, 0x420d89797f56bce4L, "isFinal")) == true) {
+          if (SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.DirectCall$7C)) {
+            if (SPropertyOperations.getBoolean(SNodeOperations.cast(_context.getNode(), CONCEPTS.DirectCall$7C), PROPS.isFinal$sgnO) == true) {
               return "Make NonFinal";
             } else {
               return "Make Final";
             }
-          } else if (SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, "jetbrains.mps.samples.VoiceMenu.structure.GetInfo"))) {
-            if (SPropertyOperations.getBoolean(SNodeOperations.cast(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, "jetbrains.mps.samples.VoiceMenu.structure.GetInfo")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, 0x420d89797f56bd37L, "isFinal")) == true) {
+          } else if (SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.GetInfo$95)) {
+            if (SPropertyOperations.getBoolean(SNodeOperations.cast(_context.getNode(), CONCEPTS.GetInfo$95), PROPS.isFinal$sihs) == true) {
               return "Make NonFinal";
             } else {
               return "Make Final";
             }
-          } else if (SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, "jetbrains.mps.samples.VoiceMenu.structure.Other"))) {
-            if (SPropertyOperations.getBoolean(SNodeOperations.cast(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, "jetbrains.mps.samples.VoiceMenu.structure.Other")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, 0x420d89797f56bde6L, "isFinal")) == true) {
+          } else if (SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.Other$87)) {
+            if (SPropertyOperations.getBoolean(SNodeOperations.cast(_context.getNode(), CONCEPTS.Other$87), PROPS.isFinal$swjV) == true) {
               return "Make NonFinal";
             } else {
               return "Make Final";
             }
-          } else if (SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, "jetbrains.mps.samples.VoiceMenu.structure.Record"))) {
-            if (SPropertyOperations.getBoolean(SNodeOperations.cast(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, "jetbrains.mps.samples.VoiceMenu.structure.Record")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, 0x420d89797f56bd93L, "isFinal")) == true) {
+          } else if (SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.Record$69)) {
+            if (SPropertyOperations.getBoolean(SNodeOperations.cast(_context.getNode(), CONCEPTS.Record$69), PROPS.isFinal$DiZZ) == true) {
               return "Make NonFinal";
             } else {
               return "Make Final";
@@ -167,14 +171,14 @@ public class Command_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          if (SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, "jetbrains.mps.samples.VoiceMenu.structure.DirectCall"))) {
-            SPropertyOperations.assign(SNodeOperations.cast(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, "jetbrains.mps.samples.VoiceMenu.structure.DirectCall")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, 0x420d89797f56bce4L, "isFinal"), !(SPropertyOperations.getBoolean(SNodeOperations.cast(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, "jetbrains.mps.samples.VoiceMenu.structure.DirectCall")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, 0x420d89797f56bce4L, "isFinal"))));
-          } else if (SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, "jetbrains.mps.samples.VoiceMenu.structure.GetInfo"))) {
-            SPropertyOperations.assign(SNodeOperations.cast(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, "jetbrains.mps.samples.VoiceMenu.structure.GetInfo")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, 0x420d89797f56bd37L, "isFinal"), !(SPropertyOperations.getBoolean(SNodeOperations.cast(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, "jetbrains.mps.samples.VoiceMenu.structure.GetInfo")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, 0x420d89797f56bd37L, "isFinal"))));
-          } else if (SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, "jetbrains.mps.samples.VoiceMenu.structure.Other"))) {
-            SPropertyOperations.assign(SNodeOperations.cast(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, "jetbrains.mps.samples.VoiceMenu.structure.Other")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, 0x420d89797f56bde6L, "isFinal"), !(SPropertyOperations.getBoolean(SNodeOperations.cast(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, "jetbrains.mps.samples.VoiceMenu.structure.Other")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, 0x420d89797f56bde6L, "isFinal"))));
-          } else if (SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, "jetbrains.mps.samples.VoiceMenu.structure.Record"))) {
-            SPropertyOperations.assign(SNodeOperations.cast(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, "jetbrains.mps.samples.VoiceMenu.structure.Record")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, 0x420d89797f56bd93L, "isFinal"), !(SPropertyOperations.getBoolean(SNodeOperations.cast(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, "jetbrains.mps.samples.VoiceMenu.structure.Record")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, 0x420d89797f56bd93L, "isFinal"))));
+          if (SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.DirectCall$7C)) {
+            SPropertyOperations.assign(SNodeOperations.cast(_context.getNode(), CONCEPTS.DirectCall$7C), PROPS.isFinal$sgnO, !(SPropertyOperations.getBoolean(SNodeOperations.cast(_context.getNode(), CONCEPTS.DirectCall$7C), PROPS.isFinal$sgnO)));
+          } else if (SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.GetInfo$95)) {
+            SPropertyOperations.assign(SNodeOperations.cast(_context.getNode(), CONCEPTS.GetInfo$95), PROPS.isFinal$sihs, !(SPropertyOperations.getBoolean(SNodeOperations.cast(_context.getNode(), CONCEPTS.GetInfo$95), PROPS.isFinal$sihs)));
+          } else if (SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.Other$87)) {
+            SPropertyOperations.assign(SNodeOperations.cast(_context.getNode(), CONCEPTS.Other$87), PROPS.isFinal$swjV, !(SPropertyOperations.getBoolean(SNodeOperations.cast(_context.getNode(), CONCEPTS.Other$87), PROPS.isFinal$swjV)));
+          } else if (SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.Record$69)) {
+            SPropertyOperations.assign(SNodeOperations.cast(_context.getNode(), CONCEPTS.Record$69), PROPS.isFinal$DiZZ, !(SPropertyOperations.getBoolean(SNodeOperations.cast(_context.getNode(), CONCEPTS.Record$69), PROPS.isFinal$DiZZ)));
           }
           SelectionUtil.selectNode(_context.getEditorContext(), _context.getNode());
           SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
@@ -182,7 +186,7 @@ public class Command_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          if (SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, "jetbrains.mps.samples.VoiceMenu.structure.DirectCall")) || SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, "jetbrains.mps.samples.VoiceMenu.structure.GetInfo")) || SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, "jetbrains.mps.samples.VoiceMenu.structure.Other")) || SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, "jetbrains.mps.samples.VoiceMenu.structure.Record"))) {
+          if (SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.DirectCall$7C) || SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.GetInfo$95) || SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.Other$87) || SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.Record$69)) {
             return true;
           }
           return false;
@@ -191,20 +195,20 @@ public class Command_TransformationMenu extends TransformationMenuBase {
         @Override
         public IconResource getIcon() {
           boolean end = false;
-          if (SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, "jetbrains.mps.samples.VoiceMenu.structure.DirectCall"))) {
-            if (SPropertyOperations.getBoolean(SNodeOperations.cast(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, "jetbrains.mps.samples.VoiceMenu.structure.DirectCall")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, 0x420d89797f56bce4L, "isFinal")) == true) {
+          if (SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.DirectCall$7C)) {
+            if (SPropertyOperations.getBoolean(SNodeOperations.cast(_context.getNode(), CONCEPTS.DirectCall$7C), PROPS.isFinal$sgnO) == true) {
               end = true;
             }
-          } else if (SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, "jetbrains.mps.samples.VoiceMenu.structure.GetInfo"))) {
-            if (SPropertyOperations.getBoolean(SNodeOperations.cast(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, "jetbrains.mps.samples.VoiceMenu.structure.GetInfo")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, 0x420d89797f56bd37L, "isFinal")) == true) {
+          } else if (SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.GetInfo$95)) {
+            if (SPropertyOperations.getBoolean(SNodeOperations.cast(_context.getNode(), CONCEPTS.GetInfo$95), PROPS.isFinal$sihs) == true) {
               end = true;
             }
-          } else if (SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, "jetbrains.mps.samples.VoiceMenu.structure.Other"))) {
-            if (SPropertyOperations.getBoolean(SNodeOperations.cast(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, "jetbrains.mps.samples.VoiceMenu.structure.Other")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, 0x420d89797f56bde6L, "isFinal")) == true) {
+          } else if (SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.Other$87)) {
+            if (SPropertyOperations.getBoolean(SNodeOperations.cast(_context.getNode(), CONCEPTS.Other$87), PROPS.isFinal$swjV) == true) {
               end = true;
             }
-          } else if (SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, "jetbrains.mps.samples.VoiceMenu.structure.Record"))) {
-            if (SPropertyOperations.getBoolean(SNodeOperations.cast(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, "jetbrains.mps.samples.VoiceMenu.structure.Record")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, 0x420d89797f56bd93L, "isFinal")) == true) {
+          } else if (SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.Record$69)) {
+            if (SPropertyOperations.getBoolean(SNodeOperations.cast(_context.getNode(), CONCEPTS.Record$69), PROPS.isFinal$DiZZ) == true) {
               end = true;
             }
           }
@@ -232,7 +236,7 @@ public class Command_TransformationMenu extends TransformationMenuBase {
     private class TMP_Action_8e2zmm_b0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        Command_TransformationMenu.TMP_SubMenu_8e2zmm_a0.TMP_Action_8e2zmm_b0a.Item item = new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a0.TMP_Action_8e2zmm_b0a.Item(context);
+        TMP_SubMenu_8e2zmm_a0.TMP_Action_8e2zmm_b0a.Item item = new TMP_SubMenu_8e2zmm_a0.TMP_Action_8e2zmm_b0a.Item(context);
         String description;
         try {
           description = "single item: " + item.getLabelText("");
@@ -268,13 +272,13 @@ public class Command_TransformationMenu extends TransformationMenuBase {
         @Override
         public void execute(@NotNull String pattern) {
           SNode newActivity = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"));
-          SLinkOperations.setTarget(newActivity, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08d2L, "commands"), SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9c5c3L, "jetbrains.mps.samples.VoiceMenu.structure.Empty")));
-          SNodeOperations.insertNextSiblingChild(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity")), newActivity);
+          SLinkOperations.setTarget(newActivity, LINKS.commands$giUr, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9c5c3L, "jetbrains.mps.samples.VoiceMenu.structure.Empty")));
+          SNodeOperations.insertNextSiblingChild(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Activity$oQ), newActivity);
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return !(SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")));
+          return !(SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.Menu$bP));
         }
 
         @Override
@@ -298,7 +302,7 @@ public class Command_TransformationMenu extends TransformationMenuBase {
     private class TMP_Action_8e2zmm_c0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        Command_TransformationMenu.TMP_SubMenu_8e2zmm_a0.TMP_Action_8e2zmm_c0a.Item item = new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a0.TMP_Action_8e2zmm_c0a.Item(context);
+        TMP_SubMenu_8e2zmm_a0.TMP_Action_8e2zmm_c0a.Item item = new TMP_SubMenu_8e2zmm_a0.TMP_Action_8e2zmm_c0a.Item(context);
         String description;
         try {
           description = "single item: " + item.getLabelText("");
@@ -334,19 +338,19 @@ public class Command_TransformationMenu extends TransformationMenuBase {
         @Override
         public void execute(@NotNull String pattern) {
 
-          SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"))), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"))).findFirst(new IWhereFilter<SNode>() {
+          SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Activity$oQ)), CONCEPTS.Menu$bP), LINKS.events$AIPs)).findFirst(new IWhereFilter<SNode>() {
             public boolean accept(SNode it) {
-              return it == SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity")), MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event"));
+              return it == SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Activity$oQ), LINKS.event$gjCV);
             }
           }));
 
-          SNodeOperations.deleteNode(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity")));
+          SNodeOperations.deleteNode(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Activity$oQ));
 
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return !(SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")));
+          return !(SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.Menu$bP));
         }
 
         @Override
@@ -395,12 +399,12 @@ public class Command_TransformationMenu extends TransformationMenuBase {
 
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a1.TMP_Action_8e2zmm_a0b(), new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a1.TMP_Action_8e2zmm_b0b(), new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a1.TMP_Action_8e2zmm_c0b());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new TMP_SubMenu_8e2zmm_a1.TMP_Action_8e2zmm_a0b(), new TMP_SubMenu_8e2zmm_a1.TMP_Action_8e2zmm_b0b(), new TMP_SubMenu_8e2zmm_a1.TMP_Action_8e2zmm_c0b());
     }
     private class TMP_Action_8e2zmm_a0b extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        Command_TransformationMenu.TMP_SubMenu_8e2zmm_a1.TMP_Action_8e2zmm_a0b.Item item = new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a1.TMP_Action_8e2zmm_a0b.Item(context);
+        TMP_SubMenu_8e2zmm_a1.TMP_Action_8e2zmm_a0b.Item item = new TMP_SubMenu_8e2zmm_a1.TMP_Action_8e2zmm_a0b.Item(context);
         String description;
         try {
           description = "single item: " + item.getLabelText("");
@@ -475,7 +479,7 @@ public class Command_TransformationMenu extends TransformationMenuBase {
     private class TMP_Action_8e2zmm_b0b extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        Command_TransformationMenu.TMP_SubMenu_8e2zmm_a1.TMP_Action_8e2zmm_b0b.Item item = new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a1.TMP_Action_8e2zmm_b0b.Item(context);
+        TMP_SubMenu_8e2zmm_a1.TMP_Action_8e2zmm_b0b.Item item = new TMP_SubMenu_8e2zmm_a1.TMP_Action_8e2zmm_b0b.Item(context);
         String description;
         try {
           description = "single item: " + item.getLabelText("");
@@ -510,14 +514,14 @@ public class Command_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.assign(SNodeOperations.getNodeAncestor(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace"), false, false), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar"), true);
+          SPropertyOperations.assign(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), PROPS.toolbar$cda3, true);
           SelectionUtil.selectNode(_context.getEditorContext(), _context.getNode());
           SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return SPropertyOperations.getBoolean(SNodeOperations.getNodeAncestor(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace"), false, false), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar")) == false;
+          return SPropertyOperations.getBoolean(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), PROPS.toolbar$cda3) == false;
         }
 
         @Override
@@ -541,7 +545,7 @@ public class Command_TransformationMenu extends TransformationMenuBase {
     private class TMP_Action_8e2zmm_c0b extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        Command_TransformationMenu.TMP_SubMenu_8e2zmm_a1.TMP_Action_8e2zmm_c0b.Item item = new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a1.TMP_Action_8e2zmm_c0b.Item(context);
+        TMP_SubMenu_8e2zmm_a1.TMP_Action_8e2zmm_c0b.Item item = new TMP_SubMenu_8e2zmm_a1.TMP_Action_8e2zmm_c0b.Item(context);
         String description;
         try {
           description = "single item: " + item.getLabelText("");
@@ -576,14 +580,14 @@ public class Command_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.assign(SNodeOperations.getNodeAncestor(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace"), false, false), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar"), false);
+          SPropertyOperations.assign(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), PROPS.toolbar$cda3, false);
           SelectionUtil.selectNode(_context.getEditorContext(), _context.getNode());
           SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return SPropertyOperations.getBoolean(SNodeOperations.getNodeAncestor(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace"), false, false), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar")) == true;
+          return SPropertyOperations.getBoolean(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), PROPS.toolbar$cda3) == true;
         }
 
         @Override
@@ -632,12 +636,12 @@ public class Command_TransformationMenu extends TransformationMenuBase {
 
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_a0c(), new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_b0c(), new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_c0c(), new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_d0c(), new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_e0c(), new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_f0c(), new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_g0c(), new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_h0c());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_a0c(), new TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_b0c(), new TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_c0c(), new TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_d0c(), new TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_e0c(), new TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_f0c(), new TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_g0c(), new TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_h0c());
     }
     private class TMP_Action_8e2zmm_a0c extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        Command_TransformationMenu.TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_a0c.Item item = new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_a0c.Item(context);
+        TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_a0c.Item item = new TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_a0c.Item(context);
         String description;
         try {
           description = "single item: " + item.getLabelText("");
@@ -672,12 +676,12 @@ public class Command_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SNodeFactoryOperations.replaceWithNewChild(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x6b5142eafd54f3f9L, "jetbrains.mps.samples.VoiceMenu.structure.Replay"));
+          SNodeFactoryOperations.replaceWithNewChild(_context.getNode(), CONCEPTS.Replay$qS);
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return !(SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x6b5142eafd54f3f9L, "jetbrains.mps.samples.VoiceMenu.structure.Replay"))) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace")));
+          return !(SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.Replay$qS)) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.WorkSpace$ao));
         }
 
         @Override
@@ -701,7 +705,7 @@ public class Command_TransformationMenu extends TransformationMenuBase {
     private class TMP_Action_8e2zmm_b0c extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        Command_TransformationMenu.TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_b0c.Item item = new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_b0c.Item(context);
+        TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_b0c.Item item = new TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_b0c.Item(context);
         String description;
         try {
           description = "single item: " + item.getLabelText("");
@@ -736,12 +740,12 @@ public class Command_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SNodeFactoryOperations.replaceWithNewChild(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16dbL, "jetbrains.mps.samples.VoiceMenu.structure.HangUp"));
+          SNodeFactoryOperations.replaceWithNewChild(_context.getNode(), CONCEPTS.HangUp$ve);
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return !(SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16dbL, "jetbrains.mps.samples.VoiceMenu.structure.HangUp"))) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace")));
+          return !(SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.HangUp$ve)) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.WorkSpace$ao));
         }
 
         @Override
@@ -765,7 +769,7 @@ public class Command_TransformationMenu extends TransformationMenuBase {
     private class TMP_Action_8e2zmm_c0c extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        Command_TransformationMenu.TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_c0c.Item item = new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_c0c.Item(context);
+        TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_c0c.Item item = new TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_c0c.Item(context);
         String description;
         try {
           description = "single item: " + item.getLabelText("");
@@ -800,13 +804,13 @@ public class Command_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SNode replaceWithNewInitialized = SNodeFactoryOperations.replaceWithNewChild(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, "jetbrains.mps.samples.VoiceMenu.structure.Record"));
-          SPropertyOperations.assign(replaceWithNewInitialized, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, 0x420d89797f56bd93L, "isFinal"), true);
+          SNode replaceWithNewInitialized = SNodeFactoryOperations.replaceWithNewChild(_context.getNode(), CONCEPTS.Record$69);
+          SPropertyOperations.assign(replaceWithNewInitialized, PROPS.isFinal$DiZZ, true);
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return !(SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, "jetbrains.mps.samples.VoiceMenu.structure.Record"))) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace")));
+          return !(SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.Record$69)) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.WorkSpace$ao));
         }
 
         @Override
@@ -830,7 +834,7 @@ public class Command_TransformationMenu extends TransformationMenuBase {
     private class TMP_Action_8e2zmm_d0c extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        Command_TransformationMenu.TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_d0c.Item item = new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_d0c.Item(context);
+        TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_d0c.Item item = new TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_d0c.Item(context);
         String description;
         try {
           description = "single item: " + item.getLabelText("");
@@ -865,13 +869,13 @@ public class Command_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SNode replaceWithNewInitialized = SNodeFactoryOperations.replaceWithNewChild(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, "jetbrains.mps.samples.VoiceMenu.structure.DirectCall"));
-          SPropertyOperations.assign(replaceWithNewInitialized, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, 0x420d89797f56bce4L, "isFinal"), true);
+          SNode replaceWithNewInitialized = SNodeFactoryOperations.replaceWithNewChild(_context.getNode(), CONCEPTS.DirectCall$7C);
+          SPropertyOperations.assign(replaceWithNewInitialized, PROPS.isFinal$sgnO, true);
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return !(SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, "jetbrains.mps.samples.VoiceMenu.structure.DirectCall"))) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace")));
+          return !(SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.DirectCall$7C)) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.WorkSpace$ao));
         }
 
         @Override
@@ -895,7 +899,7 @@ public class Command_TransformationMenu extends TransformationMenuBase {
     private class TMP_Action_8e2zmm_e0c extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        Command_TransformationMenu.TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_e0c.Item item = new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_e0c.Item(context);
+        TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_e0c.Item item = new TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_e0c.Item(context);
         String description;
         try {
           description = "single item: " + item.getLabelText("");
@@ -930,12 +934,12 @@ public class Command_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SNodeFactoryOperations.replaceWithNewChild(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acaL, "jetbrains.mps.samples.VoiceMenu.structure.Back"));
+          SNodeFactoryOperations.replaceWithNewChild(_context.getNode(), CONCEPTS.Back$8A);
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return !(SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acaL, "jetbrains.mps.samples.VoiceMenu.structure.Back"))) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace")));
+          return !(SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.Back$8A)) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.WorkSpace$ao));
         }
 
         @Override
@@ -959,7 +963,7 @@ public class Command_TransformationMenu extends TransformationMenuBase {
     private class TMP_Action_8e2zmm_f0c extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        Command_TransformationMenu.TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_f0c.Item item = new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_f0c.Item(context);
+        TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_f0c.Item item = new TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_f0c.Item(context);
         String description;
         try {
           description = "single item: " + item.getLabelText("");
@@ -998,17 +1002,17 @@ public class Command_TransformationMenu extends TransformationMenuBase {
           SNodeOperations.replaceWithAnother(_context.getNode(), newMenu);
           SNode newActivity = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"));
           SNode newEvent = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event"));
-          SLinkOperations.setTarget(newActivity, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event"), newEvent);
-          SPropertyOperations.assign(newEvent, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "");
-          ListSequence.fromList(SLinkOperations.getChildren(newMenu, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities"))).addElement(newActivity);
-          ListSequence.fromList(SLinkOperations.getChildren(newMenu, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"))).addElement(newEvent);
+          SLinkOperations.setTarget(newActivity, LINKS.event$gjCV, newEvent);
+          SPropertyOperations.assign(newEvent, PROPS.name$tAp1, "");
+          ListSequence.fromList(SLinkOperations.getChildren(newMenu, LINKS.activities$AJ0_)).addElement(newActivity);
+          ListSequence.fromList(SLinkOperations.getChildren(newMenu, LINKS.events$AIPs)).addElement(newEvent);
 
-          SelectionUtil.selectCell(_context.getEditorContext(), ListSequence.fromList(SLinkOperations.getChildren(newMenu, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"))).first(), "*" + CellIdManager.createPropertyId("trigger"));
+          SelectionUtil.selectCell(_context.getEditorContext(), ListSequence.fromList(SLinkOperations.getChildren(newMenu, LINKS.events$AIPs)).first(), "*" + CellIdManager.createPropertyId("trigger"));
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return !(SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu"))) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace")));
+          return !(SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.Menu$bP)) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.WorkSpace$ao));
         }
 
         @Override
@@ -1032,7 +1036,7 @@ public class Command_TransformationMenu extends TransformationMenuBase {
     private class TMP_Action_8e2zmm_g0c extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        Command_TransformationMenu.TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_g0c.Item item = new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_g0c.Item(context);
+        TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_g0c.Item item = new TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_g0c.Item(context);
         String description;
         try {
           description = "single item: " + item.getLabelText("");
@@ -1067,13 +1071,13 @@ public class Command_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SNode replaceWithNewInitialized = SNodeFactoryOperations.replaceWithNewChild(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, "jetbrains.mps.samples.VoiceMenu.structure.GetInfo"));
-          SPropertyOperations.assign(replaceWithNewInitialized, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, 0x420d89797f56bd37L, "isFinal"), true);
+          SNode replaceWithNewInitialized = SNodeFactoryOperations.replaceWithNewChild(_context.getNode(), CONCEPTS.GetInfo$95);
+          SPropertyOperations.assign(replaceWithNewInitialized, PROPS.isFinal$sihs, true);
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return !(SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, "jetbrains.mps.samples.VoiceMenu.structure.GetInfo"))) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace")));
+          return !(SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.GetInfo$95)) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.WorkSpace$ao));
         }
 
         @Override
@@ -1097,7 +1101,7 @@ public class Command_TransformationMenu extends TransformationMenuBase {
     private class TMP_Action_8e2zmm_h0c extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        Command_TransformationMenu.TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_h0c.Item item = new Command_TransformationMenu.TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_h0c.Item(context);
+        TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_h0c.Item item = new TMP_SubMenu_8e2zmm_a2.TMP_Action_8e2zmm_h0c.Item(context);
         String description;
         try {
           description = "single item: " + item.getLabelText("");
@@ -1132,13 +1136,13 @@ public class Command_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SNode replaceWithNewInitialized = SNodeFactoryOperations.replaceWithNewChild(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, "jetbrains.mps.samples.VoiceMenu.structure.Other"));
-          SPropertyOperations.assign(replaceWithNewInitialized, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, 0x420d89797f56bde6L, "isFinal"), true);
+          SNode replaceWithNewInitialized = SNodeFactoryOperations.replaceWithNewChild(_context.getNode(), CONCEPTS.Other$87);
+          SPropertyOperations.assign(replaceWithNewInitialized, PROPS.isFinal$swjV, true);
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return !(SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, "jetbrains.mps.samples.VoiceMenu.structure.Other"))) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace")));
+          return !(SNodeOperations.isInstanceOf(_context.getNode(), CONCEPTS.Other$87)) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.WorkSpace$ao));
         }
 
         @Override
@@ -1159,5 +1163,34 @@ public class Command_TransformationMenu extends TransformationMenuBase {
       }
 
     }
+  }
+
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept DirectCall$7C = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, "jetbrains.mps.samples.VoiceMenu.structure.DirectCall");
+    /*package*/ static final SConcept GetInfo$95 = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, "jetbrains.mps.samples.VoiceMenu.structure.GetInfo");
+    /*package*/ static final SConcept Other$87 = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, "jetbrains.mps.samples.VoiceMenu.structure.Other");
+    /*package*/ static final SConcept Record$69 = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, "jetbrains.mps.samples.VoiceMenu.structure.Record");
+    /*package*/ static final SConcept Activity$oQ = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity");
+    /*package*/ static final SConcept Menu$bP = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu");
+    /*package*/ static final SConcept WorkSpace$ao = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace");
+    /*package*/ static final SConcept Replay$qS = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x6b5142eafd54f3f9L, "jetbrains.mps.samples.VoiceMenu.structure.Replay");
+    /*package*/ static final SConcept HangUp$ve = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16dbL, "jetbrains.mps.samples.VoiceMenu.structure.HangUp");
+    /*package*/ static final SConcept Back$8A = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acaL, "jetbrains.mps.samples.VoiceMenu.structure.Back");
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty isFinal$sgnO = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, 0x420d89797f56bce4L, "isFinal");
+    /*package*/ static final SProperty isFinal$sihs = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, 0x420d89797f56bd37L, "isFinal");
+    /*package*/ static final SProperty isFinal$swjV = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, 0x420d89797f56bde6L, "isFinal");
+    /*package*/ static final SProperty isFinal$DiZZ = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, 0x420d89797f56bd93L, "isFinal");
+    /*package*/ static final SProperty toolbar$cda3 = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar");
+    /*package*/ static final SProperty name$tAp1 = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink commands$giUr = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08d2L, "commands");
+    /*package*/ static final SContainmentLink events$AIPs = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events");
+    /*package*/ static final SReferenceLink event$gjCV = MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event");
+    /*package*/ static final SContainmentLink activities$AJ0_ = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities");
   }
 }

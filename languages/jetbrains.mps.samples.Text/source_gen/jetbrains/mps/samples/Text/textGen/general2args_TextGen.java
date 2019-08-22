@@ -6,6 +6,7 @@ import jetbrains.mps.text.rt.TextGenDescriptorBase;
 import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class general2args_TextGen extends TextGenDescriptorBase {
@@ -13,8 +14,13 @@ public class general2args_TextGen extends TextGenDescriptorBase {
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.append("(");
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x6b5142eafd0410bdL, 0x6b5142eafd0410c0L, "value1")));
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x6b5142eafd0410bdL, 0x6b5142eafd0410c2L, "value2")));
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.value1$hXFu));
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.value2$hXQB));
     tgs.append(")");
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty value1$hXFu = MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x6b5142eafd0410bdL, 0x6b5142eafd0410c0L, "value1");
+    /*package*/ static final SProperty value2$hXQB = MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x6b5142eafd0410bdL, 0x6b5142eafd0410c2L, "value2");
   }
 }

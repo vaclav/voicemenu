@@ -2,7 +2,7 @@
 <model ref="r:fe0d12f4-f772-4145-b362-356f441ce12d(jetbrains.mps.samples.VoiceMenuTabularEditor.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="0272d3b4-4cc8-481e-9e2f-07793fbfcb41" name="jetbrains.mps.lang.editor.table" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
@@ -291,7 +291,7 @@
       </node>
       <node concept="3F0A7n" id="5HF1wNNZuqD" role="3EZMnx">
         <property role="1$x2rV" value="#" />
-        <property role="1cu_pB" value="1" />
+        <property role="1cu_pB" value="gtgu$YJ/attractsFocus" />
         <ref role="1k5W1q" to="ei2q:11pGboo2CX2" resolve="Declarations" />
         <ref role="1NtTu8" to="xehl:5HF1wNNZucg" resolve="trigger" />
         <node concept="3k4GqR" id="dcxjWHRO0W" role="3F10Kt">
@@ -1261,7 +1261,7 @@
       <node concept="3F0ifn" id="2LL6X0r6g2u" role="3EZMnx">
         <property role="3F0ifm" value="BUTTON" />
         <node concept="VechU" id="2LL6X0r6WmB" role="3F10Kt">
-          <property role="Vb096" value="black" />
+          <property role="Vb096" value="6cZGtrcKCoS/black" />
         </node>
         <node concept="VPM3Z" id="2LL6X0r7o51" role="3F10Kt">
           <property role="VOm3f" value="false" />
@@ -1319,7 +1319,7 @@
       <node concept="3F0ifn" id="2LL6X0r6g2M" role="3EZMnx">
         <property role="3F0ifm" value=" ACTIVITY" />
         <node concept="VechU" id="2LL6X0r6ZH_" role="3F10Kt">
-          <property role="Vb096" value="black" />
+          <property role="Vb096" value="6cZGtrcKCoS/black" />
         </node>
         <node concept="VPM3Z" id="2LL6X0r7o58" role="3F10Kt">
           <property role="VOm3f" value="false" />

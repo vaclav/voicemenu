@@ -13,8 +13,9 @@ import jetbrains.mps.openapi.editor.EditorContext;
 import java.util.Collections;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
+import org.jetbrains.mps.openapi.language.SProperty;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public final class ShowToolbar_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
@@ -35,7 +36,7 @@ public final class ShowToolbar_Intention extends AbstractIntentionDescriptor imp
   }
   public Collection<IntentionExecutable> instances(final SNode node, final EditorContext context) {
     if (myCachedExecutable == null) {
-      myCachedExecutable = Collections.<IntentionExecutable>singletonList(new ShowToolbar_Intention.IntentionImplementation());
+      myCachedExecutable = Collections.<IntentionExecutable>singletonList(new IntentionImplementation());
     }
     return myCachedExecutable;
   }
@@ -45,7 +46,7 @@ public final class ShowToolbar_Intention extends AbstractIntentionDescriptor imp
     @Override
     public String getDescription(final SNode node, final EditorContext editorContext) {
 
-      if (!(SPropertyOperations.getBoolean(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar")))) {
+      if (!(SPropertyOperations.getBoolean(node, PROPS.toolbar$cda3))) {
         return "Show Toolbar";
       } else {
         return "Hide Toolbar";
@@ -54,10 +55,10 @@ public final class ShowToolbar_Intention extends AbstractIntentionDescriptor imp
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
 
-      if (SPropertyOperations.getBoolean(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar"))) {
-        SPropertyOperations.assign(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar"), false);
+      if (SPropertyOperations.getBoolean(node, PROPS.toolbar$cda3)) {
+        SPropertyOperations.assign(node, PROPS.toolbar$cda3, false);
       } else {
-        SPropertyOperations.assign(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar"), true);
+        SPropertyOperations.assign(node, PROPS.toolbar$cda3, true);
       }
 
     }
@@ -65,5 +66,9 @@ public final class ShowToolbar_Intention extends AbstractIntentionDescriptor imp
     public IntentionDescriptor getDescriptor() {
       return ShowToolbar_Intention.this;
     }
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty toolbar$cda3 = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar");
   }
 }

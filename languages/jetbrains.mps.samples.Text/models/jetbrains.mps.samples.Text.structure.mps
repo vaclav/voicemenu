@@ -2,7 +2,7 @@
 <model ref="r:5e8e0652-8a9b-4dc5-a599-f2416177a2d1(jetbrains.mps.samples.Text.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -50,9 +50,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="12Vp4BTMmir" role="1TKVEi">
       <property role="IQ2ns" value="1205667594137855131" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="body" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="qBnSUx$rNF" resolve="Body" />
     </node>
     <node concept="PrWs8" id="12Vp4BTMpBx" role="PzmwI">
@@ -100,7 +100,7 @@
     <ref role="1TJDcQ" node="12Vp4BTMmgM" resolve="Command" />
     <node concept="1TJgyj" id="1eCN$XLn9QV" role="1TKVEi">
       <property role="IQ2ns" value="1416608923407654331" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="argument" />
       <ref role="20lvS9" node="1eCN$XLn9QX" resolve="Argument" />
     </node>
@@ -136,7 +136,7 @@
     <ref role="1TJDcQ" node="12Vp4BTMmgM" resolve="Command" />
     <node concept="1TJgyj" id="1eCN$XLo3ec" role="1TKVEi">
       <property role="IQ2ns" value="1416608923407889292" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="argument" />
       <ref role="20lvS9" node="1eCN$XLn9QX" resolve="Argument" />
     </node>
@@ -190,7 +190,7 @@
     <ref role="1TJDcQ" node="1eCN$XLn9QX" resolve="Argument" />
     <node concept="1TJgyj" id="qBnSUxCNB_" role="1TKVEi">
       <property role="IQ2ns" value="479456951540070885" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="reference" />
       <ref role="20lvS9" node="qBnSUxCIp9" resolve="ContextReference" />
     </node>
@@ -206,9 +206,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="qBnSUx$rNG" role="1TKVEi">
       <property role="IQ2ns" value="479456951538924780" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="Commands" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="12Vp4BTMmgM" resolve="Command" />
     </node>
   </node>
@@ -218,9 +218,8 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="qBnSUxCIpa" role="1TKVEi">
       <property role="IQ2ns" value="479456951540049482" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="context" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="1eCN$XLn9Px" resolve="Context" />
     </node>
   </node>

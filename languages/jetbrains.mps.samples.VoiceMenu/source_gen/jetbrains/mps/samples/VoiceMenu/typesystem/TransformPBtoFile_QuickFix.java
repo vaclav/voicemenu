@@ -6,6 +6,7 @@ import jetbrains.mps.errors.QuickFix_Runtime;
 import jetbrains.mps.smodel.SNodePointer;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class TransformPBtoFile_QuickFix extends QuickFix_Runtime {
@@ -16,6 +17,10 @@ public class TransformPBtoFile_QuickFix extends QuickFix_Runtime {
     return "Set as File";
   }
   public void execute(SNode node) {
-    SPropertyOperations.assign(((SNode) TransformPBtoFile_QuickFix.this.getField("activity")[0]), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile"), true);
+    SPropertyOperations.assign(((SNode) TransformPBtoFile_QuickFix.this.getField("activity")[0]), PROPS.PBisFile$hBw1, true);
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty PBisFile$hBw1 = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile");
   }
 }

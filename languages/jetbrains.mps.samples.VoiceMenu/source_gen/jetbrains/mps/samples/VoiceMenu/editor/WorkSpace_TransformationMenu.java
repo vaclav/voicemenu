@@ -25,7 +25,6 @@ import jetbrains.mps.openapi.editor.menus.transformation.ActionItemBase;
 import jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.SidebarActionItem;
 import jetbrains.mps.openapi.editor.menus.EditorMenuTraceInfo;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import java.util.Objects;
 import jetbrains.mps.smodel.runtime.IconResource;
 import jetbrains.mps.editor.runtime.selection.SelectionUtil;
@@ -33,6 +32,8 @@ import jetbrains.mps.openapi.editor.selection.SelectionManager;
 import java.awt.Robot;
 import java.awt.AWTException;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
+import org.jetbrains.mps.openapi.language.SProperty;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class WorkSpace_TransformationMenu extends TransformationMenuBase {
   private final Set<String> myLocations = SetSequence.fromSetAndArray(new HashSet<String>(), MenuLocations.CONTEXT_ACTIONS_TOOL);
@@ -58,9 +59,9 @@ public class WorkSpace_TransformationMenu extends TransformationMenuBase {
   protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts(TransformationMenuContext _context) {
     List<MenuPart<TransformationMenuItem, TransformationMenuContext>> result = new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>();
     if (ListSequence.fromListAndArray(new ArrayList<String>(), MenuLocations.CONTEXT_ACTIONS_TOOL).contains(_context.getMenuLocation())) {
-      result.add(new WorkSpace_TransformationMenu.TMP_SubMenu_tva3ah_a0());
-      result.add(new WorkSpace_TransformationMenu.TMP_SubMenu_tva3ah_b0());
-      result.add(new WorkSpace_TransformationMenu.TMP_SubMenu_tva3ah_c0());
+      result.add(new TMP_SubMenu_tva3ah_a0());
+      result.add(new TMP_SubMenu_tva3ah_b0());
+      result.add(new TMP_SubMenu_tva3ah_c0());
     }
     return result;
   }
@@ -92,12 +93,12 @@ public class WorkSpace_TransformationMenu extends TransformationMenuBase {
 
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new WorkSpace_TransformationMenu.TMP_SubMenu_tva3ah_a0.TMP_Action_tva3ah_a0a(), new WorkSpace_TransformationMenu.TMP_SubMenu_tva3ah_a0.TMP_Action_tva3ah_b0a());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new TMP_SubMenu_tva3ah_a0.TMP_Action_tva3ah_a0a(), new TMP_SubMenu_tva3ah_a0.TMP_Action_tva3ah_b0a());
     }
     private class TMP_Action_tva3ah_a0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        WorkSpace_TransformationMenu.TMP_SubMenu_tva3ah_a0.TMP_Action_tva3ah_a0a.Item item = new WorkSpace_TransformationMenu.TMP_SubMenu_tva3ah_a0.TMP_Action_tva3ah_a0a.Item(context);
+        TMP_SubMenu_tva3ah_a0.TMP_Action_tva3ah_a0a.Item item = new TMP_SubMenu_tva3ah_a0.TMP_Action_tva3ah_a0a.Item(context);
         String description;
         try {
           description = "single item: " + item.getLabelText("");
@@ -133,8 +134,8 @@ public class WorkSpace_TransformationMenu extends TransformationMenuBase {
         @Override
         public void execute(@NotNull String pattern) {
 
-          String toUpperCase = SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).toUpperCase();
-          SPropertyOperations.assign(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), toUpperCase);
+          String toUpperCase = SPropertyOperations.getString(_context.getNode(), PROPS.name$tAp1).toUpperCase();
+          SPropertyOperations.assign(_context.getNode(), PROPS.name$tAp1, toUpperCase);
         }
 
         @Override
@@ -163,7 +164,7 @@ public class WorkSpace_TransformationMenu extends TransformationMenuBase {
     private class TMP_Action_tva3ah_b0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        WorkSpace_TransformationMenu.TMP_SubMenu_tva3ah_a0.TMP_Action_tva3ah_b0a.Item item = new WorkSpace_TransformationMenu.TMP_SubMenu_tva3ah_a0.TMP_Action_tva3ah_b0a.Item(context);
+        TMP_SubMenu_tva3ah_a0.TMP_Action_tva3ah_b0a.Item item = new TMP_SubMenu_tva3ah_a0.TMP_Action_tva3ah_b0a.Item(context);
         String description;
         try {
           description = "single item: " + item.getLabelText("");
@@ -198,7 +199,7 @@ public class WorkSpace_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.assign(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).toLowerCase());
+          SPropertyOperations.assign(_context.getNode(), PROPS.name$tAp1, SPropertyOperations.getString(_context.getNode(), PROPS.name$tAp1).toLowerCase());
         }
 
         @Override
@@ -252,12 +253,12 @@ public class WorkSpace_TransformationMenu extends TransformationMenuBase {
 
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new WorkSpace_TransformationMenu.TMP_SubMenu_tva3ah_b0.TMP_Action_tva3ah_a1a(), new WorkSpace_TransformationMenu.TMP_SubMenu_tva3ah_b0.TMP_Action_tva3ah_b1a());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new TMP_SubMenu_tva3ah_b0.TMP_Action_tva3ah_a1a(), new TMP_SubMenu_tva3ah_b0.TMP_Action_tva3ah_b1a());
     }
     private class TMP_Action_tva3ah_a1a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        WorkSpace_TransformationMenu.TMP_SubMenu_tva3ah_b0.TMP_Action_tva3ah_a1a.Item item = new WorkSpace_TransformationMenu.TMP_SubMenu_tva3ah_b0.TMP_Action_tva3ah_a1a.Item(context);
+        TMP_SubMenu_tva3ah_b0.TMP_Action_tva3ah_a1a.Item item = new TMP_SubMenu_tva3ah_b0.TMP_Action_tva3ah_a1a.Item(context);
         String description;
         try {
           description = "single item: " + item.getLabelText("");
@@ -292,13 +293,13 @@ public class WorkSpace_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.assign(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "info"), "");
+          SPropertyOperations.assign(_context.getNode(), PROPS.info$wU3E, "");
           SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return isNotEmptyString(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "info")));
+          return isNotEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.info$wU3E));
         }
 
         @Override
@@ -322,7 +323,7 @@ public class WorkSpace_TransformationMenu extends TransformationMenuBase {
     private class TMP_Action_tva3ah_b1a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        WorkSpace_TransformationMenu.TMP_SubMenu_tva3ah_b0.TMP_Action_tva3ah_b1a.Item item = new WorkSpace_TransformationMenu.TMP_SubMenu_tva3ah_b0.TMP_Action_tva3ah_b1a.Item(context);
+        TMP_SubMenu_tva3ah_b0.TMP_Action_tva3ah_b1a.Item item = new TMP_SubMenu_tva3ah_b0.TMP_Action_tva3ah_b1a.Item(context);
         String description;
         try {
           description = "single item: " + item.getLabelText("");
@@ -357,14 +358,14 @@ public class WorkSpace_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.assign(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "info"), "Welcome to " + SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+          SPropertyOperations.assign(_context.getNode(), PROPS.info$wU3E, "Welcome to " + SPropertyOperations.getString(_context.getNode(), PROPS.name$tAp1));
           SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
 
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return isEmptyString(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "info")));
+          return isEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.info$wU3E));
         }
 
         @Override
@@ -413,12 +414,12 @@ public class WorkSpace_TransformationMenu extends TransformationMenuBase {
 
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new WorkSpace_TransformationMenu.TMP_SubMenu_tva3ah_c0.TMP_Action_tva3ah_a2a(), new WorkSpace_TransformationMenu.TMP_SubMenu_tva3ah_c0.TMP_Action_tva3ah_b2a(), new WorkSpace_TransformationMenu.TMP_SubMenu_tva3ah_c0.TMP_Action_tva3ah_c2a());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new TMP_SubMenu_tva3ah_c0.TMP_Action_tva3ah_a2a(), new TMP_SubMenu_tva3ah_c0.TMP_Action_tva3ah_b2a(), new TMP_SubMenu_tva3ah_c0.TMP_Action_tva3ah_c2a());
     }
     private class TMP_Action_tva3ah_a2a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        WorkSpace_TransformationMenu.TMP_SubMenu_tva3ah_c0.TMP_Action_tva3ah_a2a.Item item = new WorkSpace_TransformationMenu.TMP_SubMenu_tva3ah_c0.TMP_Action_tva3ah_a2a.Item(context);
+        TMP_SubMenu_tva3ah_c0.TMP_Action_tva3ah_a2a.Item item = new TMP_SubMenu_tva3ah_c0.TMP_Action_tva3ah_a2a.Item(context);
         String description;
         try {
           description = "single item: " + item.getLabelText("");
@@ -491,7 +492,7 @@ public class WorkSpace_TransformationMenu extends TransformationMenuBase {
     private class TMP_Action_tva3ah_b2a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        WorkSpace_TransformationMenu.TMP_SubMenu_tva3ah_c0.TMP_Action_tva3ah_b2a.Item item = new WorkSpace_TransformationMenu.TMP_SubMenu_tva3ah_c0.TMP_Action_tva3ah_b2a.Item(context);
+        TMP_SubMenu_tva3ah_c0.TMP_Action_tva3ah_b2a.Item item = new TMP_SubMenu_tva3ah_c0.TMP_Action_tva3ah_b2a.Item(context);
         String description;
         try {
           description = "single item: " + item.getLabelText("");
@@ -526,14 +527,14 @@ public class WorkSpace_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.assign(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar"), true);
+          SPropertyOperations.assign(_context.getNode(), PROPS.toolbar$cda3, true);
           SelectionUtil.selectNode(_context.getEditorContext(), _context.getNode());
           SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return SPropertyOperations.getBoolean(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar")) == false;
+          return SPropertyOperations.getBoolean(_context.getNode(), PROPS.toolbar$cda3) == false;
         }
 
         @Override
@@ -557,7 +558,7 @@ public class WorkSpace_TransformationMenu extends TransformationMenuBase {
     private class TMP_Action_tva3ah_c2a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        WorkSpace_TransformationMenu.TMP_SubMenu_tva3ah_c0.TMP_Action_tva3ah_c2a.Item item = new WorkSpace_TransformationMenu.TMP_SubMenu_tva3ah_c0.TMP_Action_tva3ah_c2a.Item(context);
+        TMP_SubMenu_tva3ah_c0.TMP_Action_tva3ah_c2a.Item item = new TMP_SubMenu_tva3ah_c0.TMP_Action_tva3ah_c2a.Item(context);
         String description;
         try {
           description = "single item: " + item.getLabelText("");
@@ -592,14 +593,14 @@ public class WorkSpace_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.assign(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar"), false);
+          SPropertyOperations.assign(_context.getNode(), PROPS.toolbar$cda3, false);
           SelectionUtil.selectNode(_context.getEditorContext(), _context.getNode());
           SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return SPropertyOperations.getBoolean(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar")) == true;
+          return SPropertyOperations.getBoolean(_context.getNode(), PROPS.toolbar$cda3) == true;
         }
 
         @Override
@@ -638,5 +639,11 @@ public class WorkSpace_TransformationMenu extends TransformationMenuBase {
   }
   private static boolean isEmptyString(String str) {
     return str == null || str.length() == 0;
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty name$tAp1 = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty info$wU3E = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "info");
+    /*package*/ static final SProperty toolbar$cda3 = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar");
   }
 }

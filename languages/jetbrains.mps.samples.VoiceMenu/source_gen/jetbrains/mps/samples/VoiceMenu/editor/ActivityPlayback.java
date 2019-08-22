@@ -11,12 +11,13 @@ import jetbrains.mps.baseLanguage.logging.runtime.model.LoggingRuntime;
 import org.apache.log4j.Level;
 import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.editor.runtime.selection.SelectionUtil;
 import jetbrains.mps.editor.runtime.cells.CellIdManager;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.cells.CellAction;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
+import org.jetbrains.mps.openapi.language.SProperty;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class ActivityPlayback {
   private static final Logger LOG = LogManager.getLogger(ActivityPlayback.class);
@@ -28,8 +29,8 @@ public class ActivityPlayback {
       }
       public void execute_internal(EditorContext editorContext, SNode node) {
         LoggingRuntime.logMsgView(Level.INFO, "Clicked", ActivityPlayback.class, null, null);
-        if (Objects.equals(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")), "Choose from..")) {
-          SPropertyOperations.assign(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback"), " ");
+        if (Objects.equals(SPropertyOperations.getString(node, PROPS.playback$y04k), "Choose from..")) {
+          SPropertyOperations.assign(node, PROPS.playback$y04k, " ");
           SelectionUtil.selectNode(editorContext, node);
           SelectionUtil.selectCell(editorContext, node, "*" + CellIdManager.createPropertyId("playback"));
         }
@@ -71,5 +72,9 @@ public class ActivityPlayback {
     if (Objects.equals(actionType, CellActionType.CLICK)) {
       editorCell.setAction(actionType, createAction_CLICK(node));
     }
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty playback$y04k = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback");
   }
 }

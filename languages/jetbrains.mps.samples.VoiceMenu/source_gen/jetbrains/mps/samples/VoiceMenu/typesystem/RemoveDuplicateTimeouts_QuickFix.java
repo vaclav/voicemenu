@@ -8,10 +8,12 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SProperty;
 
 public class RemoveDuplicateTimeouts_QuickFix extends QuickFix_Runtime {
   public RemoveDuplicateTimeouts_QuickFix() {
@@ -21,10 +23,18 @@ public class RemoveDuplicateTimeouts_QuickFix extends QuickFix_Runtime {
     return "Remove Duplicate Timeouts";
   }
   public void execute(SNode node) {
-    SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(((SNode) RemoveDuplicateTimeouts_QuickFix.this.getField("menu")[0]), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"))).findFirst(new IWhereFilter<SNode>() {
+    SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(((SNode) RemoveDuplicateTimeouts_QuickFix.this.getField("menu")[0]), LINKS.events$AIPs)).findFirst(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
-        return Objects.equals(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), "X");
+        return Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$zpYt), "X");
       }
     }));
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink events$AIPs = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events");
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty trigger$zpYt = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger");
   }
 }

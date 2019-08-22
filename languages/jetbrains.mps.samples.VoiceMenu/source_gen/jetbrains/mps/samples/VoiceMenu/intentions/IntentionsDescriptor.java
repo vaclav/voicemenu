@@ -33,7 +33,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
     switch (conceptIndex.index(cncpt)) {
       case 0:
         if (true) {
-          // Concept: Action 
+          // concept 
           intentions = new IntentionFactory[10];
           intentions[0] = new changeToDirectCall_Intention();
           intentions[1] = new changeToOther_Intention();
@@ -49,7 +49,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
         break;
       case 1:
         if (true) {
-          // Concept: Activity 
+          // concept 
           intentions = new IntentionFactory[6];
           intentions[0] = new Remove_Playback_Intention();
           intentions[1] = new InitializeNewEvent_Intention();
@@ -61,7 +61,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
         break;
       case 2:
         if (true) {
-          // Concept: Event 
+          // concept 
           intentions = new IntentionFactory[5];
           intentions[0] = new RemoveEventWithActivity_Intention();
           intentions[1] = new Sort_Ascending_Intention();
@@ -72,7 +72,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
         break;
       case 3:
         if (true) {
-          // Concept: Timeout 
+          // concept 
           intentions = new IntentionFactory[2];
           intentions[0] = new Add_Playback_Timeout_Intention();
           intentions[1] = new Remove_Playback_Timeout_Intention();
@@ -80,7 +80,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
         break;
       case 4:
         if (true) {
-          // Concept: WorkSpace 
+          // concept 
           intentions = new IntentionFactory[8];
           intentions[0] = new Remove_Main_Playback_Intention();
           intentions[1] = new ViewAsTabular_Intention();

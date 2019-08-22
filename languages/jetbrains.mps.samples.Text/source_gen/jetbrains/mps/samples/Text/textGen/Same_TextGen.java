@@ -6,20 +6,31 @@ import jetbrains.mps.text.rt.TextGenDescriptorBase;
 import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import org.jetbrains.mps.openapi.language.SProperty;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
 
 public class Same_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.append("same  => ");
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f7160338bL, 0x13a8ce4f7160338eL, "priority")));
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.priority$HS$u));
     tgs.append(",");
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f7160338bL, 0x13a8ce4f7160338fL, "action")));
-    if ((SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f7160338bL, 0x13a8ce4f7160338cL, "argument")) != null)) {
-      tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f7160338bL, 0x13a8ce4f7160338cL, "argument")));
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.action$HS$X));
+    if ((SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.argument$HSzw) != null)) {
+      tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.argument$HSzw));
     }
     tgs.newLine();
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty priority$HS$u = MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f7160338bL, 0x13a8ce4f7160338eL, "priority");
+    /*package*/ static final SProperty action$HS$X = MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f7160338bL, 0x13a8ce4f7160338fL, "action");
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink argument$HSzw = MetaAdapterFactory.getContainmentLink(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f7160338bL, 0x13a8ce4f7160338cL, "argument");
   }
 }

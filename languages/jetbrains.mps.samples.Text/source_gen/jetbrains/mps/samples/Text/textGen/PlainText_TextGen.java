@@ -6,15 +6,21 @@ import jetbrains.mps.text.rt.TextGenDescriptorBase;
 import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class PlainText_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f716049b6L, 0x13a8ce4f716049b7L, "argument1")));
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.argument1$dfI0));
     tgs.append("=");
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f716049b6L, 0x13a8ce4f71605cb0L, "argument2")));
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.argument2$uIP5));
     tgs.newLine();
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty argument1$dfI0 = MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f716049b6L, 0x13a8ce4f716049b7L, "argument1");
+    /*package*/ static final SProperty argument2$uIP5 = MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f716049b6L, 0x13a8ce4f71605cb0L, "argument2");
   }
 }

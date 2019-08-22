@@ -44,7 +44,7 @@ public class MacVoice {
       if (MacVoice.waitingThr.isAlive()) {
         waitingThr.interrupt();
       }
-      (MacVoice.waitingThr = new Thread(new MacVoice.SpeakDurationHandler())).start();
+      (MacVoice.waitingThr = new Thread(new SpeakDurationHandler())).start();
       // proc.destroy(); 
     } catch (Exception e) {
       e.printStackTrace();

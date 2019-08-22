@@ -90,7 +90,7 @@
       <key>ClassPath</key>
       <string>$APP_PACKAGE/Contents/lib/branding.jar:$APP_PACKAGE/Contents/lib/mps-boot.jar:$APP_PACKAGE/Contents/lib/mps-boot-util.jar:$APP_PACKAGE/Contents/lib/bootstrap.jar:$APP_PACKAGE/Contents/lib/extensions.jar:$APP_PACKAGE/Contents/lib/util.jar:$APP_PACKAGE/Contents/lib/jdom.jar:$APP_PACKAGE/Contents/lib/log4j.jar:$APP_PACKAGE/Contents/lib/trove4j.jar:$APP_PACKAGE/Contents/lib/jna.jar</string>
       <key>JVMVersion</key>
-      <string>1.8*</string>
+      <string>11*</string>
       <key>MainClass</key>
       <string>jetbrains.mps.Launcher</string>
       <key>Properties</key>
@@ -101,7 +101,7 @@
         <string>false</string>
         
         <key>idea.paths.selector</key>
-        <string>voicemenu2019.1</string>
+        <string>voicemenu2019.2</string>
         
         <key>idea.executable</key>
         <string>voicemenu</string>
@@ -111,7 +111,7 @@
         <key>idea.home.path</key>
         <string>$APP_PACKAGE/Contents</string>
       </dict>
-      <!--Use Contents/bin/voicemenu.vmoptions or ~/Library/Preferences/voicemenu2019.1/voicemenu.vmoptions file to modify VMOptions-->
+      <!--Use Contents/bin/voicemenu.vmoptions or ~/Library/Preferences/voicemenu2019.2/voicemenu.vmoptions file to modify VMOptions-->
       <key>VMOptions</key>
       <string>-XX:+UseCompressedOops</string>
       <key>WorkingDirectory</key>

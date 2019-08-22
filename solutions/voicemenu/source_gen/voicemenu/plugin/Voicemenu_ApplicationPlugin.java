@@ -4,16 +4,21 @@ package voicemenu.plugin;
 
 import jetbrains.mps.plugins.applicationplugins.BaseApplicationPlugin;
 import com.intellij.openapi.extensions.PluginId;
+import org.jetbrains.annotations.NotNull;
 import java.util.List;
 import jetbrains.mps.plugins.part.ApplicationPluginPart;
 
 public class Voicemenu_ApplicationPlugin extends BaseApplicationPlugin {
-  private PluginId myId = PluginId.getId("voicemenu");
+  private final PluginId myId = PluginId.getId("voicemenu");
+
   public Voicemenu_ApplicationPlugin() {
   }
+
+  @NotNull
   public PluginId getId() {
     return myId;
   }
+
   @Override
   public void fillCustomParts(List<ApplicationPluginPart> parts) {
     parts.add(new VoiceMenu_AppPluginPart());

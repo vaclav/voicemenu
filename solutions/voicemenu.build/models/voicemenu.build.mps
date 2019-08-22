@@ -273,7 +273,7 @@
     <node concept="10PD9b" id="5ruKdSwyerg" role="10PD9s" />
     <node concept="3b7kt6" id="5ruKdSwyerh" role="10PD9s" />
     <node concept="1zClus" id="5ruKdSwyeru" role="3989C9">
-      <property role="2OjLBK" value="1" />
+      <property role="2OjLBK" value="2" />
       <property role="TrG5h" value="MPS" />
       <property role="2OjLBL" value="2019" />
       <node concept="55IIr" id="5ruKdSwyerv" role="3vi$VU">
@@ -575,7 +575,7 @@
             </node>
           </node>
           <node concept="1zDrgl" id="5ruKdSwyetr" role="39821P">
-            <ref role="1zDrgn" node="5ruKdSwyeru" resolve="Voice Menu 2019.1" />
+            <ref role="1zDrgn" node="5ruKdSwyeru" resolve="Voice Menu 2019.2" />
           </node>
         </node>
         <node concept="28u9K_" id="VV7r8LjI59" role="39821P">
@@ -746,7 +746,7 @@
           <ref role="3_I8Xa" to="ffeo:I6XuqH2zYV" resolve="git4idea" />
         </node>
         <node concept="3_I8Xc" id="ihwYhQ3jLR" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:1JaUSFUm4H1" resolve="context-tool" />
+          <ref role="3_I8Xa" to="ffeo:1JaUSFUm4H1" resolve="mps-context-actions" />
         </node>
         <node concept="3_I8Xc" id="5ruKdSy0iTs" role="39821P">
           <ref role="3_I8Xa" to="ffeo:1x6h9EwqP32" resolve="mps-make" />
@@ -1810,7 +1810,7 @@
     </node>
     <node concept="1l3spV" id="5ruKdSwyevs" role="1l3spN">
       <node concept="1tmT9g" id="5ruKdSwyewa" role="39821P">
-        <property role="AB_bT" value="gzip" />
+        <property role="AB_bT" value="1HQQX4XU8$A/gzip" />
         <node concept="398223" id="5ruKdSwyewb" role="39821P">
           <node concept="3ygNvl" id="5ruKdSwyewc" role="39821P">
             <ref role="3ygNvj" node="5ruKdSwyesX" />
@@ -1859,7 +1859,7 @@
                 </node>
               </node>
               <node concept="3co7Ac" id="27IwjAPl2NF" role="28jJR8">
-                <property role="3co7Am" value="lf" />
+                <property role="3co7Am" value="3D3G23Q8WAL/lf" />
                 <property role="3cpA_W" value="true" />
               </node>
               <node concept="55IIr" id="27IwjAPl2Lf" role="28jJRO">
@@ -1896,7 +1896,7 @@
                 </node>
               </node>
               <node concept="3co7Ac" id="27IwjAPl2PB" role="28jJR8">
-                <property role="3co7Am" value="lf" />
+                <property role="3co7Am" value="3D3G23Q8WAL/lf" />
                 <property role="3cpA_W" value="true" />
               </node>
               <node concept="55IIr" id="27IwjAPl2PC" role="28jJRO">
@@ -1953,7 +1953,7 @@
                 </node>
               </node>
               <node concept="3co7Ac" id="27IwjAPlhyd" role="28jJR8">
-                <property role="3co7Am" value="lf" />
+                <property role="3co7Am" value="3D3G23Q8WAL/lf" />
                 <property role="3cpA_W" value="true" />
               </node>
               <node concept="55IIr" id="27IwjAPlhwo" role="28jJRO">
@@ -2066,7 +2066,7 @@
             <node concept="28jJK3" id="19uKWhB6SeG" role="39821P">
               <property role="28jJZ5" value="755" />
               <node concept="3co7Ac" id="19uKWhB6SeK" role="28jJR8">
-                <property role="3co7Am" value="crlf" />
+                <property role="3co7Am" value="3D3G23Q8WAM/crlf" />
               </node>
               <node concept="55IIr" id="19uKWhB6SeL" role="28jJRO">
                 <node concept="2Ry0Ak" id="19uKWhB6SeM" role="iGT6I">
@@ -2322,7 +2322,7 @@
                   </node>
                 </node>
                 <node concept="3co7Ac" id="27IwjAPmqk$" role="28jJR8">
-                  <property role="3co7Am" value="lf" />
+                  <property role="3co7Am" value="3D3G23Q8WAL/lf" />
                   <property role="3cpA_W" value="true" />
                 </node>
                 <node concept="55IIr" id="27IwjAPmqk_" role="28jJRO">
@@ -2359,7 +2359,7 @@
                   </node>
                 </node>
                 <node concept="3co7Ac" id="27IwjAPmqkK" role="28jJR8">
-                  <property role="3co7Am" value="lf" />
+                  <property role="3co7Am" value="3D3G23Q8WAL/lf" />
                   <property role="3cpA_W" value="true" />
                 </node>
                 <node concept="55IIr" id="27IwjAPmqkL" role="28jJRO">
@@ -2386,7 +2386,7 @@
               <node concept="28jJK3" id="5ruKdSwye_Z" role="39821P">
                 <property role="28jJZ5" value="755" />
                 <node concept="3co7Ac" id="5ruKdSwyeA0" role="28jJR8">
-                  <property role="3co7Am" value="lf" />
+                  <property role="3co7Am" value="3D3G23Q8WAL/lf" />
                   <property role="3cpA_W" value="true" />
                 </node>
                 <node concept="398BVA" id="5ruKdSwye_p" role="28jJRO">
@@ -2413,7 +2413,7 @@
                   </node>
                 </node>
                 <node concept="3co7Ac" id="27IwjAPmqmE" role="28jJR8">
-                  <property role="3co7Am" value="lf" />
+                  <property role="3co7Am" value="3D3G23Q8WAL/lf" />
                   <property role="3cpA_W" value="true" />
                 </node>
                 <node concept="55IIr" id="27IwjAPmqmF" role="28jJRO">
@@ -2472,7 +2472,7 @@
       <node concept="aVJcg" id="5ruKdSwyevv" role="aVJcv">
         <node concept="NbPM2" id="5ruKdSwyevw" role="aVJcq">
           <node concept="3Mxwew" id="5ruKdSwyevx" role="3MwsjC">
-            <property role="3MwjfP" value="2019.1" />
+            <property role="3MwjfP" value="2019.2" />
           </node>
         </node>
       </node>
@@ -2482,7 +2482,7 @@
     <property role="TrG5h" value="voicemenu" />
     <property role="26FY9R" value="jetbrains.mps.Launcher" />
     <property role="26EafI" value="bin" />
-    <ref role="1_kbm$" node="5ruKdSwyeru" resolve="Voice Menu 2019.1" />
+    <ref role="1_kbm$" node="5ruKdSwyeru" resolve="Voice Menu 2019.2" />
     <node concept="26Ea6D" id="27IwjAPkmZq" role="26FZ21">
       <property role="26Ea6C" value="-client -Xss1024k -ea -Xmx950m -XX:MaxPermSize=256m -XX:NewSize=256m -XX:+HeapDumpOnOutOfMemoryError -Xverify:none" />
     </node>

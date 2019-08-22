@@ -32,9 +32,9 @@ IF EXIST "%voicemenu_JDK%" SET JDK=%voicemenu_JDK%
 IF NOT "%JDK%" == "" GOTO check
 
 SET BITS=64
-SET USER_JDK64_FILE=%USERPROFILE%\.voicemenu2019.1\config\voicemenu%BITS%.exe.jdk
+SET USER_JDK64_FILE=%USERPROFILE%\.voicemenu2019.2\config\voicemenu%BITS%.exe.jdk
 SET BITS=
-SET USER_JDK_FILE=%USERPROFILE%\.voicemenu2019.1\config\voicemenu%BITS%.exe.jdk
+SET USER_JDK_FILE=%USERPROFILE%\.voicemenu2019.2\config\voicemenu%BITS%.exe.jdk
 IF EXIST "%USER_JDK64_FILE%" (
   SET /P JDK=<%USER_JDK64_FILE%
 ) ELSE (
@@ -47,6 +47,9 @@ IF NOT "%JDK%" == "" (
 
 :: Do not use our own 64 bit JDK for 32 bit Windwos
 IF NOT DEFINED PROGRAMFILES(X86) GOTO skip64bitJDK
+
+IF EXIST "%IDE_HOME%\jbr" SET JDK=%IDE_HOME%\jbr
+IF NOT "%JDK%" == "" GOTO check
 
 IF EXIST "%IDE_HOME%\jre64" SET JDK=%IDE_HOME%\jre64
 IF NOT "%JDK%" == "" GOTO check
@@ -72,7 +75,11 @@ IF NOT EXIST "%JAVA_EXE%" (
 
 SET JRE=%JDK%
 IF EXIST "%JRE%\jre" SET JRE=%JDK%\jre
-IF EXIST "%JRE%\lib\amd64" SET BITS=64
+IF EXIST "%JRE%\lib\amd64" (
+  SET BITS=64
+) ELSE (
+  IF EXIST "%JRE%\lib\jrt-fs.jar" SET BITS=64
+)
 
 :: ---------------------------------------------------------------------
 :: Collect JVM options and properties.
@@ -87,7 +94,7 @@ IF NOT EXIST "%VM_OPTIONS_FILE%" (
 )
 IF NOT EXIST "%VM_OPTIONS_FILE%" (
   :: user-overridden
-  SET VM_OPTIONS_FILE=%USERPROFILE%\.voicemenu2019.1\config\mps%BITS%.exe.vmoptions
+  SET VM_OPTIONS_FILE=%USERPROFILE%\.voicemenu2019.2\config\mps%BITS%.exe.vmoptions
 )
 IF NOT EXIST "%VM_OPTIONS_FILE%" (
   :: default, standard installation
@@ -106,7 +113,7 @@ SET ACC=
 FOR /F "eol=# usebackq delims=" %%i IN ("%VM_OPTIONS_FILE%") DO CALL "%IDE_BIN_DIR%\append.bat" "%%i"
 IF EXIST "%VM_OPTIONS_FILE%" SET ACC=%ACC% -Djb.vmOptionsFile="%VM_OPTIONS_FILE%"
 
-SET IDEA_PATHS_SELECTOR=voicemenu2019.1
+SET IDEA_PATHS_SELECTOR=voicemenu2019.2
 SET COMMON_JVM_ARGS="-XX:ErrorFile=%USERPROFILE%\java_error_in_IDEA_%%p.log" "-XX:HeapDumpPath=%USERPROFILE%\java_error_in_IDEA.hprof" -Didea.paths.selector=%IDEA_PATHS_SELECTOR% %IDE_PROPERTIES_PROPERTY%
 SET IDE_JVM_ARGS=-Didea.platform.prefix=Idea -Didea.jre.check=true
 SET ALL_JVM_ARGS=%ACC% %COMMON_JVM_ARGS% %IDE_JVM_ARGS%

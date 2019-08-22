@@ -24,7 +24,7 @@ public class Styles_StyleSheet {
   public static void apply_Arrows(Style style, EditorCell editorCell) {
     SNode node = (editorCell == null ? null : editorCell.getSNode());
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
-    new Styles_StyleSheet.ArrowsStyleClass(editorContext, node).apply(style, editorCell);
+    new ArrowsStyleClass(editorContext, node).apply(style, editorCell);
   }
   /**
    * 
@@ -34,7 +34,7 @@ public class Styles_StyleSheet {
   public static void apply_Heading(Style style, EditorCell editorCell) {
     SNode node = (editorCell == null ? null : editorCell.getSNode());
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
-    new Styles_StyleSheet.HeadingStyleClass(editorContext, node).apply(style, editorCell);
+    new HeadingStyleClass(editorContext, node).apply(style, editorCell);
   }
   /**
    * 
@@ -44,7 +44,7 @@ public class Styles_StyleSheet {
   public static void apply_Action(Style style, EditorCell editorCell) {
     SNode node = (editorCell == null ? null : editorCell.getSNode());
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
-    new Styles_StyleSheet.ActionStyleClass(editorContext, node).apply(style, editorCell);
+    new ActionStyleClass(editorContext, node).apply(style, editorCell);
   }
   /**
    * 
@@ -54,7 +54,7 @@ public class Styles_StyleSheet {
   public static void apply_HardCodedText(Style style, EditorCell editorCell) {
     SNode node = (editorCell == null ? null : editorCell.getSNode());
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
-    new Styles_StyleSheet.HardCodedTextStyleClass(editorContext, node).apply(style, editorCell);
+    new HardCodedTextStyleClass(editorContext, node).apply(style, editorCell);
   }
   /**
    * 
@@ -64,7 +64,7 @@ public class Styles_StyleSheet {
   public static void apply_UserWrittenText(Style style, EditorCell editorCell) {
     SNode node = (editorCell == null ? null : editorCell.getSNode());
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
-    new Styles_StyleSheet.UserWrittenTextStyleClass(editorContext, node).apply(style, editorCell);
+    new UserWrittenTextStyleClass(editorContext, node).apply(style, editorCell);
   }
   /**
    * 
@@ -74,7 +74,7 @@ public class Styles_StyleSheet {
   public static void apply_Declarations(Style style, EditorCell editorCell) {
     SNode node = (editorCell == null ? null : editorCell.getSNode());
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
-    new Styles_StyleSheet.DeclarationsStyleClass(editorContext, node).apply(style, editorCell);
+    new DeclarationsStyleClass(editorContext, node).apply(style, editorCell);
   }
   /**
    * 
@@ -84,7 +84,7 @@ public class Styles_StyleSheet {
   public static void apply_EmptyCell(Style style, EditorCell editorCell) {
     SNode node = (editorCell == null ? null : editorCell.getSNode());
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
-    new Styles_StyleSheet.EmptyCellStyleClass(editorContext, node).apply(style, editorCell);
+    new EmptyCellStyleClass(editorContext, node).apply(style, editorCell);
   }
   /**
    * 
@@ -94,7 +94,7 @@ public class Styles_StyleSheet {
   public static void apply_Brackets(Style style, EditorCell editorCell) {
     SNode node = (editorCell == null ? null : editorCell.getSNode());
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
-    new Styles_StyleSheet.BracketsStyleClass(editorContext, node).apply(style, editorCell);
+    new BracketsStyleClass(editorContext, node).apply(style, editorCell);
   }
   /**
    * 
@@ -104,7 +104,7 @@ public class Styles_StyleSheet {
   public static void apply_Greeting(Style style, EditorCell editorCell) {
     SNode node = (editorCell == null ? null : editorCell.getSNode());
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
-    new Styles_StyleSheet.GreetingStyleClass(editorContext, node).apply(style, editorCell);
+    new GreetingStyleClass(editorContext, node).apply(style, editorCell);
   }
 
   public static class ArrowsStyleClass extends AbstractStyleClass {

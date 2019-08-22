@@ -11,7 +11,6 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.io.File;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.baseLanguage.logging.runtime.model.LoggingRuntime;
 import org.apache.log4j.Level;
 import jetbrains.mps.editor.runtime.selection.SelectionUtil;
@@ -20,6 +19,8 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.cells.CellAction;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import java.util.Objects;
+import org.jetbrains.mps.openapi.language.SProperty;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class RefreshFileTextRecognition_Timeout {
   private static final Logger LOG = LogManager.getLogger(RefreshFileTextRecognition_Timeout.class);
@@ -47,16 +48,16 @@ public class RefreshFileTextRecognition_Timeout {
 
 
         try {
-          File tmp = new File(path + "/" + SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x34fad0c9f5b34402L, "playback")));
+          File tmp = new File(path + "/" + SPropertyOperations.getString(node, PROPS.playback$OvLo));
           if (tmp.isFile()) {
-            SPropertyOperations.assign(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x54e798cf44bec9edL, "PBisFile"), true);
+            SPropertyOperations.assign(node, PROPS.PBisFile$qD6P, true);
             LoggingRuntime.logMsgView(Level.DEBUG, "Found -> File", RefreshFileTextRecognition_Timeout.class, null, null);
           } else {
-            SPropertyOperations.assign(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x54e798cf44bec9edL, "PBisFile"), false);
+            SPropertyOperations.assign(node, PROPS.PBisFile$qD6P, false);
             LoggingRuntime.logMsgView(Level.DEBUG, "Not Found -> Text", RefreshFileTextRecognition_Timeout.class, null, null);
           }
         } catch (Exception e) {
-          SPropertyOperations.assign(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x54e798cf44bec9edL, "PBisFile"), false);
+          SPropertyOperations.assign(node, PROPS.PBisFile$qD6P, false);
         }
 
         SelectionUtil.selectCell(editorContext, node, SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
@@ -98,5 +99,10 @@ public class RefreshFileTextRecognition_Timeout {
     if (Objects.equals(actionType, CellActionType.CLICK)) {
       editorCell.setAction(actionType, createAction_CLICK(node));
     }
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty playback$OvLo = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x34fad0c9f5b34402L, "playback");
+    /*package*/ static final SProperty PBisFile$qD6P = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x54e798cf44bec9edL, "PBisFile");
   }
 }

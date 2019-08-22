@@ -2,7 +2,7 @@
 <model ref="r:089ed4da-992e-4dd8-af7c-37111829cf03(main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -177,11 +177,8 @@
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
@@ -321,6 +318,14 @@
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1906,8 +1911,16 @@
       </node>
       <node concept="3clFbH" id="1CIbeTAoVxL" role="3cqZAp" />
       <node concept="3SKdUt" id="1CIbeTAoXXG" role="3cqZAp">
-        <node concept="3SKdUq" id="1CIbeTAoXXI" role="3SKWNk">
-          <property role="3SKdUp" value="creatig new Event" />
+        <node concept="1PaTwC" id="7KqKbdWvjUk" role="3ndbpf">
+          <node concept="3oM_SD" id="7KqKbdWvjUl" role="1PaTwD">
+            <property role="3oM_SC" value="creatig" />
+          </node>
+          <node concept="3oM_SD" id="7KqKbdWvjUm" role="1PaTwD">
+            <property role="3oM_SC" value="new" />
+          </node>
+          <node concept="3oM_SD" id="7KqKbdWvjUn" role="1PaTwD">
+            <property role="3oM_SC" value="Event" />
+          </node>
         </node>
       </node>
       <node concept="3cpWs8" id="6EKBnCQZvnb" role="3cqZAp">
@@ -2119,13 +2132,29 @@
       </node>
       <node concept="3clFbH" id="1CIbeTAff9a" role="3cqZAp" />
       <node concept="3SKdUt" id="1CIbeTAp2Vu" role="3cqZAp">
-        <node concept="3SKdUq" id="1CIbeTAp2Vw" role="3SKWNk">
-          <property role="3SKdUp" value="putting into myHashMap" />
+        <node concept="1PaTwC" id="7KqKbdWvjUo" role="3ndbpf">
+          <node concept="3oM_SD" id="7KqKbdWvjUp" role="1PaTwD">
+            <property role="3oM_SC" value="putting" />
+          </node>
+          <node concept="3oM_SD" id="7KqKbdWvjUq" role="1PaTwD">
+            <property role="3oM_SC" value="into" />
+          </node>
+          <node concept="3oM_SD" id="7KqKbdWvjUr" role="1PaTwD">
+            <property role="3oM_SC" value="myHashMap" />
+          </node>
         </node>
       </node>
       <node concept="3SKdUt" id="1CIbeTAp5qu" role="3cqZAp">
-        <node concept="3SKdUq" id="1CIbeTAp5qw" role="3SKWNk">
-          <property role="3SKdUp" value="recursively creating children" />
+        <node concept="1PaTwC" id="7KqKbdWvjUs" role="3ndbpf">
+          <node concept="3oM_SD" id="7KqKbdWvjUt" role="1PaTwD">
+            <property role="3oM_SC" value="recursively" />
+          </node>
+          <node concept="3oM_SD" id="7KqKbdWvjUu" role="1PaTwD">
+            <property role="3oM_SC" value="creating" />
+          </node>
+          <node concept="3oM_SD" id="7KqKbdWvjUv" role="1PaTwD">
+            <property role="3oM_SC" value="children" />
+          </node>
         </node>
       </node>
       <node concept="3clFbF" id="6EKBnCQZyLG" role="3cqZAp">
@@ -2257,8 +2286,19 @@
       </node>
       <node concept="3clFbH" id="1CIbeTAoT5T" role="3cqZAp" />
       <node concept="3SKdUt" id="1CIbeTApbyi" role="3cqZAp">
-        <node concept="3SKdUq" id="1CIbeTApbyk" role="3SKWNk">
-          <property role="3SKdUp" value="assigning children to parents" />
+        <node concept="1PaTwC" id="7KqKbdWvjUw" role="3ndbpf">
+          <node concept="3oM_SD" id="7KqKbdWvjUx" role="1PaTwD">
+            <property role="3oM_SC" value="assigning" />
+          </node>
+          <node concept="3oM_SD" id="7KqKbdWvjUy" role="1PaTwD">
+            <property role="3oM_SC" value="children" />
+          </node>
+          <node concept="3oM_SD" id="7KqKbdWvjUz" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="7KqKbdWvjU$" role="1PaTwD">
+            <property role="3oM_SC" value="parents" />
+          </node>
         </node>
       </node>
       <node concept="3clFbF" id="6EKBnCQZWJJ" role="3cqZAp">

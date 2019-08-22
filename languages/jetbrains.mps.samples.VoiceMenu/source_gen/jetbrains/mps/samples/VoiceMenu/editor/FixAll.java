@@ -9,7 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
 import java.util.List;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.Objects;
@@ -22,6 +21,7 @@ import java.util.ArrayList;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.io.File;
@@ -30,6 +30,10 @@ import jetbrains.mps.openapi.editor.selection.SelectionManager;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.cells.CellAction;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
+import org.jetbrains.mps.openapi.language.SConcept;
+import org.jetbrains.mps.openapi.language.SProperty;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
 
 public class FixAll {
   private static final Logger LOG = LogManager.getLogger(FixAll.class);
@@ -46,7 +50,7 @@ public class FixAll {
 
         while (true) {
           // ............................................................. replace duplicate numbers 
-          List<SNode> events = SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event"), false, new SAbstractConcept[]{});
+          List<SNode> events = SNodeOperations.getNodeDescendants(node, CONCEPTS.Event$dL, false, new SAbstractConcept[]{});
           for (final SNode item : ListSequence.fromList(events)) {
 
             boolean legalButton = false;
@@ -66,17 +70,17 @@ public class FixAll {
             buttons[11] = "*";
 
             for (String button : buttons) {
-              if (Objects.equals(button, SPropertyOperations.getString(item, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")))) {
+              if (Objects.equals(button, SPropertyOperations.getString(item, PROPS.trigger$zpYt))) {
                 legalButton = true;
               }
             }
             if (legalButton == false) {
-              LoggingRuntime.logMsgView(Level.INFO, "Button " + SPropertyOperations.getString(item, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")) + " fixed", FixAll.class, null, null);
+              LoggingRuntime.logMsgView(Level.INFO, "Button " + SPropertyOperations.getString(item, PROPS.trigger$zpYt) + " fixed", FixAll.class, null, null);
             }
 
-            if (Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getAllSiblings(item, false), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event"))).any(new IWhereFilter<SNode>() {
+            if (Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getAllSiblings(item, false), CONCEPTS.Event$dL)).any(new IWhereFilter<SNode>() {
               public boolean accept(SNode it) {
-                return Objects.equals(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), SPropertyOperations.getString(item, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
+                return Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$zpYt), SPropertyOperations.getString(item, PROPS.trigger$zpYt));
               }
             }) || legalButton == false) {
               String[] kbButtons = new String[12];
@@ -96,13 +100,13 @@ public class FixAll {
 
               List<String> usedButtons = new ArrayList<String>();
 
-              List<SNode> eventsDeclTable = SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(item), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"));
+              List<SNode> eventsDeclTable = SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(item), CONCEPTS.Menu$bP), LINKS.events$AIPs);
 
               for (SNode event : ListSequence.fromList(eventsDeclTable)) {
-                ListSequence.fromList(usedButtons).addElement(SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
+                ListSequence.fromList(usedButtons).addElement(SPropertyOperations.getString(event, PROPS.trigger$zpYt));
               }
 
-              SPropertyOperations.assign(item, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger"), Sequence.fromIterable(Sequence.fromArray(kbButtons)).subtract(ListSequence.fromList(usedButtons)).first());
+              SPropertyOperations.assign(item, PROPS.trigger$zpYt, Sequence.fromIterable(Sequence.fromArray(kbButtons)).subtract(ListSequence.fromList(usedButtons)).first());
             }
           }
 
@@ -110,87 +114,87 @@ public class FixAll {
 
           // ............................................................. init events 
 
-          List<SNode> descendants = SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event"), false, new SAbstractConcept[]{});
+          List<SNode> descendants = SNodeOperations.getNodeDescendants(node, CONCEPTS.Event$dL, false, new SAbstractConcept[]{});
           for (final SNode event : ListSequence.fromList(descendants)) {
-            if (isNotEmptyString(SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"))) && isNotEmptyString(SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")))) {
-              if (Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getChildren(SNodeOperations.getParent(event)), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"))).any(new IWhereFilter<SNode>() {
+            if (isNotEmptyString(SPropertyOperations.getString(event, PROPS.name$tAp1)) && isNotEmptyString(SPropertyOperations.getString(event, PROPS.trigger$zpYt))) {
+              if (Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getChildren(SNodeOperations.getParent(event)), CONCEPTS.Activity$oQ)).any(new IWhereFilter<SNode>() {
                 public boolean accept(SNode it) {
-                  return SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) == SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
+                  return SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$gjCV), PROPS.name$tAp1) == SPropertyOperations.getString(event, PROPS.name$tAp1) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$gjCV), PROPS.trigger$zpYt), SPropertyOperations.getString(event, PROPS.trigger$zpYt));
                 }
               })) {
               } else {
-                LoggingRuntime.logMsgView(Level.INFO, "Set Up " + SPropertyOperations.getString(event, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")), FixAll.class, null, null);
-                SNode newActivity = SLinkOperations.addNewChild(SNodeOperations.cast(SNodeOperations.getParent(event), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities"), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"));
-                SNodeFactoryOperations.setNewChild(newActivity, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08d2L, "commands"), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, "jetbrains.mps.samples.VoiceMenu.structure.Other"));
-                SLinkOperations.setTarget(newActivity, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event"), event);
-                ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(event), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities"))).addElement(newActivity);
+                LoggingRuntime.logMsgView(Level.INFO, "Set Up " + SPropertyOperations.getString(event, PROPS.name$tAp1), FixAll.class, null, null);
+                SNode newActivity = SLinkOperations.addNewChild(SNodeOperations.cast(SNodeOperations.getParent(event), CONCEPTS.Menu$bP), LINKS.activities$AJ0_, CONCEPTS.Activity$oQ);
+                SNodeFactoryOperations.setNewChild(newActivity, LINKS.commands$giUr, CONCEPTS.Other$87);
+                SLinkOperations.setTarget(newActivity, LINKS.event$gjCV, event);
+                ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(event), CONCEPTS.Menu$bP), LINKS.activities$AJ0_)).addElement(newActivity);
               }
             }
           }
           // ............................................................. remove empty 
-          if (ListSequence.fromList(SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"), false, new SAbstractConcept[]{})).any(new IWhereFilter<SNode>() {
+          if (ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Activity$oQ, false, new SAbstractConcept[]{})).any(new IWhereFilter<SNode>() {
             public boolean accept(SNode it) {
-              return (SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")) == null);
+              return (SLinkOperations.getTarget(it, LINKS.event$gjCV) == null);
             }
           })) {
             LoggingRuntime.logMsgView(Level.INFO, "Remove Empty Activity", FixAll.class, null, null);
-            SNodeOperations.deleteNode(ListSequence.fromList(SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"), false, new SAbstractConcept[]{})).findFirst(new IWhereFilter<SNode>() {
+            SNodeOperations.deleteNode(ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Activity$oQ, false, new SAbstractConcept[]{})).findFirst(new IWhereFilter<SNode>() {
               public boolean accept(SNode it) {
-                return (SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")) == null);
+                return (SLinkOperations.getTarget(it, LINKS.event$gjCV) == null);
               }
             }));
 
-          } else if (ListSequence.fromList(SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9863dL, "jetbrains.mps.samples.VoiceMenu.structure.Command"), false, new SAbstractConcept[]{})).any(new IWhereFilter<SNode>() {
+          } else if (ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Command$a6, false, new SAbstractConcept[]{})).any(new IWhereFilter<SNode>() {
             public boolean accept(SNode it) {
-              return SNodeOperations.isInstanceOf(it, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9c5c3L, "jetbrains.mps.samples.VoiceMenu.structure.Empty"));
+              return SNodeOperations.isInstanceOf(it, CONCEPTS.Empty$vd);
             }
           })) {
             // replace empty 
-            SNode emptyCommand = ListSequence.fromList(SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9863dL, "jetbrains.mps.samples.VoiceMenu.structure.Command"), false, new SAbstractConcept[]{})).findFirst(new IWhereFilter<SNode>() {
+            SNode emptyCommand = ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Command$a6, false, new SAbstractConcept[]{})).findFirst(new IWhereFilter<SNode>() {
               public boolean accept(SNode it) {
-                return SNodeOperations.isInstanceOf(it, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9c5c3L, "jetbrains.mps.samples.VoiceMenu.structure.Empty"));
+                return SNodeOperations.isInstanceOf(it, CONCEPTS.Empty$vd);
               }
             });
-            SNodeFactoryOperations.replaceWithNewChild(emptyCommand, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, "jetbrains.mps.samples.VoiceMenu.structure.Other"));
+            SNodeFactoryOperations.replaceWithNewChild(emptyCommand, CONCEPTS.Other$87);
 
-          } else if (ListSequence.fromList(SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu"), false, new SAbstractConcept[]{})).any(new IWhereFilter<SNode>() {
+          } else if (ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Menu$bP, false, new SAbstractConcept[]{})).any(new IWhereFilter<SNode>() {
             public boolean accept(SNode it) {
-              return (ListSequence.fromList(SLinkOperations.getChildren(it, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"))).isEmpty() || Sequence.fromIterable(SLinkOperations.collect(SLinkOperations.getChildren(it, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08d2L, "commands"))).isEmpty()) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(it), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace")));
+              return (ListSequence.fromList(SLinkOperations.getChildren(it, LINKS.events$AIPs)).isEmpty() || Sequence.fromIterable(SLinkOperations.collect(SLinkOperations.getChildren(it, LINKS.activities$AJ0_), LINKS.commands$giUr)).isEmpty()) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(it), CONCEPTS.WorkSpace$ao));
             }
           })) {
             // replace menu 
 
-            SNode emptyMenu = ListSequence.fromList(SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu"), false, new SAbstractConcept[]{})).findFirst(new IWhereFilter<SNode>() {
+            SNode emptyMenu = ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Menu$bP, false, new SAbstractConcept[]{})).findFirst(new IWhereFilter<SNode>() {
               public boolean accept(SNode it) {
-                return (ListSequence.fromList(SLinkOperations.getChildren(it, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"))).isEmpty() || Sequence.fromIterable(SLinkOperations.collect(SLinkOperations.getChildren(it, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08d2L, "commands"))).isEmpty()) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(it), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace")));
+                return (ListSequence.fromList(SLinkOperations.getChildren(it, LINKS.events$AIPs)).isEmpty() || Sequence.fromIterable(SLinkOperations.collect(SLinkOperations.getChildren(it, LINKS.activities$AJ0_), LINKS.commands$giUr)).isEmpty()) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(it), CONCEPTS.WorkSpace$ao));
               }
             });
 
-            SNodeFactoryOperations.replaceWithNewChild(SNodeOperations.cast(SNodeOperations.getParent(emptyMenu), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity")), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"));
+            SNodeFactoryOperations.replaceWithNewChild(SNodeOperations.cast(SNodeOperations.getParent(emptyMenu), CONCEPTS.Activity$oQ), CONCEPTS.Activity$oQ);
 
             LoggingRuntime.logMsgView(Level.INFO, "Init Empty Menu", FixAll.class, null, null);
-          } else if (ListSequence.fromList(SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event"), false, new SAbstractConcept[]{})).any(new IWhereFilter<SNode>() {
+          } else if (ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Event$dL, false, new SAbstractConcept[]{})).any(new IWhereFilter<SNode>() {
             public boolean accept(SNode it) {
-              return isEmptyString(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+              return isEmptyString(SPropertyOperations.getString(it, PROPS.name$tAp1));
             }
           })) {
             LoggingRuntime.logMsgView(Level.INFO, "Remove Event With Empty Name", FixAll.class, null, null);
-            SNodeOperations.deleteNode(ListSequence.fromList(SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event"), false, new SAbstractConcept[]{})).findFirst(new IWhereFilter<SNode>() {
+            SNodeOperations.deleteNode(ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Event$dL, false, new SAbstractConcept[]{})).findFirst(new IWhereFilter<SNode>() {
               public boolean accept(SNode it) {
-                return isEmptyString(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+                return isEmptyString(SPropertyOperations.getString(it, PROPS.name$tAp1));
               }
             }));
 
-          } else if (ListSequence.fromList(SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event"), false, new SAbstractConcept[]{})).any(new IWhereFilter<SNode>() {
+          } else if (ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Event$dL, false, new SAbstractConcept[]{})).any(new IWhereFilter<SNode>() {
             public boolean accept(SNode it) {
-              return isEmptyString(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
+              return isEmptyString(SPropertyOperations.getString(it, PROPS.trigger$zpYt));
             }
           })) {
 
             LoggingRuntime.logMsgView(Level.INFO, "Remove Event With Empty Trigger", FixAll.class, null, null);
-            SNodeOperations.deleteNode(ListSequence.fromList(SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event"), false, new SAbstractConcept[]{})).findFirst(new IWhereFilter<SNode>() {
+            SNodeOperations.deleteNode(ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Event$dL, false, new SAbstractConcept[]{})).findFirst(new IWhereFilter<SNode>() {
               public boolean accept(SNode it) {
-                return isEmptyString(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
+                return isEmptyString(SPropertyOperations.getString(it, PROPS.trigger$zpYt));
               }
             }));
 
@@ -200,31 +204,31 @@ public class FixAll {
         }
         // ............................................................. Init Main Menu 
 
-        if (ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x5b6b060cf40204ebL, "bodyMenu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"))).isEmpty() || ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x5b6b060cf40204ebL, "bodyMenu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities"))).isEmpty()) {
+        if (ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(node, LINKS.bodyMenu$8UCv), LINKS.events$AIPs)).isEmpty() || ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(node, LINKS.bodyMenu$8UCv), LINKS.activities$AJ0_)).isEmpty()) {
 
           SNode newActivity = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"));
           SNode newEvent = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event"));
 
-          ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x5b6b060cf40204ebL, "bodyMenu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"))).clear();
-          ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x5b6b060cf40204ebL, "bodyMenu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities"))).clear();
+          ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(node, LINKS.bodyMenu$8UCv), LINKS.events$AIPs)).clear();
+          ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(node, LINKS.bodyMenu$8UCv), LINKS.activities$AJ0_)).clear();
 
-          ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x5b6b060cf40204ebL, "bodyMenu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities"))).addElement(newActivity);
-          ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x5b6b060cf40204ebL, "bodyMenu")), MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events"))).addElement(newEvent);
-          SLinkOperations.setTarget(newActivity, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event"), newEvent);
+          ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(node, LINKS.bodyMenu$8UCv), LINKS.activities$AJ0_)).addElement(newActivity);
+          ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(node, LINKS.bodyMenu$8UCv), LINKS.events$AIPs)).addElement(newEvent);
+          SLinkOperations.setTarget(newActivity, LINKS.event$gjCV, newEvent);
           LoggingRuntime.logMsgView(Level.INFO, "Init Main Menu", FixAll.class, null, null);
         }
         // ............................................................. remove Duplicate Actions 
 
-        List<SNode> duplicateMenus = SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu"), false, new SAbstractConcept[]{});
+        List<SNode> duplicateMenus = SNodeOperations.getNodeDescendants(node, CONCEPTS.Menu$bP, false, new SAbstractConcept[]{});
 
-        Iterable<SNode> activities = SLinkOperations.collectMany(duplicateMenus, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities"));
+        Iterable<SNode> activities = SLinkOperations.collectMany(duplicateMenus, LINKS.activities$AJ0_);
         for (final SNode currentActivity : Sequence.fromIterable(activities)) {
 
-          Iterable<SNode> siblings = SNodeOperations.ofConcept(SNodeOperations.getAllSiblings(currentActivity, false), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"));
+          Iterable<SNode> siblings = SNodeOperations.ofConcept(SNodeOperations.getAllSiblings(currentActivity, false), CONCEPTS.Activity$oQ);
 
           if (Sequence.fromIterable(siblings).any(new IWhereFilter<SNode>() {
             public boolean accept(SNode it) {
-              return !(Objects.equals(it, currentActivity)) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")), SPropertyOperations.getString(SLinkOperations.getTarget(currentActivity, MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger")));
+              return !(Objects.equals(it, currentActivity)) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$gjCV), PROPS.trigger$zpYt), SPropertyOperations.getString(SLinkOperations.getTarget(currentActivity, LINKS.event$gjCV), PROPS.trigger$zpYt));
             }
           })) {
             SNodeOperations.deleteNode(currentActivity);
@@ -233,7 +237,7 @@ public class FixAll {
         }
         // ............................................................. Resolve File / Playback 
 
-        for (SNode actvt : ListSequence.fromList(SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"), false, new SAbstractConcept[]{}))) {
+        for (SNode actvt : ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Activity$oQ, false, new SAbstractConcept[]{}))) {
           try {
 
             String path = System.getProperty("user.home") + "/MPS_ASTERISK";
@@ -242,11 +246,11 @@ public class FixAll {
               new File(path).mkdir();
             }
 
-            File tmp = new File(path + "/" + SPropertyOperations.getString(actvt, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")));
-            if ((tmp.isFile() && !(SPropertyOperations.getBoolean(actvt, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile"))))) {
-              SPropertyOperations.assign(actvt, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile"), true);
-            } else if (!(tmp.isFile()) && SPropertyOperations.getBoolean(actvt, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile"))) {
-              SPropertyOperations.assign(actvt, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile"), false);
+            File tmp = new File(path + "/" + SPropertyOperations.getString(actvt, PROPS.playback$y04k));
+            if ((tmp.isFile() && !(SPropertyOperations.getBoolean(actvt, PROPS.PBisFile$hBw1)))) {
+              SPropertyOperations.assign(actvt, PROPS.PBisFile$hBw1, true);
+            } else if (!(tmp.isFile()) && SPropertyOperations.getBoolean(actvt, PROPS.PBisFile$hBw1)) {
+              SPropertyOperations.assign(actvt, PROPS.PBisFile$hBw1, false);
             }
 
           } catch (Exception e) {
@@ -254,51 +258,51 @@ public class FixAll {
         }
         // ............................................................. Formating Path 
 
-        if (isNotEmptyString(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")))) {
-          if (Objects.equals(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")).charAt(0), '/')) {
+        if (isNotEmptyString(SPropertyOperations.getString(node, PROPS.default_path$_FMO))) {
+          if (Objects.equals(SPropertyOperations.getString(node, PROPS.default_path$_FMO).charAt(0), '/')) {
             LoggingRuntime.logMsgView(Level.INFO, "/ Removed", FixAll.class, null, null);
-            SPropertyOperations.assign(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path"), SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")).substring(1));
+            SPropertyOperations.assign(node, PROPS.default_path$_FMO, SPropertyOperations.getString(node, PROPS.default_path$_FMO).substring(1));
           }
-          if (!(Objects.equals(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")).charAt(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")).length() - 1), '/'))) {
+          if (!(Objects.equals(SPropertyOperations.getString(node, PROPS.default_path$_FMO).charAt(SPropertyOperations.getString(node, PROPS.default_path$_FMO).length() - 1), '/'))) {
             LoggingRuntime.logMsgView(Level.INFO, "/ Added", FixAll.class, null, null);
-            SPropertyOperations.assign(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path"), SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")) + "/");
+            SPropertyOperations.assign(node, PROPS.default_path$_FMO, SPropertyOperations.getString(node, PROPS.default_path$_FMO) + "/");
           }
-          while (SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")).contains("//")) {
+          while (SPropertyOperations.getString(node, PROPS.default_path$_FMO).contains("//")) {
             LoggingRuntime.logMsgView(Level.INFO, "// Replaced with /", FixAll.class, null, null);
-            SPropertyOperations.assign(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path"), SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path")).replaceAll("//", "/"));
+            SPropertyOperations.assign(node, PROPS.default_path$_FMO, SPropertyOperations.getString(node, PROPS.default_path$_FMO).replaceAll("//", "/"));
           }
         }
 
         // ............................................................. Formating numbers 
 
-        List<SNode> descendants = SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, "jetbrains.mps.samples.VoiceMenu.structure.DirectCall"), false, new SAbstractConcept[]{});
+        List<SNode> descendants = SNodeOperations.getNodeDescendants(node, CONCEPTS.DirectCall$7C, false, new SAbstractConcept[]{});
         if (ListSequence.fromList(descendants).isNotEmpty()) {
           for (SNode call : ListSequence.fromList(descendants)) {
-            if (isNotEmptyString(SPropertyOperations.getString(call, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, 0x6b5142eafcce13f1L, "number")))) {
-              SPropertyOperations.assign(call, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, 0x6b5142eafcce13f1L, "number"), SPropertyOperations.getString(call, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, 0x6b5142eafcce13f1L, "number")).replaceAll(" ", ""));
+            if (isNotEmptyString(SPropertyOperations.getString(call, PROPS.number$h6MF))) {
+              SPropertyOperations.assign(call, PROPS.number$h6MF, SPropertyOperations.getString(call, PROPS.number$h6MF).replaceAll(" ", ""));
               LoggingRuntime.logMsgView(Level.INFO, "Direct call number formated", FixAll.class, null, null);
             }
           }
 
         }
-        if (isNotEmptyString(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640bab9L, "default_number")))) {
-          SPropertyOperations.assign(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640bab9L, "default_number"), SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640bab9L, "default_number")).replaceAll(" ", ""));
+        if (isNotEmptyString(SPropertyOperations.getString(node, PROPS.default_number$_FAH))) {
+          SPropertyOperations.assign(node, PROPS.default_number$_FAH, SPropertyOperations.getString(node, PROPS.default_number$_FAH).replaceAll(" ", ""));
           LoggingRuntime.logMsgView(Level.INFO, "Default number formated", FixAll.class, null, null);
         }
 
         // ............................................................. Remove " " in Playback 
 
-        List<SNode> ActivityDesc = SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"), false, new SAbstractConcept[]{});
+        List<SNode> ActivityDesc = SNodeOperations.getNodeDescendants(node, CONCEPTS.Activity$oQ, false, new SAbstractConcept[]{});
         for (SNode activity : ListSequence.fromList(ActivityDesc)) {
-          if (isNotEmptyString(SPropertyOperations.getString(activity, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")))) {
-            if (Objects.equals(SPropertyOperations.getString(activity, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")).charAt(0), ' ')) {
-              SPropertyOperations.assign(activity, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback"), SPropertyOperations.getString(activity, MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback")).substring(1));
+          if (isNotEmptyString(SPropertyOperations.getString(activity, PROPS.playback$y04k))) {
+            if (Objects.equals(SPropertyOperations.getString(activity, PROPS.playback$y04k).charAt(0), ' ')) {
+              SPropertyOperations.assign(activity, PROPS.playback$y04k, SPropertyOperations.getString(activity, PROPS.playback$y04k).substring(1));
             }
           }
         }
-        if (isNotEmptyString(SPropertyOperations.getString(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0xbed5e5797b645beL, "timeout")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x34fad0c9f5b34402L, "playback")))) {
-          if (Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0xbed5e5797b645beL, "timeout")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x34fad0c9f5b34402L, "playback")).charAt(0), ' ')) {
-            SPropertyOperations.assign(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0xbed5e5797b645beL, "timeout")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x34fad0c9f5b34402L, "playback"), SPropertyOperations.getString(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0xbed5e5797b645beL, "timeout")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x34fad0c9f5b34402L, "playback")).substring(1));
+        if (isNotEmptyString(SPropertyOperations.getString(SLinkOperations.getTarget(node, LINKS.timeout$3Y$V), PROPS.playback$OvLo))) {
+          if (Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(node, LINKS.timeout$3Y$V), PROPS.playback$OvLo).charAt(0), ' ')) {
+            SPropertyOperations.assign(SLinkOperations.getTarget(node, LINKS.timeout$3Y$V), PROPS.playback$OvLo, SPropertyOperations.getString(SLinkOperations.getTarget(node, LINKS.timeout$3Y$V), PROPS.playback$OvLo).substring(1));
           }
         }
 
@@ -351,5 +355,36 @@ public class FixAll {
   }
   private static boolean isEmptyString(String str) {
     return str == null || str.length() == 0;
+  }
+
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept Event$dL = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event");
+    /*package*/ static final SConcept Menu$bP = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu");
+    /*package*/ static final SConcept Activity$oQ = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity");
+    /*package*/ static final SConcept Other$87 = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, "jetbrains.mps.samples.VoiceMenu.structure.Other");
+    /*package*/ static final SConcept Command$a6 = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9863dL, "jetbrains.mps.samples.VoiceMenu.structure.Command");
+    /*package*/ static final SConcept Empty$vd = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9c5c3L, "jetbrains.mps.samples.VoiceMenu.structure.Empty");
+    /*package*/ static final SConcept WorkSpace$ao = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace");
+    /*package*/ static final SConcept DirectCall$7C = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, "jetbrains.mps.samples.VoiceMenu.structure.DirectCall");
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty trigger$zpYt = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger");
+    /*package*/ static final SProperty name$tAp1 = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty playback$y04k = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback");
+    /*package*/ static final SProperty PBisFile$hBw1 = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile");
+    /*package*/ static final SProperty default_path$_FMO = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path");
+    /*package*/ static final SProperty number$h6MF = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, 0x6b5142eafcce13f1L, "number");
+    /*package*/ static final SProperty default_number$_FAH = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640bab9L, "default_number");
+    /*package*/ static final SProperty playback$OvLo = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x34fad0c9f5b34402L, "playback");
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink events$AIPs = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events");
+    /*package*/ static final SReferenceLink event$gjCV = MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event");
+    /*package*/ static final SContainmentLink activities$AJ0_ = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities");
+    /*package*/ static final SContainmentLink commands$giUr = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08d2L, "commands");
+    /*package*/ static final SContainmentLink bodyMenu$8UCv = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x5b6b060cf40204ebL, "bodyMenu");
+    /*package*/ static final SContainmentLink timeout$3Y$V = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0xbed5e5797b645beL, "timeout");
   }
 }

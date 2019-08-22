@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-j4aauevw0fdzbk93ogeb5pgfncbdn7">
+<product version="3" modelHash="-loyrl2t79wrsx5pjnhzn0gqutymwrv">
   <files names="AddMissingTimeout_QuickFix.java:CheckBackAtRoot_NonTypesystemRule.java:CheckDuplicateNumber_NonTypesystemRule.java:CheckEmptyACtivity_NonTypesystemRule.java:CheckEmptyMenu_NonTypesystemRule.java:CheckEventImplemented_NonTypesystemRule.java:CheckMultipleActivitiesOneEvent_NonTypesystemRule.java:CheckPhoneButtons_NonTypesystemRule.java:DuplicateTimeout_NonTypesystemRule.java:EmptyWorkspace_NonTypesystemRule.java:InitWorkspace_QuickFix.java:InitiliazeMenu_QuickFix.java:InitilizeEvent_QuickFix.java:PlayBacktoFile_NonTypesystemRule.java:PlayBacktoText_NonTypesystemRule.java:RemoveActivity_QuickFix.java:RemoveDuplicateTimeouts_QuickFix.java:RemoveNumber_QuickFix.java:RenameActivity_QuickFix.java:ResetAction_QuickFix.java:SetFinaltoTrue_QuickFix.java:SuggestNumber_QuickFix.java:TimeoutIsMissing_NonTypesystemRule.java:TransformPBtoFile_QuickFix.java:TransformPBtoText_QuickFix.java:TypesystemDescriptor.java:TypoFile_NonTypesystemRule.java:suggestWav_QuickFix.java" />
 </product>
 

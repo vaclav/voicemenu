@@ -25,7 +25,6 @@ import jetbrains.mps.openapi.editor.menus.transformation.ActionItemBase;
 import jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.SidebarActionItem;
 import jetbrains.mps.openapi.editor.menus.EditorMenuTraceInfo;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.editor.runtime.selection.SelectionUtil;
 import jetbrains.mps.openapi.editor.selection.SelectionManager;
 import jetbrains.mps.smodel.runtime.IconResource;
@@ -33,6 +32,9 @@ import jetbrains.mps.editor.runtime.cells.CellIdManager;
 import java.awt.Robot;
 import java.awt.AWTException;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import org.jetbrains.mps.openapi.language.SProperty;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SConcept;
 
 public class Timeout_TransformationMenu extends TransformationMenuBase {
   private final Set<String> myLocations = SetSequence.fromSetAndArray(new HashSet<String>(), MenuLocations.CONTEXT_ACTIONS_TOOL);
@@ -58,8 +60,8 @@ public class Timeout_TransformationMenu extends TransformationMenuBase {
   protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts(TransformationMenuContext _context) {
     List<MenuPart<TransformationMenuItem, TransformationMenuContext>> result = new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>();
     if (ListSequence.fromListAndArray(new ArrayList<String>(), MenuLocations.CONTEXT_ACTIONS_TOOL).contains(_context.getMenuLocation())) {
-      result.add(new Timeout_TransformationMenu.TMP_SubMenu_4a1v5f_a0());
-      result.add(new Timeout_TransformationMenu.TMP_SubMenu_4a1v5f_b0());
+      result.add(new TMP_SubMenu_4a1v5f_a0());
+      result.add(new TMP_SubMenu_4a1v5f_b0());
     }
     return result;
   }
@@ -91,12 +93,12 @@ public class Timeout_TransformationMenu extends TransformationMenuBase {
 
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Timeout_TransformationMenu.TMP_SubMenu_4a1v5f_a0.TMP_Action_4a1v5f_a0a(), new Timeout_TransformationMenu.TMP_SubMenu_4a1v5f_a0.TMP_Action_4a1v5f_b0a());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new TMP_SubMenu_4a1v5f_a0.TMP_Action_4a1v5f_a0a(), new TMP_SubMenu_4a1v5f_a0.TMP_Action_4a1v5f_b0a());
     }
     private class TMP_Action_4a1v5f_a0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        Timeout_TransformationMenu.TMP_SubMenu_4a1v5f_a0.TMP_Action_4a1v5f_a0a.Item item = new Timeout_TransformationMenu.TMP_SubMenu_4a1v5f_a0.TMP_Action_4a1v5f_a0a.Item(context);
+        TMP_SubMenu_4a1v5f_a0.TMP_Action_4a1v5f_a0a.Item item = new TMP_SubMenu_4a1v5f_a0.TMP_Action_4a1v5f_a0a.Item(context);
         String description;
         try {
           description = "single item: " + item.getLabelText("");
@@ -131,13 +133,13 @@ public class Timeout_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.assign(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x34fad0c9f5b34402L, "playback"), "");
+          SPropertyOperations.assign(_context.getNode(), PROPS.playback$OvLo, "");
           SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return isNotEmptyString(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x34fad0c9f5b34402L, "playback")));
+          return isNotEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.playback$OvLo));
         }
 
         @Override
@@ -161,7 +163,7 @@ public class Timeout_TransformationMenu extends TransformationMenuBase {
     private class TMP_Action_4a1v5f_b0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        Timeout_TransformationMenu.TMP_SubMenu_4a1v5f_a0.TMP_Action_4a1v5f_b0a.Item item = new Timeout_TransformationMenu.TMP_SubMenu_4a1v5f_a0.TMP_Action_4a1v5f_b0a.Item(context);
+        TMP_SubMenu_4a1v5f_a0.TMP_Action_4a1v5f_b0a.Item item = new TMP_SubMenu_4a1v5f_a0.TMP_Action_4a1v5f_b0a.Item(context);
         String description;
         try {
           description = "single item: " + item.getLabelText("");
@@ -196,14 +198,14 @@ public class Timeout_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.assign(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x34fad0c9f5b34402L, "playback"), "Timeout");
+          SPropertyOperations.assign(_context.getNode(), PROPS.playback$OvLo, "Timeout");
           SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), "*" + CellIdManager.createPropertyId("duration"));
 
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return isEmptyString(SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x34fad0c9f5b34402L, "playback")));
+          return isEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.playback$OvLo));
         }
 
         @Override
@@ -252,12 +254,12 @@ public class Timeout_TransformationMenu extends TransformationMenuBase {
 
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Timeout_TransformationMenu.TMP_SubMenu_4a1v5f_b0.TMP_Action_4a1v5f_a1a(), new Timeout_TransformationMenu.TMP_SubMenu_4a1v5f_b0.TMP_Action_4a1v5f_b1a(), new Timeout_TransformationMenu.TMP_SubMenu_4a1v5f_b0.TMP_Action_4a1v5f_c1a());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new TMP_SubMenu_4a1v5f_b0.TMP_Action_4a1v5f_a1a(), new TMP_SubMenu_4a1v5f_b0.TMP_Action_4a1v5f_b1a(), new TMP_SubMenu_4a1v5f_b0.TMP_Action_4a1v5f_c1a());
     }
     private class TMP_Action_4a1v5f_a1a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        Timeout_TransformationMenu.TMP_SubMenu_4a1v5f_b0.TMP_Action_4a1v5f_a1a.Item item = new Timeout_TransformationMenu.TMP_SubMenu_4a1v5f_b0.TMP_Action_4a1v5f_a1a.Item(context);
+        TMP_SubMenu_4a1v5f_b0.TMP_Action_4a1v5f_a1a.Item item = new TMP_SubMenu_4a1v5f_b0.TMP_Action_4a1v5f_a1a.Item(context);
         String description;
         try {
           description = "single item: " + item.getLabelText("");
@@ -331,7 +333,7 @@ public class Timeout_TransformationMenu extends TransformationMenuBase {
     private class TMP_Action_4a1v5f_b1a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        Timeout_TransformationMenu.TMP_SubMenu_4a1v5f_b0.TMP_Action_4a1v5f_b1a.Item item = new Timeout_TransformationMenu.TMP_SubMenu_4a1v5f_b0.TMP_Action_4a1v5f_b1a.Item(context);
+        TMP_SubMenu_4a1v5f_b0.TMP_Action_4a1v5f_b1a.Item item = new TMP_SubMenu_4a1v5f_b0.TMP_Action_4a1v5f_b1a.Item(context);
         String description;
         try {
           description = "single item: " + item.getLabelText("");
@@ -366,14 +368,14 @@ public class Timeout_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.assign(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar"), true);
+          SPropertyOperations.assign(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.WorkSpace$ao), PROPS.toolbar$cda3, true);
           SelectionUtil.selectNode(_context.getEditorContext(), _context.getNode());
           SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return SPropertyOperations.getBoolean(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar")) == false;
+          return SPropertyOperations.getBoolean(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.WorkSpace$ao), PROPS.toolbar$cda3) == false;
         }
 
         @Override
@@ -397,7 +399,7 @@ public class Timeout_TransformationMenu extends TransformationMenuBase {
     private class TMP_Action_4a1v5f_c1a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        Timeout_TransformationMenu.TMP_SubMenu_4a1v5f_b0.TMP_Action_4a1v5f_c1a.Item item = new Timeout_TransformationMenu.TMP_SubMenu_4a1v5f_b0.TMP_Action_4a1v5f_c1a.Item(context);
+        TMP_SubMenu_4a1v5f_b0.TMP_Action_4a1v5f_c1a.Item item = new TMP_SubMenu_4a1v5f_b0.TMP_Action_4a1v5f_c1a.Item(context);
         String description;
         try {
           description = "single item: " + item.getLabelText("");
@@ -432,14 +434,14 @@ public class Timeout_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.assign(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar"), false);
+          SPropertyOperations.assign(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.WorkSpace$ao), PROPS.toolbar$cda3, false);
           SelectionUtil.selectNode(_context.getEditorContext(), _context.getNode());
           SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return SPropertyOperations.getBoolean(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace")), MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar")) == true;
+          return SPropertyOperations.getBoolean(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.WorkSpace$ao), PROPS.toolbar$cda3) == true;
         }
 
         @Override
@@ -466,5 +468,14 @@ public class Timeout_TransformationMenu extends TransformationMenuBase {
   }
   private static boolean isEmptyString(String str) {
     return str == null || str.length() == 0;
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty playback$OvLo = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x34fad0c9f5b34402L, "playback");
+    /*package*/ static final SProperty toolbar$cda3 = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar");
+  }
+
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept WorkSpace$ao = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace");
   }
 }

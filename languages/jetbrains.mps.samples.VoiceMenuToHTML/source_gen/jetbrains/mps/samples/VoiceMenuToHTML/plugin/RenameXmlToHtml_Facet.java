@@ -30,7 +30,7 @@ public class RenameXmlToHtml_Facet extends IFacet.Stub {
   private List<ITarget> targets = ListSequence.fromList(new ArrayList<ITarget>());
   private IFacet.Name name = new IFacet.Name("jetbrains.mps.samples.VoiceMenuToHTML.RenameXmlToHtml");
   public RenameXmlToHtml_Facet() {
-    ListSequence.fromList(targets).addElement(new RenameXmlToHtml_Facet.Target_doRename());
+    ListSequence.fromList(targets).addElement(new Target_doRename());
   }
   public Iterable<ITarget> targets() {
     return targets;
@@ -48,7 +48,7 @@ public class RenameXmlToHtml_Facet extends IFacet.Stub {
     return this.name;
   }
   public IPropertiesPersistence propertiesPersistence() {
-    return new RenameXmlToHtml_Facet.TargetProperties();
+    return new TargetProperties();
   }
   public static class Target_doRename implements ITargetEx {
     private static final ITarget.Name name = new ITarget.Name("jetbrains.mps.samples.VoiceMenuToHTML.RenameXmlToHtml.doRename");

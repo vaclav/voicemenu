@@ -61,11 +61,13 @@ cd "$OLDPWD"
 # ---------------------------------------------------------------------
 if [ -n "$voicemenu_JDK" -a -x "$voicemenu_JDK/bin/java" ]; then
   JDK="$voicemenu_JDK"
-elif [ -s "$HOME/.voicemenu2019.1/config/voicemenu.jdk" ]; then
-  JDK=`"$CAT" $HOME/.voicemenu2019.1/config/voicemenu.jdk`
+elif [ -s "$HOME/.voicemenu2019.2/config/voicemenu.jdk" ]; then
+  JDK=`"$CAT" $HOME/.voicemenu2019.2/config/voicemenu.jdk`
   if [ ! -d "$JDK" ]; then
     JDK="$IDE_HOME/$JDK"
   fi
+elif [ -x "$IDE_HOME/jbr/bin/java" ] && "$IDE_HOME/jbr/bin/java" -version > /dev/null 2>&1 ; then
+  JDK="$IDE_HOME/jbr"
 elif [ -x "$IDE_HOME/jre/jre/bin/java" ] && "$IDE_HOME/jre/jre/bin/java" -version > /dev/null 2>&1 ; then
   JDK="$IDE_HOME/jre"
 elif [ -n "$JDK_HOME" -a -x "$JDK_HOME/bin/java" ]; then
@@ -143,9 +145,9 @@ if [ -n "$IDEA_VM_OPTIONS" -a -r "$IDEA_VM_OPTIONS" ]; then
 elif [ -r "$IDE_HOME.vmoptions" ]; then
   # Toolbox
   VM_OPTIONS_FILE="$IDE_HOME.vmoptions"
-elif [ -r "$HOME/.voicemenu2019.1/config/mps$BITS.vmoptions" ]; then
+elif [ -r "$HOME/.voicemenu2019.2/config/mps$BITS.vmoptions" ]; then
   # user-overridden
-  VM_OPTIONS_FILE="$HOME/.voicemenu2019.1/config/mps$BITS.vmoptions"
+  VM_OPTIONS_FILE="$HOME/.voicemenu2019.2/config/mps$BITS.vmoptions"
 elif [ -r "$IDE_BIN_HOME/voicemenu$BITS.vmoptions" ]; then
   # default, standard installation
   VM_OPTIONS_FILE="$IDE_BIN_HOME/voicemenu$BITS.vmoptions"
@@ -167,7 +169,7 @@ if [ "$IS_EAP" = "true" ]; then
   OS_NAME=`echo "$OS_TYPE" | "$TR" '[:upper:]' '[:lower:]'`
   AGENT_LIB="yjpagent-$OS_NAME$BITS"
   if [ -r "$IDE_BIN_HOME/lib$AGENT_LIB.so" ]; then
-    AGENT="-agentlib:$AGENT_LIB=disablealloc,delay=10000,sessionname=voicemenu2019.1"
+    AGENT="-agentlib:$AGENT_LIB=disablealloc,delay=10000,sessionname=voicemenu2019.2"
   fi
 fi
 
@@ -191,13 +193,11 @@ fi
 # ---------------------------------------------------------------------
 IFS="$(printf '\n\t')"
 MAIN_CLASS=jetbrains.mps.Launcher
-IDEA_PATHS_SELECTOR=voicemenu2019.1
+IDEA_PATHS_SELECTOR=voicemenu2019.2
 LD_LIBRARY_PATH="$IDE_BIN_HOME:$LD_LIBRARY_PATH" "$JAVA_BIN" \
   ${AGENT} \
   -classpath "$CLASSPATH" \
   ${VM_OPTIONS} \
-  -Dawt.useSystemAAFontSettings=lcd \
-  -Dsun.java2d.renderer=sun.java2d.marlin.MarlinRenderingEngine \
   "-XX:ErrorFile=$HOME/java_error_in_MPS_%p.log" \
   "-XX:HeapDumpPath=$HOME/java_error_in_IDEA.hprof" \
   -Didea.paths.selector=$IDEA_PATHS_SELECTOR \
