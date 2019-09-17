@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="main.QueriesGenerated">
+    <classNode dependClassName="jetbrains.mps.generator.runtime.Generated" />
+    <classNode extendsClassName="jetbrains.mps.generator.impl.query.QueryProviderBase" />
+  </dependency>
+</dependenciesRoot>
+

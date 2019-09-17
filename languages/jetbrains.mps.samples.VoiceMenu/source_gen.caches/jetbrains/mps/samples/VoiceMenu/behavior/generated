@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="c1qdibuppf7nhqr5a0ea60e05chd5a7">
-  <files names="Action__BehaviorDescriptor.java:Activity__BehaviorDescriptor.java:BehaviorAspectDescriptor.java:Menu__BehaviorDescriptor.java:Timeout__BehaviorDescriptor.java:WorkSpace__BehaviorDescriptor.java" />
+<product version="3" modelHash="7513twtqmoc714tuu25yamm6pcgyxso">
+  <files names="Action__BehaviorDescriptor.java:Activity__BehaviorDescriptor.java:BehaviorAspectDescriptor.java:Event__BehaviorDescriptor.java:Menu__BehaviorDescriptor.java:Timeout__BehaviorDescriptor.java:WorkSpace__BehaviorDescriptor.java" />
 </product>
 

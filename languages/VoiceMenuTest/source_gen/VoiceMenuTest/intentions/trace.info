@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="IntentionsDescriptor.java">
+      <unit at="18,0,58,0" name="VoiceMenuTest.intentions.IntentionsDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:e62e7d7f-d516-4f0b-946c-e54a37d62a24(VoiceMenuTest.intentions)/8281000289632484192">
+    <file name="ClearTestResults_Intention.java">
+      <node id="8281000289632484192" at="30,0,31,0" concept="2" trace="myCachedExecutable" />
+      <node id="8281000289632484192" at="31,39,32,138" concept="10" />
+      <node id="8281000289632484192" at="35,35,36,30" concept="7" />
+      <node id="8281000289632484192" at="40,53,41,19" concept="7" />
+      <node id="8281000289632484192" at="42,5,43,16" concept="7" />
+      <node id="8281000289632501216" at="47,39,48,166" concept="7" />
+      <node id="8281000289632484192" at="53,35,54,17" concept="7" />
+      <node id="8281000289632484192" at="57,37,58,105" concept="1" />
+      <node id="8281000289632484192" at="59,5,60,30" concept="7" />
+      <node id="8281000289632484540" at="66,87,67,34" concept="7" />
+      <node id="8281000289632523909" at="72,37,73,143" concept="1" />
+      <node id="8281000289632529169" at="73,143,74,115" concept="1" />
+      <node id="8281000289632484192" at="79,48,80,45" concept="7" />
+      <node id="8281000289632484192" at="85,0,86,0" concept="9" trace="steps$xTQf" />
+      <node id="8281000289632484192" at="86,0,87,0" concept="9" trace="evaluation$VA5f" />
+      <node id="8281000289632484192" at="90,0,91,0" concept="9" trace="result$T6Kx" />
+      <node id="8281000289632484192" at="91,0,92,0" concept="9" trace="message$T6Lv" />
+      <node id="8281000289632484192" at="95,0,96,0" concept="9" trace="TestStep$9N" />
+      <node id="8281000289632484192" at="63,0,65,0" concept="0" trace="IntentionImplementation#()V" />
+      <node id="8281000289632484192" at="31,0,34,0" concept="0" trace="ClearTestResults_Intention#()V" />
+      <node id="8281000289632484192" at="39,84,42,5" concept="4" />
+      <node id="8281000289632500727" at="47,0,50,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="8281000289632484192" at="56,99,59,5" concept="4" />
+      <node id="8281000289632484192" at="34,0,38,0" concept="5" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="8281000289632484192" at="52,0,56,0" concept="5" trace="isSurroundWith#()Z" />
+      <node id="8281000289632484192" at="65,0,69,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <node id="8281000289632523645" at="72,0,76,0" concept="5" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8281000289632484192" at="78,0,82,0" concept="5" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
+      <node id="8281000289632485419" at="45,91,50,7" concept="7" />
+      <node id="8281000289632484192" at="56,0,62,0" concept="5" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <node id="8281000289632508901" at="70,78,76,9" concept="1" />
+      <node id="8281000289632484192" at="38,0,45,0" concept="5" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="8281000289632484192" at="45,0,52,0" concept="5" trace="isApplicableToNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="8281000289632484192" at="69,0,78,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <scope id="8281000289632484192" at="63,38,63,38" />
+      <scope id="8281000289632484192" at="31,39,32,138" />
+      <scope id="8281000289632484192" at="35,35,36,30" />
+      <scope id="8281000289632484192" at="40,53,41,19" />
+      <scope id="8281000289632500728" at="47,39,48,166" />
+      <scope id="8281000289632484192" at="53,35,54,17" />
+      <scope id="8281000289632484192" at="57,37,58,105" />
+      <scope id="8281000289632484194" at="66,87,67,34" />
+      <scope id="8281000289632484192" at="79,48,80,45" />
+      <scope id="8281000289632484192" at="63,0,65,0" />
+      <scope id="8281000289632523646" at="72,37,74,115" />
+      <scope id="8281000289632484192" at="31,0,34,0" />
+      <scope id="8281000289632500727" at="47,0,50,0">
+        <var name="it" id="8281000289632500727" />
+      </scope>
+      <scope id="8281000289632484192" at="34,0,38,0" />
+      <scope id="8281000289632484192" at="39,84,43,16" />
+      <scope id="8281000289632484192" at="52,0,56,0" />
+      <scope id="8281000289632484192" at="56,99,60,30" />
+      <scope id="8281000289632484192" at="65,0,69,0">
+        <var name="editorContext" id="8281000289632484192" />
+        <var name="node" id="8281000289632484192" />
+      </scope>
+      <scope id="8281000289632523645" at="72,0,76,0">
+        <var name="it" id="8281000289632523645" />
+      </scope>
+      <scope id="8281000289632484192" at="78,0,82,0" />
+      <scope id="8281000289632485158" at="45,91,50,7" />
+      <scope id="8281000289632484192" at="56,0,62,0">
+        <var name="context" id="8281000289632484192" />
+        <var name="node" id="8281000289632484192" />
+      </scope>
+      <scope id="8281000289632484196" at="70,78,76,9" />
+      <scope id="8281000289632484192" at="38,0,45,0">
+        <var name="editorContext" id="8281000289632484192" />
+        <var name="node" id="8281000289632484192" />
+      </scope>
+      <scope id="8281000289632484192" at="45,0,52,0">
+        <var name="editorContext" id="8281000289632484192" />
+        <var name="node" id="8281000289632484192" />
+      </scope>
+      <scope id="8281000289632484192" at="69,0,78,0">
+        <var name="editorContext" id="8281000289632484192" />
+        <var name="node" id="8281000289632484192" />
+      </scope>
+      <unit id="8281000289632484192" at="94,0,97,0" name="VoiceMenuTest.intentions.ClearTestResults_Intention$CONCEPTS" />
+      <unit id="8281000289632500727" at="46,94,50,5" name="VoiceMenuTest.intentions.ClearTestResults_Intention$1" />
+      <unit id="8281000289632484192" at="84,0,88,0" name="VoiceMenuTest.intentions.ClearTestResults_Intention$LINKS" />
+      <unit id="8281000289632484192" at="89,0,93,0" name="VoiceMenuTest.intentions.ClearTestResults_Intention$PROPS" />
+      <unit id="8281000289632523645" at="71,138,76,7" name="VoiceMenuTest.intentions.ClearTestResults_Intention$IntentionImplementation$1" />
+      <unit id="8281000289632484192" at="62,0,83,0" name="VoiceMenuTest.intentions.ClearTestResults_Intention$IntentionImplementation" />
+      <unit id="8281000289632484192" at="29,0,98,0" name="VoiceMenuTest.intentions.ClearTestResults_Intention" />
+    </file>
+    <file name="IntentionsDescriptor.java">
+      <node id="8281000289632484192" at="37,47,38,59" concept="1" />
+      <node id="8281000289632484192" at="51,52,52,45" concept="1" />
+    </file>
+  </root>
+  <root nodeRef="r:e62e7d7f-d516-4f0b-946c-e54a37d62a24(VoiceMenuTest.intentions)/8281000289632534074">
+    <file name="IntentionsDescriptor.java">
+      <node id="8281000289632534074" at="38,59,39,51" concept="1" />
+      <node id="8281000289632534074" at="52,45,53,37" concept="1" />
+    </file>
+    <file name="RunTests_Intention.java">
+      <node id="8281000289632534074" at="33,0,34,0" concept="2" trace="myCachedExecutable" />
+      <node id="8281000289632534074" at="34,31,35,138" concept="10" />
+      <node id="8281000289632534074" at="38,35,39,22" concept="7" />
+      <node id="8281000289632534074" at="42,84,43,16" concept="7" />
+      <node id="8281000289632534074" at="46,35,47,17" concept="7" />
+      <node id="8281000289632534074" at="50,37,51,105" concept="1" />
+      <node id="8281000289632534074" at="52,5,53,30" concept="7" />
+      <node id="8281000289632534077" at="59,87,60,25" concept="7" />
+      <node id="8281000289632534091" at="65,37,66,143" concept="1" />
+      <node id="8281000289632534100" at="66,143,67,115" concept="1" />
+      <node id="8281000289632537258" at="69,9,70,0" concept="8" />
+      <node id="8281000289632544545" at="70,0,71,134" concept="6" />
+      <node id="8281000289632543562" at="71,134,72,75" concept="6" />
+      <node id="8281000289632570823" at="74,68,75,122" concept="6" />
+      <node id="8281000289632577573" at="77,45,78,96" concept="7" />
+      <node id="8281000289632580996" at="81,45,82,147" concept="1" />
+      <node id="8281000289632585910" at="82,147,83,366" concept="1" />
+      <node id="8281000289632602647" at="83,366,84,19" concept="7" />
+      <node id="8281000289632690809" at="87,45,88,105" concept="7" />
+      <node id="8281000289632700945" at="91,128,92,128" concept="1" />
+      <node id="8281000289632612108" at="96,155,97,147" concept="1" />
+      <node id="8281000289632612117" at="97,147,98,388" concept="1" />
+      <node id="8281000289632611800" at="98,388,99,19" concept="7" />
+      <node id="8281000289632629786" at="101,9,102,143" concept="1" />
+      <node id="8281000289632534074" at="106,48,107,37" concept="7" />
+      <node id="8281000289632534074" at="112,0,113,0" concept="9" trace="steps$xTQf" />
+      <node id="8281000289632534074" at="113,0,114,0" concept="9" trace="evaluation$VA5f" />
+      <node id="8281000289632534074" at="114,0,115,0" concept="9" trace="workspaceToTest$xMNi" />
+      <node id="8281000289632534074" at="115,0,116,0" concept="9" trace="bodyMenu$8UCv" />
+      <node id="8281000289632534074" at="116,0,117,0" concept="9" trace="events$AIPs" />
+      <node id="8281000289632534074" at="117,0,118,0" concept="9" trace="event$gjCV" />
+      <node id="8281000289632534074" at="118,0,119,0" concept="9" trace="commands$giUr" />
+      <node id="8281000289632534074" at="119,0,120,0" concept="9" trace="expectedEvent$ZeYz" />
+      <node id="8281000289632534074" at="123,0,124,0" concept="9" trace="result$T6Kx" />
+      <node id="8281000289632534074" at="124,0,125,0" concept="9" trace="message$T6Lv" />
+      <node id="8281000289632534074" at="125,0,126,0" concept="9" trace="key$S$4E" />
+      <node id="8281000289632534074" at="126,0,127,0" concept="9" trace="trigger$zpYt" />
+      <node id="8281000289632534074" at="130,0,131,0" concept="9" trace="Press$kW" />
+      <node id="8281000289632534074" at="131,0,132,0" concept="9" trace="Activity$oQ" />
+      <node id="8281000289632534074" at="132,0,133,0" concept="9" trace="Menu$bP" />
+      <node id="8281000289632534074" at="133,0,134,0" concept="9" trace="Assert$T3" />
+      <node id="8281000289632534074" at="56,0,58,0" concept="0" trace="IntentionImplementation#()V" />
+      <node id="8281000289632534074" at="34,0,37,0" concept="0" trace="RunTests_Intention#()V" />
+      <node id="8281000289632534074" at="49,99,52,5" concept="4" />
+      <node id="8281000289632577571" at="77,0,80,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="8281000289632690807" at="87,0,90,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="8281000289632693183" at="90,21,93,11" concept="4" />
+      <node id="8281000289632534074" at="37,0,41,0" concept="5" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="8281000289632534074" at="41,0,45,0" concept="5" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="8281000289632534074" at="45,0,49,0" concept="5" trace="isSurroundWith#()Z" />
+      <node id="8281000289632534074" at="58,0,62,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <node id="8281000289632534089" at="65,0,69,0" concept="5" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8281000289632534074" at="105,0,109,0" concept="5" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
+      <node id="8281000289632576636" at="75,122,80,13" concept="1" />
+      <node id="8281000289632578505" at="80,13,85,11" concept="4" />
+      <node id="8281000289632690798" at="85,11,90,21" concept="6" />
+      <node id="8281000289632605787" at="95,69,100,11" concept="4" />
+      <node id="8281000289632534074" at="49,0,55,0" concept="5" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <node id="8281000289632534081" at="63,78,69,9" concept="1" />
+      <node id="8281000289632602805" at="94,9,101,9" concept="4" />
+      <node id="8281000289632566675" at="73,101,94,9" concept="4" />
+      <node id="8281000289632537980" at="72,75,103,7" concept="3" />
+      <node id="8281000289632534074" at="62,0,105,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <scope id="8281000289632534074" at="56,38,56,38" />
+      <scope id="8281000289632534074" at="34,31,35,138" />
+      <scope id="8281000289632534074" at="38,35,39,22" />
+      <scope id="8281000289632534074" at="42,84,43,16" />
+      <scope id="8281000289632534074" at="46,35,47,17" />
+      <scope id="8281000289632534074" at="50,37,51,105" />
+      <scope id="8281000289632534076" at="59,87,60,25" />
+      <scope id="8281000289632577572" at="77,45,78,96" />
+      <scope id="8281000289632690808" at="87,45,88,105" />
+      <scope id="8281000289632693185" at="91,128,92,128" />
+      <scope id="8281000289632534074" at="106,48,107,37" />
+      <scope id="8281000289632534074" at="56,0,58,0" />
+      <scope id="8281000289632534090" at="65,37,67,115" />
+      <scope id="8281000289632534074" at="34,0,37,0" />
+      <scope id="8281000289632577571" at="77,0,80,0">
+        <var name="it" id="8281000289632577571" />
+      </scope>
+      <scope id="8281000289632578507" at="81,45,84,19" />
+      <scope id="8281000289632690807" at="87,0,90,0">
+        <var name="it" id="8281000289632690807" />
+      </scope>
+      <scope id="8281000289632605789" at="96,155,99,19" />
+      <scope id="8281000289632534074" at="37,0,41,0" />
+      <scope id="8281000289632534074" at="41,0,45,0">
+        <var name="editorContext" id="8281000289632534074" />
+        <var name="node" id="8281000289632534074" />
+      </scope>
+      <scope id="8281000289632534074" at="45,0,49,0" />
+      <scope id="8281000289632534074" at="49,99,53,30" />
+      <scope id="8281000289632534074" at="58,0,62,0">
+        <var name="editorContext" id="8281000289632534074" />
+        <var name="node" id="8281000289632534074" />
+      </scope>
+      <scope id="8281000289632534089" at="65,0,69,0">
+        <var name="it" id="8281000289632534089" />
+      </scope>
+      <scope id="8281000289632534074" at="105,0,109,0" />
+      <scope id="8281000289632602807" at="95,69,100,11" />
+      <scope id="8281000289632534074" at="49,0,55,0">
+        <var name="context" id="8281000289632534074" />
+        <var name="node" id="8281000289632534074" />
+      </scope>
+      <scope id="8281000289632566677" at="74,68,93,11">
+        <var name="currentActivity" id="8281000289632690799" />
+        <var name="key" id="8281000289632570824" />
+      </scope>
+      <scope id="8281000289632537986" at="73,101,102,143" />
+      <scope id="8281000289632537980" at="72,75,103,7">
+        <var name="step" id="8281000289632537982" />
+      </scope>
+      <scope id="8281000289632534080" at="63,78,103,7">
+        <var name="currentEvent" id="8281000289632543565" />
+        <var name="currentMenu" id="8281000289632544548" />
+      </scope>
+      <scope id="8281000289632534074" at="62,0,105,0">
+        <var name="editorContext" id="8281000289632534074" />
+        <var name="node" id="8281000289632534074" />
+      </scope>
+      <unit id="8281000289632577571" at="76,128,80,11" name="VoiceMenuTest.intentions.RunTests_Intention$IntentionImplementation$2" />
+      <unit id="8281000289632690807" at="86,220,90,11" name="VoiceMenuTest.intentions.RunTests_Intention$IntentionImplementation$3" />
+      <unit id="8281000289632534089" at="64,94,69,7" name="VoiceMenuTest.intentions.RunTests_Intention$IntentionImplementation$1" />
+      <unit id="8281000289632534074" at="122,0,128,0" name="VoiceMenuTest.intentions.RunTests_Intention$PROPS" />
+      <unit id="8281000289632534074" at="129,0,135,0" name="VoiceMenuTest.intentions.RunTests_Intention$CONCEPTS" />
+      <unit id="8281000289632534074" at="111,0,121,0" name="VoiceMenuTest.intentions.RunTests_Intention$LINKS" />
+      <unit id="8281000289632534074" at="55,0,110,0" name="VoiceMenuTest.intentions.RunTests_Intention$IntentionImplementation" />
+      <unit id="8281000289632534074" at="32,0,136,0" name="VoiceMenuTest.intentions.RunTests_Intention" />
+    </file>
+  </root>
+</debug-info>
+

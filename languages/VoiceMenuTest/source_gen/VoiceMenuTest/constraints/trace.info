@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="13,0,29,0" name="VoiceMenuTest.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:f13c684f-5a73-4f94-a84e-78c195b9a56b(VoiceMenuTest.constraints)/8281000289632442827">
+    <file name="Assert_Constraints.java">
+      <node id="8281000289632442827" at="29,31,30,30" concept="6" />
+      <node id="8281000289632442828" at="37,44,38,20" concept="4" />
+      <node id="8281000289632442828" at="45,63,46,57" concept="4" />
+      <node id="8281000289632451783" at="49,122,50,290" concept="3" />
+      <node id="8281000289632471917" at="50,290,51,54" concept="4" />
+      <node id="8281000289632442827" at="55,6,56,131" concept="3" />
+      <node id="8281000289632442828" at="56,131,57,42" concept="1" />
+      <node id="8281000289632442827" at="57,42,58,22" concept="4" />
+      <node id="8281000289632442827" at="60,0,61,0" concept="5" trace="breakingNode_g42j4u_a0a0a0a0a1a0a0a0c" />
+      <node id="8281000289632442827" at="63,0,64,0" concept="5" trace="Assert$T3" />
+      <node id="8281000289632442827" at="64,0,65,0" concept="5" trace="VoiceMenuTestCase$8m" />
+      <node id="8281000289632442827" at="65,0,66,0" concept="5" trace="Event$dL" />
+      <node id="8281000289632442827" at="69,0,70,0" concept="5" trace="expectedEvent$ZeYz" />
+      <node id="8281000289632442827" at="70,0,71,0" concept="5" trace="workspaceToTest$xMNi" />
+      <node id="8281000289632442827" at="29,0,32,0" concept="0" trace="Assert_Constraints#()V" />
+      <node id="8281000289632442828" at="36,0,40,0" concept="2" trace="hasOwnScopeProvider#()Z" />
+      <node id="8281000289632442828" at="44,0,48,0" concept="2" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="8281000289632442828" at="48,0,53,0" concept="2" trace="createScope#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="8281000289632442828" at="42,56,53,10" concept="4" />
+      <node id="8281000289632442828" at="40,0,55,0" concept="2" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="8281000289632442828" at="34,90,55,6" concept="3" />
+      <node id="8281000289632442827" at="33,0,60,0" concept="2" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="8281000289632442827" at="29,31,30,30" />
+      <scope id="8281000289632442828" at="37,44,38,20" />
+      <scope id="8281000289632442828" at="45,63,46,57" />
+      <scope id="8281000289632442828" at="49,122,51,54">
+        <var name="events" id="8281000289632451784" />
+      </scope>
+      <scope id="8281000289632442827" at="29,0,32,0" />
+      <scope id="8281000289632442828" at="36,0,40,0" />
+      <scope id="8281000289632442828" at="44,0,48,0" />
+      <scope id="8281000289632442828" at="48,0,53,0">
+        <var name="_context" id="8281000289632442828" />
+        <var name="operationContext" id="8281000289632442828" />
+      </scope>
+      <scope id="8281000289632442828" at="42,56,53,10" />
+      <scope id="8281000289632442828" at="40,0,55,0" />
+      <scope id="8281000289632442827" at="34,90,58,22">
+        <var name="d0" id="8281000289632442828" />
+        <var name="references" id="8281000289632442827" />
+      </scope>
+      <scope id="8281000289632442827" at="33,0,60,0" />
+      <unit id="8281000289632442827" at="68,0,72,0" name="VoiceMenuTest.constraints.Assert_Constraints$LINKS" />
+      <unit id="8281000289632442827" at="62,0,67,0" name="VoiceMenuTest.constraints.Assert_Constraints$CONCEPTS" />
+      <unit id="8281000289632442828" at="43,19,53,9" name="VoiceMenuTest.constraints.Assert_Constraints$1$1" />
+      <unit id="8281000289632442828" at="35,48,55,5" name="VoiceMenuTest.constraints.Assert_Constraints$1" />
+      <unit id="8281000289632442827" at="28,0,73,0" name="VoiceMenuTest.constraints.Assert_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

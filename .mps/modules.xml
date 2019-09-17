@@ -3,6 +3,8 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/devkits/jetbrains.mps.devkit.voicemenu/jetbrains.mps.devkit.voicemenu.devkit" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/VoiceMenuTest/VoiceMenuTest.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/VoiceMenuTest/sandbox/VoiceMenuTest.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.samples.Text/jetbrains.mps.samples.Text.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.samples.VoiceMenu/jetbrains.mps.samples.VoiceMenu.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.samples.VoiceMenu/sandbox/jetbrains.mps.samples.VoiceMenu.sandbox.msd" folder="" />
