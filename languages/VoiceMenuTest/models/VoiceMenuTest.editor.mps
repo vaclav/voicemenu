@@ -272,7 +272,7 @@
     <ref role="1XX52x" to="upea:7bG1ue8s32A" resolve="Assert" />
     <node concept="3EZMnI" id="7bG1ue8saxH" role="2wV5jI">
       <node concept="3F0ifn" id="7bG1ue8saxO" role="3EZMnx">
-        <property role="3F0ifm" value="Assert" />
+        <property role="3F0ifm" value="assert" />
       </node>
       <node concept="1iCGBv" id="7bG1ue8sayn" role="3EZMnx">
         <ref role="1NtTu8" to="upea:7bG1ue8sayh" resolve="expectedEvent" />

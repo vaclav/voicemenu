@@ -23,7 +23,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Assert:
         if (props_Assert == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Assert");
+          cpb.rawPresentation("assert");
           props_Assert = cpb.create();
         }
         return props_Assert;

@@ -346,7 +346,7 @@
                       <node concept="liA8E" id="Y" role="2OqNvi">
                         <ref role="37wK5l" to="ze1i:~ConceptPresentationBuilder.rawPresentation(java.lang.String)" resolve="rawPresentation" />
                         <node concept="Xl_RD" id="Z" role="37wK5m">
-                          <property role="Xl_RC" value="Assert" />
+                          <property role="Xl_RC" value="assert" />
                           <node concept="cd27G" id="11" role="lGtFl">
                             <node concept="3u3nmq" id="12" role="cd27D">
                               <property role="3u3nmv" value="8281000289632268454" />
@@ -2671,7 +2671,7 @@
             <node concept="liA8E" id="eU" role="2OqNvi">
               <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.alias(java.lang.String)" resolve="alias" />
               <node concept="Xl_RD" id="eV" role="37wK5m">
-                <property role="Xl_RC" value="Assert" />
+                <property role="Xl_RC" value="assert" />
               </node>
             </node>
           </node>

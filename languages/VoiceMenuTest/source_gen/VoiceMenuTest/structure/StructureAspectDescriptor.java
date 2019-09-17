@@ -77,7 +77,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:9b5fab12-3317-4915-baca-42b08fc481a5(VoiceMenuTest.structure)/8281000289632268454");
     b.version(2);
     b.associate("expectedEvent", 0x72ec05e38870a891L).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL).optional(false).origin("8281000289632299153").done();
-    b.alias("Assert");
+    b.alias("assert");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPress() {

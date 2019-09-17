@@ -138,7 +138,7 @@
   <node concept="1TIwiD" id="7bG1ue8s32A">
     <property role="EcuMT" value="8281000289632268454" />
     <property role="TrG5h" value="Assert" />
-    <property role="34LRSv" value="Assert" />
+    <property role="34LRSv" value="assert" />
     <ref role="1TJDcQ" node="7bG1ue8rvKf" resolve="TestStep" />
     <node concept="1TJgyj" id="7bG1ue8sayh" role="1TKVEi">
       <property role="IQ2ns" value="8281000289632299153" />
