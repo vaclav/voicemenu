@@ -10,21 +10,20 @@ import jetbrains.mps.openapi.intentions.Kind;
 import jetbrains.mps.smodel.SNodePointer;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import java.util.Collections;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.internal.collections.runtime.IVisitor;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import org.jetbrains.mps.openapi.language.SProperty;
 import org.jetbrains.mps.openapi.language.SConcept;
+import org.jetbrains.mps.openapi.language.SProperty;
 
 public final class ClearTestResults_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
@@ -43,7 +42,7 @@ public final class ClearTestResults_Intention extends AbstractIntentionDescripto
     return true;
   }
   private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-    return ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.steps$xTQf)).any(new IWhereFilter<SNode>() {
+    return Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(node, LINKS.commands$xTQf), CONCEPTS.TestStep$9N)).any(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
         return !(SEnumOperations.isMember(SPropertyOperations.getEnum(SLinkOperations.getTarget(it, LINKS.evaluation$VA5f), PROPS.result$T6Kx), 0x72ec05e3886dfc17L));
       }
@@ -68,7 +67,7 @@ public final class ClearTestResults_Intention extends AbstractIntentionDescripto
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.TestStep$9N, false, new SAbstractConcept[]{})).visitAll(new IVisitor<SNode>() {
+      Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(node, LINKS.commands$xTQf), CONCEPTS.TestStep$9N)).visitAll(new IVisitor<SNode>() {
         public void visit(SNode it) {
           SPropertyOperations.setEnum(SLinkOperations.getTarget(it, LINKS.evaluation$VA5f), PROPS.result$T6Kx, 0x72ec05e3886dfc17L, "Unknown");
           SPropertyOperations.assign(SLinkOperations.getTarget(it, LINKS.evaluation$VA5f), PROPS.message$T6Lv, "");
@@ -82,16 +81,16 @@ public final class ClearTestResults_Intention extends AbstractIntentionDescripto
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink steps$xTQf = MetaAdapterFactory.getContainmentLink(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0cL, 0x72ec05e38870528cL, "steps");
+    /*package*/ static final SContainmentLink commands$xTQf = MetaAdapterFactory.getContainmentLink(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0cL, 0x72ec05e38870528cL, "commands");
     /*package*/ static final SContainmentLink evaluation$VA5f = MetaAdapterFactory.getContainmentLink(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0fL, 0x72ec05e3886dfc64L, "evaluation");
+  }
+
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept TestStep$9N = MetaAdapterFactory.getConcept(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0fL, "VoiceMenuTest.structure.TestStep");
   }
 
   private static final class PROPS {
     /*package*/ static final SProperty result$T6Kx = MetaAdapterFactory.getProperty(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc10L, 0x72ec05e3886dfc1bL, "result");
     /*package*/ static final SProperty message$T6Lv = MetaAdapterFactory.getProperty(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc10L, 0x72ec05e3886dfc1dL, "message");
-  }
-
-  private static final class CONCEPTS {
-    /*package*/ static final SConcept TestStep$9N = MetaAdapterFactory.getConcept(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0fL, "VoiceMenuTest.structure.TestStep");
   }
 }

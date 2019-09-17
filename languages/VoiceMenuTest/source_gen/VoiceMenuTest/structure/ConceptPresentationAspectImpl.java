@@ -10,6 +10,8 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_Assert;
+  private ConceptPresentation props_Command;
+  private ConceptPresentation props_EmptyLine;
   private ConceptPresentation props_Press;
   private ConceptPresentation props_StepEvaluation;
   private ConceptPresentation props_TestStep;
@@ -27,10 +29,23 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Assert = cpb.create();
         }
         return props_Assert;
+      case LanguageConceptSwitch.Command:
+        if (props_Command == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Command = cpb.create();
+        }
+        return props_Command;
+      case LanguageConceptSwitch.EmptyLine:
+        if (props_EmptyLine == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("<empty line>");
+          props_EmptyLine = cpb.create();
+        }
+        return props_EmptyLine;
       case LanguageConceptSwitch.Press:
         if (props_Press == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Press");
+          cpb.rawPresentation("press");
           props_Press = cpb.create();
         }
         return props_Press;

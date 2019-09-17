@@ -12,12 +12,13 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
 import java.util.Collections;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.IVisitor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import java.util.Objects;
 import jetbrains.mps.samples.VoiceMenu.behavior.Event__BehaviorDescriptor;
@@ -26,8 +27,8 @@ import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
-import org.jetbrains.mps.openapi.language.SProperty;
 import org.jetbrains.mps.openapi.language.SConcept;
+import org.jetbrains.mps.openapi.language.SProperty;
 
 public final class RunTests_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
@@ -61,7 +62,7 @@ public final class RunTests_Intention extends AbstractIntentionDescriptor implem
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.steps$xTQf)).visitAll(new IVisitor<SNode>() {
+      Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(node, LINKS.commands$xTQf), CONCEPTS.TestStep$9N)).visitAll(new IVisitor<SNode>() {
         public void visit(SNode it) {
           SPropertyOperations.setEnum(SLinkOperations.getTarget(it, LINKS.evaluation$VA5f), PROPS.result$T6Kx, 0x72ec05e3886dfc17L, "Unknown");
           SPropertyOperations.assign(SLinkOperations.getTarget(it, LINKS.evaluation$VA5f), PROPS.message$T6Lv, "");
@@ -70,7 +71,7 @@ public final class RunTests_Intention extends AbstractIntentionDescriptor implem
 
       SNode currentMenu = SLinkOperations.getTarget(SLinkOperations.getTarget(node, LINKS.workspaceToTest$xMNi), LINKS.bodyMenu$8UCv);
       final Wrappers._T<SNode> currentEvent = new Wrappers._T<SNode>(null);
-      for (SNode step : ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.steps$xTQf))) {
+      for (SNode step : Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(node, LINKS.commands$xTQf), CONCEPTS.TestStep$9N))) {
         if (SNodeOperations.isInstanceOf(step, CONCEPTS.Press$kW)) {
           final String key = SPropertyOperations.getString(SNodeOperations.cast(step, CONCEPTS.Press$kW), PROPS.key$S$4E);
           currentEvent.value = ListSequence.fromList(SLinkOperations.getChildren(currentMenu, LINKS.events$AIPs)).findFirst(new IWhereFilter<SNode>() {
@@ -109,7 +110,7 @@ public final class RunTests_Intention extends AbstractIntentionDescriptor implem
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink steps$xTQf = MetaAdapterFactory.getContainmentLink(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0cL, 0x72ec05e38870528cL, "steps");
+    /*package*/ static final SContainmentLink commands$xTQf = MetaAdapterFactory.getContainmentLink(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0cL, 0x72ec05e38870528cL, "commands");
     /*package*/ static final SContainmentLink evaluation$VA5f = MetaAdapterFactory.getContainmentLink(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0fL, 0x72ec05e3886dfc64L, "evaluation");
     /*package*/ static final SReferenceLink workspaceToTest$xMNi = MetaAdapterFactory.getReferenceLink(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0cL, 0x72ec05e388705231L, "workspaceToTest");
     /*package*/ static final SContainmentLink bodyMenu$8UCv = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x5b6b060cf40204ebL, "bodyMenu");
@@ -119,17 +120,18 @@ public final class RunTests_Intention extends AbstractIntentionDescriptor implem
     /*package*/ static final SReferenceLink expectedEvent$ZeYz = MetaAdapterFactory.getReferenceLink(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3887030a6L, 0x72ec05e38870a891L, "expectedEvent");
   }
 
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept TestStep$9N = MetaAdapterFactory.getConcept(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0fL, "VoiceMenuTest.structure.TestStep");
+    /*package*/ static final SConcept Press$kW = MetaAdapterFactory.getConcept(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc11L, "VoiceMenuTest.structure.Press");
+    /*package*/ static final SConcept Activity$oQ = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity");
+    /*package*/ static final SConcept Menu$bP = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu");
+    /*package*/ static final SConcept Assert$T3 = MetaAdapterFactory.getConcept(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3887030a6L, "VoiceMenuTest.structure.Assert");
+  }
+
   private static final class PROPS {
     /*package*/ static final SProperty result$T6Kx = MetaAdapterFactory.getProperty(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc10L, 0x72ec05e3886dfc1bL, "result");
     /*package*/ static final SProperty message$T6Lv = MetaAdapterFactory.getProperty(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc10L, 0x72ec05e3886dfc1dL, "message");
     /*package*/ static final SProperty key$S$4E = MetaAdapterFactory.getProperty(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc11L, 0x72ec05e3887030a4L, "key");
     /*package*/ static final SProperty trigger$zpYt = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger");
-  }
-
-  private static final class CONCEPTS {
-    /*package*/ static final SConcept Press$kW = MetaAdapterFactory.getConcept(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc11L, "VoiceMenuTest.structure.Press");
-    /*package*/ static final SConcept Activity$oQ = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity");
-    /*package*/ static final SConcept Menu$bP = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu");
-    /*package*/ static final SConcept Assert$T3 = MetaAdapterFactory.getConcept(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3887030a6L, "VoiceMenuTest.structure.Assert");
   }
 }

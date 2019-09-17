@@ -19,7 +19,7 @@
       </concept>
       <concept id="8281000289632123916" name="VoiceMenuTest.structure.VoiceMenuTestCase" flags="ng" index="3UwvBJ">
         <reference id="8281000289632277041" name="workspaceToTest" index="3UB5vi" />
-        <child id="8281000289632277132" name="steps" index="3UB5tJ" />
+        <child id="8281000289632277132" name="commands" index="3UB5tJ" />
       </concept>
       <concept id="8281000289632123921" name="VoiceMenuTest.structure.Press" flags="ng" index="3UwvBM">
         <property id="8281000289632268452" name="key" index="3UB3l7" />
@@ -34,7 +34,7 @@
     </language>
   </registry>
   <node concept="3UwvBJ" id="7bG1ue8s58K">
-    <property role="TrG5h" value="JetBrains Menu Test" />
+    <property role="TrG5h" value="JetBrains Menu for Discounts" />
     <ref role="3UB5vi" to="1b11:2w$I9I9UGbg" resolve="Jet Mobile" />
     <node concept="3UwvBM" id="7bG1ue8sawt" role="3UB5tJ">
       <property role="3UB3l7" value="1" />
@@ -60,6 +60,38 @@
     <node concept="3UB3l5" id="7bG1ue8sawF" role="3UB5tJ">
       <ref role="3UBaPM" to="1b11:2w$I9I9URl8" resolve="Discount" />
       <node concept="3UwvBN" id="7bG1ue8sawI" role="3UwvA7">
+        <property role="3UwvBY" value="" />
+        <property role="3UwvBS" value="7bG1ue8rvKj/Success" />
+      </node>
+    </node>
+  </node>
+  <node concept="3UwvBJ" id="7bG1ue8vC3B">
+    <property role="TrG5h" value="JetBrains Menu Test" />
+    <ref role="3UB5vi" to="1b11:2w$I9I9UGbg" resolve="Jet Mobile" />
+    <node concept="3UwvBM" id="7bG1ue8vC3C" role="3UB5tJ">
+      <property role="3UB3l7" value="2" />
+      <node concept="3UwvBN" id="7bG1ue8vC3D" role="3UwvA7">
+        <property role="3UwvBY" value="" />
+        <property role="3UwvBS" value="7bG1ue8rvKj/Success" />
+      </node>
+    </node>
+    <node concept="3UB3l5" id="7bG1ue8vC3Q" role="3UB5tJ">
+      <ref role="3UBaPM" to="1b11:2w$I9I9URir" resolve="Payment" />
+      <node concept="3UwvBN" id="7bG1ue8vC3R" role="3UwvA7">
+        <property role="3UwvBY" value="" />
+        <property role="3UwvBS" value="7bG1ue8rvKj/Success" />
+      </node>
+    </node>
+    <node concept="3UwvBM" id="7bG1ue8vC3E" role="3UB5tJ">
+      <property role="3UB3l7" value="2" />
+      <node concept="3UwvBN" id="7bG1ue8vC3F" role="3UwvA7">
+        <property role="3UwvBY" value="" />
+        <property role="3UwvBS" value="7bG1ue8rvKj/Success" />
+      </node>
+    </node>
+    <node concept="3UB3l5" id="7bG1ue8vC3I" role="3UB5tJ">
+      <ref role="3UBaPM" to="1b11:2w$I9I9URk5" resolve="Recharging" />
+      <node concept="3UwvBN" id="7bG1ue8vC3J" role="3UwvA7">
         <property role="3UwvBY" value="" />
         <property role="3UwvBS" value="7bG1ue8rvKj/Success" />
       </node>

@@ -13,7 +13,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1153952380246:jetbrains.mps.baseLanguage.structure.TryStatement" />
   <root>
     <file name="EditorAspectDescriptorImpl.java">
-      <unit at="16,0,52,0" name="VoiceMenuTest.editor.EditorAspectDescriptorImpl" />
+      <unit at="17,0,67,0" name="VoiceMenuTest.editor.EditorAspectDescriptorImpl" />
     </file>
     <file name="PresentationProviders.java">
       <unit at="10,0,19,0" name="VoiceMenuTest.editor.PresentationProviders" />
@@ -336,21 +336,21 @@
       <node id="8281000289632277118" at="195,91,196,147" concept="6" />
       <node id="8281000289632277118" at="197,14,198,26" concept="6" />
       <node id="8281000289632277118" at="199,17,200,42" concept="1" />
-      <node id="8281000289632277070" at="204,44,205,97" concept="5" />
-      <node id="8281000289632277070" at="205,97,206,93" concept="5" />
-      <node id="8281000289632277070" at="206,93,207,46" concept="1" />
-      <node id="8281000289632277070" at="207,46,208,51" concept="1" />
+      <node id="8281000289632277070" at="204,44,205,100" concept="5" />
+      <node id="8281000289632277070" at="205,100,206,93" concept="5" />
+      <node id="8281000289632277070" at="206,93,207,49" concept="1" />
+      <node id="8281000289632277070" at="207,49,208,51" concept="1" />
       <node id="8281000289632277070" at="208,51,209,22" concept="6" />
-      <node id="8281000289632277070" at="215,79,216,28" concept="9" />
+      <node id="8281000289632277070" at="215,82,216,28" concept="9" />
       <node id="8281000289632277070" at="216,28,217,25" concept="1" />
       <node id="8281000289632277070" at="221,28,222,20" concept="6" />
-      <node id="8281000289632277070" at="224,40,225,30" concept="6" />
-      <node id="8281000289632277070" at="227,48,228,34" concept="6" />
+      <node id="8281000289632277070" at="224,40,225,33" concept="6" />
+      <node id="8281000289632277070" at="227,48,228,33" concept="6" />
       <node id="8281000289632277070" at="231,57,232,83" concept="5" />
       <node id="8281000289632277070" at="232,83,233,65" concept="1" />
       <node id="8281000289632277070" at="233,65,234,25" concept="6" />
       <node id="8281000289632277070" at="236,41,237,41" concept="1" />
-      <node id="8281000289632277070" at="237,41,238,137" concept="1" />
+      <node id="8281000289632277070" at="237,41,238,143" concept="1" />
       <node id="8281000289632277070" at="239,11,240,36" concept="5" />
       <node id="8281000289632277070" at="240,36,241,44" concept="1" />
       <node id="8281000289632277070" at="241,44,242,57" concept="1" />
@@ -364,9 +364,9 @@
       <node id="8281000289632277070" at="264,0,265,0" concept="8" trace="name$tAp1" />
       <node id="8281000289632277070" at="268,0,269,0" concept="8" trace="PropertyAttribute$jT" />
       <node id="8281000289632277070" at="269,0,270,0" concept="8" trace="LinkAttribute$7j" />
-      <node id="8281000289632277070" at="270,0,271,0" concept="8" trace="TestStep$9N" />
+      <node id="8281000289632277070" at="270,0,271,0" concept="8" trace="Command$Am" />
       <node id="8281000289632277070" at="274,0,275,0" concept="8" trace="workspaceToTest$xMNi" />
-      <node id="8281000289632277070" at="275,0,276,0" concept="8" trace="steps$xTQf" />
+      <node id="8281000289632277070" at="275,0,276,0" concept="8" trace="commands$xTQf" />
       <node id="8281000289632277070" at="51,0,53,0" concept="2" trace="myNode" />
       <node id="8281000289632277105" at="158,0,160,0" concept="2" trace="myNode" />
       <node id="8281000289632277070" at="212,0,214,0" concept="2" trace="myNode" />
@@ -381,7 +381,7 @@
       <node id="8281000289632277070" at="255,9,258,9" concept="3" />
       <node id="8281000289632277070" at="54,0,58,0" concept="0" trace="VoiceMenuTestCase_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8281000289632277070" at="136,0,140,5" concept="3" />
-      <node id="8281000289632277070" at="215,0,219,0" concept="0" trace="stepsListHandler_vee4f0_e0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="8281000289632277070" at="215,0,219,0" concept="0" trace="commandsListHandler_vee4f0_e0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="8281000289632277070" at="220,0,224,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8281000289632277070" at="251,134,255,9" concept="3" />
       <node id="8281000289632277070" at="59,0,64,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -398,7 +398,7 @@
       <node id="8281000289632277079" at="81,0,87,0" concept="4" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8281000289632277093" at="112,0,118,0" concept="4" trace="createConstant_1#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8281000289632277070" at="204,0,211,0" concept="4" trace="createRefNodeList_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="8281000289632277070" at="238,137,247,7" concept="10" />
+      <node id="8281000289632277070" at="238,143,247,7" concept="10" />
       <node id="8281000289632277070" at="249,107,259,7" concept="3" />
       <node id="8281000289632277070" at="121,0,132,0" concept="4" trace="createReferenceCell#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8281000289632277070" at="69,0,81,0" concept="4" trace="createCollection_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -421,8 +421,8 @@
       <scope id="8281000289632277118" at="190,43,191,120" />
       <scope id="8281000289632277118" at="199,17,200,42" />
       <scope id="8281000289632277070" at="221,28,222,20" />
-      <scope id="8281000289632277070" at="224,40,225,30" />
-      <scope id="8281000289632277070" at="227,48,228,34" />
+      <scope id="8281000289632277070" at="224,40,225,33" />
+      <scope id="8281000289632277070" at="227,48,228,33" />
       <scope id="8281000289632277070" at="245,17,246,42" />
       <scope id="8281000289632277070" at="256,122,257,146" />
       <scope id="8281000289632277070" at="54,97,56,18" />
@@ -436,7 +436,7 @@
       <scope id="8281000289632277118" at="194,76,196,147">
         <var name="manager" id="8281000289632277118" />
       </scope>
-      <scope id="8281000289632277070" at="215,79,217,25" />
+      <scope id="8281000289632277070" at="215,82,217,25" />
       <scope id="8281000289632277070" at="252,34,254,146" />
       <scope id="8281000289632277070" at="65,0,68,0" />
       <scope id="8281000289632277085" at="99,0,102,0">
@@ -544,7 +544,7 @@
       <unit id="8281000289632277070" at="267,0,272,0" name="VoiceMenuTest.editor.VoiceMenuTestCase_EditorBuilder_a$CONCEPTS" />
       <unit id="8281000289632277070" at="120,42,132,5" name="VoiceMenuTest.editor.VoiceMenuTestCase_EditorBuilder_a$2" />
       <unit id="8281000289632277105" at="157,0,204,0" name="VoiceMenuTest.editor.VoiceMenuTestCase_EditorBuilder_a$Inline_Builder0" />
-      <unit id="8281000289632277070" at="211,0,262,0" name="VoiceMenuTest.editor.VoiceMenuTestCase_EditorBuilder_a$stepsListHandler_vee4f0_e0" />
+      <unit id="8281000289632277070" at="211,0,262,0" name="VoiceMenuTest.editor.VoiceMenuTestCase_EditorBuilder_a$commandsListHandler_vee4f0_e0" />
       <unit id="8281000289632277070" at="50,0,278,0" name="VoiceMenuTest.editor.VoiceMenuTestCase_EditorBuilder_a" />
     </file>
   </root>
@@ -818,6 +818,79 @@
         <var name="targetNode" id="8281000289632321376" />
       </scope>
       <unit id="8281000289632321376" at="11,84,17,3" name="VoiceMenuTest.editor.PresentationProviders$1" />
+    </file>
+  </root>
+  <root nodeRef="r:ad7e0423-c9fa-41a4-bfc8-916d9b5bc773(VoiceMenuTest.editor)/8281000289633082924">
+    <file name="EmptyLine_Editor.java">
+      <node id="8281000289633082924" at="11,79,12,75" concept="6" />
+      <node id="8281000289633082924" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="8281000289633082924" at="11,79,12,75" />
+      <scope id="8281000289633082924" at="11,0,14,0">
+        <var name="editorContext" id="8281000289633082924" />
+        <var name="node" id="8281000289633082924" />
+      </scope>
+      <unit id="8281000289633082924" at="10,0,15,0" name="VoiceMenuTest.editor.EmptyLine_Editor" />
+    </file>
+    <file name="EmptyLine_EditorBuilder_a.java">
+      <node id="8281000289633082924" at="19,89,20,19" concept="9" />
+      <node id="8281000289633082924" at="20,19,21,18" concept="1" />
+      <node id="8281000289633082924" at="26,26,27,18" concept="6" />
+      <node id="8281000289633082924" at="30,39,31,30" concept="6" />
+      <node id="8281000289633082926" at="34,41,35,93" concept="5" />
+      <node id="8281000289633082926" at="35,93,36,46" concept="1" />
+      <node id="8281000289633082926" at="36,46,37,28" concept="1" />
+      <node id="8281000289633082926" at="37,28,38,31" concept="1" />
+      <node id="8281000289633082926" at="38,31,39,34" concept="5" />
+      <node id="8281000289633082929" at="39,34,40,46" concept="1" />
+      <node id="8281000289633082926" at="40,46,41,40" concept="1" />
+      <node id="8281000289633082926" at="41,40,42,34" concept="1" />
+      <node id="8281000289633082926" at="42,34,43,22" concept="6" />
+      <node id="8281000289633082924" at="16,0,18,0" concept="2" trace="myNode" />
+      <node id="8281000289633082924" at="30,0,33,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="8281000289633082924" at="19,0,23,0" concept="0" trace="EmptyLine_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8281000289633082924" at="24,0,29,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8281000289633082926" at="34,0,45,0" concept="4" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="8281000289633082924" at="26,26,27,18" />
+      <scope id="8281000289633082924" at="30,39,31,30" />
+      <scope id="8281000289633082924" at="19,89,21,18" />
+      <scope id="8281000289633082924" at="30,0,33,0" />
+      <scope id="8281000289633082924" at="19,0,23,0">
+        <var name="context" id="8281000289633082924" />
+        <var name="node" id="8281000289633082924" />
+      </scope>
+      <scope id="8281000289633082924" at="24,0,29,0" />
+      <scope id="8281000289633082926" at="34,41,43,22">
+        <var name="editorCell" id="8281000289633082926" />
+        <var name="style" id="8281000289633082926" />
+      </scope>
+      <scope id="8281000289633082926" at="34,0,45,0" />
+      <unit id="8281000289633082924" at="15,0,46,0" name="VoiceMenuTest.editor.EmptyLine_EditorBuilder_a" />
+    </file>
+  </root>
+  <root nodeRef="r:ad7e0423-c9fa-41a4-bfc8-916d9b5bc773(VoiceMenuTest.editor)/8281000289633082976">
+    <file name="EmptyLine_SubstituteMenu.java">
+      <node id="8281000289633082976" at="18,118,19,140" concept="5" />
+      <node id="8281000289633082976" at="19,140,20,18" concept="6" />
+      <node id="8281000289633082976" at="25,91,26,49" concept="1" />
+      <node id="8281000289633082976" at="26,49,27,228" concept="1" />
+      <node id="8281000289633082976" at="28,9,29,44" concept="6" />
+      <node id="8281000289633082976" at="30,15,31,50" concept="1" />
+      <node id="8281000289633082976" at="27,228,32,5" concept="10" />
+      <node id="8281000289633082976" at="16,0,22,0" concept="4" trace="getParts#(Ljetbrains/mps/openapi/editor/menus/substitute/SubstituteMenuContext;)Ljava/util/List;" />
+      <node id="8281000289633082976" at="23,0,34,0" concept="4" trace="createMenuItems#(Ljetbrains/mps/openapi/editor/menus/substitute/SubstituteMenuContext;)Ljava/util/List;" />
+      <scope id="8281000289633082976" at="28,9,29,44" />
+      <scope id="8281000289633082976" at="30,15,31,50" />
+      <scope id="8281000289633082976" at="18,118,20,18">
+        <var name="result" id="8281000289633082976" />
+      </scope>
+      <scope id="8281000289633082976" at="16,0,22,0">
+        <var name="_context" id="8281000289633082976" />
+      </scope>
+      <scope id="8281000289633082976" at="25,91,32,5" />
+      <scope id="8281000289633082976" at="23,0,34,0">
+        <var name="context" id="8281000289633082976" />
+      </scope>
+      <unit id="8281000289633082976" at="15,0,37,0" name="VoiceMenuTest.editor.EmptyLine_SubstituteMenu" />
     </file>
   </root>
 </debug-info>

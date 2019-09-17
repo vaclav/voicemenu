@@ -59,6 +59,7 @@
       <concept id="5564765827938091039" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="ig" index="3dgokm" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <reference id="1213106917431" name="defaultConcreteConcept" index="1MND4H" />
         <child id="1213100494875" name="referent" index="1Mr941" />
       </concept>
       <concept id="1148687176410" name="jetbrains.mps.lang.constraints.structure.NodeReferentConstraint" flags="ng" index="1N5Pfh">
@@ -145,6 +146,10 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="1M2fIO" id="7bG1ue8vfgG">
+    <ref role="1M2myG" to="upea:7bG1ue8v9Sg" resolve="Command" />
+    <ref role="1MND4H" to="upea:7bG1ue8v9Sf" resolve="EmptyLine" />
   </node>
 </model>
 

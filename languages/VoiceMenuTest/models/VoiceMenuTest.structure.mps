@@ -66,9 +66,9 @@
     <node concept="1TJgyj" id="7bG1ue8s5ac" role="1TKVEi">
       <property role="IQ2ns" value="8281000289632277132" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="steps" />
+      <property role="20kJfa" value="commands" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="7bG1ue8rvKf" resolve="TestStep" />
+      <ref role="20lvS9" node="7bG1ue8v9Sg" resolve="Command" />
     </node>
     <node concept="1TJgyj" id="7bG1ue8s58L" role="1TKVEi">
       <property role="IQ2ns" value="8281000289632277041" />
@@ -84,7 +84,7 @@
     <property role="EcuMT" value="8281000289632123919" />
     <property role="TrG5h" value="TestStep" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="7bG1ue8v9Sg" resolve="Command" />
     <node concept="1TJgyj" id="7bG1ue8rvL$" role="1TKVEi">
       <property role="IQ2ns" value="8281000289632124004" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -111,6 +111,7 @@
   <node concept="1TIwiD" id="7bG1ue8rvKh">
     <property role="EcuMT" value="8281000289632123921" />
     <property role="TrG5h" value="Press" />
+    <property role="34LRSv" value="press" />
     <ref role="1TJDcQ" node="7bG1ue8rvKf" resolve="TestStep" />
     <node concept="1TJgyi" id="7bG1ue8s32$" role="1TKVEl">
       <property role="IQ2nx" value="8281000289632268452" />
@@ -151,6 +152,18 @@
     <property role="3F6X1D" value="8281000289632275525" />
     <property role="TrG5h" value="EventId" />
     <property role="FLfZY" value="[#|*|0-9]" />
+  </node>
+  <node concept="1TIwiD" id="7bG1ue8v9Sf">
+    <property role="EcuMT" value="8281000289633082895" />
+    <property role="TrG5h" value="EmptyLine" />
+    <property role="34LRSv" value="&lt;empty line&gt;" />
+    <ref role="1TJDcQ" node="7bG1ue8v9Sg" resolve="Command" />
+  </node>
+  <node concept="1TIwiD" id="7bG1ue8v9Sg">
+    <property role="EcuMT" value="8281000289633082896" />
+    <property role="TrG5h" value="Command" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 

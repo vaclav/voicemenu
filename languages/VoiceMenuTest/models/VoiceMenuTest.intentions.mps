@@ -112,6 +112,9 @@
       <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
         <child id="1138662048170" name="value" index="tz02z" />
       </concept>
+      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
+        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
+      </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -183,13 +186,16 @@
       <node concept="3clFbS" id="7bG1ue8sRH$" role="2VODD2">
         <node concept="3clFbF" id="7bG1ue8sXJ_" role="3cqZAp">
           <node concept="2OqwBi" id="7bG1ue8sZ5J" role="3clFbG">
-            <node concept="2OqwBi" id="7bG1ue8sXJB" role="2Oq$k0">
-              <node concept="2Sf5sV" id="7bG1ue8sXJC" role="2Oq$k0" />
-              <node concept="2Rf3mk" id="7bG1ue8sXJD" role="2OqNvi">
-                <node concept="1xMEDy" id="7bG1ue8sXJE" role="1xVPHs">
-                  <node concept="chp4Y" id="7bG1ue8sXJF" role="ri$Ld">
-                    <ref role="cht4Q" to="upea:7bG1ue8rvKf" resolve="TestStep" />
-                  </node>
+            <node concept="2OqwBi" id="7bG1ue8vkzM" role="2Oq$k0">
+              <node concept="2OqwBi" id="7bG1ue8vkzN" role="2Oq$k0">
+                <node concept="2Sf5sV" id="7bG1ue8vkzO" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="7bG1ue8vkzP" role="2OqNvi">
+                  <ref role="3TtcxE" to="upea:7bG1ue8s5ac" resolve="commands" />
+                </node>
+              </node>
+              <node concept="v3k3i" id="7bG1ue8vkzQ" role="2OqNvi">
+                <node concept="chp4Y" id="7bG1ue8vkzR" role="v3oSu">
+                  <ref role="cht4Q" to="upea:7bG1ue8rvKf" resolve="TestStep" />
                 </node>
               </node>
             </node>
@@ -253,10 +259,17 @@
       <node concept="3clFbS" id="7bG1ue8sRWA" role="2VODD2">
         <node concept="3clFbF" id="7bG1ue8sS0F" role="3cqZAp">
           <node concept="2OqwBi" id="7bG1ue8sUsU" role="3clFbG">
-            <node concept="2OqwBi" id="7bG1ue8sSgV" role="2Oq$k0">
-              <node concept="2Sf5sV" id="7bG1ue8sS0E" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="7bG1ue8t5PF" role="2OqNvi">
-                <ref role="3TtcxE" to="upea:7bG1ue8s5ac" resolve="steps" />
+            <node concept="2OqwBi" id="7bG1ue8vijo" role="2Oq$k0">
+              <node concept="2OqwBi" id="7bG1ue8sSgV" role="2Oq$k0">
+                <node concept="2Sf5sV" id="7bG1ue8sS0E" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="7bG1ue8t5PF" role="2OqNvi">
+                  <ref role="3TtcxE" to="upea:7bG1ue8s5ac" resolve="commands" />
+                </node>
+              </node>
+              <node concept="v3k3i" id="7bG1ue8vk8_" role="2OqNvi">
+                <node concept="chp4Y" id="7bG1ue8vkfU" role="v3oSu">
+                  <ref role="cht4Q" to="upea:7bG1ue8rvKf" resolve="TestStep" />
+                </node>
               </node>
             </node>
             <node concept="2HwmR7" id="7bG1ue8sVJP" role="2OqNvi">
@@ -315,10 +328,17 @@
       <node concept="3clFbS" id="7bG1ue8t3T0" role="2VODD2">
         <node concept="3clFbF" id="7bG1ue8t3T1" role="3cqZAp">
           <node concept="2OqwBi" id="7bG1ue8t3T2" role="3clFbG">
-            <node concept="2OqwBi" id="7bG1ue8t3T3" role="2Oq$k0">
-              <node concept="2Sf5sV" id="7bG1ue8t3T4" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="7bG1ue8t5mL" role="2OqNvi">
-                <ref role="3TtcxE" to="upea:7bG1ue8s5ac" resolve="steps" />
+            <node concept="2OqwBi" id="7bG1ue8vlV7" role="2Oq$k0">
+              <node concept="2OqwBi" id="7bG1ue8vlV8" role="2Oq$k0">
+                <node concept="2Sf5sV" id="7bG1ue8vlV9" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="7bG1ue8vlVa" role="2OqNvi">
+                  <ref role="3TtcxE" to="upea:7bG1ue8s5ac" resolve="commands" />
+                </node>
+              </node>
+              <node concept="v3k3i" id="7bG1ue8vlVb" role="2OqNvi">
+                <node concept="chp4Y" id="7bG1ue8vlVc" role="v3oSu">
+                  <ref role="cht4Q" to="upea:7bG1ue8rvKf" resolve="TestStep" />
+                </node>
               </node>
             </node>
             <node concept="2es0OD" id="7bG1ue8t3T8" role="2OqNvi">
@@ -408,10 +428,17 @@
           <node concept="2GrKxI" id="7bG1ue8t4PY" role="2Gsz3X">
             <property role="TrG5h" value="step" />
           </node>
-          <node concept="2OqwBi" id="7bG1ue8t55r" role="2GsD0m">
-            <node concept="2Sf5sV" id="7bG1ue8t4UA" role="2Oq$k0" />
-            <node concept="3Tsc0h" id="7bG1ue8t5go" role="2OqNvi">
-              <ref role="3TtcxE" to="upea:7bG1ue8s5ac" resolve="steps" />
+          <node concept="2OqwBi" id="7bG1ue8vmQP" role="2GsD0m">
+            <node concept="2OqwBi" id="7bG1ue8vmQQ" role="2Oq$k0">
+              <node concept="2Sf5sV" id="7bG1ue8vmQR" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="7bG1ue8vmQS" role="2OqNvi">
+                <ref role="3TtcxE" to="upea:7bG1ue8s5ac" resolve="commands" />
+              </node>
+            </node>
+            <node concept="v3k3i" id="7bG1ue8vmQT" role="2OqNvi">
+              <node concept="chp4Y" id="7bG1ue8vmQU" role="v3oSu">
+                <ref role="cht4Q" to="upea:7bG1ue8rvKf" resolve="TestStep" />
+              </node>
             </node>
           </node>
           <node concept="3clFbS" id="7bG1ue8t4Q2" role="2LFqv$">

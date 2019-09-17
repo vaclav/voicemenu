@@ -202,17 +202,17 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
   }
   private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new stepsListHandler_vee4f0_e0(myNode, getEditorContext());
+    AbstractCellListHandler handler = new commandsListHandler_vee4f0_e0(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Vertical(), false);
-    editorCell.setCellId("refNodeList_steps");
+    editorCell.setCellId("refNodeList_commands");
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class stepsListHandler_vee4f0_e0 extends RefNodeListHandler {
+  private static class commandsListHandler_vee4f0_e0 extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public stepsListHandler_vee4f0_e0(SNode ownerNode, EditorContext context) {
+    public commandsListHandler_vee4f0_e0(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -222,10 +222,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return myNode;
     }
     public SContainmentLink getSLink() {
-      return LINKS.steps$xTQf;
+      return LINKS.commands$xTQf;
     }
     public SAbstractConcept getChildSConcept() {
-      return CONCEPTS.TestStep$9N;
+      return CONCEPTS.Command$Am;
     }
 
     public EditorCell createNodeCell(SNode elementNode) {
@@ -235,7 +235,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(stepsListHandler_vee4f0_e0.this.getNode(), LINKS.steps$xTQf));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(commandsListHandler_vee4f0_e0.this.getNode(), LINKS.commands$xTQf));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -267,11 +267,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private static final class CONCEPTS {
     /*package*/ static final SConcept PropertyAttribute$jT = MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da56L, "jetbrains.mps.lang.core.structure.PropertyAttribute");
     /*package*/ static final SConcept LinkAttribute$7j = MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da51L, "jetbrains.mps.lang.core.structure.LinkAttribute");
-    /*package*/ static final SConcept TestStep$9N = MetaAdapterFactory.getConcept(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0fL, "VoiceMenuTest.structure.TestStep");
+    /*package*/ static final SConcept Command$Am = MetaAdapterFactory.getConcept(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3887c9e10L, "VoiceMenuTest.structure.Command");
   }
 
   private static final class LINKS {
     /*package*/ static final SReferenceLink workspaceToTest$xMNi = MetaAdapterFactory.getReferenceLink(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0cL, 0x72ec05e388705231L, "workspaceToTest");
-    /*package*/ static final SContainmentLink steps$xTQf = MetaAdapterFactory.getContainmentLink(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0cL, 0x72ec05e38870528cL, "steps");
+    /*package*/ static final SContainmentLink commands$xTQf = MetaAdapterFactory.getContainmentLink(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0cL, 0x72ec05e38870528cL, "commands");
   }
 }
