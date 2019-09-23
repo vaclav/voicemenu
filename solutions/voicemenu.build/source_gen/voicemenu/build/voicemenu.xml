@@ -6,7 +6,7 @@
   <tstamp>
     <format property="date" pattern="yyyyMMdd" />
   </tstamp>
-  <property name="build.number" value="voicemenu-1.0" />
+  <property name="build.number" value="192.SNAPSHOT" />
   <property name="mps_home" location="" />
   <property name="artifacts.mpsStandalone" location="${mps_home}" />
   <property name="artifacts.mpsDebuggerPlugin" location="${mps_home}/plugins" />
@@ -67,7 +67,7 @@
       <component>
         <version codename="voicemenu" major="2019" minor="2" eap="false" />
         <company name="JetBrains" url="http://www.jetbrains.com" copyrightStart="JetBrains s.r.o." />
-        <build number="191.${build.number}" date="${date}" />
+        <build number="${build.number}" date="${date}" />
         <logo url="/IVR_splash.png" textcolor="002387" progressColor="234908" progressX="0" progressY="395" progressHeight="5" />
         <about url="/IVR_about.png" foreground="FFFFFF" copyrightForeground="858585" />
         <icon size32="/IVR_icon_32.png" size16="/IVR_icon_16.png" size128="/IVR_icon_128.png" />
@@ -206,13 +206,8 @@
     <copy todir="${build.layout}/plugins/mps-testing">
       <fileset dir="${artifacts.mpsTesting}/mps-testing" />
     </copy>
-    <mkdir dir="${build.layout}/plugins/mps-execution-configurations" />
-    <copy todir="${build.layout}/plugins/mps-execution-configurations">
-      <fileset dir="${artifacts.mpsExecutionPlugin}/mps-execution-configurations" />
-    </copy>
-    <mkdir dir="${build.layout}/plugins/mps-execution-languages" />
-    <copy todir="${build.layout}/plugins/mps-execution-languages">
-      <fileset dir="${artifacts.mpsExecutionPlugin}/mps-execution-languages" />
+    <copy todir="${build.layout}/plugins">
+      <fileset dir="${artifacts.mpsExecutionPlugin}" />
     </copy>
     <mkdir dir="${build.layout}/plugins/voicemenu" />
     <mkdir dir="${build.layout}/plugins/voicemenu/META-INF" />
@@ -220,7 +215,7 @@
       <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>voicemenu</id>
         <name>voicemenu</name>
-        <version>2019.1</version>
+        <version>2019.2</version>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.ide.make</depends>
         

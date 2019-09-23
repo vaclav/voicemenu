@@ -42,9 +42,9 @@ MPS is licensed under the Apache 2 open-source license. See the [License](https:
 System requirements
 -------------------
 
-You can download the Voice Menu IDE to experiment instantly for the JetBrains TeamCity server - [Download Voice Menu IDE](https://teamcity.jetbrains.com/guestAuth/repository/downloadAll/MPS_VoiceMenu_20182/.lastSuccessful/artifacts.zip).
+You can download the Voice Menu IDE to experiment instantly for the JetBrains TeamCity server - [Download Voice Menu IDE](https://teamcity.jetbrains.com/guestAuth/repository/downloadAll/MPS_VoiceMenu_20192/.lastSuccessful/artifacts.zip).
 
-To build the Voice Menu project from the sources you need JetBrains MPS 2018.2.
+To build the Voice Menu project from the sources you need JetBrains MPS 2019.2 and JDK 11 or newer.
 
 ----------
 

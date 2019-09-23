@@ -285,9 +285,6 @@
         </node>
       </node>
       <node concept="3_J27D" id="5ruKdSwyery" role="2EteIg">
-        <node concept="3Mxwew" id="7WMmgAvYFZ5" role="3MwsjC">
-          <property role="3MwjfP" value="191." />
-        </node>
         <node concept="3Mxwey" id="7WMmgAvYG0U" role="3MwsjC">
           <ref role="3Mxwex" node="5ruKdSwyerk" resolve="build.number" />
         </node>
@@ -433,7 +430,7 @@
       <node concept="aVJcg" id="5ruKdSwyerl" role="aVJcv">
         <node concept="NbPM2" id="5ruKdSwyerm" role="aVJcq">
           <node concept="3Mxwew" id="5ruKdSwyern" role="3MwsjC">
-            <property role="3MwjfP" value="voicemenu-1.0" />
+            <property role="3MwjfP" value="192.SNAPSHOT" />
           </node>
         </node>
       </node>
@@ -763,11 +760,8 @@
         <node concept="3_I8Xc" id="7WMmgAvYaU5" role="39821P">
           <ref role="3_I8Xa" to="ffeo:ymnOULAZ8H" resolve="mps-testing" />
         </node>
-        <node concept="3_I8Xc" id="7WMmgAvXUwW" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:35y4BF72kxA" resolve="mps-execution-configurations" />
-        </node>
-        <node concept="3_I8Xc" id="7WMmgAvXUQA" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:35y4BF72i$D" resolve="mps-execution-languages" />
+        <node concept="3ygNvl" id="7pHJ606Fuyx" role="39821P">
+          <ref role="3ygNvj" to="ffeo:5xa9wY2vhbF" />
         </node>
         <node concept="m$_wl" id="5ruKdSwyetx" role="39821P">
           <ref role="m_rDy" node="5ruKdSwyesO" resolve="voicemenu" />
@@ -964,7 +958,7 @@
       </node>
       <node concept="3_J27D" id="5ruKdSwyesR" role="m$_w8">
         <node concept="3Mxwew" id="5ruKdSwyesS" role="3MwsjC">
-          <property role="3MwjfP" value="2019.1" />
+          <property role="3MwjfP" value="2019.2" />
         </node>
       </node>
       <node concept="m$f5U" id="5ruKdSwyesT" role="m$_yh">
@@ -2460,8 +2454,8 @@
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="5$IQOQwcnGK" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="1cAk_kPmJ8T" role="2Ry0An">
-              <property role="2Ry0Am" value="MPS 2019.1" />
+            <node concept="2Ry0Ak" id="7pHJ606FuqJ" role="2Ry0An">
+              <property role="2Ry0Am" value="MPS 2019.2" />
             </node>
           </node>
         </node>
