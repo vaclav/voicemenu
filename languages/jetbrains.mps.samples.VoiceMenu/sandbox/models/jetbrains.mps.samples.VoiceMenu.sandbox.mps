@@ -7,7 +7,7 @@
     <use id="e2a803a4-d4b8-43eb-b458-517effd2a87f" name="jetbrains.mps.samples.VoiceMenuToAsterisk" version="-1" />
     <use id="0b30ef64-0c5e-4567-b992-9bf5bbc44c0a" name="jetbrains.mps.samples.VoiceMenuToHTML" version="-1" />
     <use id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" version="-1" />
-    <engage id="e2a803a4-d4b8-43eb-b458-517effd2a87f" name="jetbrains.mps.samples.VoiceMenuToAsterisk" />
+    <engage id="750ae49d-4f57-400c-b5dc-2b58c1e3f9a9" name="jetbrains.mps.samples.VoiceMenuToXML" />
   </languages>
   <imports>
     <import index="oici" ref="r:d8d37b74-a8e1-4a57-a2ee-4a996f4ba158(JavaVoiceMenu.runtime)" />
@@ -71,7 +71,7 @@
     <property role="3VJrRc" value="false" />
     <property role="3VHriK" value="800" />
     <property role="3VHriO" value="etc/asterisk/" />
-    <property role="TrG5h" value="Jet Mobile" />
+    <property role="TrG5h" value="Jet Mobile, s.r.o." />
     <node concept="2C_Ik4" id="2w$I9I9UGbh" role="2JqgbB">
       <node concept="2C_I21" id="2w$I9I9URiH" role="2C_I26">
         <property role="3upAMh" value="Did you know that our internet is faster than evr?" />

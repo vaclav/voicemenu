@@ -1824,12 +1824,12 @@
                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                     </node>
                   </node>
-                  <node concept="liA8E" id="5ruKdSyobRN" role="2OqNvi">
+                  <node concept="liA8E" id="2Q37qgy0aWZ" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
-                    <node concept="Xl_RD" id="5ruKdSyocd9" role="37wK5m">
-                      <property role="Xl_RC" value=" " />
+                    <node concept="Xl_RD" id="2Q37qgy0aYT" role="37wK5m">
+                      <property role="Xl_RC" value="[\\W|\\.|,]" />
                     </node>
-                    <node concept="Xl_RD" id="5ruKdSyodxH" role="37wK5m">
+                    <node concept="Xl_RD" id="2Q37qgy0bg5" role="37wK5m">
                       <property role="Xl_RC" value="_" />
                     </node>
                   </node>

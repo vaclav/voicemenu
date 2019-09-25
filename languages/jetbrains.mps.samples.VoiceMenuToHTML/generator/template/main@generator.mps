@@ -8,9 +8,11 @@
   <imports>
     <import index="xehl" ref="r:2ab0b85f-01aa-4be4-a845-4ce3631e76c1(jetbrains.mps.samples.VoiceMenu.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -29,6 +31,10 @@
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -353,11 +359,22 @@
               <node concept="Xl_RD" id="2CNcfOHJSp4" role="3uHU7w">
                 <property role="Xl_RC" value=".html" />
               </node>
-              <node concept="2OqwBi" id="2CNcfOHJECU" role="3uHU7B">
-                <node concept="3TrcHB" id="2CNcfOHJECX" role="2OqNvi">
-                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              <node concept="2OqwBi" id="2Q37qgy0gYz" role="3uHU7B">
+                <node concept="2OqwBi" id="2CNcfOHJECU" role="2Oq$k0">
+                  <node concept="3TrcHB" id="2CNcfOHJECX" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                  <node concept="30H73N" id="2CNcfOHJECY" role="2Oq$k0" />
                 </node>
-                <node concept="30H73N" id="2CNcfOHJECY" role="2Oq$k0" />
+                <node concept="liA8E" id="2Q37qgy0aWZ" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
+                  <node concept="Xl_RD" id="2Q37qgy0aYT" role="37wK5m">
+                    <property role="Xl_RC" value="[\\W|\\.|,]" />
+                  </node>
+                  <node concept="Xl_RD" id="2Q37qgy0bg5" role="37wK5m">
+                    <property role="Xl_RC" value="_" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>

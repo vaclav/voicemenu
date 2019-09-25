@@ -1,3 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debug-info version="2" />
+<debug-info version="2">
+  <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/2892639838852006608">
+    <file name="Jet_Mobile__s_r_o_.xml">
+      <unit id="2892639838852006608" at="1,0,141,16" name="jetbrains.mps.samples.VoiceMenu.sandbox.Jet_Mobile__s_r_o_" />
+    </file>
+  </root>
+  <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/6285974448820393361">
+    <file name="myVoiceMenu.xml">
+      <unit id="6285974448820393361" at="1,0,38,16" name="jetbrains.mps.samples.VoiceMenu.sandbox.myVoiceMenu" />
+    </file>
+  </root>
+  <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/6285974448821694774">
+    <file name="Sample.xml">
+      <unit id="6285974448821694774" at="1,0,16,16" name="jetbrains.mps.samples.VoiceMenu.sandbox.Sample" />
+    </file>
+  </root>
+</debug-info>
 

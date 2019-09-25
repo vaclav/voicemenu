@@ -111,7 +111,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(_context.getNode(), PROPS.name$tAp1);
   }
   public static Object propertyMacro_GetValue_1_4(final PropertyMacroContext _context) {
-    return _context.createUniqueName(SPropertyOperations.getString(_context.getNode(), PROPS.name$tAp1).replaceAll(" ", "_"), null);
+    return _context.createUniqueName(SPropertyOperations.getString(_context.getNode(), PROPS.name$tAp1).replaceAll("[\\W|\\.|,]", "_"), null);
   }
   public static Object propertyMacro_GetValue_3_0(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.name$tAp1);
