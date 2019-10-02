@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<Call_Centrum>
+  
+  
+  <style>
+      table.roundedCorners {
+          border: 2px solid DarkOrange;
+          border-radius: 13px;
+          border-spacing: 0px;
+      }
+      table.roundedCorners td, 
+      table.roundedCorners th {
+          border-bottom: 2px solid DarkOrange;
+          padding: 10px;
+      }
+      tr:nth-child(even){background-color: #f2f2f2}
+      table.roundedCorners tr:last-child > td {
+          border-bottom: none;
+      }
+      </style>
+  <body>
+    <b style="margin-left: 40px;color:blue">Jet Mobile, s.r.o.</b>
+    <playback>
+      <b style="color: #616161">    -->    Toast:  </b>
+      <playback_text style="color: gray">[
+          
+          Hello, welcome in Jet-Mobile
+          ]</playback_text>
+    </playback>
+    <menu>
+      <p>
+        <table class="roundedCorners">
+          <tr>
+            <th>Event</th>
+            <th>Trigger</th>
+          </tr>
+          <tr>
+            <td>Internet</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Payment</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Roaming</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>News</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Other requirements</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Record</td>
+            <td>6</td>
+          </tr>
+        </table>
+      </p>
+      
+      
+      <activity>
+        
+        <b style="margin-left: 40px;color:blue">Internet</b>
+        <toast>
+          <b style="color: #616161">    -->    Toast:  </b>
+          <playback_text style="color: gray">[
+              
+              Did you know that our internet is faster than evr?
+              ]</playback_text>
+        </toast>
+        
+        
+        <p>
+          <menu>
+            <p>
+              <table class="roundedCorners">
+                <tr>
+                  <th>Event</th>
+                  <th>Trigger</th>
+                </tr>
+                <tr>
+                  <td>Discount</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Data limit</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Exit</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>Return to main menu</td>
+                  <td>*</td>
+                </tr>
+              </table>
+            </p>
+            
+            
+            <activity>
+              
+              <b style="margin-left: 40px;color:blue">Discount</b>
+              <toast>
+                <b style="color: #616161">    -->    Toast:  </b>
+                <playback_text style="color: gray">[
+                    
+                    Welcome in section of discounts, here is everything cheaper.
+                    ]</playback_text>
+              </toast>
+              
+              
+              <p>
+                <menu>
+                  <p>
+                    <table class="roundedCorners">
+                      <tr>
+                        <th>Event</th>
+                        <th>Trigger</th>
+                      </tr>
+                      <tr>
+                        <td>Summer discount</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>Hidden discounts</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        <td>Step back</td>
+                        <td>*</td>
+                      </tr>
+                    </table>
+                  </p>
+                  
+                  
+                  <activity>
+                    
+                    <b style="margin-left: 40px;color:blue">Summer discount</b>
+                    <toast>
+                      <b style="color: #616161">    -->    Toast:  </b>
+                      <playback_text style="color: gray">[
+                          
+                          Don't worry, while waiting you will listen your calm music.
+                          ]</playback_text>
+                    </toast>
+                    
+                    
+                    <p>
+                      <action style="margin-left: 80px;color:green">--> [ Direct Call to null]</action>
+                    </p>
+                  </activity>
+                  <activity>
+                    
+                    <b style="margin-left: 40px;color:blue">Hidden discounts</b>
+                    <toast>
+                      <b style="color: #616161">    -->    Toast:  </b>
+                      <playback_text style="color: gray">[
+                          
+                          Secret info
+                          ]</playback_text>
+                    </toast>
+                    
+                    
+                    <p>
+                      <action style="margin-left: 80px;color:green">--> [ Get Info ]</action>
+                    </p>
+                  </activity>
+                  <activity>
+                    
+                    <b style="margin-left: 40px;color:blue">Step back</b>
+                    <toast>
+                      <b style="color: #616161">    -->    Toast:  </b>
+                      <playback_text style="color: gray">[
+                          
+                          Going back to the previous menu.
+                          ]</playback_text>
+                    </toast>
+                    
+                    
+                    <p>
+                      <action style="margin-left: 80px;color:green">--> [ Back ]</action>
+                    </p>
+                  </activity>
+                  
+                </menu>
+              </p>
+            </activity>
+            <activity>
+              
+              <b style="margin-left: 40px;color:blue">Data limit</b>
+              <toast>
+                <b style="color: #616161">    -->    Toast:  </b>
+                <playback_text style="color: gray">[
+                    
+                    Take care this call will be monitored.
+                    ]</playback_text>
+              </toast>
+              
+              
+              <p>
+                <action style="margin-left: 80px;color:green">--> [ Direct Call to null]</action>
+              </p>
+            </activity>
+            <activity>
+              
+              <b style="margin-left: 40px;color:blue">Return to main menu</b>
+              <toast>
+                <b style="color: #616161">    -->    Toast:  </b>
+                <playback_text style="color: gray">[
+                    
+                    Going back to the previous menu.
+                    ]</playback_text>
+              </toast>
+              
+              
+              <p>
+                <action style="margin-left: 80px;color:green">--> [ Back ]</action>
+              </p>
+            </activity>
+            <activity>
+              
+              <b style="margin-left: 40px;color:blue">Exit</b>
+              <toast>
+                <b style="color: #616161">    -->    Toast:  </b>
+                <playback_text style="color: gray">[
+                    
+                    We are sorry, that you are leaving this menu. Looking forward to hear you again. Goodbye.
+                    ]</playback_text>
+              </toast>
+              
+              
+              <p>
+                <action style="margin-left: 80px;color:green">--> [ Hang Up ]</action>
+              </p>
+            </activity>
+            
+          </menu>
+        </p>
+      </activity>
+      <activity>
+        
+        <b style="margin-left: 40px;color:blue">Payment</b>
+        <toast>
+          <b style="color: #616161">    -->    Toast:  </b>
+          <playback_text style="color: gray">[
+              
+              Since now we offer you easiest way of payment.
+              ]</playback_text>
+        </toast>
+        
+        
+        <p>
+          <menu>
+            <p>
+              <table class="roundedCorners">
+                <tr>
+                  <th>Event</th>
+                  <th>Trigger</th>
+                </tr>
+                <tr>
+                  <td>Billing</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Recharging</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Payments</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>Step back</td>
+                  <td>*</td>
+                </tr>
+              </table>
+            </p>
+            
+            
+            <activity>
+              
+              <b style="margin-left: 40px;color:blue">Billing</b>
+              
+              
+              <p>
+                <action style="margin-left: 80px;color:green">--> [ Others ]</action>
+              </p>
+            </activity>
+            <activity>
+              
+              <b style="margin-left: 40px;color:blue">Recharging</b>
+              <toast>
+                <b style="color: #616161">    -->    Toast:  </b>
+                <playback_text style="color: gray">[
+                    
+                    Now we are sending you super secret informations.
+                    ]</playback_text>
+              </toast>
+              
+              
+              <p>
+                <action style="margin-left: 80px;color:green">--> [ Get Info ]</action>
+              </p>
+            </activity>
+            <activity>
+              
+              <b style="margin-left: 40px;color:blue">Payments</b>
+              <toast>
+                <b style="color: #616161">    -->    Toast:  </b>
+                <playback_text style="color: gray">[
+                    
+                    Connecting you with a human.
+                    ]</playback_text>
+              </toast>
+              
+              
+              <p>
+                <action style="margin-left: 80px;color:green">--> [ Direct Call to null]</action>
+              </p>
+            </activity>
+            <activity>
+              
+              <b style="margin-left: 40px;color:blue">Step back</b>
+              <toast>
+                <b style="color: #616161">    -->    Toast:  </b>
+                <playback_text style="color: gray">[
+                    
+                    Going back to the previous menu.
+                    ]</playback_text>
+              </toast>
+              
+              
+              <p>
+                <action style="margin-left: 80px;color:green">--> [ Back ]</action>
+              </p>
+            </activity>
+            
+          </menu>
+        </p>
+      </activity>
+      <activity>
+        
+        <b style="margin-left: 40px;color:blue">Roaming</b>
+        
+        
+        <p>
+          <action style="margin-left: 80px;color:green">--> [ Get Info ]</action>
+        </p>
+      </activity>
+      <activity>
+        
+        <b style="margin-left: 40px;color:blue">News</b>
+        
+        
+        <p>
+          <menu>
+            <p>
+              <table class="roundedCorners">
+                <tr>
+                  <th>Event</th>
+                  <th>Trigger</th>
+                </tr>
+                <tr>
+                  <td>Summer News</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Cold News</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Step Back</td>
+                  <td>3</td>
+                </tr>
+              </table>
+            </p>
+            
+            
+            <activity>
+              
+              <b style="margin-left: 40px;color:blue">Summer News</b>
+              <toast>
+                <b style="color: #616161">    -->    Toast:  </b>
+                <playback_text style="color: gray">[
+                    
+                    Direct call has begun
+                    ]</playback_text>
+              </toast>
+              
+              
+              <p>
+                <action style="margin-left: 80px;color:green">--> [ Direct Call to 333444555]</action>
+              </p>
+            </activity>
+            <activity>
+              
+              <b style="margin-left: 40px;color:blue">Cold News</b>
+              
+              
+              <p>
+                <action style="margin-left: 80px;color:green">--> [ Get Info ]</action>
+              </p>
+            </activity>
+            <activity>
+              
+              <b style="margin-left: 40px;color:blue">Step Back</b>
+              <toast>
+                <b style="color: #616161">    -->    Toast:  </b>
+                <playback_text style="color: gray">[
+                    
+                    Going back to the previous menu.
+                    ]</playback_text>
+              </toast>
+              
+              
+              <p>
+                <action style="margin-left: 80px;color:green">--> [ Back ]</action>
+              </p>
+            </activity>
+            
+          </menu>
+        </p>
+      </activity>
+      <activity>
+        
+        <b style="margin-left: 40px;color:blue">Other requirements</b>
+        <toast>
+          <b style="color: #616161">    -->    Toast:  </b>
+          <playback_text style="color: gray">[
+              
+              You just entered section of special services. Good Luck
+              ]</playback_text>
+        </toast>
+        
+        
+        <p>
+          <action style="margin-left: 80px;color:green">--> [ Others ]</action>
+        </p>
+      </activity>
+      <activity>
+        
+        <b style="margin-left: 40px;color:blue">Record</b>
+        
+        
+        <p>
+          <action style="margin-left: 80px;color:green">--> [ Record ]</action>
+        </p>
+      </activity>
+      
+    </menu>
+  </body>
+</Call_Centrum>

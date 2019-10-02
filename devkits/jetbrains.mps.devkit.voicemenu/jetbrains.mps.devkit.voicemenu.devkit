@@ -6,5 +6,13 @@
   <exported-language name="0b30ef64-0c5e-4567-b992-9bf5bbc44c0a(jetbrains.mps.samples.VoiceMenuToHTML)" />
   <exported-language name="b346e003-e240-4a78-ab18-9d3086938853(jetbrains.mps.samples.VoiceMenuToJava)" />
   <exported-language name="750ae49d-4f57-400c-b5dc-2b58c1e3f9a9(jetbrains.mps.samples.VoiceMenuToXML)" />
+  <exported-language name="479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)" />
+  <exported-language name="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
+  <exported-language name="914c58c4-0680-49cf-8599-f5ced7a657d6(jetbrains.mps.samples.Text)" />
+  <exported-language name="df345b11-b8c7-4213-ac66-48d2a9b75d88(jetbrains.mps.baseLanguageInternal)" />
+  <exported-solutions>
+    <exported-solution>0a1f57f5-a09f-4843-9976-f20fe702e5cf(GenPlan)</exported-solution>
+  </exported-solutions>
+  <generation-plan model="r:d5987bba-bd9a-4de6-a5ae-9f6f2573436e(GenPlan.voicemenu)" />
 </dev-kit>
 
