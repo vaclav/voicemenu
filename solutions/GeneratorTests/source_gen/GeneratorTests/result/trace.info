@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root nodeRef="r:a9f530cc-ebfa-4005-979f-ec102c5a259b(GeneratorTests.result)/8402676488467559902">
+    <file name="ToBeTested.xml">
+      <unit id="8402676488467559902" at="1,0,21,16" name="GeneratorTests.result.ToBeTested" />
+    </file>
+  </root>
+</debug-info>
+

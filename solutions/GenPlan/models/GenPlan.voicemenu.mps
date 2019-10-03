@@ -57,6 +57,10 @@
         <property role="2V$B1T" value="b346e003-e240-4a78-ab18-9d3086938853" />
         <property role="2V$B1Q" value="jetbrains.mps.samples.VoiceMenuToJava" />
       </node>
+      <node concept="2V$Bhx" id="7isjrWTMtnR" role="1t_9vn">
+        <property role="2V$B1T" value="83888646-71ce-4f1c-9c53-c54016f6ad4f" />
+        <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.collections" />
+      </node>
       <node concept="2V$Bhx" id="7isjrWTAO4W" role="1t_9vn">
         <property role="2V$B1T" value="f3061a53-9226-4cc5-a443-f952ceaf5816" />
         <property role="2V$B1Q" value="jetbrains.mps.baseLanguage" />
