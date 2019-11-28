@@ -10,6 +10,12 @@ import JavaVoiceMenu.runtime.Behaviour;
 import JavaVoiceMenu.runtime.Style;
 import java.awt.BorderLayout;
 import javax.swing.JPanel;
+import JavaVoiceMenu.runtime.Data;
+import javax.swing.JButton;
+import java.awt.Dimension;
+import javax.swing.border.Border;
+import javax.swing.border.LineBorder;
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import JavaVoiceMenu.runtime.MacVoice;
 import java.io.IOException;
@@ -67,7 +73,16 @@ public class Sample_1 implements ActionListener {
     Style.setFrame();
   }
 
-  public static void addButtons(JPanel myPanelOfButtons) {/* error: statement w/o textGen:foreach */
+  public static void addButtons(JPanel myPanelOfButtons) {
+    for (Data.Status item : Data.Status.values()) {
+      JButton button = new JButton(item.getCode());
+      button.setActionCommand(item.getCode());
+      button.addActionListener(instance);
+      button.setPreferredSize(new Dimension(78, 76));
+      Border border = new LineBorder(Color.white, 13);
+      button.setBorder(border);
+      myPanelOfButtons.add(button);
+    }
   }
   @Override
   public void actionPerformed(ActionEvent event) {

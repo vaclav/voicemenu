@@ -6,8 +6,8 @@
   <tstamp>
     <format property="date" pattern="yyyyMMdd" />
   </tstamp>
-  <property name="build.number" value="192.SNAPSHOT" />
-  <property name="mps_home" location="" />
+  <property name="build.number" value="193.SNAPSHOT" />
+  <property name="mps_home" location="${basedir}/../../MPS 2019.3 EAP" />
   <property name="artifacts.mpsStandalone" location="${mps_home}" />
   <property name="artifacts.mpsDebuggerPlugin" location="${mps_home}/plugins" />
   <property name="artifacts.mpsMakePlugin" location="${mps_home}/plugins" />
@@ -215,7 +215,7 @@
       <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>voicemenu</id>
         <name>voicemenu</name>
-        <version>2019.2</version>
+        <version>2019.3</version>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.ide.make</depends>
         
@@ -348,13 +348,14 @@
     </echoxml>
     <jar destfile="${build.layout}/plugins/voicemenu/languages/voicemenu/jetbrains.mps.samples.VoiceMenu-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenu#5606780960159195253" />
+      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenu/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/jetbrains.mps.samples.VoiceMenu-generator.jar" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenu-generator-template">
-      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenu/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
-    </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenu-models">
-      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenu/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenu/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenu-generator-template">
+      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenu/generator/template" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/plugins/voicemenu/languages/voicemenu/jetbrains.mps.samples.VoiceMenu-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenu/generator/source_gen">
@@ -370,8 +371,8 @@
         <exclude name="**/*.mps" />
       </fileset>
       <zipfileset file="${basedir}/languages/jetbrains.mps.samples.VoiceMenu/jetbrains.mps.samples.VoiceMenu.mpl" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenu-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenu-models" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenu-generator-template" prefix="module/generator/template" />
     </jar>
     <mkdir dir="${build.tmp}/default/jetbrains.mps.samples.VoiceMenuToJava.jar" />
     <mkdir dir="${build.tmp}/default/jetbrains.mps.samples.VoiceMenuToJava.jar/META-INF" />
@@ -487,13 +488,14 @@
     </echoxml>
     <jar destfile="${build.layout}/plugins/voicemenu/languages/voicemenu/jetbrains.mps.samples.VoiceMenuToJava-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenuToJava#6772988411135912590" />
+      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToJava/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/jetbrains.mps.samples.VoiceMenuToJava-generator.jar" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuToJava-generator-template">
-      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToJava/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
-    </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuToJava-models">
-      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToJava/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToJava/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuToJava-generator-template">
+      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToJava/generator/template" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/plugins/voicemenu/languages/voicemenu/jetbrains.mps.samples.VoiceMenuToJava-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToJava/generator/source_gen">
@@ -509,8 +511,8 @@
         <exclude name="**/*.mps" />
       </fileset>
       <zipfileset file="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToJava/jetbrains.mps.samples.VoiceMenuToJava.mpl" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuToJava-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuToJava-models" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuToJava-generator-template" prefix="module/generator/template" />
     </jar>
     <mkdir dir="${build.tmp}/default/JavaVoiceMenu.jar" />
     <mkdir dir="${build.tmp}/default/JavaVoiceMenu.jar/META-INF" />
@@ -539,7 +541,7 @@
       <fileset dir="${build.tmp}/default/JavaVoiceMenu.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-JavaVoiceMenu-models">
-      <fileset dir="${basedir}/solutions/JavaVoiceMenu/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${basedir}/solutions/JavaVoiceMenu/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/plugins/voicemenu/languages/voicemenu/JavaVoiceMenu-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/solutions/JavaVoiceMenu/source_gen">
@@ -661,13 +663,14 @@
     </echoxml>
     <jar destfile="${build.layout}/plugins/voicemenu/languages/voicemenu/jetbrains.mps.samples.VoiceMenuTabularEditor-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenuTabularEditor#7167187293242401562" />
+      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuTabularEditor/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/jetbrains.mps.samples.VoiceMenuTabularEditor-generator.jar" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuTabularEditor-generator-template">
-      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuTabularEditor/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
-    </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuTabularEditor-models">
-      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuTabularEditor/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuTabularEditor/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuTabularEditor-generator-template">
+      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuTabularEditor/generator/template" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/plugins/voicemenu/languages/voicemenu/jetbrains.mps.samples.VoiceMenuTabularEditor-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuTabularEditor/generator/source_gen">
@@ -683,8 +686,8 @@
         <exclude name="**/*.mps" />
       </fileset>
       <zipfileset file="${basedir}/languages/jetbrains.mps.samples.VoiceMenuTabularEditor/jetbrains.mps.samples.VoiceMenuTabularEditor.mpl" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuTabularEditor-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuTabularEditor-models" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuTabularEditor-generator-template" prefix="module/generator/template" />
     </jar>
     <mkdir dir="${build.tmp}/default/jetbrains.mps.samples.VoiceMenuToXML.jar" />
     <mkdir dir="${build.tmp}/default/jetbrains.mps.samples.VoiceMenuToXML.jar/META-INF" />
@@ -797,13 +800,14 @@
     </echoxml>
     <jar destfile="${build.layout}/plugins/voicemenu/languages/voicemenu/jetbrains.mps.samples.VoiceMenuToXML-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenuToXML#6772988411135600674" />
+      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToXML/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/jetbrains.mps.samples.VoiceMenuToXML-generator.jar" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuToXML-generator-template">
-      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToXML/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
-    </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuToXML-models">
-      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToXML/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToXML/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuToXML-generator-template">
+      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToXML/generator/template" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/plugins/voicemenu/languages/voicemenu/jetbrains.mps.samples.VoiceMenuToXML-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToXML/generator/source_gen">
@@ -819,8 +823,8 @@
         <exclude name="**/*.mps" />
       </fileset>
       <zipfileset file="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToXML/jetbrains.mps.samples.VoiceMenuToXML.mpl" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuToXML-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuToXML-models" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuToXML-generator-template" prefix="module/generator/template" />
     </jar>
     <mkdir dir="${build.tmp}/default/TTSLibrary.jar" />
     <mkdir dir="${build.tmp}/default/TTSLibrary.jar/META-INF" />
@@ -852,7 +856,7 @@
       <fileset dir="${build.tmp}/default/TTSLibrary.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-TTSLibrary-models">
-      <fileset dir="${basedir}/solutions/TTSLibrary/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${basedir}/solutions/TTSLibrary/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/plugins/voicemenu/languages/voicemenu/TTSLibrary-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/solutions/TTSLibrary/source_gen">
@@ -986,13 +990,14 @@
     </echoxml>
     <jar destfile="${build.layout}/plugins/voicemenu/languages/voicemenu/jetbrains.mps.samples.VoiceMenuToHTML-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenuToHTML#2702278965990462974" />
+      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToHTML/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/jetbrains.mps.samples.VoiceMenuToHTML-generator.jar" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuToHTML-generator-template">
-      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToHTML/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
-    </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuToHTML-models">
-      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToHTML/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToHTML/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuToHTML-generator-template">
+      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToHTML/generator/template" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/plugins/voicemenu/languages/voicemenu/jetbrains.mps.samples.VoiceMenuToHTML-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToHTML/generator/source_gen">
@@ -1008,8 +1013,8 @@
         <exclude name="**/*.mps" />
       </fileset>
       <zipfileset file="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToHTML/jetbrains.mps.samples.VoiceMenuToHTML.mpl" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuToHTML-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuToHTML-models" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuToHTML-generator-template" prefix="module/generator/template" />
     </jar>
     <mkdir dir="${build.tmp}/default/jetbrains.mps.samples.VoiceMenuToAsterisk.jar" />
     <mkdir dir="${build.tmp}/default/jetbrains.mps.samples.VoiceMenuToAsterisk.jar/META-INF" />
@@ -1126,13 +1131,14 @@
     </echoxml>
     <jar destfile="${build.layout}/plugins/voicemenu/languages/voicemenu/jetbrains.mps.samples.VoiceMenuToAsterisk-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenuToAsterisk#1416608923407982813" />
+      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToAsterisk/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/jetbrains.mps.samples.VoiceMenuToAsterisk-generator.jar" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuToAsterisk-generator-template">
-      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToAsterisk/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
-    </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuToAsterisk-models">
-      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToAsterisk/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToAsterisk/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuToAsterisk-generator-template">
+      <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToAsterisk/generator/template" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/plugins/voicemenu/languages/voicemenu/jetbrains.mps.samples.VoiceMenuToAsterisk-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToAsterisk/generator/source_gen">
@@ -1148,8 +1154,8 @@
         <exclude name="**/*.mps" />
       </fileset>
       <zipfileset file="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToAsterisk/jetbrains.mps.samples.VoiceMenuToAsterisk.mpl" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuToAsterisk-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuToAsterisk-models" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.VoiceMenuToAsterisk-generator-template" prefix="module/generator/template" />
     </jar>
     <mkdir dir="${build.tmp}/default/jetbrains.mps.samples.Text.jar" />
     <mkdir dir="${build.tmp}/default/jetbrains.mps.samples.Text.jar/META-INF" />
@@ -1217,7 +1223,7 @@
       <fileset dir="${build.tmp}/default/jetbrains.mps.samples.Text.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-jetbrains.mps.samples.Text-models">
-      <fileset dir="${basedir}/languages/jetbrains.mps.samples.Text/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${basedir}/languages/jetbrains.mps.samples.Text/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/plugins/voicemenu/languages/voicemenu/jetbrains.mps.samples.Text-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/jetbrains.mps.samples.Text/source_gen">
@@ -1248,7 +1254,6 @@
       <module namespace="voicemenu" type="solution" uuid="f5c3a3a7-38a1-4385-b73a-9993180f3701">
         <dependencies>
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
-          <module ref="dac7f2c0-79a3-42ca-a0f2-e2cf2736613e(JavaVoiceMenu)" kind="rt" />
           <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
           <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
           <module ref="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" kind="rt" />
@@ -1275,12 +1280,6 @@
           <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
           <language id="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" />
           <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
-          <language id="l:4bc750d7-5688-4f52-b7d5-b263a3393a24:jetbrains.mps.samples.VoiceMenu" />
-          <language id="l:250921d2-1a87-46e5-90a9-a2c74442cfa1:jetbrains.mps.samples.VoiceMenuTabularEditor" />
-          <language id="l:e2a803a4-d4b8-43eb-b458-517effd2a87f:jetbrains.mps.samples.VoiceMenuToAsterisk" />
-          <language id="l:0b30ef64-0c5e-4567-b992-9bf5bbc44c0a:jetbrains.mps.samples.VoiceMenuToHTML" />
-          <language id="l:b346e003-e240-4a78-ab18-9d3086938853:jetbrains.mps.samples.VoiceMenuToJava" />
-          <language id="l:750ae49d-4f57-400c-b5dc-2b58c1e3f9a9:jetbrains.mps.samples.VoiceMenuToXML" />
         </uses>
         <classpath>
           <entry path="." />
@@ -1297,7 +1296,7 @@
       <fileset dir="${build.tmp}/default/voicemenu.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-voicemenu-models">
-      <fileset dir="${basedir}/solutions/voicemenu/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${basedir}/solutions/voicemenu/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/plugins/voicemenu/languages/voicemenu/voicemenu-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/solutions/voicemenu/source_gen">
@@ -1416,13 +1415,14 @@
     </echoxml>
     <jar destfile="${build.layout}/plugins/voicemenu/languages/voicemenu/VoiceMenuTest-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/VoiceMenuTest#01" />
+      <fileset dir="${basedir}/languages/VoiceMenuTest/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/VoiceMenuTest-generator.jar" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-VoiceMenuTest-generator-template">
-      <fileset dir="${basedir}/languages/VoiceMenuTest/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
-    </copyModels>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-VoiceMenuTest-models">
-      <fileset dir="${basedir}/languages/VoiceMenuTest/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${basedir}/languages/VoiceMenuTest/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-VoiceMenuTest-generator-template">
+      <fileset dir="${basedir}/languages/VoiceMenuTest/generator/template" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/plugins/voicemenu/languages/voicemenu/VoiceMenuTest-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/VoiceMenuTest/generator/source_gen">
@@ -1438,8 +1438,8 @@
         <exclude name="**/*.mps" />
       </fileset>
       <zipfileset file="${basedir}/languages/VoiceMenuTest/VoiceMenuTest.mpl" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-VoiceMenuTest-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-VoiceMenuTest-models" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-VoiceMenuTest-generator-template" prefix="module/generator/template" />
     </jar>
     <copy todir="${build.layout}/plugins/voicemenu">
       <fileset file="${basedir}/solutions/TTSLibrary/lib/cmu_time_awb.jar" />
@@ -1605,6 +1605,7 @@
       <library file="${artifacts.mpsStandalone}/languages/plaf/jetbrains.mps.baseLanguage.search.jar" />
       <library file="${artifacts.mpsStandalone}/languages/plaf/jetbrains.mps.baseLanguage.util.jar" />
       <library file="${artifacts.mpsStandalone}/languages/plaf/jetbrains.mps.ide.platform.jar" />
+      <library file="${artifacts.mpsStandalone}/languages/plaf/jetbrains.mps.ide.refactoring.platform.jar" />
       <library file="${artifacts.mpsStandalone}/languages/plaf/jetbrains.mps.ide.ui.jar" />
       <library file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
       <library file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />
@@ -1614,7 +1615,7 @@
       <library file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.lang.constraints.rules.runtime.jar" />
       <library file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.lang.feedback.api.jar" />
       <library file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.lang.feedback.context.jar" />
-      <library file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.lang.feedback.problem.jar" />
+      <library file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.lang.feedback.problem.rt.jar" />
       <library file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.lang.feedback.problem.rules.jar" />
       <library file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.lang.messages.api.jar" />
       <library file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.lang.migration.runtime.jar" />
@@ -1647,10 +1648,9 @@
         <module file="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToHTML/jetbrains.mps.samples.VoiceMenuToHTML.mpl" />
         <module file="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToJava/jetbrains.mps.samples.VoiceMenuToJava.mpl" />
         <module file="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToXML/jetbrains.mps.samples.VoiceMenuToXML.mpl" />
-      </chunk>
-      <chunk>
         <module file="${basedir}/solutions/voicemenu/voicemenu.msd" />
       </chunk>
+      <chunk />
       <jvmargs>
         <arg value="-ea" />
         <arg value="-Xmx512m" />
@@ -1675,22 +1675,20 @@
       </src>
       <classpath>
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -1699,8 +1697,8 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-textgen.jar" />
-        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
+        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
@@ -1725,22 +1723,20 @@
       </src>
       <classpath>
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -1750,8 +1746,8 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-textgen.jar" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenu" />
-        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
+        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
@@ -1772,24 +1768,22 @@
         <path location="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToJava/source_gen" />
       </src>
       <classpath>
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <pathelement path="${build.tmp}/java/out/JavaVoiceMenu" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -1799,8 +1793,8 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-textgen.jar" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenu" />
-        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
+        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
@@ -1825,24 +1819,22 @@
         <path location="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToJava/generator/source_gen" />
       </src>
       <classpath>
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <pathelement path="${build.tmp}/java/out/JavaVoiceMenu" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -1853,8 +1845,8 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-textgen.jar" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenu" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenuToJava" />
-        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
+        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
@@ -1879,6 +1871,7 @@
       </src>
       <classpath>
         <pathelement path="${build.tmp}/java/out/TTSLibrary" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <fileset file="${basedir}/solutions/TTSLibrary/lib/cmu_time_awb.jar" />
         <fileset file="${basedir}/solutions/TTSLibrary/lib/cmu_us_kal.jar" />
         <fileset file="${basedir}/solutions/TTSLibrary/lib/cmudict04.jar" />
@@ -1888,7 +1881,6 @@
         <fileset file="${basedir}/solutions/TTSLibrary/lib/freetts-jsapi10.jar" />
         <fileset file="${basedir}/solutions/TTSLibrary/lib/freetts.jar" />
         <fileset file="${basedir}/solutions/TTSLibrary/lib/mbrola.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
       </classpath>
     </javac>
   </target>
@@ -1903,22 +1895,20 @@
       </src>
       <classpath>
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -1928,8 +1918,8 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-textgen.jar" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenu" />
-        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
+        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
@@ -1953,22 +1943,20 @@
       </src>
       <classpath>
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -1979,8 +1967,8 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-textgen.jar" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenu" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenuTabularEditor" />
-        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
+        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
@@ -2003,22 +1991,20 @@
       </src>
       <classpath>
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -2028,8 +2014,8 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-textgen.jar" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenu" />
-        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
+        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
@@ -2052,22 +2038,20 @@
       </src>
       <classpath>
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -2078,8 +2062,8 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-textgen.jar" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenu" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenuToXML" />
-        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
+        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
@@ -2123,22 +2107,20 @@
       </src>
       <classpath>
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -2148,8 +2130,8 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-textgen.jar" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenu" />
-        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
+        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
@@ -2173,22 +2155,20 @@
       </src>
       <classpath>
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -2199,8 +2179,8 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-textgen.jar" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenu" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenuToHTML" />
-        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
+        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
@@ -2223,22 +2203,20 @@
       <classpath>
         <pathelement path="${build.tmp}/java/out/TTSLibrary" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -2258,8 +2236,8 @@
         <fileset file="${basedir}/solutions/TTSLibrary/lib/freetts-jsapi10.jar" />
         <fileset file="${basedir}/solutions/TTSLibrary/lib/freetts.jar" />
         <fileset file="${basedir}/solutions/TTSLibrary/lib/mbrola.jar" />
-        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
+        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
@@ -2283,22 +2261,20 @@
       <classpath>
         <pathelement path="${build.tmp}/java/out/TTSLibrary" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -2319,8 +2295,8 @@
         <fileset file="${basedir}/solutions/TTSLibrary/lib/freetts-jsapi10.jar" />
         <fileset file="${basedir}/solutions/TTSLibrary/lib/freetts.jar" />
         <fileset file="${basedir}/solutions/TTSLibrary/lib/mbrola.jar" />
-        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
+        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
@@ -2342,22 +2318,20 @@
       </src>
       <classpath>
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -2366,8 +2340,8 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-textgen.jar" />
-        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
+        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
@@ -2379,7 +2353,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.voicemenu" depends="java.compile.JavaVoiceMenu, java.compile.jetbrains.mps.samples.VoiceMenu, fetchDependencies">
+  <target name="java.compile.voicemenu" depends="java.compile.jetbrains.mps.samples.VoiceMenu, fetchDependencies">
     <mkdir dir="${basedir}/solutions/voicemenu/source_gen" />
     <mkdir dir="${build.tmp}/java/out/voicemenu" />
     <javac destdir="${build.tmp}/java/out/voicemenu" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -2388,24 +2362,21 @@
         <path location="${basedir}/solutions/voicemenu/source_gen" />
       </src>
       <classpath>
-        <pathelement path="${build.tmp}/java/out/JavaVoiceMenu" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -2417,8 +2388,8 @@
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenu" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-workbench.jar" />
-        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
+        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
@@ -2440,22 +2411,20 @@
       </src>
       <classpath>
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -2465,10 +2434,12 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-textgen.jar" />
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenu" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-messages-for-rules.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messages-api.jar" />
-        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-messages-for-rules.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
+        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
@@ -2491,22 +2462,24 @@
       </src>
       <classpath>
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-messages-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-messages-for-rules.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -2516,8 +2489,8 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-textgen.jar" />
         <pathelement path="${build.tmp}/java/out/VoiceMenuTest" />
-        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
+        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
@@ -2545,7 +2518,7 @@
     <delete dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToJava/generator/source_gen" />
     <delete dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToXML/source_gen" />
     <delete dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToXML/generator/source_gen" />
-    <delete dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToAsterisk/generator/source_gen" />
     <delete dir="${basedir}/solutions/voicemenu/source_gen" />
+    <delete dir="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToAsterisk/generator/source_gen" />
   </target>
 </project>

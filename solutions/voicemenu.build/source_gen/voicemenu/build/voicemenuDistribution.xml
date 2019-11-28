@@ -3,8 +3,8 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/voicemenuDistribution" />
   <property name="build.layout" location="${build.dir}/artifacts/voicemenuDistribution" />
-  <property name="mps_home" location="${basedir}/../../MPS 2019.2" />
-  <property name="version" value="2019.2" />
+  <property name="mps_home" location="${basedir}/../../MPS 2019.3 EAP" />
+  <property name="version" value="2019.3" />
   <property name="artifacts.voicemenu" location="${build.dir}/artifacts/voicemenu" />
   <property file="${artifacts.voicemenu}/build.properties" prefix="import.voicemenu" />
   <property name="voicemenu.date" value="${import.voicemenu.voicemenu.date}" />

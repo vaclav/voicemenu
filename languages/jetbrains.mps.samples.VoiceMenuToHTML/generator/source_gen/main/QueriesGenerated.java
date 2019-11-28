@@ -41,7 +41,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(_context.getNode(), PROPS.info$wU3E);
   }
   public static Object propertyMacro_GetValue_1_2(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.name$tAp1).replaceAll("[\\W|\\.|,]", "_") + ".html";
+    return ((SPropertyOperations.getString(_context.getNode(), PROPS.name$tAp1) != null ? SPropertyOperations.getString(_context.getNode(), PROPS.name$tAp1) : "FOO")).replaceAll("[\\W|\\.|,]", "_") + ".html";
   }
   public static Object propertyMacro_GetValue_3_0(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.event$gjCV), PROPS.name$tAp1);

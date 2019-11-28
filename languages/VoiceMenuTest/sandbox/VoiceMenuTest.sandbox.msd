@@ -5,6 +5,11 @@
       <sourceRoot location="models" />
     </modelRoot>
   </models>
+  <facets>
+    <facet type="java">
+      <classes generated="true" path="${module}/classes_gen" />
+    </facet>
+  </facets>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">13f160a2-335f-4095-a74f-ea7ca358d90b(jetbrains.mps.samples.VoiceMenu.sandbox)</dependency>

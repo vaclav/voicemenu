@@ -23,6 +23,7 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
@@ -31,6 +32,9 @@
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -38,6 +42,12 @@
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
     </language>
     <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
@@ -360,11 +370,27 @@
                 <property role="Xl_RC" value=".html" />
               </node>
               <node concept="2OqwBi" id="2Q37qgy0gYz" role="3uHU7B">
-                <node concept="2OqwBi" id="2CNcfOHJECU" role="2Oq$k0">
-                  <node concept="3TrcHB" id="2CNcfOHJECX" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                <node concept="1eOMI4" id="4qLeaoz9rSF" role="2Oq$k0">
+                  <node concept="3K4zz7" id="4qLeaoz9skS" role="1eOMHV">
+                    <node concept="2OqwBi" id="4qLeaoz9szF" role="3K4E3e">
+                      <node concept="30H73N" id="4qLeaoz9smy" role="2Oq$k0" />
+                      <node concept="3TrcHB" id="4qLeaoz9s_g" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="4qLeaoz9sAQ" role="3K4GZi">
+                      <property role="Xl_RC" value="FOO" />
+                    </node>
+                    <node concept="3y3z36" id="4qLeaoz9s4J" role="3K4Cdx">
+                      <node concept="10Nm6u" id="4qLeaoz9siW" role="3uHU7w" />
+                      <node concept="2OqwBi" id="2CNcfOHJECU" role="3uHU7B">
+                        <node concept="3TrcHB" id="2CNcfOHJECX" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        </node>
+                        <node concept="30H73N" id="2CNcfOHJECY" role="2Oq$k0" />
+                      </node>
+                    </node>
                   </node>
-                  <node concept="30H73N" id="2CNcfOHJECY" role="2Oq$k0" />
                 </node>
                 <node concept="liA8E" id="2Q37qgy0aWZ" role="2OqNvi">
                   <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />

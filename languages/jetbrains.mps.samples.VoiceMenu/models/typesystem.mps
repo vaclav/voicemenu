@@ -2,7 +2,7 @@
 <model ref="r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
@@ -143,10 +143,6 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802791" name="helginsIntention" index="2OEOjU" />
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
         <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
@@ -165,6 +161,10 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643221" name="helginsIntention" index="1urrFz" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
         <property id="1216127910019" name="applyImmediately" index="ARO6o" />
         <reference id="1216388525179" name="quickFix" index="QpYPw" />
@@ -507,14 +507,14 @@
         <node concept="9aQIb" id="5HF1wNNZUWJ" role="9aQIa">
           <node concept="3clFbS" id="5HF1wNNZUWK" role="9aQI4">
             <node concept="a7r0C" id="1L4ryxdTfok" role="3cqZAp">
-              <node concept="3Cnw8n" id="1L4ryxdTfpw" role="2OEOjU">
-                <ref role="QpYPw" node="6Dh11itNu0H" resolve="SuggestNumber" />
-              </node>
-              <node concept="1YBJjd" id="1L4ryxdTfoV" role="2OEOjV">
-                <ref role="1YBMHb" node="5HF1wNNZNyB" resolve="event" />
-              </node>
               <node concept="Xl_RD" id="1L4ryxdTfoH" role="a7wSD">
                 <property role="Xl_RC" value="This button cannot be found on the phone" />
+              </node>
+              <node concept="1YBJjd" id="1L4ryxdTfoV" role="1urrMF">
+                <ref role="1YBMHb" node="5HF1wNNZNyB" resolve="event" />
+              </node>
+              <node concept="3Cnw8n" id="1L4ryxdTfpw" role="1urrFz">
+                <ref role="QpYPw" node="6Dh11itNu0H" resolve="SuggestNumber" />
               </node>
             </node>
           </node>
@@ -562,13 +562,13 @@
                 <node concept="Xl_RD" id="5pe7NVkEe7f" role="2MkJ7o">
                   <property role="Xl_RC" value="Duplicate reference to Event" />
                 </node>
-                <node concept="2GrUjf" id="5pe7NVkEe7g" role="2OEOjV">
+                <node concept="2GrUjf" id="5pe7NVkEe7g" role="1urrMF">
                   <ref role="2Gs0qQ" node="5$QY1LNxdba" resolve="currentActivity" />
                 </node>
-                <node concept="3Cnw8n" id="5pe7NVkEe7d" role="2OEOjU">
+                <node concept="3Cnw8n" id="5pe7NVkEe7d" role="1urrFz">
                   <ref role="QpYPw" node="3QwtLquzL$B" resolve="RemoveActivity" />
                 </node>
-                <node concept="3Cnw8n" id="5pe7NVkEe7e" role="2OEOjU">
+                <node concept="3Cnw8n" id="5pe7NVkEe7e" role="1urrFz">
                   <ref role="QpYPw" node="6Dh11itMJPD" resolve="RenameActivity" />
                 </node>
               </node>
@@ -1098,13 +1098,13 @@
             <node concept="Xl_RD" id="7loivjjFsfF" role="2MkJ7o">
               <property role="Xl_RC" value="Duplicate number" />
             </node>
-            <node concept="1YBJjd" id="7loivjjFsfG" role="2OEOjV">
+            <node concept="1YBJjd" id="7loivjjFsfG" role="1urrMF">
               <ref role="1YBMHb" node="6Dh11itPon4" resolve="event" />
             </node>
-            <node concept="3Cnw8n" id="7loivjjFsfz" role="2OEOjU">
+            <node concept="3Cnw8n" id="7loivjjFsfz" role="1urrFz">
               <ref role="QpYPw" node="6Dh11itORXn" resolve="RemoveNumber" />
             </node>
-            <node concept="3Cnw8n" id="7loivjjFsf$" role="2OEOjU">
+            <node concept="3Cnw8n" id="7loivjjFsf$" role="1urrFz">
               <ref role="QpYPw" node="6Dh11itNu0H" resolve="SuggestNumber" />
               <node concept="3CnSsL" id="7loivjjFsf_" role="3Coj4f">
                 <ref role="QkamJ" node="3JYttAARVpK" resolve="srcMenu" />
@@ -1218,7 +1218,13 @@
             <node concept="9aQIb" id="6dQXHUGnIHo" role="9aQIa">
               <node concept="3clFbS" id="6dQXHUGnIHp" role="9aQI4">
                 <node concept="a7r0C" id="1L4ryxdT3QO" role="3cqZAp">
-                  <node concept="3Cnw8n" id="1L4ryxdT3Th" role="2OEOjU">
+                  <node concept="Xl_RD" id="1L4ryxdT3Rl" role="a7wSD">
+                    <property role="Xl_RC" value="Event Not Initiliazed" />
+                  </node>
+                  <node concept="1YBJjd" id="1L4ryxdT3SF" role="1urrMF">
+                    <ref role="1YBMHb" node="6dQXHUGn_Cn" resolve="event" />
+                  </node>
+                  <node concept="3Cnw8n" id="1L4ryxdT3Th" role="1urrFz">
                     <ref role="QpYPw" node="3JYttAAKz9C" resolve="InitilizeEvent" />
                     <node concept="3CnSsL" id="1L4ryxdT3Ti" role="3Coj4f">
                       <ref role="QkamJ" node="3JYttAALS4q" resolve="srcMenu" />
@@ -1240,12 +1246,6 @@
                         <ref role="1YBMHb" node="6dQXHUGn_Cn" resolve="event" />
                       </node>
                     </node>
-                  </node>
-                  <node concept="Xl_RD" id="1L4ryxdT3Rl" role="a7wSD">
-                    <property role="Xl_RC" value="Event Not Initiliazed" />
-                  </node>
-                  <node concept="1YBJjd" id="1L4ryxdT3SF" role="2OEOjV">
-                    <ref role="1YBMHb" node="6dQXHUGn_Cn" resolve="event" />
                   </node>
                 </node>
               </node>
@@ -1447,15 +1447,15 @@
         </node>
         <node concept="3clFbS" id="3JYttAAOfZf" role="3clFbx">
           <node concept="a7r0C" id="1L4ryxdTe$Z" role="3cqZAp">
-            <node concept="3Cnw8n" id="1L4ryxdTeB2" role="2OEOjU">
-              <property role="ARO6o" value="true" />
-              <ref role="QpYPw" node="3JYttAAO_kP" resolve="InitiliazeMenu" />
-            </node>
             <node concept="Xl_RD" id="1L4ryxdTe_o" role="a7wSD">
               <property role="Xl_RC" value="Empty Menu" />
             </node>
-            <node concept="1YBJjd" id="1L4ryxdTeAs" role="2OEOjV">
+            <node concept="1YBJjd" id="1L4ryxdTeAs" role="1urrMF">
               <ref role="1YBMHb" node="3JYttAAOfZ4" resolve="menu" />
+            </node>
+            <node concept="3Cnw8n" id="1L4ryxdTeB2" role="1urrFz">
+              <property role="ARO6o" value="true" />
+              <ref role="QpYPw" node="3JYttAAO_kP" resolve="InitiliazeMenu" />
             </node>
           </node>
         </node>
@@ -1603,15 +1603,15 @@
         </node>
         <node concept="3clFbS" id="5o6E87148Pj" role="3clFbx">
           <node concept="2MkqsV" id="5o6E8714ala" role="3cqZAp">
-            <node concept="3Cnw8n" id="5o6E8714mVY" role="2OEOjU">
-              <property role="ARO6o" value="true" />
-              <ref role="QpYPw" node="5o6E8714jrJ" resolve="InitWorkspace" />
-            </node>
             <node concept="Xl_RD" id="5o6E8714alm" role="2MkJ7o">
               <property role="Xl_RC" value="Menu is null" />
             </node>
-            <node concept="1YBJjd" id="5o6E8714amb" role="2OEOjV">
+            <node concept="1YBJjd" id="5o6E8714amb" role="1urrMF">
               <ref role="1YBMHb" node="5o6E87148P8" resolve="workSpace" />
+            </node>
+            <node concept="3Cnw8n" id="5o6E8714mVY" role="1urrFz">
+              <property role="ARO6o" value="true" />
+              <ref role="QpYPw" node="5o6E8714jrJ" resolve="InitWorkspace" />
             </node>
           </node>
         </node>
@@ -1704,17 +1704,17 @@
                 </node>
                 <node concept="3clFbS" id="4JcMHpR0BYR" role="3clFbx">
                   <node concept="2MkqsV" id="4JcMHpR0EGs" role="3cqZAp">
-                    <node concept="3Cnw8n" id="4JcMHpR0XZ_" role="2OEOjU">
-                      <ref role="QpYPw" node="4JcMHpR0Nlw" resolve="ResetAction" />
-                    </node>
-                    <node concept="3Cnw8n" id="4JcMHpR8thb" role="2OEOjU">
-                      <ref role="QpYPw" node="4JcMHpR1qRZ" resolve="SetFinaltoTrue" />
-                    </node>
                     <node concept="Xl_RD" id="4JcMHpR0EGC" role="2MkJ7o">
                       <property role="Xl_RC" value="Back at root node" />
                     </node>
-                    <node concept="1YBJjd" id="4JcMHpR0EIe" role="2OEOjV">
+                    <node concept="1YBJjd" id="4JcMHpR0EIe" role="1urrMF">
                       <ref role="1YBMHb" node="4JcMHpR0BYG" resolve="back" />
+                    </node>
+                    <node concept="3Cnw8n" id="4JcMHpR0XZ_" role="1urrFz">
+                      <ref role="QpYPw" node="4JcMHpR0Nlw" resolve="ResetAction" />
+                    </node>
+                    <node concept="3Cnw8n" id="4JcMHpR8thb" role="1urrFz">
+                      <ref role="QpYPw" node="4JcMHpR1qRZ" resolve="SetFinaltoTrue" />
                     </node>
                   </node>
                 </node>
@@ -1979,7 +1979,7 @@
             <node concept="Xl_RD" id="wr2MGdwAQq" role="a7wSD">
               <property role="Xl_RC" value="Incomplete Activity" />
             </node>
-            <node concept="1YBJjd" id="wr2MGdwAQr" role="2OEOjV">
+            <node concept="1YBJjd" id="wr2MGdwAQr" role="1urrMF">
               <ref role="1YBMHb" node="60WteoFX8ZR" resolve="activity" />
             </node>
           </node>
@@ -2409,7 +2409,13 @@
       <node concept="3clFbJ" id="2C1EnhOSESi" role="3cqZAp">
         <node concept="3clFbS" id="2C1EnhOSESk" role="3clFbx">
           <node concept="a7r0C" id="2C1EnhOSF0D" role="3cqZAp">
-            <node concept="3Cnw8n" id="2C1EnhOSQ5A" role="2OEOjU">
+            <node concept="Xl_RD" id="2C1EnhOSF0Y" role="a7wSD">
+              <property role="Xl_RC" value="Duplicate Timeouts" />
+            </node>
+            <node concept="1YBJjd" id="2C1EnhOSF3a" role="1urrMF">
+              <ref role="1YBMHb" node="2C1EnhOSoev" resolve="menu" />
+            </node>
+            <node concept="3Cnw8n" id="2C1EnhOSQ5A" role="1urrFz">
               <property role="ARO6o" value="true" />
               <ref role="QpYPw" node="2C1EnhOSF3x" resolve="RemoveDuplicateTimeouts" />
               <node concept="3CnSsL" id="2C1EnhOSQf1" role="3Coj4f">
@@ -2418,12 +2424,6 @@
                   <ref role="1YBMHb" node="2C1EnhOSoev" resolve="menu" />
                 </node>
               </node>
-            </node>
-            <node concept="Xl_RD" id="2C1EnhOSF0Y" role="a7wSD">
-              <property role="Xl_RC" value="Duplicate Timeouts" />
-            </node>
-            <node concept="1YBJjd" id="2C1EnhOSF3a" role="2OEOjV">
-              <ref role="1YBMHb" node="2C1EnhOSoev" resolve="menu" />
             </node>
           </node>
         </node>
@@ -2571,7 +2571,13 @@
       <node concept="3clFbJ" id="2C1EnhOMwds" role="3cqZAp">
         <node concept="3clFbS" id="2C1EnhOMwdu" role="3clFbx">
           <node concept="a7r0C" id="2C1EnhOMyz8" role="3cqZAp">
-            <node concept="3Cnw8n" id="2C1EnhOMTRE" role="2OEOjU">
+            <node concept="Xl_RD" id="2C1EnhOMyzt" role="a7wSD">
+              <property role="Xl_RC" value="Timeout is Missing" />
+            </node>
+            <node concept="1YBJjd" id="2C1EnhOMy$o" role="1urrMF">
+              <ref role="1YBMHb" node="2C1EnhOMgf$" resolve="menu" />
+            </node>
+            <node concept="3Cnw8n" id="2C1EnhOMTRE" role="1urrFz">
               <ref role="QpYPw" node="wr2MGd$J0E" resolve="AddMissingTimeout" />
               <node concept="3CnSsL" id="2C1EnhOMU2T" role="3Coj4f">
                 <ref role="QkamJ" node="wr2MGd$K$x" resolve="menu" />
@@ -2579,12 +2585,6 @@
                   <ref role="1YBMHb" node="2C1EnhOMgf$" resolve="menu" />
                 </node>
               </node>
-            </node>
-            <node concept="Xl_RD" id="2C1EnhOMyzt" role="a7wSD">
-              <property role="Xl_RC" value="Timeout is Missing" />
-            </node>
-            <node concept="1YBJjd" id="2C1EnhOMy$o" role="2OEOjV">
-              <ref role="1YBMHb" node="2C1EnhOMgf$" resolve="menu" />
             </node>
           </node>
         </node>
@@ -2800,10 +2800,10 @@
                 <node concept="Xl_RD" id="3CsZFp2D9hC" role="a7wSD">
                   <property role="Xl_RC" value="Typo in the fileName" />
                 </node>
-                <node concept="1YBJjd" id="3CsZFp2D9hD" role="2OEOjV">
+                <node concept="1YBJjd" id="3CsZFp2D9hD" role="1urrMF">
                   <ref role="1YBMHb" node="2T27OaN_bsM" resolve="activity" />
                 </node>
-                <node concept="3Cnw8n" id="3CsZFp2D9hE" role="2OEOjU">
+                <node concept="3Cnw8n" id="3CsZFp2D9hE" role="1urrFz">
                   <ref role="QpYPw" node="2T27OaN_FaA" resolve="suggestWav" />
                 </node>
               </node>
@@ -3132,7 +3132,13 @@
               <node concept="3clFbJ" id="3CsZFp36vHj" role="3cqZAp">
                 <node concept="3clFbS" id="3CsZFp36vHk" role="3clFbx">
                   <node concept="a7r0C" id="2T27OaNoc_B" role="3cqZAp">
-                    <node concept="3Cnw8n" id="2T27OaNoiOr" role="2OEOjU">
+                    <node concept="Xl_RD" id="2T27OaNocCD" role="a7wSD">
+                      <property role="Xl_RC" value="Is File" />
+                    </node>
+                    <node concept="1YBJjd" id="2T27OaNocQW" role="1urrMF">
+                      <ref role="1YBMHb" node="2T27OaNo9kV" resolve="activity" />
+                    </node>
+                    <node concept="3Cnw8n" id="2T27OaNoiOr" role="1urrFz">
                       <property role="ARO6o" value="true" />
                       <ref role="QpYPw" node="2T27OaNohoq" resolve="TransformPBtoFile" />
                       <node concept="3CnSsL" id="2T27OaNrBii" role="3Coj4f">
@@ -3141,12 +3147,6 @@
                           <ref role="1YBMHb" node="2T27OaNo9kV" resolve="activity" />
                         </node>
                       </node>
-                    </node>
-                    <node concept="Xl_RD" id="2T27OaNocCD" role="a7wSD">
-                      <property role="Xl_RC" value="Is File" />
-                    </node>
-                    <node concept="1YBJjd" id="2T27OaNocQW" role="2OEOjV">
-                      <ref role="1YBMHb" node="2T27OaNo9kV" resolve="activity" />
                     </node>
                   </node>
                 </node>
@@ -3284,7 +3284,13 @@
               <node concept="3clFbJ" id="2T27OaNh6V9" role="3cqZAp">
                 <node concept="3clFbS" id="2T27OaNh6Vb" role="3clFbx">
                   <node concept="a7r0C" id="3CsZFp363xL" role="3cqZAp">
-                    <node concept="3Cnw8n" id="3CsZFp363xM" role="2OEOjU">
+                    <node concept="Xl_RD" id="3CsZFp363xP" role="a7wSD">
+                      <property role="Xl_RC" value="Is Text" />
+                    </node>
+                    <node concept="1YBJjd" id="3CsZFp363xQ" role="1urrMF">
+                      <ref role="1YBMHb" node="2T27OaNocXV" resolve="activity" />
+                    </node>
+                    <node concept="3Cnw8n" id="3CsZFp363xM" role="1urrFz">
                       <property role="ARO6o" value="true" />
                       <ref role="QpYPw" node="2T27OaNodnD" resolve="TransformPBtoText" />
                       <node concept="3CnSsL" id="3CsZFp363xN" role="3Coj4f">
@@ -3293,12 +3299,6 @@
                           <ref role="1YBMHb" node="2T27OaNocXV" resolve="activity" />
                         </node>
                       </node>
-                    </node>
-                    <node concept="Xl_RD" id="3CsZFp363xP" role="a7wSD">
-                      <property role="Xl_RC" value="Is Text" />
-                    </node>
-                    <node concept="1YBJjd" id="3CsZFp363xQ" role="2OEOjV">
-                      <ref role="1YBMHb" node="2T27OaNocXV" resolve="activity" />
                     </node>
                   </node>
                 </node>
