@@ -8,7 +8,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164879751025:jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
   <root nodeRef="r:f0b46b5d-6877-46b8-adba-e0c33f897e27(GeneratorTests.resultJava)/8402676488467979784">
     <file name="ToBeTested_0.java">
       <node id="8402676488467955924" at="26,0,27,0" concept="6" trace="instance" />
@@ -83,16 +83,16 @@
       <node id="8402676488467956231" at="95,50,114,5" concept="2" />
       <node id="8402676488467956225" at="94,0,116,0" concept="3" trace="actionPerformed#(Ljava/awt/event/ActionEvent;)V" />
       <node id="8402676488467955928" at="28,0,66,0" concept="7" trace="initHashMap#()V" />
-      <scope id="8402676488467956258" at="105,0,105,31">
-        <var name="e" id="8402676488467956259" />
-      </scope>
       <scope id="8402676488467956261" at="105,31,105,31" />
       <scope id="8402676488467956249" at="98,43,99,41" />
       <scope id="8402676488467956264" at="102,46,103,44" />
-      <scope id="8402676488467956277" at="109,0,110,28">
-        <var name="e" id="8402676488467956283" />
+      <scope id="8402676488467956258" at="105,9,106,9">
+        <var name="e" id="8402676488467956259" />
       </scope>
       <scope id="8402676488467956278" at="109,31,110,28" />
+      <scope id="8402676488467956277" at="109,7,111,7">
+        <var name="e" id="8402676488467956283" />
+      </scope>
       <scope id="8402676488467956262" at="101,13,104,11" />
       <scope id="8402676488467956153" at="76,33,80,21" />
       <scope id="8402676488467956136" at="67,42,73,0" />

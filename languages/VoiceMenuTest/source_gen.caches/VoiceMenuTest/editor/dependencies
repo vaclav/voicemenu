@@ -199,6 +199,7 @@
   </dependency>
   <dependency className="VoiceMenuTest.editor.VoiceMenuTestCase_EditorBuilder_a">
     <classNode dependClassName="java.lang.Iterable" />
+    <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.Objects" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.impl.CellUtil" />

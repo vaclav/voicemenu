@@ -9,6 +9,8 @@ import org.jetbrains.mps.openapi.language.SLanguage;
 import jetbrains.mps.smodel.runtime.ILanguageAspect;
 import jetbrains.mps.smodel.runtime.MakeAspectDescriptor;
 import jetbrains.mps.samples.VoiceMenuToHTML.plugin.FacetAspectDescriptor;
+import org.jetbrains.annotations.NotNull;
+import jetbrains.mps.smodel.language.LanguageExtensions;
 
 public class Language extends LanguageRuntime {
   private final SLanguageId myId;
@@ -44,5 +46,9 @@ public class Language extends LanguageRuntime {
       return aspectClass.cast(new FacetAspectDescriptor());
     }
     return null;
+  }
+
+  @Override
+  protected void contribute(@NotNull LanguageExtensions extensions) {
   }
 }

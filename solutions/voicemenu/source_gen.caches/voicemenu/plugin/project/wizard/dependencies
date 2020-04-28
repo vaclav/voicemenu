@@ -19,7 +19,6 @@
     <classNode dependClassName="com.intellij.openapi.startup.StartupManager" />
     <classNode dependClassName="com.intellij.uiDesigner.core.GridConstraints" />
     <classNode dependClassName="com.intellij.uiDesigner.core.GridLayoutManager" />
-    <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.Runnable" />
     <classNode dependClassName="java.lang.String" />

@@ -13,6 +13,8 @@ import jetbrains.mps.samples.VoiceMenuTabularEditor.editor.EditorAspectDescripto
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConceptPresentationAspect;
 import jetbrains.mps.samples.VoiceMenuTabularEditor.structure.ConceptPresentationAspectImpl;
+import org.jetbrains.annotations.NotNull;
+import jetbrains.mps.smodel.language.LanguageExtensions;
 
 public class Language extends LanguageRuntime {
   private final SLanguageId myId;
@@ -55,5 +57,10 @@ public class Language extends LanguageRuntime {
       return aspectClass.cast(new ConceptPresentationAspectImpl());
     }
     return null;
+  }
+
+  @Override
+  protected void contribute(@NotNull LanguageExtensions extensions) {
+    extensions.recordContribution("jetbrains.mps.samples.VoiceMenu", "4bc750d7-5688-4f52-b7d5-b263a3393a24", EditorAspectDescriptor.class);
   }
 }

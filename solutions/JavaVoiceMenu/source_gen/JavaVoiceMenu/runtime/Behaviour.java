@@ -222,11 +222,7 @@ public class Behaviour {
         Variables.voice.addText(currentEvent.playback);
         Style.setTextToScreen("Recording");
         Variables.voice.addText("After beep start speaking beep");
-        try {
-        } catch (Exception e) {
-
-        }
-        Variables.voice.addText("Succesfully recorded");
+        Variables.voice.addText("Successfully recorded");
 
       } else if (currentEvent.action.equals("replay")) {
         if (isEmptyString(currentEvent.playback)) {

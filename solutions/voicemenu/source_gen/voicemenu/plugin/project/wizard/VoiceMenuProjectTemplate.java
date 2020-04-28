@@ -131,16 +131,16 @@ public class VoiceMenuProjectTemplate implements MPSProjectTemplate {
   @Override
   public void fireSettingsChanged() {
   }
-  private static SNode createWorkSpace_s9npm9_a0a0i0a0a0a0a0a0a0a0a0a0a0a0o(Object p0) {
-    SNodeBuilder rootBuilder1 = new SNodeBuilder().init(CONCEPTS.WorkSpace$ao);
-    rootBuilder1.setProperty(PROPS.name$tAp1, PROPS.name$tAp1.getType().toString(p0));
-    rootBuilder1.forChild(LINKS.bodyMenu$8UCv).init(CONCEPTS.Menu$bP);
+  private static SNode createWorkSpace_s9npm9_a0a0i0a0a0a0a0a0a0a0a0a0a0a0o(String p0) {
+    SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.WorkSpace$ao);
+    n0.setProperty(PROPS.name$tAp1, p0);
+    n0.forChild(LINKS.bodyMenu$8UCv).init(CONCEPTS.Menu$bP);
     {
-      SNodeBuilder n2 = rootBuilder1.forChild(LINKS.timeout$3Y$V).init(CONCEPTS.Timeout$Tn);
-      n2.setProperty(PROPS.duration$kl_u, PROPS.duration$kl_u.getType().toString(7));
-      n2.forChild(LINKS.Action$6awV).init(CONCEPTS.Replay$qS);
+      SNodeBuilder n1 = n0.forChild(LINKS.timeout$3Y$V).init(CONCEPTS.Timeout$Tn);
+      n1.setProperty(PROPS.duration$kl_u, "" + (7));
+      n1.forChild(LINKS.Action$6awV).init(CONCEPTS.Replay$qS);
     }
-    return rootBuilder1.getResult();
+    return n0.getResult();
   }
 
   private static final class CONCEPTS {

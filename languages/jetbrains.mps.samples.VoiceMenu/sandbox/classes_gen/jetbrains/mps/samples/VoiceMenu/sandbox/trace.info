@@ -8,7 +8,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164879751025:jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
   <root nodeRef="r:c63049db-e50d-4836-955e-67b0ba670048(jetbrains.mps.samples.VoiceMenu.sandbox)/2892639838852006608">
     <file name="Jet_Mobile__s_r_o_0.java">
       <node id="2892639838852006608" at="26,0,27,0" concept="6" trace="instance" />
@@ -239,16 +239,16 @@
       <node id="2892639838852006608" at="251,50,270,5" concept="2" />
       <node id="2892639838852006608" at="250,0,272,0" concept="3" trace="actionPerformed#(Ljava/awt/event/ActionEvent;)V" />
       <node id="2892639838852006608" at="28,0,222,0" concept="7" trace="initHashMap#()V" />
-      <scope id="2892639838852006608" at="261,0,261,31">
-        <var name="e" id="2892639838852006608" />
-      </scope>
       <scope id="2892639838852006608" at="261,31,261,31" />
       <scope id="2892639838852006608" at="254,43,255,41" />
       <scope id="2892639838852006608" at="258,46,259,44" />
-      <scope id="2892639838852006608" at="265,0,266,28">
+      <scope id="2892639838852006608" at="261,9,262,9">
         <var name="e" id="2892639838852006608" />
       </scope>
       <scope id="2892639838852006608" at="265,31,266,28" />
+      <scope id="2892639838852006608" at="265,7,267,7">
+        <var name="e" id="2892639838852006608" />
+      </scope>
       <scope id="2892639838852006608" at="257,13,260,11" />
       <scope id="2892639838852006608" at="232,33,236,21" />
       <scope id="2892639838852006608" at="223,42,229,0" />
@@ -397,16 +397,16 @@
       <node id="6285974448820393361" at="118,50,137,5" concept="2" />
       <node id="6285974448820393361" at="117,0,139,0" concept="3" trace="actionPerformed#(Ljava/awt/event/ActionEvent;)V" />
       <node id="6285974448820393361" at="28,0,89,0" concept="7" trace="initHashMap#()V" />
-      <scope id="6285974448820393361" at="128,0,128,31">
-        <var name="e" id="6285974448820393361" />
-      </scope>
       <scope id="6285974448820393361" at="128,31,128,31" />
       <scope id="6285974448820393361" at="121,43,122,41" />
       <scope id="6285974448820393361" at="125,46,126,44" />
-      <scope id="6285974448820393361" at="132,0,133,28">
+      <scope id="6285974448820393361" at="128,9,129,9">
         <var name="e" id="6285974448820393361" />
       </scope>
       <scope id="6285974448820393361" at="132,31,133,28" />
+      <scope id="6285974448820393361" at="132,7,134,7">
+        <var name="e" id="6285974448820393361" />
+      </scope>
       <scope id="6285974448820393361" at="124,13,127,11" />
       <scope id="6285974448820393361" at="99,33,103,21" />
       <scope id="6285974448820393361" at="90,42,96,0" />
@@ -510,16 +510,16 @@
       <node id="6285974448821694774" at="88,50,107,5" concept="2" />
       <node id="6285974448821694774" at="87,0,109,0" concept="3" trace="actionPerformed#(Ljava/awt/event/ActionEvent;)V" />
       <node id="6285974448821694774" at="28,0,59,0" concept="7" trace="initHashMap#()V" />
-      <scope id="6285974448821694774" at="98,0,98,31">
-        <var name="e" id="6285974448821694774" />
-      </scope>
       <scope id="6285974448821694774" at="98,31,98,31" />
       <scope id="6285974448821694774" at="91,43,92,41" />
       <scope id="6285974448821694774" at="95,46,96,44" />
-      <scope id="6285974448821694774" at="102,0,103,28">
+      <scope id="6285974448821694774" at="98,9,99,9">
         <var name="e" id="6285974448821694774" />
       </scope>
       <scope id="6285974448821694774" at="102,31,103,28" />
+      <scope id="6285974448821694774" at="102,7,104,7">
+        <var name="e" id="6285974448821694774" />
+      </scope>
       <scope id="6285974448821694774" at="94,13,97,11" />
       <scope id="6285974448821694774" at="69,33,73,21" />
       <scope id="6285974448821694774" at="60,42,66,0" />

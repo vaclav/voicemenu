@@ -2,9 +2,9 @@
 <model ref="r:7e76c46c-6d36-4eff-a91f-bdb01cc6d244(voicemenu.plugin.project.wizard)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="4" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <engage id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" />
   </languages>
@@ -191,6 +191,9 @@
       <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
       </concept>
     </language>
     <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
@@ -831,12 +834,14 @@
                                                                 <ref role="2pJxaS" to="xehl:5HF1wNO0wj8" resolve="WorkSpace" />
                                                                 <node concept="2pJxcG" id="4qLeaoz9Fxq" role="2pJxcM">
                                                                   <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                                                                  <node concept="2OqwBi" id="4qLeaoz9Ji0" role="28ntcv">
-                                                                    <node concept="37vLTw" id="4qLeaoz9HSw" role="2Oq$k0">
-                                                                      <ref role="3cqZAo" node="3iKYqaSk_m5" resolve="myMenuName" />
-                                                                    </node>
-                                                                    <node concept="liA8E" id="4qLeaoz9Kr5" role="2OqNvi">
-                                                                      <ref role="37wK5l" to="r791:~JTextComponent.getText()" resolve="getText" />
+                                                                  <node concept="WxPPo" id="6tujwiqZTJ" role="28ntcv">
+                                                                    <node concept="2OqwBi" id="4qLeaoz9Ji0" role="WxPPp">
+                                                                      <node concept="37vLTw" id="4qLeaoz9HSw" role="2Oq$k0">
+                                                                        <ref role="3cqZAo" node="3iKYqaSk_m5" resolve="myMenuName" />
+                                                                      </node>
+                                                                      <node concept="liA8E" id="4qLeaoz9Kr5" role="2OqNvi">
+                                                                        <ref role="37wK5l" to="r791:~JTextComponent.getText()" resolve="getText" />
+                                                                      </node>
                                                                     </node>
                                                                   </node>
                                                                 </node>
@@ -852,8 +857,10 @@
                                                                     <ref role="2pJxaS" to="xehl:JHn_unH$mT" resolve="Timeout" />
                                                                     <node concept="2pJxcG" id="4qLeaoz9N_q" role="2pJxcM">
                                                                       <ref role="2pJxcJ" to="xehl:JHn_unH$mW" resolve="duration" />
-                                                                      <node concept="3cmrfG" id="4qLeaoz9O0X" role="28ntcv">
-                                                                        <property role="3cmrfH" value="7" />
+                                                                      <node concept="WxPPo" id="6tujwiqZTK" role="28ntcv">
+                                                                        <node concept="3cmrfG" id="4qLeaoz9O0X" role="WxPPp">
+                                                                          <property role="3cmrfH" value="7" />
+                                                                        </node>
                                                                       </node>
                                                                     </node>
                                                                     <node concept="2pIpSj" id="4qLeaoz9O2$" role="2pJxcM">

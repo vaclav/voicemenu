@@ -7,6 +7,8 @@ import jetbrains.mps.smodel.adapter.ids.SLanguageId;
 import java.util.Collection;
 import org.jetbrains.mps.openapi.language.SLanguage;
 import jetbrains.mps.smodel.runtime.ILanguageAspect;
+import org.jetbrains.annotations.NotNull;
+import jetbrains.mps.smodel.language.LanguageExtensions;
 
 public class Language extends LanguageRuntime {
   private final SLanguageId myId;
@@ -39,5 +41,9 @@ public class Language extends LanguageRuntime {
 
     // AP: legacy part, must be migrated from switch: please use lang.descriptor mapping label 
     return null;
+  }
+
+  @Override
+  protected void contribute(@NotNull LanguageExtensions extensions) {
   }
 }
