@@ -42,7 +42,7 @@
       <node id="3348443391568054106" at="40,0,41,0" concept="8" trace="DEFAULT_SOLUTION_NAME" />
       <node id="3348443391568069004" at="41,0,42,0" concept="8" trace="DEFAULT_MODEL_NAME" />
       <node id="1487700256576884015" at="45,25,46,57" concept="5" />
-      <node id="1487700256576841070" at="46,57,47,114" concept="6" />
+      <node id="1839643741445265189" at="46,57,47,112" concept="6" />
       <node id="3796808963145678006" at="52,27,53,30" concept="6" />
       <node id="3796808963145678015" at="58,34,59,46" concept="6" />
       <node id="3796808963145733148" at="64,35,65,59" concept="5" />
@@ -75,15 +75,15 @@
       <node id="5093914939738207246" at="139,82,140,52" concept="1" />
       <node id="5093914939738207246" at="140,52,141,62" concept="1" />
       <node id="5093914939738207246" at="142,5,143,26" concept="6" />
-      <node id="3796808963145677975" at="147,0,148,0" concept="8" trace="WorkSpace$ao" />
-      <node id="3796808963145677975" at="148,0,149,0" concept="8" trace="Menu$bP" />
-      <node id="3796808963145677975" at="149,0,150,0" concept="8" trace="Timeout$Tn" />
-      <node id="3796808963145677975" at="150,0,151,0" concept="8" trace="Replay$qS" />
-      <node id="3796808963145677975" at="154,0,155,0" concept="8" trace="name$tAp1" />
-      <node id="3796808963145677975" at="155,0,156,0" concept="8" trace="duration$kl_u" />
-      <node id="3796808963145677975" at="159,0,160,0" concept="8" trace="bodyMenu$8UCv" />
-      <node id="3796808963145677975" at="160,0,161,0" concept="8" trace="timeout$3Y$V" />
-      <node id="3796808963145677975" at="161,0,162,0" concept="8" trace="Action$6awV" />
+      <node id="3796808963145677975" at="147,0,148,0" concept="8" trace="WorkSpace$A5" />
+      <node id="3796808963145677975" at="148,0,149,0" concept="8" trace="Menu$By" />
+      <node id="3796808963145677975" at="149,0,150,0" concept="8" trace="Timeout$l4" />
+      <node id="3796808963145677975" at="150,0,151,0" concept="8" trace="Replay$Q_" />
+      <node id="3796808963145677975" at="154,0,155,0" concept="8" trace="name$MnvL" />
+      <node id="3796808963145677975" at="155,0,156,0" concept="8" trace="duration$mi_f" />
+      <node id="3796808963145677975" at="159,0,160,0" concept="8" trace="bodyMenu$Of2I" />
+      <node id="3796808963145677975" at="160,0,161,0" concept="8" trace="timeout$r9ki" />
+      <node id="3796808963145677975" at="161,0,162,0" concept="8" trace="Action$uVoi" />
       <node id="3348443391568525669" at="96,0,99,0" concept="4" trace="run#()V" />
       <node id="3796808963145761913" at="116,44,119,5" concept="3" />
       <node id="3796808963145679839" at="123,0,126,0" concept="4" trace="addListener#(Ljetbrains/mps/workbench/dialogs/project/newproject/MPSProjectTemplate/MPSProjectTemplateListener;)V" />
@@ -113,7 +113,7 @@
       <scope id="3348443391568525673" at="96,37,97,92" />
       <scope id="3796808963145679828" at="109,43,110,25" />
       <scope id="3796808963145761915" at="117,47,118,49" />
-      <scope id="3796808963145677994" at="45,25,47,114">
+      <scope id="3796808963145677994" at="45,25,47,112">
         <var name="resource" id="1487700256576884016" />
       </scope>
       <scope id="3348443391568525669" at="96,0,99,0" />
