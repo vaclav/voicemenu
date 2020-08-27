@@ -115,7 +115,7 @@ public class VoiceMenuProjectTemplate implements MPSProjectTemplate {
   public String checkSettings() {
     String text = this.myMenuName.getText();
     if ((text == null || text.length() == 0)) {
-      return "Voice mune name must not be empty";
+      return "Voice menu name must not be empty";
     }
     return null;
   }

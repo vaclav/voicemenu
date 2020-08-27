@@ -1033,7 +1033,7 @@
           <node concept="3clFbS" id="3iKYqaSkChV" role="3clFbx">
             <node concept="3cpWs6" id="3iKYqaSkIyC" role="3cqZAp">
               <node concept="Xl_RD" id="3iKYqaSkIBE" role="3cqZAk">
-                <property role="Xl_RC" value="Voice mune name must not be empty" />
+                <property role="Xl_RC" value="Voice menu name must not be empty" />
               </node>
             </node>
           </node>
