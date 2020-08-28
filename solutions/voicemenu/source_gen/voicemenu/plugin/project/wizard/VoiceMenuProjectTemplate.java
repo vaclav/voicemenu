@@ -44,7 +44,7 @@ public class VoiceMenuProjectTemplate implements MPSProjectTemplate {
   @Override
   public Icon getIcon() {
     IconResource resource = IconContainer.RESOURCE_a0a0g;
-    return ApplicationManager.getApplication().getComponent(GlobalIconManager.class).getIconForResource(resource);
+    return ApplicationManager.getApplication().getService(GlobalIconManager.class).getIconForResource(resource);
   }
 
   @NotNull
@@ -115,7 +115,7 @@ public class VoiceMenuProjectTemplate implements MPSProjectTemplate {
   public String checkSettings() {
     String text = this.myMenuName.getText();
     if ((text == null || text.length() == 0)) {
-      return "Voice mune name must not be empty";
+      return "Voice menu name must not be empty";
     }
     return null;
   }
@@ -132,32 +132,32 @@ public class VoiceMenuProjectTemplate implements MPSProjectTemplate {
   public void fireSettingsChanged() {
   }
   private static SNode createWorkSpace_s9npm9_a0a0i0a0a0a0a0a0a0a0a0a0a0a0o(String p0) {
-    SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.WorkSpace$ao);
-    n0.setProperty(PROPS.name$tAp1, p0);
-    n0.forChild(LINKS.bodyMenu$8UCv).init(CONCEPTS.Menu$bP);
+    SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.WorkSpace$A5);
+    n0.setProperty(PROPS.name$MnvL, p0);
+    n0.forChild(LINKS.bodyMenu$Of2I).init(CONCEPTS.Menu$By);
     {
-      SNodeBuilder n1 = n0.forChild(LINKS.timeout$3Y$V).init(CONCEPTS.Timeout$Tn);
-      n1.setProperty(PROPS.duration$kl_u, "" + (7));
-      n1.forChild(LINKS.Action$6awV).init(CONCEPTS.Replay$qS);
+      SNodeBuilder n1 = n0.forChild(LINKS.timeout$r9ki).init(CONCEPTS.Timeout$l4);
+      n1.setProperty(PROPS.duration$mi_f, "" + (7));
+      n1.forChild(LINKS.Action$uVoi).init(CONCEPTS.Replay$Q_);
     }
     return n0.getResult();
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept WorkSpace$ao = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace");
-    /*package*/ static final SConcept Menu$bP = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu");
-    /*package*/ static final SConcept Timeout$Tn = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, "jetbrains.mps.samples.VoiceMenu.structure.Timeout");
-    /*package*/ static final SConcept Replay$qS = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x6b5142eafd54f3f9L, "jetbrains.mps.samples.VoiceMenu.structure.Replay");
+    /*package*/ static final SConcept WorkSpace$A5 = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace");
+    /*package*/ static final SConcept Menu$By = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu");
+    /*package*/ static final SConcept Timeout$l4 = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, "jetbrains.mps.samples.VoiceMenu.structure.Timeout");
+    /*package*/ static final SConcept Replay$Q_ = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x6b5142eafd54f3f9L, "jetbrains.mps.samples.VoiceMenu.structure.Replay");
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty name$tAp1 = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
-    /*package*/ static final SProperty duration$kl_u = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0xbed5e5797b645bcL, "duration");
+    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty duration$mi_f = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0xbed5e5797b645bcL, "duration");
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink bodyMenu$8UCv = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x5b6b060cf40204ebL, "bodyMenu");
-    /*package*/ static final SContainmentLink timeout$3Y$V = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0xbed5e5797b645beL, "timeout");
-    /*package*/ static final SContainmentLink Action$6awV = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0xbed5e5797d28d77L, "Action");
+    /*package*/ static final SContainmentLink bodyMenu$Of2I = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x5b6b060cf40204ebL, "bodyMenu");
+    /*package*/ static final SContainmentLink timeout$r9ki = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0xbed5e5797b645beL, "timeout");
+    /*package*/ static final SContainmentLink Action$uVoi = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0xbed5e5797d28d77L, "Action");
   }
 }

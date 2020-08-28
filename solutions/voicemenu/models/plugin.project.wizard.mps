@@ -48,7 +48,7 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
@@ -390,23 +390,23 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="1i_nS1dxilI" role="3cqZAp">
-          <node concept="2OqwBi" id="1i_nS1dxilJ" role="3clFbG">
-            <node concept="2OqwBi" id="1i_nS1dxilK" role="2Oq$k0">
-              <node concept="2YIFZM" id="1i_nS1dxn8f" role="2Oq$k0">
-                <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
+        <node concept="3clFbF" id="1A7IzLE7ps_" role="3cqZAp">
+          <node concept="2OqwBi" id="1A7IzLE7qQ8" role="3clFbG">
+            <node concept="2OqwBi" id="1A7IzLE7pXB" role="2Oq$k0">
+              <node concept="2YIFZM" id="1A7IzLE7pIx" role="2Oq$k0">
                 <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+                <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
               </node>
-              <node concept="liA8E" id="1i_nS1dxilM" role="2OqNvi">
-                <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class)" resolve="getComponent" />
-                <node concept="3VsKOn" id="1i_nS1dxilO" role="37wK5m">
+              <node concept="liA8E" id="1A7IzLE7qgO" role="2OqNvi">
+                <ref role="37wK5l" to="1m72:~ComponentManager.getService(java.lang.Class)" resolve="getService" />
+                <node concept="3VsKOn" id="1A7IzLE7qyi" role="37wK5m">
                   <ref role="3VsUkX" to="sn11:192HKKPMXeL" resolve="GlobalIconManager" />
                 </node>
               </node>
             </node>
-            <node concept="liA8E" id="1i_nS1dxilP" role="2OqNvi">
+            <node concept="liA8E" id="1A7IzLE7rey" role="2OqNvi">
               <ref role="37wK5l" to="sn11:192HKKPP2rb" resolve="getIconForResource" />
-              <node concept="37vLTw" id="1i_nS1dxilQ" role="37wK5m">
+              <node concept="37vLTw" id="1A7IzLE7ru8" role="37wK5m">
                 <ref role="3cqZAo" node="1i_nS1dxsOK" resolve="resource" />
               </node>
             </node>
@@ -1033,7 +1033,7 @@
           <node concept="3clFbS" id="3iKYqaSkChV" role="3clFbx">
             <node concept="3cpWs6" id="3iKYqaSkIyC" role="3cqZAp">
               <node concept="Xl_RD" id="3iKYqaSkIBE" role="3cqZAk">
-                <property role="Xl_RC" value="Voice mune name must not be empty" />
+                <property role="Xl_RC" value="Voice menu name must not be empty" />
               </node>
             </node>
           </node>
