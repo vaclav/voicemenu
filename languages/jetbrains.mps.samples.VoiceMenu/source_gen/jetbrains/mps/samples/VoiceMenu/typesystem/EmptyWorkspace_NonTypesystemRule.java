@@ -21,19 +21,19 @@ public class EmptyWorkspace_NonTypesystemRule extends AbstractNonTypesystemRule_
   public EmptyWorkspace_NonTypesystemRule() {
   }
   public void applyRule(final SNode workSpace, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    if ((SLinkOperations.getTarget(workSpace, LINKS.bodyMenu$8UCv) == null)) {
+    if ((SLinkOperations.getTarget(workSpace, LINKS.bodyMenu$Of2I) == null)) {
       {
         final MessageTarget errorTarget = new NodeMessageTarget();
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(workSpace, "Menu is null", "r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)", "6198827212365407562", null, errorTarget);
         {
-          BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("jetbrains.mps.samples.VoiceMenu.typesystem.InitWorkspace_QuickFix", true);
+          BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("jetbrains.mps.samples.VoiceMenu.typesystem.InitWorkspace_QuickFix", "6198827212365459198", true);
           _reporter_2309309498.addIntentionProvider(intentionProvider);
         }
       }
     }
   }
   public SAbstractConcept getApplicableConcept() {
-    return CONCEPTS.WorkSpace$ao;
+    return CONCEPTS.WorkSpace$A5;
   }
   public IsApplicableStatus isApplicableAndPattern(SNode argument) {
     return new IsApplicableStatus(argument.getConcept().isSubConceptOf(getApplicableConcept()), null);
@@ -43,10 +43,10 @@ public class EmptyWorkspace_NonTypesystemRule extends AbstractNonTypesystemRule_
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink bodyMenu$8UCv = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x5b6b060cf40204ebL, "bodyMenu");
+    /*package*/ static final SContainmentLink bodyMenu$Of2I = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x5b6b060cf40204ebL, "bodyMenu");
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept WorkSpace$ao = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace");
+    /*package*/ static final SConcept WorkSpace$A5 = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace");
   }
 }

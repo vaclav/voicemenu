@@ -61,10 +61,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private boolean nodeCondition_n4bxxp_a4a() {
-    return !(SPropertyOperations.getBoolean(myNode, PROPS.isFinal$DiZZ));
+    return !(SPropertyOperations.getBoolean(myNode, PROPS.isFinal$w2re));
   }
   private boolean nodeCondition_n4bxxp_a5a() {
-    return SPropertyOperations.getBoolean(myNode, PROPS.isFinal$DiZZ);
+    return SPropertyOperations.getBoolean(myNode, PROPS.isFinal$w2re);
   }
   private EditorCell createImage_0() {
     EditorCell_Image editorCell = EditorCell_Image.createImageCell(getEditorContext(), myNode, SNodeOperations.getConcept(myNode).getLanguage().getSourceModule(), "${module}/src/record.png");
@@ -91,7 +91,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     new ActionStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
     editorCell.getStyle().putAll(style);
-    editorCell.setTransformationMenuLookup(new DefaultTransformationMenuLookup(LanguageRegistry.getInstance(getEditorContext().getRepository()), CONCEPTS.Record$69));
+    editorCell.setTransformationMenuLookup(new DefaultTransformationMenuLookup(LanguageRegistry.getInstance(getEditorContext().getRepository()), CONCEPTS.Record$xQ));
     editorCell.setDefaultText("");
     editorCell.setSubstituteInfo(new SChildSubstituteInfo(editorCell));
     return editorCell;
@@ -121,10 +121,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty isFinal$DiZZ = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, 0x420d89797f56bd93L, "isFinal");
+    /*package*/ static final SProperty isFinal$w2re = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, 0x420d89797f56bd93L, "isFinal");
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Record$69 = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, "jetbrains.mps.samples.VoiceMenu.structure.Record");
+    /*package*/ static final SConcept Record$xQ = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, "jetbrains.mps.samples.VoiceMenu.structure.Record");
   }
 }

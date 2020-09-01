@@ -51,7 +51,7 @@ public final class TypeVisible_Intention extends AbstractIntentionDescriptor imp
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SPropertyOperations.assign(SNodeOperations.getNodeAncestor(node, CONCEPTS.WorkSpace$MI, false, false), PROPS.typeVisible$vDa5, !(SPropertyOperations.getBoolean(SNodeOperations.getNodeAncestor(node, CONCEPTS.WorkSpace$MI, false, false), PROPS.typeVisible$vDa5)));
+      SPropertyOperations.assign(SNodeOperations.getNodeAncestor(node, CONCEPTS.WorkSpace$Qz, false, false), PROPS.typeVisible$zuWg, !(SPropertyOperations.getBoolean(SNodeOperations.getNodeAncestor(node, CONCEPTS.WorkSpace$Qz, false, false), PROPS.typeVisible$zuWg)));
     }
     @Override
     public IntentionDescriptor getDescriptor() {
@@ -60,10 +60,10 @@ public final class TypeVisible_Intention extends AbstractIntentionDescriptor imp
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept WorkSpace$MI = MetaAdapterFactory.getConcept(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x10bb6449f9c963fcL, "jetbrains.mps.samples.Text.structure.WorkSpace");
+    /*package*/ static final SConcept WorkSpace$Qz = MetaAdapterFactory.getConcept(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x10bb6449f9c963fcL, "jetbrains.mps.samples.Text.structure.WorkSpace");
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty typeVisible$vDa5 = MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x10bb6449f9c963fcL, 0x757a4df103685c76L, "typeVisible");
+    /*package*/ static final SProperty typeVisible$zuWg = MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x10bb6449f9c963fcL, 0x757a4df103685c76L, "typeVisible");
   }
 }

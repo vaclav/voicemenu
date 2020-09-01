@@ -24,19 +24,19 @@ public class CheckEmptyMenu_NonTypesystemRule extends AbstractNonTypesystemRule_
   public CheckEmptyMenu_NonTypesystemRule() {
   }
   public void applyRule(final SNode menu, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    if ((Sequence.fromIterable(SLinkOperations.collectMany(SNodeOperations.ofConcept(SLinkOperations.collect(SLinkOperations.getChildren(menu, LINKS.activities$AJ0_), LINKS.commands$giUr), CONCEPTS.Menu$bP), LINKS.activities$AJ0_)).isEmpty() && ListSequence.fromList(SLinkOperations.getChildren(menu, LINKS.events$AIPs)).isEmpty())) {
+    if ((Sequence.fromIterable(SLinkOperations.collectMany(SNodeOperations.ofConcept(SLinkOperations.collect(SLinkOperations.getChildren(menu, LINKS.activities$gAHC), LINKS.commands$oZIM), CONCEPTS.Menu$By), LINKS.activities$gAHC)).isEmpty() && ListSequence.fromList(SLinkOperations.getChildren(menu, LINKS.events$gxkh)).isEmpty())) {
       {
         final MessageTarget errorTarget = new NodeMessageTarget();
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportWarning(menu, "Empty Menu", "r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)", "2036874050862901567", null, errorTarget);
         {
-          BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("jetbrains.mps.samples.VoiceMenu.typesystem.InitiliazeMenu_QuickFix", true);
+          BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("jetbrains.mps.samples.VoiceMenu.typesystem.InitiliazeMenu_QuickFix", "2036874050862901698", true);
           _reporter_2309309498.addIntentionProvider(intentionProvider);
         }
       }
     }
   }
   public SAbstractConcept getApplicableConcept() {
-    return CONCEPTS.Menu$bP;
+    return CONCEPTS.Menu$By;
   }
   public IsApplicableStatus isApplicableAndPattern(SNode argument) {
     return new IsApplicableStatus(argument.getConcept().isSubConceptOf(getApplicableConcept()), null);
@@ -46,12 +46,12 @@ public class CheckEmptyMenu_NonTypesystemRule extends AbstractNonTypesystemRule_
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink activities$AJ0_ = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities");
-    /*package*/ static final SContainmentLink commands$giUr = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08d2L, "commands");
-    /*package*/ static final SContainmentLink events$AIPs = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events");
+    /*package*/ static final SContainmentLink activities$gAHC = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities");
+    /*package*/ static final SContainmentLink commands$oZIM = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08d2L, "commands");
+    /*package*/ static final SContainmentLink events$gxkh = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events");
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Menu$bP = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu");
+    /*package*/ static final SConcept Menu$By = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu");
   }
 }

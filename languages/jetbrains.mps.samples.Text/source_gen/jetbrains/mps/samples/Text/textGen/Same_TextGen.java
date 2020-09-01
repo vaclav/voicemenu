@@ -16,21 +16,21 @@ public class Same_TextGen extends TextGenDescriptorBase {
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.append("same  => ");
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.priority$HS$u));
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.priority$sWIn));
     tgs.append(",");
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.action$HS$X));
-    if ((SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.argument$HSzw) != null)) {
-      tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.argument$HSzw));
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.action$sWXo));
+    if ((SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.argument$sWgl) != null)) {
+      tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.argument$sWgl));
     }
     tgs.newLine();
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty priority$HS$u = MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f7160338bL, 0x13a8ce4f7160338eL, "priority");
-    /*package*/ static final SProperty action$HS$X = MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f7160338bL, 0x13a8ce4f7160338fL, "action");
+    /*package*/ static final SProperty priority$sWIn = MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f7160338bL, 0x13a8ce4f7160338eL, "priority");
+    /*package*/ static final SProperty action$sWXo = MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f7160338bL, 0x13a8ce4f7160338fL, "action");
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink argument$HSzw = MetaAdapterFactory.getContainmentLink(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f7160338bL, 0x13a8ce4f7160338cL, "argument");
+    /*package*/ static final SContainmentLink argument$sWgl = MetaAdapterFactory.getContainmentLink(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f7160338bL, 0x13a8ce4f7160338cL, "argument");
   }
 }

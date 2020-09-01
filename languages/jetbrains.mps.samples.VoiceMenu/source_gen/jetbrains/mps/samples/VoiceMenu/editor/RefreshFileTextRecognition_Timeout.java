@@ -49,16 +49,16 @@ public class RefreshFileTextRecognition_Timeout {
 
 
         try {
-          File tmp = new File(path + "/" + SPropertyOperations.getString(node, PROPS.playback$OvLo));
+          File tmp = new File(path + "/" + SPropertyOperations.getString(node, PROPS.playback$Veml));
           if (tmp.isFile()) {
-            SPropertyOperations.assign(node, PROPS.PBisFile$qD6P, true);
+            SPropertyOperations.assign(node, PROPS.PBisFile$pJJo, true);
             LoggingRuntime.logMsgView(Level.DEBUG, "Found -> File", RefreshFileTextRecognition_Timeout.class, null, null);
           } else {
-            SPropertyOperations.assign(node, PROPS.PBisFile$qD6P, false);
+            SPropertyOperations.assign(node, PROPS.PBisFile$pJJo, false);
             LoggingRuntime.logMsgView(Level.DEBUG, "Not Found -> Text", RefreshFileTextRecognition_Timeout.class, null, null);
           }
         } catch (Exception e) {
-          SPropertyOperations.assign(node, PROPS.PBisFile$qD6P, false);
+          SPropertyOperations.assign(node, PROPS.PBisFile$pJJo, false);
         }
 
         SelectionUtil.selectCell(editorContext, node, SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
@@ -109,7 +109,7 @@ public class RefreshFileTextRecognition_Timeout {
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty playback$OvLo = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x34fad0c9f5b34402L, "playback");
-    /*package*/ static final SProperty PBisFile$qD6P = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x54e798cf44bec9edL, "PBisFile");
+    /*package*/ static final SProperty playback$Veml = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x34fad0c9f5b34402L, "playback");
+    /*package*/ static final SProperty PBisFile$pJJo = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x54e798cf44bec9edL, "PBisFile");
   }
 }

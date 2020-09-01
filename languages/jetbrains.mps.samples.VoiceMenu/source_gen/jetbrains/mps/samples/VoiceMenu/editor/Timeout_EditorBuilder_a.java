@@ -99,25 +99,25 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private boolean nodeCondition_tbvjtx_a3a() {
-    return isNotEmptyString(SPropertyOperations.getString(myNode, PROPS.playback$OvLo));
+    return isNotEmptyString(SPropertyOperations.getString(myNode, PROPS.playback$Veml));
   }
   private boolean nodeCondition_tbvjtx_a4a() {
-    return isNotEmptyString(SPropertyOperations.getString(myNode, PROPS.playback$OvLo));
+    return isNotEmptyString(SPropertyOperations.getString(myNode, PROPS.playback$Veml));
   }
   private boolean nodeCondition_tbvjtx_a5a() {
-    return isNotEmptyString(SPropertyOperations.getString(myNode, PROPS.playback$OvLo)) && SPropertyOperations.getBoolean(myNode, PROPS.PBisFile$qD6P);
+    return isNotEmptyString(SPropertyOperations.getString(myNode, PROPS.playback$Veml)) && SPropertyOperations.getBoolean(myNode, PROPS.PBisFile$pJJo);
   }
   private boolean nodeCondition_tbvjtx_a6a() {
-    return isNotEmptyString(SPropertyOperations.getString(myNode, PROPS.playback$OvLo)) && !(SPropertyOperations.getBoolean(myNode, PROPS.PBisFile$qD6P));
+    return isNotEmptyString(SPropertyOperations.getString(myNode, PROPS.playback$Veml)) && !(SPropertyOperations.getBoolean(myNode, PROPS.PBisFile$pJJo));
   }
   private boolean nodeCondition_tbvjtx_a7a() {
-    return isNotEmptyString(SPropertyOperations.getString(myNode, PROPS.playback$OvLo));
+    return isNotEmptyString(SPropertyOperations.getString(myNode, PROPS.playback$Veml));
   }
   private boolean nodeCondition_tbvjtx_a8a() {
-    return isNotEmptyString(SPropertyOperations.getString(myNode, PROPS.playback$OvLo));
+    return isNotEmptyString(SPropertyOperations.getString(myNode, PROPS.playback$Veml));
   }
   private boolean nodeCondition_tbvjtx_a9a() {
-    return isNotEmptyString(SPropertyOperations.getString(myNode, PROPS.playback$OvLo));
+    return isNotEmptyString(SPropertyOperations.getString(myNode, PROPS.playback$Veml));
   }
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Timeout:");
@@ -133,7 +133,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private EditorCell createProperty_0() {
     getCellFactory().pushCellContext();
     try {
-      final SProperty property = PROPS.duration$kl_u;
+      final SProperty property = PROPS.duration$mi_f;
       getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
       EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, true), myNode);
       editorCell.setDefaultText("time");
@@ -143,7 +143,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       editorCell.getStyle().putAll(style);
       editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
       setCellContext(editorCell);
-      Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(AttributeOperations.getAttributeList(myNode, new IAttributeDescriptor.AllAttributes()), CONCEPTS.PropertyAttribute$jT);
+      Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(AttributeOperations.getAttributeList(myNode, new IAttributeDescriptor.AllAttributes()), CONCEPTS.PropertyAttribute$Gb);
       Iterable<SNode> currentPropertyAttributes = Sequence.fromIterable(propertyAttributes).where(new IWhereFilter<SNode>() {
         public boolean accept(SNode it) {
           return Objects.equals(PropertyAttribute__BehaviorDescriptor.getProperty_id1avfQ4BBzOo.invoke(it), property);
@@ -207,7 +207,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private EditorCell createProperty_1() {
     getCellFactory().pushCellContext();
     try {
-      final SProperty property = PROPS.playback$OvLo;
+      final SProperty property = PROPS.playback$Veml;
       getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
       EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
       editorCell.setDefaultText("<no playback>");
@@ -223,7 +223,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       TimeoutPlayback.setCellActions(editorCell, myNode, getEditorContext());
       editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
       setCellContext(editorCell);
-      Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(AttributeOperations.getAttributeList(myNode, new IAttributeDescriptor.AllAttributes()), CONCEPTS.PropertyAttribute$jT);
+      Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(AttributeOperations.getAttributeList(myNode, new IAttributeDescriptor.AllAttributes()), CONCEPTS.PropertyAttribute$Gb);
       Iterable<SNode> currentPropertyAttributes = Sequence.fromIterable(propertyAttributes).where(new IWhereFilter<SNode>() {
         public boolean accept(SNode it) {
           return Objects.equals(PropertyAttribute__BehaviorDescriptor.getProperty_id1avfQ4BBzOo.invoke(it), property);
@@ -255,7 +255,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createRefNode_0() {
-    SingleRoleCellProvider provider = new ActionSingleRoleHandler_tbvjtx_k0(myNode, LINKS.Action$6awV, getEditorContext());
+    SingleRoleCellProvider provider = new ActionSingleRoleHandler_tbvjtx_k0(myNode, LINKS.Action$uVoi, getEditorContext());
     return provider.createCell();
   }
   private static class ActionSingleRoleHandler_tbvjtx_k0 extends SingleRoleCellProvider {
@@ -275,8 +275,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
     protected EditorCell createChildCell(SNode child) {
       EditorCell editorCell = getUpdateSession().updateChildNodeCell(child);
-      editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(getNode(), LINKS.Action$6awV, child));
-      editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(getNode(), LINKS.Action$6awV, child));
+      editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(getNode(), LINKS.Action$uVoi, child));
+      editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(getNode(), LINKS.Action$uVoi, child));
       installCellInfo(child, editorCell, false);
       return editorCell;
     }
@@ -288,7 +288,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
         editorCell.setSubstituteInfo((isEmpty ? new SEmptyContainmentSubstituteInfo(editorCell) : new SChildSubstituteInfo(editorCell)));
       }
       if (editorCell.getSRole() == null) {
-        editorCell.setSRole(LINKS.Action$6awV);
+        editorCell.setSRole(LINKS.Action$uVoi);
       }
       Style style = new StyleImpl();
       style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
@@ -298,7 +298,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     @Override
     protected EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(getNode(), LINKS.Action$6awV));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(getNode(), LINKS.Action$uVoi));
       try {
         EditorCell editorCell = super.createEmptyCell();
         editorCell.setCellId("empty_Action");
@@ -318,16 +318,16 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty playback$OvLo = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x34fad0c9f5b34402L, "playback");
-    /*package*/ static final SProperty PBisFile$qD6P = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x54e798cf44bec9edL, "PBisFile");
-    /*package*/ static final SProperty duration$kl_u = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0xbed5e5797b645bcL, "duration");
+    /*package*/ static final SProperty playback$Veml = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x34fad0c9f5b34402L, "playback");
+    /*package*/ static final SProperty PBisFile$pJJo = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x54e798cf44bec9edL, "PBisFile");
+    /*package*/ static final SProperty duration$mi_f = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0xbed5e5797b645bcL, "duration");
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept PropertyAttribute$jT = MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da56L, "jetbrains.mps.lang.core.structure.PropertyAttribute");
+    /*package*/ static final SConcept PropertyAttribute$Gb = MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da56L, "jetbrains.mps.lang.core.structure.PropertyAttribute");
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink Action$6awV = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0xbed5e5797d28d77L, "Action");
+    /*package*/ static final SContainmentLink Action$uVoi = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0xbed5e5797d28d77L, "Action");
   }
 }

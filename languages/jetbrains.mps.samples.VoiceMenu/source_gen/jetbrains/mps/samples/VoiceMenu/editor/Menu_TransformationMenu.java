@@ -68,7 +68,7 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
   protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts(TransformationMenuContext _context) {
     List<MenuPart<TransformationMenuItem, TransformationMenuContext>> result = new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>();
     if (ListSequence.fromListAndArray(new ArrayList<String>(), MenuLocations.CONTEXT_ACTIONS_TOOL).contains(_context.getMenuLocation())) {
-      result.add(new DefaultConceptMenusTransformationMenuPart(SModelUtil.getDirectSuperConcepts(CONCEPTS.Menu$bP)) {
+      result.add(new DefaultConceptMenusTransformationMenuPart(SModelUtil.getDirectSuperConcepts(CONCEPTS.Menu$By)) {
         @NotNull
         @Override
         public List<TransformationMenuItem> createItems(@NotNull TransformationMenuContext context) {
@@ -162,13 +162,13 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          List<SNode> list = ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.events$AIPs)).sort(new ISelector<SNode, String>() {
+          List<SNode> list = ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.events$gxkh)).sort(new ISelector<SNode, String>() {
             public String select(SNode it) {
-              return SPropertyOperations.getString(it, PROPS.trigger$zpYt);
+              return SPropertyOperations.getString(it, PROPS.trigger$DqFK);
             }
           }, true).toListSequence();
           for (SNode item : ListSequence.fromList(list)) {
-            ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.events$AIPs)).addElement(item);
+            ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.events$gxkh)).addElement(item);
           }
           SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
 
@@ -231,13 +231,13 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          List<SNode> list = ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.events$AIPs)).sort(new ISelector<SNode, String>() {
+          List<SNode> list = ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.events$gxkh)).sort(new ISelector<SNode, String>() {
             public String select(SNode it) {
-              return SPropertyOperations.getString(it, PROPS.trigger$zpYt);
+              return SPropertyOperations.getString(it, PROPS.trigger$DqFK);
             }
           }, false).toListSequence();
           for (SNode item : ListSequence.fromList(list)) {
-            ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.events$AIPs)).addElement(item);
+            ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.events$gxkh)).addElement(item);
           }
           SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
 
@@ -332,7 +332,7 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
         public void execute(@NotNull String pattern) {
           SNode newEvent = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event"));
 
-          ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.events$AIPs)).addElement(newEvent);
+          ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.events$gxkh)).addElement(newEvent);
         }
 
 
@@ -393,11 +393,11 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
 
       @Override
       public void execute(@NotNull String pattern) {
-        Iterable<SNode> activities = SLinkOperations.getChildren(_context.getNode(), LINKS.activities$AJ0_);
+        Iterable<SNode> activities = SLinkOperations.getChildren(_context.getNode(), LINKS.activities$gAHC);
         for (final SNode currentActvt : Sequence.fromIterable(activities)) {
           if (Sequence.fromIterable(activities).any(new IWhereFilter<SNode>() {
             public boolean accept(SNode it) {
-              return !(Objects.equals(it, currentActvt)) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$gjCV), PROPS.trigger$zpYt), SPropertyOperations.getString(SLinkOperations.getTarget(currentActvt, LINKS.event$gjCV), PROPS.trigger$zpYt));
+              return !(Objects.equals(it, currentActvt)) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), SPropertyOperations.getString(SLinkOperations.getTarget(currentActvt, LINKS.event$pmgi), PROPS.trigger$DqFK));
             }
           })) {
             SNodeOperations.deleteNode(currentActvt);
@@ -407,11 +407,11 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
 
       @Override
       public boolean canExecute(@NotNull String pattern) {
-        Iterable<SNode> activities = SLinkOperations.getChildren(_context.getNode(), LINKS.activities$AJ0_);
+        Iterable<SNode> activities = SLinkOperations.getChildren(_context.getNode(), LINKS.activities$gAHC);
         for (final SNode currentActvt : Sequence.fromIterable(activities)) {
           if (Sequence.fromIterable(activities).any(new IWhereFilter<SNode>() {
             public boolean accept(SNode it) {
-              return !(Objects.equals(it, currentActvt)) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$gjCV), PROPS.trigger$zpYt), SPropertyOperations.getString(SLinkOperations.getTarget(currentActvt, LINKS.event$gjCV), PROPS.trigger$zpYt));
+              return !(Objects.equals(it, currentActvt)) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), SPropertyOperations.getString(SLinkOperations.getTarget(currentActvt, LINKS.event$pmgi), PROPS.trigger$DqFK));
             }
           })) {
             return true;
@@ -440,16 +440,16 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Menu$bP = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu");
+    /*package*/ static final SConcept Menu$By = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu");
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink events$AIPs = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events");
-    /*package*/ static final SContainmentLink activities$AJ0_ = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities");
-    /*package*/ static final SReferenceLink event$gjCV = MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event");
+    /*package*/ static final SContainmentLink events$gxkh = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events");
+    /*package*/ static final SContainmentLink activities$gAHC = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities");
+    /*package*/ static final SReferenceLink event$pmgi = MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event");
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty trigger$zpYt = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger");
+    /*package*/ static final SProperty trigger$DqFK = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger");
   }
 }

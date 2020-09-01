@@ -3,6 +3,7 @@
   <persistence version="9" />
   <attribute name="checkpoint" value="DescriptorClasses" />
   <attribute name="generation-plan" value="AspectCPS" />
+  <attribute name="user-objects" value="true" />
   <languages />
   <imports>
     <import index="vst2" ref="r:225f3577-eeb1-4e72-af3b-f87fe82098ec(jetbrains.mps.samples.VoiceMenuTabularEditor.typesystem)" />

@@ -8,16 +8,16 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class Command_Constraints extends BaseConstraintsDescriptor {
   public Command_Constraints() {
-    super(CONCEPTS.Command$Ef);
+    super(CONCEPTS.Command$I4);
   }
 
   @Override
   public SConcept getDefaultConcreteConcept() {
-    return CONCEPTS.Empty$Wj;
+    return CONCEPTS.Empty$8;
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Command$Ef = MetaAdapterFactory.getConcept(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x10bb6449f9c96432L, "jetbrains.mps.samples.Text.structure.Command");
-    /*package*/ static final SConcept Empty$Wj = MetaAdapterFactory.getConcept(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f7160944aL, "jetbrains.mps.samples.Text.structure.Empty");
+    /*package*/ static final SConcept Command$I4 = MetaAdapterFactory.getConcept(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x10bb6449f9c96432L, "jetbrains.mps.samples.Text.structure.Command");
+    /*package*/ static final SConcept Empty$8 = MetaAdapterFactory.getConcept(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f7160944aL, "jetbrains.mps.samples.Text.structure.Empty");
   }
 }

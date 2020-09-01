@@ -42,9 +42,9 @@ public final class ClearTestResults_Intention extends AbstractIntentionDescripto
     return true;
   }
   private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-    return Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(node, LINKS.commands$xTQf), CONCEPTS.TestStep$9N)).any(new IWhereFilter<SNode>() {
+    return Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(node, LINKS.commands$RX3w), CONCEPTS.TestStep$W2)).any(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
-        return !(SEnumOperations.isMember(SPropertyOperations.getEnum(SLinkOperations.getTarget(it, LINKS.evaluation$VA5f), PROPS.result$T6Kx), 0x72ec05e3886dfc17L));
+        return !(SEnumOperations.isMember(SPropertyOperations.getEnum(SLinkOperations.getTarget(it, LINKS.evaluation$kokw), PROPS.result$7die), 0x72ec05e3886dfc17L));
       }
     });
   }
@@ -67,10 +67,10 @@ public final class ClearTestResults_Intention extends AbstractIntentionDescripto
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(node, LINKS.commands$xTQf), CONCEPTS.TestStep$9N)).visitAll(new IVisitor<SNode>() {
+      Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(node, LINKS.commands$RX3w), CONCEPTS.TestStep$W2)).visitAll(new IVisitor<SNode>() {
         public void visit(SNode it) {
-          SPropertyOperations.setEnum(SLinkOperations.getTarget(it, LINKS.evaluation$VA5f), PROPS.result$T6Kx, 0x72ec05e3886dfc17L, "Unknown");
-          SPropertyOperations.assign(SLinkOperations.getTarget(it, LINKS.evaluation$VA5f), PROPS.message$T6Lv, "");
+          SPropertyOperations.setEnum(SLinkOperations.getTarget(it, LINKS.evaluation$kokw), PROPS.result$7die, 0x72ec05e3886dfc17L, "Unknown");
+          SPropertyOperations.assign(SLinkOperations.getTarget(it, LINKS.evaluation$kokw), PROPS.message$7dKg, "");
         }
       });
     }
@@ -81,16 +81,16 @@ public final class ClearTestResults_Intention extends AbstractIntentionDescripto
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink commands$xTQf = MetaAdapterFactory.getContainmentLink(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0cL, 0x72ec05e38870528cL, "commands");
-    /*package*/ static final SContainmentLink evaluation$VA5f = MetaAdapterFactory.getContainmentLink(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0fL, 0x72ec05e3886dfc64L, "evaluation");
+    /*package*/ static final SContainmentLink commands$RX3w = MetaAdapterFactory.getContainmentLink(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0cL, 0x72ec05e38870528cL, "commands");
+    /*package*/ static final SContainmentLink evaluation$kokw = MetaAdapterFactory.getContainmentLink(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0fL, 0x72ec05e3886dfc64L, "evaluation");
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept TestStep$9N = MetaAdapterFactory.getConcept(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0fL, "VoiceMenuTest.structure.TestStep");
+    /*package*/ static final SConcept TestStep$W2 = MetaAdapterFactory.getConcept(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0fL, "VoiceMenuTest.structure.TestStep");
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty result$T6Kx = MetaAdapterFactory.getProperty(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc10L, 0x72ec05e3886dfc1bL, "result");
-    /*package*/ static final SProperty message$T6Lv = MetaAdapterFactory.getProperty(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc10L, 0x72ec05e3886dfc1dL, "message");
+    /*package*/ static final SProperty result$7die = MetaAdapterFactory.getProperty(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc10L, 0x72ec05e3886dfc1bL, "result");
+    /*package*/ static final SProperty message$7dKg = MetaAdapterFactory.getProperty(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc10L, 0x72ec05e3886dfc1dL, "message");
   }
 }

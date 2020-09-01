@@ -74,7 +74,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
   protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts(TransformationMenuContext _context) {
     List<MenuPart<TransformationMenuItem, TransformationMenuContext>> result = new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>();
     if (ListSequence.fromListAndArray(new ArrayList<String>(), MenuLocations.CONTEXT_ACTIONS_TOOL).contains(_context.getMenuLocation())) {
-      result.add(new DefaultConceptMenusTransformationMenuPart(SModelUtil.getDirectSuperConcepts(CONCEPTS.Event$dL)) {
+      result.add(new DefaultConceptMenusTransformationMenuPart(SModelUtil.getDirectSuperConcepts(CONCEPTS.Event$Du)) {
         @NotNull
         @Override
         public List<TransformationMenuItem> createItems(@NotNull TransformationMenuContext context) {
@@ -253,7 +253,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.assign(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), PROPS.toolbar$cda3, true);
+          SPropertyOperations.assign(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), PROPS.toolbar$qdja, true);
 
           SelectionUtil.selectNode(_context.getEditorContext(), _context.getNode());
           SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
@@ -261,7 +261,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return SPropertyOperations.getBoolean(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), PROPS.toolbar$cda3) == false;
+          return SPropertyOperations.getBoolean(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), PROPS.toolbar$qdja) == false;
         }
 
         @Override
@@ -320,14 +320,14 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.assign(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), PROPS.toolbar$cda3, false);
+          SPropertyOperations.assign(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), PROPS.toolbar$qdja, false);
           SelectionUtil.selectNode(_context.getEditorContext(), _context.getNode());
           SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return SPropertyOperations.getBoolean(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), PROPS.toolbar$cda3) == true;
+          return SPropertyOperations.getBoolean(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), PROPS.toolbar$qdja) == true;
         }
 
         @Override
@@ -416,7 +416,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.assign(_context.getNode(), PROPS.name$tAp1, SPropertyOperations.getString(_context.getNode(), PROPS.name$tAp1).toLowerCase());
+          SPropertyOperations.assign(_context.getNode(), PROPS.name$MnvL, SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL).toLowerCase());
         }
 
         @Override
@@ -486,8 +486,8 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          String toUpperCase = SPropertyOperations.getString(_context.getNode(), PROPS.name$tAp1).toUpperCase();
-          SPropertyOperations.assign(_context.getNode(), PROPS.name$tAp1, toUpperCase);
+          String toUpperCase = SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL).toUpperCase();
+          SPropertyOperations.assign(_context.getNode(), PROPS.name$MnvL, toUpperCase);
         }
 
         @Override
@@ -558,9 +558,9 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP)) {
+          if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By)) {
             int index = SNodeOperations.getIndexInParent(_context.getNode());
-            List<SNode> events = SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP), LINKS.events$AIPs);
+            List<SNode> events = SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.events$gxkh);
             SNode swap;
 
             swap = ListSequence.fromList(events).getElement(index);
@@ -569,7 +569,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
 
             for (SNode item : ListSequence.fromList(events)) {
-              ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP), LINKS.events$AIPs)).addElement(item);
+              ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.events$gxkh)).addElement(item);
 
               SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
             }
@@ -578,8 +578,8 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP)) {
-            return !(Objects.equals(_context.getNode(), ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP), LINKS.events$AIPs)).first()));
+          if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By)) {
+            return !(Objects.equals(_context.getNode(), ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.events$gxkh)).first()));
           }
           return false;
         }
@@ -640,10 +640,10 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP)) {
+          if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By)) {
             _context.getEditorContext().getSelectionManager();
             int index = SNodeOperations.getIndexInParent(_context.getNode());
-            List<SNode> events = SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP), LINKS.events$AIPs);
+            List<SNode> events = SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.events$gxkh);
             SNode swap;
 
             swap = ListSequence.fromList(events).getElement(index);
@@ -651,7 +651,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
             ListSequence.fromList(events).setElement(index + 1, swap);
 
             for (SNode item : ListSequence.fromList(events)) {
-              ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP), LINKS.events$AIPs)).addElement(item);
+              ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.events$gxkh)).addElement(item);
 
               SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
             }
@@ -660,8 +660,8 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP)) {
-            return !(Objects.equals(_context.getNode(), ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP), LINKS.events$AIPs)).last()));
+          if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By)) {
+            return !(Objects.equals(_context.getNode(), ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.events$gxkh)).last()));
           }
           return false;
         }
@@ -722,14 +722,14 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP)) {
-            List<SNode> list = ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP), LINKS.events$AIPs)).sort(new ISelector<SNode, String>() {
+          if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By)) {
+            List<SNode> list = ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.events$gxkh)).sort(new ISelector<SNode, String>() {
               public String select(SNode it) {
-                return SPropertyOperations.getString(it, PROPS.trigger$zpYt);
+                return SPropertyOperations.getString(it, PROPS.trigger$DqFK);
               }
             }, false).toListSequence();
             for (SNode item : ListSequence.fromList(list)) {
-              ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP), LINKS.events$AIPs)).addElement(item);
+              ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.events$gxkh)).addElement(item);
             }
             SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
           }
@@ -792,14 +792,14 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP)) {
-            List<SNode> list = ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP), LINKS.events$AIPs)).sort(new ISelector<SNode, String>() {
+          if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By)) {
+            List<SNode> list = ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.events$gxkh)).sort(new ISelector<SNode, String>() {
               public String select(SNode it) {
-                return SPropertyOperations.getString(it, PROPS.trigger$zpYt);
+                return SPropertyOperations.getString(it, PROPS.trigger$DqFK);
               }
             }, true).toListSequence();
             for (SNode item : ListSequence.fromList(list)) {
-              ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP), LINKS.events$AIPs)).addElement(item);
+              ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.events$gxkh)).addElement(item);
 
               SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
             }
@@ -837,7 +837,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
     @Nullable
     @Override
     protected Iterable<? extends String> getParameters(TransformationMenuContext _context) {
-      SNode[] array = Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getAllSiblings(_context.getNode(), false), CONCEPTS.Event$dL)).toGenericArray(SNode.class);
+      SNode[] array = Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getAllSiblings(_context.getNode(), false), CONCEPTS.Event$Du)).toGenericArray(SNode.class);
 
       List<String> list = ListSequence.fromList(new ArrayList<String>());
 
@@ -856,8 +856,8 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
       for (SNode event : array) {
 
-        if (ListSequence.fromList(list).contains(SPropertyOperations.getString(event, PROPS.trigger$zpYt))) {
-          ListSequence.fromList(list).removeElement(SPropertyOperations.getString(event, PROPS.trigger$zpYt));
+        if (ListSequence.fromList(list).contains(SPropertyOperations.getString(event, PROPS.trigger$DqFK))) {
+          ListSequence.fromList(list).removeElement(SPropertyOperations.getString(event, PROPS.trigger$DqFK));
         }
       }
       return Sequence.fromArray(ListSequence.fromList(list).toGenericArray(String.class));
@@ -917,7 +917,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.assign(_context.getNode(), PROPS.trigger$zpYt, myParameterObject);
+          SPropertyOperations.assign(_context.getNode(), PROPS.trigger$DqFK, myParameterObject);
           SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), "*" + CellIdManager.createPropertyId("name"));
 
         }
@@ -928,7 +928,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
           try {
             String selectedCell = _context.getEditorContext().getSelectedCell().getCellId();
 
-            if (selectedCell == "property_trigger" && isEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt))) {
+            if (selectedCell == "property_trigger" && isEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK))) {
               return true;
             }
 
@@ -984,29 +984,29 @@ public class Event_TransformationMenu extends TransformationMenuBase {
       @Nullable
       @Override
       public String getLabelText(String pattern) {
-        return "Set up " + SPropertyOperations.getString(_context.getNode(), PROPS.name$tAp1);
+        return "Set up " + SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL);
       }
 
       @Override
       public void execute(@NotNull String pattern) {
-        if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP)) {
-          SNode srcMenu = SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP);
+        if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By)) {
+          SNode srcMenu = SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By);
 
           final SNode myActivity = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"));
-          SNodeFactoryOperations.setNewChild(myActivity, LINKS.commands$giUr, CONCEPTS.Command$a6);
-          SLinkOperations.setTarget(myActivity, LINKS.event$gjCV, _context.getNode());
-          ListSequence.fromList(SLinkOperations.getChildren(srcMenu, LINKS.activities$AJ0_)).addElement(myActivity);
-          SelectionUtil.selectCell(_context.getEditorContext(), SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP), LINKS.activities$AJ0_)).findFirst(new IWhereFilter<SNode>() {
+          SNodeFactoryOperations.setNewChild(myActivity, LINKS.commands$oZIM, CONCEPTS.Command$_N);
+          SLinkOperations.setTarget(myActivity, LINKS.event$pmgi, _context.getNode());
+          ListSequence.fromList(SLinkOperations.getChildren(srcMenu, LINKS.activities$gAHC)).addElement(myActivity);
+          SelectionUtil.selectCell(_context.getEditorContext(), SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.activities$gAHC)).findFirst(new IWhereFilter<SNode>() {
             public boolean accept(SNode it) {
               return Objects.equals(it, myActivity);
             }
-          }), LINKS.commands$giUr), SelectionManager.FIRST_CELL);
+          }), LINKS.commands$oZIM), SelectionManager.FIRST_CELL);
         }
       }
 
       @Override
       public boolean canExecute(@NotNull String pattern) {
-        return isNotEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.name$tAp1)) && isNotEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt));
+        return isNotEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL)) && isNotEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK));
       }
 
 
@@ -1086,17 +1086,17 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.remove(_context.getNode(), PROPS.trigger$zpYt);
+          SPropertyOperations.remove(_context.getNode(), PROPS.trigger$DqFK);
           SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), "*" + CellIdManager.createPropertyId("trigger"));
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getAllSiblings(_context.getNode(), false), CONCEPTS.Event$dL)).any(new IWhereFilter<SNode>() {
+          return Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getAllSiblings(_context.getNode(), false), CONCEPTS.Event$Du)).any(new IWhereFilter<SNode>() {
             public boolean accept(SNode it) {
-              return Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$zpYt), SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt));
+              return Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$DqFK), SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK));
             }
-          }) || !(((Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt), "1")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt), "2")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt), "3")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt), "4")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt), "5")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt), "6")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt), "7")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt), "8")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt), "9")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt), "*")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt), "+")) || Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt), "#") || Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt), "0") || isEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt)) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt), "X") && Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.name$tAp1).toLowerCase(), "timeout"))));
+          }) || !(((Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK), "1")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK), "2")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK), "3")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK), "4")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK), "5")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK), "6")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK), "7")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK), "8")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK), "9")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK), "*")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK), "+")) || Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK), "#") || Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK), "0") || isEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK)) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK), "X") && Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL).toLowerCase(), "timeout"))));
         }
 
         @Override
@@ -1156,7 +1156,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
         @Override
         public void execute(@NotNull String pattern) {
 
-          if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP)) {
+          if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By)) {
             String[] kbButtons = new String[12];
 
             kbButtons[0] = "0";
@@ -1175,23 +1175,23 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
             List<String> usedButtons = new ArrayList<String>();
 
-            List<SNode> eventsDeclTable = SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP), LINKS.events$AIPs);
+            List<SNode> eventsDeclTable = SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.events$gxkh);
 
             for (SNode event : ListSequence.fromList(eventsDeclTable)) {
-              ListSequence.fromList(usedButtons).addElement(SPropertyOperations.getString(event, PROPS.trigger$zpYt));
+              ListSequence.fromList(usedButtons).addElement(SPropertyOperations.getString(event, PROPS.trigger$DqFK));
             }
-            SPropertyOperations.assign(_context.getNode(), PROPS.trigger$zpYt, Sequence.fromIterable(Sequence.fromArray(kbButtons)).subtract(ListSequence.fromList(usedButtons)).first());
+            SPropertyOperations.assign(_context.getNode(), PROPS.trigger$DqFK, Sequence.fromIterable(Sequence.fromArray(kbButtons)).subtract(ListSequence.fromList(usedButtons)).first());
           }
 
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getAllSiblings(_context.getNode(), false), CONCEPTS.Event$dL)).any(new IWhereFilter<SNode>() {
+          return Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getAllSiblings(_context.getNode(), false), CONCEPTS.Event$Du)).any(new IWhereFilter<SNode>() {
             public boolean accept(SNode it) {
-              return Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$zpYt), SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt));
+              return Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$DqFK), SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK));
             }
-          }) || !(((Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt), "1")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt), "2")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt), "3")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt), "4")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt), "5")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt), "6")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt), "7")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt), "8")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt), "9")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt), "*")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt), "+")) || Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt), "#") || Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt), "0") || isEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt)) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt), "X") && Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.name$tAp1).toLowerCase(), "timeout"))));
+          }) || !(((Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK), "1")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK), "2")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK), "3")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK), "4")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK), "5")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK), "6")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK), "7")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK), "8")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK), "9")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK), "*")) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK), "+")) || Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK), "#") || Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK), "0") || isEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK)) || (Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK), "X") && Objects.equals(SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL).toLowerCase(), "timeout"))));
         }
 
         @Override
@@ -1254,7 +1254,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
       @Override
       protected Iterable<? extends String> getParameters(TransformationMenuContext _context) {
 
-        SNode[] array = Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getAllSiblings(_context.getNode(), false), CONCEPTS.Event$dL)).toGenericArray(SNode.class);
+        SNode[] array = Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getAllSiblings(_context.getNode(), false), CONCEPTS.Event$Du)).toGenericArray(SNode.class);
 
         List<String> list = ListSequence.fromList(new ArrayList<String>());
 
@@ -1273,8 +1273,8 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
         for (SNode event : array) {
 
-          if (ListSequence.fromList(list).contains(SPropertyOperations.getString(event, PROPS.trigger$zpYt))) {
-            ListSequence.fromList(list).removeElement(SPropertyOperations.getString(event, PROPS.trigger$zpYt));
+          if (ListSequence.fromList(list).contains(SPropertyOperations.getString(event, PROPS.trigger$DqFK))) {
+            ListSequence.fromList(list).removeElement(SPropertyOperations.getString(event, PROPS.trigger$DqFK));
           }
         }
 
@@ -1335,7 +1335,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
 
           @Override
           public void execute(@NotNull String pattern) {
-            SPropertyOperations.assign(_context.getNode(), PROPS.trigger$zpYt, myParameterObject);
+            SPropertyOperations.assign(_context.getNode(), PROPS.trigger$DqFK, myParameterObject);
             SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), "*" + CellIdManager.createPropertyId("name"));
 
           }
@@ -1445,28 +1445,28 @@ public class Event_TransformationMenu extends TransformationMenuBase {
         @Override
         public void execute(@NotNull String pattern) {
 
-          if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP)) {
+          if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By)) {
 
             Random random = new Random();
             int randomNumber = random.nextInt(1000);
 
-            SPropertyOperations.assign(_context.getNode(), PROPS.name$tAp1, "Action_" + String.valueOf(randomNumber));
+            SPropertyOperations.assign(_context.getNode(), PROPS.name$MnvL, "Action_" + String.valueOf(randomNumber));
 
-            if (!(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP), LINKS.activities$AJ0_)).any(new IWhereFilter<SNode>() {
+            if (!(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.activities$gAHC)).any(new IWhereFilter<SNode>() {
               public boolean accept(SNode it) {
-                return Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$gjCV), PROPS.trigger$zpYt), SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt));
+                return Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK));
               }
             }))) {
-              SNode myActivity = SLinkOperations.addNewChild(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP), LINKS.activities$AJ0_, CONCEPTS.Activity$oQ);
-              SNodeFactoryOperations.setNewChild(myActivity, LINKS.commands$giUr, CONCEPTS.Command$a6);
-              SLinkOperations.setTarget(myActivity, LINKS.event$gjCV, _context.getNode());
-              SelectionUtil.selectCell(_context.getEditorContext(), SLinkOperations.getTarget(myActivity, LINKS.commands$giUr), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
+              SNode myActivity = SLinkOperations.addNewChild(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.activities$gAHC, CONCEPTS.Activity$Oz);
+              SNodeFactoryOperations.setNewChild(myActivity, LINKS.commands$oZIM, CONCEPTS.Command$_N);
+              SLinkOperations.setTarget(myActivity, LINKS.event$pmgi, _context.getNode());
+              SelectionUtil.selectCell(_context.getEditorContext(), SLinkOperations.getTarget(myActivity, LINKS.commands$oZIM), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
             } else {
-              SelectionUtil.selectCell(_context.getEditorContext(), SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP), LINKS.activities$AJ0_)).findFirst(new IWhereFilter<SNode>() {
+              SelectionUtil.selectCell(_context.getEditorContext(), SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.activities$gAHC)).findFirst(new IWhereFilter<SNode>() {
                 public boolean accept(SNode it) {
-                  return Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$gjCV), PROPS.trigger$zpYt), SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt));
+                  return Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK));
                 }
-              }), LINKS.commands$giUr), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
+              }), LINKS.commands$oZIM), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
             }
 
           }
@@ -1477,7 +1477,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
           try {
             String selectedCell = _context.getEditorContext().getSelectedCell().getCellId();
 
-            if (selectedCell == "property_name" && (isEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.name$tAp1)) || (_context.getNode() == null))) {
+            if (selectedCell == "property_name" && (isEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL)) || (_context.getNode() == null))) {
               return true;
             }
 
@@ -1548,7 +1548,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
           Random random = new Random();
           int randomNumber = random.nextInt(1000);
 
-          SPropertyOperations.assign(_context.getNode(), PROPS.name$tAp1, "Action_" + String.valueOf(randomNumber));
+          SPropertyOperations.assign(_context.getNode(), PROPS.name$MnvL, "Action_" + String.valueOf(randomNumber));
 
           SelectionUtil.selectNode(_context.getEditorContext(), _context.getNode());
           SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.LAST_EDITABLE_CELL);
@@ -1560,7 +1560,7 @@ public class Event_TransformationMenu extends TransformationMenuBase {
           try {
             String selectedCell = _context.getEditorContext().getSelectedCell().getCellId();
 
-            if (selectedCell == "property_name" && (isEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.name$tAp1)) || (_context.getNode() == null))) {
+            if (selectedCell == "property_name" && (isEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL)) || (_context.getNode() == null))) {
               return true;
             }
 
@@ -1654,32 +1654,32 @@ public class Event_TransformationMenu extends TransformationMenuBase {
         @Nullable
         @Override
         public String getLabelText(String pattern) {
-          return "Set up " + SPropertyOperations.getString(_context.getNode(), PROPS.name$tAp1);
+          return "Set up " + SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL);
         }
 
         @Override
         public void execute(@NotNull String pattern) {
-          if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP)) {
+          if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By)) {
             final SNode activity = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"));
-            SNodeFactoryOperations.setNewChild(activity, LINKS.commands$giUr, CONCEPTS.Command$a6);
-            SLinkOperations.setTarget(activity, LINKS.event$gjCV, _context.getNode());
-            ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP), LINKS.activities$AJ0_)).addElement(activity);
-            SelectionUtil.selectCell(_context.getEditorContext(), SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP), LINKS.activities$AJ0_)).findFirst(new IWhereFilter<SNode>() {
+            SNodeFactoryOperations.setNewChild(activity, LINKS.commands$oZIM, CONCEPTS.Command$_N);
+            SLinkOperations.setTarget(activity, LINKS.event$pmgi, _context.getNode());
+            ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.activities$gAHC)).addElement(activity);
+            SelectionUtil.selectCell(_context.getEditorContext(), SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.activities$gAHC)).findFirst(new IWhereFilter<SNode>() {
               public boolean accept(SNode it) {
                 return Objects.equals(it, activity);
               }
-            }), LINKS.commands$giUr), SelectionManager.FIRST_CELL);
+            }), LINKS.commands$oZIM), SelectionManager.FIRST_CELL);
           }
 
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP)) {
-            boolean notEmpty = isNotEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.name$tAp1)) && isNotEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt));
-            boolean found = ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP), LINKS.activities$AJ0_)).any(new IWhereFilter<SNode>() {
+          if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By)) {
+            boolean notEmpty = isNotEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL)) && isNotEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK));
+            boolean found = ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.activities$gAHC)).any(new IWhereFilter<SNode>() {
               public boolean accept(SNode it) {
-                return SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$gjCV), PROPS.trigger$zpYt) == SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt);
+                return SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK) == SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK);
               }
             });
             if (notEmpty && !(found)) {
@@ -1808,15 +1808,15 @@ public class Event_TransformationMenu extends TransformationMenuBase {
         @Override
         public void execute(@NotNull String pattern) {
 
-          if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP)) {
-            if (ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP), LINKS.activities$AJ0_)).count() == 1 || ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP), LINKS.events$AIPs)).count() == 1) {
-              SPropertyOperations.remove(_context.getNode(), PROPS.trigger$zpYt);
-              SPropertyOperations.remove(_context.getNode(), PROPS.name$tAp1);
+          if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By)) {
+            if (ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.activities$gAHC)).count() == 1 || ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.events$gxkh)).count() == 1) {
+              SPropertyOperations.remove(_context.getNode(), PROPS.trigger$DqFK);
+              SPropertyOperations.remove(_context.getNode(), PROPS.name$MnvL);
               SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), "*" + CellIdManager.createPropertyId("trigger"));
             } else {
-              SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP), LINKS.activities$AJ0_)).findFirst(new IWhereFilter<SNode>() {
+              SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.activities$gAHC)).findFirst(new IWhereFilter<SNode>() {
                 public boolean accept(SNode it) {
-                  return SLinkOperations.getTarget(it, LINKS.event$gjCV) == _context.getNode();
+                  return SLinkOperations.getTarget(it, LINKS.event$pmgi) == _context.getNode();
                 }
               }));
               SNodeOperations.deleteNode(_context.getNode());
@@ -1846,30 +1846,30 @@ public class Event_TransformationMenu extends TransformationMenuBase {
     }
   }
   private static boolean isEmptyString(String str) {
-    return str == null || str.length() == 0;
+    return str == null || str.isEmpty();
   }
   private static boolean isNotEmptyString(String str) {
     return str != null && str.length() > 0;
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Event$dL = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event");
-    /*package*/ static final SConcept WorkSpace$ao = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace");
-    /*package*/ static final SConcept Menu$bP = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu");
-    /*package*/ static final SConcept Command$a6 = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9863dL, "jetbrains.mps.samples.VoiceMenu.structure.Command");
-    /*package*/ static final SConcept Activity$oQ = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity");
+    /*package*/ static final SConcept Event$Du = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event");
+    /*package*/ static final SConcept WorkSpace$A5 = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace");
+    /*package*/ static final SConcept Menu$By = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu");
+    /*package*/ static final SConcept Command$_N = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9863dL, "jetbrains.mps.samples.VoiceMenu.structure.Command");
+    /*package*/ static final SConcept Activity$Oz = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity");
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty toolbar$cda3 = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar");
-    /*package*/ static final SProperty name$tAp1 = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
-    /*package*/ static final SProperty trigger$zpYt = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger");
+    /*package*/ static final SProperty toolbar$qdja = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar");
+    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty trigger$DqFK = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger");
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink events$AIPs = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events");
-    /*package*/ static final SContainmentLink commands$giUr = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08d2L, "commands");
-    /*package*/ static final SReferenceLink event$gjCV = MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event");
-    /*package*/ static final SContainmentLink activities$AJ0_ = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities");
+    /*package*/ static final SContainmentLink events$gxkh = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events");
+    /*package*/ static final SContainmentLink commands$oZIM = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08d2L, "commands");
+    /*package*/ static final SReferenceLink event$pmgi = MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event");
+    /*package*/ static final SContainmentLink activities$gAHC = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities");
   }
 }

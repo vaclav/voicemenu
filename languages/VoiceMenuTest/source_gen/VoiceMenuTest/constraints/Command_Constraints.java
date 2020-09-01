@@ -8,16 +8,16 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class Command_Constraints extends BaseConstraintsDescriptor {
   public Command_Constraints() {
-    super(CONCEPTS.Command$Am);
+    super(CONCEPTS.Command$o_);
   }
 
   @Override
   public SConcept getDefaultConcreteConcept() {
-    return CONCEPTS.EmptyLine$_R;
+    return CONCEPTS.EmptyLine$o6;
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Command$Am = MetaAdapterFactory.getConcept(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3887c9e10L, "VoiceMenuTest.structure.Command");
-    /*package*/ static final SConcept EmptyLine$_R = MetaAdapterFactory.getConcept(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3887c9e0fL, "VoiceMenuTest.structure.EmptyLine");
+    /*package*/ static final SConcept Command$o_ = MetaAdapterFactory.getConcept(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3887c9e10L, "VoiceMenuTest.structure.Command");
+    /*package*/ static final SConcept EmptyLine$o6 = MetaAdapterFactory.getConcept(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3887c9e0fL, "VoiceMenuTest.structure.EmptyLine");
   }
 }

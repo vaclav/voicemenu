@@ -35,7 +35,7 @@ public final class changeToGetInfo_Intention extends AbstractIntentionDescriptor
     return true;
   }
   private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-    return !((SNodeOperations.isInstanceOf(node, CONCEPTS.GetInfo$95)));
+    return !((SNodeOperations.isInstanceOf(node, CONCEPTS.GetInfo$$M)));
   }
   @Override
   public boolean isSurroundWith() {
@@ -56,7 +56,7 @@ public final class changeToGetInfo_Intention extends AbstractIntentionDescriptor
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SNodeFactoryOperations.replaceWithNewChild(node, CONCEPTS.GetInfo$95);
+      SNodeFactoryOperations.replaceWithNewChild(node, CONCEPTS.GetInfo$$M);
     }
     @Override
     public IntentionDescriptor getDescriptor() {
@@ -65,6 +65,6 @@ public final class changeToGetInfo_Intention extends AbstractIntentionDescriptor
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept GetInfo$95 = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, "jetbrains.mps.samples.VoiceMenu.structure.GetInfo");
+    /*package*/ static final SConcept GetInfo$$M = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, "jetbrains.mps.samples.VoiceMenu.structure.GetInfo");
   }
 }

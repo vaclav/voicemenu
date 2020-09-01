@@ -34,7 +34,7 @@ public final class Remove_Playback_Intention extends AbstractIntentionDescriptor
     return true;
   }
   private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-    return isNotEmptyString(SPropertyOperations.getString(node, PROPS.playback$y04k));
+    return isNotEmptyString(SPropertyOperations.getString(node, PROPS.playback$XRxp));
 
   }
   @Override
@@ -56,7 +56,7 @@ public final class Remove_Playback_Intention extends AbstractIntentionDescriptor
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SPropertyOperations.assign(node, PROPS.playback$y04k, "");
+      SPropertyOperations.assign(node, PROPS.playback$XRxp, "");
     }
     @Override
     public IntentionDescriptor getDescriptor() {
@@ -68,6 +68,6 @@ public final class Remove_Playback_Intention extends AbstractIntentionDescriptor
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty playback$y04k = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback");
+    /*package*/ static final SProperty playback$XRxp = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback");
   }
 }

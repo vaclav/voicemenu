@@ -36,7 +36,7 @@ public final class Add_Main_Playback_Intention extends AbstractIntentionDescript
     return true;
   }
   private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-    return isEmptyString(SPropertyOperations.getString(node, PROPS.info$wU3E));
+    return isEmptyString(SPropertyOperations.getString(node, PROPS.info$rXd3));
   }
   @Override
   public boolean isSurroundWith() {
@@ -57,7 +57,7 @@ public final class Add_Main_Playback_Intention extends AbstractIntentionDescript
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SPropertyOperations.assign(node, PROPS.info$wU3E, "Welcome to " + SPropertyOperations.getString(node, PROPS.name$tAp1));
+      SPropertyOperations.assign(node, PROPS.info$rXd3, "Welcome to " + SPropertyOperations.getString(node, PROPS.name$MnvL));
       SelectionUtil.selectCell(editorContext, node, SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
     }
     @Override
@@ -66,11 +66,11 @@ public final class Add_Main_Playback_Intention extends AbstractIntentionDescript
     }
   }
   private static boolean isEmptyString(String str) {
-    return str == null || str.length() == 0;
+    return str == null || str.isEmpty();
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty info$wU3E = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "info");
-    /*package*/ static final SProperty name$tAp1 = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty info$rXd3 = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "info");
+    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
   }
 }

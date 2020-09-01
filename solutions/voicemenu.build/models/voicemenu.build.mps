@@ -283,7 +283,7 @@
     <node concept="1zClus" id="5ruKdSwyeru" role="3989C9">
       <property role="2OjLBK" value="2" />
       <property role="TrG5h" value="MPS" />
-      <property role="2OjLBL" value="2019" />
+      <property role="2OjLBL" value="2020" />
       <node concept="55IIr" id="5ruKdSwyerv" role="3vi$VU">
         <node concept="2Ry0Ak" id="5ruKdSwyerw" role="iGT6I">
           <property role="2Ry0Am" value="icons" />
@@ -438,7 +438,7 @@
       <node concept="aVJcg" id="5ruKdSwyerl" role="aVJcv">
         <node concept="NbPM2" id="5ruKdSwyerm" role="aVJcq">
           <node concept="3Mxwew" id="5ruKdSwyern" role="3MwsjC">
-            <property role="3MwjfP" value="201.SNAPSHOT" />
+            <property role="3MwjfP" value="202.SNAPSHOT" />
           </node>
         </node>
       </node>
@@ -450,8 +450,8 @@
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="4qLeaozfzuK" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="6tujwirsbB" role="2Ry0An">
-              <property role="2Ry0Am" value="MPS 2020.1" />
+            <node concept="2Ry0Ak" id="2wnL1WJCe0s" role="2Ry0An">
+              <property role="2Ry0Am" value="MPS 2020.2" />
             </node>
           </node>
         </node>
@@ -591,7 +591,7 @@
             </node>
           </node>
           <node concept="1zDrgl" id="5ruKdSwyetr" role="39821P">
-            <ref role="1zDrgn" node="5ruKdSwyeru" resolve="Voice Menu 2019.2" />
+            <ref role="1zDrgn" node="5ruKdSwyeru" resolve="Voice Menu 2020.2" />
           </node>
         </node>
         <node concept="28u9K_" id="VV7r8LjI59" role="39821P">
@@ -977,7 +977,7 @@
       </node>
       <node concept="3_J27D" id="5ruKdSwyesR" role="m$_w8">
         <node concept="3Mxwew" id="5ruKdSwyesS" role="3MwsjC">
-          <property role="3MwjfP" value="2019.3" />
+          <property role="3MwjfP" value="2020.2" />
         </node>
       </node>
       <node concept="m$f5U" id="5ruKdSwyesT" role="m$_yh">
@@ -2901,8 +2901,8 @@
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="5$IQOQwcnGK" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="6tujwivXL_" role="2Ry0An">
-              <property role="2Ry0Am" value="MPS 2020.1" />
+            <node concept="2Ry0Ak" id="2wnL1WJCdZ0" role="2Ry0An">
+              <property role="2Ry0Am" value="MPS 2020.2" />
             </node>
           </node>
         </node>
@@ -2923,7 +2923,7 @@
     <property role="TrG5h" value="voicemenu" />
     <property role="26FY9R" value="jetbrains.mps.Launcher" />
     <property role="26EafI" value="bin" />
-    <ref role="1_kbm$" node="5ruKdSwyeru" resolve="Voice Menu 2019.2" />
+    <ref role="1_kbm$" node="5ruKdSwyeru" resolve="Voice Menu 2020.2" />
     <node concept="26Ea6D" id="27IwjAPkmZq" role="26FZ21">
       <property role="26Ea6C" value="-client -Xss1024k -ea -Xmx950m -XX:MaxPermSize=256m -XX:NewSize=256m -XX:+HeapDumpOnOutOfMemoryError -Xverify:none" />
     </node>

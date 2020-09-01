@@ -54,7 +54,7 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
   @Override
   public void breakdownToUnits(@NotNull TextGenModelOutline outline) {
     for (SNode root : outline.getModel().getRootNodes()) {
-      if (root.getConcept().equals(CONCEPTS.WorkSpace$MI)) {
+      if (root.getConcept().equals(CONCEPTS.WorkSpace$Qz)) {
         String fname = getFileName_WorkSpace(root);
         String ext = getFileExtension_WorkSpace(root);
         outline.registerTextUnit((ext == null ? fname : (fname + '.' + ext)), root);
@@ -63,17 +63,17 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
     }
   }
   private static String getFileName_WorkSpace(SNode node) {
-    return SPropertyOperations.getString(node, PROPS.typeOfFile$czzn);
+    return SPropertyOperations.getString(node, PROPS.typeOfFile$jLbY);
   }
   private static String getFileExtension_WorkSpace(SNode node) {
     return "conf";
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept WorkSpace$MI = MetaAdapterFactory.getConcept(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x10bb6449f9c963fcL, "jetbrains.mps.samples.Text.structure.WorkSpace");
+    /*package*/ static final SConcept WorkSpace$Qz = MetaAdapterFactory.getConcept(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x10bb6449f9c963fcL, "jetbrains.mps.samples.Text.structure.WorkSpace");
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty typeOfFile$czzn = MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x10bb6449f9c963fcL, 0x757a4df10365e094L, "typeOfFile");
+    /*package*/ static final SProperty typeOfFile$jLbY = MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x10bb6449f9c963fcL, 0x757a4df10365e094L, "typeOfFile");
   }
 }

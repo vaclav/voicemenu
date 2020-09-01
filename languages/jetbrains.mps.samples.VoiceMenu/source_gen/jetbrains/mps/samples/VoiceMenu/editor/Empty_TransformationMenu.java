@@ -56,7 +56,7 @@ public class Empty_TransformationMenu extends TransformationMenuBase {
   protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts(TransformationMenuContext _context) {
     List<MenuPart<TransformationMenuItem, TransformationMenuContext>> result = new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>();
     if (ListSequence.fromListAndArray(new ArrayList<String>(), MenuLocations.CONTEXT_ACTIONS_TOOL).contains(_context.getMenuLocation())) {
-      result.add(new DefaultConceptMenusTransformationMenuPart(SModelUtil.getDirectSuperConcepts(CONCEPTS.Empty$vd)) {
+      result.add(new DefaultConceptMenusTransformationMenuPart(SModelUtil.getDirectSuperConcepts(CONCEPTS.Empty$UU)) {
         @NotNull
         @Override
         public List<TransformationMenuItem> createItems(@NotNull TransformationMenuContext context) {
@@ -88,15 +88,15 @@ public class Empty_TransformationMenu extends TransformationMenuBase {
     @Nullable
     @Override
     protected Iterable<? extends SConcept> getParameters(TransformationMenuContext _context) {
-      Iterable<SConcept> seq = ListSequence.fromList(SConceptOperations.getAllSubConcepts2(CONCEPTS.Command$a6, _context.getModel())).where(new IWhereFilter<SConcept>() {
+      Iterable<SConcept> seq = ListSequence.fromList(SConceptOperations.getAllSubConcepts2(CONCEPTS.Command$_N, _context.getModel())).where(new IWhereFilter<SConcept>() {
         public boolean accept(SConcept it) {
           return !(it.isAbstract());
         }
       });
 
-      return Sequence.fromIterable(seq).subtract(ListSequence.fromList(SConceptOperations.getAllSubConcepts2(CONCEPTS.Command$a6, _context.getModel())).where(new IWhereFilter<SConcept>() {
+      return Sequence.fromIterable(seq).subtract(ListSequence.fromList(SConceptOperations.getAllSubConcepts2(CONCEPTS.Command$_N, _context.getModel())).where(new IWhereFilter<SConcept>() {
         public boolean accept(SConcept it) {
-          return SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(it), CONCEPTS.Empty$vd);
+          return SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(it), CONCEPTS.Empty$UU);
         }
       }));
     }
@@ -172,7 +172,7 @@ public class Empty_TransformationMenu extends TransformationMenuBase {
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Empty$vd = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9c5c3L, "jetbrains.mps.samples.VoiceMenu.structure.Empty");
-    /*package*/ static final SConcept Command$a6 = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9863dL, "jetbrains.mps.samples.VoiceMenu.structure.Command");
+    /*package*/ static final SConcept Empty$UU = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9c5c3L, "jetbrains.mps.samples.VoiceMenu.structure.Empty");
+    /*package*/ static final SConcept Command$_N = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9863dL, "jetbrains.mps.samples.VoiceMenu.structure.Command");
   }
 }

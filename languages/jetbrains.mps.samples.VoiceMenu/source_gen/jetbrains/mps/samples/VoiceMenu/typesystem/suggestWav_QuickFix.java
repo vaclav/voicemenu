@@ -19,19 +19,19 @@ public class suggestWav_QuickFix extends QuickFix_Runtime {
     return "Replace extension with .wav";
   }
   public void execute(SNode node) {
-    int indexOfDot = SPropertyOperations.getString(SNodeOperations.cast(node, CONCEPTS.Activity$oQ), PROPS.playback$y04k).lastIndexOf(".");
-    String substring = SPropertyOperations.getString(SNodeOperations.cast(node, CONCEPTS.Activity$oQ), PROPS.playback$y04k).substring(0, indexOfDot);
+    int indexOfDot = SPropertyOperations.getString(SNodeOperations.cast(node, CONCEPTS.Activity$Oz), PROPS.playback$XRxp).lastIndexOf(".");
+    String substring = SPropertyOperations.getString(SNodeOperations.cast(node, CONCEPTS.Activity$Oz), PROPS.playback$XRxp).substring(0, indexOfDot);
 
-    SPropertyOperations.assign(SNodeOperations.cast(node, CONCEPTS.Activity$oQ), PROPS.playback$y04k, substring + ".wav");
-    SPropertyOperations.assign(SNodeOperations.cast(node, CONCEPTS.Activity$oQ), PROPS.PBisFile$hBw1, true);
+    SPropertyOperations.assign(SNodeOperations.cast(node, CONCEPTS.Activity$Oz), PROPS.playback$XRxp, substring + ".wav");
+    SPropertyOperations.assign(SNodeOperations.cast(node, CONCEPTS.Activity$Oz), PROPS.PBisFile$1XWc, true);
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Activity$oQ = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity");
+    /*package*/ static final SConcept Activity$Oz = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity");
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty playback$y04k = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback");
-    /*package*/ static final SProperty PBisFile$hBw1 = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile");
+    /*package*/ static final SProperty playback$XRxp = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback");
+    /*package*/ static final SProperty PBisFile$1XWc = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile");
   }
 }

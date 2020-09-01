@@ -24,7 +24,7 @@ public class PlayBacktoFile_NonTypesystemRule extends AbstractNonTypesystemRule_
   public PlayBacktoFile_NonTypesystemRule() {
   }
   public void applyRule(final SNode activity, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    if (!(SPropertyOperations.getBoolean(activity, PROPS.PBisFile$hBw1))) {
+    if (!(SPropertyOperations.getBoolean(activity, PROPS.PBisFile$1XWc))) {
       try {
 
         String path = System.getProperty("user.home") + "/MPS_ASTERISK";
@@ -33,13 +33,13 @@ public class PlayBacktoFile_NonTypesystemRule extends AbstractNonTypesystemRule_
           new File(path).mkdir();
         }
 
-        File tmp = new File(path + "/" + SPropertyOperations.getString(activity, PROPS.playback$y04k));
+        File tmp = new File(path + "/" + SPropertyOperations.getString(activity, PROPS.playback$XRxp));
         if (tmp.isFile()) {
           {
             final MessageTarget errorTarget = new NodeMessageTarget();
             IErrorReporter _reporter_2309309498 = typeCheckingContext.reportWarning(activity, "Is File", "r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)", "3333261045545355623", null, errorTarget);
             {
-              BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("jetbrains.mps.samples.VoiceMenu.typesystem.TransformPBtoFile_QuickFix", true);
+              BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("jetbrains.mps.samples.VoiceMenu.typesystem.TransformPBtoFile_QuickFix", "3333261045545381147", true);
               intentionProvider.putArgument("activity", activity);
               _reporter_2309309498.addIntentionProvider(intentionProvider);
             }
@@ -50,7 +50,7 @@ public class PlayBacktoFile_NonTypesystemRule extends AbstractNonTypesystemRule_
     }
   }
   public SAbstractConcept getApplicableConcept() {
-    return CONCEPTS.Activity$oQ;
+    return CONCEPTS.Activity$Oz;
   }
   public IsApplicableStatus isApplicableAndPattern(SNode argument) {
     return new IsApplicableStatus(argument.getConcept().isSubConceptOf(getApplicableConcept()), null);
@@ -60,11 +60,11 @@ public class PlayBacktoFile_NonTypesystemRule extends AbstractNonTypesystemRule_
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty PBisFile$hBw1 = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile");
-    /*package*/ static final SProperty playback$y04k = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback");
+    /*package*/ static final SProperty PBisFile$1XWc = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile");
+    /*package*/ static final SProperty playback$XRxp = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback");
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Activity$oQ = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity");
+    /*package*/ static final SConcept Activity$Oz = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity");
   }
 }

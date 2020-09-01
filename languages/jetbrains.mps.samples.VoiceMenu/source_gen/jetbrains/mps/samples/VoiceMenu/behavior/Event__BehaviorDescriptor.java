@@ -38,15 +38,15 @@ public final class Event__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   /*package*/ static String getFullName_id7bG1ue8uybI(@NotNull SNode __thisNode__) {
-    return ListSequence.fromList(SNodeOperations.getNodeAncestors(__thisNode__, CONCEPTS.Activity$oQ, false)).reversedList().select(new ISelector<SNode, String>() {
+    return ListSequence.fromList(SNodeOperations.getNodeAncestors(__thisNode__, CONCEPTS.Activity$Oz, false)).reversedList().select(new ISelector<SNode, String>() {
       public String select(SNode it) {
-        return SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$gjCV), PROPS.name$tAp1);
+        return SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.name$MnvL);
       }
     }).foldLeft("", new ILeftCombinator<String, String>() {
       public String combine(String s, String it) {
         return s + it + "/";
       }
-    }) + SPropertyOperations.getString(__thisNode__, PROPS.name$tAp1);
+    }) + SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL);
   }
 
   /*package*/ Event__BehaviorDescriptor() {
@@ -96,14 +96,14 @@ public final class Event__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty name$tAp1 = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Activity$oQ = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity");
+    /*package*/ static final SConcept Activity$Oz = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity");
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink event$gjCV = MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event");
+    /*package*/ static final SReferenceLink event$pmgi = MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event");
   }
 }

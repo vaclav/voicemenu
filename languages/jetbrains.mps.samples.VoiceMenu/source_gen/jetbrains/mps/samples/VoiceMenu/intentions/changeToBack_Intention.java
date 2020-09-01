@@ -35,7 +35,7 @@ public final class changeToBack_Intention extends AbstractIntentionDescriptor im
     return true;
   }
   private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-    return !((SNodeOperations.isInstanceOf(node, CONCEPTS.Back$8A)));
+    return !((SNodeOperations.isInstanceOf(node, CONCEPTS.Back$$j)));
   }
   @Override
   public boolean isSurroundWith() {
@@ -56,7 +56,7 @@ public final class changeToBack_Intention extends AbstractIntentionDescriptor im
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SNodeFactoryOperations.replaceWithNewChild(node, CONCEPTS.Back$8A);
+      SNodeFactoryOperations.replaceWithNewChild(node, CONCEPTS.Back$$j);
     }
     @Override
     public IntentionDescriptor getDescriptor() {
@@ -65,6 +65,6 @@ public final class changeToBack_Intention extends AbstractIntentionDescriptor im
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Back$8A = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acaL, "jetbrains.mps.samples.VoiceMenu.structure.Back");
+    /*package*/ static final SConcept Back$$j = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acaL, "jetbrains.mps.samples.VoiceMenu.structure.Back");
   }
 }

@@ -30,8 +30,8 @@ public class ActivityPlayback {
       }
       public void execute_internal(EditorContext editorContext, SNode node) {
         LoggingRuntime.logMsgView(Level.INFO, "Clicked", ActivityPlayback.class, null, null);
-        if (Objects.equals(SPropertyOperations.getString(node, PROPS.playback$y04k), "Choose from..")) {
-          SPropertyOperations.assign(node, PROPS.playback$y04k, " ");
+        if (Objects.equals(SPropertyOperations.getString(node, PROPS.playback$XRxp), "Choose from..")) {
+          SPropertyOperations.assign(node, PROPS.playback$XRxp, " ");
           SelectionUtil.selectNode(editorContext, node);
           SelectionUtil.selectCell(editorContext, node, "*" + CellIdManager.createPropertyId("playback"));
         }
@@ -82,6 +82,6 @@ public class ActivityPlayback {
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty playback$y04k = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback");
+    /*package*/ static final SProperty playback$XRxp = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback");
   }
 }

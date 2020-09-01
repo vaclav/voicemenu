@@ -35,7 +35,7 @@ public final class changeToDirectCall_Intention extends AbstractIntentionDescrip
     return true;
   }
   private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-    return !((SNodeOperations.isInstanceOf(node, CONCEPTS.DirectCall$7C)));
+    return !((SNodeOperations.isInstanceOf(node, CONCEPTS.DirectCall$zl)));
   }
   @Override
   public boolean isSurroundWith() {
@@ -56,7 +56,7 @@ public final class changeToDirectCall_Intention extends AbstractIntentionDescrip
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SNodeFactoryOperations.replaceWithNewChild(node, CONCEPTS.DirectCall$7C);
+      SNodeFactoryOperations.replaceWithNewChild(node, CONCEPTS.DirectCall$zl);
     }
     @Override
     public IntentionDescriptor getDescriptor() {
@@ -65,6 +65,6 @@ public final class changeToDirectCall_Intention extends AbstractIntentionDescrip
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept DirectCall$7C = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, "jetbrains.mps.samples.VoiceMenu.structure.DirectCall");
+    /*package*/ static final SConcept DirectCall$zl = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, "jetbrains.mps.samples.VoiceMenu.structure.DirectCall");
   }
 }

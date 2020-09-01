@@ -21,32 +21,32 @@ public class InitilizeEvent_QuickFix extends QuickFix_Runtime {
     super(new SNodePointer("r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)", "4323022269988352616"));
   }
   public String getDescription(SNode node) {
-    return "Set up " + SPropertyOperations.getString(SNodeOperations.cast(node, CONCEPTS.Event$dL), PROPS.name$tAp1);
+    return "Set up " + SPropertyOperations.getString(SNodeOperations.cast(node, CONCEPTS.Event$Du), PROPS.name$MnvL);
   }
   public void execute(SNode node) {
 
-    SNode myActivity = SLinkOperations.addNewChild(((SNode) InitilizeEvent_QuickFix.this.getField("srcMenu")[0]), LINKS.activities$AJ0_, CONCEPTS.Activity$oQ);
-    SNodeFactoryOperations.setNewChild(myActivity, LINKS.commands$giUr, CONCEPTS.Command$a6);
-    SLinkOperations.setTarget(myActivity, LINKS.event$gjCV, ((SNode) InitilizeEvent_QuickFix.this.getField("srcEvent")[0]));
-    ListSequence.fromList(SLinkOperations.getChildren(((SNode) InitilizeEvent_QuickFix.this.getField("srcMenu")[0]), LINKS.activities$AJ0_)).addElement(myActivity);
+    SNode myActivity = SLinkOperations.addNewChild(((SNode) InitilizeEvent_QuickFix.this.getField("srcMenu")[0]), LINKS.activities$gAHC, CONCEPTS.Activity$Oz);
+    SNodeFactoryOperations.setNewChild(myActivity, LINKS.commands$oZIM, CONCEPTS.Command$_N);
+    SLinkOperations.setTarget(myActivity, LINKS.event$pmgi, ((SNode) InitilizeEvent_QuickFix.this.getField("srcEvent")[0]));
+    ListSequence.fromList(SLinkOperations.getChildren(((SNode) InitilizeEvent_QuickFix.this.getField("srcMenu")[0]), LINKS.activities$gAHC)).addElement(myActivity);
 
 
 
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Event$dL = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event");
-    /*package*/ static final SConcept Activity$oQ = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity");
-    /*package*/ static final SConcept Command$a6 = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9863dL, "jetbrains.mps.samples.VoiceMenu.structure.Command");
+    /*package*/ static final SConcept Event$Du = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event");
+    /*package*/ static final SConcept Activity$Oz = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity");
+    /*package*/ static final SConcept Command$_N = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9863dL, "jetbrains.mps.samples.VoiceMenu.structure.Command");
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty name$tAp1 = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink activities$AJ0_ = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities");
-    /*package*/ static final SContainmentLink commands$giUr = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08d2L, "commands");
-    /*package*/ static final SReferenceLink event$gjCV = MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event");
+    /*package*/ static final SContainmentLink activities$gAHC = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities");
+    /*package*/ static final SContainmentLink commands$oZIM = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08d2L, "commands");
+    /*package*/ static final SReferenceLink event$pmgi = MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event");
   }
 }

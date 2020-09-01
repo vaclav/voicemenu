@@ -17,10 +17,10 @@ public class TransformPBtoFile_QuickFix extends QuickFix_Runtime {
     return "Set as File";
   }
   public void execute(SNode node) {
-    SPropertyOperations.assign(((SNode) TransformPBtoFile_QuickFix.this.getField("activity")[0]), PROPS.PBisFile$hBw1, true);
+    SPropertyOperations.assign(((SNode) TransformPBtoFile_QuickFix.this.getField("activity")[0]), PROPS.PBisFile$1XWc, true);
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty PBisFile$hBw1 = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile");
+    /*package*/ static final SProperty PBisFile$1XWc = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile");
   }
 }

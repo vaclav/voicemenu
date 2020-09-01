@@ -35,7 +35,7 @@ public final class changeToOther_Intention extends AbstractIntentionDescriptor i
     return true;
   }
   private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-    return !((SNodeOperations.isInstanceOf(node, CONCEPTS.Other$87)));
+    return !((SNodeOperations.isInstanceOf(node, CONCEPTS.Other$zO)));
 
   }
   @Override
@@ -57,7 +57,7 @@ public final class changeToOther_Intention extends AbstractIntentionDescriptor i
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SNodeFactoryOperations.replaceWithNewChild(node, CONCEPTS.Other$87);
+      SNodeFactoryOperations.replaceWithNewChild(node, CONCEPTS.Other$zO);
     }
     @Override
     public IntentionDescriptor getDescriptor() {
@@ -66,6 +66,6 @@ public final class changeToOther_Intention extends AbstractIntentionDescriptor i
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Other$87 = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, "jetbrains.mps.samples.VoiceMenu.structure.Other");
+    /*package*/ static final SConcept Other$zO = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, "jetbrains.mps.samples.VoiceMenu.structure.Other");
   }
 }

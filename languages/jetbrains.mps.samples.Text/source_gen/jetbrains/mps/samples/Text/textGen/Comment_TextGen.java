@@ -14,11 +14,11 @@ public class Comment_TextGen extends TextGenDescriptorBase {
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.append(";");
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.value$VX7w));
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.value$h9Gl));
     tgs.newLine();
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty value$VX7w = MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f715c9d8cL, 0x13a8ce4f715c9d8dL, "value");
+    /*package*/ static final SProperty value$h9Gl = MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f715c9d8cL, 0x13a8ce4f715c9d8dL, "value");
   }
 }

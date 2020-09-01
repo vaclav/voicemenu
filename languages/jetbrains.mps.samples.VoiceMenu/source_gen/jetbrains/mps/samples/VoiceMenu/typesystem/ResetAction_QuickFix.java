@@ -17,10 +17,10 @@ public class ResetAction_QuickFix extends QuickFix_Runtime {
     return "Reset Action";
   }
   public void execute(SNode node) {
-    SNodeFactoryOperations.replaceWithNewChild(node, CONCEPTS.Command$a6);
+    SNodeFactoryOperations.replaceWithNewChild(node, CONCEPTS.Command$_N);
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Command$a6 = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9863dL, "jetbrains.mps.samples.VoiceMenu.structure.Command");
+    /*package*/ static final SConcept Command$_N = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9863dL, "jetbrains.mps.samples.VoiceMenu.structure.Command");
   }
 }

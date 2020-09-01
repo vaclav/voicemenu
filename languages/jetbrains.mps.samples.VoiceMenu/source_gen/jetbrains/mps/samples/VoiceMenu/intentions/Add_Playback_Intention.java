@@ -36,7 +36,7 @@ public final class Add_Playback_Intention extends AbstractIntentionDescriptor im
     return true;
   }
   private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-    return isEmptyString(SPropertyOperations.getString(node, PROPS.playback$y04k));
+    return isEmptyString(SPropertyOperations.getString(node, PROPS.playback$XRxp));
   }
   @Override
   public boolean isSurroundWith() {
@@ -57,7 +57,7 @@ public final class Add_Playback_Intention extends AbstractIntentionDescriptor im
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SPropertyOperations.assign(node, PROPS.playback$y04k, "Choose from..");
+      SPropertyOperations.assign(node, PROPS.playback$XRxp, "Choose from..");
       SelectionUtil.selectCell(editorContext, node, "*" + CellIdManager.createPropertyId("PBisFile"));
     }
     @Override
@@ -66,10 +66,10 @@ public final class Add_Playback_Intention extends AbstractIntentionDescriptor im
     }
   }
   private static boolean isEmptyString(String str) {
-    return str == null || str.length() == 0;
+    return str == null || str.isEmpty();
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty playback$y04k = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback");
+    /*package*/ static final SProperty playback$XRxp = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback");
   }
 }

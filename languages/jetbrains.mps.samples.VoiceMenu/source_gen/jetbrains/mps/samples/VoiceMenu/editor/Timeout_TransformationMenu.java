@@ -133,13 +133,13 @@ public class Timeout_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.assign(_context.getNode(), PROPS.playback$OvLo, "");
+          SPropertyOperations.assign(_context.getNode(), PROPS.playback$Veml, "");
           SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return isNotEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.playback$OvLo));
+          return isNotEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.playback$Veml));
         }
 
         @Override
@@ -198,14 +198,14 @@ public class Timeout_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.assign(_context.getNode(), PROPS.playback$OvLo, "Timeout");
+          SPropertyOperations.assign(_context.getNode(), PROPS.playback$Veml, "Timeout");
           SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), "*" + CellIdManager.createPropertyId("duration"));
 
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return isEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.playback$OvLo));
+          return isEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.playback$Veml));
         }
 
         @Override
@@ -368,14 +368,14 @@ public class Timeout_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.assign(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.WorkSpace$ao), PROPS.toolbar$cda3, true);
+          SPropertyOperations.assign(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.WorkSpace$A5), PROPS.toolbar$qdja, true);
           SelectionUtil.selectNode(_context.getEditorContext(), _context.getNode());
           SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return SPropertyOperations.getBoolean(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.WorkSpace$ao), PROPS.toolbar$cda3) == false;
+          return SPropertyOperations.getBoolean(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.WorkSpace$A5), PROPS.toolbar$qdja) == false;
         }
 
         @Override
@@ -434,14 +434,14 @@ public class Timeout_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.assign(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.WorkSpace$ao), PROPS.toolbar$cda3, false);
+          SPropertyOperations.assign(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.WorkSpace$A5), PROPS.toolbar$qdja, false);
           SelectionUtil.selectNode(_context.getEditorContext(), _context.getNode());
           SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return SPropertyOperations.getBoolean(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.WorkSpace$ao), PROPS.toolbar$cda3) == true;
+          return SPropertyOperations.getBoolean(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.WorkSpace$A5), PROPS.toolbar$qdja) == true;
         }
 
         @Override
@@ -467,15 +467,15 @@ public class Timeout_TransformationMenu extends TransformationMenuBase {
     return str != null && str.length() > 0;
   }
   private static boolean isEmptyString(String str) {
-    return str == null || str.length() == 0;
+    return str == null || str.isEmpty();
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty playback$OvLo = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x34fad0c9f5b34402L, "playback");
-    /*package*/ static final SProperty toolbar$cda3 = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar");
+    /*package*/ static final SProperty playback$Veml = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x34fad0c9f5b34402L, "playback");
+    /*package*/ static final SProperty toolbar$qdja = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar");
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept WorkSpace$ao = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace");
+    /*package*/ static final SConcept WorkSpace$A5 = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace");
   }
 }

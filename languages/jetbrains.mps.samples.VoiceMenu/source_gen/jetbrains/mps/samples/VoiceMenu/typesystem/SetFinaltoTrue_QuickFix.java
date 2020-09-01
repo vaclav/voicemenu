@@ -20,38 +20,38 @@ public class SetFinaltoTrue_QuickFix extends QuickFix_Runtime {
   }
   public void execute(SNode node) {
     try {
-      SPropertyOperations.assign(SNodeOperations.cast(node, CONCEPTS.DirectCall$7C), PROPS.isFinal$sgnO, true);
+      SPropertyOperations.assign(SNodeOperations.cast(node, CONCEPTS.DirectCall$zl), PROPS.isFinal$bKXT, true);
 
     } catch (Exception e) {
     }
     try {
-      SPropertyOperations.assign(SNodeOperations.cast(node, CONCEPTS.Record$69), PROPS.isFinal$DiZZ, true);
+      SPropertyOperations.assign(SNodeOperations.cast(node, CONCEPTS.Record$xQ), PROPS.isFinal$w2re, true);
 
     } catch (Exception e) {
     }
     try {
-      SPropertyOperations.assign(SNodeOperations.cast(node, CONCEPTS.GetInfo$95), PROPS.isFinal$sihs, true);
+      SPropertyOperations.assign(SNodeOperations.cast(node, CONCEPTS.GetInfo$$M), PROPS.isFinal$cFSh, true);
 
     } catch (Exception e) {
     }
     try {
-      SPropertyOperations.assign(SNodeOperations.cast(node, CONCEPTS.Other$87), PROPS.isFinal$swjV, true);
+      SPropertyOperations.assign(SNodeOperations.cast(node, CONCEPTS.Other$zO), PROPS.isFinal$jv5i, true);
 
     } catch (Exception e) {
     }
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept DirectCall$7C = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, "jetbrains.mps.samples.VoiceMenu.structure.DirectCall");
-    /*package*/ static final SConcept Record$69 = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, "jetbrains.mps.samples.VoiceMenu.structure.Record");
-    /*package*/ static final SConcept GetInfo$95 = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, "jetbrains.mps.samples.VoiceMenu.structure.GetInfo");
-    /*package*/ static final SConcept Other$87 = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, "jetbrains.mps.samples.VoiceMenu.structure.Other");
+    /*package*/ static final SConcept DirectCall$zl = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, "jetbrains.mps.samples.VoiceMenu.structure.DirectCall");
+    /*package*/ static final SConcept Record$xQ = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, "jetbrains.mps.samples.VoiceMenu.structure.Record");
+    /*package*/ static final SConcept GetInfo$$M = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, "jetbrains.mps.samples.VoiceMenu.structure.GetInfo");
+    /*package*/ static final SConcept Other$zO = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, "jetbrains.mps.samples.VoiceMenu.structure.Other");
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty isFinal$sgnO = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, 0x420d89797f56bce4L, "isFinal");
-    /*package*/ static final SProperty isFinal$DiZZ = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, 0x420d89797f56bd93L, "isFinal");
-    /*package*/ static final SProperty isFinal$sihs = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, 0x420d89797f56bd37L, "isFinal");
-    /*package*/ static final SProperty isFinal$swjV = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, 0x420d89797f56bde6L, "isFinal");
+    /*package*/ static final SProperty isFinal$bKXT = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, 0x420d89797f56bce4L, "isFinal");
+    /*package*/ static final SProperty isFinal$w2re = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, 0x420d89797f56bd93L, "isFinal");
+    /*package*/ static final SProperty isFinal$cFSh = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, 0x420d89797f56bd37L, "isFinal");
+    /*package*/ static final SProperty isFinal$jv5i = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, 0x420d89797f56bde6L, "isFinal");
   }
 }

@@ -20,18 +20,18 @@ public class CheckBackAtRoot_NonTypesystemRule extends AbstractNonTypesystemRule
   public CheckBackAtRoot_NonTypesystemRule() {
   }
   public void applyRule(final SNode back, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(back), CONCEPTS.Activity$oQ)) {
-      if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(SNodeOperations.cast(SNodeOperations.getParent(back), CONCEPTS.Activity$oQ)), CONCEPTS.Menu$bP)) {
-        if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(SNodeOperations.cast(SNodeOperations.getParent(SNodeOperations.cast(SNodeOperations.getParent(back), CONCEPTS.Activity$oQ)), CONCEPTS.Menu$bP)), CONCEPTS.WorkSpace$ao)) {
+    if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(back), CONCEPTS.Activity$Oz)) {
+      if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(SNodeOperations.cast(SNodeOperations.getParent(back), CONCEPTS.Activity$Oz)), CONCEPTS.Menu$By)) {
+        if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(SNodeOperations.cast(SNodeOperations.getParent(SNodeOperations.cast(SNodeOperations.getParent(back), CONCEPTS.Activity$Oz)), CONCEPTS.Menu$By)), CONCEPTS.WorkSpace$A5)) {
           {
             final MessageTarget errorTarget = new NodeMessageTarget();
             IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(back, "Back at root node", "r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)", "5461963470562044700", null, errorTarget);
             {
-              BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("jetbrains.mps.samples.VoiceMenu.typesystem.ResetAction_QuickFix", false);
+              BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("jetbrains.mps.samples.VoiceMenu.typesystem.ResetAction_QuickFix", "5461963470562123749", false);
               _reporter_2309309498.addIntentionProvider(intentionProvider);
             }
             {
-              BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("jetbrains.mps.samples.VoiceMenu.typesystem.SetFinaltoTrue_QuickFix", false);
+              BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("jetbrains.mps.samples.VoiceMenu.typesystem.SetFinaltoTrue_QuickFix", "5461963470564086859", false);
               _reporter_2309309498.addIntentionProvider(intentionProvider);
             }
           }
@@ -40,7 +40,7 @@ public class CheckBackAtRoot_NonTypesystemRule extends AbstractNonTypesystemRule
     }
   }
   public SAbstractConcept getApplicableConcept() {
-    return CONCEPTS.Back$8A;
+    return CONCEPTS.Back$$j;
   }
   public IsApplicableStatus isApplicableAndPattern(SNode argument) {
     return new IsApplicableStatus(argument.getConcept().isSubConceptOf(getApplicableConcept()), null);
@@ -50,9 +50,9 @@ public class CheckBackAtRoot_NonTypesystemRule extends AbstractNonTypesystemRule
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Activity$oQ = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity");
-    /*package*/ static final SConcept Menu$bP = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu");
-    /*package*/ static final SConcept WorkSpace$ao = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace");
-    /*package*/ static final SConcept Back$8A = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acaL, "jetbrains.mps.samples.VoiceMenu.structure.Back");
+    /*package*/ static final SConcept Activity$Oz = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity");
+    /*package*/ static final SConcept Menu$By = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu");
+    /*package*/ static final SConcept WorkSpace$A5 = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace");
+    /*package*/ static final SConcept Back$$j = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acaL, "jetbrains.mps.samples.VoiceMenu.structure.Back");
   }
 }

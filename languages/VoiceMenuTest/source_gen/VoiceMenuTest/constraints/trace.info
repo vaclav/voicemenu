@@ -23,11 +23,11 @@
       <node id="8281000289632442828" at="55,131,56,42" concept="1" />
       <node id="8281000289632442827" at="56,42,57,22" concept="4" />
       <node id="8281000289632442827" at="59,0,60,0" concept="5" trace="breakingNode_g42j4u_a0a0a0a0a1a0a0a0c" />
-      <node id="8281000289632442827" at="62,0,63,0" concept="5" trace="Assert$T3" />
-      <node id="8281000289632442827" at="63,0,64,0" concept="5" trace="VoiceMenuTestCase$8m" />
-      <node id="8281000289632442827" at="64,0,65,0" concept="5" trace="Event$dL" />
-      <node id="8281000289632442827" at="68,0,69,0" concept="5" trace="expectedEvent$ZeYz" />
-      <node id="8281000289632442827" at="69,0,70,0" concept="5" trace="workspaceToTest$xMNi" />
+      <node id="8281000289632442827" at="62,0,63,0" concept="5" trace="Assert$Fi" />
+      <node id="8281000289632442827" at="63,0,64,0" concept="5" trace="VoiceMenuTestCase$U_" />
+      <node id="8281000289632442827" at="64,0,65,0" concept="5" trace="Event$Du" />
+      <node id="8281000289632442827" at="68,0,69,0" concept="5" trace="expectedEvent$5c5c" />
+      <node id="8281000289632442827" at="69,0,70,0" concept="5" trace="workspaceToTest$OyBX" />
       <node id="8281000289632442827" at="28,0,31,0" concept="0" trace="Assert_Constraints#()V" />
       <node id="8281000289632442828" at="35,0,39,0" concept="2" trace="hasOwnScopeProvider#()Z" />
       <node id="8281000289632442828" at="43,0,47,0" concept="2" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
@@ -66,8 +66,8 @@
     <file name="Command_Constraints.java">
       <node id="8281000289633104940" at="10,32,11,31" concept="6" />
       <node id="8281000289633104940" at="15,47,16,33" concept="4" />
-      <node id="8281000289633104940" at="20,0,21,0" concept="5" trace="Command$Am" />
-      <node id="8281000289633104940" at="21,0,22,0" concept="5" trace="EmptyLine$_R" />
+      <node id="8281000289633104940" at="20,0,21,0" concept="5" trace="Command$o_" />
+      <node id="8281000289633104940" at="21,0,22,0" concept="5" trace="EmptyLine$o6" />
       <node id="8281000289633104940" at="10,0,13,0" concept="0" trace="Command_Constraints#()V" />
       <node id="8281000289633104940" at="14,0,18,0" concept="2" trace="getDefaultConcreteConcept#()Lorg/jetbrains/mps/openapi/language/SConcept;" />
       <scope id="8281000289633104940" at="10,32,11,31" />

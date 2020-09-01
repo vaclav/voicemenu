@@ -41,8 +41,8 @@ public final class MoveDown_Intention extends AbstractIntentionDescriptor implem
     return true;
   }
   private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-    if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(node), CONCEPTS.Menu$bP)) {
-      return !(Objects.equals(node, ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(node), CONCEPTS.Menu$bP), LINKS.events$AIPs)).last()));
+    if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(node), CONCEPTS.Menu$By)) {
+      return !(Objects.equals(node, ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(node), CONCEPTS.Menu$By), LINKS.events$gxkh)).last()));
     }
     return false;
   }
@@ -67,7 +67,7 @@ public final class MoveDown_Intention extends AbstractIntentionDescriptor implem
     public void execute(final SNode node, final EditorContext editorContext) {
       editorContext.getSelectionManager();
       int index = SNodeOperations.getIndexInParent(node);
-      List<SNode> events = SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(node), CONCEPTS.Menu$bP), LINKS.events$AIPs);
+      List<SNode> events = SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(node), CONCEPTS.Menu$By), LINKS.events$gxkh);
       SNode swap;
 
       swap = ListSequence.fromList(events).getElement(index);
@@ -76,7 +76,7 @@ public final class MoveDown_Intention extends AbstractIntentionDescriptor implem
 
 
       for (SNode item : ListSequence.fromList(events)) {
-        ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(node), CONCEPTS.Menu$bP), LINKS.events$AIPs)).addElement(item);
+        ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(node), CONCEPTS.Menu$By), LINKS.events$gxkh)).addElement(item);
 
         SelectionUtil.selectCell(editorContext, node, SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
       }
@@ -88,10 +88,10 @@ public final class MoveDown_Intention extends AbstractIntentionDescriptor implem
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Menu$bP = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu");
+    /*package*/ static final SConcept Menu$By = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu");
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink events$AIPs = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events");
+    /*package*/ static final SContainmentLink events$gxkh = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events");
   }
 }

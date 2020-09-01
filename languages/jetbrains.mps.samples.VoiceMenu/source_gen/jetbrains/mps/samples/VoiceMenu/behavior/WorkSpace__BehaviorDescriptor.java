@@ -23,8 +23,8 @@ public final class WorkSpace__BehaviorDescriptor extends BaseBHDescriptor {
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
-    SPropertyOperations.assign(__thisNode__, PROPS.default_visible$BwIg, false);
-    SPropertyOperations.assign(__thisNode__, PROPS.toolbar$cda3, true);
+    SPropertyOperations.assign(__thisNode__, PROPS.default_visible$CFPt, false);
+    SPropertyOperations.assign(__thisNode__, PROPS.toolbar$qdja, true);
   }
 
 
@@ -73,7 +73,7 @@ public final class WorkSpace__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty default_visible$BwIg = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c648b3c5L, "default_visible");
-    /*package*/ static final SProperty toolbar$cda3 = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar");
+    /*package*/ static final SProperty default_visible$CFPt = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c648b3c5L, "default_visible");
+    /*package*/ static final SProperty toolbar$qdja = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar");
   }
 }

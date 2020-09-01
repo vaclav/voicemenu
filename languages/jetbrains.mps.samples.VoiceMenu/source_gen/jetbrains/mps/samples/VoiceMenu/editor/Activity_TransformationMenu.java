@@ -223,7 +223,7 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.assign(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), PROPS.toolbar$cda3, true);
+          SPropertyOperations.assign(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), PROPS.toolbar$qdja, true);
 
           SelectionUtil.selectNode(_context.getEditorContext(), _context.getNode());
           SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
@@ -231,7 +231,7 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return SPropertyOperations.getBoolean(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), PROPS.toolbar$cda3) == false;
+          return SPropertyOperations.getBoolean(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), PROPS.toolbar$qdja) == false;
         }
 
         @Override
@@ -290,14 +290,14 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.assign(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), PROPS.toolbar$cda3, false);
+          SPropertyOperations.assign(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), PROPS.toolbar$qdja, false);
           SelectionUtil.selectNode(_context.getEditorContext(), _context.getNode());
           SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return SPropertyOperations.getBoolean(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), PROPS.toolbar$cda3) == true;
+          return SPropertyOperations.getBoolean(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), PROPS.toolbar$qdja) == true;
         }
 
         @Override
@@ -386,16 +386,16 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SLinkOperations.getTarget(SNodeFactoryOperations.replaceWithNewChild(_context.getNode(), CONCEPTS.Activity$oQ), LINKS.event$gjCV);
+          SLinkOperations.getTarget(SNodeFactoryOperations.replaceWithNewChild(_context.getNode(), CONCEPTS.Activity$Oz), LINKS.event$pmgi);
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          Iterable<SNode> activities = SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP), LINKS.activities$AJ0_);
+          Iterable<SNode> activities = SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.activities$gAHC);
           for (final SNode currentActvt : Sequence.fromIterable(activities)) {
             if (Sequence.fromIterable(activities).any(new IWhereFilter<SNode>() {
               public boolean accept(SNode it) {
-                return !(Objects.equals(it, currentActvt)) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$gjCV), PROPS.trigger$zpYt), SPropertyOperations.getString(SLinkOperations.getTarget(currentActvt, LINKS.event$gjCV), PROPS.trigger$zpYt));
+                return !(Objects.equals(it, currentActvt)) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), SPropertyOperations.getString(SLinkOperations.getTarget(currentActvt, LINKS.event$pmgi), PROPS.trigger$DqFK));
               }
             })) {
               return true;
@@ -460,11 +460,11 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          Iterable<SNode> activities = SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP), LINKS.activities$AJ0_);
+          Iterable<SNode> activities = SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.activities$gAHC);
           for (final SNode currentActvt : Sequence.fromIterable(activities)) {
             if (Sequence.fromIterable(activities).any(new IWhereFilter<SNode>() {
               public boolean accept(SNode it) {
-                return !(Objects.equals(it, currentActvt)) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$gjCV), PROPS.trigger$zpYt), SPropertyOperations.getString(SLinkOperations.getTarget(currentActvt, LINKS.event$gjCV), PROPS.trigger$zpYt));
+                return !(Objects.equals(it, currentActvt)) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), SPropertyOperations.getString(SLinkOperations.getTarget(currentActvt, LINKS.event$pmgi), PROPS.trigger$DqFK));
               }
             })) {
               SNodeOperations.deleteNode(_context.getNode());
@@ -474,11 +474,11 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          Iterable<SNode> activities = SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP), LINKS.activities$AJ0_);
+          Iterable<SNode> activities = SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.activities$gAHC);
           for (final SNode currentActvt : Sequence.fromIterable(activities)) {
             if (Sequence.fromIterable(activities).any(new IWhereFilter<SNode>() {
               public boolean accept(SNode it) {
-                return !(Objects.equals(it, currentActvt)) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$gjCV), PROPS.trigger$zpYt), SPropertyOperations.getString(SLinkOperations.getTarget(currentActvt, LINKS.event$gjCV), PROPS.trigger$zpYt));
+                return !(Objects.equals(it, currentActvt)) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), SPropertyOperations.getString(SLinkOperations.getTarget(currentActvt, LINKS.event$pmgi), PROPS.trigger$DqFK));
               }
             })) {
               return true;
@@ -573,13 +573,13 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.assign(_context.getNode(), PROPS.playback$y04k, "");
+          SPropertyOperations.assign(_context.getNode(), PROPS.playback$XRxp, "");
           SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return isNotEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.playback$y04k));
+          return isNotEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.playback$XRxp));
         }
 
         @Override
@@ -638,14 +638,14 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          SPropertyOperations.assign(_context.getNode(), PROPS.playback$y04k, "Choose from..");
+          SPropertyOperations.assign(_context.getNode(), PROPS.playback$XRxp, "Choose from..");
           SelectionUtil.selectCell(_context.getEditorContext(), _context.getNode(), "*" + CellIdManager.createPropertyId("PBisFile"));
 
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return isEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.playback$y04k));
+          return isEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.playback$XRxp));
         }
 
         @Override
@@ -705,7 +705,7 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
         @Override
         public void execute(@NotNull String pattern) {
           SNode newActivity = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"));
-          SLinkOperations.setTarget(newActivity, LINKS.commands$giUr, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9c5c3L, "jetbrains.mps.samples.VoiceMenu.structure.Empty")));
+          SLinkOperations.setTarget(newActivity, LINKS.commands$oZIM, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x555e0967dab9c5c3L, "jetbrains.mps.samples.VoiceMenu.structure.Empty")));
 
           SNodeOperations.insertNextSiblingChild(_context.getNode(), newActivity);
         }
@@ -768,7 +768,7 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
         @Override
         public void execute(@NotNull String pattern) {
           SNode myNode = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event"));
-          SLinkOperations.setTarget(_context.getNode(), LINKS.event$gjCV, myNode);
+          SLinkOperations.setTarget(_context.getNode(), LINKS.event$pmgi, myNode);
 
           Iterable<EditorCell> contentCells = _context.getEditorContext().getSelectedCell().getParent().getContentCells();
 
@@ -780,24 +780,24 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
               counter++;
               if (counter == 3) {
                 name = ((EditorCell_Constant) cell).getText().toString();
-                SPropertyOperations.assign(myNode, PROPS.name$tAp1, name);
+                SPropertyOperations.assign(myNode, PROPS.name$MnvL, name);
               }
               if (counter == 5) {
                 trigger = ((EditorCell_Constant) cell).getText().toString();
-                SPropertyOperations.assign(myNode, PROPS.trigger$zpYt, trigger);
+                SPropertyOperations.assign(myNode, PROPS.trigger$DqFK, trigger);
               }
             }
           } catch (Exception exception) {
           }
 
-          ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP), LINKS.events$AIPs)).addElement(myNode);
+          ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.events$gxkh)).addElement(myNode);
         }
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return !(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP), LINKS.events$AIPs)).any(new IWhereFilter<SNode>() {
+          return !(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.events$gxkh)).any(new IWhereFilter<SNode>() {
             public boolean accept(SNode it) {
-              return SPropertyOperations.getString(it, PROPS.trigger$zpYt) == SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.event$gjCV), PROPS.trigger$zpYt);
+              return SPropertyOperations.getString(it, PROPS.trigger$DqFK) == SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.event$pmgi), PROPS.trigger$DqFK);
             }
           }));
         }
@@ -859,9 +859,9 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
         @Override
         public void execute(@NotNull String pattern) {
 
-          SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$bP), LINKS.events$AIPs)).findFirst(new IWhereFilter<SNode>() {
+          SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.events$gxkh)).findFirst(new IWhereFilter<SNode>() {
             public boolean accept(SNode it) {
-              return it == SLinkOperations.getTarget(_context.getNode(), LINKS.event$gjCV);
+              return it == SLinkOperations.getTarget(_context.getNode(), LINKS.event$pmgi);
             }
           }));
 
@@ -893,26 +893,26 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
     return str != null && str.length() > 0;
   }
   private static boolean isEmptyString(String str) {
-    return str == null || str.length() == 0;
+    return str == null || str.isEmpty();
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept WorkSpace$ao = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace");
-    /*package*/ static final SConcept Activity$oQ = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity");
-    /*package*/ static final SConcept Menu$bP = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu");
+    /*package*/ static final SConcept WorkSpace$A5 = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace");
+    /*package*/ static final SConcept Activity$Oz = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity");
+    /*package*/ static final SConcept Menu$By = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu");
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty toolbar$cda3 = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar");
-    /*package*/ static final SProperty trigger$zpYt = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger");
-    /*package*/ static final SProperty playback$y04k = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback");
-    /*package*/ static final SProperty name$tAp1 = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty toolbar$qdja = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar");
+    /*package*/ static final SProperty trigger$DqFK = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger");
+    /*package*/ static final SProperty playback$XRxp = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback");
+    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink event$gjCV = MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event");
-    /*package*/ static final SContainmentLink activities$AJ0_ = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities");
-    /*package*/ static final SContainmentLink commands$giUr = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08d2L, "commands");
-    /*package*/ static final SContainmentLink events$AIPs = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events");
+    /*package*/ static final SReferenceLink event$pmgi = MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event");
+    /*package*/ static final SContainmentLink activities$gAHC = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities");
+    /*package*/ static final SContainmentLink commands$oZIM = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08d2L, "commands");
+    /*package*/ static final SContainmentLink events$gxkh = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events");
   }
 }

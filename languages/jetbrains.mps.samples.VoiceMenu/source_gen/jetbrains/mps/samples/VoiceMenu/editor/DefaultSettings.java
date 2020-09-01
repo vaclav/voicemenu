@@ -27,7 +27,7 @@ public class DefaultSettings {
         this.execute_internal(editorContext, node);
       }
       public void execute_internal(EditorContext editorContext, SNode node) {
-        SPropertyOperations.assign(node, PROPS.default_visible$BwIg, !(SPropertyOperations.getBoolean(node, PROPS.default_visible$BwIg)));
+        SPropertyOperations.assign(node, PROPS.default_visible$CFPt, !(SPropertyOperations.getBoolean(node, PROPS.default_visible$CFPt)));
         SelectionUtil.selectCell(editorContext, node, SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
       }
 
@@ -76,6 +76,6 @@ public class DefaultSettings {
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty default_visible$BwIg = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c648b3c5L, "default_visible");
+    /*package*/ static final SProperty default_visible$CFPt = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c648b3c5L, "default_visible");
   }
 }

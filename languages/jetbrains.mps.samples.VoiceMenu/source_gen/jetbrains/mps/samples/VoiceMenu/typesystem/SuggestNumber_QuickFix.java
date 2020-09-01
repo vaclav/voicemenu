@@ -44,25 +44,25 @@ public class SuggestNumber_QuickFix extends QuickFix_Runtime {
 
     List<String> usedButtons = new ArrayList<String>();
 
-    List<SNode> eventsDeclTable = SLinkOperations.getChildren(((SNode) SuggestNumber_QuickFix.this.getField("srcMenu")[0]), LINKS.events$AIPs);
+    List<SNode> eventsDeclTable = SLinkOperations.getChildren(((SNode) SuggestNumber_QuickFix.this.getField("srcMenu")[0]), LINKS.events$gxkh);
 
     for (SNode event : ListSequence.fromList(eventsDeclTable)) {
-      ListSequence.fromList(usedButtons).addElement(SPropertyOperations.getString(event, PROPS.trigger$zpYt));
+      ListSequence.fromList(usedButtons).addElement(SPropertyOperations.getString(event, PROPS.trigger$DqFK));
     }
-    SPropertyOperations.assign(SNodeOperations.cast(node, CONCEPTS.Event$dL), PROPS.trigger$zpYt, Sequence.fromIterable(Sequence.fromArray(kbButtons)).subtract(ListSequence.fromList(usedButtons)).first());
+    SPropertyOperations.assign(SNodeOperations.cast(node, CONCEPTS.Event$Du), PROPS.trigger$DqFK, Sequence.fromIterable(Sequence.fromArray(kbButtons)).subtract(ListSequence.fromList(usedButtons)).first());
 
 
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink events$AIPs = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events");
+    /*package*/ static final SContainmentLink events$gxkh = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events");
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty trigger$zpYt = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger");
+    /*package*/ static final SProperty trigger$DqFK = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger");
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Event$dL = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event");
+    /*package*/ static final SConcept Event$Du = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event");
   }
 }

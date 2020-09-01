@@ -17,9 +17,9 @@ public class GoTo_TextGen extends TextGenDescriptorBase {
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.append("(");
-    tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.reference$4Y_U), LINKS.context$s1p0), PROPS.name$tAp1));
-    if (isNotEmptyString(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.value$Inwu))) {
-      tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.value$Inwu));
+    tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.reference$CRqV), LINKS.context$NeaP), PROPS.name$MnvL));
+    if (isNotEmptyString(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.value$FVMn))) {
+      tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.value$FVMn));
     }
     tgs.append(")");
   }
@@ -28,12 +28,12 @@ public class GoTo_TextGen extends TextGenDescriptorBase {
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink reference$4Y_U = MetaAdapterFactory.getContainmentLink(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x6a75f8ea190a0a1L, 0x6a75f8ea1a339e5L, "reference");
-    /*package*/ static final SReferenceLink context$s1p0 = MetaAdapterFactory.getReferenceLink(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x6a75f8ea1a2e649L, 0x6a75f8ea1a2e64aL, "context");
+    /*package*/ static final SContainmentLink reference$CRqV = MetaAdapterFactory.getContainmentLink(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x6a75f8ea190a0a1L, 0x6a75f8ea1a339e5L, "reference");
+    /*package*/ static final SReferenceLink context$NeaP = MetaAdapterFactory.getReferenceLink(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x6a75f8ea1a2e649L, 0x6a75f8ea1a2e64aL, "context");
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty name$tAp1 = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
-    /*package*/ static final SProperty value$Inwu = MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x6a75f8ea190a0a1L, 0x6a75f8ea190a0a4L, "value");
+    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty value$FVMn = MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x6a75f8ea190a0a1L, 0x6a75f8ea190a0a4L, "value");
   }
 }

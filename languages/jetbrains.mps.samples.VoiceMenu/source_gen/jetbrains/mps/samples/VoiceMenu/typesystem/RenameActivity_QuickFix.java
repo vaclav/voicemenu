@@ -19,14 +19,14 @@ public class RenameActivity_QuickFix extends QuickFix_Runtime {
     return "Reset name";
   }
   public void execute(SNode node) {
-    SLinkOperations.getTarget(SNodeFactoryOperations.replaceWithNewChild(node, CONCEPTS.Activity$oQ), LINKS.event$gjCV);
+    SLinkOperations.getTarget(SNodeFactoryOperations.replaceWithNewChild(node, CONCEPTS.Activity$Oz), LINKS.event$pmgi);
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Activity$oQ = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity");
+    /*package*/ static final SConcept Activity$Oz = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity");
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink event$gjCV = MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event");
+    /*package*/ static final SReferenceLink event$pmgi = MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event");
   }
 }

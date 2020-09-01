@@ -44,7 +44,7 @@ public final class DeclareActivity_Intention extends AbstractIntentionDescriptor
     return true;
   }
   private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-    return (SLinkOperations.getTarget(node, LINKS.event$gjCV) == null);
+    return (SLinkOperations.getTarget(node, LINKS.event$pmgi) == null);
   }
   @Override
   public boolean isSurroundWith() {
@@ -69,7 +69,7 @@ public final class DeclareActivity_Intention extends AbstractIntentionDescriptor
 
 
       SNode myNode = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event"));
-      SLinkOperations.setTarget(node, LINKS.event$gjCV, myNode);
+      SLinkOperations.setTarget(node, LINKS.event$pmgi, myNode);
 
       Iterable<EditorCell> contentCells = editorContext.getSelectedCell().getParent().getContentCells();
 
@@ -81,17 +81,17 @@ public final class DeclareActivity_Intention extends AbstractIntentionDescriptor
           counter++;
           if (counter == 3) {
             name = ((EditorCell_Constant) cell).getText().toString();
-            SPropertyOperations.assign(myNode, PROPS.name$tAp1, name);
+            SPropertyOperations.assign(myNode, PROPS.name$MnvL, name);
           }
           if (counter == 5) {
             trigger = ((EditorCell_Constant) cell).getText().toString();
-            SPropertyOperations.assign(myNode, PROPS.trigger$zpYt, trigger);
+            SPropertyOperations.assign(myNode, PROPS.trigger$DqFK, trigger);
           }
         }
       } catch (Exception exception) {
       }
 
-      ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(node), CONCEPTS.Menu$bP), LINKS.events$AIPs)).addElement(myNode);
+      ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(node), CONCEPTS.Menu$By), LINKS.events$gxkh)).addElement(myNode);
     }
     @Override
     public IntentionDescriptor getDescriptor() {
@@ -100,16 +100,16 @@ public final class DeclareActivity_Intention extends AbstractIntentionDescriptor
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink event$gjCV = MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event");
-    /*package*/ static final SContainmentLink events$AIPs = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events");
+    /*package*/ static final SReferenceLink event$pmgi = MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event");
+    /*package*/ static final SContainmentLink events$gxkh = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events");
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty name$tAp1 = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
-    /*package*/ static final SProperty trigger$zpYt = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger");
+    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty trigger$DqFK = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger");
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Menu$bP = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu");
+    /*package*/ static final SConcept Menu$By = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu");
   }
 }

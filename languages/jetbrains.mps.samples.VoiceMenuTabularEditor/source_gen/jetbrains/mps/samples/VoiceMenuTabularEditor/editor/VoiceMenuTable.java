@@ -32,15 +32,15 @@ public class VoiceMenuTable extends AbstractTableModel {
   }
   @Override
   public int getRowCount() {
-    if (ListSequence.fromList(SLinkOperations.getChildren(myNode, LINKS.events$AIPs)).any(new IWhereFilter<SNode>() {
+    if (ListSequence.fromList(SLinkOperations.getChildren(myNode, LINKS.events$gxkh)).any(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
-        return Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$zpYt), "X");
+        return Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$DqFK), "X");
       }
     })) {
-      return SLinkOperations.getChildren(myNode, LINKS.events$AIPs).size();
+      return SLinkOperations.getChildren(myNode, LINKS.events$gxkh).size();
 
     }
-    return SLinkOperations.getChildren(myNode, LINKS.events$AIPs).size() + 1;
+    return SLinkOperations.getChildren(myNode, LINKS.events$gxkh).size() + 1;
   }
   @Override
   public SNode getValueAt(int row, int column) {
@@ -48,26 +48,26 @@ public class VoiceMenuTable extends AbstractTableModel {
       return SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x250921d21a8746e5L, 0x90a9a2c74442cfa1L, 0x2c711bd01b0d4082L, "jetbrains.mps.samples.VoiceMenuTabularEditor.structure.Name"));
     }
     if (row >= 1 && (column == 0)) {
-      return ListSequence.fromList(SLinkOperations.getChildren(myNode, LINKS.events$AIPs)).getElement(row - 1);
+      return ListSequence.fromList(SLinkOperations.getChildren(myNode, LINKS.events$gxkh)).getElement(row - 1);
     }
     return null;
   }
   @Override
   public void insertRow(int rowNumber) {
-    SNodeFactoryOperations.addNewChild(myNode, LINKS.events$AIPs, null);
+    SNodeFactoryOperations.addNewChild(myNode, LINKS.events$gxkh, null);
   }
 
   @Override
   public void deleteRow(int rowNumber) {
-    SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(myNode, LINKS.events$AIPs)).getElement(rowNumber));
+    SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(myNode, LINKS.events$gxkh)).getElement(rowNumber));
   }
 
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink events$AIPs = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events");
+    /*package*/ static final SContainmentLink events$gxkh = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events");
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty trigger$zpYt = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger");
+    /*package*/ static final SProperty trigger$DqFK = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger");
   }
 }

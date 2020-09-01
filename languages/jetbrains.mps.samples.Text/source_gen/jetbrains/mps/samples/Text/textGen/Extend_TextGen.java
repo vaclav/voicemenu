@@ -16,24 +16,24 @@ public class Extend_TextGen extends TextGenDescriptorBase {
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.append("exten => ");
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.target$W399));
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.target$k4vc));
     tgs.append(",");
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.priority$W3a7));
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.priority$k4Xe));
     tgs.append(",");
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.action$W3b$));
-    if ((SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.argument$W3nF) != null)) {
-      tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.argument$W3nF));
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.action$k5Eh));
+    if ((SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.argument$kbxE) != null)) {
+      tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.argument$kbxE));
     }
     tgs.newLine();
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty target$W399 = MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f715c9dafL, 0x13a8ce4f715c9db2L, "target");
-    /*package*/ static final SProperty priority$W3a7 = MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f715c9dafL, 0x13a8ce4f715c9db4L, "priority");
-    /*package*/ static final SProperty action$W3b$ = MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f715c9dafL, 0x13a8ce4f715c9db7L, "action");
+    /*package*/ static final SProperty target$k4vc = MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f715c9dafL, 0x13a8ce4f715c9db2L, "target");
+    /*package*/ static final SProperty priority$k4Xe = MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f715c9dafL, 0x13a8ce4f715c9db4L, "priority");
+    /*package*/ static final SProperty action$k5Eh = MetaAdapterFactory.getProperty(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f715c9dafL, 0x13a8ce4f715c9db7L, "action");
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink argument$W3nF = MetaAdapterFactory.getContainmentLink(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f715c9dafL, 0x13a8ce4f715c9dbbL, "argument");
+    /*package*/ static final SContainmentLink argument$kbxE = MetaAdapterFactory.getContainmentLink(0x914c58c4068049cfL, 0x8599f5ced7a657d6L, 0x13a8ce4f715c9dafL, 0x13a8ce4f715c9dbbL, "argument");
   }
 }

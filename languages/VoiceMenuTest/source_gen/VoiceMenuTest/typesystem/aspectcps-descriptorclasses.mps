@@ -3,6 +3,7 @@
   <persistence version="9" />
   <attribute name="checkpoint" value="DescriptorClasses" />
   <attribute name="generation-plan" value="AspectCPS" />
+  <attribute name="user-objects" value="true" />
   <languages />
   <imports>
     <import index="n67j" ref="r:f41754eb-c97d-45df-b0f5-bfd4987c37cf(VoiceMenuTest.typesystem)" />

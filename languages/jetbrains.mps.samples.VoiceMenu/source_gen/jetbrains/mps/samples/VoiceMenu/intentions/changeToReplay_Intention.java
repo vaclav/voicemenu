@@ -35,7 +35,7 @@ public final class changeToReplay_Intention extends AbstractIntentionDescriptor 
     return true;
   }
   private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-    return !((SNodeOperations.isInstanceOf(node, CONCEPTS.Replay$qS)));
+    return !((SNodeOperations.isInstanceOf(node, CONCEPTS.Replay$Q_)));
   }
   @Override
   public boolean isSurroundWith() {
@@ -56,7 +56,7 @@ public final class changeToReplay_Intention extends AbstractIntentionDescriptor 
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SNodeFactoryOperations.replaceWithNewChild(node, CONCEPTS.Replay$qS);
+      SNodeFactoryOperations.replaceWithNewChild(node, CONCEPTS.Replay$Q_);
     }
     @Override
     public IntentionDescriptor getDescriptor() {
@@ -65,6 +65,6 @@ public final class changeToReplay_Intention extends AbstractIntentionDescriptor 
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Replay$qS = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x6b5142eafd54f3f9L, "jetbrains.mps.samples.VoiceMenu.structure.Replay");
+    /*package*/ static final SConcept Replay$Q_ = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x6b5142eafd54f3f9L, "jetbrains.mps.samples.VoiceMenu.structure.Replay");
   }
 }

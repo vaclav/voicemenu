@@ -27,7 +27,7 @@ public class RemoveMainGreeting {
         this.execute_internal(editorContext, node);
       }
       public void execute_internal(EditorContext editorContext, SNode node) {
-        SPropertyOperations.assign(node, PROPS.info$wU3E, "");
+        SPropertyOperations.assign(node, PROPS.info$rXd3, "");
         SelectionUtil.selectCell(editorContext, node, SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
       }
       @Override
@@ -35,7 +35,7 @@ public class RemoveMainGreeting {
         return this.canExecute_internal(editorContext, node);
       }
       public boolean canExecute_internal(EditorContext editorContext, SNode node) {
-        return isNotEmptyString(SPropertyOperations.getString(node, PROPS.info$wU3E));
+        return isNotEmptyString(SPropertyOperations.getString(node, PROPS.info$rXd3));
       }
 
     };
@@ -86,6 +86,6 @@ public class RemoveMainGreeting {
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty info$wU3E = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "info");
+    /*package*/ static final SProperty info$rXd3 = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "info");
   }
 }

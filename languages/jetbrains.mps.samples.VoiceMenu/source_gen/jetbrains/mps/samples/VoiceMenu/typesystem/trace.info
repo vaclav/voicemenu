@@ -25,17 +25,17 @@
       <node id="3026886742210380538" at="39,7,40,0" concept="8" />
       <node id="3026886742210390216" at="42,7,43,66" concept="6" />
       <node id="3026886742210390216" at="43,66,44,236" concept="6" />
-      <node id="3026886742210485738" at="45,9,46,156" concept="6" />
-      <node id="3026886742210486457" at="46,156,47,54" concept="2" />
+      <node id="3026886742210485738" at="45,9,46,179" concept="6" />
+      <node id="3026886742210486457" at="46,179,47,54" concept="2" />
       <node id="3026886742210485738" at="47,54,48,71" concept="2" />
       <node id="3026886742210315233" at="53,50,54,28" concept="7" />
       <node id="3026886742210315233" at="56,68,57,102" concept="7" />
       <node id="3026886742210315233" at="59,30,60,17" concept="7" />
-      <node id="3026886742210315233" at="64,0,65,0" concept="9" trace="activities$AJ0_" />
-      <node id="3026886742210315233" at="65,0,66,0" concept="9" trace="event$gjCV" />
-      <node id="3026886742210315233" at="66,0,67,0" concept="9" trace="events$AIPs" />
-      <node id="3026886742210315233" at="70,0,71,0" concept="9" trace="trigger$zpYt" />
-      <node id="3026886742210315233" at="74,0,75,0" concept="9" trace="Menu$bP" />
+      <node id="3026886742210315233" at="64,0,65,0" concept="9" trace="activities$gAHC" />
+      <node id="3026886742210315233" at="65,0,66,0" concept="9" trace="event$pmgi" />
+      <node id="3026886742210315233" at="66,0,67,0" concept="9" trace="events$gxkh" />
+      <node id="3026886742210315233" at="70,0,71,0" concept="9" trace="trigger$DqFK" />
+      <node id="3026886742210315233" at="74,0,75,0" concept="9" trace="Menu$By" />
       <node id="3026886742210315233" at="27,0,29,0" concept="1" trace="TimeoutIsMissing_NonTypesystemRule#()V" />
       <node id="3026886742210347428" at="31,0,34,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="3026886742210379682" at="36,0,39,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
@@ -105,16 +105,16 @@
       <node id="3026886742211971032" at="36,39,37,131" concept="7" />
       <node id="3026886742211997737" at="40,7,41,66" concept="6" />
       <node id="3026886742211997737" at="41,66,42,236" concept="6" />
-      <node id="3026886742212043110" at="43,9,44,161" concept="6" />
-      <node id="3026886742212043713" at="44,161,45,54" concept="2" />
+      <node id="3026886742212043110" at="43,9,44,184" concept="6" />
+      <node id="3026886742212043713" at="44,184,45,54" concept="2" />
       <node id="3026886742212043110" at="45,54,46,71" concept="2" />
       <node id="3026886742211920796" at="51,50,52,28" concept="7" />
       <node id="3026886742211920796" at="54,68,55,102" concept="7" />
       <node id="3026886742211920796" at="57,30,58,17" concept="7" />
-      <node id="3026886742211920796" at="62,0,63,0" concept="9" trace="events$AIPs" />
-      <node id="3026886742211920796" at="66,0,67,0" concept="9" trace="trigger$zpYt" />
-      <node id="3026886742211920796" at="70,0,71,0" concept="9" trace="Event$dL" />
-      <node id="3026886742211920796" at="71,0,72,0" concept="9" trace="Menu$bP" />
+      <node id="3026886742211920796" at="62,0,63,0" concept="9" trace="events$gxkh" />
+      <node id="3026886742211920796" at="66,0,67,0" concept="9" trace="trigger$DqFK" />
+      <node id="3026886742211920796" at="70,0,71,0" concept="9" trace="Event$Du" />
+      <node id="3026886742211920796" at="71,0,72,0" concept="9" trace="Menu$By" />
       <node id="3026886742211920796" at="27,0,29,0" concept="1" trace="DuplicateTimeout_NonTypesystemRule#()V" />
       <node id="3026886742211960253" at="31,0,34,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="3026886742211970606" at="36,0,39,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
@@ -181,8 +181,8 @@
       <node id="3026886742211997921" at="19,45,20,137" concept="11" />
       <node id="3026886742211998480" at="22,44,23,39" concept="7" />
       <node id="3026886742212026310" at="27,39,28,90" concept="7" />
-      <node id="3026886742211997921" at="34,0,35,0" concept="9" trace="events$AIPs" />
-      <node id="3026886742211997921" at="38,0,39,0" concept="9" trace="trigger$zpYt" />
+      <node id="3026886742211997921" at="34,0,35,0" concept="9" trace="events$gxkh" />
+      <node id="3026886742211997921" at="38,0,39,0" concept="9" trace="trigger$DqFK" />
       <node id="3026886742211997921" at="19,0,22,0" concept="1" trace="RemoveDuplicateTimeouts_QuickFix#()V" />
       <node id="3026886742211997921" at="22,0,25,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <node id="3026886742212025956" at="27,0,30,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
@@ -218,15 +218,15 @@
       <node id="4187501812310997831" at="35,0,36,103" concept="6" />
       <node id="3333261045545355623" at="38,11,39,70" concept="6" />
       <node id="3333261045545355623" at="39,70,40,233" concept="6" />
-      <node id="3333261045545381147" at="41,13,42,159" concept="6" />
-      <node id="3333261045546251410" at="42,159,43,66" concept="2" />
+      <node id="3333261045545381147" at="41,13,42,182" concept="6" />
+      <node id="3333261045546251410" at="42,182,43,66" concept="2" />
       <node id="3333261045545381147" at="43,66,44,75" concept="2" />
       <node id="3333261045545342264" at="52,50,53,32" concept="7" />
       <node id="3333261045545342264" at="55,68,56,102" concept="7" />
       <node id="3333261045545342264" at="58,30,59,17" concept="7" />
-      <node id="3333261045545342264" at="63,0,64,0" concept="9" trace="PBisFile$hBw1" />
-      <node id="3333261045545342264" at="64,0,65,0" concept="9" trace="playback$y04k" />
-      <node id="3333261045545342264" at="68,0,69,0" concept="9" trace="Activity$oQ" />
+      <node id="3333261045545342264" at="63,0,64,0" concept="9" trace="PBisFile$1XWc" />
+      <node id="3333261045545342264" at="64,0,65,0" concept="9" trace="playback$XRxp" />
+      <node id="3333261045545342264" at="68,0,69,0" concept="9" trace="Activity$Oz" />
       <node id="3333261045545342264" at="24,0,26,0" concept="1" trace="PlayBacktoFile_NonTypesystemRule#()V" />
       <node id="2725727231243547872" at="31,0,34,9" concept="4" />
       <node id="3333261045545342264" at="52,0,55,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
@@ -296,16 +296,16 @@
       <node id="3333261045543348045" at="36,0,37,103" concept="6" />
       <node id="4187501812310882417" at="39,11,40,70" concept="6" />
       <node id="4187501812310882417" at="40,70,41,233" concept="6" />
-      <node id="4187501812310882418" at="42,13,43,159" concept="6" />
-      <node id="4187501812310882419" at="43,159,44,66" concept="2" />
+      <node id="4187501812310882418" at="42,13,43,182" concept="6" />
+      <node id="4187501812310882419" at="43,182,44,66" concept="2" />
       <node id="4187501812310882418" at="44,66,45,75" concept="2" />
       <node id="4187501812310865205" at="48,9,49,0" concept="8" />
       <node id="3333261045545357147" at="54,50,55,32" concept="7" />
       <node id="3333261045545357147" at="57,68,58,102" concept="7" />
       <node id="3333261045545357147" at="60,30,61,17" concept="7" />
-      <node id="3333261045545357147" at="65,0,66,0" concept="9" trace="PBisFile$hBw1" />
-      <node id="3333261045545357147" at="66,0,67,0" concept="9" trace="playback$y04k" />
-      <node id="3333261045545357147" at="70,0,71,0" concept="9" trace="Activity$oQ" />
+      <node id="3333261045545357147" at="65,0,66,0" concept="9" trace="PBisFile$1XWc" />
+      <node id="3333261045545357147" at="66,0,67,0" concept="9" trace="playback$XRxp" />
+      <node id="3333261045545357147" at="70,0,71,0" concept="9" trace="Activity$Oz" />
       <node id="3333261045545357147" at="24,0,26,0" concept="1" trace="PlayBacktoText_NonTypesystemRule#()V" />
       <node id="2725727231243761615" at="31,0,34,9" concept="4" />
       <node id="3333261045545357147" at="54,0,57,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
@@ -369,7 +369,7 @@
       <node id="3333261045545358825" at="13,39,14,137" concept="11" />
       <node id="3333261045545359414" at="16,44,17,37" concept="7" />
       <node id="3333261045545369196" at="19,35,20,126" concept="2" />
-      <node id="3333261045545358825" at="24,0,25,0" concept="9" trace="PBisFile$hBw1" />
+      <node id="3333261045545358825" at="24,0,25,0" concept="9" trace="PBisFile$1XWc" />
       <node id="3333261045545358825" at="13,0,16,0" concept="1" trace="TransformPBtoText_QuickFix#()V" />
       <node id="3333261045545358825" at="16,0,19,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <node id="3333261045545358825" at="19,0,22,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
@@ -392,7 +392,7 @@
       <node id="3333261045545375258" at="13,39,14,137" concept="11" />
       <node id="3333261045545375271" at="16,44,17,25" concept="7" />
       <node id="3333261045545375263" at="19,35,20,125" concept="2" />
-      <node id="3333261045545375258" at="24,0,25,0" concept="9" trace="PBisFile$hBw1" />
+      <node id="3333261045545375258" at="24,0,25,0" concept="9" trace="PBisFile$1XWc" />
       <node id="3333261045545375258" at="13,0,16,0" concept="1" trace="TransformPBtoFile_QuickFix#()V" />
       <node id="3333261045545375258" at="16,0,19,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <node id="3333261045545375258" at="19,0,22,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
@@ -425,14 +425,14 @@
       <node id="4187501812303045206" at="27,0,28,171" concept="6" />
       <node id="4187501812303303783" at="30,9,31,68" concept="6" />
       <node id="4187501812303303783" at="31,68,32,244" concept="6" />
-      <node id="4187501812303303786" at="33,11,34,151" concept="6" />
-      <node id="4187501812303303786" at="34,151,35,73" concept="2" />
+      <node id="4187501812303303786" at="33,11,34,174" concept="6" />
+      <node id="4187501812303303786" at="34,174,35,73" concept="2" />
       <node id="4077690302630256858" at="38,7,39,0" concept="8" />
       <node id="3333261045548758831" at="43,50,44,32" concept="7" />
       <node id="3333261045548758831" at="46,68,47,102" concept="7" />
       <node id="3333261045548758831" at="49,30,50,17" concept="7" />
-      <node id="3333261045548758831" at="54,0,55,0" concept="9" trace="playback$y04k" />
-      <node id="3333261045548758831" at="58,0,59,0" concept="9" trace="Activity$oQ" />
+      <node id="3333261045548758831" at="54,0,55,0" concept="9" trace="playback$XRxp" />
+      <node id="3333261045548758831" at="58,0,59,0" concept="9" trace="Activity$Oz" />
       <node id="3333261045548758831" at="22,0,24,0" concept="1" trace="TypoFile_NonTypesystemRule#()V" />
       <node id="3333261045548758831" at="43,0,46,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="3333261045548758831" at="46,0,49,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
@@ -487,9 +487,9 @@
       <node id="4187501812310395181" at="23,149,24,0" concept="8" />
       <node id="3333261045548950677" at="24,0,25,122" concept="2" />
       <node id="3333261045549024754" at="25,122,26,108" concept="2" />
-      <node id="3333261045548888742" at="30,0,31,0" concept="9" trace="Activity$oQ" />
-      <node id="3333261045548888742" at="34,0,35,0" concept="9" trace="playback$y04k" />
-      <node id="3333261045548888742" at="35,0,36,0" concept="9" trace="PBisFile$hBw1" />
+      <node id="3333261045548888742" at="30,0,31,0" concept="9" trace="Activity$Oz" />
+      <node id="3333261045548888742" at="34,0,35,0" concept="9" trace="playback$XRxp" />
+      <node id="3333261045548888742" at="35,0,36,0" concept="9" trace="PBisFile$1XWc" />
       <node id="3333261045548888742" at="15,0,18,0" concept="1" trace="suggestWav_QuickFix#()V" />
       <node id="3333261045548888742" at="18,0,21,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <node id="3333261045548888742" at="21,0,28,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
@@ -523,13 +523,13 @@
       <node id="4175991680191044129" at="31,164,32,0" concept="8" />
       <node id="5283568769205995659" at="32,0,33,0" concept="8" />
       <node id="4323022269989140300" at="33,0,34,0" concept="8" />
-      <node id="4323022269988352616" at="38,0,39,0" concept="9" trace="Event$dL" />
-      <node id="4323022269988352616" at="39,0,40,0" concept="9" trace="Activity$oQ" />
-      <node id="4323022269988352616" at="40,0,41,0" concept="9" trace="Command$a6" />
-      <node id="4323022269988352616" at="44,0,45,0" concept="9" trace="name$tAp1" />
-      <node id="4323022269988352616" at="48,0,49,0" concept="9" trace="activities$AJ0_" />
-      <node id="4323022269988352616" at="49,0,50,0" concept="9" trace="commands$giUr" />
-      <node id="4323022269988352616" at="50,0,51,0" concept="9" trace="event$gjCV" />
+      <node id="4323022269988352616" at="38,0,39,0" concept="9" trace="Event$Du" />
+      <node id="4323022269988352616" at="39,0,40,0" concept="9" trace="Activity$Oz" />
+      <node id="4323022269988352616" at="40,0,41,0" concept="9" trace="Command$_N" />
+      <node id="4323022269988352616" at="44,0,45,0" concept="9" trace="name$MnvL" />
+      <node id="4323022269988352616" at="48,0,49,0" concept="9" trace="activities$gAHC" />
+      <node id="4323022269988352616" at="49,0,50,0" concept="9" trace="commands$oZIM" />
+      <node id="4323022269988352616" at="50,0,51,0" concept="9" trace="event$pmgi" />
       <node id="4323022269988352616" at="20,0,23,0" concept="1" trace="InitilizeEvent_QuickFix#()V" />
       <node id="4323022269988352616" at="23,0,26,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <node id="4323022269988352616" at="26,0,36,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
@@ -555,15 +555,15 @@
     <file name="CheckEmptyMenu_NonTypesystemRule.java">
       <node id="2036874050862901567" at="28,7,29,66" concept="6" />
       <node id="2036874050862901567" at="29,66,30,228" concept="6" />
-      <node id="2036874050862901698" at="31,9,32,152" concept="6" />
-      <node id="2036874050862901698" at="32,152,33,71" concept="2" />
+      <node id="2036874050862901698" at="31,9,32,175" concept="6" />
+      <node id="2036874050862901698" at="32,175,33,71" concept="2" />
       <node id="4323022269989322689" at="38,50,39,28" concept="7" />
       <node id="4323022269989322689" at="41,68,42,102" concept="7" />
       <node id="4323022269989322689" at="44,30,45,17" concept="7" />
-      <node id="4323022269989322689" at="49,0,50,0" concept="9" trace="activities$AJ0_" />
-      <node id="4323022269989322689" at="50,0,51,0" concept="9" trace="commands$giUr" />
-      <node id="4323022269989322689" at="51,0,52,0" concept="9" trace="events$AIPs" />
-      <node id="4323022269989322689" at="55,0,56,0" concept="9" trace="Menu$bP" />
+      <node id="4323022269989322689" at="49,0,50,0" concept="9" trace="activities$gAHC" />
+      <node id="4323022269989322689" at="50,0,51,0" concept="9" trace="commands$oZIM" />
+      <node id="4323022269989322689" at="51,0,52,0" concept="9" trace="events$gxkh" />
+      <node id="4323022269989322689" at="55,0,56,0" concept="9" trace="Menu$By" />
       <node id="4323022269989322689" at="24,0,26,0" concept="1" trace="CheckEmptyMenu_NonTypesystemRule#()V" />
       <node id="4323022269989322689" at="38,0,41,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="4323022269989322689" at="41,0,44,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
@@ -622,11 +622,11 @@
       <node id="6259652592377444852" at="32,58,33,0" concept="8" />
       <node id="4323022269989435250" at="33,0,34,137" concept="2" />
       <node id="4323022269989413383" at="34,137,35,142" concept="2" />
-      <node id="4323022269989410101" at="39,0,40,0" concept="9" trace="event$gjCV" />
-      <node id="4323022269989410101" at="40,0,41,0" concept="9" trace="events$AIPs" />
-      <node id="4323022269989410101" at="41,0,42,0" concept="9" trace="activities$AJ0_" />
-      <node id="4323022269989410101" at="45,0,46,0" concept="9" trace="name$tAp1" />
-      <node id="4323022269989410101" at="49,0,50,0" concept="9" trace="Menu$bP" />
+      <node id="4323022269989410101" at="39,0,40,0" concept="9" trace="event$pmgi" />
+      <node id="4323022269989410101" at="40,0,41,0" concept="9" trace="events$gxkh" />
+      <node id="4323022269989410101" at="41,0,42,0" concept="9" trace="activities$gAHC" />
+      <node id="4323022269989410101" at="45,0,46,0" concept="9" trace="name$MnvL" />
+      <node id="4323022269989410101" at="49,0,50,0" concept="9" trace="Menu$By" />
       <node id="4323022269989410101" at="20,0,23,0" concept="1" trace="InitiliazeMenu_QuickFix#()V" />
       <node id="4323022269989410101" at="23,0,26,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <node id="4323022269989410101" at="26,0,37,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
@@ -674,17 +674,17 @@
     <file name="CheckBackAtRoot_NonTypesystemRule.java">
       <node id="5461963470562044700" at="26,11,27,70" concept="6" />
       <node id="5461963470562044700" at="27,70,28,241" concept="6" />
-      <node id="5461963470562123749" at="29,13,30,154" concept="6" />
-      <node id="5461963470562123749" at="30,154,31,75" concept="2" />
-      <node id="5461963470564086859" at="33,13,34,157" concept="6" />
-      <node id="5461963470564086859" at="34,157,35,75" concept="2" />
+      <node id="5461963470562123749" at="29,13,30,177" concept="6" />
+      <node id="5461963470562123749" at="30,177,31,75" concept="2" />
+      <node id="5461963470564086859" at="33,13,34,180" concept="6" />
+      <node id="5461963470564086859" at="34,180,35,75" concept="2" />
       <node id="5461963470562033577" at="42,50,43,28" concept="7" />
       <node id="5461963470562033577" at="45,68,46,102" concept="7" />
       <node id="5461963470562033577" at="48,30,49,17" concept="7" />
-      <node id="5461963470562033577" at="53,0,54,0" concept="9" trace="Activity$oQ" />
-      <node id="5461963470562033577" at="54,0,55,0" concept="9" trace="Menu$bP" />
-      <node id="5461963470562033577" at="55,0,56,0" concept="9" trace="WorkSpace$ao" />
-      <node id="5461963470562033577" at="56,0,57,0" concept="9" trace="Back$8A" />
+      <node id="5461963470562033577" at="53,0,54,0" concept="9" trace="Activity$Oz" />
+      <node id="5461963470562033577" at="54,0,55,0" concept="9" trace="Menu$By" />
+      <node id="5461963470562033577" at="55,0,56,0" concept="9" trace="WorkSpace$A5" />
+      <node id="5461963470562033577" at="56,0,57,0" concept="9" trace="Back$$j" />
       <node id="5461963470562033577" at="20,0,22,0" concept="1" trace="CheckBackAtRoot_NonTypesystemRule#()V" />
       <node id="5461963470562033577" at="42,0,45,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="5461963470562033577" at="45,0,48,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
@@ -742,7 +742,7 @@
       <node id="5461963470562080096" at="13,33,14,137" concept="11" />
       <node id="5461963470562083617" at="16,44,17,26" concept="7" />
       <node id="5461963470562081775" at="19,35,20,74" concept="2" />
-      <node id="5461963470562080096" at="24,0,25,0" concept="9" trace="Command$a6" />
+      <node id="5461963470562080096" at="24,0,25,0" concept="9" trace="Command$_N" />
       <node id="5461963470562080096" at="13,0,16,0" concept="1" trace="ResetAction_QuickFix#()V" />
       <node id="5461963470562080096" at="16,0,19,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <node id="5461963470562080096" at="19,0,22,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
@@ -772,14 +772,14 @@
       <node id="5461963470562473140" at="33,108,34,0" concept="8" />
       <node id="5461963470562249041" at="37,9,38,106" concept="2" />
       <node id="5461963470562516393" at="38,106,39,0" concept="8" />
-      <node id="5461963470562242047" at="45,0,46,0" concept="9" trace="DirectCall$7C" />
-      <node id="5461963470562242047" at="46,0,47,0" concept="9" trace="Record$69" />
-      <node id="5461963470562242047" at="47,0,48,0" concept="9" trace="GetInfo$95" />
-      <node id="5461963470562242047" at="48,0,49,0" concept="9" trace="Other$87" />
-      <node id="5461963470562242047" at="52,0,53,0" concept="9" trace="isFinal$sgnO" />
-      <node id="5461963470562242047" at="53,0,54,0" concept="9" trace="isFinal$DiZZ" />
-      <node id="5461963470562242047" at="54,0,55,0" concept="9" trace="isFinal$sihs" />
-      <node id="5461963470562242047" at="55,0,56,0" concept="9" trace="isFinal$swjV" />
+      <node id="5461963470562242047" at="45,0,46,0" concept="9" trace="DirectCall$zl" />
+      <node id="5461963470562242047" at="46,0,47,0" concept="9" trace="Record$xQ" />
+      <node id="5461963470562242047" at="47,0,48,0" concept="9" trace="GetInfo$$M" />
+      <node id="5461963470562242047" at="48,0,49,0" concept="9" trace="Other$zO" />
+      <node id="5461963470562242047" at="52,0,53,0" concept="9" trace="isFinal$bKXT" />
+      <node id="5461963470562242047" at="53,0,54,0" concept="9" trace="isFinal$w2re" />
+      <node id="5461963470562242047" at="54,0,55,0" concept="9" trace="isFinal$cFSh" />
+      <node id="5461963470562242047" at="55,0,56,0" concept="9" trace="isFinal$jv5i" />
       <node id="5461963470562242047" at="15,0,18,0" concept="1" trace="SetFinaltoTrue_QuickFix#()V" />
       <node id="5461963470562242047" at="18,0,21,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <node id="5461963470562429558" at="21,35,26,5" concept="12" />
@@ -848,13 +848,13 @@
       <node id="3026886742210583283" at="58,69,59,0" concept="8" />
       <node id="3026886742210583284" at="59,0,60,169" concept="2" />
       <node id="3026886742210583185" at="60,169,61,0" concept="8" />
-      <node id="584072856213844010" at="65,0,66,0" concept="9" trace="events$AIPs" />
-      <node id="584072856213844010" at="66,0,67,0" concept="9" trace="event$gjCV" />
-      <node id="584072856213844010" at="67,0,68,0" concept="9" trace="activities$AJ0_" />
-      <node id="584072856213844010" at="68,0,69,0" concept="9" trace="commands$giUr" />
-      <node id="584072856213844010" at="72,0,73,0" concept="9" trace="trigger$zpYt" />
-      <node id="584072856213844010" at="73,0,74,0" concept="9" trace="name$tAp1" />
-      <node id="584072856213844010" at="74,0,75,0" concept="9" trace="playback$y04k" />
+      <node id="584072856213844010" at="65,0,66,0" concept="9" trace="events$gxkh" />
+      <node id="584072856213844010" at="66,0,67,0" concept="9" trace="event$pmgi" />
+      <node id="584072856213844010" at="67,0,68,0" concept="9" trace="activities$gAHC" />
+      <node id="584072856213844010" at="68,0,69,0" concept="9" trace="commands$oZIM" />
+      <node id="584072856213844010" at="72,0,73,0" concept="9" trace="trigger$DqFK" />
+      <node id="584072856213844010" at="73,0,74,0" concept="9" trace="name$MnvL" />
+      <node id="584072856213844010" at="74,0,75,0" concept="9" trace="playback$XRxp" />
       <node id="584072856213844010" at="21,0,24,0" concept="1" trace="AddMissingTimeout_QuickFix#()V" />
       <node id="584072856213844010" at="24,0,27,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <node id="3026886742211781999" at="30,0,33,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
@@ -904,13 +904,13 @@
     <file name="EmptyWorkspace_NonTypesystemRule.java">
       <node id="6198827212365407562" at="25,7,26,66" concept="6" />
       <node id="6198827212365407562" at="26,66,27,237" concept="6" />
-      <node id="6198827212365459198" at="28,9,29,151" concept="6" />
-      <node id="6198827212365459198" at="29,151,30,71" concept="2" />
+      <node id="6198827212365459198" at="28,9,29,174" concept="6" />
+      <node id="6198827212365459198" at="29,174,30,71" concept="2" />
       <node id="6198827212365401413" at="35,50,36,33" concept="7" />
       <node id="6198827212365401413" at="38,68,39,102" concept="7" />
       <node id="6198827212365401413" at="41,30,42,17" concept="7" />
-      <node id="6198827212365401413" at="46,0,47,0" concept="9" trace="bodyMenu$8UCv" />
-      <node id="6198827212365401413" at="50,0,51,0" concept="9" trace="WorkSpace$ao" />
+      <node id="6198827212365401413" at="46,0,47,0" concept="9" trace="bodyMenu$Of2I" />
+      <node id="6198827212365401413" at="50,0,51,0" concept="9" trace="WorkSpace$A5" />
       <node id="6198827212365401413" at="21,0,23,0" concept="1" trace="EmptyWorkspace_NonTypesystemRule#()V" />
       <node id="6198827212365401413" at="35,0,38,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="6198827212365401413" at="38,0,41,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
@@ -960,8 +960,8 @@
     <file name="InitWorkspace_QuickFix.java">
       <node id="6198827212365444847" at="16,35,17,137" concept="11" />
       <node id="6198827212365444869" at="19,35,20,280" concept="2" />
-      <node id="6198827212365444847" at="24,0,25,0" concept="9" trace="WorkSpace$ao" />
-      <node id="6198827212365444847" at="28,0,29,0" concept="9" trace="bodyMenu$8UCv" />
+      <node id="6198827212365444847" at="24,0,25,0" concept="9" trace="WorkSpace$A5" />
+      <node id="6198827212365444847" at="28,0,29,0" concept="9" trace="bodyMenu$Of2I" />
       <node id="6198827212365444847" at="16,0,19,0" concept="1" trace="InitWorkspace_QuickFix#()V" />
       <node id="6198827212365444847" at="19,0,22,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="6198827212365444847" at="16,35,17,137" />
@@ -981,17 +981,17 @@
       <node id="6428598319198827305" at="33,41,34,287" concept="7" />
       <node id="6218942490161504715" at="37,9,38,68" concept="6" />
       <node id="6218942490161504715" at="38,68,39,261" concept="6" />
-      <node id="6218942490161504717" at="40,11,41,155" concept="6" />
-      <node id="6218942490161504717" at="41,155,42,73" concept="2" />
-      <node id="6218942490161504718" at="44,11,45,155" concept="6" />
-      <node id="6218942490161504718" at="45,155,46,73" concept="2" />
+      <node id="6218942490161504717" at="40,11,41,178" concept="6" />
+      <node id="6218942490161504717" at="41,178,42,73" concept="2" />
+      <node id="6218942490161504718" at="44,11,45,178" concept="6" />
+      <node id="6218942490161504718" at="45,178,46,73" concept="2" />
       <node id="6428598319198780334" at="52,50,53,28" concept="7" />
       <node id="6428598319198780334" at="55,68,56,102" concept="7" />
       <node id="6428598319198780334" at="58,30,59,17" concept="7" />
-      <node id="6428598319198780334" at="63,0,64,0" concept="9" trace="activities$AJ0_" />
-      <node id="6428598319198780334" at="64,0,65,0" concept="9" trace="event$gjCV" />
-      <node id="6428598319198780334" at="68,0,69,0" concept="9" trace="trigger$zpYt" />
-      <node id="6428598319198780334" at="72,0,73,0" concept="9" trace="Menu$bP" />
+      <node id="6428598319198780334" at="63,0,64,0" concept="9" trace="activities$gAHC" />
+      <node id="6428598319198780334" at="64,0,65,0" concept="9" trace="event$pmgi" />
+      <node id="6428598319198780334" at="68,0,69,0" concept="9" trace="trigger$DqFK" />
+      <node id="6428598319198780334" at="72,0,73,0" concept="9" trace="Menu$By" />
       <node id="6428598319198780334" at="27,0,29,0" concept="1" trace="CheckMultipleActivitiesOneEvent_NonTypesystemRule#()V" />
       <node id="6428598319198820448" at="33,0,36,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="6428598319198780334" at="52,0,55,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
@@ -1059,14 +1059,14 @@
     <file name="CheckPhoneButtons_NonTypesystemRule.java">
       <node id="2036874050862904852" at="27,7,28,66" concept="6" />
       <node id="2036874050862904852" at="28,66,29,259" concept="6" />
-      <node id="2036874050862904928" at="30,9,31,152" concept="6" />
-      <node id="2036874050862904928" at="31,152,32,71" concept="2" />
+      <node id="2036874050862904928" at="30,9,31,175" concept="6" />
+      <node id="2036874050862904928" at="31,175,32,71" concept="2" />
       <node id="6587365532662476321" at="35,5,36,0" concept="8" />
       <node id="6587365532662446244" at="38,50,39,29" concept="7" />
       <node id="6587365532662446244" at="41,68,42,102" concept="7" />
       <node id="6587365532662446244" at="44,30,45,17" concept="7" />
-      <node id="6587365532662446244" at="49,0,50,0" concept="9" trace="trigger$zpYt" />
-      <node id="6587365532662446244" at="53,0,54,0" concept="9" trace="Event$dL" />
+      <node id="6587365532662446244" at="49,0,50,0" concept="9" trace="trigger$DqFK" />
+      <node id="6587365532662446244" at="53,0,54,0" concept="9" trace="Event$Du" />
       <node id="6587365532662446244" at="22,0,24,0" concept="1" trace="CheckPhoneButtons_NonTypesystemRule#()V" />
       <node id="6587365532662446244" at="38,0,41,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="6587365532662446244" at="41,0,44,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
@@ -1121,10 +1121,10 @@
       <node id="6934546058172469236" at="32,50,33,32" concept="7" />
       <node id="6934546058172469236" at="35,68,36,102" concept="7" />
       <node id="6934546058172469236" at="38,30,39,17" concept="7" />
-      <node id="6934546058172469236" at="43,0,44,0" concept="9" trace="Menu$bP" />
-      <node id="6934546058172469236" at="44,0,45,0" concept="9" trace="Action$b6" />
-      <node id="6934546058172469236" at="45,0,46,0" concept="9" trace="Activity$oQ" />
-      <node id="6934546058172469236" at="49,0,50,0" concept="9" trace="event$gjCV" />
+      <node id="6934546058172469236" at="43,0,44,0" concept="9" trace="Menu$By" />
+      <node id="6934546058172469236" at="44,0,45,0" concept="9" trace="Action$AN" />
+      <node id="6934546058172469236" at="45,0,46,0" concept="9" trace="Activity$Oz" />
+      <node id="6934546058172469236" at="49,0,50,0" concept="9" trace="event$pmgi" />
       <node id="6934546058172469236" at="22,0,24,0" concept="1" trace="CheckEmptyACtivity_NonTypesystemRule#()V" />
       <node id="6934546058172469236" at="32,0,35,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="6934546058172469236" at="35,0,38,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
@@ -1171,20 +1171,20 @@
       <node id="7167187293241776143" at="32,41,33,346" concept="7" />
       <node id="2036874050862857652" at="37,9,38,68" concept="6" />
       <node id="2036874050862857652" at="38,68,39,242" concept="6" />
-      <node id="2036874050862857809" at="40,11,41,155" concept="6" />
-      <node id="2036874050862857810" at="41,155,42,127" concept="2" />
+      <node id="2036874050862857809" at="40,11,41,178" concept="6" />
+      <node id="2036874050862857810" at="41,178,42,127" concept="2" />
       <node id="2036874050862857816" at="42,127,43,61" concept="2" />
       <node id="2036874050862857809" at="43,61,44,73" concept="2" />
       <node id="7167187293241760276" at="50,50,51,29" concept="7" />
       <node id="7167187293241760276" at="53,68,54,102" concept="7" />
       <node id="7167187293241760276" at="56,30,57,17" concept="7" />
       <node id="5842359129972782683" at="59,55,60,43" concept="7" />
-      <node id="7167187293241760276" at="64,0,65,0" concept="9" trace="Activity$oQ" />
-      <node id="7167187293241760276" at="65,0,66,0" concept="9" trace="Menu$bP" />
-      <node id="7167187293241760276" at="66,0,67,0" concept="9" trace="Event$dL" />
-      <node id="7167187293241760276" at="70,0,71,0" concept="9" trace="event$gjCV" />
-      <node id="7167187293241760276" at="74,0,75,0" concept="9" trace="trigger$zpYt" />
-      <node id="7167187293241760276" at="75,0,76,0" concept="9" trace="name$tAp1" />
+      <node id="7167187293241760276" at="64,0,65,0" concept="9" trace="Activity$Oz" />
+      <node id="7167187293241760276" at="65,0,66,0" concept="9" trace="Menu$By" />
+      <node id="7167187293241760276" at="66,0,67,0" concept="9" trace="Event$Du" />
+      <node id="7167187293241760276" at="70,0,71,0" concept="9" trace="event$pmgi" />
+      <node id="7167187293241760276" at="74,0,75,0" concept="9" trace="trigger$DqFK" />
+      <node id="7167187293241760276" at="75,0,76,0" concept="9" trace="name$MnvL" />
       <node id="7167187293241760276" at="27,0,29,0" concept="1" trace="CheckEventImplemented_NonTypesystemRule#()V" />
       <node id="7167187293241775953" at="32,0,35,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="7167187293241760276" at="50,0,53,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
@@ -1251,8 +1251,8 @@
       <node id="7660908927727107433" at="15,36,16,137" concept="11" />
       <node id="7660908927727107992" at="18,44,19,24" concept="7" />
       <node id="7660908927727200345" at="21,35,22,120" concept="2" />
-      <node id="7660908927727107433" at="26,0,27,0" concept="9" trace="Activity$oQ" />
-      <node id="7660908927727107433" at="30,0,31,0" concept="9" trace="event$gjCV" />
+      <node id="7660908927727107433" at="26,0,27,0" concept="9" trace="Activity$Oz" />
+      <node id="7660908927727107433" at="30,0,31,0" concept="9" trace="event$pmgi" />
       <node id="7660908927727107433" at="15,0,18,0" concept="1" trace="RenameActivity_QuickFix#()V" />
       <node id="7660908927727107433" at="18,0,21,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <node id="7660908927727107433" at="21,0,24,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
@@ -1300,9 +1300,9 @@
       <node id="7325093694380763704" at="51,5,52,205" concept="2" />
       <node id="7325093694380788767" at="52,205,53,0" concept="8" />
       <node id="1392947290826044398" at="53,0,54,0" concept="8" />
-      <node id="7660908927727296557" at="58,0,59,0" concept="9" trace="events$AIPs" />
-      <node id="7660908927727296557" at="62,0,63,0" concept="9" trace="trigger$zpYt" />
-      <node id="7660908927727296557" at="66,0,67,0" concept="9" trace="Event$dL" />
+      <node id="7660908927727296557" at="58,0,59,0" concept="9" trace="events$gxkh" />
+      <node id="7660908927727296557" at="62,0,63,0" concept="9" trace="trigger$DqFK" />
+      <node id="7660908927727296557" at="66,0,67,0" concept="9" trace="Event$Du" />
       <node id="7660908927727296557" at="21,0,24,0" concept="1" trace="SuggestNumber_QuickFix#()V" />
       <node id="7660908927727296557" at="24,0,27,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <node id="1392947290826031939" at="48,0,51,5" concept="3" />
@@ -1357,17 +1357,17 @@
       <node id="7660908927727797720" at="29,39,30,143" concept="7" />
       <node id="8455589616260334561" at="33,7,34,66" concept="6" />
       <node id="8455589616260334561" at="34,66,35,237" concept="6" />
-      <node id="8455589616260334563" at="36,9,37,151" concept="6" />
-      <node id="8455589616260334563" at="37,151,38,71" concept="2" />
-      <node id="8455589616260334564" at="40,9,41,152" concept="6" />
-      <node id="8455589616260334565" at="41,152,42,125" concept="2" />
+      <node id="8455589616260334563" at="36,9,37,174" concept="6" />
+      <node id="8455589616260334563" at="37,174,38,71" concept="2" />
+      <node id="8455589616260334564" at="40,9,41,175" concept="6" />
+      <node id="8455589616260334565" at="41,175,42,125" concept="2" />
       <node id="8455589616260334564" at="42,125,43,71" concept="2" />
       <node id="7660908927727797697" at="48,50,49,29" concept="7" />
       <node id="7660908927727797697" at="51,68,52,102" concept="7" />
       <node id="7660908927727797697" at="54,30,55,17" concept="7" />
-      <node id="7660908927727797697" at="59,0,60,0" concept="9" trace="Event$dL" />
-      <node id="7660908927727797697" at="60,0,61,0" concept="9" trace="Menu$bP" />
-      <node id="7660908927727797697" at="64,0,65,0" concept="9" trace="trigger$zpYt" />
+      <node id="7660908927727797697" at="59,0,60,0" concept="9" trace="Event$Du" />
+      <node id="7660908927727797697" at="60,0,61,0" concept="9" trace="Menu$By" />
+      <node id="7660908927727797697" at="64,0,65,0" concept="9" trace="trigger$DqFK" />
       <node id="7660908927727797697" at="25,0,27,0" concept="1" trace="CheckDuplicateNumber_NonTypesystemRule#()V" />
       <node id="7660908927727797718" at="29,0,32,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="7660908927727797697" at="48,0,51,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />

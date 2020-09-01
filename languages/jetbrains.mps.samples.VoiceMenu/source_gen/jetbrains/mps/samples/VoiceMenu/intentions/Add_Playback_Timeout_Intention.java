@@ -36,7 +36,7 @@ public final class Add_Playback_Timeout_Intention extends AbstractIntentionDescr
     return true;
   }
   private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-    return isEmptyString(SPropertyOperations.getString(node, PROPS.playback$OvLo));
+    return isEmptyString(SPropertyOperations.getString(node, PROPS.playback$Veml));
   }
   @Override
   public boolean isSurroundWith() {
@@ -57,7 +57,7 @@ public final class Add_Playback_Timeout_Intention extends AbstractIntentionDescr
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SPropertyOperations.assign(node, PROPS.playback$OvLo, "Timeout");
+      SPropertyOperations.assign(node, PROPS.playback$Veml, "Timeout");
       SelectionUtil.selectCell(editorContext, node, "*" + CellIdManager.createPropertyId("duration"));
     }
     @Override
@@ -66,10 +66,10 @@ public final class Add_Playback_Timeout_Intention extends AbstractIntentionDescr
     }
   }
   private static boolean isEmptyString(String str) {
-    return str == null || str.length() == 0;
+    return str == null || str.isEmpty();
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty playback$OvLo = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x34fad0c9f5b34402L, "playback");
+    /*package*/ static final SProperty playback$Veml = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x34fad0c9f5b34402L, "playback");
   }
 }

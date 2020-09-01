@@ -27,7 +27,7 @@ public class RemoveGreeting {
         this.execute_internal(editorContext, node);
       }
       public void execute_internal(EditorContext editorContext, SNode node) {
-        SPropertyOperations.assign(node, PROPS.playback$y04k, "");
+        SPropertyOperations.assign(node, PROPS.playback$XRxp, "");
         SelectionUtil.selectCell(editorContext, node, SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
 
 
@@ -37,7 +37,7 @@ public class RemoveGreeting {
         return this.canExecute_internal(editorContext, node);
       }
       public boolean canExecute_internal(EditorContext editorContext, SNode node) {
-        return isNotEmptyString(SPropertyOperations.getString(node, PROPS.playback$y04k));
+        return isNotEmptyString(SPropertyOperations.getString(node, PROPS.playback$XRxp));
       }
 
     };
@@ -88,6 +88,6 @@ public class RemoveGreeting {
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty playback$y04k = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback");
+    /*package*/ static final SProperty playback$XRxp = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback");
   }
 }

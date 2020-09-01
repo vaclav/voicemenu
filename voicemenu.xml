@@ -6,8 +6,8 @@
   <tstamp>
     <format property="date" pattern="yyyyMMdd" />
   </tstamp>
-  <property name="build.number" value="201.SNAPSHOT" />
-  <property name="mps_home" location="${basedir}/../../MPS 2020.1" />
+  <property name="build.number" value="202.SNAPSHOT" />
+  <property name="mps_home" location="${basedir}/../../MPS 2020.2" />
   <property name="artifacts.mpsStandalone" location="${mps_home}" />
   <property name="artifacts.mpsDebuggerPlugin" location="${mps_home}/plugins" />
   <property name="artifacts.mpsMakePlugin" location="${mps_home}/plugins" />
@@ -16,6 +16,10 @@
   <property name="artifacts.mpsTesting" location="${mps_home}/plugins" />
   <property name="artifacts.mpsDebuggerPlugin" location="${mps_home}/plugins" />
   <property file="${artifacts.mpsStandalone}/build.properties" prefix="import.mpsStandalone" />
+  <property name="mpsBootstrapCore.version.major" value="${import.mpsStandalone.mpsBootstrapCore.version.major}" />
+  <property name="mpsBootstrapCore.version.minor" value="${import.mpsStandalone.mpsBootstrapCore.version.minor}" />
+  <property name="mpsBootstrapCore.version.bugfixNr" value="${import.mpsStandalone.mpsBootstrapCore.version.bugfixNr}" />
+  <property name="mpsBootstrapCore.version.eap" value="${import.mpsStandalone.mpsBootstrapCore.version.eap}" />
   <property name="mpsBootstrapCore.version" value="${import.mpsStandalone.mpsBootstrapCore.version}" />
   <property name="environment" value="env" />
   <property name="env.JAVA_HOME" value="${java.home}/.." />
@@ -65,7 +69,7 @@
     <mkdir dir="${build.tmp}/default/branding.jar/idea" />
     <echoxml file="${build.tmp}/default/branding.jar/idea/IdeaApplicationInfo.xml">
       <component>
-        <version codename="voicemenu" major="2019" minor="2" eap="false" />
+        <version codename="voicemenu" major="2020" minor="2" eap="false" />
         <company name="JetBrains" url="http://www.jetbrains.com" copyrightStart="JetBrains s.r.o." />
         <build number="${build.number}" date="${date}" />
         <logo url="/IVR_splash.png" textcolor="002387" progressColor="234908" progressX="0" progressY="395" progressHeight="5" />
@@ -215,7 +219,7 @@
       <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>voicemenu</id>
         <name>voicemenu</name>
-        <version>2019.3</version>
+        <version>2020.2</version>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.ide.make</depends>
         
@@ -1544,7 +1548,7 @@
       <fileset file="${basedir}/solutions/TTSLibrary/lib/mbrola.jar" />
     </copy>
     <echo file="${build.layout}/build.number">build.number=${build.number}${line.separator}date=${date}${line.separator}version=1.0</echo>
-    <echo file="${build.layout}/build.properties">voicemenu.date=${date}${line.separator}voicemenu.build.number=${build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
+    <echo file="${build.layout}/build.properties">voicemenu.date=${date}${line.separator}voicemenu.build.number=${build.number}${line.separator}mpsBootstrapCore.version.major=${mpsBootstrapCore.version.major}${line.separator}mpsBootstrapCore.version.minor=${mpsBootstrapCore.version.minor}${line.separator}mpsBootstrapCore.version.bugfixNr=${mpsBootstrapCore.version.bugfixNr}${line.separator}mpsBootstrapCore.version.eap=${mpsBootstrapCore.version.eap}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
   </target>
   
   <target name="buildDependents" />

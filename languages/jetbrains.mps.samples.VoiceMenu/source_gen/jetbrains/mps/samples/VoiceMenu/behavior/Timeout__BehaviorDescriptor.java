@@ -27,8 +27,8 @@ public final class Timeout__BehaviorDescriptor extends BaseBHDescriptor {
 
   private static void ___init___(@NotNull SNode __thisNode__) {
 
-    SLinkOperations.setTarget(__thisNode__, LINKS.Action$6awV, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x6b5142eafd54f3f9L, "jetbrains.mps.samples.VoiceMenu.structure.Replay")));
-    SPropertyOperations.assign(__thisNode__, PROPS.duration$kl_u, 7);
+    SLinkOperations.setTarget(__thisNode__, LINKS.Action$uVoi, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x6b5142eafd54f3f9L, "jetbrains.mps.samples.VoiceMenu.structure.Replay")));
+    SPropertyOperations.assign(__thisNode__, PROPS.duration$mi_f, 7);
   }
 
 
@@ -77,10 +77,10 @@ public final class Timeout__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink Action$6awV = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0xbed5e5797d28d77L, "Action");
+    /*package*/ static final SContainmentLink Action$uVoi = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0xbed5e5797d28d77L, "Action");
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty duration$kl_u = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0xbed5e5797b645bcL, "duration");
+    /*package*/ static final SProperty duration$mi_f = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0xbed5e5797b645bcL, "duration");
   }
 }

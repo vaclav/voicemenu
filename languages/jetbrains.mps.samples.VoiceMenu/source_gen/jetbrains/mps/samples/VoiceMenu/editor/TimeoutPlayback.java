@@ -24,8 +24,8 @@ public class TimeoutPlayback {
         this.execute_internal(editorContext, node);
       }
       public void execute_internal(EditorContext editorContext, SNode node) {
-        if (Objects.equals(SPropertyOperations.getString(node, PROPS.playback$OvLo), "Timeout")) {
-          SPropertyOperations.assign(node, PROPS.playback$OvLo, " ");
+        if (Objects.equals(SPropertyOperations.getString(node, PROPS.playback$Veml), "Timeout")) {
+          SPropertyOperations.assign(node, PROPS.playback$Veml, " ");
           SelectionUtil.selectCell(editorContext, node, "*" + CellIdManager.createPropertyId("duration"));
           SelectionUtil.selectCell(editorContext, node, "*" + CellIdManager.createPropertyId("playback"));
         }
@@ -76,6 +76,6 @@ public class TimeoutPlayback {
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty playback$OvLo = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x34fad0c9f5b34402L, "playback");
+    /*package*/ static final SProperty playback$Veml = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x34fad0c9f5b34402L, "playback");
   }
 }

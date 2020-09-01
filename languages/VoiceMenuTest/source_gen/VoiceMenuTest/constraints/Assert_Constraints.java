@@ -26,12 +26,12 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class Assert_Constraints extends BaseConstraintsDescriptor {
   public Assert_Constraints() {
-    super(CONCEPTS.Assert$T3);
+    super(CONCEPTS.Assert$Fi);
   }
 
   @Override
   protected Map<SReferenceLink, ReferenceConstraintsDescriptor> getSpecifiedReferences() {
-    BaseReferenceConstraintsDescriptor d0 = new BaseReferenceConstraintsDescriptor(LINKS.expectedEvent$ZeYz, this) {
+    BaseReferenceConstraintsDescriptor d0 = new BaseReferenceConstraintsDescriptor(LINKS.expectedEvent$5c5c, this) {
       @Override
       public boolean hasOwnScopeProvider() {
         return true;
@@ -46,7 +46,7 @@ public class Assert_Constraints extends BaseConstraintsDescriptor {
           }
           @Override
           public Scope createScope(final ReferenceConstraintsContext _context) {
-            List<SNode> events = SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getContainingRoot(_context.getContextNode()), CONCEPTS.VoiceMenuTestCase$8m), LINKS.workspaceToTest$xMNi), CONCEPTS.Event$dL, false, new SAbstractConcept[]{});
+            List<SNode> events = SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getContainingRoot(_context.getContextNode()), CONCEPTS.VoiceMenuTestCase$U_), LINKS.workspaceToTest$OyBX), CONCEPTS.Event$Du, false, new SAbstractConcept[]{});
             return ListScope.forNamedElements(events);
           }
         };
@@ -59,13 +59,13 @@ public class Assert_Constraints extends BaseConstraintsDescriptor {
   private static final SNodePointer breakingNode_g42j4u_a0a0a0a0a1a0a0a0c = new SNodePointer("r:f13c684f-5a73-4f94-a84e-78c195b9a56b(VoiceMenuTest.constraints)", "8281000289632442912");
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Assert$T3 = MetaAdapterFactory.getConcept(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3887030a6L, "VoiceMenuTest.structure.Assert");
-    /*package*/ static final SConcept VoiceMenuTestCase$8m = MetaAdapterFactory.getConcept(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0cL, "VoiceMenuTest.structure.VoiceMenuTestCase");
-    /*package*/ static final SConcept Event$dL = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event");
+    /*package*/ static final SConcept Assert$Fi = MetaAdapterFactory.getConcept(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3887030a6L, "VoiceMenuTest.structure.Assert");
+    /*package*/ static final SConcept VoiceMenuTestCase$U_ = MetaAdapterFactory.getConcept(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0cL, "VoiceMenuTest.structure.VoiceMenuTestCase");
+    /*package*/ static final SConcept Event$Du = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event");
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink expectedEvent$ZeYz = MetaAdapterFactory.getReferenceLink(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3887030a6L, 0x72ec05e38870a891L, "expectedEvent");
-    /*package*/ static final SReferenceLink workspaceToTest$xMNi = MetaAdapterFactory.getReferenceLink(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0cL, 0x72ec05e388705231L, "workspaceToTest");
+    /*package*/ static final SReferenceLink expectedEvent$5c5c = MetaAdapterFactory.getReferenceLink(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3887030a6L, 0x72ec05e38870a891L, "expectedEvent");
+    /*package*/ static final SReferenceLink workspaceToTest$OyBX = MetaAdapterFactory.getReferenceLink(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0cL, 0x72ec05e388705231L, "workspaceToTest");
   }
 }

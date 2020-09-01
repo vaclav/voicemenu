@@ -46,7 +46,7 @@ public final class ShowToolbar_Intention extends AbstractIntentionDescriptor imp
     @Override
     public String getDescription(final SNode node, final EditorContext editorContext) {
 
-      if (!(SPropertyOperations.getBoolean(node, PROPS.toolbar$cda3))) {
+      if (!(SPropertyOperations.getBoolean(node, PROPS.toolbar$qdja))) {
         return "Show Toolbar";
       } else {
         return "Hide Toolbar";
@@ -55,10 +55,10 @@ public final class ShowToolbar_Intention extends AbstractIntentionDescriptor imp
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
 
-      if (SPropertyOperations.getBoolean(node, PROPS.toolbar$cda3)) {
-        SPropertyOperations.assign(node, PROPS.toolbar$cda3, false);
+      if (SPropertyOperations.getBoolean(node, PROPS.toolbar$qdja)) {
+        SPropertyOperations.assign(node, PROPS.toolbar$qdja, false);
       } else {
-        SPropertyOperations.assign(node, PROPS.toolbar$cda3, true);
+        SPropertyOperations.assign(node, PROPS.toolbar$qdja, true);
       }
 
     }
@@ -69,6 +69,6 @@ public final class ShowToolbar_Intention extends AbstractIntentionDescriptor imp
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty toolbar$cda3 = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar");
+    /*package*/ static final SProperty toolbar$qdja = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar");
   }
 }

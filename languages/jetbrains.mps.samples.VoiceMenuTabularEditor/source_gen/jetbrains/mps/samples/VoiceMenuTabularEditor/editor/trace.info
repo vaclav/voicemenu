@@ -238,9 +238,9 @@
       <node id="2892639838852258035" at="183,60,184,40" concept="1" />
       <node id="2892639838852258035" at="184,40,185,34" concept="1" />
       <node id="2892639838852258035" at="185,34,186,22" concept="6" />
-      <node id="6772988411135921610" at="190,0,191,0" concept="8" trace="events$AIPs" />
-      <node id="6772988411135921610" at="191,0,192,0" concept="8" trace="activities$AJ0_" />
-      <node id="6772988411135921610" at="195,0,196,0" concept="8" trace="Activity$oQ" />
+      <node id="6772988411135921610" at="190,0,191,0" concept="8" trace="events$gxkh" />
+      <node id="6772988411135921610" at="191,0,192,0" concept="8" trace="activities$gAHC" />
+      <node id="6772988411135921610" at="195,0,196,0" concept="8" trace="Activity$Oz" />
       <node id="6772988411135921610" at="36,0,38,0" concept="2" trace="myNode" />
       <node id="6772988411135921610" at="113,0,115,0" concept="2" trace="myNode" />
       <node id="6772988411135921610" at="50,0,53,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -475,13 +475,13 @@
       <node id="3202371390660791351" at="229,49,230,63" concept="1" />
       <node id="3202371390660791326" at="230,63,231,40" concept="1" />
       <node id="3202371390660791326" at="231,40,232,22" concept="6" />
-      <node id="3202371390660800359" at="234,52,235,44" concept="6" />
-      <node id="7167187293242402066" at="239,0,240,0" concept="8" trace="trigger$zpYt" />
-      <node id="7167187293242402066" at="240,0,241,0" concept="8" trace="name$tAp1" />
-      <node id="7167187293242402066" at="244,0,245,0" concept="8" trace="Menu$bP" />
-      <node id="7167187293242402066" at="245,0,246,0" concept="8" trace="PropertyAttribute$jT" />
-      <node id="7167187293242402066" at="249,0,250,0" concept="8" trace="activities$AJ0_" />
-      <node id="7167187293242402066" at="250,0,251,0" concept="8" trace="event$gjCV" />
+      <node id="3202371390660800359" at="234,52,235,40" concept="6" />
+      <node id="7167187293242402066" at="239,0,240,0" concept="8" trace="trigger$DqFK" />
+      <node id="7167187293242402066" at="240,0,241,0" concept="8" trace="name$MnvL" />
+      <node id="7167187293242402066" at="244,0,245,0" concept="8" trace="Menu$By" />
+      <node id="7167187293242402066" at="245,0,246,0" concept="8" trace="PropertyAttribute$Gb" />
+      <node id="7167187293242402066" at="249,0,250,0" concept="8" trace="activities$gAHC" />
+      <node id="7167187293242402066" at="250,0,251,0" concept="8" trace="event$pmgi" />
       <node id="7167187293242402066" at="47,0,49,0" concept="2" trace="myNode" />
       <node id="7167187293242402066" at="61,0,64,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="6587365532662359708" at="72,40,75,5" concept="3" />
@@ -537,7 +537,7 @@
       <scope id="7167187293242402066" at="205,41,206,118" />
       <scope id="7167187293242402066" at="214,15,215,40" />
       <scope id="3001497302588274052" at="220,39,221,90" />
-      <scope id="3202371390660800359" at="234,52,235,44" />
+      <scope id="3202371390660800359" at="234,52,235,40" />
       <scope id="7167187293242402066" at="50,93,52,18" />
       <scope id="7167187293242402066" at="140,74,142,145">
         <var name="manager" id="7167187293242402066" />
@@ -659,8 +659,8 @@
       <node id="7167187293246096860" at="52,5,53,16" concept="6" />
       <node id="3919338464394830549" at="56,40,57,72" concept="1" />
       <node id="3919338464394886048" at="61,40,62,132" concept="1" />
-      <node id="7167187293246022004" at="67,0,68,0" concept="8" trace="events$AIPs" />
-      <node id="7167187293246022004" at="71,0,72,0" concept="8" trace="trigger$zpYt" />
+      <node id="7167187293246022004" at="67,0,68,0" concept="8" trace="events$gxkh" />
+      <node id="7167187293246022004" at="71,0,72,0" concept="8" trace="trigger$DqFK" />
       <node id="4175991680186081906" at="36,0,39,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="3202371390658007103" at="46,48,49,5" concept="3" />
       <node id="7483705179651268901" at="49,5,52,5" concept="3" />
@@ -946,13 +946,13 @@
       <node id="1178167073667906098" at="470,51,471,36" concept="1" />
       <node id="1178167073667906098" at="471,36,472,24" concept="6" />
       <node id="2702278965990928280" at="475,55,476,43" concept="6" />
-      <node id="8685075283343198617" at="480,0,481,0" concept="8" trace="event$gjCV" />
-      <node id="8685075283343198617" at="481,0,482,0" concept="8" trace="commands$giUr" />
-      <node id="8685075283343198617" at="485,0,486,0" concept="8" trace="trigger$zpYt" />
-      <node id="8685075283343198617" at="486,0,487,0" concept="8" trace="playback$y04k" />
-      <node id="8685075283343198617" at="487,0,488,0" concept="8" trace="name$tAp1" />
-      <node id="8685075283343198617" at="491,0,492,0" concept="8" trace="LinkAttribute$7j" />
-      <node id="8685075283343198617" at="492,0,493,0" concept="8" trace="PropertyAttribute$jT" />
+      <node id="8685075283343198617" at="480,0,481,0" concept="8" trace="event$pmgi" />
+      <node id="8685075283343198617" at="481,0,482,0" concept="8" trace="commands$oZIM" />
+      <node id="8685075283343198617" at="485,0,486,0" concept="8" trace="trigger$DqFK" />
+      <node id="8685075283343198617" at="486,0,487,0" concept="8" trace="playback$XRxp" />
+      <node id="8685075283343198617" at="487,0,488,0" concept="8" trace="name$MnvL" />
+      <node id="8685075283343198617" at="491,0,492,0" concept="8" trace="LinkAttribute$v_" />
+      <node id="8685075283343198617" at="492,0,493,0" concept="8" trace="PropertyAttribute$Gb" />
       <node id="8685075283343198617" at="58,0,60,0" concept="2" trace="myNode" />
       <node id="6587365532662423865" at="179,0,181,0" concept="2" trace="myNode" />
       <node id="6587365532662605413" at="298,0,300,0" concept="2" trace="myNode" />

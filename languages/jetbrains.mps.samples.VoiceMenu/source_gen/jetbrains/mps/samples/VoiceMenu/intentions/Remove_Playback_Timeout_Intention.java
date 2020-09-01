@@ -36,7 +36,7 @@ public final class Remove_Playback_Timeout_Intention extends AbstractIntentionDe
     return true;
   }
   private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-    return isNotEmptyString(SPropertyOperations.getString(node, PROPS.playback$OvLo));
+    return isNotEmptyString(SPropertyOperations.getString(node, PROPS.playback$Veml));
 
   }
   @Override
@@ -58,7 +58,7 @@ public final class Remove_Playback_Timeout_Intention extends AbstractIntentionDe
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SPropertyOperations.assign(node, PROPS.playback$OvLo, "");
+      SPropertyOperations.assign(node, PROPS.playback$Veml, "");
       SelectionUtil.selectCell(editorContext, node, "*" + CellIdManager.createPropertyId("duration"));
     }
     @Override
@@ -71,6 +71,6 @@ public final class Remove_Playback_Timeout_Intention extends AbstractIntentionDe
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty playback$OvLo = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x34fad0c9f5b34402L, "playback");
+    /*package*/ static final SProperty playback$Veml = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0x34fad0c9f5b34402L, "playback");
   }
 }

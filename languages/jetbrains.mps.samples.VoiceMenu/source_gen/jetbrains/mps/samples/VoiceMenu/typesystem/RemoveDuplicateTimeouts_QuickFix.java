@@ -23,18 +23,18 @@ public class RemoveDuplicateTimeouts_QuickFix extends QuickFix_Runtime {
     return "Remove Duplicate Timeouts";
   }
   public void execute(SNode node) {
-    SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(((SNode) RemoveDuplicateTimeouts_QuickFix.this.getField("menu")[0]), LINKS.events$AIPs)).findFirst(new IWhereFilter<SNode>() {
+    SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(((SNode) RemoveDuplicateTimeouts_QuickFix.this.getField("menu")[0]), LINKS.events$gxkh)).findFirst(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
-        return Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$zpYt), "X");
+        return Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$DqFK), "X");
       }
     }));
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink events$AIPs = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events");
+    /*package*/ static final SContainmentLink events$gxkh = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events");
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty trigger$zpYt = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger");
+    /*package*/ static final SProperty trigger$DqFK = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger");
   }
 }

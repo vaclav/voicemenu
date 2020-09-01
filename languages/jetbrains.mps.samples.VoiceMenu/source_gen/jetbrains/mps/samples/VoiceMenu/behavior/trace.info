@@ -31,7 +31,7 @@
       <node id="3712338390306327775" at="58,14,59,58" concept="10" />
       <node id="3712338390306327775" at="65,48,66,22" concept="5" />
       <node id="3712338390306327775" at="71,40,72,19" concept="5" />
-      <node id="3712338390306327775" at="76,0,77,0" concept="7" trace="commands$giUr" />
+      <node id="3712338390306327775" at="76,0,77,0" concept="7" trace="commands$oZIM" />
       <node id="3712338390306327775" at="31,0,33,0" concept="0" trace="Activity__BehaviorDescriptor#()V" />
       <node id="3712338390306327775" at="26,0,29,0" concept="8" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="3712338390306327775" at="41,49,44,5" concept="2" />
@@ -101,14 +101,14 @@
       <node id="5283568769203058872" at="75,14,76,58" concept="10" />
       <node id="5283568769203058872" at="82,48,83,22" concept="5" />
       <node id="5283568769203058872" at="88,40,89,19" concept="5" />
-      <node id="5283568769203058872" at="93,0,94,0" concept="7" trace="DirectCall$7C" />
-      <node id="5283568769203058872" at="94,0,95,0" concept="7" trace="Other$87" />
-      <node id="5283568769203058872" at="95,0,96,0" concept="7" trace="GetInfo$95" />
-      <node id="5283568769203058872" at="96,0,97,0" concept="7" trace="Record$69" />
-      <node id="5283568769203058872" at="100,0,101,0" concept="7" trace="isFinal$sgnO" />
-      <node id="5283568769203058872" at="101,0,102,0" concept="7" trace="isFinal$swjV" />
-      <node id="5283568769203058872" at="102,0,103,0" concept="7" trace="isFinal$sihs" />
-      <node id="5283568769203058872" at="103,0,104,0" concept="7" trace="isFinal$DiZZ" />
+      <node id="5283568769203058872" at="93,0,94,0" concept="7" trace="DirectCall$zl" />
+      <node id="5283568769203058872" at="94,0,95,0" concept="7" trace="Other$zO" />
+      <node id="5283568769203058872" at="95,0,96,0" concept="7" trace="GetInfo$$M" />
+      <node id="5283568769203058872" at="96,0,97,0" concept="7" trace="Record$xQ" />
+      <node id="5283568769203058872" at="100,0,101,0" concept="7" trace="isFinal$bKXT" />
+      <node id="5283568769203058872" at="101,0,102,0" concept="7" trace="isFinal$jv5i" />
+      <node id="5283568769203058872" at="102,0,103,0" concept="7" trace="isFinal$cFSh" />
+      <node id="5283568769203058872" at="103,0,104,0" concept="7" trace="isFinal$w2re" />
       <node id="5283568769203058872" at="48,0,50,0" concept="0" trace="Action__BehaviorDescriptor#()V" />
       <node id="5283568769203058872" at="58,49,61,5" concept="2" />
       <node id="5283568769203058872" at="70,49,73,5" concept="2" />
@@ -200,8 +200,8 @@
       <node id="6259652592377372617" at="58,14,59,58" concept="10" />
       <node id="6259652592377372617" at="65,48,66,22" concept="5" />
       <node id="6259652592377372617" at="71,40,72,19" concept="5" />
-      <node id="6259652592377372617" at="76,0,77,0" concept="7" trace="default_visible$BwIg" />
-      <node id="6259652592377372617" at="77,0,78,0" concept="7" trace="toolbar$cda3" />
+      <node id="6259652592377372617" at="76,0,77,0" concept="7" trace="default_visible$CFPt" />
+      <node id="6259652592377372617" at="77,0,78,0" concept="7" trace="toolbar$qdja" />
       <node id="6259652592377372617" at="31,0,33,0" concept="0" trace="WorkSpace__BehaviorDescriptor#()V" />
       <node id="6259652592377372617" at="41,49,44,5" concept="2" />
       <node id="6259652592377372617" at="53,49,56,5" concept="2" />
@@ -276,10 +276,10 @@
       <node id="6587365532662515202" at="88,14,89,58" concept="10" />
       <node id="6587365532662515202" at="95,48,96,22" concept="5" />
       <node id="6587365532662515202" at="101,40,102,19" concept="5" />
-      <node id="6587365532662515202" at="106,0,107,0" concept="7" trace="events$AIPs" />
-      <node id="6587365532662515202" at="110,0,111,0" concept="7" trace="Event$dL" />
-      <node id="6587365532662515202" at="111,0,112,0" concept="7" trace="ScopeProvider$M8" />
-      <node id="6587365532662515202" at="115,0,116,0" concept="7" trace="name$tAp1" />
+      <node id="6587365532662515202" at="106,0,107,0" concept="7" trace="events$gxkh" />
+      <node id="6587365532662515202" at="110,0,111,0" concept="7" trace="Event$Du" />
+      <node id="6587365532662515202" at="111,0,112,0" concept="7" trace="ScopeProvider$aq" />
+      <node id="6587365532662515202" at="115,0,116,0" concept="7" trace="name$MnvL" />
       <node id="6587365532662515202" at="39,0,41,0" concept="8" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="6587365532662515202" at="59,0,61,0" concept="0" trace="Menu__BehaviorDescriptor#()V" />
       <node id="6587365532662537158" at="49,0,52,0" concept="3" trace="getName#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
@@ -369,9 +369,9 @@
       <node id="8281000289632920291" at="81,14,82,58" concept="10" />
       <node id="8281000289632920291" at="88,48,89,22" concept="5" />
       <node id="8281000289632920291" at="94,40,95,19" concept="5" />
-      <node id="8281000289632920291" at="99,0,100,0" concept="7" trace="name$tAp1" />
-      <node id="8281000289632920291" at="103,0,104,0" concept="7" trace="Activity$oQ" />
-      <node id="8281000289632920291" at="107,0,108,0" concept="7" trace="event$gjCV" />
+      <node id="8281000289632920291" at="99,0,100,0" concept="7" trace="name$MnvL" />
+      <node id="8281000289632920291" at="103,0,104,0" concept="7" trace="Activity$Oz" />
+      <node id="8281000289632920291" at="107,0,108,0" concept="7" trace="event$pmgi" />
       <node id="8281000289632920291" at="37,0,39,0" concept="8" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8281000289632920291" at="52,0,54,0" concept="0" trace="Event__BehaviorDescriptor#()V" />
       <node id="8281000289632351389" at="42,0,45,0" concept="3" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
@@ -461,8 +461,8 @@
       <node id="859446834200811189" at="62,14,63,58" concept="10" />
       <node id="859446834200811189" at="69,48,70,22" concept="5" />
       <node id="859446834200811189" at="75,40,76,19" concept="5" />
-      <node id="859446834200811189" at="80,0,81,0" concept="7" trace="Action$6awV" />
-      <node id="859446834200811189" at="84,0,85,0" concept="7" trace="duration$kl_u" />
+      <node id="859446834200811189" at="80,0,81,0" concept="7" trace="Action$uVoi" />
+      <node id="859446834200811189" at="84,0,85,0" concept="7" trace="duration$mi_f" />
       <node id="859446834200811189" at="35,0,37,0" concept="0" trace="Timeout__BehaviorDescriptor#()V" />
       <node id="859446834200811189" at="45,49,48,5" concept="2" />
       <node id="859446834200811189" at="57,49,60,5" concept="2" />

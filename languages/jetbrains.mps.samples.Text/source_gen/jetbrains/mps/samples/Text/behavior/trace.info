@@ -29,7 +29,7 @@
       <node id="8465164147135908618" at="57,14,58,58" concept="9" />
       <node id="8465164147135908618" at="64,48,65,22" concept="5" />
       <node id="8465164147135908618" at="70,40,71,19" concept="5" />
-      <node id="8465164147135908618" at="75,0,76,0" concept="6" trace="typeVisible$vDa5" />
+      <node id="8465164147135908618" at="75,0,76,0" concept="6" trace="typeVisible$zuWg" />
       <node id="8465164147135908618" at="30,0,32,0" concept="0" trace="WorkSpace__BehaviorDescriptor#()V" />
       <node id="8465164147135908618" at="25,0,28,0" concept="7" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8465164147135908618" at="40,49,43,5" concept="2" />

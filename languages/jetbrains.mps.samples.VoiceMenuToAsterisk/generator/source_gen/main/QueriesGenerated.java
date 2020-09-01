@@ -52,51 +52,51 @@ public class QueriesGenerated extends QueryProviderBase {
     super(1);
   }
   public static Object propertyMacro_GetValue_1_0(final PropertyMacroContext _context) {
-    return _context.createUniqueName(SPropertyOperations.getString(_context.getNode(), PROPS.name$tAp1), null);
+    return _context.createUniqueName(SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL), null);
   }
   public static Object propertyMacro_GetValue_1_1(final PropertyMacroContext _context) {
-    if (isNotEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.default_path$_FMO))) {
-      return ("/" + SPropertyOperations.getString(_context.getNode(), PROPS.default_path$_FMO) + "/MPS_ASTERISK/home.wav").replaceAll("//", "/");
+    if (isNotEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.default_path$K32T))) {
+      return ("/" + SPropertyOperations.getString(_context.getNode(), PROPS.default_path$K32T) + "/MPS_ASTERISK/home.wav").replaceAll("//", "/");
     } else {
       return "/etc/asterisk/MPS_ASTERISK/home.wav";
     }
   }
   public static Object propertyMacro_GetValue_1_2(final PropertyMacroContext _context) {
-    Integer tmp = SPropertyOperations.getInteger(SLinkOperations.getTarget(_context.getNode(), LINKS.timeout$3Y$V), PROPS.duration$kl_u);
+    Integer tmp = SPropertyOperations.getInteger(SLinkOperations.getTarget(_context.getNode(), LINKS.timeout$r9ki), PROPS.duration$mi_f);
     if (isNotEmptyString(tmp.toString()) && tmp != 0) {
       return tmp.toString();
     }
     return "5";
   }
   public static Object propertyMacro_GetValue_1_3(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.event$gjCV), PROPS.trigger$zpYt);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.event$pmgi), PROPS.trigger$DqFK);
   }
   public static Object propertyMacro_GetValue_1_4(final PropertyMacroContext _context) {
-    return _context.createUniqueName(SPropertyOperations.getString(_context.getNode(), PROPS.name$tAp1) + "TIMEOUT", null);
+    return _context.createUniqueName(SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL) + "TIMEOUT", null);
   }
   public static Object propertyMacro_GetValue_1_5(final PropertyMacroContext _context) {
-    if (isNotEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.default_number$_FAH))) {
-      return SPropertyOperations.getString(_context.getNode(), PROPS.default_number$_FAH);
+    if (isNotEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.default_number$JXbw))) {
+      return SPropertyOperations.getString(_context.getNode(), PROPS.default_number$JXbw);
     } else {
       return "800";
     }
   }
   public static Object propertyMacro_GetValue_1_6(final PropertyMacroContext _context) {
-    return "extensions" + SPropertyOperations.getString(_context.getNode(), PROPS.name$tAp1).replaceAll(" ", "_");
+    return "extensions" + SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL).replaceAll(" ", "_");
   }
   public static Object propertyMacro_GetValue_3_0(final PropertyMacroContext _context) {
-    return _context.createUniqueName(SPropertyOperations.getString(_context.getNode(), PROPS.name$tAp1).replace(" ", "_"), null);
+    return _context.createUniqueName(SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL).replace(" ", "_"), null);
   }
   public static Object propertyMacro_GetValue_3_1(final PropertyMacroContext _context) {
-    String name = SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.event$gjCV), PROPS.trigger$zpYt);
-    for (SNode actvt : Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getNodeAncestors(_context.getNode(), null, false), CONCEPTS.Activity$oQ))) {
-      name = SPropertyOperations.getString(SLinkOperations.getTarget(actvt, LINKS.event$gjCV), PROPS.trigger$zpYt) + name;
+    String name = SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.event$pmgi), PROPS.trigger$DqFK);
+    for (SNode actvt : Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getNodeAncestors(_context.getNode(), null, false), CONCEPTS.Activity$Oz))) {
+      name = SPropertyOperations.getString(SLinkOperations.getTarget(actvt, LINKS.event$pmgi), PROPS.trigger$DqFK) + name;
     }
-    name += SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.event$gjCV), PROPS.name$tAp1);
+    name += SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.event$pmgi), PROPS.name$MnvL);
 
     String path;
-    if (isNotEmptyString(SPropertyOperations.getString(Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getNodeAncestors(_context.getNode(), null, false), CONCEPTS.WorkSpace$ao)).first(), PROPS.default_path$_FMO))) {
-      path = ("/" + SPropertyOperations.getString(Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getNodeAncestors(_context.getNode(), null, false), CONCEPTS.WorkSpace$ao)).first(), PROPS.default_path$_FMO) + "/MPS_ASTERISK/").replaceAll("//", "/");
+    if (isNotEmptyString(SPropertyOperations.getString(Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getNodeAncestors(_context.getNode(), null, false), CONCEPTS.WorkSpace$A5)).first(), PROPS.default_path$K32T))) {
+      path = ("/" + SPropertyOperations.getString(Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getNodeAncestors(_context.getNode(), null, false), CONCEPTS.WorkSpace$A5)).first(), PROPS.default_path$K32T) + "/MPS_ASTERISK/").replaceAll("//", "/");
     } else {
       path = "/etc/asterisk/MPS_ASTERISK/";
     }
@@ -106,118 +106,118 @@ public class QueriesGenerated extends QueryProviderBase {
 
   }
   public static Object propertyMacro_GetValue_3_2(final PropertyMacroContext _context) {
-    return "\"" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.event$gjCV), PROPS.name$tAp1) + "\"";
+    return "\"" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.event$pmgi), PROPS.name$MnvL) + "\"";
   }
   public static Object propertyMacro_GetValue_3_3(final PropertyMacroContext _context) {
-    Integer tmp = SPropertyOperations.getInteger(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), LINKS.timeout$3Y$V), PROPS.duration$kl_u);
+    Integer tmp = SPropertyOperations.getInteger(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), LINKS.timeout$r9ki), PROPS.duration$mi_f);
     if (isNotEmptyString(tmp.toString()) && tmp != 0) {
       return tmp.toString();
     }
     return "5";
   }
   public static Object propertyMacro_GetValue_3_4(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.trigger$zpYt);
+    return SPropertyOperations.getString(_context.getNode(), PROPS.trigger$DqFK);
   }
   public static Object propertyMacro_GetValue_3_5(final PropertyMacroContext _context) {
-    return _context.createUniqueName(SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.event$gjCV), PROPS.name$tAp1) + "TIMEOUT", null);
+    return _context.createUniqueName(SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.event$pmgi), PROPS.name$MnvL) + "TIMEOUT", null);
   }
   public static Object propertyMacro_GetValue_7_0(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.number$h6MF);
+    return SPropertyOperations.getString(_context.getNode(), PROPS.number$M7Yy);
   }
   public static Object propertyMacro_GetValue_9_0(final PropertyMacroContext _context) {
     return _context.createUniqueName("record", null) + ".wav";
   }
   public static Object propertyMacro_GetValue_12_0(final PropertyMacroContext _context) {
-    return "sip" + SPropertyOperations.getString(_context.getNode(), PROPS.name$tAp1).replaceAll(" ", "_");
+    return "sip" + SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL).replaceAll(" ", "_");
   }
   public static Object referenceMacro_GetReferent_1_0(final ReferenceMacroContext _context) {
-    return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(_context.getNode(), LINKS.event$gjCV), "Event");
+    return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(_context.getNode(), LINKS.event$pmgi), "Event");
   }
   public static Object referenceMacro_GetReferent_3_0(final ReferenceMacroContext _context) {
     return _context.getOutputNodeByInputNodeAndMappingLabel(_context.getNode(), "Event");
   }
   public static Object referenceMacro_GetReferent_3_1(final ReferenceMacroContext _context) {
-    if (!(SNodeOperations.isInstanceOf(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode())), CONCEPTS.WorkSpace$ao))) {
-      return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode())), CONCEPTS.Activity$oQ), LINKS.event$gjCV), "Event");
+    if (!(SNodeOperations.isInstanceOf(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode())), CONCEPTS.WorkSpace$A5))) {
+      return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode())), CONCEPTS.Activity$Oz), LINKS.event$pmgi), "Event");
     } else {
-      return _context.getOutputNodeByInputNodeAndMappingLabel(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), "WS");
+      return _context.getOutputNodeByInputNodeAndMappingLabel(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), "WS");
     }
   }
   public static Object referenceMacro_GetReferent_3_2(final ReferenceMacroContext _context) {
-    if (!(SNodeOperations.isInstanceOf(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode())), CONCEPTS.WorkSpace$ao))) {
-      return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode())), CONCEPTS.Activity$oQ), LINKS.event$gjCV), "Event");
+    if (!(SNodeOperations.isInstanceOf(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode())), CONCEPTS.WorkSpace$A5))) {
+      return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode())), CONCEPTS.Activity$Oz), LINKS.event$pmgi), "Event");
     } else {
-      return _context.getOutputNodeByInputNodeAndMappingLabel(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), "WS");
+      return _context.getOutputNodeByInputNodeAndMappingLabel(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), "WS");
     }
   }
   public static Object referenceMacro_GetReferent_4_0(final ReferenceMacroContext _context) {
-    if (!(SNodeOperations.isInstanceOf(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode()))), CONCEPTS.WorkSpace$ao))) {
-      return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode()))), CONCEPTS.Activity$oQ), LINKS.event$gjCV), "Event");
+    if (!(SNodeOperations.isInstanceOf(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode()))), CONCEPTS.WorkSpace$A5))) {
+      return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode()))), CONCEPTS.Activity$Oz), LINKS.event$pmgi), "Event");
     } else {
-      return _context.getOutputNodeByInputNodeAndMappingLabel(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), "WS");
+      return _context.getOutputNodeByInputNodeAndMappingLabel(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), "WS");
     }
   }
   public static Object referenceMacro_GetReferent_5_0(final ReferenceMacroContext _context) {
-    if (!(SNodeOperations.isInstanceOf(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode()))))), CONCEPTS.WorkSpace$ao))) {
-      return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode()))))), CONCEPTS.Activity$oQ), LINKS.event$gjCV), "Event");
+    if (!(SNodeOperations.isInstanceOf(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode()))))), CONCEPTS.WorkSpace$A5))) {
+      return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode()))))), CONCEPTS.Activity$Oz), LINKS.event$pmgi), "Event");
     } else {
-      return _context.getOutputNodeByInputNodeAndMappingLabel(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), "WS");
+      return _context.getOutputNodeByInputNodeAndMappingLabel(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), "WS");
     }
   }
   public static Object referenceMacro_GetReferent_6_0(final ReferenceMacroContext _context) {
-    if (!(SNodeOperations.isInstanceOf(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode()))), CONCEPTS.WorkSpace$ao))) {
-      return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode()))), CONCEPTS.Activity$oQ), LINKS.event$gjCV), "Event");
+    if (!(SNodeOperations.isInstanceOf(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode()))), CONCEPTS.WorkSpace$A5))) {
+      return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode()))), CONCEPTS.Activity$Oz), LINKS.event$pmgi), "Event");
     } else {
-      return _context.getOutputNodeByInputNodeAndMappingLabel(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), "WS");
+      return _context.getOutputNodeByInputNodeAndMappingLabel(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), "WS");
     }
   }
   public static Object referenceMacro_GetReferent_7_0(final ReferenceMacroContext _context) {
-    if (!(SNodeOperations.isInstanceOf(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode()))), CONCEPTS.WorkSpace$ao))) {
-      return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode()))), CONCEPTS.Activity$oQ), LINKS.event$gjCV), "Event");
+    if (!(SNodeOperations.isInstanceOf(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode()))), CONCEPTS.WorkSpace$A5))) {
+      return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode()))), CONCEPTS.Activity$Oz), LINKS.event$pmgi), "Event");
     } else {
-      return _context.getOutputNodeByInputNodeAndMappingLabel(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), "WS");
+      return _context.getOutputNodeByInputNodeAndMappingLabel(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), "WS");
     }
   }
   public static Object referenceMacro_GetReferent_9_0(final ReferenceMacroContext _context) {
-    if (!(SNodeOperations.isInstanceOf(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode()))), CONCEPTS.WorkSpace$ao))) {
-      return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode()))), CONCEPTS.Activity$oQ), LINKS.event$gjCV), "Event");
+    if (!(SNodeOperations.isInstanceOf(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode()))), CONCEPTS.WorkSpace$A5))) {
+      return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode()))), CONCEPTS.Activity$Oz), LINKS.event$pmgi), "Event");
     } else {
-      return _context.getOutputNodeByInputNodeAndMappingLabel(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), "WS");
+      return _context.getOutputNodeByInputNodeAndMappingLabel(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), "WS");
     }
   }
   public static Object referenceMacro_GetReferent_10_0(final ReferenceMacroContext _context) {
-    if (!(SNodeOperations.isInstanceOf(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode()))))), CONCEPTS.WorkSpace$ao))) {
-      return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode()))))), CONCEPTS.Activity$oQ), LINKS.event$gjCV), "Event");
+    if (!(SNodeOperations.isInstanceOf(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode()))))), CONCEPTS.WorkSpace$A5))) {
+      return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(_context.getNode()))))), CONCEPTS.Activity$Oz), LINKS.event$pmgi), "Event");
     } else {
-      return _context.getOutputNodeByInputNodeAndMappingLabel(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), "WS");
+      return _context.getOutputNodeByInputNodeAndMappingLabel(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), "WS");
     }
   }
   public static boolean ifMacro_Condition_1_0(final IfMacroContext _context) {
-    return isNotEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.info$wU3E));
+    return isNotEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.info$rXd3));
   }
   public static boolean ifMacro_Condition_1_1(final IfMacroContext _context) {
-    return SPropertyOperations.getBoolean(_context.getNode(), PROPS.toolbar$cda3);
+    return SPropertyOperations.getBoolean(_context.getNode(), PROPS.toolbar$qdja);
   }
   public static boolean ifMacro_Condition_1_2(final IfMacroContext _context) {
-    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.timeout$3Y$V), LINKS.Action$6awV), CONCEPTS.Replay$qS);
+    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.timeout$r9ki), LINKS.Action$uVoi), CONCEPTS.Replay$Q_);
   }
   public static boolean ifMacro_Condition_1_3(final IfMacroContext _context) {
-    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.timeout$3Y$V), LINKS.Action$6awV), CONCEPTS.Replay$qS);
+    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.timeout$r9ki), LINKS.Action$uVoi), CONCEPTS.Replay$Q_);
   }
   public static boolean ifMacro_Condition_1_4(final IfMacroContext _context) {
-    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.timeout$3Y$V), LINKS.Action$6awV), CONCEPTS.Back$8A);
+    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.timeout$r9ki), LINKS.Action$uVoi), CONCEPTS.Back$$j);
   }
   public static boolean ifMacro_Condition_1_5(final IfMacroContext _context) {
-    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.timeout$3Y$V), LINKS.Action$6awV), CONCEPTS.Back$8A);
+    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.timeout$r9ki), LINKS.Action$uVoi), CONCEPTS.Back$$j);
   }
   public static boolean ifMacro_Condition_1_6(final IfMacroContext _context) {
 
-    SNode action = SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.timeout$3Y$V), LINKS.Action$6awV);
-    return !((SNodeOperations.isInstanceOf(action, CONCEPTS.Back$8A) || SNodeOperations.isInstanceOf(action, CONCEPTS.Replay$qS)));
+    SNode action = SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.timeout$r9ki), LINKS.Action$uVoi);
+    return !((SNodeOperations.isInstanceOf(action, CONCEPTS.Back$$j) || SNodeOperations.isInstanceOf(action, CONCEPTS.Replay$Q_)));
   }
   public static boolean ifMacro_Condition_1_7(final IfMacroContext _context) {
     try {
-      if (!(SPropertyOperations.getBoolean(SNodeOperations.cast(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.timeout$3Y$V), LINKS.Action$6awV), CONCEPTS.DirectCall$7C), PROPS.isFinal$sgnO))) {
+      if (!(SPropertyOperations.getBoolean(SNodeOperations.cast(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.timeout$r9ki), LINKS.Action$uVoi), CONCEPTS.DirectCall$zl), PROPS.isFinal$bKXT))) {
         return true;
       } else {
         return false;
@@ -226,7 +226,7 @@ public class QueriesGenerated extends QueryProviderBase {
     }
 
     try {
-      if (!(SPropertyOperations.getBoolean(SNodeOperations.cast(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.timeout$3Y$V), LINKS.Action$6awV), CONCEPTS.GetInfo$95), PROPS.isFinal$sihs))) {
+      if (!(SPropertyOperations.getBoolean(SNodeOperations.cast(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.timeout$r9ki), LINKS.Action$uVoi), CONCEPTS.GetInfo$$M), PROPS.isFinal$cFSh))) {
         return true;
       } else {
         return false;
@@ -235,7 +235,7 @@ public class QueriesGenerated extends QueryProviderBase {
     }
 
     try {
-      if (!(SPropertyOperations.getBoolean(SNodeOperations.cast(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.timeout$3Y$V), LINKS.Action$6awV), CONCEPTS.Other$87), PROPS.isFinal$swjV))) {
+      if (!(SPropertyOperations.getBoolean(SNodeOperations.cast(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.timeout$r9ki), LINKS.Action$uVoi), CONCEPTS.Other$zO), PROPS.isFinal$jv5i))) {
         return true;
       } else {
         return false;
@@ -244,7 +244,7 @@ public class QueriesGenerated extends QueryProviderBase {
     }
 
     try {
-      if (!(SPropertyOperations.getBoolean(SNodeOperations.cast(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.timeout$3Y$V), LINKS.Action$6awV), CONCEPTS.Record$69), PROPS.isFinal$DiZZ))) {
+      if (!(SPropertyOperations.getBoolean(SNodeOperations.cast(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.timeout$r9ki), LINKS.Action$uVoi), CONCEPTS.Record$xQ), PROPS.isFinal$w2re))) {
         return true;
       } else {
         return false;
@@ -255,93 +255,93 @@ public class QueriesGenerated extends QueryProviderBase {
     return false;
   }
   public static boolean ifMacro_Condition_3_0(final IfMacroContext _context) {
-    if (isNotEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.playback$y04k)) || SNodeOperations.isInstanceOf(ListSequence.fromList(SNodeOperations.getChildren(_context.getNode())).first(), CONCEPTS.Menu$bP)) {
+    if (isNotEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.playback$XRxp)) || SNodeOperations.isInstanceOf(ListSequence.fromList(SNodeOperations.getChildren(_context.getNode())).first(), CONCEPTS.Menu$By)) {
       return true;
     } else {
       return false;
     }
   }
   public static boolean ifMacro_Condition_3_1(final IfMacroContext _context) {
-    if (isNotEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.playback$y04k)) || SNodeOperations.isInstanceOf(ListSequence.fromList(SNodeOperations.getChildren(_context.getNode())).first(), CONCEPTS.Menu$bP)) {
+    if (isNotEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.playback$XRxp)) || SNodeOperations.isInstanceOf(ListSequence.fromList(SNodeOperations.getChildren(_context.getNode())).first(), CONCEPTS.Menu$By)) {
       return false;
     } else {
       return true;
     }
   }
   public static boolean ifMacro_Condition_3_2(final IfMacroContext _context) {
-    return SNodeOperations.isInstanceOf(ListSequence.fromList(SNodeOperations.getChildren(_context.getNode())).first(), CONCEPTS.Menu$bP);
+    return SNodeOperations.isInstanceOf(ListSequence.fromList(SNodeOperations.getChildren(_context.getNode())).first(), CONCEPTS.Menu$By);
   }
   public static boolean ifMacro_Condition_3_3(final IfMacroContext _context) {
     return ListSequence.fromList(SNodeOperations.getChildren(_context.getNode())).any(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
-        return SNodeOperations.isInstanceOf(it, CONCEPTS.Action$b6);
+        return SNodeOperations.isInstanceOf(it, CONCEPTS.Action$AN);
       }
     });
   }
   public static boolean ifMacro_Condition_3_4(final IfMacroContext _context) {
     return ListSequence.fromList(SNodeOperations.getChildren(_context.getNode())).any(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
-        return SNodeOperations.isInstanceOf(it, CONCEPTS.Action$b6);
+        return SNodeOperations.isInstanceOf(it, CONCEPTS.Action$AN);
       }
     });
   }
   public static boolean ifMacro_Condition_3_5(final IfMacroContext _context) {
     return !(ListSequence.fromList(SNodeOperations.getChildren(_context.getNode())).any(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
-        return SNodeOperations.isInstanceOf(it, CONCEPTS.Action$b6);
+        return SNodeOperations.isInstanceOf(it, CONCEPTS.Action$AN);
       }
     }));
   }
   public static boolean ifMacro_Condition_3_6(final IfMacroContext _context) {
     return !(ListSequence.fromList(SNodeOperations.getChildren(_context.getNode())).any(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
-        return SNodeOperations.isInstanceOf(it, CONCEPTS.Action$b6);
+        return SNodeOperations.isInstanceOf(it, CONCEPTS.Action$AN);
       }
     }));
   }
   public static boolean ifMacro_Condition_3_7(final IfMacroContext _context) {
     return !(ListSequence.fromList(SNodeOperations.getChildren(_context.getNode())).any(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
-        return SNodeOperations.isInstanceOf(it, CONCEPTS.Action$b6);
+        return SNodeOperations.isInstanceOf(it, CONCEPTS.Action$AN);
       }
     }));
   }
   public static boolean ifMacro_Condition_3_8(final IfMacroContext _context) {
     return !(ListSequence.fromList(SNodeOperations.getChildren(_context.getNode())).any(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
-        return SNodeOperations.isInstanceOf(it, CONCEPTS.Action$b6);
+        return SNodeOperations.isInstanceOf(it, CONCEPTS.Action$AN);
       }
     }));
   }
   public static boolean ifMacro_Condition_3_9(final IfMacroContext _context) {
-    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.commands$giUr), CONCEPTS.Menu$bP);
+    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.commands$oZIM), CONCEPTS.Menu$By);
   }
   public static boolean ifMacro_Condition_3_10(final IfMacroContext _context) {
-    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.commands$giUr), CONCEPTS.Menu$bP);
+    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.commands$oZIM), CONCEPTS.Menu$By);
   }
   public static boolean ifMacro_Condition_3_11(final IfMacroContext _context) {
-    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.commands$giUr), CONCEPTS.Menu$bP);
+    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.commands$oZIM), CONCEPTS.Menu$By);
   }
   public static boolean ifMacro_Condition_3_12(final IfMacroContext _context) {
-    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), LINKS.timeout$3Y$V), LINKS.Action$6awV), CONCEPTS.Replay$qS) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.commands$giUr), CONCEPTS.Menu$bP);
+    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), LINKS.timeout$r9ki), LINKS.Action$uVoi), CONCEPTS.Replay$Q_) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.commands$oZIM), CONCEPTS.Menu$By);
   }
   public static boolean ifMacro_Condition_3_13(final IfMacroContext _context) {
-    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), LINKS.timeout$3Y$V), LINKS.Action$6awV), CONCEPTS.Replay$qS) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.commands$giUr), CONCEPTS.Menu$bP);
+    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), LINKS.timeout$r9ki), LINKS.Action$uVoi), CONCEPTS.Replay$Q_) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.commands$oZIM), CONCEPTS.Menu$By);
   }
   public static boolean ifMacro_Condition_3_14(final IfMacroContext _context) {
-    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), LINKS.timeout$3Y$V), LINKS.Action$6awV), CONCEPTS.Back$8A) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.commands$giUr), CONCEPTS.Menu$bP);
+    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), LINKS.timeout$r9ki), LINKS.Action$uVoi), CONCEPTS.Back$$j) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.commands$oZIM), CONCEPTS.Menu$By);
   }
   public static boolean ifMacro_Condition_3_15(final IfMacroContext _context) {
-    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), LINKS.timeout$3Y$V), LINKS.Action$6awV), CONCEPTS.Back$8A) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.commands$giUr), CONCEPTS.Menu$bP);
+    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), LINKS.timeout$r9ki), LINKS.Action$uVoi), CONCEPTS.Back$$j) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.commands$oZIM), CONCEPTS.Menu$By);
   }
   public static boolean ifMacro_Condition_3_16(final IfMacroContext _context) {
-    SNode action = SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), LINKS.timeout$3Y$V), LINKS.Action$6awV);
-    return !((SNodeOperations.isInstanceOf(action, CONCEPTS.Back$8A) || SNodeOperations.isInstanceOf(action, CONCEPTS.Replay$qS))) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.commands$giUr), CONCEPTS.Menu$bP);
+    SNode action = SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), LINKS.timeout$r9ki), LINKS.Action$uVoi);
+    return !((SNodeOperations.isInstanceOf(action, CONCEPTS.Back$$j) || SNodeOperations.isInstanceOf(action, CONCEPTS.Replay$Q_))) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.commands$oZIM), CONCEPTS.Menu$By);
   }
   public static boolean ifMacro_Condition_3_17(final IfMacroContext _context) {
-    if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.commands$giUr), CONCEPTS.Menu$bP)) {
+    if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.commands$oZIM), CONCEPTS.Menu$By)) {
       try {
-        if (!(SPropertyOperations.getBoolean(SNodeOperations.cast(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), LINKS.timeout$3Y$V), LINKS.Action$6awV), CONCEPTS.DirectCall$7C), PROPS.isFinal$sgnO))) {
+        if (!(SPropertyOperations.getBoolean(SNodeOperations.cast(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), LINKS.timeout$r9ki), LINKS.Action$uVoi), CONCEPTS.DirectCall$zl), PROPS.isFinal$bKXT))) {
           return true;
         } else {
           return false;
@@ -350,7 +350,7 @@ public class QueriesGenerated extends QueryProviderBase {
       }
 
       try {
-        if (!(SPropertyOperations.getBoolean(SNodeOperations.cast(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), LINKS.timeout$3Y$V), LINKS.Action$6awV), CONCEPTS.GetInfo$95), PROPS.isFinal$sihs))) {
+        if (!(SPropertyOperations.getBoolean(SNodeOperations.cast(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), LINKS.timeout$r9ki), LINKS.Action$uVoi), CONCEPTS.GetInfo$$M), PROPS.isFinal$cFSh))) {
           return true;
         } else {
           return false;
@@ -359,7 +359,7 @@ public class QueriesGenerated extends QueryProviderBase {
       }
 
       try {
-        if (!(SPropertyOperations.getBoolean(SNodeOperations.cast(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), LINKS.timeout$3Y$V), LINKS.Action$6awV), CONCEPTS.Other$87), PROPS.isFinal$swjV))) {
+        if (!(SPropertyOperations.getBoolean(SNodeOperations.cast(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), LINKS.timeout$r9ki), LINKS.Action$uVoi), CONCEPTS.Other$zO), PROPS.isFinal$jv5i))) {
           return true;
         } else {
           return false;
@@ -368,7 +368,7 @@ public class QueriesGenerated extends QueryProviderBase {
       }
 
       try {
-        if (!(SPropertyOperations.getBoolean(SNodeOperations.cast(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), LINKS.timeout$3Y$V), LINKS.Action$6awV), CONCEPTS.Record$69), PROPS.isFinal$DiZZ))) {
+        if (!(SPropertyOperations.getBoolean(SNodeOperations.cast(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), LINKS.timeout$r9ki), LINKS.Action$uVoi), CONCEPTS.Record$xQ), PROPS.isFinal$w2re))) {
           return true;
         } else {
           return false;
@@ -380,77 +380,77 @@ public class QueriesGenerated extends QueryProviderBase {
     return false;
   }
   public static boolean ifMacro_Condition_3_18(final IfMacroContext _context) {
-    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.commands$giUr), CONCEPTS.Menu$bP);
+    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.commands$oZIM), CONCEPTS.Menu$By);
   }
   public static boolean ifMacro_Condition_4_0(final IfMacroContext _context) {
-    return SPropertyOperations.getBoolean(_context.getNode(), PROPS.isFinal$swjV);
+    return SPropertyOperations.getBoolean(_context.getNode(), PROPS.isFinal$jv5i);
   }
   public static boolean ifMacro_Condition_4_1(final IfMacroContext _context) {
-    return SPropertyOperations.getBoolean(_context.getNode(), PROPS.isFinal$swjV);
+    return SPropertyOperations.getBoolean(_context.getNode(), PROPS.isFinal$jv5i);
   }
   public static boolean ifMacro_Condition_4_2(final IfMacroContext _context) {
-    return !(SPropertyOperations.getBoolean(_context.getNode(), PROPS.isFinal$swjV));
+    return !(SPropertyOperations.getBoolean(_context.getNode(), PROPS.isFinal$jv5i));
   }
   public static boolean ifMacro_Condition_6_0(final IfMacroContext _context) {
-    return SPropertyOperations.getBoolean(_context.getNode(), PROPS.isFinal$sihs);
+    return SPropertyOperations.getBoolean(_context.getNode(), PROPS.isFinal$cFSh);
   }
   public static boolean ifMacro_Condition_6_1(final IfMacroContext _context) {
-    return SPropertyOperations.getBoolean(_context.getNode(), PROPS.isFinal$sihs);
+    return SPropertyOperations.getBoolean(_context.getNode(), PROPS.isFinal$cFSh);
   }
   public static boolean ifMacro_Condition_6_2(final IfMacroContext _context) {
-    return !(SPropertyOperations.getBoolean(_context.getNode(), PROPS.isFinal$sihs));
+    return !(SPropertyOperations.getBoolean(_context.getNode(), PROPS.isFinal$cFSh));
   }
   public static boolean ifMacro_Condition_7_0(final IfMacroContext _context) {
-    return isNotEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.number$h6MF));
+    return isNotEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.number$M7Yy));
   }
   public static boolean ifMacro_Condition_7_1(final IfMacroContext _context) {
-    return SPropertyOperations.getBoolean(_context.getNode(), PROPS.isFinal$sgnO);
+    return SPropertyOperations.getBoolean(_context.getNode(), PROPS.isFinal$bKXT);
   }
   public static boolean ifMacro_Condition_7_2(final IfMacroContext _context) {
-    return SPropertyOperations.getBoolean(_context.getNode(), PROPS.isFinal$sgnO);
+    return SPropertyOperations.getBoolean(_context.getNode(), PROPS.isFinal$bKXT);
   }
   public static boolean ifMacro_Condition_7_3(final IfMacroContext _context) {
-    return !(SPropertyOperations.getBoolean(_context.getNode(), PROPS.isFinal$sgnO));
+    return !(SPropertyOperations.getBoolean(_context.getNode(), PROPS.isFinal$bKXT));
   }
   public static boolean ifMacro_Condition_9_0(final IfMacroContext _context) {
-    return SPropertyOperations.getBoolean(_context.getNode(), PROPS.isFinal$DiZZ);
+    return SPropertyOperations.getBoolean(_context.getNode(), PROPS.isFinal$w2re);
   }
   public static boolean ifMacro_Condition_9_1(final IfMacroContext _context) {
-    return SPropertyOperations.getBoolean(_context.getNode(), PROPS.isFinal$DiZZ);
+    return SPropertyOperations.getBoolean(_context.getNode(), PROPS.isFinal$w2re);
   }
   public static boolean ifMacro_Condition_9_2(final IfMacroContext _context) {
-    return !(SPropertyOperations.getBoolean(_context.getNode(), PROPS.isFinal$DiZZ));
+    return !(SPropertyOperations.getBoolean(_context.getNode(), PROPS.isFinal$w2re));
   }
   public static SNode sourceNodeQuery_1_0(final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(_context.getNode(), LINKS.bodyMenu$8UCv);
+    return SLinkOperations.getTarget(_context.getNode(), LINKS.bodyMenu$Of2I);
   }
   public static SNode sourceNodeQuery_1_1(final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), LINKS.timeout$3Y$V), LINKS.Action$6awV);
+    return SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), LINKS.timeout$r9ki), LINKS.Action$uVoi);
   }
   public static SNode sourceNodeQuery_3_0(final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(_context.getNode(), LINKS.event$gjCV);
+    return SLinkOperations.getTarget(_context.getNode(), LINKS.event$pmgi);
   }
   public static SNode sourceNodeQuery_3_1(final SourceSubstituteMacroNodeContext _context) {
-    return Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getChildren(_context.getNode()), CONCEPTS.Action$b6)).first();
+    return Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getChildren(_context.getNode()), CONCEPTS.Action$AN)).first();
   }
   public static SNode sourceNodeQuery_3_2(final SourceSubstituteMacroNodeContext _context) {
-    return Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getChildren(_context.getNode()), CONCEPTS.Menu$bP)).first();
+    return Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getChildren(_context.getNode()), CONCEPTS.Menu$By)).first();
   }
   public static SNode sourceNodeQuery_3_3(final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$ao, false, false), LINKS.timeout$3Y$V), LINKS.Action$6awV);
+    return SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), LINKS.timeout$r9ki), LINKS.Action$uVoi);
   }
   public static Iterable<SNode> sourceNodesQuery_1_0(final SourceSubstituteMacroNodesContext _context) {
-    return ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(_context.getNode(), LINKS.bodyMenu$8UCv), LINKS.activities$AJ0_)).where(new IWhereFilter<SNode>() {
+    return ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(_context.getNode(), LINKS.bodyMenu$Of2I), LINKS.activities$gAHC)).where(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
-        return !(Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$gjCV), PROPS.trigger$zpYt), "X"));
+        return !(Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), "X"));
       }
     });
   }
   public static Iterable<SNode> sourceNodesQuery_2_0(final SourceSubstituteMacroNodesContext _context) {
-    return SLinkOperations.getChildren(_context.getNode(), LINKS.activities$AJ0_);
+    return SLinkOperations.getChildren(_context.getNode(), LINKS.activities$gAHC);
   }
   public static Iterable<SNode> sourceNodesQuery_3_0(final SourceSubstituteMacroNodesContext _context) {
-    return SLinkOperations.collectMany(SNodeOperations.ofConcept(SNodeOperations.getChildren(_context.getNode()), CONCEPTS.Menu$bP), LINKS.events$AIPs);
+    return SLinkOperations.collectMany(SNodeOperations.ofConcept(SNodeOperations.getChildren(_context.getNode()), CONCEPTS.Menu$By), LINKS.events$gxkh);
   }
   public static void mappingScript_CodeBlock_11(final MappingScriptContext _context) {
 
@@ -467,33 +467,33 @@ public class QueriesGenerated extends QueryProviderBase {
 
 
 
-    for (SNode activity : ListSequence.fromList(SModelOperations.nodes(_context.getModel(), CONCEPTS.Activity$oQ))) {
+    for (SNode activity : ListSequence.fromList(SModelOperations.nodes(_context.getModel(), CONCEPTS.Activity$Oz))) {
       String playback = "";
-      if (isNotEmptyString(SPropertyOperations.getString(activity, PROPS.playback$y04k))) {
-        playback = SPropertyOperations.getString(activity, PROPS.playback$y04k);
+      if (isNotEmptyString(SPropertyOperations.getString(activity, PROPS.playback$XRxp))) {
+        playback = SPropertyOperations.getString(activity, PROPS.playback$XRxp);
       }
 
-      name = SPropertyOperations.getString(SLinkOperations.getTarget(activity, LINKS.event$gjCV), PROPS.trigger$zpYt);
-      for (SNode actvt2 : Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getNodeAncestors(activity, null, false), CONCEPTS.Activity$oQ))) {
-        name = SPropertyOperations.getString(SLinkOperations.getTarget(actvt2, LINKS.event$gjCV), PROPS.trigger$zpYt) + name;
+      name = SPropertyOperations.getString(SLinkOperations.getTarget(activity, LINKS.event$pmgi), PROPS.trigger$DqFK);
+      for (SNode actvt2 : Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getNodeAncestors(activity, null, false), CONCEPTS.Activity$Oz))) {
+        name = SPropertyOperations.getString(SLinkOperations.getTarget(actvt2, LINKS.event$pmgi), PROPS.trigger$DqFK) + name;
       }
-      name += SPropertyOperations.getString(SLinkOperations.getTarget(activity, LINKS.event$gjCV), PROPS.name$tAp1).replaceAll(" ", "_");
+      name += SPropertyOperations.getString(SLinkOperations.getTarget(activity, LINKS.event$pmgi), PROPS.name$MnvL).replaceAll(" ", "_");
       String actionOptions = " ";
 
 
-      if (SNodeOperations.isInstanceOf(ListSequence.fromList(SNodeOperations.getChildren(activity)).first(), CONCEPTS.Menu$bP)) {
-        for (SNode event : Sequence.fromIterable(SLinkOperations.collectMany(SNodeOperations.ofConcept(SNodeOperations.getChildren(activity), CONCEPTS.Menu$bP), LINKS.events$AIPs))) {
-          String trigger = SPropertyOperations.getString(event, PROPS.trigger$zpYt);
+      if (SNodeOperations.isInstanceOf(ListSequence.fromList(SNodeOperations.getChildren(activity)).first(), CONCEPTS.Menu$By)) {
+        for (SNode event : Sequence.fromIterable(SLinkOperations.collectMany(SNodeOperations.ofConcept(SNodeOperations.getChildren(activity), CONCEPTS.Menu$By), LINKS.events$gxkh))) {
+          String trigger = SPropertyOperations.getString(event, PROPS.trigger$DqFK);
           if (Objects.equals(trigger, "*")) {
             trigger = "star";
           }
           if (Objects.equals(trigger, "#")) {
             trigger = "hash";
           }
-          actionOptions = actionOptions + ", for " + SPropertyOperations.getString(event, PROPS.name$tAp1) + " press " + trigger;
+          actionOptions = actionOptions + ", for " + SPropertyOperations.getString(event, PROPS.name$MnvL) + " press " + trigger;
         }
       } else {
-        if (isEmptyString(SPropertyOperations.getString(activity, PROPS.playback$y04k))) {
+        if (isEmptyString(SPropertyOperations.getString(activity, PROPS.playback$XRxp))) {
           continue;
         }
       }
@@ -517,12 +517,12 @@ public class QueriesGenerated extends QueryProviderBase {
 
     String options = " ";
     String playback = "";
-    if (isNotEmptyString(SPropertyOperations.getString(ListSequence.fromList(SModelOperations.roots(_context.getModel(), CONCEPTS.WorkSpace$ao)).first(), PROPS.info$wU3E))) {
-      playback = SPropertyOperations.getString(ListSequence.fromList(SModelOperations.roots(_context.getModel(), CONCEPTS.WorkSpace$ao)).first(), PROPS.info$wU3E);
+    if (isNotEmptyString(SPropertyOperations.getString(ListSequence.fromList(SModelOperations.roots(_context.getModel(), CONCEPTS.WorkSpace$A5)).first(), PROPS.info$rXd3))) {
+      playback = SPropertyOperations.getString(ListSequence.fromList(SModelOperations.roots(_context.getModel(), CONCEPTS.WorkSpace$A5)).first(), PROPS.info$rXd3);
     }
 
-    for (SNode event : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(ListSequence.fromList(SModelOperations.roots(_context.getModel(), CONCEPTS.WorkSpace$ao)).first(), LINKS.bodyMenu$8UCv), LINKS.events$AIPs))) {
-      String trigger = SPropertyOperations.getString(event, PROPS.trigger$zpYt);
+    for (SNode event : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(ListSequence.fromList(SModelOperations.roots(_context.getModel(), CONCEPTS.WorkSpace$A5)).first(), LINKS.bodyMenu$Of2I), LINKS.events$gxkh))) {
+      String trigger = SPropertyOperations.getString(event, PROPS.trigger$DqFK);
       if (Objects.equals(trigger, "*")) {
         trigger = "star";
       }
@@ -530,7 +530,7 @@ public class QueriesGenerated extends QueryProviderBase {
         trigger = "hash";
       }
 
-      options = options + ", for " + SPropertyOperations.getString(event, PROPS.name$tAp1) + " press " + trigger;
+      options = options + ", for " + SPropertyOperations.getString(event, PROPS.name$MnvL) + " press " + trigger;
     }
     if (isMac == true) {
       try {
@@ -938,45 +938,45 @@ public class QueriesGenerated extends QueryProviderBase {
     return str != null && str.length() > 0;
   }
   private static boolean isEmptyString(String str) {
-    return str == null || str.length() == 0;
+    return str == null || str.isEmpty();
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty name$tAp1 = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
-    /*package*/ static final SProperty default_path$_FMO = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path");
-    /*package*/ static final SProperty duration$kl_u = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0xbed5e5797b645bcL, "duration");
-    /*package*/ static final SProperty trigger$zpYt = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger");
-    /*package*/ static final SProperty default_number$_FAH = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640bab9L, "default_number");
-    /*package*/ static final SProperty number$h6MF = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, 0x6b5142eafcce13f1L, "number");
-    /*package*/ static final SProperty info$wU3E = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "info");
-    /*package*/ static final SProperty toolbar$cda3 = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar");
-    /*package*/ static final SProperty isFinal$sgnO = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, 0x420d89797f56bce4L, "isFinal");
-    /*package*/ static final SProperty isFinal$sihs = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, 0x420d89797f56bd37L, "isFinal");
-    /*package*/ static final SProperty isFinal$swjV = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, 0x420d89797f56bde6L, "isFinal");
-    /*package*/ static final SProperty isFinal$DiZZ = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, 0x420d89797f56bd93L, "isFinal");
-    /*package*/ static final SProperty playback$y04k = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback");
+    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty default_path$K32T = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640babdL, "default_path");
+    /*package*/ static final SProperty duration$mi_f = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0xbed5e5797b645bcL, "duration");
+    /*package*/ static final SProperty trigger$DqFK = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger");
+    /*package*/ static final SProperty default_number$JXbw = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x3df50e09c640bab9L, "default_number");
+    /*package*/ static final SProperty number$M7Yy = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, 0x6b5142eafcce13f1L, "number");
+    /*package*/ static final SProperty info$rXd3 = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x25806c66fbe3905cL, "info");
+    /*package*/ static final SProperty toolbar$qdja = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x366449915cdb5586L, "toolbar");
+    /*package*/ static final SProperty isFinal$bKXT = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, 0x420d89797f56bce4L, "isFinal");
+    /*package*/ static final SProperty isFinal$cFSh = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, 0x420d89797f56bd37L, "isFinal");
+    /*package*/ static final SProperty isFinal$jv5i = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, 0x420d89797f56bde6L, "isFinal");
+    /*package*/ static final SProperty isFinal$w2re = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, 0x420d89797f56bd93L, "isFinal");
+    /*package*/ static final SProperty playback$XRxp = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback");
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink timeout$3Y$V = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0xbed5e5797b645beL, "timeout");
-    /*package*/ static final SReferenceLink event$gjCV = MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event");
-    /*package*/ static final SContainmentLink Action$6awV = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0xbed5e5797d28d77L, "Action");
-    /*package*/ static final SContainmentLink commands$giUr = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08d2L, "commands");
-    /*package*/ static final SContainmentLink bodyMenu$8UCv = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x5b6b060cf40204ebL, "bodyMenu");
-    /*package*/ static final SContainmentLink activities$AJ0_ = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities");
-    /*package*/ static final SContainmentLink events$AIPs = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events");
+    /*package*/ static final SContainmentLink timeout$r9ki = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0xbed5e5797b645beL, "timeout");
+    /*package*/ static final SReferenceLink event$pmgi = MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event");
+    /*package*/ static final SContainmentLink Action$uVoi = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0xbed5e5797b645b9L, 0xbed5e5797d28d77L, "Action");
+    /*package*/ static final SContainmentLink commands$oZIM = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08d2L, "commands");
+    /*package*/ static final SContainmentLink bodyMenu$Of2I = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x5b6b060cf40204ebL, "bodyMenu");
+    /*package*/ static final SContainmentLink activities$gAHC = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities");
+    /*package*/ static final SContainmentLink events$gxkh = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events");
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Activity$oQ = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity");
-    /*package*/ static final SConcept WorkSpace$ao = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace");
-    /*package*/ static final SConcept Replay$qS = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x6b5142eafd54f3f9L, "jetbrains.mps.samples.VoiceMenu.structure.Replay");
-    /*package*/ static final SConcept Back$8A = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acaL, "jetbrains.mps.samples.VoiceMenu.structure.Back");
-    /*package*/ static final SConcept DirectCall$7C = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, "jetbrains.mps.samples.VoiceMenu.structure.DirectCall");
-    /*package*/ static final SConcept GetInfo$95 = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, "jetbrains.mps.samples.VoiceMenu.structure.GetInfo");
-    /*package*/ static final SConcept Other$87 = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, "jetbrains.mps.samples.VoiceMenu.structure.Other");
-    /*package*/ static final SConcept Record$69 = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, "jetbrains.mps.samples.VoiceMenu.structure.Record");
-    /*package*/ static final SConcept Menu$bP = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu");
-    /*package*/ static final SConcept Action$b6 = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d133997fdc5L, "jetbrains.mps.samples.VoiceMenu.structure.Action");
+    /*package*/ static final SConcept Activity$Oz = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity");
+    /*package*/ static final SConcept WorkSpace$A5 = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, "jetbrains.mps.samples.VoiceMenu.structure.WorkSpace");
+    /*package*/ static final SConcept Replay$Q_ = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x6b5142eafd54f3f9L, "jetbrains.mps.samples.VoiceMenu.structure.Replay");
+    /*package*/ static final SConcept Back$$j = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acaL, "jetbrains.mps.samples.VoiceMenu.structure.Back");
+    /*package*/ static final SConcept DirectCall$zl = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac8L, "jetbrains.mps.samples.VoiceMenu.structure.DirectCall");
+    /*package*/ static final SConcept GetInfo$$M = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980acbL, "jetbrains.mps.samples.VoiceMenu.structure.GetInfo");
+    /*package*/ static final SConcept Other$zO = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d1339980ac9L, "jetbrains.mps.samples.VoiceMenu.structure.Other");
+    /*package*/ static final SConcept Record$xQ = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x420d89797f0d16f6L, "jetbrains.mps.samples.VoiceMenu.structure.Record");
+    /*package*/ static final SConcept Menu$By = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu");
+    /*package*/ static final SConcept Action$AN = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5dfe7d133997fdc5L, "jetbrains.mps.samples.VoiceMenu.structure.Action");
   }
 }

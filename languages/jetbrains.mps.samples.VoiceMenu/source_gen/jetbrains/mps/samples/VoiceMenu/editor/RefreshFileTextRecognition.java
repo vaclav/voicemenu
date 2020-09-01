@@ -47,18 +47,18 @@ public class RefreshFileTextRecognition {
         }
 
         try {
-          File tmp = new File(path + "/" + SPropertyOperations.getString(node, PROPS.playback$y04k));
+          File tmp = new File(path + "/" + SPropertyOperations.getString(node, PROPS.playback$XRxp));
           if (tmp.isFile()) {
-            SPropertyOperations.assign(node, PROPS.PBisFile$hBw1, true);
+            SPropertyOperations.assign(node, PROPS.PBisFile$1XWc, true);
             LoggingRuntime.logMsgView(Level.DEBUG, "Found -> File", RefreshFileTextRecognition.class, null, null);
 
           } else {
-            SPropertyOperations.assign(node, PROPS.PBisFile$hBw1, false);
+            SPropertyOperations.assign(node, PROPS.PBisFile$1XWc, false);
             LoggingRuntime.logMsgView(Level.DEBUG, "Not Found -> Text", RefreshFileTextRecognition.class, null, null);
 
           }
         } catch (Exception e) {
-          SPropertyOperations.assign(node, PROPS.PBisFile$hBw1, false);
+          SPropertyOperations.assign(node, PROPS.PBisFile$1XWc, false);
         }
 
         SelectionUtil.selectCell(editorContext, node, SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
@@ -109,7 +109,7 @@ public class RefreshFileTextRecognition {
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty playback$y04k = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback");
-    /*package*/ static final SProperty PBisFile$hBw1 = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile");
+    /*package*/ static final SProperty playback$XRxp = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback");
+    /*package*/ static final SProperty PBisFile$1XWc = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x2e421f42b33aaf7fL, "PBisFile");
   }
 }

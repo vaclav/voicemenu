@@ -127,7 +127,7 @@ public class Behaviour {
       }
     }
     private static boolean isEmptyString(String str) {
-      return str == null || str.length() == 0;
+      return str == null || str.isEmpty();
     }
   }
 
@@ -287,7 +287,7 @@ public class Behaviour {
     // Itialization of voice output 
   }
   private static boolean isEmptyString(String str) {
-    return str == null || str.length() == 0;
+    return str == null || str.isEmpty();
   }
   private static boolean isNotEmptyString(String str) {
     return str != null && str.length() > 0;

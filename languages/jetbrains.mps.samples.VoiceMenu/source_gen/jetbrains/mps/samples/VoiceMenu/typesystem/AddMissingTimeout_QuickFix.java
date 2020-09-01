@@ -26,51 +26,51 @@ public class AddMissingTimeout_QuickFix extends QuickFix_Runtime {
   }
   public void execute(SNode node) {
 
-    SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(((SNode) AddMissingTimeout_QuickFix.this.getField("menu")[0]), LINKS.events$AIPs)).findFirst(new IWhereFilter<SNode>() {
+    SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(((SNode) AddMissingTimeout_QuickFix.this.getField("menu")[0]), LINKS.events$gxkh)).findFirst(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
-        return Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$zpYt), "X");
+        return Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$DqFK), "X");
       }
     }));
     SNode newEventTimeout = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event"));
-    SPropertyOperations.assign(newEventTimeout, PROPS.trigger$zpYt, "X");
-    SPropertyOperations.assign(newEventTimeout, PROPS.name$tAp1, "Timeout");
-    ListSequence.fromList(SLinkOperations.getChildren(((SNode) AddMissingTimeout_QuickFix.this.getField("menu")[0]), LINKS.events$AIPs)).addElement(newEventTimeout);
+    SPropertyOperations.assign(newEventTimeout, PROPS.trigger$DqFK, "X");
+    SPropertyOperations.assign(newEventTimeout, PROPS.name$MnvL, "Timeout");
+    ListSequence.fromList(SLinkOperations.getChildren(((SNode) AddMissingTimeout_QuickFix.this.getField("menu")[0]), LINKS.events$gxkh)).addElement(newEventTimeout);
 
     SNode newActivity = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"));
-    SLinkOperations.setTarget(newActivity, LINKS.event$gjCV, ListSequence.fromList(SLinkOperations.getChildren(((SNode) AddMissingTimeout_QuickFix.this.getField("menu")[0]), LINKS.events$AIPs)).findFirst(new IWhereFilter<SNode>() {
+    SLinkOperations.setTarget(newActivity, LINKS.event$pmgi, ListSequence.fromList(SLinkOperations.getChildren(((SNode) AddMissingTimeout_QuickFix.this.getField("menu")[0]), LINKS.events$gxkh)).findFirst(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
-        return Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$zpYt), "X");
+        return Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$DqFK), "X");
       }
     }));
-    ListSequence.fromList(SLinkOperations.getChildren(((SNode) AddMissingTimeout_QuickFix.this.getField("menu")[0]), LINKS.activities$AJ0_)).addElement(newActivity);
+    ListSequence.fromList(SLinkOperations.getChildren(((SNode) AddMissingTimeout_QuickFix.this.getField("menu")[0]), LINKS.activities$gAHC)).addElement(newActivity);
 
-    SNode srcTiemout = ListSequence.fromList(SLinkOperations.getChildren(((SNode) AddMissingTimeout_QuickFix.this.getField("menu")[0]), LINKS.activities$AJ0_)).findFirst(new IWhereFilter<SNode>() {
+    SNode srcTiemout = ListSequence.fromList(SLinkOperations.getChildren(((SNode) AddMissingTimeout_QuickFix.this.getField("menu")[0]), LINKS.activities$gAHC)).findFirst(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
-        return Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$gjCV), PROPS.trigger$zpYt), "X");
+        return Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), "X");
       }
     });
     SNode newTimout = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"));
-    SNode srcEvent = SLinkOperations.getTarget(srcTiemout, LINKS.event$gjCV);
+    SNode srcEvent = SLinkOperations.getTarget(srcTiemout, LINKS.event$pmgi);
     SNodeOperations.deleteNode(srcTiemout);
 
-    SPropertyOperations.assign(newTimout, PROPS.playback$y04k, SPropertyOperations.getString(srcTiemout, PROPS.playback$y04k));
-    SLinkOperations.setTarget(newTimout, LINKS.commands$giUr, SLinkOperations.getTarget(srcTiemout, LINKS.commands$giUr));
-    SLinkOperations.setTarget(newTimout, LINKS.event$gjCV, srcEvent);
+    SPropertyOperations.assign(newTimout, PROPS.playback$XRxp, SPropertyOperations.getString(srcTiemout, PROPS.playback$XRxp));
+    SLinkOperations.setTarget(newTimout, LINKS.commands$oZIM, SLinkOperations.getTarget(srcTiemout, LINKS.commands$oZIM));
+    SLinkOperations.setTarget(newTimout, LINKS.event$pmgi, srcEvent);
 
-    ListSequence.fromList(SLinkOperations.getChildren(((SNode) AddMissingTimeout_QuickFix.this.getField("menu")[0]), LINKS.activities$AJ0_)).insertElement(0, newTimout);
+    ListSequence.fromList(SLinkOperations.getChildren(((SNode) AddMissingTimeout_QuickFix.this.getField("menu")[0]), LINKS.activities$gAHC)).insertElement(0, newTimout);
 
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink events$AIPs = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events");
-    /*package*/ static final SReferenceLink event$gjCV = MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event");
-    /*package*/ static final SContainmentLink activities$AJ0_ = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities");
-    /*package*/ static final SContainmentLink commands$giUr = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08d2L, "commands");
+    /*package*/ static final SContainmentLink events$gxkh = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events");
+    /*package*/ static final SReferenceLink event$pmgi = MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event");
+    /*package*/ static final SContainmentLink activities$gAHC = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde68aL, "activities");
+    /*package*/ static final SContainmentLink commands$oZIM = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08d2L, "commands");
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty trigger$zpYt = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger");
-    /*package*/ static final SProperty name$tAp1 = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
-    /*package*/ static final SProperty playback$y04k = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback");
+    /*package*/ static final SProperty trigger$DqFK = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger");
+    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty playback$XRxp = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback");
   }
 }

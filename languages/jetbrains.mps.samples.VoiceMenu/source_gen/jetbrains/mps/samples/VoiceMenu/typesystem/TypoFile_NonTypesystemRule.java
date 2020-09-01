@@ -25,13 +25,13 @@ public class TypoFile_NonTypesystemRule extends AbstractNonTypesystemRule_Runtim
     try {
 
 
-      String substring = SPropertyOperations.getString(activity, PROPS.playback$y04k).substring(SPropertyOperations.getString(activity, PROPS.playback$y04k).length() - 4);
-      if (!(Objects.equals(substring, ".wav")) && !(SPropertyOperations.getString(activity, PROPS.playback$y04k).contains(". ")) && SPropertyOperations.getString(activity, PROPS.playback$y04k).contains(".") && !(Objects.equals(SPropertyOperations.getString(activity, PROPS.playback$y04k).substring(SPropertyOperations.getString(activity, PROPS.playback$y04k).length() - 1), "."))) {
+      String substring = SPropertyOperations.getString(activity, PROPS.playback$XRxp).substring(SPropertyOperations.getString(activity, PROPS.playback$XRxp).length() - 4);
+      if (!(Objects.equals(substring, ".wav")) && !(SPropertyOperations.getString(activity, PROPS.playback$XRxp).contains(". ")) && SPropertyOperations.getString(activity, PROPS.playback$XRxp).contains(".") && !(Objects.equals(SPropertyOperations.getString(activity, PROPS.playback$XRxp).substring(SPropertyOperations.getString(activity, PROPS.playback$XRxp).length() - 1), "."))) {
         {
           final MessageTarget errorTarget = new NodeMessageTarget();
           IErrorReporter _reporter_2309309498 = typeCheckingContext.reportWarning(activity, "Typo in the fileName", "r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)", "4187501812303303783", null, errorTarget);
           {
-            BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("jetbrains.mps.samples.VoiceMenu.typesystem.suggestWav_QuickFix", false);
+            BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("jetbrains.mps.samples.VoiceMenu.typesystem.suggestWav_QuickFix", "4187501812303303786", false);
             _reporter_2309309498.addIntentionProvider(intentionProvider);
           }
         }
@@ -41,7 +41,7 @@ public class TypoFile_NonTypesystemRule extends AbstractNonTypesystemRule_Runtim
     }
   }
   public SAbstractConcept getApplicableConcept() {
-    return CONCEPTS.Activity$oQ;
+    return CONCEPTS.Activity$Oz;
   }
   public IsApplicableStatus isApplicableAndPattern(SNode argument) {
     return new IsApplicableStatus(argument.getConcept().isSubConceptOf(getApplicableConcept()), null);
@@ -51,10 +51,10 @@ public class TypoFile_NonTypesystemRule extends AbstractNonTypesystemRule_Runtim
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty playback$y04k = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback");
+    /*package*/ static final SProperty playback$XRxp = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x25806c66fbe600f7L, "playback");
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Activity$oQ = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity");
+    /*package*/ static final SConcept Activity$Oz = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity");
   }
 }

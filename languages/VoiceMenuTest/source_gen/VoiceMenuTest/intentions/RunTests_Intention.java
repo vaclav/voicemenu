@@ -62,45 +62,45 @@ public final class RunTests_Intention extends AbstractIntentionDescriptor implem
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(node, LINKS.commands$xTQf), CONCEPTS.TestStep$9N)).visitAll(new IVisitor<SNode>() {
+      Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(node, LINKS.commands$RX3w), CONCEPTS.TestStep$W2)).visitAll(new IVisitor<SNode>() {
         public void visit(SNode it) {
-          SPropertyOperations.setEnum(SLinkOperations.getTarget(it, LINKS.evaluation$VA5f), PROPS.result$T6Kx, 0x72ec05e3886dfc17L, "Unknown");
-          SPropertyOperations.assign(SLinkOperations.getTarget(it, LINKS.evaluation$VA5f), PROPS.message$T6Lv, "");
+          SPropertyOperations.setEnum(SLinkOperations.getTarget(it, LINKS.evaluation$kokw), PROPS.result$7die, 0x72ec05e3886dfc17L, "Unknown");
+          SPropertyOperations.assign(SLinkOperations.getTarget(it, LINKS.evaluation$kokw), PROPS.message$7dKg, "");
         }
       });
 
-      SNode currentMenu = SLinkOperations.getTarget(SLinkOperations.getTarget(node, LINKS.workspaceToTest$xMNi), LINKS.bodyMenu$8UCv);
+      SNode currentMenu = SLinkOperations.getTarget(SLinkOperations.getTarget(node, LINKS.workspaceToTest$OyBX), LINKS.bodyMenu$Of2I);
       final Wrappers._T<SNode> currentEvent = new Wrappers._T<SNode>(null);
-      for (SNode step : Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(node, LINKS.commands$xTQf), CONCEPTS.TestStep$9N))) {
-        if (SNodeOperations.isInstanceOf(step, CONCEPTS.Press$kW)) {
-          final String key = SPropertyOperations.getString(SNodeOperations.cast(step, CONCEPTS.Press$kW), PROPS.key$S$4E);
-          currentEvent.value = ListSequence.fromList(SLinkOperations.getChildren(currentMenu, LINKS.events$AIPs)).findFirst(new IWhereFilter<SNode>() {
+      for (SNode step : Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(node, LINKS.commands$RX3w), CONCEPTS.TestStep$W2))) {
+        if (SNodeOperations.isInstanceOf(step, CONCEPTS.Press$7b)) {
+          final String key = SPropertyOperations.getString(SNodeOperations.cast(step, CONCEPTS.Press$7b), PROPS.key$Qq2_);
+          currentEvent.value = ListSequence.fromList(SLinkOperations.getChildren(currentMenu, LINKS.events$gxkh)).findFirst(new IWhereFilter<SNode>() {
             public boolean accept(SNode it) {
-              return Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$zpYt), key);
+              return Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$DqFK), key);
             }
           });
           if ((currentEvent.value == null)) {
-            SPropertyOperations.setEnum(SLinkOperations.getTarget(step, LINKS.evaluation$VA5f), PROPS.result$T6Kx, 0x72ec05e3886dfc14L, "Failure");
-            SPropertyOperations.assign(SLinkOperations.getTarget(step, LINKS.evaluation$VA5f), PROPS.message$T6Lv, "No event triggered by " + key + " is available in the menu " + Event__BehaviorDescriptor.getFullName_id7bG1ue8uybI.invoke(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(currentMenu, CONCEPTS.Activity$oQ, false, false), LINKS.event$gjCV)));
+            SPropertyOperations.setEnum(SLinkOperations.getTarget(step, LINKS.evaluation$kokw), PROPS.result$7die, 0x72ec05e3886dfc14L, "Failure");
+            SPropertyOperations.assign(SLinkOperations.getTarget(step, LINKS.evaluation$kokw), PROPS.message$7dKg, "No event triggered by " + key + " is available in the menu " + Event__BehaviorDescriptor.getFullName_id7bG1ue8uybI.invoke(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(currentMenu, CONCEPTS.Activity$Oz, false, false), LINKS.event$pmgi)));
             return;
           }
-          SNode currentActivity = ListSequence.fromList((SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(node, LINKS.workspaceToTest$xMNi), CONCEPTS.Activity$oQ, false, new SAbstractConcept[]{}))).where(new IWhereFilter<SNode>() {
+          SNode currentActivity = ListSequence.fromList((SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(node, LINKS.workspaceToTest$OyBX), CONCEPTS.Activity$Oz, false, new SAbstractConcept[]{}))).where(new IWhereFilter<SNode>() {
             public boolean accept(SNode it) {
-              return Objects.equals(SLinkOperations.getTarget(it, LINKS.event$gjCV), currentEvent.value);
+              return Objects.equals(SLinkOperations.getTarget(it, LINKS.event$pmgi), currentEvent.value);
             }
           }).first();
-          if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(currentActivity, LINKS.commands$giUr), CONCEPTS.Menu$bP)) {
-            currentMenu = SNodeOperations.as(SLinkOperations.getTarget(currentActivity, LINKS.commands$giUr), CONCEPTS.Menu$bP);
+          if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(currentActivity, LINKS.commands$oZIM), CONCEPTS.Menu$By)) {
+            currentMenu = SNodeOperations.as(SLinkOperations.getTarget(currentActivity, LINKS.commands$oZIM), CONCEPTS.Menu$By);
           }
         }
-        if (SNodeOperations.isInstanceOf(step, CONCEPTS.Assert$T3)) {
-          if (!(Objects.equals(SLinkOperations.getTarget(SNodeOperations.cast(step, CONCEPTS.Assert$T3), LINKS.expectedEvent$ZeYz), currentEvent.value))) {
-            SPropertyOperations.setEnum(SLinkOperations.getTarget(step, LINKS.evaluation$VA5f), PROPS.result$T6Kx, 0x72ec05e3886dfc14L, "Failure");
-            SPropertyOperations.assign(SLinkOperations.getTarget(step, LINKS.evaluation$VA5f), PROPS.message$T6Lv, "Expected " + Event__BehaviorDescriptor.getFullName_id7bG1ue8uybI.invoke(SLinkOperations.getTarget(SNodeOperations.cast(step, CONCEPTS.Assert$T3), LINKS.expectedEvent$ZeYz)) + " but was in " + Event__BehaviorDescriptor.getFullName_id7bG1ue8uybI.invoke(currentEvent.value));
+        if (SNodeOperations.isInstanceOf(step, CONCEPTS.Assert$Fi)) {
+          if (!(Objects.equals(SLinkOperations.getTarget(SNodeOperations.cast(step, CONCEPTS.Assert$Fi), LINKS.expectedEvent$5c5c), currentEvent.value))) {
+            SPropertyOperations.setEnum(SLinkOperations.getTarget(step, LINKS.evaluation$kokw), PROPS.result$7die, 0x72ec05e3886dfc14L, "Failure");
+            SPropertyOperations.assign(SLinkOperations.getTarget(step, LINKS.evaluation$kokw), PROPS.message$7dKg, "Expected " + Event__BehaviorDescriptor.getFullName_id7bG1ue8uybI.invoke(SLinkOperations.getTarget(SNodeOperations.cast(step, CONCEPTS.Assert$Fi), LINKS.expectedEvent$5c5c)) + " but was in " + Event__BehaviorDescriptor.getFullName_id7bG1ue8uybI.invoke(currentEvent.value));
             return;
           }
         }
-        SPropertyOperations.setEnum(SLinkOperations.getTarget(step, LINKS.evaluation$VA5f), PROPS.result$T6Kx, 0x72ec05e3886dfc13L, "Success");
+        SPropertyOperations.setEnum(SLinkOperations.getTarget(step, LINKS.evaluation$kokw), PROPS.result$7die, 0x72ec05e3886dfc13L, "Success");
       }
     }
     @Override
@@ -110,28 +110,28 @@ public final class RunTests_Intention extends AbstractIntentionDescriptor implem
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink commands$xTQf = MetaAdapterFactory.getContainmentLink(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0cL, 0x72ec05e38870528cL, "commands");
-    /*package*/ static final SContainmentLink evaluation$VA5f = MetaAdapterFactory.getContainmentLink(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0fL, 0x72ec05e3886dfc64L, "evaluation");
-    /*package*/ static final SReferenceLink workspaceToTest$xMNi = MetaAdapterFactory.getReferenceLink(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0cL, 0x72ec05e388705231L, "workspaceToTest");
-    /*package*/ static final SContainmentLink bodyMenu$8UCv = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x5b6b060cf40204ebL, "bodyMenu");
-    /*package*/ static final SContainmentLink events$AIPs = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events");
-    /*package*/ static final SReferenceLink event$gjCV = MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event");
-    /*package*/ static final SContainmentLink commands$giUr = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08d2L, "commands");
-    /*package*/ static final SReferenceLink expectedEvent$ZeYz = MetaAdapterFactory.getReferenceLink(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3887030a6L, 0x72ec05e38870a891L, "expectedEvent");
+    /*package*/ static final SContainmentLink commands$RX3w = MetaAdapterFactory.getContainmentLink(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0cL, 0x72ec05e38870528cL, "commands");
+    /*package*/ static final SContainmentLink evaluation$kokw = MetaAdapterFactory.getContainmentLink(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0fL, 0x72ec05e3886dfc64L, "evaluation");
+    /*package*/ static final SReferenceLink workspaceToTest$OyBX = MetaAdapterFactory.getReferenceLink(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0cL, 0x72ec05e388705231L, "workspaceToTest");
+    /*package*/ static final SContainmentLink bodyMenu$Of2I = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L, 0x5b6b060cf40204ebL, "bodyMenu");
+    /*package*/ static final SContainmentLink events$gxkh = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, 0x5b6b060cf3fde688L, "events");
+    /*package*/ static final SReferenceLink event$pmgi = MetaAdapterFactory.getReferenceLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08f3L, "event");
+    /*package*/ static final SContainmentLink commands$oZIM = MetaAdapterFactory.getContainmentLink(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, 0x5b6b060cf3fe08d2L, "commands");
+    /*package*/ static final SReferenceLink expectedEvent$5c5c = MetaAdapterFactory.getReferenceLink(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3887030a6L, 0x72ec05e38870a891L, "expectedEvent");
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept TestStep$9N = MetaAdapterFactory.getConcept(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0fL, "VoiceMenuTest.structure.TestStep");
-    /*package*/ static final SConcept Press$kW = MetaAdapterFactory.getConcept(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc11L, "VoiceMenuTest.structure.Press");
-    /*package*/ static final SConcept Activity$oQ = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity");
-    /*package*/ static final SConcept Menu$bP = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu");
-    /*package*/ static final SConcept Assert$T3 = MetaAdapterFactory.getConcept(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3887030a6L, "VoiceMenuTest.structure.Assert");
+    /*package*/ static final SConcept TestStep$W2 = MetaAdapterFactory.getConcept(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0fL, "VoiceMenuTest.structure.TestStep");
+    /*package*/ static final SConcept Press$7b = MetaAdapterFactory.getConcept(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc11L, "VoiceMenuTest.structure.Press");
+    /*package*/ static final SConcept Activity$Oz = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity");
+    /*package*/ static final SConcept Menu$By = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde308L, "jetbrains.mps.samples.VoiceMenu.structure.Menu");
+    /*package*/ static final SConcept Assert$Fi = MetaAdapterFactory.getConcept(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3887030a6L, "VoiceMenuTest.structure.Assert");
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty result$T6Kx = MetaAdapterFactory.getProperty(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc10L, 0x72ec05e3886dfc1bL, "result");
-    /*package*/ static final SProperty message$T6Lv = MetaAdapterFactory.getProperty(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc10L, 0x72ec05e3886dfc1dL, "message");
-    /*package*/ static final SProperty key$S$4E = MetaAdapterFactory.getProperty(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc11L, 0x72ec05e3887030a4L, "key");
-    /*package*/ static final SProperty trigger$zpYt = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger");
+    /*package*/ static final SProperty result$7die = MetaAdapterFactory.getProperty(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc10L, 0x72ec05e3886dfc1bL, "result");
+    /*package*/ static final SProperty message$7dKg = MetaAdapterFactory.getProperty(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc10L, 0x72ec05e3886dfc1dL, "message");
+    /*package*/ static final SProperty key$Qq2_ = MetaAdapterFactory.getProperty(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc11L, 0x72ec05e3887030a4L, "key");
+    /*package*/ static final SProperty trigger$DqFK = MetaAdapterFactory.getProperty(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, 0x5b6b060cf3fde310L, "trigger");
   }
 }

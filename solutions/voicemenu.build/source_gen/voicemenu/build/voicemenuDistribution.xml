@@ -3,12 +3,16 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/voicemenuDistribution" />
   <property name="build.layout" location="${build.dir}/artifacts/voicemenuDistribution" />
-  <property name="mps_home" location="${basedir}/../../MPS 2020.1" />
+  <property name="mps_home" location="${basedir}/../../MPS 2020.2" />
   <property name="version" value="2020.1" />
   <property name="artifacts.voicemenu" location="${build.dir}/artifacts/voicemenu" />
   <property file="${artifacts.voicemenu}/build.properties" prefix="import.voicemenu" />
   <property name="voicemenu.date" value="${import.voicemenu.voicemenu.date}" />
   <property name="voicemenu.build.number" value="${import.voicemenu.voicemenu.build.number}" />
+  <property name="mpsBootstrapCore.version.major" value="${import.voicemenu.mpsBootstrapCore.version.major}" />
+  <property name="mpsBootstrapCore.version.minor" value="${import.voicemenu.mpsBootstrapCore.version.minor}" />
+  <property name="mpsBootstrapCore.version.bugfixNr" value="${import.voicemenu.mpsBootstrapCore.version.bugfixNr}" />
+  <property name="mpsBootstrapCore.version.eap" value="${import.voicemenu.mpsBootstrapCore.version.eap}" />
   <property name="mpsBootstrapCore.version" value="${import.voicemenu.mpsBootstrapCore.version}" />
   
   <target name="assemble" depends="fetchDependencies">
@@ -129,7 +133,7 @@
       <zipfileset dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip_f7551" filemode="755" prefix="voicemenu ${version}.app/Contents/bin" />
       <fileset dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip" />
     </zip>
-    <echo file="${build.layout}/build.properties">voicemenuDistribution.version=${version}${line.separator}voicemenu.date=${voicemenu.date}${line.separator}voicemenu.build.number=${voicemenu.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
+    <echo file="${build.layout}/build.properties">voicemenuDistribution.version=${version}${line.separator}voicemenu.date=${voicemenu.date}${line.separator}voicemenu.build.number=${voicemenu.build.number}${line.separator}mpsBootstrapCore.version.major=${mpsBootstrapCore.version.major}${line.separator}mpsBootstrapCore.version.minor=${mpsBootstrapCore.version.minor}${line.separator}mpsBootstrapCore.version.bugfixNr=${mpsBootstrapCore.version.bugfixNr}${line.separator}mpsBootstrapCore.version.eap=${mpsBootstrapCore.version.eap}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
   </target>
   
   <target name="buildDependents">
