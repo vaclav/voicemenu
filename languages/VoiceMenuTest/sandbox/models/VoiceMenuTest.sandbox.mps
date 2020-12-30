@@ -35,7 +35,7 @@
   </registry>
   <node concept="3UwvBJ" id="7bG1ue8s58K">
     <property role="TrG5h" value="JetBrains Menu for Discounts" />
-    <ref role="3UB5vi" to="1b11:2w$I9I9UGbg" resolve="Jet Mobile" />
+    <ref role="3UB5vi" to="1b11:2w$I9I9UGbg" resolve="Jet Mobile, s.r.o." />
     <node concept="3UwvBM" id="7bG1ue8sawt" role="3UB5tJ">
       <property role="3UB3l7" value="1" />
       <node concept="3UwvBN" id="7bG1ue8saww" role="3UwvA7">
@@ -51,7 +51,7 @@
       </node>
     </node>
     <node concept="3UwvBM" id="7bG1ue8uVDd" role="3UB5tJ">
-      <property role="3UB3l7" value="1" />
+      <property role="3UB3l7" value="2" />
       <node concept="3UwvBN" id="7bG1ue8uVDg" role="3UwvA7">
         <property role="3UwvBY" value="" />
         <property role="3UwvBS" value="7bG1ue8rvKj/Success" />
@@ -67,7 +67,7 @@
   </node>
   <node concept="3UwvBJ" id="7bG1ue8vC3B">
     <property role="TrG5h" value="JetBrains Menu Test" />
-    <ref role="3UB5vi" to="1b11:2w$I9I9UGbg" resolve="Jet Mobile" />
+    <ref role="3UB5vi" to="1b11:2w$I9I9UGbg" resolve="Jet Mobile, s.r.o." />
     <node concept="3UwvBM" id="7bG1ue8vC3C" role="3UB5tJ">
       <property role="3UB3l7" value="2" />
       <node concept="3UwvBN" id="7bG1ue8vC3D" role="3UwvA7">

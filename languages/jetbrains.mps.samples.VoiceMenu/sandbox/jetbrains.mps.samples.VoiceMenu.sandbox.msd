@@ -9,6 +9,7 @@
     <facet type="java">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
+    <facet planModel="r:d5987bba-bd9a-4de6-a5ae-9f6f2573436e(GenPlan.voicemenu)" type="generator" />
   </facets>
   <sourcePath />
   <dependencies>

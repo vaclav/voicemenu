@@ -22,6 +22,10 @@ import jetbrains.mps.vfs.FileSystem;
 import jetbrains.mps.internal.make.runtime.util.DeltaReconciler;
 import jetbrains.mps.internal.make.runtime.util.FilesDelta;
 import jetbrains.mps.vfs.IFile;
+import com.intellij.openapi.actionSystem.DataKey;
+import com.intellij.openapi.project.Project;
+import jetbrains.mps.workbench.MPSDataKeys;
+import com.intellij.ide.DataManager;
 import jetbrains.mps.make.script.IConfig;
 import java.util.Map;
 import jetbrains.mps.make.script.IPropertiesPool;
@@ -70,6 +74,9 @@ public class RenameXmlToHtml_Facet extends IFacet.Stub {
                       @Override
                       public boolean acceptWritten(IFile file) {
                         doRename(file);
+                        DataKey<Project> key = MPSDataKeys.PROJECT;
+                        Project p = key.getData(DataManager.getInstance().getDataContext());
+                        p.getBasePath();
                         return super.acceptWritten(file);
                       }
 
