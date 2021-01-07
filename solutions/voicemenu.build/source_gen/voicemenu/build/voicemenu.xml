@@ -7,7 +7,7 @@
     <format property="date" pattern="yyyyMMdd" />
   </tstamp>
   <property name="build.number" value="202.SNAPSHOT" />
-  <property name="mps_home" location="${basedir}/../../MPS 2020.2" />
+  <property name="mps_home" location="${basedir}/../../MPS 2020.3" />
   <property name="artifacts.mpsStandalone" location="${mps_home}" />
   <property name="artifacts.mpsDebuggerPlugin" location="${mps_home}/plugins" />
   <property name="artifacts.mpsMakePlugin" location="${mps_home}/plugins" />
