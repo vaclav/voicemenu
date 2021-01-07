@@ -2049,6 +2049,9 @@
         <node concept="3LEDTM" id="6tujwivYzR" role="3LEDUa">
           <ref role="3LEDTN" node="6tujwivYiX" resolve="GenPlan" />
         </node>
+        <node concept="3LEDTy" id="5uJACN1hmJt" role="3LEDUa">
+          <ref role="3LEDTV" to="ffeo:7Kfy9QB6L0h" resolve="jetbrains.mps.baseLanguage.collections" />
+        </node>
       </node>
       <node concept="1E1JtA" id="20sXUrlkzFv" role="2G$12L">
         <property role="BnDLt" value="true" />

@@ -4,6 +4,7 @@
   <languages>
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -774,13 +775,6 @@
         <property role="2pNUuO" value="style" />
         <node concept="2pMdtt" id="2m0r6rVSx8R" role="2pMdts">
           <property role="2pMdty" value="margin-left: 80px;color:green" />
-          <node concept="17Uvod" id="7J$1Gr4Dep" role="lGtFl">
-            <property role="2qtEX9" value="text" />
-            <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
-            <node concept="3zFVjK" id="7J$1Gr4Deq" role="3zH0cK">
-              <node concept="3clFbS" id="7J$1Gr4Der" role="2VODD2" />
-            </node>
-          </node>
         </node>
       </node>
       <node concept="3o6iSG" id="2m0r6rVSx8V" role="3o6s8t">

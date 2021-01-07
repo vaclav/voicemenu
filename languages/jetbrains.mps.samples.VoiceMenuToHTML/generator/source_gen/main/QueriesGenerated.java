@@ -57,8 +57,6 @@ public class QueriesGenerated extends QueryProviderBase {
   public static Object propertyMacro_GetValue_6_0(final PropertyMacroContext _context) {
     return "--> [ Direct Call to " + SPropertyOperations.getString(_context.getNode(), PROPS.number$M7Yy) + "]";
   }
-  public static Object propertyMacro_GetValue_7_0(final PropertyMacroContext _context) {
-  }
   public static boolean ifMacro_Condition_1_0(final IfMacroContext _context) {
     return isNotEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.info$rXd3));
   }
@@ -146,7 +144,6 @@ public class QueriesGenerated extends QueryProviderBase {
     pvqMethods.put("2702278965990482132", new PVQ(i++, MetaAdapterFactory.getProperty(0x479c7a8c02f943b5L, 0x9139d910cb22f298L, 0x16838b3fce9aa513L, 0x16838b3fce9aaa68L, "value"), "name"));
     pvqMethods.put("2702278965990485225", new PVQ(i++, MetaAdapterFactory.getProperty(0x479c7a8c02f943b5L, 0x9139d910cb22f298L, 0x16838b3fce9aa513L, 0x16838b3fce9aaa68L, "value"), "trigger"));
     pvqMethods.put("125198760251211379", new PVQ(i++, MetaAdapterFactory.getProperty(0x479c7a8c02f943b5L, 0x9139d910cb22f298L, 0x16838b3fce9aa513L, 0x16838b3fce9aaa68L, "value"), "--> [ Direct Call ]"));
-    pvqMethods.put("139488559564493721", new PVQ(i++, MetaAdapterFactory.getProperty(0x479c7a8c02f943b5L, 0x9139d910cb22f298L, 0x5c842a42c54cfd1fL, 0x5c842a42c54cfd20L, "text"), "margin-left: 80px;color:green"));
   }
   @NotNull
   @Override
@@ -179,8 +176,6 @@ public class QueriesGenerated extends QueryProviderBase {
           return QueriesGenerated.propertyMacro_GetValue_4_1(ctx);
         case 7:
           return QueriesGenerated.propertyMacro_GetValue_6_0(ctx);
-        case 8:
-          return QueriesGenerated.propertyMacro_GetValue_7_0(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }
