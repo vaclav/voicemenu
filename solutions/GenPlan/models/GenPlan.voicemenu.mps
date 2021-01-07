@@ -36,6 +36,10 @@
         <property role="2V$B1T" value="4bc750d7-5688-4f52-b7d5-b263a3393a24" />
         <property role="2V$B1Q" value="jetbrains.mps.samples.VoiceMenu" />
       </node>
+      <node concept="2V$Bhx" id="5uJACN1lfgH" role="1t_9vn">
+        <property role="2V$B1T" value="25057fc9-5337-4f2e-9703-a17097079193" />
+        <property role="2V$B1Q" value="VoiceMenuTest" />
+      </node>
     </node>
     <node concept="10T23i" id="7isjrWTAJe4" role="2VgMA7">
       <ref role="10T23l" node="7isjrWTAJei" resolve="Voice Menu To Html" />
