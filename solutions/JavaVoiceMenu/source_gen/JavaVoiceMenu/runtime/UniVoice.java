@@ -9,6 +9,7 @@ import com.sun.speech.freetts.VoiceManager;
 public class UniVoice {
   public Process proc;
   public UniVoice() {
+    System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
   }
   /**
    * run speak

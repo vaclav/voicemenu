@@ -340,8 +340,8 @@
         <ref role="3uigEE" node="6alSDtAKAi5" resolve="myVoice" />
       </node>
       <node concept="2ShNRf" id="6VbSUrc4Qrf" role="33vP2m">
-        <node concept="HV5vD" id="6e8rKWxz_95" role="2ShVmc">
-          <ref role="HV5vE" node="6alSDtAKAi5" resolve="myVoice" />
+        <node concept="1pGfFk" id="6WTgn0hWGDD" role="2ShVmc">
+          <ref role="37wK5l" node="6alSDtAKAif" resolve="myVoice" />
         </node>
       </node>
     </node>
@@ -6453,7 +6453,20 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3cqZAl" id="6alSDtAKxGL" role="3clF45" />
-      <node concept="3clFbS" id="6alSDtAKxGM" role="3clF47" />
+      <node concept="3clFbS" id="6alSDtAKxGM" role="3clF47">
+        <node concept="3clFbF" id="6WTgn0hWqqJ" role="3cqZAp">
+          <node concept="2YIFZM" id="6WTgn0hWGji" role="3clFbG">
+            <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+            <ref role="37wK5l" to="wyt6:~System.setProperty(java.lang.String,java.lang.String)" resolve="setProperty" />
+            <node concept="Xl_RD" id="6WTgn0hWGjj" role="37wK5m">
+              <property role="Xl_RC" value="freetts.voices" />
+            </node>
+            <node concept="Xl_RD" id="6WTgn0hWGjk" role="37wK5m">
+              <property role="Xl_RC" value="com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3Tm1VV" id="6alSDtAKxGN" role="1B3o_S" />
     </node>
     <node concept="3clFb_" id="3Z$IHi55pAk" role="jymVt">
