@@ -44,7 +44,7 @@ System requirements
 
 You can download the Voice Menu IDE to experiment instantly for the JetBrains TeamCity server - [Download Voice Menu IDE](https://teamcity.jetbrains.com/guestAuth/repository/downloadAll/MPS_VoiceMenu_20192/.lastSuccessful/artifacts.zip).
 
-To build the Voice Menu project from the sources you need JetBrains MPS 2020.2 and JDK 11 or newer.
+To build the Voice Menu project from the sources you need JetBrains MPS 2020.3 and JDK 11 or newer.
 
 ----------
 

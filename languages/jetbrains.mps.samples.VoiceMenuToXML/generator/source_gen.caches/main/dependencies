@@ -12,7 +12,6 @@
     <classNode dependClassName="jetbrains.mps.generator.impl.query.IfMacroCondition" />
     <classNode dependClassName="jetbrains.mps.generator.impl.query.PropertyValueQuery" />
     <classNode dependClassName="jetbrains.mps.generator.impl.query.QueryKey" />
-    <classNode dependClassName="jetbrains.mps.generator.impl.query.QueryKeyImpl" />
     <classNode dependClassName="jetbrains.mps.generator.impl.query.SourceNodeQuery" />
     <classNode dependClassName="jetbrains.mps.generator.impl.query.SourceNodesQuery" />
     <classNode dependClassName="jetbrains.mps.generator.runtime.Generated" />
