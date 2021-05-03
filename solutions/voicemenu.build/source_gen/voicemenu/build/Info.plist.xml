@@ -46,7 +46,7 @@
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleIdentifier</key>
-    <string>com.jetbrains.intellij</string>
+    <string>com.voicemenu</string>
     <key>CFBundleSignature</key>
     <string>????</string>
     <key>CFBundleGetInfoString</key>
@@ -66,8 +66,8 @@
     
     <key>LSArchitecturePriority</key>
     <array>
+      <string>arm64</string>
       <string>x86_64</string>
-      <string>i386</string>
     </array>
     <key>LSRequiresNativeExecution</key>
     <string>YES</string>
@@ -109,8 +109,6 @@
         <key>idea.executable</key>
         <string>voicemenu</string>
         
-        <key>idea.java.redist</key>
-        <string>NoJavaDistribution</string>
         <key>idea.home.path</key>
         <string>$APP_PACKAGE/Contents</string>
       </dict>

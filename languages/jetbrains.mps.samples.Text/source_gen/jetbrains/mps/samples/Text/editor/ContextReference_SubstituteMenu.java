@@ -49,7 +49,7 @@ public class ContextReference_SubstituteMenu extends SubstituteMenuBase {
   public class SMP_ReferenceScope_h0rt7y_a extends ReferenceScopeSubstituteMenuPart {
 
     public SMP_ReferenceScope_h0rt7y_a() {
-      // that cast is needed for prevent the users from https://youtrack.jetbrains.com/issue/MPS-29051 
+      // that cast is needed for prevent the users from https://youtrack.jetbrains.com/issue/MPS-29051
       super((SAbstractConcept) CONCEPTS.ContextReference$q3, LINKS.context$NeaP);
     }
     @NotNull

@@ -37,7 +37,7 @@ public class MacVoice {
   public void speak(String text) throws IOException {
     String tts = getVoice() + text;
     System.out.println(tts);
-    // Runtime.getRuntime().exec(tts); 
+    // Runtime.getRuntime().exec(tts);
     Runtime rt = Runtime.getRuntime();
     try {
       speakingProc = rt.exec(tts);
@@ -45,7 +45,7 @@ public class MacVoice {
         waitingThr.interrupt();
       }
       (MacVoice.waitingThr = new Thread(new SpeakDurationHandler())).start();
-      // proc.destroy(); 
+      // proc.destroy();
     } catch (Exception e) {
       e.printStackTrace();
     }

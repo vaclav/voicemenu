@@ -45,9 +45,6 @@ public class Language extends LanguageRuntime {
 
   @Override
   protected <T extends ILanguageAspect> T createAspect(Class<T> aspectClass) {
-
-
-    // AP: legacy part, must be migrated from switch: please use lang.descriptor mapping label 
     if (aspectClass == ConstraintsAspectDescriptor.class) {
       return aspectClass.cast(new VoiceMenuTest.constraints.ConstraintsAspectDescriptor());
     }

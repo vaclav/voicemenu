@@ -160,8 +160,8 @@ public class Behaviour {
 
   public static void runLogic(ActionEvent evt, boolean sameEvnt) throws IOException {
     Variables.voice.stop();
-    // Initilization of voice output 
-    // Variable to store which character was pressed 
+    // Initilization of voice output
+    // Variable to store which character was pressed
     if (!(sameEvnt)) {
       String character = evt.getActionCommand();
       if (!(Variables.possibleOptList.contains(character))) {
@@ -178,17 +178,17 @@ public class Behaviour {
         Variables.path = Variables.path + character;
       }
     }
-    // Checking if correct option was pressed. If so Variables.path is updated 
-    // Loading next Event according to what is specified in "Variables.path" 
+    // Checking if correct option was pressed. If so Variables.path is updated
+    // Loading next Event according to what is specified in "Variables.path"
     Event currentEvent = Variables.myHashMap.get(Variables.path);
     Style.setTextToScreen(currentEvent.name);
-    // Checking if "back" option was selected via name of the current event 
+    // Checking if "back" option was selected via name of the current event
     if (!(isEmptyString(currentEvent.action))) {
       if (currentEvent.action.equals("back")) {
-        // updating Variables.path to get back 
+        // updating Variables.path to get back
         Variables.voice.addText("Going to the previous menu");
         Variables.path = Variables.path.substring(0, Variables.path.length() - 2);
-        // loading previous event 
+        // loading previous event
       } else
       if (currentEvent.action.equals("call")) {
         Variables.voice.addText("Direct call started");
@@ -247,7 +247,7 @@ public class Behaviour {
       Style.setTextToScreen(currentEvent.action);
     }
 
-    // Handling voice output 
+    // Handling voice output
     if (isNotEmptyString(currentEvent.playback)) {
       PlayGetInfo(currentEvent.playback);
     }
@@ -258,9 +258,9 @@ public class Behaviour {
         Variables.voice.addText(", Choose from this menu, ");
       }
     }
-    // Delete all the previous possible options 
+    // Delete all the previous possible options
     Variables.possibleOptList.clear();
-    // Proposing possible options consisting of next events 
+    // Proposing possible options consisting of next events
     for (Event child : currentEvent.childs) {
       String trigger;
       if (child.trigger == "*") {
@@ -278,13 +278,13 @@ public class Behaviour {
     Variables.voice.speak();
   }
   public static void runInitSetup() {
-    // Static first iteration of Voicemenu 
-    // declaring first possible following characters 
+    // Static first iteration of Voicemenu
+    // declaring first possible following characters
     Event currentEvent = Variables.myHashMap.get("0");
     for (Event item : currentEvent.childs) {
       Variables.possibleOptList.add(item.trigger);
     }
-    // Itialization of voice output 
+    // Itialization of voice output
   }
   private static boolean isEmptyString(String str) {
     return str == null || str.isEmpty();

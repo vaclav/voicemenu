@@ -50,7 +50,7 @@ public class FixAll {
       public void execute_internal(EditorContext editorContext, SNode node) {
 
         while (true) {
-          // ............................................................. replace duplicate numbers 
+          // ............................................................. replace duplicate numbers
           List<SNode> events = SNodeOperations.getNodeDescendants(node, CONCEPTS.Event$Du, false, new SAbstractConcept[]{});
           for (final SNode item : ListSequence.fromList(events)) {
 
@@ -113,7 +113,7 @@ public class FixAll {
 
 
 
-          // ............................................................. init events 
+          // ............................................................. init events
 
           List<SNode> descendants = SNodeOperations.getNodeDescendants(node, CONCEPTS.Event$Du, false, new SAbstractConcept[]{});
           for (final SNode event : ListSequence.fromList(descendants)) {
@@ -132,7 +132,7 @@ public class FixAll {
               }
             }
           }
-          // ............................................................. remove empty 
+          // ............................................................. remove empty
           if (ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Activity$Oz, false, new SAbstractConcept[]{})).any(new IWhereFilter<SNode>() {
             public boolean accept(SNode it) {
               return (SLinkOperations.getTarget(it, LINKS.event$pmgi) == null);
@@ -150,7 +150,7 @@ public class FixAll {
               return SNodeOperations.isInstanceOf(it, CONCEPTS.Empty$UU);
             }
           })) {
-            // replace empty 
+            // replace empty
             SNode emptyCommand = ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Command$_N, false, new SAbstractConcept[]{})).findFirst(new IWhereFilter<SNode>() {
               public boolean accept(SNode it) {
                 return SNodeOperations.isInstanceOf(it, CONCEPTS.Empty$UU);
@@ -163,7 +163,7 @@ public class FixAll {
               return (ListSequence.fromList(SLinkOperations.getChildren(it, LINKS.events$gxkh)).isEmpty() || Sequence.fromIterable(SLinkOperations.collect(SLinkOperations.getChildren(it, LINKS.activities$gAHC), LINKS.commands$oZIM)).isEmpty()) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(it), CONCEPTS.WorkSpace$A5));
             }
           })) {
-            // replace menu 
+            // replace menu
 
             SNode emptyMenu = ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Menu$By, false, new SAbstractConcept[]{})).findFirst(new IWhereFilter<SNode>() {
               public boolean accept(SNode it) {
@@ -203,7 +203,7 @@ public class FixAll {
             break;
           }
         }
-        // ............................................................. Init Main Menu 
+        // ............................................................. Init Main Menu
 
         if (ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(node, LINKS.bodyMenu$Of2I), LINKS.events$gxkh)).isEmpty() || ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(node, LINKS.bodyMenu$Of2I), LINKS.activities$gAHC)).isEmpty()) {
 
@@ -218,7 +218,7 @@ public class FixAll {
           SLinkOperations.setTarget(newActivity, LINKS.event$pmgi, newEvent);
           LoggingRuntime.logMsgView(Level.INFO, "Init Main Menu", FixAll.class, null, null);
         }
-        // ............................................................. remove Duplicate Actions 
+        // ............................................................. remove Duplicate Actions
 
         List<SNode> duplicateMenus = SNodeOperations.getNodeDescendants(node, CONCEPTS.Menu$By, false, new SAbstractConcept[]{});
 
@@ -236,7 +236,7 @@ public class FixAll {
             LoggingRuntime.logMsgView(Level.INFO, "Duplicate Activity", FixAll.class, null, null);
           }
         }
-        // ............................................................. Resolve File / Playback 
+        // ............................................................. Resolve File / Playback
 
         for (SNode actvt : ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Activity$Oz, false, new SAbstractConcept[]{}))) {
           try {
@@ -257,7 +257,7 @@ public class FixAll {
           } catch (Exception e) {
           }
         }
-        // ............................................................. Formating Path 
+        // ............................................................. Formating Path
 
         if (isNotEmptyString(SPropertyOperations.getString(node, PROPS.default_path$K32T))) {
           if (Objects.equals(SPropertyOperations.getString(node, PROPS.default_path$K32T).charAt(0), '/')) {
@@ -274,7 +274,7 @@ public class FixAll {
           }
         }
 
-        // ............................................................. Formating numbers 
+        // ............................................................. Formating numbers
 
         List<SNode> descendants = SNodeOperations.getNodeDescendants(node, CONCEPTS.DirectCall$zl, false, new SAbstractConcept[]{});
         if (ListSequence.fromList(descendants).isNotEmpty()) {
@@ -291,7 +291,7 @@ public class FixAll {
           LoggingRuntime.logMsgView(Level.INFO, "Default number formated", FixAll.class, null, null);
         }
 
-        // ............................................................. Remove " " in Playback 
+        // ............................................................. Remove " " in Playback
 
         List<SNode> ActivityDesc = SNodeOperations.getNodeDescendants(node, CONCEPTS.Activity$Oz, false, new SAbstractConcept[]{});
         for (SNode activity : ListSequence.fromList(ActivityDesc)) {
@@ -321,11 +321,11 @@ public class FixAll {
     CellAction originalDelete = editorCell.getAction(CellActionType.DELETE);
     CellAction originalBackspace = editorCell.getAction(CellActionType.BACKSPACE);
 
-    // set actions that were actually defined 
+    // set actions that were actually defined
     setDefinedCellActions(editorCell, node, context);
 
-    // If we set a DELETE action but no BACKSPACE action, 
-    // use the DELETE action for BACKSPACE as well. 
+    // If we set a DELETE action but no BACKSPACE action,
+    // use the DELETE action for BACKSPACE as well.
     CellAction delete = editorCell.getAction(CellActionType.DELETE);
     CellAction backspace = editorCell.getAction(CellActionType.BACKSPACE);
     if (delete != originalDelete && backspace == originalBackspace) {
@@ -342,17 +342,17 @@ public class FixAll {
   private static final Object OB = new Object();
 
   public static void setDefinedCellActions(EditorCell editorCell, SNode node, EditorContext context) {
-    // set cell actions from all imported action maps 
+    // set cell actions from all imported action maps
 
-    // set cell actions defined directly in this action map 
+    // set cell actions defined directly in this action map
     editorCell.setAction(CellActionType.CLICK, createAction_CLICK(node));
   }
 
   public static void setDefinedCellActionsOfType(EditorCell editorCell, SNode node, EditorContext context, CellActionType actionType) {
 
-    // set cell action(s) of the given type from imported action maps 
+    // set cell action(s) of the given type from imported action maps
 
-    // set cell action of the given type defined directly in this action map 
+    // set cell action of the given type defined directly in this action map
     if (Objects.equals(actionType, CellActionType.CLICK)) {
       editorCell.setAction(actionType, createAction_CLICK(node));
     }

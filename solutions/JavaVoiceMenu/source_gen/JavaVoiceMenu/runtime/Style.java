@@ -40,10 +40,10 @@ public class Style {
   }
   private static void readChildren() throws IOException {
     Event tmp = Variables.myHashMap.get("0");
-    // myVoice.speak(tmp.toast); 
+    // myVoice.speak(tmp.toast);
     Variables.voice.addText(tmp.playback);
     for (Event child : tmp.childs) {
-      // myVoice.speak("For" + child.name + "press" + child.trigger); 
+      // myVoice.speak("For" + child.name + "press" + child.trigger);
       if (!(Variables.playbackisFile)) {
         Variables.voice.addText(", For " + child.name + " press " + child.trigger);
       }
@@ -52,7 +52,7 @@ public class Style {
     Variables.voice.speak();
   }
   private static void addListeners(JButton Call, JButton End, JButton ChangeVoice) {
-    // set Call button onClick actions 
+    // set Call button onClick actions
     Call.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent p0) {
         if (Variables.started == false) {
@@ -68,7 +68,7 @@ public class Style {
         }
       }
     });
-    // set End button onClick actions 
+    // set End button onClick actions
     End.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent p0) {
         Variables.voice.stop();
@@ -77,7 +77,7 @@ public class Style {
         System.exit(0);
       }
     });
-    // set Home button onClick actions 
+    // set Home button onClick actions
     ChangeVoice.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent p0) {
         Variables.voice.changeVoice();
@@ -89,16 +89,16 @@ public class Style {
     Border border = new LineBorder(Color.white, 22);
     Border emptyBorder = new LineBorder(Color.white, 10);
     Dimension dim = new Dimension(78, 50);
-    // create new buttons 
+    // create new buttons
     JButton buttonCall = new JButton("");
     JButton buttonVoice = new JButton("HOME");
     JButton buttonEnd = new JButton("");
-    // customize buttons look 
+    // customize buttons look
     customizeButton(buttonCall, border, dim, Color.GREEN);
     customizeButton(buttonVoice, emptyBorder, dim, Color.lightGray);
     customizeButton(buttonEnd, border, dim, Color.RED);
     addListeners(buttonCall, buttonEnd, buttonVoice);
-    // add to pane 
+    // add to pane
     panel.add(buttonCall, BorderLayout.LINE_START);
     panel.add(buttonVoice, BorderLayout.CENTER);
     panel.add(buttonEnd, BorderLayout.LINE_END);
@@ -140,33 +140,33 @@ public class Style {
   }
   private static void setTopPanel(JPanel topPanel) {
     JPanel myHeader = new JPanel(new BorderLayout(0, 0));
-    // set content 
+    // set content
     setScreen(myScreen);
     setHeader(myHeader);
-    // add componenets to panel 
+    // add componenets to panel
     topPanel.add(myHeader, BorderLayout.NORTH);
     topPanel.add(myScreen, BorderLayout.SOUTH);
   }
   private static void setMainPanel(JPanel myPhone) {
     JPanel topPanel = new JPanel(new BorderLayout(0, 0));
     JPanel myLine = new JPanel(new BorderLayout(0, 0));
-    // set top panel + screen 
+    // set top panel + screen
     setTopPanel(topPanel);
-    // set deliminator line 
+    // set deliminator line
     setDeliminatorLine(myLine);
-    // add components to myPhone panel 
+    // add components to myPhone panel
     myPhone.add(topPanel, BorderLayout.NORTH);
     myPhone.add(myLine, BorderLayout.CENTER);
   }
   public static void setFrame() {
-    // set position constrains 
+    // set position constrains
     Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
     int height = screenSize.height;
     int width = screenSize.width;
     frame.setSize(width / 2, height / 2);
-    // set frame position 
+    // set frame position
     frame.setLocationRelativeTo(null);
-    // add frame 
+    // add frame
     frame.setContentPane(myPhone);
     frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     frame.pack();
@@ -174,7 +174,7 @@ public class Style {
     frame.setResizable(false);
   }
   public static void setContent() {
-    // set visible content 
+    // set visible content
     setMainPanel(myPhone);
   }
 }
