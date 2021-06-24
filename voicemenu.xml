@@ -7,7 +7,7 @@
     <format property="date" pattern="yyyyMMdd" />
   </tstamp>
   <property name="build.number" value="202.SNAPSHOT" />
-  <property name="mps_home" location="${basedir}/../../MPS 2020.3" />
+  <property name="mps_home" location="${basedir}/../../MPS 2021.1" />
   <property name="artifacts.mpsStandalone" location="${mps_home}" />
   <property name="artifacts.mpsDebuggerPlugin" location="${mps_home}/plugins" />
   <property name="artifacts.mpsMakePlugin" location="${mps_home}/plugins" />
@@ -96,59 +96,15 @@
       <fileset file="${basedir}/icons/IVR_about.png" />
       <fileset dir="${build.tmp}/default/branding.jar" />
     </jar>
-    <mkdir dir="${build.tmp}/default/mps-resources.jar" />
-    <unjar src="${mps_home}/lib/mps-resources.jar" dest="${build.tmp}/default/mps-resources_jar">
-      <patternset>
-        <include name="idea/PlatformActions.xml" />
-      </patternset>
-    </unjar>
-    <mkdir dir="${build.tmp}/default/mps-resources.jar/idea" />
-    <copy todir="${build.tmp}/default/mps-resources.jar/idea">
-      <fileset file="${build.tmp}/default/mps-resources_jar/idea/PlatformActions.xml" />
-      <filterchain>
-        <tokenfilter>
-          <replaceregex pattern=".*com.intellij.ide.actions.SendFeedbackAction.*" replace="" flags="" />
-        </tokenfilter>
-        <tokenfilter>
-          <replaceregex pattern=".*com.intellij.ide.actions.JetBrainsTvAction.*" replace="" flags="" />
-        </tokenfilter>
-        <tokenfilter>
-          <replaceregex pattern=".*com.intellij.ide.actions.HelpTopicsAction.*" replace="" flags="" />
-        </tokenfilter>
-        <tokenfilter>
-          <replaceregex pattern=".*ref=&quot;HelpTopics.*" replace="" flags="" />
-        </tokenfilter>
-        <tokenfilter>
-          <replaceregex pattern=".*ref=&quot;Help.JetBrainsTV.*" replace="" flags="" />
-        </tokenfilter>
-      </filterchain>
-    </copy>
     <jar destfile="${build.layout}/lib/mps-resources.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/deps/mpsWorkbench/mps-resources.jar1">
         <exclude name="idea/PlatformActions.xml" />
       </fileset>
-      <fileset dir="${build.tmp}/default/mps-resources.jar" />
     </jar>
-    <mkdir dir="${build.tmp}/default/mps-workbench.jar" />
-    <unjar src="${mps_home}/lib/mps-workbench.jar" dest="${build.tmp}/default/mps-workbench_jar">
-      <patternset>
-        <include name="META-INF/MPSPlatformExtensions.xml" />
-      </patternset>
-    </unjar>
-    <mkdir dir="${build.tmp}/default/mps-workbench.jar/META-INF" />
-    <copy todir="${build.tmp}/default/mps-workbench.jar/META-INF">
-      <fileset file="${build.tmp}/default/mps-workbench_jar/META-INF/MPSPlatformExtensions.xml" />
-      <filterchain>
-        <tokenfilter>
-          <replaceregex pattern=".*com.intellij.ide.TipOfTheDayManager.*" replace="" flags="" />
-        </tokenfilter>
-      </filterchain>
-    </copy>
     <jar destfile="${build.layout}/lib/mps-workbench.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/deps/mpsWorkbench/mps-workbench.jar1">
         <exclude name="META-INF/MPSPlatformExtensions.xml" />
       </fileset>
-      <fileset dir="${build.tmp}/default/mps-workbench.jar" />
     </jar>
     <mkdir dir="${build.tmp}/default/mps-platform.jar" />
     <unjar src="${mps_home}/lib/mps-platform.jar" dest="${build.tmp}/default/mps-platform_jar">
