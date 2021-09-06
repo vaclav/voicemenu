@@ -26,7 +26,7 @@ Modules
 Sample
 ------
 A few sample voice menu definitions can be found in the Sandbox module. These can be located in the "Project" tool window positioned on the left side of the screen.
-Double-click on them to have them open in teh editor. Then you will be able to edit your voice menu definitions.
+Double-click on them to have them open in the editor. Then you will be able to edit your voice menu definitions.
 
 Before generation, you need to select the generation target (Java, XML, HTML etc.). Do the following:
 1. Navigate to the top of the editor of your voice menu definition
@@ -42,7 +42,7 @@ MPS is licensed under the Apache 2 open-source license. See the [License](https:
 System requirements
 -------------------
 
-You can download the Voice Menu IDE to experiment instantly for the JetBrains TeamCity server - [Download Voice Menu IDE](https://teamcity.jetbrains.com/guestAuth/repository/downloadAll/MPS_VoiceMenu_20192/.lastSuccessful/artifacts.zip).
+You can download the Voice Menu IDE to experiment instantly for the JetBrains TeamCity server - [Download Voice Menu IDE](https://teamcity.jetbrains.com/guestAuth/repository/downloadAll/MPS_VoiceMenu_build/.lastSuccessful/artifacts.zip).
 
 To build the Voice Menu project from the sources you need JetBrains MPS 2020.3 and JDK 11 or newer.
 
