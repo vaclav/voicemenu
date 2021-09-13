@@ -13,7 +13,7 @@ import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.errors.messageTargets.MessageTarget;
-import jetbrains.mps.errors.messageTargets.NodeMessageTarget;
+import jetbrains.mps.errors.messageTargets.PropertyMessageTarget;
 import jetbrains.mps.errors.IErrorReporter;
 import jetbrains.mps.errors.BaseQuickFixProvider;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
@@ -31,7 +31,7 @@ public class CheckDuplicateNumber_NonTypesystemRule extends AbstractNonTypesyste
       }
     })) {
       {
-        final MessageTarget errorTarget = new NodeMessageTarget();
+        final MessageTarget errorTarget = new PropertyMessageTarget(PROPS.trigger$DqFK);
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(event, "Duplicate number", "r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)", "8455589616260334561", null, errorTarget);
         {
           BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("jetbrains.mps.samples.VoiceMenu.typesystem.RemoveNumber_QuickFix", "8455589616260334563", false);

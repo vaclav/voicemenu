@@ -1057,8 +1057,8 @@
   </root>
   <root nodeRef="r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)/6587365532662446244">
     <file name="CheckPhoneButtons_NonTypesystemRule.java">
-      <node id="2036874050862904852" at="27,7,28,66" concept="6" />
-      <node id="2036874050862904852" at="28,66,29,259" concept="6" />
+      <node id="2036874050862904852" at="27,7,28,88" concept="6" />
+      <node id="2036874050862904852" at="28,88,29,259" concept="6" />
       <node id="2036874050862904928" at="30,9,31,175" concept="6" />
       <node id="2036874050862904928" at="31,175,32,71" concept="2" />
       <node id="6587365532662476321" at="35,5,36,0" concept="8" />
@@ -1355,8 +1355,8 @@
   <root nodeRef="r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)/7660908927727797697">
     <file name="CheckDuplicateNumber_NonTypesystemRule.java">
       <node id="7660908927727797720" at="29,39,30,143" concept="7" />
-      <node id="8455589616260334561" at="33,7,34,66" concept="6" />
-      <node id="8455589616260334561" at="34,66,35,237" concept="6" />
+      <node id="8455589616260334561" at="33,7,34,88" concept="6" />
+      <node id="8455589616260334561" at="34,88,35,237" concept="6" />
       <node id="8455589616260334563" at="36,9,37,174" concept="6" />
       <node id="8455589616260334563" at="37,174,38,71" concept="2" />
       <node id="8455589616260334564" at="40,9,41,175" concept="6" />
