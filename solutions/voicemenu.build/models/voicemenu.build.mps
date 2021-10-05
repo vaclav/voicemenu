@@ -193,6 +193,9 @@
         <child id="781140262677906401" name="name" index="IuM$f" />
         <child id="2355727383336213970" name="copyrightStar" index="3fQQh0" />
       </concept>
+      <concept id="8971171305100238972" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyTargetLanguage" flags="ng" index="Rbm2T">
+        <reference id="3189788309731922643" name="language" index="1E1Vl2" />
+      </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
         <child id="5253498789149547825" name="sources" index="3bR31x" />
@@ -272,8 +275,8 @@
     <property role="2DA0ip" value="../../" />
     <property role="turDy" value="voicemenu.xml" />
     <node concept="1zClus" id="6IQveQCdrNi" role="3989C9">
-      <property role="2OjLBL" value="2020" />
-      <property role="2OjLBK" value="3" />
+      <property role="2OjLBL" value="2021" />
+      <property role="2OjLBK" value="2" />
       <node concept="3_J27D" id="6IQveQCdrNk" role="2EteIg">
         <node concept="3Mxwey" id="6IQveQCdsk1" role="3MwsjC">
           <ref role="3Mxwex" node="5ruKdSwyerk" resolve="build.number" />
@@ -414,7 +417,7 @@
           <node concept="2Ry0Ak" id="4qLeaozfzuK" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
             <node concept="2Ry0Ak" id="7YU6twplji0" role="2Ry0An">
-              <property role="2Ry0Am" value="MPS 2021.1" />
+              <property role="2Ry0Am" value="MPS 2021.2" />
             </node>
           </node>
         </node>
@@ -964,7 +967,7 @@
       </node>
       <node concept="3_J27D" id="5ruKdSwyesR" role="m$_w8">
         <node concept="3Mxwew" id="5ruKdSwyesS" role="3MwsjC">
-          <property role="3MwjfP" value="2020.2" />
+          <property role="3MwjfP" value="2021.2" />
         </node>
       </node>
       <node concept="m$f5U" id="5ruKdSwyesT" role="m$_yh">
@@ -1225,6 +1228,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="69VQJQVZKuz" role="3bR37C">
+          <node concept="Rbm2T" id="69VQJQVZKu$" role="1SiIV1">
+            <ref role="1E1Vl2" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="5ruKdSwyese" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1473,6 +1481,11 @@
             <node concept="3qWCbU" id="6tujwivY1s" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="69VQJQVZKuV" role="3bR37C">
+          <node concept="Rbm2T" id="69VQJQVZKuW" role="1SiIV1">
+            <ref role="1E1Vl2" node="5ruKdSwyes2" resolve="jetbrains.mps.samples.VoiceMenu" />
           </node>
         </node>
       </node>
@@ -2059,6 +2072,9 @@
         </node>
         <node concept="3LEDTy" id="5uJACN1hmJt" role="3LEDUa">
           <ref role="3LEDTV" to="ffeo:7Kfy9QB6L0h" resolve="jetbrains.mps.baseLanguage.collections" />
+        </node>
+        <node concept="3LEDTy" id="69VQJQVZKwd" role="3LEDUa">
+          <ref role="3LEDTV" node="4d91uyi9hJl" resolve="VoiceMenuTest" />
         </node>
       </node>
       <node concept="1E1JtA" id="20sXUrlkzFv" role="2G$12L">
@@ -2898,8 +2914,8 @@
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="5$IQOQwcnGK" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="2FhqNlO9csm" role="2Ry0An">
-              <property role="2Ry0Am" value="MPS 2021.1" />
+            <node concept="2Ry0Ak" id="69VQJQW423H" role="2Ry0An">
+              <property role="2Ry0Am" value="MPS 2021.2" />
             </node>
           </node>
         </node>
@@ -2910,7 +2926,7 @@
       <node concept="aVJcg" id="5ruKdSwyevv" role="aVJcv">
         <node concept="NbPM2" id="5ruKdSwyevw" role="aVJcq">
           <node concept="3Mxwew" id="5ruKdSwyevx" role="3MwsjC">
-            <property role="3MwjfP" value="2020.1" />
+            <property role="3MwjfP" value="2020.2" />
           </node>
         </node>
       </node>

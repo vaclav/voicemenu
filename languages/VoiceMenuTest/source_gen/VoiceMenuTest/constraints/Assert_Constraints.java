@@ -11,6 +11,7 @@ import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.runtime.ReferenceScopeProvider;
 import jetbrains.mps.smodel.runtime.base.BaseScopeProvider;
 import org.jetbrains.mps.openapi.model.SNodeReference;
+import jetbrains.mps.smodel.SNodePointer;
 import jetbrains.mps.scope.Scope;
 import jetbrains.mps.smodel.runtime.ReferenceConstraintsContext;
 import java.util.List;
@@ -20,7 +21,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.scope.ListScope;
 import java.util.HashMap;
-import jetbrains.mps.smodel.SNodePointer;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
@@ -31,18 +31,14 @@ public class Assert_Constraints extends BaseConstraintsDescriptor {
 
   @Override
   protected Map<SReferenceLink, ReferenceConstraintsDescriptor> getSpecifiedReferences() {
-    BaseReferenceConstraintsDescriptor d0 = new BaseReferenceConstraintsDescriptor(LINKS.expectedEvent$5c5c, this) {
-      @Override
-      public boolean hasOwnScopeProvider() {
-        return true;
-      }
+    BaseReferenceConstraintsDescriptor d0 = new BaseReferenceConstraintsDescriptor(LINKS.expectedEvent$5c5c, this, true, false) {
       @Nullable
       @Override
       public ReferenceScopeProvider getScopeProvider() {
         return new BaseScopeProvider() {
           @Override
           public SNodeReference getSearchScopeValidatorNode() {
-            return breakingNode_g42j4u_a0a0a0a0a1a0a0a0c;
+            return new SNodePointer("r:f13c684f-5a73-4f94-a84e-78c195b9a56b(VoiceMenuTest.constraints)", "8281000289632442912");
           }
           @Override
           public Scope createScope(final ReferenceConstraintsContext _context) {
@@ -56,7 +52,6 @@ public class Assert_Constraints extends BaseConstraintsDescriptor {
     references.put(d0.getReference(), d0);
     return references;
   }
-  private static final SNodePointer breakingNode_g42j4u_a0a0a0a0a1a0a0a0c = new SNodePointer("r:f13c684f-5a73-4f94-a84e-78c195b9a56b(VoiceMenuTest.constraints)", "8281000289632442912");
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept Assert$Fi = MetaAdapterFactory.getConcept(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3887030a6L, "VoiceMenuTest.structure.Assert");

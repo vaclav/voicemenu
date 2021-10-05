@@ -33,9 +33,9 @@ IF EXIST "%voicemenu_JDK%" SET JDK=%voicemenu_JDK%
 IF EXIST "%JDK%" GOTO check
 
 SET BITS=64
-SET USER_JDK64_FILE=%APPDATA%\%IDEA_VENDOR_NAME%\voicemenu2020.3\voicemenu%BITS%.exe.jdk
+SET USER_JDK64_FILE=%APPDATA%\%IDEA_VENDOR_NAME%\voicemenu2021.2\voicemenu%BITS%.exe.jdk
 SET BITS=
-SET USER_JDK_FILE=%APPDATA%\%IDEA_VENDOR_NAME%\voicemenu2020.3\voicemenu%BITS%.exe.jdk
+SET USER_JDK_FILE=%APPDATA%\%IDEA_VENDOR_NAME%\voicemenu2021.2\voicemenu%BITS%.exe.jdk
 IF EXIST "%USER_JDK64_FILE%" (
   SET /P JDK=<%USER_JDK64_FILE%
 ) ELSE (
@@ -88,7 +88,7 @@ IF NOT EXIST "%VM_OPTIONS_FILE%" (
 )
 IF NOT EXIST "%VM_OPTIONS_FILE%" (
   :: user-overridden
-  SET VM_OPTIONS_FILE=%APPDATA%\%IDEA_VENDOR_NAME%\voicemenu2020.3\mps%BITS%.exe.vmoptions
+  SET VM_OPTIONS_FILE=%APPDATA%\%IDEA_VENDOR_NAME%\voicemenu2021.2\mps%BITS%.exe.vmoptions
 )
 IF NOT EXIST "%VM_OPTIONS_FILE%" (
   :: default, standard installation
@@ -106,7 +106,7 @@ SET ACC=
 FOR /F "eol=# usebackq delims=" %%i IN ("%VM_OPTIONS_FILE%") DO CALL "%IDE_BIN_DIR%\append.bat" "%%i"
 IF EXIST "%VM_OPTIONS_FILE%" SET ACC=%ACC% -Djb.vmOptionsFile="%VM_OPTIONS_FILE%"
 
-SET IDEA_PATHS_SELECTOR=voicemenu2020.3
+SET IDEA_PATHS_SELECTOR=voicemenu2021.2
 SET PRODUCT="voicemenu"
 SET COMMON_JVM_ARGS="-XX:ErrorFile=%USERPROFILE%\java_error_in_%PRODUCT%_%%p.log" "-XX:HeapDumpPath=%USERPROFILE%\java_error_in_%PRODUCT%.hprof" -Didea.paths.selector=%IDEA_PATHS_SELECTOR% -Didea.vendor.name="%IDEA_VENDOR_NAME%" %IDE_PROPERTIES_PROPERTY%
 SET IDE_JVM_ARGS=-Didea.platform.prefix=Idea -Didea.jre.check=true
