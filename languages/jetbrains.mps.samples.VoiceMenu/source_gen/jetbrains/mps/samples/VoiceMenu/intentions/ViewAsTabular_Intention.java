@@ -18,21 +18,21 @@ import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 
 public final class ViewAsTabular_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
+
   public ViewAsTabular_Intention() {
     super(Kind.NORMAL, true, new SNodePointer("r:d92c1500-00d3-4072-866a-5077893293b8(jetbrains.mps.samples.VoiceMenu.intentions)", "7167187293243153753"));
   }
+
   @Override
   public String getPresentation() {
     return "ViewAsTabular";
   }
-  @Override
-  public boolean isApplicable(final SNode node, final EditorContext editorContext) {
-    return true;
-  }
+
   @Override
   public boolean isSurroundWith() {
     return false;
   }
+
   public Collection<IntentionExecutable> instances(final SNode node, final EditorContext context) {
     if (myCachedExecutable == null) {
       myCachedExecutable = Collections.<IntentionExecutable>singletonList(new IntentionImplementation());
@@ -42,6 +42,7 @@ public final class ViewAsTabular_Intention extends AbstractIntentionDescriptor i
   /*package*/ final class IntentionImplementation extends AbstractIntentionExecutable {
     public IntentionImplementation() {
     }
+
     @Override
     public String getDescription(final SNode node, final EditorContext editorContext) {
       String[] initialEditorHints = editorContext.getEditorComponent().getUpdater().getInitialEditorHints();
@@ -51,6 +52,7 @@ public final class ViewAsTabular_Intention extends AbstractIntentionDescriptor i
         return "Show as Structural";
       }
     }
+
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
       String[] initialEditorHints = editorContext.getEditorComponent().getUpdater().getInitialEditorHints();
@@ -64,9 +66,18 @@ public final class ViewAsTabular_Intention extends AbstractIntentionDescriptor i
 
       SelectionUtil.selectCell(editorContext, node, SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL);
     }
+
+    @Override
+    public boolean isApplicable(final SNode node, final EditorContext editorContext) {
+      return true;
+    }
+
+
+
     @Override
     public IntentionDescriptor getDescriptor() {
       return ViewAsTabular_Intention.this;
     }
+
   }
 }

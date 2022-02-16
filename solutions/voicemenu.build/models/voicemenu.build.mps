@@ -566,7 +566,7 @@
             </node>
           </node>
           <node concept="1zDrgl" id="5ruKdSwyetr" role="39821P">
-            <ref role="1zDrgn" node="6IQveQCdrNi" resolve="Voice Menu 2020.3" />
+            <ref role="1zDrgn" node="6IQveQCdrNi" resolve="Voice Menu 2021.2" />
           </node>
         </node>
         <node concept="28u9K_" id="VV7r8LjI59" role="39821P">
@@ -2914,8 +2914,8 @@
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="5$IQOQwcnGK" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="69VQJQW423H" role="2Ry0An">
-              <property role="2Ry0Am" value="MPS 2021.2" />
+            <node concept="2Ry0Ak" id="60c63VRGskx" role="2Ry0An">
+              <property role="2Ry0Am" value="MPS 2021.3" />
             </node>
           </node>
         </node>
@@ -2926,7 +2926,7 @@
       <node concept="aVJcg" id="5ruKdSwyevv" role="aVJcv">
         <node concept="NbPM2" id="5ruKdSwyevw" role="aVJcq">
           <node concept="3Mxwew" id="5ruKdSwyevx" role="3MwsjC">
-            <property role="3MwjfP" value="2020.2" />
+            <property role="3MwjfP" value="2021.3" />
           </node>
         </node>
       </node>
@@ -2936,7 +2936,7 @@
     <property role="TrG5h" value="voicemenu" />
     <property role="26FY9R" value="jetbrains.mps.Launcher" />
     <property role="26EafI" value="bin" />
-    <ref role="1_kbm$" node="6IQveQCdrNi" resolve="Voice Menu 2020.3" />
+    <ref role="1_kbm$" node="6IQveQCdrNi" resolve="Voice Menu 2021.2" />
     <node concept="26Ea6D" id="27IwjAPkmZq" role="26FZ21">
       <property role="26Ea6C" value="-client -Xss1024k -ea -Xmx950m -XX:MaxPermSize=256m -XX:NewSize=256m -XX:+HeapDumpOnOutOfMemoryError -Xverify:none" />
     </node>

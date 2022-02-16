@@ -32,21 +32,21 @@ import org.jetbrains.mps.openapi.language.SProperty;
 
 public final class RunTests_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
+
   public RunTests_Intention() {
     super(Kind.NORMAL, true, new SNodePointer("r:e62e7d7f-d516-4f0b-946c-e54a37d62a24(VoiceMenuTest.intentions)", "8281000289632534074"));
   }
+
   @Override
   public String getPresentation() {
     return "RunTests";
   }
-  @Override
-  public boolean isApplicable(final SNode node, final EditorContext editorContext) {
-    return true;
-  }
+
   @Override
   public boolean isSurroundWith() {
     return false;
   }
+
   public Collection<IntentionExecutable> instances(final SNode node, final EditorContext context) {
     if (myCachedExecutable == null) {
       myCachedExecutable = Collections.<IntentionExecutable>singletonList(new IntentionImplementation());
@@ -56,10 +56,12 @@ public final class RunTests_Intention extends AbstractIntentionDescriptor implem
   /*package*/ final class IntentionImplementation extends AbstractIntentionExecutable {
     public IntentionImplementation() {
     }
+
     @Override
     public String getDescription(final SNode node, final EditorContext editorContext) {
       return "Run Tests";
     }
+
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
       Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(node, LINKS.commands$RX3w), CONCEPTS.TestStep$W2)).visitAll(new IVisitor<SNode>() {
@@ -103,10 +105,19 @@ public final class RunTests_Intention extends AbstractIntentionDescriptor implem
         SPropertyOperations.setEnum(SLinkOperations.getTarget(step, LINKS.evaluation$kokw), PROPS.result$7die, 0x72ec05e3886dfc13L, "Success");
       }
     }
+
+    @Override
+    public boolean isApplicable(final SNode node, final EditorContext editorContext) {
+      return true;
+    }
+
+
+
     @Override
     public IntentionDescriptor getDescriptor() {
       return RunTests_Intention.this;
     }
+
   }
 
   private static final class LINKS {

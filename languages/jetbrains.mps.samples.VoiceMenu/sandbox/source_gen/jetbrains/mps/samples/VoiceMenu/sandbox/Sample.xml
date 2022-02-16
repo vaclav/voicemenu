@@ -1,6 +1,5 @@
 <?xml version = "1.0" encoding = "UTF-8" standalone = "no"?>
-<state_machine>
-  
+<state_machine>  
   <state id="Sample" isInitial="true">
     <playback>Welcome to Sample Menu</playback>
     

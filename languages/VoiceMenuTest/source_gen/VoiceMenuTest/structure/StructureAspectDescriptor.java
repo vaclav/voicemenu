@@ -79,9 +79,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForAssert() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("VoiceMenuTest", "Assert", 0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3887030a6L);
     b.class_(false, false, false);
-    b.super_("VoiceMenuTest.structure.TestStep", 0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0fL);
+    // extends: VoiceMenuTest.structure.TestStep
+    b.super_(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0fL);
     b.origin("r:9b5fab12-3317-4915-baca-42b08fc481a5(VoiceMenuTest.structure)/8281000289632268454");
-    b.version(2);
+    b.version(3);
     b.associate("expectedEvent", 0x72ec05e38870a891L).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL).optional(false).origin("8281000289632299153").done();
     b.alias("assert");
     return b.create();
@@ -90,24 +91,26 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("VoiceMenuTest", "Command", 0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3887c9e10L);
     b.class_(false, true, false);
     b.origin("r:9b5fab12-3317-4915-baca-42b08fc481a5(VoiceMenuTest.structure)/8281000289633082896");
-    b.version(2);
+    b.version(3);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForEmptyLine() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("VoiceMenuTest", "EmptyLine", 0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3887c9e0fL);
     b.class_(false, false, false);
-    b.super_("VoiceMenuTest.structure.Command", 0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3887c9e10L);
+    // extends: VoiceMenuTest.structure.Command
+    b.super_(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3887c9e10L);
     b.origin("r:9b5fab12-3317-4915-baca-42b08fc481a5(VoiceMenuTest.structure)/8281000289633082895");
-    b.version(2);
+    b.version(3);
     b.alias("<empty line>");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPress() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("VoiceMenuTest", "Press", 0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc11L);
     b.class_(false, false, false);
-    b.super_("VoiceMenuTest.structure.TestStep", 0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0fL);
+    // extends: VoiceMenuTest.structure.TestStep
+    b.super_(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0fL);
     b.origin("r:9b5fab12-3317-4915-baca-42b08fc481a5(VoiceMenuTest.structure)/8281000289632123921");
-    b.version(2);
+    b.version(3);
     b.property("key", 0x72ec05e3887030a4L).type(MetaIdFactory.dataTypeId(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e388704c45L)).origin("8281000289632268452").done();
     b.alias("press");
     return b.create();
@@ -116,7 +119,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("VoiceMenuTest", "StepEvaluation", 0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc10L);
     b.class_(false, false, false);
     b.origin("r:9b5fab12-3317-4915-baca-42b08fc481a5(VoiceMenuTest.structure)/8281000289632123920");
-    b.version(2);
+    b.version(3);
     b.property("result", 0x72ec05e3886dfc1bL).type(MetaIdFactory.dataTypeId(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc12L)).origin("8281000289632123931").done();
     b.property("message", 0x72ec05e3886dfc1dL).type(PrimitiveTypeId.STRING).origin("8281000289632123933").done();
     return b.create();
@@ -124,9 +127,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForTestStep() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("VoiceMenuTest", "TestStep", 0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc0fL);
     b.class_(false, true, false);
-    b.super_("VoiceMenuTest.structure.Command", 0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3887c9e10L);
+    // extends: VoiceMenuTest.structure.Command
+    b.super_(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3887c9e10L);
     b.origin("r:9b5fab12-3317-4915-baca-42b08fc481a5(VoiceMenuTest.structure)/8281000289632123919");
-    b.version(2);
+    b.version(3);
     b.aggregate("evaluation", 0x72ec05e3886dfc64L).target(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc10L).optional(false).ordered(true).multiple(false).origin("8281000289632124004").done();
     return b.create();
   }
@@ -135,7 +139,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, true);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:9b5fab12-3317-4915-baca-42b08fc481a5(VoiceMenuTest.structure)/8281000289632123916");
-    b.version(2);
+    b.version(3);
     b.associate("workspaceToTest", 0x72ec05e388705231L).target(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf40204c8L).optional(false).origin("8281000289632277041").done();
     b.aggregate("commands", 0x72ec05e38870528cL).target(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3887c9e10L).optional(true).ordered(true).multiple(true).origin("8281000289632277132").done();
     b.alias("Voice Menu Test Case");

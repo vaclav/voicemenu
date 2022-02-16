@@ -1,8 +1,6 @@
 <?xml version = "1.0" encoding = "UTF-8" standalone = "no"?>
-<state_machine>
-  
-  <state id="ToBeTested" isInitial="true">
-    
+<state_machine>  
+  <state id="ToBeTested" isInitial="true">    
     
     <activity event="1" target_child="a">
       <state id="a">

@@ -25,21 +25,21 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
 public final class InitializeNewEvent_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
+
   public InitializeNewEvent_Intention() {
     super(Kind.NORMAL, false, new SNodePointer("r:d92c1500-00d3-4072-866a-5077893293b8(jetbrains.mps.samples.VoiceMenu.intentions)", "7347053438378700159"));
   }
+
   @Override
   public String getPresentation() {
     return "InitializeNewEvent";
   }
-  @Override
-  public boolean isApplicable(final SNode node, final EditorContext editorContext) {
-    return true;
-  }
+
   @Override
   public boolean isSurroundWith() {
     return false;
   }
+
   public Collection<IntentionExecutable> instances(final SNode node, final EditorContext context) {
     if (myCachedExecutable == null) {
       myCachedExecutable = Collections.<IntentionExecutable>singletonList(new IntentionImplementation());
@@ -49,19 +49,30 @@ public final class InitializeNewEvent_Intention extends AbstractIntentionDescrip
   /*package*/ final class IntentionImplementation extends AbstractIntentionExecutable {
     public IntentionImplementation() {
     }
+
     @Override
     public String getDescription(final SNode node, final EditorContext editorContext) {
       return "Set up " + SPropertyOperations.getString(SLinkOperations.getTarget(node, LINKS.event$pmgi), PROPS.name$MnvL);
     }
+
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
       SNodeFactoryOperations.addNewChild(SNodeOperations.cast(SNodeOperations.getParent(node), CONCEPTS.Menu$By), LINKS.activities$gAHC, CONCEPTS.Activity$Oz);
 
     }
+
+    @Override
+    public boolean isApplicable(final SNode node, final EditorContext editorContext) {
+      return true;
+    }
+
+
+
     @Override
     public IntentionDescriptor getDescriptor() {
       return InitializeNewEvent_Intention.this;
     }
+
   }
 
   private static final class LINKS {

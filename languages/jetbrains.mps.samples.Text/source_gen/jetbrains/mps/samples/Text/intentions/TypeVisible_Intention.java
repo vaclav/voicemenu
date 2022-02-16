@@ -21,21 +21,21 @@ import org.jetbrains.mps.openapi.language.SProperty;
 
 public final class TypeVisible_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
+
   public TypeVisible_Intention() {
     super(Kind.NORMAL, false, new SNodePointer("r:2c7903cd-35e1-4977-8967-7a166d005c2e(jetbrains.mps.samples.Text.intentions)", "8465164147135912895"));
   }
+
   @Override
   public String getPresentation() {
     return "TypeVisible";
   }
-  @Override
-  public boolean isApplicable(final SNode node, final EditorContext editorContext) {
-    return true;
-  }
+
   @Override
   public boolean isSurroundWith() {
     return false;
   }
+
   public Collection<IntentionExecutable> instances(final SNode node, final EditorContext context) {
     if (myCachedExecutable == null) {
       myCachedExecutable = Collections.<IntentionExecutable>singletonList(new IntentionImplementation());
@@ -45,18 +45,29 @@ public final class TypeVisible_Intention extends AbstractIntentionDescriptor imp
   /*package*/ final class IntentionImplementation extends AbstractIntentionExecutable {
     public IntentionImplementation() {
     }
+
     @Override
     public String getDescription(final SNode node, final EditorContext editorContext) {
       return "Visible";
     }
+
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
       SPropertyOperations.assign(SNodeOperations.getNodeAncestor(node, CONCEPTS.WorkSpace$Qz, false, false), PROPS.typeVisible$zuWg, !(SPropertyOperations.getBoolean(SNodeOperations.getNodeAncestor(node, CONCEPTS.WorkSpace$Qz, false, false), PROPS.typeVisible$zuWg)));
     }
+
+    @Override
+    public boolean isApplicable(final SNode node, final EditorContext editorContext) {
+      return true;
+    }
+
+
+
     @Override
     public IntentionDescriptor getDescriptor() {
       return TypeVisible_Intention.this;
     }
+
   }
 
   private static final class CONCEPTS {

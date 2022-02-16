@@ -50,7 +50,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.samples.VoiceMenuTabularEditor", "Name", 0x250921d21a8746e5L, 0x90a9a2c74442cfa1L, 0x2c711bd01b0d4082L);
     b.class_(false, false, false);
     b.origin("r:fe9fa7fb-ca86-4df8-961a-ed1f7f791fac(jetbrains.mps.samples.VoiceMenuTabularEditor.structure)/3202371390658134146");
-    b.version(2);
+    b.version(3);
     b.alias("name");
     return b.create();
   }

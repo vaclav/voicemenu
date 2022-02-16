@@ -10,15 +10,15 @@ import jetbrains.mps.openapi.intentions.Kind;
 import jetbrains.mps.smodel.SNodePointer;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
+import java.util.Collections;
+import jetbrains.mps.intentions.AbstractIntentionExecutable;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.IVisitor;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import java.util.Collections;
-import jetbrains.mps.intentions.AbstractIntentionExecutable;
-import jetbrains.mps.internal.collections.runtime.IVisitor;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
@@ -27,31 +27,21 @@ import org.jetbrains.mps.openapi.language.SProperty;
 
 public final class ClearTestResults_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
+
   public ClearTestResults_Intention() {
     super(Kind.NORMAL, true, new SNodePointer("r:e62e7d7f-d516-4f0b-946c-e54a37d62a24(VoiceMenuTest.intentions)", "8281000289632484192"));
   }
+
   @Override
   public String getPresentation() {
     return "ClearTestResults";
   }
-  @Override
-  public boolean isApplicable(final SNode node, final EditorContext editorContext) {
-    if (!(isApplicableToNode(node, editorContext))) {
-      return false;
-    }
-    return true;
-  }
-  private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-    return Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(node, LINKS.commands$RX3w), CONCEPTS.TestStep$W2)).any(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return !(SEnumOperations.isMember(SPropertyOperations.getEnum(SLinkOperations.getTarget(it, LINKS.evaluation$kokw), PROPS.result$7die), 0x72ec05e3886dfc17L));
-      }
-    });
-  }
+
   @Override
   public boolean isSurroundWith() {
     return false;
   }
+
   public Collection<IntentionExecutable> instances(final SNode node, final EditorContext context) {
     if (myCachedExecutable == null) {
       myCachedExecutable = Collections.<IntentionExecutable>singletonList(new IntentionImplementation());
@@ -61,10 +51,12 @@ public final class ClearTestResults_Intention extends AbstractIntentionDescripto
   /*package*/ final class IntentionImplementation extends AbstractIntentionExecutable {
     public IntentionImplementation() {
     }
+
     @Override
     public String getDescription(final SNode node, final EditorContext editorContext) {
       return "Clear Test Results";
     }
+
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
       Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(node, LINKS.commands$RX3w), CONCEPTS.TestStep$W2)).visitAll(new IVisitor<SNode>() {
@@ -74,10 +66,29 @@ public final class ClearTestResults_Intention extends AbstractIntentionDescripto
         }
       });
     }
+
+    @Override
+    public boolean isApplicable(final SNode node, final EditorContext editorContext) {
+      if (!(isApplicableToNode(node, editorContext))) {
+        return false;
+      }
+      return true;
+    }
+
+    private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
+      return Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(node, LINKS.commands$RX3w), CONCEPTS.TestStep$W2)).any(new IWhereFilter<SNode>() {
+        public boolean accept(SNode it) {
+          return !(SEnumOperations.isMember(SPropertyOperations.getEnum(SLinkOperations.getTarget(it, LINKS.evaluation$kokw), PROPS.result$7die), 0x72ec05e3886dfc17L));
+        }
+      });
+    }
+
+
     @Override
     public IntentionDescriptor getDescriptor() {
       return ClearTestResults_Intention.this;
     }
+
   }
 
   private static final class LINKS {

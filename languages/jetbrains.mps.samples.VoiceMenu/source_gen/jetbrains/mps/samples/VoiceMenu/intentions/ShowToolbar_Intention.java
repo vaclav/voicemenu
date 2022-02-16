@@ -19,21 +19,21 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public final class ShowToolbar_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
+
   public ShowToolbar_Intention() {
     super(Kind.NORMAL, true, new SNodePointer("r:d92c1500-00d3-4072-866a-5077893293b8(jetbrains.mps.samples.VoiceMenu.intentions)", "3919338464396174374"));
   }
+
   @Override
   public String getPresentation() {
     return "ShowToolbar";
   }
-  @Override
-  public boolean isApplicable(final SNode node, final EditorContext editorContext) {
-    return true;
-  }
+
   @Override
   public boolean isSurroundWith() {
     return false;
   }
+
   public Collection<IntentionExecutable> instances(final SNode node, final EditorContext context) {
     if (myCachedExecutable == null) {
       myCachedExecutable = Collections.<IntentionExecutable>singletonList(new IntentionImplementation());
@@ -43,6 +43,7 @@ public final class ShowToolbar_Intention extends AbstractIntentionDescriptor imp
   /*package*/ final class IntentionImplementation extends AbstractIntentionExecutable {
     public IntentionImplementation() {
     }
+
     @Override
     public String getDescription(final SNode node, final EditorContext editorContext) {
 
@@ -52,6 +53,7 @@ public final class ShowToolbar_Intention extends AbstractIntentionDescriptor imp
         return "Hide Toolbar";
       }
     }
+
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
 
@@ -62,10 +64,19 @@ public final class ShowToolbar_Intention extends AbstractIntentionDescriptor imp
       }
 
     }
+
+    @Override
+    public boolean isApplicable(final SNode node, final EditorContext editorContext) {
+      return true;
+    }
+
+
+
     @Override
     public IntentionDescriptor getDescriptor() {
       return ShowToolbar_Intention.this;
     }
+
   }
 
   private static final class PROPS {

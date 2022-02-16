@@ -22,21 +22,21 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public final class ToFile_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
+
   public ToFile_Intention() {
     super(Kind.NORMAL, false, new SNodePointer("r:d92c1500-00d3-4072-866a-5077893293b8(jetbrains.mps.samples.VoiceMenu.intentions)", "3333261045543359069"));
   }
+
   @Override
   public String getPresentation() {
     return "ToFile";
   }
-  @Override
-  public boolean isApplicable(final SNode node, final EditorContext editorContext) {
-    return true;
-  }
+
   @Override
   public boolean isSurroundWith() {
     return false;
   }
+
   public Collection<IntentionExecutable> instances(final SNode node, final EditorContext context) {
     if (myCachedExecutable == null) {
       myCachedExecutable = Collections.<IntentionExecutable>singletonList(new IntentionImplementation());
@@ -46,6 +46,7 @@ public final class ToFile_Intention extends AbstractIntentionDescriptor implemen
   /*package*/ final class IntentionImplementation extends AbstractIntentionExecutable {
     public IntentionImplementation() {
     }
+
     @Override
     public String getDescription(final SNode node, final EditorContext editorContext) {
       if (SPropertyOperations.getBoolean(node, PROPS.PBisFile$1XWc)) {
@@ -54,6 +55,7 @@ public final class ToFile_Intention extends AbstractIntentionDescriptor implemen
         return "To File";
       }
     }
+
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
       String path = System.getProperty("user.home") + "/MPS_ASTERISK";
@@ -73,10 +75,19 @@ public final class ToFile_Intention extends AbstractIntentionDescriptor implemen
         SPropertyOperations.assign(node, PROPS.PBisFile$1XWc, false);
       }
     }
+
+    @Override
+    public boolean isApplicable(final SNode node, final EditorContext editorContext) {
+      return true;
+    }
+
+
+
     @Override
     public IntentionDescriptor getDescriptor() {
       return ToFile_Intention.this;
     }
+
   }
 
   private static final class PROPS {

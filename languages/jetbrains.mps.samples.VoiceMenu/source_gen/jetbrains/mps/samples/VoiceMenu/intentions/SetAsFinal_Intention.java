@@ -10,10 +10,10 @@ import jetbrains.mps.openapi.intentions.Kind;
 import jetbrains.mps.smodel.SNodePointer;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import java.util.Collections;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
@@ -21,44 +21,21 @@ import org.jetbrains.mps.openapi.language.SProperty;
 
 public final class SetAsFinal_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
+
   public SetAsFinal_Intention() {
     super(Kind.NORMAL, false, new SNodePointer("r:d92c1500-00d3-4072-866a-5077893293b8(jetbrains.mps.samples.VoiceMenu.intentions)", "5461963470560281125"));
   }
+
   @Override
   public String getPresentation() {
     return "SetAsFinal";
   }
-  @Override
-  public boolean isApplicable(final SNode node, final EditorContext editorContext) {
-    if (!(isApplicableToNode(node, editorContext))) {
-      return false;
-    }
-    return true;
-  }
-  private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-    boolean flag = false;
-    if (SNodeOperations.isInstanceOf(node, CONCEPTS.DirectCall$zl)) {
-      SNode myNode = SNodeOperations.cast(node, CONCEPTS.DirectCall$zl);
-      flag = !(SPropertyOperations.getBoolean(myNode, PROPS.isFinal$bKXT));
-    }
-    if (SNodeOperations.isInstanceOf(node, CONCEPTS.Other$zO)) {
-      SNode myNode = SNodeOperations.cast(node, CONCEPTS.Other$zO);
-      flag = !(SPropertyOperations.getBoolean(myNode, PROPS.isFinal$jv5i));
-    }
-    if (SNodeOperations.isInstanceOf(node, CONCEPTS.Record$xQ)) {
-      SNode myNode = SNodeOperations.cast(node, CONCEPTS.Record$xQ);
-      flag = !(SPropertyOperations.getBoolean(myNode, PROPS.isFinal$w2re));
-    }
-    if (SNodeOperations.isInstanceOf(node, CONCEPTS.GetInfo$$M)) {
-      SNode myNode = SNodeOperations.cast(node, CONCEPTS.GetInfo$$M);
-      flag = !(SPropertyOperations.getBoolean(myNode, PROPS.isFinal$cFSh));
-    }
-    return flag;
-  }
+
   @Override
   public boolean isSurroundWith() {
     return false;
   }
+
   public Collection<IntentionExecutable> instances(final SNode node, final EditorContext context) {
     if (myCachedExecutable == null) {
       myCachedExecutable = Collections.<IntentionExecutable>singletonList(new IntentionImplementation());
@@ -68,10 +45,12 @@ public final class SetAsFinal_Intention extends AbstractIntentionDescriptor impl
   /*package*/ final class IntentionImplementation extends AbstractIntentionExecutable {
     public IntentionImplementation() {
     }
+
     @Override
     public String getDescription(final SNode node, final EditorContext editorContext) {
       return "Set as Final";
     }
+
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
       if (SNodeOperations.isInstanceOf(node, CONCEPTS.DirectCall$zl)) {
@@ -93,10 +72,42 @@ public final class SetAsFinal_Intention extends AbstractIntentionDescriptor impl
 
 
     }
+
+    @Override
+    public boolean isApplicable(final SNode node, final EditorContext editorContext) {
+      if (!(isApplicableToNode(node, editorContext))) {
+        return false;
+      }
+      return true;
+    }
+
+    private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
+      boolean flag = false;
+      if (SNodeOperations.isInstanceOf(node, CONCEPTS.DirectCall$zl)) {
+        SNode myNode = SNodeOperations.cast(node, CONCEPTS.DirectCall$zl);
+        flag = !(SPropertyOperations.getBoolean(myNode, PROPS.isFinal$bKXT));
+      }
+      if (SNodeOperations.isInstanceOf(node, CONCEPTS.Other$zO)) {
+        SNode myNode = SNodeOperations.cast(node, CONCEPTS.Other$zO);
+        flag = !(SPropertyOperations.getBoolean(myNode, PROPS.isFinal$jv5i));
+      }
+      if (SNodeOperations.isInstanceOf(node, CONCEPTS.Record$xQ)) {
+        SNode myNode = SNodeOperations.cast(node, CONCEPTS.Record$xQ);
+        flag = !(SPropertyOperations.getBoolean(myNode, PROPS.isFinal$w2re));
+      }
+      if (SNodeOperations.isInstanceOf(node, CONCEPTS.GetInfo$$M)) {
+        SNode myNode = SNodeOperations.cast(node, CONCEPTS.GetInfo$$M);
+        flag = !(SPropertyOperations.getBoolean(myNode, PROPS.isFinal$cFSh));
+      }
+      return flag;
+    }
+
+
     @Override
     public IntentionDescriptor getDescriptor() {
       return SetAsFinal_Intention.this;
     }
+
   }
 
   private static final class CONCEPTS {
