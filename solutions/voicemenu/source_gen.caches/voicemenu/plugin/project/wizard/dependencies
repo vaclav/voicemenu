@@ -32,55 +32,5 @@
   <uses module="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" kind="dp" />
   <uses module="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt+dp" />
   <uses module="4bc750d7-5688-4f52-b7d5-b263a3393a24(jetbrains.mps.samples.VoiceMenu)" kind="dp" />
-  <dependency className="voicemenu.plugin.project.wizard.IconContainer">
-    <classNode dependClassName="jetbrains.mps.smodel.runtime.IconResource" />
-  </dependency>
-  <dependency className="voicemenu.plugin.project.wizard.VoiceMenuProjectGroup">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.util.ArrayList" />
-    <classNode dependClassName="java.util.Collection" />
-    <classNode dependClassName="java.util.List" />
-    <classNode dependClassName="jetbrains.mps.workbench.dialogs.project.newproject.MPSProjectTemplate" />
-    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
-    <classNode dependClassName="voicemenu.plugin.project.wizard.VoiceMenuProjectTemplate" />
-    <classNode extendsClassName="jetbrains.mps.workbench.dialogs.project.newproject.ProjectTemplatesGroup" />
-  </dependency>
-  <dependency className="voicemenu.plugin.project.wizard.VoiceMenuProjectTemplate">
-    <classNode dependClassName="com.intellij.openapi.application.ApplicationManager" />
-    <classNode dependClassName="com.intellij.openapi.startup.StartupManager" />
-    <classNode dependClassName="com.intellij.uiDesigner.core.GridConstraints" />
-    <classNode dependClassName="com.intellij.uiDesigner.core.GridLayoutManager" />
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.Runnable" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="javax.swing.Icon" />
-    <classNode dependClassName="javax.swing.JComponent" />
-    <classNode dependClassName="javax.swing.JLabel" />
-    <classNode dependClassName="javax.swing.JPanel" />
-    <classNode dependClassName="javax.swing.JTextField" />
-    <classNode dependClassName="jetbrains.mps.extapi.model.SModelBase" />
-    <classNode dependClassName="jetbrains.mps.ide.icons.GlobalIconManager" />
-    <classNode dependClassName="jetbrains.mps.ide.newSolutionDialog.NewModuleUtil" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations" />
-    <classNode dependClassName="jetbrains.mps.openapi.navigation.EditorNavigator" />
-    <classNode dependClassName="jetbrains.mps.project.MPSProject" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="jetbrains.mps.smodel.builder.SNodeBuilder" />
-    <classNode dependClassName="jetbrains.mps.smodel.runtime.IconResource" />
-    <classNode dependClassName="jetbrains.mps.workbench.dialogs.project.newproject.TemplateFiller" />
-    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
-    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.language.SConcept" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.language.SProperty" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SModel" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.module.SModule" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.persistence.ModelRoot" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
-    <classNode dependClassName="voicemenu.plugin.project.wizard.IconContainer" />
-    <classNode extendsClassName="jetbrains.mps.workbench.dialogs.project.newproject.MPSProjectTemplate" />
-  </dependency>
 </dependenciesRoot>
 

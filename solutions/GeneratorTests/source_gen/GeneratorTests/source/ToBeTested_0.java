@@ -93,7 +93,7 @@ public class ToBeTested_0 implements ActionListener {
   }
   @Override
   public void actionPerformed(ActionEvent event) {
-    if (!(((Variables.path == null || Variables.path.length() == 0) || Variables.finished == true || Variables.started == false))) {
+    if (!((Variables.path == null || Variables.path.length() == 0) || Variables.finished == true || Variables.started == false)) {
       try {
         if (Variables.timerThr.isAlive()) {
           Variables.timerThr.interrupt();

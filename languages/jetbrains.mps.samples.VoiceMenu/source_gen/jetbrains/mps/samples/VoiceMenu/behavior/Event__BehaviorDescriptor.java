@@ -29,7 +29,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class Event__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event");
 
-  public static final SMethod<String> getFullName_id7bG1ue8uybI = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getFullName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).id("7bG1ue8uybI").build();
+  public static final SMethod<String> getFullName_id7bG1ue8uybI = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getFullName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8281000289632920302L).languageId(0xb7d5b263a3393a24L, 0x4bc750d756884f52L).build2();
 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getFullName_id7bG1ue8uybI);
 

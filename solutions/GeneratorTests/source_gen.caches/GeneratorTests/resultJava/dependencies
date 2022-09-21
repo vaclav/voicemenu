@@ -4,27 +4,5 @@
   <uses module="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt+dp" />
   <uses module="dac7f2c0-79a3-42ca-a0f2-e2cf2736613e(JavaVoiceMenu)" kind="dp" />
   <uses module="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
-  <dependency className="GeneratorTests.resultJava.ToBeTested_0">
-    <classNode dependClassName="JavaVoiceMenu.runtime.Behaviour" />
-    <classNode dependClassName="JavaVoiceMenu.runtime.Data" />
-    <classNode dependClassName="JavaVoiceMenu.runtime.Event" />
-    <classNode dependClassName="JavaVoiceMenu.runtime.MacVoice" />
-    <classNode dependClassName="JavaVoiceMenu.runtime.Style" />
-    <classNode dependClassName="JavaVoiceMenu.runtime.Variables" />
-    <classNode dependClassName="java.awt.BorderLayout" />
-    <classNode dependClassName="java.awt.Color" />
-    <classNode dependClassName="java.awt.Dimension" />
-    <classNode dependClassName="java.awt.event.ActionEvent" />
-    <classNode dependClassName="java.io.IOException" />
-    <classNode dependClassName="java.lang.Exception" />
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.util.ArrayList" />
-    <classNode dependClassName="javax.swing.JButton" />
-    <classNode dependClassName="javax.swing.JPanel" />
-    <classNode dependClassName="javax.swing.border.Border" />
-    <classNode dependClassName="javax.swing.border.LineBorder" />
-    <classNode extendsClassName="java.awt.event.ActionListener" />
-  </dependency>
 </dependenciesRoot>
 

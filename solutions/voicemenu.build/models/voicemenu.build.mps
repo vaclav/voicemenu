@@ -275,7 +275,7 @@
     <property role="2DA0ip" value="../../" />
     <property role="turDy" value="voicemenu.xml" />
     <node concept="1zClus" id="6IQveQCdrNi" role="3989C9">
-      <property role="2OjLBL" value="2021" />
+      <property role="2OjLBL" value="2022" />
       <property role="2OjLBK" value="2" />
       <node concept="3_J27D" id="6IQveQCdrNk" role="2EteIg">
         <node concept="3Mxwey" id="6IQveQCdsk1" role="3MwsjC">
@@ -416,8 +416,8 @@
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="4qLeaozfzuK" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="7YU6twplji0" role="2Ry0An">
-              <property role="2Ry0Am" value="MPS 2021.2" />
+            <node concept="2Ry0Ak" id="1j3lSbbeZpq" role="2Ry0An">
+              <property role="2Ry0Am" value="MPS 2022.2" />
             </node>
           </node>
         </node>
@@ -427,6 +427,15 @@
       <ref role="1l3spb" to="ffeo:1diLdO26mQ6" resolve="mpsStandalone" />
       <node concept="398BVA" id="5ruKdSwyerq" role="2JcizS">
         <ref role="398BVh" node="5ruKdSwyero" resolve="mps_home" />
+      </node>
+    </node>
+    <node concept="2sgV4H" id="3x0wRcovTxT" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:5D1dJ7xWer5" resolve="mpsCore" />
+      <node concept="398BVA" id="3x0wRcovTz0" role="2JcizS">
+        <ref role="398BVh" node="5ruKdSwyero" resolve="mps_home" />
+        <node concept="2Ry0Ak" id="3x0wRcozSVm" role="iGT6I">
+          <property role="2Ry0Am" value="plugins" />
+        </node>
       </node>
     </node>
     <node concept="2sgV4H" id="5ruKdSy0i54" role="1l3spa">
@@ -2914,8 +2923,8 @@
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="5$IQOQwcnGK" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="60c63VRGskx" role="2Ry0An">
-              <property role="2Ry0Am" value="MPS 2021.3" />
+            <node concept="2Ry0Ak" id="1j3lSbbeZqQ" role="2Ry0An">
+              <property role="2Ry0Am" value="MPS 2022.2" />
             </node>
           </node>
         </node>
@@ -2926,7 +2935,7 @@
       <node concept="aVJcg" id="5ruKdSwyevv" role="aVJcv">
         <node concept="NbPM2" id="5ruKdSwyevw" role="aVJcq">
           <node concept="3Mxwew" id="5ruKdSwyevx" role="3MwsjC">
-            <property role="3MwjfP" value="2021.3" />
+            <property role="3MwjfP" value="2022.2" />
           </node>
         </node>
       </node>

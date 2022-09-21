@@ -64,7 +64,7 @@ public final class changeToBack_Intention extends AbstractIntentionDescriptor im
     }
 
     private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-      return !((SNodeOperations.isInstanceOf(node, CONCEPTS.Back$$j)));
+      return !(SNodeOperations.isInstanceOf(node, CONCEPTS.Back$$j));
     }
 
 

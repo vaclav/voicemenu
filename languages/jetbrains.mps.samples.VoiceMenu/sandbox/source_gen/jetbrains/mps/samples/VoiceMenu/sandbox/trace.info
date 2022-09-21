@@ -235,7 +235,7 @@
       <node id="2892639838852006608" at="223,0,231,0" concept="7" trace="main#([Ljava/lang/String;)V" />
       <node id="2892639838852006608" at="239,58,248,5" concept="1" />
       <node id="2892639838852006608" at="239,0,250,0" concept="7" trace="addButtons#(Ljavax/swing/JPanel;)V" />
-      <node id="2892639838852006608" at="252,132,267,7" concept="8" />
+      <node id="2892639838852006608" at="252,130,267,7" concept="8" />
       <node id="2892639838852006608" at="251,50,270,5" concept="2" />
       <node id="2892639838852006608" at="250,0,272,0" concept="3" trace="actionPerformed#(Ljava/awt/event/ActionEvent;)V" />
       <node id="2892639838852006608" at="28,0,222,0" concept="7" trace="initHashMap#()V" />
@@ -268,7 +268,7 @@
         <var name="myPanelOfButtons" id="2892639838852006608" />
       </scope>
       <scope id="2892639838852006608" at="253,11,264,0" />
-      <scope id="2892639838852006608" at="252,132,269,0" />
+      <scope id="2892639838852006608" at="252,130,269,0" />
       <scope id="2892639838852006608" at="251,50,270,5" />
       <scope id="2892639838852006608" at="250,0,272,0">
         <var name="event" id="2892639838852006608" />
@@ -393,7 +393,7 @@
       <node id="6285974448820393361" at="90,0,98,0" concept="7" trace="main#([Ljava/lang/String;)V" />
       <node id="6285974448820393361" at="106,58,115,5" concept="1" />
       <node id="6285974448820393361" at="106,0,117,0" concept="7" trace="addButtons#(Ljavax/swing/JPanel;)V" />
-      <node id="6285974448820393361" at="119,132,134,7" concept="8" />
+      <node id="6285974448820393361" at="119,130,134,7" concept="8" />
       <node id="6285974448820393361" at="118,50,137,5" concept="2" />
       <node id="6285974448820393361" at="117,0,139,0" concept="3" trace="actionPerformed#(Ljava/awt/event/ActionEvent;)V" />
       <node id="6285974448820393361" at="28,0,89,0" concept="7" trace="initHashMap#()V" />
@@ -426,7 +426,7 @@
         <var name="myPanelOfButtons" id="6285974448820393361" />
       </scope>
       <scope id="6285974448820393361" at="120,11,131,0" />
-      <scope id="6285974448820393361" at="119,132,136,0" />
+      <scope id="6285974448820393361" at="119,130,136,0" />
       <scope id="6285974448820393361" at="118,50,137,5" />
       <scope id="6285974448820393361" at="117,0,139,0">
         <var name="event" id="6285974448820393361" />
@@ -506,7 +506,7 @@
       <node id="6285974448821694774" at="60,0,68,0" concept="7" trace="main#([Ljava/lang/String;)V" />
       <node id="6285974448821694774" at="76,58,85,5" concept="1" />
       <node id="6285974448821694774" at="76,0,87,0" concept="7" trace="addButtons#(Ljavax/swing/JPanel;)V" />
-      <node id="6285974448821694774" at="89,132,104,7" concept="8" />
+      <node id="6285974448821694774" at="89,130,104,7" concept="8" />
       <node id="6285974448821694774" at="88,50,107,5" concept="2" />
       <node id="6285974448821694774" at="87,0,109,0" concept="3" trace="actionPerformed#(Ljava/awt/event/ActionEvent;)V" />
       <node id="6285974448821694774" at="28,0,59,0" concept="7" trace="initHashMap#()V" />
@@ -539,7 +539,7 @@
         <var name="myPanelOfButtons" id="6285974448821694774" />
       </scope>
       <scope id="6285974448821694774" at="90,11,101,0" />
-      <scope id="6285974448821694774" at="89,132,106,0" />
+      <scope id="6285974448821694774" at="89,130,106,0" />
       <scope id="6285974448821694774" at="88,50,107,5" />
       <scope id="6285974448821694774" at="87,0,109,0">
         <var name="event" id="6285974448821694774" />

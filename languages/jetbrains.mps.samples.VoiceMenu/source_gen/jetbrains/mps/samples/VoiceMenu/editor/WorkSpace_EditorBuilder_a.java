@@ -143,7 +143,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private boolean nodeCondition_ikqrmj_a0a() {
     String[] initialEditorHints = getEditorContext().getEditorComponent().getUpdater().getInitialEditorHints();
 
-    if (SPropertyOperations.getBoolean(myNode, PROPS.toolbar$qdja) && !((initialEditorHints == null || initialEditorHints.length == 0))) {
+    if (SPropertyOperations.getBoolean(myNode, PROPS.toolbar$qdja) && !(initialEditorHints == null || initialEditorHints.length == 0)) {
       return true;
     } else {
       return false;

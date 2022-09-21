@@ -64,7 +64,7 @@ public final class changeToDirectCall_Intention extends AbstractIntentionDescrip
     }
 
     private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-      return !((SNodeOperations.isInstanceOf(node, CONCEPTS.DirectCall$zl)));
+      return !(SNodeOperations.isInstanceOf(node, CONCEPTS.DirectCall$zl));
     }
 
 

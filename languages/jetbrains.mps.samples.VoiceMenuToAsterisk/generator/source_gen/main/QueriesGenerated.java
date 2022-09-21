@@ -212,7 +212,7 @@ public class QueriesGenerated extends QueryProviderBase {
   public static boolean ifMacro_Condition_1_6(final IfMacroContext _context) {
 
     SNode action = SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.timeout$r9ki), LINKS.Action$uVoi);
-    return !((SNodeOperations.isInstanceOf(action, CONCEPTS.Back$$j) || SNodeOperations.isInstanceOf(action, CONCEPTS.Replay$Q_)));
+    return !(SNodeOperations.isInstanceOf(action, CONCEPTS.Back$$j) || SNodeOperations.isInstanceOf(action, CONCEPTS.Replay$Q_));
   }
   public static boolean ifMacro_Condition_1_7(final IfMacroContext _context) {
     try {
@@ -335,7 +335,7 @@ public class QueriesGenerated extends QueryProviderBase {
   }
   public static boolean ifMacro_Condition_3_16(final IfMacroContext _context) {
     SNode action = SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), LINKS.timeout$r9ki), LINKS.Action$uVoi);
-    return !((SNodeOperations.isInstanceOf(action, CONCEPTS.Back$$j) || SNodeOperations.isInstanceOf(action, CONCEPTS.Replay$Q_))) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.commands$oZIM), CONCEPTS.Menu$By);
+    return !(SNodeOperations.isInstanceOf(action, CONCEPTS.Back$$j) || SNodeOperations.isInstanceOf(action, CONCEPTS.Replay$Q_)) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.commands$oZIM), CONCEPTS.Menu$By);
   }
   public static boolean ifMacro_Condition_3_17(final IfMacroContext _context) {
     if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.commands$oZIM), CONCEPTS.Menu$By)) {

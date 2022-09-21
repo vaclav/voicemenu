@@ -64,7 +64,7 @@ public final class changeToGetInfo_Intention extends AbstractIntentionDescriptor
     }
 
     private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-      return !((SNodeOperations.isInstanceOf(node, CONCEPTS.GetInfo$$M)));
+      return !(SNodeOperations.isInstanceOf(node, CONCEPTS.GetInfo$$M));
     }
 
 

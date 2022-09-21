@@ -64,7 +64,7 @@ public final class changeToOther_Intention extends AbstractIntentionDescriptor i
     }
 
     private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-      return !((SNodeOperations.isInstanceOf(node, CONCEPTS.Other$zO)));
+      return !(SNodeOperations.isInstanceOf(node, CONCEPTS.Other$zO));
 
     }
 

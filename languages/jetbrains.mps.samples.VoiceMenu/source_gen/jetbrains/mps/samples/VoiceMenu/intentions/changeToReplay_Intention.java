@@ -64,7 +64,7 @@ public final class changeToReplay_Intention extends AbstractIntentionDescriptor 
     }
 
     private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-      return !((SNodeOperations.isInstanceOf(node, CONCEPTS.Replay$Q_)));
+      return !(SNodeOperations.isInstanceOf(node, CONCEPTS.Replay$Q_));
     }
 
 

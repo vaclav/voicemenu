@@ -16,21 +16,5 @@
   <uses module="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" kind="rt" />
   <uses module="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" kind="rt" />
   <uses module="f5c3a3a7-38a1-4385-b73a-9993180f3701(voicemenu)" kind="dp" />
-  <dependency className="voicemenu.plugin.VoiceMenu_AppPluginPart">
-    <classNode dependClassName="com.intellij.openapi.extensions.Extensions" />
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="jetbrains.mps.workbench.dialogs.project.newproject.ProjectTemplatesGroup" />
-    <classNode dependClassName="voicemenu.plugin.project.wizard.VoiceMenuProjectGroup" />
-    <classNode extendsClassName="jetbrains.mps.plugins.part.ApplicationPluginPart" />
-  </dependency>
-  <dependency className="voicemenu.plugin.Voicemenu_ApplicationPlugin">
-    <classNode dependClassName="com.intellij.openapi.extensions.PluginId" />
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.util.List" />
-    <classNode dependClassName="jetbrains.mps.plugins.part.ApplicationPluginPart" />
-    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
-    <classNode dependClassName="voicemenu.plugin.VoiceMenu_AppPluginPart" />
-    <classNode extendsClassName="jetbrains.mps.plugins.applicationplugins.BaseApplicationPlugin" />
-  </dependency>
 </dependenciesRoot>
 

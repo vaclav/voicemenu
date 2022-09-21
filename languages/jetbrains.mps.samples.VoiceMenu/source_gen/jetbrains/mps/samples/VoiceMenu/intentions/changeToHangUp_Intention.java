@@ -64,7 +64,7 @@ public final class changeToHangUp_Intention extends AbstractIntentionDescriptor 
     }
 
     private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-      return !((SNodeOperations.isInstanceOf(node, CONCEPTS.HangUp$UV)));
+      return !(SNodeOperations.isInstanceOf(node, CONCEPTS.HangUp$UV));
     }
 
 

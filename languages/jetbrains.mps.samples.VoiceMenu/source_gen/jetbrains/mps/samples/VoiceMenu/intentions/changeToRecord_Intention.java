@@ -64,7 +64,7 @@ public final class changeToRecord_Intention extends AbstractIntentionDescriptor 
     }
 
     private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-      return !((SNodeOperations.isInstanceOf(node, CONCEPTS.Record$xQ)));
+      return !(SNodeOperations.isInstanceOf(node, CONCEPTS.Record$xQ));
     }
 
 

@@ -51,27 +51,5 @@
   <uses module="9abaaae2-decf-4e97-bf80-9109e8b759cc(jetbrains.mps.lang.messages.api)" kind="rt" />
   <uses module="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" kind="rt" />
   <uses module="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
-  <dependency className="VoiceMenuTest.Language">
-    <classNode dependClassName="VoiceMenuTest.constraints.ConstraintsAspectDescriptor" />
-    <classNode dependClassName="VoiceMenuTest.editor.EditorAspectDescriptorImpl" />
-    <classNode dependClassName="VoiceMenuTest.intentions.IntentionsDescriptor" />
-    <classNode dependClassName="VoiceMenuTest.structure.ConceptPresentationAspectImpl" />
-    <classNode dependClassName="VoiceMenuTest.structure.StructureAspectDescriptor" />
-    <classNode dependClassName="java.lang.Class" />
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.util.Collection" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
-    <classNode dependClassName="jetbrains.mps.openapi.intentions.IntentionAspectDescriptor" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
-    <classNode dependClassName="jetbrains.mps.smodel.language.LanguageExtensions" />
-    <classNode dependClassName="jetbrains.mps.smodel.runtime.ConceptPresentationAspect" />
-    <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor" />
-    <classNode dependClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />
-    <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
-    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.language.SLanguage" />
-    <classNode extendsClassName="jetbrains.mps.smodel.language.LanguageRuntime" />
-  </dependency>
 </dependenciesRoot>
 

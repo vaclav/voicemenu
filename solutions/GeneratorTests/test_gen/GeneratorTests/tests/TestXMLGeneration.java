@@ -9,6 +9,7 @@ import org.jetbrains.mps.openapi.model.SModel;
 import org.junit.Before;
 import org.junit.Test;
 import jetbrains.mps.lang.test.generator.rt.TransformHelper;
+import jetbrains.mps.lang.test.generator.rt.ModelAssert;
 
 public class TestXMLGeneration extends BaseGeneratorTest {
 
@@ -44,7 +45,8 @@ public class TestXMLGeneration extends BaseGeneratorTest {
     t.setPlanProvider(planProviderFromModel(myArg_xmlplan));
     t.transform();
     SModel rm = myArg_expectedXMLOutput;
-    assertMatch(t.getOutputModel(), rm);
+    ModelAssert ma = new ModelAssert(t.getResult().getOutputRepository());
+    ma.assertMatch(t.getOutputModel(), rm);
   }
   @Test
   public void testTransformAndMatch1() {
@@ -54,7 +56,8 @@ public class TestXMLGeneration extends BaseGeneratorTest {
     t.setPlanProvider(planProviderFromModel(myArg_javaPlan));
     t.transform();
     SModel rm = myArg_expectedJavaOutput;
-    assertMatch(t.getOutputModel(), rm);
+    ModelAssert ma = new ModelAssert(t.getResult().getOutputRepository());
+    ma.assertMatch(t.getOutputModel(), rm);
   }
 
 }
