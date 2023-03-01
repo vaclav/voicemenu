@@ -92,7 +92,7 @@
       <key>JVMVersion</key>
       <string>1.8+</string>
       <key>MainClass</key>
-      <string>jetbrains.mps.Launcher</string>
+      <string>jetbrains/mps/Launcher</string>
       <key>Options</key>
       <array>
         <string>--add-opens=java.base/java.io=ALL-UNNAMED</string>
@@ -108,11 +108,9 @@
         <string>--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED</string>
         <string>--add-opens=java.base/jdk.internal.vm=ALL-UNNAMED</string>
         <string>--add-opens=java.base/sun.nio.ch=ALL-UNNAMED</string>
+        <string>--add-opens=java.base/sun.nio.fs=ALL-UNNAMED</string>
         <string>--add-opens=java.base/sun.security.ssl=ALL-UNNAMED</string>
         <string>--add-opens=java.base/sun.security.util=ALL-UNNAMED</string>
-        <string>--add-opens=java.desktop/com.apple.eawt=ALL-UNNAMED</string>
-        <string>--add-opens=java.desktop/com.apple.eawt.event=ALL-UNNAMED</string>
-        <string>--add-opens=java.desktop/com.apple.laf=ALL-UNNAMED</string>
         <string>--add-opens=java.desktop/java.awt=ALL-UNNAMED</string>
         <string>--add-opens=java.desktop/java.awt.dnd.peer=ALL-UNNAMED</string>
         <string>--add-opens=java.desktop/java.awt.event=ALL-UNNAMED</string>
@@ -126,13 +124,16 @@
         <string>--add-opens=java.desktop/sun.awt=ALL-UNNAMED</string>
         <string>--add-opens=java.desktop/sun.font=ALL-UNNAMED</string>
         <string>--add-opens=java.desktop/sun.java2d=ALL-UNNAMED</string>
-        <string>--add-opens=java.desktop/sun.lwawt=ALL-UNNAMED</string>
-        <string>--add-opens=java.desktop/sun.lwawt.macosx=ALL-UNNAMED</string>
         <string>--add-opens=java.desktop/sun.swing=ALL-UNNAMED</string>
         <string>--add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED</string>
         <string>--add-opens=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED</string>
         <string>--add-opens=jdk.internal.jvmstat/sun.jvmstat.monitor=ALL-UNNAMED</string>
         <string>--add-opens=jdk.jdi/com.sun.tools.jdi=ALL-UNNAMED</string>
+        <string>--add-opens=java.desktop/sun.lwawt=ALL-UNNAMED</string>
+        <string>--add-opens=java.desktop/sun.lwawt.macosx=ALL-UNNAMED</string>
+        <string>--add-opens=java.desktop/com.apple.laf=ALL-UNNAMED</string>
+        <string>--add-opens=java.desktop/com.apple.eawt=ALL-UNNAMED</string>
+        <string>--add-opens=java.desktop/com.apple.eawt.event=ALL-UNNAMED</string>
       </array>
       <key>Properties</key>
       <dict>
@@ -143,6 +144,12 @@
         
         <key>idea.paths.selector</key>
         <string>voicemenu2022.2</string>
+        
+        <key>jna.boot.library.path</key>
+        <string>$APP_PACKAGE/Contents/lib/jna</string>
+        
+        <key>java.system.class.loader</key>
+        <string>com.intellij.util.lang.PathClassLoader</string>
         
         <key>idea.vendor.name</key>
         <string>JetBrains</string>

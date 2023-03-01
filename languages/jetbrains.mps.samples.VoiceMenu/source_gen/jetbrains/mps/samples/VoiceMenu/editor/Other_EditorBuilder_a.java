@@ -88,7 +88,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Other");
     editorCell.setCellId("Constant_xrt6u6_c0");
     Style style = new StyleImpl();
-    new ActionStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    new ActionStyleClass(this).apply(style, editorCell);
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
     editorCell.getStyle().putAll(style);
     editorCell.setTransformationMenuLookup(new DefaultTransformationMenuLookup(LanguageRegistry.getInstance(getEditorContext().getRepository()), CONCEPTS.Other$zO));

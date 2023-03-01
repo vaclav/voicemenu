@@ -48,10 +48,10 @@ public class RefreshFileTextRecognition_Timeout {
           File tmp = new File(path + "/" + SPropertyOperations.getString(node, PROPS.playback$Veml));
           if (tmp.isFile()) {
             SPropertyOperations.assign(node, PROPS.PBisFile$pJJo, true);
-            LogContext.with(RefreshFileTextRecognition_Timeout.class, null, null).debug("Found -> File");
+            LogContext.with(RefreshFileTextRecognition_Timeout.class, null, null, null).debug("Found -> File");
           } else {
             SPropertyOperations.assign(node, PROPS.PBisFile$pJJo, false);
-            LogContext.with(RefreshFileTextRecognition_Timeout.class, null, null).debug("Not Found -> Text");
+            LogContext.with(RefreshFileTextRecognition_Timeout.class, null, null, null).debug("Not Found -> Text");
           }
         } catch (Exception e) {
           SPropertyOperations.assign(node, PROPS.PBisFile$pJJo, false);

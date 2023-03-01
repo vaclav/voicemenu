@@ -46,11 +46,11 @@ public class RefreshFileTextRecognition {
           File tmp = new File(path + "/" + SPropertyOperations.getString(node, PROPS.playback$XRxp));
           if (tmp.isFile()) {
             SPropertyOperations.assign(node, PROPS.PBisFile$1XWc, true);
-            LogContext.with(RefreshFileTextRecognition.class, null, null).debug("Found -> File");
+            LogContext.with(RefreshFileTextRecognition.class, null, null, null).debug("Found -> File");
 
           } else {
             SPropertyOperations.assign(node, PROPS.PBisFile$1XWc, false);
-            LogContext.with(RefreshFileTextRecognition.class, null, null).debug("Not Found -> Text");
+            LogContext.with(RefreshFileTextRecognition.class, null, null, null).debug("Not Found -> Text");
 
           }
         } catch (Exception e) {

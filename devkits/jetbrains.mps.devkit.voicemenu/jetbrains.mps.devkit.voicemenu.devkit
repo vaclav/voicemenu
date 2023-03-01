@@ -11,6 +11,7 @@
   <exported-language name="914c58c4-0680-49cf-8599-f5ced7a657d6(jetbrains.mps.samples.Text)" />
   <exported-language name="df345b11-b8c7-4213-ac66-48d2a9b75d88(jetbrains.mps.baseLanguageInternal)" />
   <exported-language name="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
+  <exported-language name="25057fc9-5337-4f2e-9703-a17097079193(VoiceMenuTest)" />
   <exported-solutions>
     <exported-solution>0a1f57f5-a09f-4843-9976-f20fe702e5cf(GenPlan)</exported-solution>
   </exported-solutions>

@@ -25,7 +25,7 @@ public class ActivityPlayback {
         this.execute_internal(editorContext, node);
       }
       public void execute_internal(EditorContext editorContext, SNode node) {
-        LogContext.with(ActivityPlayback.class, null, null).info("Clicked");
+        LogContext.with(ActivityPlayback.class, null, null, null).info("Clicked");
         if (Objects.equals(SPropertyOperations.getString(node, PROPS.playback$XRxp), "Choose from..")) {
           SPropertyOperations.assign(node, PROPS.playback$XRxp, " ");
           SelectionUtil.selectNode(editorContext, node);

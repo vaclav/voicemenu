@@ -72,7 +72,7 @@ public class FixAll {
               }
             }
             if (legalButton == false) {
-              LogContext.with(FixAll.class, null, null).info("Button " + SPropertyOperations.getString(item, PROPS.trigger$DqFK) + " fixed");
+              LogContext.with(FixAll.class, null, null, null).info("Button " + SPropertyOperations.getString(item, PROPS.trigger$DqFK) + " fixed");
             }
 
             if (Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getAllSiblings(item, false), CONCEPTS.Event$Du)).any(new IWhereFilter<SNode>() {
@@ -120,7 +120,7 @@ public class FixAll {
                 }
               })) {
               } else {
-                LogContext.with(FixAll.class, null, null).info("Set Up " + SPropertyOperations.getString(event, PROPS.name$MnvL));
+                LogContext.with(FixAll.class, null, null, null).info("Set Up " + SPropertyOperations.getString(event, PROPS.name$MnvL));
                 SNode newActivity = SLinkOperations.addNewChild(SNodeOperations.cast(SNodeOperations.getParent(event), CONCEPTS.Menu$By), LINKS.activities$gAHC, CONCEPTS.Activity$Oz);
                 SNodeFactoryOperations.setNewChild(newActivity, LINKS.commands$oZIM, CONCEPTS.Other$zO);
                 SLinkOperations.setTarget(newActivity, LINKS.event$pmgi, event);
@@ -134,7 +134,7 @@ public class FixAll {
               return (SLinkOperations.getTarget(it, LINKS.event$pmgi) == null);
             }
           })) {
-            LogContext.with(FixAll.class, null, null).info("Remove Empty Activity");
+            LogContext.with(FixAll.class, null, null, null).info("Remove Empty Activity");
             SNodeOperations.deleteNode(ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Activity$Oz, false, new SAbstractConcept[]{})).findFirst(new IWhereFilter<SNode>() {
               public boolean accept(SNode it) {
                 return (SLinkOperations.getTarget(it, LINKS.event$pmgi) == null);
@@ -169,13 +169,13 @@ public class FixAll {
 
             SNodeFactoryOperations.replaceWithNewChild(SNodeOperations.cast(SNodeOperations.getParent(emptyMenu), CONCEPTS.Activity$Oz), CONCEPTS.Activity$Oz);
 
-            LogContext.with(FixAll.class, null, null).info("Init Empty Menu");
+            LogContext.with(FixAll.class, null, null, null).info("Init Empty Menu");
           } else if (ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Event$Du, false, new SAbstractConcept[]{})).any(new IWhereFilter<SNode>() {
             public boolean accept(SNode it) {
               return isEmptyString(SPropertyOperations.getString(it, PROPS.name$MnvL));
             }
           })) {
-            LogContext.with(FixAll.class, null, null).info("Remove Event With Empty Name");
+            LogContext.with(FixAll.class, null, null, null).info("Remove Event With Empty Name");
             SNodeOperations.deleteNode(ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Event$Du, false, new SAbstractConcept[]{})).findFirst(new IWhereFilter<SNode>() {
               public boolean accept(SNode it) {
                 return isEmptyString(SPropertyOperations.getString(it, PROPS.name$MnvL));
@@ -188,7 +188,7 @@ public class FixAll {
             }
           })) {
 
-            LogContext.with(FixAll.class, null, null).info("Remove Event With Empty Trigger");
+            LogContext.with(FixAll.class, null, null, null).info("Remove Event With Empty Trigger");
             SNodeOperations.deleteNode(ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Event$Du, false, new SAbstractConcept[]{})).findFirst(new IWhereFilter<SNode>() {
               public boolean accept(SNode it) {
                 return isEmptyString(SPropertyOperations.getString(it, PROPS.trigger$DqFK));
@@ -212,7 +212,7 @@ public class FixAll {
           ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(node, LINKS.bodyMenu$Of2I), LINKS.activities$gAHC)).addElement(newActivity);
           ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(node, LINKS.bodyMenu$Of2I), LINKS.events$gxkh)).addElement(newEvent);
           SLinkOperations.setTarget(newActivity, LINKS.event$pmgi, newEvent);
-          LogContext.with(FixAll.class, null, null).info("Init Main Menu");
+          LogContext.with(FixAll.class, null, null, null).info("Init Main Menu");
         }
         // ............................................................. remove Duplicate Actions
 
@@ -229,7 +229,7 @@ public class FixAll {
             }
           })) {
             SNodeOperations.deleteNode(currentActivity);
-            LogContext.with(FixAll.class, null, null).info("Duplicate Activity");
+            LogContext.with(FixAll.class, null, null, null).info("Duplicate Activity");
           }
         }
         // ............................................................. Resolve File / Playback
@@ -257,15 +257,15 @@ public class FixAll {
 
         if (isNotEmptyString(SPropertyOperations.getString(node, PROPS.default_path$K32T))) {
           if (Objects.equals(SPropertyOperations.getString(node, PROPS.default_path$K32T).charAt(0), '/')) {
-            LogContext.with(FixAll.class, null, null).info("/ Removed");
+            LogContext.with(FixAll.class, null, null, null).info("/ Removed");
             SPropertyOperations.assign(node, PROPS.default_path$K32T, SPropertyOperations.getString(node, PROPS.default_path$K32T).substring(1));
           }
           if (!(Objects.equals(SPropertyOperations.getString(node, PROPS.default_path$K32T).charAt(SPropertyOperations.getString(node, PROPS.default_path$K32T).length() - 1), '/'))) {
-            LogContext.with(FixAll.class, null, null).info("/ Added");
+            LogContext.with(FixAll.class, null, null, null).info("/ Added");
             SPropertyOperations.assign(node, PROPS.default_path$K32T, SPropertyOperations.getString(node, PROPS.default_path$K32T) + "/");
           }
           while (SPropertyOperations.getString(node, PROPS.default_path$K32T).contains("//")) {
-            LogContext.with(FixAll.class, null, null).info("// Replaced with /");
+            LogContext.with(FixAll.class, null, null, null).info("// Replaced with /");
             SPropertyOperations.assign(node, PROPS.default_path$K32T, SPropertyOperations.getString(node, PROPS.default_path$K32T).replaceAll("//", "/"));
           }
         }
@@ -277,14 +277,14 @@ public class FixAll {
           for (SNode call : ListSequence.fromList(descendants)) {
             if (isNotEmptyString(SPropertyOperations.getString(call, PROPS.number$M7Yy))) {
               SPropertyOperations.assign(call, PROPS.number$M7Yy, SPropertyOperations.getString(call, PROPS.number$M7Yy).replaceAll(" ", ""));
-              LogContext.with(FixAll.class, null, null).info("Direct call number formated");
+              LogContext.with(FixAll.class, null, null, null).info("Direct call number formated");
             }
           }
 
         }
         if (isNotEmptyString(SPropertyOperations.getString(node, PROPS.default_number$JXbw))) {
           SPropertyOperations.assign(node, PROPS.default_number$JXbw, SPropertyOperations.getString(node, PROPS.default_number$JXbw).replaceAll(" ", ""));
-          LogContext.with(FixAll.class, null, null).info("Default number formated");
+          LogContext.with(FixAll.class, null, null, null).info("Default number formated");
         }
 
         // ............................................................. Remove " " in Playback
@@ -304,7 +304,7 @@ public class FixAll {
         }
 
 
-        LogContext.with(FixAll.class, null, null).info("FINISHED");
+        LogContext.with(FixAll.class, null, null, null).info("FINISHED");
 
         SelectionUtil.selectCell(editorContext, node, SelectionManager.FIRST_ERROR_CELL);
 
