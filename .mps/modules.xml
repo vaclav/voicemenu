@@ -21,4 +21,9 @@
       <modulePath path="$PROJECT_DIR$/solutions/voicemenu/voicemenu.msd" folder="" />
     </projectModules>
   </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/voicemenu.iml" filepath="$PROJECT_DIR$/.idea/voicemenu.iml" />
+    </modules>
+  </component>
 </project>
