@@ -134,16 +134,7 @@ SET COMMON_JVM_ARGS="-XX:ErrorFile=%USERPROFILE%\java_error_in_%PRODUCT%_%%p.log
 SET IDE_JVM_ARGS=-Didea.platform.prefix=Idea -Didea.jre.check=true -Djna.boot.library.path="%IDE_HOME%/lib/jna" -Djava.system.class.loader=com.intellij.util.lang.PathClassLoader
 SET ALL_JVM_ARGS=%ACC% %COMMON_JVM_ARGS% %IDE_JVM_ARGS%
 
-SET CLASS_PATH=%IDE_HOME%\lib\branding.jar
-SET CLASS_PATH=%CLASS_PATH%;%IDE_HOME%\lib\mps-boot.jar
-SET CLASS_PATH=%CLASS_PATH%;%IDE_HOME%\lib\mps-boot-util.jar
-SET CLASS_PATH=%CLASS_PATH%;%IDE_HOME%\lib\bootstrap.jar
-SET CLASS_PATH=%CLASS_PATH%;%IDE_HOME%\lib\extensions.jar
-SET CLASS_PATH=%CLASS_PATH%;%IDE_HOME%\lib\util.jar
-SET CLASS_PATH=%CLASS_PATH%;%IDE_HOME%\lib\jdom.jar
-SET CLASS_PATH=%CLASS_PATH%;%IDE_HOME%\lib\log4j.jar
-SET CLASS_PATH=%CLASS_PATH%;%IDE_HOME%\lib\trove4j.jar
-SET CLASS_PATH=%CLASS_PATH%;%IDE_HOME%\lib\jna.jar
+SET CLASS_PATH=%IDE_HOME%\lib\*
 SET CLASS_PATH=%CLASS_PATH%;%JDK%\lib\tools.jar
 IF NOT "%IDEA_CLASS_PATH%" == "" SET CLASS_PATH=%CLASS_PATH%;%IDEA_CLASS_PATH%
 
