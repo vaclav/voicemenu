@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
@@ -32,11 +31,7 @@ public class VoiceMenuTable extends AbstractTableModel {
   }
   @Override
   public int getRowCount() {
-    if (ListSequence.fromList(SLinkOperations.getChildren(myNode, LINKS.events$gxkh)).any(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$DqFK), "X");
-      }
-    })) {
+    if (ListSequence.fromList(SLinkOperations.getChildren(myNode, LINKS.events$gxkh)).any((it) -> Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$DqFK), "X"))) {
       return SLinkOperations.getChildren(myNode, LINKS.events$gxkh).size();
 
     }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="VoiceMenuTest.sandbox" uuid="0447456a-19bd-4c9a-824c-ef03ebd38118" moduleVersion="0" compileInMPS="true">
+<solution name="VoiceMenuTest.sandbox" uuid="0447456a-19bd-4c9a-824c-ef03ebd38118" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">13f160a2-335f-4095-a74f-ea7ca358d90b(jetbrains.mps.samples.VoiceMenu.sandbox)</dependency>
   </dependencies>

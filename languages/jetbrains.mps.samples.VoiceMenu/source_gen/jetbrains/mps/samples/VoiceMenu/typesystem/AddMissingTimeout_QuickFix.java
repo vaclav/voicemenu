@@ -8,7 +8,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
@@ -26,29 +25,17 @@ public class AddMissingTimeout_QuickFix extends QuickFix_Runtime {
   }
   public void execute(SNode node) {
 
-    SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(((SNode) AddMissingTimeout_QuickFix.this.getField("menu")[0]), LINKS.events$gxkh)).findFirst(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$DqFK), "X");
-      }
-    }));
+    SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(((SNode) AddMissingTimeout_QuickFix.this.getField("menu")[0]), LINKS.events$gxkh)).findFirst((it) -> Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$DqFK), "X")));
     SNode newEventTimeout = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event"));
     SPropertyOperations.assign(newEventTimeout, PROPS.trigger$DqFK, "X");
     SPropertyOperations.assign(newEventTimeout, PROPS.name$MnvL, "Timeout");
     ListSequence.fromList(SLinkOperations.getChildren(((SNode) AddMissingTimeout_QuickFix.this.getField("menu")[0]), LINKS.events$gxkh)).addElement(newEventTimeout);
 
     SNode newActivity = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"));
-    SLinkOperations.setTarget(newActivity, LINKS.event$pmgi, ListSequence.fromList(SLinkOperations.getChildren(((SNode) AddMissingTimeout_QuickFix.this.getField("menu")[0]), LINKS.events$gxkh)).findFirst(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$DqFK), "X");
-      }
-    }));
+    SLinkOperations.setTarget(newActivity, LINKS.event$pmgi, ListSequence.fromList(SLinkOperations.getChildren(((SNode) AddMissingTimeout_QuickFix.this.getField("menu")[0]), LINKS.events$gxkh)).findFirst((it) -> Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$DqFK), "X")));
     ListSequence.fromList(SLinkOperations.getChildren(((SNode) AddMissingTimeout_QuickFix.this.getField("menu")[0]), LINKS.activities$gAHC)).addElement(newActivity);
 
-    SNode srcTiemout = ListSequence.fromList(SLinkOperations.getChildren(((SNode) AddMissingTimeout_QuickFix.this.getField("menu")[0]), LINKS.activities$gAHC)).findFirst(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), "X");
-      }
-    });
+    SNode srcTiemout = ListSequence.fromList(SLinkOperations.getChildren(((SNode) AddMissingTimeout_QuickFix.this.getField("menu")[0]), LINKS.activities$gAHC)).findFirst((it) -> Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), "X"));
     SNode newTimout = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde68dL, "jetbrains.mps.samples.VoiceMenu.structure.Activity"));
     SNode srcEvent = SLinkOperations.getTarget(srcTiemout, LINKS.event$pmgi);
     SNodeOperations.deleteNode(srcTiemout);

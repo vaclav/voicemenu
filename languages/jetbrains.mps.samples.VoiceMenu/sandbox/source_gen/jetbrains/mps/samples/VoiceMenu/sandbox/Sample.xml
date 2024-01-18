@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "UTF-8" standalone = "no"?>
+<state_machine>  
+  <state id="Sample" isInitial="true">
+    <playback>Welcome to Sample Menu</playback>
+    
+    
+    <activity event="1" target_child="Sample Activity">
+      <state id="Sample Activity">
+        <action name="Get Info"></action>
+      </state>
+      
+    </activity>
+    
+  </state>
+</state_machine>

@@ -15,9 +15,7 @@ import jetbrains.mps.intentions.AbstractIntentionExecutable;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.internal.collections.runtime.IVisitor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -59,11 +57,9 @@ public final class ClearTestResults_Intention extends AbstractIntentionDescripto
 
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(node, LINKS.commands$RX3w), CONCEPTS.TestStep$W2)).visitAll(new IVisitor<SNode>() {
-        public void visit(SNode it) {
-          SPropertyOperations.setEnum(SLinkOperations.getTarget(it, LINKS.evaluation$kokw), PROPS.result$7die, 0x72ec05e3886dfc17L, "Unknown");
-          SPropertyOperations.assign(SLinkOperations.getTarget(it, LINKS.evaluation$kokw), PROPS.message$7dKg, "");
-        }
+      Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(node, LINKS.commands$RX3w), CONCEPTS.TestStep$W2)).visitAll((it) -> {
+        SPropertyOperations.setEnum(SLinkOperations.getTarget(it, LINKS.evaluation$kokw), PROPS.result$7die, 0x72ec05e3886dfc17L, "Unknown");
+        SPropertyOperations.assign(SLinkOperations.getTarget(it, LINKS.evaluation$kokw), PROPS.message$7dKg, "");
       });
     }
 
@@ -76,11 +72,7 @@ public final class ClearTestResults_Intention extends AbstractIntentionDescripto
     }
 
     private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-      return Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(node, LINKS.commands$RX3w), CONCEPTS.TestStep$W2)).any(new IWhereFilter<SNode>() {
-        public boolean accept(SNode it) {
-          return !(SEnumOperations.isMember(SPropertyOperations.getEnum(SLinkOperations.getTarget(it, LINKS.evaluation$kokw), PROPS.result$7die), 0x72ec05e3886dfc17L));
-        }
-      });
+      return Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(node, LINKS.commands$RX3w), CONCEPTS.TestStep$W2)).any((it) -> !(SEnumOperations.isMember(SPropertyOperations.getEnum(SLinkOperations.getTarget(it, LINKS.evaluation$kokw), PROPS.result$7die), 0x72ec05e3886dfc17L)));
     }
 
 

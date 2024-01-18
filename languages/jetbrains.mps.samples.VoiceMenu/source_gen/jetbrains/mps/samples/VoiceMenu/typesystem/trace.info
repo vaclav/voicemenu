@@ -20,75 +20,61 @@
   </root>
   <root nodeRef="r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)/3026886742210315233">
     <file name="TimeoutIsMissing_NonTypesystemRule.java">
-      <node id="3026886742210347430" at="31,39,32,135" concept="7" />
-      <node id="3026886742210379684" at="36,39,37,90" concept="7" />
-      <node id="3026886742210380538" at="39,7,40,0" concept="8" />
-      <node id="3026886742210390216" at="42,7,43,66" concept="6" />
-      <node id="3026886742210390216" at="43,66,44,236" concept="6" />
-      <node id="3026886742210485738" at="45,9,46,179" concept="6" />
-      <node id="3026886742210486457" at="46,179,47,54" concept="2" />
-      <node id="3026886742210485738" at="47,54,48,71" concept="2" />
-      <node id="3026886742210315233" at="53,50,54,28" concept="7" />
-      <node id="3026886742210315233" at="56,68,57,102" concept="7" />
-      <node id="3026886742210315233" at="59,30,60,17" concept="7" />
-      <node id="3026886742210315233" at="64,0,65,0" concept="9" trace="activities$gAHC" />
-      <node id="3026886742210315233" at="65,0,66,0" concept="9" trace="event$pmgi" />
-      <node id="3026886742210315233" at="66,0,67,0" concept="9" trace="events$gxkh" />
-      <node id="3026886742210315233" at="70,0,71,0" concept="9" trace="trigger$DqFK" />
-      <node id="3026886742210315233" at="74,0,75,0" concept="9" trace="Menu$By" />
-      <node id="3026886742210315233" at="27,0,29,0" concept="1" trace="TimeoutIsMissing_NonTypesystemRule#()V" />
-      <node id="3026886742210347428" at="31,0,34,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="3026886742210379682" at="36,0,39,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="3026886742210315233" at="53,0,56,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="3026886742210315233" at="56,0,59,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
-      <node id="3026886742210315233" at="59,0,62,0" concept="5" trace="overrides#()Z" />
-      <node id="3026886742210347421" at="29,117,34,7" concept="6" />
-      <node id="3026886742210379675" at="34,7,39,7" concept="6" />
-      <node id="3026886742210485738" at="44,236,49,9" concept="0" />
-      <node id="3026886742210390216" at="41,56,50,7" concept="0" />
-      <node id="3026886742210380636" at="40,0,51,5" concept="4" />
-      <node id="3026886742210315233" at="29,0,53,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
-      <scope id="3026886742210315233" at="27,47,27,47" />
-      <scope id="3026886742210347429" at="31,39,32,135" />
-      <scope id="3026886742210379683" at="36,39,37,90" />
-      <scope id="3026886742210315233" at="53,50,54,28" />
-      <scope id="3026886742210315233" at="56,68,57,102" />
-      <scope id="3026886742210315233" at="59,30,60,17" />
-      <scope id="3026886742210315233" at="27,0,29,0" />
-      <scope id="3026886742210347428" at="31,0,34,0">
-        <var name="it" id="3026886742210347428" />
-      </scope>
-      <scope id="3026886742210379682" at="36,0,39,0">
-        <var name="it" id="3026886742210379682" />
-      </scope>
-      <scope id="3026886742210485738" at="45,9,48,71">
+      <node id="3026886742210347421" at="28,117,29,244" concept="6" />
+      <node id="3026886742210379675" at="29,244,30,192" concept="6" />
+      <node id="3026886742210380538" at="30,192,31,0" concept="8" />
+      <node id="3026886742210390216" at="33,7,34,66" concept="6" />
+      <node id="3026886742210390216" at="34,66,35,236" concept="6" />
+      <node id="3026886742210485738" at="36,9,37,179" concept="6" />
+      <node id="3026886742210486457" at="37,179,38,54" concept="2" />
+      <node id="3026886742210485738" at="38,54,39,71" concept="2" />
+      <node id="3026886742210315233" at="44,50,45,28" concept="7" />
+      <node id="3026886742210315233" at="47,68,48,102" concept="7" />
+      <node id="3026886742210315233" at="50,30,51,17" concept="7" />
+      <node id="3026886742210315233" at="55,0,56,0" concept="9" trace="activities$gAHC" />
+      <node id="3026886742210315233" at="56,0,57,0" concept="9" trace="event$pmgi" />
+      <node id="3026886742210315233" at="57,0,58,0" concept="9" trace="events$gxkh" />
+      <node id="3026886742210315233" at="61,0,62,0" concept="9" trace="trigger$DqFK" />
+      <node id="3026886742210315233" at="65,0,66,0" concept="9" trace="Menu$By" />
+      <node id="3026886742210315233" at="26,0,28,0" concept="1" trace="TimeoutIsMissing_NonTypesystemRule#()V" />
+      <node id="3026886742210315233" at="44,0,47,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3026886742210315233" at="47,0,50,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="3026886742210315233" at="50,0,53,0" concept="5" trace="overrides#()Z" />
+      <node id="3026886742210485738" at="35,236,40,9" concept="0" />
+      <node id="3026886742210390216" at="32,56,41,7" concept="0" />
+      <node id="3026886742210380636" at="31,0,42,5" concept="4" />
+      <node id="3026886742210315233" at="28,0,44,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="3026886742210315233" at="26,47,26,47" />
+      <scope id="3026886742210315233" at="44,50,45,28" />
+      <scope id="3026886742210315233" at="47,68,48,102" />
+      <scope id="3026886742210315233" at="50,30,51,17" />
+      <scope id="3026886742210315233" at="26,0,28,0" />
+      <scope id="3026886742210485738" at="36,9,39,71">
         <var name="intentionProvider" id="3026886742210485738" />
       </scope>
-      <scope id="3026886742210315233" at="53,0,56,0" />
-      <scope id="3026886742210315233" at="56,0,59,0">
+      <scope id="3026886742210315233" at="44,0,47,0" />
+      <scope id="3026886742210315233" at="47,0,50,0">
         <var name="argument" id="3026886742210315233" />
       </scope>
-      <scope id="3026886742210315233" at="59,0,62,0" />
-      <scope id="3026886742210390216" at="42,7,49,9">
+      <scope id="3026886742210315233" at="50,0,53,0" />
+      <scope id="3026886742210390216" at="33,7,40,9">
         <var name="_reporter_2309309498" id="3026886742210390216" />
         <var name="errorTarget" id="3026886742210390216" />
       </scope>
-      <scope id="3026886742210380638" at="41,56,50,7" />
-      <scope id="3026886742210315234" at="29,117,51,5">
+      <scope id="3026886742210380638" at="32,56,41,7" />
+      <scope id="3026886742210315234" at="28,117,42,5">
         <var name="activityNode" id="3026886742210347422" />
         <var name="eventNode" id="3026886742210379676" />
       </scope>
-      <scope id="3026886742210315233" at="29,0,53,0">
+      <scope id="3026886742210315233" at="28,0,44,0">
         <var name="menu" id="3026886742210315233" />
         <var name="status" id="3026886742210315233" />
         <var name="typeCheckingContext" id="3026886742210315233" />
       </scope>
-      <unit id="3026886742210315233" at="69,0,72,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.TimeoutIsMissing_NonTypesystemRule$PROPS" />
-      <unit id="3026886742210315233" at="73,0,76,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.TimeoutIsMissing_NonTypesystemRule$CONCEPTS" />
-      <unit id="3026886742210347428" at="30,119,34,5" name="jetbrains.mps.samples.VoiceMenu.typesystem.TimeoutIsMissing_NonTypesystemRule$1" />
-      <unit id="3026886742210379682" at="35,112,39,5" name="jetbrains.mps.samples.VoiceMenu.typesystem.TimeoutIsMissing_NonTypesystemRule$2" />
-      <unit id="3026886742210315233" at="63,0,68,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.TimeoutIsMissing_NonTypesystemRule$LINKS" />
-      <unit id="3026886742210315233" at="26,0,77,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.TimeoutIsMissing_NonTypesystemRule" />
+      <unit id="3026886742210315233" at="60,0,63,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.TimeoutIsMissing_NonTypesystemRule$PROPS" />
+      <unit id="3026886742210315233" at="64,0,67,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.TimeoutIsMissing_NonTypesystemRule$CONCEPTS" />
+      <unit id="3026886742210315233" at="54,0,59,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.TimeoutIsMissing_NonTypesystemRule$LINKS" />
+      <unit id="3026886742210315233" at="25,0,68,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.TimeoutIsMissing_NonTypesystemRule" />
     </file>
     <file name="TypesystemDescriptor.java">
       <node id="3026886742210315233" at="54,5,55,93" concept="6" />
@@ -101,71 +87,57 @@
   </root>
   <root nodeRef="r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)/3026886742211920796">
     <file name="DuplicateTimeout_NonTypesystemRule.java">
-      <node id="3026886742211960255" at="31,39,32,90" concept="7" />
-      <node id="3026886742211971032" at="36,39,37,131" concept="7" />
-      <node id="3026886742211997737" at="40,7,41,66" concept="6" />
-      <node id="3026886742211997737" at="41,66,42,236" concept="6" />
-      <node id="3026886742212043110" at="43,9,44,184" concept="6" />
-      <node id="3026886742212043713" at="44,184,45,54" concept="2" />
-      <node id="3026886742212043110" at="45,54,46,71" concept="2" />
-      <node id="3026886742211920796" at="51,50,52,28" concept="7" />
-      <node id="3026886742211920796" at="54,68,55,102" concept="7" />
-      <node id="3026886742211920796" at="57,30,58,17" concept="7" />
-      <node id="3026886742211920796" at="62,0,63,0" concept="9" trace="events$gxkh" />
-      <node id="3026886742211920796" at="66,0,67,0" concept="9" trace="trigger$DqFK" />
-      <node id="3026886742211920796" at="70,0,71,0" concept="9" trace="Event$Du" />
-      <node id="3026886742211920796" at="71,0,72,0" concept="9" trace="Menu$By" />
-      <node id="3026886742211920796" at="27,0,29,0" concept="1" trace="DuplicateTimeout_NonTypesystemRule#()V" />
-      <node id="3026886742211960253" at="31,0,34,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="3026886742211970606" at="36,0,39,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="3026886742211920796" at="51,0,54,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="3026886742211920796" at="54,0,57,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
-      <node id="3026886742211920796" at="57,0,60,0" concept="5" trace="overrides#()Z" />
-      <node id="3026886742211960246" at="29,117,34,7" concept="6" />
-      <node id="3026886742212043110" at="42,236,47,9" concept="0" />
-      <node id="3026886742211997737" at="39,9,48,7" concept="0" />
-      <node id="3026886742211997202" at="34,7,49,5" concept="4" />
-      <node id="3026886742211920796" at="29,0,51,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
-      <scope id="3026886742211920796" at="27,47,27,47" />
-      <scope id="3026886742211960254" at="31,39,32,90" />
-      <scope id="3026886742211970607" at="36,39,37,131" />
-      <scope id="3026886742211920796" at="51,50,52,28" />
-      <scope id="3026886742211920796" at="54,68,55,102" />
-      <scope id="3026886742211920796" at="57,30,58,17" />
-      <scope id="3026886742211920796" at="27,0,29,0" />
-      <scope id="3026886742211960253" at="31,0,34,0">
-        <var name="it" id="3026886742211960253" />
-      </scope>
-      <scope id="3026886742211970606" at="36,0,39,0">
-        <var name="it" id="3026886742211970606" />
-      </scope>
-      <scope id="3026886742212043110" at="43,9,46,71">
+      <node id="3026886742211960246" at="28,117,29,192" concept="6" />
+      <node id="3026886742211997737" at="31,7,32,66" concept="6" />
+      <node id="3026886742211997737" at="32,66,33,236" concept="6" />
+      <node id="3026886742212043110" at="34,9,35,184" concept="6" />
+      <node id="3026886742212043713" at="35,184,36,54" concept="2" />
+      <node id="3026886742212043110" at="36,54,37,71" concept="2" />
+      <node id="3026886742211920796" at="42,50,43,28" concept="7" />
+      <node id="3026886742211920796" at="45,68,46,102" concept="7" />
+      <node id="3026886742211920796" at="48,30,49,17" concept="7" />
+      <node id="3026886742211920796" at="53,0,54,0" concept="9" trace="events$gxkh" />
+      <node id="3026886742211920796" at="57,0,58,0" concept="9" trace="trigger$DqFK" />
+      <node id="3026886742211920796" at="61,0,62,0" concept="9" trace="Event$Du" />
+      <node id="3026886742211920796" at="62,0,63,0" concept="9" trace="Menu$By" />
+      <node id="3026886742211920796" at="26,0,28,0" concept="1" trace="DuplicateTimeout_NonTypesystemRule#()V" />
+      <node id="3026886742211920796" at="42,0,45,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3026886742211920796" at="45,0,48,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="3026886742211920796" at="48,0,51,0" concept="5" trace="overrides#()Z" />
+      <node id="3026886742212043110" at="33,236,38,9" concept="0" />
+      <node id="3026886742211997737" at="30,211,39,7" concept="0" />
+      <node id="3026886742211997202" at="29,192,40,5" concept="4" />
+      <node id="3026886742211920796" at="28,0,42,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="3026886742211920796" at="26,47,26,47" />
+      <scope id="3026886742211920796" at="42,50,43,28" />
+      <scope id="3026886742211920796" at="45,68,46,102" />
+      <scope id="3026886742211920796" at="48,30,49,17" />
+      <scope id="3026886742211920796" at="26,0,28,0" />
+      <scope id="3026886742212043110" at="34,9,37,71">
         <var name="intentionProvider" id="3026886742212043110" />
       </scope>
-      <scope id="3026886742211920796" at="51,0,54,0" />
-      <scope id="3026886742211920796" at="54,0,57,0">
+      <scope id="3026886742211920796" at="42,0,45,0" />
+      <scope id="3026886742211920796" at="45,0,48,0">
         <var name="argument" id="3026886742211920796" />
       </scope>
-      <scope id="3026886742211920796" at="57,0,60,0" />
-      <scope id="3026886742211997737" at="40,7,47,9">
+      <scope id="3026886742211920796" at="48,0,51,0" />
+      <scope id="3026886742211997737" at="31,7,38,9">
         <var name="_reporter_2309309498" id="3026886742211997737" />
         <var name="errorTarget" id="3026886742211997737" />
       </scope>
-      <scope id="3026886742211997204" at="39,9,48,7" />
-      <scope id="3026886742211920797" at="29,117,49,5">
+      <scope id="3026886742211997204" at="30,211,39,7" />
+      <scope id="3026886742211920797" at="28,117,40,5">
         <var name="eventNode" id="3026886742211960247" />
       </scope>
-      <scope id="3026886742211920796" at="29,0,51,0">
+      <scope id="3026886742211920796" at="28,0,42,0">
         <var name="menu" id="3026886742211920796" />
         <var name="status" id="3026886742211920796" />
         <var name="typeCheckingContext" id="3026886742211920796" />
       </scope>
-      <unit id="3026886742211920796" at="61,0,64,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.DuplicateTimeout_NonTypesystemRule$LINKS" />
-      <unit id="3026886742211920796" at="65,0,68,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.DuplicateTimeout_NonTypesystemRule$PROPS" />
-      <unit id="3026886742211960253" at="30,112,34,5" name="jetbrains.mps.samples.VoiceMenu.typesystem.DuplicateTimeout_NonTypesystemRule$1" />
-      <unit id="3026886742211970606" at="35,88,39,5" name="jetbrains.mps.samples.VoiceMenu.typesystem.DuplicateTimeout_NonTypesystemRule$2" />
-      <unit id="3026886742211920796" at="69,0,73,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.DuplicateTimeout_NonTypesystemRule$CONCEPTS" />
-      <unit id="3026886742211920796" at="26,0,74,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.DuplicateTimeout_NonTypesystemRule" />
+      <unit id="3026886742211920796" at="52,0,55,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.DuplicateTimeout_NonTypesystemRule$LINKS" />
+      <unit id="3026886742211920796" at="56,0,59,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.DuplicateTimeout_NonTypesystemRule$PROPS" />
+      <unit id="3026886742211920796" at="60,0,64,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.DuplicateTimeout_NonTypesystemRule$CONCEPTS" />
+      <unit id="3026886742211920796" at="25,0,65,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.DuplicateTimeout_NonTypesystemRule" />
     </file>
     <file name="TypesystemDescriptor.java">
       <node id="3026886742211920796" at="38,5,39,93" concept="6" />
@@ -178,34 +150,27 @@
   </root>
   <root nodeRef="r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)/3026886742211997921">
     <file name="RemoveDuplicateTimeouts_QuickFix.java">
-      <node id="3026886742211997921" at="19,45,20,137" concept="11" />
-      <node id="3026886742211998480" at="22,44,23,39" concept="7" />
-      <node id="3026886742212026310" at="27,39,28,90" concept="7" />
-      <node id="3026886742211997921" at="34,0,35,0" concept="9" trace="events$gxkh" />
-      <node id="3026886742211997921" at="38,0,39,0" concept="9" trace="trigger$DqFK" />
-      <node id="3026886742211997921" at="19,0,22,0" concept="1" trace="RemoveDuplicateTimeouts_QuickFix#()V" />
-      <node id="3026886742211997921" at="22,0,25,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="3026886742212025956" at="27,0,30,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="3026886742212003574" at="25,35,30,8" concept="2" />
-      <node id="3026886742211997921" at="25,0,32,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <scope id="3026886742211997921" at="19,45,20,137" />
-      <scope id="3026886742211997943" at="22,44,23,39" />
-      <scope id="3026886742212025957" at="27,39,28,90" />
-      <scope id="3026886742211997921" at="19,0,22,0" />
-      <scope id="3026886742211997921" at="22,0,25,0">
+      <node id="3026886742211997921" at="18,45,19,137" concept="11" />
+      <node id="3026886742211998480" at="21,44,22,39" concept="7" />
+      <node id="3026886742212003574" at="24,35,25,265" concept="2" />
+      <node id="3026886742211997921" at="29,0,30,0" concept="9" trace="events$gxkh" />
+      <node id="3026886742211997921" at="33,0,34,0" concept="9" trace="trigger$DqFK" />
+      <node id="3026886742211997921" at="18,0,21,0" concept="1" trace="RemoveDuplicateTimeouts_QuickFix#()V" />
+      <node id="3026886742211997921" at="21,0,24,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="3026886742211997921" at="24,0,27,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="3026886742211997921" at="18,45,19,137" />
+      <scope id="3026886742211997943" at="21,44,22,39" />
+      <scope id="3026886742211997923" at="24,35,25,265" />
+      <scope id="3026886742211997921" at="18,0,21,0" />
+      <scope id="3026886742211997921" at="21,0,24,0">
         <var name="node" id="3026886742211997921" />
       </scope>
-      <scope id="3026886742212025956" at="27,0,30,0">
-        <var name="it" id="3026886742212025956" />
-      </scope>
-      <scope id="3026886742211997923" at="25,35,30,8" />
-      <scope id="3026886742211997921" at="25,0,32,0">
+      <scope id="3026886742211997921" at="24,0,27,0">
         <var name="node" id="3026886742211997921" />
       </scope>
-      <unit id="3026886742211997921" at="33,0,36,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.RemoveDuplicateTimeouts_QuickFix$LINKS" />
-      <unit id="3026886742211997921" at="37,0,40,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.RemoveDuplicateTimeouts_QuickFix$PROPS" />
-      <unit id="3026886742212025956" at="26,184,30,5" name="jetbrains.mps.samples.VoiceMenu.typesystem.RemoveDuplicateTimeouts_QuickFix$1" />
-      <unit id="3026886742211997921" at="18,0,41,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.RemoveDuplicateTimeouts_QuickFix" />
+      <unit id="3026886742211997921" at="28,0,31,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.RemoveDuplicateTimeouts_QuickFix$LINKS" />
+      <unit id="3026886742211997921" at="32,0,35,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.RemoveDuplicateTimeouts_QuickFix$PROPS" />
+      <unit id="3026886742211997921" at="17,0,36,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.RemoveDuplicateTimeouts_QuickFix" />
     </file>
   </root>
   <root nodeRef="r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)/3333261045545342264">
@@ -824,80 +789,59 @@
   </root>
   <root nodeRef="r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)/584072856213844010">
     <file name="AddMissingTimeout_QuickFix.java">
-      <node id="584072856213844010" at="21,39,22,136" concept="11" />
-      <node id="584072856214004997" at="24,44,25,33" concept="7" />
-      <node id="3026886742210690845" at="27,35,28,0" concept="8" />
-      <node id="3026886742211782353" at="30,39,31,90" concept="7" />
-      <node id="3026886742210755091" at="33,8,34,206" concept="6" />
-      <node id="3026886742210755343" at="34,206,35,73" concept="2" />
-      <node id="3026886742210760321" at="35,73,36,76" concept="2" />
-      <node id="3026886742210764755" at="36,76,37,165" concept="2" />
-      <node id="3026886742210690966" at="37,165,38,0" concept="8" />
-      <node id="584072856213851152" at="38,0,39,205" concept="6" />
-      <node id="584072856213880326" at="41,39,42,90" concept="7" />
-      <node id="584072856213889669" at="44,8,45,165" concept="2" />
-      <node id="3026886742210583147" at="45,165,46,0" concept="8" />
-      <node id="3026886742210583234" at="48,39,49,135" concept="7" />
-      <node id="3026886742210583244" at="51,7,52,203" concept="6" />
-      <node id="3026886742210583250" at="52,203,53,77" concept="6" />
-      <node id="3026886742210583256" at="53,77,54,43" concept="2" />
-      <node id="3026886742210583260" at="54,43,55,0" concept="8" />
-      <node id="3026886742210583261" at="55,0,56,127" concept="2" />
-      <node id="3026886742210583269" at="56,127,57,122" concept="2" />
-      <node id="3026886742210583277" at="57,122,58,69" concept="2" />
-      <node id="3026886742210583283" at="58,69,59,0" concept="8" />
-      <node id="3026886742210583284" at="59,0,60,169" concept="2" />
-      <node id="3026886742210583185" at="60,169,61,0" concept="8" />
-      <node id="584072856213844010" at="65,0,66,0" concept="9" trace="events$gxkh" />
-      <node id="584072856213844010" at="66,0,67,0" concept="9" trace="event$pmgi" />
-      <node id="584072856213844010" at="67,0,68,0" concept="9" trace="activities$gAHC" />
-      <node id="584072856213844010" at="68,0,69,0" concept="9" trace="commands$oZIM" />
-      <node id="584072856213844010" at="72,0,73,0" concept="9" trace="trigger$DqFK" />
-      <node id="584072856213844010" at="73,0,74,0" concept="9" trace="name$MnvL" />
-      <node id="584072856213844010" at="74,0,75,0" concept="9" trace="playback$XRxp" />
-      <node id="584072856213844010" at="21,0,24,0" concept="1" trace="AddMissingTimeout_QuickFix#()V" />
-      <node id="584072856213844010" at="24,0,27,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="3026886742211781999" at="30,0,33,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="584072856213879720" at="41,0,44,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="3026886742210583232" at="48,0,51,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="3026886742211730874" at="28,0,33,8" concept="2" />
-      <node id="584072856213851766" at="39,205,44,8" concept="2" />
-      <node id="3026886742210583224" at="46,0,51,7" concept="6" />
-      <node id="584072856213844010" at="27,0,63,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <scope id="584072856213844010" at="21,39,22,136" />
-      <scope id="584072856214004440" at="24,44,25,33" />
-      <scope id="3026886742211782000" at="30,39,31,90" />
-      <scope id="584072856213879721" at="41,39,42,90" />
-      <scope id="3026886742210583233" at="48,39,49,135" />
-      <scope id="584072856213844010" at="21,0,24,0" />
-      <scope id="584072856213844010" at="24,0,27,0">
+      <node id="584072856213844010" at="20,39,21,136" concept="11" />
+      <node id="584072856214004997" at="23,44,24,33" concept="7" />
+      <node id="3026886742210690845" at="26,35,27,0" concept="8" />
+      <node id="3026886742211730874" at="27,0,28,259" concept="2" />
+      <node id="3026886742210755091" at="28,259,29,206" concept="6" />
+      <node id="3026886742210755343" at="29,206,30,73" concept="2" />
+      <node id="3026886742210760321" at="30,73,31,76" concept="2" />
+      <node id="3026886742210764755" at="31,76,32,165" concept="2" />
+      <node id="3026886742210690966" at="32,165,33,0" concept="8" />
+      <node id="584072856213851152" at="33,0,34,205" concept="6" />
+      <node id="584072856213851766" at="34,205,35,289" concept="2" />
+      <node id="584072856213889669" at="35,289,36,165" concept="2" />
+      <node id="3026886742210583147" at="36,165,37,0" concept="8" />
+      <node id="3026886742210583224" at="37,0,38,299" concept="6" />
+      <node id="3026886742210583244" at="38,299,39,203" concept="6" />
+      <node id="3026886742210583250" at="39,203,40,77" concept="6" />
+      <node id="3026886742210583256" at="40,77,41,43" concept="2" />
+      <node id="3026886742210583260" at="41,43,42,0" concept="8" />
+      <node id="3026886742210583261" at="42,0,43,127" concept="2" />
+      <node id="3026886742210583269" at="43,127,44,122" concept="2" />
+      <node id="3026886742210583277" at="44,122,45,69" concept="2" />
+      <node id="3026886742210583283" at="45,69,46,0" concept="8" />
+      <node id="3026886742210583284" at="46,0,47,169" concept="2" />
+      <node id="3026886742210583185" at="47,169,48,0" concept="8" />
+      <node id="584072856213844010" at="52,0,53,0" concept="9" trace="events$gxkh" />
+      <node id="584072856213844010" at="53,0,54,0" concept="9" trace="event$pmgi" />
+      <node id="584072856213844010" at="54,0,55,0" concept="9" trace="activities$gAHC" />
+      <node id="584072856213844010" at="55,0,56,0" concept="9" trace="commands$oZIM" />
+      <node id="584072856213844010" at="59,0,60,0" concept="9" trace="trigger$DqFK" />
+      <node id="584072856213844010" at="60,0,61,0" concept="9" trace="name$MnvL" />
+      <node id="584072856213844010" at="61,0,62,0" concept="9" trace="playback$XRxp" />
+      <node id="584072856213844010" at="20,0,23,0" concept="1" trace="AddMissingTimeout_QuickFix#()V" />
+      <node id="584072856213844010" at="23,0,26,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="584072856213844010" at="26,0,50,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="584072856213844010" at="20,39,21,136" />
+      <scope id="584072856214004440" at="23,44,24,33" />
+      <scope id="584072856213844010" at="20,0,23,0" />
+      <scope id="584072856213844010" at="23,0,26,0">
         <var name="node" id="584072856213844010" />
       </scope>
-      <scope id="3026886742211781999" at="30,0,33,0">
-        <var name="it" id="3026886742211781999" />
-      </scope>
-      <scope id="584072856213879720" at="41,0,44,0">
-        <var name="it" id="584072856213879720" />
-      </scope>
-      <scope id="3026886742210583232" at="48,0,51,0">
-        <var name="it" id="3026886742210583232" />
-      </scope>
-      <scope id="584072856213844012" at="27,35,61,0">
+      <scope id="584072856213844012" at="26,35,48,0">
         <var name="newActivity" id="584072856213851155" />
         <var name="newEventTimeout" id="3026886742210755094" />
         <var name="newTimout" id="3026886742210583245" />
         <var name="srcEvent" id="3026886742210583251" />
         <var name="srcTiemout" id="3026886742210583225" />
       </scope>
-      <scope id="584072856213844010" at="27,0,63,0">
+      <scope id="584072856213844010" at="26,0,50,0">
         <var name="node" id="584072856213844010" />
       </scope>
-      <unit id="3026886742211781999" at="29,178,33,5" name="jetbrains.mps.samples.VoiceMenu.typesystem.AddMissingTimeout_QuickFix$1" />
-      <unit id="584072856213879720" at="40,208,44,5" name="jetbrains.mps.samples.VoiceMenu.typesystem.AddMissingTimeout_QuickFix$2" />
-      <unit id="3026886742210583232" at="47,174,51,5" name="jetbrains.mps.samples.VoiceMenu.typesystem.AddMissingTimeout_QuickFix$3" />
-      <unit id="584072856213844010" at="71,0,76,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.AddMissingTimeout_QuickFix$PROPS" />
-      <unit id="584072856213844010" at="64,0,70,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.AddMissingTimeout_QuickFix$LINKS" />
-      <unit id="584072856213844010" at="20,0,77,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.AddMissingTimeout_QuickFix" />
+      <unit id="584072856213844010" at="58,0,63,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.AddMissingTimeout_QuickFix$PROPS" />
+      <unit id="584072856213844010" at="51,0,57,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.AddMissingTimeout_QuickFix$LINKS" />
+      <unit id="584072856213844010" at="19,0,64,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.AddMissingTimeout_QuickFix" />
     </file>
   </root>
   <root nodeRef="r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)/6198827212365401413">
@@ -977,74 +921,67 @@
   </root>
   <root nodeRef="r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)/6428598319198780334">
     <file name="CheckMultipleActivitiesOneEvent_NonTypesystemRule.java">
-      <node id="6428598319198818963" at="29,117,30,90" concept="6" />
-      <node id="6428598319198827305" at="33,41,34,287" concept="7" />
-      <node id="6218942490161504715" at="37,9,38,68" concept="6" />
-      <node id="6218942490161504715" at="38,68,39,261" concept="6" />
-      <node id="6218942490161504717" at="40,11,41,178" concept="6" />
-      <node id="6218942490161504717" at="41,178,42,73" concept="2" />
-      <node id="6218942490161504718" at="44,11,45,178" concept="6" />
-      <node id="6218942490161504718" at="45,178,46,73" concept="2" />
-      <node id="6428598319198780334" at="52,50,53,28" concept="7" />
-      <node id="6428598319198780334" at="55,68,56,102" concept="7" />
-      <node id="6428598319198780334" at="58,30,59,17" concept="7" />
-      <node id="6428598319198780334" at="63,0,64,0" concept="9" trace="activities$gAHC" />
-      <node id="6428598319198780334" at="64,0,65,0" concept="9" trace="event$pmgi" />
-      <node id="6428598319198780334" at="68,0,69,0" concept="9" trace="trigger$DqFK" />
-      <node id="6428598319198780334" at="72,0,73,0" concept="9" trace="Menu$By" />
-      <node id="6428598319198780334" at="27,0,29,0" concept="1" trace="CheckMultipleActivitiesOneEvent_NonTypesystemRule#()V" />
-      <node id="6428598319198820448" at="33,0,36,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="6428598319198780334" at="52,0,55,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="6428598319198780334" at="55,0,58,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
-      <node id="6428598319198780334" at="58,0,61,0" concept="5" trace="overrides#()Z" />
-      <node id="6218942490161504717" at="39,261,43,11" concept="0" />
-      <node id="6218942490161504718" at="43,11,47,11" concept="0" />
-      <node id="6218942490161504715" at="36,11,48,9" concept="0" />
-      <node id="6428598319198819112" at="31,75,49,7" concept="4" />
-      <node id="6428598319198819016" at="30,90,50,5" concept="3" />
-      <node id="6428598319198780334" at="29,0,52,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
-      <scope id="6428598319198780334" at="27,62,27,62" />
-      <scope id="6428598319198820449" at="33,41,34,287" />
-      <scope id="6428598319198780334" at="52,50,53,28" />
-      <scope id="6428598319198780334" at="55,68,56,102" />
-      <scope id="6428598319198780334" at="58,30,59,17" />
-      <scope id="6428598319198780334" at="27,0,29,0" />
-      <scope id="6218942490161504717" at="40,11,42,73">
+      <node id="6428598319198818963" at="28,117,29,90" concept="6" />
+      <node id="6218942490161504715" at="32,9,33,68" concept="6" />
+      <node id="6218942490161504715" at="33,68,34,261" concept="6" />
+      <node id="6218942490161504717" at="35,11,36,178" concept="6" />
+      <node id="6218942490161504717" at="36,178,37,73" concept="2" />
+      <node id="6218942490161504718" at="39,11,40,178" concept="6" />
+      <node id="6218942490161504718" at="40,178,41,73" concept="2" />
+      <node id="6428598319198780334" at="47,50,48,28" concept="7" />
+      <node id="6428598319198780334" at="50,68,51,102" concept="7" />
+      <node id="6428598319198780334" at="53,30,54,17" concept="7" />
+      <node id="6428598319198780334" at="58,0,59,0" concept="9" trace="activities$gAHC" />
+      <node id="6428598319198780334" at="59,0,60,0" concept="9" trace="event$pmgi" />
+      <node id="6428598319198780334" at="63,0,64,0" concept="9" trace="trigger$DqFK" />
+      <node id="6428598319198780334" at="67,0,68,0" concept="9" trace="Menu$By" />
+      <node id="6428598319198780334" at="26,0,28,0" concept="1" trace="CheckMultipleActivitiesOneEvent_NonTypesystemRule#()V" />
+      <node id="6428598319198780334" at="47,0,50,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="6428598319198780334" at="50,0,53,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="6428598319198780334" at="53,0,56,0" concept="5" trace="overrides#()Z" />
+      <node id="6218942490161504717" at="34,261,38,11" concept="0" />
+      <node id="6218942490161504718" at="38,11,42,11" concept="0" />
+      <node id="6218942490161504715" at="31,329,43,9" concept="0" />
+      <node id="6428598319198819112" at="30,75,44,7" concept="4" />
+      <node id="6428598319198819016" at="29,90,45,5" concept="3" />
+      <node id="6428598319198780334" at="28,0,47,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="6428598319198780334" at="26,62,26,62" />
+      <scope id="6428598319198780334" at="47,50,48,28" />
+      <scope id="6428598319198780334" at="50,68,51,102" />
+      <scope id="6428598319198780334" at="53,30,54,17" />
+      <scope id="6428598319198780334" at="26,0,28,0" />
+      <scope id="6218942490161504717" at="35,11,37,73">
         <var name="intentionProvider" id="6218942490161504717" />
       </scope>
-      <scope id="6218942490161504718" at="44,11,46,73">
+      <scope id="6218942490161504718" at="39,11,41,73">
         <var name="intentionProvider" id="6218942490161504718" />
       </scope>
-      <scope id="6428598319198820448" at="33,0,36,0">
-        <var name="it" id="6428598319198820448" />
-      </scope>
-      <scope id="6428598319198780334" at="52,0,55,0" />
-      <scope id="6428598319198780334" at="55,0,58,0">
+      <scope id="6428598319198780334" at="47,0,50,0" />
+      <scope id="6428598319198780334" at="50,0,53,0">
         <var name="argument" id="6428598319198780334" />
       </scope>
-      <scope id="6428598319198780334" at="58,0,61,0" />
-      <scope id="6218942490161504715" at="37,9,47,11">
+      <scope id="6428598319198780334" at="53,0,56,0" />
+      <scope id="6218942490161504715" at="32,9,42,11">
         <var name="_reporter_2309309498" id="6218942490161504715" />
         <var name="errorTarget" id="6218942490161504715" />
       </scope>
-      <scope id="6428598319198819114" at="36,11,48,9" />
-      <scope id="6428598319198819022" at="31,75,49,7" />
-      <scope id="6428598319198819016" at="30,90,50,5">
+      <scope id="6428598319198819114" at="31,329,43,9" />
+      <scope id="6428598319198819022" at="30,75,44,7" />
+      <scope id="6428598319198819016" at="29,90,45,5">
         <var name="currentActivity" id="6428598319198819018" />
       </scope>
-      <scope id="6428598319198780335" at="29,117,50,5">
+      <scope id="6428598319198780335" at="28,117,45,5">
         <var name="activities" id="6428598319198818966" />
       </scope>
-      <scope id="6428598319198780334" at="29,0,52,0">
+      <scope id="6428598319198780334" at="28,0,47,0">
         <var name="menu" id="6428598319198780334" />
         <var name="status" id="6428598319198780334" />
         <var name="typeCheckingContext" id="6428598319198780334" />
       </scope>
-      <unit id="6428598319198780334" at="67,0,70,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.CheckMultipleActivitiesOneEvent_NonTypesystemRule$PROPS" />
-      <unit id="6428598319198780334" at="71,0,74,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.CheckMultipleActivitiesOneEvent_NonTypesystemRule$CONCEPTS" />
-      <unit id="6428598319198820448" at="32,52,36,7" name="jetbrains.mps.samples.VoiceMenu.typesystem.CheckMultipleActivitiesOneEvent_NonTypesystemRule$1" />
-      <unit id="6428598319198780334" at="62,0,66,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.CheckMultipleActivitiesOneEvent_NonTypesystemRule$LINKS" />
-      <unit id="6428598319198780334" at="26,0,75,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.CheckMultipleActivitiesOneEvent_NonTypesystemRule" />
+      <unit id="6428598319198780334" at="62,0,65,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.CheckMultipleActivitiesOneEvent_NonTypesystemRule$PROPS" />
+      <unit id="6428598319198780334" at="66,0,69,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.CheckMultipleActivitiesOneEvent_NonTypesystemRule$CONCEPTS" />
+      <unit id="6428598319198780334" at="57,0,61,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.CheckMultipleActivitiesOneEvent_NonTypesystemRule$LINKS" />
+      <unit id="6428598319198780334" at="25,0,70,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.CheckMultipleActivitiesOneEvent_NonTypesystemRule" />
     </file>
     <file name="TypesystemDescriptor.java">
       <node id="6428598319198780334" at="30,5,31,108" concept="6" />
@@ -1168,74 +1105,67 @@
   </root>
   <root nodeRef="r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)/7167187293241760276">
     <file name="CheckEventImplemented_NonTypesystemRule.java">
-      <node id="7167187293241776143" at="32,41,33,346" concept="7" />
-      <node id="2036874050862857652" at="37,9,38,68" concept="6" />
-      <node id="2036874050862857652" at="38,68,39,242" concept="6" />
-      <node id="2036874050862857809" at="40,11,41,178" concept="6" />
-      <node id="2036874050862857810" at="41,178,42,127" concept="2" />
-      <node id="2036874050862857816" at="42,127,43,61" concept="2" />
-      <node id="2036874050862857809" at="43,61,44,73" concept="2" />
-      <node id="7167187293241760276" at="50,50,51,29" concept="7" />
-      <node id="7167187293241760276" at="53,68,54,102" concept="7" />
-      <node id="7167187293241760276" at="56,30,57,17" concept="7" />
-      <node id="5842359129972782683" at="59,55,60,43" concept="7" />
-      <node id="7167187293241760276" at="64,0,65,0" concept="9" trace="Activity$Oz" />
-      <node id="7167187293241760276" at="65,0,66,0" concept="9" trace="Menu$By" />
-      <node id="7167187293241760276" at="66,0,67,0" concept="9" trace="Event$Du" />
-      <node id="7167187293241760276" at="70,0,71,0" concept="9" trace="event$pmgi" />
-      <node id="7167187293241760276" at="74,0,75,0" concept="9" trace="trigger$DqFK" />
-      <node id="7167187293241760276" at="75,0,76,0" concept="9" trace="name$MnvL" />
-      <node id="7167187293241760276" at="27,0,29,0" concept="1" trace="CheckEventImplemented_NonTypesystemRule#()V" />
-      <node id="7167187293241775953" at="32,0,35,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="7167187293241760276" at="50,0,53,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="7167187293241760276" at="53,0,56,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
-      <node id="7167187293241760276" at="56,0,59,0" concept="5" trace="overrides#()Z" />
-      <node id="5842359129972782683" at="59,0,62,0" concept="10" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
-      <node id="2036874050862857809" at="39,242,45,11" concept="0" />
-      <node id="2036874050862857652" at="36,14,46,9" concept="0" />
-      <node id="7167187293241797464" at="36,12,47,7" concept="0" />
-      <node id="7167187293241760758" at="30,160,47,7" concept="4" />
-      <node id="5842359129972761019" at="29,118,48,5" concept="4" />
-      <node id="7167187293241760276" at="29,0,50,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
-      <scope id="7167187293241760276" at="27,52,27,52" />
-      <scope id="7167187293241760760" at="35,11,35,11" />
-      <scope id="7167187293241775954" at="32,41,33,346" />
-      <scope id="7167187293241760276" at="50,50,51,29" />
-      <scope id="7167187293241760276" at="53,68,54,102" />
-      <scope id="7167187293241760276" at="56,30,57,17" />
-      <scope id="5842359129972782683" at="59,55,60,43" />
-      <scope id="7167187293241760276" at="27,0,29,0" />
-      <scope id="7167187293241775953" at="32,0,35,0">
-        <var name="it" id="7167187293241775953" />
-      </scope>
-      <scope id="7167187293241760276" at="50,0,53,0" />
-      <scope id="7167187293241760276" at="53,0,56,0">
+      <node id="2036874050862857652" at="32,9,33,68" concept="6" />
+      <node id="2036874050862857652" at="33,68,34,242" concept="6" />
+      <node id="2036874050862857809" at="35,11,36,178" concept="6" />
+      <node id="2036874050862857810" at="36,178,37,127" concept="2" />
+      <node id="2036874050862857816" at="37,127,38,61" concept="2" />
+      <node id="2036874050862857809" at="38,61,39,73" concept="2" />
+      <node id="7167187293241760276" at="45,50,46,29" concept="7" />
+      <node id="7167187293241760276" at="48,68,49,102" concept="7" />
+      <node id="7167187293241760276" at="51,30,52,17" concept="7" />
+      <node id="5842359129972782683" at="54,55,55,43" concept="7" />
+      <node id="7167187293241760276" at="59,0,60,0" concept="9" trace="Activity$Oz" />
+      <node id="7167187293241760276" at="60,0,61,0" concept="9" trace="Menu$By" />
+      <node id="7167187293241760276" at="61,0,62,0" concept="9" trace="Event$Du" />
+      <node id="7167187293241760276" at="65,0,66,0" concept="9" trace="event$pmgi" />
+      <node id="7167187293241760276" at="69,0,70,0" concept="9" trace="trigger$DqFK" />
+      <node id="7167187293241760276" at="70,0,71,0" concept="9" trace="name$MnvL" />
+      <node id="7167187293241760276" at="26,0,28,0" concept="1" trace="CheckEventImplemented_NonTypesystemRule#()V" />
+      <node id="7167187293241760276" at="45,0,48,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7167187293241760276" at="48,0,51,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="7167187293241760276" at="51,0,54,0" concept="5" trace="overrides#()Z" />
+      <node id="5842359129972782683" at="54,0,57,0" concept="10" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
+      <node id="2036874050862857809" at="34,242,40,11" concept="0" />
+      <node id="2036874050862857652" at="31,14,41,9" concept="0" />
+      <node id="7167187293241797464" at="31,12,42,7" concept="0" />
+      <node id="7167187293241760758" at="29,160,42,7" concept="4" />
+      <node id="5842359129972761019" at="28,118,43,5" concept="4" />
+      <node id="7167187293241760276" at="28,0,45,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="7167187293241760276" at="26,52,26,52" />
+      <scope id="7167187293241760760" at="30,488,30,488" />
+      <scope id="7167187293241760276" at="45,50,46,29" />
+      <scope id="7167187293241760276" at="48,68,49,102" />
+      <scope id="7167187293241760276" at="51,30,52,17" />
+      <scope id="5842359129972782683" at="54,55,55,43" />
+      <scope id="7167187293241760276" at="26,0,28,0" />
+      <scope id="7167187293241760276" at="45,0,48,0" />
+      <scope id="7167187293241760276" at="48,0,51,0">
         <var name="argument" id="7167187293241760276" />
       </scope>
-      <scope id="7167187293241760276" at="56,0,59,0" />
-      <scope id="5842359129972782683" at="59,0,62,0">
+      <scope id="7167187293241760276" at="51,0,54,0" />
+      <scope id="5842359129972782683" at="54,0,57,0">
         <var name="str" id="5842359129972782683" />
       </scope>
-      <scope id="2036874050862857809" at="40,11,44,73">
+      <scope id="2036874050862857809" at="35,11,39,73">
         <var name="intentionProvider" id="2036874050862857809" />
       </scope>
-      <scope id="2036874050862857652" at="37,9,45,11">
+      <scope id="2036874050862857652" at="32,9,40,11">
         <var name="_reporter_2309309498" id="2036874050862857652" />
         <var name="errorTarget" id="2036874050862857652" />
       </scope>
-      <scope id="7167187293241797465" at="36,14,46,9" />
-      <scope id="5842359129972761021" at="30,160,47,7" />
-      <scope id="7167187293241760277" at="29,118,48,5" />
-      <scope id="7167187293241760276" at="29,0,50,0">
+      <scope id="7167187293241797465" at="31,14,41,9" />
+      <scope id="5842359129972761021" at="29,160,42,7" />
+      <scope id="7167187293241760277" at="28,118,43,5" />
+      <scope id="7167187293241760276" at="28,0,45,0">
         <var name="event" id="7167187293241760276" />
         <var name="status" id="7167187293241760276" />
         <var name="typeCheckingContext" id="7167187293241760276" />
       </scope>
-      <unit id="7167187293241760276" at="69,0,72,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.CheckEventImplemented_NonTypesystemRule$LINKS" />
-      <unit id="7167187293241775953" at="31,152,35,7" name="jetbrains.mps.samples.VoiceMenu.typesystem.CheckEventImplemented_NonTypesystemRule$1" />
-      <unit id="7167187293241760276" at="73,0,77,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.CheckEventImplemented_NonTypesystemRule$PROPS" />
-      <unit id="7167187293241760276" at="63,0,68,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.CheckEventImplemented_NonTypesystemRule$CONCEPTS" />
-      <unit id="7167187293241760276" at="26,0,78,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.CheckEventImplemented_NonTypesystemRule" />
+      <unit id="7167187293241760276" at="64,0,67,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.CheckEventImplemented_NonTypesystemRule$LINKS" />
+      <unit id="7167187293241760276" at="68,0,72,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.CheckEventImplemented_NonTypesystemRule$PROPS" />
+      <unit id="7167187293241760276" at="58,0,63,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.CheckEventImplemented_NonTypesystemRule$CONCEPTS" />
+      <unit id="7167187293241760276" at="25,0,73,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.CheckEventImplemented_NonTypesystemRule" />
     </file>
     <file name="TypesystemDescriptor.java">
       <node id="7167187293241760276" at="26,5,27,98" concept="6" />
@@ -1354,65 +1284,58 @@
   </root>
   <root nodeRef="r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)/7660908927727797697">
     <file name="CheckDuplicateNumber_NonTypesystemRule.java">
-      <node id="7660908927727797720" at="29,39,30,143" concept="7" />
-      <node id="8455589616260334561" at="33,7,34,88" concept="6" />
-      <node id="8455589616260334561" at="34,88,35,237" concept="6" />
-      <node id="8455589616260334563" at="36,9,37,174" concept="6" />
-      <node id="8455589616260334563" at="37,174,38,71" concept="2" />
-      <node id="8455589616260334564" at="40,9,41,175" concept="6" />
-      <node id="8455589616260334565" at="41,175,42,125" concept="2" />
-      <node id="8455589616260334564" at="42,125,43,71" concept="2" />
-      <node id="7660908927727797697" at="48,50,49,29" concept="7" />
-      <node id="7660908927727797697" at="51,68,52,102" concept="7" />
-      <node id="7660908927727797697" at="54,30,55,17" concept="7" />
-      <node id="7660908927727797697" at="59,0,60,0" concept="9" trace="Event$Du" />
-      <node id="7660908927727797697" at="60,0,61,0" concept="9" trace="Menu$By" />
-      <node id="7660908927727797697" at="64,0,65,0" concept="9" trace="trigger$DqFK" />
-      <node id="7660908927727797697" at="25,0,27,0" concept="1" trace="CheckDuplicateNumber_NonTypesystemRule#()V" />
-      <node id="7660908927727797718" at="29,0,32,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="7660908927727797697" at="48,0,51,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="7660908927727797697" at="51,0,54,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
-      <node id="7660908927727797697" at="54,0,57,0" concept="5" trace="overrides#()Z" />
-      <node id="8455589616260334563" at="35,237,39,9" concept="0" />
-      <node id="8455589616260334564" at="39,9,44,9" concept="0" />
-      <node id="8455589616260334561" at="32,9,45,7" concept="0" />
-      <node id="7660908927727797709" at="27,118,46,5" concept="4" />
-      <node id="7660908927727797697" at="27,0,48,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
-      <scope id="7660908927727797697" at="25,51,25,51" />
-      <scope id="7660908927727797719" at="29,39,30,143" />
-      <scope id="7660908927727797697" at="48,50,49,29" />
-      <scope id="7660908927727797697" at="51,68,52,102" />
-      <scope id="7660908927727797697" at="54,30,55,17" />
-      <scope id="7660908927727797697" at="25,0,27,0" />
-      <scope id="8455589616260334563" at="36,9,38,71">
+      <node id="8455589616260334561" at="28,7,29,88" concept="6" />
+      <node id="8455589616260334561" at="29,88,30,237" concept="6" />
+      <node id="8455589616260334563" at="31,9,32,174" concept="6" />
+      <node id="8455589616260334563" at="32,174,33,71" concept="2" />
+      <node id="8455589616260334564" at="35,9,36,175" concept="6" />
+      <node id="8455589616260334565" at="36,175,37,125" concept="2" />
+      <node id="8455589616260334564" at="37,125,38,71" concept="2" />
+      <node id="7660908927727797697" at="43,50,44,29" concept="7" />
+      <node id="7660908927727797697" at="46,68,47,102" concept="7" />
+      <node id="7660908927727797697" at="49,30,50,17" concept="7" />
+      <node id="7660908927727797697" at="54,0,55,0" concept="9" trace="Event$Du" />
+      <node id="7660908927727797697" at="55,0,56,0" concept="9" trace="Menu$By" />
+      <node id="7660908927727797697" at="59,0,60,0" concept="9" trace="trigger$DqFK" />
+      <node id="7660908927727797697" at="24,0,26,0" concept="1" trace="CheckDuplicateNumber_NonTypesystemRule#()V" />
+      <node id="7660908927727797697" at="43,0,46,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7660908927727797697" at="46,0,49,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="7660908927727797697" at="49,0,52,0" concept="5" trace="overrides#()Z" />
+      <node id="8455589616260334563" at="30,237,34,9" concept="0" />
+      <node id="8455589616260334564" at="34,9,39,9" concept="0" />
+      <node id="8455589616260334561" at="27,265,40,7" concept="0" />
+      <node id="7660908927727797709" at="26,118,41,5" concept="4" />
+      <node id="7660908927727797697" at="26,0,43,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="7660908927727797697" at="24,51,24,51" />
+      <scope id="7660908927727797697" at="43,50,44,29" />
+      <scope id="7660908927727797697" at="46,68,47,102" />
+      <scope id="7660908927727797697" at="49,30,50,17" />
+      <scope id="7660908927727797697" at="24,0,26,0" />
+      <scope id="8455589616260334563" at="31,9,33,71">
         <var name="intentionProvider" id="8455589616260334563" />
       </scope>
-      <scope id="7660908927727797718" at="29,0,32,0">
-        <var name="it" id="7660908927727797718" />
-      </scope>
-      <scope id="8455589616260334564" at="40,9,43,71">
+      <scope id="8455589616260334564" at="35,9,38,71">
         <var name="intentionProvider" id="8455589616260334564" />
       </scope>
-      <scope id="7660908927727797697" at="48,0,51,0" />
-      <scope id="7660908927727797697" at="51,0,54,0">
+      <scope id="7660908927727797697" at="43,0,46,0" />
+      <scope id="7660908927727797697" at="46,0,49,0">
         <var name="argument" id="7660908927727797697" />
       </scope>
-      <scope id="7660908927727797697" at="54,0,57,0" />
-      <scope id="8455589616260334561" at="33,7,44,9">
+      <scope id="7660908927727797697" at="49,0,52,0" />
+      <scope id="8455589616260334561" at="28,7,39,9">
         <var name="_reporter_2309309498" id="8455589616260334561" />
         <var name="errorTarget" id="8455589616260334561" />
       </scope>
-      <scope id="7660908927727797730" at="32,9,45,7" />
-      <scope id="7660908927727797698" at="27,118,46,5" />
-      <scope id="7660908927727797697" at="27,0,48,0">
+      <scope id="7660908927727797730" at="27,265,40,7" />
+      <scope id="7660908927727797698" at="26,118,41,5" />
+      <scope id="7660908927727797697" at="26,0,43,0">
         <var name="event" id="7660908927727797697" />
         <var name="status" id="7660908927727797697" />
         <var name="typeCheckingContext" id="7660908927727797697" />
       </scope>
-      <unit id="7660908927727797697" at="63,0,66,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.CheckDuplicateNumber_NonTypesystemRule$PROPS" />
-      <unit id="7660908927727797718" at="28,130,32,5" name="jetbrains.mps.samples.VoiceMenu.typesystem.CheckDuplicateNumber_NonTypesystemRule$1" />
-      <unit id="7660908927727797697" at="58,0,62,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.CheckDuplicateNumber_NonTypesystemRule$CONCEPTS" />
-      <unit id="7660908927727797697" at="24,0,67,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.CheckDuplicateNumber_NonTypesystemRule" />
+      <unit id="7660908927727797697" at="58,0,61,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.CheckDuplicateNumber_NonTypesystemRule$PROPS" />
+      <unit id="7660908927727797697" at="53,0,57,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.CheckDuplicateNumber_NonTypesystemRule$CONCEPTS" />
+      <unit id="7660908927727797697" at="23,0,62,0" name="jetbrains.mps.samples.VoiceMenu.typesystem.CheckDuplicateNumber_NonTypesystemRule" />
     </file>
     <file name="TypesystemDescriptor.java">
       <node id="7660908927727797697" at="14,5,15,97" concept="6" />

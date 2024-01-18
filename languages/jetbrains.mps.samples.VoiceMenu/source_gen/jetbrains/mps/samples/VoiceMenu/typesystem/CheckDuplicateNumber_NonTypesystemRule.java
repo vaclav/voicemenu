@@ -9,7 +9,6 @@ import jetbrains.mps.typesystem.inference.TypeCheckingContext;
 import jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.errors.messageTargets.MessageTarget;
@@ -25,11 +24,7 @@ public class CheckDuplicateNumber_NonTypesystemRule extends AbstractNonTypesyste
   public CheckDuplicateNumber_NonTypesystemRule() {
   }
   public void applyRule(final SNode event, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    if (Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getAllSiblings(event, false), CONCEPTS.Event$Du)).any(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$DqFK), SPropertyOperations.getString(event, PROPS.trigger$DqFK));
-      }
-    })) {
+    if (Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getAllSiblings(event, false), CONCEPTS.Event$Du)).any((it) -> Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$DqFK), SPropertyOperations.getString(event, PROPS.trigger$DqFK)))) {
       {
         final MessageTarget errorTarget = new PropertyMessageTarget(PROPS.trigger$DqFK);
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(event, "Duplicate number", "r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)", "8455589616260334561", null, errorTarget);

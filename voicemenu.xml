@@ -32,7 +32,7 @@
   <path id="path.mps.ant.path">
     <pathelement location="${artifacts.mpsStandalone}/lib/ant/lib/ant-mps.jar" />
     <fileset dir="${artifacts.mpsStandalone}/lib">
-      <include name="util.jar" />
+      <include name="util-8.jar" />
     </fileset>
   </path>
   
@@ -411,6 +411,7 @@
           <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" kind="rt" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee(jetbrains.mps.lang.constraints.rules.runtime)" kind="rt" />
           <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" kind="rt" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="cl" />
@@ -764,6 +765,7 @@
           <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" kind="rt" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee(jetbrains.mps.lang.constraints.rules.runtime)" kind="rt" />
           <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" kind="rt" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
           <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
@@ -979,6 +981,7 @@
           <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" kind="rt" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee(jetbrains.mps.lang.constraints.rules.runtime)" kind="rt" />
           <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" kind="rt" />
           <module ref="a1250a4d-c090-42c3-ad7c-d298a3357dd4(jetbrains.mps.make.runtime)" kind="rt" />
           <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" kind="rt" />
@@ -1862,11 +1865,11 @@
         <path location="${basedir}/languages/jetbrains.mps.samples.VoiceMenu/source_gen" />
       </src>
       <classpath>
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
@@ -1876,10 +1879,8 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -1890,14 +1891,18 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-textgen.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/app.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/3rd-party-rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/app-client.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib-client.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util_rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/util-8.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/java-impl.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jps-model.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsContextActionsTool}/mps-context-actions/languages/mps-context-actions-tool/jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.jar" />
@@ -1920,11 +1925,11 @@
         <path location="${basedir}/languages/jetbrains.mps.samples.VoiceMenu/generator/source_gen" />
       </src>
       <classpath>
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
@@ -1934,10 +1939,8 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -1949,14 +1952,18 @@
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenu" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/app.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/3rd-party-rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/app-client.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib-client.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util_rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/util-8.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/java-impl.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jps-model.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsCore}/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
@@ -1975,11 +1982,11 @@
       <classpath>
         <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <pathelement path="${build.tmp}/java/out/JavaVoiceMenu" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
@@ -1989,9 +1996,7 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -2003,14 +2008,18 @@
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenu" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/app.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/3rd-party-rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/app-client.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib-client.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util_rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/util-8.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/java-impl.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jps-model.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
@@ -2033,11 +2042,11 @@
       <classpath>
         <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
         <pathelement path="${build.tmp}/java/out/JavaVoiceMenu" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
@@ -2047,9 +2056,7 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -2062,14 +2069,18 @@
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenuToJava" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/app.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/3rd-party-rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/app-client.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib-client.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util_rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/util-8.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/java-impl.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jps-model.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
@@ -2113,11 +2124,11 @@
         <path location="${basedir}/languages/jetbrains.mps.samples.VoiceMenuTabularEditor/source_gen" />
       </src>
       <classpath>
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
@@ -2127,10 +2138,8 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -2142,14 +2151,18 @@
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenu" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/app.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/3rd-party-rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/app-client.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib-client.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util_rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/util-8.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/java-impl.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jps-model.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsCore}/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
@@ -2171,11 +2184,11 @@
         <path location="${basedir}/languages/jetbrains.mps.samples.VoiceMenuTabularEditor/generator/source_gen" />
       </src>
       <classpath>
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
@@ -2185,10 +2198,8 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -2201,14 +2212,18 @@
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenuTabularEditor" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/app.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/3rd-party-rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/app-client.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib-client.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util_rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/util-8.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/java-impl.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jps-model.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsCore}/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
@@ -2226,11 +2241,11 @@
         <path location="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToXML/source_gen" />
       </src>
       <classpath>
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
@@ -2240,10 +2255,8 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -2255,14 +2268,18 @@
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenu" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/app.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/3rd-party-rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/app-client.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib-client.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util_rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/util-8.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/java-impl.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jps-model.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsCore}/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
@@ -2280,11 +2297,11 @@
         <path location="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToXML/generator/source_gen" />
       </src>
       <classpath>
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
@@ -2294,10 +2311,8 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -2310,14 +2325,18 @@
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenuToXML" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/app.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/3rd-party-rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/app-client.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib-client.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util_rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/util-8.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/java-impl.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jps-model.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsCore}/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
@@ -2368,11 +2387,11 @@
         <path location="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToHTML/source_gen" />
       </src>
       <classpath>
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
@@ -2382,10 +2401,8 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -2399,14 +2416,18 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/app.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/3rd-party-rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/app-client.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib-client.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util_rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/util-8.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/java-impl.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jps-model.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsCore}/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
@@ -2426,11 +2447,11 @@
         <path location="${basedir}/languages/jetbrains.mps.samples.VoiceMenuToHTML/generator/source_gen" />
       </src>
       <classpath>
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
@@ -2440,10 +2461,8 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -2458,14 +2477,18 @@
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenuToHTML" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/app.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/3rd-party-rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/app-client.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib-client.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util_rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/util-8.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/java-impl.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jps-model.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsCore}/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
@@ -2483,11 +2506,11 @@
       </src>
       <classpath>
         <pathelement path="${build.tmp}/java/out/TTSLibrary" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
@@ -2497,10 +2520,8 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -2522,14 +2543,18 @@
         <fileset file="${basedir}/solutions/TTSLibrary/lib/mbrola.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/app.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/3rd-party-rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/app-client.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib-client.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util_rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/util-8.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/java-impl.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jps-model.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsCore}/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
@@ -2551,11 +2576,11 @@
       </src>
       <classpath>
         <pathelement path="${build.tmp}/java/out/TTSLibrary" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
@@ -2565,10 +2590,8 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -2591,14 +2614,18 @@
         <fileset file="${basedir}/solutions/TTSLibrary/lib/mbrola.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/app.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/3rd-party-rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/app-client.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib-client.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util_rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/util-8.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/java-impl.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jps-model.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsCore}/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
@@ -2615,11 +2642,11 @@
         <path location="${basedir}/languages/jetbrains.mps.samples.Text/source_gen" />
       </src>
       <classpath>
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
@@ -2629,10 +2656,8 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -2643,14 +2668,18 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-textgen.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/app.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/3rd-party-rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/app-client.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib-client.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util_rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/util-8.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/java-impl.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jps-model.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
@@ -2670,11 +2699,11 @@
         <path location="${basedir}/solutions/voicemenu/source_gen" />
       </src>
       <classpath>
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
@@ -2684,10 +2713,8 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -2701,14 +2728,18 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/app.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/3rd-party-rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/app-client.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib-client.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util_rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/util-8.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/java-impl.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jps-model.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
         <fileset file="${artifacts.mpsCore}/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
@@ -2725,11 +2756,11 @@
         <path location="${basedir}/languages/VoiceMenuTest/source_gen" />
       </src>
       <classpath>
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
@@ -2739,10 +2770,8 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -2754,14 +2783,18 @@
         <pathelement path="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenu" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/app.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/3rd-party-rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/app-client.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib-client.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util_rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/util-8.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/java-impl.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jps-model.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsCore}/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
@@ -2782,11 +2815,11 @@
         <path location="${basedir}/languages/VoiceMenuTest/generator/source_gen" />
       </src>
       <classpath>
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
@@ -2796,10 +2829,8 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
@@ -2810,14 +2841,18 @@
         <pathelement path="${build.tmp}/java/out/VoiceMenuTest" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/app.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/3rd-party-rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/app-client.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/lib-client.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/util_rt.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/util-8.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/java-impl.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jps-model.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
       </classpath>

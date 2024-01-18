@@ -48,11 +48,7 @@ IF NOT "%JDK%" == "" (
   IF EXIST "%JDK%" GOTO check
 )
 
-IF "%PROCESSOR_ARCHITECTURE%" == "AMD64" (
-  IF EXIST "%IDE_HOME%\jbr" SET JDK=%IDE_HOME%\jbr
-  IF EXIST "%JDK%" GOTO check
-)
-IF EXIST "%IDE_HOME%\jbr-x86" SET JDK=%IDE_HOME%\jbr-x86
+IF EXIST "%IDE_HOME%\jbr" SET JDK=%IDE_HOME%\jbr
 IF EXIST "%JDK%" GOTO check
 
 IF EXIST "%JDK_HOME%" SET JDK=%JDK_HOME%
@@ -131,7 +127,7 @@ IF "%VM_OPTIONS_FILE%%USER_VM_OPTIONS_FILE%" == "" (
 
 
 SET COMMON_JVM_ARGS="-XX:ErrorFile=%USERPROFILE%\java_error_in_%PRODUCT%_%%p.log" "-XX:HeapDumpPath=%USERPROFILE%\java_error_in_%PRODUCT%.hprof" -Didea.paths.selector=%IDEA_PATHS_SELECTOR% -Didea.vendor.name="%IDEA_VENDOR_NAME%" %IDE_PROPERTIES_PROPERTY%
-SET IDE_JVM_ARGS=-Didea.platform.prefix=Idea -Didea.jre.check=true -Djna.boot.library.path="%IDE_HOME%/lib/jna" -Djava.system.class.loader=com.intellij.util.lang.PathClassLoader
+SET IDE_JVM_ARGS=-Didea.platform.prefix=Idea -Didea.jre.check=true -Dpty4j.preferred.native.folder="%IDE_HOME%/lib/pty4j" -Djna.boot.library.path="%IDE_HOME%/lib/jna" -Djava.system.class.loader=com.intellij.util.lang.PathClassLoader
 SET ALL_JVM_ARGS=%ACC% %COMMON_JVM_ARGS% %IDE_JVM_ARGS%
 
 SET CLASS_PATH=%IDE_HOME%\lib\*

@@ -22,7 +22,6 @@ import jetbrains.mps.lang.editor.menus.ParameterizedMenuPart;
 import org.jetbrains.mps.openapi.language.SConcept;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.editor.menus.SingleItemMenuPart;
@@ -78,7 +77,9 @@ public class Empty_TransformationMenu extends TransformationMenuBase {
   }
 
   private class TMP_Param_8h8mrh_a1 extends ParameterizedMenuPart<SConcept, TransformationMenuItem, TransformationMenuContext> {
-
+    /*package*/ TMP_Param_8h8mrh_a1() {
+      super(new EditorMenuDescriptorBase("parameterized transformation menu part", new SNodePointer("r:7c1e5bbb-2d18-4cf3-a11d-502be6b13261(jetbrains.mps.samples.VoiceMenu.editor)", "3202371390661146307")));
+    }
     @NotNull
     @Override
     protected List<TransformationMenuItem> createItems(SConcept parameter, TransformationMenuContext context) {
@@ -88,28 +89,9 @@ public class Empty_TransformationMenu extends TransformationMenuBase {
     @Nullable
     @Override
     protected Iterable<? extends SConcept> getParameters(TransformationMenuContext _context) {
-      Iterable<SConcept> seq = ListSequence.fromList(SConceptOperations.getAllSubConcepts2(CONCEPTS.Command$_N, _context.getModel())).where(new IWhereFilter<SConcept>() {
-        public boolean accept(SConcept it) {
-          return !(it.isAbstract());
-        }
-      });
+      Iterable<SConcept> seq = ListSequence.fromList(SConceptOperations.getAllSubConcepts2(CONCEPTS.Command$_N, _context.getModel())).where((it) -> !(it.isAbstract()));
 
-      return Sequence.fromIterable(seq).subtract(ListSequence.fromList(SConceptOperations.getAllSubConcepts2(CONCEPTS.Command$_N, _context.getModel())).where(new IWhereFilter<SConcept>() {
-        public boolean accept(SConcept it) {
-          return SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(it), CONCEPTS.Empty$UU);
-        }
-      }));
-    }
-    @NotNull
-    @Override
-    public List<TransformationMenuItem> createItems(@NotNull TransformationMenuContext context) {
-      context.getEditorMenuTrace().pushTraceInfo();
-      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("parameterized transformation menu part", new SNodePointer("r:7c1e5bbb-2d18-4cf3-a11d-502be6b13261(jetbrains.mps.samples.VoiceMenu.editor)", "3202371390661146307")));
-      try {
-        return super.createItems(context);
-      } finally {
-        context.getEditorMenuTrace().popTraceInfo();
-      }
+      return Sequence.fromIterable(seq).subtract(ListSequence.fromList(SConceptOperations.getAllSubConcepts2(CONCEPTS.Command$_N, _context.getModel())).where((it) -> SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(it), CONCEPTS.Empty$UU)));
     }
 
     private class TMP_Action_8h8mrh_a0b extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {

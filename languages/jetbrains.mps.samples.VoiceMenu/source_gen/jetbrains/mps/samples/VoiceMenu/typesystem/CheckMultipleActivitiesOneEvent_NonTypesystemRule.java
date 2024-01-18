@@ -9,7 +9,6 @@ import jetbrains.mps.typesystem.inference.TypeCheckingContext;
 import jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.errors.messageTargets.MessageTarget;
@@ -29,11 +28,7 @@ public class CheckMultipleActivitiesOneEvent_NonTypesystemRule extends AbstractN
   public void applyRule(final SNode menu, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
     Iterable<SNode> activities = SLinkOperations.getChildren(menu, LINKS.activities$gAHC);
     for (final SNode currentActivity : Sequence.fromIterable(activities)) {
-      if (Sequence.fromIterable(activities).any(new IWhereFilter<SNode>() {
-        public boolean accept(SNode it) {
-          return !(Objects.equals(it, currentActivity)) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), SPropertyOperations.getString(SLinkOperations.getTarget(currentActivity, LINKS.event$pmgi), PROPS.trigger$DqFK));
-        }
-      })) {
+      if (Sequence.fromIterable(activities).any((it) -> !(Objects.equals(it, currentActivity)) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), SPropertyOperations.getString(SLinkOperations.getTarget(currentActivity, LINKS.event$pmgi), PROPS.trigger$DqFK)))) {
         {
           final MessageTarget errorTarget = new NodeMessageTarget();
           IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(currentActivity, "Duplicate reference to Event", "r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)", "6218942490161504715", null, errorTarget);

@@ -13,7 +13,6 @@ import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.baseLanguage.logging.rt.LogContext;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import java.util.ArrayList;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
@@ -75,11 +74,7 @@ public class FixAll {
               LogContext.with(FixAll.class, null, null, null).info("Button " + SPropertyOperations.getString(item, PROPS.trigger$DqFK) + " fixed");
             }
 
-            if (Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getAllSiblings(item, false), CONCEPTS.Event$Du)).any(new IWhereFilter<SNode>() {
-              public boolean accept(SNode it) {
-                return Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$DqFK), SPropertyOperations.getString(item, PROPS.trigger$DqFK));
-              }
-            }) || legalButton == false) {
+            if (Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getAllSiblings(item, false), CONCEPTS.Event$Du)).any((it) -> Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$DqFK), SPropertyOperations.getString(item, PROPS.trigger$DqFK))) || legalButton == false) {
               String[] kbButtons = new String[12];
 
               kbButtons[0] = "0";
@@ -114,11 +109,7 @@ public class FixAll {
           List<SNode> descendants = SNodeOperations.getNodeDescendants(node, CONCEPTS.Event$Du, false, new SAbstractConcept[]{});
           for (final SNode event : ListSequence.fromList(descendants)) {
             if (isNotEmptyString(SPropertyOperations.getString(event, PROPS.name$MnvL)) && isNotEmptyString(SPropertyOperations.getString(event, PROPS.trigger$DqFK))) {
-              if (Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getChildren(SNodeOperations.getParent(event)), CONCEPTS.Activity$Oz)).any(new IWhereFilter<SNode>() {
-                public boolean accept(SNode it) {
-                  return SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.name$MnvL) == SPropertyOperations.getString(event, PROPS.name$MnvL) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), SPropertyOperations.getString(event, PROPS.trigger$DqFK));
-                }
-              })) {
+              if (Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getChildren(SNodeOperations.getParent(event)), CONCEPTS.Activity$Oz)).any((it) -> SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.name$MnvL) == SPropertyOperations.getString(event, PROPS.name$MnvL) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), SPropertyOperations.getString(event, PROPS.trigger$DqFK)))) {
               } else {
                 LogContext.with(FixAll.class, null, null, null).info("Set Up " + SPropertyOperations.getString(event, PROPS.name$MnvL));
                 SNode newActivity = SLinkOperations.addNewChild(SNodeOperations.cast(SNodeOperations.getParent(event), CONCEPTS.Menu$By), LINKS.activities$gAHC, CONCEPTS.Activity$Oz);
@@ -129,71 +120,31 @@ public class FixAll {
             }
           }
           // ............................................................. remove empty
-          if (ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Activity$Oz, false, new SAbstractConcept[]{})).any(new IWhereFilter<SNode>() {
-            public boolean accept(SNode it) {
-              return (SLinkOperations.getTarget(it, LINKS.event$pmgi) == null);
-            }
-          })) {
+          if (ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Activity$Oz, false, new SAbstractConcept[]{})).any((it) -> (SLinkOperations.getTarget(it, LINKS.event$pmgi) == null))) {
             LogContext.with(FixAll.class, null, null, null).info("Remove Empty Activity");
-            SNodeOperations.deleteNode(ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Activity$Oz, false, new SAbstractConcept[]{})).findFirst(new IWhereFilter<SNode>() {
-              public boolean accept(SNode it) {
-                return (SLinkOperations.getTarget(it, LINKS.event$pmgi) == null);
-              }
-            }));
+            SNodeOperations.deleteNode(ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Activity$Oz, false, new SAbstractConcept[]{})).findFirst((it) -> (SLinkOperations.getTarget(it, LINKS.event$pmgi) == null)));
 
-          } else if (ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Command$_N, false, new SAbstractConcept[]{})).any(new IWhereFilter<SNode>() {
-            public boolean accept(SNode it) {
-              return SNodeOperations.isInstanceOf(it, CONCEPTS.Empty$UU);
-            }
-          })) {
+          } else if (ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Command$_N, false, new SAbstractConcept[]{})).any((it) -> SNodeOperations.isInstanceOf(it, CONCEPTS.Empty$UU))) {
             // replace empty
-            SNode emptyCommand = ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Command$_N, false, new SAbstractConcept[]{})).findFirst(new IWhereFilter<SNode>() {
-              public boolean accept(SNode it) {
-                return SNodeOperations.isInstanceOf(it, CONCEPTS.Empty$UU);
-              }
-            });
+            SNode emptyCommand = ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Command$_N, false, new SAbstractConcept[]{})).findFirst((it) -> SNodeOperations.isInstanceOf(it, CONCEPTS.Empty$UU));
             SNodeFactoryOperations.replaceWithNewChild(emptyCommand, CONCEPTS.Other$zO);
 
-          } else if (ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Menu$By, false, new SAbstractConcept[]{})).any(new IWhereFilter<SNode>() {
-            public boolean accept(SNode it) {
-              return (ListSequence.fromList(SLinkOperations.getChildren(it, LINKS.events$gxkh)).isEmpty() || Sequence.fromIterable(SLinkOperations.collect(SLinkOperations.getChildren(it, LINKS.activities$gAHC), LINKS.commands$oZIM)).isEmpty()) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(it), CONCEPTS.WorkSpace$A5));
-            }
-          })) {
+          } else if (ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Menu$By, false, new SAbstractConcept[]{})).any((it) -> (ListSequence.fromList(SLinkOperations.getChildren(it, LINKS.events$gxkh)).isEmpty() || Sequence.fromIterable(SLinkOperations.collect(SLinkOperations.getChildren(it, LINKS.activities$gAHC), LINKS.commands$oZIM)).isEmpty()) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(it), CONCEPTS.WorkSpace$A5)))) {
             // replace menu
 
-            SNode emptyMenu = ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Menu$By, false, new SAbstractConcept[]{})).findFirst(new IWhereFilter<SNode>() {
-              public boolean accept(SNode it) {
-                return (ListSequence.fromList(SLinkOperations.getChildren(it, LINKS.events$gxkh)).isEmpty() || Sequence.fromIterable(SLinkOperations.collect(SLinkOperations.getChildren(it, LINKS.activities$gAHC), LINKS.commands$oZIM)).isEmpty()) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(it), CONCEPTS.WorkSpace$A5));
-              }
-            });
+            SNode emptyMenu = ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Menu$By, false, new SAbstractConcept[]{})).findFirst((it) -> (ListSequence.fromList(SLinkOperations.getChildren(it, LINKS.events$gxkh)).isEmpty() || Sequence.fromIterable(SLinkOperations.collect(SLinkOperations.getChildren(it, LINKS.activities$gAHC), LINKS.commands$oZIM)).isEmpty()) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(it), CONCEPTS.WorkSpace$A5)));
 
             SNodeFactoryOperations.replaceWithNewChild(SNodeOperations.cast(SNodeOperations.getParent(emptyMenu), CONCEPTS.Activity$Oz), CONCEPTS.Activity$Oz);
 
             LogContext.with(FixAll.class, null, null, null).info("Init Empty Menu");
-          } else if (ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Event$Du, false, new SAbstractConcept[]{})).any(new IWhereFilter<SNode>() {
-            public boolean accept(SNode it) {
-              return isEmptyString(SPropertyOperations.getString(it, PROPS.name$MnvL));
-            }
-          })) {
+          } else if (ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Event$Du, false, new SAbstractConcept[]{})).any((it) -> isEmptyString(SPropertyOperations.getString(it, PROPS.name$MnvL)))) {
             LogContext.with(FixAll.class, null, null, null).info("Remove Event With Empty Name");
-            SNodeOperations.deleteNode(ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Event$Du, false, new SAbstractConcept[]{})).findFirst(new IWhereFilter<SNode>() {
-              public boolean accept(SNode it) {
-                return isEmptyString(SPropertyOperations.getString(it, PROPS.name$MnvL));
-              }
-            }));
+            SNodeOperations.deleteNode(ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Event$Du, false, new SAbstractConcept[]{})).findFirst((it) -> isEmptyString(SPropertyOperations.getString(it, PROPS.name$MnvL))));
 
-          } else if (ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Event$Du, false, new SAbstractConcept[]{})).any(new IWhereFilter<SNode>() {
-            public boolean accept(SNode it) {
-              return isEmptyString(SPropertyOperations.getString(it, PROPS.trigger$DqFK));
-            }
-          })) {
+          } else if (ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Event$Du, false, new SAbstractConcept[]{})).any((it) -> isEmptyString(SPropertyOperations.getString(it, PROPS.trigger$DqFK)))) {
 
             LogContext.with(FixAll.class, null, null, null).info("Remove Event With Empty Trigger");
-            SNodeOperations.deleteNode(ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Event$Du, false, new SAbstractConcept[]{})).findFirst(new IWhereFilter<SNode>() {
-              public boolean accept(SNode it) {
-                return isEmptyString(SPropertyOperations.getString(it, PROPS.trigger$DqFK));
-              }
-            }));
+            SNodeOperations.deleteNode(ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.Event$Du, false, new SAbstractConcept[]{})).findFirst((it) -> isEmptyString(SPropertyOperations.getString(it, PROPS.trigger$DqFK))));
 
           } else {
             break;
@@ -223,11 +174,7 @@ public class FixAll {
 
           Iterable<SNode> siblings = SNodeOperations.ofConcept(SNodeOperations.getAllSiblings(currentActivity, false), CONCEPTS.Activity$Oz);
 
-          if (Sequence.fromIterable(siblings).any(new IWhereFilter<SNode>() {
-            public boolean accept(SNode it) {
-              return !(Objects.equals(it, currentActivity)) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), SPropertyOperations.getString(SLinkOperations.getTarget(currentActivity, LINKS.event$pmgi), PROPS.trigger$DqFK));
-            }
-          })) {
+          if (Sequence.fromIterable(siblings).any((it) -> !(Objects.equals(it, currentActivity)) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), SPropertyOperations.getString(SLinkOperations.getTarget(currentActivity, LINKS.event$pmgi), PROPS.trigger$DqFK)))) {
             SNodeOperations.deleteNode(currentActivity);
             LogContext.with(FixAll.class, null, null, null).info("Duplicate Activity");
           }

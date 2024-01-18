@@ -8,7 +8,6 @@ import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import java.util.Objects;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.cells.CellAction;
@@ -30,11 +29,7 @@ public class RemoveEventAndActivity {
         this.execute_internal(editorContext, node);
       }
       public void execute_internal(EditorContext editorContext, final SNode node) {
-        SNodeOperations.deleteNode(Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(node), CONCEPTS.Menu$By), LINKS.activities$gAHC), CONCEPTS.Activity$Oz)).findFirst(new IWhereFilter<SNode>() {
-          public boolean accept(SNode it) {
-            return Objects.equals(SLinkOperations.getTarget(it, LINKS.event$pmgi), node);
-          }
-        }));
+        SNodeOperations.deleteNode(Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(node), CONCEPTS.Menu$By), LINKS.activities$gAHC), CONCEPTS.Activity$Oz)).findFirst((it) -> Objects.equals(SLinkOperations.getTarget(it, LINKS.event$pmgi), node)));
         SNodeOperations.deleteNode(node);
       }
 

@@ -17,13 +17,12 @@
       <unit at="8,0,18,0" name="jetbrains.mps.samples.VoiceMenuToHTML.plugin.FacetAspectDescriptor" />
     </file>
     <file name="FacetManifest.java">
-      <unit at="21,55,25,5" name="jetbrains.mps.samples.VoiceMenuToHTML.plugin.FacetManifest$1" />
-      <unit at="12,0,28,0" name="jetbrains.mps.samples.VoiceMenuToHTML.plugin.FacetManifest" />
+      <unit at="11,0,23,0" name="jetbrains.mps.samples.VoiceMenuToHTML.plugin.FacetManifest" />
     </file>
   </root>
   <root nodeRef="r:0b0ef0d3-9ccc-48f0-92c9-f345f12a8985(jetbrains.mps.samples.VoiceMenuToHTML.plugin)/4121025734888304966">
     <file name="FacetManifest.java">
-      <node id="4121025734888304966" at="14,26,15,74" concept="1" />
+      <node id="4121025734888304966" at="13,26,14,74" concept="1" />
     </file>
     <file name="RenameXmlToHtml_Facet.java">
       <node id="4121025734888304966" at="34,0,35,0" concept="2" trace="targets" />

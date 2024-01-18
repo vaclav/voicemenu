@@ -15,7 +15,6 @@ import jetbrains.mps.intentions.AbstractIntentionExecutable;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import java.util.Objects;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -57,11 +56,7 @@ public final class RemoveEventWithActivity_Intention extends AbstractIntentionDe
 
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(SNodeOperations.cast(node, CONCEPTS.Event$Du)), CONCEPTS.Menu$By), LINKS.activities$gAHC)).findFirst(new IWhereFilter<SNode>() {
-        public boolean accept(SNode it) {
-          return Objects.equals(SLinkOperations.getTarget(it, LINKS.event$pmgi), node);
-        }
-      }));
+      SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(SNodeOperations.cast(node, CONCEPTS.Event$Du)), CONCEPTS.Menu$By), LINKS.activities$gAHC)).findFirst((it) -> Objects.equals(SLinkOperations.getTarget(it, LINKS.event$pmgi), node)));
       SNodeOperations.deleteNode(node);
     }
 

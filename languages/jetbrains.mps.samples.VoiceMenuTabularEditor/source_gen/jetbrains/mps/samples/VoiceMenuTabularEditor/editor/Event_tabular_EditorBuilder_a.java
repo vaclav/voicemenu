@@ -19,7 +19,6 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.BracketsStyleCla
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.openapi.editor.menus.transformation.SPropertyInfo;
@@ -98,11 +97,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     return isEmptyString(SPropertyOperations.getString(myNode, PROPS.trigger$DqFK));
   }
   private SNode _StyleParameter_QueryFunction_bibga2_a0a0() {
-    return ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(getNode()), CONCEPTS.Menu$By), LINKS.activities$gAHC)).findFirst(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return Objects.equals(SLinkOperations.getTarget(it, LINKS.event$pmgi), getNode());
-      }
-    });
+    return ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(getNode()), CONCEPTS.Menu$By), LINKS.activities$gAHC)).findFirst((it) -> Objects.equals(SLinkOperations.getTarget(it, LINKS.event$pmgi), getNode()));
   }
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "    ");
@@ -131,11 +126,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
       editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
       setCellContext(editorCell);
       Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(new IAttributeDescriptor.AllAttributes().list(myNode), CONCEPTS.PropertyAttribute$Gb);
-      Iterable<SNode> currentPropertyAttributes = Sequence.fromIterable(propertyAttributes).where(new IWhereFilter<SNode>() {
-        public boolean accept(SNode it) {
-          return Objects.equals(PropertyAttribute__BehaviorDescriptor.getProperty_id1avfQ4BBzOo.invoke(it), property);
-        }
-      });
+      Iterable<SNode> currentPropertyAttributes = Sequence.fromIterable(propertyAttributes).where((it) -> Objects.equals(PropertyAttribute__BehaviorDescriptor.getProperty_id1avfQ4BBzOo.invoke(it), property));
       if (Sequence.fromIterable(currentPropertyAttributes).isNotEmpty()) {
         EditorManager manager = EditorManager.getInstanceFromContext(getEditorContext());
         return manager.createNodeRoleAttributeCell(Sequence.fromIterable(currentPropertyAttributes).first(), AttributeKind.PROPERTY, editorCell);
@@ -146,11 +137,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     }
   }
   private SNode _StyleParameter_QueryFunction_bibga2_a0b0a() {
-    return ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(getNode()), CONCEPTS.Menu$By), LINKS.activities$gAHC)).findFirst(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return Objects.equals(SLinkOperations.getTarget(it, LINKS.event$pmgi), getNode());
-      }
-    });
+    return ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(getNode()), CONCEPTS.Menu$By), LINKS.activities$gAHC)).findFirst((it) -> Objects.equals(SLinkOperations.getTarget(it, LINKS.event$pmgi), getNode()));
   }
   private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "    ");
@@ -176,11 +163,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     return editorCell;
   }
   private SNode _StyleParameter_QueryFunction_bibga2_a2d0a() {
-    return ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(getNode()), CONCEPTS.Menu$By), LINKS.activities$gAHC)).findFirst(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return Objects.equals(SLinkOperations.getTarget(it, LINKS.event$pmgi), getNode());
-      }
-    });
+    return ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(getNode()), CONCEPTS.Menu$By), LINKS.activities$gAHC)).findFirst((it) -> Objects.equals(SLinkOperations.getTarget(it, LINKS.event$pmgi), getNode()));
   }
   private int _StyleParameter_QueryFunction_bibga2_a3d0a() {
     return (EditorSettings.getInstance().getFontSize() * 140 / 100);
@@ -200,11 +183,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
       editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
       setCellContext(editorCell);
       Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(new IAttributeDescriptor.AllAttributes().list(myNode), CONCEPTS.PropertyAttribute$Gb);
-      Iterable<SNode> currentPropertyAttributes = Sequence.fromIterable(propertyAttributes).where(new IWhereFilter<SNode>() {
-        public boolean accept(SNode it) {
-          return Objects.equals(PropertyAttribute__BehaviorDescriptor.getProperty_id1avfQ4BBzOo.invoke(it), property);
-        }
-      });
+      Iterable<SNode> currentPropertyAttributes = Sequence.fromIterable(propertyAttributes).where((it) -> Objects.equals(PropertyAttribute__BehaviorDescriptor.getProperty_id1avfQ4BBzOo.invoke(it), property));
       if (Sequence.fromIterable(currentPropertyAttributes).isNotEmpty()) {
         EditorManager manager = EditorManager.getInstanceFromContext(getEditorContext());
         return manager.createNodeRoleAttributeCell(Sequence.fromIterable(currentPropertyAttributes).first(), AttributeKind.PROPERTY, editorCell);
@@ -215,11 +194,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     }
   }
   private SNode _StyleParameter_QueryFunction_bibga2_a0e0a() {
-    return ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(getNode()), CONCEPTS.Menu$By), LINKS.activities$gAHC)).findFirst(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return Objects.equals(SLinkOperations.getTarget(it, LINKS.event$pmgi), getNode());
-      }
-    });
+    return ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(getNode()), CONCEPTS.Menu$By), LINKS.activities$gAHC)).findFirst((it) -> Objects.equals(SLinkOperations.getTarget(it, LINKS.event$pmgi), getNode()));
   }
   private EditorCell createContextAssistant_0() {
     EditorCell editorCell = new EditorCell_ContextAssistantComponent(getEditorContext(), myNode);

@@ -16,7 +16,6 @@ import jetbrains.mps.generator.template.ReferenceMacroContext;
 import jetbrains.mps.generator.template.IfMacroContext;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodeContext;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import java.util.Map;
 import jetbrains.mps.generator.impl.query.ReductionRuleCondition;
 import java.util.HashMap;
@@ -210,21 +209,13 @@ public class QueriesGenerated extends QueryProviderBase {
     return SLinkOperations.getTarget(_context.getNode(), LINKS.Action$uVoi);
   }
   public static Iterable<SNode> sourceNodesQuery_1_0(final SourceSubstituteMacroNodesContext _context) {
-    return Sequence.fromIterable(SLinkOperations.collectMany(SNodeOperations.ofConcept(SNodeOperations.getChildren(_context.getNode()), CONCEPTS.Menu$By), LINKS.events$gxkh)).where(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return !(Objects.equals(SPropertyOperations.getString(it, PROPS.name$MnvL).toLowerCase(), "timeout"));
-      }
-    });
+    return Sequence.fromIterable(SLinkOperations.collectMany(SNodeOperations.ofConcept(SNodeOperations.getChildren(_context.getNode()), CONCEPTS.Menu$By), LINKS.events$gxkh)).where((it) -> !(Objects.equals(SPropertyOperations.getString(it, PROPS.name$MnvL).toLowerCase(), "timeout")));
   }
   public static Iterable<SNode> sourceNodesQuery_2_0(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getChildren(_context.getNode(), LINKS.activities$gAHC);
   }
   public static Iterable<SNode> sourceNodesQuery_3_0(final SourceSubstituteMacroNodesContext _context) {
-    return Sequence.fromIterable(SLinkOperations.collectMany(SNodeOperations.ofConcept(SNodeOperations.getChildren(_context.getNode()), CONCEPTS.Menu$By), LINKS.events$gxkh)).where(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return !(Objects.equals(SPropertyOperations.getString(it, PROPS.name$MnvL).toLowerCase(), "timeout"));
-      }
-    });
+    return Sequence.fromIterable(SLinkOperations.collectMany(SNodeOperations.ofConcept(SNodeOperations.getChildren(_context.getNode()), CONCEPTS.Menu$By), LINKS.events$gxkh)).where((it) -> !(Objects.equals(SPropertyOperations.getString(it, PROPS.name$MnvL).toLowerCase(), "timeout")));
   }
   private final Map<String, ReductionRuleCondition> rrcMethods = new HashMap<String, ReductionRuleCondition>();
   {

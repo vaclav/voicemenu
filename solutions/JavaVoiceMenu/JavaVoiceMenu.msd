@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="JavaVoiceMenu" uuid="dac7f2c0-79a3-42ca-a0f2-e2cf2736613e" moduleVersion="0" compileInMPS="true">
+<solution name="JavaVoiceMenu" uuid="dac7f2c0-79a3-42ca-a0f2-e2cf2736613e" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="true">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">828f8f6b-2bf3-4a70-82a0-c413d7f22140(TTSLibrary)</dependency>

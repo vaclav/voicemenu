@@ -13,7 +13,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.generator.template.ReferenceMacroContext;
 import jetbrains.mps.generator.template.IfMacroContext;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodeContext;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
 import java.util.Objects;
@@ -271,46 +270,22 @@ public class QueriesGenerated extends QueryProviderBase {
     return SNodeOperations.isInstanceOf(ListSequence.fromList(SNodeOperations.getChildren(_context.getNode())).first(), CONCEPTS.Menu$By);
   }
   public static boolean ifMacro_Condition_3_3(final IfMacroContext _context) {
-    return ListSequence.fromList(SNodeOperations.getChildren(_context.getNode())).any(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return SNodeOperations.isInstanceOf(it, CONCEPTS.Action$AN);
-      }
-    });
+    return ListSequence.fromList(SNodeOperations.getChildren(_context.getNode())).any((it) -> SNodeOperations.isInstanceOf(it, CONCEPTS.Action$AN));
   }
   public static boolean ifMacro_Condition_3_4(final IfMacroContext _context) {
-    return ListSequence.fromList(SNodeOperations.getChildren(_context.getNode())).any(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return SNodeOperations.isInstanceOf(it, CONCEPTS.Action$AN);
-      }
-    });
+    return ListSequence.fromList(SNodeOperations.getChildren(_context.getNode())).any((it) -> SNodeOperations.isInstanceOf(it, CONCEPTS.Action$AN));
   }
   public static boolean ifMacro_Condition_3_5(final IfMacroContext _context) {
-    return !(ListSequence.fromList(SNodeOperations.getChildren(_context.getNode())).any(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return SNodeOperations.isInstanceOf(it, CONCEPTS.Action$AN);
-      }
-    }));
+    return !(ListSequence.fromList(SNodeOperations.getChildren(_context.getNode())).any((it) -> SNodeOperations.isInstanceOf(it, CONCEPTS.Action$AN)));
   }
   public static boolean ifMacro_Condition_3_6(final IfMacroContext _context) {
-    return !(ListSequence.fromList(SNodeOperations.getChildren(_context.getNode())).any(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return SNodeOperations.isInstanceOf(it, CONCEPTS.Action$AN);
-      }
-    }));
+    return !(ListSequence.fromList(SNodeOperations.getChildren(_context.getNode())).any((it) -> SNodeOperations.isInstanceOf(it, CONCEPTS.Action$AN)));
   }
   public static boolean ifMacro_Condition_3_7(final IfMacroContext _context) {
-    return !(ListSequence.fromList(SNodeOperations.getChildren(_context.getNode())).any(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return SNodeOperations.isInstanceOf(it, CONCEPTS.Action$AN);
-      }
-    }));
+    return !(ListSequence.fromList(SNodeOperations.getChildren(_context.getNode())).any((it) -> SNodeOperations.isInstanceOf(it, CONCEPTS.Action$AN)));
   }
   public static boolean ifMacro_Condition_3_8(final IfMacroContext _context) {
-    return !(ListSequence.fromList(SNodeOperations.getChildren(_context.getNode())).any(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return SNodeOperations.isInstanceOf(it, CONCEPTS.Action$AN);
-      }
-    }));
+    return !(ListSequence.fromList(SNodeOperations.getChildren(_context.getNode())).any((it) -> SNodeOperations.isInstanceOf(it, CONCEPTS.Action$AN)));
   }
   public static boolean ifMacro_Condition_3_9(final IfMacroContext _context) {
     return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.commands$oZIM), CONCEPTS.Menu$By);
@@ -439,11 +414,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getNode(), CONCEPTS.WorkSpace$A5, false, false), LINKS.timeout$r9ki), LINKS.Action$uVoi);
   }
   public static Iterable<SNode> sourceNodesQuery_1_0(final SourceSubstituteMacroNodesContext _context) {
-    return ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(_context.getNode(), LINKS.bodyMenu$Of2I), LINKS.activities$gAHC)).where(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return !(Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), "X"));
-      }
-    });
+    return ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(_context.getNode(), LINKS.bodyMenu$Of2I), LINKS.activities$gAHC)).where((it) -> !(Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), "X")));
   }
   public static Iterable<SNode> sourceNodesQuery_2_0(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getChildren(_context.getNode(), LINKS.activities$gAHC);

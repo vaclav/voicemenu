@@ -9,7 +9,6 @@ import jetbrains.mps.typesystem.inference.TypeCheckingContext;
 import jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.errors.messageTargets.MessageTarget;
@@ -27,16 +26,8 @@ public class TimeoutIsMissing_NonTypesystemRule extends AbstractNonTypesystemRul
   public TimeoutIsMissing_NonTypesystemRule() {
   }
   public void applyRule(final SNode menu, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    SNode activityNode = ListSequence.fromList(SLinkOperations.getChildren(menu, LINKS.activities$gAHC)).findFirst(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), "X");
-      }
-    });
-    SNode eventNode = ListSequence.fromList(SLinkOperations.getChildren(menu, LINKS.events$gxkh)).findFirst(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$DqFK), "X");
-      }
-    });
+    SNode activityNode = ListSequence.fromList(SLinkOperations.getChildren(menu, LINKS.activities$gAHC)).findFirst((it) -> Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), "X"));
+    SNode eventNode = ListSequence.fromList(SLinkOperations.getChildren(menu, LINKS.events$gxkh)).findFirst((it) -> Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$DqFK), "X"));
 
     if ((activityNode == null) && (eventNode != null)) {
       {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="jetbrains.mps.samples.VoiceMenu.sandbox" uuid="13f160a2-335f-4095-a74f-ea7ca358d90b" moduleVersion="0" compileInMPS="true">
+<solution name="jetbrains.mps.samples.VoiceMenu.sandbox" uuid="13f160a2-335f-4095-a74f-ea7ca358d90b" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -11,7 +11,6 @@
     </facet>
     <facet planModel="r:d5987bba-bd9a-4de6-a5ae-9f6f2573436e(GenPlan.voicemenu)" type="generator" />
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">dac7f2c0-79a3-42ca-a0f2-e2cf2736613e(JavaVoiceMenu)</dependency>
   </dependencies>
@@ -19,7 +18,7 @@
     <language slang="l:25057fc9-5337-4f2e-9703-a17097079193:VoiceMenuTest" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
-    <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="1" />
+    <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="2" />
     <language slang="l:df345b11-b8c7-4213-ac66-48d2a9b75d88:jetbrains.mps.baseLanguageInternal" version="0" />
     <language slang="l:479c7a8c-02f9-43b5-9139-d910cb22f298:jetbrains.mps.core.xml" version="0" />
     <language slang="l:4caf0310-491e-41f5-8a9b-2006b3a94898:jetbrains.mps.execution.util" version="0" />
