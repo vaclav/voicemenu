@@ -8,7 +8,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -23,11 +22,7 @@ public class RemoveDuplicateTimeouts_QuickFix extends QuickFix_Runtime {
     return "Remove Duplicate Timeouts";
   }
   public void execute(SNode node) {
-    SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(((SNode) RemoveDuplicateTimeouts_QuickFix.this.getField("menu")[0]), LINKS.events$gxkh)).findFirst(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$DqFK), "X");
-      }
-    }));
+    SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(((SNode) RemoveDuplicateTimeouts_QuickFix.this.getField("menu")[0]), LINKS.events$gxkh)).findFirst((it) -> Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$DqFK), "X")));
   }
 
   private static final class LINKS {

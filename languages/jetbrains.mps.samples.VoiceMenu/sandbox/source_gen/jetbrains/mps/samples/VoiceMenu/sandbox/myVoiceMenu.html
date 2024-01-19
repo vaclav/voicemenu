@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<Call_Centrum>  
+  
+  <style>    
+    table.roundedCorners {
+        border: 2px solid DarkOrange;
+        border-radius: 13px;
+        border-spacing: 0px;
+    }
+    table.roundedCorners td, 
+    table.roundedCorners th {
+        border-bottom: 2px solid DarkOrange;
+        padding: 10px;
+    }
+    tr:nth-child(even){background-color: #f2f2f2}
+    table.roundedCorners tr:last-child > td {
+        border-bottom: none;
+    }
+    
+  </style>
+  <body>
+    <b style="margin-left: 40px;color:blue">myVoiceMenu</b>
+    <menu>
+      <p>
+        <table class="roundedCorners">
+          <tr>
+            <th>Event</th>
+            <th>Trigger</th>
+          </tr>
+          <tr>
+            <td>Technical Department</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Marketing Department</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Others</td>
+            <td>3</td>
+          </tr>
+        </table>
+      </p>
+      
+      
+      <activity>        
+        <b style="margin-left: 40px;color:blue">Technical Department</b>
+        
+        
+        <p>
+          <menu>
+            <p>
+              <table class="roundedCorners">
+                <tr>
+                  <th>Event</th>
+                  <th>Trigger</th>
+                </tr>
+                <tr>
+                  <td>Hardware</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Previous Menu</td>
+                  <td>*</td>
+                </tr>
+              </table>
+            </p>
+            
+            
+            <activity>              
+              <b style="margin-left: 40px;color:blue">Hardware</b>
+              
+              
+              <p>
+                <action style="margin-left: 80px;color:green">--> [ Get Info ]</action>
+              </p>
+            </activity>
+            <activity>              
+              <b style="margin-left: 40px;color:blue">Previous Menu</b>
+              
+              
+              <p>
+                <action style="margin-left: 80px;color:green">--> [ Get Info ]</action>
+              </p>
+            </activity>
+            
+          </menu>
+        </p>
+      </activity>
+      <activity>        
+        <b style="margin-left: 40px;color:blue">Marketing Department</b>
+        
+        
+        <p>
+          <action style="margin-left: 80px;color:green">--> [ Direct Call to 777666555]</action>
+        </p>
+      </activity>
+      <activity>        
+        <b style="margin-left: 40px;color:blue">Others</b>
+        
+        
+        <p>
+          <action style="margin-left: 80px;color:green">--> [ Record ]</action>
+        </p>
+      </activity>
+      
+    </menu>
+  </body>
+</Call_Centrum>

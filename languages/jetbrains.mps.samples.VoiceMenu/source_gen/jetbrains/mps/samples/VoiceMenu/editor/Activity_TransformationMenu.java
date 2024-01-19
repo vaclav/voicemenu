@@ -35,7 +35,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import java.util.Objects;
 import jetbrains.mps.editor.runtime.cells.CellIdManager;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
@@ -393,11 +392,7 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
         public boolean canExecute(@NotNull String pattern) {
           Iterable<SNode> activities = SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.activities$gAHC);
           for (final SNode currentActvt : Sequence.fromIterable(activities)) {
-            if (Sequence.fromIterable(activities).any(new IWhereFilter<SNode>() {
-              public boolean accept(SNode it) {
-                return !(Objects.equals(it, currentActvt)) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), SPropertyOperations.getString(SLinkOperations.getTarget(currentActvt, LINKS.event$pmgi), PROPS.trigger$DqFK));
-              }
-            })) {
+            if (Sequence.fromIterable(activities).any((it) -> !(Objects.equals(it, currentActvt)) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), SPropertyOperations.getString(SLinkOperations.getTarget(currentActvt, LINKS.event$pmgi), PROPS.trigger$DqFK)))) {
               return true;
             }
           }
@@ -462,11 +457,7 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
         public void execute(@NotNull String pattern) {
           Iterable<SNode> activities = SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.activities$gAHC);
           for (final SNode currentActvt : Sequence.fromIterable(activities)) {
-            if (Sequence.fromIterable(activities).any(new IWhereFilter<SNode>() {
-              public boolean accept(SNode it) {
-                return !(Objects.equals(it, currentActvt)) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), SPropertyOperations.getString(SLinkOperations.getTarget(currentActvt, LINKS.event$pmgi), PROPS.trigger$DqFK));
-              }
-            })) {
+            if (Sequence.fromIterable(activities).any((it) -> !(Objects.equals(it, currentActvt)) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), SPropertyOperations.getString(SLinkOperations.getTarget(currentActvt, LINKS.event$pmgi), PROPS.trigger$DqFK)))) {
               SNodeOperations.deleteNode(_context.getNode());
             }
           }
@@ -476,11 +467,7 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
         public boolean canExecute(@NotNull String pattern) {
           Iterable<SNode> activities = SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.activities$gAHC);
           for (final SNode currentActvt : Sequence.fromIterable(activities)) {
-            if (Sequence.fromIterable(activities).any(new IWhereFilter<SNode>() {
-              public boolean accept(SNode it) {
-                return !(Objects.equals(it, currentActvt)) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), SPropertyOperations.getString(SLinkOperations.getTarget(currentActvt, LINKS.event$pmgi), PROPS.trigger$DqFK));
-              }
-            })) {
+            if (Sequence.fromIterable(activities).any((it) -> !(Objects.equals(it, currentActvt)) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), SPropertyOperations.getString(SLinkOperations.getTarget(currentActvt, LINKS.event$pmgi), PROPS.trigger$DqFK)))) {
               return true;
             }
           }
@@ -795,11 +782,7 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public boolean canExecute(@NotNull String pattern) {
-          return !(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.events$gxkh)).any(new IWhereFilter<SNode>() {
-            public boolean accept(SNode it) {
-              return SPropertyOperations.getString(it, PROPS.trigger$DqFK) == SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.event$pmgi), PROPS.trigger$DqFK);
-            }
-          }));
+          return !(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.events$gxkh)).any((it) -> SPropertyOperations.getString(it, PROPS.trigger$DqFK) == SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.event$pmgi), PROPS.trigger$DqFK)));
         }
 
         @Override
@@ -859,11 +842,7 @@ public class Activity_TransformationMenu extends TransformationMenuBase {
         @Override
         public void execute(@NotNull String pattern) {
 
-          SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.events$gxkh)).findFirst(new IWhereFilter<SNode>() {
-            public boolean accept(SNode it) {
-              return it == SLinkOperations.getTarget(_context.getNode(), LINKS.event$pmgi);
-            }
-          }));
+          SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Menu$By), LINKS.events$gxkh)).findFirst((it) -> it == SLinkOperations.getTarget(_context.getNode(), LINKS.event$pmgi)));
 
           SNodeOperations.deleteNode(_context.getNode());
 

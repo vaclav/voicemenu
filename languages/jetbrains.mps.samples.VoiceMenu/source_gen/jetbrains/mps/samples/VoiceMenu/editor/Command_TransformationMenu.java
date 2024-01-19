@@ -33,7 +33,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import java.awt.Robot;
 import java.awt.AWTException;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
@@ -338,11 +337,7 @@ public class Command_TransformationMenu extends TransformationMenuBase {
         @Override
         public void execute(@NotNull String pattern) {
 
-          SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Activity$Oz)), CONCEPTS.Menu$By), LINKS.events$gxkh)).findFirst(new IWhereFilter<SNode>() {
-            public boolean accept(SNode it) {
-              return it == SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Activity$Oz), LINKS.event$pmgi);
-            }
-          }));
+          SNodeOperations.deleteNode(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Activity$Oz)), CONCEPTS.Menu$By), LINKS.events$gxkh)).findFirst((it) -> it == SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Activity$Oz), LINKS.event$pmgi)));
 
           SNodeOperations.deleteNode(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Activity$Oz));
 

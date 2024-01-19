@@ -19,7 +19,7 @@ import jetbrains.mps.workbench.dialogs.project.newproject.TemplateFiller;
 import jetbrains.mps.project.MPSProject;
 import com.intellij.openapi.startup.StartupManager;
 import org.jetbrains.mps.openapi.module.SModule;
-import jetbrains.mps.ide.newSolutionDialog.NewModuleUtil;
+import jetbrains.mps.project.modules.SolutionProducer;
 import org.jetbrains.mps.openapi.persistence.ModelRoot;
 import org.jetbrains.mps.openapi.model.SModel;
 import jetbrains.mps.extapi.model.SModelBase;
@@ -83,7 +83,7 @@ public class VoiceMenuProjectTemplate implements MPSProjectTemplate {
             project.getModelAccess().executeCommand(new Runnable() {
               public void run() {
 
-                SModule solution = NewModuleUtil.createSolution(DEFAULT_SOLUTION_NAME, myProjectPath, project);
+                SModule solution = new SolutionProducer(project).create(DEFAULT_SOLUTION_NAME, project.getFileSystem().getFile(myProjectPath));
 
                 ModelRoot defaultRoot = solution.getModelRoots().iterator().next();
                 SModel model = defaultRoot.createModel(DEFAULT_MODEL_NAME);

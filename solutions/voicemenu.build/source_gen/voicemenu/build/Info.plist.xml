@@ -93,6 +93,10 @@
       <string>1.8+</string>
       <key>MainClass</key>
       <string>jetbrains/mps/Launcher</string>
+      <key>ErrorFile</key>
+      <string>-XX:ErrorFile=$USER_HOME/java_error_in_idea_%p.log</string>
+      <key>HeapDump</key>
+      <string>-XX:HeapDumpPath=$USER_HOME/java_error_in_idea.hprof</string>
       <key>Options</key>
       <array>
         <string>--add-opens=java.base/java.io=ALL-UNNAMED</string>
@@ -159,6 +163,15 @@
         
         <key>idea.home.path</key>
         <string>$APP_PACKAGE/Contents</string>
+        
+        <key>pty4j.preferred.native.folder</key>
+        <string>$APP_PACKAGE/Contents/lib/pty4j</string>
+        
+        <key>jbScreenMenuBar.enabled</key>
+        <string>true</string>
+        
+        <key>jbScreenMenuBar.useStubItem</key>
+        <string>true</string>
       </dict>
       <!--Use Contents/bin/voicemenu.vmoptions or ~/Library/Preferences/voicemenu2022.2/voicemenu.vmoptions file to modify VMOptions-->
       <key>VMOptions</key>

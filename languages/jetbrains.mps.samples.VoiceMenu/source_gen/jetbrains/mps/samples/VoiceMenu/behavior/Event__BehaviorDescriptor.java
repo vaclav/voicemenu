@@ -15,10 +15,8 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.internal.collections.runtime.ISelector;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.internal.collections.runtime.ILeftCombinator;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -37,15 +35,7 @@ public final class Event__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   /*package*/ static String getFullName_id7bG1ue8uybI(@NotNull SNode __thisNode__) {
-    return ListSequence.fromList(SNodeOperations.getNodeAncestors(__thisNode__, CONCEPTS.Activity$Oz, false)).reversedList().select(new ISelector<SNode, String>() {
-      public String select(SNode it) {
-        return SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.name$MnvL);
-      }
-    }).foldLeft("", new ILeftCombinator<String, String>() {
-      public String combine(String s, String it) {
-        return s + it + "/";
-      }
-    }) + SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL);
+    return ListSequence.fromList(SNodeOperations.getNodeAncestors(__thisNode__, CONCEPTS.Activity$Oz, false)).reversedList().select((it) -> SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.name$MnvL)).foldLeft("", (String s, String it) -> s + it + "/") + SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL);
   }
 
   /*package*/ Event__BehaviorDescriptor() {

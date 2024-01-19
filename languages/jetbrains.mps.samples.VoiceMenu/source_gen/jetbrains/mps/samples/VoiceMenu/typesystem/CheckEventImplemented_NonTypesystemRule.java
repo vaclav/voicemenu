@@ -10,7 +10,6 @@ import jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import java.util.Objects;
 import jetbrains.mps.errors.messageTargets.MessageTarget;
@@ -28,11 +27,7 @@ public class CheckEventImplemented_NonTypesystemRule extends AbstractNonTypesyst
   }
   public void applyRule(final SNode event, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
     if (isNotEmptyString(SPropertyOperations.getString(event, PROPS.name$MnvL)) && isNotEmptyString(SPropertyOperations.getString(event, PROPS.trigger$DqFK))) {
-      if (Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getChildren(SNodeOperations.getParent(event)), CONCEPTS.Activity$Oz)).any(new IWhereFilter<SNode>() {
-        public boolean accept(SNode it) {
-          return SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.name$MnvL) == SPropertyOperations.getString(event, PROPS.name$MnvL) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), SPropertyOperations.getString(event, PROPS.trigger$DqFK));
-        }
-      })) {
+      if (Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getChildren(SNodeOperations.getParent(event)), CONCEPTS.Activity$Oz)).any((it) -> SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.name$MnvL) == SPropertyOperations.getString(event, PROPS.name$MnvL) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), SPropertyOperations.getString(event, PROPS.trigger$DqFK)))) {
       } else {
         {
           final MessageTarget errorTarget = new NodeMessageTarget();

@@ -9,7 +9,6 @@ import jetbrains.mps.typesystem.inference.TypeCheckingContext;
 import jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
@@ -27,16 +26,8 @@ public class DuplicateTimeout_NonTypesystemRule extends AbstractNonTypesystemRul
   public DuplicateTimeout_NonTypesystemRule() {
   }
   public void applyRule(final SNode menu, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    SNode eventNode = ListSequence.fromList(SLinkOperations.getChildren(menu, LINKS.events$gxkh)).findFirst(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$DqFK), "X");
-      }
-    });
-    if (ListSequence.fromList(SNodeOperations.getAllSiblings(eventNode, false)).any(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return Objects.equals(SPropertyOperations.getString(SNodeOperations.cast(it, CONCEPTS.Event$Du), PROPS.trigger$DqFK), "X");
-      }
-    })) {
+    SNode eventNode = ListSequence.fromList(SLinkOperations.getChildren(menu, LINKS.events$gxkh)).findFirst((it) -> Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$DqFK), "X"));
+    if (ListSequence.fromList(SNodeOperations.getAllSiblings(eventNode, false)).any((it) -> Objects.equals(SPropertyOperations.getString(SNodeOperations.cast(it, CONCEPTS.Event$Du), PROPS.trigger$DqFK), "X"))) {
       {
         final MessageTarget errorTarget = new NodeMessageTarget();
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportWarning(menu, "Duplicate Timeouts", "r:a3d91a5b-5d89-4c37-bb4a-da96d8c37ef1(jetbrains.mps.samples.VoiceMenu.typesystem)", "3026886742211997737", null, errorTarget);

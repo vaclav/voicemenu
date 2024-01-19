@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="TTSLibrary" uuid="828f8f6b-2bf3-4a70-82a0-c413d7f22140" moduleVersion="0" compileInMPS="true">
+<solution name="TTSLibrary" uuid="828f8f6b-2bf3-4a70-82a0-c413d7f22140" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -19,20 +19,17 @@
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
+      <library location="${module}/lib/cmu_time_awb.jar" />
+      <library location="${module}/lib/cmu_us_kal.jar" />
+      <library location="${module}/lib/cmudict04.jar" />
+      <library location="${module}/lib/cmulex.jar" />
+      <library location="${module}/lib/cmutimelex.jar" />
+      <library location="${module}/lib/en_us.jar" />
+      <library location="${module}/lib/freetts-jsapi10.jar" />
+      <library location="${module}/lib/freetts.jar" />
+      <library location="${module}/lib/mbrola.jar" />
     </facet>
   </facets>
-  <stubModelEntries>
-    <stubModelEntry path="${module}/lib/cmu_time_awb.jar" />
-    <stubModelEntry path="${module}/lib/cmu_us_kal.jar" />
-    <stubModelEntry path="${module}/lib/cmudict04.jar" />
-    <stubModelEntry path="${module}/lib/cmulex.jar" />
-    <stubModelEntry path="${module}/lib/cmutimelex.jar" />
-    <stubModelEntry path="${module}/lib/en_us.jar" />
-    <stubModelEntry path="${module}/lib/freetts-jsapi10.jar" />
-    <stubModelEntry path="${module}/lib/freetts.jar" />
-    <stubModelEntry path="${module}/lib/mbrola.jar" />
-  </stubModelEntries>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>

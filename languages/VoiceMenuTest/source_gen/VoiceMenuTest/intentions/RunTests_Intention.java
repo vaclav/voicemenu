@@ -15,11 +15,9 @@ import jetbrains.mps.intentions.AbstractIntentionExecutable;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.internal.collections.runtime.IVisitor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import java.util.Objects;
 import jetbrains.mps.samples.VoiceMenu.behavior.Event__BehaviorDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
@@ -64,11 +62,9 @@ public final class RunTests_Intention extends AbstractIntentionDescriptor implem
 
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(node, LINKS.commands$RX3w), CONCEPTS.TestStep$W2)).visitAll(new IVisitor<SNode>() {
-        public void visit(SNode it) {
-          SPropertyOperations.setEnum(SLinkOperations.getTarget(it, LINKS.evaluation$kokw), PROPS.result$7die, 0x72ec05e3886dfc17L, "Unknown");
-          SPropertyOperations.assign(SLinkOperations.getTarget(it, LINKS.evaluation$kokw), PROPS.message$7dKg, "");
-        }
+      Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(node, LINKS.commands$RX3w), CONCEPTS.TestStep$W2)).visitAll((it) -> {
+        SPropertyOperations.setEnum(SLinkOperations.getTarget(it, LINKS.evaluation$kokw), PROPS.result$7die, 0x72ec05e3886dfc17L, "Unknown");
+        SPropertyOperations.assign(SLinkOperations.getTarget(it, LINKS.evaluation$kokw), PROPS.message$7dKg, "");
       });
 
       SNode currentMenu = SLinkOperations.getTarget(SLinkOperations.getTarget(node, LINKS.workspaceToTest$OyBX), LINKS.bodyMenu$Of2I);
@@ -76,21 +72,13 @@ public final class RunTests_Intention extends AbstractIntentionDescriptor implem
       for (SNode step : Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(node, LINKS.commands$RX3w), CONCEPTS.TestStep$W2))) {
         if (SNodeOperations.isInstanceOf(step, CONCEPTS.Press$7b)) {
           final String key = SPropertyOperations.getString(SNodeOperations.cast(step, CONCEPTS.Press$7b), PROPS.key$Qq2_);
-          currentEvent.value = ListSequence.fromList(SLinkOperations.getChildren(currentMenu, LINKS.events$gxkh)).findFirst(new IWhereFilter<SNode>() {
-            public boolean accept(SNode it) {
-              return Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$DqFK), key);
-            }
-          });
+          currentEvent.value = ListSequence.fromList(SLinkOperations.getChildren(currentMenu, LINKS.events$gxkh)).findFirst((it) -> Objects.equals(SPropertyOperations.getString(it, PROPS.trigger$DqFK), key));
           if ((currentEvent.value == null)) {
             SPropertyOperations.setEnum(SLinkOperations.getTarget(step, LINKS.evaluation$kokw), PROPS.result$7die, 0x72ec05e3886dfc14L, "Failure");
             SPropertyOperations.assign(SLinkOperations.getTarget(step, LINKS.evaluation$kokw), PROPS.message$7dKg, "No event triggered by " + key + " is available in the menu " + Event__BehaviorDescriptor.getFullName_id7bG1ue8uybI.invoke(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(currentMenu, CONCEPTS.Activity$Oz, false, false), LINKS.event$pmgi)));
             return;
           }
-          SNode currentActivity = ListSequence.fromList((SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(node, LINKS.workspaceToTest$OyBX), CONCEPTS.Activity$Oz, false, new SAbstractConcept[]{}))).where(new IWhereFilter<SNode>() {
-            public boolean accept(SNode it) {
-              return Objects.equals(SLinkOperations.getTarget(it, LINKS.event$pmgi), currentEvent.value);
-            }
-          }).first();
+          SNode currentActivity = ListSequence.fromList((SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(node, LINKS.workspaceToTest$OyBX), CONCEPTS.Activity$Oz, false, new SAbstractConcept[]{}))).where((it) -> Objects.equals(SLinkOperations.getTarget(it, LINKS.event$pmgi), currentEvent.value)).first();
           if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(currentActivity, LINKS.commands$oZIM), CONCEPTS.Menu$By)) {
             currentMenu = SNodeOperations.as(SLinkOperations.getTarget(currentActivity, LINKS.commands$oZIM), CONCEPTS.Menu$By);
           }

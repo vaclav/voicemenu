@@ -28,7 +28,6 @@ import jetbrains.mps.editor.contextActionsTool.lang.menus.runtime.SidebarActionI
 import jetbrains.mps.openapi.editor.menus.EditorMenuTraceInfo;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.internal.collections.runtime.ISelector;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.editor.runtime.selection.SelectionUtil;
 import jetbrains.mps.openapi.editor.selection.SelectionManager;
@@ -36,7 +35,6 @@ import jetbrains.mps.smodel.runtime.IconResource;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -162,11 +160,7 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          List<SNode> list = ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.events$gxkh)).sort(new ISelector<SNode, String>() {
-            public String select(SNode it) {
-              return SPropertyOperations.getString(it, PROPS.trigger$DqFK);
-            }
-          }, true).toListSequence();
+          List<SNode> list = ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.events$gxkh)).sort((it) -> SPropertyOperations.getString(it, PROPS.trigger$DqFK), true).toList();
           for (SNode item : ListSequence.fromList(list)) {
             ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.events$gxkh)).addElement(item);
           }
@@ -231,11 +225,7 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public void execute(@NotNull String pattern) {
-          List<SNode> list = ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.events$gxkh)).sort(new ISelector<SNode, String>() {
-            public String select(SNode it) {
-              return SPropertyOperations.getString(it, PROPS.trigger$DqFK);
-            }
-          }, false).toListSequence();
+          List<SNode> list = ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.events$gxkh)).sort((it) -> SPropertyOperations.getString(it, PROPS.trigger$DqFK), false).toList();
           for (SNode item : ListSequence.fromList(list)) {
             ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), LINKS.events$gxkh)).addElement(item);
           }
@@ -395,11 +385,7 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
       public void execute(@NotNull String pattern) {
         Iterable<SNode> activities = SLinkOperations.getChildren(_context.getNode(), LINKS.activities$gAHC);
         for (final SNode currentActvt : Sequence.fromIterable(activities)) {
-          if (Sequence.fromIterable(activities).any(new IWhereFilter<SNode>() {
-            public boolean accept(SNode it) {
-              return !(Objects.equals(it, currentActvt)) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), SPropertyOperations.getString(SLinkOperations.getTarget(currentActvt, LINKS.event$pmgi), PROPS.trigger$DqFK));
-            }
-          })) {
+          if (Sequence.fromIterable(activities).any((it) -> !(Objects.equals(it, currentActvt)) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), SPropertyOperations.getString(SLinkOperations.getTarget(currentActvt, LINKS.event$pmgi), PROPS.trigger$DqFK)))) {
             SNodeOperations.deleteNode(currentActvt);
           }
         }
@@ -409,11 +395,7 @@ public class Menu_TransformationMenu extends TransformationMenuBase {
       public boolean canExecute(@NotNull String pattern) {
         Iterable<SNode> activities = SLinkOperations.getChildren(_context.getNode(), LINKS.activities$gAHC);
         for (final SNode currentActvt : Sequence.fromIterable(activities)) {
-          if (Sequence.fromIterable(activities).any(new IWhereFilter<SNode>() {
-            public boolean accept(SNode it) {
-              return !(Objects.equals(it, currentActvt)) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), SPropertyOperations.getString(SLinkOperations.getTarget(currentActvt, LINKS.event$pmgi), PROPS.trigger$DqFK));
-            }
-          })) {
+          if (Sequence.fromIterable(activities).any((it) -> !(Objects.equals(it, currentActvt)) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.trigger$DqFK), SPropertyOperations.getString(SLinkOperations.getTarget(currentActvt, LINKS.event$pmgi), PROPS.trigger$DqFK)))) {
             return true;
           }
         }
