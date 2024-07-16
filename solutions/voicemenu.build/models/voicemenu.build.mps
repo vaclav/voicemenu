@@ -769,7 +769,7 @@
           <ref role="3_I8Xa" to="ffeo:5CFKsRWS5yu" resolve="mps-debugger-java" />
         </node>
         <node concept="3_I8Xc" id="7WMmgAvYaU5" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:ymnOULAZ8H" resolve="mps-testing" />
+          <ref role="3_I8Xa" to="ffeo:6jDaT$jlXhe" />
         </node>
         <node concept="3ygNvl" id="7pHJ606Fuyx" role="39821P">
           <ref role="3ygNvj" to="ffeo:5xa9wY2vhbF" />
