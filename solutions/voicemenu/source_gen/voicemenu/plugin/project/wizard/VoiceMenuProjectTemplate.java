@@ -43,7 +43,7 @@ public class VoiceMenuProjectTemplate implements MPSProjectTemplate {
   @Nullable
   @Override
   public Icon getIcon() {
-    IconResource resource = IconContainer.RESOURCE_a0a0g;
+    IconResource resource = IconContainer.RESOURCE_0;
     return ApplicationManager.getApplication().getService(GlobalIconManager.class).getIconForResource(resource);
   }
 

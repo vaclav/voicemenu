@@ -68,11 +68,11 @@
   </registry>
   <node concept="2Jqgb4" id="2w$I9I9UGbg">
     <property role="3uoZKU" value="Hello, welcome in Jet-Mobile" />
-    <property role="1EJLKn" value="true" />
     <property role="3VJrRc" value="false" />
     <property role="3VHriK" value="800" />
     <property role="3VHriO" value="etc/asterisk/" />
     <property role="TrG5h" value="Jet Mobile, s.r.o." />
+    <property role="1EJLKn" value="true" />
     <node concept="2C_Ik4" id="2w$I9I9UGbh" role="2JqgbB">
       <node concept="2C_I21" id="2w$I9I9URiH" role="2C_I26">
         <property role="3upAMh" value="Did you know that our internet is faster than evr?" />

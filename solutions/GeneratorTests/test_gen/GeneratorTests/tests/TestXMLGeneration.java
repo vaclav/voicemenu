@@ -5,7 +5,7 @@ package GeneratorTests.tests;
 import jetbrains.mps.lang.test.generator.rt.BaseGeneratorTest;
 import org.junit.jupiter.api.extension.RegisterExtension;
 import jetbrains.mps.lang.test.runtime.TestParametersCacheExtension;
-import jetbrains.mps.lang.test.runtime.TestParametersCache;
+import jetbrains.mps.lang.test.runtime.TestParametersCacheBuilder;
 import org.jetbrains.mps.openapi.model.SModel;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -15,7 +15,7 @@ import jetbrains.mps.lang.test.generator.rt.ModelAssert;
 public class TestXMLGeneration extends BaseGeneratorTest {
 
   @RegisterExtension
-  private static final TestParametersCacheExtension ourParametersCacheExtension = new TestParametersCacheExtension(new TestParametersCache(TestXMLGeneration.class, "${project_home}", "r:ecaa69fb-f0ed-4254-93f7-01f043deade1(GeneratorTests.tests@tests)", false));
+  private static final TestParametersCacheExtension ourParametersCacheExtension = new TestParametersCacheExtension(new TestParametersCacheBuilder(TestXMLGeneration.class).projectPath("${project_home}").modelRef("r:ecaa69fb-f0ed-4254-93f7-01f043deade1(GeneratorTests.tests@tests)").reopenProject(false).build());
 
 
   private SModel myArg_input;
@@ -26,7 +26,7 @@ public class TestXMLGeneration extends BaseGeneratorTest {
 
   @BeforeEach
   public void initProject() throws Exception {
-    ourParametersCacheExtension.getParametersCache().initializeOnce(this, getEnvironment());
+    ourParametersCacheExtension.getParametersCache().initializeOnce(this, getEnvironment(), null);
     setProject(ourParametersCacheExtension.getParametersCache().getProject());
   }
 

@@ -119,7 +119,7 @@ public class Action_TransformationMenu extends TransformationMenuBase {
 
         @Override
         public IconResource getIcon() {
-          return IconContainer.RESOURCE_a0a8c6e_1;
+          return IconContainer.RESOURCE_43;
         }
         @Override
         public String getTooltipText() {

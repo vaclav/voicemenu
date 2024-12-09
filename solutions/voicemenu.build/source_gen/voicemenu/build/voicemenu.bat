@@ -11,7 +11,7 @@ SET PRODUCT=voicemenu
 :: Ensure IDE_HOME points to the directory where the IDE is installed.
 :: ---------------------------------------------------------------------
 SET IDE_BIN_DIR=%~dp0
-FOR /F "delims=" %%i in ("%IDE_BIN_DIR%\..") DO SET IDE_HOME=%%~fi
+FOR /F "delims=" %%i in ("%IDE_BIN_DIR%\..") DO SET "IDE_HOME=%%~fi"
 
 IF "%IDE_BIN_DIR:~-8%" == "bin\win\" (
   echo.
@@ -31,7 +31,7 @@ IF "%IDE_BIN_DIR:~-8%" == "bin\win\" (
 SET JDK=
 SET IDEA_VENDOR_NAME=JetBrains
 
-IF EXIST "%voicemenu_JDK%" SET JDK=%voicemenu_JDK%
+IF EXIST "%voicemenu_JDK%" SET "JDK=%voicemenu_JDK%"
 IF EXIST "%JDK%" GOTO check
 
 SET BITS=64
@@ -44,17 +44,17 @@ IF EXIST "%USER_JDK64_FILE%" (
   IF EXIST "%USER_JDK_FILE%" SET /P JDK=<%USER_JDK_FILE%
 )
 IF NOT "%JDK%" == "" (
-  IF NOT EXIST "%JDK%" SET JDK="%IDE_HOME%\%JDK%"
+  IF NOT EXIST "%JDK%" SET "JDK=%IDE_HOME%\%JDK%"
   IF EXIST "%JDK%" GOTO check
 )
 
-IF EXIST "%IDE_HOME%\jbr" SET JDK=%IDE_HOME%\jbr
+IF EXIST "%IDE_HOME%\jbr" SET "JDK=%IDE_HOME%\jbr"
 IF EXIST "%JDK%" GOTO check
 
-IF EXIST "%JDK_HOME%" SET JDK=%JDK_HOME%
+IF EXIST "%JDK_HOME%" SET "JDK=%JDK_HOME%"
 IF EXIST "%JDK%" GOTO check
 
-IF EXIST "%JAVA_HOME%" SET JDK=%JAVA_HOME%
+IF EXIST "%JAVA_HOME%" SET "JDK=%JAVA_HOME%"
 
 :check
 SET JAVA_EXE=%JDK%\bin\javaw.exe
@@ -65,7 +65,7 @@ IF NOT EXIST "%JAVA_EXE%" (
 )
 
 SET JRE=%JDK%
-IF EXIST "%JRE%\jre" SET JRE=%JDK%\jre
+IF EXIST "%JRE%\jre" SET "JRE=%JDK%\jre"
 
 SET BITS=
 FINDSTR /B /C:"OS_ARCH=\"x86_64\"" "%JRE%\release" > NUL
@@ -127,7 +127,7 @@ IF "%VM_OPTIONS_FILE%%USER_VM_OPTIONS_FILE%" == "" (
 
 
 SET COMMON_JVM_ARGS="-XX:ErrorFile=%USERPROFILE%\java_error_in_%PRODUCT%_%%p.log" "-XX:HeapDumpPath=%USERPROFILE%\java_error_in_%PRODUCT%.hprof" -Didea.paths.selector=%IDEA_PATHS_SELECTOR% -Didea.vendor.name="%IDEA_VENDOR_NAME%" %IDE_PROPERTIES_PROPERTY%
-SET IDE_JVM_ARGS=-Didea.platform.prefix=Idea -Didea.jre.check=true -Dpty4j.preferred.native.folder="%IDE_HOME%/lib/pty4j" -Djna.boot.library.path="%IDE_HOME%/lib/jna" -Djava.system.class.loader=com.intellij.util.lang.PathClassLoader
+SET IDE_JVM_ARGS=-Didea.platform.prefix=Idea -Dintellij.platform.load.app.info.from.resources=true -Didea.jre.check=true -Dpty4j.preferred.native.folder="%IDE_HOME%/lib/pty4j" -Djna.boot.library.path="%IDE_HOME%/lib/jna" -Djava.system.class.loader=com.intellij.util.lang.PathClassLoader -Dij.startup.error.report.url="https://youtrack.jetbrains.com/newissue?project=MPS&clearDraft=true&summary=$TITLE$&description=$DESCR$"
 SET ALL_JVM_ARGS=%ACC% %COMMON_JVM_ARGS% %IDE_JVM_ARGS%
 
 SET CLASS_PATH=%IDE_HOME%\lib\*
@@ -142,7 +142,7 @@ start "" "%JAVA_EXE%" ^
   %ALL_JVM_ARGS% ^
   -Didea.main.class.name=%MAIN_CLASS% ^
   -cp "%CLASS_PATH%" ^
-  --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.text=ALL-UNNAMED --add-opens=java.base/java.time=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.base/jdk.internal.vm=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/sun.nio.fs=ALL-UNNAMED --add-opens=java.base/sun.security.ssl=ALL-UNNAMED --add-opens=java.base/sun.security.util=ALL-UNNAMED --add-opens=java.desktop/java.awt=ALL-UNNAMED --add-opens=java.desktop/java.awt.dnd.peer=ALL-UNNAMED --add-opens=java.desktop/java.awt.event=ALL-UNNAMED --add-opens=java.desktop/java.awt.image=ALL-UNNAMED --add-opens=java.desktop/java.awt.peer=ALL-UNNAMED --add-opens=java.desktop/javax.swing=ALL-UNNAMED --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED --add-opens=java.desktop/javax.swing.text.html=ALL-UNNAMED --add-opens=java.desktop/sun.awt.datatransfer=ALL-UNNAMED --add-opens=java.desktop/sun.awt.image=ALL-UNNAMED --add-opens=java.desktop/sun.awt=ALL-UNNAMED --add-opens=java.desktop/sun.font=ALL-UNNAMED --add-opens=java.desktop/sun.java2d=ALL-UNNAMED --add-opens=java.desktop/sun.swing=ALL-UNNAMED --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED --add-opens=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-opens=jdk.internal.jvmstat/sun.jvmstat.monitor=ALL-UNNAMED --add-opens=jdk.jdi/com.sun.tools.jdi=ALL-UNNAMED --add-opens=java.desktop/sun.awt.windows=ALL-UNNAMED ^
+  --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.text=ALL-UNNAMED --add-opens=java.base/java.time=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.base/jdk.internal.vm=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/sun.nio.fs=ALL-UNNAMED --add-opens=java.base/sun.security.ssl=ALL-UNNAMED --add-opens=java.base/sun.security.util=ALL-UNNAMED --add-opens=java.desktop/java.awt=ALL-UNNAMED --add-opens=java.desktop/java.awt.dnd.peer=ALL-UNNAMED --add-opens=java.desktop/java.awt.event=ALL-UNNAMED --add-opens=java.desktop/java.awt.image=ALL-UNNAMED --add-opens=java.desktop/java.awt.peer=ALL-UNNAMED --add-opens=java.desktop/javax.swing=ALL-UNNAMED --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED --add-opens=java.desktop/javax.swing.text=ALL-UNNAMED --add-opens=java.desktop/javax.swing.text.html=ALL-UNNAMED --add-opens=java.desktop/sun.awt.datatransfer=ALL-UNNAMED --add-opens=java.desktop/sun.awt.image=ALL-UNNAMED --add-opens=java.desktop/sun.awt=ALL-UNNAMED --add-opens=java.desktop/sun.font=ALL-UNNAMED --add-opens=java.desktop/sun.java2d=ALL-UNNAMED --add-opens=java.desktop/sun.swing=ALL-UNNAMED --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED --add-opens=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-opens=jdk.internal.jvmstat/sun.jvmstat.monitor=ALL-UNNAMED --add-opens=jdk.jdi/com.sun.tools.jdi=ALL-UNNAMED --add-opens=java.management/sun.management=ALL-UNNAMED --add-opens=java.desktop/sun.awt.windows=ALL-UNNAMED ^
   %MAIN_CLASS% ^
   %*
 
