@@ -7,7 +7,7 @@
     <format property="date" pattern="yyyyMMdd" />
   </tstamp>
   <property name="build.number" value="202.SNAPSHOT" />
-  <property name="mps_home" location="${basedir}/../../MPS 2022.2" />
+  <property name="mps_home" location="${basedir}/../../MPS 2025.1" />
   <property name="artifacts.mpsStandalone" location="${mps_home}" />
   <property name="artifacts.mpsCore" location="${mps_home}/plugins" />
   <property name="artifacts.mpsDebuggerPlugin" location="${mps_home}/plugins" />
@@ -187,6 +187,7 @@
         <depends>com.intellij.modules.platform</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.ide.make</depends>
+        <depends>jetbrains.mps.editor.contextActions</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -1682,6 +1683,9 @@
       <settings refid="m2m-defaults" />
       <plugin path="${artifacts.mpsContextActionsTool}/mps-context-actions" id="jetbrains.mps.editor.contextActions" />
       <plugin path="${artifacts.mpsCore}/mps-core" id="jetbrains.mps.core" />
+      <plugin path="${artifacts.mpsStandalone}/lib/mps-workbench.jar" id="com.intellij.modules.mps" />
+      <library file="${artifacts.mpsStandalone}/languages/editor/jetbrains.mps.ide.editor.jar" />
+      <library file="${artifacts.mpsStandalone}/languages/plaf/jetbrains.mps.ide.ui.jar" />
       <library file="${artifacts.mpsStandalone}/languages/workbench-stub.jar" />
       <library file="${artifacts.mpsStandalone}/languages/workbench/jetbrains.mps.ide.jar" />
       <library file="${artifacts.mpsStandalone}/languages/workbench/jetbrains.mps.lang.plugin.standalone.jar" />
@@ -1774,7 +1778,6 @@
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.lang.smodel.query.runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/text/jetbrains.mps.lang.text.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenu">
@@ -1902,7 +1905,6 @@
         <fileset file="${artifacts.mpsCore}/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/text/jetbrains.mps.lang.text.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
@@ -2064,7 +2066,6 @@
         <fileset file="${artifacts.mpsCore}/mps-core/languages/languageDesign/jetbrains.mps.lang.editor.table.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.lang.smodel.query.runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/text/jetbrains.mps.lang.text.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenuTabularEditor">
@@ -2191,7 +2192,6 @@
         <fileset file="${artifacts.mpsCore}/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/text/jetbrains.mps.lang.text.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenuToXML">
@@ -2360,7 +2360,6 @@
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/text/jetbrains.mps.lang.text.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/make/jetbrains.mps.make.facets.jar" />
       </classpath>
     </javac>
@@ -2503,7 +2502,6 @@
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.lang.smodel.query.runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/text/jetbrains.mps.lang.text.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/jetbrains.mps.samples.VoiceMenuToAsterisk">
@@ -2641,7 +2639,6 @@
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.lang.smodel.query.runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/text/jetbrains.mps.lang.text.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/jetbrains.mps.samples.Text">
@@ -2771,7 +2768,6 @@
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.lang.smodel.query.runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/text/jetbrains.mps.lang.text.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/VoiceMenuTest">

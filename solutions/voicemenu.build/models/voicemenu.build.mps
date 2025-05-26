@@ -416,8 +416,8 @@
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="4qLeaozfzuK" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="1j3lSbbeZpq" role="2Ry0An">
-              <property role="2Ry0Am" value="MPS 2022.2" />
+            <node concept="2Ry0Ak" id="1bqcdz15$uN" role="2Ry0An">
+              <property role="2Ry0Am" value="MPS 2025.1" />
             </node>
           </node>
         </node>
@@ -987,6 +987,9 @@
       </node>
       <node concept="m$_yC" id="20sXUrlk$bm" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:6EN03E8oSte" resolve="jetbrains.mps.ide.make" />
+      </node>
+      <node concept="m$_yC" id="1bqcdz15$O1" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:1JaUSFUm4G_" resolve="jetbrains.mps.editor.contextActions" />
       </node>
       <node concept="3_J27D" id="5ruKdSwyesV" role="m_cZH">
         <node concept="3Mxwew" id="5ruKdSwyesW" role="3MwsjC">
@@ -2923,8 +2926,8 @@
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="5$IQOQwcnGK" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="1j3lSbbeZqQ" role="2Ry0An">
-              <property role="2Ry0Am" value="MPS 2022.2" />
+            <node concept="2Ry0Ak" id="1bqcdz15$vx" role="2Ry0An">
+              <property role="2Ry0Am" value="MPS 2025.1" />
             </node>
           </node>
         </node>
