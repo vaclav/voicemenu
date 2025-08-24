@@ -20,7 +20,7 @@ public class EnumerationDescriptor_Outcome extends EnumerationDescriptorBase {
   private final EnumerationDescriptor.MemberDescriptor myMember_Unknown_0 = new EnumerationDescriptor.MemberDescriptor("Unknown", "Unknown", 0x72ec05e3886dfc17L, "r:9b5fab12-3317-4915-baca-42b08fc481a5(VoiceMenuTest.structure)/8281000289632123927");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x25057fc953374f2eL, 0x9703a17097079193L, 0x72ec05e3886dfc12L, 0x72ec05e3886dfc13L, 0x72ec05e3886dfc14L, 0x72ec05e3886dfc17L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_Success_0, myMember_Failure_0, myMember_Unknown_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_Success_0, myMember_Failure_0, myMember_Unknown_0);
 
   @Nullable
   @Override
