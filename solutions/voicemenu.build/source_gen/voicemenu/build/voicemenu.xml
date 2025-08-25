@@ -31,9 +31,7 @@
   
   <path id="path.mps.ant.path">
     <pathelement location="${artifacts.mpsStandalone}/lib/ant/lib/ant-mps.jar" />
-    <fileset dir="${artifacts.mpsStandalone}/lib">
-      <include name="util-8.jar" />
-    </fileset>
+    <pathelement location="${artifacts.mpsStandalone}/lib/util-8.jar" />
   </path>
   
   <taskdef resource="jetbrains/mps/build/ant/antlib.xml" classpathref="path.mps.ant.path" />
@@ -41,6 +39,7 @@
   <generator-settings id="m2m-defaults" strictMode="true" parallelThreads="8" inplaceTransform="false" warnWrongChild="true" createStaticRefs="true" skipUnmodifiedModels="${mps.generator.skipUnmodifiedModels}" />
   
   <target name="assemble" depends="classes, declare-mps-tasks, fetchDependencies">
+    <mkdir dir="${build.layout}" />
     <mkdir dir="${build.layout}/languages" />
     <copy todir="${build.layout}/languages">
       <fileset dir="${artifacts.mpsStandalone}/languages" />
@@ -75,7 +74,7 @@
     </copy>
     <mkdir dir="${build.tmp}/default/branding.jar" />
     <mkdir dir="${build.tmp}/default/branding.jar/idea" />
-    <echoxml file="${build.tmp}/default/branding.jar/idea/IdeaApplicationInfo.xml">
+    <echoxml file="${build.tmp}/default/branding.jar/idea/MPSApplicationInfo.xml">
       <component>
         <version major="2022" minor="2" eap="false" />
         <company name="JetBrains" url="http://www.jetbrains.com" copyrightStart="JetBrains s.r.o." />
@@ -180,7 +179,7 @@
     <mkdir dir="${build.tmp}/default/voicemenu.jar" />
     <mkdir dir="${build.tmp}/default/voicemenu.jar/META-INF" />
     <echoxml file="${build.tmp}/default/voicemenu.jar/META-INF/plugin.xml">
-      <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+      <idea-plugin>
         <id>voicemenu</id>
         <name>voicemenu</name>
         <version>2021.2</version>
@@ -1767,7 +1766,6 @@
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/trove.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />
@@ -1835,7 +1833,6 @@
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/trove.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsCore}/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
@@ -1897,7 +1894,6 @@
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/trove.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
@@ -1965,7 +1961,6 @@
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/trove.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
@@ -2056,7 +2051,6 @@
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/trove.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />
@@ -2124,7 +2118,6 @@
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/trove.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsCore}/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
@@ -2186,7 +2179,6 @@
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/trove.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />
         <fileset file="${artifacts.mpsCore}/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
@@ -2250,7 +2242,6 @@
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/trove.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsCore}/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
@@ -2353,7 +2344,6 @@
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/trove.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />
         <fileset file="${artifacts.mpsCore}/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
@@ -2421,7 +2411,6 @@
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/trove.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsCore}/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
@@ -2493,7 +2482,6 @@
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/trove.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />
@@ -2571,7 +2559,6 @@
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/trove.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsCore}/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
@@ -2631,7 +2618,6 @@
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/trove.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />
@@ -2698,7 +2684,6 @@
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/trove.jar" />
         <fileset file="${artifacts.mpsCore}/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
@@ -2759,7 +2744,6 @@
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/trove.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />
@@ -2823,7 +2807,6 @@
         <fileset file="${artifacts.mpsStandalone}/lib/testFramework.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/stats.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/trove.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
       </classpath>
