@@ -2,7 +2,7 @@
 <model ref="r:449eadb4-490b-4078-be90-e200276f01b4(GeneratorTests.planxml)">
   <persistence version="9" />
   <languages>
-    <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="2" />
+    <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="3" />
   </languages>
   <imports />
   <registry>

@@ -40,7 +40,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(_context.getNode(), PROPS.info$rXd3);
   }
   public static Object propertyMacro_GetValue_1_2(final PropertyMacroContext _context) {
-    return ((SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL) != null ? SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL) : "FOO")).replaceAll("[\\W|\\.|,]", "_") + ".html";
+    return ((SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL) != null ? SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL) : "FOO")).replaceAll("[\\W|\\.|,]", "_");
   }
   public static Object propertyMacro_GetValue_3_0(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.event$pmgi), PROPS.name$MnvL);
