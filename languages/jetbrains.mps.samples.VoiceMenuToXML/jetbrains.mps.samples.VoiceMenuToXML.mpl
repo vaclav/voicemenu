@@ -61,9 +61,6 @@
       <mapping-priorities />
     </generator>
   </generators>
-  <dependencies>
-    <dependency reexport="false" scope="generate-into">4bc750d7-5688-4f52-b7d5-b263a3393a24(jetbrains.mps.samples.VoiceMenu)</dependency>
-  </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
@@ -110,6 +107,8 @@
     <module reference="4bc750d7-5688-4f52-b7d5-b263a3393a24(jetbrains.mps.samples.VoiceMenu)" version="0" />
     <module reference="750ae49d-4f57-400c-b5dc-2b58c1e3f9a9(jetbrains.mps.samples.VoiceMenuToXML)" version="0" />
   </dependencyVersions>
-  <extendedLanguages />
+  <extendedLanguages>
+    <extendedLanguage>4bc750d7-5688-4f52-b7d5-b263a3393a24(jetbrains.mps.samples.VoiceMenu)</extendedLanguage>
+  </extendedLanguages>
 </language>
 

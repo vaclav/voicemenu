@@ -113,10 +113,14 @@
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+    <module reference="4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
+    <module reference="4bc750d7-5688-4f52-b7d5-b263a3393a24(jetbrains.mps.samples.VoiceMenu)" version="0" />
     <module reference="e2a803a4-d4b8-43eb-b458-517effd2a87f(jetbrains.mps.samples.VoiceMenuToAsterisk)" version="0" />
   </dependencyVersions>
-  <extendedLanguages />
+  <extendedLanguages>
+    <extendedLanguage>4bc750d7-5688-4f52-b7d5-b263a3393a24(jetbrains.mps.samples.VoiceMenu)</extendedLanguage>
+  </extendedLanguages>
 </language>
 
