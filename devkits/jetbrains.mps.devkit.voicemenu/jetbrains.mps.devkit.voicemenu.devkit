@@ -2,7 +2,6 @@
 <dev-kit name="jetbrains.mps.devkit.voicemenu" uuid="a3a23ab5-6d9f-471b-8712-e59f4743e2cb">
   <exported-language name="4bc750d7-5688-4f52-b7d5-b263a3393a24(jetbrains.mps.samples.VoiceMenu)" />
   <exported-language name="250921d2-1a87-46e5-90a9-a2c74442cfa1(jetbrains.mps.samples.VoiceMenuTabularEditor)" />
-  <exported-language name="e2a803a4-d4b8-43eb-b458-517effd2a87f(jetbrains.mps.samples.VoiceMenuToAsterisk)" />
   <exported-language name="0b30ef64-0c5e-4567-b992-9bf5bbc44c0a(jetbrains.mps.samples.VoiceMenuToHTML)" />
   <exported-language name="b346e003-e240-4a78-ab18-9d3086938853(jetbrains.mps.samples.VoiceMenuToJava)" />
   <exported-language name="479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)" />

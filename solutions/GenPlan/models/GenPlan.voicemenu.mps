@@ -136,10 +136,10 @@
   <node concept="2VgMpV" id="7isjrWTAJes">
     <property role="TrG5h" value="Voice Menu To Asterisk" />
     <node concept="3uMcMo" id="7zELEqu3_b3" role="2VgMA7">
-      <node concept="lQKw0" id="7zELEqu3_eq" role="3uOsAP">
-        <node concept="1dCxOk" id="7zELEqu3_er" role="lQKw6">
+      <node concept="lQKw0" id="E44tLnCwdT" role="3uOsAP">
+        <node concept="1dCxOk" id="E44tLnCwdU" role="lQKw6">
           <property role="1XweGW" value="6e677ad1-d756-4f38-90d2-11505348026d" />
-          <property role="1XxBO9" value="jetbrains.mps.samples.VoiceMenuToAsterisk#1416608923407982813" />
+          <property role="1XxBO9" value="jetbrains.mps.samples.VoiceMenuToAsterisk" />
         </node>
       </node>
     </node>
