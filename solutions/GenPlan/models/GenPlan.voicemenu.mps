@@ -36,12 +36,6 @@
   <node concept="2VgMpV" id="7isjrWTAJbx">
     <property role="TrG5h" value="VoiceMenu generation plan" />
     <node concept="2VgMA2" id="7isjrWTAJbz" role="2VgMA7">
-      <node concept="2Qf6Nf" id="3mPZu17OyRu" role="2Qf7GQ">
-        <node concept="2V$Bhx" id="7isjrWTAJbC" role="2Qf6Ng">
-          <property role="2V$B1T" value="4bc750d7-5688-4f52-b7d5-b263a3393a24" />
-          <property role="2V$B1Q" value="jetbrains.mps.samples.VoiceMenu" />
-        </node>
-      </node>
       <node concept="2Qf6Nf" id="3mPZu17OyRv" role="2Qf7GQ">
         <node concept="2V$Bhx" id="5uJACN1lfgH" role="2Qf6Ng">
           <property role="2V$B1T" value="25057fc9-5337-4f2e-9703-a17097079193" />
