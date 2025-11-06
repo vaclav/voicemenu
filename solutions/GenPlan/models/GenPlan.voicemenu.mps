@@ -117,10 +117,10 @@
   <node concept="2VgMpV" id="7isjrWTAJen">
     <property role="TrG5h" value="Voice Menu To XML" />
     <node concept="3uMcMo" id="7zELEqu3_iA" role="2VgMA7">
-      <node concept="lQKw0" id="7zELEqu3_mM" role="3uOsAP">
-        <node concept="1dCxOk" id="7zELEqu3_mN" role="lQKw6">
+      <node concept="lQKw0" id="7zELEqua0vc" role="3uOsAP">
+        <node concept="1dCxOk" id="7zELEqua0vd" role="lQKw6">
           <property role="1XweGW" value="615b0415-b02b-4e4d-8616-8286eccbc991" />
-          <property role="1XxBO9" value="jetbrains.mps.samples.VoiceMenuToXML#6772988411135600674" />
+          <property role="1XxBO9" value="jetbrains.mps.samples.VoiceMenuToXML" />
         </node>
       </node>
     </node>
