@@ -10,7 +10,7 @@
       <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.samples.VoiceMenu/sandbox/jetbrains.mps.samples.VoiceMenu.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.samples.VoiceMenuTabularEditor/jetbrains.mps.samples.VoiceMenuTabularEditor.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.samples.VoiceMenuToAsterisk/generator/jetbrains.mps.samples.VoiceMenuToAsterisk.main.mpst" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.samples.VoiceMenuToHTML/jetbrains.mps.samples.VoiceMenuToHTML.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.samples.VoiceMenuToHTML/generator/jetbrains.mps.samples.VoiceMenuToHTML.main.mpst" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.samples.VoiceMenuToJava/jetbrains.mps.samples.VoiceMenuToJava.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.samples.VoiceMenuToXML/generator/jetbrains.mps.samples.VoiceMenuToXML.main.mpst" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/GenPlan/GenPlan.msd" folder="" />

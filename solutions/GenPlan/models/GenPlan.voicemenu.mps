@@ -99,13 +99,15 @@
   </node>
   <node concept="2VgMpV" id="7isjrWTAJei">
     <property role="TrG5h" value="Voice Menu To Html" />
-    <node concept="2VgMA2" id="7isjrWTAJej" role="2VgMA7">
-      <node concept="2Qf6Nf" id="3mPZu17OyR$" role="2Qf7GQ">
-        <node concept="2V$Bhx" id="7isjrWTAJel" role="2Qf6Ng">
-          <property role="2V$B1T" value="0b30ef64-0c5e-4567-b992-9bf5bbc44c0a" />
-          <property role="2V$B1Q" value="jetbrains.mps.samples.VoiceMenuToHTML" />
+    <node concept="3uMcMo" id="E44tLnE3dT" role="2VgMA7">
+      <node concept="lQKw0" id="E44tLnFNxJ" role="3uOsAP">
+        <node concept="1dCxOk" id="E44tLnFNxK" role="lQKw6">
+          <property role="1XweGW" value="c3c9dcde-3d59-47a8-a70e-cc7c3f3a7eb5" />
+          <property role="1XxBO9" value="jetbrains.mps.samples.VoiceMenuToHTML" />
         </node>
       </node>
+    </node>
+    <node concept="2VgMA2" id="7isjrWTAJej" role="2VgMA7">
       <node concept="2Qf6Nf" id="3mPZu17OyR_" role="2Qf7GQ">
         <node concept="2V$Bhx" id="7isjrWTAO54" role="2Qf6Ng">
           <property role="2V$B1T" value="479c7a8c-02f9-43b5-9139-d910cb22f298" />

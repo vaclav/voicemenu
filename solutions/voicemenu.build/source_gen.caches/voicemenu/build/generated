@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-6kiia486cek4xbybnii3r76xrz16kxu">
+<product version="3" modelHash="-2icbdgc2u6uazmwmr8t2bmjdxoeq0yu">
   <files names="Info.plist.xml:product-info-linux-amd64.json:product-info-macos-aarch64.json:product-info-macos-amd64.json:product-info-windows-amd64.json:voicemenu.bat:voicemenu.sh:voicemenu.vmoptions:voicemenu.xml:voicemenu64.vmoptions:voicemenuDistribution.xml" />
 </product>
 
