@@ -8,6 +8,9 @@
   <imports />
   <registry>
     <language id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan">
+      <concept id="2332321114124261810" name="jetbrains.mps.lang.generator.plan.structure.GeneratorModulePointer" flags="ng" index="lQKw0">
+        <child id="2332321114124261812" name="module" index="lQKw6" />
+      </concept>
       <concept id="1152961914448136207" name="jetbrains.mps.lang.generator.plan.structure.LanguageEntry" flags="ng" index="2Qf6Nf">
         <child id="1152961914448136208" name="language" index="2Qf6Ng" />
       </concept>
@@ -19,6 +22,15 @@
       </concept>
       <concept id="3167863533095527371" name="jetbrains.mps.lang.generator.plan.structure.Fork" flags="ng" index="10T23i">
         <reference id="3167863533095527372" name="plan" index="10T23l" />
+      </concept>
+      <concept id="8296877263936070001" name="jetbrains.mps.lang.generator.plan.structure.ApplyGenerators" flags="ng" index="3uMcMo">
+        <child id="8296877263936660572" name="generator" index="3uOsAP" />
+      </concept>
+    </language>
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193249" name="jetbrains.mps.lang.modelapi.structure.ModulePointer" flags="ng" index="1dCxOk">
+        <property id="1863527487546097500" name="moduleId" index="1XweGW" />
+        <property id="1863527487545993577" name="moduleName" index="1XxBO9" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -104,13 +116,15 @@
   </node>
   <node concept="2VgMpV" id="7isjrWTAJen">
     <property role="TrG5h" value="Voice Menu To XML" />
-    <node concept="2VgMA2" id="7isjrWTAJeo" role="2VgMA7">
-      <node concept="2Qf6Nf" id="3mPZu17OyRA" role="2Qf7GQ">
-        <node concept="2V$Bhx" id="7isjrWTAJeq" role="2Qf6Ng">
-          <property role="2V$B1T" value="750ae49d-4f57-400c-b5dc-2b58c1e3f9a9" />
-          <property role="2V$B1Q" value="jetbrains.mps.samples.VoiceMenuToXML" />
+    <node concept="3uMcMo" id="7zELEqu3_iA" role="2VgMA7">
+      <node concept="lQKw0" id="7zELEqu3_mM" role="3uOsAP">
+        <node concept="1dCxOk" id="7zELEqu3_mN" role="lQKw6">
+          <property role="1XweGW" value="615b0415-b02b-4e4d-8616-8286eccbc991" />
+          <property role="1XxBO9" value="jetbrains.mps.samples.VoiceMenuToXML#6772988411135600674" />
         </node>
       </node>
+    </node>
+    <node concept="2VgMA2" id="7isjrWTAJeo" role="2VgMA7">
       <node concept="2Qf6Nf" id="3mPZu17OyRB" role="2Qf7GQ">
         <node concept="2V$Bhx" id="7isjrWTAO5c" role="2Qf6Ng">
           <property role="2V$B1T" value="479c7a8c-02f9-43b5-9139-d910cb22f298" />
@@ -121,13 +135,15 @@
   </node>
   <node concept="2VgMpV" id="7isjrWTAJes">
     <property role="TrG5h" value="Voice Menu To Asterisk" />
-    <node concept="2VgMA2" id="7isjrWTAJet" role="2VgMA7">
-      <node concept="2Qf6Nf" id="3mPZu17OyRC" role="2Qf7GQ">
-        <node concept="2V$Bhx" id="7isjrWTAJev" role="2Qf6Ng">
-          <property role="2V$B1T" value="e2a803a4-d4b8-43eb-b458-517effd2a87f" />
-          <property role="2V$B1Q" value="jetbrains.mps.samples.VoiceMenuToAsterisk" />
+    <node concept="3uMcMo" id="7zELEqu3_b3" role="2VgMA7">
+      <node concept="lQKw0" id="7zELEqu3_eq" role="3uOsAP">
+        <node concept="1dCxOk" id="7zELEqu3_er" role="lQKw6">
+          <property role="1XweGW" value="6e677ad1-d756-4f38-90d2-11505348026d" />
+          <property role="1XxBO9" value="jetbrains.mps.samples.VoiceMenuToAsterisk#1416608923407982813" />
         </node>
       </node>
+    </node>
+    <node concept="2VgMA2" id="7isjrWTAJet" role="2VgMA7">
       <node concept="2Qf6Nf" id="3mPZu17OyRD" role="2Qf7GQ">
         <node concept="2V$Bhx" id="7isjrWTAMoI" role="2Qf6Ng">
           <property role="2V$B1T" value="914c58c4-0680-49cf-8599-f5ced7a657d6" />
