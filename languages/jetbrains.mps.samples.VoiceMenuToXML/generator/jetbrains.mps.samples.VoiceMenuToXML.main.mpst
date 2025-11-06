@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<generator alias="main" namespace="jetbrains.mps.samples.VoiceMenuToXML" uuid="615b0415-b02b-4e4d-8616-8286eccbc991" generatorOutputPath="${module}/source_gen">
+<generator alias="ToXML" namespace="jetbrains.mps.samples.VoiceMenuToXML" uuid="615b0415-b02b-4e4d-8616-8286eccbc991" generatorOutputPath="${module}/source_gen">
   <source-language module="4bc750d7-5688-4f52-b7d5-b263a3393a24(jetbrains.mps.samples.VoiceMenu)" />
   <models>
     <modelRoot contentPath="${module}/template" type="default">
