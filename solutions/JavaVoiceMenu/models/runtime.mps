@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <engage id="b346e003-e240-4a78-ab18-9d3086938853" name="jetbrains.mps.samples.VoiceMenuToJava" />
   </languages>
   <imports>
@@ -223,15 +223,9 @@
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -275,9 +269,12 @@
         <property role="Xl_RC" value="0" />
       </node>
       <node concept="z59LJ" id="5Toe17L891$" role="lGtFl">
-        <node concept="TZ5HA" id="5Toe17L891_" role="TZ5H$">
-          <node concept="1dT_AC" id="5Toe17L891A" role="1dT_Ay">
-            <property role="1dT_AB" value="shared variables" />
+        <node concept="1PaTwC" id="7MzaPLmFNya" role="1Vez_I">
+          <node concept="3oM_SD" id="7MzaPLmFNyb" role="1PaTwD">
+            <property role="3oM_SC" value="shared" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyc" role="1PaTwD">
+            <property role="3oM_SC" value="variables" />
           </node>
         </node>
       </node>
@@ -488,9 +485,30 @@
       </node>
       <node concept="3Tm1VV" id="3_1GZis4X4g" role="1B3o_S" />
       <node concept="z59LJ" id="5Toe17L8baD" role="lGtFl">
-        <node concept="TZ5HA" id="5Toe17L8baE" role="TZ5H$">
-          <node concept="1dT_AC" id="5Toe17L8baF" role="1dT_Ay">
-            <property role="1dT_AB" value="Event class holds all informations of current state" />
+        <node concept="1PaTwC" id="7MzaPLmFNyd" role="1Vez_I">
+          <node concept="3oM_SD" id="7MzaPLmFNye" role="1PaTwD">
+            <property role="3oM_SC" value="Event" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyf" role="1PaTwD">
+            <property role="3oM_SC" value="class" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyg" role="1PaTwD">
+            <property role="3oM_SC" value="holds" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyh" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyi" role="1PaTwD">
+            <property role="3oM_SC" value="informations" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyj" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyk" role="1PaTwD">
+            <property role="3oM_SC" value="current" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyl" role="1PaTwD">
+            <property role="3oM_SC" value="state" />
           </node>
         </node>
       </node>
@@ -748,9 +766,21 @@
         </node>
       </node>
       <node concept="P$JXv" id="5Toe17L8es6" role="lGtFl">
-        <node concept="TZ5HA" id="5Toe17L8es7" role="TZ5H$">
-          <node concept="1dT_AC" id="5Toe17L8es8" role="1dT_Ay">
-            <property role="1dT_AB" value="set full informations about state" />
+        <node concept="1PaTwC" id="7MzaPLmFNyp" role="1Vez_I">
+          <node concept="3oM_SD" id="7MzaPLmFNyq" role="1PaTwD">
+            <property role="3oM_SC" value="set" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyr" role="1PaTwD">
+            <property role="3oM_SC" value="full" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNys" role="1PaTwD">
+            <property role="3oM_SC" value="informations" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyt" role="1PaTwD">
+            <property role="3oM_SC" value="about" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyu" role="1PaTwD">
+            <property role="3oM_SC" value="state" />
           </node>
         </node>
       </node>
@@ -807,9 +837,21 @@
         <node concept="10P_77" id="5K3$FqCbxT0" role="1tU5fm" />
       </node>
       <node concept="P$JXv" id="5Toe17L8f52" role="lGtFl">
-        <node concept="TZ5HA" id="5Toe17L8f53" role="TZ5H$">
-          <node concept="1dT_AC" id="5Toe17L8f54" role="1dT_Ay">
-            <property role="1dT_AB" value="set specific informations for Action" />
+        <node concept="1PaTwC" id="7MzaPLmFNyv" role="1Vez_I">
+          <node concept="3oM_SD" id="7MzaPLmFNyw" role="1PaTwD">
+            <property role="3oM_SC" value="set" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyx" role="1PaTwD">
+            <property role="3oM_SC" value="specific" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyy" role="1PaTwD">
+            <property role="3oM_SC" value="informations" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyz" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNy$" role="1PaTwD">
+            <property role="3oM_SC" value="Action" />
           </node>
         </node>
       </node>
@@ -849,9 +891,18 @@
         </node>
       </node>
       <node concept="P$JXv" id="5Toe17L8fI4" role="lGtFl">
-        <node concept="TZ5HA" id="5Toe17L8fI5" role="TZ5H$">
-          <node concept="1dT_AC" id="5Toe17L8fI6" role="1dT_Ay">
-            <property role="1dT_AB" value="set greeting for action" />
+        <node concept="1PaTwC" id="7MzaPLmFNy_" role="1Vez_I">
+          <node concept="3oM_SD" id="7MzaPLmFNyA" role="1PaTwD">
+            <property role="3oM_SC" value="set" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyB" role="1PaTwD">
+            <property role="3oM_SC" value="greeting" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyC" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyD" role="1PaTwD">
+            <property role="3oM_SC" value="action" />
           </node>
         </node>
       </node>
@@ -894,9 +945,21 @@
         </node>
       </node>
       <node concept="P$JXv" id="5Toe17L8gnc" role="lGtFl">
-        <node concept="TZ5HA" id="5Toe17L8gnd" role="TZ5H$">
-          <node concept="1dT_AC" id="5Toe17L8gne" role="1dT_Ay">
-            <property role="1dT_AB" value="set specific informations for Menu" />
+        <node concept="1PaTwC" id="7MzaPLmFNyE" role="1Vez_I">
+          <node concept="3oM_SD" id="7MzaPLmFNyF" role="1PaTwD">
+            <property role="3oM_SC" value="set" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyG" role="1PaTwD">
+            <property role="3oM_SC" value="specific" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyH" role="1PaTwD">
+            <property role="3oM_SC" value="informations" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyI" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyJ" role="1PaTwD">
+            <property role="3oM_SC" value="Menu" />
           </node>
         </node>
       </node>
@@ -1042,8 +1105,10 @@
         </node>
         <node concept="3Tm6S6" id="3_1GZis5xjH" role="1B3o_S" />
         <node concept="P$JXv" id="5Toe17L8jjw" role="lGtFl">
-          <node concept="TZ5HA" id="5Toe17L8jjx" role="TZ5H$">
-            <node concept="1dT_AC" id="5Toe17L8jjy" role="1dT_Ay" />
+          <node concept="1PaTwC" id="7MzaPLmFNyK" role="1Vez_I">
+            <node concept="3oM_SD" id="7MzaPLmFNyL" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
           </node>
         </node>
       </node>
@@ -1111,9 +1176,12 @@
         </node>
       </node>
       <node concept="z59LJ" id="5Toe17L8a2Z" role="lGtFl">
-        <node concept="TZ5HA" id="5Toe17L8a30" role="TZ5H$">
-          <node concept="1dT_AC" id="5Toe17L8a31" role="1dT_Ay">
-            <property role="1dT_AB" value="program UI" />
+        <node concept="1PaTwC" id="7MzaPLmFNym" role="1Vez_I">
+          <node concept="3oM_SD" id="7MzaPLmFNyn" role="1PaTwD">
+            <property role="3oM_SC" value="program" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyo" role="1PaTwD">
+            <property role="3oM_SC" value="UI" />
           </node>
         </node>
       </node>
@@ -6283,9 +6351,12 @@
       <node concept="3Tm1VV" id="6e8rKWxzpKq" role="1B3o_S" />
       <node concept="3cqZAl" id="6e8rKWxzpKr" role="3clF45" />
       <node concept="P$JXv" id="6e8rKWxzpKs" role="lGtFl">
-        <node concept="TZ5HA" id="6e8rKWxzpL4" role="TZ5H$">
-          <node concept="1dT_AC" id="6e8rKWxzpL5" role="1dT_Ay">
-            <property role="1dT_AB" value="run speak" />
+        <node concept="1PaTwC" id="7MzaPLmFNyM" role="1Vez_I">
+          <node concept="3oM_SD" id="7MzaPLmFNyN" role="1PaTwD">
+            <property role="3oM_SC" value="run" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyO" role="1PaTwD">
+            <property role="3oM_SC" value="speak" />
           </node>
         </node>
       </node>
@@ -6325,9 +6396,12 @@
       <node concept="3Tm1VV" id="6e8rKWxzpKC" role="1B3o_S" />
       <node concept="3cqZAl" id="6e8rKWxzpKD" role="3clF45" />
       <node concept="P$JXv" id="6e8rKWxzpKE" role="lGtFl">
-        <node concept="TZ5HA" id="6e8rKWxzpLa" role="TZ5H$">
-          <node concept="1dT_AC" id="6e8rKWxzpLb" role="1dT_Ay">
-            <property role="1dT_AB" value="switch voices" />
+        <node concept="1PaTwC" id="7MzaPLmFNyP" role="1Vez_I">
+          <node concept="3oM_SD" id="7MzaPLmFNyQ" role="1PaTwD">
+            <property role="3oM_SC" value="switch" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyR" role="1PaTwD">
+            <property role="3oM_SC" value="voices" />
           </node>
         </node>
       </node>
@@ -6398,9 +6472,27 @@
         <ref role="3uigEE" to="wyt6:~String" resolve="String" />
       </node>
       <node concept="P$JXv" id="6e8rKWxzpL1" role="lGtFl">
-        <node concept="TZ5HA" id="6e8rKWxzpLc" role="TZ5H$">
-          <node concept="1dT_AC" id="6e8rKWxzpLd" role="1dT_Ay">
-            <property role="1dT_AB" value="func to decide what language use next" />
+        <node concept="1PaTwC" id="7MzaPLmFNyS" role="1Vez_I">
+          <node concept="3oM_SD" id="7MzaPLmFNyT" role="1PaTwD">
+            <property role="3oM_SC" value="func" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyU" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyV" role="1PaTwD">
+            <property role="3oM_SC" value="decide" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyW" role="1PaTwD">
+            <property role="3oM_SC" value="what" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyX" role="1PaTwD">
+            <property role="3oM_SC" value="language" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyY" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNyZ" role="1PaTwD">
+            <property role="3oM_SC" value="next" />
           </node>
         </node>
       </node>
@@ -6551,9 +6643,12 @@
       <node concept="3Tm1VV" id="3Z$IHi55pAO" role="1B3o_S" />
       <node concept="3cqZAl" id="3Z$IHi55pAP" role="3clF45" />
       <node concept="P$JXv" id="3Z$IHi55pAQ" role="lGtFl">
-        <node concept="TZ5HA" id="3Z$IHi55pAR" role="TZ5H$">
-          <node concept="1dT_AC" id="3Z$IHi55pAS" role="1dT_Ay">
-            <property role="1dT_AB" value="run speak" />
+        <node concept="1PaTwC" id="7MzaPLmFNz0" role="1Vez_I">
+          <node concept="3oM_SD" id="7MzaPLmFNz1" role="1PaTwD">
+            <property role="3oM_SC" value="run" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNz2" role="1PaTwD">
+            <property role="3oM_SC" value="speak" />
           </node>
         </node>
       </node>
@@ -6566,9 +6661,12 @@
       <node concept="3Tm1VV" id="3Z$IHi55pAV" role="1B3o_S" />
       <node concept="3cqZAl" id="3Z$IHi55pAW" role="3clF45" />
       <node concept="P$JXv" id="3Z$IHi55pAX" role="lGtFl">
-        <node concept="TZ5HA" id="3Z$IHi55pAY" role="TZ5H$">
-          <node concept="1dT_AC" id="3Z$IHi55pAZ" role="1dT_Ay">
-            <property role="1dT_AB" value="switch voices" />
+        <node concept="1PaTwC" id="7MzaPLmFNz3" role="1Vez_I">
+          <node concept="3oM_SD" id="7MzaPLmFNz4" role="1PaTwD">
+            <property role="3oM_SC" value="switch" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNz5" role="1PaTwD">
+            <property role="3oM_SC" value="voices" />
           </node>
         </node>
       </node>
@@ -6651,9 +6749,12 @@
       </node>
       <node concept="3Tm1VV" id="6alSDtAKAir" role="1B3o_S" />
       <node concept="P$JXv" id="6alSDtAKAis" role="lGtFl">
-        <node concept="TZ5HA" id="6alSDtAKAlL" role="TZ5H$">
-          <node concept="1dT_AC" id="6alSDtAKAlM" role="1dT_Ay">
-            <property role="1dT_AB" value="default constuctor" />
+        <node concept="1PaTwC" id="7MzaPLmFNz6" role="1Vez_I">
+          <node concept="3oM_SD" id="7MzaPLmFNz7" role="1PaTwD">
+            <property role="3oM_SC" value="default" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNz8" role="1PaTwD">
+            <property role="3oM_SC" value="constuctor" />
           </node>
         </node>
       </node>
@@ -6697,9 +6798,18 @@
         <ref role="3uigEE" node="6alSDtAKAi5" resolve="myVoice" />
       </node>
       <node concept="P$JXv" id="6alSDtAKAiH" role="lGtFl">
-        <node concept="TZ5HA" id="6alSDtAKAlN" role="TZ5H$">
-          <node concept="1dT_AC" id="6alSDtAKAlO" role="1dT_Ay">
-            <property role="1dT_AB" value="set text to speak" />
+        <node concept="1PaTwC" id="7MzaPLmFNz9" role="1Vez_I">
+          <node concept="3oM_SD" id="7MzaPLmFNza" role="1PaTwD">
+            <property role="3oM_SC" value="set" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNzb" role="1PaTwD">
+            <property role="3oM_SC" value="text" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNzc" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNzd" role="1PaTwD">
+            <property role="3oM_SC" value="speak" />
           </node>
         </node>
       </node>
@@ -6847,9 +6957,12 @@
       <node concept="3Tm1VV" id="6alSDtAKAjl" role="1B3o_S" />
       <node concept="10Oyi0" id="3jUOcBQef3v" role="3clF45" />
       <node concept="P$JXv" id="6alSDtAKAjn" role="lGtFl">
-        <node concept="TZ5HA" id="6alSDtAKAlP" role="TZ5H$">
-          <node concept="1dT_AC" id="6alSDtAKAlQ" role="1dT_Ay">
-            <property role="1dT_AB" value="run speak" />
+        <node concept="1PaTwC" id="7MzaPLmFNze" role="1Vez_I">
+          <node concept="3oM_SD" id="7MzaPLmFNzf" role="1PaTwD">
+            <property role="3oM_SC" value="run" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNzg" role="1PaTwD">
+            <property role="3oM_SC" value="speak" />
           </node>
         </node>
       </node>
@@ -6957,9 +7070,12 @@
       <node concept="3Tm1VV" id="6alSDtAKAjR" role="1B3o_S" />
       <node concept="3cqZAl" id="6alSDtAKAjS" role="3clF45" />
       <node concept="P$JXv" id="6alSDtAKAjT" role="lGtFl">
-        <node concept="TZ5HA" id="6alSDtAKAlR" role="TZ5H$">
-          <node concept="1dT_AC" id="6alSDtAKAlS" role="1dT_Ay">
-            <property role="1dT_AB" value="stop speech" />
+        <node concept="1PaTwC" id="7MzaPLmFNzh" role="1Vez_I">
+          <node concept="3oM_SD" id="7MzaPLmFNzi" role="1PaTwD">
+            <property role="3oM_SC" value="stop" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNzj" role="1PaTwD">
+            <property role="3oM_SC" value="speech" />
           </node>
         </node>
       </node>
@@ -7066,9 +7182,12 @@
       <node concept="3Tm1VV" id="6alSDtAKAkp" role="1B3o_S" />
       <node concept="3cqZAl" id="6alSDtAKAkq" role="3clF45" />
       <node concept="P$JXv" id="6alSDtAKAkr" role="lGtFl">
-        <node concept="TZ5HA" id="6alSDtAKAlT" role="TZ5H$">
-          <node concept="1dT_AC" id="6alSDtAKAlU" role="1dT_Ay">
-            <property role="1dT_AB" value="switch voices" />
+        <node concept="1PaTwC" id="7MzaPLmFNzk" role="1Vez_I">
+          <node concept="3oM_SD" id="7MzaPLmFNzl" role="1PaTwD">
+            <property role="3oM_SC" value="switch" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNzm" role="1PaTwD">
+            <property role="3oM_SC" value="voices" />
           </node>
         </node>
       </node>
@@ -7190,9 +7309,12 @@
       <node concept="3Tm6S6" id="6alSDtAKAl9" role="1B3o_S" />
       <node concept="3cqZAl" id="6alSDtAKAla" role="3clF45" />
       <node concept="P$JXv" id="6alSDtAKAlb" role="lGtFl">
-        <node concept="TZ5HA" id="6alSDtAKAlV" role="TZ5H$">
-          <node concept="1dT_AC" id="6alSDtAKAlW" role="1dT_Ay">
-            <property role="1dT_AB" value="detect OS" />
+        <node concept="1PaTwC" id="7MzaPLmFNzn" role="1Vez_I">
+          <node concept="3oM_SD" id="7MzaPLmFNzo" role="1PaTwD">
+            <property role="3oM_SC" value="detect" />
+          </node>
+          <node concept="3oM_SD" id="7MzaPLmFNzp" role="1PaTwD">
+            <property role="3oM_SC" value="OS" />
           </node>
         </node>
       </node>
