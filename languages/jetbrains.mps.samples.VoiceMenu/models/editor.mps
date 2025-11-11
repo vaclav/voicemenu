@@ -95,6 +95,7 @@
         <property id="1186403771423" name="style" index="Vbekb" />
       </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
+      <concept id="1186404574412" name="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" flags="ln" index="Veino" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -1766,11 +1767,23 @@
             </node>
           </node>
         </node>
+        <node concept="Veino" id="7MzaPLmLZUi" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+          <node concept="1iSF2X" id="7MzaPLmLZUj" role="VblUZ">
+            <property role="1iTho6" value="dddddd" />
+          </node>
+        </node>
       </node>
       <node concept="1u4HXA" id="7$6jWp$VQol" role="3EZMnx">
         <property role="1ubRXE" value="${module}/src/icons8-Table-24.png" />
         <property role="1$Qi42" value="0" />
         <ref role="1ERwB7" node="3p$ip5sOarE" resolve="SwitchEditor" />
+        <node concept="Veino" id="7MzaPLmLZPN" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+          <node concept="1iSF2X" id="7MzaPLmLZPO" role="VblUZ">
+            <property role="1iTho6" value="dddddd" />
+          </node>
+        </node>
         <node concept="pkWqt" id="7$6jWp$VQUi" role="pqm2j">
           <node concept="3clFbS" id="7$6jWp$VQUj" role="2VODD2">
             <node concept="3cpWs8" id="7$6jWp$VR1r" role="3cqZAp">
@@ -1872,6 +1885,12 @@
         <property role="1ubRXE" value="${module}/src/icons8-Search-24.png" />
         <property role="1$Qi42" value="0" />
         <ref role="1ERwB7" node="3p$ip5sPmCF" resolve="FindError" />
+        <node concept="Veino" id="7MzaPLmLZOF" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+          <node concept="1iSF2X" id="7MzaPLmLZOG" role="VblUZ">
+            <property role="1iTho6" value="dddddd" />
+          </node>
+        </node>
         <node concept="pkWqt" id="3p$ip5sQRsF" role="pqm2j">
           <node concept="3clFbS" id="3p$ip5sQRsG" role="2VODD2">
             <node concept="3clFbF" id="3p$ip5sQRA1" role="3cqZAp">
@@ -1907,6 +1926,12 @@
         <property role="1ubRXE" value="${module}/src/icons8-Hide-24.png" />
         <property role="1$Qi42" value="0" />
         <ref role="1ERwB7" node="2w$I9Ia9Dig" resolve="HideToolbar" />
+        <node concept="Veino" id="7MzaPLmLZNz" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+          <node concept="1iSF2X" id="7MzaPLmLZN$" role="VblUZ">
+            <property role="1iTho6" value="dddddd" />
+          </node>
+        </node>
         <node concept="pkWqt" id="2w$I9Ia9zTl" role="pqm2j">
           <node concept="3clFbS" id="2w$I9Ia9zTm" role="2VODD2">
             <node concept="3clFbF" id="2w$I9Ia9$0v" role="3cqZAp">
@@ -1942,6 +1967,12 @@
         <property role="1ubRXE" value="${module}/src/AllCheck.png" />
         <property role="1$Qi42" value="0" />
         <ref role="1ERwB7" node="1eM6lui22s8" resolve="FixAll" />
+        <node concept="Veino" id="7MzaPLmLZMr" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+          <node concept="1iSF2X" id="7MzaPLmLZMs" role="VblUZ">
+            <property role="1iTho6" value="dddddd" />
+          </node>
+        </node>
         <node concept="pkWqt" id="7loivjjy1HL" role="pqm2j">
           <node concept="3clFbS" id="7loivjjy1HM" role="2VODD2">
             <node concept="3clFbF" id="7loivjjy1Rv" role="3cqZAp">
@@ -1977,6 +2008,12 @@
         <property role="1ubRXE" value="${module}/src/default_settings.png" />
         <property role="1$Qi42" value="0" />
         <ref role="1ERwB7" node="3RP3wB6m6OM" resolve="DefaultSettings" />
+        <node concept="Veino" id="7MzaPLmJ0cV" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+          <node concept="1iSF2X" id="7MzaPLmK0oO" role="VblUZ">
+            <property role="1iTho6" value="dddddd" />
+          </node>
+        </node>
         <node concept="pkWqt" id="3RP3wB6keeU" role="pqm2j">
           <node concept="3clFbS" id="3RP3wB6keeV" role="2VODD2">
             <node concept="3clFbF" id="3RP3wB6keeW" role="3cqZAp">

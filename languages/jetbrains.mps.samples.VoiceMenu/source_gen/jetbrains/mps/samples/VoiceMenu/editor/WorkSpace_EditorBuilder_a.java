@@ -15,8 +15,9 @@ import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.BracketsStyleCla
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Image;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
+import java.awt.Color;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.samples.VoiceMenu.editor.Styles_StyleSheet.HardCodedTextStyleClass;
 import jetbrains.mps.nodeEditor.MPSFonts;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -210,6 +211,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private EditorCell createImage_0() {
     EditorCell_Image editorCell = EditorCell_Image.createImageCell(getEditorContext(), myNode, SNodeOperations.getConcept(myNode).getLanguage().getSourceModule(), "${module}/src/icons8-List-24.png");
     editorCell.setCellId("Image_ikqrmj_a0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.BACKGROUND_COLOR, getStyleRegistry().getSimpleColor(new Color(14540253)));
+    editorCell.getStyle().putAll(style);
     SwitchEditor.setCellActions(editorCell, myNode, getEditorContext());
     editorCell.setDescent(0);
     return editorCell;
@@ -217,6 +221,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private EditorCell createImage_1() {
     EditorCell_Image editorCell = EditorCell_Image.createImageCell(getEditorContext(), myNode, SNodeOperations.getConcept(myNode).getLanguage().getSourceModule(), "${module}/src/icons8-Table-24.png");
     editorCell.setCellId("Image_ikqrmj_b0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.BACKGROUND_COLOR, getStyleRegistry().getSimpleColor(new Color(14540253)));
+    editorCell.getStyle().putAll(style);
     SwitchEditor.setCellActions(editorCell, myNode, getEditorContext());
     editorCell.setDescent(0);
     return editorCell;
@@ -233,6 +240,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private EditorCell createImage_2() {
     EditorCell_Image editorCell = EditorCell_Image.createImageCell(getEditorContext(), myNode, SNodeOperations.getConcept(myNode).getLanguage().getSourceModule(), "${module}/src/icons8-Search-24.png");
     editorCell.setCellId("Image_ikqrmj_d0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.BACKGROUND_COLOR, getStyleRegistry().getSimpleColor(new Color(14540253)));
+    editorCell.getStyle().putAll(style);
     FindError.setCellActions(editorCell, myNode, getEditorContext());
     editorCell.setDescent(0);
     return editorCell;
@@ -249,6 +259,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private EditorCell createImage_3() {
     EditorCell_Image editorCell = EditorCell_Image.createImageCell(getEditorContext(), myNode, SNodeOperations.getConcept(myNode).getLanguage().getSourceModule(), "${module}/src/icons8-Hide-24.png");
     editorCell.setCellId("Image_ikqrmj_f0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.BACKGROUND_COLOR, getStyleRegistry().getSimpleColor(new Color(14540253)));
+    editorCell.getStyle().putAll(style);
     HideToolbar.setCellActions(editorCell, myNode, getEditorContext());
     editorCell.setDescent(0);
     return editorCell;
@@ -265,6 +278,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private EditorCell createImage_4() {
     EditorCell_Image editorCell = EditorCell_Image.createImageCell(getEditorContext(), myNode, SNodeOperations.getConcept(myNode).getLanguage().getSourceModule(), "${module}/src/AllCheck.png");
     editorCell.setCellId("Image_ikqrmj_h0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.BACKGROUND_COLOR, getStyleRegistry().getSimpleColor(new Color(14540253)));
+    editorCell.getStyle().putAll(style);
     FixAll.setCellActions(editorCell, myNode, getEditorContext());
     editorCell.setDescent(0);
     return editorCell;
@@ -281,6 +297,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private EditorCell createImage_5() {
     EditorCell_Image editorCell = EditorCell_Image.createImageCell(getEditorContext(), myNode, SNodeOperations.getConcept(myNode).getLanguage().getSourceModule(), "${module}/src/default_settings.png");
     editorCell.setCellId("Image_ikqrmj_j0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.BACKGROUND_COLOR, getStyleRegistry().getSimpleColor(new Color(14540253)));
+    editorCell.getStyle().putAll(style);
     DefaultSettings.setCellActions(editorCell, myNode, getEditorContext());
     editorCell.setDescent(0);
     return editorCell;
