@@ -1669,10 +1669,7 @@
         </node>
       </node>
       <node concept="VechU" id="2m0r6rVTky0" role="3F10Kt">
-        <property role="Vb096" value="fLwANPr/green" />
-        <node concept="1iSF2X" id="2w$I9Ia1ZMm" role="VblUZ">
-          <property role="1iTho6" value="AFB42B" />
-        </node>
+        <property role="Vb096" value="g1_qRwE/darkGreen" />
       </node>
       <node concept="1I8cUB" id="5jBAcX4Tdyz" role="3F10Kt">
         <property role="Vb096" value="fLJRk5_/gray" />

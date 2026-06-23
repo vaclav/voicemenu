@@ -11,7 +11,6 @@ import jetbrains.mps.nodeEditor.MPSColors;
 import jetbrains.mps.nodeEditor.MPSFonts;
 import jetbrains.mps.editor.runtime.style.ShowBoundariesArea;
 import jetbrains.mps.nodeEditor.EditorSettings;
-import java.awt.Color;
 
 public class Styles_StyleSheet {
   public static class ArrowsStyleClass extends AbstractStyleClass {
@@ -154,7 +153,7 @@ public class Styles_StyleSheet {
       style.set(StyleAttributes.SHOW_BOUNDARIES_IN, ShowBoundariesArea.GUTTER);
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
       style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_kkd5s1_a2i());
-      style.set(StyleAttributes.TEXT_COLOR, getStyleRegistry().getSimpleColor(new Color(11514923)));
+      style.set(StyleAttributes.TEXT_COLOR, getStyleRegistry().getSimpleColor(MPSColors.DARK_GREEN));
       style.set(StyleAttributes.NULL_TEXT_COLOR, getStyleRegistry().getSimpleColor(MPSColors.gray));
     }
 
