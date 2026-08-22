@@ -55,11 +55,11 @@
         <property role="TrG5h" value="b" />
       </node>
       <node concept="2C_I21" id="7isjrWTCF3i" role="2C_I26">
-        <ref role="2C_gVZ" node="7isjrWTCF3k" resolve="a" />
+        <ref role="2C_gVZ" node="7isjrWTCF3k" />
         <node concept="X09Yy" id="7isjrWTCF8E" role="2C_gVu" />
       </node>
       <node concept="2C_I21" id="7isjrWTCF5X" role="2C_I26">
-        <ref role="2C_gVZ" node="7isjrWTCF4M" resolve="b" />
+        <ref role="2C_gVZ" node="7isjrWTCF4M" />
         <node concept="1$pBvr" id="7isjrWTCF7v" role="2C_gVu">
           <property role="XmNmt" value="true" />
           <property role="2nBP4r" value="111" />

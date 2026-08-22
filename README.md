@@ -44,7 +44,19 @@ System requirements
 
 You can download the Voice Menu IDE to experiment instantly for the JetBrains TeamCity server - [Download Voice Menu IDE](https://teamcity.jetbrains.com/guestAuth/repository/downloadAll/MPS_VoiceMenu_build/.lastSuccessful/artifacts.zip).
 
-To build the Voice Menu project from the sources you need JetBrains MPS 2025.2 and JDK 21 or newer.
+To build the Voice Menu project from the sources you need JetBrains MPS 2026.1 and JDK 21 or newer.
+
+Migration notes
+---------------
+
+Migrated from MPS 2025.3 (upstream commit `765e179c`) to MPS 2026.1. The 2025.3 state is preserved on the `archive/mps20253` branch.
+
+| branch | MPS |
+|---|---|
+| `archive/mps20253` | 2025.3 (upstream) |
+| `main` / `archive/mps20261` | 2026.1 |
+
+For each step we verify that all language modules build (`jetbrains.mps.samples.Text`, `jetbrains.mps.samples.VoiceMenu`, `jetbrains.mps.samples.VoiceMenuTabularEditor`, `jetbrains.mps.samples.VoiceMenuToJava`, `VoiceMenuTest`) and that the sandbox models (`jetbrains.mps.samples.VoiceMenu.sandbox`, `VoiceMenuTest.sandbox`) have no new model-check findings versus the 2025.3 baseline (which was clean: `no findings`). Generator output is out of scope per the course-materials convention.
 
 ----------
 

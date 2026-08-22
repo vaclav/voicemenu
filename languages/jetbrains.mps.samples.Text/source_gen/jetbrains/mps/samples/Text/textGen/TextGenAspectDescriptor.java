@@ -64,6 +64,7 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
   }
   private static String getFileName_WorkSpace(SNode node) {
     return SPropertyOperations.getString(node, PROPS.typeOfFile$jLbY);
+
   }
   private static String getFileExtension_WorkSpace(SNode node) {
     return "conf";
