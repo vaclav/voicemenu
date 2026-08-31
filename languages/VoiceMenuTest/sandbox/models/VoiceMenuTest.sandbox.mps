@@ -35,7 +35,7 @@
   </registry>
   <node concept="3UwvBJ" id="7bG1ue8s58K">
     <property role="TrG5h" value="JetBrains Menu for Discounts" />
-    <ref role="3UB5vi" to="1b11:2w$I9I9UGbg" resolve="Jet Mobile, s.r.o." />
+    <ref role="3UB5vi" to="1b11:2w$I9I9UGbg" />
     <node concept="3UwvBM" id="7bG1ue8sawt" role="3UB5tJ">
       <property role="3UB3l7" value="1" />
       <node concept="3UwvBN" id="7bG1ue8saww" role="3UwvA7">
@@ -44,7 +44,7 @@
       </node>
     </node>
     <node concept="3UB3l5" id="3Q5cXetI4Sg" role="3UB5tJ">
-      <ref role="3UBaPM" to="1b11:2w$I9I9UGbk" resolve="Internet" />
+      <ref role="3UBaPM" to="1b11:2w$I9I9UGbk" />
       <node concept="3UwvBN" id="3Q5cXetI4Si" role="3UwvA7">
         <property role="3UwvBY" value="" />
         <property role="3UwvBS" value="7bG1ue8rvKj/Success" />
@@ -65,7 +65,7 @@
       </node>
     </node>
     <node concept="3UB3l5" id="7bG1ue8sawF" role="3UB5tJ">
-      <ref role="3UBaPM" to="1b11:2w$I9I9VzAl" resolve="Hidden discounts" />
+      <ref role="3UBaPM" to="1b11:2w$I9I9VzAl" />
       <node concept="3UwvBN" id="7bG1ue8sawI" role="3UwvA7">
         <property role="3UwvBY" value="Expected Internet/Discount/Hidden discounts but was in Internet/Discount/Summer discount" />
         <property role="3UwvBS" value="7bG1ue8rvKk/Failure" />
@@ -74,7 +74,7 @@
   </node>
   <node concept="3UwvBJ" id="7bG1ue8vC3B">
     <property role="TrG5h" value="JetBrains Menu Test" />
-    <ref role="3UB5vi" to="1b11:2w$I9I9UGbg" resolve="Jet Mobile, s.r.o." />
+    <ref role="3UB5vi" to="1b11:2w$I9I9UGbg" />
     <node concept="3UwvBM" id="7bG1ue8vC3C" role="3UB5tJ">
       <property role="3UB3l7" value="2" />
       <node concept="3UwvBN" id="7bG1ue8vC3D" role="3UwvA7">
@@ -83,7 +83,7 @@
       </node>
     </node>
     <node concept="3UB3l5" id="7bG1ue8vC3Q" role="3UB5tJ">
-      <ref role="3UBaPM" to="1b11:2w$I9I9URir" resolve="Payment" />
+      <ref role="3UBaPM" to="1b11:2w$I9I9URir" />
       <node concept="3UwvBN" id="7bG1ue8vC3R" role="3UwvA7">
         <property role="3UwvBY" value="" />
         <property role="3UwvBS" value="7bG1ue8rvKj/Success" />
@@ -97,7 +97,7 @@
       </node>
     </node>
     <node concept="3UB3l5" id="7bG1ue8vC3I" role="3UB5tJ">
-      <ref role="3UBaPM" to="1b11:2w$I9I9URk5" resolve="Recharging" />
+      <ref role="3UBaPM" to="1b11:2w$I9I9URk5" />
       <node concept="3UwvBN" id="7bG1ue8vC3J" role="3UwvA7">
         <property role="3UwvBY" value="" />
         <property role="3UwvBS" value="7bG1ue8rvKj/Success" />

@@ -100,24 +100,24 @@
     </node>
     <node concept="3FggHx" id="7isjrWTCGhy" role="3FggHh">
       <node concept="3FggHH" id="7isjrWTCGic" role="3FggHC">
-        <ref role="3FggHE" node="7isjrWTCGbZ" resolve="input" />
+        <ref role="3FggHE" node="7isjrWTCGbZ" />
       </node>
       <node concept="3FggHH" id="7isjrWTCGiP" role="3FggHm">
-        <ref role="3FggHE" node="7isjrWTCGdT" resolve="expectedXMLOutput" />
+        <ref role="3FggHE" node="7isjrWTCGdT" />
       </node>
       <node concept="3FggHH" id="7isjrWTCGix" role="3FggHl">
-        <ref role="3FggHE" node="7isjrWTCGfB" resolve="xmlplan" />
+        <ref role="3FggHE" node="7isjrWTCGfB" />
       </node>
     </node>
     <node concept="3FggHx" id="7isjrWTExgv" role="3FggHh">
       <node concept="3FggHH" id="7isjrWTExhT" role="3FggHC">
-        <ref role="3FggHE" node="7isjrWTCGbZ" resolve="input" />
+        <ref role="3FggHE" node="7isjrWTCGbZ" />
       </node>
       <node concept="3FggHH" id="7isjrWTExkJ" role="3FggHm">
-        <ref role="3FggHE" node="7isjrWTEwWI" resolve="expectedJavaOutput" />
+        <ref role="3FggHE" node="7isjrWTEwWI" />
       </node>
       <node concept="3FggHH" id="7isjrWTExjw" role="3FggHl">
-        <ref role="3FggHE" node="7isjrWTEx7D" resolve="javaPlan" />
+        <ref role="3FggHE" node="7isjrWTEx7D" />
       </node>
     </node>
   </node>

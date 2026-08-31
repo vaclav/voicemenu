@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -17,7 +16,6 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -27,12 +25,10 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class Event__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x4bc750d756884f52L, 0xb7d5b263a3393a24L, 0x5b6b060cf3fde30cL, "jetbrains.mps.samples.VoiceMenu.structure.Event");
 
-  public static final SMethod<String> getFullName_id7bG1ue8uybI = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getFullName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8281000289632920302L).languageId(0xb7d5b263a3393a24L, 0x4bc750d756884f52L).build2();
+  public static final SMethod<String> getFullName_id7bG1ue8uybI = new SMethodBuilder<>(String.class).name("getFullName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8281000289632920302L).languageId(0xb7d5b263a3393a24L, 0x4bc750d756884f52L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getFullName_id7bG1ue8uybI);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getFullName_id7bG1ue8uybI);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getFullName_id7bG1ue8uybI(@NotNull SNode __thisNode__) {
     return ListSequence.fromList(SNodeOperations.getNodeAncestors(__thisNode__, CONCEPTS.Activity$Oz, false)).reversedList().select((it) -> SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.event$pmgi), PROPS.name$MnvL)).foldLeft("", (String s, String it) -> s + it + "/") + SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL);
@@ -41,10 +37,6 @@ public final class Event__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Event__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

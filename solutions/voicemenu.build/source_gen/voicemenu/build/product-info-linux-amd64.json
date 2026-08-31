@@ -75,6 +75,7 @@
         "-Didea.vendor.name=JetBrains",
         "-Didea.paths.selector=$path.selector$",
         "-Djna.boot.library.path=$IDE_HOME/lib/jna",
+        "-Dskiko.library.path=$IDE_HOME/lib/skiko-awt-runtime-all",
         "-Djna.nosys=true",
         "-Djna.noclasspath=true",
         "-Djava.system.class.loader=com.intellij.util.lang.PathClassLoader",
@@ -82,11 +83,12 @@
         "-Didea.executables=mps",
         "-Dpty4j.preferred.native.folder=$IDE_HOME/lib/pty4j",
         "-DjbScreenMenuBar.enabled=true",
-        "-DjbScreenMenuBar.useStubItem=true",
         "-Dcache.dir.macro.test=$IDE_CACHE_DIR",
         "-Dij.startup.error.report.url=https://youtrack.jetbrains.com/newissue?project=MPS&clearDraft=true&summary=$TITLE$&description=$DESCR$"
       ],
       "mainClass": "jetbrains.mps.Launcher"
     }
+  ],
+  "bundledPlugins": [
   ]
 }

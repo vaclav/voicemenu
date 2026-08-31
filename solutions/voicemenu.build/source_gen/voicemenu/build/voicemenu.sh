@@ -224,6 +224,7 @@ MAIN_CLASS=jetbrains.mps.Launcher
   ${IDE_JVM_ARGS} \
   -Didea.jre.check=true \
   -Djna.boot.library.path="${IDE_HOME}/lib/jna" \
+  -Dskiko.library.path="${IDE_HOME}/lib/skiko-awt-runtime-all" \
   -Dintellij.platform.load.app.info.from.resources=true \
   -Dpty4j.preferred.native.folder="${IDE_HOME}/lib/pty4j" \
   -Djava.system.class.loader=com.intellij.util.lang.PathClassLoader \

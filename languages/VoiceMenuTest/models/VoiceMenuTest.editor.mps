@@ -12,6 +12,9 @@
     <import index="53us" ref="r:c46f24ed-bcfe-419b-8f49-66f58dabca47(jetbrains.mps.samples.VoiceMenu.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
       <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
@@ -105,7 +108,6 @@
       <concept id="4705942098322467729" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="ng" index="21nZrQ">
         <reference id="4705942098322467736" name="decl" index="21nZrZ" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -290,7 +292,7 @@
                 <node concept="3clFbF" id="7bG1ue8sg27" role="3cqZAp">
                   <node concept="2OqwBi" id="7bG1ue8sgfb" role="3clFbG">
                     <node concept="1NM5Ph" id="7bG1ue8sg26" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="7bG1ue8uDbJ" role="2OqNvi">
+                    <node concept="3zqWPK" id="$YVAnP8JXe" role="2OqNvi">
                       <ref role="37wK5l" to="53us:7bG1ue8uybI" resolve="getFullName" />
                     </node>
                   </node>
