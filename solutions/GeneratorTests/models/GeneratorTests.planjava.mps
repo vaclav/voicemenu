@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:47054eeb-0fb8-4654-927d-6bb72d193714(GeneratorTests.planjava)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="true" />
   <languages>
     <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="3" />
   </languages>
@@ -32,12 +33,6 @@
   <node concept="2VgMpV" id="7isjrWTEbUC">
     <property role="TrG5h" value="Generate Java" />
     <node concept="2VgMA2" id="7isjrWTEbWM" role="2VgMA7">
-      <node concept="2Qf6Nf" id="3mPZu17OyRE" role="2Qf7GQ">
-        <node concept="2V$Bhx" id="7isjrWTEbXp" role="2Qf6Ng">
-          <property role="2V$B1T" value="4bc750d7-5688-4f52-b7d5-b263a3393a24" />
-          <property role="2V$B1Q" value="jetbrains.mps.samples.VoiceMenu" />
-        </node>
-      </node>
       <node concept="2Qf6Nf" id="3mPZu17OyRF" role="2Qf7GQ">
         <node concept="2V$Bhx" id="7isjrWTEbYN" role="2Qf6Ng">
           <property role="2V$B1T" value="b346e003-e240-4a78-ab18-9d3086938853" />
